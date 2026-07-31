@@ -73,6 +73,9 @@ DYNAMIC_DIAGNOSTIC_COLUMNS = (
     "nonfinite_sound_speed_count",
     "nonpositive_density_count",
     "nonpositive_sound_speed_count",
+    "position_drift_linf",
+    "velocity_linf",
+    "relative_density_drift",
     "total_mass",
     "velocity_error_l1",
     "velocity_error_l2",
@@ -149,6 +152,12 @@ DYNAMIC_DIAGNOSTIC_COLUMNS = (
     "total_internal_force_y",
     "total_internal_force",
     "relative_total_internal_force",
+    "assembled_mass_weighted_internal_force_x",
+    "assembled_mass_weighted_internal_force_y",
+    "assembled_mass_weighted_internal_force",
+    "assembled_relative_internal_force",
+    "assembly_force_consistency_linf",
+    "assembly_force_consistency_relative_linf",
     "accumulated_viscous_power",
     "pair_direct_viscous_power",
     "viscous_power_identity_absolute_difference",
@@ -163,6 +172,8 @@ DYNAMIC_DIAGNOSTIC_COLUMNS = (
     "step_time_late_mean_seconds",
     "step_time_late_to_early_ratio",
     "thermal_slowdown_fraction",
+    "current_rss_bytes",
+    "system_memory_free_percent",
     "peak_rss_bytes",
     "peak_rss_gib",
 )
@@ -200,6 +211,8 @@ DYNAMIC_RUN_TABLE_COLUMNS = (
     "maximum_pressure_relative_pair_force_residual",
     "maximum_viscosity_relative_pair_force_residual",
     "maximum_relative_total_internal_force",
+    "maximum_assembled_relative_internal_force",
+    "maximum_assembly_force_consistency_relative_linf",
     "maximum_viscous_power",
     "minimum_separation",
     "minimum_neighbor_count",
@@ -226,12 +239,15 @@ GATE_COLUMNS = (
     "rss_limit_bytes",
     "thermal_slowdown_limit",
     "finite_state_pass",
+    "physical_state_pass",
     "topology_pass",
     "pressure_pair_residual_pass",
     "viscosity_pair_residual_pass",
     "pressure_total_force_pass",
     "viscosity_total_force_pass",
     "combined_total_force_pass",
+    "assembled_total_force_pass",
+    "assembly_consistency_pass",
     "viscous_power_nonpositive_pass",
     "viscous_power_identity_pass",
     "physics_gates_complete",
@@ -636,6 +652,7 @@ def collect_dynamic_diagnostics(
     sound_speed: float | torch.Tensor,
     neighborhood: PeriodicNeighborhood,
     physical_viscosity: float | torch.Tensor,
+    assembled_acceleration: torch.Tensor | None = None,
     time: float,
     exact_velocity: torch.Tensor | None = None,
     modal_basis: torch.Tensor | None = None,
@@ -689,6 +706,14 @@ def collect_dynamic_diagnostics(
     _validate_vector_field(velocity, count, name="velocity")
     if neighborhood.particle_count != count:
         raise ValueError("neighborhood particle count does not match state")
+    if assembled_acceleration is not None:
+        _validate_vector_field(
+            assembled_acceleration,
+            count,
+            name="assembled_acceleration",
+        )
+        if not bool(torch.isfinite(assembled_acceleration.detach()).all()):
+            raise FloatingPointError("assembled acceleration is nonfinite")
     if not math.isfinite(float(time)) or float(time) < 0.0:
         raise ValueError("time must be finite and nonnegative")
     if dt is not None and (not math.isfinite(float(dt)) or float(dt) < 0.0):
@@ -1084,6 +1109,45 @@ def collect_dynamic_diagnostics(
         record["relative_total_internal_force"] = _tensor_float(
             total_internal_force / (combined_force_scale + tiny)
         )
+        if assembled_acceleration is not None:
+            assembled_particle_force = (
+                masses[:, None] * assembled_acceleration
+            )
+            assembled_force_vector = assembled_particle_force.sum(dim=0)
+            assembled_force_norm = torch.linalg.vector_norm(
+                assembled_force_vector
+            )
+            reconstructed_particle_force = (
+                pressure_particle_force + viscosity_particle_force
+            )
+            assembly_difference = torch.linalg.vector_norm(
+                assembled_particle_force - reconstructed_particle_force,
+                dim=-1,
+            ).max()
+            assembly_scale = torch.linalg.vector_norm(
+                reconstructed_particle_force,
+                dim=-1,
+            ).max()
+            record["assembled_mass_weighted_internal_force_x"] = (
+                _tensor_float(assembled_force_vector[0])
+            )
+            record["assembled_mass_weighted_internal_force_y"] = (
+                _tensor_float(assembled_force_vector[1])
+            )
+            record["assembled_mass_weighted_internal_force"] = (
+                _tensor_float(assembled_force_norm)
+            )
+            record["assembled_relative_internal_force"] = _tensor_float(
+                assembled_force_norm / (combined_force_scale + tiny)
+            )
+            record["assembly_force_consistency_linf"] = _tensor_float(
+                assembly_difference
+            )
+            record["assembly_force_consistency_relative_linf"] = (
+                _tensor_float(
+                    assembly_difference / (assembly_scale + tiny)
+                )
+            )
         direct_power = float(record["pair_direct_viscous_power"] or 0.0)
         record["viscous_power_roundoff_tolerance"] = (
             viscous_power_roundoff_tolerance(
@@ -1226,6 +1290,12 @@ def evaluate_dynamic_gates(
             if record.get("state_all_finite") is not None
             else None
         ),
+        "physical_state_pass": bool(
+            record.get("state_all_finite")
+            and str(record.get("status")) == "OK"
+            and int(record.get("nonpositive_density_count") or 0) == 0
+            and int(record.get("nonpositive_sound_speed_count") or 0) == 0
+        ),
         "topology_pass": topology_pass,
         "pressure_pair_residual_pass": _optional_le(
             record.get("pressure_relative_pair_force_residual"),
@@ -1247,6 +1317,19 @@ def evaluate_dynamic_gates(
             record.get("relative_total_internal_force"),
             total_force_relative_tolerance,
         ),
+        "assembled_total_force_pass": _optional_le(
+            record.get("assembled_relative_internal_force"),
+            total_force_relative_tolerance,
+        ),
+        "assembly_consistency_pass": _optional_le(
+            record.get("assembly_force_consistency_relative_linf"),
+            64.0
+            * (
+                torch.finfo(torch.float64).eps
+                if dtype_name == "float64"
+                else torch.finfo(torch.float32).eps
+            ),
+        ),
         "viscous_power_nonpositive_pass": power_nonpositive_pass,
         "viscous_power_identity_pass": power_identity_pass,
         "physics_gates_complete": None,
@@ -1263,12 +1346,15 @@ def evaluate_dynamic_gates(
     }
     physics_gate_names = (
         "finite_state_pass",
+        "physical_state_pass",
         "topology_pass",
         "pressure_pair_residual_pass",
         "viscosity_pair_residual_pass",
         "pressure_total_force_pass",
         "viscosity_total_force_pass",
         "combined_total_force_pass",
+        "assembled_total_force_pass",
+        "assembly_consistency_pass",
         "viscous_power_nonpositive_pass",
         "viscous_power_identity_pass",
     )

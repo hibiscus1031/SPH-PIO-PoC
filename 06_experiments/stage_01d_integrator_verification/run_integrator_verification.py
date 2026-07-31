@@ -4,8 +4,10 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import math
 from pathlib import Path
+import subprocess
 import sys
 from typing import Callable
 
@@ -22,6 +24,13 @@ from dynamic_solver.integrator import integrate_fixed_steps  # noqa: E402
 
 TIME_STEPS = (0.1, 0.05, 0.025, 0.0125)
 FINAL_TIME = 1.0
+PREREGISTRATION_PATH = (
+    PROJECT_ROOT
+    / "06_experiments"
+    / "stage_01d_fixed_physics_tgv"
+    / "configs"
+    / "preregistered_primary_tgv.yml"
+)
 
 
 def scalar_decay_rhs(
@@ -102,7 +111,7 @@ def _order_study(
         observed_order = (
             math.log(previous_error / error, 2.0)
             if previous_error is not None
-            else math.nan
+            else ""
         )
         flattened = numerical.reshape(-1)
         exact_flattened = exact.reshape(-1)
@@ -116,13 +125,13 @@ def _order_study(
                 "numerical_1": (
                     float(flattened[1])
                     if flattened.numel() > 1
-                    else math.nan
+                    else ""
                 ),
                 "exact_0": float(exact_flattened[0]),
                 "exact_1": (
                     float(exact_flattened[1])
                     if exact_flattened.numel() > 1
-                    else math.nan
+                    else ""
                 ),
                 "error_L2": error,
                 "observed_order": observed_order,
@@ -163,6 +172,17 @@ def run_verification() -> list[dict[str, float | str]]:
             exact=coupled_reference,
         )
     )
+    git_hash = subprocess.check_output(
+        ("git", "rev-parse", "HEAD"),
+        cwd=PROJECT_ROOT,
+        text=True,
+    ).strip()
+    config_hash = hashlib.sha256(
+        PREREGISTRATION_PATH.read_bytes()
+    ).hexdigest()
+    for row in rows:
+        row["git_hash"] = git_hash
+        row["config_sha256"] = config_hash
     return rows
 
 
@@ -186,8 +206,13 @@ def main() -> int:
         writer.writeheader()
         writer.writerows(rows)
     else:
+        if args.output.exists():
+            raise FileExistsError(
+                f"refusing to overwrite integrator evidence: {args.output}"
+            )
         args.output.parent.mkdir(parents=True, exist_ok=True)
-        with args.output.open("w", newline="", encoding="utf-8") as handle:
+        temporary = args.output.with_name(args.output.name + ".tmp")
+        with temporary.open("w", newline="", encoding="utf-8") as handle:
             writer = csv.DictWriter(
                 handle,
                 fieldnames=fieldnames,
@@ -195,6 +220,7 @@ def main() -> int:
             )
             writer.writeheader()
             writer.writerows(rows)
+        temporary.replace(args.output)
     return 0
 
 

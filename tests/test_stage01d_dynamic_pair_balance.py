@@ -9,6 +9,7 @@ from dynamic_solver.acceleration import (
     evaluate_internal_acceleration,
     force_structure_audit,
 )
+from dynamic_solver.diagnostics import evaluate_dynamic_gates
 from dynamic_solver.taylor_green import initialize_taylor_green_state
 
 
@@ -45,3 +46,37 @@ def test_dynamic_mixed_pressure_and_variable_density_are_pair_balanced() -> None
     assert audit["viscous_power_identity_difference"] <= (
         1.0e-12 * max(1.0, abs(float(audit["viscous_power"])))
     )
+
+
+def test_nonpositive_density_requests_an_immediate_stop() -> None:
+    record = {
+        "dtype": "float64",
+        "status": "INVALID_PHYSICAL_STATE",
+        "state_all_finite": True,
+        "nonpositive_density_count": 1,
+        "nonpositive_sound_speed_count": 0,
+        "neighbor_duplicate_edge_count": 0,
+        "neighbor_missing_self_edge_count": 0,
+        "neighbor_nonreciprocal_nonself_edge_count": 0,
+        "neighbor_out_of_bounds_edge_count": 0,
+        "neighbor_omitted_strict_support_edge_count": 0,
+        "neighbor_unexpected_edge_count": 0,
+        "pressure_relative_pair_force_residual": 0.0,
+        "viscosity_relative_pair_force_residual": 0.0,
+        "pressure_relative_total_internal_force": 0.0,
+        "viscosity_relative_total_internal_force": 0.0,
+        "relative_total_internal_force": 0.0,
+        "assembled_relative_internal_force": 0.0,
+        "assembly_force_consistency_relative_linf": 0.0,
+        "accumulated_viscous_power": 0.0,
+        "pair_direct_viscous_power": 0.0,
+        "viscous_power_identity_absolute_difference": 0.0,
+        "viscous_power_roundoff_tolerance": 1.0e-15,
+        "peak_rss_bytes": 1,
+        "thermal_slowdown_fraction": 0.0,
+    }
+    gates = evaluate_dynamic_gates(record)
+    assert gates["physical_state_pass"] is False
+    assert gates["physics_gates_complete"] is True
+    assert gates["physics_gates_pass"] is False
+    assert gates["stop_requested"] is True

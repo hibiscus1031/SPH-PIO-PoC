@@ -41,8 +41,11 @@ RESULTS_DIR = (
 def _write_rows(path: Path, rows: list[dict[str, object]]) -> None:
     if not rows:
         raise ValueError("cannot write an empty AD regression")
+    if path.exists():
+        raise FileExistsError(f"refusing to overwrite AD evidence: {path}")
     path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", newline="", encoding="utf-8") as stream:
+    temporary = path.with_name(path.name + ".tmp")
+    with temporary.open("w", newline="", encoding="utf-8") as stream:
         writer = csv.DictWriter(
             stream,
             fieldnames=list(rows[0]),
@@ -50,6 +53,7 @@ def _write_rows(path: Path, rows: list[dict[str, object]]) -> None:
         )
         writer.writeheader()
         writer.writerows(rows)
+    temporary.replace(path)
 
 
 def main() -> int:
@@ -60,6 +64,15 @@ def main() -> int:
         default=RESULTS_DIR,
     )
     args = parser.parse_args()
+    output_paths = (
+        args.results_dir / "dynamic_autograd_fd.csv",
+        args.results_dir / "stage01c_autograd_regression.csv",
+    )
+    existing = [str(path) for path in output_paths if path.exists()]
+    if existing:
+        raise FileExistsError(
+            "refusing to overwrite AD evidence: " + ", ".join(existing)
+        )
     config_hash = hashlib.sha256(CONFIG_PATH.read_bytes()).hexdigest()
     git_hash = subprocess.check_output(
         ("git", "rev-parse", "HEAD"),
@@ -85,11 +98,11 @@ def main() -> int:
         for row in run_native_autograd_matrix()
     ]
     _write_rows(
-        args.results_dir / "dynamic_autograd_fd.csv",
+        output_paths[0],
         dynamic_rows,
     )
     _write_rows(
-        args.results_dir / "stage01c_autograd_regression.csv",
+        output_paths[1],
         stage01c_rows,
     )
     dynamic_pass = sum(row["status"] == "PASS" for row in dynamic_rows)

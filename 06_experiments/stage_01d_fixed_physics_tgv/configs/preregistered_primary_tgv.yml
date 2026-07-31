@@ -85,6 +85,7 @@ zero_flow:
   eos_reference_density: "spatially uniform initial kernel-summation density; particle masses remain rho0*dx^2"
   position_drift_tolerance: 1.0e-13
   velocity_linf_tolerance: 1.0e-12
+  pressure_linf_tolerance: 1.0e-12
   relative_density_drift_tolerance: 1.0e-12
   duplicate_edges: 0
   strict_support_omissions: 0
@@ -142,6 +143,8 @@ space_convergence:
   n48_policy:
     run_only_if_n32_peak_rss_below_bytes: 4000000000
     run_only_if_projected_wall_seconds_below: 7200
+    projection_scaling_basis: "maximum of initial edge-count ratio and particle-count ratio"
+    projection_safety_factor: 1.10
     unfavorable_results_must_be_retained: true
   selected_slopes: ["velocity_relative_L2", "modal_amplitude_absolute_error", "kinetic_energy_absolute_error"]
   primary_trend:
@@ -237,11 +240,15 @@ dynamic_autograd:
     topology_differentiability_claimed: false
 
 preregistration_revision:
-  revision: 5
+  revision: 6
   timing: "before every Stage 01D TGV and dynamic-AD run"
-  prior_config_commit: "649f905"
-  reason: "N=8 with H/dx=4 gives H=1, equal to half the periodic extent and therefore violates the frozen Stage 01C compact-support precondition H<extent/2"
-  change: "dynamic_autograd resolution only: 8 -> 16"
+  prior_config_commit: "3f3cae6"
+  reason: "pre-run audit found that the zero-pressure gate needed its own explicit preregistered tolerance instead of borrowing the velocity tolerance"
+  change: "add zero_flow.pressure_linf_tolerance=1e-12 and make the conservative N48 projection basis explicit; no primary TGV parameter or earlier threshold value changed"
+  revision_5_record:
+    prior_config_commit: "649f905"
+    reason: "N=8 with H/dx=4 gives H=1, equal to half the periodic extent and therefore violates the frozen Stage 01C compact-support precondition H<extent/2"
+    change: "dynamic_autograd resolution only: 8 -> 16"
   additional_pre_run_clarifications:
     - "zero-flow EOS reference is the uniform discrete kernel-summation density, without mass adjustment"
     - "minimum separation below 0.25*dx flags unexplained clustering"
