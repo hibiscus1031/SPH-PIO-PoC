@@ -1,0 +1,20 @@
+SPH-PIO-PoC PyTorch backend test
+python_platform=macOS-26.5.2-arm64-arm-64bit
+PASS | torch.__version__ | 2.13.0
+PASS | torch.backends.mps.is_built | True
+PASS | torch.backends.mps.is_available | True
+PASS | torch.mps.device_count | 1
+PASS | basic tensor arithmetic [cpu] | add/sub/mul correct
+PASS | automatic differentiation [cpu] | gradient correct
+PASS | Linear [cpu] | forward/backward finite
+PASS | MultiheadAttention [cpu] | forward/backward finite
+PASS | scatter/index_add/index_select [cpu] | scatter_add/index_select/index_add correct
+PASS | pairwise distance and topk [cpu] | cdist/topk correct
+PASS | basic tensor arithmetic [mps] | add/sub/mul correct
+PASS | automatic differentiation [mps] | gradient correct
+PASS | Linear [mps] | forward/backward finite
+PASS | MultiheadAttention [mps] | forward/backward finite
+PASS | scatter/index_add/index_select [mps] | scatter_add/index_select/index_add correct
+PASS | pairwise distance and topk [mps] | cdist/topk correct
+PASS | float32 CPU/MPS consistency [mps] | max_abs_error=0.000e+00
+PASS | MPS memory accounting [mps] | current_allocated_memory=0, driver_allocated_memory=19595264, recommended_max_memory=12713115648

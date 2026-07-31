@@ -1,0 +1,9 @@
+name: sph-pio-poc
+channels:
+  - https://conda.software.inl.gov/public
+  - conda-forge
+  - defaults
+dependencies:
+  - pip
+  - python=3.12
+prefix: /opt/miniconda3/envs/sph-pio-poc

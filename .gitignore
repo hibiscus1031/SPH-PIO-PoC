@@ -1,0 +1,53 @@
+# Python environments and bytecode
+.venv/
+venv/
+env/
+.conda/
+conda-env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+*.o
+*.obj
+*.so
+*.dylib
+*.a
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+*.tmp
+*.swp
+
+# Jupyter and editor state
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+
+# Data, checkpoints, and generated artifacts
+02_data/raw/
+02_data/processed/
+06_experiments/**/checkpoints/
+06_experiments/**/outputs/
+06_experiments/**/raw/
+06_experiments/**/processed/
+06_experiments/**/logs/
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Logs and profiling traces
+*.log
+*.prof
+*.trace
+*.sqlite
