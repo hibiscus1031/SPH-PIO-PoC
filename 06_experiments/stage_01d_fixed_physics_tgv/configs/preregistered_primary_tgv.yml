@@ -1,0 +1,259 @@
+stage: "01D"
+name: "Fixed-physics dynamic solution verification"
+status: "PREREGISTERED_BEFORE_FIRST_STAGE_01D_TGV_RUN"
+date: "2026-07-31"
+scope:
+  dynamic_fixed_physics_only: true
+  neural_network_work: false
+  learning_labels: false
+  third_party_core_modification: false
+
+frozen_stage_01c:
+  commit: "275fafbb8c8e7ca4fd7384a8ff46b33215b34ced"
+  tag: "stage-01c-operator-requalified"
+  required_tag_target: "275fafbb8c8e7ca4fd7384a8ff46b33215b34ced"
+  stage_01b_tag: "stage-01b-v1-fail"
+  required_stage_01b_target: "6f26750fea615c79b08a11fddfd832105b985235"
+
+backend:
+  device: "cpu"
+  dtype: "float64"
+  python_environment: "sph-pio-poc"
+
+equations:
+  state: ["positions", "velocities", "masses", "densities", "pressures", "supports", "periodic_domain", "time"]
+  density: "rho_i = sum_j m_j W_ij; recomputed at every complete force stage"
+  eos: "p_i = c_s^2 * (rho_i - rho0)"
+  pressure_pair_force: "-m_i*m_j*(p_i/rho_i^2+p_j/rho_j^2)*grad_i(W_ij)"
+  viscosity_pair_force: "m_i*m_j*Gamma_ij*(v_j-v_i)"
+  viscosity_gamma: "-4*nu/(rho_i+rho_j)*(r_ij dot grad_i(W_ij))/(r_ij^2+(0.01*H_ij)^2)"
+  mass: "rho0 * dx^2 for every particle; no post-result mass calibration"
+  support: "spatially uniform within each run"
+  background_pressure: false
+  pressure_clipping: false
+  artificial_viscosity: false
+  particle_shifting: false
+  density_diffusion: false
+  free_surface_correction: false
+  boundary_particles: false
+  turbulence_model: false
+
+integrator:
+  name: "explicit midpoint RK2"
+  force_stages_per_step: 2
+  topology: "rebuilt as a discrete reciprocal graph at every force stage"
+  density_and_pressure: "recomputed at every force stage and after each accepted step"
+  periodic_wrapping: "after midpoint and final position updates"
+  scalar_ode:
+    equation: "dy/dt = -1.3*y"
+    initial_value: 1.0
+    final_time: 1.0
+  coupled_ode:
+    equation: "y0' = y1; y1' = -2*y0 - 0.4*y1"
+    initial_value: [1.0, 0.0]
+    final_time: 1.0
+  time_steps: [0.1, 0.05, 0.025, 0.0125]
+  qualification:
+    every_error_level_must_decrease: true
+    fitted_order_minimum: 1.8
+    finest_pair_observed_order_minimum: 1.75
+
+primary_tgv:
+  domain:
+    minimum: [-1.0, -1.0]
+    maximum: [1.0, 1.0]
+    periodic: [true, true]
+  initial_velocity:
+    ux: "-U0*sin(pi*x)*cos(pi*y)"
+    uy: " U0*cos(pi*x)*sin(pi*y)"
+  exact_velocity_factor: "exp(-2*nu*pi^2*t)"
+  exact_energy_factor: "exp(-4*nu*pi^2*t)"
+  rho0: 1.0
+  U0: 1.0
+  L: 2.0
+  physical_viscosity: 0.02
+  reynolds_number: 100.0
+  sound_speed: 20.0
+  nominal_mach: 0.05
+  final_time: 0.2
+
+zero_flow:
+  resolution: 16
+  support_ratio: 4.0
+  time_step: 0.001
+  steps: 100
+  position_drift_tolerance: 1.0e-13
+  velocity_linf_tolerance: 1.0e-12
+  relative_density_drift_tolerance: 1.0e-12
+  duplicate_edges: 0
+  strict_support_omissions: 0
+  nonreciprocal_edges: 0
+
+execution_order:
+  - "N16 smoke test"
+  - "N32 short rollout"
+  - "time convergence"
+  - "space convergence"
+  - "support family comparison"
+  - "disorder robustness"
+  - "Mach sensitivity"
+  - "optional N48 confirmation"
+
+smoke_tests:
+  n16:
+    resolution: 16
+    support_ratio: 4.0
+    time_step: 0.001
+    final_time: 0.01
+  n32:
+    resolution: 32
+    support_ratio: 5.0
+    time_step: 0.0005
+    final_time: 0.01
+
+time_convergence:
+  resolution: 32
+  support_family: "increasing_neighbor"
+  support_ratio: 5.0
+  time_steps: [0.001, 0.0005, 0.00025, 0.000125]
+  final_time: 0.2
+  identical_initial_state: true
+  credible_trend:
+    selected_metrics: ["velocity_relative_L2", "modal_amplitude_absolute_error", "kinetic_energy_absolute_error"]
+    analytic_endpoint_ratio_maximum_for_at_least_one_metric: 0.98
+    self_convergence_finest_to_coarsest_ratio_maximum: 0.95
+    finite_all_levels_required: true
+  spatial_or_model_plateau_may_be_reported: true
+  forced_second_order_claim: false
+
+space_convergence:
+  support_family: "increasing_neighbor"
+  time_step: 0.000125
+  final_time: 0.2
+  resolutions_and_support_ratios:
+    16: 4.0
+    24: 4.5
+    32: 5.0
+    48: 5.5
+  primary_resolutions: [16, 24, 32]
+  n48_policy:
+    run_only_if_n32_peak_rss_below_bytes: 4000000000
+    run_only_if_projected_wall_seconds_below: 7200
+    unfavorable_results_must_be_retained: true
+  selected_slopes: ["velocity_relative_L2", "modal_amplitude_absolute_error", "kinetic_energy_absolute_error"]
+  primary_trend:
+    n32_to_n16_velocity_relative_L2_ratio_maximum: 0.90
+    positive_log_error_log_dx_slope_required: true
+  richardson_or_gci_only_if_monotone_asymptotic: true
+
+support_family_comparison:
+  resolutions: [16, 24, 32]
+  time_step: 0.000125
+  final_time: 0.2
+  layout: "regular"
+  constant_neighbor_ratios:
+    16: 4.0
+    24: 4.0
+    32: 4.0
+  increasing_neighbor_ratios:
+    16: 4.0
+    24: 4.5
+    32: 5.0
+  no_presumed_finite_resolution_winner: true
+
+disorder_robustness:
+  run_only_after_regular_primary_branches_pass: true
+  resolution: 32
+  time_step: 0.00025
+  support_ratio: 5.0
+  final_time: 0.1
+  layouts:
+    regular: [0]
+    jitter_05: [20261001, 20261019, 20261037]
+    jitter_10: [20261061, 20261079, 20261103]
+  seed_mapping_rule: "Stage 01C seed list positions 1-3 map to 5% jitter and positions 4-6 map to 10% jitter"
+  full_random_uncertainty_claimed: false
+
+mach_sensitivity:
+  run_only_after_primary_branch_pass: true
+  resolution: 32
+  time_step: 0.00025
+  support_ratio: 5.0
+  final_time: 0.1
+  layout: "regular"
+  sound_speeds: [10.0, 20.0, 40.0]
+  nominal_mach_numbers: [0.10, 0.05, 0.025]
+  acoustic_cfl_diagnostic: "dt*(sound_speed+maximum_speed)/dx"
+  cost_must_be_reported: true
+
+sampling:
+  requested_uniform_samples_per_trajectory: 21
+  include_initial_and_final: true
+  every_accepted_trajectory_sample_audits:
+    - "pressure pair residual"
+    - "viscosity pair residual"
+    - "characteristic-normalized total internal force"
+    - "viscous power"
+    - "total momentum"
+    - "total angular momentum"
+    - "density and Mach"
+    - "minimum particle separation"
+    - "neighbor topology"
+
+dynamic_conservation_thresholds:
+  maximum_relative_pair_force_residual: 1.0e-12
+  maximum_characteristic_normalized_internal_force_residual: 1.0e-10
+  viscous_power_positive_absolute_tolerance: 1.0e-12
+  pressure_and_viscosity_recorded_separately: true
+
+dynamic_autograd:
+  resolution: 8
+  support_ratio: 4.0
+  time_step: 0.0001
+  steps: [1, 3, 5, 8, 16]
+  loss: "mean(final_velocity^2)"
+  parameters:
+    physical_viscosity: {base_value: 0.02, finite_difference_step: 1.0e-6}
+    initial_velocity_amplitude: {base_value: 1.0, finite_difference_step: 1.0e-6}
+    local_velocity_x_particle_0: {base_value: 0.0, finite_difference_step: 1.0e-6}
+    reference_density_scalar: {base_value: 1.0, finite_difference_step: 1.0e-6}
+  qualification:
+    stage_01c_original_20_of_20_must_still_pass: true
+    short_steps_maximum_AD_FD_relative_difference: 0.01
+    step_16_finite_nonzero_required: true
+    step_16_AD_FD_is_diagnostic_only: true
+    topology_differentiability_claimed: false
+
+resource_stopping:
+  peak_rss_bytes: 8000000000
+  sustained_memory_pressure: true
+  projected_single_experiment_seconds_without_checkpoint: 7200
+  memory_growth_with_step: true
+  nan_or_inf: true
+  neighbor_edge_defect: true
+  second_half_mean_step_time_increase_fraction: 0.30
+
+v2_decision:
+  allowed_status: ["V2_PASS", "V2_CONDITIONAL", "V2_FAIL"]
+  pass_requires:
+    - "zero-flow equilibrium passes"
+    - "dynamic pair conservation and viscous dissipation pass"
+    - "all four time-step trajectories are finite"
+    - "time analytic error or self-convergence difference has a credible decreasing trend"
+    - "primary fixed-physics spatial sequence decreases overall"
+    - "N32 velocity relative L2 is at most 0.90 times N16"
+    - "Mach and density fluctuations are quantified"
+    - "no unexplained clustering or neighborhood defect"
+    - "full dynamic autograd regression passes"
+    - "all configurations, logs, and failed trajectories are retained"
+  conditional_conditions:
+    - "time trend passes but spatial error reaches a plateau"
+    - "regular layout passes but 10% jitter robustness is insufficient"
+    - "quantified model-form error remains dominant"
+  fail_conditions:
+    - "fixed-physics errors do not improve under time or space refinement"
+    - "dynamic conservation fails"
+    - "viscous power is systematically positive"
+    - "zero-flow equilibrium fails"
+    - "full dynamic autograd path regresses"
+    - "unexplained numerical blow-up occurs"
