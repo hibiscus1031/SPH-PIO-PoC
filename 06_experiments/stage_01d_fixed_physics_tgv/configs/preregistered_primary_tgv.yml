@@ -207,7 +207,7 @@ dynamic_conservation_thresholds:
   pressure_and_viscosity_recorded_separately: true
 
 dynamic_autograd:
-  resolution: 8
+  resolution: 16
   support_ratio: 4.0
   time_step: 0.0001
   steps: [1, 3, 5, 8, 16]
@@ -217,12 +217,22 @@ dynamic_autograd:
     initial_velocity_amplitude: {base_value: 1.0, finite_difference_step: 1.0e-6}
     local_velocity_x_particle_0: {base_value: 0.0, finite_difference_step: 1.0e-6}
     reference_density_scalar: {base_value: 1.0, finite_difference_step: 1.0e-6}
+  density_scalar_scope: "EOS reference density only; baseline particle masses remain fixed at rho0_base*dx^2 during this derivative diagnostic"
   qualification:
     stage_01c_original_20_of_20_must_still_pass: true
     short_steps_maximum_AD_FD_relative_difference: 0.01
     step_16_finite_nonzero_required: true
     step_16_AD_FD_is_diagnostic_only: true
     topology_differentiability_claimed: false
+
+preregistration_revision:
+  revision: 1
+  timing: "before every Stage 01D TGV and dynamic-AD run"
+  prior_config_commit: "649f905"
+  reason: "N=8 with H/dx=4 gives H=1, equal to half the periodic extent and therefore violates the frozen Stage 01C compact-support precondition H<extent/2"
+  change: "dynamic_autograd resolution only: 8 -> 16"
+  primary_TGV_parameters_changed: false
+  thresholds_changed: false
 
 resource_stopping:
   peak_rss_bytes: 8000000000
