@@ -237,7 +237,7 @@ dynamic_autograd:
     topology_differentiability_claimed: false
 
 preregistration_revision:
-  revision: 4
+  revision: 5
   timing: "before every Stage 01D TGV and dynamic-AD run"
   prior_config_commit: "649f905"
   reason: "N=8 with H/dx=4 gives H=1, equal to half the periodic extent and therefore violates the frozen Stage 01C compact-support precondition H<extent/2"
@@ -248,8 +248,10 @@ preregistration_revision:
     - "10% jitter robustness also requires final velocity relative L2 no more than twice regular"
     - "resource sampling and sustained-growth rules made machine-readable"
     - "integrator and zero-flow hard gates explicitly precede every TGV branch"
+    - "revision metadata distinguishes unchanged original thresholds from newly added gates"
   primary_TGV_parameters_changed: false
-  thresholds_changed: false
+  original_threshold_values_changed: false
+  additional_gate_thresholds_added_before_first_TGV: true
 
 resource_stopping:
   peak_rss_bytes: 8000000000
