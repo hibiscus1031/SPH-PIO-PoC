@@ -1,0 +1,7 @@
+resolution,layout,jitter_fraction,verlet_scale,edge_count,unique_edge_count,duplicate_edge_count,self_edge_count,missing_self_edge_count,nonreciprocal_nonself_edge_count,out_of_bounds_edge_count,minimum_image_linf,omitted_strict_interior_edge_count,omitted_inclusive_cutoff_edge_count,unexpected_edge_count,s0_l2,manufactured_laplacian_l2
+16,regular,0.0,1.4,18096,12544,5552,256,0,0,0,0.0,0,0,0,0.2525736391544342,20.019824981689453
+16,regular,0.0,1.0,11520,11520,0,256,0,0,0,0.0,0,1024,0,0.0004157493822276592,3.807647466659546
+16,jitter_05,0.05,1.4,17318,12040,5278,256,0,0,0,0.0,0,0,0,0.25322461128234863,20.024097442626953
+16,jitter_05,0.05,1.0,12040,12040,0,256,0,0,0,0.0,0,0,0,0.009243255481123924,3.8746464252471924
+16,jitter_10,0.1,1.4,17562,12182,5380,256,0,0,0,0.0,0,0,0,0.2549114227294922,20.068666458129883
+16,jitter_10,0.1,1.0,12182,12182,0,256,0,0,0,0.0,0,0,0,0.017911165952682495,4.307393550872803

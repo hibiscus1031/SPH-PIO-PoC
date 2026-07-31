@@ -1,0 +1,10 @@
+resolution,particle_count,layout,jitter_fraction,edge_count,unique_edge_count,duplicate_edge_count,self_edge_count,missing_self_edge_count,nonreciprocal_nonself_edge_count,out_of_bounds_edge_count,minimum_image_linf,omitted_strict_interior_edge_count,omitted_inclusive_cutoff_edge_count,unexpected_edge_count
+16,256,regular,0.0,11520,11520,0,256,0,0,0,0.0,0,1024,0
+24,576,regular,0.0,27168,27168,0,576,0,0,0,0.0,0,1056,0
+32,1024,regular,0.0,46080,46080,0,1024,0,0,0,0.0,0,4096,0
+16,256,jitter_05,0.05,12040,12040,0,256,0,0,0,0.0,0,0,0
+24,576,jitter_05,0.05,27052,27052,0,576,0,0,0,0.0,0,0,0
+32,1024,jitter_05,0.05,48092,48092,0,1024,0,0,0,0.0,0,0,0
+16,256,jitter_10,0.1,12182,12182,0,256,0,0,0,0.0,0,0,0
+24,576,jitter_10,0.1,27402,27402,0,576,0,0,0,0.0,0,0,0
+32,1024,jitter_10,0.1,48700,48700,0,1024,0,0,0,0.0,0,0,0

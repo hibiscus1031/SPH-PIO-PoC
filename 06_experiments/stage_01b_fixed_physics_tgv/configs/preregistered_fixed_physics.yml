@@ -1,0 +1,43 @@
+stage: "01B"
+configuration_status: "PREREGISTERED_NOT_EXECUTED"
+execution_gate:
+  v1_status: "V1_FAIL"
+  v2_authorized: false
+  reason: "Required disorder and conservation/operator checks did not qualify."
+
+physics:
+  domain_length: 2.0
+  initial_velocity_amplitude: 1.0
+  initial_density: 1.0
+  kinematic_viscosity: 0.02
+  reynolds_number_definition: "U0 * L / nu"
+  target_reynolds_number: 100.0
+  sound_speed: 10.0
+  maximum_nominal_mach: 0.1
+  equation_of_state: "isoThermal"
+  pressure_term: "Antuono"
+  density_diffusion: "deltaSPH"
+  analytical_reference: "two-dimensional periodic Taylor-Green vortex"
+  final_physical_time: 0.2
+
+discretization:
+  backend: "cpu"
+  dtype: "float32"
+  kernel: "Wendland4"
+  support_spacing_ratio: 4
+  integration_scheme: "symplecticEuler"
+  velocity_diffusion: "project physical-nu adapter over official SPHOperation Laplacian"
+  laplacian_mode: "default"
+  support_scheme: "Symmetric"
+  verlet_scale: 1.0
+  particle_resolutions: [16, 24, 32]
+  proposed_time_steps: [0.001, 0.0005, 0.00025]
+  cfl: 0.3
+  maximum_time_step: 0.001
+  minimum_time_step: 0.000001
+
+provenance:
+  diffsph_commit: "fff180c81d57a51035de9f4d358dbcaccf973928"
+  implementation: "01_solver/verification/fixed_physics_tgv.py"
+  viscosity_adapter: "01_solver/viscosity_audit/physical_nu_adapter.py"
+  gate_report: "07_reports/stage_01b_operator_verification.md"
