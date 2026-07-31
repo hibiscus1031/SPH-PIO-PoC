@@ -1,0 +1,167 @@
+stage: "01C"
+name: "Structure-preserving SPH operator remediation and requalification"
+status: "PREREGISTERED_BEFORE_STAGE_01C_RESULTS"
+execution_scope: "static operators only; no V2 TGV"
+
+frozen_stage_01b:
+  commit: "6f26750fea615c79b08a11fddfd832105b985235"
+  tag: "stage-01b-v1-fail"
+  final_report_sha256: "06e8f848e1a749406fd419d92c54da784ab64c3ec87da2b183ad43f604ca4e95"
+  operator_report_sha256: "05955221bbcc787575e6813692c9f733723a77fb363a9f6e9aa505de071c06cb"
+  viscosity_report_sha256: "0a79ec1b69cfcbc5a7a6fa98b9d4b17488e818e3b5cc9cae64894864ee165729"
+  uncertainty_report_sha256: "47d9f53e82befa8f9f995fb65290be4719b47697d8a9c9eadc88717697aafa13"
+
+domain:
+  dimension: 2
+  minimum: [-1.0, -1.0]
+  maximum: [1.0, 1.0]
+  periodic: [true, true]
+  particle_volume: "dx^2"
+  reference_density: 1.0
+
+resolutions: [16, 24, 32, 48, 64]
+jitter_fractions: [0.0, 0.05, 0.10]
+random_seeds:
+  - 20261001
+  - 20261019
+  - 20261037
+  - 20261061
+  - 20261079
+  - 20261103
+  - 20261121
+  - 20261147
+  - 20261171
+  - 20261189
+jitter_definition: "independent uniform coordinate displacement in [-jitter*dx,+jitter*dx]"
+
+support_families:
+  constant_neighbor:
+    ratios_by_resolution:
+      16: 4.0
+      24: 4.0
+      32: 4.0
+      48: 4.0
+      64: 4.0
+  increasing_neighbor:
+    ratios_by_resolution:
+      16: 4.0
+      24: 4.5
+      32: 5.0
+      48: 5.5
+      64: 6.0
+support_requirements:
+  compact_support: "H = (H/dx) * dx"
+  H_must_strictly_decrease_with_resolution: true
+  increasing_family_ensemble_neighbor_mean_must_increase: true
+  support_boundary_rule: "r <= H is retained; strict-omission audit uses r < H*(1-64*eps)"
+
+kernel:
+  name: "two-dimensional Wendland C4 (diffSPH Wendland4 form)"
+  q_definition: "q=r/H"
+  shape: "(1-q)^6 * (1+6q+35q^2/3), 0<=q<=1"
+  normalization_2d: "9/(pi*H^2)"
+
+operator_candidates:
+  - "raw_sph"
+  - "shepard_normalized"
+  - "first_order_gradient_matrix"
+  - "linear_reproducing_kernel"
+  - "quadratic_weighted_least_squares"
+candidate_selection:
+  permitted_basis: "manufactured static operators only"
+  eligibility:
+    - "finite errors for every preregistered layout"
+    - "increasing-neighbor ensemble endpoint improves for gradient, divergence, and Laplacian"
+    - "no statistically supported N=64 rebound for the selected principal operator"
+  ranking: "lowest geometric mean of finest-resolution normalized L2 errors across 5% and 10% jitter"
+  conservation_restriction: "one-sided or MLS corrections may qualify manufactured operators only and may not be inserted into pair forces"
+
+manufactured_fields:
+  scalar: "sin(2*pi*x)+0.5*cos(2*pi*y)"
+  vector: "[sin(2*pi*x), cos(2*pi*y)]"
+  reported_norms: ["L1", "L2", "Linf"]
+  constant_field_zero_checks: true
+
+statistics:
+  primary_dtype: "float64"
+  per_seed_rows_required: true
+  summaries: ["mean", "sample_standard_deviation", "median", "bootstrap_95_percent_CI"]
+  bootstrap:
+    statistic: "mean"
+    resamples: 2000
+    seed: 20261999
+    interval: "percentile"
+  ensemble_slope:
+    x: "log(dx)"
+    y: "log(error)"
+    method: "ordinary least squares over all five resolutions"
+  systematic_finest_rebound:
+    definition: "paired-seed bootstrap 95% CI for mean(error_64-error_48) lies entirely above zero"
+
+precision_isolation:
+  dtypes: ["float32", "float64"]
+  cases:
+    - {layout: "regular", resolution: 32, seed: 20261001}
+    - {layout: "jitter_10", resolution: 32, seed: 20261001}
+    - {layout: "jitter_10", resolution: 64, seed: 20261001}
+  retain_both_dtypes: true
+
+conservative_pressure:
+  pair_force: "-m_i*m_j*(p_i/rho_i^2+p_j/rho_j^2)*grad_i(W_ij)"
+  pressure_cases: ["all_positive", "all_negative", "mixed_sign"]
+  density_cases: ["uniform", "variable_05"]
+  pair_gradient: "single symmetric-support radial gradient reused with opposite sign"
+
+conservative_viscosity:
+  pair_force: "m_i*m_j*Gamma_ij*(v_j-v_i)"
+  Gamma: "-4*nu/(rho_i+rho_j)*(r_ij dot grad_i(W_ij))/(r_ij^2+(0.01*H_ij)^2)"
+  Gamma_requirements: ["symmetric", "nonnegative"]
+  physical_viscosity: 0.02
+  density_cases: ["uniform", "variable_05"]
+  comparison: "Stage 01B one-sided m_j/rho_j generic Laplacian"
+
+native_autograd:
+  dtype: "float64"
+  resolution: 16
+  support_ratio: 4.0
+  fixed_neighbor_indices: true
+  time_step: 0.0001
+  rollout_steps: [1, 3, 5, 8, 16]
+  parameters:
+    physical_viscosity: {value: 0.02, finite_difference_step: 0.000001}
+    initial_velocity_amplitude: {value: 1.0, finite_difference_step: 0.000001}
+    local_velocity_x_particle_0: {value: 0.0, finite_difference_step: 0.000001}
+    local_pressure_particle_0: {value: 0.0, finite_difference_step: 0.000001}
+  loss: "mean(final_velocity^2)"
+  topology_differentiability_claimed: false
+
+qualification_thresholds:
+  C1:
+    duplicate_edges: 0
+    missing_strict_support_edges: 0
+    nonreciprocal_nonself_edges: 0
+    out_of_bounds_edges: 0
+    minimum_image_tolerance: "64*machine_epsilon*domain_length"
+  C2:
+    increasing_family_endpoint_ratio_must_be_below_one: true
+    ensemble_log_error_log_dx_slope_must_be_positive: true
+    systematic_N64_rebound_is_failure: true
+    applies_to: ["S0_L2", "gradient_L2", "divergence_L2", "Laplacian_L2"]
+  C3:
+    float64_relative_pair_and_total_force_tolerance: 1.0e-12
+    float32_relative_pair_and_total_force_tolerance: 5.0e-6
+    viscous_power_must_be_nonpositive_with_roundoff_allowance: true
+    variable_density_required: true
+    mixed_sign_pressure_required: true
+  C4:
+    steps_1_3_5_8_must_be_finite_nonzero: true
+    steps_1_3_5_8_AD_FD_relative_difference_maximum: 0.01
+    step_16_must_be_finite_nonzero_without_exception: true
+    step_16_AD_FD_difference_reported_but_not_used_as_pass_threshold: true
+
+stopping:
+  maximum_static_peak_rss_bytes: 8000000000
+  no_third_party_source_modification: true
+  no_post_result_seed_support_or_threshold_changes: true
+  no_V2_TGV: true
+  no_neural_network_work: true
