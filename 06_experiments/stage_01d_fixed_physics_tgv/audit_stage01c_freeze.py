@@ -84,7 +84,11 @@ def main() -> None:
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     with OUTPUT_PATH.open("w", newline="", encoding="utf-8") as stream:
-        writer = csv.DictWriter(stream, fieldnames=rows[0].keys())
+        writer = csv.DictWriter(
+            stream,
+            fieldnames=rows[0].keys(),
+            lineterminator="\n",
+        )
         writer.writeheader()
         writer.writerows(rows)
 
