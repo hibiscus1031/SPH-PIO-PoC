@@ -1,0 +1,3 @@
+problem,method,required_dt_count,observed_dt_count,all_required_dt_present,all_errors_finite_positive,every_error_level_decreases,fitted_order,fitted_order_minimum,finest_pair_observed_order,finest_pair_order_minimum,pass,source
+scalar_decay,explicit_midpoint_rk2,4,4,True,True,True,2.0414066768743058,1.8,2.017727908586886,1.75,True,06_experiments/stage_01d_integrator_verification/results/integrator_verification.csv
+coupled_damped_oscillator,explicit_midpoint_rk2,4,4,True,True,True,1.992672681349704,1.8,1.9964594041753698,1.75,True,06_experiments/stage_01d_integrator_verification/results/integrator_verification.csv

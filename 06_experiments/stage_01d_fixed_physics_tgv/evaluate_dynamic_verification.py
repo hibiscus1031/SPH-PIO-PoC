@@ -511,7 +511,7 @@ def load_evidence(
     support = _series(
         summary,
         "support_family",
-        ("method_id", "support_method"),
+        ("support_method",),
         required=False,
         source=summary_source,
     )
