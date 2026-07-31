@@ -1,0 +1,16 @@
+operator,candidate,operator_variant,all_errors_finite,all_required_layouts_complete,all_endpoint_ratios_below_one,all_ensemble_slopes_positive,no_systematic_N64_rebound,eligible,finest_jitter_L2_geometric_mean,selected
+kernel_S0,linear_reproducing_kernel,local_linear_reproducing_kernel_weights,True,True,False,False,False,False,3.963443744544069e-16,False
+kernel_S0,raw_sph,raw_kernel_weights,True,True,True,True,True,True,0.0057460222405055555,True
+kernel_S0,shepard_normalized,nodewise_S0_normalized_weights,True,True,False,False,False,False,3.8607037740928515e-16,False
+gradient,first_order_gradient_matrix,local_first_moment_inverse_gradient,True,True,True,True,True,True,0.12722290802244,False
+gradient,quadratic_weighted_least_squares,local_quadratic_weighted_least_squares_gradient,True,True,True,True,True,True,0.11866916007895549,True
+gradient,raw_sph,raw_difference_gradient,True,True,True,True,True,True,0.13169525153926515,False
+gradient,shepard_normalized,nodewise_S0_scaled_difference_gradient,True,True,True,True,True,True,0.13406530338591202,False
+divergence,first_order_gradient_matrix,local_first_moment_inverse_gradient,True,True,True,True,True,True,0.227526387599779,False
+divergence,quadratic_weighted_least_squares,local_quadratic_weighted_least_squares_gradient,True,True,True,True,True,True,0.21227729782260107,True
+divergence,raw_sph,raw_difference_gradient,True,True,True,True,True,True,0.23301264074377348,False
+divergence,shepard_normalized,nodewise_S0_scaled_difference_gradient,True,True,True,True,True,True,0.23722264572185295,False
+Laplacian,first_order_gradient_matrix,isotropic_quadratic_response_laplacian,True,True,True,True,True,True,1.4054005996044392,False
+Laplacian,quadratic_weighted_least_squares,local_quadratic_weighted_least_squares_laplacian,True,True,True,True,True,True,0.7354497231881806,True
+Laplacian,raw_sph,raw_brookshaw_component_laplacian,True,True,True,True,True,True,1.4248089925985177,False
+Laplacian,shepard_normalized,nodewise_S0_scaled_brookshaw_laplacian,True,True,True,True,True,True,1.436964531737103,False

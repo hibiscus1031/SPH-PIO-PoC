@@ -1,0 +1,25 @@
+gate,check,passed,observed,threshold,source
+C1,duplicate_edge_count,True,0.0,0,per_seed_metrics.csv
+C1,missing_self_edge_count,True,0.0,0,per_seed_metrics.csv
+C1,omitted_strict_support_edge_count,True,0.0,0,per_seed_metrics.csv
+C1,nonreciprocal_nonself_edge_count,True,0.0,0,per_seed_metrics.csv
+C1,out_of_bounds_edge_count,True,0.0,0,per_seed_metrics.csv
+C1,unexpected_edge_count,True,0.0,0,per_seed_metrics.csv
+C1,minimum_image_linf,True,2.220446049250313e-16,<= 2.8421709430404007e-14,per_seed_metrics.csv
+C1,preregistered_static_case_count,True,300,300,per_seed_metrics.csv
+C2,eligible_selected_operator_count,True,4,"4, one for each preregistered principal operator",candidate_selection.csv
+C2,increasing_family_support_and_neighbors,True,3 layouts; neighbor endpoint ratios 2.30612–2.36407,H strictly decreases and ensemble neighbor mean strictly increases,support_family_checks.csv
+C3,float64_relative_pair_force_residual,True,7.298522762924356e-18,<= 9.9999999999999998e-13,conservation_metrics.csv
+C3,float64_relative_total_internal_force,True,3.405913978896641e-17,<= 9.9999999999999998e-13,conservation_metrics.csv
+C3,float64_pressure_relative_pair_torque,True,3.304981193952626e-16,<= 9.9999999999999998e-13,conservation_metrics.csv
+C3,float64_Gamma_symmetry,True,2.659610596041652e-18,<= 9.9999999999999998e-13,conservation_metrics.csv
+C3,float32_relative_pair_force_residual,True,2.9198909593354874e-14,<= 5.0000000000000004e-06,conservation_metrics.csv
+C3,float32_relative_total_internal_force,True,1.096741986117422e-08,<= 5.0000000000000004e-06,conservation_metrics.csv
+C3,float32_pressure_relative_pair_torque,True,1.580198585315884e-07,<= 5.0000000000000004e-06,conservation_metrics.csv
+C3,float32_Gamma_symmetry,True,9.716125202573894e-15,<= 5.0000000000000004e-06,conservation_metrics.csv
+C3,viscous_power_nonpositive,True,-2.7595834604425833,<= dtype-scaled roundoff allowance,conservation_metrics.csv
+C3,required_mixed_pressure_and_variable_density_cases,True,True,both present,conservation_metrics.csv
+C4,steps_1_3_5_8_finite_nonzero,True,16/16,16/16,native_autograd_fd.csv
+C4,steps_1_3_5_8_AD_FD_relative_difference,True,1.6190766511573288e-05,<= 0.01,native_autograd_fd.csv
+C4,step_16_finite_nonzero,True,4/4,4/4,native_autograd_fd.csv
+C4,topology_differentiability_not_claimed,True,False,False,native_autograd_fd.csv
