@@ -1,0 +1,29 @@
+{
+  "all_worker_count": 22,
+  "ambiguous_growth": false,
+  "archive_localized": true,
+  "archive_overhead_bounded": true,
+  "campaign_order_pass": true,
+  "config_sha256": "1d0fbdaeba85d26a6c76b2d04079393b3dff704c0ede9de35726859870bf6dc8",
+  "confirmed_linear": true,
+  "evaluable_qualifying_run_count": 18,
+  "figures": [
+    "06_experiments/stage_01dr_memory_diagnosis/figures/stage01dr_n16_memory_curves.png",
+    "06_experiments/stage_01dr_memory_diagnosis/figures/stage01dr_n32_memory_curves.png",
+    "06_experiments/stage_01dr_memory_diagnosis/figures/stage01dr_graph_sentinel.png"
+  ],
+  "freeze_pass": true,
+  "git_hash": "0d562a4d8ed662c33797b738cd0f7ae9c00c1618",
+  "graph_sentinel_pass": true,
+  "hard_complete": false,
+  "numeric_regression_pass": true,
+  "old_stage01d_status": "V2_FAIL",
+  "process_reclamation_pass": true,
+  "qualifying_run_count": 18,
+  "retention_fix_applied": false,
+  "retention_fix_contract_pass": true,
+  "schema_version": "sph-pio-poc.stage01dr.analysis-summary.v1",
+  "source_tree_clean": true,
+  "status": "RESOURCE_FAIL_LINEAR_GROWTH",
+  "variant_b_overhead_pass": true
+}
