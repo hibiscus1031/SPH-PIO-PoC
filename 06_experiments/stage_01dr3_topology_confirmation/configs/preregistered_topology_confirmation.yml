@@ -1,0 +1,136 @@
+stage: "Stage 01D-R3"
+title: "Topology-stable working-set attribution confirmation"
+created_before_formal_runs: true
+
+historical_freeze:
+  stage01dr2_prerun_commit: "084c702c6eab16b6983078494c01627fd2d8cfbe"
+  stage01dr2_evidence_commit: "39ae3dc1f88f4468d2a423cfad8c952a0a4da8d3"
+  stage01dr2_tag: "stage-01dr2-attribution-unresolved-cutoff-topology"
+  stage01d_status: "V2_FAIL"
+  stage01dr_status: "RESOURCE_FAIL_LINEAR_GROWTH"
+  stage01dr2_status: "ATTRIBUTION_UNRESOLVED"
+
+environment:
+  python_environment: "sph-pio-poc"
+  backend: "CPU"
+  dtype: "float64"
+
+physics:
+  resolution: 32
+  particles: 1024
+  time_step: 5.0e-4
+  sound_speed: 20.0
+  physical_viscosity: 0.02
+  reference_density: "initial_regular_density_mean"
+  velocity: "zero"
+  layout: "regular"
+  seed: 0
+  domain_minimum: [-1.0, -1.0]
+  domain_maximum: [1.0, 1.0]
+
+cutoff_shell:
+  target_support_ratio: 5.0
+  squared_shell: 25
+  offsets:
+    - [5, 0]
+    - [-5, 0]
+    - [0, 5]
+    - [0, -5]
+    - [4, 3]
+    - [4, -3]
+    - [-4, 3]
+    - [-4, -3]
+    - [3, 4]
+    - [3, -4]
+    - [-3, 4]
+    - [-3, -4]
+  expected_directed_shell_edge_count: 12288
+  near_cutoff_absolute_ratio_tolerance: 1.0e-12
+  replay_steps: 1000
+
+support_margin_geometry:
+  selection_algorithm: "midpoint between q=5 and the next unique N32 lattice shell"
+  q_next: 5.0990195135927845
+  q_next_exact: "sqrt(26)"
+  selected_support_ratio: 5.049509756796392
+  dimensionless_shell_margin: 0.049509756796392246
+  relative_cutoff_margin: 0.009804864072151667
+  expected_initial_edge_count: 82944
+  minimum_allowed_dimensionless_margin: 1.0e-12
+  selection_frozen_before_resource_results: true
+
+controls:
+  F:
+    name: "frozen_topology_zero_flow"
+    support_ratio: 5.0
+    steps: 2000
+    repeats: 3
+    rebuild_neighbor_index: false
+    freeze_only_edge_index: true
+  M:
+    name: "support_margin_zero_flow"
+    support_ratio: 5.049509756796392
+    steps: 2000
+    repeats: 3
+    rebuild_neighbor_index: true
+    diagnostic_parameter_only: true
+
+run_order: ["F1", "M1", "M3", "F2", "F3", "M2"]
+
+sampling:
+  ledger_interval_steps: 25
+  memory_interval_steps: 25
+  weakref_gc_interval_steps: 25
+  mandatory_steps: [0, 1, 2, 3, 4, 25, 1000, 2000]
+  current_rss_stop_bytes: 2500000000
+  system_memory_free_percentage_stop: 10.0
+  full_topology_audit_force_call_indices: [1, 2001, 4001]
+
+qualification:
+  required_completed_repeats_per_control: 3
+  required_unique_edge_counts: 1
+  required_unique_edge_identities: 1
+  required_live_tensor_count_delta: 0
+  required_unknown_live_bytes_delta: 0
+  required_old_survivor_bytes: 0
+  required_old_survivor_storage_count: 0
+  required_same_slot_multiple_generation_count: 0
+  required_age2_alive_tensor_reference_count: 0
+  required_referrer_chain_count: 0
+  required_duplicate_edge_count: 0
+  required_nonreciprocal_edge_count: 0
+  required_omitted_strict_edge_count: 0
+  required_unexpected_edge_count: 0
+  require_all_state_values_finite: true
+  require_all_processes_reclaimed: true
+
+r2_frozen_evidence:
+  edge_working_set_models.csv: "8f07f85b9166fae2bc5c4aff636f5d93adfcf5dfef49379a7e9a61bdbfb39f92"
+  weakref_lifetime_summary.csv: "269b227ea5ae9d3f6860a53ae182ce13dc494164baf9c5d00873cb50df2d0441"
+  numerical_regression_summary.csv: "70225824847204f5089292cad8c033a1d505e162ccb0a5812e0ed5410c290670"
+  attribution_gate_evidence.csv: "ba702b314c015c5d926c29cd4185bb29f624aba2357b455302dbcf6b2c7d7467"
+  required_beta_edge_bytes_per_edge: 48.0
+  beta_step_absolute_limit_bytes_per_step: 4096.0
+  gamma_step_absolute_limit_bytes_per_step: 1024.0
+  require_beta_step_ci_contains_zero: true
+  require_gamma_step_ci_contains_zero: true
+  required_old_survivor_bytes: 0
+  required_numerical_bitwise_rows_per_run: 5
+
+allowed_statuses:
+  - "R3_WORKING_SET_ATTRIBUTION_CONFIRMED"
+  - "R3_TOPOLOGY_CONTROL_FAIL"
+  - "R3_RETENTION_SIGNAL_DETECTED"
+  - "R3_CONFIRMATION_UNRESOLVED"
+
+stage01d2_application_eligible_statuses:
+  - "R3_WORKING_SET_ATTRIBUTION_CONFIRMED"
+
+prohibitions:
+  modify_historical_statuses: false
+  run_stage01d2: false
+  run_formal_v2_convergence: false
+  run_v3: false
+  run_stage02: false
+  train_neural_network: false
+  use_control_m_support_as_formal_parameter: false
