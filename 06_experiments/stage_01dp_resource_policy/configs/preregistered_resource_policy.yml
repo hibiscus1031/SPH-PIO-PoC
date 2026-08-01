@@ -1,0 +1,134 @@
+schema_version: "sph-pio-poc.stage01dp.policy.v1"
+stage: "Stage 01D-P"
+name: "Bounded-GC resource policy adjudication"
+scope:
+  one_time_extra_resource_policy_audit: true
+  reference_cycle_localization: false
+  solver_or_diagnostics_source_modification: false
+  formal_v2_convergence: false
+  stage01d2_design_or_execution: false
+  v3_started: false
+  stage02_started: false
+  neural_network_training: false
+  learning_label_generation: false
+
+frozen_stage01dr5:
+  final_evidence_commit: "f4262b71d1f5fb4763535a34e8187c1b1e02bcaa"
+  annotated_tag: "stage-01dr5-bounded-gc-delay-confirmed"
+  required_tag_target: "f4262b71d1f5fb4763535a34e8187c1b1e02bcaa"
+  status: "R5_BOUNDED_GC_DELAY_CONFIRMED"
+
+historical_statuses:
+  stage01d: "V2_FAIL"
+  stage01dr: "RESOURCE_FAIL_LINEAR_GROWTH"
+  stage01dr2: "ATTRIBUTION_UNRESOLVED"
+  stage01dr3: "R3_CONFIRMATION_UNRESOLVED"
+  stage01dr4: "R4_RETENTION_REDETECTED"
+  stage01dr5: "R5_BOUNDED_GC_DELAY_CONFIRMED"
+
+read_only_evidence:
+  stage01d_primary_config:
+    path: "06_experiments/stage_01d_fixed_physics_tgv/configs/preregistered_primary_tgv.yml"
+    sha256: "7fa2dd01f7c9a493958fc3732a776e919077479d5c91baad345f172f177f6da0"
+    final_time_key: "primary_tgv.final_time"
+    time_steps_key: "time_convergence.time_steps"
+  r5_gc_mode_summary:
+    path: "06_experiments/stage_01dr5_gc_cycle_localization/results/gc_mode_summary.csv"
+    sha256: "4b9f36d36c300112753cd4745fea266510afb1500df3294997c4b01c4349d178"
+  r5_retired_slot_summary:
+    path: "06_experiments/stage_01dr5_gc_cycle_localization/results/retired_slot_summary.csv"
+    sha256: "207a48abc25995fe5220a66bf5778929842e7c1bf21a94f6ccd98a58b6e6977b"
+  r5_numerical_regression_summary:
+    path: "06_experiments/stage_01dr5_gc_cycle_localization/results/numerical_regression_summary.csv"
+    sha256: "8c8ce2c07313519c0a089e5f337b335e4212330e78af7ca7264dda62517e0f62"
+  r5_status:
+    path: "06_experiments/stage_01dr5_gc_cycle_localization/results/stage01dr5_status.txt"
+    sha256: "2d69c898fc0d42618b605d2bcf4a47d39715e981336e15313a586319aee3b3f7"
+
+evidence_horizon:
+  planned_final_time: 0.2
+  minimum_planned_time_step: 0.000125
+  maximum_planned_formal_trajectory_steps: 1600
+  r5_default_gc_evidence_steps: 2000
+  calculation: "0.2 / 0.000125 = 1600"
+
+formal_runtime_policy:
+  one_trajectory_per_independent_subprocess: true
+  shared_solver_state_between_processes: false
+  shared_neighborhood_between_processes: false
+  shared_tensor_history_between_processes: false
+  python_default_gc_required_enabled: true
+  forward_under_torch_no_grad: true
+  inloop_gc_collect_prohibited: true
+  cyclic_gc_disable_prohibited: true
+  saved_tensor_checkpoints: []
+  scalar_diagnostic_checkpoints_only: true
+  process_exit_reclaims_trajectory_resources: true
+  ad_checks_use_separate_short_processes: true
+  parent_receives_tensor_or_full_state: false
+
+canary:
+  repeats: 3
+  serial_launch: true
+  resolution: 32
+  particle_count: 1024
+  time_step: 0.000125
+  steps: 1600
+  final_time: 0.2
+  support_ratio: 5.0
+  sound_speed: 20.0
+  physical_viscosity: 0.02
+  reference_density: 1.0
+  velocity_amplitude: 1.0
+  layout: "regular"
+  jitter_fraction: 0.0
+  seed: 20260731
+  domain_minimum: [-1.0, -1.0]
+  domain_maximum: [1.0, 1.0]
+  dtype: "float64"
+  device: "cpu"
+  topology: "normal dynamic neighborhood reconstruction at every force stage"
+  gc_mode: "Python default enabled"
+  gradient_mode: "torch.no_grad"
+  convergence_evidence: false
+
+sampling:
+  scalar_interval_steps: 25
+  full_structure_interval_steps: 100
+  mandatory_steps: [0, 400, 800, 1200, 1600]
+  rss_quarter_steps: 400
+  no_tensor_or_state_archives: true
+
+qualification:
+  current_rss_limit_bytes: 2000000000
+  peak_rss_limit_bytes: 4000000000
+  final_quartile_rss_increase_limit_bytes: 250000000
+  final_quartile_rss_relative_increase_limit: 0.50
+  step_time_final_to_first_quartile_ratio_limit: 1.30
+  minimum_system_available_memory_fraction: 0.05
+  maximum_relative_pair_force_residual: 1.0e-12
+  maximum_characteristic_normalized_internal_force: 1.0e-10
+  viscous_power_positive_absolute_tolerance: 1.0e-12
+  maximum_parent_rss_growth_bytes: 64000000
+  topology_defect_count_required: 0
+  completed_steps_required: 1600
+  completed_time_absolute_tolerance: 1.0e-12
+
+status_policy:
+  allowed:
+    - "POLICY_PASS_ISOLATED_DEFAULT_GC"
+    - "POLICY_CONDITIONAL_REDUCED_SCOPE"
+    - "POLICY_FAIL_OPERATIONAL_ENVELOPE"
+    - "POLICY_EVIDENCE_INCOMPLETE"
+  pass_requires_all_three_operational_gates: true
+  conditional_requires_complete_finite_topology_safe_reclaimable_runs: true
+  fail_on_numerical_topology_system_pressure_or_reclamation_failure: true
+  incomplete_on_missing_or_identity_mismatched_evidence: true
+  stage01d2_design_application_eligible_only_if: "POLICY_PASS_ISOLATED_DEFAULT_GC"
+
+interpretation_limits:
+  retired_count_zero_every_step_required: false
+  second_half_total_zero_required: false
+  raw_live_tensor_slope_exactly_zero_required: false
+  periodic_gc_is_formal_policy: false
+  canary_is_v2_convergence_data: false
