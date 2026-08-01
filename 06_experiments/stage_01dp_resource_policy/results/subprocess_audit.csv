@@ -1,0 +1,4 @@
+run_id,return_code,pid,process_reclaimed,child_rss_absent,parent_rss_growth_from_baseline_bytes,scalar_summary_only,summary_path
+stage01dp_canary_r1,0,27761,True,True,16384,True,06_experiments/stage_01dp_resource_policy/results/run_summaries/stage01dp_canary_r1.json
+stage01dp_canary_r2,0,28114,True,True,114688,True,06_experiments/stage_01dp_resource_policy/results/run_summaries/stage01dp_canary_r2.json
+stage01dp_canary_r3,0,28476,True,True,114688,True,06_experiments/stage_01dp_resource_policy/results/run_summaries/stage01dp_canary_r3.json

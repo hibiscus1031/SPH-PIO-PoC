@@ -1,0 +1,7 @@
+gate,name,passed,observed,required
+P1,read_only_evidence_identity,True,sha=5/5 r5_status=True,all identities and frozen R5 status
+P2,evidence_horizon,True,R5=2000 planned=1600,R5 default-GC horizon >= planned maximum
+P3,maximum_horizon_canaries,True,3/3,3/3 operational gates
+P4,subprocess_reclamation,True,reclaimed=True scalar=True parent_rss=True,"3/3 exited, no child RSS, scalar-only return, bounded parent"
+P5,default_gc_no_grad_no_collect_policy,True,runs=3,default GC enabled and no_grad for all canaries
+STATUS,unique_policy_status,True,POLICY_PASS_ISOLATED_DEFAULT_GC,"[""POLICY_CONDITIONAL_REDUCED_SCOPE"",""POLICY_EVIDENCE_INCOMPLETE"",""POLICY_FAIL_OPERATIONAL_ENVELOPE"",""POLICY_PASS_ISOLATED_DEFAULT_GC""]"

@@ -1,0 +1,29 @@
+{
+  "canary_is_v2_convergence_data": false,
+  "canary_operational_pass": true,
+  "config_sha256": "2d52fee73a2d30f91bef9156d6edab63be817cd04b16996cd3a476e191bfbf22",
+  "evidence_identity_pass": true,
+  "historical_statuses": {
+    "stage01d": "V2_FAIL",
+    "stage01dr": "RESOURCE_FAIL_LINEAR_GROWTH",
+    "stage01dr2": "ATTRIBUTION_UNRESOLVED",
+    "stage01dr3": "R3_CONFIRMATION_UNRESOLVED",
+    "stage01dr4": "R4_RETENTION_REDETECTED",
+    "stage01dr5": "R5_BOUNDED_GC_DELAY_CONFIRMED"
+  },
+  "horizon_pass": true,
+  "parent_rss_pass": true,
+  "planned_maximum_trajectory_steps": 1600,
+  "process_reclamation_pass": true,
+  "r5_default_gc_evidence_steps": 2000,
+  "r5_status_identity_pass": true,
+  "r5_tag_target": "f4262b71d1f5fb4763535a34e8187c1b1e02bcaa",
+  "scalar_return_pass": true,
+  "schema_version": "sph-pio-poc.stage01dp.analysis.v1",
+  "source_identity_pass": true,
+  "stage01d2_design_application_eligible": true,
+  "stage01d2_started": false,
+  "stage02_started": false,
+  "status": "POLICY_PASS_ISOLATED_DEFAULT_GC",
+  "v3_started": false
+}
