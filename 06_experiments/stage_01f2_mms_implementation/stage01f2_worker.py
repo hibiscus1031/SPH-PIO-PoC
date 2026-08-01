@@ -419,8 +419,25 @@ def run_ad() -> dict[str, Any]:
         position_grad, time_grad = torch.autograd.grad(
             torch.sum(source * weights), (position, time_tensor)
         )
-        for name, value in (("numerical_x", position_grad[:, 0]), ("numerical_y", position_grad[:, 1]), ("physical_time", time_grad.reshape(1))):
-            rows.append({"solution_id": solution, "variable": name, "ad": float(torch.linalg.vector_norm(value)), "fd": None, "relative_difference": 0.0, "finite": bool(torch.isfinite(value).all()), "nonzero": bool(torch.linalg.vector_norm(value) > 0)})
+        coordinate_delta = 1e-6
+        for axis, name in ((0, "numerical_x"), (1, "numerical_y")):
+            plus_position = points.clone()
+            minus_position = points.clone()
+            plus_position[:, axis] += coordinate_delta
+            minus_position[:, axis] -= coordinate_delta
+            plus_value = torch.sum(evaluate_mms_source(solution, plus_position, 0.037) * weights)
+            minus_value = torch.sum(evaluate_mms_source(solution, minus_position, 0.037) * weights)
+            ad = float(position_grad[:, axis].sum())
+            fd = float((plus_value - minus_value) / (2.0 * coordinate_delta))
+            relative = abs(ad - fd) / max(abs(ad), abs(fd), 1e-15)
+            rows.append({"solution_id": solution, "variable": name, "ad": ad, "fd": fd, "relative_difference": relative, "finite": math.isfinite(ad) and math.isfinite(fd), "nonzero": abs(ad) > 0.0})
+        time_delta = 1e-6
+        plus_time = torch.sum(evaluate_mms_source(solution, points, 0.037 + time_delta) * weights)
+        minus_time = torch.sum(evaluate_mms_source(solution, points, 0.037 - time_delta) * weights)
+        ad_time = float(time_grad)
+        fd_time = float((plus_time - minus_time) / (2.0 * time_delta))
+        time_relative = abs(ad_time - fd_time) / max(abs(ad_time), abs(fd_time), 1e-15)
+        rows.append({"solution_id": solution, "variable": "physical_time", "ad": ad_time, "fd": fd_time, "relative_difference": time_relative, "finite": math.isfinite(ad_time) and math.isfinite(fd_time), "nonzero": abs(ad_time) > 0.0})
         for field in fields:
             delta = 1e-6 * max(1.0, abs(float(getattr(PARAMETERS, field))))
             ad, fd = finite_difference(solution, points, 0.037, field, delta)
@@ -434,9 +451,9 @@ def run_ad() -> dict[str, Any]:
         "no_cross_step_graph": True,
         "formal_forward_no_grad": True,
     }
-    write_csv(STAGE / "results" / "source_ad_fd.csv", rows)
+    write_csv(STAGE / "results" / "source_ad_fd_v2.csv", rows)
     payload = {"schema_version": "sph-pio-poc.stage01f2.ad-fd.v1", "checks": checks, "maximum_ad_fd_relative_difference": maximum, "config_sha256": sha(CONFIG), "code_git_hash": git_hash(), "status": "PASS" if all(checks.values()) else "FAIL"}
-    write_json(STAGE / "results" / "source_ad_fd_summary.json", payload)
+    write_json(STAGE / "results" / "source_ad_fd_v2_summary.json", payload)
     return payload
 
 

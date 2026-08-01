@@ -15,7 +15,7 @@ import yaml
 ROOT = Path(__file__).resolve().parents[2]
 STAGE = ROOT / "06_experiments" / "stage_01f2_mms_implementation"
 CONFIG = STAGE / "configs" / "preregistered_stage01f2.yml"
-OUTPUT = STAGE / "results" / "stage01f2_evaluation.json"
+OUTPUT = STAGE / "results" / "stage01f2_evaluation_v2.json"
 
 
 def load(path: Path) -> dict[str, Any] | None:
@@ -34,7 +34,7 @@ def main() -> int:
     required = {
         "freeze": STAGE / "results" / "stage01f_freeze_audit.json",
         "mass": STAGE / "results" / "mass_initialization_summary.json",
-        "ad_fd": STAGE / "results" / "source_ad_fd_summary.json",
+        "ad_fd": STAGE / "results" / "source_ad_fd_v2_summary.json",
         **{f"zero_{task['run_id']}": STAGE / "results" / f"zero_source_{task['run_id']}.json" for task in cfg["zero_source_regression"]},
         **{f"reference_n{n}": STAGE / "results" / f"mms_b_n{n}_reference_summary.json" for n in (16, 32)},
         **{f"run_{task['run_id']}": STAGE / "run_summaries" / f"{task['run_id']}.json" for task in cfg["mms_runs"]},
@@ -57,7 +57,7 @@ def main() -> int:
     else:
         status = "MMS_IMPLEMENTATION_VERIFIED_PASS"
     payload = {
-        "schema_version": "sph-pio-poc.stage01f2.evaluation.v1",
+        "schema_version": "sph-pio-poc.stage01f2.evaluation.v2",
         "status": status, "missing_evidence": missing,
         "failed_evidence": explicit_failures,
         "stage01f_frozen_identity_pass": loaded.get("freeze", {}).get("status") == "PASS" if loaded.get("freeze") else False,

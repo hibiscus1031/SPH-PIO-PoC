@@ -190,7 +190,7 @@ def main() -> int:
                 if not ok:
                     break
         elif phase == "ad":
-            result = STAGE / "results" / "source_ad_fd_summary.json"
+            result = STAGE / "results" / "source_ad_fd_v2_summary.json"
             ok = run_child("ad", "source_ad_fd", [sys.executable, str(WORKER), "--kind", "ad"], result) and ok
         if not ok:
             break
