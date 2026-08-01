@@ -1,0 +1,267 @@
+stage: "01D-R"
+name: "Dynamic solver memory-behavior diagnosis and resource requalification"
+status: "PREREGISTERED_BEFORE_FIRST_STAGE_01DR_ROLLOUT"
+date: "2026-07-31"
+
+scope:
+  resource_diagnosis_only: true
+  formal_v2_time_or_space_convergence: false
+  v3_authorized: false
+  stage_02_authorized: false
+  neural_network_work: false
+  learning_labels: false
+  third_party_core_modification: false
+  frozen_stage_01d_files_may_be_modified: false
+
+frozen_stage_01d:
+  formal_run_commit: "3290b65837805ae5aa15f98580ffcd7e002161ba"
+  final_evidence_commit: "6c910a1a6d34befa205cb12c0a1f0d0c47c1f7f4"
+  annotated_tag: "stage-01d-v2-fail-resource-gate"
+  required_tag_target: "6c910a1a6d34befa205cb12c0a1f0d0c47c1f7f4"
+  retained_status: "V2_FAIL"
+  sha256_manifest: "06_experiments/stage_01dr_memory_diagnosis/results/stage01d_frozen_sha256_manifest.csv"
+  expected_manifest_rows: 15
+
+backend:
+  device: "cpu"
+  dtype: "float64"
+  python_environment: "sph-pio-poc"
+  one_rollout_per_process: true
+  campaign_processes_must_run_serially: true
+
+physics:
+  reference_density: 1.0
+  velocity_amplitude: 1.0
+  physical_viscosity: 0.02
+  sound_speed: 20.0
+  support_family: "increasing_neighbor"
+  layout: "regular"
+  seed: 0
+  domain_minimum: [-1.0, -1.0]
+  domain_maximum: [1.0, 1.0]
+  equations_and_integrator_frozen: true
+
+resolutions:
+  32:
+    particles: 1024
+    support_ratio: 5.0
+    time_step: 5.0e-4
+    steps: 500
+    frozen_reference_archive: "06_experiments/stage_01d_fixed_physics_tgv/results/trajectory_states/smoke_n32_increasing_neighbor_n32_h5p00_dt0p00050000_tf0p010_cs20p0_regular_s0.npz"
+  16:
+    particles: 256
+    support_ratio: 4.0
+    time_step: 1.0e-3
+    steps: 500
+    frozen_reference_archive: "06_experiments/stage_01d_fixed_physics_tgv/results/trajectory_states/smoke_n16_increasing_neighbor_n16_h4p00_dt0p00100000_tf0p010_cs20p0_regular_s0.npz"
+    rationale: "Use the frozen Stage 01D N16 smoke discretization so steps 0-4 admit direct deterministic state comparison."
+
+warmup:
+  allocator_warmup_last_step: 25
+  post_warmup_first_step: 26
+  post_warmup_last_step: 500
+
+sampling:
+  solver_step_interval: 5
+  mandatory_solver_steps: [0, 1, 2, 3, 4, 25, 26, 500]
+  stage01d_diagnostic_steps: [0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375, 400, 425, 450, 475, 500]
+  minimal_safety_audit_steps: [0, 25, 100, 250, 500]
+  tensor_inventory_steps: [0, 1, 4, 25, 26, 100, 200, 250, 300, 400, 500]
+  sentinel_tensor_inventory_steps: [0, 1, 4, 10, 20]
+  tensor_inventory_phases: ["imports_complete", "initial_state_complete", "first_neighborhood_complete", "warmup_complete", "before_archive", "after_archive", "before_process_exit"]
+  archive_checkpoint_steps: [0, 1, 2, 3, 4, 25, 100, 250, 400, 500]
+  process_phases:
+    - "process_start"
+    - "imports_complete"
+    - "initial_state_complete"
+    - "first_neighborhood_complete"
+    - "warmup_complete"
+    - "solver_step"
+    - "before_archive"
+    - "after_archive"
+    - "before_process_exit"
+
+variants:
+  A:
+    name: "solver_minimal"
+    torch_no_grad: true
+    stage01d_scalar_diagnostics: false
+    retained_full_state_checkpoints: false
+    final_npz_archive: false
+    memory_sampling: "low_frequency"
+  B:
+    name: "diagnostics_enabled"
+    torch_no_grad: true
+    stage01d_scalar_diagnostics: true
+    retained_full_state_checkpoints: false
+    final_npz_archive: false
+  C:
+    name: "diagnostics_and_archive"
+    torch_no_grad: true
+    stage01d_scalar_diagnostics: true
+    retained_full_state_checkpoints: true
+    final_npz_archive: true
+  D:
+    name: "graph_retention_sentinel"
+    formal_resource_qualification: false
+    resolution: 32
+    support_ratio: 5.0
+    time_step: 5.0e-4
+    steps: 20
+    modes: ["no_grad", "grad_enabled"]
+    differentiable_inputs: ["positions", "velocities"]
+    current_rss_safety_stop_bytes: 4000000000
+
+repetitions:
+  qualifying_repeats_per_resolution_variant: 3
+  graph_sentinel_repeats_per_mode: 1
+
+randomized_execution:
+  qualifying_shuffle_seed: 20260731
+  sentinel_shuffle_seed: 20260732
+  qualifying_order:
+    - {order: 1, resolution: 16, variant: "C", repeat: 1}
+    - {order: 2, resolution: 32, variant: "A", repeat: 3}
+    - {order: 3, resolution: 32, variant: "A", repeat: 2}
+    - {order: 4, resolution: 32, variant: "B", repeat: 1}
+    - {order: 5, resolution: 16, variant: "B", repeat: 2}
+    - {order: 6, resolution: 32, variant: "B", repeat: 2}
+    - {order: 7, resolution: 32, variant: "B", repeat: 3}
+    - {order: 8, resolution: 32, variant: "C", repeat: 3}
+    - {order: 9, resolution: 32, variant: "C", repeat: 2}
+    - {order: 10, resolution: 16, variant: "B", repeat: 3}
+    - {order: 11, resolution: 16, variant: "A", repeat: 3}
+    - {order: 12, resolution: 32, variant: "C", repeat: 1}
+    - {order: 13, resolution: 16, variant: "A", repeat: 2}
+    - {order: 14, resolution: 16, variant: "B", repeat: 1}
+    - {order: 15, resolution: 32, variant: "A", repeat: 1}
+    - {order: 16, resolution: 16, variant: "C", repeat: 2}
+    - {order: 17, resolution: 16, variant: "C", repeat: 3}
+    - {order: 18, resolution: 16, variant: "A", repeat: 1}
+  sentinel_order:
+    - {order: 1, mode: "no_grad", repeat: 1}
+    - {order: 2, mode: "grad_enabled", repeat: 1}
+
+measurement:
+  current_rss_source: "Darwin libproc PROC_PIDTASKINFO resident_size in bytes; ps KiB fallback only"
+  vms_source: "Darwin libproc PROC_PIDTASKINFO virtual_size in bytes; ps KiB fallback only"
+  peak_rss_source: "resource.getrusage(RUSAGE_SELF); retained only as a distinct peak field"
+  page_fault_source: "resource.getrusage minor and major faults when exposed"
+  python_memory_source: "tracemalloc current and peak"
+  gc_tracked_object_source: "len(gc.get_objects())"
+  tensor_inventory_source: "sparse gc traversal with logical tensor bytes and deduplicated storage bytes"
+  current_and_peak_must_not_be_conflated: true
+  tensor_inventory_sparse_to_limit_probe_effect: true
+
+post_warmup_analysis:
+  decimal_megabyte_bytes: 1000000
+  robust_slope: "Theil-Sen median of all pairwise sample slopes"
+  first_quartile: "median of current-RSS samples whose solver steps are 26 through 144 inclusive"
+  final_quartile: "median of current-RSS samples whose solver steps are 382 through 500 inclusive"
+  first_quartile_step_range: [26, 144]
+  final_quartile_step_range: [382, 500]
+  rolling_window_steps: 50
+  exact_step_pairs_required_for_rolling_increase: true
+  required_memory_sample_step_coverage: "every multiple of 5 plus all mandatory solver steps"
+  rss_final_minus_first_maximum_bytes: 100000000
+  rss_final_over_first_fractional_increase_maximum: 0.20
+  rss_robust_slope_maximum_bytes_per_step: 200000
+  sustained_positive_run_rule: "Theil-Sen slope > 0 and final sampled value > first sampled value"
+  sustained_positive_variant_rule: "at least 2 of 3 repeats; if only two C repeats qualify, both must agree"
+  tracemalloc_sustained_growth_practical_floor:
+    robust_slope_minimum_bytes_per_step: 10240
+    final_minus_first_minimum_bytes: 1048576
+  gc_tracked_object_sustained_growth_practical_floor:
+    robust_slope_minimum_objects_per_step: 0.01
+    final_minus_first_minimum_objects: 4
+  rss_positive_slope_significance:
+    method: "circular moving-block residual bootstrap around Theil-Sen fit"
+    block_solver_steps: 50
+    resamples: 2000
+    confidence_level: 0.95
+    seed: 20260733
+    per_run_seed_derivation: "seed + unsigned big-endian integer represented by the first 4 bytes of SHA-256(run_id)"
+
+qualification:
+  n32_variant_a_completed_required: 3
+  n32_variant_b_completed_required: 3
+  n32_variant_c_completed_required: 2
+  all_n16_variants_required_for_scale_control: 9
+  current_rss_stop_bytes: 8000000000
+  system_memory_free_percentage_below: 10.0
+  system_memory_pressure_consecutive_samples: 2
+  system_memory_pressure_consecutive_definition: "Consecutive acquired pressure-bearing checkpoints count even when distinct process phases share one solver-step index; checkpoints without a pressure reading neither increment nor reset the streak."
+  nan_or_inf_allowed: false
+  neighbor_topology_defects_allowed: 0
+  minimum_separation_over_dx: 0.25
+  maximum_relative_pair_force_residual: 1.0e-12
+  maximum_characteristic_normalized_internal_force: 1.0e-10
+  viscous_power_positive_absolute_tolerance: 1.0e-12
+  variant_b_extra_memory_maximum_bytes: 100000000
+  variant_b_extra_memory_fraction_of_a_maximum: 0.20
+  variant_c_archive_current_rss_increment_maximum_bytes: 100000000
+  variant_c_archive_current_rss_increment_fraction_maximum: 0.20
+  child_reclamation_timeout_seconds: 10.0
+  every_child_must_be_absent_after_wait: true
+  variant_c_third_repeat_may_fail_only_during_archive_after_completed_solver: true
+  independent_numeric_regression_workers: [16, 32]
+  first_four_state_comparison:
+    steps: [0, 1, 2, 3, 4]
+    fields: ["positions", "velocities", "densities", "pressures"]
+    absolute_tolerance: 1.0e-13
+    relative_tolerance: 1.0e-13
+    bitwise_equality_reported_and_expected: true
+
+retention_fix_policy:
+  permitted:
+    - "missing torch.no_grad"
+    - "diagnostic tensor detachment"
+    - "unnecessary full-state history"
+    - "retained midpoint state"
+    - "retained neighbor or force temporaries"
+    - "solver-loop report or archive accumulation"
+    - "traceback or hook retention"
+  forbidden:
+    - "density formula"
+    - "EOS"
+    - "pressure formula"
+    - "viscosity formula"
+    - "support ratio"
+    - "time step"
+    - "physical viscosity"
+    - "sound speed"
+    - "RK2"
+    - "particle layout"
+    - "conservation structure"
+  requirements: ["failing reproducer", "regression test", "before/after curve", "separate commit", "retain original failure evidence"]
+
+retention_fix_evidence:
+  applied: false
+  permitted_class: ""
+  failing_reproducer_path: ""
+  regression_test_path: ""
+  before_curve_path: ""
+  after_curve_path: ""
+  separate_commit: ""
+  rationale: "Static audit found bounded temporaries but no demonstrated step-growing project-side retention chain before the formal Stage 01D-R campaign."
+
+decision:
+  allowed_statuses:
+    - "RESOURCE_PASS_ALLOCATOR_PLATEAU"
+    - "RESOURCE_PASS_AFTER_RETENTION_FIX"
+    - "RESOURCE_CONDITIONAL"
+    - "RESOURCE_FAIL_LINEAR_GROWTH"
+    - "RESOURCE_FAIL_UNRESOLVED"
+  pass_allocator_plateau: "All mandatory completion, numerical, topology, resource, tensor, diagnostics-overhead, archive-isolation, and child-reclamation gates pass without a project-side retention fix."
+  pass_after_retention_fix: "The same gates pass after a separately committed permitted retention fix with retained before/after evidence."
+  conditional: "Numerics and post-warm-up solver RSS/tensor behavior are bounded, but a larger diagnostics or archive cost is isolated and reproducibly attributable without solver-step accumulation."
+  fail_linear_growth: "At least two N32 repeats of one qualifying variant show the preregistered sustained positive RSS or live-tensor signature, or synchronized RSS/tensor/Python-memory growth is otherwise repeatable."
+  fail_unresolved: "Mandatory evidence is incomplete, inconsistent, or insufficient to distinguish allocator caching from project-side retention."
+  precedence:
+    - "RESOURCE_FAIL_LINEAR_GROWTH if repeated N32 solver growth is confirmed"
+    - "RESOURCE_FAIL_UNRESOLVED for incomplete, conflicting, nonnumerical, provenance, sentinel, archive-localization, or reclamation failures"
+    - "RESOURCE_CONDITIONAL only for isolated bounded-solver diagnostics/archive cost above its registered overhead bound"
+    - "RESOURCE_PASS_AFTER_RETENTION_FIX only with complete separately committed before/after fix evidence"
+    - "RESOURCE_PASS_ALLOCATOR_PLATEAU when all A-J gates pass without a retention fix"
+  old_stage_01d_status_must_remain: "V2_FAIL"
+  stage_01d2_may_only_be_recommended_not_started: true
