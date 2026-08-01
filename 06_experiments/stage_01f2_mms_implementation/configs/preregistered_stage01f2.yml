@@ -1,0 +1,70 @@
+schema_version: sph-pio-poc.stage01f2.preregistration.v1
+stage: Stage 01F2
+name: WCSPH MMS implementation and code-path verification
+scope:
+  implementation_smoke_only: true
+  formal_time_study: false
+  formal_space_study: false
+  new_v2_state: false
+  v3_started: false
+  stage02_started: false
+  training_started: false
+  learning_labels_generated: false
+frozen_stage01f:
+  preregistration_commit: 153c1d274d91640615805cbf02fa4174e11d336b
+  evidence_commit: f835b059d98c5a417551a9a349b3537b8c4d2b35
+  tag: stage-01f-mms-specification-pass
+  status: MMS_SPECIFICATION_PASS
+  manifest: 06_experiments/stage_01f2_mms_implementation/configs/stage01f_frozen_sha256_manifest.csv
+physics:
+  domain_minimum: [-1.0, -1.0]
+  domain_maximum: [1.0, 1.0]
+  rho0: 1.0
+  sound_speed: 20.0
+  viscosity: 0.02
+  wave_number: 3.141592653589793
+  density_amplitude: 0.0025
+  translation_speed: 0.5
+  decay_rate: 0.7
+  vortex_amplitude: 1.0
+  dtype: float64
+  device: cpu
+zero_source_regression:
+  - {run_id: zero_n16, resolution: 16, support_ratio: 4.0, dt: 0.001, steps: 100, zero_flow: true}
+  - {run_id: tgv_n16_20, resolution: 16, support_ratio: 4.0, dt: 0.001, steps: 20, zero_flow: false}
+  - {run_id: tgv_n32_20, resolution: 32, support_ratio: 5.0, dt: 0.0005, steps: 20, zero_flow: false}
+mms_runs:
+  - {run_id: A1, solution_id: MMS_A, resolution: 16, support_ratio: 4.0, dt: 0.0005, steps: 20, repeat: 1}
+  - {run_id: A2_repeat1, solution_id: MMS_A, resolution: 32, support_ratio: 5.0, dt: 0.00025, steps: 80, repeat: 1}
+  - {run_id: A2_repeat2, solution_id: MMS_A, resolution: 32, support_ratio: 5.0, dt: 0.00025, steps: 80, repeat: 2}
+  - {run_id: B1, solution_id: MMS_B, resolution: 16, support_ratio: 4.0, dt: 0.0005, steps: 20, repeat: 1}
+  - {run_id: B2_repeat1, solution_id: MMS_B, resolution: 32, support_ratio: 5.0, dt: 0.00025, steps: 80, repeat: 1}
+  - {run_id: B2_repeat2, solution_id: MMS_B, resolution: 32, support_ratio: 5.0, dt: 0.00025, steps: 80, repeat: 2}
+reference:
+  sample_times: [0.0, 0.0025, 0.005, 0.01, 0.02]
+  baseline_rtol: 1.0e-12
+  baseline_atol: 1.0e-14
+  tighter_rtol: 1.0e-13
+  tighter_atol: 1.0e-15
+  maximum_step: 0.00125
+gates:
+  reference_position_linf: 1.0e-10
+  pair_force_residual: 1.0e-12
+  internal_force_residual: 1.0e-10
+  viscous_power_positive_tolerance: 1.0e-12
+  momentum_defect: 1.0e-10
+  minimum_separation_over_dx: 0.25
+  final_velocity_relative_l2: 1.0
+  final_density_relative_l2: 0.2
+  final_position_relative_l2: 0.2
+  ad_fd_relative_difference: 1.0e-5
+  current_rss_bytes: 2000000000
+  peak_rss_bytes: 4000000000
+  rss_quartile_absolute_increase_bytes: 250000000
+  rss_quartile_relative_increase: 0.5
+  step_time_final_first_quartile_ratio: 1.30
+allowed_statuses:
+  - MMS_IMPLEMENTATION_VERIFIED_PASS
+  - MMS_IMPLEMENTATION_VERIFIED_CONDITIONAL
+  - MMS_IMPLEMENTATION_FAIL
+  - MMS_IMPLEMENTATION_EVIDENCE_INCOMPLETE
