@@ -1,0 +1,82 @@
+{
+  "checks": {
+    "all_finite": true,
+    "dense_baseline_tighter": true,
+    "dense_tighter_third": true,
+    "old_sparse_replay_identity": true,
+    "sparse_dense_baseline_state": true,
+    "sparse_dense_tighter_state": true
+  },
+  "code_git_hash": "bc9c6f9bf3aabecca0b5806b4ab16c32b6b8064c",
+  "comparisons": {
+    "dense_baseline_tighter_density_linf": 4.6629367034256575e-15,
+    "dense_baseline_tighter_position_linf": 2.55351295663786e-15,
+    "dense_baseline_tighter_pressure_linf": 1.865174681370263e-12,
+    "dense_baseline_tighter_total_acceleration_linf": 5.781153333828115e-12,
+    "dense_baseline_tighter_velocity_linf": 3.1585845050585704e-14,
+    "dense_tighter_third_density_linf": 6.8833827526759706e-15,
+    "dense_tighter_third_position_linf": 4.107825191113079e-15,
+    "dense_tighter_third_pressure_linf": 2.7533531010703882e-12,
+    "dense_tighter_third_total_acceleration_linf": 7.295719584021754e-12,
+    "dense_tighter_third_velocity_linf": 3.11972669919669e-14,
+    "sparse_baseline_dense_baseline_density_linf": 4.440892098500626e-16,
+    "sparse_baseline_dense_baseline_position_linf": 1.1102230246251565e-16,
+    "sparse_baseline_dense_baseline_pressure_linf": 1.7763568394002505e-13,
+    "sparse_baseline_dense_baseline_total_acceleration_linf": 4.689582056016661e-13,
+    "sparse_baseline_dense_baseline_velocity_linf": 1.0269562977782698e-15,
+    "sparse_tighter_dense_tighter_density_linf": 4.440892098500626e-16,
+    "sparse_tighter_dense_tighter_position_linf": 1.1102230246251565e-16,
+    "sparse_tighter_dense_tighter_pressure_linf": 1.7763568394002505e-13,
+    "sparse_tighter_dense_tighter_total_acceleration_linf": 2.5868196473766147e-13,
+    "sparse_tighter_dense_tighter_velocity_linf": 1.3322676295501878e-15
+  },
+  "config_sha256": "07d9ebda54bbeadd83e1f5e1dd595efa31768d1d82ad3b1755a26f49cff073c5",
+  "dense_reference_path": "06_experiments/stage_01f3r_reference_qualification/references/dense_mms_b_three_level.npz",
+  "dense_reference_sha256": "0cb908379840b191fa42c3c87a7ed6c550c3c3f5a2782adc922fb9f68cbc1d66",
+  "old_sparse_replay_identity": {
+    "baseline_linf": 0.0,
+    "tighter_linf": 0.0
+  },
+  "parameter_sha256": "53896875a4c28e6812100df8034db69641f0d6890e709199be0a7fc839f4592d",
+  "schema_version": "sph-pio-poc.stage01f3r.reference.v1",
+  "solution": "MMS_B",
+  "sparse_replay_path": "06_experiments/stage_01f3r_reference_qualification/references/sparse_mms_b_41_time_replay.npz",
+  "sparse_replay_sha256": "ff68ac1e0a630397c5a595017adce7439b7f1876e818e96223752f550461b776",
+  "statistics": {
+    "dense": {
+      "baseline": {
+        "atol": 1e-14,
+        "max_step": 3.125e-05,
+        "nfev": 3965,
+        "rtol": 1e-12
+      },
+      "third": {
+        "atol": 1e-15,
+        "max_step": 7.8125e-06,
+        "nfev": 15497,
+        "rtol": 1e-13
+      },
+      "tighter": {
+        "atol": 1e-15,
+        "max_step": 1.5625e-05,
+        "nfev": 7805,
+        "rtol": 1e-13
+      }
+    },
+    "sparse": {
+      "baseline": {
+        "atol": 1e-14,
+        "max_step": 3.125e-05,
+        "nfev": 3965,
+        "rtol": 1e-12
+      },
+      "tighter": {
+        "atol": 1e-15,
+        "max_step": 1.5625e-05,
+        "nfev": 7805,
+        "rtol": 1e-13
+      }
+    }
+  },
+  "status": "PASS"
+}

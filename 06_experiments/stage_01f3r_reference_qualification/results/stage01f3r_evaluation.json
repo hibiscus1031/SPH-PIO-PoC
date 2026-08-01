@@ -1,0 +1,76 @@
+{
+  "checks": {
+    "cutoff_sparse_dense_topology": true,
+    "dense_three_level_references": true,
+    "evidence_complete": true,
+    "prohibited_scope_false": true,
+    "single_pilot": true,
+    "stage01f3_frozen": true
+  },
+  "code_git_hash": "cd76d042b9a3efb2233cdb31fd7057f3da568387",
+  "config_sha256": "07d9ebda54bbeadd83e1f5e1dd595efa31768d1d82ad3b1755a26f49cff073c5",
+  "evidence": {
+    "cutoff": {
+      "path": "06_experiments/stage_01f3r_reference_qualification/results/cutoff_smoothness_summary.json",
+      "sha256": "d4eeea0ff6f72a268ff85e71cce731ff86e394db5e56cf48588764382babbe8d"
+    },
+    "equivalence": {
+      "path": "06_experiments/stage_01f3r_reference_qualification/results/sparse_dense_equivalence_summary.json",
+      "sha256": "d87fda2ef0ce9b84a8e974afcf09ab65644dfc7874724f6deae267d159c4fd88"
+    },
+    "events": {
+      "path": "06_experiments/stage_01f3r_reference_qualification/results/topology_event_summary.json",
+      "sha256": "5cb86fbb46e0ee844d28e046d0243f506eb4fcff4d9231b13939fff1a93e28c1"
+    },
+    "freeze": {
+      "path": "06_experiments/stage_01f3r_reference_qualification/results/stage01f3_freeze_audit.json",
+      "sha256": "97171f025f2942499888b012295e0d175f60b4357f709a9c89021f6040a9f074"
+    },
+    "mms_a": {
+      "path": "06_experiments/stage_01f3r_reference_qualification/results/mms_a_reference_qualification.json",
+      "sha256": "6d5633045ade32c43fa8ad87e136e970fc51c79b3c9fbcfe4aec9a2783cc0449"
+    },
+    "mms_b": {
+      "path": "06_experiments/stage_01f3r_reference_qualification/results/mms_b_reference_qualification.json",
+      "sha256": "8bc08edde5e0acff94256ca9a180926ddd936989355528de427ddb5704475364"
+    },
+    "pilot": {
+      "path": "06_experiments/stage_01f3r_reference_qualification/results/pilot_mms_b_n16.json",
+      "sha256": "d0ecb77454f2e4ca7525c6d5221c9ffa2469f3a9c266ad7af45ec991356721ab"
+    }
+  },
+  "references": {
+    "dense_mms_a_three_level": {
+      "path": "06_experiments/stage_01f3r_reference_qualification/references/dense_mms_a_three_level.npz",
+      "sha256": "8f80dad7eb3be461bb2f1890252a1b82888196895e8c308a321a7bddd2793d8d"
+    },
+    "dense_mms_b_three_level": {
+      "path": "06_experiments/stage_01f3r_reference_qualification/references/dense_mms_b_three_level.npz",
+      "sha256": "0cb908379840b191fa42c3c87a7ed6c550c3c3f5a2782adc922fb9f68cbc1d66"
+    },
+    "sparse_mms_a_41_time_replay": {
+      "path": "06_experiments/stage_01f3r_reference_qualification/references/sparse_mms_a_41_time_replay.npz",
+      "sha256": "fd8d1c5ea5836bbe3ea5c28586103529f6ad4025c887371e8420e962d216d02b"
+    },
+    "sparse_mms_b_41_time_replay": {
+      "path": "06_experiments/stage_01f3r_reference_qualification/references/sparse_mms_b_41_time_replay.npz",
+      "sha256": "ff68ac1e0a630397c5a595017adce7439b7f1876e818e96223752f550461b776"
+    }
+  },
+  "schema_version": "sph-pio-poc.stage01f3r.evaluation.v1",
+  "scope": {
+    "convergence_matrix_run": false,
+    "gci_computed": false,
+    "labels_generated": false,
+    "space_order_computed": false,
+    "stage01f3b_started": false,
+    "stage01g_started": false,
+    "stage02_started": false,
+    "time_order_computed": false,
+    "training_started": false,
+    "v3_started": false
+  },
+  "stage01f3_historical_status_unchanged": "MMS_CONVERGENCE_VERIFICATION_FAIL",
+  "stage01f3b_eligibility": true,
+  "status": "SEMIDISCRETE_REFERENCE_QUALIFIED_DENSE_EQUIVALENT"
+}

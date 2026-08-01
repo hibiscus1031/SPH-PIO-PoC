@@ -1,0 +1,33 @@
+{
+  "case_count": 461,
+  "checks": {
+    "acceleration_absolute": true,
+    "acceleration_relative": true,
+    "baseline_state_count": true,
+    "density": true,
+    "edge_switch_states_present": true,
+    "finite": true,
+    "pressure": true
+  },
+  "cutoff_inclusion_convention": "r=H sparse tolerance edge may exist but aggregated RHS is unchanged because kernel and pair terms are zero",
+  "maxima": {
+    "density_absolute_linf": 0.0,
+    "density_relative_linf": 0.0,
+    "dv_dt_absolute_linf": 4.884981308350689e-15,
+    "dv_dt_relative_linf": 3.4598122795049946e-15,
+    "dx_dt_absolute_linf": 0.0,
+    "dx_dt_relative_linf": 0.0,
+    "pressure_absolute_linf": 0.0,
+    "pressure_acceleration_absolute_linf": 4.829470157119431e-15,
+    "pressure_acceleration_relative_linf": 2.0185125131837244e-15,
+    "pressure_relative_linf": 0.0,
+    "source_absolute_linf": 0.0,
+    "source_relative_linf": 0.0,
+    "total_acceleration_absolute_linf": 4.884981308350689e-15,
+    "total_acceleration_relative_linf": 3.4598122795049946e-15,
+    "viscosity_acceleration_absolute_linf": 3.885780586188048e-16,
+    "viscosity_acceleration_relative_linf": 1.096816415023098e-15
+  },
+  "schema_version": "sph-pio-poc.stage01f3r.sparse-dense.v1",
+  "status": "PASS"
+}

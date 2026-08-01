@@ -1,0 +1,38 @@
+{
+  "checks": {
+    "exact_reference_errors_finite": true,
+    "internal_external_balance": true,
+    "position_velocity_finite": true,
+    "resource_policy": true,
+    "single_preregistered_configuration": true,
+    "topology_structural_audit": true
+  },
+  "code_git_hash": "8943d7ec9716dd703008b7364451877d31bd8a15",
+  "comparison_reference": "dense baseline DOP853 at the final common physical time",
+  "config_sha256": "07d9ebda54bbeadd83e1f5e1dd595efa31768d1d82ad3b1755a26f49cff073c5",
+  "dense_reference_sha256": "0cb908379840b191fa42c3c87a7ed6c550c3c3f5a2782adc922fb9f68cbc1d66",
+  "dt": 0.00025,
+  "metrics": {
+    "exact_position_linf": 3.439343461536505e-05,
+    "exact_velocity_linf": 0.0065314066799879835,
+    "maximum_current_rss_bytes": 264667136,
+    "maximum_force_assembly_defect": 4.690017491075927e-16,
+    "maximum_internal_force_residual": 1.2352383564005345e-17,
+    "maximum_momentum_defect": 1.6468118444945034e-17,
+    "maximum_pair_force_residual": 0.0,
+    "maximum_topology_defects": 0,
+    "peak_rss_bytes": 264880128,
+    "reference_position_linf": 1.0103509581988863e-08,
+    "reference_velocity_linf": 1.4842799585790106e-06,
+    "rss_quartile_absolute_increase_bytes": 4096000.0,
+    "rss_quartile_relative_increase": 0.01575299306868305,
+    "step_time_final_first_quartile_ratio": 1.0069715465801805
+  },
+  "position_error_convention": "periodic minimum-image distance",
+  "resolution": 16,
+  "schema_version": "sph-pio-poc.stage01f3r.pilot.v1",
+  "solution": "MMS_B",
+  "status": "PASS",
+  "steps": 40,
+  "t_final": 0.01
+}

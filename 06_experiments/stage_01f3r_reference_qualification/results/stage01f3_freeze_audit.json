@@ -1,0 +1,18 @@
+{
+  "manifest_checks": {
+    "06_experiments/stage_01f3_mms_convergence/configs/stage01f2_frozen_sha256_manifest.csv": true,
+    "06_experiments/stage_01f3_mms_convergence/references/semidiscrete_mms_a_n16_dop853.npz": true,
+    "06_experiments/stage_01f3_mms_convergence/references/semidiscrete_mms_b_n16_dop853.npz": true,
+    "06_experiments/stage_01f3_mms_convergence/results/prerequisite_static.json": true,
+    "06_experiments/stage_01f3_mms_convergence/results/semidiscrete_mms_a_reference.json": true,
+    "06_experiments/stage_01f3_mms_convergence/results/semidiscrete_mms_b_reference.json": true,
+    "06_experiments/stage_01f3_mms_convergence/results/stage01f3_evaluation.json": true,
+    "06_experiments/stage_01f3_mms_convergence/results/support_path_preregistration.csv": true,
+    "07_reports/stage_01f3_final_report.md": true,
+    "07_reports/stage_01f3_uncertainty_assessment.md": true
+  },
+  "stage01f3_status": "MMS_CONVERGENCE_VERIFICATION_FAIL",
+  "status": "PASS",
+  "tag_pass": true,
+  "tag_target": "2570f6bea1b668feae7bb60e6cb71094e18053bc"
+}

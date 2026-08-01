@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "kernel_first_derivative_continuous": true,
+    "kernel_value_continuous": true,
+    "pair_acceleration_negligible": true,
+    "pressure_pair_continuous": true,
+    "viscosity_pair_continuous": true
+  },
+  "inclusion_convention": "dense excludes r>=H; sparse may retain tolerance-shell edges, whose W, gradient and pair terms evaluate to zero at q>=1",
+  "left_limit_probe_q": 0.9999999999,
+  "maximum_probed_acceleration_contribution": 2.3842832302386838e-20,
+  "schema_version": "sph-pio-poc.stage01f3r.cutoff.v1",
+  "status": "PASS"
+}

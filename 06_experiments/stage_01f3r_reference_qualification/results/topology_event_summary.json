@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "aggregated_rhs_no_finite_jump": true,
+    "all_bracket_cutoff": true,
+    "all_reciprocal": true,
+    "evaluation_points_at_cutoff": true,
+    "events_present": true,
+    "pair_contribution_negligible": true,
+    "structural_defects_zero": true
+  },
+  "event_count": 216,
+  "maximum_aggregated_rhs_jump": 7.949569891252395e-10,
+  "maximum_pair_contribution": 1.964295730705849e-52,
+  "maximum_structural_defects": 0,
+  "schema_version": "sph-pio-poc.stage01f3r.topology-events.v1",
+  "status": "PASS"
+}
