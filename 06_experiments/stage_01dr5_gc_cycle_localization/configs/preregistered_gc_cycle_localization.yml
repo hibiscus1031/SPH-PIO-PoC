@@ -1,0 +1,112 @@
+stage: "Stage 01D-R5"
+title: "GC-delayed retired-storage cycle localization and remediation"
+created_before_formal_runs: true
+
+historical_freeze:
+  stage01dr4_preregistered_commit: "32bc4682f4f93eebce831a97f43971f57f087b55"
+  stage01dr4_evidence_commit: "a3064fe6912657e21f1b842dd8dcbc2f062e82bf"
+  stage01dr4_tag: "stage-01dr4-retention-redetected-gc-delayed"
+  stage01d_status: "V2_FAIL"
+  stage01dr_status: "RESOURCE_FAIL_LINEAR_GROWTH"
+  stage01dr2_status: "ATTRIBUTION_UNRESOLVED"
+  stage01dr3_status: "R3_CONFIRMATION_UNRESOLVED"
+  stage01dr4_status: "R4_RETENTION_REDETECTED"
+
+environment:
+  python_environment: "sph-pio-poc"
+  backend: "CPU"
+  dtype: "float64"
+
+physics:
+  resolution: 32
+  particles: 1024
+  support_ratio: 5.0
+  time_step: 5.0e-4
+  sound_speed: 20.0
+  physical_viscosity: 0.02
+  seed: 0
+  domain_minimum: [-1.0, -1.0]
+  domain_maximum: [1.0, 1.0]
+  zero_flow: true
+  frozen_topology: true
+
+gc_controls:
+  steps: 2000
+  repeats: 3
+  modes:
+    G1:
+      name: "default_gc"
+      manual_collect: false
+      disable_gc: false
+    G2:
+      name: "gc_disabled"
+      manual_collect: false
+      disable_gc: true
+    G3:
+      name: "periodic_collect"
+      manual_collect: true
+      collect_interval_steps: 25
+      disable_gc: false
+  sample_interval_steps: 1
+  referrer_graph_maximum_depth: 4
+
+localization:
+  mode: "L1"
+  steps: 200
+  repeats: 1
+  provenance_capture_run: "stage01dr5_l1_r1"
+  default_gc: true
+  collect_before_capture: false
+
+isolation:
+  steps: 500
+  repeats: 3
+  modes: ["I0", "I1", "I2", "I3", "I4"]
+  external_checkpoint_interval_steps: 25
+
+classification:
+  minimum_old_age_accepted_steps: 2
+  disabled_gc_minimum_retired_slope_storage_per_step: 0.05
+  disabled_gc_minimum_r_squared: 0.50
+  default_gc_required_natural_collection_events: 2
+  default_gc_second_half_peak_allowance_storages: 32
+  default_gc_unbounded_slope_storage_per_step: 0.05
+  isolation_tensor_byte_drift_allowance: 1048576
+  periodic_gc_required_checkpoint_zero_fraction: 1.0
+
+r4_frozen_evidence:
+  control_f_semantic_summary.csv: "7c8113541dc1b0b936ac155968a466482d08b64351a7ba74b56fe50d18804d6c"
+  fifteen_reference_identity.csv: "ac3797f8949ea30ba835e5ffca8421cbd6387020f9d1c6c3b7e36c86d8cd752e"
+  r4_gate_evidence.csv: "1aff19fa145b00f53582b3706d24bea5e9129bccb61cd4e56f792eb45a22a74d"
+  analysis_summary.json: "1c766186f5706afd9918400e9a1f723fc9a3eb4501d4798433943bef05d22f4d"
+  stage01dr4_status.txt: "737e6a0d9db70184e0cac35dc6cb2e1c445ef0ad42e11601fbfbbc93bef15df3"
+
+allowed_fixes:
+  require_explicit_project_owned_holding_relation: true
+  allow_per_step_gc_collect_as_fix: false
+  fix_implemented_in_preregistered_campaign: false
+
+allowed_statuses:
+  - "R5_INSTRUMENTATION_RETENTION_IDENTIFIED_AND_REMOVED"
+  - "R5_SOLVER_CYCLE_IDENTIFIED_AND_FIXED"
+  - "R5_BOUNDED_GC_DELAY_CONFIRMED"
+  - "R5_UNBOUNDED_RETENTION_CONFIRMED"
+  - "R5_ATTRIBUTION_UNRESOLVED"
+
+stage01d2_application_eligible_statuses:
+  - "R5_INSTRUMENTATION_RETENTION_IDENTIFIED_AND_REMOVED"
+  - "R5_SOLVER_CYCLE_IDENTIFIED_AND_FIXED"
+
+extra_resource_audit_eligible_statuses:
+  - "R5_BOUNDED_GC_DELAY_CONFIRMED"
+
+prohibitions:
+  modify_historical_statuses: false
+  run_stage01d2: false
+  run_formal_v2_convergence: false
+  modify_density_eos_pressure_viscosity: false
+  modify_rk2_or_physical_parameters: false
+  modify_third_party_source: false
+  run_v3: false
+  run_stage02: false
+  train_neural_network: false
