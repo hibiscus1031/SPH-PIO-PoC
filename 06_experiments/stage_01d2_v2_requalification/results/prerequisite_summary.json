@@ -1,0 +1,23 @@
+{
+  "config_sha256": "87583422ddf81d1252a618cf87a57795097d2c519df1ded90d531c66ab2dcceb",
+  "identity_checks": {
+    "explicit_midpoint_ode_evidence": true,
+    "r5_tag_target": true,
+    "stage01c_ad_baseline": true,
+    "stage01c_disorder_design": true,
+    "stage01c_manifest": true,
+    "stage01d_primary_config": true,
+    "stage01dp_manifest_rows_hash_match": true,
+    "stage01dp_tag_target": true
+  },
+  "pytest_log_path": "06_experiments/stage_01d2_v2_requalification/logs/full_pytest.log",
+  "pytest_return_code": 0,
+  "pytest_wall_time_seconds": 49.351033792016096,
+  "schema_version": "sph-pio-poc.stage01d2.prerequisite.v1",
+  "status": "PASS",
+  "trajectory_ids": [
+    "stage01d2_prereq_zero_n16",
+    "stage01d2_prereq_smoke_n16",
+    "stage01d2_prereq_smoke_n32"
+  ]
+}

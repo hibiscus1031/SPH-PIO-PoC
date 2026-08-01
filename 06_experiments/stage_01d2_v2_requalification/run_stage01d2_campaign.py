@@ -123,13 +123,22 @@ def main() -> int:
         for parameter in cfg["autograd_regression"]["parameters"]:
             for steps in cfg["autograd_regression"]["steps"]:
                 case_id = f"{parameter}_steps{steps}"
-                ok = run_child(kind="ad", case_id=case_id, phase="ad", command=[sys.executable, str(AD_WORKER), "--parameter", parameter, "--steps", str(steps)], result_path=ROOT / "results" / "ad_cases" / f"{case_id}.json", baseline_rss=baseline) and ok
+                result_path = ROOT / "results" / "ad_cases" / f"{case_id}.json"
+                if result_path.exists():
+                    ok = json.loads(result_path.read_text(encoding="utf-8"))["status"] == "PASS" and ok
+                    continue
+                ok = run_child(kind="ad", case_id=case_id, phase="ad", command=[sys.executable, str(AD_WORKER), "--parameter", parameter, "--steps", str(steps)], result_path=result_path, baseline_rss=baseline) and ok
     else:
         for task in cfg["trajectory_matrix"]:
             if task["phase"] == args.phase:
                 run_id = task["run_id"]
-                ok = run_child(kind="trajectory", case_id=run_id, phase=args.phase, command=[sys.executable, str(WORKER), "--run-id", run_id], result_path=ROOT / "run_summaries" / f"{run_id}.json", baseline_rss=baseline) and ok
-                if not ok:
+                result_path = ROOT / "run_summaries" / f"{run_id}.json"
+                if result_path.exists():
+                    ok = json.loads(result_path.read_text(encoding="utf-8"))["status"] == "PASS" and ok
+                    continue
+                case_ok = run_child(kind="trajectory", case_id=run_id, phase=args.phase, command=[sys.executable, str(WORKER), "--run-id", run_id], result_path=result_path, baseline_rss=baseline)
+                ok = case_ok and ok
+                if not case_ok and args.phase not in ("extended",):
                     break
     print(json.dumps({"phase": args.phase, "status": "PASS" if ok else "FAIL"}))
     return 0 if ok else 1

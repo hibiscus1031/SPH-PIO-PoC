@@ -62,7 +62,9 @@ def main() -> int:
     cfg = yaml.safe_load(CONFIG.read_text(encoding="utf-8"))
     mandatory = [row["run_id"] for row in cfg["trajectory_matrix"] if row["phase"] in ("prerequisite", "main", "extended")]
     trajectory_complete = all((ROOT / "run_summaries" / f"{x}.json").exists() for x in mandatory)
-    rows = {run: read_summary(run) for run in mandatory} if trajectory_complete else {}
+    optional_n48 = [cfg["n48_policy"]["smoke_run_id"], cfg["n48_policy"]["full_run_id"]]
+    actual_ids = mandatory + [run for run in optional_n48 if (ROOT / "run_summaries" / f"{run}.json").exists()]
+    rows = {run: read_summary(run) for run in actual_ids} if trajectory_complete else {}
     prereq = json.loads((RESULTS / "prerequisite_summary.json").read_text()) if (RESULTS / "prerequisite_summary.json").exists() else {"status": "MISSING"}
 
     time_rows = [rows[x] for x in cfg["time_study"]["run_ids"]] if trajectory_complete else []
@@ -103,7 +105,7 @@ def main() -> int:
     disorder_ids = [cfg["disorder_study"]["regular_run_id"]] + cfg["disorder_study"]["jitter_05_run_ids"] + cfg["disorder_study"]["jitter_10_run_ids"]
     disorder_rows = [rows[x] for x in disorder_ids] if trajectory_complete else []
     reg_ok = bool(disorder_rows) and disorder_rows[0]["status"] == "PASS"; j05_ok = bool(disorder_rows) and all(x["status"] == "PASS" for x in disorder_rows[1:4]); j10_ok = bool(disorder_rows) and all(x["status"] == "PASS" for x in disorder_rows[4:])
-    multiplier = statistics.median(float(x["final_velocity_relative_l2"]) for x in disorder_rows[4:]) / float(disorder_rows[0]["final_velocity_relative_l2"]) if j10_ok else math.inf
+    multiplier = statistics.median(float(x["final_velocity_relative_l2"]) for x in disorder_rows[4:]) / float(disorder_rows[0]["final_velocity_relative_l2"]) if disorder_rows and all(x["final_velocity_relative_l2"] is not None for x in disorder_rows[4:]) else math.inf
     disorder_status = "D_PASS" if reg_ok and j05_ok and j10_ok and multiplier <= 2 else ("D_CONDITIONAL" if reg_ok and j05_ok else "D_FAIL")
     disorder_table = [{"run_id": x["run_id"], "layout": x["layout"], "seed": x["seed"], "status": x["status"], "velocity_relative_l2": x["final_velocity_relative_l2"], "modal_error": abs(float(x["final_modal_amplitude_error"])), "kinetic_energy_error": x["final_kinetic_energy_error"], "density_fluctuation": x["final_density_fluctuation_relative_rms"], "momentum_drift": x["maximum_momentum_drift_normalized"], "minimum_separation_over_dx": x["minimum_separation_over_dx"], "mean_neighbor_count": x["mean_neighbor_count"], "peak_rss_bytes": x["peak_rss_bytes"], "failure_type": x["failure_type"]} for x in disorder_rows]
 
@@ -119,7 +121,10 @@ def main() -> int:
     resource = bool(accepted) and all(x["resource_policy_pass"] for x in accepted) and all(x["child_reclaimed"] == "True" and int(x["parent_rss_growth_from_campaign_start_bytes"]) <= int(cfg["resource_gates"]["maximum_parent_rss_growth_bytes"]) for x in campaign_rows)
     ad_paths = list((RESULTS / "ad_cases").glob("*.json")); ad_rows = [json.loads(x.read_text()) for x in sorted(ad_paths)]
     ad_pass = len(ad_rows) == 20 and all(x["status"] == "PASS" for x in ad_rows)
-    evidence_complete = trajectory_complete and len(ad_rows) == 20 and prereq["status"] in ("PASS", "FAIL") and (RESULTS / "campaign_index.csv").exists()
+    n48_primary = json.loads((RESULTS / "n48_primary_decision.json").read_text()) if (RESULTS / "n48_primary_decision.json").exists() else {}
+    n48_smoke = json.loads((RESULTS / "n48_smoke_decision.json").read_text()) if (RESULTS / "n48_smoke_decision.json").exists() else {}
+    n48_complete = bool(n48_primary) and (not n48_primary.get("n48_smoke_authorized") or ((ROOT / "run_summaries" / f"{cfg['n48_policy']['smoke_run_id']}.json").exists() and bool(n48_smoke) and (not n48_smoke.get("n48_full_authorized") or (ROOT / "run_summaries" / f"{cfg['n48_policy']['full_run_id']}.json").exists())))
+    evidence_complete = trajectory_complete and n48_complete and len(ad_rows) == 20 and prereq["status"] in ("PASS", "FAIL") and (RESULTS / "campaign_index.csv").exists()
     evaluation = {"schema_version": "sph-pio-poc.stage01d2.evaluation.v1", "prerequisite_pass": prereq["status"] == "PASS", "time_gates": t, "time_pass": all(t.values()), "space_gates": s, "space_pass": all(s[k] for k in ("S1","S2","S3","S4","S5")), "space_slope_velocity": svs, "space_slope_modal": sms, "gci_justified": gci, "gci_statement": "GCI justified" if gci else "GCI not justified", "disorder_status": disorder_status, "jitter10_median_velocity_error_multiplier": multiplier, "mach_complete": mach_complete, "mach_density_nonworsening": mach_nonworsening, "conservation_pass": conservation, "resource_pass": resource, "ad_pass": ad_pass, "ad_completed_cases": len(ad_rows), "provenance_pass": prereq["status"] == "PASS", "evidence_complete": evidence_complete, "canary_rows_used": 0, "v3_started": False, "stage02_started": False, "time_velocity_errors": time_velocity, "time_modal_errors": time_modal, "time_self_difference_coarse": coarse_self, "time_self_difference_fine": fine_self, "time_self_difference_series_coarse": coarse_series, "time_self_difference_series_fine": fine_series}
     evaluation["final_status"] = classify_status(evaluation)
     RESULTS.mkdir(parents=True, exist_ok=True)

@@ -35,6 +35,13 @@ def yn(value: bool) -> str: return "PASS" if value else "FAIL"
 
 def main() -> int:
     cfg = yaml.safe_load(CONFIG.read_text(encoding="utf-8")); e = json.loads((RESULTS / "stage01d2_evaluation.json").read_text()); prereq = json.loads((RESULTS / "prerequisite_summary.json").read_text())
+    n48 = json.loads((ROOT / "run_summaries" / "stage01d2_s_n48_inc.json").read_text())
+    disorder_machine = [json.loads(path.read_text()) for path in sorted((ROOT / "run_summaries").glob("stage01d2_dis_j*.json"))]
+    disorder_rss_relative = [float(row["quartile_rss_relative_increase"]) for row in disorder_machine]
+    disorder_resource_table = "\n".join(
+        ["| run_id | final time | RSS delta bytes | RSS relative | mean step s | wall s |", "|---|---:|---:|---:|---:|---:|"]
+        + [f"| {row['run_id']} | {row['final_time']} | {row['quartile_rss_increase_bytes']} | {row['quartile_rss_relative_increase']:.6f} | {row['mean_step_time_seconds']:.6f} | {row['wall_time_seconds']:.3f} |" for row in disorder_machine]
+    )
     config_hash = hashlib.sha256(CONFIG.read_bytes()).hexdigest(); commit = subprocess.check_output(("git", "rev-parse", "HEAD"), cwd=PROJECT_ROOT, text=True).strip()
     common = f"正式配置：`{CONFIG.relative_to(PROJECT_ROOT)}`（SHA-256 `{config_hash}`）。分析时提交：`{commit}`。Stage 01D-P canary 使用数：`{e['canary_rows_used']}`。"
     write("stage_01d2_protocol_and_provenance.md", f"""# Stage 01D2 protocol and provenance
@@ -66,10 +73,10 @@ N16 zero-flow、20-step N16 与 N32 smoke 的逐点守恒、拓扑与资源证�
 
 {table('space_results.csv', ['run_id','resolution','support_ratio','velocity_relative_l2','modal_error','kinetic_energy_error','status'])}
 
-门判定：{', '.join(f'{k}={yn(v)}' for k,v in e['space_gates'].items())}。velocity 与 modal 的拟合斜率分别为 `{e['space_slope_velocity']:.6g}` 和 `{e['space_slope_modal']:.6g}`。**{e['gci_statement']}**；仅当正、有限、单调并近似进入渐近区时才允许 Richardson/GCI。
+门判定：{', '.join(f'{k}={yn(v)}' for k,v in e['space_gates'].items())}。velocity 与 modal 的三点拟合斜率分别为 `{e['space_slope_velocity']:.6g}` 和 `{e['space_slope_modal']:.6g}`。主 velocity 序列非单调，条件 N48 因此实际运行并 PASS：velocity L2=`{n48['final_velocity_relative_l2']:.8g}`、modal error=`{abs(float(n48['final_modal_amplitude_error'])):.8g}`、peak RSS=`{n48['peak_rss_bytes']}` bytes、wall=`{n48['wall_time_seconds']:.3f}` s；N48 未消除非单调性。**{e['gci_statement']}**；仅当正、有限、单调并近似进入渐近区时才允许 Richardson/GCI。
 """)
     write("stage_01d2_support_family_comparison.md", "# Stage 01D2 support-family comparison\n\n" + table('support_family_results.csv', ['run_id','family','resolution','support_ratio','velocity_relative_l2','modal_error','kinetic_energy_error','density_fluctuation','wall_time_seconds','mean_edge_count','peak_rss_bytes']) + "\n\n该表并列给出 constant-neighbor 与 increasing-neighbor 家族，不预设优劣，用于审计 quadrature–truncation tradeoff。\n")
-    write("stage_01d2_disorder_robustness.md", f"# Stage 01D2 disorder robustness\n\n{table('disorder_results.csv', ['run_id','layout','seed','status','velocity_relative_l2','modal_error','density_fluctuation','momentum_drift','minimum_separation_over_dx','mean_neighbor_count','peak_rss_bytes','failure_type'])}\n\n判定：**{e['disorder_status']}**；10% jitter median velocity-error multiplier=`{e['jitter10_median_velocity_error_multiplier']:.6g}`。三种种子只用于稳健性检查，不代表完整随机不确定性。\n")
+    write("stage_01d2_disorder_robustness.md", f"# Stage 01D2 disorder robustness\n\n{table('disorder_results.csv', ['run_id','layout','seed','status','velocity_relative_l2','modal_error','density_fluctuation','momentum_drift','minimum_separation_over_dx','mean_neighbor_count','peak_rss_bytes','failure_type'])}\n\n{disorder_resource_table}\n\n全部 jitter 轨迹到达 t=0.1，failure time 因而是 post-trajectory resource evaluation；数值/拓扑门本身均通过。判定：**{e['disorder_status']}**；10% jitter median velocity-error multiplier=`{e['jitter10_median_velocity_error_multiplier']:.6g}`。三种种子只用于稳健性检查，不代表完整随机不确定性。\n")
     write("stage_01d2_mach_model_form.md", f"# Stage 01D2 Mach/model-form assessment\n\n{table('mach_results.csv', ['run_id','sound_speed','nominal_mach','velocity_relative_l2','modal_error','density_fluctuation','maximum_mach','maximum_pressure_absolute','acoustic_cfl_maximum','wall_time_seconds','peak_rss_bytes','status'])}\n\n3/3 完成：{yn(e['mach_complete'])}；密度波动随声速增大不恶化：{yn(e['mach_density_nonworsening'])}。若速度误差未随 Mach 降低而改善，则空间离散或模型其他组成可能主导；未事后挑选最有利声速。\n")
     write("stage_01d2_dynamic_conservation.md", f"""# Stage 01D2 dynamic conservation
 
@@ -99,7 +106,7 @@ N16 zero-flow、20-step N16 与 N32 smoke 的逐点守恒、拓扑与资源证�
         ("5. 固定物理方程和参数", "二维周期 TGV，rho0=1、U0=1、L=2、nu=0.02、Re=100、主 c_s=20、float64 CPU；Stage 01C 压力/黏性与 midpoint RK2 未改。"),
         ("6. Prerequisite", f"状态 **{prereq['status']}**，pytest 与身份、zero-flow、smoke、守恒、资源、回收均有机器证据。"),
         ("7. 时间误差", f"T1–T4：{', '.join(f'{k}={yn(v)}' for k,v in e['time_gates'].items())}。"),
-        ("8. 空间误差", f"S1–S6：{', '.join(f'{k}={yn(v)}' for k,v in e['space_gates'].items())}；{e['gci_statement']}。"),
+        ("8. 空间误差", f"S1–S6：{', '.join(f'{k}={yn(v)}' for k,v in e['space_gates'].items())}；条件 N48 完成但 velocity L2=`{n48['final_velocity_relative_l2']:.8g}`，未消除非单调性；{e['gci_statement']}。"),
         ("9. 支撑族比较", "constant 与 increasing 两族均按预登记矩阵报告误差、成本、edge count 和 RSS。"),
         ("10. 动态无序", f"唯一子判定 **{e['disorder_status']}**。"),
         ("11. Mach/模型形式", f"三条完成={yn(e['mach_complete'])}，密度 non-worsening={yn(e['mach_density_nonworsening'])}。"),
@@ -107,7 +114,7 @@ N16 zero-flow、20-step N16 与 N32 smoke 的逐点守恒、拓扑与资源证�
         ("13. AD 回归", f"{e['ad_completed_cases']}/20，**{yn(e['ad_pass'])}**；拓扑选择不可微。"),
         ("14. 资源使用", f"全部接受轨迹资源与子进程回收总门 **{yn(e['resource_pass'])}**。"),
         ("15. 数值不确定性", "时间、空间、Mach、无序、support、舍入与 CPU 确定性已区分；GC 不作物理误差。"),
-        ("16. 所有失败和限制", f"空间/时间平台、Mach 与 disorder 限制按子报告披露；evidence_complete={e['evidence_complete']}。"),
+        ("16. 所有失败和限制", f"6/6 jitter 均完成数值轨迹，但 RSS 首末四分位相对增量为 `{min(disorder_rss_relative):.1%}–{max(disorder_rss_relative):.1%}`，超过 50% 硬门；5% jitter 因而失败，不能降级为 D_CONDITIONAL。10% jitter median velocity-error multiplier=`{e['jitter10_median_velocity_error_multiplier']:.3f}`。空间主序列及 N48 仍非单调；evidence_complete={e['evidence_complete']}。"),
         ("17. 唯一 Stage 01D2 状态", f"**{e['final_status']}**"),
         ("18. 是否具备申请 V3 的资格", "是，仅可提交下一轮审计申请。" if e['final_status']=="STAGE01D2_V2_REQUALIFIED_PASS" else "否；只有无条件 PASS 才可申请。"),
         ("19. Stage 02 边界", "Stage 02 未开始；V3、网络训练、学习标签与高保真资格均未启动。"),
