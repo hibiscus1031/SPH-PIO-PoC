@@ -1,0 +1,4 @@
+run_id,repeat,iterations,tensor_count_delta,unique_storage_bytes_delta,fixture_tensor_count,fixture_unique_storage_count,fixture_unique_storage_bytes,view_base_deduplication_pass,inventory_self_retention_pass,pass
+stage01dr2_a_r1,1,1000,0,0,4,2,2728,True,True,True
+stage01dr2_a_r2,2,1000,0,0,4,2,2728,True,True,True
+stage01dr2_a_r3,3,1000,0,0,4,2,2728,True,True,True

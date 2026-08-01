@@ -1,0 +1,8 @@
+gate,name,passed,observed,required
+A,inventory_self_validation,True,3/3,3/3
+B,all_required_workers_complete,True,13/13,13/13
+C,weakref_old_survivor_absent,True,no old storage,zero
+D,fixed_topology_controls_constant,False,3/6,6/6
+E,edge_adjusted_step_terms_near_zero,True,4/4,all D runs
+F,frozen_first_four_state_regression,True,4/4,all D runs
+STATUS,unique_attribution_status,True,ATTRIBUTION_UNRESOLVED,"[""ATTRIBUTED_TO_DYNAMIC_WORKING_SET"",""INVENTORY_INSTRUMENTATION_BIAS"",""RETENTION_IDENTIFIED_AND_FIXED"",""RETENTION_CONFIRMED_UNFIXED"",""ATTRIBUTION_UNRESOLVED""]"
