@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "bitwise_state_identity": true,
+    "edge_identity": true,
+    "force_identity": true,
+    "internal_force_residual_identity": true,
+    "neighborhood_build_count_identity": true,
+    "pair_force_residual_identity": true,
+    "persistent_tensor_schema_identity": true,
+    "viscous_power_identity": true
+  },
+  "code_git_hash": "e6a8ac2709c3bb6bd214d37f9f5879c01cb32566",
+  "config_sha256": "d66a5a0db2e4d3c9d668d3e358707b76a192031790f86e5895d661ff235b7f13",
+  "disabled_neighborhood_builds": 201,
+  "dt": 0.001,
+  "maximum_absolute_differences": {
+    "densities": 0.0,
+    "positions": 0.0,
+    "pressures": 0.0,
+    "velocities": 0.0
+  },
+  "original_neighborhood_builds": 201,
+  "resolution": 16,
+  "run_id": "zero_n16",
+  "schema_version": "sph-pio-poc.stage01f2.zero-source.v1",
+  "status": "PASS",
+  "steps": 100,
+  "zero_flow": true
+}

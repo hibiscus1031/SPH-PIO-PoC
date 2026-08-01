@@ -1,0 +1,34 @@
+{
+  "application_for_stage01f3_permitted": true,
+  "child_process_policy_pass": true,
+  "deterministic_repeat_checks": {
+    "A2": true,
+    "B2": true
+  },
+  "evidence_language": [
+    "implementation smoke",
+    "code-path verification",
+    "deterministic repeat",
+    "reference sensitivity",
+    "balance audit"
+  ],
+  "failed_evidence": [],
+  "implementation_smoke_pass": true,
+  "internal_external_balance_pass": true,
+  "learning_labels_generated": false,
+  "mass_initialization_pass": true,
+  "missing_evidence": [],
+  "mms_a_closed_reference_pass": true,
+  "mms_b_reference_sensitivity_pass": true,
+  "resource_policy_pass": true,
+  "schema_version": "sph-pio-poc.stage01f2.evaluation.v2",
+  "source_ad_fd_pass": true,
+  "source_disabled_regression_pass": true,
+  "source_start_midpoint_contract_pass": true,
+  "stage01d2_historical_status_changed": false,
+  "stage01f_frozen_identity_pass": true,
+  "stage02_started": false,
+  "status": "MMS_IMPLEMENTATION_VERIFIED_PASS",
+  "training_started": false,
+  "v3_started": false
+}

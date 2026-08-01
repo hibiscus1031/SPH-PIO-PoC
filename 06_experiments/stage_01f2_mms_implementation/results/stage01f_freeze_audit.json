@@ -1,0 +1,29 @@
+{
+  "manifest_checks": {
+    "06_experiments/stage_01f_mms_design/configs/preregistered_mms_specification.yml": true,
+    "06_experiments/stage_01f_mms_design/configs/stage01e_frozen_sha256_manifest.csv": true,
+    "06_experiments/stage_01f_mms_design/results/mms_b_term_scale.csv": true,
+    "06_experiments/stage_01f_mms_design/results/particle_initialization_audit.csv": true,
+    "06_experiments/stage_01f_mms_design/results/preregistered_boundary_points.csv": true,
+    "06_experiments/stage_01f_mms_design/results/preregistered_random_points.csv": true,
+    "06_experiments/stage_01f_mms_design/results/source_injection_contract_audit.json": true,
+    "06_experiments/stage_01f_mms_design/results/stage01f_evaluation.json": true,
+    "07_reports/stage_01f_final_report.md": true
+  },
+  "parameter_checks": {
+    "decay_rate": true,
+    "density_amplitude": true,
+    "rho0": true,
+    "sound_speed": true,
+    "translation_speed": true,
+    "viscosity": true,
+    "vortex_amplitude": true,
+    "wave_number": true
+  },
+  "schema_version": "sph-pio-poc.stage01f2.freeze.v1",
+  "stage01f_status": "MMS_SPECIFICATION_PASS",
+  "stage01f_status_pass": true,
+  "status": "PASS",
+  "tag_target": "f835b059d98c5a417551a9a349b3537b8c4d2b35",
+  "tag_target_pass": true
+}

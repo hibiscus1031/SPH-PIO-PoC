@@ -1,0 +1,13 @@
+{
+  "all_finite": true,
+  "baseline_half_max_step_linf": 6.661338147750939e-16,
+  "baseline_tighter_linf": 0.0,
+  "code_git_hash": "e6a8ac2709c3bb6bd214d37f9f5879c01cb32566",
+  "initial_position_identity": true,
+  "integrator": "scipy.integrate.solve_ivp:DOP853",
+  "parameter_sha256": "53896875a4c28e6812100df8034db69641f0d6890e709199be0a7fc839f4592d",
+  "reference_path": "06_experiments/stage_01f2_mms_implementation/references/mms_b_n32_dop853.npz",
+  "reference_sha256": "798f429ae4a34688d41eda488a166319f2704e3bd8143c01b86365bf4e4866b3",
+  "resolution": 32,
+  "status": "PASS"
+}

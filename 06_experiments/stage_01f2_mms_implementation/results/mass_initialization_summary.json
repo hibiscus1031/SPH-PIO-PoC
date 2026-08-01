@@ -1,0 +1,39 @@
+{
+  "cases": [
+    {
+      "analytic_density_overwrites_numerical_density": false,
+      "masses_fixed_during_rollout": true,
+      "resolution": 16,
+      "solution_id": "MMS_A",
+      "total_mass": 4.0,
+      "total_mass_exact_four": true
+    },
+    {
+      "analytic_density_overwrites_numerical_density": false,
+      "masses_fixed_during_rollout": true,
+      "resolution": 32,
+      "solution_id": "MMS_A",
+      "total_mass": 4.0,
+      "total_mass_exact_four": true
+    },
+    {
+      "analytic_density_overwrites_numerical_density": false,
+      "masses_fixed_during_rollout": true,
+      "resolution": 16,
+      "solution_id": "MMS_B",
+      "total_mass": 4.0,
+      "total_mass_exact_four": true
+    },
+    {
+      "analytic_density_overwrites_numerical_density": false,
+      "masses_fixed_during_rollout": true,
+      "resolution": 32,
+      "solution_id": "MMS_B",
+      "total_mass": 4.0,
+      "total_mass_exact_four": true
+    }
+  ],
+  "schema_version": "sph-pio-poc.stage01f2.mass-initialization.v1",
+  "stage01f_particle_initialization_sha256": "ede7d1f483cc11ad29b78128fe63c9b45b3e1825cf53ba100b366372dac03c4d",
+  "status": "PASS"
+}

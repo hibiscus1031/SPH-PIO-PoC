@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "ad_fd": true,
+    "all_expected_gradients_finite": true,
+    "all_expected_gradients_nonzero": true,
+    "formal_forward_no_grad": true,
+    "no_cross_step_graph": true
+  },
+  "code_git_hash": "908f366ffa415c83a40ea5329f0b8b5f0e4c1845",
+  "config_sha256": "d66a5a0db2e4d3c9d668d3e358707b76a192031790f86e5895d661ff235b7f13",
+  "maximum_ad_fd_relative_difference": 4.0766641599707824e-10,
+  "schema_version": "sph-pio-poc.stage01f2.ad-fd.v1",
+  "status": "PASS"
+}
