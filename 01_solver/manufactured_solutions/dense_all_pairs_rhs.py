@@ -77,8 +77,19 @@ def _gradient_from_evaluation(evaluation: DenseEvaluation, i: int, j: int) -> to
 
 
 def minimum_image_matrix(positions: torch.Tensor, domain_length: float = 2.0) -> torch.Tensor:
-    displacement = positions[:, None, :] - positions[None, :, :]
-    return torch.remainder(displacement + 0.5 * domain_length, domain_length) - 0.5 * domain_length
+    raw = positions[:, None, :] - positions[None, :, :]
+    canonical = torch.remainder(raw + 0.5 * domain_length, domain_length) - 0.5 * domain_length
+    count = positions.shape[0]
+    upper = torch.triu(
+        torch.ones((count, count), dtype=torch.bool, device=positions.device),
+        diagonal=1,
+    )
+    displacement = torch.where(
+        upper[..., None], canonical, -canonical.transpose(0, 1)
+    )
+    diagonal = torch.arange(count, device=positions.device)
+    displacement[diagonal, diagonal] = 0.0
+    return displacement
 
 
 def dense_kernel_geometry(positions: torch.Tensor, supports: torch.Tensor) -> dict[str, torch.Tensor]:
