@@ -1,0 +1,247 @@
+schema_version: "sph-pio-poc.stage01d2.preregistration.v1"
+stage: "Stage 01D2"
+name: "Fixed-physics dynamic V2 requalification"
+scope:
+  dynamic_solution_requalification_only: true
+  stage01dp_canaries_are_formal_v2_data: false
+  v3_started: false
+  stage02_started: false
+  neural_network_training: false
+  learning_label_generation: false
+  third_party_source_modification: false
+
+frozen_stage01dp:
+  preregistration_commit: "5fd5a56720dc7cfe32180e06ca6946f0082ec56f"
+  final_evidence_commit: "e8e50ad4cd3b3cccc273870bd9372f62e266edae"
+  status: "POLICY_PASS_ISOLATED_DEFAULT_GC"
+  tag: "stage-01dp-isolated-default-gc-policy-pass"
+  required_tag_target: "e8e50ad4cd3b3cccc273870bd9372f62e266edae"
+  r5_tag_target: "f4262b71d1f5fb4763535a34e8187c1b1e02bcaa"
+  sha256_manifest: "06_experiments/stage_01d2_v2_requalification/configs/stage01dp_frozen_sha256_manifest.csv"
+
+historical_statuses:
+  stage01d: "V2_FAIL"
+  stage01dr: "RESOURCE_FAIL_LINEAR_GROWTH"
+  stage01dr2: "ATTRIBUTION_UNRESOLVED"
+  stage01dr3: "R3_CONFIRMATION_UNRESOLVED"
+  stage01dr4: "R4_RETENTION_REDETECTED"
+  stage01dr5: "R5_BOUNDED_GC_DELAY_CONFIRMED"
+  stage01dp: "POLICY_PASS_ISOLATED_DEFAULT_GC"
+
+frozen_identity:
+  stage01d_primary_config:
+    path: "06_experiments/stage_01d_fixed_physics_tgv/configs/preregistered_primary_tgv.yml"
+    sha256: "7fa2dd01f7c9a493958fc3732a776e919077479d5c91baad345f172f177f6da0"
+  stage01c_manifest:
+    path: "06_experiments/stage_01d_fixed_physics_tgv/results/stage01c_sha256_manifest.csv"
+    sha256: "46a66c51863c10eb07db1c57401ee8008a5335e20cd54bf132cb5d9337bcdcc2"
+  explicit_midpoint_ode_evidence:
+    path: "06_experiments/stage_01d_integrator_verification/results/integrator_verification.csv"
+    sha256: "dcfba86b69e6ff2fad4d9325d4b93a8b0916d3f4be3c7eca6fe530b96073217b"
+  stage01c_ad_baseline:
+    path: "06_experiments/stage_01c_autograd/results/native_autograd_fd.csv"
+    sha256: "8a5dae3187f66ce698ea3a59554e30766d90796ec8e19b1f82454218fe7ef5aa"
+    required_pass_rows: 20
+  stage01c_disorder_design:
+    path: "06_experiments/stage_01c_disorder_statistics/configs/preregistered_design.yml"
+    sha256: "b15f56bacb91bee76d7a0aaecd937b607f1ba23ef048ab33d9a221851641e6d7"
+
+fixed_source_sha256:
+  "01_solver/dynamic_solver/acceleration.py": "9835e5a67b177d1991ba8fab80109dc1ab5ea1d783a403b1c8b391d3b809771e"
+  "01_solver/dynamic_solver/density.py": "43af02afe7797ebd21cd3a34a95c329105e18746d56fe6685178e8204a52ada0"
+  "01_solver/dynamic_solver/diagnostics.py": "f1f39d9fb1edc547fb051aa34524894ec3239a4c375c15c6f1ac42367f7ae5a7"
+  "01_solver/dynamic_solver/equation_of_state.py": "41fcc2f67b35f6e3997d790e3461027d09a9a211a30f9681cd2dcf0996b78e57"
+  "01_solver/dynamic_solver/native_autograd.py": "5709874973acbf617ea22adbd50ff823ef0ac38a3afa09e96d5d31fe1010be1e"
+  "01_solver/dynamic_solver/periodic_rollout.py": "95453a1726185c5cc8f65d67ae867a366e4e0dfc10dddcc3570b9fa7c9abe1e4"
+  "01_solver/dynamic_solver/state.py": "8df0c49aee8271fe9c107f4776e4ce4e3c8f35e68584261c0efa34cc9eda0561"
+  "01_solver/dynamic_solver/taylor_green.py": "d918ab43e70255825cc2b4bedca06432bdeecac9d07325c160da80dc8c0ab4bd"
+  "01_solver/structure_preserving/conservative_pressure.py": "b6366666ba89cc1f367a95390a411905eee8b7f55fba28a024f5732860004064"
+  "01_solver/structure_preserving/conservative_viscosity.py": "bdfbcb457f6973130f0131ec3c0a3fecc7197dd117c8256163cf3a1445307852"
+  "01_solver/structure_preserving/neighborhood.py": "44d61e0abbc9901472dae90f83127f5231fc3f6e8ac92a971228dfdcb230aaa8"
+
+runtime_policy:
+  independent_subprocess_per_trajectory: true
+  python_default_cyclic_gc_enabled: true
+  forward_under_torch_no_grad: true
+  inloop_gc_collect_prohibited: true
+  cyclic_gc_disable_prohibited: true
+  parent_receives_tensor_state_neighborhood_or_force_result: false
+  parent_receives_scalar_summary_and_relative_paths_only: true
+  child_exits_after_trajectory: true
+  ad_uses_separate_short_process: true
+  checkpoint_tensor_history_only: true
+  retired_object_count_is_hard_gate: false
+  rerun_r2_to_r5_resource_toolchain: false
+
+physics:
+  domain_minimum: [-1.0, -1.0]
+  domain_maximum: [1.0, 1.0]
+  periodic: [true, true]
+  reference_density: 1.0
+  velocity_amplitude: 1.0
+  domain_length: 2.0
+  physical_viscosity: 0.02
+  reynolds_number: 100.0
+  sound_speed_primary: 20.0
+  nominal_mach_primary: 0.05
+  final_time_primary: 0.2
+  dtype: "float64"
+  device: "cpu"
+  initial_velocity_x: "-U0*sin(pi*x)*cos(pi*y)"
+  initial_velocity_y: " U0*cos(pi*x)*sin(pi*y)"
+  exact_velocity_decay: "exp(-2*nu*pi^2*t)"
+  exact_kinetic_energy_decay: "exp(-4*nu*pi^2*t)"
+  density: "kernel summation at every complete force stage"
+  eos: "p_i = c_s^2*(rho_i-rho0)"
+  pressure: "Stage 01C structure-preserving conservative pair force"
+  viscosity: "Stage 01C symmetric dissipative pair force"
+  integrator: "explicit midpoint RK2"
+  topology: "rebuilt reciprocal duplicate-free periodic neighborhood at every force stage"
+  prohibited_features:
+    background_pressure: true
+    pressure_clipping: true
+    artificial_viscosity: true
+    particle_shifting: true
+    density_diffusion: true
+    turbulence_model: true
+
+sampling:
+  common_physical_times: 21
+  include_initial_and_final: true
+  saved_state_fields: ["positions", "velocities"]
+  save_density_pressure_history: false
+  scalar_diagnostics_every_checkpoint: true
+
+resource_gates:
+  current_rss_limit_bytes: 2000000000
+  peak_rss_limit_bytes: 4000000000
+  quartile_rss_increase_limit_bytes: 250000000
+  quartile_rss_relative_increase_limit: 0.50
+  step_time_quartile_ratio_limit: 1.30
+  minimum_system_available_memory_fraction: 0.05
+  maximum_parent_rss_growth_bytes: 64000000
+  child_reclamation_required: true
+
+dynamic_gates:
+  maximum_relative_pair_force_residual: 1.0e-12
+  maximum_normalized_internal_force_residual: 1.0e-10
+  viscous_power_positive_absolute_tolerance: 1.0e-12
+  minimum_separation_over_dx: 0.25
+  topology_defect_count_required: 0
+
+prerequisites:
+  full_pytest_required: true
+  stage01c_manifest_identity_required: true
+  stage01dp_policy_identity_required: true
+  explicit_midpoint_ode_identity_required: true
+  stage01c_ad_baseline_identity_required: true
+  trajectory_run_ids: ["stage01d2_prereq_zero_n16", "stage01d2_prereq_smoke_n16", "stage01d2_prereq_smoke_n32"]
+  zero_flow_tolerances:
+    position_drift_linf: 1.0e-13
+    velocity_linf: 1.0e-12
+    pressure_absolute_maximum: 1.0e-12
+    relative_density_drift: 1.0e-12
+
+time_study:
+  run_ids: ["stage01d2_t_n32_dt1e3", "stage01d2_t_n32_dt5e4", "stage01d2_t_n32_dt2p5e4", "stage01d2_t_n32_dt1p25e4"]
+  time_steps: [0.001, 0.0005, 0.00025, 0.000125]
+  gates:
+    finest_to_coarsest_velocity_relative_l2_maximum: 1.0
+    finest_to_coarsest_modal_error_maximum: 1.0
+    credible_improvement_ratio_maximum: 0.80
+  observed_order_policy:
+    require_positive_finite_errors: true
+    require_nonincreasing_sequence: true
+    report_strict_second_order_required: false
+
+space_study:
+  run_ids: ["stage01d2_s_n16_inc", "stage01d2_s_n24_inc", "stage01d2_t_n32_dt1p25e4"]
+  resolutions: [16, 24, 32]
+  support_ratios: [4.0, 4.5, 5.0]
+  dt: 0.000125
+  final_time: 0.2
+  gates:
+    n32_to_n16_velocity_relative_l2_maximum: 0.90
+    n32_to_n16_kinetic_energy_error_maximum: 1.10
+    fitted_log_error_log_dx_slope_minimum: 0.0
+  gci_policy:
+    monotone_positive_finite_required: true
+    adjacent_order_relative_difference_maximum: 0.25
+    adjacent_order_absolute_difference_maximum: 0.25
+
+n48_policy:
+  smoke_run_id: "stage01d2_n48_smoke"
+  full_run_id: "stage01d2_s_n48_inc"
+  run_if_primary_nonmonotone_or_slope_ci_lower_nonpositive: true
+  n32_peak_rss_limit_bytes: 1000000000
+  projected_full_wall_limit_seconds: 7200
+  smoke_peak_rss_limit_bytes: 2000000000
+  smoke_steps: 100
+  resolution: 48
+  support_ratio: 5.5
+  dt: 0.000125
+  final_time: 0.2
+
+support_family_comparison:
+  constant_neighbor_run_ids: ["stage01d2_s_n16_inc", "stage01d2_sf_n24_const", "stage01d2_sf_n32_const"]
+  increasing_neighbor_run_ids: ["stage01d2_s_n16_inc", "stage01d2_s_n24_inc", "stage01d2_t_n32_dt1p25e4"]
+  resolutions: [16, 24, 32]
+
+disorder_study:
+  regular_run_id: "stage01d2_dis_regular"
+  jitter_05_run_ids: ["stage01d2_dis_j05_s1", "stage01d2_dis_j05_s2", "stage01d2_dis_j05_s3"]
+  jitter_10_run_ids: ["stage01d2_dis_j10_s4", "stage01d2_dis_j10_s5", "stage01d2_dis_j10_s6"]
+  jitter_05_seeds: [20261001, 20261019, 20261037]
+  jitter_10_seeds: [20261061, 20261079, 20261103]
+  median_velocity_error_multiplier_limit: 2.0
+
+mach_study:
+  run_ids: ["stage01d2_mach_cs10", "stage01d2_dis_regular", "stage01d2_mach_cs40"]
+  sound_speeds: [10.0, 20.0, 40.0]
+  nominal_mach: [0.10, 0.05, 0.025]
+  density_nonworsening_tolerance_fraction: 0.0
+
+autograd_regression:
+  parameters: ["physical_viscosity", "initial_velocity_amplitude", "local_velocity_x_particle_0", "reference_density_scalar"]
+  parameter_values:
+    physical_viscosity: 0.02
+    initial_velocity_amplitude: 1.0
+    local_velocity_x_particle_0: 0.0
+    reference_density_scalar: 1.0
+  steps: [1, 3, 5, 8, 16]
+  finite_difference_step: 1.0e-6
+  short_step_relative_difference_maximum: 0.01
+  step16_finite_nonzero_required: true
+  topology_differentiability_claimed: false
+
+trajectory_matrix:
+  - {run_id: "stage01d2_prereq_zero_n16", phase: "prerequisite", roles: "zero_flow", resolution: 16, support_family: "increasing_neighbor", support_ratio: 4.0, dt: 0.001, steps: 100, t_final: 0.1, sound_speed: 20.0, layout: "regular", jitter_fraction: 0.0, seed: 0, zero_flow: true}
+  - {run_id: "stage01d2_prereq_smoke_n16", phase: "prerequisite", roles: "smoke_n16", resolution: 16, support_family: "increasing_neighbor", support_ratio: 4.0, dt: 0.001, steps: 20, t_final: 0.02, sound_speed: 20.0, layout: "regular", jitter_fraction: 0.0, seed: 0, zero_flow: false}
+  - {run_id: "stage01d2_prereq_smoke_n32", phase: "prerequisite", roles: "smoke_n32", resolution: 32, support_family: "increasing_neighbor", support_ratio: 5.0, dt: 0.0005, steps: 20, t_final: 0.01, sound_speed: 20.0, layout: "regular", jitter_fraction: 0.0, seed: 0, zero_flow: false}
+  - {run_id: "stage01d2_t_n32_dt1e3", phase: "main", roles: "time", resolution: 32, support_family: "increasing_neighbor", support_ratio: 5.0, dt: 0.001, steps: 200, t_final: 0.2, sound_speed: 20.0, layout: "regular", jitter_fraction: 0.0, seed: 0, zero_flow: false}
+  - {run_id: "stage01d2_t_n32_dt5e4", phase: "main", roles: "time", resolution: 32, support_family: "increasing_neighbor", support_ratio: 5.0, dt: 0.0005, steps: 400, t_final: 0.2, sound_speed: 20.0, layout: "regular", jitter_fraction: 0.0, seed: 0, zero_flow: false}
+  - {run_id: "stage01d2_t_n32_dt2p5e4", phase: "main", roles: "time", resolution: 32, support_family: "increasing_neighbor", support_ratio: 5.0, dt: 0.00025, steps: 800, t_final: 0.2, sound_speed: 20.0, layout: "regular", jitter_fraction: 0.0, seed: 0, zero_flow: false}
+  - {run_id: "stage01d2_t_n32_dt1p25e4", phase: "main", roles: "time|space|support_increasing", resolution: 32, support_family: "increasing_neighbor", support_ratio: 5.0, dt: 0.000125, steps: 1600, t_final: 0.2, sound_speed: 20.0, layout: "regular", jitter_fraction: 0.0, seed: 0, zero_flow: false}
+  - {run_id: "stage01d2_s_n16_inc", phase: "main", roles: "space|support_increasing|support_constant", resolution: 16, support_family: "increasing_neighbor", support_ratio: 4.0, dt: 0.000125, steps: 1600, t_final: 0.2, sound_speed: 20.0, layout: "regular", jitter_fraction: 0.0, seed: 0, zero_flow: false}
+  - {run_id: "stage01d2_s_n24_inc", phase: "main", roles: "space|support_increasing", resolution: 24, support_family: "increasing_neighbor", support_ratio: 4.5, dt: 0.000125, steps: 1600, t_final: 0.2, sound_speed: 20.0, layout: "regular", jitter_fraction: 0.0, seed: 0, zero_flow: false}
+  - {run_id: "stage01d2_sf_n24_const", phase: "main", roles: "support_constant", resolution: 24, support_family: "constant_neighbor", support_ratio: 4.0, dt: 0.000125, steps: 1600, t_final: 0.2, sound_speed: 20.0, layout: "regular", jitter_fraction: 0.0, seed: 0, zero_flow: false}
+  - {run_id: "stage01d2_sf_n32_const", phase: "main", roles: "support_constant", resolution: 32, support_family: "constant_neighbor", support_ratio: 4.0, dt: 0.000125, steps: 1600, t_final: 0.2, sound_speed: 20.0, layout: "regular", jitter_fraction: 0.0, seed: 0, zero_flow: false}
+  - {run_id: "stage01d2_n48_smoke", phase: "n48_smoke", roles: "n48_smoke", resolution: 48, support_family: "increasing_neighbor", support_ratio: 5.5, dt: 0.000125, steps: 100, t_final: 0.0125, sound_speed: 20.0, layout: "regular", jitter_fraction: 0.0, seed: 0, zero_flow: false}
+  - {run_id: "stage01d2_s_n48_inc", phase: "n48_full", roles: "space_confirmation", resolution: 48, support_family: "increasing_neighbor", support_ratio: 5.5, dt: 0.000125, steps: 1600, t_final: 0.2, sound_speed: 20.0, layout: "regular", jitter_fraction: 0.0, seed: 0, zero_flow: false}
+  - {run_id: "stage01d2_dis_regular", phase: "extended", roles: "disorder_regular|mach_cs20", resolution: 32, support_family: "increasing_neighbor", support_ratio: 5.0, dt: 0.00025, steps: 400, t_final: 0.1, sound_speed: 20.0, layout: "regular", jitter_fraction: 0.0, seed: 0, zero_flow: false}
+  - {run_id: "stage01d2_dis_j05_s1", phase: "extended", roles: "disorder_jitter05", resolution: 32, support_family: "increasing_neighbor", support_ratio: 5.0, dt: 0.00025, steps: 400, t_final: 0.1, sound_speed: 20.0, layout: "jitter_05", jitter_fraction: 0.05, seed: 20261001, zero_flow: false}
+  - {run_id: "stage01d2_dis_j05_s2", phase: "extended", roles: "disorder_jitter05", resolution: 32, support_family: "increasing_neighbor", support_ratio: 5.0, dt: 0.00025, steps: 400, t_final: 0.1, sound_speed: 20.0, layout: "jitter_05", jitter_fraction: 0.05, seed: 20261019, zero_flow: false}
+  - {run_id: "stage01d2_dis_j05_s3", phase: "extended", roles: "disorder_jitter05", resolution: 32, support_family: "increasing_neighbor", support_ratio: 5.0, dt: 0.00025, steps: 400, t_final: 0.1, sound_speed: 20.0, layout: "jitter_05", jitter_fraction: 0.05, seed: 20261037, zero_flow: false}
+  - {run_id: "stage01d2_dis_j10_s4", phase: "extended", roles: "disorder_jitter10", resolution: 32, support_family: "increasing_neighbor", support_ratio: 5.0, dt: 0.00025, steps: 400, t_final: 0.1, sound_speed: 20.0, layout: "jitter_10", jitter_fraction: 0.10, seed: 20261061, zero_flow: false}
+  - {run_id: "stage01d2_dis_j10_s5", phase: "extended", roles: "disorder_jitter10", resolution: 32, support_family: "increasing_neighbor", support_ratio: 5.0, dt: 0.00025, steps: 400, t_final: 0.1, sound_speed: 20.0, layout: "jitter_10", jitter_fraction: 0.10, seed: 20261079, zero_flow: false}
+  - {run_id: "stage01d2_dis_j10_s6", phase: "extended", roles: "disorder_jitter10", resolution: 32, support_family: "increasing_neighbor", support_ratio: 5.0, dt: 0.00025, steps: 400, t_final: 0.1, sound_speed: 20.0, layout: "jitter_10", jitter_fraction: 0.10, seed: 20261103, zero_flow: false}
+  - {run_id: "stage01d2_mach_cs10", phase: "extended", roles: "mach_cs10", resolution: 32, support_family: "increasing_neighbor", support_ratio: 5.0, dt: 0.00025, steps: 400, t_final: 0.1, sound_speed: 10.0, layout: "regular", jitter_fraction: 0.0, seed: 0, zero_flow: false}
+  - {run_id: "stage01d2_mach_cs40", phase: "extended", roles: "mach_cs40", resolution: 32, support_family: "increasing_neighbor", support_ratio: 5.0, dt: 0.00025, steps: 400, t_final: 0.1, sound_speed: 40.0, layout: "regular", jitter_fraction: 0.0, seed: 0, zero_flow: false}
+
+final_statuses:
+  allowed:
+    - "STAGE01D2_V2_REQUALIFIED_PASS"
+    - "STAGE01D2_V2_REQUALIFIED_CONDITIONAL"
+    - "STAGE01D2_V2_REQUALIFICATION_FAIL"
+    - "STAGE01D2_EVIDENCE_INCOMPLETE"
+  v3_design_application_eligible_only_if: "STAGE01D2_V2_REQUALIFIED_PASS"
