@@ -1,0 +1,163 @@
+stage: "Stage 01D-R2"
+title: "Live-tensor storage attribution and retention-chain localization"
+created_before_formal_runs: true
+historical_freeze:
+  stage01dr_protocol_commit: "0d562a4d8ed662c33797b738cd0f7ae9c00c1618"
+  stage01dr_evidence_commit: "3f5d2d5033cfadd559cc278c4f828b40bc40d324"
+  stage01d_tag: "stage-01d-v2-fail-resource-gate"
+  stage01dr_tag: "stage-01dr-resource-fail-live-bytes-gate"
+  old_stage01d_status: "V2_FAIL"
+  old_stage01dr_status: "RESOURCE_FAIL_LINEAR_GROWTH"
+
+environment:
+  python_environment: "sph-pio-poc"
+  backend: "CPU"
+  dtype: "float64"
+  forbidden_packages: ["cuda", "cudnn", "nvidia"]
+
+physics:
+  resolution: 32
+  particles: 1024
+  support_family: "increasing_neighbor"
+  support_ratio: 5.0
+  time_step: 5.0e-4
+  sound_speed: 20.0
+  physical_viscosity: 0.02
+  reference_density: 1.0
+  velocity_amplitude: 1.0
+  layout: "regular"
+  seed: 0
+  domain_minimum: [-1.0, -1.0]
+  domain_maximum: [1.0, 1.0]
+
+controls:
+  A:
+    name: "inventory_only_static_state"
+    iterations: 1000
+    solver: false
+    state_update: false
+  B:
+    name: "repeated_force_evaluation"
+    iterations: 1000
+    frozen_state: true
+    keep_only_last_result: true
+  C:
+    name: "zero_flow_dynamic"
+    steps: 1000
+    fixed_topology_required: true
+    zero_velocity_equilibrium: true
+  D:
+    name: "tgv_dynamic"
+    steps: 1000
+    formal_v2: false
+    confirmation_steps: 2000
+    confirmation_condition: "all_three_primary_D_runs_safe_and_complete"
+
+repeats_per_control: 3
+inventory_validation_runs_first: true
+solver_branches_stop_if_inventory_bias: true
+primary_run_order:
+  - "A1"
+  - "A2"
+  - "A3"
+  - "C1"
+  - "D1"
+  - "B1"
+  - "B3"
+  - "C3"
+  - "D2"
+  - "C2"
+  - "B2"
+  - "D3"
+confirmation_run_id: "D_confirm_2000"
+
+sampling:
+  ledger_interval_steps: 25
+  memory_interval_steps: 25
+  weakref_gc_interval_steps: 25
+  mandatory_steps: [0, 1, 2, 3, 4, 25, 1000]
+  confirmation_mandatory_steps: [0, 1, 2, 3, 4, 25, 1000, 2000]
+  tensor_inventory_sparse_only: true
+  direct_referrer_audit_sparse_only: true
+  current_rss_stop_bytes: 2500000000
+  system_memory_free_percentage_stop: 10.0
+
+inventory_self_test:
+  delete_inventory_locals_each_iteration: true
+  gc_collect_each_iteration: true
+  independent_lightweight_count_each_iteration: true
+  required_tensor_count_delta: 0
+  required_unique_storage_bytes_delta: 0
+  require_view_base_storage_deduplication: true
+  storage_key_fields: ["data_ptr", "device", "nbytes"]
+
+lifetime:
+  maximum_old_object_age_steps: 2
+  required_old_survivor_storage_count_after_gc: 0
+  required_old_survivor_bytes_after_gc: 0
+  required_same_slot_multiple_generation_count: 0
+  weakref_slots:
+    - "old_positions"
+    - "old_velocities"
+    - "old_densities"
+    - "old_pressures"
+    - "midpoint_positions"
+    - "midpoint_velocities"
+    - "midpoint_neighborhood"
+    - "start_stage_neighborhood"
+    - "endpoint_neighborhood"
+    - "pressure_pair_result"
+    - "viscosity_pair_result"
+
+working_set_model:
+  formula_total: "live_total_bytes = beta0 + beta_edge * edge_count + beta_step * step"
+  formula_unknown: "unknown_live_bytes = gamma0 + gamma_edge * edge_count + gamma_step * step"
+  estimator: "Huber IRLS"
+  bootstrap_samples: 500
+  bootstrap_seed: 20260801
+  adjusted_step_near_zero_absolute_bytes_per_step: 4096.0
+  adjusted_step_ci_must_include_zero: true
+  unknown_step_near_zero_absolute_bytes_per_step: 1024.0
+  unknown_step_ci_must_include_zero: true
+
+fixed_topology:
+  controls: ["B", "C"]
+  required_unique_edge_counts: 1
+  required_live_tensor_count_growth: 0
+  required_old_survivor_growth_bytes: 0
+  required_unknown_growth_bytes: 0
+
+numerical_regression:
+  control: "D"
+  compare_steps: [0, 1, 2, 3, 4]
+  fields: ["positions", "velocities", "densities", "pressures"]
+  reference_archive: "06_experiments/stage_01d_fixed_physics_tgv/results/trajectory_states/smoke_n32_increasing_neighbor_n32_h5p00_dt0p00050000_tf0p010_cs20p0_regular_s0.npz"
+  rtol: 0.0
+  atol: 0.0
+  require_bitwise_equal: true
+  require_finite: true
+
+allowed_repairs:
+  require_explicit_referrer_chain: true
+  physical_formula_changes: false
+  integrator_changes: false
+  third_party_changes: false
+
+allowed_statuses:
+  - "ATTRIBUTED_TO_DYNAMIC_WORKING_SET"
+  - "INVENTORY_INSTRUMENTATION_BIAS"
+  - "RETENTION_IDENTIFIED_AND_FIXED"
+  - "RETENTION_CONFIRMED_UNFIXED"
+  - "ATTRIBUTION_UNRESOLVED"
+
+stage01d2_application_eligible_statuses:
+  - "ATTRIBUTED_TO_DYNAMIC_WORKING_SET"
+  - "INVENTORY_INSTRUMENTATION_BIAS"
+  - "RETENTION_IDENTIFIED_AND_FIXED"
+
+prohibitions:
+  run_stage01d2: false
+  run_formal_v2_convergence: false
+  run_v3: false
+  run_stage02: false
+  train_neural_network: false
