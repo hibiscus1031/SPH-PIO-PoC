@@ -147,6 +147,8 @@ def render_reports() -> dict[Path, str]:
     )
     identity_passes = sum(str(row["identity_pass"]).lower() == "true" for row in evidence)
     eligible = "具备提交下一轮审计、申请设计 Stage 01D2 新协议的资格" if analysis["stage01d2_application_eligible"] else "不具备申请 Stage 01D2 新协议的资格"
+    old_peaks = [int(row["old_survivor_storage_count"]) for row in controls]
+    same_slot_peaks = [int(row["same_slot_multigeneration_count"]) for row in controls]
 
     semantics_report = f"""# Stage 01D-R4 Gate-semantics Audit
 
@@ -181,8 +183,10 @@ def render_reports() -> dict[Path, str]:
 
 {control_table}
 
-三次的 15/15 均为 current persistent，0/15 retired；retired old-survivor、
-same-slot history、unknown growth 与明确 referrer chain 均为零。
+三次目标快照的 15/15 均为 current persistent，0/15 retired。但运行中非 GC
+accepted steps 另有 retired old-survivor，三次峰值为 `{old_peaks}`，同槽多代峰值为
+`{same_slot_peaks}`；unknown growth 与明确 referrer chain 为零。按预登记规则，任一
+retired old-survivor 已足以判为 retention signal。
 """
 
     fixture_report = f"""# Stage 01D-R4 Fixture Validation
@@ -233,8 +237,11 @@ Fixture C 的故意 history 同时触发 old-survivor 和 same-slot multigenerat
 
 ## 7. Old-survivor 与 same-slot history
 
-F1–F3 的 retired old-survivor=0、same-slot multigeneration=0、unknown bytes Δ=0、
-明确 referrer chain=0。age-2 非零仅表示当前固定工作集长寿命，不是 retired retention。
+目标 step 200 的 15 条 age-2 refs 均为 current，且强制 GC 检查点的 retired count
+归零；但 F1–F3 在非 GC accepted steps 的 retired old-survivor 峰值分别为
+`{old_peaks}`，same-slot multigeneration 峰值为 `{same_slot_peaks}`。unknown bytes Δ=0、
+明确 referrer chain=0。协议不允许用后续 GC 归零撤销已经观测到的 retired
+old-survivor，因此 retention 被重新检出。
 
 ## 8. R2/R3 证据复核
 

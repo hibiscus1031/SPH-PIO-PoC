@@ -1,0 +1,7 @@
+gate,name,passed,observed,required
+G1,fifteen_reference_identity,True,canonical=15/15; all runs current=45/45,15/15 current and 0 retired in each run
+G2,fixture_validation,True,12/12,12/12 including positive leak detection
+G3,short_f_retired_storage,False,"0/3; old peaks=[12, 15, 18]",3/3 with retired old-survivor=0 and same-slot=0
+G4,frozen_evidence_identity,True,11/11,11/11
+G5,process_and_provenance,True,15/15 reclaimed=True,"15/15, all reclaimed"
+STATUS,unique_r4_status,True,R4_RETENTION_REDETECTED,"[""R4_WEAKREF_GATE_SEMANTICS_CONFIRMED"",""R4_RETENTION_REDETECTED"",""R4_GATE_VALIDATION_FAIL"",""R4_UNRESOLVED""]"

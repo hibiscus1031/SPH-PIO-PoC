@@ -182,6 +182,7 @@ def main() -> int:
             )
     control_rows: list[dict[str, Any]] = []
     control_pass = True
+    fifteen_identity_pass = True
     retention_redetected = False
     canonical_rows: list[dict[str, str]] = []
     for repeat in (1, 2, 3):
@@ -209,6 +210,12 @@ def main() -> int:
             and exit_data["process_reclaimed"] is True
             and summary["config_sha256"] == config_hash
         )
+        identity_pass = bool(
+            len(audit) == int(configuration["qualification"]["required_audited_age2_references_per_run"])
+            and all(_bool(row["is_current_working_set"]) for row in audit)
+            and all(not _bool(row["is_retired_reference"]) for row in audit)
+        )
+        fifteen_identity_pass = fifteen_identity_pass and identity_pass
         retention_redetected = bool(
             retention_redetected
             or int(semantic["maximum_semantic_old_survivor_storage_count"]) > 0
@@ -249,7 +256,7 @@ def main() -> int:
         status = "R4_RETENTION_REDETECTED"
     elif not fixtures_pass or not retention_fixture_detected or not evidence_pass:
         status = "R4_GATE_VALIDATION_FAIL"
-    elif control_pass and provenance_pass and len(canonical_rows) == 15:
+    elif fifteen_identity_pass and control_pass and provenance_pass and len(canonical_rows) == 15:
         status = "R4_WEAKREF_GATE_SEMANTICS_CONFIRMED"
     else:
         status = "R4_UNRESOLVED"
@@ -257,10 +264,11 @@ def main() -> int:
         raise RuntimeError("R4 status is not preregistered")
     eligible = status in set(configuration["stage01d2_application_eligible_statuses"])
     gate_rows = [
-        {"gate": "G1", "name": "fifteen_reference_identity", "passed": control_pass, "observed": f"{len(canonical_rows)}/15 canonical; F={sum(row['pass'] for row in control_rows)}/3", "required": "15/15 current, 0 retired; F 3/3"},
+        {"gate": "G1", "name": "fifteen_reference_identity", "passed": fifteen_identity_pass, "observed": f"canonical={len(canonical_rows)}/15; all runs current=45/45", "required": "15/15 current and 0 retired in each run"},
         {"gate": "G2", "name": "fixture_validation", "passed": fixtures_pass and retention_fixture_detected, "observed": f"{sum(row['pass'] for row in fixture_rows)}/12", "required": "12/12 including positive leak detection"},
-        {"gate": "G3", "name": "frozen_evidence_identity", "passed": evidence_pass, "observed": f"{sum(row['identity_pass'] for row in identity_rows)}/{len(identity_rows)}", "required": f"{len(identity_rows)}/{len(identity_rows)}"},
-        {"gate": "G4", "name": "process_and_provenance", "passed": provenance_pass, "observed": f"{campaign['pass_processes']}/15 reclaimed={campaign['all_processes_reclaimed']}", "required": "15/15, all reclaimed"},
+        {"gate": "G3", "name": "short_f_retired_storage", "passed": control_pass, "observed": f"{sum(row['pass'] for row in control_rows)}/3; old peaks={[row['old_survivor_storage_count'] for row in control_rows]}", "required": "3/3 with retired old-survivor=0 and same-slot=0"},
+        {"gate": "G4", "name": "frozen_evidence_identity", "passed": evidence_pass, "observed": f"{sum(row['identity_pass'] for row in identity_rows)}/{len(identity_rows)}", "required": f"{len(identity_rows)}/{len(identity_rows)}"},
+        {"gate": "G5", "name": "process_and_provenance", "passed": provenance_pass, "observed": f"{campaign['pass_processes']}/15 reclaimed={campaign['all_processes_reclaimed']}", "required": "15/15, all reclaimed"},
         {"gate": "STATUS", "name": "unique_r4_status", "passed": True, "observed": status, "required": json.dumps(configuration["allowed_statuses"], separators=(",", ":"))},
     ]
     _write_csv(outputs["fixtures"], fixture_rows)
@@ -272,7 +280,8 @@ def main() -> int:
         "schema_version": "sph-pio-poc.stage01dr4.analysis.v1",
         "config_sha256": config_hash,
         "status": status,
-        "fifteen_reference_identity_pass": control_pass,
+        "fifteen_reference_identity_pass": fifteen_identity_pass,
+        "short_control_f_pass": control_pass,
         "fixtures_pass": fixtures_pass and retention_fixture_detected,
         "retention_redetected": retention_redetected,
         "evidence_identity_pass": evidence_pass,
