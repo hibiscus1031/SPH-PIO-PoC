@@ -61,7 +61,7 @@ def equivalence()->bool:
     for epsilon in (-1e-10,0.,1e-10):
         positions=torch.tensor([[-.2,0.],[-.2+support*(1+epsilon),0.],[.65,.65],[-.65,-.65]],dtype=torch.float64);rows.append(sparse_dense("MMS_B",positions,velocity,mass,supports,0.,f"cutoff_{epsilon:+.0e}"))
     write_csv(STAGE/"results/sparse_dense_equivalence.csv",rows)
-    maxima={name:max(row[f"{name}_{kind}"] for row in rows) for name in ("density","pressure","pressure_acceleration","viscosity_acceleration","source","total_acceleration","dx_dt","dv_dt") for kind in ("absolute_linf","relative_linf")}
+    maxima={f"{name}_{kind}":max(row[f"{name}_{kind}"] for row in rows) for name in ("density","pressure","pressure_acceleration","viscosity_acceleration","source","total_acceleration","dx_dt","dv_dt") for kind in ("absolute_linf","relative_linf")}
     checks={"density":maxima["density_relative_linf"]<=1e-13,"pressure":maxima["pressure_relative_linf"]<=1e-13,"acceleration_relative":maxima["total_acceleration_relative_linf"]<=1e-11,"acceleration_absolute":maxima["total_acceleration_absolute_linf"]<=1e-12,"finite":all(row["finite"] for row in rows),"baseline_state_count":sum(row["label"].startswith("baseline_replay") for row in rows)>=20,"edge_switch_states_present":sum(row["label"].startswith("edge_switch") for row in rows)>=2}
     payload={"schema_version":"sph-pio-poc.stage01f3r.sparse-dense.v1","case_count":len(rows),"maxima":maxima,"checks":checks,"cutoff_inclusion_convention":"r=H sparse tolerance edge may exist but aggregated RHS is unchanged because kernel and pair terms are zero","status":"PASS" if all(checks.values()) else "FAIL"};write_json(STAGE/"results/sparse_dense_equivalence_summary.json",payload);return payload["status"]=="PASS"
 def events()->bool:
