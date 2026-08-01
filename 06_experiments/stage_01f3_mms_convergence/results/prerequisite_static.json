@@ -1,0 +1,41 @@
+{
+  "manifest_identity": {
+    "06_experiments/stage_01f2_mms_implementation/configs/preregistered_stage01f2.yml": true,
+    "06_experiments/stage_01f2_mms_implementation/configs/stage01f_frozen_sha256_manifest.csv": true,
+    "06_experiments/stage_01f2_mms_implementation/references/mms_b_n16_dop853.npz": true,
+    "06_experiments/stage_01f2_mms_implementation/references/mms_b_n32_dop853.npz": true,
+    "06_experiments/stage_01f2_mms_implementation/results/A1_source_calls.csv": true,
+    "06_experiments/stage_01f2_mms_implementation/results/A2_repeat1_source_calls.csv": true,
+    "06_experiments/stage_01f2_mms_implementation/results/A2_repeat2_source_calls.csv": true,
+    "06_experiments/stage_01f2_mms_implementation/results/B1_source_calls.csv": true,
+    "06_experiments/stage_01f2_mms_implementation/results/B2_repeat1_source_calls.csv": true,
+    "06_experiments/stage_01f2_mms_implementation/results/B2_repeat2_source_calls.csv": true,
+    "06_experiments/stage_01f2_mms_implementation/results/campaign_index.csv": true,
+    "06_experiments/stage_01f2_mms_implementation/results/mms_b_n16_reference_summary.json": true,
+    "06_experiments/stage_01f2_mms_implementation/results/mms_b_n32_reference_summary.json": true,
+    "06_experiments/stage_01f2_mms_implementation/results/source_ad_fd_v2.csv": true,
+    "06_experiments/stage_01f2_mms_implementation/results/source_ad_fd_v2_summary.json": true,
+    "06_experiments/stage_01f2_mms_implementation/results/stage01f2_evaluation_v2.json": true,
+    "06_experiments/stage_01f2_mms_implementation/results/zero_source_tgv_n16_20.json": true,
+    "06_experiments/stage_01f2_mms_implementation/results/zero_source_tgv_n32_20.json": true,
+    "06_experiments/stage_01f2_mms_implementation/results/zero_source_zero_n16.json": true,
+    "06_experiments/stage_01f2_mms_implementation/trajectory_states/A2_repeat1.npz": true,
+    "06_experiments/stage_01f2_mms_implementation/trajectory_states/A2_repeat2.npz": true,
+    "06_experiments/stage_01f2_mms_implementation/trajectory_states/B2_repeat1.npz": true,
+    "06_experiments/stage_01f2_mms_implementation/trajectory_states/B2_repeat2.npz": true,
+    "07_reports/stage_01f2_external_balance.md": true,
+    "07_reports/stage_01f2_final_report.md": true,
+    "07_reports/stage_01f2_mms_a_reference.md": true
+  },
+  "pytest_return_code": 0,
+  "schema_version": "sph-pio-poc.stage01f3.prerequisite.v1",
+  "stage01f2_checks": {
+    "mms_b_n16_reference_summary.json": true,
+    "mms_b_n32_reference_summary.json": true,
+    "zero_source_tgv_n16_20.json": true,
+    "zero_source_tgv_n32_20.json": true
+  },
+  "stage01f2_evaluator_status": "MMS_IMPLEMENTATION_VERIFIED_PASS",
+  "status": "PASS",
+  "tag_target": "dd28381d176b02483ebe012eebedd665252b5c56"
+}

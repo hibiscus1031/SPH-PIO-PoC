@@ -1,0 +1,73 @@
+{
+  "baseline_statistics": {
+    "atol": 1e-14,
+    "max_step": 3.125e-05,
+    "nfev": 3875,
+    "njev": 0,
+    "nlu": 0,
+    "rtol": 1e-12
+  },
+  "checks": {
+    "finite": true,
+    "sensitivity": true,
+    "topology_defects": true,
+    "topology_identity": false
+  },
+  "code_git_hash": "af6a0331ad2598a4493baa3168b3aae90fd9b0fc",
+  "config_sha256": "8ca90dcc84f08c583afe04e4c4dca9ccd94664356de30d53b72221bfc3daca24",
+  "position_linf_difference": 2.55351295663786e-15,
+  "reference_path": "06_experiments/stage_01f3_mms_convergence/references/semidiscrete_mms_b_n16_dop853.npz",
+  "reference_sha256": "93aecfbc5c7355774fc3c1ae736a0bcb3a2ea1cf1069da7a542e0e8be57c9b01",
+  "schema_version": "sph-pio-poc.stage01f3.semidiscrete-reference.v1",
+  "sensitivity_statistics": {
+    "atol": 1e-15,
+    "max_step": 1.5625e-05,
+    "nfev": 7715,
+    "njev": 0,
+    "nlu": 0,
+    "rtol": 1e-13
+  },
+  "solution": "MMS_B",
+  "status": "FAIL",
+  "topology": {
+    "baseline": {
+      "edge_counts": [
+        12480,
+        12496,
+        12512,
+        12528,
+        12544,
+        12560,
+        12576,
+        12592,
+        12608,
+        12624,
+        12640,
+        12656,
+        12672
+      ],
+      "maximum_defects": 0,
+      "unique_edge_hashes": 28
+    },
+    "sensitivity": {
+      "edge_counts": [
+        12480,
+        12496,
+        12512,
+        12528,
+        12544,
+        12560,
+        12576,
+        12592,
+        12608,
+        12624,
+        12640,
+        12656,
+        12672
+      ],
+      "maximum_defects": 0,
+      "unique_edge_hashes": 27
+    }
+  },
+  "velocity_linf_difference": 3.164135620181696e-14
+}
