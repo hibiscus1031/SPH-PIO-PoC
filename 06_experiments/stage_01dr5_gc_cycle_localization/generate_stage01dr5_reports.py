@@ -39,6 +39,57 @@ def _sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def _retired_slot_overlap_peaks(instances: list[dict[str, str]]) -> list[dict[str, Any]]:
+    """Recover per-slot concurrent retired-generation peaks from itemized lifetimes."""
+    by_slot: dict[str, list[dict[str, str]]] = {}
+    for row in instances:
+        by_slot.setdefault(row["semantic_slot"], []).append(row)
+    peaks: list[dict[str, Any]] = []
+    for slot, rows in sorted(by_slot.items()):
+        first_step = min(int(row["retirement_step"]) for row in rows)
+        last_step = max(int(row["last_alive_step"]) for row in rows)
+        samples: list[tuple[int, int]] = []
+        for step in range(first_step, last_step + 1):
+            overlap = sum(
+                int(row["retirement_step"]) <= step <= int(row["last_alive_step"])
+                for row in rows
+            )
+            samples.append((step, overlap))
+        peak = max(overlap for _, overlap in samples)
+        peak_steps = [step for step, overlap in samples if overlap == peak]
+        peaks.append(
+            {
+                "semantic_slot": slot,
+                "peak": peak,
+                "first_peak_step": peak_steps[0],
+                "last_peak_step": peak_steps[-1],
+            }
+        )
+    return peaks
+
+
+def _default_gc_zero_observations() -> list[dict[str, Any]]:
+    observations: list[dict[str, Any]] = []
+    for repeat in (1, 2, 3):
+        run_id = f"stage01dr5_g1_r{repeat}"
+        rows = _read_csv(RESULTS_ROOT / "lifetime_curves" / f"{run_id}.csv")
+        zero_steps = [
+            int(row["step"])
+            for row in rows
+            if int(row["retired_old_survivor_count"]) == 0
+        ]
+        observations.append(
+            {
+                "run_id": run_id,
+                "zero_count": len(zero_steps),
+                "first_zero_step": zero_steps[0] if zero_steps else "none",
+                "last_zero_step": zero_steps[-1] if zero_steps else "none",
+                "second_half_zero_count": sum(step > len(rows) // 2 for step in zero_steps),
+            }
+        )
+    return observations
+
+
 def _table(headers: Iterable[str], rows: Iterable[Iterable[Any]]) -> str:
     header = list(headers)
     output = ["| " + " | ".join(header) + " |", "|" + "|".join("---" for _ in header) + "|"]
@@ -87,6 +138,8 @@ def render_reports() -> dict[Path, str]:
     analysis = _read_json(RESULTS_ROOT / "analysis_summary.json")
     campaign = _read_json(RESULTS_ROOT / "campaign_summary.json")
     status = (RESULTS_ROOT / "stage01dr5_status.txt").read_text(encoding="utf-8").strip()
+    slot_peaks = _retired_slot_overlap_peaks(instances)
+    zero_observations = _default_gc_zero_observations()
     slot_table = _table(
         ("semantic slot", "instances", "storages", "first retired", "last alive", "owner types", "categories"),
         ((row["semantic_slot"], row["retired_instance_count"], row["unique_storage_count"], row["first_retirement_step"], row["last_alive_step"], row["owner_types"], row["owner_categories"]) for row in slots),
@@ -116,6 +169,24 @@ def render_reports() -> dict[Path, str]:
                 f"{float(row['manual_gc_checkpoint_zero_fraction']):.3f}", f"{float(row['manual_gc_total_wall_seconds']):.3f}",
             )
             for row in gc_rows
+        ),
+    )
+    slot_peak_table = _table(
+        ("semantic slot", "peak concurrent retired generations", "first peak step", "last peak step"),
+        (
+            (row["semantic_slot"], row["peak"], row["first_peak_step"], row["last_peak_step"])
+            for row in slot_peaks
+        ),
+    )
+    peak_nine_slots = [row["semantic_slot"] for row in slot_peaks if row["peak"] == 9]
+    default_zero_table = _table(
+        ("run", "zero observations", "first zero step", "last zero step", "second-half zeros"),
+        (
+            (
+                row["run_id"], row["zero_count"], row["first_zero_step"],
+                row["last_zero_step"], row["second_half_zero_count"],
+            )
+            for row in zero_observations
         ),
     )
     isolation_table = _table(
@@ -193,10 +264,16 @@ I0 不注册 solver Tensor，只在固定 checkpoint 读取外部 GC 类型计�
 
 {gc_table}
 
+G1 的 retired-count 总归零观测如下；这一区分“自然 GC 事件发生”与“所有 retired
+storage 同时归零”，不把任一次 generation-0 collection 误写成全量归零：
+
+{default_zero_table}
+
 default GC bounded=`{analysis['default_gc_bounded']}`；GC-disabled linear growth=
 `{analysis['disabled_gc_linear_growth']}`；periodic checkpoint zero=
-`{analysis['periodic_gc_checkpoint_zero']}`。G3 的 wall-time 只作为诊断开销，周期 collect
-没有被采用为正式修复。
+`{analysis['periodic_gc_checkpoint_zero']}`。三次 G1 均有重复总归零观测且预登记的前/后半程
+峰值判据通过；但 r1 的最后一次总归零在 step 219，不能声称三次运行在整个 2000 步内都
+持续总归零。G3 的 wall-time 只作为诊断开销，周期 collect 没有被采用为正式修复。
 """
     remediation_report = f"""# Stage 01D-R5 Remediation Report
 
@@ -220,8 +297,13 @@ default GC bounded=`{analysis['default_gc_bounded']}`；GC-disabled linear growt
 
 ## 3. 同槽 9 代的来源
 
-`maximum_retired_generations_one_slot` 与具体 slot 均由逐对象 generation 记录计算；
-不再只报告 R4 的聚合峰值 9。
+逐项生命周期区间重建得到：
+
+{slot_peak_table}
+
+在 L1 的 200-step 定位运行中，最大重叠数恰为 9 的槽是
+`{', '.join(peak_nine_slots)}`，二者都在 steps 105–106 达到 9。邻域槽还出现更高峰值，
+因此 R4 的聚合峰值 9 不能解释为单一固定 owner；owner/referrer 归属仍为 unresolved。
 
 ## 4. GC 前 referrer 图
 
@@ -232,6 +314,14 @@ default GC bounded=`{analysis['default_gc_bounded']}`；GC-disabled linear growt
 ## 5. Default/disabled/periodic GC 对照
 
 {gc_table}
+
+G1 总归零观测：
+
+{default_zero_table}
+
+三次 G1 均出现重复总归零且预登记上包络判据通过；r1 最后一次总归零为 step 219，故不作
+“三个重复在全程持续归零”的扩大表述。G2 三次均以约 10 storage/step、R²≈1 线性增长；
+G3 的 25-step checkpoint 归零率均为 1，但只作为机制诊断，不作为修复。
 
 ## 6. Instrumentation isolation
 

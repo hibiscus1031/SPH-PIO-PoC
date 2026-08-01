@@ -1,0 +1,7 @@
+gate,name,passed,observed,required
+R1,retired_object_inventory,True,1367,>0 itemized instances
+R2,pre_gc_referrer_graph,True,graphs=13 cycles=False,representative type graphs depth<=4
+R3,gc_schedule_contrast,True,G1bounded=True G2linear=True G3zero=True,bounded/linear/zero
+R4,instrumentation_isolation,False,I0stable=False trackerSignal=True,solver-only current storage bounded
+R5,numerical_and_provenance,True,workers=25/25 numeric=25/25,25/25 reclaimed and hashes equal
+STATUS,unique_r5_status,True,R5_BOUNDED_GC_DELAY_CONFIRMED,"[""R5_INSTRUMENTATION_RETENTION_IDENTIFIED_AND_REMOVED"",""R5_SOLVER_CYCLE_IDENTIFIED_AND_FIXED"",""R5_BOUNDED_GC_DELAY_CONFIRMED"",""R5_UNBOUNDED_RETENTION_CONFIRMED"",""R5_ATTRIBUTION_UNRESOLVED""]"

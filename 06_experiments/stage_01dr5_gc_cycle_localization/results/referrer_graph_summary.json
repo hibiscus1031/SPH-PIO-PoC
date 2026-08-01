@@ -1,0 +1,2072 @@
+{
+  "graphs": [
+    {
+      "captured_before_gc": true,
+      "cycle_localized": false,
+      "cycle_type_paths": [],
+      "edges": [
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 1
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "list",
+          "from_node": 0,
+          "to_node": 2
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 3
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "list",
+          "from_node": 0,
+          "to_node": 4
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 5
+        },
+        {
+          "attribute_or_key": "key:unresolved",
+          "container_type": "dict",
+          "from_node": 1,
+          "to_node": 6
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "cell",
+          "from_node": 2,
+          "to_node": 7
+        },
+        {
+          "attribute_or_key": "key:unresolved",
+          "container_type": "dict",
+          "from_node": 3,
+          "to_node": 8
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "cell",
+          "from_node": 4,
+          "to_node": 9
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "list",
+          "from_node": 5,
+          "to_node": 10
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "cell",
+          "from_node": 6,
+          "to_node": 11
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 7,
+          "to_node": 12
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "cell",
+          "from_node": 8,
+          "to_node": 13
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 9,
+          "to_node": 14
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "list_iterator",
+          "from_node": 10,
+          "to_node": 15
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 11,
+          "to_node": 16
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "function",
+          "from_node": 12,
+          "to_node": 17
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 13,
+          "to_node": 18
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "function",
+          "from_node": 14,
+          "to_node": 19
+        }
+      ],
+      "maximum_depth": 4,
+      "nodes": [
+        {
+          "depth": 0,
+          "diagnostic_owned": false,
+          "node": 0,
+          "object_type": "Tensor",
+          "project_owned": false,
+          "source_module": "torch"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 1,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 2,
+          "object_type": "list",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 3,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 4,
+          "object_type": "list",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 5,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 6,
+          "object_type": "dict",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 7,
+          "object_type": "cell",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 8,
+          "object_type": "dict",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 9,
+          "object_type": "cell",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 10,
+          "object_type": "list",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 11,
+          "object_type": "cell",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 12,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 13,
+          "object_type": "cell",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 14,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 15,
+          "object_type": "list_iterator",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 4,
+          "diagnostic_owned": false,
+          "node": 16,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 4,
+          "diagnostic_owned": false,
+          "node": 17,
+          "object_type": "function",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 4,
+          "diagnostic_owned": false,
+          "node": 18,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 4,
+          "diagnostic_owned": false,
+          "node": 19,
+          "object_type": "function",
+          "project_owned": false,
+          "source_module": "builtins"
+        }
+      ],
+      "representative": "unresolved:endpoint_neighborhood.displacement"
+    },
+    {
+      "captured_before_gc": true,
+      "cycle_localized": false,
+      "cycle_type_paths": [],
+      "edges": [
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 1
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "list",
+          "from_node": 0,
+          "to_node": 2
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 3
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "list",
+          "from_node": 0,
+          "to_node": 4
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 5
+        },
+        {
+          "attribute_or_key": "key:unresolved",
+          "container_type": "dict",
+          "from_node": 1,
+          "to_node": 6
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "cell",
+          "from_node": 2,
+          "to_node": 7
+        },
+        {
+          "attribute_or_key": "key:unresolved",
+          "container_type": "dict",
+          "from_node": 3,
+          "to_node": 8
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "cell",
+          "from_node": 4,
+          "to_node": 9
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "list",
+          "from_node": 5,
+          "to_node": 10
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "cell",
+          "from_node": 6,
+          "to_node": 11
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 7,
+          "to_node": 12
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "cell",
+          "from_node": 8,
+          "to_node": 13
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 9,
+          "to_node": 14
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "list_iterator",
+          "from_node": 10,
+          "to_node": 15
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 11,
+          "to_node": 16
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "function",
+          "from_node": 12,
+          "to_node": 17
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 13,
+          "to_node": 18
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "function",
+          "from_node": 14,
+          "to_node": 19
+        }
+      ],
+      "maximum_depth": 4,
+      "nodes": [
+        {
+          "depth": 0,
+          "diagnostic_owned": false,
+          "node": 0,
+          "object_type": "Tensor",
+          "project_owned": false,
+          "source_module": "torch"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 1,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 2,
+          "object_type": "list",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 3,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 4,
+          "object_type": "list",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 5,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 6,
+          "object_type": "dict",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 7,
+          "object_type": "cell",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 8,
+          "object_type": "dict",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 9,
+          "object_type": "cell",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 10,
+          "object_type": "list",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 11,
+          "object_type": "cell",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 12,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 13,
+          "object_type": "cell",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 14,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 15,
+          "object_type": "list_iterator",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 4,
+          "diagnostic_owned": false,
+          "node": 16,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 4,
+          "diagnostic_owned": false,
+          "node": 17,
+          "object_type": "function",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 4,
+          "diagnostic_owned": false,
+          "node": 18,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 4,
+          "diagnostic_owned": false,
+          "node": 19,
+          "object_type": "function",
+          "project_owned": false,
+          "source_module": "builtins"
+        }
+      ],
+      "representative": "unresolved:endpoint_neighborhood.distance"
+    },
+    {
+      "captured_before_gc": true,
+      "cycle_localized": false,
+      "cycle_type_paths": [],
+      "edges": [
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 1
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "list",
+          "from_node": 0,
+          "to_node": 2
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 3
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "list",
+          "from_node": 0,
+          "to_node": 4
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 5
+        },
+        {
+          "attribute_or_key": "key:unresolved",
+          "container_type": "dict",
+          "from_node": 1,
+          "to_node": 6
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "cell",
+          "from_node": 2,
+          "to_node": 7
+        },
+        {
+          "attribute_or_key": "key:unresolved",
+          "container_type": "dict",
+          "from_node": 3,
+          "to_node": 8
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "cell",
+          "from_node": 4,
+          "to_node": 9
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "list",
+          "from_node": 5,
+          "to_node": 10
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "cell",
+          "from_node": 6,
+          "to_node": 11
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 7,
+          "to_node": 12
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "cell",
+          "from_node": 8,
+          "to_node": 13
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 9,
+          "to_node": 14
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "list_iterator",
+          "from_node": 10,
+          "to_node": 15
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 11,
+          "to_node": 16
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "function",
+          "from_node": 12,
+          "to_node": 17
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 13,
+          "to_node": 18
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "function",
+          "from_node": 14,
+          "to_node": 19
+        }
+      ],
+      "maximum_depth": 4,
+      "nodes": [
+        {
+          "depth": 0,
+          "diagnostic_owned": false,
+          "node": 0,
+          "object_type": "Tensor",
+          "project_owned": false,
+          "source_module": "torch"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 1,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 2,
+          "object_type": "list",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 3,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 4,
+          "object_type": "list",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 5,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 6,
+          "object_type": "dict",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 7,
+          "object_type": "cell",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 8,
+          "object_type": "dict",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 9,
+          "object_type": "cell",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 10,
+          "object_type": "list",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 11,
+          "object_type": "cell",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 12,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 13,
+          "object_type": "cell",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 14,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 15,
+          "object_type": "list_iterator",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 4,
+          "diagnostic_owned": false,
+          "node": 16,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 4,
+          "diagnostic_owned": false,
+          "node": 17,
+          "object_type": "function",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 4,
+          "diagnostic_owned": false,
+          "node": 18,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 4,
+          "diagnostic_owned": false,
+          "node": 19,
+          "object_type": "function",
+          "project_owned": false,
+          "source_module": "builtins"
+        }
+      ],
+      "representative": "unresolved:endpoint_neighborhood.edge_support"
+    },
+    {
+      "captured_before_gc": true,
+      "cycle_localized": false,
+      "cycle_type_paths": [],
+      "edges": [
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 1
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "list",
+          "from_node": 1,
+          "to_node": 2
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "list_iterator",
+          "from_node": 2,
+          "to_node": 3
+        }
+      ],
+      "maximum_depth": 4,
+      "nodes": [
+        {
+          "depth": 0,
+          "diagnostic_owned": false,
+          "node": 0,
+          "object_type": "Tensor",
+          "project_owned": false,
+          "source_module": "torch"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 1,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 2,
+          "object_type": "list",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 3,
+          "object_type": "list_iterator",
+          "project_owned": false,
+          "source_module": "builtins"
+        }
+      ],
+      "representative": "unresolved:midpoint_neighborhood.displacement"
+    },
+    {
+      "captured_before_gc": true,
+      "cycle_localized": false,
+      "cycle_type_paths": [],
+      "edges": [
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 1
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "list",
+          "from_node": 1,
+          "to_node": 2
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "list_iterator",
+          "from_node": 2,
+          "to_node": 3
+        }
+      ],
+      "maximum_depth": 4,
+      "nodes": [
+        {
+          "depth": 0,
+          "diagnostic_owned": false,
+          "node": 0,
+          "object_type": "Tensor",
+          "project_owned": false,
+          "source_module": "torch"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 1,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 2,
+          "object_type": "list",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 3,
+          "object_type": "list_iterator",
+          "project_owned": false,
+          "source_module": "builtins"
+        }
+      ],
+      "representative": "unresolved:midpoint_neighborhood.distance"
+    },
+    {
+      "captured_before_gc": true,
+      "cycle_localized": false,
+      "cycle_type_paths": [],
+      "edges": [
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 1
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "list",
+          "from_node": 1,
+          "to_node": 2
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "list_iterator",
+          "from_node": 2,
+          "to_node": 3
+        }
+      ],
+      "maximum_depth": 4,
+      "nodes": [
+        {
+          "depth": 0,
+          "diagnostic_owned": false,
+          "node": 0,
+          "object_type": "Tensor",
+          "project_owned": false,
+          "source_module": "torch"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 1,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 2,
+          "object_type": "list",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 3,
+          "object_type": "list_iterator",
+          "project_owned": false,
+          "source_module": "builtins"
+        }
+      ],
+      "representative": "unresolved:midpoint_neighborhood.edge_support"
+    },
+    {
+      "captured_before_gc": true,
+      "cycle_localized": false,
+      "cycle_type_paths": [],
+      "edges": [
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 1
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 2
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "list",
+          "from_node": 1,
+          "to_node": 3
+        },
+        {
+          "attribute_or_key": "key:unresolved",
+          "container_type": "dict",
+          "from_node": 2,
+          "to_node": 4
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "list_iterator",
+          "from_node": 3,
+          "to_node": 5
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "cell",
+          "from_node": 4,
+          "to_node": 6
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 6,
+          "to_node": 7
+        }
+      ],
+      "maximum_depth": 4,
+      "nodes": [
+        {
+          "depth": 0,
+          "diagnostic_owned": false,
+          "node": 0,
+          "object_type": "Tensor",
+          "project_owned": false,
+          "source_module": "torch"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 1,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 2,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 3,
+          "object_type": "list",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 4,
+          "object_type": "dict",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 5,
+          "object_type": "list_iterator",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 6,
+          "object_type": "cell",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 4,
+          "diagnostic_owned": false,
+          "node": 7,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        }
+      ],
+      "representative": "unresolved:old_state.densities"
+    },
+    {
+      "captured_before_gc": true,
+      "cycle_localized": false,
+      "cycle_type_paths": [],
+      "edges": [
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 1
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 2
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "list",
+          "from_node": 1,
+          "to_node": 3
+        },
+        {
+          "attribute_or_key": "key:unresolved",
+          "container_type": "dict",
+          "from_node": 2,
+          "to_node": 4
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "list_iterator",
+          "from_node": 3,
+          "to_node": 5
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "cell",
+          "from_node": 4,
+          "to_node": 6
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 6,
+          "to_node": 7
+        }
+      ],
+      "maximum_depth": 4,
+      "nodes": [
+        {
+          "depth": 0,
+          "diagnostic_owned": false,
+          "node": 0,
+          "object_type": "Tensor",
+          "project_owned": false,
+          "source_module": "torch"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 1,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 2,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 3,
+          "object_type": "list",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 4,
+          "object_type": "dict",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 5,
+          "object_type": "list_iterator",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 6,
+          "object_type": "cell",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 4,
+          "diagnostic_owned": false,
+          "node": 7,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        }
+      ],
+      "representative": "unresolved:old_state.positions"
+    },
+    {
+      "captured_before_gc": true,
+      "cycle_localized": false,
+      "cycle_type_paths": [],
+      "edges": [
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 1
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 2
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "list",
+          "from_node": 1,
+          "to_node": 3
+        },
+        {
+          "attribute_or_key": "key:unresolved",
+          "container_type": "dict",
+          "from_node": 2,
+          "to_node": 4
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "list_iterator",
+          "from_node": 3,
+          "to_node": 5
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "cell",
+          "from_node": 4,
+          "to_node": 6
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 6,
+          "to_node": 7
+        }
+      ],
+      "maximum_depth": 4,
+      "nodes": [
+        {
+          "depth": 0,
+          "diagnostic_owned": false,
+          "node": 0,
+          "object_type": "Tensor",
+          "project_owned": false,
+          "source_module": "torch"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 1,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 2,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 3,
+          "object_type": "list",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 4,
+          "object_type": "dict",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 5,
+          "object_type": "list_iterator",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 6,
+          "object_type": "cell",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 4,
+          "diagnostic_owned": false,
+          "node": 7,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        }
+      ],
+      "representative": "unresolved:old_state.pressures"
+    },
+    {
+      "captured_before_gc": true,
+      "cycle_localized": false,
+      "cycle_type_paths": [],
+      "edges": [
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 1
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 2
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "list",
+          "from_node": 1,
+          "to_node": 3
+        },
+        {
+          "attribute_or_key": "key:unresolved",
+          "container_type": "dict",
+          "from_node": 2,
+          "to_node": 4
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "list_iterator",
+          "from_node": 3,
+          "to_node": 5
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "cell",
+          "from_node": 4,
+          "to_node": 6
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 6,
+          "to_node": 7
+        }
+      ],
+      "maximum_depth": 4,
+      "nodes": [
+        {
+          "depth": 0,
+          "diagnostic_owned": false,
+          "node": 0,
+          "object_type": "Tensor",
+          "project_owned": false,
+          "source_module": "torch"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 1,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 2,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 3,
+          "object_type": "list",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 4,
+          "object_type": "dict",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 5,
+          "object_type": "list_iterator",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 6,
+          "object_type": "cell",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 4,
+          "diagnostic_owned": false,
+          "node": 7,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        }
+      ],
+      "representative": "unresolved:old_state.velocities"
+    },
+    {
+      "captured_before_gc": true,
+      "cycle_localized": false,
+      "cycle_type_paths": [],
+      "edges": [
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "list",
+          "from_node": 0,
+          "to_node": 1
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 2
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "list",
+          "from_node": 0,
+          "to_node": 3
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 4
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "cell",
+          "from_node": 1,
+          "to_node": 5
+        },
+        {
+          "attribute_or_key": "key:unresolved",
+          "container_type": "dict",
+          "from_node": 2,
+          "to_node": 6
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "cell",
+          "from_node": 3,
+          "to_node": 7
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "list",
+          "from_node": 4,
+          "to_node": 8
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 5,
+          "to_node": 9
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "cell",
+          "from_node": 6,
+          "to_node": 10
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 7,
+          "to_node": 11
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "list_iterator",
+          "from_node": 8,
+          "to_node": 12
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "function",
+          "from_node": 9,
+          "to_node": 13
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 10,
+          "to_node": 14
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "function",
+          "from_node": 11,
+          "to_node": 15
+        }
+      ],
+      "maximum_depth": 4,
+      "nodes": [
+        {
+          "depth": 0,
+          "diagnostic_owned": false,
+          "node": 0,
+          "object_type": "Tensor",
+          "project_owned": false,
+          "source_module": "torch"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 1,
+          "object_type": "list",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 2,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 3,
+          "object_type": "list",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 4,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 5,
+          "object_type": "cell",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 6,
+          "object_type": "dict",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 7,
+          "object_type": "cell",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 8,
+          "object_type": "list",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 9,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 10,
+          "object_type": "cell",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 11,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 12,
+          "object_type": "list_iterator",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 4,
+          "diagnostic_owned": false,
+          "node": 13,
+          "object_type": "function",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 4,
+          "diagnostic_owned": false,
+          "node": 14,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 4,
+          "diagnostic_owned": false,
+          "node": 15,
+          "object_type": "function",
+          "project_owned": false,
+          "source_module": "builtins"
+        }
+      ],
+      "representative": "unresolved:start_stage_neighborhood.displacement"
+    },
+    {
+      "captured_before_gc": true,
+      "cycle_localized": false,
+      "cycle_type_paths": [],
+      "edges": [
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "list",
+          "from_node": 0,
+          "to_node": 1
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 2
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "list",
+          "from_node": 0,
+          "to_node": 3
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 4
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "cell",
+          "from_node": 1,
+          "to_node": 5
+        },
+        {
+          "attribute_or_key": "key:unresolved",
+          "container_type": "dict",
+          "from_node": 2,
+          "to_node": 6
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "cell",
+          "from_node": 3,
+          "to_node": 7
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "list",
+          "from_node": 4,
+          "to_node": 8
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 5,
+          "to_node": 9
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "cell",
+          "from_node": 6,
+          "to_node": 10
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 7,
+          "to_node": 11
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "list_iterator",
+          "from_node": 8,
+          "to_node": 12
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "function",
+          "from_node": 9,
+          "to_node": 13
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 10,
+          "to_node": 14
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "function",
+          "from_node": 11,
+          "to_node": 15
+        }
+      ],
+      "maximum_depth": 4,
+      "nodes": [
+        {
+          "depth": 0,
+          "diagnostic_owned": false,
+          "node": 0,
+          "object_type": "Tensor",
+          "project_owned": false,
+          "source_module": "torch"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 1,
+          "object_type": "list",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 2,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 3,
+          "object_type": "list",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 4,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 5,
+          "object_type": "cell",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 6,
+          "object_type": "dict",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 7,
+          "object_type": "cell",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 8,
+          "object_type": "list",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 9,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 10,
+          "object_type": "cell",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 11,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 12,
+          "object_type": "list_iterator",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 4,
+          "diagnostic_owned": false,
+          "node": 13,
+          "object_type": "function",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 4,
+          "diagnostic_owned": false,
+          "node": 14,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 4,
+          "diagnostic_owned": false,
+          "node": 15,
+          "object_type": "function",
+          "project_owned": false,
+          "source_module": "builtins"
+        }
+      ],
+      "representative": "unresolved:start_stage_neighborhood.distance"
+    },
+    {
+      "captured_before_gc": true,
+      "cycle_localized": false,
+      "cycle_type_paths": [],
+      "edges": [
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "list",
+          "from_node": 0,
+          "to_node": 1
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 2
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "list",
+          "from_node": 0,
+          "to_node": 3
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "tuple",
+          "from_node": 0,
+          "to_node": 4
+        },
+        {
+          "attribute_or_key": "container_member",
+          "container_type": "list",
+          "from_node": 4,
+          "to_node": 5
+        },
+        {
+          "attribute_or_key": "reference",
+          "container_type": "list_iterator",
+          "from_node": 5,
+          "to_node": 6
+        }
+      ],
+      "maximum_depth": 4,
+      "nodes": [
+        {
+          "depth": 0,
+          "diagnostic_owned": false,
+          "node": 0,
+          "object_type": "Tensor",
+          "project_owned": false,
+          "source_module": "torch"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 1,
+          "object_type": "list",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 2,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 3,
+          "object_type": "list",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 1,
+          "diagnostic_owned": false,
+          "node": 4,
+          "object_type": "tuple",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 2,
+          "diagnostic_owned": false,
+          "node": 5,
+          "object_type": "list",
+          "project_owned": false,
+          "source_module": "builtins"
+        },
+        {
+          "depth": 3,
+          "diagnostic_owned": false,
+          "node": 6,
+          "object_type": "list_iterator",
+          "project_owned": false,
+          "source_module": "builtins"
+        }
+      ],
+      "representative": "unresolved:start_stage_neighborhood.edge_support"
+    }
+  ],
+  "run_id": "stage01dr5_l1_r1"
+}

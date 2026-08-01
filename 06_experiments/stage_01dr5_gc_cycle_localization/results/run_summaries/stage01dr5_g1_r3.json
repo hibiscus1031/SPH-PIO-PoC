@@ -1,0 +1,35 @@
+{
+  "all_state_values_finite": true,
+  "completed_steps": 2000,
+  "components": [
+    "observer_callback",
+    "semantic_ledger",
+    "weakref_tracker"
+  ],
+  "config_sha256": "52626240f728ebc5490905e906b0ef50fd5cbc459280bea6d587ff54530ee815",
+  "current_tensor_bytes_delta": 0,
+  "edge_count_values": [
+    82944
+  ],
+  "git_hash": "7ff1ac65efa9922fea909be9474e65a1593d0a28",
+  "manual_gc_total_collected_objects": 0,
+  "manual_gc_total_wall_seconds": 0.0,
+  "maximum_current_rss_bytes": 331923456,
+  "maximum_retired_generations_in_one_slot": 10,
+  "maximum_retired_old_survivor_bytes": 37388288,
+  "maximum_retired_old_survivor_count": 66,
+  "maximum_same_slot_multigeneration_count": 13,
+  "maximum_zero_flow_position_drift": 1.1102230246251565e-15,
+  "maximum_zero_flow_velocity": 1.7632897598028464e-13,
+  "mode": "G1",
+  "pid": 23741,
+  "post_disabled_collect_objects": 0,
+  "post_disabled_collect_wall_seconds": 0.0,
+  "provenance_instance_count": 0,
+  "referrer_graph_count": 0,
+  "repeat": 3,
+  "run_id": "stage01dr5_g1_r3",
+  "status": "PASS",
+  "steps": 2000,
+  "unique_edge_counts": 1
+}

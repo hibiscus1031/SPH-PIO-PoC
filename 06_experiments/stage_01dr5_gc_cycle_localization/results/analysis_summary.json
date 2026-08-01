@@ -1,0 +1,23 @@
+{
+  "config_sha256": "52626240f728ebc5490905e906b0ef50fd5cbc459280bea6d587ff54530ee815",
+  "default_gc_bounded": true,
+  "disabled_gc_linear_growth": true,
+  "evidence_identity_pass": true,
+  "explicit_cycle_localized": false,
+  "extra_resource_audit_eligible": true,
+  "fix_implemented": false,
+  "instrumentation_isolated": false,
+  "numerical_identity_pass": true,
+  "periodic_gc_checkpoint_zero": true,
+  "schema_version": "sph-pio-poc.stage01dr5.analysis.v1",
+  "stage01d2_application_eligible": false,
+  "stage01d2_started": false,
+  "stage01d_status": "V2_FAIL",
+  "stage01dr2_status": "ATTRIBUTION_UNRESOLVED",
+  "stage01dr3_status": "R3_CONFIRMATION_UNRESOLVED",
+  "stage01dr4_status": "R4_RETENTION_REDETECTED",
+  "stage01dr_status": "RESOURCE_FAIL_LINEAR_GROWTH",
+  "stage02_started": false,
+  "status": "R5_BOUNDED_GC_DELAY_CONFIRMED",
+  "v3_started": false
+}

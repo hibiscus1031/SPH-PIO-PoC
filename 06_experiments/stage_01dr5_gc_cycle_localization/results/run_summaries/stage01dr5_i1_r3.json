@@ -1,0 +1,33 @@
+{
+  "all_state_values_finite": true,
+  "completed_steps": 500,
+  "components": [
+    "weakref_tracker"
+  ],
+  "config_sha256": "52626240f728ebc5490905e906b0ef50fd5cbc459280bea6d587ff54530ee815",
+  "current_tensor_bytes_delta": 0,
+  "edge_count_values": [
+    82944
+  ],
+  "git_hash": "7ff1ac65efa9922fea909be9474e65a1593d0a28",
+  "manual_gc_total_collected_objects": 0,
+  "manual_gc_total_wall_seconds": 0.0,
+  "maximum_current_rss_bytes": 322289664,
+  "maximum_retired_generations_in_one_slot": 11,
+  "maximum_retired_old_survivor_bytes": 45514752,
+  "maximum_retired_old_survivor_count": 85,
+  "maximum_same_slot_multigeneration_count": 13,
+  "maximum_zero_flow_position_drift": 1.2212453270876722e-15,
+  "maximum_zero_flow_velocity": 1.4590271747291244e-13,
+  "mode": "I1",
+  "pid": 24258,
+  "post_disabled_collect_objects": 0,
+  "post_disabled_collect_wall_seconds": 0.0,
+  "provenance_instance_count": 0,
+  "referrer_graph_count": 0,
+  "repeat": 3,
+  "run_id": "stage01dr5_i1_r3",
+  "status": "PASS",
+  "steps": 500,
+  "unique_edge_counts": 1
+}

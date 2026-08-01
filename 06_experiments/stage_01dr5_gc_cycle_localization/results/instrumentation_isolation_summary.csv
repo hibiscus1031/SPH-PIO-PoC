@@ -1,0 +1,16 @@
+run_id,mode,repeat,components,maximum_retired_count,maximum_same_slot_count,rss_slope_bytes_per_step,rss_slope_r_squared,current_tensor_bytes_delta,external_tracked_tensor_bytes_delta,state_finite
+stage01dr5_i0_r1,I0,1,[],-1,-1,74396.34247138588,0.8240033360180781,0,36028416,True
+stage01dr5_i1_r1,I1,1,"[""weakref_tracker""]",103,13,125974.9077744471,0.7972929808533872,0,0,True
+stage01dr5_i2_r1,I2,1,"[""semantic_ledger""]",-1,-1,48976.78146309385,0.7395210405354068,0,0,True
+stage01dr5_i3_r1,I3,1,"[""observer_callback""]",-1,-1,94357.5229481718,0.8490250576394466,0,0,True
+stage01dr5_i4_r1,I4,1,"[""observer_callback"",""semantic_ledger"",""weakref_tracker""]",63,13,84132.01478521114,0.8825099177550804,0,0,True
+stage01dr5_i0_r2,I0,2,[],-1,-1,111840.97736992547,0.9581160537724503,0,33259520,True
+stage01dr5_i1_r2,I1,2,"[""weakref_tracker""]",95,13,99047.82058449833,0.8439920470814262,0,0,True
+stage01dr5_i2_r2,I2,2,"[""semantic_ledger""]",-1,-1,37506.66654353018,0.8094631930748428,0,0,True
+stage01dr5_i3_r2,I3,2,"[""observer_callback""]",-1,-1,101340.85234555339,0.8250617486452693,0,0,True
+stage01dr5_i4_r2,I4,2,"[""observer_callback"",""semantic_ledger"",""weakref_tracker""]",55,13,100882.59737256549,0.8976959232001994,0,0,True
+stage01dr5_i0_r3,I0,3,[],-1,-1,83064.06888757156,0.7504694278042839,0,36028416,True
+stage01dr5_i1_r3,I1,3,"[""weakref_tracker""]",85,13,103691.84988189553,0.8271747480957066,0,0,True
+stage01dr5_i2_r3,I2,3,"[""semantic_ledger""]",-1,-1,67902.28190339962,0.8550939262498352,0,0,True
+stage01dr5_i3_r3,I3,3,"[""observer_callback""]",-1,-1,150034.00990551163,0.9225519075920591,0,0,True
+stage01dr5_i4_r3,I4,3,"[""observer_callback"",""semantic_ledger"",""weakref_tracker""]",58,13,98149.5189714519,0.6534706660799664,0,0,True
