@@ -1,0 +1,7 @@
+gate,name,passed,observed,required
+T1,cutoff_shell_diagnosis,True,"[82940,82942,82944]",q=5 cutoff switches explain 82940/82942/82944
+T2,frozen_topology_control,False,0/3,3/3
+T3,support_margin_control,True,3/3,3/3
+T4,r2_dynamic_evidence_identity,True,7/7,7/7
+T5,numerical_and_provenance,True,7/7 reclaimed=True,"7/7, finite, identity complete"
+STATUS,unique_r3_status,True,R3_CONFIRMATION_UNRESOLVED,"[""R3_WORKING_SET_ATTRIBUTION_CONFIRMED"",""R3_TOPOLOGY_CONTROL_FAIL"",""R3_RETENTION_SIGNAL_DETECTED"",""R3_CONFIRMATION_UNRESOLVED""]"

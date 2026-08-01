@@ -293,6 +293,22 @@ def main() -> int:
     control_rows, control_pass, retention_signal = _control_analysis(configuration)
     t2 = bool(control_pass["F"])
     t3 = bool(control_pass["M"])
+    topology_control_failure = any(
+        int(row["unique_edge_counts"]) != 1
+        or int(row["unique_edge_identities"]) != 1
+        or int(row["maximum_duplicate_edge_count"]) != 0
+        or int(row["maximum_nonreciprocal_edge_count"]) != 0
+        or (
+            row["control"] == "M"
+            and (
+                int(row["maximum_omitted_strict_support_edge_count"]) != 0
+                or int(row["maximum_unexpected_edge_count"]) != 0
+                or float(row["minimum_dimensionless_cutoff_margin"])
+                <= float(configuration["support_margin_geometry"]["minimum_allowed_dimensionless_margin"])
+            )
+        )
+        for row in control_rows
+    )
     campaign = _read_json(RESULTS_ROOT / "campaign_summary.json")
     t5 = bool(
         campaign["expected_processes"] == 7
@@ -304,7 +320,7 @@ def main() -> int:
     )
     if retention_signal:
         status = "R3_RETENTION_SIGNAL_DETECTED"
-    elif not (t2 and t3):
+    elif topology_control_failure:
         status = "R3_TOPOLOGY_CONTROL_FAIL"
     elif t1 and t2 and t3 and t4 and t5:
         status = "R3_WORKING_SET_ATTRIBUTION_CONFIRMED"
@@ -334,6 +350,7 @@ def main() -> int:
         "t4_r2_identity_pass": t4,
         "t5_numerical_provenance_pass": t5,
         "retention_signal_detected": retention_signal,
+        "topology_control_failure_detected": topology_control_failure,
         "stage01d2_application_eligible": eligible,
         "stage01d_status": "V2_FAIL",
         "stage01dr_status": "RESOURCE_FAIL_LINEAR_GROWTH",

@@ -1,0 +1,72 @@
+{
+  "all_state_values_finite": true,
+  "all_switches_near_cutoff": true,
+  "all_switches_on_q5_shell": true,
+  "config_sha256": "44431531be95a3acbb39f49d571f5995973a154c44b717a2928fabdf9f8c583a",
+  "edge_count_values": [
+    82940,
+    82942,
+    82944
+  ],
+  "expected_q5_offset_count": 12,
+  "git_hash": "2c8c3f377b53315c2c7cb378ec4054b89b96a793",
+  "initial_minimum_absolute_r_over_H_minus_one": 0.0,
+  "initial_q5_directed_edge_count": 12288,
+  "physical_particle_migration_claimed": false,
+  "q5_offsets": [
+    [
+      -5,
+      0
+    ],
+    [
+      -4,
+      -3
+    ],
+    [
+      -4,
+      3
+    ],
+    [
+      -3,
+      -4
+    ],
+    [
+      -3,
+      4
+    ],
+    [
+      0,
+      -5
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      3,
+      -4
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      -3
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      5,
+      0
+    ]
+  ],
+  "r2_c_sample_identity_pass": true,
+  "r2_identity_rows": 135,
+  "resolution": 32,
+  "schema_version": "sph-pio-poc.stage01dr3.cutoff-audit.v1",
+  "support_ratio": 5.0,
+  "unique_switched_edge_keys": 4
+}

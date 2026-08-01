@@ -93,6 +93,7 @@ def _evidence_index() -> str:
         RESULTS_ROOT / "r2_evidence_identity.csv",
         RESULTS_ROOT / "r3_gate_evidence.csv",
         RESULTS_ROOT / "analysis_summary.json",
+        RESULTS_ROOT / "classification_correction.json",
         RESULTS_ROOT / "stage01dr3_status.txt",
     ]
     return _table(
@@ -118,6 +119,11 @@ def render_reports() -> dict[Path, str]:
     campaign = _read_json(RESULTS_ROOT / "campaign_summary.json")
     r2_models = _read_csv(R2_RESULTS / "edge_working_set_models.csv")
     status = (RESULTS_ROOT / "stage01dr3_status.txt").read_text(encoding="utf-8").strip()
+    f_age2 = max(
+        int(row["maximum_age2_alive_tensor_reference_count"])
+        for row in controls
+        if row["control"] == "F"
+    )
     unique_switches: dict[int, dict[str, str]] = {}
     for row in switches:
         unique_switches.setdefault(int(row["edge_key"]), row)
@@ -195,7 +201,10 @@ edge index，后续 2000 步固定该 index。density、EOS、pressure、viscosi
 {f_table}
 
 三次均完成，edge count 与 edge identity 各只有一个值；old-survivor、unknown
-growth、same-slot history、age-2 weakrefs 和 referrer chain 均为零。
+growth、same-slot history 和 referrer chain 均为零。但三次的最大 age-2 weakrefs
+均为 `{f_age2}`，不满足预登记的零门槛，因此 T2=False。由于这些引用的 storage
+仍属于当前固定拓扑工作集，old-survivor storage/bytes 为零；这不是旧 storage
+累积证据，但仍阻止本轮确认。
 """
 
     margin = configuration["support_margin_geometry"]
@@ -250,7 +259,9 @@ R3 replay 精确复现 `{cutoff['edge_count_values']}`，与 C1–C3 全部采�
 ## 6. Old-survivor、unknown 与 same-slot
 
 六个 F/M run 的 live tensor count Δ、unknown bytes Δ、old-survivor bytes、
-same-slot multi-generation、age-2 weakrefs 与明确 referrer chain 均为零。
+same-slot multi-generation 与明确 referrer chain 均为零。M 的 age-2 weakrefs
+为零；F 三次均为 `{f_age2}`。这些 F 引用映射到当前固定拓扑 storage，故
+old-survivor 仍为零，但不满足预登记的 age-2=0 门槛。
 
 ## 7. R2 D 模型身份复核
 
@@ -270,6 +281,12 @@ F/M 六个 2000-step 状态全部有限；campaign 的 `{campaign['observed_proc
 ## 9. 唯一 R3 状态
 
 唯一状态为 **`{status}`**。
+
+初始自动分析曾把任意 T2 失败映射为 `R3_TOPOLOGY_CONTROL_FAIL`；该映射与
+预登记释义“拓扑不能维持固定”不一致，因为六次运行的 edge count 和 identity
+均恒定。分类映射修正后，T2 仍为 False、原始证据不变，状态按“证据仍不足”归为
+`R3_CONFIRMATION_UNRESOLVED`。修正记录见
+`results/classification_correction.json`。
 
 {gate_table}
 

@@ -1,0 +1,13 @@
+{
+  "corrected_status": "R3_CONFIRMATION_UNRESOLVED",
+  "correction_scope": "status mapping only; no raw run result, gate result, threshold, or R2 evidence changed",
+  "initial_automated_status": "R3_TOPOLOGY_CONTROL_FAIL",
+  "reason": "T2 failed only because all F runs had maximum age-2 alive tensor reference count 15. All six controls maintained one edge count and one edge identity with zero duplicate and nonreciprocal edges; therefore the preregistered meaning of R3_TOPOLOGY_CONTROL_FAIL did not apply. No old-survivor, unknown growth, same-slot history, or explicit referrer chain was detected, so R3_RETENTION_SIGNAL_DETECTED did not apply. The remaining preregistered status is R3_CONFIRMATION_UNRESOLVED.",
+  "retention_signal_detected": false,
+  "t1_cutoff_shell_pass": true,
+  "t2_frozen_topology_pass": false,
+  "t3_support_margin_pass": true,
+  "t4_r2_identity_pass": true,
+  "t5_numerical_provenance_pass": true,
+  "topology_control_failure_detected": false
+}
