@@ -1,0 +1,90 @@
+schema_version: sph-pio-poc.stage01f.preregistration.v1
+stage: Stage 01F
+name: WCSPH-compatible MMS specification and analytic qualification
+scope:
+  analytic_design_only: true
+  sph_convergence_run: false
+  dynamic_rollout_run: false
+  new_v2_state: false
+  v3_started: false
+  stage02_started: false
+  training_started: false
+  learning_labels_generated: false
+  pressure_viscosity_rk2_neighborhood_modified: false
+  third_party_source_modified: false
+frozen_stage01e:
+  preregistration_commit: 273c5a79705bca6a716cb891be967c1f659a6808
+  evidence_commit: de0016ae2623ec0f03d1bd8486a8833dd185f3b2
+  status: E_MODEL_FORM_ALIGNMENT_DOMINANT
+  tag: stage-01e-model-form-alignment-dominant
+  manifest: 06_experiments/stage_01f_mms_design/configs/stage01e_frozen_sha256_manifest.csv
+governing_equations:
+  trajectory: dx/dt = u
+  continuity: partial_t(rho) + div(rho*u) = 0
+  momentum: partial_t(u) + (u dot grad)u = -(1/rho)grad(p) + nu*laplacian(u) + f_MMS
+  eos: p = c_s^2*(rho-rho0)
+  source_units: acceleration_per_unit_mass
+  source_is_internal_pair_force: false
+  source_pair_antisymmetry_required: false
+parameters:
+  domain_minimum: [-1.0, -1.0]
+  domain_maximum: [1.0, 1.0]
+  rho0: 1.0
+  sound_speed: 20.0
+  viscosity: 0.02
+  wave_number: 3.141592653589793
+  reference_velocity: 1.0
+  reference_mach: 0.05
+  density_amplitude: 0.0025
+  density_minimum: 0.9975
+  density_maximum: 1.0025
+  mms_a_translation_speed: 0.5
+  mms_b_decay_rate: 0.7
+  mms_b_velocity_amplitude: 1.0
+  design_time_minimum: 0.0
+  design_time_maximum: 0.2
+  dtype: float64
+  device: cpu
+analytic_qualification:
+  random_point_count: 10000
+  random_seed: 20262021
+  random_domain_half_open: [-1.0, 1.0]
+  random_time_interval: [0.0, 0.2]
+  boundary_offsets: [1.0e-14, 1.0e-12, 1.0e-9]
+  boundary_times: [0.0, 0.1, 0.2]
+  save_random_points: 06_experiments/stage_01f_mms_design/results/preregistered_random_points.csv
+  save_boundary_points: 06_experiments/stage_01f_mms_design/results/preregistered_boundary_points.csv
+  hard_gates:
+    maximum_eos_residual: 1.0e-13
+    maximum_continuity_residual: 1.0e-12
+    maximum_momentum_residual: 1.0e-11
+    manual_autograd_maximum_difference: 1.0e-11
+    density_strictly_positive: true
+term_scale_audit:
+  solution: MMS_B
+  core_terms: [partial_time_velocity, convection, pressure_acceleration, viscous_acceleration, manufactured_force]
+  minimum_rms_fraction_of_maximum: 1.0e-4
+particle_initialization:
+  layouts: [regular_only]
+  initial_volume: (2/N)^2
+  initial_mass: rho_exact(x_i,y_i,0)*initial_volume
+  masses_fixed_during_rollout: true
+  numerical_density_source: SPH_kernel_sum
+  overwrite_numerical_density_with_analytic: false
+  jitter_mass_correction_designed: false
+source_injection_contract:
+  evaluate_at_stages: [start, midpoint]
+  inputs: [numerical_particle_position, physical_stage_time]
+  analytic_particle_position_prohibited: true
+  numerical_residual_feedback_prohibited: true
+  mix_with_internal_pair_force_prohibited: true
+  include_in_internal_force_zero_gate: false
+mms_b_reference_plan:
+  method: DOP853_or_equivalent_independent_high_order_integrator
+  rtol_maximum: 1.0e-12
+  atol_maximum: 1.0e-14
+  continuous_unwrapped_trajectory: true
+  wrap_only_for_field_evaluation: true
+  time_step_sensitivity_required: true
+  formal_trajectory_generated_in_stage01f: false
+allowed_statuses: [MMS_SPECIFICATION_PASS, MMS_SPECIFICATION_CONDITIONAL, MMS_SPECIFICATION_FAIL, MMS_EVIDENCE_INCOMPLETE]
