@@ -1,0 +1,45 @@
+{
+  "EOS_to_pressure_operator_ratio": 144.05253207786865,
+  "EOS_to_viscosity_ratio": 1621.690538799039,
+  "focus_n32_increasing_jitter_median_components": {
+    "R_EOS_initialization_L2": 24.057967840905285,
+    "R_pressure_operator_L2": 0.16700829547307489,
+    "R_total_L2": 24.064062138073318,
+    "R_viscosity_L2": 0.014835116358711497
+  },
+  "formal_v2_rerun": false,
+  "gci_recomputed": false,
+  "gci_statement": "GCI not justified",
+  "maximum_closure_linf": 8.357594452792369e-14,
+  "resource_auxiliary": {
+    "interpretation": "auxiliary evidence only; no Stage 01D2 resource reclassification",
+    "mechanism_judgment": "sustained absolute working-set growth over the 400-step jitter horizon, with denominator amplification; not a lower initial-RSS denominator and not more edges",
+    "short_median_absolute_rss_increase_bytes": 7766016.0,
+    "short_median_relative_rss_increase": 0.03170338527673294,
+    "short_spearman_absolute_vs_edge_change": 0.23376623376623373,
+    "short_spearman_relative_vs_baseline": -0.5324675324675324,
+    "stage01d2_jitter_median_absolute_rss_increase_bytes": 189296640.0,
+    "stage01d2_jitter_median_edge_count": 79721.0,
+    "stage01d2_jitter_median_first_quartile_rss_bytes": 335814656.0,
+    "stage01d2_regular_absolute_rss_increase_bytes": 31219712.0,
+    "stage01d2_regular_edge_count": 79949.71428571429,
+    "stage01d2_regular_first_quartile_rss_bytes": 307167232.0
+  },
+  "schema_version": "sph-pio-poc.stage01e.evaluation.v1",
+  "short_children_all_pass": true,
+  "short_growth_classification": {
+    "jitter_05": "gradual_accumulation",
+    "jitter_10": "gradual_accumulation",
+    "regular": "gradual_accumulation"
+  },
+  "short_trajectories": 21,
+  "stage01d2_manifest_identity": true,
+  "stage01d2_status": "STAGE01D2_V2_REQUALIFICATION_FAIL",
+  "stage01d2_tag_identity": true,
+  "stage02_started": false,
+  "static_cases": 210,
+  "support_two_term_fit_status": "two-term asymptotic fit not identifiable",
+  "training_started": false,
+  "unique_classification": "E_MODEL_FORM_ALIGNMENT_DOMINANT",
+  "v3_started": false
+}
