@@ -1,0 +1,83 @@
+schema_version: sph-pio-poc.stage01e.preregistration.v1
+stage: Stage 01E
+name: Benchmark alignment and disorder-error decomposition
+scope:
+  diagnostic_only: true
+  rerun_formal_v2_matrix: false
+  modify_stage01d2_status: false
+  relax_stage01d2_rss_gate: false
+  v3_started: false
+  stage02_started: false
+  training_started: false
+  learning_labels_generated: false
+  third_party_source_modified: false
+frozen_stage01d2:
+  preregistration_commit: dc403e7df9d33b89080ef66a7703ca418bcc761c
+  evidence_head: 8dcb26bac834da4b5deb62674d053c9e83df69e3
+  tag: stage-01d2-v2-requalification-fail
+  status: STAGE01D2_V2_REQUALIFICATION_FAIL
+  manifest: 06_experiments/stage_01e_error_decomposition/configs/stage01d2_frozen_sha256_manifest.csv
+physics:
+  domain_minimum: [-1.0, -1.0]
+  domain_maximum: [1.0, 1.0]
+  reference_density: 1.0
+  velocity_amplitude: 1.0
+  physical_viscosity: 0.02
+  sound_speed: 20.0
+  wave_number: pi
+  dtype: float64
+  device: cpu
+static_matrix:
+  resolutions: [16, 24, 32, 48, 64]
+  layouts: [regular, jitter_05, jitter_10]
+  jitter_fractions: {regular: 0.0, jitter_05: 0.05, jitter_10: 0.10}
+  frozen_seeds: [20261001, 20261019, 20261037, 20261061, 20261079, 20261103, 20261121, 20261147, 20261171, 20261189]
+  regular_seed: 0
+  support_families:
+    constant_neighbor: {16: 4.0, 24: 4.0, 32: 4.0, 48: 4.0, 64: 4.0}
+    increasing_neighbor: {16: 4.0, 24: 4.5, 32: 5.0, 48: 5.5, 64: 6.0}
+  expected_cases: 210
+  residual_norms: [L1, L2, Linf, relative_L2]
+  closure_absolute_tolerance: 1.0e-11
+  closure_relative_tolerance: 1.0e-11
+short_rollout:
+  resolution: 32
+  support_ratio: 5.0
+  dt: 0.00025
+  steps: 40
+  final_time: 0.01
+  sound_speed: 20.0
+  physical_viscosity: 0.02
+  layouts: [regular, jitter_05, jitter_10]
+  frozen_seeds: [20261001, 20261019, 20261037, 20261061, 20261079, 20261103, 20261121, 20261147, 20261171, 20261189]
+  expected_trajectories: 21
+  independent_subprocess: true
+  default_cyclic_gc: true
+  torch_no_grad: true
+  inloop_gc_collect: false
+  child_reclamation_required: true
+  formal_v2_evidence: false
+statistics:
+  spearman: true
+  robust_regression: theil_sen
+  bootstrap_resamples: 2000
+  bootstrap_seed: 20262001
+  interval: percentile_95
+  causality_claimed: false
+support_model:
+  equation: E = C_H*H^p + C_Q*(dx/H)^q
+  bootstrap_resamples: 500
+  bootstrap_seed: 20262003
+  identifiable_requires_full_rank: true
+  identifiable_requires_positive_exponents: true
+  stable_relative_ci_width_maximum: 1.0
+classification:
+  allowed:
+    - E_MODEL_FORM_ALIGNMENT_DOMINANT
+    - E_DISORDER_PAIR_OPERATOR_DOMINANT
+    - E_SUPPORT_PATH_NONASYMPTOTIC
+    - E_MIXED_ERROR_MECHANISMS
+    - E_EVIDENCE_INCOMPLETE
+  model_form_dominant_ratio: 2.0
+  material_component_non_negligible_fraction: 0.25
+  no_problem_status_allowed: false
