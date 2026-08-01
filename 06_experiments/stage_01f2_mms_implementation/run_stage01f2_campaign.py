@@ -191,7 +191,7 @@ def main() -> int:
                     break
         elif phase == "ad":
             result = STAGE / "results" / "source_ad_fd_v2_summary.json"
-            ok = run_child("ad", "source_ad_fd", [sys.executable, str(WORKER), "--kind", "ad"], result) and ok
+            ok = run_child("ad", "source_ad_fd_v2", [sys.executable, str(WORKER), "--kind", "ad"], result) and ok
         if not ok:
             break
     print(json.dumps({"phase": args.phase, "status": "PASS" if ok else "FAIL"}))
