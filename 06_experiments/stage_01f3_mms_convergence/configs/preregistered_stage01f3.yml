@@ -1,0 +1,58 @@
+schema_version: sph-pio-poc.stage01f3.preregistration.v1
+stage: Stage 01F3
+name: WCSPH MMS temporal and spatial convergence verification
+frozen_stage01f2:
+  evidence_commit: dd28381d176b02483ebe012eebedd665252b5c56
+  status: MMS_IMPLEMENTATION_VERIFIED_PASS
+  evaluator: 06_experiments/stage_01f2_mms_implementation/results/stage01f2_evaluation_v2.json
+  tag: stage-01f2-mms-implementation-verified-pass
+  manifest: 06_experiments/stage_01f3_mms_convergence/configs/stage01f2_frozen_sha256_manifest.csv
+scope:
+  formal_temporal_verification: true
+  formal_spatial_verification: true
+  v3_started: false
+  stage02_started: false
+  training_started: false
+  learning_labels_generated: false
+  stage01f2_smoke_reused: false
+physics_source: 06_experiments/stage_01f_mms_design/configs/preregistered_mms_specification.yml
+semidiscrete_reference:
+  resolution: 16
+  support_ratio: 4.06155281280883
+  t_final: 0.01
+  common_sample_count: 11
+  baseline: {rtol: 1.0e-12, atol: 1.0e-14, max_step: 3.125e-5}
+  sensitivity: {rtol: 1.0e-13, atol: 1.0e-15, max_step: 1.5625e-5}
+  maximum_reference_linf_difference: 1.0e-9
+semidiscrete_rk2_dt: [0.001, 0.0005, 0.00025, 0.000125, 0.0000625]
+continuous_time:
+  resolution: 32
+  support_ratio: 5.049509756796392
+  t_final: 0.02
+  common_sample_count: 21
+  dt: [0.001, 0.0005, 0.00025, 0.000125, 0.0000625]
+space:
+  t_final: 0.02
+  candidate_dt: [0.0000625, 0.00003125]
+  isolation_maximum_relative_difference: 0.10
+  increasing_neighbor_path:
+    16: 4.06155281280883
+    24: 4.5
+    32: 5.049509756796392
+    48: 5.5
+    64: 6.041381265149109
+  fixed_ratio: 4.5
+hard_gates:
+  pair_force_residual: 1.0e-12
+  internal_force_residual: 1.0e-10
+  assembly_defect: 1.0e-10
+  momentum_update_defect: 1.0e-10
+  viscous_power_positive_tolerance: 1.0e-12
+  topology_defects: 0
+  minimum_separation_over_dx: 0.25
+  current_rss_bytes: 2000000000
+  peak_rss_bytes: 4000000000
+  rss_quartile_absolute_increase_bytes: 250000000
+  rss_quartile_relative_increase: 0.50
+  step_time_q4_q1: 1.30
+allowed_statuses: [MMS_CONVERGENCE_VERIFICATION_PASS, MMS_CONVERGENCE_VERIFICATION_CONDITIONAL, MMS_CONVERGENCE_VERIFICATION_FAIL, MMS_CONVERGENCE_EVIDENCE_INCOMPLETE]
