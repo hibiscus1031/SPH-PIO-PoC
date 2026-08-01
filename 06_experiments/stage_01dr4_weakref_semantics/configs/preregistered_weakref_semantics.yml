@@ -1,0 +1,105 @@
+stage: "Stage 01D-R4"
+title: "Weakref semantic-gate validation and V2 protocol eligibility"
+created_before_formal_runs: true
+
+historical_freeze:
+  stage01dr3_preregistered_commit: "2c8c3f377b53315c2c7cb378ec4054b89b96a793"
+  stage01dr3_evidence_commit: "12bc7e4e56539cd6f14db12f4c9ee6cbe10b3f99"
+  stage01dr3_tag: "stage-01dr3-confirmation-unresolved-weakref-semantics"
+  stage01d_status: "V2_FAIL"
+  stage01dr_status: "RESOURCE_FAIL_LINEAR_GROWTH"
+  stage01dr2_status: "ATTRIBUTION_UNRESOLVED"
+  stage01dr3_status: "R3_CONFIRMATION_UNRESOLVED"
+
+environment:
+  python_environment: "sph-pio-poc"
+  backend: "CPU"
+  dtype: "float64"
+
+semantic_definitions:
+  minimum_old_age_accepted_steps: 2
+  current_persistent_reference: "storage belongs to a current solver-readable state, frozen neighborhood, or workspace"
+  retired_reference: "storage has been replaced and is absent from the current solver-readable working set"
+  old_survivor: "retired storage remains alive at age >= 2 accepted steps"
+  same_slot_multigeneration: "at least two distinct retired storage generations for one semantic slot remain alive"
+  retention_signals: ["old_survivor", "same_slot_multigeneration"]
+  r3_age2_rule_modified: false
+
+fixtures:
+  names: ["A", "B", "C", "D"]
+  steps: 100
+  repeats: 3
+  expected_retention:
+    A: false
+    B: false
+    C: true
+    D: false
+
+control_f:
+  resolution: 32
+  particles: 1024
+  zero_flow: true
+  support_ratio: 5.0
+  steps: 200
+  repeats: 3
+  time_step: 5.0e-4
+  sound_speed: 20.0
+  physical_viscosity: 0.02
+  seed: 0
+  domain_minimum: [-1.0, -1.0]
+  domain_maximum: [1.0, 1.0]
+  expected_age2_reference_count: 15
+  required_unique_edge_counts: 1
+  required_unique_edge_identities: 1
+
+sampling:
+  ledger_interval_steps: 25
+  mandatory_steps: [0, 1, 2, 3, 4, 25, 100, 200]
+  current_rss_stop_bytes: 2500000000
+  system_memory_free_percentage_stop: 10.0
+  full_topology_audit_force_call_indices: [1, 201, 401]
+
+r2_r3_frozen_evidence:
+  r2_edge_working_set_models.csv: "8f07f85b9166fae2bc5c4aff636f5d93adfcf5dfef49379a7e9a61bdbfb39f92"
+  r2_weakref_lifetime_summary.csv: "269b227ea5ae9d3f6860a53ae182ce13dc494164baf9c5d00873cb50df2d0441"
+  r3_control_summary.csv: "487ed8cbd1193a8424f49d69c0086b2e69de7e99e04c5bd045d270b0424d8eef"
+  r3_gate_evidence.csv: "a2d8b510363ec92a2145e3a42b0cc4e7ac2a120ee72c4276317c3915fb9c5b74"
+  r3_classification_correction.json: "ee329c313e956d538d0725218c793d4a4bd7f2b0369347c12e6317a2e1871744"
+  r3_cutoff_shell_audit_summary.json: "01581466a6bb5aa07244ad9c247e6e4e486977e5e93c1bf5626152a449d53003"
+  required_beta_edge_bytes_per_edge: 48.0
+  beta_step_absolute_limit_bytes_per_step: 4096.0
+  gamma_step_required_bytes_per_step: 0.0
+
+qualification:
+  required_fixture_passes: 12
+  required_control_f_passes: 3
+  required_audited_age2_references_per_run: 15
+  required_current_persistent_per_run: 15
+  required_retired_per_run: 0
+  required_old_survivor_storage_count: 0
+  required_same_slot_multigeneration_count: 0
+  required_unknown_live_bytes_delta: 0
+  required_explicit_referrer_chain_count: 0
+  require_all_processes_reclaimed: true
+  require_all_state_values_finite: true
+
+allowed_statuses:
+  - "R4_WEAKREF_GATE_SEMANTICS_CONFIRMED"
+  - "R4_RETENTION_REDETECTED"
+  - "R4_GATE_VALIDATION_FAIL"
+  - "R4_UNRESOLVED"
+
+stage01d2_application_eligible_statuses:
+  - "R4_WEAKREF_GATE_SEMANTICS_CONFIRMED"
+
+prohibitions:
+  modify_historical_statuses: false
+  modify_r3_age2_rule: false
+  run_stage01d2: false
+  run_formal_v2_convergence: false
+  modify_sph_physics: false
+  modify_rk2: false
+  modify_support_law: false
+  run_v3: false
+  run_stage02: false
+  train_neural_network: false
