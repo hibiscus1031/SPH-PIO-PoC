@@ -54,7 +54,15 @@ def equivalence()->bool:
                 p=initial.positions+1e-4*(2*torch.rand(initial.positions.shape,dtype=torch.float64,generator=generator)-1);v=initial.velocities+1e-4*(2*torch.rand(initial.velocities.shape,dtype=torch.float64,generator=generator)-1);rows.append(sparse_dense(solution,p,v,initial.masses,initial.supports,0.,f"random_perturbation_{index}"))
             positions=states[:,:2*count].reshape(len(times),count,2);velocities=states[:,2*count:].reshape(len(times),count,2)
             for event_index,event in enumerate(topology_events(times,positions,float(initial.supports[0]))):
-                k=int(np.searchsorted(times,event["estimated_event_time"])-1);k=max(0,min(k,len(times)-2));fraction=float((event["estimated_event_time"]-times[k])/(times[k+1]-times[k]))
+                k=int(np.searchsorted(times,event["estimated_event_time"])-1);k=max(0,min(k,len(times)-2));i=int(event["particle_i"]);j=int(event["particle_j"])
+                def event_ratio(local:float)->float:
+                    p=(1-local)*positions[k]+local*positions[k+1];delta=p[i]-p[j];delta=np.remainder(delta+1.,2.)-1.;return float(np.linalg.norm(delta)/float(initial.supports[0]))
+                lower,upper=0.,1.;lower_sign=event_ratio(lower)-1.
+                for _ in range(60):
+                    middle=.5*(lower+upper)
+                    if (event_ratio(middle)-1.)*lower_sign<=0:upper=middle
+                    else:lower=middle
+                fraction=.5*(lower+upper)
                 for side,local in (("before",max(0.,fraction-1e-8)),("after",min(1.,fraction+1e-8))):
                     p=torch.from_numpy(((1-local)*positions[k]+local*positions[k+1]).copy());v=torch.from_numpy(((1-local)*velocities[k]+local*velocities[k+1]).copy());t=float((1-local)*times[k]+local*times[k+1]);rows.append(sparse_dense(solution,p,v,initial.masses,initial.supports,t,f"edge_switch_{event_index:02d}_{side}"))
     support=.4;mass=torch.full((4,),.1,dtype=torch.float64);velocity=torch.tensor([[.1,.2],[-.3,.4],[.2,-.1],[-.2,-.3]],dtype=torch.float64);supports=torch.full((4,),support,dtype=torch.float64)
@@ -67,11 +75,19 @@ def equivalence()->bool:
 def events()->bool:
     ratio=(4+17**.5)/2;initial=initialize_mms_state("MMS_B",16,support_ratio=ratio);old=np.load(ROOT/"06_experiments/stage_01f3_mms_convergence/references/semidiscrete_mms_b_n16_dop853.npz");states=old["baseline"];times=old["times"];count=len(initial.positions);positions=states[:,:2*count].reshape(len(times),count,2);velocities=states[:,2*count:].reshape(len(times),count,2);found=topology_events(times,positions,float(initial.supports[0]));rows=[];max_structural=0
     for event in found:
-        k=int(np.searchsorted(times,event["estimated_event_time"])-1);k=max(0,min(k,len(times)-2));fraction=(event["estimated_event_time"]-times[k])/(times[k+1]-times[k]);epsilon=1e-8
+        k=int(np.searchsorted(times,event["estimated_event_time"])-1);k=max(0,min(k,len(times)-2));i=int(event["particle_i"]);j=int(event["particle_j"])
+        def event_ratio(local:float)->float:
+            p=(1-local)*positions[k]+local*positions[k+1];delta=p[i]-p[j];delta=np.remainder(delta+1.,2.)-1.;return float(np.linalg.norm(delta)/float(initial.supports[0]))
+        lower,upper=0.,1.;lower_sign=event_ratio(lower)-1.
+        for _ in range(60):
+            middle=.5*(lower+upper)
+            if (event_ratio(middle)-1.)*lower_sign<=0:upper=middle
+            else:lower=middle
+        fraction=.5*(lower+upper);event={**event,"estimated_event_time":float(times[k]+fraction*(times[k+1]-times[k]))};epsilon=1e-8
         contributions=[];accelerations=[];local_ratios=[];directed_presence=[]
         for local in (max(0.,fraction-epsilon),min(1.,fraction+epsilon)):
             p=torch.from_numpy(((1-local)*positions[k]+local*positions[k+1]).copy());v=torch.from_numpy(((1-local)*velocities[k]+local*velocities[k+1]).copy());t=float((1-local)*times[k]+local*times[k+1]);wrapped=torch.remainder(p+1.,2.)-1.;dense=evaluate_dense_all_pairs("MMS_B",wrapped,v,initial.masses,initial.supports,t);pair=dense_pair_acceleration_contributions(dense,int(event["particle_i"]),int(event["particle_j"]),initial.masses,v);contributions.append(pair);accelerations.append(dense.total_acceleration);local_ratios.append(float(dense.distance[int(event["particle_i"]),int(event["particle_j"])]/dense.support[int(event["particle_i"]),int(event["particle_j"])]))
-            state=DynamicSPHState(positions=wrapped,velocities=v,masses=initial.masses,densities=torch.ones_like(initial.masses),pressures=torch.zeros_like(initial.masses),supports=initial.supports,domain_min=initial.domain_min,domain_max=initial.domain_max,time=t);sparse=evaluate_internal_acceleration(state,DynamicPhysicalParameters());i=int(event["particle_i"]);j=int(event["particle_j"]);edges=set(zip(sparse.neighborhood.row.tolist(),sparse.neighborhood.col.tolist()));directed_presence.append(((i,j) in edges,(j,i) in edges))
+            state=DynamicSPHState(positions=wrapped,velocities=v,masses=initial.masses,densities=torch.ones_like(initial.masses),pressures=torch.zeros_like(initial.masses),supports=initial.supports,domain_min=initial.domain_min,domain_max=initial.domain_max,time=t);sparse=evaluate_internal_acceleration(state,DynamicPhysicalParameters());edges=set(zip(sparse.neighborhood.row.tolist(),sparse.neighborhood.col.tolist()));directed_presence.append(((i,j) in edges,(j,i) in edges))
         reciprocal=all(forward==reverse for forward,reverse in directed_presence)
         row={**event,"evaluation_ratio_before":local_ratios[0],"evaluation_ratio_after":local_ratios[1],"directed_edge_before":directed_presence[0][0],"reverse_edge_before":directed_presence[0][1],"directed_edge_after":directed_presence[1][0],"reverse_edge_after":directed_presence[1][1],"reciprocal":reciprocal,"pressure_before_l2":float(torch.linalg.vector_norm(contributions[0]["pressure"])),"pressure_after_l2":float(torch.linalg.vector_norm(contributions[1]["pressure"])),"viscosity_before_l2":float(torch.linalg.vector_norm(contributions[0]["viscosity"])),"viscosity_after_l2":float(torch.linalg.vector_norm(contributions[1]["viscosity"])),"pair_total_max_l2":max(float(torch.linalg.vector_norm(value["total"])) for value in contributions),"aggregated_rhs_jump_linf":float((accelerations[1]-accelerations[0]).abs().max())};rows.append(row)
     for time_value,state_value in zip(times,states):
