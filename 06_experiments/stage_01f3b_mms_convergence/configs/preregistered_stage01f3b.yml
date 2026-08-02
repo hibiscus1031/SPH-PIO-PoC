@@ -1,0 +1,86 @@
+schema_version: sph-pio-poc.stage01f3b.preregistration.v1
+stage: Stage 01F3B
+name: MMS convergence verification with qualified dense semidiscrete reference
+frozen_stage01f3r:
+  evidence_commit: f952147d8059f3319147ecde65c4edf370023bb4
+  status: SEMIDISCRETE_REFERENCE_QUALIFIED_DENSE_EQUIVALENT
+  tag: stage-01f3r-semidiscrete-reference-dense-equivalent
+  evaluator: 06_experiments/stage_01f3r_reference_qualification/results/stage01f3r_evaluation.json
+  manifest: 06_experiments/stage_01f3b_mms_convergence/configs/stage01f3r_frozen_sha256_manifest.csv
+historical_stage01f3:
+  status: MMS_CONVERGENCE_VERIFICATION_FAIL
+  evaluator: 06_experiments/stage_01f3_mms_convergence/results/stage01f3_evaluation.json
+frozen_sources:
+  physics: 06_experiments/stage_01f_mms_design/configs/preregistered_mms_specification.yml
+  source_evaluator: 06_experiments/stage_01f_mms_design/results/stage01f_evaluation.json
+  source_adapter: 01_solver/manufactured_solutions/dynamic_source_adapter.py
+  sourced_rk2_adapter: 01_solver/dynamic_solver/sourced_integrator_adapter.py
+  source_disabled_evidence: 06_experiments/stage_01f2_mms_implementation/results/zero_source_zero_n16.json
+semidiscrete_time:
+  resolution: 16
+  support_ratio: 4.06155281280883
+  t_final: 0.01
+  sample_count: 11
+  dt: [0.001, 0.0005, 0.00025, 0.000125, 0.0000625]
+  reference_floor_multiplier: 20.0
+  minimum_valid_points: 4
+continuous_time:
+  resolution: 32
+  support_ratio: 5.049509756796392
+  t_final: 0.02
+  sample_count: 21
+  dt: [0.001, 0.0005, 0.00025, 0.000125, 0.0000625]
+space:
+  t_final: 0.02
+  sample_count: 21
+  candidate_dt: [0.0000625, 0.00003125]
+  isolation_relative_threshold: 0.10
+  increasing_neighbor_path:
+    16: 4.06155281280883
+    24: 4.5
+    32: 5.049509756796392
+    48: 5.5
+    64: 6.041381265149109
+  fixed_ratio: 4.5
+  formal_resolutions: [16, 24, 32, 48]
+  conditional_n64:
+    peak_rss_bytes: 2000000000
+    estimated_wall_seconds: 7200
+    cutoff_margin: 1.0e-12
+hard_gates:
+  pair_force_residual: 1.0e-12
+  internal_force_residual: 1.0e-10
+  assembly_defect: 1.0e-10
+  momentum_update_defect: 1.0e-10
+  viscous_power_positive_tolerance: 1.0e-12
+  topology_defects: 0
+  minimum_separation_over_dx: 0.25
+  current_rss_bytes: 2000000000
+  peak_rss_bytes: 4000000000
+  rss_quartile_absolute_increase_bytes: 250000000
+  rss_quartile_relative_increase: 0.50
+  step_time_q4_q1: 1.30
+  child_reclaimed: true
+  parent_scalar_only: true
+formal_gates:
+  semidiscrete_finest_coarsest_ratio: 0.05
+  semidiscrete_fitted_order: 1.80
+  semidiscrete_local_median: [1.70, 2.30]
+  continuous_exact_nonincrease: true
+  continuous_self_difference_ratio: 0.30
+  space_endpoint_improves: true
+  n64_ratio_trigger: 0.95
+determinism:
+  cases: [ct_a_0000625, ct_b_0000625, space_a_n32, space_b_n32]
+scope:
+  formal_temporal_verification: true
+  formal_spatial_verification: true
+  stage01f2_smoke_reused: false
+  stage01f3_pilot_reused: false
+  stage01f3r_pilot_reused: false
+  stage01g_started: false
+  v3_started: false
+  stage02_started: false
+  training_started: false
+  labels_generated: false
+allowed_statuses: [MMS_CONVERGENCE_VERIFICATION_PASS, MMS_CONVERGENCE_VERIFICATION_CONDITIONAL, MMS_CONVERGENCE_VERIFICATION_FAIL, MMS_CONVERGENCE_EVIDENCE_INCOMPLETE]
