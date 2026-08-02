@@ -1,0 +1,70 @@
+schema_version: sph-pio-poc.stage01f3c.preregistration.v1
+stage: Stage 01F3C
+name: Continuous-time error cancellation and CT2 gate qualification
+frozen_stage01f3b:
+  evidence_commit: 5a0ef2556a7128865f07d60abcd54666ca5fba47
+  status: MMS_CONVERGENCE_VERIFICATION_FAIL
+  tag: stage-01f3b-fail-continuous-velocity-ct2
+  evaluator: 06_experiments/stage_01f3b_mms_convergence/results/stage01f3b_evaluation.json
+  manifest: 06_experiments/stage_01f3c_ct2_adjudication/configs/stage01f3b_frozen_sha256_manifest.csv
+n32:
+  resolution: 32
+  support_ratio: 5.049509756796392
+  t_final: 0.02
+  sample_count: 21
+  dt: [0.001, 0.0005, 0.00025, 0.000125, 0.0000625]
+heldout:
+  resolution: 24
+  support_ratio: 4.5
+  t_final: 0.01
+  sample_count: 11
+  common_grid_note: maximal noninterpolated common grid permitted by dt=0.001
+  dt: [0.001, 0.0005, 0.00025, 0.000125, 0.0000625]
+  deterministic_repeat_dt: 0.0000625
+references:
+  baseline: {rtol: 1.0e-12, atol: 1.0e-14, max_step: 3.125e-5}
+  tighter: {rtol: 1.0e-13, atol: 1.0e-15, max_step: 1.5625e-5}
+  third: {rtol: 1.0e-13, atol: 1.0e-15, max_step: 7.8125e-6}
+  sensitivity_linf: 1.0e-9
+  sparse_dense_sample_count: 10
+  sparse_dense_acceleration_absolute: 1.0e-11
+  sparse_dense_acceleration_relative: 1.0e-10
+decomposition_gates:
+  closure_absolute: 1.0e-12
+  closure_relative: 1.0e-10
+  temporal_fitted_order: 1.80
+  finest_platform_relative_distance: 0.01
+  require_endpoint_and_integrated_temporal_order: true
+  require_coarse_negative_cross_term: true
+  require_platform_approach_from_below: true
+hard_gates:
+  pair_force_residual: 1.0e-12
+  internal_force_residual: 1.0e-10
+  assembly_defect: 1.0e-10
+  momentum_update_defect: 1.0e-10
+  viscous_power_positive_tolerance: 1.0e-12
+  topology_defects: 0
+  minimum_separation_over_dx: 0.25
+  current_rss_bytes: 2000000000
+  peak_rss_bytes: 4000000000
+  rss_quartile_absolute_increase_bytes: 250000000
+  rss_quartile_relative_increase: 0.50
+  step_time_q4_q1: 1.30
+  child_reclaimed: true
+  parent_scalar_only: true
+allowed_statuses:
+  - CT2_SPATIAL_TEMPORAL_CANCELLATION_CONFIRMED
+  - CT2_TRUE_TEMPORAL_DEGRADATION_CONFIRMED
+  - CT2_MIXED_OR_UNRESOLVED
+  - CT2_EVIDENCE_INCOMPLETE
+scope:
+  modifies_stage01f3b: false
+  recomputes_stage01f3b_ct2: false
+  reruns_full_space_matrix: false
+  recomputes_stage01f3b_gci: false
+  stage01f3d_started: false
+  stage01g_started: false
+  v3_started: false
+  stage02_started: false
+  training_started: false
+  labels_generated: false
