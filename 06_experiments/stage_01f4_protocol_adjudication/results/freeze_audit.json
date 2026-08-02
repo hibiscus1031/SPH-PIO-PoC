@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "stage01f3b_historical_status_identity": true,
+    "stage01f3c_commit_identity": true,
+    "stage01f3c_manifest_16_of_16": true,
+    "stage01f3c_status_identity": true,
+    "stage01f3c_tag_identity": true
+  },
+  "frozen_stage01f3b_status": "MMS_CONVERGENCE_VERIFICATION_FAIL",
+  "frozen_stage01f3c_commit": "f831d4fa7d63ad3357e2b1e84c1260d7f3c46a2e",
+  "frozen_stage01f3c_status": "CT2_MIXED_OR_UNRESOLVED",
+  "frozen_stage01f3c_tag": "stage-01f3c-ct2-mixed-or-unresolved",
+  "manifest_entry_count": 16,
+  "schema_version": "sph-pio-poc.stage01f4.freeze-audit.v1",
+  "status": "PASS"
+}

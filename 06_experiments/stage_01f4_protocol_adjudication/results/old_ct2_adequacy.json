@@ -1,0 +1,19 @@
+{
+  "counterexamples": {
+    "not_necessary": {
+      "construction": "e_space=(1,0), e_time(dt)=(-dt^2,0)",
+      "consequence": "time error converges at order 2 while total exact error norm 1-dt^2 increases toward the spatial platform as dt decreases"
+    },
+    "not_sufficient": {
+      "construction": "e_space=(0,0), e_time(dt)=(c+dt^2,0), c>0",
+      "consequence": "total exact error strictly decreases as dt decreases but time error approaches nonzero c and therefore does not converge to the semidiscrete solution"
+    }
+  },
+  "historical_stage01f3b_ct2_reclassified": false,
+  "identity": "e_total = e_space + e_time",
+  "necessary_for_time_integrator_convergence": false,
+  "schema_version": "sph-pio-poc.stage01f4.old-ct2-adequacy.v1",
+  "squared_norm_identity": "||e_total||^2 = ||e_space||^2 + ||e_time||^2 + 2<e_space,e_time>",
+  "sufficient_for_time_integrator_convergence": false,
+  "verdict": "OLD_CT2_NOT_A_VALID_FUTURE_NECESSARY_OR_STANDALONE_SUFFICIENT_TIME_CONVERGENCE_GATE"
+}

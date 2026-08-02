@@ -1,0 +1,178 @@
+schema_version: sph-pio-poc.stage01f4.protocol.v1
+stage: Stage 01F4
+name: Prospective plateau-aware MMS verification protocol adjudication
+mode: design_and_adjudication_only
+numerical_runs_authorized: false
+frozen_stage01f3c:
+  evidence_commit: f831d4fa7d63ad3357e2b1e84c1260d7f3c46a2e
+  status: CT2_MIXED_OR_UNRESOLVED
+  tag: stage-01f3c-ct2-mixed-or-unresolved
+  evaluator: 06_experiments/stage_01f3c_ct2_adjudication/results/stage01f3c_evaluation.json
+  manifest: 06_experiments/stage_01f4_protocol_adjudication/configs/stage01f3c_frozen_sha256_manifest.csv
+frozen_stage01f3b:
+  status: MMS_CONVERGENCE_VERIFICATION_FAIL
+  tag: stage-01f3b-fail-continuous-velocity-ct2
+  evaluator: 06_experiments/stage_01f3b_mms_convergence/results/stage01f3b_evaluation.json
+old_ct2_audit:
+  historical_gate: continuous_exact_total_error_strictly_nonincreasing_with_dt_refinement
+  necessary_for_time_integrator_convergence: false
+  sufficient_for_time_integrator_convergence: false
+  historical_gate_recomputed: false
+  historical_gate_reclassified: false
+  identity: e_total = e_space + e_time
+  squared_identity: norm(e_total)^2 = norm(e_space)^2 + norm(e_time)^2 + 2 inner(e_space,e_time)
+  conclusion: future protocols separate temporal convergence, platform entry, and vector alignment
+prospective_matrix_contract:
+  exact_primary_configuration_must_be_frozen_before_any_run: true
+  minimum_dt_levels: 5
+  dt_refinement_ratio: 2.0
+  common_physical_times_required: true
+  interpolation_forbidden: true
+  endpoint_and_integrated_rms_are_coprimary: true
+  fresh_run_ids_and_fresh_trajectories_required: true
+  stage01f3b_or_stage01f3c_data_may_qualify_new_run: false
+qualified_semidiscrete_reference:
+  integrator: scipy_DOP853_or_independent_equivalent
+  production_sparse_rhs: true
+  project_rk2_forbidden: true
+  levels:
+    baseline: {rtol: 1.0e-12, atol: 1.0e-14, max_step_factor_of_finest_rk2_dt: 0.5}
+    tighter: {rtol: 1.0e-13, atol: 1.0e-15, max_step_factor_of_finest_rk2_dt: 0.25}
+    third: {rtol: 1.0e-13, atol: 1.0e-15, max_step_factor_of_finest_rk2_dt: 0.125}
+  baseline_tighter_position_linf: 1.0e-9
+  baseline_tighter_velocity_linf: 1.0e-9
+  tighter_third_position_linf: 1.0e-9
+  tighter_third_velocity_linf: 1.0e-9
+  minimum_sparse_dense_states_per_solution: 10
+  sparse_dense_acceleration_absolute: 1.0e-11
+  sparse_dense_acceleration_relative: 1.0e-10
+  all_states_finite: true
+  topology_structural_defects: 0
+  reciprocal_cutoff_switching_required: true
+  edge_identity_constancy_required: false
+time_gates:
+  error_definition: numerical_rk2_state_minus_qualified_semidiscrete_state
+  fields: [position, velocity]
+  norms: [endpoint_vector_l2, common_time_integrated_vector_rms]
+  T1:
+    rule: each_field_and_norm_strictly_decreases_at_every_dt_refinement
+  T2:
+    rule: loglog_fitted_order_for_each_field_and_norm
+    minimum: 1.80
+  T3:
+    rule: median_of_two_local_orders_from_finest_three_usable_levels_for_each_field_and_norm
+    interval: [1.70, 2.30]
+  T4:
+    rule: usable_error_exceeds_20_times_matched_reference_uncertainty
+    minimum_usable_points_per_field_and_norm: 4
+    uncertainty_definition: max_baseline_tighter_and_tighter_third_matched_norm
+  T5:
+    rule: successive_dt_self_difference_significantly_contracts_for_each_field_and_norm
+    finest_to_coarsest_maximum_ratio: 0.30
+platform_gates:
+  fields: [position, velocity]
+  norms: [endpoint_vector_l2, common_time_integrated_vector_rms]
+  P1:
+    definition: abs(finest_total_exact_error - semidiscrete_spatial_error) / semidiscrete_spatial_error
+    maximum: 0.01
+  P2:
+    definition: finest_time_error / semidiscrete_spatial_error
+    maximum: 0.01
+  P3:
+    all_total_exact_errors_finite: true
+    boundedness_definition: max_total_error / max(coarsest_total_error, semidiscrete_spatial_error)
+    maximum: 2.0
+    strict_monotonicity_inside_platform_required: false
+  old_ct2_percent_relaxation_forbidden: true
+space_gates:
+  path_name: increasing-neighbor consistency path
+  fixed_stencil_single_h_claim_allowed: false
+  formal_resolutions: [16, 24, 32, 48]
+  support_ratio_by_resolution:
+    16: 4.06155281280883
+    24: 4.5
+    32: 5.049509756796392
+    48: 5.5
+    64: 6.041381265149109
+  fields: [position, velocity, density, pressure]
+  endpoint_finest_better_than_coarsest_each_field: true
+  strict_levelwise_l2_decrease_each_field: true
+  positive_global_loglog_slope_each_field: true
+  gci:
+    qualified_separately_per_field: true
+    monotone_three_level_subsequence_required: true
+    same_sign_local_orders_required: true
+    maximum_adjacent_local_order_relative_change: 0.25
+    minimum_reference_floor_multiplier: 20.0
+    maximum_selected_triplet_order_relative_change: 0.25
+    report_only_if_all_qualification_checks_pass: true
+  fixed_ratio_family:
+    role: quadrature_floor_diagnostic_only
+    can_qualify_space_gate: false
+  conditional_n64:
+    trigger_if_nonmonotone: true
+    trigger_if_n48_n32_ratio_exceeds: 0.95
+    trigger_if_local_order_unclear: true
+    resource_and_cutoff_safety_must_pass_before_run: true
+prospective_heldout:
+  minimum_new_configurations: 1
+  sealed_configuration:
+    resolution: 28
+    support_ratio: 4.75
+    t_final: 0.015
+    dt: [0.001, 0.0005, 0.00025, 0.000125, 0.0000625]
+    maximum_noninterpolated_common_time_count: 16
+    repository_precheck_no_prior_matching_configuration: true
+    prior_trajectory_or_reference_data_used_to_set_gates: false
+  required:
+    qualified_semidiscrete_reference: true
+    position_and_velocity_time_error_strictly_decrease: true
+    position_and_velocity_fitted_order_minimum: 1.80
+    finest_platform_relative_distance_maximum: 0.01
+    finest_time_to_space_error_ratio_maximum: 0.01
+    source_conservation_topology_reference_resource_determinism: true
+  requirements_explicitly_not_imposed:
+    cross_term_sign_matches_primary: true
+    platform_approach_direction_matches_primary: true
+    total_exact_error_strictly_monotone: true
+hard_safety_gates:
+  source_stage_contract: two_calls_start_and_midpoint
+  pair_force_residual: 1.0e-12
+  internal_force_residual: 1.0e-10
+  assembly_defect: 1.0e-10
+  momentum_update_defect: 1.0e-10
+  viscous_power_positive_tolerance: 1.0e-12
+  topology_structural_defects: 0
+  reciprocal_switching_required: true
+  minimum_separation_over_dx: 0.25
+  current_rss_bytes: 2000000000
+  peak_rss_bytes: 4000000000
+  rss_quartile_absolute_increase_bytes: 250000000
+  rss_quartile_relative_increase: 0.50
+  step_time_q4_q1: 1.30
+  child_reclaimed: true
+  parent_scalar_only: true
+anti_posthoc_controls:
+  protocol_commit_and_hash_frozen_before_run: true
+  exact_future_matrix_frozen_in_separate_design_commit_before_run: true
+  thresholds_locked_before_observing_new_data: true
+  old_stage01f3b_and_stage01f3c_data_are_context_only: true
+  no_old_trajectory_may_count_as_new_qualification: true
+  no_gate_may_be_removed_or_relaxed_after_run: true
+  exclusions_and_conditional_runs_must_be_preregistered: true
+  one_shot_new_requalification_design_application_only: true
+scope:
+  numerical_trajectory_count: 0
+  sph_run_started: false
+  dop853_run_started: false
+  convergence_matrix_started: false
+  stage01f3d_started: false
+  stage01g_started: false
+  v3_started: false
+  stage02_started: false
+  training_started: false
+  labels_generated: false
+allowed_statuses:
+  - PLATEAU_AWARE_PROTOCOL_APPROVED
+  - PLATEAU_AWARE_PROTOCOL_REJECTED
+  - PROTOCOL_ADJUDICATION_INCOMPLETE

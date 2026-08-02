@@ -1,0 +1,30 @@
+{
+  "checks": {
+    "anti_posthoc_controls_complete": true,
+    "frozen_provenance_complete": true,
+    "hard_safety_gates_complete": true,
+    "heldout_rules_complete": true,
+    "no_numerical_execution": true,
+    "old_ct2_mathematical_audit_complete": true,
+    "platform_gates_complete": true,
+    "space_gates_complete": true,
+    "time_gates_complete": true
+  },
+  "evidence_complete": true,
+  "historical_stage01f3b_status": "MMS_CONVERGENCE_VERIFICATION_FAIL",
+  "historical_stage01f3b_status_changed": false,
+  "historical_stage01f3c_status": "CT2_MIXED_OR_UNRESOLVED",
+  "historical_stage01f3c_status_changed": false,
+  "new_requalification_design_application_eligible": true,
+  "numerical_runs_executed": 0,
+  "schema_version": "sph-pio-poc.stage01f4.evaluation.v1",
+  "stage01f3d_started": false,
+  "stage01g_qualification_generated": false,
+  "stage01g_started": false,
+  "stage02_qualification_generated": false,
+  "stage02_started": false,
+  "status": "PLATEAU_AWARE_PROTOCOL_APPROVED",
+  "v2_qualification_generated": false,
+  "v3_qualification_generated": false,
+  "v3_started": false
+}
