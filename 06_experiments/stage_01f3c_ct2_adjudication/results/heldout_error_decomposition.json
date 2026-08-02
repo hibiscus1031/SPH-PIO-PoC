@@ -1,0 +1,399 @@
+{
+  "common_time_grid": "11 noninterpolated times forced by held-out coarse dt",
+  "schema_version": "sph-pio-poc.stage01f3c.heldout-decomposition.v1",
+  "solutions": {
+    "MMS_A": {
+      "checks": {
+        "approaches_platform_from_below": false,
+        "coarse_cross_explains_below_platform": false,
+        "coarse_negative_cross_endpoint": false,
+        "coarse_negative_cross_integrated": false,
+        "finest_platform_distance": true,
+        "reference_status_pass": true,
+        "temporal_endpoint_monotone": true,
+        "temporal_endpoint_order": true,
+        "temporal_integrated_monotone": true,
+        "temporal_integrated_order": true,
+        "vector_closure_absolute": true,
+        "vector_closure_relative": true
+      },
+      "dataset": "heldout",
+      "finest_endpoint_platform_relative_distance": 3.3656443262801922e-06,
+      "maximum_absolute_vector_closure": 0.0,
+      "maximum_relative_vector_closure": 0.0,
+      "resolution": 24,
+      "rows": [
+        {
+          "dt": 0.001,
+          "endpoint": {
+            "cosine_space_temporal": 0.9999993507325885,
+            "cross_term_2_space_dot_temporal": 1.3495745684205445e-08,
+            "maximum_absolute_vector_closure": 0.0,
+            "maximum_relative_vector_closure": 0.0,
+            "reconstructed_squared_norm": 7.394599803984425e-06,
+            "space_l2": 0.0027168176032483266,
+            "squared_norm_reconstruction_absolute_residual": 3.3881317890172014e-21,
+            "temporal_l2": 2.4837431910082926e-06,
+            "total_l2": 0.0027193013448281946,
+            "total_squared_norm": 7.394599803984428e-06
+          },
+          "integrated_rms": {
+            "cosine_space_temporal": 0.9977065624291203,
+            "cross_term_2_space_dot_temporal": 5.626192384422521e-09,
+            "maximum_absolute_vector_closure": 0.0,
+            "maximum_relative_vector_closure": 0.0,
+            "reconstructed_squared_norm": 2.813431270308218e-06,
+            "space_l2": 0.001675649798302562,
+            "squared_norm_reconstruction_absolute_residual": 4.235164736271502e-22,
+            "temporal_l2": 1.6826682317860164e-06,
+            "total_l2": 0.0016773286113067462,
+            "total_squared_norm": 2.8134312703082177e-06
+          },
+          "run_id": "f3c_ho_a_001",
+          "trajectory_path": "06_experiments/stage_01f3c_ct2_adjudication/results/f3c_ho_a_001_trajectory.npz",
+          "trajectory_sha256": "39367a091a3530d05f5f1bc09112264ff7b2cd5b312b79bb55e404aad407f9c6"
+        },
+        {
+          "dt": 0.0005,
+          "endpoint": {
+            "cosine_space_temporal": 0.9999996189843534,
+            "cross_term_2_space_dot_temporal": 3.272099316229977e-09,
+            "maximum_absolute_vector_closure": 0.0,
+            "maximum_relative_vector_closure": 0.0,
+            "reconstructed_squared_norm": 7.3843703512733906e-06,
+            "space_l2": 0.0027168176032483266,
+            "squared_norm_reconstruction_absolute_residual": 0.0,
+            "temporal_l2": 6.02193639911499e-07,
+            "total_l2": 0.0027174197966588435,
+            "total_squared_norm": 7.3843703512733906e-06
+          },
+          "integrated_rms": {
+            "cosine_space_temporal": 0.9971799986020442,
+            "cross_term_2_space_dot_temporal": 1.3770910011756312e-09,
+            "maximum_absolute_vector_closure": 0.0,
+            "maximum_relative_vector_closure": 0.0,
+            "reconstructed_squared_norm": 2.8091795073580544e-06,
+            "space_l2": 0.001675649798302562,
+            "squared_norm_reconstruction_absolute_residual": 0.0,
+            "temporal_l2": 4.120745824342413e-07,
+            "total_l2": 0.0016760607111193956,
+            "total_squared_norm": 2.8091795073580544e-06
+          },
+          "run_id": "f3c_ho_a_0005",
+          "trajectory_path": "06_experiments/stage_01f3c_ct2_adjudication/results/f3c_ho_a_0005_trajectory.npz",
+          "trajectory_sha256": "23009123860ba631fc50f691550be9672ad683bac57a48263a09481feb29712a"
+        },
+        {
+          "dt": 0.00025,
+          "endpoint": {
+            "cosine_space_temporal": 0.9999997204349751,
+            "cross_term_2_space_dot_temporal": 8.049313969016621e-10,
+            "maximum_absolute_vector_closure": 0.0,
+            "maximum_relative_vector_closure": 0.0,
+            "reconstructed_squared_norm": 7.381902842661955e-06,
+            "space_l2": 0.0027168176032483266,
+            "squared_norm_reconstruction_absolute_residual": 1.6940658945086007e-21,
+            "temporal_l2": 1.481386937735506e-07,
+            "total_l2": 0.002716965741900688,
+            "total_squared_norm": 7.381902842661957e-06
+          },
+          "integrated_rms": {
+            "cosine_space_temporal": 0.9968847876534178,
+            "cross_term_2_space_dot_temporal": 3.4044790156559e-10,
+            "maximum_absolute_vector_closure": 0.0,
+            "maximum_relative_vector_closure": 0.0,
+            "reconstructed_squared_norm": 2.8081427048374655e-06,
+            "space_l2": 0.001675649798302562,
+            "squared_norm_reconstruction_absolute_residual": 4.235164736271502e-22,
+            "temporal_l2": 1.0190428323249547e-07,
+            "total_l2": 0.001675751385151588,
+            "total_squared_norm": 2.808142704837466e-06
+          },
+          "run_id": "f3c_ho_a_00025",
+          "trajectory_path": "06_experiments/stage_01f3c_ct2_adjudication/results/f3c_ho_a_00025_trajectory.npz",
+          "trajectory_sha256": "1cdc89ea07972935085cc618856d53924c0a57d0319cc56221f89b9f248beb1d"
+        },
+        {
+          "dt": 0.000125,
+          "endpoint": {
+            "cosine_space_temporal": 0.9999997613933754,
+            "cross_term_2_space_dot_temporal": 1.9957299066027309e-10,
+            "maximum_absolute_vector_closure": 0.0,
+            "maximum_relative_vector_closure": 0.0,
+            "reconstructed_squared_norm": 7.381297463659675e-06,
+            "space_l2": 0.0027168176032483266,
+            "squared_norm_reconstruction_absolute_residual": 8.470329472543003e-22,
+            "temporal_l2": 3.67291933844041e-08,
+            "total_l2": 0.0027168543324329474,
+            "total_squared_norm": 7.381297463659676e-06
+          },
+          "integrated_rms": {
+            "cosine_space_temporal": 0.9967284682741814,
+            "cross_term_2_space_dot_temporal": 8.462481995729029e-11,
+            "maximum_absolute_vector_closure": 0.0,
+            "maximum_relative_vector_closure": 0.0,
+            "reconstructed_squared_norm": 2.8078868720131977e-06,
+            "space_l2": 0.001675649798302562,
+            "squared_norm_reconstruction_absolute_residual": 0.0,
+            "temporal_l2": 2.5334226021481827e-08,
+            "total_l2": 0.0016756750496481104,
+            "total_squared_norm": 2.8078868720131977e-06
+          },
+          "run_id": "f3c_ho_a_000125",
+          "trajectory_path": "06_experiments/stage_01f3c_ct2_adjudication/results/f3c_ho_a_000125_trajectory.npz",
+          "trajectory_sha256": "40855dfe430be6c21c08108e98aa4af4da2d90d79b722fbaa2df6f728883dc40"
+        },
+        {
+          "dt": 6.25e-05,
+          "endpoint": {
+            "cosine_space_temporal": 0.9999997794408158,
+            "cross_term_2_space_dot_temporal": 4.968430046534366e-11,
+            "maximum_absolute_vector_closure": 0.0,
+            "maximum_relative_vector_closure": 0.0,
+            "reconstructed_squared_norm": 7.381147573704056e-06,
+            "space_l2": 0.0027168176032483266,
+            "squared_norm_reconstruction_absolute_residual": 0.0,
+            "temporal_l2": 9.143843768582491e-09,
+            "total_l2": 0.0027168267470900785,
+            "total_squared_norm": 7.381147573704056e-06
+          },
+          "integrated_rms": {
+            "cosine_space_temporal": 0.9966480299201983,
+            "cross_term_2_space_dot_temporal": 2.1094739693151844e-11,
+            "maximum_absolute_vector_closure": 0.0,
+            "maximum_relative_vector_closure": 0.0,
+            "reconstructed_squared_norm": 2.807823341330998e-06,
+            "space_l2": 0.001675649798302562,
+            "squared_norm_reconstruction_absolute_residual": 0.0,
+            "temporal_l2": 6.315665260802357e-09,
+            "total_l2": 0.0016756560927979815,
+            "total_squared_norm": 2.807823341330998e-06
+          },
+          "run_id": "f3c_ho_a_0000625",
+          "trajectory_path": "06_experiments/stage_01f3c_ct2_adjudication/results/f3c_ho_a_0000625_trajectory.npz",
+          "trajectory_sha256": "cc9bafea74659bd48430b6620e963a58e2c503413294d45e4b06ea590be7842a"
+        }
+      ],
+      "sample_count": 11,
+      "solution": "MMS_A",
+      "status": "FAIL",
+      "support_ratio": 4.5,
+      "t_final": 0.01,
+      "temporal_endpoint_errors": [
+        2.4837431910082926e-06,
+        6.02193639911499e-07,
+        1.481386937735506e-07,
+        3.67291933844041e-08,
+        9.143843768582491e-09
+      ],
+      "temporal_endpoint_fitted_order": 2.020622743915755,
+      "temporal_integrated_errors": [
+        1.6826682317860164e-06,
+        4.120745824342413e-07,
+        1.0190428323249547e-07,
+        2.5334226021481827e-08,
+        6.315665260802357e-09
+      ],
+      "temporal_integrated_fitted_order": 2.0138946474473745,
+      "vector_evidence_path": "06_experiments/stage_01f3c_ct2_adjudication/results/heldout_mms_a_vectors.npz",
+      "vector_evidence_sha256": "b814b10f961f1e3d06f1cd62a111a01becb5380c304b2be3fc7f3049b96f5577"
+    },
+    "MMS_B": {
+      "checks": {
+        "approaches_platform_from_below": false,
+        "coarse_cross_explains_below_platform": false,
+        "coarse_negative_cross_endpoint": false,
+        "coarse_negative_cross_integrated": false,
+        "finest_platform_distance": true,
+        "reference_status_pass": true,
+        "temporal_endpoint_monotone": true,
+        "temporal_endpoint_order": true,
+        "temporal_integrated_monotone": true,
+        "temporal_integrated_order": true,
+        "vector_closure_absolute": true,
+        "vector_closure_relative": true
+      },
+      "dataset": "heldout",
+      "finest_endpoint_platform_relative_distance": 3.348718007163036e-06,
+      "maximum_absolute_vector_closure": 0.0,
+      "maximum_relative_vector_closure": 0.0,
+      "resolution": 24,
+      "rows": [
+        {
+          "dt": 0.001,
+          "endpoint": {
+            "cosine_space_temporal": 0.1296309593521424,
+            "cross_term_2_space_dot_temporal": 1.3447694251793888e-08,
+            "maximum_absolute_vector_closure": 0.0,
+            "maximum_relative_vector_closure": 0.0,
+            "reconstructed_squared_norm": 7.406733568451946e-06,
+            "space_l2": 0.0027189928204079204,
+            "squared_norm_reconstruction_absolute_residual": 1.6940658945086007e-21,
+            "temporal_l2": 1.9076602693699836e-05,
+            "total_l2": 0.0027215314748229437,
+            "total_squared_norm": 7.4067335684519475e-06
+          },
+          "integrated_rms": {
+            "cosine_space_temporal": 0.13656646625096075,
+            "cross_term_2_space_dot_temporal": 5.563398749939117e-09,
+            "maximum_absolute_vector_closure": 0.0,
+            "maximum_relative_vector_closure": 0.0,
+            "reconstructed_squared_norm": 2.817521804406262e-06,
+            "space_l2": 0.0016768455066891094,
+            "squared_norm_reconstruction_absolute_residual": 4.235164736271502e-22,
+            "temporal_l2": 1.2147112943690476e-05,
+            "total_l2": 0.0016785475281940222,
+            "total_squared_norm": 2.8175218044062616e-06
+          },
+          "run_id": "f3c_ho_b_001",
+          "trajectory_path": "06_experiments/stage_01f3c_ct2_adjudication/results/f3c_ho_b_001_trajectory.npz",
+          "trajectory_sha256": "35c78b10aef465e09e82052122d7f099fb4699dd3dd20fcde183960a9e1ccb63"
+        },
+        {
+          "dt": 0.0005,
+          "endpoint": {
+            "cosine_space_temporal": 0.12778667186393586,
+            "cross_term_2_space_dot_temporal": 3.260488426683257e-09,
+            "maximum_absolute_vector_closure": 0.0,
+            "maximum_relative_vector_closure": 0.0,
+            "reconstructed_squared_norm": 7.396204460826319e-06,
+            "space_l2": 0.0027189928204079204,
+            "squared_norm_reconstruction_absolute_residual": 8.470329472543003e-22,
+            "temporal_l2": 4.692011276355837e-06,
+            "total_l2": 0.0027195963782933527,
+            "total_squared_norm": 7.39620446082632e-06
+          },
+          "integrated_rms": {
+            "cosine_space_temporal": 0.13534216459956022,
+            "cross_term_2_space_dot_temporal": 1.3616104353756258e-09,
+            "maximum_absolute_vector_closure": 0.0,
+            "maximum_relative_vector_closure": 0.0,
+            "reconstructed_squared_norm": 2.813181462721428e-06,
+            "space_l2": 0.0016768455066891094,
+            "squared_norm_reconstruction_absolute_residual": 4.235164736271502e-22,
+            "temporal_l2": 2.9998304278861316e-06,
+            "total_l2": 0.0016772541437484743,
+            "total_squared_norm": 2.8131814627214276e-06
+          },
+          "run_id": "f3c_ho_b_0005",
+          "trajectory_path": "06_experiments/stage_01f3c_ct2_adjudication/results/f3c_ho_b_0005_trajectory.npz",
+          "trajectory_sha256": "1e5c81da7ab257552bf3acf731d6d776dae84c0a770476e0ddef4363711ca75e"
+        },
+        {
+          "dt": 0.00025,
+          "endpoint": {
+            "cosine_space_temporal": 0.1268195383649941,
+            "cross_term_2_space_dot_temporal": 8.020796964007442e-10,
+            "maximum_absolute_vector_closure": 0.0,
+            "maximum_relative_vector_closure": 0.0,
+            "reconstructed_squared_norm": 7.393725389779832e-06,
+            "space_l2": 0.0027189928204079204,
+            "squared_norm_reconstruction_absolute_residual": 8.470329472543003e-22,
+            "temporal_l2": 1.1630363764162605e-06,
+            "total_l2": 0.0027191405608720984,
+            "total_squared_norm": 7.393725389779831e-06
+          },
+          "integrated_rms": {
+            "cosine_space_temporal": 0.13469273549607907,
+            "cross_term_2_space_dot_temporal": 3.3660581435389694e-10,
+            "maximum_absolute_vector_closure": 0.0,
+            "maximum_relative_vector_closure": 0.0,
+            "reconstructed_squared_norm": 2.812148014393661e-06,
+            "space_l2": 0.0016768455066891094,
+            "squared_norm_reconstruction_absolute_residual": 4.235164736271502e-22,
+            "temporal_l2": 7.451683373639642e-07,
+            "total_l2": 0.0016769460380088742,
+            "total_squared_norm": 2.8121480143936607e-06
+          },
+          "run_id": "f3c_ho_b_00025",
+          "trajectory_path": "06_experiments/stage_01f3c_ct2_adjudication/results/f3c_ho_b_00025_trajectory.npz",
+          "trajectory_sha256": "df407e8ce4a797fee163b83626f610d5db9e4259add36756ef735ea5edf4c6b9"
+        },
+        {
+          "dt": 0.000125,
+          "endpoint": {
+            "cosine_space_temporal": 0.1263247995628617,
+            "cross_term_2_space_dot_temporal": 1.988665052561502e-10,
+            "maximum_absolute_vector_closure": 0.0,
+            "maximum_relative_vector_closure": 0.0,
+            "reconstructed_squared_norm": 7.393120907740076e-06,
+            "space_l2": 0.0027189928204079204,
+            "squared_norm_reconstruction_absolute_residual": 8.470329472543003e-22,
+            "temporal_l2": 2.8949093402993063e-07,
+            "total_l2": 0.002719029405457042,
+            "total_squared_norm": 7.3931209077400765e-06
+          },
+          "integrated_rms": {
+            "cosine_space_temporal": 0.1343588740075764,
+            "cross_term_2_space_dot_temporal": 8.366786289472164e-11,
+            "maximum_absolute_vector_closure": 0.0,
+            "maximum_relative_vector_closure": 0.0,
+            "reconstructed_squared_norm": 2.8118945556440715e-06,
+            "space_l2": 0.0016768455066891094,
+            "squared_norm_reconstruction_absolute_residual": 4.235164736271502e-22,
+            "temporal_l2": 1.8568177256253647e-07,
+            "total_l2": 0.001676870464777787,
+            "total_squared_norm": 2.811894555644071e-06
+          },
+          "run_id": "f3c_ho_b_000125",
+          "trajectory_path": "06_experiments/stage_01f3c_ct2_adjudication/results/f3c_ho_b_000125_trajectory.npz",
+          "trajectory_sha256": "2bb7889891d9007e46013a0722f9339f00c270b8b87f4fe48f5e1a8520e33965"
+        },
+        {
+          "dt": 6.25e-05,
+          "endpoint": {
+            "cosine_space_temporal": 0.12607464285655098,
+            "cross_term_2_space_dot_temporal": 4.9508489990314064e-11,
+            "maximum_absolute_vector_closure": 0.0,
+            "maximum_relative_vector_closure": 0.0,
+            "reconstructed_squared_norm": 7.39297147113449e-06,
+            "space_l2": 0.0027189928204079204,
+            "squared_norm_reconstruction_absolute_residual": 0.0,
+            "temporal_l2": 7.221274890572271e-08,
+            "total_l2": 0.0027190019255481394,
+            "total_squared_norm": 7.39297147113449e-06
+          },
+          "integrated_rms": {
+            "cosine_space_temporal": 0.13418967754388356,
+            "cross_term_2_space_dot_temporal": 2.0855950838420318e-11,
+            "maximum_absolute_vector_closure": 0.0,
+            "maximum_relative_vector_closure": 0.0,
+            "reconstructed_squared_norm": 2.8118317114020047e-06,
+            "space_l2": 0.0016768455066891094,
+            "squared_norm_reconstruction_absolute_residual": 0.0,
+            "temporal_l2": 4.634339415590171e-08,
+            "total_l2": 0.0016768517261230955,
+            "total_squared_norm": 2.8118317114020047e-06
+          },
+          "run_id": "f3c_ho_b_0000625",
+          "trajectory_path": "06_experiments/stage_01f3c_ct2_adjudication/results/f3c_ho_b_0000625_trajectory.npz",
+          "trajectory_sha256": "453b0bc59ca87fd9f9abd7fae8f96bc492a9297406242bd79bdcd4647b9479d1"
+        }
+      ],
+      "sample_count": 11,
+      "solution": "MMS_B",
+      "status": "FAIL",
+      "support_ratio": 4.5,
+      "t_final": 0.01,
+      "temporal_endpoint_errors": [
+        1.9076602693699836e-05,
+        4.692011276355837e-06,
+        1.1630363764162605e-06,
+        2.8949093402993063e-07,
+        7.221274890572271e-08
+      ],
+      "temporal_endpoint_fitted_order": 2.010928638832885,
+      "temporal_integrated_errors": [
+        1.2147112943690476e-05,
+        2.9998304278861316e-06,
+        7.451683373639642e-07,
+        1.8568177256253647e-07,
+        4.634339415590171e-08
+      ],
+      "temporal_integrated_fitted_order": 2.0082044921665925,
+      "vector_evidence_path": "06_experiments/stage_01f3c_ct2_adjudication/results/heldout_mms_b_vectors.npz",
+      "vector_evidence_sha256": "5ce5b8274dd0cfa0f1f5f18800ba5791d74a6a205fbd053ff5068872dbe923ac"
+    }
+  },
+  "status": "FAIL"
+}

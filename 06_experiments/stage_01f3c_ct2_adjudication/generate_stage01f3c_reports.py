@@ -108,6 +108,15 @@ def main() -> int:
         f"closure abs `{item['maximum_absolute_vector_closure']:.3e}`, status `{item['status']}`."
         for solution, item in n32["solutions"].items()
     )
+    n32_c5 = all(
+        item["checks"]["coarse_negative_cross_endpoint"]
+        and item["checks"]["coarse_cross_explains_below_platform"]
+        for item in n32["solutions"].values()
+    )
+    n32_c6 = all(
+        item["checks"]["finest_platform_distance"]
+        for item in n32["solutions"].values()
+    )
     heldout_summary = "\n".join(
         f"- {solution}: endpoint time order `{item['temporal_endpoint_fitted_order']:.6f}`, "
         f"integrated time order `{item['temporal_integrated_fitted_order']:.6f}`, "
@@ -164,11 +173,11 @@ Stage 01F3B successive-dt self-difference 身份复核为 `{n32['stage01f3b_self
 | C2 | vector decomposition closure | {flag(c_checks['n32_vector_closure'])} |
 | C3 | temporal error monotone and order >=1.80 | {flag(c_checks['n32_temporal_second_order'])} |
 | C4 | frozen successive-dt self-difference identity | {flag(c_checks['stage01f3b_self_difference_identity'])} |
-| C5 | negative cross term explains below-platform total error | {flag(c_checks['n32_cancellation_mechanism'])} |
-| C6 | finest total velocity error within 1% of platform | {flag(c_checks['n32_cancellation_mechanism'])} |
+| C5 | endpoint negative cross term explains below-platform total error | {flag(n32_c5)} |
+| C6 | finest total velocity error within 1% of platform | {flag(n32_c6)} |
 | C7 | source/conservation/topology/resource/reference | {flag(c_checks['source_conservation_topology_resource_determinism'])} |
 
-N32 机制状态：`{n32['status']}`。Stage 01F3B 的形式判据不被放宽、重算或重分类。
+N32 机制状态：`{n32['status']}`。端点 coarse cross 为负，但 integrated-RMS coarse cross 为正；Stage 01F3B 的形式判据不被放宽、重算或重分类。
 """,
     )
     write(

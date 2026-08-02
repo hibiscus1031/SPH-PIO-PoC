@@ -1,0 +1,42 @@
+{
+  "cancellation_confirmed": false,
+  "checks": {
+    "heldout_cancellation_mechanism": false,
+    "heldout_references_pass": true,
+    "heldout_temporal_second_order": true,
+    "heldout_vector_closure": true,
+    "historical_status_unchanged": true,
+    "n32_cancellation_mechanism": false,
+    "n32_references_pass": true,
+    "n32_temporal_second_order": false,
+    "n32_vector_closure": true,
+    "no_downstream_or_training_started": true,
+    "reference_provenance_complete": true,
+    "source_conservation_topology_resource_determinism": true,
+    "stage01f3b_frozen_identity": true,
+    "stage01f3b_self_difference_identity": true,
+    "vector_provenance_complete": true
+  },
+  "config_sha256": "9dfdce8065e233a68cebd10fa4dcb0f9c65fcc4305fbc9ac7a42afdae8516aba",
+  "evidence_complete": true,
+  "heldout_temporal_second_order": true,
+  "historical_stage01f3b_reclassified": false,
+  "historical_stage01f3b_status": "MMS_CONVERGENCE_VERIFICATION_FAIL",
+  "n32_temporal_second_order": false,
+  "schema_version": "sph-pio-poc.stage01f3c.evaluation.v1",
+  "scope": {
+    "labels_generated": false,
+    "modifies_stage01f3b": false,
+    "recomputes_stage01f3b_ct2": false,
+    "recomputes_stage01f3b_gci": false,
+    "reruns_full_space_matrix": false,
+    "stage01f3d_started": false,
+    "stage01g_started": false,
+    "stage02_started": false,
+    "training_started": false,
+    "v3_started": false
+  },
+  "stage01f3d_application_eligible": false,
+  "stage01g_application_permitted": false,
+  "status": "CT2_MIXED_OR_UNRESOLVED"
+}

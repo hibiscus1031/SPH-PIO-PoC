@@ -1,0 +1,41 @@
+{
+  "checks": {
+    "all_children_reclaimed": true,
+    "all_heldout_workers_pass": true,
+    "all_parent_scalar_only": true,
+    "all_references_pass": true,
+    "determinism": true
+  },
+  "determinism_cases": [
+    {
+      "audit_scalar_identity": true,
+      "primary": "f3c_ho_a_0000625",
+      "repeat": "f3c_ho_repeat_a_0000625",
+      "status": "PASS",
+      "trajectory_bitwise_identity": true
+    },
+    {
+      "audit_scalar_identity": true,
+      "primary": "f3c_ho_b_0000625",
+      "repeat": "f3c_ho_repeat_b_0000625",
+      "status": "PASS",
+      "trajectory_bitwise_identity": true
+    }
+  ],
+  "maxima": {
+    "maximum_assembly_defect": 3.152475129099665e-16,
+    "maximum_current_rss_bytes": 288882688.0,
+    "maximum_internal_force_residual": 1.965220327036631e-17,
+    "maximum_kinetic_energy_update_defect": 3.6929266554447106e-09,
+    "maximum_momentum_update_defect": 1.3056479495869191e-17,
+    "maximum_pair_force_residual": 0.0,
+    "maximum_viscous_power": -1.3876754201891004e-10,
+    "peak_rss_bytes": 288915456.0,
+    "rss_quartile_absolute_increase_bytes": 32817152.0,
+    "rss_quartile_relative_increase": 0.13677022874701264,
+    "step_time_q4_q1": 0.9978719688349524
+  },
+  "reference_count": 4,
+  "status": "PASS",
+  "trajectory_count": 12
+}
