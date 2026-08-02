@@ -1,0 +1,40 @@
+{
+  "cases": [
+    {
+      "checkpoint_bitwise_identity": true,
+      "deterministic_scalar_summary_bitwise_identity": true,
+      "primary": "f3b_ct_a_0000625",
+      "repeat": "f3b_repeat_ct_a_0000625",
+      "status": "PASS",
+      "topology_event_sequence_identity": true
+    },
+    {
+      "checkpoint_bitwise_identity": true,
+      "deterministic_scalar_summary_bitwise_identity": true,
+      "primary": "f3b_ct_b_0000625",
+      "repeat": "f3b_repeat_ct_b_0000625",
+      "status": "PASS",
+      "topology_event_sequence_identity": true
+    },
+    {
+      "checkpoint_bitwise_identity": true,
+      "deterministic_scalar_summary_bitwise_identity": true,
+      "primary": "f3b_space_a_n32",
+      "repeat": "f3b_repeat_space_a_n32",
+      "status": "PASS",
+      "topology_event_sequence_identity": true
+    },
+    {
+      "checkpoint_bitwise_identity": true,
+      "deterministic_scalar_summary_bitwise_identity": true,
+      "primary": "f3b_space_b_n32",
+      "repeat": "f3b_repeat_space_b_n32",
+      "status": "PASS",
+      "topology_event_sequence_identity": true
+    }
+  ],
+  "child_reclaimed": true,
+  "schema_version": "sph-pio-poc.stage01f3b.determinism.v1",
+  "selected_space_dt": 6.25e-05,
+  "status": "PASS"
+}

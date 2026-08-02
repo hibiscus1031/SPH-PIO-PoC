@@ -1,0 +1,76 @@
+{
+  "checks": {
+    "balance_resources": true,
+    "continuous_time": false,
+    "determinism": true,
+    "evidence_complete": true,
+    "hard_paths": true,
+    "prerequisite": true,
+    "provenance_complete": true,
+    "reference_source_topology": true,
+    "semidiscrete_time": true,
+    "space_formal_pass": true,
+    "space_platform_explainable": true
+  },
+  "code_git_hash": "27009f06dc17979004e7a62065fc380dfb29b8a4",
+  "config_sha256": "ca731c3a2685a88b6a5622270252842ff0002f055a25e927048344ebf930246c",
+  "evidence": {
+    "balance_resource_summary.json": {
+      "path": "06_experiments/stage_01f3b_mms_convergence/results/balance_resource_summary.json",
+      "sha256": "4516569332e084b10e196f2f5ee58de6fc93a3cb03eaf594fb544990609fdbc3"
+    },
+    "continuous_time_analysis.json": {
+      "path": "06_experiments/stage_01f3b_mms_convergence/results/continuous_time_analysis.json",
+      "sha256": "530281b62be7e1279a9d1fdf7ef153057cd174ae33d84f8f6698b6d86a83f4a4"
+    },
+    "determinism_analysis.json": {
+      "path": "06_experiments/stage_01f3b_mms_convergence/results/determinism_analysis.json",
+      "sha256": "ab50b042cafc1e2fd8ef005e366fcdfbc2e747e0152b021806e4fa2da15f2f3d"
+    },
+    "fixed_ratio_analysis.json": {
+      "path": "06_experiments/stage_01f3b_mms_convergence/results/fixed_ratio_analysis.json",
+      "sha256": "54bcac0444c319e3ebd3dbe30b8eed868c0d9b646d9879d543db3c3007e2b80e"
+    },
+    "n64_decision.json": {
+      "path": "06_experiments/stage_01f3b_mms_convergence/results/n64_decision.json",
+      "sha256": "48504db162d4feaabda83a9e97bbbb73c08e952ea37f98e19317ab669fcc1be5"
+    },
+    "order_gci_analysis.json": {
+      "path": "06_experiments/stage_01f3b_mms_convergence/results/order_gci_analysis.json",
+      "sha256": "b818586dccee3889ee8279f37c562b99d18673885555d76c2d21d7658365496e"
+    },
+    "prerequisite_checks.json": {
+      "path": "06_experiments/stage_01f3b_mms_convergence/results/prerequisite_checks.json",
+      "sha256": "59d5d5acf776006a914bde30949d89d452e39cafc94fa5c9299ec1fd64d993bd"
+    },
+    "semidiscrete_time_analysis.json": {
+      "path": "06_experiments/stage_01f3b_mms_convergence/results/semidiscrete_time_analysis.json",
+      "sha256": "36f6b50e4b4f1d4c84e51195b57826706fa527605dcde59496cafe900e48c874"
+    },
+    "space_analysis.json": {
+      "path": "06_experiments/stage_01f3b_mms_convergence/results/space_analysis.json",
+      "sha256": "eadcb111c917c0a6dd2f0499f64a77d0fff2a99d261f97352f999f9ba8dd6655"
+    },
+    "space_dt_selection.json": {
+      "path": "06_experiments/stage_01f3b_mms_convergence/results/space_dt_selection.json",
+      "sha256": "1e6d835391ab1ec6eff1a03e1e7ad1a937386c5c5cc8f3a6d02bc571bc9473a1"
+    }
+  },
+  "schema_version": "sph-pio-poc.stage01f3b.evaluation.v1",
+  "scope": {
+    "formal_spatial_verification": true,
+    "formal_temporal_verification": true,
+    "labels_generated": false,
+    "stage01f2_smoke_reused": false,
+    "stage01f3_pilot_reused": false,
+    "stage01f3r_pilot_reused": false,
+    "stage01g_started": false,
+    "stage02_started": false,
+    "training_started": false,
+    "v3_started": false
+  },
+  "stage01f3_historical_status_unchanged": "MMS_CONVERGENCE_VERIFICATION_FAIL",
+  "stage01f3r_status_frozen": "SEMIDISCRETE_REFERENCE_QUALIFIED_DENSE_EQUIVALENT",
+  "stage01g_application_permitted": false,
+  "status": "MMS_CONVERGENCE_VERIFICATION_FAIL"
+}

@@ -1,0 +1,20 @@
+{
+  "comparisons": {
+    "MMS_A": {
+      "labeled_density_l2": 4.681340853902403e-06,
+      "labeled_position_l2": 5.205652191229276e-06,
+      "labeled_pressure_l2": 4.681340853888336e-06,
+      "labeled_velocity_l2": 6.910178209086161e-07
+    },
+    "MMS_B": {
+      "labeled_density_l2": 3.9014774566002815e-06,
+      "labeled_position_l2": 5.27354160837827e-06,
+      "labeled_pressure_l2": 3.9014774565725335e-06,
+      "labeled_velocity_l2": 5.140703043193564e-07
+    }
+  },
+  "schema_version": "sph-pio-poc.stage01f3b.space-dt-selection.v1",
+  "selected_dt": 6.25e-05,
+  "status": "PASS",
+  "threshold": 0.1
+}

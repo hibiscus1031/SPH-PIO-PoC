@@ -1,0 +1,242 @@
+{
+  "schema_version": "sph-pio-poc.stage01f3b.semidiscrete-time.v1",
+  "solutions": {
+    "MMS_A": {
+      "checks": {
+        "five_of_five_hard_paths": true,
+        "position_local_median": true,
+        "position_order": true,
+        "position_ratio": true,
+        "position_reference_floor": true,
+        "velocity_local_median": true,
+        "velocity_order": true,
+        "velocity_ratio": true,
+        "velocity_reference_floor": true
+      },
+      "fit": {
+        "position": {
+          "excluded_indices": [],
+          "finest_coarsest_ratio": 0.00421319645682504,
+          "finest_three_local_median": 1.9859726914602958,
+          "fitted_order": 1.9739098610084482,
+          "local_orders": [
+            1.9404537486520836,
+            1.9713877268772875,
+            1.9859726914602958,
+            1.9930549288837704
+          ],
+          "reference_uncertainty": 1.639481094170714e-14,
+          "valid_indices": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "velocity": {
+          "excluded_indices": [],
+          "finest_coarsest_ratio": 0.0037724181715851146,
+          "finest_three_local_median": 2.00702304096225,
+          "fitted_order": 2.0121304820754053,
+          "local_orders": [
+            2.026022607761323,
+            2.0136924249715498,
+            2.00702304096225,
+            2.0035566037149963
+          ],
+          "reference_uncertainty": 1.9417259464092742e-13,
+          "valid_indices": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      "rows": [
+        {
+          "combined_state_l2": 1.3166925113664968e-06,
+          "dt": 0.001,
+          "hard_path_pass": true,
+          "position_endpoint_l2": 4.511683749100113e-08,
+          "position_successive_self_difference": 1.611354748281816e-08,
+          "position_trajectory_rms": 2.1789693559558508e-08,
+          "run_id": "f3b_sd_a_001",
+          "velocity_endpoint_l2": 3.963051935707919e-06,
+          "velocity_successive_self_difference": 1.986756267740659e-06,
+          "velocity_trajectory_rms": 2.6332948728178983e-06
+        },
+        {
+          "combined_state_l2": 3.2329029026587705e-07,
+          "dt": 0.0005,
+          "hard_path_pass": true,
+          "position_endpoint_l2": 1.1643518041223668e-08,
+          "position_successive_self_difference": 4.229342766981315e-09,
+          "position_trajectory_rms": 5.676966599081678e-09,
+          "run_id": "f3b_sd_a_0005",
+          "velocity_endpoint_l2": 9.651227993957144e-07,
+          "velocity_successive_self_difference": 4.864447091660608e-07,
+          "velocity_trajectory_rms": 6.465556582159134e-07
+        },
+        {
+          "combined_state_l2": 8.005931138359136e-08,
+          "dt": 0.00025,
+          "hard_path_pass": true,
+          "position_endpoint_l2": 2.9556561638735474e-09,
+          "position_successive_self_difference": 1.0822189537096094e-09,
+          "position_trajectory_rms": 1.4476697517350001e-09,
+          "run_id": "f3b_sd_a_00025",
+          "velocity_endpoint_l2": 2.3798306956083418e-07,
+          "velocity_successive_self_difference": 1.2027851442630723e-07,
+          "velocity_trajectory_rms": 1.6011207827378068e-07
+        },
+        {
+          "combined_state_l2": 1.99176565150284e-08,
+          "dt": 0.000125,
+          "hard_path_pass": true,
+          "position_endpoint_l2": 7.444624503241707e-10,
+          "position_successive_self_difference": 2.736494274324068e-10,
+          "position_trajectory_rms": 3.6545352012122485e-10,
+          "run_id": "f3b_sd_a_000125",
+          "velocity_endpoint_l2": 5.907767587913694e-08,
+          "velocity_successive_self_difference": 2.9899751832859876e-08,
+          "velocity_trajectory_rms": 3.983363663949407e-08
+        },
+        {
+          "combined_state_l2": 4.967156812927606e-09,
+          "dt": 6.25e-05,
+          "hard_path_pass": true,
+          "position_endpoint_l2": 1.8680606704548282e-10,
+          "position_successive_self_difference": null,
+          "position_trajectory_rms": 9.18042597004353e-11,
+          "run_id": "f3b_sd_a_0000625",
+          "velocity_endpoint_l2": 1.47167860878145e-08,
+          "velocity_successive_self_difference": null,
+          "velocity_trajectory_rms": 9.933889429360153e-09
+        }
+      ],
+      "status": "PASS"
+    },
+    "MMS_B": {
+      "checks": {
+        "five_of_five_hard_paths": true,
+        "position_local_median": true,
+        "position_order": true,
+        "position_ratio": true,
+        "position_reference_floor": true,
+        "velocity_local_median": true,
+        "velocity_order": true,
+        "velocity_ratio": true,
+        "velocity_reference_floor": true
+      },
+      "fit": {
+        "position": {
+          "excluded_indices": [],
+          "finest_coarsest_ratio": 0.004299667151326009,
+          "finest_three_local_median": 1.982120582054776,
+          "fitted_order": 1.966887008564743,
+          "local_orders": [
+            1.9246732394994495,
+            1.9636308968199718,
+            1.982120582054776,
+            1.9911345850121311
+          ],
+          "reference_uncertainty": 1.7426643635354253e-14,
+          "valid_indices": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "velocity": {
+          "excluded_indices": [],
+          "finest_coarsest_ratio": 0.003830723653589847,
+          "finest_three_local_median": 2.0039032558494494,
+          "fitted_order": 2.0067876508536906,
+          "local_orders": [
+            2.0146520949052973,
+            2.0076385918560202,
+            2.0039032558494494,
+            2.001973387804944
+          ],
+          "reference_uncertainty": 1.6465777081562918e-13,
+          "valid_indices": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      "rows": [
+        {
+          "combined_state_l2": 4.968589761391355e-06,
+          "dt": 0.001,
+          "hard_path_pass": true,
+          "position_endpoint_l2": 9.11150933996718e-08,
+          "position_successive_self_difference": 3.254864619265793e-08,
+          "position_trajectory_rms": 4.418393007864264e-08,
+          "run_id": "f3b_sd_b_001",
+          "velocity_endpoint_l2": 1.5821924317968373e-05,
+          "velocity_successive_self_difference": 7.477937997169621e-06,
+          "velocity_trajectory_rms": 9.937081294240015e-06
+        },
+        {
+          "combined_state_l2": 1.2295975779363996e-06,
+          "dt": 0.0005,
+          "hard_path_pass": true,
+          "position_endpoint_l2": 2.3751864876656975e-08,
+          "position_successive_self_difference": 8.654405311671447e-09,
+          "position_trajectory_rms": 1.1638043228278215e-08,
+          "run_id": "f3b_sd_b_0005",
+          "velocity_endpoint_l2": 3.903083434977511e-06,
+          "velocity_successive_self_difference": 1.8476238571059062e-06,
+          "velocity_trajectory_rms": 2.4591676174303485e-06
+        },
+        {
+          "combined_state_l2": 3.0577633316985326e-07,
+          "dt": 0.00025,
+          "hard_path_pass": true,
+          "position_endpoint_l2": 6.059597932507988e-09,
+          "position_successive_self_difference": 2.2285488523871826e-09,
+          "position_trajectory_rms": 2.9837893922447263e-09,
+          "run_id": "f3b_sd_b_00025",
+          "velocity_endpoint_l2": 9.690239892280143e-07,
+          "velocity_successive_self_difference": 4.590722254617885e-07,
+          "velocity_trajectory_rms": 6.115453872837789e-07
+        },
+        {
+          "combined_state_l2": 7.623756882028319e-08,
+          "dt": 0.000125,
+          "hard_path_pass": true,
+          "position_endpoint_l2": 1.5301049880791115e-09,
+          "position_successive_self_difference": 5.652737970526692e-10,
+          "position_trajectory_rms": 7.552494460836078e-10,
+          "run_id": "f3b_sd_b_000125",
+          "velocity_endpoint_l2": 2.4139929345864495e-07,
+          "velocity_successive_self_difference": 1.1440706149437514e-07,
+          "velocity_trajectory_rms": 1.5247326715455353e-07
+        },
+        {
+          "combined_state_l2": 1.903334320675107e-08,
+          "dt": 6.25e-05,
+          "hard_path_pass": true,
+          "position_endpoint_l2": 3.8442701677397296e-10,
+          "position_successive_self_difference": null,
+          "position_trajectory_rms": 1.8997619277562498e-10,
+          "run_id": "f3b_sd_b_0000625",
+          "velocity_endpoint_l2": 6.024186998799271e-08,
+          "velocity_successive_self_difference": null,
+          "velocity_trajectory_rms": 3.8066212361490434e-08
+        }
+      ],
+      "status": "PASS"
+    }
+  },
+  "status": "PASS"
+}

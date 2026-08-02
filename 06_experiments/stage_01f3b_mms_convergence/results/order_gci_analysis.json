@@ -1,0 +1,200 @@
+{
+  "schema_version": "sph-pio-poc.stage01f3b.order-gci.v1",
+  "solutions": {
+    "MMS_A": {
+      "density": {
+        "above_reference_floor": true,
+        "gci_justified": false,
+        "global_order": null,
+        "local_order_stability_25_percent": false,
+        "local_orders": [
+          1.6394101281180216,
+          2.0590096797538093,
+          1.4761840355718052
+        ],
+        "monotonic_triples": [
+          0,
+          1
+        ],
+        "observed_order_reported": false,
+        "same_sign": true,
+        "scope_statement": "GCI not justified",
+        "selected_point_sensitivity_25_percent": true,
+        "triplet_orders": [
+          1.802129409664558,
+          1.702201841640655
+        ]
+      },
+      "position": {
+        "above_reference_floor": true,
+        "gci_justified": false,
+        "global_order": null,
+        "local_order_stability_25_percent": false,
+        "local_orders": [
+          1.4252870838342948,
+          1.1647202631489881,
+          1.5545280900816527
+        ],
+        "monotonic_triples": [
+          0,
+          1
+        ],
+        "observed_order_reported": false,
+        "same_sign": true,
+        "scope_statement": "GCI not justified",
+        "selected_point_sensitivity_25_percent": true,
+        "triplet_orders": [
+          1.3242401554200753,
+          1.4033619382294307
+        ]
+      },
+      "pressure": {
+        "above_reference_floor": true,
+        "gci_justified": false,
+        "global_order": null,
+        "local_order_stability_25_percent": false,
+        "local_orders": [
+          1.6394101281180218,
+          2.059009679753809,
+          1.4761840355718052
+        ],
+        "monotonic_triples": [
+          0,
+          1
+        ],
+        "observed_order_reported": false,
+        "same_sign": true,
+        "scope_statement": "GCI not justified",
+        "selected_point_sensitivity_25_percent": true,
+        "triplet_orders": [
+          1.8021294096645575,
+          1.702201841640655
+        ]
+      },
+      "velocity": {
+        "above_reference_floor": true,
+        "extrapolated_value": -0.0001863267483480939,
+        "extrapolated_value_finite": true,
+        "gci_fine_percent": 142.17136416278643,
+        "gci_justified": true,
+        "global_order": 1.4527290616787096,
+        "local_order_stability_25_percent": true,
+        "local_orders": [
+          1.5184277531950099,
+          1.2158500804596093,
+          1.5991089673308707
+        ],
+        "monotonic_triples": [
+          0,
+          1
+        ],
+        "observed_order_reported": true,
+        "same_sign": true,
+        "scope_statement": "GCI applies to the preregistered increasing-neighbor consistency path, not to a fixed-stencil single-h family.",
+        "selected_point_sensitivity_25_percent": true,
+        "triplet_orders": [
+          1.4010891589863455,
+          1.4504824722002259
+        ]
+      }
+    },
+    "MMS_B": {
+      "density": {
+        "above_reference_floor": true,
+        "gci_justified": false,
+        "global_order": null,
+        "local_order_stability_25_percent": false,
+        "local_orders": [
+          1.665722925178028,
+          2.0580779222435357,
+          1.4840652935185923
+        ],
+        "monotonic_triples": [
+          0,
+          1
+        ],
+        "observed_order_reported": false,
+        "same_sign": true,
+        "scope_statement": "GCI not justified",
+        "selected_point_sensitivity_25_percent": true,
+        "triplet_orders": [
+          1.8178768609598954,
+          1.7066654421141676
+        ]
+      },
+      "position": {
+        "above_reference_floor": true,
+        "gci_justified": false,
+        "global_order": null,
+        "local_order_stability_25_percent": false,
+        "local_orders": [
+          1.4252452544682448,
+          1.1647623831046512,
+          1.5543482686343355
+        ],
+        "monotonic_triples": [
+          0,
+          1
+        ],
+        "observed_order_reported": false,
+        "same_sign": true,
+        "scope_statement": "GCI not justified",
+        "selected_point_sensitivity_25_percent": true,
+        "triplet_orders": [
+          1.3242308813159704,
+          1.4032681849046764
+        ]
+      },
+      "pressure": {
+        "above_reference_floor": true,
+        "gci_justified": false,
+        "global_order": null,
+        "local_order_stability_25_percent": false,
+        "local_orders": [
+          1.665722925178028,
+          2.058077922243536,
+          1.4840652935185923
+        ],
+        "monotonic_triples": [
+          0,
+          1
+        ],
+        "observed_order_reported": false,
+        "same_sign": true,
+        "scope_statement": "GCI not justified",
+        "selected_point_sensitivity_25_percent": true,
+        "triplet_orders": [
+          1.8178768609598979,
+          1.7066654421141665
+        ]
+      },
+      "velocity": {
+        "above_reference_floor": true,
+        "extrapolated_value": -0.00018650900380200001,
+        "extrapolated_value_finite": true,
+        "gci_fine_percent": 142.14660482951442,
+        "gci_justified": true,
+        "global_order": 1.452382349329632,
+        "local_order_stability_25_percent": true,
+        "local_orders": [
+          1.517956934433503,
+          1.2158986648117072,
+          1.5985324508470795
+        ],
+        "monotonic_triples": [
+          0,
+          1
+        ],
+        "observed_order_reported": true,
+        "same_sign": true,
+        "scope_statement": "GCI applies to the preregistered increasing-neighbor consistency path, not to a fixed-stencil single-h family.",
+        "selected_point_sensitivity_25_percent": true,
+        "triplet_orders": [
+          1.4008197629888754,
+          1.4501483676983178
+        ]
+      }
+    }
+  },
+  "status": "COMPLETE"
+}

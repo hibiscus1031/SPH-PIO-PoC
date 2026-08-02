@@ -1,0 +1,203 @@
+{
+  "schema_version": "sph-pio-poc.stage01f3b.continuous-time.v1",
+  "solutions": {
+    "MMS_A": {
+      "checks": {
+        "five_of_five_hard_paths": true,
+        "position_exact_nonincrease": true,
+        "position_self_ratio": true,
+        "spatial_platform_identified": true,
+        "velocity_exact_nonincrease": false,
+        "velocity_self_ratio": true
+      },
+      "rows": [
+        {
+          "density_exact_l2": 0.00011580056707252523,
+          "dt": 0.001,
+          "field_density_l2": 0.00011566579658488205,
+          "field_pressure_l2": 0.046266318633952815,
+          "field_velocity_l2": 0.002593687534388588,
+          "hard_path_pass": true,
+          "position_exact_l2": 3.4649713019915056e-05,
+          "position_successive_self_difference": 2.4599274225583312e-08,
+          "pressure_exact_l2": 0.046320226829010096,
+          "run_id": "f3b_ct_a_001",
+          "trajectory_reference_sensitivity_upper_bound": 0.0,
+          "velocity_exact_l2": 0.002593687534388588,
+          "velocity_successive_self_difference": 9.665600405197524e-07
+        },
+        {
+          "density_exact_l2": 0.0001156610685910461,
+          "dt": 0.0005,
+          "field_density_l2": 0.00011552631568270493,
+          "field_pressure_l2": 0.04621052627308197,
+          "field_velocity_l2": 0.002593881517783852,
+          "hard_path_pass": true,
+          "position_exact_l2": 3.460335063296174e-05,
+          "position_successive_self_difference": 6.210607798270086e-09,
+          "pressure_exact_l2": 0.04626442743641844,
+          "run_id": "f3b_ct_a_0005",
+          "trajectory_reference_sensitivity_upper_bound": 0.0,
+          "velocity_exact_l2": 0.002593881517783852,
+          "velocity_successive_self_difference": 2.3016718357454615e-07
+        },
+        {
+          "density_exact_l2": 0.00011562630754349126,
+          "dt": 0.00025,
+          "field_density_l2": 0.00011549155904724235,
+          "field_pressure_l2": 0.04619662361889693,
+          "field_velocity_l2": 0.0025939651377850444,
+          "hard_path_pass": true,
+          "position_exact_l2": 3.459178937046781e-05,
+          "position_successive_self_difference": 1.5596739595005727e-09,
+          "pressure_exact_l2": 0.0462505230173965,
+          "run_id": "f3b_ct_a_00025",
+          "trajectory_reference_sensitivity_upper_bound": 0.0,
+          "velocity_exact_l2": 0.0025939651377850444,
+          "velocity_successive_self_difference": 5.6165523075960953e-08
+        },
+        {
+          "density_exact_l2": 0.00011561763403205997,
+          "dt": 0.000125,
+          "field_density_l2": 0.00011548288663815289,
+          "field_pressure_l2": 0.04619315465526115,
+          "field_velocity_l2": 0.002593990475212578,
+          "hard_path_pass": true,
+          "position_exact_l2": 3.458890409989539e-05,
+          "position_successive_self_difference": 3.9075829715345094e-10,
+          "pressure_exact_l2": 0.04624705361282399,
+          "run_id": "f3b_ct_a_000125",
+          "trajectory_reference_sensitivity_upper_bound": 0.0,
+          "velocity_exact_l2": 0.002593990475212578,
+          "velocity_successive_self_difference": 1.3873594516826417e-08
+        },
+        {
+          "density_exact_l2": 0.00011561546792113654,
+          "dt": 6.25e-05,
+          "field_density_l2": 0.00011548072080252688,
+          "field_pressure_l2": 0.04619228832101075,
+          "field_velocity_l2": 0.002593997366237996,
+          "hard_path_pass": true,
+          "position_exact_l2": 3.4588183503389074e-05,
+          "position_successive_self_difference": null,
+          "pressure_exact_l2": 0.04624618716845462,
+          "run_id": "f3b_ct_a_0000625",
+          "trajectory_reference_sensitivity_upper_bound": 0.0,
+          "velocity_exact_l2": 0.002593997366237996,
+          "velocity_successive_self_difference": null
+        }
+      ],
+      "semi_discrete_time_error_estimate": {
+        "position": 3.9075829715345094e-10,
+        "velocity": 1.3873594516826417e-08
+      },
+      "spatial_platform": {
+        "density": true,
+        "position": true,
+        "pressure": true,
+        "velocity": true
+      },
+      "status": "FAIL"
+    },
+    "MMS_B": {
+      "checks": {
+        "five_of_five_hard_paths": true,
+        "position_exact_nonincrease": true,
+        "position_self_ratio": true,
+        "spatial_platform_identified": true,
+        "velocity_exact_nonincrease": false,
+        "velocity_self_ratio": true
+      },
+      "rows": [
+        {
+          "density_exact_l2": 0.00011739031310743902,
+          "dt": 0.001,
+          "field_density_l2": 0.00011725296388891371,
+          "field_pressure_l2": 0.04690118555556548,
+          "field_velocity_l2": 0.002597533971374041,
+          "hard_path_pass": true,
+          "position_exact_l2": 3.4689831357625644e-05,
+          "position_successive_self_difference": 1.2387329771558998e-07,
+          "pressure_exact_l2": 0.046956125242975606,
+          "run_id": "f3b_ct_b_001",
+          "trajectory_reference_sensitivity_upper_bound": 5.218048215738236e-15,
+          "velocity_exact_l2": 0.0025995952588021443,
+          "velocity_successive_self_difference": 1.3201898181658268e-05
+        },
+        {
+          "density_exact_l2": 0.00011725938266676025,
+          "dt": 0.0005,
+          "field_density_l2": 0.00011712270849261674,
+          "field_pressure_l2": 0.0468490833970467,
+          "field_velocity_l2": 0.0025975620204592414,
+          "hard_path_pass": true,
+          "position_exact_l2": 3.464151444896525e-05,
+          "position_successive_self_difference": 3.175059680513558e-08,
+          "pressure_exact_l2": 0.0469037530667041,
+          "run_id": "f3b_ct_b_0005",
+          "trajectory_reference_sensitivity_upper_bound": 5.218048215738236e-15,
+          "velocity_exact_l2": 0.0025996036287800625,
+          "velocity_successive_self_difference": 3.1997407041763255e-06
+        },
+        {
+          "density_exact_l2": 0.00011722914579091669,
+          "dt": 0.00025,
+          "field_density_l2": 0.00011709264535468887,
+          "field_pressure_l2": 0.046837058141875554,
+          "field_velocity_l2": 0.0025976164960354606,
+          "hard_path_pass": true,
+          "position_exact_l2": 3.46297078073304e-05,
+          "position_successive_self_difference": 8.03577336274715e-09,
+          "pressure_exact_l2": 0.046891658316366665,
+          "run_id": "f3b_ct_b_00025",
+          "trajectory_reference_sensitivity_upper_bound": 5.218048215738236e-15,
+          "velocity_exact_l2": 0.002599653503717136,
+          "velocity_successive_self_difference": 7.868969967230487e-07
+        },
+        {
+          "density_exact_l2": 0.00011722176107758703,
+          "dt": 0.000125,
+          "field_density_l2": 0.00011708530454171413,
+          "field_pressure_l2": 0.04683412181668566,
+          "field_velocity_l2": 0.0025976353190908055,
+          "hard_path_pass": true,
+          "position_exact_l2": 3.462677684569468e-05,
+          "position_successive_self_difference": 2.0212078855683755e-09,
+          "pressure_exact_l2": 0.04688870443103481,
+          "run_id": "f3b_ct_b_000125",
+          "trajectory_reference_sensitivity_upper_bound": 5.218048215738236e-15,
+          "velocity_exact_l2": 0.0025996712151760944,
+          "velocity_successive_self_difference": 1.9506461471982362e-07
+        },
+        {
+          "density_exact_l2": 0.00011721992768086595,
+          "dt": 6.25e-05,
+          "field_density_l2": 0.000117083482167972,
+          "field_pressure_l2": 0.046833392867188794,
+          "field_velocity_l2": 0.0025976406376319048,
+          "hard_path_pass": true,
+          "position_exact_l2": 3.4626045813037354e-05,
+          "position_successive_self_difference": null,
+          "pressure_exact_l2": 0.04688797107234638,
+          "run_id": "f3b_ct_b_0000625",
+          "trajectory_reference_sensitivity_upper_bound": 5.218048215738236e-15,
+          "velocity_exact_l2": 0.002599676260560093,
+          "velocity_successive_self_difference": null
+        }
+      ],
+      "semi_discrete_time_error_estimate": {
+        "position": 2.0212078855683755e-09,
+        "velocity": 1.9506461471982362e-07
+      },
+      "spatial_platform": {
+        "density": true,
+        "position": true,
+        "pressure": true,
+        "velocity": true
+      },
+      "status": "FAIL"
+    }
+  },
+  "status": "FAIL",
+  "warning": "Continuous exact-error trends are not interpreted as pure RK2 order."
+}

@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "all_children_reclaimed": true,
+    "all_fresh_run_ids": true,
+    "all_parent_scalar_only": true,
+    "all_worker_status_pass": true
+  },
+  "maxima": {
+    "maximum_assembly_defect": 5.529472002841932e-16,
+    "maximum_current_rss_bytes": 606830592.0,
+    "maximum_internal_force_residual": 2.284188626373774e-17,
+    "maximum_kinetic_energy_update_defect": 1.0360814872175727e-08,
+    "maximum_momentum_update_defect": 2.0840485353510126e-17,
+    "maximum_pair_force_residual": 3.5609020738798643e-16,
+    "maximum_viscous_power": -1.0096060379731684e-11,
+    "peak_rss_bytes": 606846976.0,
+    "rss_quartile_absolute_increase_bytes": 38502400.0,
+    "rss_quartile_relative_increase": 0.0995931513815901,
+    "step_time_q4_q1": 1.0714536189292596
+  },
+  "schema_version": "sph-pio-poc.stage01f3b.balance-resource.v1",
+  "status": "PASS",
+  "trajectory_count": 46
+}

@@ -1,0 +1,116 @@
+{
+  "diagnostic_only": true,
+  "schema_version": "sph-pio-poc.stage01f3b.fixed-ratio.v1",
+  "solutions": {
+    "MMS_A": [
+      {
+        "density_l2": 0.0002664312866626233,
+        "edge_count": 17664,
+        "hard_path_pass": true,
+        "initial_kernel_density_l2": 0.0002607743934292723,
+        "peak_rss_bytes": 273268736,
+        "position_l2": 0.00010375293224857083,
+        "pressure_l2": 0.10657251466504931,
+        "resolution": 16,
+        "runtime_seconds": 7.177206634660251,
+        "topology_event_count": 0,
+        "velocity_l2": 0.008331619801330497
+      },
+      {
+        "density_l2": 0.00020905762354456406,
+        "edge_count": 39744,
+        "hard_path_pass": true,
+        "initial_kernel_density_l2": 0.00019796055027160672,
+        "peak_rss_bytes": 316391424,
+        "position_l2": 4.835556171673383e-05,
+        "pressure_l2": 0.08362304941782563,
+        "resolution": 24,
+        "runtime_seconds": 14.931382544978987,
+        "topology_event_count": 0,
+        "velocity_l2": 0.003680241376619745
+      },
+      {
+        "density_l2": 0.00018952494492964326,
+        "edge_count": 70656,
+        "hard_path_pass": true,
+        "initial_kernel_density_l2": 0.00018406004927539263,
+        "peak_rss_bytes": 393494528,
+        "position_l2": 2.7670642285723208e-05,
+        "pressure_l2": 0.07580997797185732,
+        "resolution": 32,
+        "runtime_seconds": 26.024633802764583,
+        "topology_event_count": 0,
+        "velocity_l2": 0.0020596295091096727
+      },
+      {
+        "density_l2": 0.00017991965737346963,
+        "edge_count": 158976,
+        "hard_path_pass": true,
+        "initial_kernel_density_l2": 0.00017842052588395164,
+        "peak_rss_bytes": 575520768,
+        "position_l2": 1.2509655612500432e-05,
+        "pressure_l2": 0.07196786294938787,
+        "resolution": 48,
+        "runtime_seconds": 53.839539212407544,
+        "topology_event_count": 0,
+        "velocity_l2": 0.0009152669742094117
+      }
+    ],
+    "MMS_B": [
+      {
+        "density_l2": 0.00026876379142526423,
+        "edge_count": 16896,
+        "hard_path_pass": true,
+        "initial_kernel_density_l2": 0.0002607743934292723,
+        "peak_rss_bytes": 279101440,
+        "position_l2": 0.00010386467854307548,
+        "pressure_l2": 0.1075055165701057,
+        "resolution": 16,
+        "runtime_seconds": 7.348102039832156,
+        "topology_event_count": 384,
+        "velocity_l2": 0.008347303325210994
+      },
+      {
+        "density_l2": 0.00021190202381569557,
+        "edge_count": 38192,
+        "hard_path_pass": true,
+        "initial_kernel_density_l2": 0.00019796055027160672,
+        "peak_rss_bytes": 335347712,
+        "position_l2": 4.840908120491941e-05,
+        "pressure_l2": 0.08476080952627824,
+        "resolution": 24,
+        "runtime_seconds": 15.354015135846566,
+        "topology_event_count": 776,
+        "velocity_l2": 0.003688349875748532
+      },
+      {
+        "density_l2": 0.00019259883889043055,
+        "edge_count": 67744,
+        "hard_path_pass": true,
+        "initial_kernel_density_l2": 0.00018406004927539263,
+        "peak_rss_bytes": 397017088,
+        "position_l2": 2.7703403043753224e-05,
+        "pressure_l2": 0.07703953555617221,
+        "resolution": 32,
+        "runtime_seconds": 26.63227966206614,
+        "topology_event_count": 1456,
+        "velocity_l2": 0.002064938643516458
+      },
+      {
+        "density_l2": 0.00018310215653954647,
+        "edge_count": 152448,
+        "hard_path_pass": true,
+        "initial_kernel_density_l2": 0.00017842052588395164,
+        "peak_rss_bytes": 565264384,
+        "position_l2": 1.2528335078932047e-05,
+        "pressure_l2": 0.0732408626158186,
+        "resolution": 48,
+        "runtime_seconds": 55.10668020445155,
+        "topology_event_count": 3264,
+        "velocity_l2": 0.000918899764179271
+      }
+    ]
+  },
+  "status": "PASS",
+  "support_ratio": 4.5
+}
