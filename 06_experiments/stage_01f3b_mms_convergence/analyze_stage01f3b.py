@@ -195,10 +195,15 @@ def order_gci(config: dict[str, Any]) -> None:
             same_sign = all(value > 0 for value in local)
             stable = len(local) >= 2 and all(abs(local[index] - local[index + 1]) / max(abs(local[index + 1]), 1e-30) <= 0.25 for index in range(len(local) - 1))
             reference_floor = min(values) > 20.0 * max(row["trajectory_reference_sensitivity_upper_bound"] for row in payload["rows"])
-            justified = bool(monotonic_triples and same_sign and stable and reference_floor)
-            entry: dict[str, Any] = {"observed_order_reported": justified, "global_order": payload["global_slopes"][field] if justified else None, "local_orders": local, "monotonic_triples": monotonic_triples, "same_sign": same_sign, "local_order_stability_25_percent": stable, "above_reference_floor": reference_floor, "gci_justified": justified}
+            triplet_orders = [fitted_order(dx[start:start + 3], values[start:start + 3]) for start in monotonic_triples]
+            selection_stable = len(triplet_orders) >= 2 and max(triplet_orders) / min(triplet_orders) - 1.0 <= 0.25
+            justified = bool(monotonic_triples and same_sign and stable and reference_floor and selection_stable)
+            entry: dict[str, Any] = {"observed_order_reported": justified, "global_order": payload["global_slopes"][field] if justified else None, "local_orders": local, "monotonic_triples": monotonic_triples, "same_sign": same_sign, "local_order_stability_25_percent": stable, "above_reference_floor": reference_floor, "triplet_orders": triplet_orders, "selected_point_sensitivity_25_percent": selection_stable, "gci_justified": justified}
             if justified:
-                p = payload["global_slopes"][field]; refinement = dx[-2] / dx[-1]; entry["gci_fine_percent"] = 100.0 * 1.25 * abs(values[-1] - values[-2]) / max(abs(values[-1]), 1e-30) / (refinement ** p - 1.0)
+                p = payload["global_slopes"][field]; refinement = dx[-2] / dx[-1]; denominator = refinement ** p - 1.0
+                entry["extrapolated_value"] = values[-1] + (values[-1] - values[-2]) / denominator
+                entry["extrapolated_value_finite"] = math.isfinite(entry["extrapolated_value"])
+                entry["gci_fine_percent"] = 100.0 * 1.25 * abs(values[-1] - values[-2]) / max(abs(values[-1]), 1e-30) / denominator
                 entry["scope_statement"] = "GCI applies to the preregistered increasing-neighbor consistency path, not to a fixed-stencil single-h family."
             else: entry["scope_statement"] = "GCI not justified"
             fields[field] = entry
