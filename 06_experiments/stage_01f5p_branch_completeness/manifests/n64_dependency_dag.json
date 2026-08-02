@@ -1,0 +1,39 @@
+{
+  "edges": [
+    {"from": "formal_space_n16_n24_n32_n48_complete", "to": "compute_n64_triggers"},
+    {"from": "compute_n64_triggers", "to": "commit_n64_trigger_decision"},
+    {"from": "commit_n64_trigger_decision", "guard": "NOT_TRIGGERED", "to": "mark_all_seven_NOT_TRIGGERED"},
+    {"from": "commit_n64_trigger_decision", "guard": "TRIGGERED", "to": "f5_n64_smoke_a"},
+    {"from": "commit_n64_trigger_decision", "guard": "TRIGGERED", "to": "f5_n64_smoke_b"},
+    {"from": "f5_n64_smoke_a", "guard": "PASS", "to": "both_smokes_pass"},
+    {"from": "f5_n64_smoke_b", "guard": "PASS", "to": "both_smokes_pass"},
+    {"from": "both_smokes_pass", "to": "formal_space_t_final_resolved_from_frozen_source"},
+    {"from": "formal_space_t_final_resolved_from_frozen_source", "to": "f5_ref_space_b_n64_baseline"},
+    {"from": "formal_space_t_final_resolved_from_frozen_source", "to": "f5_ref_space_b_n64_tighter"},
+    {"from": "formal_space_t_final_resolved_from_frozen_source", "to": "f5_ref_space_b_n64_third"},
+    {"from": "f5_ref_space_b_n64_baseline", "guard": "PASS", "to": "n64_reference_sensitivity_pass"},
+    {"from": "f5_ref_space_b_n64_tighter", "guard": "PASS", "to": "n64_reference_sensitivity_pass"},
+    {"from": "f5_ref_space_b_n64_third", "guard": "PASS", "to": "n64_reference_sensitivity_pass"},
+    {"from": "n64_reference_sensitivity_pass", "to": "f5_space_a_n64"},
+    {"from": "n64_reference_sensitivity_pass", "to": "f5_space_b_n64"}
+  ],
+  "failure_rules": {
+    "any_reference_failure": "STOP_NO_FORMAL_N64",
+    "any_smoke_failure": "STOP_NO_REFERENCE_OR_FORMAL_N64",
+    "formal_space_t_final_unresolved": "STOP_EXECUTION_MANIFEST_INCOMPLETE",
+    "missing_committed_trigger_decision": "STOP_NO_N64_ENTRY"
+  },
+  "not_triggered_terminal": {
+    "run_ids": [
+      "f5_n64_smoke_a",
+      "f5_n64_smoke_b",
+      "f5_ref_space_b_n64_baseline",
+      "f5_ref_space_b_n64_tighter",
+      "f5_ref_space_b_n64_third",
+      "f5_space_a_n64",
+      "f5_space_b_n64"
+    ],
+    "status_for_each": "NOT_TRIGGERED"
+  },
+  "schema_version": "sph-pio-poc.stage01f5p.n64-dag.v1"
+}

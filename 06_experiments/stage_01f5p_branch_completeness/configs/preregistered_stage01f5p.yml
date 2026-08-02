@@ -1,0 +1,146 @@
+schema_version: sph-pio-poc.stage01f5p.branch-completeness.v1
+stage: Stage 01F5-P
+name: Pre-execution conditional-branch completeness audit
+mode: metadata_audit_only
+numerical_execution_authorized: false
+
+frozen_stage01f5:
+  evidence_commit: ca297db20149765091312ac27843a8c20d4e9943
+  historical_status: PLATEAU_AWARE_REQUALIFICATION_DESIGN_APPROVED
+  status_changed: false
+  tag: stage-01f5-requalification-design-approved
+  manifest: 06_experiments/stage_01f5p_branch_completeness/manifests/stage01f5_frozen_sha256_manifest.csv
+  original_matrix: 06_experiments/stage_01f5_requalification_design/manifests/stage01f5_run_matrix.csv
+  original_matrix_sha256: d0e84aed88018c5ed9edddc6fd15240cfc319b016f768c90f528053bd3bf9a80
+  original_matrix_rows: 64
+  original_unconditional_rows: 62
+  original_conditional_rows: 2
+  original_conditional_ids: [f5_space_a_n64, f5_space_b_n64]
+
+read_only_gap_audit:
+  protocol_requirements_already_present:
+    - n64_20_step_smoke_before_formal_trajectory
+    - resource_cutoff_and_topology_preflight
+    - independent_mms_b_continuous_reference_with_sensitivity
+  missing_run_ids_in_original_matrix:
+    - f5_n64_smoke_a
+    - f5_n64_smoke_b
+    - f5_ref_space_b_n64_baseline
+    - f5_ref_space_b_n64_tighter
+    - f5_ref_space_b_n64_third
+  historical_reclassification: false
+
+extended_matrix:
+  path: 06_experiments/stage_01f5p_branch_completeness/manifests/stage01f5_execution_run_matrix_v2.csv
+  sha256: ebbfa5fd3ffced88d1995fc34000b4e1a25524cb93d23e9d6fd9b9a4c4ab061b
+  original_64_rows_prefix_identity: true
+  unconditional_rows: 62
+  conditional_rows: 7
+  total_rows: 69
+  unique_run_ids: 69
+  unique_output_directories: 69
+  original_run_ids_renamed: false
+
+n64_common_configuration:
+  resolution: 64
+  particle_count: 4096
+  support_ratio: 6.041381265149109
+  time_control_source: 06_experiments/stage_01f5b_requalification_execution/manifests/space_step_decision.json
+  time_control: SPACE_STEP_DECISION
+
+n64_smoke:
+  run_ids: [f5_n64_smoke_a, f5_n64_smoke_b]
+  mms_cases: [MMS-A, MMS-B]
+  steps: 20
+  t_final_rule: 20_times_committed_dt_space
+  part_of_formal_spatial_error_sequence: false
+  checks:
+    state_and_rhs_finite: true
+    source_calls_each_step: [start, midpoint]
+    pair_internal_assembly_momentum_gates: unchanged_from_stage01f5
+    viscous_power_gate: unchanged_from_stage01f5
+    minimum_separation_over_dx_gate: unchanged_from_stage01f5
+    reciprocal_topology_check: true
+    structural_topology_defects: 0
+    peak_rss_bytes_less_than: 2000000000
+    current_rss_bytes_less_than: 2000000000
+    child_reclaimed: true
+    estimated_formal_single_run_wall_seconds_less_than: 7200
+
+n64_mms_b_reference:
+  run_ids:
+    - f5_ref_space_b_n64_baseline
+    - f5_ref_space_b_n64_tighter
+    - f5_ref_space_b_n64_third
+  resolution: 64
+  support_ratio: 6.041381265149109
+  formal_space_t_final:
+    required_source: frozen_stage01f5.spatial_matrix.t_final_or_original_matrix_explicit_field
+    resolved: false
+    value: null
+    blocker: Stage 01F5 spatial_matrix and original run matrix do not explicitly define formal-space t_final
+    inference_from_main_or_heldout_forbidden: true
+  levels:
+    baseline: {rtol: 1.0e-12, atol: 1.0e-14, max_step: 0.00003125}
+    tighter: {rtol: 1.0e-13, atol: 1.0e-15, max_step: 0.000015625}
+    third: {rtol: 1.0e-13, atol: 1.0e-15, max_step: 0.0000078125}
+  inherited_requirements:
+    rhs: production_sparse_sph_rhs
+    integrator: scipy_solve_ivp_DOP853
+    continuous_unwrapped_positions: true
+    reciprocal_cutoff_crossing_allowed: true
+    structural_topology_defects: 0
+    baseline_tighter_sensitivity: true
+    tighter_third_sensitivity: true
+    minimum_sparse_dense_acceleration_states: 10
+    reference_uncertainty_by_field_and_norm: true
+  execution_blocked_until_formal_space_t_final_is_frozen_by_authorized_design_action: true
+
+dependency_dag:
+  path: 06_experiments/stage_01f5p_branch_completeness/manifests/n64_dependency_dag.json
+  trigger_decision_file: 06_experiments/stage_01f5b_requalification_execution/manifests/n64_trigger_decision.json
+  decision_must_be_committed_before_any_n64_entry: true
+  not_triggered_action: mark_all_seven_conditional_runs_NOT_TRIGGERED_and_run_none
+  triggered_order:
+    - complete_n16_n24_n32_n48
+    - compute_four_n64_triggers
+    - commit_immutable_n64_trigger_decision
+    - pass_both_n64_smokes
+    - resolve_frozen_formal_space_t_final
+    - pass_three_level_n64_mms_b_reference_sensitivity
+    - run_formal_n64_mms_a_and_mms_b
+  continue_after_smoke_failure: false
+  continue_after_reference_failure: false
+
+unchanged_design_identity:
+  n20_main_configuration: true
+  n28_heldout: true
+  time_gates_T1_T5: true
+  platform_gates_P1_P3: true
+  heldout_gates_H1_H5: true
+  space_gates_S1_S4: true
+  hard_safety_thresholds: true
+  n64_triggers: true
+  dop853_tolerances: true
+
+scope:
+  numerical_runs_executed: 0
+  sph_started: false
+  rk2_started: false
+  dop853_started: false
+  smoke_started: false
+  reference_started: false
+  convergence_started: false
+  reference_npz_generated: false
+  stage01f5b_started: false
+  stage01g_started: false
+  v3_started: false
+  stage02_started: false
+  training_started: false
+  labels_generated: false
+
+allowed_statuses:
+  - EXECUTION_MANIFEST_READY_WITH_COMPLETE_N64_BRANCH
+  - EXECUTION_MANIFEST_INCOMPLETE
+final_status: EXECUTION_MANIFEST_INCOMPLETE
+stage01f5b_execution_application_eligible: false

@@ -1,0 +1,21 @@
+{
+  "conditional_ids": ["f5_space_a_n64", "f5_space_b_n64"],
+  "conditional_rows": 2,
+  "formal_space_t_final_explicit_in_frozen_spatial_config": false,
+  "formal_space_t_final_explicit_in_original_matrix": false,
+  "gap_conclusion": "Original matrix lacks two N64 smoke rows and three MMS-B N64 reference rows.",
+  "historical_stage01f5_status": "PLATEAU_AWARE_REQUALIFICATION_DESIGN_APPROVED",
+  "historical_stage01f5_status_changed": false,
+  "missing_conditional_dependency_ids": [
+    "f5_n64_smoke_a",
+    "f5_n64_smoke_b",
+    "f5_ref_space_b_n64_baseline",
+    "f5_ref_space_b_n64_tighter",
+    "f5_ref_space_b_n64_third"
+  ],
+  "original_matrix_rows": 64,
+  "original_matrix_sha256": "d0e84aed88018c5ed9edddc6fd15240cfc319b016f768c90f528053bd3bf9a80",
+  "schema_version": "sph-pio-poc.stage01f5p.original-matrix-audit.v1",
+  "status": "GAP_CONFIRMED_WITHOUT_RETROACTIVE_RECLASSIFICATION",
+  "unconditional_rows": 62
+}
