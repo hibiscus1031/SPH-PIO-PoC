@@ -1,0 +1,171 @@
+schema_version: sph-pio-poc.stage01f5b.execution.v1
+stage: Stage 01F5B
+name: One-shot plateau-aware MMS requalification execution
+mode: execute_frozen_bundle_v3
+
+frozen_environment:
+  python_executable: /opt/miniconda3/envs/sph-pio-poc/bin/python
+  python_version: "3.12.13"
+  diffSPH_import_required_for_full_pytest: true
+  first_preflight_wrong_environment_evidence: 06_experiments/stage_01f5b_requalification_execution/results/preflight_audit.json
+  authoritative_preexecution_audit: 06_experiments/stage_01f5b_requalification_execution/results/preflight_audit_attempt2.json
+
+frozen_stage01f5q:
+  evidence_commit: 8ab58b8647c1dd1e5cfe71a77cf6ec71c93a1484
+  status: FORMAL_SPACE_EXECUTION_BUNDLE_READY
+  tag: stage-01f5q-formal-space-execution-bundle-ready
+  manifest: 06_experiments/stage_01f5b_requalification_execution/manifests/stage01f5q_frozen_sha256_manifest.csv
+  bundle: 06_experiments/stage_01f5q_space_horizon_amendment/manifests/stage01f5_execution_bundle_v3.json
+  bundle_sha256: 7a0b4b2712458b90846bb495ef51c2a7e03226822dda5baeb48aba50345a9cce
+  matrix: 06_experiments/stage_01f5p_branch_completeness/manifests/stage01f5_execution_run_matrix_v2.csv
+  matrix_sha256: ebbfa5fd3ffced88d1995fc34000b4e1a25524cb93d23e9d6fd9b9a4c4ab061b
+  dry_resolution: 06_experiments/stage_01f5q_space_horizon_amendment/results/stage01f5q_dry_resolution_audit.csv
+  dry_resolution_sha256: 32218da705ef55d1aa69e2b4b02765224dbaafc8f9a6a29097dc2a51de6098aa
+
+numerical_source:
+  frozen_commit: 38487d66b40fa2c8dd65eb7aa6c279da4a8e5e2c
+  tree_scope: [01_solver, 05_metrics]
+  manifest: 06_experiments/stage_01f5b_requalification_execution/manifests/numerical_source_identity.csv
+  file_count: 103
+  canonical_tree_sha256: 85000dc890ba2525d20fd75e46c20b591948fd3e17ae19b8cb690d6da34f4c09
+  components_required_unchanged:
+    - 01_solver/structure_preserving/conservative_pressure.py
+    - 01_solver/structure_preserving/conservative_viscosity.py
+    - 01_solver/dynamic_solver/density.py
+    - 01_solver/dynamic_solver/equation_of_state.py
+    - 01_solver/dynamic_solver/sourced_integrator_adapter.py
+    - 01_solver/manufactured_solutions/dynamic_source_adapter.py
+    - 01_solver/structure_preserving/neighborhood.py
+    - 01_solver/manufactured_solutions/mms_a_translating_density_wave.py
+    - 01_solver/manufactured_solutions/mms_b_deforming_vortex.py
+    - 01_solver/manufactured_solutions/semidiscrete_reference.py
+
+reference_levels:
+  baseline: {rtol: 1.0e-12, atol: 1.0e-14, max_step: 0.00003125}
+  tighter: {rtol: 1.0e-13, atol: 1.0e-15, max_step: 0.000015625}
+  third: {rtol: 1.0e-13, atol: 1.0e-15, max_step: 0.0000078125}
+reference_gates:
+  position_linf_sensitivity_maximum: 1.0e-9
+  velocity_linf_sensitivity_maximum: 1.0e-9
+  minimum_sparse_dense_states: 10
+  sparse_dense_acceleration_absolute_maximum: 1.0e-11
+  sparse_dense_acceleration_relative_maximum: 1.0e-10
+  structural_topology_defects: 0
+  reciprocal_cutoff_crossing_allowed: true
+  edge_identity_constancy_required: false
+
+hard_gates:
+  pair_force_residual: 1.0e-12
+  internal_force_residual: 1.0e-10
+  assembly_defect: 1.0e-10
+  momentum_update_defect: 1.0e-10
+  viscous_power_positive_tolerance: 1.0e-12
+  topology_defects: 0
+  minimum_separation_over_dx: 0.25
+  current_rss_bytes: 2000000000
+  peak_rss_bytes: 4000000000
+  rss_quartile_absolute_increase_bytes: 250000000
+  rss_quartile_relative_increase: 0.50
+  step_time_q4_q1: 1.30
+
+time_gates:
+  T1: {strict_decrease_each_refinement: true}
+  T2: {fitted_order_minimum: 1.80}
+  T3: {finest_three_local_order_median_interval: [1.70, 2.30]}
+  T4: {reference_floor_multiplier: 20.0, minimum_points: 4}
+  T5: {self_difference_finest_coarsest_ratio_maximum: 0.30}
+platform_gates:
+  P1: {finest_total_platform_relative_distance_maximum: 0.01}
+  P2: {finest_time_space_ratio_maximum: 0.01}
+  P3: {boundedness_ratio_maximum: 2.0, all_total_finite: true}
+heldout_gates:
+  H1: time_errors_strictly_decrease
+  H2: {fitted_order_minimum: 1.80}
+  H3: {finest_total_platform_relative_distance_maximum: 0.01}
+  H4: {finest_time_space_ratio_maximum: 0.01}
+  H5: [reference, source, conservation, topology, resource, determinism]
+space_gates:
+  S1: eight_primary_trajectories_and_hard_safety_pass
+  S2: N48_error_less_than_N16_each_mms_field
+  S3: N16_N24_N32_N48_strictly_decrease_each_mms_field
+  S4: global_log_error_log_dx_slope_positive_each_mms_field
+
+space_step_decision:
+  comparison_resolution: 32
+  fields: [position, velocity, density, pressure]
+  relative_change_trigger: 0.10
+  if_triggered: {dt_space: 0.00003125, steps: 640}
+  otherwise: {dt_space: 0.0000625, steps: 320}
+  t_final: 0.02
+  immutable_path: 06_experiments/stage_01f5b_requalification_execution/manifests/space_step_decision.json
+
+n64_branch:
+  triggers:
+    - any_primary_error_nonmonotone
+    - any_n48_over_n32_error_ratio_greater_than_0.95
+    - any_local_order_sign_inconsistent
+    - near_asymptotic_entry_unclear
+  decision_path: 06_experiments/stage_01f5b_requalification_execution/manifests/n64_trigger_decision.json
+  decision_must_precede_any_n64_run: true
+  smoke_steps: 20
+  smoke_peak_and_current_rss_bytes: 2000000000
+  smoke_estimated_wall_seconds: 7200
+
+gci:
+  required_for_overall_pass: false
+  minimum_consecutive_monotone_errors: 3
+  local_orders_same_sign: true
+  local_order_relative_change_maximum: 0.25
+  floor_multiplier: 20.0
+  triplet_order_change_maximum: 0.25
+  extrapolated_value_finite: true
+  cross_variable_sharing_forbidden: true
+
+phase_order: [A, B, C, D, E, F, G, H, I, J, K]
+phases:
+  A:
+    role: main_and_heldout_references
+    run_ids: [f5_ref_main_a_baseline, f5_ref_main_a_tighter, f5_ref_main_a_third, f5_ref_main_b_baseline, f5_ref_main_b_tighter, f5_ref_main_b_third, f5_ref_hold_a_baseline, f5_ref_hold_a_tighter, f5_ref_hold_a_third, f5_ref_hold_b_baseline, f5_ref_hold_b_tighter, f5_ref_hold_b_third]
+  B:
+    role: main_rk2
+    run_ids: [f5_main_a_dt1e3, f5_main_a_dt5e4, f5_main_a_dt2p5e4, f5_main_a_dt1p25e4, f5_main_a_dt6p25e5, f5_main_b_dt1e3, f5_main_b_dt5e4, f5_main_b_dt2p5e4, f5_main_b_dt1p25e4, f5_main_b_dt6p25e5]
+  C:
+    role: heldout_rk2
+    run_ids: [f5_hold_a_dt1e3, f5_hold_a_dt5e4, f5_hold_a_dt2p5e4, f5_hold_a_dt1p25e4, f5_hold_a_dt6p25e5, f5_hold_b_dt1e3, f5_hold_b_dt5e4, f5_hold_b_dt2p5e4, f5_hold_b_dt1p25e4, f5_hold_b_dt6p25e5]
+  D:
+    role: time_determinism
+    run_ids: [f5_main_a_dt6p25e5_rep2, f5_main_b_dt6p25e5_rep2, f5_hold_a_dt6p25e5_rep2, f5_hold_b_dt6p25e5_rep2]
+  E:
+    role: space_dt_isolation
+    run_ids: [f5_space_iso_a_dt6p25e5, f5_space_iso_a_dt3p125e5, f5_space_iso_b_dt6p25e5, f5_space_iso_b_dt3p125e5]
+  F: {role: freeze_space_step_decision, run_ids: []}
+  G:
+    role: mms_b_space_references
+    run_ids: [f5_ref_space_b_n16_baseline, f5_ref_space_b_n16_tighter, f5_ref_space_b_n16_third, f5_ref_space_b_n24_baseline, f5_ref_space_b_n24_tighter, f5_ref_space_b_n24_third, f5_ref_space_b_n32_baseline, f5_ref_space_b_n32_tighter, f5_ref_space_b_n32_third, f5_ref_space_b_n48_baseline, f5_ref_space_b_n48_tighter, f5_ref_space_b_n48_third]
+  H:
+    role: formal_space
+    run_ids: [f5_space_a_n16, f5_space_a_n24, f5_space_a_n32, f5_space_a_n48, f5_space_b_n16, f5_space_b_n24, f5_space_b_n32, f5_space_b_n48]
+  I:
+    role: space_determinism
+    run_ids: [f5_space_a_n32_rep2, f5_space_b_n32_rep2]
+  J: {role: freeze_n64_trigger_decision, run_ids: []}
+  K:
+    role: conditional_n64
+    run_ids: [f5_n64_smoke_a, f5_n64_smoke_b, f5_ref_space_b_n64_baseline, f5_ref_space_b_n64_tighter, f5_ref_space_b_n64_third, f5_space_a_n64, f5_space_b_n64]
+
+run_policy:
+  isolated_subprocess_each_run: true
+  cyclic_gc_default: true
+  torch_no_grad_rk2: true
+  gc_collect_inside_time_loop_forbidden: true
+  parent_scalar_and_relative_paths_only: true
+  checkpoint_only_at_frozen_common_times: true
+  overwrite_forbidden: true
+  old_stage01f3b_or_stage01f3c_data_reuse_forbidden: true
+  infrastructure_retry_suffix: _infra_retry1
+  preexecution_artifact_manifest: 06_experiments/stage_01f5b_requalification_execution/manifests/preexecution_artifact_manifest.csv
+
+allowed_final_statuses:
+  - PLATEAU_AWARE_MMS_REQUALIFICATION_PASS
+  - PLATEAU_AWARE_MMS_REQUALIFICATION_FAIL
+  - PLATEAU_AWARE_MMS_REQUALIFICATION_EVIDENCE_INCOMPLETE
