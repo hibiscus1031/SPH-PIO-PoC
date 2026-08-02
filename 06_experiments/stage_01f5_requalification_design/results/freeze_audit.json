@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "stage01f3b_historical_status_unchanged": true,
+    "stage01f3c_historical_status_unchanged": true,
+    "stage01f3c_tag_identity": true,
+    "stage01f4_commit_identity": true,
+    "stage01f4_manifest_7_of_7": true,
+    "stage01f4_status_identity": true,
+    "stage01f4_tag_identity": true
+  },
+  "frozen_stage01f3b_status": "MMS_CONVERGENCE_VERIFICATION_FAIL",
+  "frozen_stage01f3c_commit": "f831d4fa7d63ad3357e2b1e84c1260d7f3c46a2e",
+  "frozen_stage01f3c_status": "CT2_MIXED_OR_UNRESOLVED",
+  "frozen_stage01f3c_tag": "stage-01f3c-ct2-mixed-or-unresolved",
+  "frozen_stage01f4_commit": "82de6171a0be9818303acca539bffc8d3ee21c22",
+  "frozen_stage01f4_status": "PLATEAU_AWARE_PROTOCOL_APPROVED",
+  "frozen_stage01f4_tag": "stage-01f4-plateau-aware-protocol-approved",
+  "manifest_entry_count": 7,
+  "schema_version": "sph-pio-poc.stage01f5.freeze-audit.v1",
+  "status": "PASS"
+}

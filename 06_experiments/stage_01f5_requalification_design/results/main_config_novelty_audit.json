@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "no_old_n20_configuration_record_found": true,
+    "no_old_trajectory_can_count_as_new_evidence": true,
+    "stage01f3b_primary_not_n20": true,
+    "stage01f3c_primary_and_heldout_not_n20": true
+  },
+  "main_configuration": {
+    "resolution": 20,
+    "support_ratio": 4.357388321059432,
+    "t_final": 0.015
+  },
+  "novel": true,
+  "scan_scope": [
+    "06_experiments before Stage 01F5",
+    "07_reports before Stage 01F5"
+  ],
+  "schema_version": "sph-pio-poc.stage01f5.novelty-audit.v1",
+  "status": "PASS"
+}

@@ -1,0 +1,323 @@
+schema_version: sph-pio-poc.stage01f5.design.v1
+stage: Stage 01F5
+name: One-shot plateau-aware MMS requalification design freeze
+mode: design_freeze_only
+numerical_execution_authorized: false
+
+frozen_stage01f4:
+  evidence_commit: 82de6171a0be9818303acca539bffc8d3ee21c22
+  status: PLATEAU_AWARE_PROTOCOL_APPROVED
+  tag: stage-01f4-plateau-aware-protocol-approved
+  evaluator: 06_experiments/stage_01f4_protocol_adjudication/results/stage01f4_evaluation.json
+  manifest: 06_experiments/stage_01f5_requalification_design/manifests/stage01f4_frozen_sha256_manifest.csv
+  stage01f3c_tag: stage-01f3c-ct2-mixed-or-unresolved
+  stage01f3c_tag_commit: f831d4fa7d63ad3357e2b1e84c1260d7f3c46a2e
+historical_states:
+  stage01f3b: MMS_CONVERGENCE_VERIFICATION_FAIL
+  stage01f3c: CT2_MIXED_OR_UNRESOLVED
+  reclassification_forbidden: true
+
+common_time_grid: &common_time_grid
+  values: [0.000, 0.001, 0.002, 0.003, 0.004, 0.005, 0.006, 0.007, 0.008, 0.009, 0.010, 0.011, 0.012, 0.013, 0.014, 0.015]
+  count: 16
+  interpolation_allowed: false
+
+main_configuration:
+  mms_cases: [MMS-A, MMS-B]
+  resolution: 20
+  particle_count: 400
+  dx: 0.1
+  support_ratio_expression: (sqrt(18)+sqrt(20))/2
+  support_ratio: 4.357388321059432
+  support_radius: 0.4357388321059432
+  nearest_lower_shell: sqrt(18)
+  nearest_upper_shell: sqrt(20)
+  lower_margin: 0.11474763394014698
+  upper_margin: 0.11474763394014786
+  t_final: 0.015
+  dt: [0.001, 0.0005, 0.00025, 0.000125, 0.0000625]
+  common_times: *common_time_grid
+  immutable_during_execution: true
+  novelty_audit:
+    stage01f3b_primary_was_n20: false
+    stage01f3c_primary_or_heldout_was_n20: false
+    repository_precheck_no_prior_matching_configuration: true
+    old_trajectory_can_supply_new_evidence: false
+
+reference_design: &reference_design
+  rhs: production_sparse_sph_rhs
+  integrator: scipy_solve_ivp_DOP853
+  continuous_unwrapped_positions: true
+  periodic_wrap_role: field_and_neighborhood_evaluation_only
+  project_rk2_forbidden: true
+  levels:
+    baseline: {rtol: 1.0e-12, atol: 1.0e-14, max_step: 0.00003125}
+    tighter: {rtol: 1.0e-13, atol: 1.0e-15, max_step: 0.000015625}
+    third: {rtol: 1.0e-13, atol: 1.0e-15, max_step: 0.0000078125}
+  required_checks:
+    all_three_levels_finite: true
+    baseline_tighter_sensitivity_by_field_and_norm: true
+    tighter_third_sensitivity_by_field_and_norm: true
+    reference_uncertainty_by_field_and_norm: true
+    minimum_sparse_dense_acceleration_states: 10
+    reciprocal_cutoff_crossing_allowed: true
+    edge_identity_constancy_required: false
+    structural_topology_defects: 0
+
+main_references:
+  design: *reference_design
+  run_ids:
+    MMS-A: [f5_ref_main_a_baseline, f5_ref_main_a_tighter, f5_ref_main_a_third]
+    MMS-B: [f5_ref_main_b_baseline, f5_ref_main_b_tighter, f5_ref_main_b_third]
+
+main_rk2_matrix:
+  isolated_subprocess_per_run: true
+  fresh_output_directory_per_run: true
+  run_ids:
+    MMS-A: [f5_main_a_dt1e3, f5_main_a_dt5e4, f5_main_a_dt2p5e4, f5_main_a_dt1p25e4, f5_main_a_dt6p25e5]
+    MMS-B: [f5_main_b_dt1e3, f5_main_b_dt5e4, f5_main_b_dt2p5e4, f5_main_b_dt1p25e4, f5_main_b_dt6p25e5]
+
+time_gates:
+  error_definition: q_RK2_minus_q_qualified_semidiscrete
+  scalar_error_subtraction_forbidden: true
+  fields: [position, velocity]
+  norms: [endpoint_vector_l2, 16_time_integrated_vector_rms]
+  T1: {rule: strict_decrease_at_every_dt_halving_for_all_four_field_norm_combinations}
+  T2: {rule: global_loglog_fitted_order_each_combination, minimum: 1.80}
+  T3: {rule: median_of_two_local_orders_from_finest_three_usable_levels_each_combination, interval: [1.70, 2.30]}
+  T4: {rule: error_above_matched_reference_uncertainty_floor, multiplier: 20.0, minimum_points_each_combination: 4}
+  T5: {rule: successive_dt_self_difference_finest_to_coarsest_ratio_each_combination, maximum: 0.30}
+  any_failure_blocks_pass: true
+
+platform_gates:
+  space_error_definition: q_semidiscrete_minus_q_exact
+  total_error_definition: q_RK2_minus_q_exact
+  fields: [position, velocity]
+  norms: [endpoint_vector_l2, 16_time_integrated_vector_rms]
+  P1: {definition: abs(E_total_finest-E_space)/E_space, maximum: 0.01}
+  P2: {definition: E_time_finest/E_space, maximum: 0.01}
+  P3:
+    all_total_exact_errors_finite: true
+    definition: max(E_total)/max(E_total_coarsest,E_space)
+    maximum: 2.0
+    strict_monotonicity_inside_platform_required: false
+  diagnostics_required: [space_time_cross_term, cosine, squared_norm_reconstruction]
+  diagnostic_sign_is_qualification_gate: false
+  old_ct2_percent_tolerance_forbidden: true
+
+heldout:
+  identity_source: Stage 01F4 sealed prospective held-out
+  resolution: 28
+  particle_count: 784
+  dx: 0.07142857142857143
+  support_ratio: 4.75
+  t_final: 0.015
+  dt: [0.001, 0.0005, 0.00025, 0.000125, 0.0000625]
+  common_times: *common_time_grid
+  prior_data_used_in_design: false
+  reference_design: *reference_design
+  reference_run_ids:
+    MMS-A: [f5_ref_hold_a_baseline, f5_ref_hold_a_tighter, f5_ref_hold_a_third]
+    MMS-B: [f5_ref_hold_b_baseline, f5_ref_hold_b_tighter, f5_ref_hold_b_third]
+  rk2_run_ids:
+    MMS-A: [f5_hold_a_dt1e3, f5_hold_a_dt5e4, f5_hold_a_dt2p5e4, f5_hold_a_dt1p25e4, f5_hold_a_dt6p25e5]
+    MMS-B: [f5_hold_b_dt1e3, f5_hold_b_dt5e4, f5_hold_b_dt2p5e4, f5_hold_b_dt1p25e4, f5_hold_b_dt6p25e5]
+  gates:
+    H1: position_velocity_endpoint_and_integrated_time_error_strictly_decrease
+    H2: {four_global_fitted_orders_minimum: 1.80}
+    H3: {finest_total_error_platform_relative_distance_maximum: 0.01}
+    H4: {finest_time_to_space_error_ratio_maximum: 0.01}
+    H5: [reference, source, conservation, topology, resource, determinism]
+  requirements_explicitly_not_imposed:
+    cross_term_sign_matches_main: true
+    platform_approach_direction_matches_main: true
+    total_exact_error_strictly_monotone: true
+
+space_time_step_isolation:
+  resolution: 32
+  support_ratio: 5.049509756796392
+  dt_candidates: [0.0000625, 0.00003125]
+  fields: [position, velocity, density, pressure]
+  norm: endpoint_l2
+  run_ids:
+    MMS-A: [f5_space_iso_a_dt6p25e5, f5_space_iso_a_dt3p125e5]
+    MMS-B: [f5_space_iso_b_dt6p25e5, f5_space_iso_b_dt3p125e5]
+  decision:
+    if_any_field_relative_change_greater_than: 0.10
+    then_dt_space: 0.00003125
+    else_dt_space: 0.0000625
+    immutable_decision_file: 06_experiments/stage_01f5b_requalification_execution/manifests/space_step_decision.json
+    must_be_committed_before_formal_n16_n24_n48_runs: true
+    may_change_after_viewing_spatial_trend: false
+
+spatial_matrix:
+  path_name: increasing-neighbor consistency path
+  permitted_claim: increasing-neighbor consistency-path convergence
+  fixed_stencil_single_h_claim_allowed: false
+  dt_source: immutable_space_step_decision
+  resolutions: [16, 24, 32, 48]
+  support_ratio_by_resolution:
+    16: 4.06155281280883
+    24: 4.5
+    32: 5.049509756796392
+    48: 5.5
+    64: 6.041381265149109
+  run_ids:
+    MMS-A: [f5_space_a_n16, f5_space_a_n24, f5_space_a_n32, f5_space_a_n48]
+    MMS-B: [f5_space_b_n16, f5_space_b_n24, f5_space_b_n32, f5_space_b_n48]
+  gates:
+    fields: [position, velocity, density, pressure]
+    norm: endpoint_l2
+    S1: all_eight_primary_trajectories_complete_and_pass_hard_safety
+    S2: N48_error_strictly_less_than_N16_error_each_field_and_mms
+    S3: N16_N24_N32_N48_error_strictly_decreases_each_field_and_mms
+    S4: global_log_error_log_dx_slope_strictly_positive_each_field_and_mms
+  mms_b_continuous_reference:
+    sensitivity_levels: [baseline, tighter, third]
+    resolutions: [16, 24, 32, 48]
+    run_ids:
+      - f5_ref_space_b_n16_baseline
+      - f5_ref_space_b_n16_tighter
+      - f5_ref_space_b_n16_third
+      - f5_ref_space_b_n24_baseline
+      - f5_ref_space_b_n24_tighter
+      - f5_ref_space_b_n24_third
+      - f5_ref_space_b_n32_baseline
+      - f5_ref_space_b_n32_tighter
+      - f5_ref_space_b_n32_third
+      - f5_ref_space_b_n48_baseline
+      - f5_ref_space_b_n48_tighter
+      - f5_ref_space_b_n48_third
+
+conditional_n64:
+  run_ids: [f5_space_a_n64, f5_space_b_n64]
+  trigger_if_any:
+    - any_primary_error_nonmonotone_over_n16_to_n48
+    - any_n48_over_n32_error_ratio_greater_than_0.95
+    - local_order_signs_inconsistent
+    - near_asymptotic_entry_unclear
+  preflight_all_required:
+    smoke_steps: 20
+    peak_rss_bytes_less_than: 2000000000
+    estimated_single_run_wall_seconds_less_than: 7200
+    cutoff_margin_greater_than: 1.0e-12
+    structural_topology_defects: 0
+  adverse_results_may_be_deleted: false
+
+observed_order_and_gci:
+  per_variable_only: true
+  requirements:
+    minimum_consecutive_strictly_monotone_errors: 3
+    local_orders_same_sign: true
+    adjacent_local_order_relative_difference_maximum: 0.25
+    error_over_reference_or_time_step_floor_minimum: 20.0
+    legal_triplet_order_change_maximum: 0.25
+    extrapolated_value_finite: true
+  failure_text: GCI not justified
+  qualification_text: GCI applies only to the preregistered increasing-neighbor consistency path and is not a fixed-stencil single-h GCI.
+  cross_variable_sharing_forbidden: true
+  fixed_ratio_family_required: false
+  old_fixed_ratio_data_role: background_only
+
+hard_safety_gates:
+  isolated_subprocess: true
+  cyclic_gc: default
+  torch_no_grad: true
+  gc_collect_inside_time_loop_allowed: false
+  parent_receives_scalar_tree_and_relative_paths_only: true
+  child_fully_reclaimed: true
+  source_calls_each_step: [start, midpoint]
+  pair_force_residual_maximum: 1.0e-12
+  normalized_internal_force_residual_maximum: 1.0e-10
+  force_assembly_defect_maximum: 1.0e-10
+  momentum_update_defect_maximum: 1.0e-10
+  viscous_power_positive_tolerance: 1.0e-12
+  topology_structural_defects: 0
+  minimum_separation_over_dx: 0.25
+  current_rss_bytes_less_than: 2000000000
+  peak_rss_bytes_less_than: 4000000000
+  rss_q4_q1_absolute_increase_bytes_maximum: 250000000
+  rss_q4_q1_relative_increase_maximum: 0.50
+  step_time_q4_q1_maximum: 1.30
+  reciprocal_cutoff_crossing_is_failure: false
+  edge_identity_count_greater_than_one_is_failure: false
+
+determinism:
+  repeat_suffix: _rep2
+  base_run_ids:
+    - f5_main_a_dt6p25e5
+    - f5_main_b_dt6p25e5
+    - f5_hold_a_dt6p25e5
+    - f5_hold_b_dt6p25e5
+    - f5_space_a_n32
+    - f5_space_b_n32
+  repeat_run_ids:
+    - f5_main_a_dt6p25e5_rep2
+    - f5_main_b_dt6p25e5_rep2
+    - f5_hold_a_dt6p25e5_rep2
+    - f5_hold_b_dt6p25e5_rep2
+    - f5_space_a_n32_rep2
+    - f5_space_b_n32_rep2
+  required_bitwise_identity:
+    - scalar_summary
+    - positions
+    - unwrapped_positions
+    - velocities
+    - densities
+    - pressures
+    - masses
+    - topology_event_sequence_hash
+  child_processes_fully_reclaimed: true
+
+run_matrix:
+  manifest: 06_experiments/stage_01f5_requalification_design/manifests/stage01f5_run_matrix.csv
+  unconditional_count: 62
+  conditional_n64_count: 2
+  all_rows_count: 64
+  all_run_ids_unique: true
+  exact_output_directory_per_run: true
+
+anti_posthoc_controls:
+  all_run_ids_frozen: true
+  all_parameters_and_common_times_frozen: true
+  reference_tolerances_and_primary_norms_frozen: true
+  time_platform_heldout_space_gates_frozen: true
+  reference_floor_and_n64_conditions_frozen: true
+  failure_handling_and_resource_limits_frozen: true
+  execution_code_commit_must_equal_approved_design_commit: true
+  configuration_sha256_must_be_recorded_before_first_run: true
+  after_first_trajectory_forbidden:
+    - delete_gate
+    - relax_threshold
+    - change_norm
+    - replace_heldout
+    - change_main_configuration
+    - add_old_trajectory
+    - delete_adverse_run
+    - change_branch_trigger
+  old_stage01f3b_or_stage01f3c_trajectory_can_qualify: false
+
+scope:
+  numerical_trajectory_count: 0
+  dynamic_solver_imported_or_called: false
+  sph_run_started: false
+  rk2_run_started: false
+  dop853_run_started: false
+  reference_npz_generated: false
+  temporal_or_spatial_convergence_executed: false
+  stage01f5b_started: false
+  stage01g_started: false
+  v3_started: false
+  stage02_started: false
+  training_started: false
+  labels_generated: false
+
+state_machine:
+  allowed_statuses:
+    - PLATEAU_AWARE_REQUALIFICATION_DESIGN_APPROVED
+    - PLATEAU_AWARE_REQUALIFICATION_DESIGN_REJECTED
+    - REQUALIFICATION_DESIGN_INCOMPLETE
+  approved_status_allows_only: apply_for_stage01f5b_execution
+  approved_status_does_not_start_execution: true
+  downstream_qualification_generation_forbidden: [V2, Stage 01G, V3, Stage 02]
+final_status: PLATEAU_AWARE_REQUALIFICATION_DESIGN_APPROVED
