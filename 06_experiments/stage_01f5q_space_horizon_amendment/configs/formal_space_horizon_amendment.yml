@@ -1,0 +1,104 @@
+schema_version: sph-pio-poc.stage01f5q.space-horizon-amendment.v1
+stage: Stage 01F5-Q
+name: Formal-space horizon amendment and execution bundle completion
+amendment_type: prospective_pre_execution_design_decision
+numerical_execution_authorized: false
+
+frozen_stage01f5p:
+  evidence_commit: 38487d66b40fa2c8dd65eb7aa6c279da4a8e5e2c
+  historical_status: EXECUTION_MANIFEST_INCOMPLETE
+  status_changed: false
+  tag: stage-01f5p-execution-manifest-incomplete
+  manifest: 06_experiments/stage_01f5q_space_horizon_amendment/manifests/stage01f5p_frozen_sha256_manifest.csv
+
+formal_space:
+  t_final: 0.02
+  sample_start: 0.0
+  sample_end: 0.02
+  sample_interval: 0.001
+  sample_count: 21
+  interpolation_allowed: false
+  construction: integer_tick_times_0_through_20_divided_by_1000
+  common_times_csv: 06_experiments/stage_01f5q_space_horizon_amendment/configs/formal_space_common_times.csv
+
+rationale:
+  - Stage 01F5 did not define formal-space t_final.
+  - The value is not inferred from the N20 or N28 temporal configurations.
+  - The formal spatial verification retains the 0.02 physical horizon used by the earlier qualified increasing-neighbor spatial protocol.
+  - The decision is frozen before any Stage 01F5B numerical execution.
+  - This is a new prospective design decision and not a recovery of a missing historical field.
+
+space_step_contract:
+  resolver: immutable_space_step_decision_json
+  decision_file: 06_experiments/stage_01f5b_requalification_execution/manifests/space_step_decision.json
+  branches:
+    - {dt_space: 0.0000625, formal_space_steps: 320, exact_rational_identity: 320/16000=1/50}
+    - {dt_space: 0.00003125, formal_space_steps: 640, exact_rational_identity: 640/32000=1/50}
+  formal_space_t_final_rational: 1/50
+  floating_approximation_used_for_identity_check: false
+  isolation_run_steps:
+    dt_0p0000625: 320
+    dt_0p00003125: 640
+
+n64_smoke_horizon:
+  run_ids: [f5_n64_smoke_a, f5_n64_smoke_b]
+  formal_space_binding_forbidden: true
+  steps: 20
+  dt_source: resolved_dt_space
+  branches:
+    - {dt_space: 0.0000625, t_final_smoke: 0.00125, exact_rational_identity: 20/16000=1/800}
+    - {dt_space: 0.00003125, t_final_smoke: 0.000625, exact_rational_identity: 20/32000=1/1600}
+  uses_formal_space_common_times: false
+  part_of_formal_spatial_error_sequence: false
+
+parameter_binding:
+  path: 06_experiments/stage_01f5q_space_horizon_amendment/manifests/stage01f5q_space_parameter_binding.csv
+  expected_rows: 31
+  expected_unique_run_ids: 31
+  excluded_groups:
+    - N20_main_time_matrix
+    - N28_heldout_time_matrix
+    - main_and_heldout_semidiscrete_references
+    - f5_n64_smoke_a
+    - f5_n64_smoke_b
+
+unchanged_identity:
+  n20_main_t_final: 0.015
+  n20_main_common_time_count: 16
+  n28_heldout_t_final: 0.015
+  n28_heldout_common_time_count: 16
+  T1_T5: unchanged
+  P1_P3: unchanged
+  H1_H5: unchanged
+  S1_S4: unchanged
+  hard_safety_gates: unchanged
+  n64_triggers: unchanged
+  dop853_tolerances: unchanged
+  run_ids: unchanged
+
+parameter_resolution_priority:
+  - explicit_run_row_parameter
+  - stage01f5q_parameter_binding
+  - original_frozen_configuration
+  - no_implicit_default_or_inference
+
+scope:
+  numerical_runs_executed: 0
+  sph_started: false
+  rk2_started: false
+  dop853_started: false
+  smoke_started: false
+  reference_started: false
+  convergence_started: false
+  stage01f5b_started: false
+  stage01g_started: false
+  v3_started: false
+  stage02_started: false
+  training_started: false
+  labels_generated: false
+
+allowed_statuses:
+  - FORMAL_SPACE_EXECUTION_BUNDLE_READY
+  - FORMAL_SPACE_EXECUTION_BUNDLE_INCOMPLETE
+final_status: FORMAL_SPACE_EXECUTION_BUNDLE_READY
+stage01f5b_execution_application_eligible: true

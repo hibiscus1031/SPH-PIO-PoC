@@ -1,0 +1,56 @@
+{
+  "dry_resolution": {
+    "all_69_resolved": true,
+    "path": "06_experiments/stage_01f5q_space_horizon_amendment/results/stage01f5q_dry_resolution_audit.csv",
+    "sha256": "32218da705ef55d1aa69e2b4b02765224dbaafc8f9a6a29097dc2a51de6098aa"
+  },
+  "execution_code_commit": {
+    "commit": "38487d66b40fa2c8dd65eb7aa6c279da4a8e5e2c",
+    "scope": "Numerical source tree frozen before this metadata-only Stage 01F5-Q amendment"
+  },
+  "formal_space_binding": {
+    "common_times_path": "06_experiments/stage_01f5q_space_horizon_amendment/configs/formal_space_common_times.csv",
+    "common_times_sha256": "b4c589e4096b104bed4f6300c85463c3417d11dab939b840c83b63ddf5cde029",
+    "horizon_amendment_path": "06_experiments/stage_01f5q_space_horizon_amendment/configs/formal_space_horizon_amendment.yml",
+    "horizon_amendment_sha256": "8a983c3404b239fa5ec564bc98dbaa512016b80a0bb8154cce7e7072a7c3b44d",
+    "parameter_binding_path": "06_experiments/stage_01f5q_space_horizon_amendment/manifests/stage01f5q_space_parameter_binding.csv",
+    "parameter_binding_sha256": "0e193804ba766dfbbae9d39271e80061e3268c2675fe5fdfbdefdd3dcb296333",
+    "run_count": 31,
+    "t_final": 0.02
+  },
+  "frozen_gate_hashes": {
+    "H1_H5": "09a7a6e459af7a462c987c7bbe60a8020b9355a3b225336b46103e4c7833f4c2",
+    "P1_P3": "43c6d54f2fb66eac43cdcfa82ea400625daf5a344b1634650d1d69e45673af29",
+    "S1_S4": "35bbb7f5b711dfa91862d1a959edafdab6d44669c27181d9a9e33caf05744e79",
+    "T1_T5": "4431319d30e91547e46e75c0bd12d6f7fbfcd27e2413688548b8835a8fa72e5d",
+    "canonicalization": "UTF-8 JSON with sort_keys=true and separators=(',',':')",
+    "hard_safety": "67c65c5de37f6bef571fb4fb0f19d2e7877ef263b36da2b451f997de1e4336e5",
+    "source": "06_experiments/stage_01f5_requalification_design/configs/preregistered_stage01f5.yml",
+    "source_sha256": "5c0f4e9c7a5878cb32abcadc7fafcc757b68e7b1ab3bcce895a4393065de9aa6"
+  },
+  "n64_dependency_dag": {
+    "path": "06_experiments/stage_01f5p_branch_completeness/manifests/n64_dependency_dag.json",
+    "sha256": "d897d6804d5739a60a2842483884ebfb8b38e80fb479199b579c32461100bc85"
+  },
+  "numerical_runs_executed": 0,
+  "parameter_resolution_priority": [
+    "explicit_run_row_parameter",
+    "stage01f5q_parameter_binding",
+    "original_frozen_configuration",
+    "no_implicit_default_or_inference"
+  ],
+  "provenance": {
+    "extended_69_row_matrix": {
+      "path": "06_experiments/stage_01f5p_branch_completeness/manifests/stage01f5_execution_run_matrix_v2.csv",
+      "sha256": "ebbfa5fd3ffced88d1995fc34000b4e1a25524cb93d23e9d6fd9b9a4c4ab061b"
+    },
+    "original_64_row_matrix": {
+      "path": "06_experiments/stage_01f5_requalification_design/manifests/stage01f5_run_matrix.csv",
+      "sha256": "d0e84aed88018c5ed9edddc6fd15240cfc319b016f768c90f528053bd3bf9a80"
+    },
+    "stage01f5_commit": "ca297db20149765091312ac27843a8c20d4e9943",
+    "stage01f5p_commit": "38487d66b40fa2c8dd65eb7aa6c279da4a8e5e2c"
+  },
+  "schema_version": 3,
+  "status": "FORMAL_SPACE_EXECUTION_BUNDLE_READY"
+}
