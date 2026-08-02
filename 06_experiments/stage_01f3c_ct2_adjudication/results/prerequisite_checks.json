@@ -1,0 +1,36 @@
+{
+  "checks": {
+    "continuous_time_only_scope": true,
+    "head_is_frozen_evidence_commit": true,
+    "historical_status_identity": true,
+    "manifest_identity": true,
+    "no_downstream_or_training": true,
+    "tag_identity": true
+  },
+  "frozen_commit": "5a0ef2556a7128865f07d60abcd54666ca5fba47",
+  "frozen_status": "MMS_CONVERGENCE_VERIFICATION_FAIL",
+  "manifest_identities": {
+    "06_experiments/stage_01f3b_mms_convergence/results/balance_resource_summary.json": true,
+    "06_experiments/stage_01f3b_mms_convergence/results/campaign_index.csv": true,
+    "06_experiments/stage_01f3b_mms_convergence/results/continuous_time_analysis.json": true,
+    "06_experiments/stage_01f3b_mms_convergence/results/determinism_analysis.json": true,
+    "06_experiments/stage_01f3b_mms_convergence/results/fixed_ratio_analysis.json": true,
+    "06_experiments/stage_01f3b_mms_convergence/results/order_gci_analysis.json": true,
+    "06_experiments/stage_01f3b_mms_convergence/results/semidiscrete_time_analysis.json": true,
+    "06_experiments/stage_01f3b_mms_convergence/results/space_analysis.json": true,
+    "06_experiments/stage_01f3b_mms_convergence/results/space_dt_selection.json": true,
+    "06_experiments/stage_01f3b_mms_convergence/results/stage01f3b_evaluation.json": true,
+    "07_reports/stage_01f3b_balance_resources_determinism.md": true,
+    "07_reports/stage_01f3b_final_report.md": true,
+    "07_reports/stage_01f3b_fixed_ratio_diagnostic.md": true,
+    "07_reports/stage_01f3b_mms_a_continuous_time.md": true,
+    "07_reports/stage_01f3b_mms_a_space.md": true,
+    "07_reports/stage_01f3b_mms_b_continuous_time.md": true,
+    "07_reports/stage_01f3b_mms_b_space.md": true,
+    "07_reports/stage_01f3b_space_timestep_isolation.md": true,
+    "07_reports/stage_01f3b_uncertainty_assessment.md": true
+  },
+  "schema_version": "sph-pio-poc.stage01f3c.prerequisite.v1",
+  "status": "PASS",
+  "tag_commit": "5a0ef2556a7128865f07d60abcd54666ca5fba47"
+}
