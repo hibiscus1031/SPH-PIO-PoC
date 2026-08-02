@@ -1,0 +1,64 @@
+{
+  "checks": {
+    "child_reclaimed": true,
+    "dense_reference_identity": true,
+    "full_pytest": true,
+    "parent_scalar_only": true,
+    "smoke_10_steps": true,
+    "sparse_dense_three_states": true,
+    "stage01f2_source_disabled": true,
+    "stage01f3_historical_fail": true,
+    "stage01f3r_evaluator": true,
+    "stage01f3r_manifest": true,
+    "stage01f3r_tag": true,
+    "stage01f_source": true
+  },
+  "identity": {
+    "dense_reference_qualification_pass": true,
+    "manifest_identity": {
+      "06_experiments/stage_01f3r_reference_qualification/configs/stage01f3_frozen_sha256_manifest.csv": true,
+      "06_experiments/stage_01f3r_reference_qualification/references/dense_mms_a_three_level.npz": true,
+      "06_experiments/stage_01f3r_reference_qualification/references/dense_mms_b_three_level.npz": true,
+      "06_experiments/stage_01f3r_reference_qualification/results/cutoff_smoothness.csv": true,
+      "06_experiments/stage_01f3r_reference_qualification/results/cutoff_smoothness_summary.json": true,
+      "06_experiments/stage_01f3r_reference_qualification/results/mms_a_reference_qualification.json": true,
+      "06_experiments/stage_01f3r_reference_qualification/results/mms_b_reference_qualification.json": true,
+      "06_experiments/stage_01f3r_reference_qualification/results/pilot_mms_b_n16.json": true,
+      "06_experiments/stage_01f3r_reference_qualification/results/sparse_dense_equivalence.csv": true,
+      "06_experiments/stage_01f3r_reference_qualification/results/sparse_dense_equivalence_summary.json": true,
+      "06_experiments/stage_01f3r_reference_qualification/results/stage01f3r_evaluation.json": true,
+      "06_experiments/stage_01f3r_reference_qualification/results/topology_event_summary.json": true,
+      "06_experiments/stage_01f3r_reference_qualification/results/topology_events.csv": true,
+      "07_reports/stage_01f3r_final_report.md": true
+    },
+    "manifest_identity_pass": true,
+    "stage01f2_source_disabled_pass": true,
+    "stage01f2_source_disabled_status": "PASS",
+    "stage01f3_historical_pass": true,
+    "stage01f3_historical_status": "MMS_CONVERGENCE_VERIFICATION_FAIL",
+    "stage01f3r_evaluator_pass": true,
+    "stage01f3r_evaluator_status": "SEMIDISCRETE_REFERENCE_QUALIFIED_DENSE_EQUIVALENT",
+    "stage01f_source_pass": true,
+    "stage01f_source_status": "MMS_SPECIFICATION_PASS",
+    "tag_pass": true,
+    "tag_target": "f952147d8059f3319147ecde65c4edf370023bb4"
+  },
+  "sparse_dense_spotcheck": {
+    "case_count": 3,
+    "checks": {
+      "acceleration_absolute": true,
+      "acceleration_relative": true,
+      "density": true,
+      "finite": true,
+      "pressure": true
+    },
+    "maxima": {
+      "acceleration_absolute": 3.1086244689504383e-15,
+      "acceleration_relative": 3.4598122795049946e-15,
+      "density_relative": 0.0,
+      "pressure_relative": 0.0
+    },
+    "status": "PASS"
+  },
+  "status": "PASS"
+}
