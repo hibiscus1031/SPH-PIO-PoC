@@ -1,0 +1,63 @@
+stage:
+  name: Stage 01G-R — Execution Infrastructure Repair and Requalification
+  mode: infrastructure_only
+  formal_benchmark_authorized: false
+  maximum_smoke_steps: 1
+  smoke_run_id: g_shear_n24_infra_smoke
+
+frozen_inputs:
+  stage01g_commit: fa3c4f43625ec3436820d83c26947d47ed0ba5c8
+  stage01ge_commit: 1641ff5f05fa91b8faed49a91edf062f4a90db07
+  preflight_v2_commit: a07ef533a85cece78eed99ffd7f650757b33e838
+  failed_execution_commit: 7dc7fd10056cb3aacf9c0347c7516f1a77b6af32
+  config_path: 06_experiments/stage_01g_validation_design/configs/preregistered_stage01g.yml
+  config_sha256: 5025492f21f6b00c33ebc9533d27fbf632668945cba6a6a4a10df115c9ff1fe1
+  matrix_path: 06_experiments/stage_01g_validation_design/manifests/stage01g_run_matrix.csv
+  matrix_sha256: ad79c1e7ea7af026222accc4ea8adff716c067b379954ca77697e475e5e0ba12
+  metric_contract_path: 07_reports/stage_01g_validation_metrics.md
+  metric_contract_sha256: 655bfceb2339adfd07d9a4c724cbb66410210a76b865f6edcc0d6a74c7b9b042
+  evaluator_manifest_path: 06_experiments/stage_01ge_evaluator_qualification/manifests/stage01ge_evaluator_sha256.csv
+  numerical_source_manifest_path: 06_experiments/stage_01f5b_requalification_execution/manifests/numerical_source_identity.csv
+  python_executable: /opt/miniconda3/envs/sph-pio-poc/bin/python
+
+explicit_runner_bindings:
+  domain_minimum: [-1.0, -1.0]
+  domain_maximum: [1.0, 1.0]
+  layout_jitter_fraction: 0.0
+  layout_seed: 0
+  dtype: float64
+  device: cpu
+  reference_array_key_map:
+    positions: position
+    velocities: velocity
+    densities: density
+    pressures: pressure
+  dynamic_step_fields:
+    - state
+    - start_evaluation
+    - midpoint_evaluation
+    - end_evaluation
+  diagnostic_midpoint_reconstruction_only: true
+  reconstructed_state_enters_solver: false
+
+smoke:
+  benchmark: shear
+  source_run_id: g_shear_n24
+  N: 24
+  H_over_dx: 4.5
+  dt: 0.0000625
+  steps: 1
+  rho0: 1.0
+  c_s: 20.0
+  nu: 0.02
+  U_s: 0.5
+  k_s: 2*pi
+  evaluator_qualification: false
+  benchmark_metrics: false
+  v2_evidence: false
+
+downstream:
+  v3_started: false
+  stage02_started: false
+  training_started: false
+  label_generation_started: false

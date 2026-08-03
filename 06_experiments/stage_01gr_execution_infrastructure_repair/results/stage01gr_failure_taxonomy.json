@@ -1,0 +1,57 @@
+{
+  "allowed_categories": {
+    "A": "configuration failure",
+    "B": "runner failure",
+    "C": "diagnostic failure",
+    "D": "solver initialization failure",
+    "E": "environment failure",
+    "F": "unknown"
+  },
+  "boundary_audit": {
+    "config_loading": "PASS",
+    "parameter_resolution": "FAIL_IN_CANONICAL_RUNNER",
+    "run_metadata_creation": "PASS_BEFORE_FAILURES",
+    "output_directory_creation": "PASS",
+    "solver_initialization_contract": "PASS_ON_RETRIES",
+    "diagnostic_initialization": "FAIL_IN_INFRA_RETRY2",
+    "evaluator_schema_handoff": "NOT_REACHED",
+    "child_process_lifecycle": "PASS_ALL_CHILDREN_RECLAIMED"
+  },
+  "attempts": [
+    {
+      "attempt": "canonical",
+      "exception": "TypeError",
+      "category": "B",
+      "classification": "runner failure",
+      "root_cause": "periodic_cartesian_layout was called without explicit required jitter_fraction and seed keyword arguments",
+      "solver_failure": false,
+      "benchmark_failure": false,
+      "formal_run_completed": false
+    },
+    {
+      "attempt": "infra_retry1",
+      "exception": "KeyError",
+      "category": "B",
+      "classification": "runner failure",
+      "root_cause": "reference serialization indexed plural array container keys directly into singular evaluator field keys",
+      "solver_failure": false,
+      "benchmark_failure": false,
+      "formal_run_completed": false
+    },
+    {
+      "attempt": "infra_retry2",
+      "exception": "AttributeError",
+      "category": "C",
+      "classification": "diagnostic failure",
+      "root_cause": "diagnostic adapter requested midpoint_state from unsourced DynamicStepResult although its frozen schema exposes state plus start/midpoint/end evaluations",
+      "solver_failure": false,
+      "benchmark_failure": false,
+      "formal_run_completed": false
+    }
+  ],
+  "environment_failure": false,
+  "solver_initialization_failure": false,
+  "unknown_failure": false,
+  "overall_root_cause": "execution-layer interface contracts were implicit and inconsistent at parameter, reference serialization, and diagnostic registration boundaries",
+  "stage01g_v2_status": "V2_QUALIFICATION_EVIDENCE_INCOMPLETE"
+}
