@@ -1,0 +1,8 @@
+check_id,check,evidence,status,blocking
+PREFLIGHT1,Stage 01G frozen hash verification,"9/9 current SHA-256 values match stage01g_frozen_sha256_manifest.csv and tagged blobs at fa3c4f4",PASS,false
+PREFLIGHT2,Stage 01F5B archive identity verification,"status PLATEAU_AWARE_MMS_REQUALIFICATION_PASS; ac8e06a ancestor of 6cbfea2; archive tag correct; 339 inventory entries; all evaluator gate blocks true",PASS,false
+PREFLIGHT3,Numerical source identity verification,"103/103 paths match frozen_sha256 in numerical_source_identity.csv",PASS,false
+PREFLIGHT4,Run ID uniqueness verification,"12/12 IDs unique; 12/12 future output directories unique",PASS,false
+PREFLIGHT5,Output directory empty verification,"all 12 preregistered per-run output directories absent or empty before execution",PASS,false
+PREFLIGHT6,Evaluator hash verification,"no executable Stage 01G validation evaluator path or SHA-256 exists in the Stage 01G or Stage 01G-P frozen manifests; only design-status JSON files exist",FAIL,true
+PREFLIGHT7,Threshold immutability verification,"preregistered_stage01g.yml is byte-identical to the annotated Stage 01G tag",PASS,false

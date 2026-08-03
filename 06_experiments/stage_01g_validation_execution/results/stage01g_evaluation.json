@@ -1,0 +1,45 @@
+{
+  "acoustic_gates": {
+    "ACOUSTIC1": "NOT_EVALUATED",
+    "ACOUSTIC2": "NOT_EVALUATED",
+    "ACOUSTIC3": "NOT_EVALUATED",
+    "ACOUSTIC4": "NOT_EVALUATED",
+    "ACOUSTIC5": "NOT_EVALUATED",
+    "ACOUSTIC6": "NOT_EVALUATED",
+    "ACOUSTIC7": "NOT_EVALUATED",
+    "ACOUSTIC8": "NOT_EVALUATED",
+    "ACOUSTIC9": "NOT_EVALUATED",
+    "ACOUSTIC10": "NOT_EVALUATED"
+  },
+  "benchmark_execution_count": 0,
+  "checkpoint_count": 0,
+  "executed_run_ids": [],
+  "hard_safety": "NOT_EVALUATED",
+  "labels_generated": false,
+  "missing_evidence": [
+    "frozen executable independent-validation evaluator path and SHA-256",
+    "all shear benchmark evidence",
+    "all acoustic benchmark evidence",
+    "executed-run hard-safety evidence",
+    "execution uncertainty results",
+    "complete execution provenance"
+  ],
+  "preflight": "FAIL",
+  "reference_data_count": 0,
+  "shear_gates": {
+    "SHEAR1": "NOT_EVALUATED",
+    "SHEAR2": "NOT_EVALUATED",
+    "SHEAR3": "NOT_EVALUATED",
+    "SHEAR4": "NOT_EVALUATED",
+    "SHEAR5": "NOT_EVALUATED",
+    "SHEAR6": "NOT_EVALUATED",
+    "SHEAR7": "NOT_EVALUATED",
+    "SHEAR8": "NOT_EVALUATED"
+  },
+  "stage02_started": false,
+  "training_started": false,
+  "trajectory_count": 0,
+  "uncertainty_complete": false,
+  "unique_status": "V2_QUALIFICATION_EVIDENCE_INCOMPLETE",
+  "v3_started": false
+}

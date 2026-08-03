@@ -1,0 +1,30 @@
+{
+  "benchmark_execution_authorized": false,
+  "checks": {
+    "evaluator_hash_verification": false,
+    "numerical_source_identity": true,
+    "output_directories_empty": true,
+    "run_id_uniqueness": true,
+    "stage01f5b_archive_identity": true,
+    "stage01g_frozen_hashes": true,
+    "threshold_immutability": true
+  },
+  "evaluator_audit": {
+    "design_status_json_candidates": [
+      "06_experiments/stage_01g_validation_design/results/stage01g_design_evaluation.json",
+      "06_experiments/stage_01gp_preexecution_audit/results/stage01gp_evaluation.json"
+    ],
+    "executable_evaluator_candidates": [],
+    "expected_sha256": null,
+    "frozen_evaluator_path": null,
+    "reason": "A metric contract is frozen, but no executable independent-validation evaluator implementation and no authoritative expected evaluator SHA-256 were frozen before execution. The Stage 01F5B MMS evaluator is not an independent-validation evaluator and cannot be substituted."
+  },
+  "frozen_commits": {
+    "stage01g_design": "fa3c4f43625ec3436820d83c26947d47ed0ba5c8",
+    "stage01gp_preexecution_audit": "c58c6ce4e7798a708adee32af984209aca064a95"
+  },
+  "numerical_source_paths_checked": 103,
+  "overall_status": "FAIL",
+  "run_ids_checked": 12,
+  "stop_before_benchmark": true
+}
