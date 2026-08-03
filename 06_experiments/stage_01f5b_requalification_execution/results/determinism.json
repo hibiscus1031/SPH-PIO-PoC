@@ -1,0 +1,174 @@
+{
+  "pairs": [
+    {
+      "array_checks": {
+        "densities": true,
+        "edge_hashes": true,
+        "masses": true,
+        "positions": true,
+        "pressures": true,
+        "times": true,
+        "unwrapped_positions": true,
+        "velocities": true
+      },
+      "base": "f5_main_a_dt6p25e5",
+      "repeat": "f5_main_a_dt6p25e5_rep2",
+      "scalar_checks": {
+        "dynamic_topology_event_count": true,
+        "maximum_assembly_defect": true,
+        "maximum_internal_force_residual": true,
+        "maximum_kinetic_energy_update_defect": true,
+        "maximum_momentum_update_defect": true,
+        "maximum_pair_force_residual": true,
+        "maximum_topology_structural_defects": true,
+        "maximum_viscous_power": true,
+        "minimum_separation_over_dx": true,
+        "topology_event_sequence_sha256": true,
+        "unique_checkpoint_edge_identities": true
+      },
+      "status": "PASS"
+    },
+    {
+      "array_checks": {
+        "densities": true,
+        "edge_hashes": true,
+        "masses": true,
+        "positions": true,
+        "pressures": true,
+        "times": true,
+        "unwrapped_positions": true,
+        "velocities": true
+      },
+      "base": "f5_main_b_dt6p25e5",
+      "repeat": "f5_main_b_dt6p25e5_rep2",
+      "scalar_checks": {
+        "dynamic_topology_event_count": true,
+        "maximum_assembly_defect": true,
+        "maximum_internal_force_residual": true,
+        "maximum_kinetic_energy_update_defect": true,
+        "maximum_momentum_update_defect": true,
+        "maximum_pair_force_residual": true,
+        "maximum_topology_structural_defects": true,
+        "maximum_viscous_power": true,
+        "minimum_separation_over_dx": true,
+        "topology_event_sequence_sha256": true,
+        "unique_checkpoint_edge_identities": true
+      },
+      "status": "PASS"
+    },
+    {
+      "array_checks": {
+        "densities": true,
+        "edge_hashes": true,
+        "masses": true,
+        "positions": true,
+        "pressures": true,
+        "times": true,
+        "unwrapped_positions": true,
+        "velocities": true
+      },
+      "base": "f5_hold_a_dt6p25e5",
+      "repeat": "f5_hold_a_dt6p25e5_rep2",
+      "scalar_checks": {
+        "dynamic_topology_event_count": true,
+        "maximum_assembly_defect": true,
+        "maximum_internal_force_residual": true,
+        "maximum_kinetic_energy_update_defect": true,
+        "maximum_momentum_update_defect": true,
+        "maximum_pair_force_residual": true,
+        "maximum_topology_structural_defects": true,
+        "maximum_viscous_power": true,
+        "minimum_separation_over_dx": true,
+        "topology_event_sequence_sha256": true,
+        "unique_checkpoint_edge_identities": true
+      },
+      "status": "PASS"
+    },
+    {
+      "array_checks": {
+        "densities": true,
+        "edge_hashes": true,
+        "masses": true,
+        "positions": true,
+        "pressures": true,
+        "times": true,
+        "unwrapped_positions": true,
+        "velocities": true
+      },
+      "base": "f5_hold_b_dt6p25e5",
+      "repeat": "f5_hold_b_dt6p25e5_rep2",
+      "scalar_checks": {
+        "dynamic_topology_event_count": true,
+        "maximum_assembly_defect": true,
+        "maximum_internal_force_residual": true,
+        "maximum_kinetic_energy_update_defect": true,
+        "maximum_momentum_update_defect": true,
+        "maximum_pair_force_residual": true,
+        "maximum_topology_structural_defects": true,
+        "maximum_viscous_power": true,
+        "minimum_separation_over_dx": true,
+        "topology_event_sequence_sha256": true,
+        "unique_checkpoint_edge_identities": true
+      },
+      "status": "PASS"
+    },
+    {
+      "array_checks": {
+        "densities": true,
+        "edge_hashes": true,
+        "masses": true,
+        "positions": true,
+        "pressures": true,
+        "times": true,
+        "unwrapped_positions": true,
+        "velocities": true
+      },
+      "base": "f5_space_a_n32",
+      "repeat": "f5_space_a_n32_rep2",
+      "scalar_checks": {
+        "dynamic_topology_event_count": true,
+        "maximum_assembly_defect": true,
+        "maximum_internal_force_residual": true,
+        "maximum_kinetic_energy_update_defect": true,
+        "maximum_momentum_update_defect": true,
+        "maximum_pair_force_residual": true,
+        "maximum_topology_structural_defects": true,
+        "maximum_viscous_power": true,
+        "minimum_separation_over_dx": true,
+        "topology_event_sequence_sha256": true,
+        "unique_checkpoint_edge_identities": true
+      },
+      "status": "PASS"
+    },
+    {
+      "array_checks": {
+        "densities": true,
+        "edge_hashes": true,
+        "masses": true,
+        "positions": true,
+        "pressures": true,
+        "times": true,
+        "unwrapped_positions": true,
+        "velocities": true
+      },
+      "base": "f5_space_b_n32",
+      "repeat": "f5_space_b_n32_rep2",
+      "scalar_checks": {
+        "dynamic_topology_event_count": true,
+        "maximum_assembly_defect": true,
+        "maximum_internal_force_residual": true,
+        "maximum_kinetic_energy_update_defect": true,
+        "maximum_momentum_update_defect": true,
+        "maximum_pair_force_residual": true,
+        "maximum_topology_structural_defects": true,
+        "maximum_viscous_power": true,
+        "minimum_separation_over_dx": true,
+        "topology_event_sequence_sha256": true,
+        "unique_checkpoint_edge_identities": true
+      },
+      "status": "PASS"
+    }
+  ],
+  "schema_version": "sph-pio-poc.stage01f5b.determinism.v1",
+  "status": "PASS"
+}

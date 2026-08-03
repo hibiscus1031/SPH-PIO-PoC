@@ -1,0 +1,136 @@
+{
+  "checks": {
+    "all_states_finite": true,
+    "cyclic_gc_enabled": true,
+    "peak_rss": true,
+    "sparse_dense_absolute": true,
+    "sparse_dense_relative": true,
+    "sparse_dense_sample_count": true,
+    "topology_structural": true,
+    "topology_switching_reciprocal": true
+  },
+  "code_git_hash": "278a5695d9bf1cb0a044368fc0bc0cb88d3ead6b",
+  "config_sha256": "3be8e6e711796ec720cb02666ce8ba70478b28e031452a278e9824fc5dd4bbd7",
+  "integrator": "scipy.integrate.solve_ivp:DOP853",
+  "parameter_sha256": "53896875a4c28e6812100df8034db69641f0d6890e709199be0a7fc839f4592d",
+  "peak_rss_bytes": 284573696,
+  "reference_level": "baseline",
+  "reference_path": "06_experiments/stage_01f5b_requalification_execution/references/f5_ref_space_b_n16_baseline.npz",
+  "reference_sha256": "89f06cd30399bb69b822c585e73753b2a3f372ab6009d248a508548fe92dce95",
+  "resolution": 16,
+  "run_id": "f5_ref_space_b_n16_baseline",
+  "sample_count": 21,
+  "schema_version": "sph-pio-poc.stage01f5b.reference-run.v1",
+  "solution": "MMS_B",
+  "sparse_dense_audit": {
+    "maximum_absolute_difference": 3.3306690738754696e-15,
+    "maximum_relative_difference": 5.706060137017718e-16,
+    "sample_count": 10,
+    "samples": [
+      {
+        "absolute": 2.55351295663786e-15,
+        "relative": 3.615981236071993e-16,
+        "sample_index": 0,
+        "time": 0.0
+      },
+      {
+        "absolute": 2.9976021664879227e-15,
+        "relative": 4.2443091995235365e-16,
+        "sample_index": 2,
+        "time": 0.002
+      },
+      {
+        "absolute": 2.220446049250313e-15,
+        "relative": 4.263745229352968e-16,
+        "sample_index": 4,
+        "time": 0.004
+      },
+      {
+        "absolute": 2.6645352591003757e-15,
+        "relative": 4.631581052733091e-16,
+        "sample_index": 7,
+        "time": 0.007
+      },
+      {
+        "absolute": 3.1086244689504383e-15,
+        "relative": 4.655252646655575e-16,
+        "sample_index": 9,
+        "time": 0.009000000000000001
+      },
+      {
+        "absolute": 3.3306690738754696e-15,
+        "relative": 4.724825812855508e-16,
+        "sample_index": 11,
+        "time": 0.011
+      },
+      {
+        "absolute": 2.7755575615628914e-15,
+        "relative": 5.294045132648467e-16,
+        "sample_index": 13,
+        "time": 0.013000000000000001
+      },
+      {
+        "absolute": 3.1086244689504383e-15,
+        "relative": 5.625021399262422e-16,
+        "sample_index": 16,
+        "time": 0.016
+      },
+      {
+        "absolute": 3.3306690738754696e-15,
+        "relative": 5.677992489808829e-16,
+        "sample_index": 18,
+        "time": 0.018000000000000002
+      },
+      {
+        "absolute": 3.1086244689504383e-15,
+        "relative": 5.706060137017718e-16,
+        "sample_index": 20,
+        "time": 0.02
+      }
+    ]
+  },
+  "statistics": {
+    "atol": 1e-14,
+    "max_step": 3.125e-05,
+    "nfev": 7745,
+    "njev": 0,
+    "nlu": 0,
+    "rtol": 1e-12
+  },
+  "status": "PASS",
+  "support_ratio": 4.06155281280883,
+  "t_final": 0.02,
+  "topology": {
+    "maximum_structural_defects": 0,
+    "reciprocal_switching": true,
+    "rhs_calls": 7745,
+    "switching_transition_count": 74,
+    "unique_edge_counts": [
+      12480,
+      12496,
+      12512,
+      12528,
+      12544,
+      12560,
+      12576,
+      12592,
+      12608,
+      12624,
+      12640,
+      12656,
+      12672,
+      12688,
+      12704,
+      12720,
+      12736,
+      12752,
+      12768,
+      12784,
+      12800,
+      12816,
+      12832
+    ],
+    "unique_edge_identity_count": 55
+  },
+  "wall_time_seconds": 144.9184256249573
+}

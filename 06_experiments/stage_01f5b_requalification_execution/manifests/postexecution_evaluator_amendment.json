@@ -1,0 +1,21 @@
+{
+  "amendment_timestamp": "2026-08-03T10:30:55Z",
+  "frozen_numerical_source_commit": "38487d66b40fa2c8dd65eb7aa6c279da4a8e5e2c",
+  "frozen_stage01f5q_commit": "8ab58b8647c1dd1e5cfe71a77cf6ec71c93a1484",
+  "numerical_execution_complete": true,
+  "numerical_source_runner_config_change": false,
+  "postexecution_evaluator_sha256": "6c6fae47dc73a6c9472f164af5ba62ae40fcd7f158271e01768c592b83e57c21",
+  "preexecution_evaluator_sha256": "1d4b1fdd7602b3912c4a7c2bd55d66c0b3f201d700a29d9d35503035acabe848",
+  "reason": "The frozen coordinator encountered a non-solver symbolic smoke-t_final parsing failure before launching f5_n64_smoke_a. The protocol-authorized unique f5_n64_smoke_a_infra_retry1 completed with the frozen parameters. The evaluator amendment preserves the original raw FAIL and validates the retry before assigning only the effective N64-DAG predecessor state.",
+  "registry_at_amendment": {
+    "fail": 1,
+    "pass": 69,
+    "running": 0
+  },
+  "schema_version": "sph-pio-poc.stage01f5b.postexecution-evaluator-amendment.v1",
+  "scientific_gate_or_threshold_change": false,
+  "scope": "infrastructure_retry_reconciliation_only",
+  "stage01g_started": false,
+  "training_started": false,
+  "v3_started": false
+}

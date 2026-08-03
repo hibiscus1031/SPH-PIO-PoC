@@ -1,0 +1,114 @@
+{
+  "checks": {
+    "all_states_finite": true,
+    "cyclic_gc_enabled": true,
+    "peak_rss": true,
+    "sparse_dense_absolute": true,
+    "sparse_dense_relative": true,
+    "sparse_dense_sample_count": true,
+    "topology_structural": true,
+    "topology_switching_reciprocal": true
+  },
+  "code_git_hash": "e4c2864ebf8089e55ab449590e8c0ef815c0dfcb",
+  "config_sha256": "3be8e6e711796ec720cb02666ce8ba70478b28e031452a278e9824fc5dd4bbd7",
+  "integrator": "scipy.integrate.solve_ivp:DOP853",
+  "parameter_sha256": "53896875a4c28e6812100df8034db69641f0d6890e709199be0a7fc839f4592d",
+  "peak_rss_bytes": 379158528,
+  "reference_level": "baseline",
+  "reference_path": "06_experiments/stage_01f5b_requalification_execution/references/f5_ref_hold_a_baseline.npz",
+  "reference_sha256": "184713053599359e639a9ac6da2459190c10add758871856303609d62969f438",
+  "resolution": 28,
+  "run_id": "f5_ref_hold_a_baseline",
+  "sample_count": 16,
+  "schema_version": "sph-pio-poc.stage01f5b.reference-run.v1",
+  "solution": "MMS_A",
+  "sparse_dense_audit": {
+    "maximum_absolute_difference": 9.103828801926284e-15,
+    "maximum_relative_difference": 1.894617634951734e-14,
+    "sample_count": 10,
+    "samples": [
+      {
+        "absolute": 5.773159728050814e-15,
+        "relative": 4.80765518587999e-15,
+        "sample_index": 0,
+        "time": 0.0
+      },
+      {
+        "absolute": 4.773959005888173e-15,
+        "relative": 5.1617108548491326e-15,
+        "sample_index": 2,
+        "time": 0.002
+      },
+      {
+        "absolute": 5.995204332975845e-15,
+        "relative": 5.221130351963636e-15,
+        "sample_index": 3,
+        "time": 0.003
+      },
+      {
+        "absolute": 5.773159728050814e-15,
+        "relative": 5.529522049788842e-15,
+        "sample_index": 5,
+        "time": 0.005
+      },
+      {
+        "absolute": 4.884981308350689e-15,
+        "relative": 6.1828155224300905e-15,
+        "sample_index": 7,
+        "time": 0.007
+      },
+      {
+        "absolute": 5.440092820663267e-15,
+        "relative": 6.5511223860126065e-15,
+        "sample_index": 8,
+        "time": 0.008
+      },
+      {
+        "absolute": 5.10702591327572e-15,
+        "relative": 7.893535923168805e-15,
+        "sample_index": 10,
+        "time": 0.01
+      },
+      {
+        "absolute": 6.5503158452884236e-15,
+        "relative": 1.0177315352390972e-14,
+        "sample_index": 12,
+        "time": 0.012
+      },
+      {
+        "absolute": 6.994405055138486e-15,
+        "relative": 1.2169869952270422e-14,
+        "sample_index": 13,
+        "time": 0.013000000000000001
+      },
+      {
+        "absolute": 9.103828801926284e-15,
+        "relative": 1.894617634951734e-14,
+        "sample_index": 15,
+        "time": 0.015
+      }
+    ]
+  },
+  "statistics": {
+    "atol": 1e-14,
+    "max_step": 3.125e-05,
+    "nfev": 5810,
+    "njev": 0,
+    "nlu": 0,
+    "rtol": 1e-12
+  },
+  "status": "PASS",
+  "support_ratio": 4.75,
+  "t_final": 0.015,
+  "topology": {
+    "maximum_structural_defects": 0,
+    "reciprocal_switching": true,
+    "rhs_calls": 5810,
+    "switching_transition_count": 0,
+    "unique_edge_counts": [
+      54096
+    ],
+    "unique_edge_identity_count": 1
+  },
+  "wall_time_seconds": 413.979658583994
+}

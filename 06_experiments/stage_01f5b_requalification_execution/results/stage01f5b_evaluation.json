@@ -1,0 +1,325 @@
+{
+  "effective_run_statuses": {
+    "f5_hold_a_dt1e3": "PASS",
+    "f5_hold_a_dt1p25e4": "PASS",
+    "f5_hold_a_dt2p5e4": "PASS",
+    "f5_hold_a_dt5e4": "PASS",
+    "f5_hold_a_dt6p25e5": "PASS",
+    "f5_hold_a_dt6p25e5_rep2": "PASS",
+    "f5_hold_b_dt1e3": "PASS",
+    "f5_hold_b_dt1p25e4": "PASS",
+    "f5_hold_b_dt2p5e4": "PASS",
+    "f5_hold_b_dt5e4": "PASS",
+    "f5_hold_b_dt6p25e5": "PASS",
+    "f5_hold_b_dt6p25e5_rep2": "PASS",
+    "f5_main_a_dt1e3": "PASS",
+    "f5_main_a_dt1p25e4": "PASS",
+    "f5_main_a_dt2p5e4": "PASS",
+    "f5_main_a_dt5e4": "PASS",
+    "f5_main_a_dt6p25e5": "PASS",
+    "f5_main_a_dt6p25e5_rep2": "PASS",
+    "f5_main_b_dt1e3": "PASS",
+    "f5_main_b_dt1p25e4": "PASS",
+    "f5_main_b_dt2p5e4": "PASS",
+    "f5_main_b_dt5e4": "PASS",
+    "f5_main_b_dt6p25e5": "PASS",
+    "f5_main_b_dt6p25e5_rep2": "PASS",
+    "f5_n64_smoke_a": "PASS",
+    "f5_n64_smoke_b": "PASS",
+    "f5_ref_hold_a_baseline": "PASS",
+    "f5_ref_hold_a_third": "PASS",
+    "f5_ref_hold_a_tighter": "PASS",
+    "f5_ref_hold_b_baseline": "PASS",
+    "f5_ref_hold_b_third": "PASS",
+    "f5_ref_hold_b_tighter": "PASS",
+    "f5_ref_main_a_baseline": "PASS",
+    "f5_ref_main_a_third": "PASS",
+    "f5_ref_main_a_tighter": "PASS",
+    "f5_ref_main_b_baseline": "PASS",
+    "f5_ref_main_b_third": "PASS",
+    "f5_ref_main_b_tighter": "PASS",
+    "f5_ref_space_b_n16_baseline": "PASS",
+    "f5_ref_space_b_n16_third": "PASS",
+    "f5_ref_space_b_n16_tighter": "PASS",
+    "f5_ref_space_b_n24_baseline": "PASS",
+    "f5_ref_space_b_n24_third": "PASS",
+    "f5_ref_space_b_n24_tighter": "PASS",
+    "f5_ref_space_b_n32_baseline": "PASS",
+    "f5_ref_space_b_n32_third": "PASS",
+    "f5_ref_space_b_n32_tighter": "PASS",
+    "f5_ref_space_b_n48_baseline": "PASS",
+    "f5_ref_space_b_n48_third": "PASS",
+    "f5_ref_space_b_n48_tighter": "PASS",
+    "f5_ref_space_b_n64_baseline": "PASS",
+    "f5_ref_space_b_n64_third": "PASS",
+    "f5_ref_space_b_n64_tighter": "PASS",
+    "f5_space_a_n16": "PASS",
+    "f5_space_a_n24": "PASS",
+    "f5_space_a_n32": "PASS",
+    "f5_space_a_n32_rep2": "PASS",
+    "f5_space_a_n48": "PASS",
+    "f5_space_a_n64": "PASS",
+    "f5_space_b_n16": "PASS",
+    "f5_space_b_n24": "PASS",
+    "f5_space_b_n32": "PASS",
+    "f5_space_b_n32_rep2": "PASS",
+    "f5_space_b_n48": "PASS",
+    "f5_space_b_n64": "PASS",
+    "f5_space_iso_a_dt3p125e5": "PASS",
+    "f5_space_iso_a_dt6p25e5": "PASS",
+    "f5_space_iso_b_dt3p125e5": "PASS",
+    "f5_space_iso_b_dt6p25e5": "PASS"
+  },
+  "gate_blocks": {
+    "H1_H5": true,
+    "S1_S4": true,
+    "T1_T5_P1_P3": true,
+    "all_unconditional_hard_and_reference_runs_pass": true,
+    "determinism": true,
+    "n64_branch": true,
+    "preflight": true,
+    "provenance": true,
+    "reference_qualification": true,
+    "space_step_decision": true,
+    "unconditional_complete": true
+  },
+  "gci": {
+    "MMS_A": {
+      "density": {
+        "local_order_relative_changes": [
+          0.2559454430829162,
+          0.28306114823689954
+        ],
+        "qualified": false,
+        "statement": "GCI not justified"
+      },
+      "position": {
+        "local_order_relative_changes": [
+          0.18281707849983864,
+          0.3346793554437153
+        ],
+        "qualified": false,
+        "statement": "GCI not justified"
+      },
+      "pressure": {
+        "local_order_relative_changes": [
+          0.25594544308291595,
+          0.28306114823689943
+        ],
+        "qualified": false,
+        "statement": "GCI not justified"
+      },
+      "velocity": {
+        "local_order_relative_changes": [
+          0.19927037825720043,
+          0.31521886869998306
+        ],
+        "qualified": false,
+        "statement": "GCI not justified"
+      }
+    },
+    "MMS_B": {
+      "density": {
+        "local_order_relative_changes": [
+          0.23554637517131938,
+          0.27890714074572504
+        ],
+        "qualified": false,
+        "statement": "GCI not justified"
+      },
+      "position": {
+        "local_order_relative_changes": [
+          0.18276354231341865,
+          0.3344767063104002
+        ],
+        "qualified": false,
+        "statement": "GCI not justified"
+      },
+      "pressure": {
+        "local_order_relative_changes": [
+          0.23554637517131938,
+          0.27890714074572504
+        ],
+        "qualified": false,
+        "statement": "GCI not justified"
+      },
+      "velocity": {
+        "local_order_relative_changes": [
+          0.1989900126741848,
+          0.3146921672905871
+        ],
+        "qualified": false,
+        "statement": "GCI not justified"
+      }
+    }
+  },
+  "heldout_checks": {
+    "H1": true,
+    "H2": true,
+    "H3": true,
+    "H4": true,
+    "H5": true
+  },
+  "infrastructure_retry_reconciliation": {
+    "checks": {
+      "classification_is_pure_non_solver_infrastructure": true,
+      "exactly_one_retry_id": true,
+      "frozen_retry_policy_unchanged": true,
+      "no_numerical_state_generated": true,
+      "original_evidence_retained": true,
+      "original_has_no_numerical_outputs": true,
+      "original_raw_status_is_fail": true,
+      "required_evidence_complete": true,
+      "retry_authorization_matches": true,
+      "retry_checkpoint_present": true,
+      "retry_parameters_match_frozen_smoke": true,
+      "retry_raw_status_is_pass": true,
+      "solver_worker_not_launched": true
+    },
+    "effective_predecessor_status": "PASS",
+    "eligible": true,
+    "original_failure_sha256": "047609812d0959c727574c2714ff917a8c6631438c6c0ed1f5e57888c16462d4",
+    "original_raw_status": "FAIL",
+    "original_run_id": "f5_n64_smoke_a",
+    "retry_checkpoint_sha256": "0595783de3114be9cad219b65c53e3a3da518682f2ea628495a7e296efe99009",
+    "retry_raw_status": "PASS",
+    "retry_run_id": "f5_n64_smoke_a_infra_retry1",
+    "retry_summary_sha256": "8f81864854fc97240946398734d33c2689f4ea7029c2a9ff380b9a5443a48b68"
+  },
+  "labels_generated": false,
+  "main_checks": {
+    "P1": true,
+    "P2": true,
+    "P3": true,
+    "T1": true,
+    "T2": true,
+    "T3": true,
+    "T4": true,
+    "T5": true
+  },
+  "n64_decision": "TRIGGERED",
+  "postexecution_evaluator_amendment": {
+    "amendment_timestamp": "2026-08-03T10:30:55Z",
+    "checks": {
+      "manifest_present": true,
+      "no_numerical_source_runner_config_change": true,
+      "no_scientific_gate_or_threshold_change": true,
+      "numerical_execution_was_complete": true,
+      "postexecution_sha_matches_current_evaluator": true,
+      "preexecution_sha_matches_frozen_manifest": true,
+      "scope_is_infrastructure_retry_reconciliation_only": true
+    },
+    "frozen_numerical_source_commit": "38487d66b40fa2c8dd65eb7aa6c279da4a8e5e2c",
+    "frozen_stage01f5q_commit": "8ab58b8647c1dd1e5cfe71a77cf6ec71c93a1484",
+    "numerical_execution_complete": true,
+    "numerical_source_runner_config_change": false,
+    "postexecution_evaluator_sha256": "6c6fae47dc73a6c9472f164af5ba62ae40fcd7f158271e01768c592b83e57c21",
+    "preexecution_evaluator_sha256": "1d4b1fdd7602b3912c4a7c2bd55d66c0b3f201d700a29d9d35503035acabe848",
+    "reason": "The frozen coordinator encountered a non-solver symbolic smoke-t_final parsing failure before launching f5_n64_smoke_a. The protocol-authorized unique f5_n64_smoke_a_infra_retry1 completed with the frozen parameters. The evaluator amendment preserves the original raw FAIL and validates the retry before assigning only the effective N64-DAG predecessor state.",
+    "registry_at_amendment": {
+      "fail": 1,
+      "pass": 69,
+      "running": 0
+    },
+    "schema_version": "sph-pio-poc.stage01f5b.postexecution-evaluator-amendment.v1",
+    "scientific_gate_or_threshold_change": false,
+    "scope": "infrastructure_retry_reconciliation_only",
+    "stage01g_started": false,
+    "training_started": false,
+    "v3_started": false
+  },
+  "provenance": {
+    "all_summaries_have_hashes": true,
+    "authorized_infrastructure_retry_provenance": true,
+    "config_sha256": "3be8e6e711796ec720cb02666ce8ba70478b28e031452a278e9824fc5dd4bbd7",
+    "matrix_sha256": "ebbfa5fd3ffced88d1995fc34000b4e1a25524cb93d23e9d6fd9b9a4c4ab061b",
+    "n64_decision_immutable": true,
+    "postexecution_evaluator_amendment": true,
+    "space_step_immutable": true
+  },
+  "run_statuses": {
+    "f5_hold_a_dt1e3": "PASS",
+    "f5_hold_a_dt1p25e4": "PASS",
+    "f5_hold_a_dt2p5e4": "PASS",
+    "f5_hold_a_dt5e4": "PASS",
+    "f5_hold_a_dt6p25e5": "PASS",
+    "f5_hold_a_dt6p25e5_rep2": "PASS",
+    "f5_hold_b_dt1e3": "PASS",
+    "f5_hold_b_dt1p25e4": "PASS",
+    "f5_hold_b_dt2p5e4": "PASS",
+    "f5_hold_b_dt5e4": "PASS",
+    "f5_hold_b_dt6p25e5": "PASS",
+    "f5_hold_b_dt6p25e5_rep2": "PASS",
+    "f5_main_a_dt1e3": "PASS",
+    "f5_main_a_dt1p25e4": "PASS",
+    "f5_main_a_dt2p5e4": "PASS",
+    "f5_main_a_dt5e4": "PASS",
+    "f5_main_a_dt6p25e5": "PASS",
+    "f5_main_a_dt6p25e5_rep2": "PASS",
+    "f5_main_b_dt1e3": "PASS",
+    "f5_main_b_dt1p25e4": "PASS",
+    "f5_main_b_dt2p5e4": "PASS",
+    "f5_main_b_dt5e4": "PASS",
+    "f5_main_b_dt6p25e5": "PASS",
+    "f5_main_b_dt6p25e5_rep2": "PASS",
+    "f5_n64_smoke_a": "FAIL",
+    "f5_n64_smoke_b": "PASS",
+    "f5_ref_hold_a_baseline": "PASS",
+    "f5_ref_hold_a_third": "PASS",
+    "f5_ref_hold_a_tighter": "PASS",
+    "f5_ref_hold_b_baseline": "PASS",
+    "f5_ref_hold_b_third": "PASS",
+    "f5_ref_hold_b_tighter": "PASS",
+    "f5_ref_main_a_baseline": "PASS",
+    "f5_ref_main_a_third": "PASS",
+    "f5_ref_main_a_tighter": "PASS",
+    "f5_ref_main_b_baseline": "PASS",
+    "f5_ref_main_b_third": "PASS",
+    "f5_ref_main_b_tighter": "PASS",
+    "f5_ref_space_b_n16_baseline": "PASS",
+    "f5_ref_space_b_n16_third": "PASS",
+    "f5_ref_space_b_n16_tighter": "PASS",
+    "f5_ref_space_b_n24_baseline": "PASS",
+    "f5_ref_space_b_n24_third": "PASS",
+    "f5_ref_space_b_n24_tighter": "PASS",
+    "f5_ref_space_b_n32_baseline": "PASS",
+    "f5_ref_space_b_n32_third": "PASS",
+    "f5_ref_space_b_n32_tighter": "PASS",
+    "f5_ref_space_b_n48_baseline": "PASS",
+    "f5_ref_space_b_n48_third": "PASS",
+    "f5_ref_space_b_n48_tighter": "PASS",
+    "f5_ref_space_b_n64_baseline": "PASS",
+    "f5_ref_space_b_n64_third": "PASS",
+    "f5_ref_space_b_n64_tighter": "PASS",
+    "f5_space_a_n16": "PASS",
+    "f5_space_a_n24": "PASS",
+    "f5_space_a_n32": "PASS",
+    "f5_space_a_n32_rep2": "PASS",
+    "f5_space_a_n48": "PASS",
+    "f5_space_a_n64": "PASS",
+    "f5_space_b_n16": "PASS",
+    "f5_space_b_n24": "PASS",
+    "f5_space_b_n32": "PASS",
+    "f5_space_b_n32_rep2": "PASS",
+    "f5_space_b_n48": "PASS",
+    "f5_space_b_n64": "PASS",
+    "f5_space_iso_a_dt3p125e5": "PASS",
+    "f5_space_iso_a_dt6p25e5": "PASS",
+    "f5_space_iso_b_dt3p125e5": "PASS",
+    "f5_space_iso_b_dt6p25e5": "PASS"
+  },
+  "schema_version": "sph-pio-poc.stage01f5b.evaluation.v1",
+  "spatial_checks": {
+    "S1": true,
+    "S2": true,
+    "S3": true,
+    "S4": true
+  },
+  "stage01g_application_eligible": true,
+  "stage01g_started": false,
+  "stage02_started": false,
+  "training_started": false,
+  "unique_status": "PLATEAU_AWARE_MMS_REQUALIFICATION_PASS",
+  "unreconciled_failures": [],
+  "v3_started": false
+}

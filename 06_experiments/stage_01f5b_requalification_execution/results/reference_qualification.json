@@ -1,0 +1,267 @@
+{
+  "items": {
+    "f5_ref_hold_a": {
+      "checks": {
+        "position_sensitivity": true,
+        "three_runs_pass": true,
+        "velocity_sensitivity": true
+      },
+      "fields": {
+        "position": {
+          "baseline_tighter_endpoint": 1.2763821175466651e-15,
+          "baseline_tighter_integrated": 9.144145397487316e-16,
+          "linf": 5.551115123125783e-15,
+          "tighter_third_endpoint": 1.7768571320547144e-15,
+          "tighter_third_integrated": 1.2623587974274545e-15,
+          "uncertainty_endpoint": 1.7768571320547144e-15,
+          "uncertainty_integrated": 1.2623587974274545e-15
+        },
+        "velocity": {
+          "baseline_tighter_endpoint": 4.1323280572102316e-14,
+          "baseline_tighter_integrated": 2.4313753825293808e-14,
+          "linf": 2.0367041386748497e-13,
+          "tighter_third_endpoint": 7.238719569516793e-14,
+          "tighter_third_integrated": 4.0591421458293864e-14,
+          "uncertainty_endpoint": 7.238719569516793e-14,
+          "uncertainty_integrated": 4.0591421458293864e-14
+        }
+      },
+      "prefix": "f5_ref_hold_a",
+      "status": "PASS"
+    },
+    "f5_ref_hold_b": {
+      "checks": {
+        "position_sensitivity": true,
+        "three_runs_pass": true,
+        "velocity_sensitivity": true
+      },
+      "fields": {
+        "position": {
+          "baseline_tighter_endpoint": 1.2186064466351487e-15,
+          "baseline_tighter_integrated": 8.822126927763616e-16,
+          "linf": 5.995204332975845e-15,
+          "tighter_third_endpoint": 1.8264330672676085e-15,
+          "tighter_third_integrated": 1.2984007642719905e-15,
+          "uncertainty_endpoint": 1.8264330672676085e-15,
+          "uncertainty_integrated": 1.2984007642719905e-15
+        },
+        "velocity": {
+          "baseline_tighter_endpoint": 4.030363198402135e-14,
+          "baseline_tighter_integrated": 2.413108973569318e-14,
+          "linf": 1.1295131496780186e-13,
+          "tighter_third_endpoint": 5.4366288301681134e-14,
+          "tighter_third_integrated": 3.1694232726967854e-14,
+          "uncertainty_endpoint": 5.4366288301681134e-14,
+          "uncertainty_integrated": 3.1694232726967854e-14
+        }
+      },
+      "prefix": "f5_ref_hold_b",
+      "status": "PASS"
+    },
+    "f5_ref_main_a": {
+      "checks": {
+        "position_sensitivity": true,
+        "three_runs_pass": true,
+        "velocity_sensitivity": true
+      },
+      "fields": {
+        "position": {
+          "baseline_tighter_endpoint": 1.2057974410542517e-15,
+          "baseline_tighter_integrated": 8.780480148507921e-16,
+          "linf": 4.6629367034256575e-15,
+          "tighter_third_endpoint": 1.6676575906871716e-15,
+          "tighter_third_integrated": 1.1962454297323102e-15,
+          "uncertainty_endpoint": 1.6676575906871716e-15,
+          "uncertainty_integrated": 1.1962454297323102e-15
+        },
+        "velocity": {
+          "baseline_tighter_endpoint": 3.3259612632133494e-14,
+          "baseline_tighter_integrated": 1.9234944890864442e-14,
+          "linf": 1.2956302697375577e-13,
+          "tighter_third_endpoint": 5.046346603065719e-14,
+          "tighter_third_integrated": 2.7622731585729336e-14,
+          "uncertainty_endpoint": 5.046346603065719e-14,
+          "uncertainty_integrated": 2.7622731585729336e-14
+        }
+      },
+      "prefix": "f5_ref_main_a",
+      "status": "PASS"
+    },
+    "f5_ref_main_b": {
+      "checks": {
+        "position_sensitivity": true,
+        "three_runs_pass": true,
+        "velocity_sensitivity": true
+      },
+      "fields": {
+        "position": {
+          "baseline_tighter_endpoint": 1.2485795829582897e-15,
+          "baseline_tighter_integrated": 8.787291766357664e-16,
+          "linf": 4.551914400963142e-15,
+          "tighter_third_endpoint": 1.7909747573711813e-15,
+          "tighter_third_integrated": 1.2749976366481504e-15,
+          "uncertainty_endpoint": 1.7909747573711813e-15,
+          "uncertainty_integrated": 1.2749976366481504e-15
+        },
+        "velocity": {
+          "baseline_tighter_endpoint": 3.2392325216890836e-14,
+          "baseline_tighter_integrated": 1.7606795016834004e-14,
+          "linf": 1.1238232566768147e-13,
+          "tighter_third_endpoint": 4.198435914316175e-14,
+          "tighter_third_integrated": 2.3744233727956574e-14,
+          "uncertainty_endpoint": 4.198435914316175e-14,
+          "uncertainty_integrated": 2.3744233727956574e-14
+        }
+      },
+      "prefix": "f5_ref_main_b",
+      "status": "PASS"
+    },
+    "f5_ref_space_b_n16": {
+      "checks": {
+        "position_sensitivity": true,
+        "three_runs_pass": true,
+        "velocity_sensitivity": true
+      },
+      "fields": {
+        "position": {
+          "baseline_tighter_endpoint": 1.33494826251309e-15,
+          "baseline_tighter_integrated": 9.281347806411969e-16,
+          "linf": 5.662137425588298e-15,
+          "tighter_third_endpoint": 1.9570387282590185e-15,
+          "tighter_third_integrated": 1.4199423459046378e-15,
+          "uncertainty_endpoint": 1.9570387282590185e-15,
+          "uncertainty_integrated": 1.4199423459046378e-15
+        },
+        "velocity": {
+          "baseline_tighter_endpoint": 2.970585253441837e-14,
+          "baseline_tighter_integrated": 1.7986825850890163e-14,
+          "linf": 8.604228440844963e-14,
+          "tighter_third_endpoint": 4.070184213771764e-14,
+          "tighter_third_integrated": 2.2769081162830996e-14,
+          "uncertainty_endpoint": 4.070184213771764e-14,
+          "uncertainty_integrated": 2.2769081162830996e-14
+        }
+      },
+      "prefix": "f5_ref_space_b_n16",
+      "status": "PASS"
+    },
+    "f5_ref_space_b_n24": {
+      "checks": {
+        "position_sensitivity": true,
+        "three_runs_pass": true,
+        "velocity_sensitivity": true
+      },
+      "fields": {
+        "position": {
+          "baseline_tighter_endpoint": 1.3795038436642052e-15,
+          "baseline_tighter_integrated": 9.95027247330629e-16,
+          "linf": 5.773159728050814e-15,
+          "tighter_third_endpoint": 1.98247816097781e-15,
+          "tighter_third_integrated": 1.4698868859623212e-15,
+          "uncertainty_endpoint": 1.98247816097781e-15,
+          "uncertainty_integrated": 1.4698868859623212e-15
+        },
+        "velocity": {
+          "baseline_tighter_endpoint": 4.018078401822267e-14,
+          "baseline_tighter_integrated": 2.360175162988307e-14,
+          "linf": 1.5160095401256513e-13,
+          "tighter_third_endpoint": 6.838905849325127e-14,
+          "tighter_third_integrated": 4.4708402510680445e-14,
+          "uncertainty_endpoint": 6.838905849325127e-14,
+          "uncertainty_integrated": 4.4708402510680445e-14
+        }
+      },
+      "prefix": "f5_ref_space_b_n24",
+      "status": "PASS"
+    },
+    "f5_ref_space_b_n32": {
+      "checks": {
+        "position_sensitivity": true,
+        "three_runs_pass": true,
+        "velocity_sensitivity": true
+      },
+      "fields": {
+        "position": {
+          "baseline_tighter_endpoint": 1.4624788918151205e-15,
+          "baseline_tighter_integrated": 1.066749665651367e-15,
+          "linf": 6.5503158452884236e-15,
+          "tighter_third_endpoint": 2.0106559075780493e-15,
+          "tighter_third_integrated": 1.4775574528710296e-15,
+          "uncertainty_endpoint": 2.0106559075780493e-15,
+          "uncertainty_integrated": 1.4775574528710296e-15
+        },
+        "velocity": {
+          "baseline_tighter_endpoint": 5.830624767040967e-14,
+          "baseline_tighter_integrated": 3.976650027325073e-14,
+          "linf": 1.5688839116734243e-13,
+          "tighter_third_endpoint": 7.011324038133179e-14,
+          "tighter_third_integrated": 4.7941070119758254e-14,
+          "uncertainty_endpoint": 7.011324038133179e-14,
+          "uncertainty_integrated": 4.7941070119758254e-14
+        }
+      },
+      "prefix": "f5_ref_space_b_n32",
+      "status": "PASS"
+    },
+    "f5_ref_space_b_n48": {
+      "checks": {
+        "position_sensitivity": true,
+        "three_runs_pass": true,
+        "velocity_sensitivity": true
+      },
+      "fields": {
+        "position": {
+          "baseline_tighter_endpoint": 1.4615760079650754e-15,
+          "baseline_tighter_integrated": 1.0357366321027215e-15,
+          "linf": 7.549516567451064e-15,
+          "tighter_third_endpoint": 2.17462560389162e-15,
+          "tighter_third_integrated": 1.505375821916814e-15,
+          "uncertainty_endpoint": 2.17462560389162e-15,
+          "uncertainty_integrated": 1.505375821916814e-15
+        },
+        "velocity": {
+          "baseline_tighter_endpoint": 6.044387219268402e-14,
+          "baseline_tighter_integrated": 4.294151993260379e-14,
+          "linf": 2.533528942194607e-13,
+          "tighter_third_endpoint": 7.334979571856294e-14,
+          "tighter_third_integrated": 5.2157469648072896e-14,
+          "uncertainty_endpoint": 7.334979571856294e-14,
+          "uncertainty_integrated": 5.2157469648072896e-14
+        }
+      },
+      "prefix": "f5_ref_space_b_n48",
+      "status": "PASS"
+    },
+    "f5_ref_space_b_n64": {
+      "checks": {
+        "position_sensitivity": true,
+        "three_runs_pass": true,
+        "velocity_sensitivity": true
+      },
+      "fields": {
+        "position": {
+          "baseline_tighter_endpoint": 1.431011324183537e-15,
+          "baseline_tighter_integrated": 1.0175744837758479e-15,
+          "linf": 6.106226635438361e-15,
+          "tighter_third_endpoint": 1.9975191428636877e-15,
+          "tighter_third_integrated": 1.439861475465582e-15,
+          "uncertainty_endpoint": 1.9975191428636877e-15,
+          "uncertainty_integrated": 1.439861475465582e-15
+        },
+        "velocity": {
+          "baseline_tighter_endpoint": 6.176191102993458e-14,
+          "baseline_tighter_integrated": 4.266948984862916e-14,
+          "linf": 3.259059688787147e-13,
+          "tighter_third_endpoint": 9.027743352161366e-14,
+          "tighter_third_integrated": 6.098808699197679e-14,
+          "uncertainty_endpoint": 9.027743352161366e-14,
+          "uncertainty_integrated": 6.098808699197679e-14
+        }
+      },
+      "prefix": "f5_ref_space_b_n64",
+      "status": "PASS"
+    }
+  },
+  "schema_version": "sph-pio-poc.stage01f5b.reference-qualification.v1",
+  "status": "PASS"
+}

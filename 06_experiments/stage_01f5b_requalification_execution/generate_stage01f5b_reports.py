@@ -117,7 +117,8 @@ Total exact-error monotonicity, cross-term sign agreement with the main configur
     for row in n64["trigger_rows"]:
         trigger_lines.append(f"| {row['solution']} | {row['field']} | {row['any_primary_error_nonmonotone']} | {row['n48_n32_ratio_greater_than_0p95']} | {row['local_order_sign_inconsistent']} | {row['near_asymptotic_entry_unclear']} |")
     k_rows = [row for row in run_rows if row["conditional"] == "true"]
-    write("stage_01f5b_n64_branch.md", "# Stage 01F5B N64 branch\n\n" + "\n".join(trigger_lines) + f"\n\nImmutable decision: `{n64['decision']}`.\n\n| Conditional run | Status |\n|---|---|\n" + "\n".join(f"| {row['run_id']} | {row['status']} |" for row in k_rows))
+    retry = evaluation["infrastructure_retry_reconciliation"]
+    write("stage_01f5b_n64_branch.md", "# Stage 01F5B N64 branch\n\n" + "\n".join(trigger_lines) + f"\n\nImmutable decision: `{n64['decision']}`.\n\nThe original `{retry['original_run_id']}` raw status remains `{retry['original_raw_status']}`. It generated no numerical state and retained the original pure-infrastructure failure evidence. The protocol-authorized unique `{retry['retry_run_id']}` status is `{retry['retry_raw_status']}`; the effective frozen-DAG predecessor status is `{retry['effective_predecessor_status']}`.\n\n| Conditional run | Raw status | Effective status |\n|---|---|---|\n" + "\n".join(f"| {row['run_id']} | {row['status']} | {row['effective_status']} |" for row in k_rows))
 
     write("stage_01f5b_balance_resources_determinism.md", "# Stage 01F5B balance, resources, and determinism\n\nAll numerical summaries retain pair-force, internal-force, assembly, momentum, viscous-power, minimum-separation, topology, source-call, RSS, and step-time gates. A hard-safety failure cannot be overridden by order, plateau, or GCI evidence.\n\n| Base | Repeat | Status |\n|---|---|---|\n" + "\n".join(f"| {row['base']} | {row['repeat']} | {row['status']} |" for row in determinism["pairs"]) + f"\n\nSix-pair determinism status: `{determinism['status']}`. Arrays, masses, common times, edge hashes, topology-event hash, and numerical scalar summaries were compared bitwise.")
 
@@ -127,7 +128,7 @@ Total exact-error monotonicity, cross-term sign agreement with the main configur
             gci_lines.append(f"| {solution} | {field} | {'PASS' if item['qualified'] else 'NOT JUSTIFIED'} | {item['statement']} |")
     write("stage_01f5b_uncertainty_and_gci.md", "# Stage 01F5B uncertainty and GCI\n\nReference uncertainty was evaluated separately for position/velocity and endpoint/integrated norms. GCI is variable-specific and is not required for the overall status.\n\n" + "\n".join(gci_lines))
 
-    status_table = ["| Run ID | Category | Status |", "|---|---|---|"] + [f"| {row['run_id']} | {row['category']} | {row['status']} |" for row in run_rows]
+    status_table = ["| Run ID | Category | Raw status | Effective status |", "|---|---|---|---|"] + [f"| {row['run_id']} | {row['category']} | {row['status']} | {row['effective_status']} |" for row in run_rows]
     eligibility = "eligible to apply for Stage 01G design" if evaluation["stage01g_application_eligible"] else "not eligible to apply for Stage 01G"
     write("stage_01f5b_final_report.md", f"""# Stage 01F5B final report
 
@@ -164,6 +165,10 @@ The spatial claim is limited to increasing-neighbor consistency-path convergence
 ## 7. N64 branch
 
 The immutable N64 trigger decision was `{n64['decision']}` and the frozen DAG was followed. Conditional statuses are recorded in the full run table.
+
+The original `f5_n64_smoke_a` infrastructure failure remains raw `FAIL`; it launched no solver and generated no numerical state. Its sole authorized `_infra_retry1` is recorded separately, and the evaluator validates parameter identity and all retained provenance before assigning the effective predecessor status. No scientific failure is reclassified by this mechanism.
+
+The postexecution evaluator amendment is separately hash-sealed. Its scope is infrastructure-retry reconciliation only; it records no numerical-source, runner, configuration, scientific-gate, threshold, trigger, or execution-order change.
 
 ## 8. Safety, provenance, determinism, and GCI
 
