@@ -1,0 +1,46 @@
+{
+  "complete": true,
+  "components": {
+    "acoustic_finite_amplitude_model_form": {
+      "status": "REPORTED"
+    },
+    "analytic_or_linear_reference": {
+      "acoustic": "independent linear theory; finite-amplitude departure separate",
+      "shear": "analytic continuum field and unwrapped trajectory",
+      "status": "REPORTED"
+    },
+    "float64_determinism": {
+      "status": "REPORTED"
+    },
+    "increasing_neighbor_spatial_envelope": {
+      "status": "REPORTED"
+    },
+    "kernel_density_eos_background": {
+      "acoustic_density_bias": 4.487695160300788e-05,
+      "acoustic_pressure_bias": 0.017950780641203153,
+      "shear_density_drift_linf": 4.401800624309615e-05,
+      "status": "REPORTED"
+    },
+    "n48_n32_difference": {
+      "acoustic_density": 0.03988842334348795,
+      "shear_velocity": 0.0037581452220087092,
+      "status": "REPORTED"
+    },
+    "rk2_time_step": {
+      "acoustic_density_relative_change": 5.402670968119098e-05,
+      "shear_velocity_relative_change": 5.061130637307344e-09,
+      "status": "REPORTED"
+    },
+    "stage01f5b_gci_not_justified_limitation": {
+      "statement": "GCI not justified; no single total GCI is generated",
+      "status": "REPORTED"
+    },
+    "topology_and_resource": {
+      "diagnostics_present": true,
+      "run_count": 12,
+      "status": "REPORTED"
+    }
+  },
+  "gci_statement": "GCI not justified",
+  "single_total_gci": null
+}

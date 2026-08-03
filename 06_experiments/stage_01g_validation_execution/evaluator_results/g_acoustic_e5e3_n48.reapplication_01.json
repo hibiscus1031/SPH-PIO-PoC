@@ -1,0 +1,140 @@
+{
+  "benchmark": "acoustic",
+  "diagnostics": {
+    "determinism": {
+      "status": "CAPTURED_FOR_CROSS_RUN_COMPARISON"
+    },
+    "hard_safety": {
+      "current_rss_bytes": 463306752,
+      "force_assembly_defect": 0.0,
+      "minimum_separation_over_dx": 0.9900527885739869,
+      "momentum_update_defect": 3.6440035017237806e-17,
+      "normalized_internal_force_residual": 4.5005905444643126e-17,
+      "pair_force_residual": 0.0,
+      "peak_rss_bytes": 472956928,
+      "rss_q4_minus_q1_bytes": 37699584.0,
+      "rss_q4_over_q1": 1.0901963858727608,
+      "source_call_count": 0,
+      "step_time_q4_over_q1": 1.0718069236065955,
+      "structural_topology_defects": 0,
+      "viscous_power_positive_tolerance": 0.0
+    },
+    "resource": {
+      "child_fully_reclaimed": true,
+      "current_rss_bytes": 463306752,
+      "cyclic_gc_default": true,
+      "in_loop_gc_collect": false,
+      "independent_child_process": true,
+      "parent_scalar_only": true,
+      "peak_rss_bytes": 472956928,
+      "rss_q4_minus_q1_bytes": 37699584.0,
+      "rss_q4_over_q1": 1.0901963858727608,
+      "rss_sample_count": 267,
+      "step_time_q4_over_q1": 1.0718069236065955,
+      "torch_no_grad": true
+    },
+    "topology": {
+      "maximum_structural_defects": 0,
+      "status": "PASS"
+    },
+    "viscous_power": 0.0
+  },
+  "per_time": [
+    {
+      "density_fundamental": 0.004931942264137961,
+      "density_l2": 6.521895873813571e-05,
+      "density_linf": 0.00011193002526810325,
+      "density_second_harmonic": -1.2021748037967152e-16,
+      "pressure_l2": 0.026087583495254283,
+      "pressure_linf": 0.0447720101072413,
+      "second_harmonic_ratio": 2.4375281368117142e-14,
+      "time": 0.0,
+      "velocity_fundamental": 0.0,
+      "velocity_l2": 0.0,
+      "velocity_linf": 0.0,
+      "velocity_second_harmonic": 0.0
+    },
+    {
+      "density_fundamental": 0.00010645385769060665,
+      "density_l2": 8.754103001794102e-05,
+      "density_linf": 0.0001611899108382442,
+      "density_second_harmonic": 1.0602972109635811e-05,
+      "pressure_l2": 0.03501641200717641,
+      "pressure_linf": 0.06447596433529768,
+      "second_harmonic_ratio": 0.005154321311054031,
+      "time": 0.025,
+      "velocity_fundamental": 0.09861196058742842,
+      "velocity_l2": 0.0009938288687853685,
+      "velocity_linf": 0.0014499814320712706,
+      "velocity_second_harmonic": -0.000462057865748758
+    },
+    {
+      "density_fundamental": -0.004927743197511066,
+      "density_l2": 6.752905372332152e-05,
+      "density_linf": 0.00012120444952667953,
+      "density_second_harmonic": 2.9116461737920563e-05,
+      "pressure_l2": 0.027011621489328612,
+      "pressure_linf": 0.04848177981067181,
+      "second_harmonic_ratio": 0.007237554456285141,
+      "time": 0.05,
+      "velocity_fundamental": 0.0042656825500860624,
+      "velocity_l2": 0.0030318526221584942,
+      "velocity_linf": 0.00435187545166231,
+      "velocity_second_harmonic": 0.0004130826463636399
+    },
+    {
+      "density_fundamental": -0.00032012898802236513,
+      "density_l2": 0.00023061239527863515,
+      "density_linf": 0.0003651838475111635,
+      "density_second_harmonic": 2.783249558007789e-06,
+      "pressure_l2": 0.09224495811145407,
+      "pressure_linf": 0.1460735390044654,
+      "second_harmonic_ratio": 0.003793677467183828,
+      "time": 0.075,
+      "velocity_fundamental": -0.09842343861781362,
+      "velocity_l2": 0.0012010496149988455,
+      "velocity_linf": 0.0019152995315410148,
+      "velocity_second_harmonic": -0.0003700122544184888
+    },
+    {
+      "density_fundamental": 0.004913309270157468,
+      "density_l2": 7.648554050502215e-05,
+      "density_linf": 0.00014831790847835702,
+      "density_second_harmonic": 1.7542475930385765e-05,
+      "pressure_l2": 0.03059421620200886,
+      "pressure_linf": 0.05932716339134281,
+      "second_harmonic_ratio": 0.008910052670018093,
+      "time": 0.1,
+      "velocity_fundamental": -0.008526973325529196,
+      "velocity_l2": 0.006056310855993768,
+      "velocity_linf": 0.008677733215116664,
+      "velocity_second_harmonic": 0.0008057771392417561
+    }
+  ],
+  "run_id": "g_acoustic_e5e3_n48",
+  "schema_version": "stage01ge-evaluator-v1",
+  "summary": {
+    "all_finite": true,
+    "claim": "linear-acoustic-regime_validation",
+    "density_bias": 4.487695160300788e-05,
+    "density_fundamental_amplitude": 0.004928948641845549,
+    "density_fundamental_amplitude_relative_error": 0.014210271630889925,
+    "density_signal_normalized_l2": 0.044872652064768884,
+    "epsilon": 0.005,
+    "mean_momentum_drift": 5.935876784726789e-17,
+    "one_period_phase_error": 0.013776041211677841,
+    "phase_speed": 19.724359447685853,
+    "phase_speed_relative_error": 0.013782027615707371,
+    "pressure_bias": 0.017950780641203153,
+    "pressure_linf": 0.1460735390044654,
+    "pressure_signal_normalized_l2": 0.0448726520647689,
+    "reference_density_fundamental_amplitude": 0.004999999999999998,
+    "reference_phase_speed": 20.0,
+    "reference_velocity_fundamental_amplitude": 0.005000000000000001,
+    "second_harmonic_ratio": 0.008910052670018093,
+    "transverse_leakage": 1.0244104451945323e-12,
+    "velocity_fundamental_amplitude": 0.004930497108678754,
+    "velocity_fundamental_amplitude_relative_error": 0.013900578264249352,
+    "velocity_signal_normalized_l2": 0.06949966008679818
+  }
+}

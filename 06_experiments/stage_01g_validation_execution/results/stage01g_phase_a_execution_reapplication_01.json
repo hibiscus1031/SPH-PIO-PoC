@@ -1,0 +1,29 @@
+{
+  "all_children_reclaimed": true,
+  "all_parent_aggregation_scalar_only": true,
+  "attempt_id": "reapplication_01",
+  "executed_run_ids": [
+    "g_shear_n24",
+    "g_shear_n32",
+    "g_shear_n48",
+    "g_shear_n32_dt_half",
+    "g_shear_n48_rep2"
+  ],
+  "expected_run_ids": [
+    "g_shear_n24",
+    "g_shear_n32",
+    "g_shear_n48",
+    "g_shear_n32_dt_half",
+    "g_shear_n48_rep2"
+  ],
+  "phase": "A",
+  "run_statuses": {
+    "g_shear_n24": "EVIDENCE_COMPLETE",
+    "g_shear_n32": "EVIDENCE_COMPLETE",
+    "g_shear_n32_dt_half": "EVIDENCE_COMPLETE",
+    "g_shear_n48": "EVIDENCE_COMPLETE",
+    "g_shear_n48_rep2": "EVIDENCE_COMPLETE"
+  },
+  "schema_version": "sph-pio-poc.stage01g.phase-execution.v1",
+  "status": "COMPLETE"
+}

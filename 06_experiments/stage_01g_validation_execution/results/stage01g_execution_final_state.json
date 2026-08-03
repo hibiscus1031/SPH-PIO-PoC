@@ -1,0 +1,71 @@
+{
+  "acoustic_gates": "PASS",
+  "determinism": "PASS",
+  "downstream": {
+    "label_generation_started": false,
+    "stage01h_started": false,
+    "stage02_started": false,
+    "training_started": false,
+    "v3_started": false
+  },
+  "executed_run_count": 12,
+  "execution_identity": "Stage 01G Independent Validation Execution / reapplication_01",
+  "hard_safety": "PASS",
+  "missing_run_ids": [],
+  "next_stage_qualified": false,
+  "provenance_complete": true,
+  "run_statuses": {
+    "g_acoustic_e1e2_n48": {
+      "evaluator": "COMPLETE",
+      "execution": "EVIDENCE_COMPLETE"
+    },
+    "g_acoustic_e2p5e3_n48": {
+      "evaluator": "COMPLETE",
+      "execution": "EVIDENCE_COMPLETE"
+    },
+    "g_acoustic_e5e3_n24": {
+      "evaluator": "COMPLETE",
+      "execution": "EVIDENCE_COMPLETE"
+    },
+    "g_acoustic_e5e3_n32": {
+      "evaluator": "COMPLETE",
+      "execution": "EVIDENCE_COMPLETE"
+    },
+    "g_acoustic_e5e3_n32_dt_half": {
+      "evaluator": "COMPLETE",
+      "execution": "EVIDENCE_COMPLETE"
+    },
+    "g_acoustic_e5e3_n48": {
+      "evaluator": "COMPLETE",
+      "execution": "EVIDENCE_COMPLETE"
+    },
+    "g_acoustic_e5e3_n48_rep2": {
+      "evaluator": "COMPLETE",
+      "execution": "EVIDENCE_COMPLETE"
+    },
+    "g_shear_n24": {
+      "evaluator": "COMPLETE",
+      "execution": "EVIDENCE_COMPLETE"
+    },
+    "g_shear_n32": {
+      "evaluator": "COMPLETE",
+      "execution": "EVIDENCE_COMPLETE"
+    },
+    "g_shear_n32_dt_half": {
+      "evaluator": "COMPLETE",
+      "execution": "EVIDENCE_COMPLETE"
+    },
+    "g_shear_n48": {
+      "evaluator": "COMPLETE",
+      "execution": "EVIDENCE_COMPLETE"
+    },
+    "g_shear_n48_rep2": {
+      "evaluator": "COMPLETE",
+      "execution": "EVIDENCE_COMPLETE"
+    }
+  },
+  "schema_version": "sph-pio-poc.stage01g.execution-final-state.v1",
+  "shear_gates": "FAIL",
+  "uncertainty_complete": true,
+  "unique_status": "V2_QUALIFICATION_FAIL"
+}

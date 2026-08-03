@@ -1,0 +1,43 @@
+{
+  "benchmark_runs_started": 0,
+  "checks": {
+    "exact_12_unique_run_ids": true,
+    "execution_code_tracked": true,
+    "frozen_future_output_binding": true,
+    "frozen_python_environment": true,
+    "metric_binding_exact": true,
+    "metric_contract_hash_immutable": true,
+    "numerical_source_identity_103_of_103": true,
+    "preflight_v2_authorized": true,
+    "reapplication_output_targets_clean": true,
+    "run_matrix_hash_immutable": true,
+    "stage01g_frozen_identity_9_of_9": true,
+    "stage01g_tag_identity": true,
+    "stage01ge_commit_ancestor": true,
+    "stage01ge_evaluator_identity_9_of_9": true,
+    "stage01gp_commit_ancestor": true,
+    "stage01gr_code_identity_5_of_5": true,
+    "stage01gr_commit_is_head": true,
+    "stage01gr_evidence_identity_29_of_29": true,
+    "stage01gr_ready_status": true,
+    "threshold_hash_immutable": true,
+    "working_tree_clean_before_preflight": true
+  },
+  "execution_attempt": "reapplication_01",
+  "execution_code_sha256": {
+    "06_experiments/stage_01g_validation_execution/reapplication_01/evaluate_stage01g_reapplication.py": "42fcebe6697669369a692ba3e55fd8b727e85fdf609cf306a44face02dd02566",
+    "06_experiments/stage_01g_validation_execution/reapplication_01/run_stage01g_reapplication.py": "f5ea30c8da005d83bf34ede9845882fc273cf177f3b90d5f1cfd7a8ed71ba2e3",
+    "06_experiments/stage_01g_validation_execution/reapplication_01/stage01g_reapplication_contract.py": "1605a1453756d621c1b20efeef4f80e94a6220b649b5e5d75828d1d9d06fae66",
+    "06_experiments/stage_01g_validation_execution/reapplication_01/stage01g_reapplication_preflight.py": "08dc467da94d465db988b8ba553923c51c82de6d0549be706878f1482504520e",
+    "06_experiments/stage_01g_validation_execution/reapplication_01/stage01g_reapplication_worker.py": "696a6dfdf3f84574aed12c8d241230c10e7ccccf167a39d4105c182e0bb3fcb4"
+  },
+  "frozen_chain": {
+    "stage01g": "fa3c4f43625ec3436820d83c26947d47ed0ba5c8",
+    "stage01ge": "1641ff5f05fa91b8faed49a91edf062f4a90db07",
+    "stage01gp": "c58c6ce4e7798a708adee32af984209aca064a95",
+    "stage01gr": "d4d253be91becdac39f1894a7a010b9b61571055"
+  },
+  "git_head": "52cbb42958cde64313079d00113f5d7ecffcb116",
+  "overall_status": "PASS",
+  "schema_version": "sph-pio-poc.stage01g.execution-preflight.v1"
+}

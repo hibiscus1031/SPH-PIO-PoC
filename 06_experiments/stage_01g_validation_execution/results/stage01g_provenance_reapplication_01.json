@@ -1,0 +1,79 @@
+{
+  "complete": true,
+  "execution_code_sha256": {
+    "06_experiments/stage_01g_validation_execution/reapplication_01/evaluate_stage01g_reapplication.py": "42fcebe6697669369a692ba3e55fd8b727e85fdf609cf306a44face02dd02566",
+    "06_experiments/stage_01g_validation_execution/reapplication_01/run_stage01g_reapplication.py": "f5ea30c8da005d83bf34ede9845882fc273cf177f3b90d5f1cfd7a8ed71ba2e3",
+    "06_experiments/stage_01g_validation_execution/reapplication_01/stage01g_reapplication_contract.py": "1605a1453756d621c1b20efeef4f80e94a6220b649b5e5d75828d1d9d06fae66",
+    "06_experiments/stage_01g_validation_execution/reapplication_01/stage01g_reapplication_preflight.py": "08dc467da94d465db988b8ba553923c51c82de6d0549be706878f1482504520e",
+    "06_experiments/stage_01g_validation_execution/reapplication_01/stage01g_reapplication_worker.py": "696a6dfdf3f84574aed12c8d241230c10e7ccccf167a39d4105c182e0bb3fcb4"
+  },
+  "historical_failure_evidence_preserved": {
+    "canonical_type_error": true,
+    "infra_retry1_key_error": true,
+    "infra_retry2_attribute_error": true
+  },
+  "run_checks": {
+    "g_acoustic_e1e2_n48": true,
+    "g_acoustic_e2p5e3_n48": true,
+    "g_acoustic_e5e3_n24": true,
+    "g_acoustic_e5e3_n32": true,
+    "g_acoustic_e5e3_n32_dt_half": true,
+    "g_acoustic_e5e3_n48": true,
+    "g_acoustic_e5e3_n48_rep2": true,
+    "g_shear_n24": true,
+    "g_shear_n32": true,
+    "g_shear_n32_dt_half": true,
+    "g_shear_n48": true,
+    "g_shear_n48_rep2": true
+  },
+  "run_details": {
+    "g_acoustic_e1e2_n48": {
+      "child_pid": 53828,
+      "status": "PASS"
+    },
+    "g_acoustic_e2p5e3_n48": {
+      "child_pid": 52712,
+      "status": "PASS"
+    },
+    "g_acoustic_e5e3_n24": {
+      "child_pid": 48997,
+      "status": "PASS"
+    },
+    "g_acoustic_e5e3_n32": {
+      "child_pid": 49396,
+      "status": "PASS"
+    },
+    "g_acoustic_e5e3_n32_dt_half": {
+      "child_pid": 50842,
+      "status": "PASS"
+    },
+    "g_acoustic_e5e3_n48": {
+      "child_pid": 49907,
+      "status": "PASS"
+    },
+    "g_acoustic_e5e3_n48_rep2": {
+      "child_pid": 51623,
+      "status": "PASS"
+    },
+    "g_shear_n24": {
+      "child_pid": 43367,
+      "status": "PASS"
+    },
+    "g_shear_n32": {
+      "child_pid": 43884,
+      "status": "PASS"
+    },
+    "g_shear_n32_dt_half": {
+      "child_pid": 46147,
+      "status": "PASS"
+    },
+    "g_shear_n48": {
+      "child_pid": 44656,
+      "status": "PASS"
+    },
+    "g_shear_n48_rep2": {
+      "child_pid": 47368,
+      "status": "PASS"
+    }
+  }
+}

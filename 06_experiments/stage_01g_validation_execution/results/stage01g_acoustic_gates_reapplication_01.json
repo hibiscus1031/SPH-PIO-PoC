@@ -1,0 +1,251 @@
+{
+  "gates": {
+    "ACOUSTIC1": {
+      "evidence": {
+        "g_acoustic_e1e2_n48": {
+          "checks": {
+            "child_fully_reclaimed": true,
+            "current_rss_bytes": true,
+            "cyclic_gc_default": true,
+            "force_assembly_defect": true,
+            "independent_child_process": true,
+            "minimum_separation_over_dx": true,
+            "momentum_update_defect": true,
+            "no_in_loop_gc_collect": true,
+            "normalized_internal_force_residual": true,
+            "pair_force_residual": true,
+            "parent_scalar_only": true,
+            "peak_rss_bytes": true,
+            "rss_q4_minus_q1_bytes": true,
+            "rss_q4_over_q1": true,
+            "source_call_count": true,
+            "step_time_q4_over_q1": true,
+            "structural_topology_defects": true,
+            "torch_no_grad": true,
+            "viscous_power_positive_tolerance": true
+          },
+          "status": "PASS"
+        },
+        "g_acoustic_e2p5e3_n48": {
+          "checks": {
+            "child_fully_reclaimed": true,
+            "current_rss_bytes": true,
+            "cyclic_gc_default": true,
+            "force_assembly_defect": true,
+            "independent_child_process": true,
+            "minimum_separation_over_dx": true,
+            "momentum_update_defect": true,
+            "no_in_loop_gc_collect": true,
+            "normalized_internal_force_residual": true,
+            "pair_force_residual": true,
+            "parent_scalar_only": true,
+            "peak_rss_bytes": true,
+            "rss_q4_minus_q1_bytes": true,
+            "rss_q4_over_q1": true,
+            "source_call_count": true,
+            "step_time_q4_over_q1": true,
+            "structural_topology_defects": true,
+            "torch_no_grad": true,
+            "viscous_power_positive_tolerance": true
+          },
+          "status": "PASS"
+        },
+        "g_acoustic_e5e3_n24": {
+          "checks": {
+            "child_fully_reclaimed": true,
+            "current_rss_bytes": true,
+            "cyclic_gc_default": true,
+            "force_assembly_defect": true,
+            "independent_child_process": true,
+            "minimum_separation_over_dx": true,
+            "momentum_update_defect": true,
+            "no_in_loop_gc_collect": true,
+            "normalized_internal_force_residual": true,
+            "pair_force_residual": true,
+            "parent_scalar_only": true,
+            "peak_rss_bytes": true,
+            "rss_q4_minus_q1_bytes": true,
+            "rss_q4_over_q1": true,
+            "source_call_count": true,
+            "step_time_q4_over_q1": true,
+            "structural_topology_defects": true,
+            "torch_no_grad": true,
+            "viscous_power_positive_tolerance": true
+          },
+          "status": "PASS"
+        },
+        "g_acoustic_e5e3_n32": {
+          "checks": {
+            "child_fully_reclaimed": true,
+            "current_rss_bytes": true,
+            "cyclic_gc_default": true,
+            "force_assembly_defect": true,
+            "independent_child_process": true,
+            "minimum_separation_over_dx": true,
+            "momentum_update_defect": true,
+            "no_in_loop_gc_collect": true,
+            "normalized_internal_force_residual": true,
+            "pair_force_residual": true,
+            "parent_scalar_only": true,
+            "peak_rss_bytes": true,
+            "rss_q4_minus_q1_bytes": true,
+            "rss_q4_over_q1": true,
+            "source_call_count": true,
+            "step_time_q4_over_q1": true,
+            "structural_topology_defects": true,
+            "torch_no_grad": true,
+            "viscous_power_positive_tolerance": true
+          },
+          "status": "PASS"
+        },
+        "g_acoustic_e5e3_n32_dt_half": {
+          "checks": {
+            "child_fully_reclaimed": true,
+            "current_rss_bytes": true,
+            "cyclic_gc_default": true,
+            "force_assembly_defect": true,
+            "independent_child_process": true,
+            "minimum_separation_over_dx": true,
+            "momentum_update_defect": true,
+            "no_in_loop_gc_collect": true,
+            "normalized_internal_force_residual": true,
+            "pair_force_residual": true,
+            "parent_scalar_only": true,
+            "peak_rss_bytes": true,
+            "rss_q4_minus_q1_bytes": true,
+            "rss_q4_over_q1": true,
+            "source_call_count": true,
+            "step_time_q4_over_q1": true,
+            "structural_topology_defects": true,
+            "torch_no_grad": true,
+            "viscous_power_positive_tolerance": true
+          },
+          "status": "PASS"
+        },
+        "g_acoustic_e5e3_n48": {
+          "checks": {
+            "child_fully_reclaimed": true,
+            "current_rss_bytes": true,
+            "cyclic_gc_default": true,
+            "force_assembly_defect": true,
+            "independent_child_process": true,
+            "minimum_separation_over_dx": true,
+            "momentum_update_defect": true,
+            "no_in_loop_gc_collect": true,
+            "normalized_internal_force_residual": true,
+            "pair_force_residual": true,
+            "parent_scalar_only": true,
+            "peak_rss_bytes": true,
+            "rss_q4_minus_q1_bytes": true,
+            "rss_q4_over_q1": true,
+            "source_call_count": true,
+            "step_time_q4_over_q1": true,
+            "structural_topology_defects": true,
+            "torch_no_grad": true,
+            "viscous_power_positive_tolerance": true
+          },
+          "status": "PASS"
+        },
+        "g_acoustic_e5e3_n48_rep2": {
+          "checks": {
+            "child_fully_reclaimed": true,
+            "current_rss_bytes": true,
+            "cyclic_gc_default": true,
+            "force_assembly_defect": true,
+            "independent_child_process": true,
+            "minimum_separation_over_dx": true,
+            "momentum_update_defect": true,
+            "no_in_loop_gc_collect": true,
+            "normalized_internal_force_residual": true,
+            "pair_force_residual": true,
+            "parent_scalar_only": true,
+            "peak_rss_bytes": true,
+            "rss_q4_minus_q1_bytes": true,
+            "rss_q4_over_q1": true,
+            "source_call_count": true,
+            "step_time_q4_over_q1": true,
+            "structural_topology_defects": true,
+            "torch_no_grad": true,
+            "viscous_power_positive_tolerance": true
+          },
+          "status": "PASS"
+        }
+      },
+      "status": "PASS"
+    },
+    "ACOUSTIC10": {
+      "evidence": [
+        "linear-acoustic-regime_validation",
+        "linear-acoustic-regime_validation",
+        "linear-acoustic-regime_validation",
+        "linear-acoustic-regime_validation",
+        "linear-acoustic-regime_validation",
+        "linear-acoustic-regime_validation",
+        "linear-acoustic-regime_validation"
+      ],
+      "status": "PASS"
+    },
+    "ACOUSTIC2": {
+      "evidence": 0.013782027615707371,
+      "status": "PASS"
+    },
+    "ACOUSTIC3": {
+      "evidence": 0.014210271630889925,
+      "status": "PASS"
+    },
+    "ACOUSTIC4": {
+      "evidence": 0.013900578264249352,
+      "status": "PASS"
+    },
+    "ACOUSTIC5": {
+      "evidence": {
+        "density": 0.044872652064768884,
+        "velocity": 0.06949966008679818
+      },
+      "status": "PASS"
+    },
+    "ACOUSTIC6": {
+      "evidence": 1.0244104451945323e-12,
+      "status": "PASS"
+    },
+    "ACOUSTIC7": {
+      "evidence": {
+        "density_fundamental_amplitude_relative_error": [
+          0.0401164737837153,
+          0.027799412488303747,
+          0.014210271630889925
+        ],
+        "one_period_phase_error": [
+          0.03666911265500978,
+          0.026094451912898175,
+          0.013776041211677841
+        ],
+        "velocity_fundamental_amplitude_relative_error": [
+          0.0378093567088648,
+          0.026587442950957125,
+          0.013900578264249352
+        ]
+      },
+      "status": "PASS"
+    },
+    "ACOUSTIC8": {
+      "evidence": {
+        "density_fundamental_amplitude_relative_error": 1.126300634707634e-05,
+        "density_signal_normalized_l2": 5.402670968119098e-05,
+        "phase_speed_relative_error": 6.819596226889959e-05,
+        "velocity_fundamental_amplitude_relative_error": 4.9786281853583595e-06,
+        "velocity_signal_normalized_l2": 6.486758890894143e-05
+      },
+      "status": "PASS"
+    },
+    "ACOUSTIC9": {
+      "evidence": [
+        0.017815672761673524,
+        0.008910052670018093,
+        0.00445530288732263
+      ],
+      "status": "PASS"
+    }
+  },
+  "status": "PASS"
+}

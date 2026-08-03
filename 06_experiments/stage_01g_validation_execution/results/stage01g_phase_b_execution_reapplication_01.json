@@ -1,0 +1,35 @@
+{
+  "all_children_reclaimed": true,
+  "all_parent_aggregation_scalar_only": true,
+  "attempt_id": "reapplication_01",
+  "executed_run_ids": [
+    "g_acoustic_e5e3_n24",
+    "g_acoustic_e5e3_n32",
+    "g_acoustic_e5e3_n48",
+    "g_acoustic_e5e3_n32_dt_half",
+    "g_acoustic_e5e3_n48_rep2",
+    "g_acoustic_e2p5e3_n48",
+    "g_acoustic_e1e2_n48"
+  ],
+  "expected_run_ids": [
+    "g_acoustic_e5e3_n24",
+    "g_acoustic_e5e3_n32",
+    "g_acoustic_e5e3_n48",
+    "g_acoustic_e5e3_n32_dt_half",
+    "g_acoustic_e5e3_n48_rep2",
+    "g_acoustic_e2p5e3_n48",
+    "g_acoustic_e1e2_n48"
+  ],
+  "phase": "B",
+  "run_statuses": {
+    "g_acoustic_e1e2_n48": "EVIDENCE_COMPLETE",
+    "g_acoustic_e2p5e3_n48": "EVIDENCE_COMPLETE",
+    "g_acoustic_e5e3_n24": "EVIDENCE_COMPLETE",
+    "g_acoustic_e5e3_n32": "EVIDENCE_COMPLETE",
+    "g_acoustic_e5e3_n32_dt_half": "EVIDENCE_COMPLETE",
+    "g_acoustic_e5e3_n48": "EVIDENCE_COMPLETE",
+    "g_acoustic_e5e3_n48_rep2": "EVIDENCE_COMPLETE"
+  },
+  "schema_version": "sph-pio-poc.stage01g.phase-execution.v1",
+  "status": "COMPLETE"
+}
