@@ -1,0 +1,16 @@
+{
+  "failure_evidence_manifest": "06_experiments/stage_01gr_execution_infrastructure_repair/manifests/stage01gr_failure_evidence_sha256.csv",
+  "failure_evidence_items": 21,
+  "repair_code_manifest": "06_experiments/stage_01gr_execution_infrastructure_repair/manifests/stage01gr_repair_code_sha256.csv",
+  "repair_code_items": 5,
+  "dry_run_result": "06_experiments/stage_01gr_execution_infrastructure_repair/results/stage01gr_dry_run_results.csv",
+  "dry_run_pass_count": 12,
+  "smoke_worker_result": "06_experiments/stage_01gr_execution_infrastructure_repair/results/stage01gr_smoke_worker_result.json",
+  "smoke_process_result": "06_experiments/stage_01gr_execution_infrastructure_repair/results/stage01gr_minimal_smoke.json",
+  "smoke_code_git_hash": "8fb4680cbc3e19bad03c1549fac44d8972274dc7",
+  "historical_failure_bytes_preserved": true,
+  "solver_identity_complete": true,
+  "formal_benchmark_evidence_generated": false,
+  "v2_evidence_generated": false,
+  "complete": true
+}

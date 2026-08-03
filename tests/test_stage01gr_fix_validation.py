@@ -1,4 +1,5 @@
 import csv
+import hashlib
 import json
 from pathlib import Path
 
@@ -45,3 +46,17 @@ def test_repair_final_status_is_ready_without_changing_v2_status():
     assert evaluation["stage01g_v2_status"] == "V2_QUALIFICATION_EVIDENCE_INCOMPLETE"
     assert evaluation["formal_benchmark_run_count"] == 0
     assert not any(evaluation["downstream"].values())
+
+
+def test_failure_and_final_provenance_manifests_are_self_consistent():
+    for name, expected_count in (
+        ("stage01gr_failure_evidence_sha256.csv", 21),
+        ("stage01gr_evidence_sha256.csv", 29),
+    ):
+        with (STAGE / "manifests" / name).open(newline="") as stream:
+            rows = list(csv.DictReader(stream))
+        assert len(rows) == expected_count
+        assert len({row["path"] for row in rows}) == expected_count
+        for row in rows:
+            path = ROOT / row["path"]
+            assert hashlib.sha256(path.read_bytes()).hexdigest() == row["sha256"]

@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "failure_root_cause_identified": true,
+    "runner_config_fix_complete": true,
+    "diagnostic_fix_complete": true,
+    "solver_unchanged": true,
+    "benchmark_unchanged": true,
+    "evaluator_unchanged": true,
+    "dry_run_12_of_12": true,
+    "minimal_smoke_pass": true,
+    "provenance_complete": true
+  },
+  "preserved_failure_attempts": [
+    "canonical TypeError",
+    "infra_retry1 KeyError",
+    "infra_retry2 AttributeError"
+  ],
+  "formal_benchmark_run_count": 0,
+  "infrastructure_smoke_run_count": 1,
+  "stage01g_v2_status": "V2_QUALIFICATION_EVIDENCE_INCOMPLETE",
+  "stage01g_execution_reapplication_allowed": true,
+  "downstream": {
+    "v3_started": false,
+    "stage02_started": false,
+    "training_started": false,
+    "label_generation_started": false
+  },
+  "unique_status": "EXECUTION_INFRA_READY_FOR_BENCHMARK"
+}

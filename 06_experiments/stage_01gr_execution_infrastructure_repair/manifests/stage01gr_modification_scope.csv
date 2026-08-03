@@ -1,0 +1,8 @@
+scope,path_prefix,modified,status
+solver,01_solver/,false,PASS
+frozen_benchmark,06_experiments/stage_01g_validation_design/,false,PASS
+frozen_evaluator,06_experiments/stage_01ge_evaluator_qualification/,false,PASS
+failed_execution_evidence,06_experiments/stage_01g_validation_execution/,false,PASS
+repair_stage,06_experiments/stage_01gr_execution_infrastructure_repair/,true,AUTHORIZED
+repair_reports,07_reports/stage01gr_,true,AUTHORIZED
+repair_tests,tests/test_stage01gr_,true,AUTHORIZED
