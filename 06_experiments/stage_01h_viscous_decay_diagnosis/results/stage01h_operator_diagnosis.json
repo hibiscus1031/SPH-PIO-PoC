@@ -1,0 +1,27 @@
+{
+  "classification": "FINITE_RESOLUTION_DOMINANT",
+  "classification_evidence": {
+    "determinism_bitwise_identical": true,
+    "fixed_N_support_sweep_available": false,
+    "maximum_dt_halving_relative_change": 6.407461957919563e-08,
+    "n48_decay_error_improves_from_n32": true,
+    "n48_velocity_error_improves_from_n32": true,
+    "nu_eff_bias_magnitude_strictly_decreases": true,
+    "reference_identity_pass": true,
+    "systematic_viscosity_bias": "LOW",
+    "time_integration_contribution_small": true
+  },
+  "diagnostic_limitation": "A fixed-N H/dx sweep is absent, so resolution and support quadrature contributions cannot be separately quantified.",
+  "direct_fix_performed": false,
+  "mechanism_separation": {
+    "kernel_quadrature_support_error": "plausible within spatial path but not independently identifiable because N and H_over_dx co-vary",
+    "model_form_error": "not supported for this analytic shear benchmark",
+    "reference_implementation_error": "not detected; analytic reference decay identity passes",
+    "time_integration_error": "negligible at the frozen dt based on N32 dt halving",
+    "viscosity_operator_discretization_error": "part of the dominant spatial discretization path; decreases with refinement"
+  },
+  "operator_form_failure_confirmed": false,
+  "support_path_dominance_confirmed": false,
+  "v2_reconsideration_allowed": false,
+  "viscosity_operator_redesign_required": false
+}

@@ -1,0 +1,25 @@
+{
+  "analysis_code_git_hash": "a9dfd29eb2c2b4513eff02383042ef8a56b82e69",
+  "benchmark_data_regenerated": false,
+  "benchmark_modified": false,
+  "classification": "FINITE_RESOLUTION_DOMINANT",
+  "diagnostics_complete": true,
+  "downstream": {
+    "label_generation_started": false,
+    "pio_started": false,
+    "stage02_started": false,
+    "training_started": false,
+    "transformer_started": false
+  },
+  "evaluator_gate_modified": false,
+  "operator_form_failure_confirmed": false,
+  "schema_version": "sph-pio-poc.stage01h.evaluation.v1",
+  "solver_modified": false,
+  "stage01g_failure_gate_preserved": "SHEAR3",
+  "stage01g_failure_reclassified": false,
+  "stage01g_status_preserved": "V2_QUALIFICATION_FAIL",
+  "uncertainty_complete": true,
+  "unique_status": "VISCOSITY_DIAGNOSIS_COMPLETE",
+  "v2_reconsideration_allowed": false,
+  "viscosity_operator_redesign_required": false
+}

@@ -1,0 +1,4 @@
+run_id,N,H_over_dx,decay_rate_relative_error,velocity_relative_l2,position_relative_l2,nu_eff,relative_viscosity_bias,decay_error_reduction_from_previous,velocity_error_reduction_from_previous,identifiability
+g_shear_n24,24,4.5,0.07167591297392842,0.01138244734779658,0.005529341313779532,0.01856648174052143,-0.07167591297392843,,,N and H_over_dx co-vary; fixed-N support sensitivity is not identifiable
+g_shear_n32,32,5.049509756796392,0.05160059387780028,0.008181511186500465,0.0039775381137407235,0.018967988122443998,-0.051600593877800145,0.28008459555207044,0.2812168651863568,N and H_over_dx co-vary; fixed-N support sensitivity is not identifiable
+g_shear_n48,48,5.5,0.027949503268503754,0.004423365964491756,0.002151722772586018,0.019441009934629928,-0.027949503268503637,0.4583491939125094,0.45934609589114395,N and H_over_dx co-vary; fixed-N support sensitivity is not identifiable
