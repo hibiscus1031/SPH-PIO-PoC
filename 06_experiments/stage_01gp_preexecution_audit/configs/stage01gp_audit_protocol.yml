@@ -1,0 +1,88 @@
+stage:
+  name: "Stage 01G-P — Independent Validation Pre-execution Audit"
+  kind: static_preexecution_audit_only
+  unique_status: INDEPENDENT_VALIDATION_EXECUTION_READY
+  numerical_execution_authorized: false
+  benchmark_execution_authorized: false
+  v2_status_generated: false
+
+frozen_stage01g:
+  status: INDEPENDENT_VALIDATION_AND_V2_DESIGN_APPROVED
+  commit: fa3c4f43625ec3436820d83c26947d47ed0ba5c8
+  annotated_tag: stage-01g-independent-validation-design-approved
+  original_files_modified: false
+  frozen_manifest: manifests/stage01g_frozen_sha256_manifest.csv
+
+allowed_actions:
+  - read_frozen_files
+  - sha256_audit
+  - schema_audit
+  - dependency_audit
+  - metric_contract_audit
+  - provenance_audit
+  - audit_report_generation
+
+prohibited_actions:
+  - run_sph_solver
+  - run_rk2
+  - run_dop853
+  - run_shear_benchmark
+  - run_acoustic_benchmark
+  - generate_trajectory
+  - generate_checkpoint
+  - generate_reference_data
+  - generate_v2_status
+  - modify_stage01g_benchmark
+  - modify_thresholds
+  - modify_run_ids
+  - modify_uncertainty_budget
+  - modify_v2_evidence_map
+  - start_stage02
+  - start_v3
+  - train_model
+  - generate_learning_labels
+
+execution_audit:
+  numerical_run_count: 0
+  sph_run_count: 0
+  rk2_run_count: 0
+  dop853_run_count: 0
+  shear_benchmark_run_count: 0
+  acoustic_benchmark_run_count: 0
+  trajectory_count: 0
+  checkpoint_count: 0
+  reference_data_count: 0
+  training_run_count: 0
+  learning_label_count: 0
+  v2_status: null
+  v3_started: false
+  stage02_started: false
+
+audit_contracts:
+  stage01g_identity: PASS
+  stage01f5b_identity: PASS
+  shear_contract: PASS
+  acoustic_contract: PASS
+  independence: PASS
+  metrics_immutable: PASS
+  run_matrix: PASS
+  v2_boundary: PASS
+  execution_risk_scan: PASS
+  provenance: PASS
+
+status_rules:
+  ready: INDEPENDENT_VALIDATION_EXECUTION_READY
+  blocked: INDEPENDENT_VALIDATION_EXECUTION_BLOCKED
+  incomplete: INDEPENDENT_VALIDATION_AUDIT_INCOMPLETE
+  ready_requires:
+    - stage01g_identity_PASS
+    - shear_contract_PASS
+    - acoustic_contract_PASS
+    - independence_PASS
+    - metrics_immutable_PASS
+    - v2_boundary_PASS
+    - run_matrix_PASS
+    - no_numerical_execution
+    - provenance_complete
+  ready_is_execution: false
+  ready_only_permits_application_for_execution: true

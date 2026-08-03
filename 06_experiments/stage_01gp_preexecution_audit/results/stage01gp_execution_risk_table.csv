@@ -1,0 +1,11 @@
+risk_id,audit_question,evidence,status,blocking
+RISK01,Are any parameters unfrozen?,All physical resolution support timestep horizon and amplitude parameters are explicit in frozen YAML and matrix,PASS,false
+RISK02,Is any reference undefined?,Shear has analytic continuum and trajectory formulas; acoustic has independent linear theory,PASS,false
+RISK03,Is any timestep an implicit default?,Main and N32 half timesteps are explicit per run in the frozen matrix,PASS,false
+RISK04,Are any common times undefined?,Both benchmarks define integer ticks and corresponding physical common times,PASS,false
+RISK05,Are any run IDs duplicated?,12 IDs and 12 future output directories are unique,PASS,false
+RISK06,Does either benchmark use an MMS source?,Frozen independence flags prohibit manufactured force and Stage 01F source adapters,PASS,false
+RISK07,Is old Stage 01F validation data mixed in?,Frozen flags prohibit Stage 01F trajectories MMS physical validation and prior error points,PASS,false
+RISK08,Can future results modify thresholds?,Post-result threshold changes are explicitly unauthorized,PASS,false
+RISK09,Is there an automatic V2 upgrade path?,Current V2 state is null and later status requires explicit complete evidence,PASS,false
+RISK10,Can Stage 02 be triggered automatically?,Stage 02 and V3 automatic starts and training authorization are false,PASS,false

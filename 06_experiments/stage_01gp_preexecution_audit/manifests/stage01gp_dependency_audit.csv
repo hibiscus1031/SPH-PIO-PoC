@@ -1,0 +1,6 @@
+scope,path_or_dependency,observed_changes_or_imports,status,evidence
+numerical_solver,01_solver/**,0,PASS,"git diff 6cbfea2..fa3c4f4"
+stage01f5b_evidence,06_experiments/stage_01f5b_requalification_execution/**,0,PASS,"git diff 6cbfea2..fa3c4f4"
+stage01f5b_reports,07_reports/stage_01f5b_*.md,0,PASS,"git diff 6cbfea2..fa3c4f4"
+stage01g_solver_imports,Stage 01G Python tests importing 01_solver,0,PASS,"static import scan"
+stage01g_design_assets,Stage 01G config/manifests/results/reports/tests,23,PASS,"add-only design commit"

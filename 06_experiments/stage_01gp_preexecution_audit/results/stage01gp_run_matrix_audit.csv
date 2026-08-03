@@ -1,0 +1,13 @@
+run_id,benchmark,purpose,N,H/dx,dt,status,executed
+g_shear_n24,shear,formal_resolution,24,4.5,0.0000625,PREREGISTERED_NOT_EXECUTED,false
+g_shear_n32,shear,formal_resolution,32,5.049509756796392,0.0000625,PREREGISTERED_NOT_EXECUTED,false
+g_shear_n48,shear,formal_resolution,48,5.5,0.0000625,PREREGISTERED_NOT_EXECUTED,false
+g_shear_n32_dt_half,shear,time_step_isolation,32,5.049509756796392,0.00003125,PREREGISTERED_NOT_EXECUTED,false
+g_shear_n48_rep2,shear,determinism_repeat,48,5.5,0.0000625,PREREGISTERED_NOT_EXECUTED,false
+g_acoustic_e5e3_n24,acoustic,main_amplitude_resolution,24,4.5,0.0000625,PREREGISTERED_NOT_EXECUTED,false
+g_acoustic_e5e3_n32,acoustic,main_amplitude_resolution,32,5.049509756796392,0.0000625,PREREGISTERED_NOT_EXECUTED,false
+g_acoustic_e5e3_n48,acoustic,main_amplitude_resolution,48,5.5,0.0000625,PREREGISTERED_NOT_EXECUTED,false
+g_acoustic_e5e3_n32_dt_half,acoustic,time_step_isolation,32,5.049509756796392,0.00003125,PREREGISTERED_NOT_EXECUTED,false
+g_acoustic_e5e3_n48_rep2,acoustic,determinism_repeat,48,5.5,0.0000625,PREREGISTERED_NOT_EXECUTED,false
+g_acoustic_e2p5e3_n48,acoustic,amplitude_audit,48,5.5,0.0000625,PREREGISTERED_NOT_EXECUTED,false
+g_acoustic_e1e2_n48,acoustic,amplitude_audit,48,5.5,0.0000625,PREREGISTERED_NOT_EXECUTED,false
