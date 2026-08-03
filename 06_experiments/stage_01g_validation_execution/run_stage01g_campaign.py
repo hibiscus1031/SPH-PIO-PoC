@@ -20,7 +20,7 @@ MATRIX = ROOT / "06_experiments/stage_01g_validation_design/manifests/stage01g_r
 G_MANIFEST = ROOT / "06_experiments/stage_01gp_preexecution_audit/manifests/stage01g_frozen_sha256_manifest.csv"
 GE_MANIFEST = ROOT / "06_experiments/stage_01ge_evaluator_qualification/manifests/stage01ge_evaluator_sha256.csv"
 SOURCE_MANIFEST = ROOT / "06_experiments/stage_01f5b_requalification_execution/manifests/numerical_source_identity.csv"
-EXECUTION_MANIFEST = STAGE / "manifests/stage01g_execution_code_sha256.csv"
+EXECUTION_MANIFEST = STAGE / "manifests/stage01g_execution_code_sha256_retry1.csv"
 WORKER = STAGE / "stage01g_worker.py"
 FROZEN_PYTHON = Path("/opt/miniconda3/envs/sph-pio-poc/bin/python").resolve()
 PREFLIGHT_V2_COMMIT = "a07ef533a85cece78eed99ffd7f650757b33e838"
@@ -47,6 +47,7 @@ PHASES = {
 INDEX_COLUMNS = (
     "phase",
     "run_id",
+    "attempt_id",
     "pid",
     "return_code",
     "status",
@@ -98,7 +99,12 @@ def verify_manifest(path: Path, expected_count: int, hash_key: str) -> bool:
     )
 
 
-def preflight(phase: str) -> dict[str, Any]:
+def selected_status_path(run_id: str) -> Path:
+    suffix = ".infra_retry1" if run_id == "g_shear_n24" else ""
+    return STAGE / "runs" / run_id / f"status{suffix}.json"
+
+
+def preflight(phase: str, infrastructure_retry1: bool = False) -> dict[str, Any]:
     matrix = read_csv(MATRIX)
     matrix_ids = [row["run_id"] for row in matrix]
     expected_ids = list(PHASES["A"] + PHASES["B"])
@@ -133,18 +139,38 @@ def preflight(phase: str) -> dict[str, Any]:
         "execution_code_3_hash_identity": verify_manifest(EXECUTION_MANIFEST, 3, "sha256"),
         "exact_12_run_matrix": len(matrix) == 12 and matrix_ids == expected_ids and len(set(matrix_ids)) == 12,
         "unique_12_output_directories": len({str(path) for path in output_dirs.values()}) == 12,
-        "phase_output_directories_absent": all(not output_dirs[run_id].exists() for run_id in PHASES[phase]),
+        "phase_output_directories_available": all(
+            (
+                infrastructure_retry1
+                and phase == "A"
+                and run_id == "g_shear_n24"
+                and output_dirs[run_id].is_dir()
+            )
+            or not output_dirs[run_id].exists()
+            for run_id in PHASES[phase]
+        ),
         "worker_exists": WORKER.is_file(),
         "parent_scalar_contract": scalar_tree({"run_id": "x", "status": "PASS", "failure_type": ""}),
     }
+    if infrastructure_retry1:
+        original = STAGE / "runs/g_shear_n24/summary.json"
+        checks["original_infrastructure_failure_preserved"] = (
+            phase == "A"
+            and original.exists()
+            and json.loads(original.read_text()).get("failure_type") == "TypeError"
+            and not (STAGE / "checkpoints/g_shear_n24.npz").exists()
+            and not (STAGE / "references/g_shear_n24.npz").exists()
+            and not (STAGE / "runs/g_shear_n24/evaluator_result.json").exists()
+        )
     if phase == "B":
         checks["phase_a_completed_first"] = all(
-            (STAGE / "runs" / run_id / "status.json").exists()
-            and json.loads((STAGE / "runs" / run_id / "status.json").read_text())["status"] == "PASS"
+            selected_status_path(run_id).exists()
+            and json.loads(selected_status_path(run_id).read_text())["status"] == "PASS"
             for run_id in PHASES["A"]
         )
     return {
         "phase": phase,
+        "infrastructure_retry1": infrastructure_retry1,
         "checks": checks,
         "overall_status": "PASS" if all(checks.values()) else "FAIL",
         "code_git_hash": git("rev-parse", "HEAD"),
@@ -153,7 +179,7 @@ def preflight(phase: str) -> dict[str, Any]:
 
 
 def append_index(row: dict[str, Any]) -> None:
-    path = STAGE / "manifests/stage01g_campaign_index.csv"
+    path = STAGE / "manifests/stage01g_campaign_index_retry1.csv"
     exists = path.exists()
     with path.open("a", newline="", encoding="utf-8") as stream:
         writer = csv.DictWriter(stream, fieldnames=INDEX_COLUMNS, lineterminator="\n")
@@ -165,10 +191,14 @@ def append_index(row: dict[str, Any]) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--phase", choices=("A", "B"), required=True)
+    parser.add_argument("--infrastructure-retry1", action="store_true")
     args = parser.parse_args()
     phase = args.phase
-    audit = preflight(phase)
-    audit_path = STAGE / "results" / f"stage01g_phase_{phase.lower()}_preflight.json"
+    if args.infrastructure_retry1 and phase != "A":
+        raise ValueError("the preserved infrastructure retry applies only to Phase A")
+    audit = preflight(phase, args.infrastructure_retry1)
+    result_suffix = "_infra_retry1" if args.infrastructure_retry1 else ""
+    audit_path = STAGE / "results" / f"stage01g_phase_{phase.lower()}_preflight{result_suffix}.json"
     if audit_path.exists():
         raise RuntimeError(f"refusing to overwrite {audit_path.relative_to(ROOT)}")
     atomic_json(audit_path, audit)
@@ -178,26 +208,32 @@ def main() -> int:
 
     phase_rows: list[dict[str, Any]] = []
     for ordinal, run_id in enumerate(PHASES[phase], start=1):
+        attempt_id = "infra_retry1" if args.infrastructure_retry1 and run_id == "g_shear_n24" else "canonical"
+        artifact_suffix = ".infra_retry1" if attempt_id == "infra_retry1" else ""
         run_dir = STAGE / "runs" / run_id
-        if run_dir.exists():
+        if run_dir.exists() and attempt_id == "canonical":
             raise RuntimeError(f"refusing to overwrite {run_dir.relative_to(ROOT)}")
-        run_dir.mkdir(parents=True)
-        stdout_path = STAGE / "logs" / f"{run_id}.stdout.log"
-        stderr_path = STAGE / "logs" / f"{run_id}.stderr.log"
+        if not run_dir.exists():
+            run_dir.mkdir(parents=True)
+        stdout_path = STAGE / "logs" / f"{run_id}{artifact_suffix}.stdout.log"
+        stderr_path = STAGE / "logs" / f"{run_id}{artifact_suffix}.stderr.log"
         if stdout_path.exists() or stderr_path.exists():
             raise RuntimeError("refusing to overwrite an existing run log")
         started = time.perf_counter()
         print(json.dumps({"phase": phase, "ordinal": ordinal, "run_id": run_id, "event": "LAUNCH"}), flush=True)
+        command = [str(FROZEN_PYTHON), str(WORKER), "--run-id", run_id]
+        if attempt_id != "canonical":
+            command.extend(("--attempt-id", attempt_id))
         process = subprocess.Popen(
-            (str(FROZEN_PYTHON), str(WORKER), "--run-id", run_id),
+            command,
             cwd=ROOT,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             text=True,
         )
         atomic_json(
-            run_dir / "status.json",
-            {"phase": phase, "run_id": run_id, "status": "RUNNING", "pid": process.pid},
+            run_dir / f"status{artifact_suffix}.json",
+            {"phase": phase, "run_id": run_id, "attempt_id": attempt_id, "status": "RUNNING", "pid": process.pid},
         )
         last_heartbeat = started
         while process.poll() is None:
@@ -223,6 +259,7 @@ def main() -> int:
         marker = {
             "phase": phase,
             "run_id": run_id,
+            "attempt_id": attempt_id,
             "status": status,
             "pid": process.pid,
             "return_code": process.returncode,
@@ -230,10 +267,11 @@ def main() -> int:
             "parent_scalar_only": scalar,
             "wall_time_seconds": wall,
         }
-        atomic_json(run_dir / "status.json", marker)
+        atomic_json(run_dir / f"status{artifact_suffix}.json", marker)
         index_row = {
             "phase": phase,
             "run_id": run_id,
+            "attempt_id": attempt_id,
             "pid": process.pid,
             "return_code": process.returncode,
             "status": status,
@@ -253,6 +291,7 @@ def main() -> int:
     phase_status = "PASS" if len(phase_rows) == len(PHASES[phase]) and all(row["status"] == "PASS" for row in phase_rows) else "FAIL"
     phase_result = {
         "phase": phase,
+        "infrastructure_retry1": args.infrastructure_retry1,
         "expected_run_ids": list(PHASES[phase]),
         "executed_run_ids": [row["run_id"] for row in phase_rows],
         "run_count": len(phase_rows),
@@ -261,7 +300,7 @@ def main() -> int:
         "status": phase_status,
         "code_git_hash": git("rev-parse", "HEAD"),
     }
-    phase_result_path = STAGE / "results" / f"stage01g_phase_{phase.lower()}_execution.json"
+    phase_result_path = STAGE / "results" / f"stage01g_phase_{phase.lower()}_execution{result_suffix}.json"
     if phase_result_path.exists():
         raise RuntimeError(f"refusing to overwrite {phase_result_path.relative_to(ROOT)}")
     atomic_json(phase_result_path, phase_result)

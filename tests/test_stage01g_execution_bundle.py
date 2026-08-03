@@ -2,6 +2,7 @@ import ast
 import csv
 import hashlib
 from pathlib import Path
+import subprocess
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -47,6 +48,8 @@ def test_worker_preserves_gc_no_grad_cpu_float64_and_zero_source_contract():
     assert '"source_call_count": 0' in text
     assert '"device": "cpu"' in text
     assert '"parent_scalar_only": True' in text
+    assert "jitter_fraction=0.0" in text
+    assert "seed=0" in text
 
 
 def test_coordinator_freezes_exact_phase_order_and_independent_subprocesses():
@@ -104,7 +107,7 @@ def test_analyzer_has_only_frozen_v2_outcomes_and_no_downstream_start():
         assert boundary in text
 
 
-def test_execution_code_manifest_freezes_all_three_adapters():
+def test_original_execution_code_manifest_remains_valid_at_preserved_commit():
     manifest = STAGE / "manifests/stage01g_execution_code_sha256.csv"
     with manifest.open(newline="") as stream:
         rows = list(csv.DictReader(stream))
@@ -114,5 +117,18 @@ def test_execution_code_manifest_freezes_all_three_adapters():
         "run_stage01g_campaign.py",
         "evaluate_stage01g_execution.py",
     }
+    for row in rows:
+        payload = subprocess.check_output(
+            ("git", "show", f"543a60a7d084c8eaee97e742aaf1622415b8db35:{row['path']}"),
+            cwd=ROOT,
+        )
+        assert hashlib.sha256(payload).hexdigest() == row["sha256"]
+
+
+def test_retry1_execution_code_manifest_freezes_repaired_adapters():
+    manifest = STAGE / "manifests/stage01g_execution_code_sha256_retry1.csv"
+    with manifest.open(newline="") as stream:
+        rows = list(csv.DictReader(stream))
+    assert len(rows) == 3
     for row in rows:
         assert hashlib.sha256((ROOT / row["path"]).read_bytes()).hexdigest() == row["sha256"]

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "<HOME>/Documents/SPH-PIO-PoC/06_experiments/stage_01g_validation_execution/stage01g_worker.py", line 244, in main
+    state, dx, initial_positions = initial_state(row)
+                                   ^^^^^^^^^^^^^^^^^^
+  File "<HOME>/Documents/SPH-PIO-PoC/06_experiments/stage_01g_validation_execution/stage01g_worker.py", line 106, in initial_state
+    positions, dx, _ = periodic_cartesian_layout(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: periodic_cartesian_layout() missing 2 required keyword-only arguments: 'jitter_fraction' and 'seed'

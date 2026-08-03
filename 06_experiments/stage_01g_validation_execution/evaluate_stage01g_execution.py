@@ -44,6 +44,10 @@ NEW_REPORTS = (
 )
 
 
+def attempt_suffix(run_id: str) -> str:
+    return ".infra_retry1" if run_id == "g_shear_n24" else ""
+
+
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -67,8 +71,9 @@ def load_runs(run_ids: tuple[str, ...]) -> tuple[dict[str, Any], list[str]]:
     runs: dict[str, Any] = {}
     missing: list[str] = []
     for run_id in run_ids:
-        result = STAGE / "runs" / run_id / "evaluator_result.json"
-        marker = STAGE / "runs" / run_id / "status.json"
+        suffix = attempt_suffix(run_id)
+        result = STAGE / "runs" / run_id / f"evaluator_result{suffix}.json"
+        marker = STAGE / "runs" / run_id / f"status{suffix}.json"
         if not result.exists() or not marker.exists():
             missing.append(run_id)
             continue
@@ -82,7 +87,8 @@ def load_runs(run_ids: tuple[str, ...]) -> tuple[dict[str, Any], list[str]]:
 def provenance_audit(run_ids: tuple[str, ...]) -> dict[str, Any]:
     checks: dict[str, bool] = {}
     for run_id in run_ids:
-        path = STAGE / "runs" / run_id / "provenance.json"
+        suffix = attempt_suffix(run_id)
+        path = STAGE / "runs" / run_id / f"provenance{suffix}.json"
         if not path.exists():
             checks[run_id] = False
             continue
@@ -106,9 +112,9 @@ def provenance_audit(run_ids: tuple[str, ...]) -> dict[str, Any]:
         )
         checks[run_id] = (
             all(key in value and value[key] not in (None, "") for key in required)
-            and value["checkpoint_file_sha256"] == sha256(STAGE / "checkpoints" / f"{run_id}.npz")
-            and value["reference_file_sha256"] == sha256(STAGE / "references" / f"{run_id}.npz")
-            and value["evaluator_result_sha256"] == sha256(STAGE / "runs" / run_id / "evaluator_result.json")
+            and value["checkpoint_file_sha256"] == sha256(STAGE / "checkpoints" / f"{run_id}{suffix}.npz")
+            and value["reference_file_sha256"] == sha256(STAGE / "references" / f"{run_id}{suffix}.npz")
+            and value["evaluator_result_sha256"] == sha256(STAGE / "runs" / run_id / f"evaluator_result{suffix}.json")
             and value["device"] == "cpu"
             and value["dtype"] == "float64"
         )
@@ -126,7 +132,10 @@ def determinism_audit() -> dict[str, Any]:
     }
     results: dict[str, Any] = {}
     for name, (first, second) in pairs.items():
-        paths = [STAGE / "runs" / run_id / "provenance.json" for run_id in (first, second)]
+        paths = [
+            STAGE / "runs" / run_id / f"provenance{attempt_suffix(run_id)}.json"
+            for run_id in (first, second)
+        ]
         if not all(path.exists() for path in paths):
             results[name] = {"status": "MISSING"}
             continue
@@ -173,6 +182,11 @@ def build_manifest() -> None:
     paths: list[Path] = []
     for directory in (STAGE / "runs", STAGE / "references", STAGE / "checkpoints", STAGE / "logs", STAGE / "results"):
         paths.extend(path for path in directory.rglob("*") if path.is_file() and path.name != ".preflight-stop")
+    paths.extend(
+        path
+        for path in (STAGE / "manifests").glob("stage01g_*.csv")
+        if path.name not in {"stage01g_execution_evidence_sha256.csv", "stage01g_preflight_audit.csv", "stage01g_preflight_evidence_sha256.csv"}
+    )
     paths.extend(NEW_REPORTS)
     paths.extend((STAGE / "stage01g_worker.py", STAGE / "run_stage01g_campaign.py", STAGE / "evaluate_stage01g_execution.py"))
     old_results = {STAGE / "results/preflight_audit.json", STAGE / "results/stage01g_evaluation.json"}
@@ -240,6 +254,14 @@ def main() -> int:
     else:
         unique_status = "V2_QUALIFICATION_FAIL"
     evaluation = {
+        "preserved_infrastructure_failure": {
+            "run_id": "g_shear_n24",
+            "attempt": "canonical",
+            "failure_type": "TypeError",
+            "solver_initialized": False,
+            "numerical_state_generated": False,
+            "retry_attempt": "infra_retry1",
+        },
         "executed_run_count": len(shear) + len(acoustic),
         "executed_run_ids": list(shear) + list(acoustic),
         "missing_run_ids": missing_shear + missing_acoustic,

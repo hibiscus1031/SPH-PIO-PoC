@@ -105,6 +105,8 @@ def initial_state(row: dict[str, str]) -> tuple[DynamicSPHState, float, torch.Te
     support_ratio = float(row["H_over_dx"])
     positions, dx, _ = periodic_cartesian_layout(
         resolution,
+        jitter_fraction=0.0,
+        seed=0,
         dtype=torch.float64,
         domain_minimum=(-1.0, -1.0),
         domain_maximum=(1.0, 1.0),
@@ -197,15 +199,19 @@ def tensor_content_sha256(arrays: dict[str, np.ndarray]) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--run-id", required=True)
+    parser.add_argument("--attempt-id", default="")
     args = parser.parse_args()
     run_id = args.run_id
+    if args.attempt_id not in ("", "infra_retry1"):
+        raise ValueError("only the preserved first infrastructure retry is allowed")
+    suffix = "" if not args.attempt_id else f".{args.attempt_id}"
     run_dir = STAGE / "runs" / run_id
-    failure_path = run_dir / "failure.txt"
-    summary_path = run_dir / "summary.json"
-    evaluator_path = run_dir / "evaluator_result.json"
-    provenance_path = run_dir / "provenance.json"
-    checkpoint_path = STAGE / "checkpoints" / f"{run_id}.npz"
-    reference_path = STAGE / "references" / f"{run_id}.npz"
+    failure_path = run_dir / f"failure{suffix}.txt"
+    summary_path = run_dir / f"summary{suffix}.json"
+    evaluator_path = run_dir / f"evaluator_result{suffix}.json"
+    provenance_path = run_dir / f"provenance{suffix}.json"
+    checkpoint_path = STAGE / "checkpoints" / f"{run_id}{suffix}.npz"
+    reference_path = STAGE / "references" / f"{run_id}{suffix}.npz"
     status = "FAIL"
     failure_type = ""
     failure_message = ""
@@ -435,6 +441,7 @@ def main() -> int:
         provenance.update(
             {
                 "run_id": run_id,
+                "attempt_id": args.attempt_id or "canonical",
                 "code_git_hash": git_hash(),
                 "run_matrix_sha256": RUN_MATRIX_SHA256,
                 "metric_contract_sha256": METRIC_SHA256,
@@ -476,6 +483,7 @@ def main() -> int:
         summary = {
             "schema_version": "sph-pio-poc.stage01g.run-summary.v1",
             "run_id": run_id,
+            "attempt_id": args.attempt_id or "canonical",
             "benchmark": benchmark,
             "status": status,
             "pid": os.getpid(),
@@ -524,6 +532,7 @@ def main() -> int:
                 {
                     "schema_version": "sph-pio-poc.stage01g.run-summary.v1",
                     "run_id": run_id,
+                    "attempt_id": args.attempt_id or "canonical",
                     "status": "FAIL",
                     "failure_type": failure_type,
                     "failure_message": failure_message,
