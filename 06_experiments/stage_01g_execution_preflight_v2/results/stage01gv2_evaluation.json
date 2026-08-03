@@ -1,0 +1,32 @@
+{
+  "checks": {
+    "stage01g_identity": true,
+    "stage01ge_evaluator": true,
+    "dependency_independence": true,
+    "metric_binding": true,
+    "threshold_immutability": true,
+    "run_matrix": true,
+    "zero_execution": true,
+    "provenance": true,
+    "execution_risk_scan": true
+  },
+  "historical_statuses": {
+    "stage01g": "INDEPENDENT_VALIDATION_AND_V2_DESIGN_APPROVED",
+    "stage01gp": "INDEPENDENT_VALIDATION_EXECUTION_READY",
+    "stage01ge": "INDEPENDENT_VALIDATION_EVALUATOR_READY"
+  },
+  "current_v2_status": "V2_QUALIFICATION_EVIDENCE_INCOMPLETE",
+  "execution_counts": {
+    "benchmark": 0,
+    "trajectory": 0,
+    "checkpoint": 0,
+    "reference_generation": 0
+  },
+  "authorization": {
+    "stage01g_benchmark_execution_may_start": true,
+    "automatic_benchmark_start": false,
+    "v2_status_generated": false,
+    "stage02_started": false
+  },
+  "unique_status": "INDEPENDENT_VALIDATION_EXECUTION_AUTHORIZED"
+}

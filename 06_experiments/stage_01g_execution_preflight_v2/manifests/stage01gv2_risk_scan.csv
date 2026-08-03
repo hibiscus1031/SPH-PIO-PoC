@@ -1,0 +1,11 @@
+risk_id,risk,verification,status
+1,unfrozen_parameter,all benchmark parameters remain bound to frozen Stage01G config,PASS
+2,undefined_reference,shear closed form and independent linear acoustic references remain explicitly defined,PASS
+3,implicit_dt,all 12 runs have explicit dt values in the frozen matrix,PASS
+4,undefined_common_time,common ticks and times remain explicit in the frozen config,PASS
+5,duplicate_run_id,12 of 12 run IDs are unique,PASS
+6,MMS_reuse,evaluator dependency scan and Stage01G independence boundary exclude MMS,PASS
+7,old_data_reuse,no preregistered output directory contains execution artifacts,PASS
+8,threshold_modification_path,gate rules have no threshold override and authoritative hashes match,PASS
+9,automatic_V2_upgrade,current V2 remains evidence incomplete and no V2 status was generated,PASS
+10,automatic_Stage02_trigger,Stage02 start remains false and authorization does not trigger it,PASS

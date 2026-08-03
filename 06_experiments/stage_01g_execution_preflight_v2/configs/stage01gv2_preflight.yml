@@ -1,0 +1,59 @@
+stage:
+  name: "Stage 01G Execution Preflight v2"
+  kind: static_preexecution_audit_only
+  unique_status: INDEPENDENT_VALIDATION_EXECUTION_AUTHORIZED
+  benchmark_execution_performed: false
+  v2_status_generated: false
+
+frozen_history:
+  stage01g:
+    status: INDEPENDENT_VALIDATION_AND_V2_DESIGN_APPROVED
+    commit: fa3c4f43625ec3436820d83c26947d47ed0ba5c8
+    annotated_tag: stage-01g-independent-validation-design-approved
+    frozen_files: 9
+  stage01gp:
+    status: INDEPENDENT_VALIDATION_EXECUTION_READY
+    commit: c58c6ce4e7798a708adee32af984209aca064a95
+  stage01ge:
+    status: INDEPENDENT_VALIDATION_EVALUATOR_READY
+    commit: 1641ff5f05fa91b8faed49a91edf062f4a90db07
+    frozen_evaluator_files: 9
+  current_v2_status: V2_QUALIFICATION_EVIDENCE_INCOMPLETE
+
+authoritative_sources:
+  threshold_config: 06_experiments/stage_01g_validation_design/configs/preregistered_stage01g.yml
+  threshold_config_sha256: 5025492f21f6b00c33ebc9533d27fbf632668945cba6a6a4a10df115c9ff1fe1
+  metric_contract: 07_reports/stage_01g_validation_metrics.md
+  metric_contract_sha256: 655bfceb2339adfd07d9a4c724cbb66410210a76b865f6edcc0d6a74c7b9b042
+  run_matrix: 06_experiments/stage_01g_validation_design/manifests/stage01g_run_matrix.csv
+  evaluator_manifest: 06_experiments/stage_01ge_evaluator_qualification/manifests/stage01ge_evaluator_sha256.csv
+
+audit_results:
+  stage01g_identity: PASS
+  stage01ge_evaluator: PASS
+  dependency_independence: PASS
+  metric_binding: PASS
+  threshold_immutability: PASS
+  run_matrix: PASS
+  zero_execution: PASS
+  provenance: PASS
+  execution_risk_scan: PASS
+
+prohibitions_observed:
+  solver_calls: 0
+  rk2_calls: 0
+  dop853_calls: 0
+  benchmark_runs: 0
+  trajectories_generated: 0
+  checkpoints_generated: 0
+  references_generated: 0
+  v2_statuses_generated: 0
+
+authorization_boundary:
+  stage01g_benchmark_execution_may_start_in_separate_execution_stage: true
+  start_benchmark_automatically: false
+  modify_frozen_design_or_evaluator: false
+  start_v3: false
+  start_stage02: false
+  start_training: false
+  start_label_generation: false

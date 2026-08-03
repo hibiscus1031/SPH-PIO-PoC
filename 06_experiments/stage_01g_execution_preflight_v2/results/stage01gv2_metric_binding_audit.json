@@ -1,0 +1,14 @@
+{
+  "threshold_source": "06_experiments/stage_01g_validation_design/configs/preregistered_stage01g.yml",
+  "threshold_source_sha256": "5025492f21f6b00c33ebc9533d27fbf632668945cba6a6a4a10df115c9ff1fe1",
+  "metric_contract_source": "07_reports/stage_01g_validation_metrics.md",
+  "metric_contract_source_sha256": "655bfceb2339adfd07d9a4c724cbb66410210a76b865f6edcc0d6a74c7b9b042",
+  "shear_gate_count": 8,
+  "acoustic_gate_count": 10,
+  "adaptive_threshold": false,
+  "hidden_normalization": false,
+  "epsilon_denominator": false,
+  "metric_feedback_to_solver": false,
+  "threshold_override_path": false,
+  "status": "PASS"
+}

@@ -1,0 +1,22 @@
+{
+  "audit_method": "static AST import and symbol scan of all nine frozen evaluator Python files",
+  "evaluator_file_count": 9,
+  "forbidden_dependencies": {
+    "solver": false,
+    "01_solver": false,
+    "rk2": false,
+    "dop853": false,
+    "scipy": false,
+    "mms_or_manufactured_solution": false,
+    "stage01f5b_evaluator": false,
+    "training": false,
+    "learned_corrector": false
+  },
+  "forbidden_dependency_hits": [],
+  "external_runtime_dependencies": [],
+  "allowed_dependencies": [
+    "evaluator internal modules",
+    "Python standard library"
+  ],
+  "status": "PASS"
+}
