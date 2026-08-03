@@ -1,0 +1,56 @@
+{
+  "acoustic": {
+    "ACOUSTIC1": {"requires": ["all_finite", "hard_safety_PASS"]},
+    "ACOUSTIC2": {"metric": "main_N48.phase_speed_relative_error", "op": "<=", "threshold": 0.02},
+    "ACOUSTIC3": {"metric": "main_N48.density_fundamental_amplitude_relative_error", "op": "<=", "threshold": 0.05},
+    "ACOUSTIC4": {"metric": "main_N48.velocity_fundamental_amplitude_relative_error", "op": "<=", "threshold": 0.05},
+    "ACOUSTIC5": {"metrics": ["main_N48.density_signal_normalized_l2", "main_N48.velocity_signal_normalized_l2"], "op": "<=", "threshold": 0.1},
+    "ACOUSTIC6": {"metric": "main_N48.transverse_leakage", "op": "<=", "threshold": 0.001},
+    "ACOUSTIC7": {"resolutions": [24, 32, 48], "strict_order": ["density_fundamental_amplitude_relative_error", "velocity_fundamental_amplitude_relative_error", "one_period_phase_error"]},
+    "ACOUSTIC8": {"dt_change_metrics": ["phase_speed_relative_error", "density_fundamental_amplitude_relative_error", "velocity_fundamental_amplitude_relative_error", "density_signal_normalized_l2", "velocity_signal_normalized_l2"], "op": "<=", "threshold": 0.1},
+    "ACOUSTIC9": {"epsilon_order": [0.01, 0.005, 0.0025], "metric": "second_harmonic_ratio", "rule": "non-increasing as epsilon decreases"},
+    "ACOUSTIC10": {"claim": "linear-acoustic-regime_validation"}
+  },
+  "authoritative_sources": {
+    "stage01g_config_sha256": "5025492f21f6b00c33ebc9533d27fbf632668945cba6a6a4a10df115c9ff1fe1",
+    "stage01g_metric_contract_sha256": "655bfceb2339adfd07d9a4c724cbb66410210a76b865f6edcc0d6a74c7b9b042"
+  },
+  "binding_version": "stage01ge-metric-binding-v1",
+  "hard_safety": {
+    "current_rss_bytes": ["<", 2000000000.0],
+    "force_assembly_defect": ["<=", 1e-10],
+    "minimum_separation_over_dx": [">=", 0.25],
+    "momentum_update_defect": ["<=", 1e-10],
+    "normalized_internal_force_residual": ["<=", 1e-10],
+    "pair_force_residual": ["<=", 1e-12],
+    "peak_rss_bytes": ["<", 4000000000.0],
+    "rss_q4_minus_q1_bytes": ["<=", 250000000.0],
+    "rss_q4_over_q1": ["<=", 1.5],
+    "source_call_count": ["<=", 0.0],
+    "step_time_q4_over_q1": ["<=", 1.3],
+    "structural_topology_defects": ["<=", 0.0],
+    "viscous_power_positive_tolerance": ["<=", 1e-12]
+  },
+  "normalization": {
+    "acoustic_fundamental": "weighted spatial projection plus fixed temporal quadrature",
+    "acoustic_signal_l2": "spatiotemporal error L2 divided by independent reference signal L2",
+    "adaptive_threshold": false,
+    "epsilon_denominator": false,
+    "field_norms": "particle-volume weighted",
+    "periodic_position": "component-wise minimum image, side length 2",
+    "position_relative_l2": "periodic position L2 divided by exact displacement L2; t=0 excluded",
+    "shear_amplitude": "weighted least-squares projection onto sin(k_s*y_reference)",
+    "transverse_acoustic": "spatiotemporal transverse L2 divided by reference velocity-signal L2",
+    "velocity_vector": "combined components before L2/Linf"
+  },
+  "shear": {
+    "SHEAR1": {"requires": ["all_finite", "hard_safety_PASS"]},
+    "SHEAR2": {"metric": "N48.velocity_relative_l2", "op": "<=", "threshold": 0.02},
+    "SHEAR3": {"metric": "N48.decay_rate_relative_error", "op": "<=", "threshold": 0.02},
+    "SHEAR4": {"metric": "N48.position_relative_l2", "op": "<=", "threshold": 0.01},
+    "SHEAR5": {"metric": "N48.density_drift_linf", "op": "<=", "threshold": 0.005},
+    "SHEAR6": {"metric": "N48.transverse_leakage", "op": "<=", "threshold": 0.001},
+    "SHEAR7": {"resolutions": [24, 32, 48], "strict_order": ["velocity_relative_l2", "position_relative_l2"]},
+    "SHEAR8": {"dt_change_metrics": ["velocity_relative_l2", "position_relative_l2", "decay_rate_relative_error"], "op": "<=", "threshold": 0.1}
+  }
+}

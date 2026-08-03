@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "dependency_audit": true,
+    "evaluator_complete": true,
+    "hash_manifest_complete": true,
+    "metric_binding": true,
+    "provenance_complete": true,
+    "threshold_immutable": true,
+    "zero_numerical_execution": true
+  },
+  "current_v2_status": "V2_QUALIFICATION_EVIDENCE_INCOMPLETE",
+  "downstream": {
+    "stage02_started": false,
+    "training_started": false,
+    "v2_pass_generated": false,
+    "v3_started": false
+  },
+  "unique_status": "INDEPENDENT_VALIDATION_EVALUATOR_READY"
+}

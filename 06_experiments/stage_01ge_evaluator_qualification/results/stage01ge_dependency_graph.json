@@ -1,0 +1,47 @@
+{
+  "edges": [
+    ["__init__.py", "acoustic_evaluator.py"],
+    ["__init__.py", "gate_rules.py"],
+    ["__init__.py", "shear_evaluator.py"],
+    ["acoustic_evaluator.py", "common_metrics.py"],
+    ["acoustic_evaluator.py", "schema.py"],
+    ["gate_rules.py", "common_metrics.py"],
+    ["gate_rules.py", "provenance.py"],
+    ["schema.py", "common_metrics.py"],
+    ["schema.py", "provenance.py"],
+    ["shear_evaluator.py", "common_metrics.py"],
+    ["shear_evaluator.py", "schema.py"],
+    ["uncertainty_report.py", "common_metrics.py"]
+  ],
+  "external_runtime_dependencies": [],
+  "forbidden_dependencies": {
+    "dop853": false,
+    "mms": false,
+    "rk2": false,
+    "solver": false,
+    "source_adapter": false,
+    "stage01f5b_evaluator": false,
+    "training": false
+  },
+  "nodes": [
+    "__init__.py",
+    "acoustic_evaluator.py",
+    "common_metrics.py",
+    "gate_rules.py",
+    "provenance.py",
+    "report_generator.py",
+    "schema.py",
+    "shear_evaluator.py",
+    "uncertainty_report.py"
+  ],
+  "standard_library_dependencies": [
+    "collections.abc",
+    "copy",
+    "hashlib",
+    "json",
+    "math",
+    "pathlib",
+    "typing"
+  ],
+  "status": "PASS"
+}
