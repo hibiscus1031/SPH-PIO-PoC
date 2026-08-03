@@ -202,8 +202,8 @@ def main() -> int:
     parser.add_argument("--attempt-id", default="")
     args = parser.parse_args()
     run_id = args.run_id
-    if args.attempt_id not in ("", "infra_retry1"):
-        raise ValueError("only the preserved first infrastructure retry is allowed")
+    if args.attempt_id not in ("", "infra_retry1", "infra_retry2"):
+        raise ValueError("only the two preserved infrastructure retries are allowed")
     suffix = "" if not args.attempt_id else f".{args.attempt_id}"
     run_dir = STAGE / "runs" / run_id
     failure_path = run_dir / f"failure{suffix}.txt"
@@ -293,8 +293,16 @@ def main() -> int:
             numerical_arrays["velocities"].append(current_state.velocities.numpy().copy())
             numerical_arrays["densities"].append(evaluation.densities.numpy().copy())
             numerical_arrays["pressures"].append(evaluation.pressures.numpy().copy())
-            for key in reference_arrays:
-                reference_arrays[key].append(np.asarray(reference[key], dtype=np.float64))
+            reference_key_map = {
+                "positions": "position",
+                "velocities": "velocity",
+                "densities": "density",
+                "pressures": "pressure",
+            }
+            for array_key, field_key in reference_key_map.items():
+                reference_arrays[array_key].append(
+                    np.asarray(reference[field_key], dtype=np.float64)
+                )
 
         with torch.no_grad():
             state, evaluation = prepare_dynamic_state(state, parameters)

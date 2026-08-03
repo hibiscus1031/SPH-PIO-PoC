@@ -45,7 +45,7 @@ NEW_REPORTS = (
 
 
 def attempt_suffix(run_id: str) -> str:
-    return ".infra_retry1" if run_id == "g_shear_n24" else ""
+    return ".infra_retry2" if run_id == "g_shear_n24" else ""
 
 
 def sha256(path: Path) -> str:
@@ -254,14 +254,22 @@ def main() -> int:
     else:
         unique_status = "V2_QUALIFICATION_FAIL"
     evaluation = {
-        "preserved_infrastructure_failure": {
-            "run_id": "g_shear_n24",
-            "attempt": "canonical",
-            "failure_type": "TypeError",
-            "solver_initialized": False,
-            "numerical_state_generated": False,
-            "retry_attempt": "infra_retry1",
-        },
+        "preserved_infrastructure_failures": [
+            {
+                "run_id": "g_shear_n24",
+                "attempt": "canonical",
+                "failure_type": "TypeError",
+                "solver_initialized": False,
+                "numerical_state_generated": False,
+            },
+            {
+                "run_id": "g_shear_n24",
+                "attempt": "infra_retry1",
+                "failure_type": "KeyError",
+                "numerical_steps_completed": 0,
+                "trajectory_generated": False,
+            },
+        ],
         "executed_run_count": len(shear) + len(acoustic),
         "executed_run_ids": list(shear) + list(acoustic),
         "missing_run_ids": missing_shear + missing_acoustic,

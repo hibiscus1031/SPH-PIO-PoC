@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "<HOME>/Documents/SPH-PIO-PoC/06_experiments/stage_01g_validation_execution/stage01g_worker.py", line 301, in main
+    capture(0.0, state, evaluation)
+  File "<HOME>/Documents/SPH-PIO-PoC/06_experiments/stage_01g_validation_execution/stage01g_worker.py", line 297, in capture
+    reference_arrays[key].append(np.asarray(reference[key], dtype=np.float64))
+                                            ~~~~~~~~~^^^^^
+KeyError: 'positions'
