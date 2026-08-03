@@ -1,0 +1,105 @@
+{
+  "config_sha256": "3be8e6e711796ec720cb02666ce8ba70478b28e031452a278e9824fc5dd4bbd7",
+  "decision": "TRIGGERED",
+  "decision_timestamp": "2026-08-03T00:26:24.884389+00:00",
+  "immutable": true,
+  "schema_version": "sph-pio-poc.stage01f5b.n64-trigger.v1",
+  "trigger_rows": [
+    {
+      "any_primary_error_nonmonotone": false,
+      "field": "density",
+      "local_order_relative_changes": [
+        0.2559454430829162,
+        0.28306114823689954
+      ],
+      "local_order_sign_inconsistent": false,
+      "n48_n32_ratio_greater_than_0p95": false,
+      "near_asymptotic_entry_unclear": true,
+      "solution": "MMS_A"
+    },
+    {
+      "any_primary_error_nonmonotone": false,
+      "field": "position",
+      "local_order_relative_changes": [
+        0.18281707849983864,
+        0.3346793554437153
+      ],
+      "local_order_sign_inconsistent": false,
+      "n48_n32_ratio_greater_than_0p95": false,
+      "near_asymptotic_entry_unclear": true,
+      "solution": "MMS_A"
+    },
+    {
+      "any_primary_error_nonmonotone": false,
+      "field": "pressure",
+      "local_order_relative_changes": [
+        0.25594544308291595,
+        0.28306114823689943
+      ],
+      "local_order_sign_inconsistent": false,
+      "n48_n32_ratio_greater_than_0p95": false,
+      "near_asymptotic_entry_unclear": true,
+      "solution": "MMS_A"
+    },
+    {
+      "any_primary_error_nonmonotone": false,
+      "field": "velocity",
+      "local_order_relative_changes": [
+        0.19927037825720043,
+        0.31521886869998306
+      ],
+      "local_order_sign_inconsistent": false,
+      "n48_n32_ratio_greater_than_0p95": false,
+      "near_asymptotic_entry_unclear": true,
+      "solution": "MMS_A"
+    },
+    {
+      "any_primary_error_nonmonotone": false,
+      "field": "density",
+      "local_order_relative_changes": [
+        0.23554637517131938,
+        0.27890714074572504
+      ],
+      "local_order_sign_inconsistent": false,
+      "n48_n32_ratio_greater_than_0p95": false,
+      "near_asymptotic_entry_unclear": true,
+      "solution": "MMS_B"
+    },
+    {
+      "any_primary_error_nonmonotone": false,
+      "field": "position",
+      "local_order_relative_changes": [
+        0.18276354231341865,
+        0.3344767063104002
+      ],
+      "local_order_sign_inconsistent": false,
+      "n48_n32_ratio_greater_than_0p95": false,
+      "near_asymptotic_entry_unclear": true,
+      "solution": "MMS_B"
+    },
+    {
+      "any_primary_error_nonmonotone": false,
+      "field": "pressure",
+      "local_order_relative_changes": [
+        0.23554637517131938,
+        0.27890714074572504
+      ],
+      "local_order_sign_inconsistent": false,
+      "n48_n32_ratio_greater_than_0p95": false,
+      "near_asymptotic_entry_unclear": true,
+      "solution": "MMS_B"
+    },
+    {
+      "any_primary_error_nonmonotone": false,
+      "field": "velocity",
+      "local_order_relative_changes": [
+        0.1989900126741848,
+        0.3146921672905871
+      ],
+      "local_order_sign_inconsistent": false,
+      "n48_n32_ratio_greater_than_0p95": false,
+      "near_asymptotic_entry_unclear": true,
+      "solution": "MMS_B"
+    }
+  ]
+}
