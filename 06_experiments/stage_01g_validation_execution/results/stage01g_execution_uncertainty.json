@@ -1,0 +1,37 @@
+{
+  "complete": false,
+  "components": {
+    "acoustic_finite_amplitude_model_form": {
+      "status": "MISSING"
+    },
+    "analytic_or_linear_reference": {
+      "acoustic": "independent linear theory; finite-amplitude departure separate",
+      "shear": "analytic continuum field and unwrapped trajectory",
+      "status": "REPORTED"
+    },
+    "float64_determinism": {
+      "status": "MISSING"
+    },
+    "increasing_neighbor_spatial_envelope": {
+      "status": "MISSING"
+    },
+    "kernel_density_eos_background": {
+      "status": "MISSING"
+    },
+    "n48_n32_difference": {
+      "status": "MISSING"
+    },
+    "rk2_time_step": {
+      "status": "MISSING"
+    },
+    "stage01f5b_gci_not_justified_limitation": {
+      "statement": "GCI not justified; no single total GCI is generated",
+      "status": "REPORTED"
+    },
+    "topology_and_resource": {
+      "status": "MISSING"
+    }
+  },
+  "gci_statement": "GCI not justified",
+  "single_total_gci": null
+}

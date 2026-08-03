@@ -1,0 +1,58 @@
+{
+  "acoustic_gates": "NOT_EVALUATED",
+  "current_v2_status": "V2_QUALIFICATION_EVIDENCE_INCOMPLETE",
+  "determinism": "FAIL",
+  "downstream": {
+    "label_generation_started": false,
+    "stage02_started": false,
+    "training_started": false,
+    "v3_started": false
+  },
+  "executed_run_count": 0,
+  "executed_run_ids": [],
+  "execution_blocker": "g_shear_n24 infrastructure retry2 failed before any complete run evidence was generated",
+  "hard_safety": "FAIL",
+  "missing_run_ids": [
+    "g_shear_n24",
+    "g_shear_n32",
+    "g_shear_n48",
+    "g_shear_n32_dt_half",
+    "g_shear_n48_rep2",
+    "g_acoustic_e5e3_n24",
+    "g_acoustic_e5e3_n32",
+    "g_acoustic_e5e3_n48",
+    "g_acoustic_e5e3_n32_dt_half",
+    "g_acoustic_e5e3_n48_rep2",
+    "g_acoustic_e2p5e3_n48",
+    "g_acoustic_e1e2_n48"
+  ],
+  "preserved_infrastructure_failures": [
+    {
+      "attempt": "canonical",
+      "failure_type": "TypeError",
+      "numerical_state_generated": false,
+      "run_id": "g_shear_n24",
+      "solver_initialized": false
+    },
+    {
+      "attempt": "infra_retry1",
+      "failure_type": "KeyError",
+      "numerical_steps_completed": 0,
+      "run_id": "g_shear_n24",
+      "trajectory_generated": false
+    },
+    {
+      "attempt": "infra_retry2",
+      "checkpoint_generated": false,
+      "completed_run": false,
+      "evaluator_result_generated": false,
+      "failure_type": "AttributeError",
+      "reference_generated": false,
+      "run_id": "g_shear_n24"
+    }
+  ],
+  "provenance_complete": false,
+  "shear_gates": "NOT_EVALUATED",
+  "uncertainty_complete": false,
+  "unique_status": "V2_QUALIFICATION_EVIDENCE_INCOMPLETE"
+}

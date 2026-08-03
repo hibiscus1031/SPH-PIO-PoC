@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "<HOME>/Documents/SPH-PIO-PoC/06_experiments/stage_01g_validation_execution/stage01g_worker.py", line 321, in main
+    audit = force_structure_audit(result.midpoint_state, result.midpoint_evaluation, parameters)
+                                  ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DynamicStepResult' object has no attribute 'midpoint_state'

@@ -145,10 +145,14 @@ def test_retry1_execution_code_manifest_remains_valid_at_preserved_commit():
         assert hashlib.sha256(payload).hexdigest() == row["sha256"]
 
 
-def test_retry2_execution_code_manifest_freezes_active_adapters():
+def test_retry2_execution_code_manifest_remains_valid_at_execution_commit():
     manifest = STAGE / "manifests/stage01g_execution_code_sha256_retry2.csv"
     with manifest.open(newline="") as stream:
         rows = list(csv.DictReader(stream))
     assert len(rows) == 3
     for row in rows:
-        assert hashlib.sha256((ROOT / row["path"]).read_bytes()).hexdigest() == row["sha256"]
+        payload = subprocess.check_output(
+            ("git", "show", f"83e36b826e65cd6fcb2f9538e3c1443768e30b19:{row['path']}"),
+            cwd=ROOT,
+        )
+        assert hashlib.sha256(payload).hexdigest() == row["sha256"]
