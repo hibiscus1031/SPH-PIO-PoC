@@ -1,0 +1,60 @@
+stage:
+  name: Stage 01H — Viscous Decay Diagnosis
+  mode: read_only_diagnosis
+  stage01g_execution_status: V2_QUALIFICATION_FAIL
+  stage01g_failure_gate: SHEAR3
+  allowed_final_statuses:
+    - VISCOSITY_DIAGNOSIS_COMPLETE
+    - VISCOSITY_DIAGNOSIS_INCOMPLETE
+    - VISCOSITY_OPERATOR_FAILURE_CONFIRMED
+
+frozen_execution:
+  commit: 448b090be03d5e5201096f37962cebfd962e3e6a
+  attempt_id: reapplication_01
+  run_ids:
+    - g_shear_n24
+    - g_shear_n32
+    - g_shear_n48
+    - g_shear_n32_dt_half
+    - g_shear_n48_rep2
+  evaluator_directory: 06_experiments/stage_01g_validation_execution/evaluator_results
+  final_state: 06_experiments/stage_01g_validation_execution/results/stage01g_execution_final_state.json
+  shear_gates: 06_experiments/stage_01g_validation_execution/results/stage01g_shear_gates_reapplication_01.json
+  evidence_manifest: 06_experiments/stage_01g_validation_execution/manifests/stage01g_execution_evidence_sha256_reapplication_01.csv
+
+benchmark:
+  reference: analytic_shear_solution
+  rho0: 1.0
+  c_s: 20.0
+  nu: 0.02
+  U_s: 0.5
+  k_s: 2*pi
+  t_final: 0.2
+  shear3_threshold: 0.02
+
+decomposition:
+  baseline_run: g_shear_n32
+  dt_half_run: g_shear_n32_dt_half
+  fine_run: g_shear_n48
+  determinism_run: g_shear_n48_rep2
+  identity: E_total = E_time + E_space + E_operator
+  definitions:
+    E_total: N32 main-step error
+    E_time: signed N32 main-step error minus N32 half-step error
+    E_space: signed N32 half-step error minus N48 error
+    E_operator: unresolved N48 residual; an upper bound, not operator-form attribution
+  time_small_relative_change_max: 0.10
+
+scope_guards:
+  solver_modification: false
+  benchmark_modification: false
+  evaluator_modification: false
+  threshold_modification: false
+  v2_reclassification: false
+  benchmark_regeneration: false
+  gci_generated: false
+  stage02_started: false
+  transformer_started: false
+  pio_started: false
+  training_started: false
+  label_generation_started: false
