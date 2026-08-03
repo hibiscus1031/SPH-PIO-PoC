@@ -1,0 +1,13 @@
+run_id,benchmark,epsilon,N,H_over_dx,dt,t_final,purpose,future_output_directory,stage01g_status
+g_shear_n24,shear,,24,4.5,0.0000625,0.2,formal_resolution,06_experiments/stage_01g_validation_execution/runs/g_shear_n24,PREREGISTERED_NOT_EXECUTED
+g_shear_n32,shear,,32,5.049509756796392,0.0000625,0.2,formal_resolution,06_experiments/stage_01g_validation_execution/runs/g_shear_n32,PREREGISTERED_NOT_EXECUTED
+g_shear_n48,shear,,48,5.5,0.0000625,0.2,formal_resolution,06_experiments/stage_01g_validation_execution/runs/g_shear_n48,PREREGISTERED_NOT_EXECUTED
+g_shear_n32_dt_half,shear,,32,5.049509756796392,0.00003125,0.2,time_step_isolation,06_experiments/stage_01g_validation_execution/runs/g_shear_n32_dt_half,PREREGISTERED_NOT_EXECUTED
+g_shear_n48_rep2,shear,,48,5.5,0.0000625,0.2,determinism_repeat,06_experiments/stage_01g_validation_execution/runs/g_shear_n48_rep2,PREREGISTERED_NOT_EXECUTED
+g_acoustic_e5e3_n24,acoustic,0.005,24,4.5,0.0000625,0.1,main_amplitude_resolution,06_experiments/stage_01g_validation_execution/runs/g_acoustic_e5e3_n24,PREREGISTERED_NOT_EXECUTED
+g_acoustic_e5e3_n32,acoustic,0.005,32,5.049509756796392,0.0000625,0.1,main_amplitude_resolution,06_experiments/stage_01g_validation_execution/runs/g_acoustic_e5e3_n32,PREREGISTERED_NOT_EXECUTED
+g_acoustic_e5e3_n48,acoustic,0.005,48,5.5,0.0000625,0.1,main_amplitude_resolution,06_experiments/stage_01g_validation_execution/runs/g_acoustic_e5e3_n48,PREREGISTERED_NOT_EXECUTED
+g_acoustic_e5e3_n32_dt_half,acoustic,0.005,32,5.049509756796392,0.00003125,0.1,time_step_isolation,06_experiments/stage_01g_validation_execution/runs/g_acoustic_e5e3_n32_dt_half,PREREGISTERED_NOT_EXECUTED
+g_acoustic_e5e3_n48_rep2,acoustic,0.005,48,5.5,0.0000625,0.1,determinism_repeat,06_experiments/stage_01g_validation_execution/runs/g_acoustic_e5e3_n48_rep2,PREREGISTERED_NOT_EXECUTED
+g_acoustic_e2p5e3_n48,acoustic,0.0025,48,5.5,0.0000625,0.1,amplitude_audit,06_experiments/stage_01g_validation_execution/runs/g_acoustic_e2p5e3_n48,PREREGISTERED_NOT_EXECUTED
+g_acoustic_e1e2_n48,acoustic,0.01,48,5.5,0.0000625,0.1,amplitude_audit,06_experiments/stage_01g_validation_execution/runs/g_acoustic_e1e2_n48,PREREGISTERED_NOT_EXECUTED

@@ -1,0 +1,242 @@
+stage:
+  name: "Stage 01G — Independent Benchmark Validation and V2 Qualification Design"
+  kind: prospective_design_only
+  unique_status: INDEPENDENT_VALIDATION_AND_V2_DESIGN_APPROVED
+  numerical_execution_authorized: false
+  threshold_changes_after_results_authorized: false
+  benchmark_results_present: false
+  v2_status_generated: false
+
+stage01f5b_freeze:
+  historical_status: PLATEAU_AWARE_MMS_REQUALIFICATION_PASS
+  evidence_snapshot_commit: ac8e06aa0ba3c5cc54fb567d1d40bd0f36e4487f
+  final_archive_commit: 6cbfea24cf1f2fd55f2bad0b949083ed4ab953c3
+  annotated_tag: stage-01f5b-plateau-aware-mms-requalification-pass
+  archive_is_descendant_of_snapshot: true
+  evidence_inventory_items: 339
+  frozen_without_modification: true
+  infrastructure_retry_preserved: true
+
+execution_audit:
+  numerical_trajectory_count: 0
+  sph_runs: 0
+  rk2_runs: 0
+  dop853_runs: 0
+  benchmark_runs: 0
+  training_runs: 0
+  label_generation_runs: 0
+  future_run_ids_executed: []
+  stage_02_started: false
+  v3_started: false
+
+common:
+  domain: "[-1,1)^2"
+  dimensions: 2
+  boundary: periodic
+  rho0: 1.0
+  c_s: 20.0
+  kernel: Wendland C4
+  arithmetic: CPU float64
+  external_source: false
+  source_call_count_required: 0
+  dx_formula: 2/N
+  resolution_support:
+    24: 4.5
+    32: 5.049509756796392
+    48: 5.5
+  dt_main: 0.0000625
+  dt_half_n32: 0.00003125
+  integer_tick: 0.00003125
+  solver_components_frozen:
+    - pressure
+    - viscosity
+    - EOS
+    - density
+    - RK2
+    - source
+    - neighbor_search
+
+shear_wave:
+  claim: viscous_transverse_shear_wave_periodic_validation
+  excluded_claims: [free_surface, boundary, turbulence]
+  parameters:
+    rho0: 1.0
+    c_s: 20.0
+    nu: 0.02
+    U_s: 0.5
+    k_s: "2*pi"
+    t_final: 0.2
+  initialization:
+    mass_formula: "m_i=rho0*(2/N)^2"
+    uniform_mass: true
+  exact_reference:
+    implementation_path: null
+    kind: closed_form_continuum_and_unwrapped_trajectory
+    rho: "rho0"
+    pressure: "0"
+    u_x: "U_s*sin(k_s*y)*exp(-nu*k_s^2*t)"
+    u_y: "0"
+    x_unwrapped: "x0+U_s*sin(k_s*y0)*(1-exp(-nu*k_s^2*t))/(nu*k_s^2)"
+    y_unwrapped: "y0"
+    project_rk2_used: false
+    sph_residual_correction: false
+  common_time_ticks: [0, 800, 1600, 3200, 4800, 6400]
+  common_times: [0.0, 0.025, 0.05, 0.10, 0.15, 0.20]
+  metrics:
+    - velocity_vector_L2_Linf
+    - particle_position_periodic_L2_Linf
+    - fitted_decay_rate
+    - amplitude_ratio
+    - density_L2_Linf_drift
+    - pressure_L2_Linf
+    - transverse_leakage_L2_over_U_s
+    - momentum
+    - viscous_power
+    - topology_resource_determinism
+  gates:
+    SHEAR1: "all states and exact values finite; hard safety PASS"
+    SHEAR2: "N48 velocity relative L2 <= 0.02"
+    SHEAR3: "N48 decay-rate relative error <= 0.02"
+    SHEAR4: "N48 particle-position relative L2 <= 0.01"
+    SHEAR5: "N48 density Linf drift <= 5e-3"
+    SHEAR6: "N48 transverse leakage <= 1e-3"
+    SHEAR7: "velocity and position errors satisfy N24 > N32 > N48"
+    SHEAR8: "N32 dt-halving relative change of primary errors <= 0.10"
+
+acoustic_wave:
+  claim: linear-acoustic-regime_validation
+  excluded_claims: [finite_amplitude_nonlinear_exact_solution]
+  parameters:
+    rho0: 1.0
+    c_s: 20.0
+    nu: 0.0
+    k_a: pi
+    epsilon_main: 0.005
+    epsilon_audit: [0.0025, 0.005, 0.01]
+    t_final: 0.1
+    theoretical_periods: 1
+  initialization:
+    volume_formula: "V_i=(2/N)^2"
+    mass_formula: "m_i=rho_exact(x_i,0)*V_i"
+    masses_fixed: true
+    numerical_density_source: kernel_sum
+    overwrite_numerical_density_with_exact: false
+  linear_reference:
+    implementation_path: null
+    kind: independent_linear_theory
+    rho: "rho0*(1+epsilon_a*cos(k_a*x)*cos(c_s*k_a*t))"
+    u_x: "c_s*epsilon_a*sin(k_a*x)*sin(c_s*k_a*t)"
+    u_y: "0"
+    pressure: "c_s^2*(rho-rho0)"
+    project_rk2_used: false
+    sph_residual_correction: false
+    finite_amplitude_bias_classification: model_form_uncertainty
+  common_time_ticks: [0, 800, 1600, 2400, 3200]
+  common_times: [0.0, 0.025, 0.05, 0.075, 0.10]
+  metrics:
+    - density_velocity_fundamental_amplitudes
+    - phase_speed
+    - one_period_phase_error
+    - density_velocity_signal_normalized_L2
+    - pressure_error
+    - second_harmonic_over_fundamental
+    - transverse_velocity_leakage
+    - mean_momentum_drift
+    - mean_density_pressure_bias
+    - topology_resource_determinism
+  gates:
+    ACOUSTIC1: "all states finite; hard safety PASS"
+    ACOUSTIC2: "epsilon=0.005 N48 phase-speed relative error <= 0.02"
+    ACOUSTIC3: "N48 density fundamental-amplitude relative error <= 0.05"
+    ACOUSTIC4: "N48 velocity fundamental-amplitude relative error <= 0.05"
+    ACOUSTIC5: "N48 one-period density and velocity signal-normalized L2 <= 0.10"
+    ACOUSTIC6: "transverse velocity leakage <= 1e-3"
+    ACOUSTIC7: "main-amplitude density, velocity, and phase errors satisfy N24 > N32 > N48"
+    ACOUSTIC8: "N32 dt-halving relative change of primary errors <= 0.10"
+    ACOUSTIC9: "second-harmonic/fundamental ratio does not systematically increase as epsilon decreases 0.01 -> 0.005 -> 0.0025"
+    ACOUSTIC10: "claim is explicitly limited to linear-acoustic-regime validation"
+
+independence:
+  manufactured_force_used: false
+  f_MMS_used: false
+  stage01f_source_adapter_called: false
+  stage01f_trajectories_used_as_validation_results: false
+  stage01f_mms_used_as_physical_validation: false
+  validation_metrics_enter_solver_rhs: false
+  reference_corrected_by_sph_residual: false
+  reference_uses_project_rk2: false
+  reference_paths: []
+
+hard_safety:
+  pair_force_residual_max: 1.0e-12
+  normalized_internal_force_residual_max: 1.0e-10
+  force_assembly_defect_max: 1.0e-10
+  momentum_update_defect_max: 1.0e-10
+  viscous_power_positive_tolerance_max: 1.0e-12
+  structural_topology_defects_max: 0
+  minimum_separation_over_dx_min: 0.25
+  current_rss_bytes_exclusive_max: 2000000000
+  peak_rss_bytes_exclusive_max: 4000000000
+  rss_q4_minus_q1_bytes_max: 250000000
+  rss_q4_over_q1_max: 1.50
+  step_time_q4_over_q1_max: 1.30
+  internal_total_momentum_required: true
+  external_force_balance_substitution_allowed: false
+  process_contract:
+    independent_child_process_per_run: true
+    cyclic_gc_default: true
+    torch_no_grad: true
+    in_loop_gc_collect: false
+    parent_scalar_only: true
+    child_fully_reclaimed: true
+
+uncertainty_components:
+  - analytic_or_linear_reference
+  - rk2_time_step
+  - increasing_neighbor_spatial_envelope
+  - n48_n32_difference
+  - float64_determinism
+  - acoustic_finite_amplitude_model_form
+  - kernel_density_eos_background
+  - topology_and_resource
+  - stage01f5b_gci_not_justified_limitation
+uncertainty_rules:
+  omit_because_gci_unjustified: false
+  fabricate_single_total_gci: false
+
+v2_boundary:
+  current_v2_status: null
+  future_pass_status: V2_QUALIFICATION_PASS
+  future_fail_status: V2_QUALIFICATION_FAIL
+  future_incomplete_status: V2_QUALIFICATION_EVIDENCE_INCOMPLETE
+  pass_requires:
+    - SHEAR1-SHEAR8 PASS
+    - ACOUSTIC1-ACOUSTIC10 PASS
+    - Stage 01F5B frozen identity PASS
+    - hard safety PASS
+    - complete uncertainty budget
+    - complete provenance
+  pass_automatically_starts_v3: false
+  pass_automatically_starts_stage02: false
+  pass_authorizes_training_or_labels: false
+
+domain_of_validity:
+  included:
+    - 2D
+    - periodic_domain
+    - smooth_weakly_compressible_flows
+    - low_Mach
+    - Wendland_C4
+    - frozen_EOS
+    - frozen_pressure_and_viscosity_operators
+    - CPU_float64
+    - tested_resolution_and_support_range
+  excluded:
+    - free_surface
+    - solid_wall_boundary
+    - shocks
+    - multiphase
+    - FSI
+    - turbulence
+    - 3D
+    - learned_corrector

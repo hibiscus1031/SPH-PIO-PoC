@@ -1,0 +1,21 @@
+{
+  "archive_commit": "6cbfea24cf1f2fd55f2bad0b949083ed4ab953c3",
+  "archive_is_descendant_of_evidence_snapshot": true,
+  "archive_tag": "stage-01f5b-plateau-aware-mms-requalification-pass",
+  "diff_class_counts": {
+    "evaluator_scientific_logic": 0,
+    "gate_threshold_config": 0,
+    "numerical_source": 0,
+    "report_manifest_test_archive_metadata": 2,
+    "run_evidence_checkpoints_or_qualification_data": 0
+  },
+  "diff_paths": [
+    "06_experiments/stage_01f5b_requalification_execution/manifests/stage01f5b_final_evidence_sha256_attempt1.csv",
+    "06_experiments/stage_01f5b_requalification_execution/results/run_status_table_attempt1.csv"
+  ],
+  "evidence_inventory_item_count": 339,
+  "evidence_snapshot_commit": "ac8e06aa0ba3c5cc54fb567d1d40bd0f36e4487f",
+  "frozen_identity_pass": true,
+  "historical_status": "PLATEAU_AWARE_MMS_REQUALIFICATION_PASS",
+  "infrastructure_retry_reconciliation_preserved": true
+}
