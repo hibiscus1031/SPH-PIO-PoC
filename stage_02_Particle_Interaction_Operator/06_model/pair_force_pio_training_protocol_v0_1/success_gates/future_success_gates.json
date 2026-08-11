@@ -1,0 +1,48 @@
+{
+  "K1_K2_test_selection_permitted": false,
+  "contract_version": "stage02l-future-success-gates-1.0.0",
+  "executed_in_stage02l": false,
+  "gates": {
+    "K0_role": "report_same_metrics_diagnostic_only",
+    "conservation_after_fitting": {
+      "all_selected_checkpoints": true,
+      "normalized_total_force_max": 1e-10,
+      "pair_residual_max": 1e-10
+    },
+    "numerical_stability": {
+      "no_corrupted_checkpoint": true,
+      "no_nan_inf": true,
+      "seeds_finite": "3/3",
+      "trained_symmetry_conservation_reaudit": "PASS"
+    },
+    "route_rule": "at_least_one_of_K1_or_K2_passes_all_A_through_E",
+    "test_transfer": {
+      "applies_to": [
+        "K1",
+        "K2"
+      ],
+      "every_graph_Q_L2_max": 1.1,
+      "family_balanced_mean_Q_L2_max": 0.9,
+      "release_required": true,
+      "seed_rule": "at_least_2_of_3"
+    },
+    "train_fit": {
+      "applies_to": [
+        "K1",
+        "K2"
+      ],
+      "family_balanced_mean_Q_L2_max": 0.25,
+      "seed_rule": "at_least_2_of_3"
+    },
+    "validation_transfer": {
+      "applies_to": [
+        "K1",
+        "K2"
+      ],
+      "every_graph_Q_L2_max": 1.1,
+      "family_balanced_mean_Q_L2_max": 0.9,
+      "seed_rule": "at_least_2_of_3"
+    }
+  },
+  "status": "FROZEN"
+}

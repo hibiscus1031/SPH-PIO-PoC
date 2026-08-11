@@ -1,0 +1,305 @@
+{
+  "schema": "s1.innovation-register.v1",
+  "innovations": [
+    {
+      "id": "I01",
+      "category": "A 科学认识",
+      "exact_contribution": "不把高分辨率SPH自动称为真值",
+      "supporting_artifacts": [
+        "06_experiments/stage_01dr5_gc_cycle_localization/results/stage01dr5_status.txt"
+      ],
+      "evidence_strength": "PROJECT_EVIDENCE_STRONG_INTERNAL",
+      "nearest_internal_predecessor": "preceding failed/limited stage in timeline",
+      "limitation": "仅限冻结SPH-PIO-PoC合同与case scope",
+      "potentially_publishable": true,
+      "likely_generalizable": "requires cross-problem validation",
+      "literature_verification": "POTENTIAL_NOVELTY_REQUIRES_LITERATURE_VERIFICATION",
+      "prohibited_overclaim": "不得使用first/unprecedented/novel的绝对措辞；不得暗示训练或性能成功。"
+    },
+    {
+      "id": "I02",
+      "category": "D reference治理",
+      "exact_contribution": "候选reference资格认定链",
+      "supporting_artifacts": [
+        "06_experiments/stage_01dp_resource_policy/results/stage01dp_status.txt"
+      ],
+      "evidence_strength": "PROJECT_EVIDENCE_STRONG_INTERNAL",
+      "nearest_internal_predecessor": "preceding failed/limited stage in timeline",
+      "limitation": "仅限冻结SPH-PIO-PoC合同与case scope",
+      "potentially_publishable": true,
+      "likely_generalizable": "requires cross-problem validation",
+      "literature_verification": "POTENTIAL_NOVELTY_REQUIRES_LITERATURE_VERIFICATION",
+      "prohibited_overclaim": "不得使用first/unprecedented/novel的绝对措辞；不得暗示训练或性能成功。"
+    },
+    {
+      "id": "I03",
+      "category": "B 数值方法",
+      "exact_contribution": "WCSPH-compatible MMS与双路径闭合审计",
+      "supporting_artifacts": [
+        "06_experiments/stage_01d2_v2_requalification/results/stage01d2_evaluation.json"
+      ],
+      "evidence_strength": "PROJECT_EVIDENCE_STRONG_INTERNAL",
+      "nearest_internal_predecessor": "preceding failed/limited stage in timeline",
+      "limitation": "仅限冻结SPH-PIO-PoC合同与case scope",
+      "potentially_publishable": true,
+      "likely_generalizable": "requires cross-problem validation",
+      "literature_verification": "POTENTIAL_NOVELTY_REQUIRES_LITERATURE_VERIFICATION",
+      "prohibited_overclaim": "不得使用first/unprecedented/novel的绝对措辞；不得暗示训练或性能成功。"
+    },
+    {
+      "id": "I04",
+      "category": "C V&V方法",
+      "exact_contribution": "same-semidiscrete DOP853角色分离",
+      "supporting_artifacts": [
+        "06_experiments/stage_01e_error_decomposition/results/stage01e_evaluation.json"
+      ],
+      "evidence_strength": "PROJECT_EVIDENCE_STRONG_INTERNAL",
+      "nearest_internal_predecessor": "preceding failed/limited stage in timeline",
+      "limitation": "仅限冻结SPH-PIO-PoC合同与case scope",
+      "potentially_publishable": true,
+      "likely_generalizable": "requires cross-problem validation",
+      "literature_verification": "POTENTIAL_NOVELTY_REQUIRES_LITERATURE_VERIFICATION",
+      "prohibited_overclaim": "不得使用first/unprecedented/novel的绝对措辞；不得暗示训练或性能成功。"
+    },
+    {
+      "id": "I05",
+      "category": "C V&V方法",
+      "exact_contribution": "plateau-aware temporal/spatial verification",
+      "supporting_artifacts": [
+        "06_experiments/stage_01f_mms_design/results/stage01f_evaluation.json"
+      ],
+      "evidence_strength": "PROJECT_EVIDENCE_STRONG_INTERNAL",
+      "nearest_internal_predecessor": "preceding failed/limited stage in timeline",
+      "limitation": "仅限冻结SPH-PIO-PoC合同与case scope",
+      "potentially_publishable": true,
+      "likely_generalizable": "requires cross-problem validation",
+      "literature_verification": "POTENTIAL_NOVELTY_REQUIRES_LITERATURE_VERIFICATION",
+      "prohibited_overclaim": "不得使用first/unprecedented/novel的绝对措辞；不得暗示训练或性能成功。"
+    },
+    {
+      "id": "I06",
+      "category": "A 科学认识",
+      "exact_contribution": "source-free shear/acoustic验证边界",
+      "supporting_artifacts": [
+        "06_experiments/stage_01f2_mms_implementation/results/stage01f2_evaluation_v2.json"
+      ],
+      "evidence_strength": "PROJECT_EVIDENCE_SCOPED",
+      "nearest_internal_predecessor": "preceding failed/limited stage in timeline",
+      "limitation": "仅限冻结SPH-PIO-PoC合同与case scope",
+      "potentially_publishable": true,
+      "likely_generalizable": "requires cross-problem validation",
+      "literature_verification": "POTENTIAL_NOVELTY_REQUIRES_LITERATURE_VERIFICATION",
+      "prohibited_overclaim": "不得使用first/unprecedented/novel的绝对措辞；不得暗示训练或性能成功。"
+    },
+    {
+      "id": "I07",
+      "category": "E 守恒神经架构",
+      "exact_contribution": "pair-force antisymmetry硬保证线动量守恒",
+      "supporting_artifacts": [
+        "06_experiments/stage_01f3_mms_convergence/results/stage01f3_evaluation.json"
+      ],
+      "evidence_strength": "PROJECT_EVIDENCE_STRONG_INTERNAL",
+      "nearest_internal_predecessor": "preceding failed/limited stage in timeline",
+      "limitation": "仅限冻结SPH-PIO-PoC合同与case scope",
+      "potentially_publishable": true,
+      "likely_generalizable": "requires cross-problem validation",
+      "literature_verification": "POTENTIAL_NOVELTY_REQUIRES_LITERATURE_VERIFICATION",
+      "prohibited_overclaim": "不得使用first/unprecedented/novel的绝对措辞；不得暗示训练或性能成功。"
+    },
+    {
+      "id": "I08",
+      "category": "D 数据治理",
+      "exact_contribution": "family-lineage leakage graph与blind split",
+      "supporting_artifacts": [
+        "06_experiments/stage_01f3r_reference_qualification/results/stage01f3r_evaluation.json"
+      ],
+      "evidence_strength": "PROJECT_EVIDENCE_STRONG_INTERNAL",
+      "nearest_internal_predecessor": "preceding failed/limited stage in timeline",
+      "limitation": "仅限冻结SPH-PIO-PoC合同与case scope",
+      "potentially_publishable": true,
+      "likely_generalizable": "requires cross-problem validation",
+      "literature_verification": "POTENTIAL_NOVELTY_REQUIRES_LITERATURE_VERIFICATION",
+      "prohibited_overclaim": "不得使用first/unprecedented/novel的绝对措辞；不得暗示训练或性能成功。"
+    },
+    {
+      "id": "I09",
+      "category": "C V&V方法",
+      "exact_contribution": "regularity hard-gate前瞻校准和证伪",
+      "supporting_artifacts": [
+        "06_experiments/stage_01f3b_mms_convergence/results/stage01f3b_evaluation.json"
+      ],
+      "evidence_strength": "PROJECT_EVIDENCE_STRONG_INTERNAL",
+      "nearest_internal_predecessor": "preceding failed/limited stage in timeline",
+      "limitation": "仅限冻结SPH-PIO-PoC合同与case scope",
+      "potentially_publishable": true,
+      "likely_generalizable": "requires cross-problem validation",
+      "literature_verification": "POTENTIAL_NOVELTY_REQUIRES_LITERATURE_VERIFICATION",
+      "prohibited_overclaim": "不得使用first/unprecedented/novel的绝对措辞；不得暗示训练或性能成功。"
+    },
+    {
+      "id": "I10",
+      "category": "I 负结果治理",
+      "exact_contribution": "static learnability与architecture correctness分离",
+      "supporting_artifacts": [
+        "06_experiments/stage_01f3c_ct2_adjudication/results/stage01f3c_evaluation.json"
+      ],
+      "evidence_strength": "PROJECT_EVIDENCE_SCOPED",
+      "nearest_internal_predecessor": "preceding failed/limited stage in timeline",
+      "limitation": "仅限冻结SPH-PIO-PoC合同与case scope",
+      "potentially_publishable": true,
+      "likely_generalizable": "requires cross-problem validation",
+      "literature_verification": "POTENTIAL_NOVELTY_REQUIRES_LITERATURE_VERIFICATION",
+      "prohibited_overclaim": "不得使用first/unprecedented/novel的绝对措辞；不得暗示训练或性能成功。"
+    },
+    {
+      "id": "I11",
+      "category": "G 梯度验证",
+      "exact_contribution": "optimization conditioning量化归因",
+      "supporting_artifacts": [
+        "06_experiments/stage_01f4_protocol_adjudication/results/stage01f4_evaluation.json"
+      ],
+      "evidence_strength": "PROJECT_EVIDENCE_SCOPED",
+      "nearest_internal_predecessor": "preceding failed/limited stage in timeline",
+      "limitation": "仅限冻结SPH-PIO-PoC合同与case scope",
+      "potentially_publishable": true,
+      "likely_generalizable": "requires cross-problem validation",
+      "literature_verification": "POTENTIAL_NOVELTY_REQUIRES_LITERATURE_VERIFICATION",
+      "prohibited_overclaim": "不得使用first/unprecedented/novel的绝对措辞；不得暗示训练或性能成功。"
+    },
+    {
+      "id": "I12",
+      "category": "F 动态求解器",
+      "exact_contribution": "bitwise zero-correction equivalence",
+      "supporting_artifacts": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03ds_final_manifest.json; publication P2 novelty matrix"
+      ],
+      "evidence_strength": "PROJECT_EVIDENCE_STRONG_INTERNAL",
+      "nearest_internal_predecessor": "preceding failed/limited stage in timeline",
+      "limitation": "仅限冻结SPH-PIO-PoC合同与case scope",
+      "potentially_publishable": true,
+      "likely_generalizable": "requires cross-problem validation",
+      "literature_verification": "SUPPORTED_NOVELTY_GAP",
+      "prohibited_overclaim": "不得使用first/unprecedented/novel的绝对措辞；不得暗示训练或性能成功。"
+    },
+    {
+      "id": "I13",
+      "category": "F 动态求解器",
+      "exact_contribution": "RK2 start/midpoint graph rebuild与accepted-only history commit",
+      "supporting_artifacts": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03ds_final_manifest.json; publication P2 novelty matrix"
+      ],
+      "evidence_strength": "PROJECT_EVIDENCE_STRONG_INTERNAL",
+      "nearest_internal_predecessor": "preceding failed/limited stage in timeline",
+      "limitation": "仅限冻结SPH-PIO-PoC合同与case scope",
+      "potentially_publishable": true,
+      "likely_generalizable": "requires cross-problem validation",
+      "literature_verification": "SUPPORTED_NOVELTY_GAP",
+      "prohibited_overclaim": "不得使用first/unprecedented/novel的绝对措辞；不得暗示训练或性能成功。"
+    },
+    {
+      "id": "I14",
+      "category": "E 守恒神经架构",
+      "exact_contribution": "D0/D1/D2/D3公平比较合同",
+      "supporting_artifacts": [
+        "06_experiments/stage_01f5q_space_horizon_amendment/results/stage01f5q_evaluation.json"
+      ],
+      "evidence_strength": "PROJECT_EVIDENCE_STRONG_INTERNAL",
+      "nearest_internal_predecessor": "preceding failed/limited stage in timeline",
+      "limitation": "仅限冻结SPH-PIO-PoC合同与case scope",
+      "potentially_publishable": true,
+      "likely_generalizable": "requires cross-problem validation",
+      "literature_verification": "PARTIAL_PRECEDENT",
+      "prohibited_overclaim": "不得使用first/unprecedented/novel的绝对措辞；不得暗示训练或性能成功。"
+    },
+    {
+      "id": "I15",
+      "category": "D reference治理",
+      "exact_contribution": "D-R1/D-R2/D-R3/D-R4 reference hierarchy",
+      "supporting_artifacts": [
+        "06_experiments/stage_01f5b_requalification_execution/results/stage01f5b_evaluation.json"
+      ],
+      "evidence_strength": "PROJECT_EVIDENCE_STRONG_INTERNAL",
+      "nearest_internal_predecessor": "preceding failed/limited stage in timeline",
+      "limitation": "仅限冻结SPH-PIO-PoC合同与case scope",
+      "potentially_publishable": true,
+      "likely_generalizable": "requires cross-problem validation",
+      "literature_verification": "SUPPORTED_NOVELTY_GAP",
+      "prohibited_overclaim": "不得使用first/unprecedented/novel的绝对措辞；不得暗示训练或性能成功。"
+    },
+    {
+      "id": "I16",
+      "category": "G 梯度验证",
+      "exact_contribution": "360-probe multistep AD/FD stable-window qualification",
+      "supporting_artifacts": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03ds_final_manifest.json; publication P2 novelty matrix"
+      ],
+      "evidence_strength": "PROJECT_EVIDENCE_STRONG_INTERNAL",
+      "nearest_internal_predecessor": "preceding failed/limited stage in timeline",
+      "limitation": "仅限冻结SPH-PIO-PoC合同与case scope",
+      "potentially_publishable": true,
+      "likely_generalizable": "requires cross-problem validation",
+      "literature_verification": "SUPPORTED_NOVELTY_GAP",
+      "prohibited_overclaim": "不得使用first/unprecedented/novel的绝对措辞；不得暗示训练或性能成功。"
+    },
+    {
+      "id": "I17",
+      "category": "G 梯度验证",
+      "exact_contribution": "reverse/JVP、extended FD、history attenuation、backend sensitivity联合诊断",
+      "supporting_artifacts": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03ds_final_manifest.json; publication P2 novelty matrix"
+      ],
+      "evidence_strength": "PROJECT_EVIDENCE_STRONG_INTERNAL",
+      "nearest_internal_predecessor": "preceding failed/limited stage in timeline",
+      "limitation": "仅限冻结SPH-PIO-PoC合同与case scope",
+      "potentially_publishable": true,
+      "likely_generalizable": "requires cross-problem validation",
+      "literature_verification": "PARTIAL_PRECEDENT",
+      "prohibited_overclaim": "不得使用first/unprecedented/novel的绝对措辞；不得暗示训练或性能成功。"
+    },
+    {
+      "id": "I18",
+      "category": "H 拓扑事件",
+      "exact_contribution": "deterministic cutoff birth/death与fixed-side gradient资格",
+      "supporting_artifacts": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03ds_final_manifest.json; publication P2 novelty matrix"
+      ],
+      "evidence_strength": "PROJECT_EVIDENCE_STRONG_INTERNAL",
+      "nearest_internal_predecessor": "preceding failed/limited stage in timeline",
+      "limitation": "仅限冻结SPH-PIO-PoC合同与case scope",
+      "potentially_publishable": true,
+      "likely_generalizable": "requires cross-problem validation",
+      "literature_verification": "POTENTIAL_NOVELTY_REQUIRES_LITERATURE_VERIFICATION",
+      "prohibited_overclaim": "不得使用first/unprecedented/novel的绝对措辞；不得暗示训练或性能成功。"
+    },
+    {
+      "id": "I19",
+      "category": "H 拓扑事件",
+      "exact_contribution": "topology component PASS与overall gradient NOT_QUALIFIED分层",
+      "supporting_artifacts": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03ds_final_manifest.json; publication P2 novelty matrix"
+      ],
+      "evidence_strength": "PROJECT_EVIDENCE_STRONG_INTERNAL",
+      "nearest_internal_predecessor": "preceding failed/limited stage in timeline",
+      "limitation": "仅限冻结SPH-PIO-PoC合同与case scope",
+      "potentially_publishable": true,
+      "likely_generalizable": "requires cross-problem validation",
+      "literature_verification": "POTENTIAL_NOVELTY_REQUIRES_LITERATURE_VERIFICATION",
+      "prohibited_overclaim": "不得使用first/unprecedented/novel的绝对措辞；不得暗示训练或性能成功。"
+    },
+    {
+      "id": "I20",
+      "category": "J 工程可复现性",
+      "exact_contribution": "全程保留失败并禁止结果后改门",
+      "supporting_artifacts": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03ds_final_manifest.json; publication P2 novelty matrix"
+      ],
+      "evidence_strength": "PROJECT_EVIDENCE_STRONG_INTERNAL",
+      "nearest_internal_predecessor": "preceding failed/limited stage in timeline",
+      "limitation": "仅限冻结SPH-PIO-PoC合同与case scope",
+      "potentially_publishable": true,
+      "likely_generalizable": "requires cross-problem validation",
+      "literature_verification": "POTENTIAL_NOVELTY_REQUIRES_LITERATURE_VERIFICATION",
+      "prohibited_overclaim": "不得使用first/unprecedented/novel的绝对措辞；不得暗示训练或性能成功。"
+    }
+  ]
+}

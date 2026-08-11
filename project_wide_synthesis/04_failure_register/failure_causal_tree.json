@@ -1,0 +1,61 @@
+{
+  "root": "PROJECT_ROUTE",
+  "children": [
+    {
+      "node": "Stage01 V&V",
+      "children": [
+        {
+          "node": "V1 implementation/structure failures",
+          "effect": "Stage01C repair"
+        },
+        {
+          "node": "V2/model-form/finite-resolution failures",
+          "effect": "MMS + independent validation boundaries"
+        }
+      ]
+    },
+    {
+      "node": "Stage02 static PIO",
+      "children": [
+        {
+          "node": "target/reference/data hard gates",
+          "effect": "qualified blind static dataset"
+        },
+        {
+          "node": "regularity falsification",
+          "effect": "diagnostic-only"
+        },
+        {
+          "node": "static fitting not qualified",
+          "effect": "route terminated"
+        }
+      ]
+    },
+    {
+      "node": "Stage03 dynamic hybrid",
+      "children": [
+        {
+          "node": "implementation qualified",
+          "effect": "Stage03D authorized"
+        },
+        {
+          "node": "multistep gradients not qualified",
+          "effect": "Stage03E not authorized"
+        },
+        {
+          "node": "topology component qualified",
+          "effect": "retained component evidence"
+        }
+      ]
+    },
+    {
+      "node": "Unexecuted",
+      "children": [
+        {
+          "node": "training/rollout/performance",
+          "status": "NOT_AUTHORIZED/NOT_EXECUTED"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "contract_version": "stage02mp-model-arms-1.0.0",
+  "architecture_source": "Stage 02K architecture_contract_v0_1",
+  "architecture_hash": "sha256:1e313f871b13f3f2fc0cc780ab24d50a7fd9fe8a96866da91fae5ede9ab555a4",
+  "arms": {
+    "K0": "CENTRAL_PAIR_MLP_DIAGNOSTIC",
+    "K1": "CONSERVATIVE_PAIR_MLP_BASELINE",
+    "K2": "RECIPROCAL_PAIR_ATTENTION_PIO"
+  },
+  "KNEG_training": false,
+  "architecture_changed": false,
+  "hidden_dimension_changed": false,
+  "heads_changed": false,
+  "blocks_changed": false,
+  "pair_basis_changed": false,
+  "feature_contract_changed": false,
+  "node_or_hybrid_head_added": false,
+  "a_SPH_input_reintroduced": false
+}

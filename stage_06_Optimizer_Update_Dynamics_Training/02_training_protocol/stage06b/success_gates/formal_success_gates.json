@@ -1,0 +1,30 @@
+{
+  "A_numerical_safety": [
+    "no NaN/Inf",
+    "positive density",
+    "finite hidden/coefficient",
+    "deterministic evaluation"
+  ],
+  "B_train_global_Q_def_max": 0.5,
+  "C_validation_global_Q_def_max": 0.9,
+  "D1_D2_completion_required": true,
+  "D1_D2_pass_required_for_sealed_test": false,
+  "D_validation_lineage_Q_def_max": {
+    "LCDF_02": 1.0,
+    "LCDF_09": 1.0
+  },
+  "E_structure": [
+    "correction force residual <=1e-10",
+    "permutation",
+    "edge reorder",
+    "translation",
+    "Galilean",
+    "SO(2)",
+    "reflection",
+    "periodic shift",
+    "history semantics"
+  ],
+  "arm_pass": "at least 2/3 seeds",
+  "seed_pass": "A+B+C+D+E",
+  "transformer_route": "D3 arm PASS"
+}

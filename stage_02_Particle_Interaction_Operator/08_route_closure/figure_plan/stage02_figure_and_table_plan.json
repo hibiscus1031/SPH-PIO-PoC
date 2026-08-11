@@ -1,0 +1,131 @@
+{
+  "figures": [
+    {
+      "data_sources": [
+        "status ledger"
+      ],
+      "figure": 1,
+      "form": "流程图",
+      "integrity_rule": "显示资格门、失败保留与停止规则；不显示 solver 成功箭头。",
+      "status": "PLANNED_NOT_FABRICATED",
+      "title": "V&V-first PIO qualification pipeline"
+    },
+    {
+      "data_sources": [
+        "Stage 02A/H/I evidence"
+      ],
+      "figure": 2,
+      "form": "层级图",
+      "integrity_rule": "区分 R1/R2/R3/RX 和 candidate/qualified/pair-compatible。",
+      "status": "PLANNED_NOT_FABRICATED",
+      "title": "Reference and target qualification hierarchy"
+    },
+    {
+      "data_sources": [
+        "22-stage ledger"
+      ],
+      "figure": 3,
+      "form": "决策树",
+      "integrity_rule": "保留所有 NOT READY/NOT QUALIFIED 节点。",
+      "status": "PLANNED_NOT_FABRICATED",
+      "title": "Stage decision/failure tree"
+    },
+    {
+      "data_sources": [
+        "J-W leakage graph",
+        "10/5/5 split"
+      ],
+      "figure": 4,
+      "form": "网络/分组图",
+      "integrity_rule": "family为统计单元；不得以粒子数扩充 n。",
+      "status": "PLANNED_NOT_FABRICATED",
+      "title": "Blind dataset family/split/leakage structure"
+    },
+    {
+      "data_sources": [
+        "Stage 02K contract"
+      ],
+      "figure": 5,
+      "form": "结构示意",
+      "integrity_rule": "K0标为 diagnostic，K1/K2标结构合格，不画性能排序。",
+      "status": "PLANNED_NOT_FABRICATED",
+      "title": "K0/K1/K2 architecture and conservation contract"
+    },
+    {
+      "data_sources": [
+        "M/M-Q training histories"
+      ],
+      "figure": 6,
+      "form": "全 seed 轨迹",
+      "integrity_rule": "九条seed全部展示；v0.1/v0.2不同protocol/family不得作paired significance。",
+      "status": "PLANNED_NOT_FABRICATED",
+      "title": "Static fitting v0.1 and v0.2 train/validation trajectories"
+    },
+    {
+      "data_sources": [
+        "M/M-Q frozen gates"
+      ],
+      "figure": 7,
+      "form": "门槛矩阵",
+      "integrity_rule": "同时展示A-E，突出B train-fit failure；validation/test PASS不着成功色。",
+      "status": "PLANNED_NOT_FABRICATED",
+      "title": "Frozen gate outcomes across seeds"
+    },
+    {
+      "data_sources": [
+        "claim boundary"
+      ],
+      "figure": 8,
+      "form": "边界图",
+      "integrity_rule": "明确 supported/conditional/unsupported，不用营销性箭头。",
+      "status": "PLANNED_NOT_FABRICATED",
+      "title": "Supported/unsupported claim boundary"
+    }
+  ],
+  "plan_version": "stage02ms-figure-table-plan-1.0.0",
+  "prohibitions": [
+    "do not delete failed seeds",
+    "do not show only best seed",
+    "do not use particle count as sample size",
+    "do not depict validation/test PASS as overall model success"
+  ],
+  "status": "PASS",
+  "tables": [
+    {
+      "source": "machine manifests only",
+      "status": "PLANNED",
+      "table": 1,
+      "title": "Stage status ledger"
+    },
+    {
+      "source": "machine manifests only",
+      "status": "PLANNED",
+      "table": 2,
+      "title": "reference qualification"
+    },
+    {
+      "source": "machine manifests only",
+      "status": "PLANNED",
+      "table": 3,
+      "title": "dataset inventory"
+    },
+    {
+      "source": "machine manifests only",
+      "status": "PLANNED",
+      "table": 4,
+      "title": "architecture hard gates"
+    },
+    {
+      "source": "machine manifests only",
+      "status": "PLANNED",
+      "table": 5,
+      "title": "v0.1/v0.2 static fitting results"
+    },
+    {
+      "source": "machine manifests only",
+      "status": "PLANNED",
+      "table": 6,
+      "title": "final evidence/claim matrix"
+    }
+  ]
+}

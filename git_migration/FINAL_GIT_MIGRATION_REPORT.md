@@ -85,8 +85,12 @@ Do not use `--public`, force push, or overwrite an existing remote repository.
 
 # 11 Remaining actions
 
-1. Configure and verify `user.name` and `user.email`; the baseline used Git's host-derived identity `谢槿博 <xiejinbo@Jinbo-Mac.local>`.
-2. Review the 2,702-item manual-untracked ledger and promote only genuinely version-worthy small evidence in ordinary forward commits.
-3. Establish a reviewed dependency/lock strategy without replacing the historical environment evidence.
-4. Define external object/data storage and retrieval instructions for frozen datasets/checkpoints.
-5. Create a private GitHub remote only after authentication and pre-push re-audit.
+1. Repeat the pre-push audit and create a private remote only if every gate remains satisfied.
+
+# 12 Remote and reproducibility closure update
+
+The 2,702-item manual-untracked audit is complete in `git_migration/pio_untracked_resolution.csv`: 31 small version-worthy scripts, manifests, definitions, registers, schedules, and preregistered plans passed a directed secret audit and are staged; the remaining 2,671 exact paths have explicit scientific dispositions and local-only `.git/info/exclude` entries. There are no unresolved `MANUAL_DECISION_REQUIRED` rows. Result: **PIO_UNTRACKED_AUDIT_PASS**.
+
+External-data handling and the read-only manifest checker are documented in `DATA_RETRIEVAL_AND_INTEGRITY.md`. The project closure manifest passed quick existence/size checks for 15,090/15,090 entries. The intended index has zero secret signatures, zero files over 100 MiB, zero literature PDFs, and zero cache paths. The 106 numerical binaries and 13 duplicate numerical-hash groups are inherited tracked history; no new numerical binary was staged.
+
+The publishing identity is resolved from authenticated GitHub account `hibiscus1031` and its primary verified email. The pre-closure local HEAD is `ecc529a6c248946c609089cdf8cfc8ef78eadfcf`; no history was amended. Remote creation, push, and audited-state tag are pending the final commit and pre-push gate. Current status: **REPRODUCIBILITY_CLOSURE_PARTIAL** and **PRIVATE_REMOTE_CLOSURE_IN_PROGRESS**.

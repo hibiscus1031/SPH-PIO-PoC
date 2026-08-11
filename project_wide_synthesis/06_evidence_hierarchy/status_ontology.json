@@ -1,0 +1,55 @@
+{
+  "schema": "s1.status-ontology.v1",
+  "terms": [
+    {
+      "term": "PASS",
+      "definition": "预注册的整体门全部满足；只适用于明确范围。"
+    },
+    {
+      "term": "FAIL",
+      "definition": "已执行且至少一个决定性门失败。"
+    },
+    {
+      "term": "NOT_QUALIFIED",
+      "definition": "已执行但不足以产生资格；可含通过的组成部分。"
+    },
+    {
+      "term": "EVIDENCE_INCOMPLETE",
+      "definition": "结论所需证据缺失或不可用，不能判为失败。"
+    },
+    {
+      "term": "NOT_AUTHORIZED",
+      "definition": "上游合同未授权该活动。"
+    },
+    {
+      "term": "NOT_EXECUTED",
+      "definition": "活动没有执行；不得改写为 FAIL。"
+    },
+    {
+      "term": "DIAGNOSTIC",
+      "definition": "仅用于归因或机制理解，不产生资格。"
+    },
+    {
+      "term": "CONDITIONAL",
+      "definition": "在明确条件和边界内成立。"
+    },
+    {
+      "term": "TERMINATED",
+      "definition": "路线按预注册停止规则关闭。"
+    },
+    {
+      "term": "PAUSED",
+      "definition": "路线暂停，等待新假设或新授权。"
+    },
+    {
+      "term": "QUALIFIED_COMPONENT",
+      "definition": "组成分量通过，但总体不因此通过。"
+    }
+  ],
+  "hard_rules": [
+    "NOT_EXECUTED != FAIL",
+    "QUALIFIED_COMPONENT != PASS",
+    "DIAGNOSTIC != PASS",
+    "later diagnosis cannot overwrite historical failure"
+  ]
+}

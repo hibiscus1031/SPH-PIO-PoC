@@ -1,0 +1,12 @@
+{
+  "contract_version": "stage02mp-success-gates-1.0.0",
+  "static_metric_definition_source": "Stage 02L unchanged",
+  "train_family_balanced_Q_L2_max": 0.25,
+  "validation_family_mean_Q_L2_max": 0.90,
+  "validation_every_graph_Q_L2_max": 1.10,
+  "test_family_mean_Q_L2_max": 0.90,
+  "test_every_graph_Q_L2_max": 1.10,
+  "seed_rule": "at_least_2_of_3",
+  "thresholds_relaxed_from_stage02l": false,
+  "stage02m_results_used_to_change_thresholds": false
+}

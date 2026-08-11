@@ -1,0 +1,91 @@
+{
+  "figures": [
+    {
+      "figure": 1,
+      "form": "workflow",
+      "integrity_rule": "Show A-D-R chronology and independent topology branch.",
+      "title": "Stage 03 V&V pipeline"
+    },
+    {
+      "figure": 2,
+      "form": "architecture schematic",
+      "integrity_rule": "No superiority encoding.",
+      "title": "D0-D3 dynamic architecture"
+    },
+    {
+      "figure": 3,
+      "form": "state-transition schematic",
+      "integrity_rule": "Show start/midpoint rebuilds and one accepted commit.",
+      "title": "RK2 graph rebuild and history commit"
+    },
+    {
+      "figure": 4,
+      "form": "evidence hierarchy",
+      "integrity_rule": "Keep role and disallowed-use labels.",
+      "title": "D-R1/D-R2/D-R3 reference hierarchy"
+    },
+    {
+      "figure": 5,
+      "form": "status matrix",
+      "integrity_rule": "Separate bitwise/structural from performance.",
+      "title": "Zero-correction and structural qualification matrix"
+    },
+    {
+      "figure": 6,
+      "form": "complete matrix",
+      "integrity_rule": "Show all 216 PASS and 144 failures.",
+      "title": "360-probe multistep AD/FD outcome matrix"
+    },
+    {
+      "figure": 7,
+      "form": "diagnostic panels",
+      "integrity_rule": "Use conditional language; no trainability claim.",
+      "title": "History-gradient attenuation and backend sensitivity"
+    },
+    {
+      "figure": 8,
+      "form": "event schematic",
+      "integrity_rule": "Do not depict edge existence as differentiable.",
+      "title": "TE1 birth/death and piecewise-smooth boundary"
+    },
+    {
+      "figure": 9,
+      "form": "claim map",
+      "integrity_rule": "Include training/rollout NOT EXECUTED.",
+      "title": "Supported versus unsupported claim map"
+    }
+  ],
+  "prohibitions": [
+    "show only the 216 passing probes",
+    "hide the 144 failures",
+    "equate topology component PASS with Stage 03D overall PASS",
+    "invent training or performance plots"
+  ],
+  "schema_version": "sph-pio-poc.stage03ds.figure-plan.v1",
+  "tables": [
+    {
+      "table": 1,
+      "title": "Stage 03 status ledger"
+    },
+    {
+      "table": 2,
+      "title": "trajectory inventory"
+    },
+    {
+      "table": 3,
+      "title": "implementation gates"
+    },
+    {
+      "table": 4,
+      "title": "AD/FD failure taxonomy"
+    },
+    {
+      "table": 5,
+      "title": "topology-event results"
+    },
+    {
+      "table": 6,
+      "title": "final evidence matrix"
+    }
+  ]
+}

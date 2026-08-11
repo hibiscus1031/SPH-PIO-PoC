@@ -1,0 +1,64 @@
+{
+  "preset": "compact_reference_guide",
+  "header_override": "editorial_cover",
+  "page": {
+    "size": "Letter",
+    "margins_in": 1.0,
+    "header_footer_in": 0.492,
+    "usable_width_dxa": 9360
+  },
+  "body": {
+    "font": "Calibri",
+    "eastAsia": "Heiti SC",
+    "size_pt": 11,
+    "after_pt": 6,
+    "line_spacing": 1.25
+  },
+  "headings": {
+    "h1": [
+      16,
+      "#2E74B5",
+      18,
+      10
+    ],
+    "h2": [
+      13,
+      "#2E74B5",
+      14,
+      7
+    ],
+    "h3": [
+      12,
+      "#1F4D78",
+      10,
+      5
+    ]
+  },
+  "lists": {
+    "marker_in": 0.187,
+    "text_indent_in": 0.375,
+    "hanging_in": 0.188,
+    "after_pt": 4,
+    "line_spacing": 1.25
+  },
+  "tables": {
+    "width_dxa": 9360,
+    "indent_dxa": 120,
+    "margins_dxa": [
+      80,
+      120,
+      80,
+      120
+    ],
+    "header_fill": "#E8EEF5"
+  },
+  "named_overrides": {
+    "cover_title": {
+      "size_pt": 30,
+      "color": "#203748"
+    },
+    "dense_artifact_table": {
+      "font_pt": 8.5
+    }
+  }
+}

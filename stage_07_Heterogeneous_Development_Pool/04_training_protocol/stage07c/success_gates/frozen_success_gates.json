@@ -1,0 +1,33 @@
+{
+  "A_numerical_safety": [
+    "no NaN/Inf",
+    "positive density",
+    "finite coefficient/hidden",
+    "deterministic evaluation"
+  ],
+  "B_TRAIN_V2_global_Q_def_v2_max": 0.5,
+  "C_FRESH_VALIDATION_V2_global_Q_def_v2_max": 0.9,
+  "D1_D2_arm_pass_required_for_sealed_test": false,
+  "D1_D2_runs_required": "3/3 complete",
+  "D_per_fresh_lineage_Q_def_v2_max": {
+    "HET_S1_01": 1.0,
+    "HET_S2_02": 1.0,
+    "HET_S3_03": 1.0,
+    "HET_S4_03": 1.0
+  },
+  "E_structure": [
+    "correction-force residual <=1e-10",
+    "reciprocal antisymmetry",
+    "permutation",
+    "edge reorder",
+    "translation",
+    "Galilean",
+    "SO(2)",
+    "reflection",
+    "periodic shift",
+    "history semantics"
+  ],
+  "arm_pass": ">=2/3 seeds",
+  "seed_pass": "A+B+C+D+E",
+  "transformer_route": "D3 arm PASS"
+}

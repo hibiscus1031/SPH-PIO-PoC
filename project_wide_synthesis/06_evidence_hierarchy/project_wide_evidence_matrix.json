@@ -1,0 +1,72 @@
+{
+  "schema": "s1.evidence-hierarchy.v1",
+  "levels": [
+    {
+      "level": "L0",
+      "name": "specification",
+      "state": "achieved",
+      "evidence": "Stage 01–03 多阶段合同、阈值、停止规则与哈希冻结"
+    },
+    {
+      "level": "L1",
+      "name": "implementation",
+      "state": "achieved",
+      "evidence": "Stage 01 SPH 路径、Stage 02 K1/K2、Stage 03 D0–D3/RK2"
+    },
+    {
+      "level": "L2",
+      "name": "code verification",
+      "state": "achieved",
+      "evidence": "算子、守恒、zero-correction、one-step AD、图更新语义"
+    },
+    {
+      "level": "L3",
+      "name": "solution verification",
+      "state": "partial/failed",
+      "evidence": "MMS 实现与 plateau-aware 子路线通过；Stage 01 V2 最终 FAIL"
+    },
+    {
+      "level": "L4",
+      "name": "reference qualification",
+      "state": "achieved_with_scope",
+      "evidence": "Stage 02 Fourier/analytic；Stage 03 D-R1/D-R2/D-R3；D-R4 unavailable"
+    },
+    {
+      "level": "L5",
+      "name": "data qualification",
+      "state": "achieved_static_scope",
+      "evidence": "Stage 02J-W 20-record blind multifamily static pair dataset"
+    },
+    {
+      "level": "L6",
+      "name": "structural model qualification",
+      "state": "achieved",
+      "evidence": "K1/K2 antisymmetry与结构门；Stage 03实现资格"
+    },
+    {
+      "level": "L7",
+      "name": "training qualification",
+      "state": "failed_static/not_executed_dynamic",
+      "evidence": "static fitting v0.1/v0.2 未资格；动态训练未授权"
+    },
+    {
+      "level": "L8",
+      "name": "rollout validation",
+      "state": "not_executed",
+      "evidence": "autonomous rollout 未授权/未执行"
+    },
+    {
+      "level": "L9",
+      "name": "physical validation",
+      "state": "partial/unavailable",
+      "evidence": "独立 shear/acoustic 有边界；D-R4 不可用"
+    },
+    {
+      "level": "L10",
+      "name": "cost/utility",
+      "state": "not_executed",
+      "evidence": "没有完整性能、成本或效用比较"
+    }
+  ],
+  "project_ceiling": "L6 achieved; L7 static failed and dynamic not executed; L8/L10 not executed; L9 partial"
+}

@@ -1,0 +1,369 @@
+{
+  "families": [
+    {
+      "analytic_Mach_upper_bound": 0.025455844122715707,
+      "density": {
+        "amplitudes": [
+          0.0017917386205704134,
+          0.0011961131287154794,
+          0.0015121482507141069
+        ],
+        "basis": "cos",
+        "modes": [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "phases": [
+          0.19933948888123412,
+          0.7987485729656443,
+          0.7721992016786724
+        ]
+      },
+      "density_amplitude_absolute_sum": 0.0045,
+      "density_relative_bounds": [
+        0.9955,
+        1.0045
+      ],
+      "derivative_definition": {
+        "acceleration": "-grad_p/rho+nu*laplacian_velocity",
+        "grad_p": "cs^2*rho0*sum[-a*2*pi*(kx,ky)*sin(2*pi*(kx*x+ky*y)+phase)]",
+        "laplacian_velocity": "cs*sum[-b*(2*pi)^2*(kx^2+ky^2)*sin(2*pi*(kx*x+ky*y)+phase)]_per_component"
+      },
+      "derivative_hash": "sha256:90cc11161559efef767ceb8ce59eea41d32f1232c31fdb9aa69930d023eed004",
+      "family_id": "V02_BLIND_VALIDATION_01",
+      "formula_hash": "sha256:28886b28ecad9e2bc0340b69094101ad4b89c72e7d48da8ea7ad4660ac7c973e",
+      "lineage_id": "V02_BLIND_VALIDATION_01_PCG64_2026080501_FROZEN_V02",
+      "mode_inventory": {
+        "density": [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "velocity_x": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "velocity_y": [
+          [
+            1,
+            -1
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "result_dependent_regeneration_used": false,
+      "rho_formula": "rho0*(1+(0.0017917386205704134)*cos(2*pi*((1)*x+(0)*y)+(0.19933948888123412))+(0.0011961131287154794)*cos(2*pi*((2)*x+(-1)*y)+(0.79874857296564428))+(0.0015121482507141069)*cos(2*pi*((1)*x+(-1)*y)+(0.7721992016786724)))",
+      "role": "future_validation",
+      "root_seed": 2026080501,
+      "source_ancestry": {
+        "draw_rule": "single deterministic draw after protocol hash; no redraw",
+        "generator": "Stage02J-T frozen blind generator",
+        "parent_family": null,
+        "root_seed": 2026080501
+      },
+      "ux_formula": "cs*((-0.0026886465807939206)*sin(2*pi*((0)*x+(1)*y)+(2.5333116160047284))+(-0.0026300841206013375)*sin(2*pi*((0)*x+(2)*y)+(2.1324910206500531))+(-0.0046409628790654231)*sin(2*pi*((1)*x+(1)*y)+(3.9938812358947815))+(0.008040306419539317)*sin(2*pi*((2)*x+(1)*y)+(3.6032914854132501)))",
+      "uy_formula": "cs*((-0.0034056862358872548)*sin(2*pi*((1)*x+(-1)*y)+(4.4516938903511294))+(0.0047910479161790923)*sin(2*pi*((2)*x+(-1)*y)+(0.89002653119610764))+(-0.0071016830395287276)*sin(2*pi*((2)*x+(1)*y)+(5.4144390368402302))+(-0.0027015828084049217)*sin(2*pi*((0)*x+(1)*y)+(3.6566139314958717)))",
+      "velocity_component_L1": [
+        0.018,
+        0.017999999999999995
+      ],
+      "velocity_x": {
+        "amplitudes_over_cs": [
+          -0.0026886465807939206,
+          -0.0026300841206013375,
+          -0.004640962879065423,
+          0.008040306419539317
+        ],
+        "basis": "sin",
+        "modes": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "phases": [
+          2.5333116160047284,
+          2.132491020650053,
+          3.9938812358947815,
+          3.60329148541325
+        ]
+      },
+      "velocity_y": {
+        "amplitudes_over_cs": [
+          -0.003405686235887255,
+          0.004791047916179092,
+          -0.007101683039528728,
+          -0.0027015828084049217
+        ],
+        "basis": "sin",
+        "modes": [
+          [
+            1,
+            -1
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "phases": [
+          4.451693890351129,
+          0.8900265311961076,
+          5.41443903684023,
+          3.6566139314958717
+        ]
+      }
+    },
+    {
+      "analytic_Mach_upper_bound": 0.02545584412271571,
+      "density": {
+        "amplitudes": [
+          -0.0012706304015161357,
+          -0.0017856252013808526,
+          -0.0014437443971030111
+        ],
+        "basis": "cos",
+        "modes": [
+          [
+            1,
+            -2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "phases": [
+          4.164544830105572,
+          2.2291728360055107,
+          1.4519924047998904
+        ]
+      },
+      "density_amplitude_absolute_sum": 0.0045,
+      "density_relative_bounds": [
+        0.9955,
+        1.0045
+      ],
+      "derivative_definition": {
+        "acceleration": "-grad_p/rho+nu*laplacian_velocity",
+        "grad_p": "cs^2*rho0*sum[-a*2*pi*(kx,ky)*sin(2*pi*(kx*x+ky*y)+phase)]",
+        "laplacian_velocity": "cs*sum[-b*(2*pi)^2*(kx^2+ky^2)*sin(2*pi*(kx*x+ky*y)+phase)]_per_component"
+      },
+      "derivative_hash": "sha256:bb2222a4bd50a5173e4444db4e68a7ad0362f4c66c740fe0113efc4b3643c9e1",
+      "family_id": "V02_BLIND_TEST_01",
+      "formula_hash": "sha256:5e6a31f8512f2c8d14b2b8f15587273c404cd50c1d20f79af7c9d3810204c47d",
+      "lineage_id": "V02_BLIND_TEST_01_PCG64_2026080502_FROZEN_V02",
+      "mode_inventory": {
+        "density": [
+          [
+            1,
+            -2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "velocity_x": [
+          [
+            2,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            -2
+          ]
+        ],
+        "velocity_y": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "result_dependent_regeneration_used": false,
+      "rho_formula": "rho0*(1+(-0.0012706304015161357)*cos(2*pi*((1)*x+(-2)*y)+(4.1645448301055721))+(-0.0017856252013808526)*cos(2*pi*((1)*x+(2)*y)+(2.2291728360055107))+(-0.0014437443971030111)*cos(2*pi*((1)*x+(-1)*y)+(1.4519924047998904)))",
+      "role": "future_test",
+      "root_seed": 2026080502,
+      "source_ancestry": {
+        "draw_rule": "single deterministic draw after protocol hash; no redraw",
+        "generator": "Stage02J-T frozen blind generator",
+        "parent_family": null,
+        "root_seed": 2026080502
+      },
+      "ux_formula": "cs*((-0.0051690433274792311)*sin(2*pi*((2)*x+(0)*y)+(5.2252691459689071))+(0.0035727440918518192)*sin(2*pi*((1)*x+(1)*y)+(2.3711952401315775))+(-0.0038526378325565796)*sin(2*pi*((0)*x+(2)*y)+(3.2306127649373111))+(-0.0054055747481123713)*sin(2*pi*((1)*x+(-2)*y)+(2.4269569888488904)))",
+      "uy_formula": "cs*((-0.0063766562009256716)*sin(2*pi*((0)*x+(2)*y)+(2.5990826054009837))+(0.00303498399071681)*sin(2*pi*((2)*x+(0)*y)+(3.0208345202205389))+(-0.0040127675464766213)*sin(2*pi*((2)*x+(1)*y)+(1.2375321613012928))+(0.0045755922618808953)*sin(2*pi*((0)*x+(1)*y)+(1.0801575711691909)))",
+      "velocity_component_L1": [
+        0.018000000000000002,
+        0.018
+      ],
+      "velocity_x": {
+        "amplitudes_over_cs": [
+          -0.005169043327479231,
+          0.003572744091851819,
+          -0.0038526378325565796,
+          -0.005405574748112371
+        ],
+        "basis": "sin",
+        "modes": [
+          [
+            2,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            -2
+          ]
+        ],
+        "phases": [
+          5.225269145968907,
+          2.3711952401315775,
+          3.230612764937311,
+          2.4269569888488904
+        ]
+      },
+      "velocity_y": {
+        "amplitudes_over_cs": [
+          -0.006376656200925672,
+          0.00303498399071681,
+          -0.004012767546476621,
+          0.004575592261880895
+        ],
+        "basis": "sin",
+        "modes": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "phases": [
+          2.5990826054009837,
+          3.020834520220539,
+          1.2375321613012928,
+          1.0801575711691909
+        ]
+      }
+    }
+  ],
+  "family_count": 2,
+  "family_replacement_or_redraw_used": false,
+  "generator_config_hash": "sha256:01dac7eac45f37a2d81da715ead36147aa6ed77c2ed8f8916f1bb18332cf3225",
+  "generator_source_hash": "sha256:495338cdf28ea66908a08f1ce29f7c15b5274635e9e081567e324baba1244e59",
+  "materialization_version": "stage02mp-frozen-blind-generator-1.0.0",
+  "materialized_after_protocol_hash": true,
+  "protocol_sha256": "sha256:8cd068c5b23eacfbcb2c56846352fd6f3c560b46d8562806e3ed568c278ddb6e",
+  "result_dependent_regeneration_used": false,
+  "single_materialization": true
+}

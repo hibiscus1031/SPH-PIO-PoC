@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stage04EvidenceImport",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "stage04_final_statuses",
+    "training_gates",
+    "model_results",
+    "rollout",
+    "validation",
+    "refinement",
+    "cost",
+    "failure_evidence",
+    "hashes"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "s1.stage04-import.v1"
+    },
+    "stage04_final_statuses": {
+      "type": "array"
+    },
+    "training_gates": {
+      "type": "array"
+    },
+    "model_results": {
+      "type": "array"
+    },
+    "rollout": {
+      "type": "object"
+    },
+    "validation": {
+      "type": "object"
+    },
+    "refinement": {
+      "type": "object"
+    },
+    "cost": {
+      "type": "object"
+    },
+    "failure_evidence": {
+      "type": "array"
+    },
+    "hashes": {
+      "type": "array"
+    },
+    "historical_stage00_03_rewrite": {
+      "const": false
+    }
+  }
+}

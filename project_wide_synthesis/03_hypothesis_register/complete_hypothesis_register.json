@@ -1,0 +1,104 @@
+{
+  "schema": "s1.hypothesis-register.v1",
+  "hypotheses": [
+    {
+      "id": "H01",
+      "original_wording": "高分辨率 SPH 可自动作为真值。",
+      "evidence": "Stage01与Stage02显示离散、时间、quadrature与模型形式污染必须分离。",
+      "status": "FALSIFIED",
+      "falsification_or_limitation": "Stage01与Stage02显示离散、时间、quadrature与模型形式污染必须分离。",
+      "successor_hypothesis": "候选reference必须独立资格化。",
+      "prohibited_retrospective_reinterpretation": "不得用后续局部PASS覆盖该条历史状态。"
+    },
+    {
+      "id": "H02",
+      "original_wording": "WCSPH 与不可压 TGV 在当前设置中模型形式一致。",
+      "evidence": "Stage01E EOS初始化残差主导，比例由机器记录给出。",
+      "status": "LIMITED/FALSIFIED_IN_SCOPE",
+      "falsification_or_limitation": "Stage01E EOS初始化残差主导，比例由机器记录给出。",
+      "successor_hypothesis": "采用WCSPH-compatible MMS与source-free独立验证。",
+      "prohibited_retrospective_reinterpretation": "不得用后续局部PASS覆盖该条历史状态。"
+    },
+    {
+      "id": "H03",
+      "original_wording": "static pair-force correction 在合格架构下可学习。",
+      "evidence": "Stage02M/M-Q中K1/K2 train-fit硬门未整体通过。",
+      "status": "NOT_QUALIFIED",
+      "falsification_or_limitation": "Stage02M/M-Q中K1/K2 train-fit硬门未整体通过。",
+      "successor_hypothesis": "转向局部因果动态训练假设。",
+      "prohibited_retrospective_reinterpretation": "不得用后续局部PASS覆盖该条历史状态。"
+    },
+    {
+      "id": "H04",
+      "original_wording": "regularity 可作为dataset hard gate。",
+      "evidence": "v0.1–v0.4出现false positive、cross-mode与invariance失败；路线终止。",
+      "status": "FALSIFIED",
+      "falsification_or_limitation": "v0.1–v0.4出现false positive、cross-mode与invariance失败；路线终止。",
+      "successor_hypothesis": "regularity仅作diagnostic，dataset eligibility由reference/target/conservation/lineage决定。",
+      "prohibited_retrospective_reinterpretation": "不得用后续局部PASS覆盖该条历史状态。"
+    },
+    {
+      "id": "H05",
+      "original_wording": "attention优于MLP。",
+      "evidence": "K1/K2结构资格化不等于优越性；static fitting也未建立稳定优势。",
+      "status": "NOT_TESTED",
+      "falsification_or_limitation": "K1/K2结构资格化不等于优越性；static fitting也未建立稳定优势。",
+      "successor_hypothesis": "未来只可在公平D0–D3合同和合格训练后比较。",
+      "prohibited_retrospective_reinterpretation": "不得用后续局部PASS覆盖该条历史状态。"
+    },
+    {
+      "id": "H06",
+      "original_wording": "optimization conditioning主导static fitting。",
+      "evidence": "Stage02M-R量化归因支持conditioning，但v0.2仍未资格。",
+      "status": "SUPPORTED_AS_DIAGNOSIS_NOT_GENERAL_LAW",
+      "falsification_or_limitation": "Stage02M-R量化归因支持conditioning，但v0.2仍未资格。",
+      "successor_hypothesis": "需新任务对齐、尺度与blind families检验。",
+      "prohibited_retrospective_reinterpretation": "不得用后续局部PASS覆盖该条历史状态。"
+    },
+    {
+      "id": "H07",
+      "original_wording": "短时历史改善动态closure。",
+      "evidence": "Stage03D history gradient 0/6；D-R观察到history influence强衰减。",
+      "status": "NOT_TESTED/GRADIENT_ATTENUATED",
+      "falsification_or_limitation": "Stage03D history gradient 0/6；D-R观察到history influence强衰减。",
+      "successor_hypothesis": "Stage04需local-causal/task-aligned可证伪合同。",
+      "prohibited_retrospective_reinterpretation": "不得用后续局部PASS覆盖该条历史状态。"
+    },
+    {
+      "id": "H08",
+      "original_wording": "动态Transformer混合实现正确。",
+      "evidence": "Stage03C D0/zero-correction/checkpoint/one-step AD通过。",
+      "status": "QUALIFIED_COMPONENT",
+      "falsification_or_limitation": "Stage03C D0/zero-correction/checkpoint/one-step AD通过。",
+      "successor_hypothesis": "实现正确不等于多步可微或训练有效。",
+      "prohibited_retrospective_reinterpretation": "不得用后续局部PASS覆盖该条历史状态。"
+    },
+    {
+      "id": "H09",
+      "original_wording": "多步梯度可按360-probe合同资格化。",
+      "evidence": "216 stable、144 failure；history 0/6；归因为mixed/unresolved。",
+      "status": "NOT_QUALIFIED",
+      "falsification_or_limitation": "216 stable、144 failure；history 0/6；归因为mixed/unresolved。",
+      "successor_hypothesis": "需新任务对齐梯度合同，不能后改epsilon门。",
+      "prohibited_retrospective_reinterpretation": "不得用后续局部PASS覆盖该条历史状态。"
+    },
+    {
+      "id": "H10",
+      "original_wording": "动态训练资格已建立。",
+      "evidence": "Stage03E=false；optimizer/training=0。",
+      "status": "NOT_AUTHORIZED/NOT_EXECUTED",
+      "falsification_or_limitation": "Stage03E=false；optimizer/training=0。",
+      "successor_hypothesis": "Stage04必须独立进口新证据。",
+      "prohibited_retrospective_reinterpretation": "不得用后续局部PASS覆盖该条历史状态。"
+    },
+    {
+      "id": "H11",
+      "original_wording": "Stage04 local-causal training能避开全局history梯度衰减并保持结构性质。",
+      "evidence": "仅为Stage04新假设，没有训练或rollout证据。",
+      "status": "NOT_TESTED",
+      "falsification_or_limitation": "仅为Stage04新假设，没有训练或rollout证据。",
+      "successor_hypothesis": "以task-aligned gradient→training→rollout→validation顺序检验。",
+      "prohibited_retrospective_reinterpretation": "不得用后续局部PASS覆盖该条历史状态。"
+    }
+  ]
+}

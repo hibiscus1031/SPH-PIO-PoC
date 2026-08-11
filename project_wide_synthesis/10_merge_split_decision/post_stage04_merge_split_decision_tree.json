@@ -1,0 +1,65 @@
+{
+  "schema": "s1.post-stage04-decision-tree.v1",
+  "scenarios": [
+    {
+      "scenario": 1,
+      "condition": "Stage04C task-aligned gradient仍未资格化",
+      "recommended_option": "C",
+      "confidence": "high",
+      "required_evidence": "task-aligned gradient machine gates",
+      "merge_split_rationale": "独立投稿Stage00–03 verification paper",
+      "publication_risk": "低：边界清楚",
+      "expected_journal_tier": "specialist/high-impact methods conditional"
+    },
+    {
+      "scenario": 2,
+      "condition": "Stage04C通过但Stage04E训练未资格化",
+      "recommended_option": "C or B(Paper1 first)",
+      "confidence": "high",
+      "required_evidence": "gradient PASS + training FAIL evidence",
+      "merge_split_rationale": "Stage00–03为主；Stage04作限制/技术报告",
+      "publication_risk": "中",
+      "expected_journal_tier": "methods journal"
+    },
+    {
+      "scenario": 3,
+      "condition": "Stage04E训练通过但Stage04F autonomous rollout未通过",
+      "recommended_option": "B",
+      "confidence": "medium",
+      "required_evidence": "training gates + failed rollout",
+      "merge_split_rationale": "Paper2仅能是短窗学习论文；不宜完整CMAME主线",
+      "publication_risk": "中高",
+      "expected_journal_tier": "specialist ML/physics methods"
+    },
+    {
+      "scenario": 4,
+      "condition": "Stage04E/F通过但独立验证或refinement不足",
+      "recommended_option": "B, Paper1 first",
+      "confidence": "high",
+      "required_evidence": "rollout PASS; validation/refinement incomplete",
+      "merge_split_rationale": "延后性能论文",
+      "publication_risk": "中",
+      "expected_journal_tier": "Paper1 methods; Paper2 pending"
+    },
+    {
+      "scenario": 5,
+      "condition": "Stage04E/F/G强通过且D3稳定独立等误差优于D0/D1/D2",
+      "recommended_option": "A evaluate first",
+      "confidence": "medium",
+      "required_evidence": "training+rollout+validation+refinement+cost",
+      "merge_split_rationale": "评估完整CMAME整合稿",
+      "publication_risk": "高：篇幅/叙事",
+      "expected_journal_tier": "CMAME/JCP potential"
+    },
+    {
+      "scenario": 6,
+      "condition": "Stage04成功且Stage00–03框架跨模型/跨问题一般",
+      "recommended_option": "B",
+      "confidence": "medium",
+      "required_evidence": "cross-model/cross-problem evidence",
+      "merge_split_rationale": "仍可拆分方法与性能，但严控重叠",
+      "publication_risk": "中",
+      "expected_journal_tier": "two high-level papers possible"
+    }
+  ]
+}
