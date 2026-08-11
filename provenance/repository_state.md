@@ -8,7 +8,7 @@
 - Git version: `git version 2.50.1 (Apple Git-155)`
 - Git LFS version: `git: 'lfs' is not a git command. See 'git --help'.`
 - Current branch at audit time: `main`
-- Initial/baseline commit hash: `PENDING_BASELINE_COMMIT`
+- Initial audited migration baseline commit hash: `a3b65ec6be41ceeedc15ace801773d39890d29eb`
 
 ## State statement
 
