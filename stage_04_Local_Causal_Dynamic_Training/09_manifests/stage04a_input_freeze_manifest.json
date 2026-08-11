@@ -1,0 +1,66 @@
+{
+  "schema_version": "sph-pio-poc.stage04a.input-freeze.v1",
+  "stage": "Stage 04A — Local-Causal Dynamic Training Hypothesis and Prospective Qualification Contract",
+  "completion_date": "2026-08-05",
+  "historical_anchor": {
+    "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03ds_input_freeze_manifest.json",
+    "byte_count": 628360,
+    "sha256": "sha256:e49251a10d9d4478d7b271fbdc3f8dbf511b0d9747de6637bac628990e0a4904",
+    "declared_historical_file_count": 1976
+  },
+  "preserved_states": {
+    "stage03c": "DYNAMIC_RK2_HYBRID_IMPLEMENTATION_VERIFIED",
+    "stage03d": "DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED",
+    "stage03dr": "DYNAMIC_GRADIENT_FAILURE_MIXED_OR_UNRESOLVED",
+    "stage03ds": "STAGE03_ROUTE_PAUSED_GRADIENT_BOUNDARY_COMPLETE",
+    "topology_component": "TOPOLOGY_EVENT_COMPONENT_QUALIFIED",
+    "stage03e_authorization": false
+  },
+  "status_sources": [
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03c_final_manifest.json",
+      "sha256": "sha256:bf5e0e3f1ac68e4b2df8ed847a1cf9a0cb0290c158b3813b1d4fa65a74abb5af"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03d_final_manifest.json",
+      "sha256": "sha256:c0862a16d0a43e283e80df2edc08cd6123b18f16bdcea6645564ea99146b32f3"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03dr_final_manifest.json",
+      "sha256": "sha256:ad5ef80137ec6aa2e27b22cb51c46bc0f79629ae7c392d9a6f6cd6a6e493bb21"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03ds_final_manifest.json",
+      "sha256": "sha256:f13c6adfac8f83b7a0b009c9c7f052a685d446294d9fff01c27683c18239807d"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03ds_status_ledger.json",
+      "sha256": "sha256:3cfb5777e827e9bb0d8551593c46c06f35cc334e3d3fae6dcb42e38889bd5148"
+    }
+  ],
+  "verification": {
+    "method": "recompute SHA-256 for every historical_files entry in the Stage 03D-S input-freeze manifest",
+    "checked_file_count_before_stage04a": 1976,
+    "missing_before_stage04a": 0,
+    "mismatched_before_stage04a": 0,
+    "checked_file_count_after_stage04a": 1976,
+    "missing_after_stage04a": 0,
+    "mismatched_after_stage04a": 0,
+    "historical_write_operations": 0,
+    "historical_files_unchanged": true
+  },
+  "stage04a_execution_counts": {
+    "trajectory_generation_runs": 0,
+    "test_payloads_created": 0,
+    "target_state_decodes": 0,
+    "gradient_probes": 0,
+    "backend_comparisons": 0,
+    "optimizer_instances": 0,
+    "optimizer_steps": 0,
+    "parameter_updates": 0,
+    "training_runs": 0,
+    "rollouts": 0,
+    "performance_evaluations": 0
+  },
+  "status": "PASS"
+}

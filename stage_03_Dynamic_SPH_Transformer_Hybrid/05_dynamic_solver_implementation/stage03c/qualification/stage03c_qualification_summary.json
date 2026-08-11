@@ -1,0 +1,23 @@
+{
+  "elapsed_seconds": 50.583225457929075,
+  "finite_difference_runs": 0,
+  "fixed_topology_claim_only": true,
+  "gates": {
+    "A_freeze": true,
+    "B_D0_implementation_48_of_48": true,
+    "C_zero_correction_288_of_288": true,
+    "D_history": true,
+    "E_structure": true,
+    "F_checkpoint_resume": true,
+    "G_differentiability_plumbing": true,
+    "H_resources": true,
+    "I_prohibitions": true,
+    "safety_rejection": true
+  },
+  "multistep_AD_FD_runs": 0,
+  "optimizer_steps": 0,
+  "rollout_performance_claims": 0,
+  "schema_version": "sph-pio-poc.stage03c.qualification.v1",
+  "status": "DYNAMIC_RK2_HYBRID_IMPLEMENTATION_VERIFIED",
+  "training_runs": 0
+}

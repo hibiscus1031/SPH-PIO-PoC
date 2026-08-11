@@ -1,0 +1,31 @@
+{
+  "arm_aggregation": {
+    "D1": true,
+    "D2": true,
+    "D3": true
+  },
+  "arm_aggregation_pass": true,
+  "authorization_source": "CONSERVATIVE_DISCRETE_DEFECT_TARGET_AND_SCALE_QUALIFIED",
+  "contract_sha256": "sha256:829adb1d62c1bd8310d51f8b59b91c78d959646a4185fcfb7458580979382589",
+  "failed_hard_gates": [
+    "F_coordinate_block_FD"
+  ],
+  "failure_count": 4,
+  "failure_reason": "Four required coordinate/block probes lack a valid adjacent finite-difference stable window under the frozen epsilon ladder.",
+  "hard_gates": {
+    "A_historical_freeze": true,
+    "B_access": true,
+    "C_model_fairness": true,
+    "D_full_gradients": true,
+    "E_reverse_JVP": true,
+    "F_coordinate_block_FD": false,
+    "G_local_descent": true,
+    "H_structure_safety": true,
+    "I_resources_provenance": true,
+    "J_prohibitions": true
+  },
+  "overall_pass": false,
+  "schema": "sph-pio-poc.stage05c.qualification.v1",
+  "stage05d_authorized": false,
+  "terminal_status": "OPTIMIZER_ALIGNED_DEFECT_GRADIENT_AND_LOCAL_DESCENT_NOT_QUALIFIED"
+}

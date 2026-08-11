@@ -1,0 +1,95 @@
+{
+  "all_candidate_required_gates_pass": true,
+  "path": "fixed_N16_H_over_dx_2.6_regular_jitter5_jitter10",
+  "posthoc_monotonic_gate_added": false,
+  "purpose": "distribution_shift_audit",
+  "rows": [
+    {
+      "Fourier_direction_cosine_to_regular": 1.0,
+      "candidate_gates": {
+        "model_form_compatibility": "PASS_WITHIN_FROZEN_SPATIAL_OPERATOR_SCOPE",
+        "reference_qualification": "PASS",
+        "same_state_configuration": "PASS",
+        "topology": "PASS",
+        "uncertainty": "PASS"
+      },
+      "candidate_id": "i_anchor_n16_h26_regular",
+      "deterministic_repeat": {
+        "primary_canonical_record_equal": true,
+        "primary_max_repeat_Linf": 0.0,
+        "secondary_canonical_record_equal": true,
+        "secondary_max_repeat_Linf": 0.0,
+        "status": "PASS"
+      },
+      "disorder_identity": "regular",
+      "local_neighbor_geometry": {
+        "maximum_angular_gap_radians": 0.46364760900080615,
+        "weighted_moment_isotropy_median": 0.9999999999999998,
+        "weighted_moment_isotropy_min": 0.9999999999999998
+      },
+      "random_seed": 160026,
+      "reference_discrepancy_amplification": 1.0,
+      "target_L2_amplification": 1.0,
+      "target_Linf_amplification": 1.0,
+      "topology_status": "PASS"
+    },
+    {
+      "Fourier_direction_cosine_to_regular": 0.9824580024722643,
+      "candidate_gates": {
+        "model_form_compatibility": "PASS_WITHIN_FROZEN_SPATIAL_OPERATOR_SCOPE",
+        "reference_qualification": "PASS",
+        "same_state_configuration": "PASS",
+        "topology": "PASS",
+        "uncertainty": "PASS"
+      },
+      "candidate_id": "i_dis_n16_h26_jitter05",
+      "deterministic_repeat": {
+        "primary_canonical_record_equal": true,
+        "primary_max_repeat_Linf": 0.0,
+        "secondary_canonical_record_equal": true,
+        "secondary_max_repeat_Linf": 0.0,
+        "status": "PASS"
+      },
+      "disorder_identity": "jitter_5_percent",
+      "local_neighbor_geometry": {
+        "maximum_angular_gap_radians": 0.5182308238578703,
+        "weighted_moment_isotropy_median": 0.9707756801950264,
+        "weighted_moment_isotropy_min": 0.9210648082092332
+      },
+      "random_seed": 314159,
+      "reference_discrepancy_amplification": 2.2609707656278104,
+      "target_L2_amplification": 1.6017705967758509,
+      "target_Linf_amplification": 3.8590887255578137,
+      "topology_status": "PASS"
+    },
+    {
+      "Fourier_direction_cosine_to_regular": 0.9600837783930657,
+      "candidate_gates": {
+        "model_form_compatibility": "PASS_WITHIN_FROZEN_SPATIAL_OPERATOR_SCOPE",
+        "reference_qualification": "PASS",
+        "same_state_configuration": "PASS",
+        "topology": "PASS",
+        "uncertainty": "PASS"
+      },
+      "candidate_id": "i_dis_n16_h26_jitter10",
+      "deterministic_repeat": {
+        "primary_canonical_record_equal": true,
+        "primary_max_repeat_Linf": 0.0,
+        "secondary_canonical_record_equal": true,
+        "secondary_max_repeat_Linf": 0.0,
+        "status": "PASS"
+      },
+      "disorder_identity": "jitter_10_percent",
+      "local_neighbor_geometry": {
+        "maximum_angular_gap_radians": 0.5704583121713782,
+        "weighted_moment_isotropy_median": 0.9404130270092075,
+        "weighted_moment_isotropy_min": 0.8560817138696308
+      },
+      "random_seed": 161803,
+      "reference_discrepancy_amplification": 1.4119441047365537,
+      "target_L2_amplification": 3.0050993917569535,
+      "target_Linf_amplification": 8.582915492175204,
+      "topology_status": "PASS"
+    }
+  ]
+}

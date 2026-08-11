@@ -1,0 +1,42 @@
+{
+  "BRANCH_B_OUTCOME": "NOT_SUPPORTED",
+  "D3_primary_attribution": "HELD_OUT_H2_SUPPORT_GAP_DOMINANT",
+  "NEXT_ROUTE": "SYSTEMATIC_COVERAGE_V3",
+  "Stage07D_verdict_unchanged": true,
+  "Stage07E_authorized": false,
+  "descriptor_classification": "OUTSIDE_TRAIN_SUPPORT",
+  "per_arm": {
+    "D1": {
+      "basis_failure_excluded": true,
+      "mean_HET_S2_02_Q": 3.938489721729255,
+      "primary_attribution": "HELD_OUT_H2_SUPPORT_GAP_DOMINANT"
+    },
+    "D2": {
+      "basis_failure_excluded": true,
+      "mean_HET_S2_02_Q": 3.9365578462675077,
+      "primary_attribution": "HELD_OUT_H2_SUPPORT_GAP_DOMINANT"
+    },
+    "D3": {
+      "descriptor_support": "OUTSIDE_TRAIN_SUPPORT",
+      "gradient_classes": [
+        "SYSTEMATIC_GRADIENT_CONFLICT",
+        "SYSTEMATIC_GRADIENT_CONFLICT",
+        "SYSTEMATIC_GRADIENT_CONFLICT"
+      ],
+      "maximum_history_Delta_Q": 0.09849061826120575,
+      "mean_HET_S2_02_Q": 3.436494519558823,
+      "mean_tangent_reducibility": 0.9999348375768378,
+      "optimizer_classes": [
+        "OPTIMIZATION_PLATEAU",
+        "OPTIMIZATION_PLATEAU",
+        "OPTIMIZATION_PLATEAU"
+      ],
+      "primary_attribution": "HELD_OUT_H2_SUPPORT_GAP_DOMINANT",
+      "target_support": "TARGET_OUT_OF_SUPPORT"
+    }
+  },
+  "schema": "sph-pio-poc.stage07dr.attribution.v1",
+  "status": "TRAIN_V2_RETRAINING_FAILURE_ATTRIBUTED",
+  "target_classification": "TARGET_OUT_OF_SUPPORT",
+  "unique_next_route": true
+}

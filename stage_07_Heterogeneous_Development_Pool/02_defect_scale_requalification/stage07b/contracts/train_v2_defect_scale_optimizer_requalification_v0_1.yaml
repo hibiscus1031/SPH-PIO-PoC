@@ -1,0 +1,248 @@
+contract_id: train_v2_defect_scale_optimizer_requalification_v0_1
+status: FROZEN_BEFORE_NEW_TRAIN_V2_TRAJECTORY_DECODE
+authorization: HETEROGENEITY_AUGMENTED_DEVELOPMENT_POOL_AND_FRESH_VALIDATION_QUALIFIED
+historical_status:
+  Stage06C: FORMAL_K1_TRAINING_COMPLETE_TRANSFORMER_NOT_QUALIFIED
+  Stage06C_R: FORMAL_TRAINING_FAILURE_ATTRIBUTED
+  D3_primary: TRAIN_LINEAGE_HETEROGENEITY_DOMINANT
+train_v2:
+  lineages: &id001
+  - LCDF_01
+  - LCDF_04
+  - LCDF_05
+  - LCDF_06
+  - LCDF_07
+  - LCDF_08
+  - HET_S1_02
+  - HET_S1_03
+  - HET_S2_01
+  - HET_S2_03
+  - HET_S3_01
+  - HET_S3_02
+  - HET_S4_01
+  - HET_S4_02
+  anchors:
+  - LCDF_01
+  - LCDF_04
+  - LCDF_05
+  - LCDF_06
+  - LCDF_07
+  - LCDF_08
+  new_train:
+  - HET_S1_02
+  - HET_S1_03
+  - HET_S2_01
+  - HET_S2_03
+  - HET_S3_01
+  - HET_S3_02
+  - HET_S4_01
+  - HET_S4_02
+  variants:
+  - LOW
+  - MAIN
+  origins_per_variant: 32
+  formal_N8_target_count: 896
+d0_reference:
+  identity: complete_explicit_midpoint_RK2_D0
+  dt: 0.000390625
+  class_functional_repeat: true
+  route_L2_max: 1.0e-13
+  route_Linf_max: 1.0e-12
+  graph_source_identity_exact: true
+defect:
+  delta_v: v_ref(n+1)-v_D0(n+1)
+  a_def: delta_v/dt
+  formal_precursor: a_def
+  a_cm: sum_i(m_i*a_def_i)/sum_i(m_i)
+  a_cons: a_def-a_cm
+  a_incompatible: a_cm
+conservative_gates:
+  family_balanced_mean_incompatible_fraction_max: 0.005
+  p95_max: 0.01
+  maximum_max: 0.05
+  each_lineage_mean_max: 0.01
+  zero_force_residual_max: 1.0e-12
+pair_basis:
+  midpoint_graph: true
+  radial_transverse: true
+  frozen_F0: sqrt(m_i*m_j)*cs^2/L
+  coefficient_bound:
+  - -1
+  - 1
+  unbounded:
+    mean: 0.02
+    p95: 0.05
+    max: 0.1
+    lineage: 0.05
+  bounded:
+    mean: 0.05
+    p95: 0.1
+    max: 0.2
+    lineage: 0.1
+  LCDF_08_exception: false
+scale_v2:
+  formula: sqrt(mean_lineage mean_variant mean_origin mean_node mean_component a_cons^2)
+  balanced:
+  - lineage
+  - variant
+  - origin
+  - node
+  - component
+  clip: false
+  s_a_v1_historical: 0.3456328553384328
+  zero_correction_loss: 1.0
+  absolute_error_max: 1.0e-12
+uncertainty:
+  u_origin: max(U1,U2,U3,U4,U5,u_roundoff_floor)
+  s_a_v2_over_u_a_v2_min: 100
+  each_lineage_ratio_min: 20
+  each_variant_ratio_min: 20
+  signal_bearing: mass_norm(a_def)>=10*u_origin
+  each_lineage_fraction_min: 0.9
+  overall_fraction_min: 0.95
+distinguishability:
+  all_origins_retained: true
+  lineage_reweighting: false
+models:
+  seeds:
+  - 20700701
+  - 20700702
+  - 20700703
+  identities: stage_07_Heterogeneous_Development_Pool/02_defect_scale_requalification/stage07b/model_seeds/preregistered_model_identities.json
+  fresh_initialization: true
+  historical_weight_reads: 0
+  future_Stage07D_must_use_different_seeds: true
+contexts:
+  manifest: stage_07_Heterogeneous_Development_Pool/02_defect_scale_requalification/stage07b/update_contexts/preregistered_update_contexts.json
+  lineage: 2 variants x 8 origins
+  global: 14 lineages x 2 variants x 4 origins
+  total: 135
+optimizer:
+  family: AdamW
+  betas:
+  - 0.9
+  - 0.999
+  eps: 1.0e-12
+  weight_decay: 0
+  amsgrad: false
+  global_gradient_clip: 1.0
+  formal_requalification_lr: 1.0e-05
+  forbidden_lrs:
+  - 3.0e-05
+  - 0.0001
+  - 0.0003
+  - 0.001
+  zero_state_per_fresh_clone: true
+loss:
+  identity: balanced mean ||(a_eff_theta-a_cons)/s_a_v2||^2
+  old_scale_qualification_forbidden: true
+gradient:
+  full_and_repeat: true
+  all_groups_activity_floor: 100x repeat/float64 floor
+  deterministic: true
+one_step:
+  delta_L: <-100*u_L
+  cos_update_negative_gradient: '>0'
+  relative_update: <1e-2
+  density_positive: true
+  force_residual_max: 1.0e-10
+  deterministic: true
+  all_groups: true
+actual_update_fd:
+  scales:
+  - 0.25
+  - 0.5
+  - 1.0
+  - 2.0
+  central: true
+  reverse_sign: true
+  two_adjacent_direction_stable: true
+  observed_consistent: true
+  topology_safety: true
+micro_update:
+  horizons:
+  - 2
+  - 4
+  L1_lt_L0: true
+  L2_le_L1_plus_floor: true
+  L4_le_L2_plus_floor: true
+  relative_reduction_step4_min: 0.0001
+  individual_relative_increase_max: 0.001
+  relative_parameter_displacement_max: 0.05
+aggregation:
+  arm_lineage: at_least_2_of_3_seeds
+  arm: 14_of_14_lineages
+  global: 3_of_3_seeds
+  overall: D1_and_D2_and_D3
+gradient_diagnostic:
+  cosine_matrix: true
+  posthoc_only: true
+  hard_gate: false
+coordinate_boundary:
+  plan: stage_07_Heterogeneous_Development_Pool/02_defect_scale_requalification/stage07b/coordinate_boundary/preregistered_diagnostic_plan.json
+  diagnostic_only: true
+  FD_WINDOW_MISSING_allowed: true
+  hard_failures:
+  - SIGN_CONTRADICTION
+  - MAPPING_CONTRADICTION
+  - NONDETERMINISTIC
+  - SAFETY_FAIL
+  complete_coordinate_qualification: false
+structure_safety:
+  reciprocal_antisymmetry: true
+  force_residual_max: 1.0e-10
+  transforms:
+  - permutation
+  - edge_reorder
+  - translation
+  - Galilean
+  - SO2
+  - reflection
+  - periodic_shift
+  positive_density: true
+  finite: true
+  deterministic_graph: true
+  accepted_commit: 1
+  midpoint_commit: 0
+resolution_diagnostic:
+  resolutions:
+  - 12
+  - 16
+  variant: MAIN
+  hash_origins_per_lineage: 4
+  qualification_replacement: false
+  scale_redefinition: false
+  convergence_claim: false
+access:
+  TRAIN_only: *id001
+  consumed_validation_payload_decode: 0
+  fresh_validation_private_decode: 0
+  original_sealed_test_decode: 0
+  fresh_private_artifact_count: 89
+resources:
+  device: CPU
+  dtype: float64
+  D3_sdpa: MATH
+  peak_rss_delta_max: 1610612736
+  no_monotonic_autograd_retention: true
+  no_dense_particle_N_by_N: true
+  finite_completion: true
+  all_hashes_complete: true
+  qualification_models_destroyed: true
+  training_checkpoints: 0
+prohibitions:
+  higher_lr: true
+  architecture_change: true
+  feature_engineering: true
+  loss_change: true
+  lineage_removal: true
+  LCDF_08_removal: true
+  reweighting: true
+  curriculum: true
+  model_ranking: true
+  training_runs: 0
+  rollout: true
+terminal_statuses:
+- TRAIN_V2_DEFECT_SCALE_AND_ACTUAL_OPTIMIZER_UPDATE_QUALIFIED
+- TRAIN_V2_DEFECT_SCALE_AND_ACTUAL_OPTIMIZER_UPDATE_NOT_QUALIFIED
+- TRAIN_V2_DEFECT_SCALE_AND_ACTUAL_OPTIMIZER_UPDATE_EVIDENCE_INCOMPLETE

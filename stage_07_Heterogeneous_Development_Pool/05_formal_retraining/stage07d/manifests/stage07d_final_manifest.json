@@ -1,0 +1,145 @@
+{
+  "Stage07E_authorized": false,
+  "arm_qualification": {
+    "D1": {
+      "arm_pass": false,
+      "completed": 3,
+      "seed_passes": 0
+    },
+    "D2": {
+      "arm_pass": false,
+      "completed": 3,
+      "seed_passes": 0
+    },
+    "D3": {
+      "arm_pass": false,
+      "completed": 3,
+      "seed_passes": 0
+    }
+  },
+  "consumed_validation_private_reads": 0,
+  "evidence_complete": true,
+  "formal_optimizer_steps": 12860,
+  "formal_parameter_updates": 12860,
+  "formal_training_runs": 9,
+  "historical_audit": {
+    "artifact_count": 644,
+    "changed": [],
+    "pass": true,
+    "stage06c_checkpoint_count": 590,
+    "stage06c_selected_count": 9
+  },
+  "next_authorization": null,
+  "protocol_sha256": "sha256:21b52f0aca3791cdc0d58165f1edd980667bafe0eee5a9d52544c24a8f518dbb",
+  "resources": {
+    "checkpoint_storage_bytes": 234745689,
+    "checkpoint_storage_limit_bytes": 10737418240,
+    "dense_particle_NxN_allocation": false,
+    "finite_completion": true,
+    "pass": true,
+    "peak_rss_bytes": 1583497216,
+    "peak_rss_limit_bytes": 1610612736,
+    "per_run": [
+      {
+        "graph_rebuilds": 529536,
+        "optimizer_step_count": 1500,
+        "peak_rss_bytes": 1152925696,
+        "run_id": "D1_seed20700711",
+        "validation_evaluation_count": 78,
+        "wall_time_seconds": 4746.938066500006
+      },
+      {
+        "graph_rebuilds": 529536,
+        "optimizer_step_count": 1500,
+        "peak_rss_bytes": 1113980928,
+        "run_id": "D1_seed20700712",
+        "validation_evaluation_count": 78,
+        "wall_time_seconds": 4758.55206995795
+      },
+      {
+        "graph_rebuilds": 529536,
+        "optimizer_step_count": 1500,
+        "peak_rss_bytes": 1145487360,
+        "run_id": "D1_seed20700713",
+        "validation_evaluation_count": 78,
+        "wall_time_seconds": 4517.967995208921
+      },
+      {
+        "graph_rebuilds": 529536,
+        "optimizer_step_count": 1500,
+        "peak_rss_bytes": 1285783552,
+        "run_id": "D2_seed20700711",
+        "validation_evaluation_count": 78,
+        "wall_time_seconds": 5212.105232540984
+      },
+      {
+        "graph_rebuilds": 529536,
+        "optimizer_step_count": 1500,
+        "peak_rss_bytes": 1287094272,
+        "run_id": "D2_seed20700712",
+        "validation_evaluation_count": 78,
+        "wall_time_seconds": 5053.325789166964
+      },
+      {
+        "graph_rebuilds": 529536,
+        "optimizer_step_count": 1500,
+        "peak_rss_bytes": 1437532160,
+        "run_id": "D2_seed20700713",
+        "validation_evaluation_count": 78,
+        "wall_time_seconds": 5122.342544083018
+      },
+      {
+        "graph_rebuilds": 437808,
+        "optimizer_step_count": 1240,
+        "peak_rss_bytes": 1561772032,
+        "run_id": "D3_seed20700711",
+        "validation_evaluation_count": 65,
+        "wall_time_seconds": 5052.2523580419365
+      },
+      {
+        "graph_rebuilds": 487200,
+        "optimizer_step_count": 1380,
+        "peak_rss_bytes": 1583497216,
+        "run_id": "D3_seed20700712",
+        "validation_evaluation_count": 72,
+        "wall_time_seconds": 5696.971420875052
+      },
+      {
+        "graph_rebuilds": 437808,
+        "optimizer_step_count": 1240,
+        "peak_rss_bytes": 1568866304,
+        "run_id": "D3_seed20700713",
+        "validation_evaluation_count": 65,
+        "wall_time_seconds": 5048.561363999965
+      }
+    ],
+    "retained_autograd_monotonic_growth": false,
+    "schema": "sph-pio-poc.stage07d.resources.v1",
+    "total_run_wall_time_seconds": 45209.016840374796
+  },
+  "rollouts": 0,
+  "run_count": 9,
+  "run_ids": [
+    "D1_seed20700711",
+    "D1_seed20700712",
+    "D1_seed20700713",
+    "D2_seed20700711",
+    "D2_seed20700712",
+    "D2_seed20700713",
+    "D3_seed20700711",
+    "D3_seed20700712",
+    "D3_seed20700713"
+  ],
+  "scale_v2": 1.7254786448147168,
+  "schema": "sph-pio-poc.stage07d.final.v1",
+  "sealed_decode_counts": {
+    "sealed_formula_decode_count": 0,
+    "sealed_origin_decode_count": 0,
+    "sealed_source_decode_count": 0,
+    "sealed_state_decode_count": 0,
+    "sealed_target_decode_count": 0
+  },
+  "sealed_test_evaluations": 0,
+  "selected_checkpoint_hashes_closed": true,
+  "status": "FORMAL_TRAIN_V2_RETRAINING_COMPLETE_TRANSFORMER_NOT_QUALIFIED"
+}

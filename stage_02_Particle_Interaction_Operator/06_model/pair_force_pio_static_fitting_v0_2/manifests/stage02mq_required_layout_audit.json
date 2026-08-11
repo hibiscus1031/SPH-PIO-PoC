@@ -1,0 +1,75 @@
+{
+  "canonical_closure_sha256": "sha256:380ced0106e92d9e692cb06dfc70b4b7ded83418782062c567804d5f00ff3e30",
+  "canonical_release_byte_identical_to_evaluated_release": true,
+  "canonical_release_sha256": "sha256:41e330c20da6bab771e42d91ad2d28bff5972895327a988e63807dbbb74bb1e5",
+  "manifest_version": "stage02mq-required-layout-1.0.0",
+  "post_test_checkpoint_changes": 0,
+  "post_test_optimizer_steps": 0,
+  "run_rows": [
+    {
+      "checkpoint_selection_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K0/seed_20261211/run_terminal.json",
+      "conditioning_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K0/seed_20261211/conditioning_history.json",
+      "run_id": "K0_seed20261211",
+      "train_metric_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K0/seed_20261211/selected_metrics.json",
+      "validation_metric_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K0/seed_20261211/selected_metrics.json"
+    },
+    {
+      "checkpoint_selection_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K0/seed_20261212/run_terminal.json",
+      "conditioning_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K0/seed_20261212/conditioning_history.json",
+      "run_id": "K0_seed20261212",
+      "train_metric_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K0/seed_20261212/selected_metrics.json",
+      "validation_metric_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K0/seed_20261212/selected_metrics.json"
+    },
+    {
+      "checkpoint_selection_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K0/seed_20261213/run_terminal.json",
+      "conditioning_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K0/seed_20261213/conditioning_history.json",
+      "run_id": "K0_seed20261213",
+      "train_metric_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K0/seed_20261213/selected_metrics.json",
+      "validation_metric_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K0/seed_20261213/selected_metrics.json"
+    },
+    {
+      "checkpoint_selection_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K1/seed_20261211/run_terminal.json",
+      "conditioning_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K1/seed_20261211/conditioning_history.json",
+      "run_id": "K1_seed20261211",
+      "train_metric_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K1/seed_20261211/selected_metrics.json",
+      "validation_metric_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K1/seed_20261211/selected_metrics.json"
+    },
+    {
+      "checkpoint_selection_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K1/seed_20261212/run_terminal.json",
+      "conditioning_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K1/seed_20261212/conditioning_history.json",
+      "run_id": "K1_seed20261212",
+      "train_metric_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K1/seed_20261212/selected_metrics.json",
+      "validation_metric_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K1/seed_20261212/selected_metrics.json"
+    },
+    {
+      "checkpoint_selection_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K1/seed_20261213/run_terminal.json",
+      "conditioning_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K1/seed_20261213/conditioning_history.json",
+      "run_id": "K1_seed20261213",
+      "train_metric_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K1/seed_20261213/selected_metrics.json",
+      "validation_metric_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K1/seed_20261213/selected_metrics.json"
+    },
+    {
+      "checkpoint_selection_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K2/seed_20261211/run_terminal.json",
+      "conditioning_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K2/seed_20261211/conditioning_history.json",
+      "run_id": "K2_seed20261211",
+      "train_metric_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K2/seed_20261211/selected_metrics.json",
+      "validation_metric_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K2/seed_20261211/selected_metrics.json"
+    },
+    {
+      "checkpoint_selection_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K2/seed_20261212/run_terminal.json",
+      "conditioning_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K2/seed_20261212/conditioning_history.json",
+      "run_id": "K2_seed20261212",
+      "train_metric_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K2/seed_20261212/selected_metrics.json",
+      "validation_metric_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K2/seed_20261212/selected_metrics.json"
+    },
+    {
+      "checkpoint_selection_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K2/seed_20261213/run_terminal.json",
+      "conditioning_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K2/seed_20261213/conditioning_history.json",
+      "run_id": "K2_seed20261213",
+      "train_metric_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K2/seed_20261213/selected_metrics.json",
+      "validation_metric_source": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/runs/K2/seed_20261213/selected_metrics.json"
+    }
+  ],
+  "scientific_result_modified": false,
+  "status": "PASS"
+}

@@ -1,0 +1,80 @@
+{
+  "manifest_version": "stage02mq-test-release-1.0.0",
+  "one_time_evaluation_authorization": true,
+  "prerelease_test_target_decode_count": 0,
+  "protocol_sha256": "sha256:8cd068c5b23eacfbcb2c56846352fd6f3c560b46d8562806e3ed568c278ddb6e",
+  "release_timestamp_utc": "2026-08-04T15:09:21.145992+00:00",
+  "selected_checkpoints": [
+    {
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/checkpoints/K0_seed20261211/update_1000.pt",
+      "run_id": "K0_seed20261211",
+      "sha256": "sha256:8d65286395e5001645e7a9a7bcd5da605fe30e9e3a7825f4107e0106b059fae8"
+    },
+    {
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/checkpoints/K0_seed20261212/update_0840.pt",
+      "run_id": "K0_seed20261212",
+      "sha256": "sha256:f667ce47fd91725eeb450599fb12bf54bd104dbf10ee88730dcabeb494def052"
+    },
+    {
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/checkpoints/K0_seed20261213/update_0900.pt",
+      "run_id": "K0_seed20261213",
+      "sha256": "sha256:13d23924f96a6764130458d2c2d8bec56277c1dbe2ca74ee377cb1eacb65034f"
+    },
+    {
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/checkpoints/K1_seed20261211/update_1000.pt",
+      "run_id": "K1_seed20261211",
+      "sha256": "sha256:12cdd56070edc9beecddef890e77e377417bd72b670746ab3ac3830e72ebfc03"
+    },
+    {
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/checkpoints/K1_seed20261212/update_1000.pt",
+      "run_id": "K1_seed20261212",
+      "sha256": "sha256:921cafeaebb66624a5838f1c7ed9160318c65fae95c8f255bab63bc8215a9bcf"
+    },
+    {
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/checkpoints/K1_seed20261213/update_1000.pt",
+      "run_id": "K1_seed20261213",
+      "sha256": "sha256:ee948fa7c7c8f0fda52238f25680f7780287a22e275fc5835cfc9754338a3600"
+    },
+    {
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/checkpoints/K2_seed20261211/update_0500.pt",
+      "run_id": "K2_seed20261211",
+      "sha256": "sha256:7e608d0dfc85064e03598724238e2b8f47be7e455f635379a2661a8833efcd44"
+    },
+    {
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/checkpoints/K2_seed20261212/update_0540.pt",
+      "run_id": "K2_seed20261212",
+      "sha256": "sha256:8924bdae4b531ee2dacf0490e3635fd5214f186f9d6c1a622e43c789bf64e87d"
+    },
+    {
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/checkpoints/K2_seed20261213/update_1000.pt",
+      "run_id": "K2_seed20261213",
+      "sha256": "sha256:4936eb69bdc5fda7e5743f4e34bbe25f4af58986a051e89fcde0fad6560bb132"
+    }
+  ],
+  "status": "RELEASED",
+  "test_record_hashes": [
+    {
+      "case_id": "v02_blind_test_01_n12_h26",
+      "sha256": "sha256:d14dfa215c1ff778363a97164e750efa61e318ee0055623eca61c32a57042376"
+    },
+    {
+      "case_id": "v02_blind_test_01_n16_h22",
+      "sha256": "sha256:4d6dffde69c7e7b2077cd70cea095a0f7136c12fd42ab33129582baee32af22f"
+    },
+    {
+      "case_id": "v02_blind_test_01_n16_h26",
+      "sha256": "sha256:4e25f6fe51ffe14a37167f3e96829d425a70423acf45b767ff8f32f2e399a6fe"
+    },
+    {
+      "case_id": "v02_blind_test_01_n16_h30",
+      "sha256": "sha256:0a87d897368ca5dd6170c59554461f31cb2cc18f036ba0954b15e3dc1cf55ab1"
+    },
+    {
+      "case_id": "v02_blind_test_01_n20_h26",
+      "sha256": "sha256:41bcf01c3742bbb0193120c4d3eef30427f4604fd77db3430279a546d15462bf"
+    }
+  ],
+  "test_split_hash": "sha256:c9b5c81504e986f9328b80bce4fa8749788e777fba8c975ba971bb1728d38b57",
+  "training_validation_closure_path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/manifests/stage02mq_training_validation_closure.json",
+  "training_validation_closure_sha256": "sha256:380ced0106e92d9e692cb06dfc70b4b7ded83418782062c567804d5f00ff3e30"
+}

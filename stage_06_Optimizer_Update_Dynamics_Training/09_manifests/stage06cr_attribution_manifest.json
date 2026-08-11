@@ -1,0 +1,118 @@
+{
+  "SEALED_TEST": "CLOSED",
+  "Stage06C_verdict_unchanged": true,
+  "Stage06D_authorized": false,
+  "future_options": {
+    "SEALED_TEST_can_remain_sealed": true,
+    "current_validation_consumed_if_branch_B": true,
+    "options": [
+      {
+        "branch": "B",
+        "requirements": [
+          "retain hard families",
+          "generate new validation lineages",
+          "consume current validation as development evidence"
+        ],
+        "stage": "New heterogeneous TRAIN development pool"
+      }
+    ],
+    "prospective_only": true,
+    "training_authorized_in_stage06cr": false
+  },
+  "overall_attribution": "FORMAL_TRAINING_FAILURE_ATTRIBUTED",
+  "per_arm": {
+    "D1": {
+      "evidence": {
+        "any_historical_train_gate_pass": false,
+        "full_network_local_tangent_reducibility": 0.9999999749121558,
+        "higher_LR_has_coverage_gap": true,
+        "negative_lineage_gradient_pair_total": 7,
+        "persistent_hard_lineages": [
+          "LCDF_08"
+        ],
+        "plateau_classes": [
+          "OPTIMIZATION_PLATEAU",
+          "OPTIMIZATION_PLATEAU",
+          "OPTIMIZATION_PLATEAU"
+        ],
+        "selected_mean_TRAIN_Q": 0.9675909911757223,
+        "selected_mean_VALIDATION_Q": 0.6491923286875226,
+        "selection_tension_seed_count": 0,
+        "update_scale_classes": [
+          "SATURATION_OR_STALL_CANDIDATE",
+          "SATURATION_OR_STALL_CANDIDATE",
+          "SATURATION_OR_STALL_CANDIDATE"
+        ],
+        "validation_minus_train_Q": -0.3183986624881997
+      },
+      "primary_attribution": "OPTIMIZATION_PLATEAU_WITH_REDUCIBLE_RESIDUAL",
+      "secondary_evidence": [
+        "LR_OR_UPDATE_SCALE_LIMITED_EVIDENCE_GAP_ONLY",
+        "TARGET_DIFFICULTY_DISTRIBUTION_SHIFT",
+        "TRAIN_LINEAGE_HETEROGENEITY_DOMINANT"
+      ]
+    },
+    "D2": {
+      "evidence": {
+        "any_historical_train_gate_pass": false,
+        "full_network_local_tangent_reducibility": 0.9999999849102014,
+        "higher_LR_has_coverage_gap": true,
+        "negative_lineage_gradient_pair_total": 8,
+        "persistent_hard_lineages": [
+          "LCDF_08"
+        ],
+        "plateau_classes": [
+          "OPTIMIZATION_PLATEAU",
+          "MIXED",
+          "OPTIMIZATION_PLATEAU"
+        ],
+        "selected_mean_TRAIN_Q": 0.9654551894965969,
+        "selected_mean_VALIDATION_Q": 0.6422191116440509,
+        "selection_tension_seed_count": 0,
+        "update_scale_classes": [
+          "SATURATION_OR_STALL_CANDIDATE",
+          "NORMAL_UPDATE_SCALE",
+          "SATURATION_OR_STALL_CANDIDATE"
+        ],
+        "validation_minus_train_Q": -0.32323607785254604
+      },
+      "primary_attribution": "OPTIMIZATION_PLATEAU_WITH_REDUCIBLE_RESIDUAL",
+      "secondary_evidence": [
+        "LR_OR_UPDATE_SCALE_LIMITED_EVIDENCE_GAP_ONLY",
+        "TARGET_DIFFICULTY_DISTRIBUTION_SHIFT",
+        "TRAIN_LINEAGE_HETEROGENEITY_DOMINANT"
+      ]
+    },
+    "D3": {
+      "evidence": {
+        "any_historical_train_gate_pass": false,
+        "full_network_local_tangent_reducibility": 0.9999998141975238,
+        "higher_LR_has_coverage_gap": true,
+        "negative_lineage_gradient_pair_total": 26,
+        "persistent_hard_lineages": [
+          "LCDF_08"
+        ],
+        "plateau_classes": [
+          "VALIDATION_EARLY_STOP_ONLY",
+          "MIXED",
+          "MIXED"
+        ],
+        "selected_mean_TRAIN_Q": 0.7254703095068654,
+        "selected_mean_VALIDATION_Q": 0.1196158239214432,
+        "selection_tension_seed_count": 0,
+        "update_scale_classes": [
+          "NORMAL_UPDATE_SCALE",
+          "NORMAL_UPDATE_SCALE",
+          "NORMAL_UPDATE_SCALE"
+        ],
+        "validation_minus_train_Q": -0.6058544855854222
+      },
+      "primary_attribution": "TRAIN_LINEAGE_HETEROGENEITY_DOMINANT",
+      "secondary_evidence": [
+        "LR_OR_UPDATE_SCALE_LIMITED_EVIDENCE_GAP_ONLY",
+        "TARGET_DIFFICULTY_DISTRIBUTION_SHIFT"
+      ]
+    }
+  },
+  "schema": "sph-pio-poc.stage06cr.attribution.v1"
+}

@@ -1,0 +1,117 @@
+{
+  "FD_path_count": 24192,
+  "adapter_forward_count": 24668,
+  "arm": "D3",
+  "contexts": [
+    {
+      "groups": {
+        "D3_ATTENTION_K": true,
+        "D3_ATTENTION_O": true,
+        "D3_ATTENTION_Q": true,
+        "D3_ATTENTION_V": true,
+        "D3_FEED_FORWARD": true,
+        "D3_PAIR_HEAD": true,
+        "D3_TOKEN_ENCODER": true
+      },
+      "lineage": "LCDF_01",
+      "local": true,
+      "pass": true,
+      "structure": true
+    },
+    {
+      "groups": {
+        "D3_ATTENTION_K": true,
+        "D3_ATTENTION_O": true,
+        "D3_ATTENTION_Q": true,
+        "D3_ATTENTION_V": true,
+        "D3_FEED_FORWARD": true,
+        "D3_PAIR_HEAD": true,
+        "D3_TOKEN_ENCODER": true
+      },
+      "lineage": "LCDF_04",
+      "local": true,
+      "pass": true,
+      "structure": true
+    },
+    {
+      "groups": {
+        "D3_ATTENTION_K": true,
+        "D3_ATTENTION_O": true,
+        "D3_ATTENTION_Q": true,
+        "D3_ATTENTION_V": true,
+        "D3_FEED_FORWARD": true,
+        "D3_PAIR_HEAD": true,
+        "D3_TOKEN_ENCODER": true
+      },
+      "lineage": "LCDF_05",
+      "local": true,
+      "pass": true,
+      "structure": true
+    },
+    {
+      "groups": {
+        "D3_ATTENTION_K": true,
+        "D3_ATTENTION_O": true,
+        "D3_ATTENTION_Q": true,
+        "D3_ATTENTION_V": true,
+        "D3_FEED_FORWARD": true,
+        "D3_PAIR_HEAD": true,
+        "D3_TOKEN_ENCODER": true
+      },
+      "lineage": "LCDF_06",
+      "local": true,
+      "pass": true,
+      "structure": true
+    },
+    {
+      "groups": {
+        "D3_ATTENTION_K": true,
+        "D3_ATTENTION_O": true,
+        "D3_ATTENTION_Q": true,
+        "D3_ATTENTION_V": true,
+        "D3_FEED_FORWARD": true,
+        "D3_PAIR_HEAD": true,
+        "D3_TOKEN_ENCODER": true
+      },
+      "lineage": "LCDF_07",
+      "local": true,
+      "pass": true,
+      "structure": true
+    },
+    {
+      "groups": {
+        "D3_ATTENTION_K": true,
+        "D3_ATTENTION_O": true,
+        "D3_ATTENTION_Q": true,
+        "D3_ATTENTION_V": true,
+        "D3_FEED_FORWARD": true,
+        "D3_PAIR_HEAD": true,
+        "D3_TOKEN_ENCODER": true
+      },
+      "lineage": "LCDF_08",
+      "local": true,
+      "pass": true,
+      "structure": true
+    }
+  ],
+  "full_gradient_backward_count": 14,
+  "global_pass": true,
+  "graph_rebuild_count": 593712,
+  "lineage_context_count": 6,
+  "lineage_context_pass_count": 6,
+  "local_descent_forward_count": 84,
+  "neural_rollouts": 0,
+  "optimizer_instances": 0,
+  "optimizer_steps": 0,
+  "parameter_restoration_checks": 3066,
+  "pass": true,
+  "peak_rss_bytes": 515162112,
+  "peak_rss_delta_bytes": 306397184,
+  "performance_evaluations": 0,
+  "persistent_parameter_updates": 0,
+  "reverse_jvp_count": 378,
+  "rss_start_bytes": 208764928,
+  "seed": 20500522,
+  "training_runs": 0,
+  "wall_time_seconds": 5277.994961583056
+}

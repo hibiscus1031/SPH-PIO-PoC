@@ -1,0 +1,24 @@
+{
+  "a_SPH_input": false,
+  "absolute_position_direct_node_feature": false,
+  "absolute_velocity_direct_feature": false,
+  "contract": "stage02k-feature-contract-1.0.0",
+  "forbidden_source_token_hits": [],
+  "model_record_fields_consumed": [
+    "position_periodic",
+    "velocity",
+    "density",
+    "pressure",
+    "mass",
+    "smoothing_length",
+    "source_index",
+    "target_index",
+    "minimum_image_displacement",
+    "relative_velocity",
+    "active_kernel_indicator"
+  ],
+  "pair_features_exchange_invariant_by_construction": true,
+  "split_family_eligibility_id_input": false,
+  "status": "PASS",
+  "target_or_reference_fields_consumed": []
+}

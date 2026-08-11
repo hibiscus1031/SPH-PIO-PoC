@@ -1,0 +1,47 @@
+{
+  "Stage02B_contract_overwrite_permitted": false,
+  "Stage02G_attribution_closure_overwrite_permitted": false,
+  "accepted_reference_evidence_count": 12,
+  "accepted_reference_six_case_evidence_hashes": {
+    "H_REF_ANALYTIC::h_disorder_jitter05_n12": "sha256:ece4613cf492f381e5a8c0a5a2f0a7d980db476306c7786ef518ca2f91d0b448",
+    "H_REF_ANALYTIC::h_disorder_jitter10_n12": "sha256:6b417f88308107e3a4ed0dc2a12c37484f5c5db053470f4f4d48339ef0a7469b",
+    "H_REF_ANALYTIC::h_disorder_regular_n12": "sha256:0759cbb45d5e3d6c3df8489ef4987d832493e99a6872714c77213dc61af1b7fc",
+    "H_REF_ANALYTIC::h_regular_n12": "sha256:c03f501de465090be5233eceefa0e9b180d471f3f36be8e88c32284343c10fff",
+    "H_REF_ANALYTIC::h_regular_n16": "sha256:b9cfc10b931e8b66f66f64ce07d0f6d03208ee1ca09a4bb8775a54b4376196bd",
+    "H_REF_ANALYTIC::h_regular_n20": "sha256:398a9b7ac026715d1195de93f910d0e14e0d3ad1b3a92260a83a0bdcc125bc91",
+    "H_REF_FOURIER2::h_disorder_jitter05_n12": "sha256:1ac190e4827795d3fd6b42ab09a72395cbfe98117e33251a91b50d1e553ccbd7",
+    "H_REF_FOURIER2::h_disorder_jitter10_n12": "sha256:23b2fed6d8dbbb47f2f404c72fb10346bf9a3e956f295f412ea30962404a5973",
+    "H_REF_FOURIER2::h_disorder_regular_n12": "sha256:47518068acdf5dccc5e8fd27549db5d09b60373f84c3941f1fee40bb3f686f8c",
+    "H_REF_FOURIER2::h_regular_n12": "sha256:c08763a01d8c82e7d1dbc7a7a375137cea6ddaed0f866572f4ba0c153610ab89",
+    "H_REF_FOURIER2::h_regular_n16": "sha256:60b0e4bbc4e4114538bd5985f60b8c9529137276d351371dfd607cf4ab1e47b1",
+    "H_REF_FOURIER2::h_regular_n20": "sha256:39eb0b2de89c5001864fb6ebd3bfd05b91c6ea60469565e3f93e937362ed0c40"
+  },
+  "created_before_stage02i_target_evaluation": true,
+  "diagnostic_candidate_deletion_permitted": false,
+  "frozen_files": {
+    "stage_02_Particle_Interaction_Operator/03_dataset/eligibility/label_eligibility_rules.yaml": "sha256:f917461a65c7d29067e1a210e1b40eeb9b100216bb7547e550980c05927b254a",
+    "stage_02_Particle_Interaction_Operator/03_dataset/schema/pio_dataset_schema.json": "sha256:714c97de51ce8d476edc7d8b306641c0dcb178ad476b5e30f02f7171af27c35f",
+    "stage_02_Particle_Interaction_Operator/03_dataset/splitting/split_strategy.md": "sha256:725ef563e9a9fff04a95fa728f02c9d1201f82f3aa515cb3847f04cfa322009e",
+    "stage_02_Particle_Interaction_Operator/03_dataset/uncertainty/uncertainty_contract.md": "sha256:5b77665068827d18edfa61c2e703de435300cde0e46d72f5535986cacf8abfee",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/acceptance/reference_acceptance_results.json": "sha256:44d6e43d83ee00c5b05d10bf1172e4f643b0150c63b11f6194a116dd73258ebe",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/acceptance/reference_acceptance_rules.yaml": "sha256:4f317c1e8ba79a5c176b38781edda9353eba477d896b627cc3a981f7c377c71e",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/bias_analysis/reference_bias_analysis.json": "sha256:a1f1044db92713d706a149a65c948559fc92b5e8ad1704bbb7b709793b31dca4",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/qualification_closure/attribution_closure.json": "sha256:0dde97b251b018eb3d021dc6005edc94b95e23033b523df5fc44864feba58f04",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/r2s_comparison/cross_reference_audit.json": "sha256:34a5e849c3808366cb3d7a306dc20190e4c6c89c3f9e60ee5f906a1d1b7adb3d",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/reference_fidelity/reference_candidate_matrix.yaml": "sha256:881c8c23c5f8f8e7841ccec487fdbe9426111c5ee984a41fc3525765cbb9581b",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/reference_fidelity/reference_candidate_results.json": "sha256:83f515001c0fc382e8f0fa9933873135f3c55c064a15e85377fc661a4c0f404b",
+    "stage_02_Particle_Interaction_Operator/07_reports/stage02h_final_report.md": "sha256:d0086d056b1e7f47fe4e2ed310b84a508c3832c79747160b42b0689aaa583ccc"
+  },
+  "hash_algorithm": "sha256",
+  "manifest_version": "stage02i-input-freeze-1.0.0",
+  "stage02h_acceptance_modification_permitted": false,
+  "stage02h_accepted_reference_ids": [
+    "H_REF_FOURIER2",
+    "H_REF_ANALYTIC"
+  ],
+  "stage02h_diagnostic_reference_ids": [
+    "H_REF_QWLS2_INCUMBENT",
+    "H_REF_CWLS3"
+  ],
+  "threshold_modification_permitted": false
+}

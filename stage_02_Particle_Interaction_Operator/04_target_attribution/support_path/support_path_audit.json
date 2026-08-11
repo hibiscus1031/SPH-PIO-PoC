@@ -1,0 +1,41 @@
+{
+  "adjacent_fourier_direction_cosines": [
+    0.9985398882336604,
+    0.9999999999999999
+  ],
+  "checks": {
+    "adjacent_direction_consistency": "PASS",
+    "bounded_magnitude_variation": "PASS",
+    "fixed_resolution": "PASS",
+    "support_separated_from_resolution": "PASS",
+    "three_or_more_levels": "PASS"
+  },
+  "fixed_particles_per_axis": 8,
+  "interpretation_limit": "support response is separated experimentally but is not a continuum model-form confirmation",
+  "path": "fixed_N_vary_H_over_dx",
+  "rows": [
+    {
+      "candidate_id": "f_sup_n8_h22",
+      "h_over_dx": 2.2,
+      "support_identity": "Hdx_2p2",
+      "target_L2_particle_rms": 0.03752528145923834,
+      "target_Linf_particle_vector": 0.04613215776339262
+    },
+    {
+      "candidate_id": "f_anchor_n8_h26",
+      "h_over_dx": 2.6,
+      "support_identity": "Hdx_2p6",
+      "target_L2_particle_rms": 0.010108724677946006,
+      "target_Linf_particle_vector": 0.012557335972557137
+    },
+    {
+      "candidate_id": "f_sup_n8_h30",
+      "h_over_dx": 3.0,
+      "support_identity": "Hdx_3p0",
+      "target_L2_particle_rms": 0.010108724677945949,
+      "target_Linf_particle_vector": 0.012557335972557286
+    }
+  ],
+  "status": "PASS",
+  "target_L2_max_over_min_ratio": 3.712167721919134
+}

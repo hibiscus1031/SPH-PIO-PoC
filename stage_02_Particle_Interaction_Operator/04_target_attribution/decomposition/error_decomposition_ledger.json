@@ -1,0 +1,517 @@
+{
+  "all_difference_equals_discretization_error": false,
+  "audit_version": "stage02d-error-decomposition-1.0.0",
+  "equation": "delta_a = delta_a_space + delta_a_time + delta_a_reference + delta_a_forcing + delta_a_model_form + cross",
+  "rows": [
+    {
+      "attribution_verdict": "diagnostic",
+      "components": {
+        "cross": {
+          "attribution_confidence": "none",
+          "evidence": [
+            "../03_dataset/samples/r2_regular_n6__t0.000000.json",
+            "../03_dataset/references/r2_regular_n6__r2_reference.json"
+          ],
+          "status": "UNRESOLVED",
+          "uncertainty": {
+            "kind": "not_quantified"
+          }
+        },
+        "delta_a_forcing": {
+          "attribution_confidence": "high",
+          "evidence": [
+            "../03_dataset/samples/r2_regular_n6__t0.000000.json",
+            "../03_dataset/references/r2_regular_n6__r2_reference.json"
+          ],
+          "status": "ZERO_AND_MATCHED",
+          "uncertainty": {
+            "units": "m s^-2",
+            "value": 0.0
+          }
+        },
+        "delta_a_model_form": {
+          "attribution_confidence": "moderate",
+          "evidence": [
+            "../03_dataset/samples/r2_regular_n6__t0.000000.json",
+            "../03_dataset/references/r2_regular_n6__r2_reference.json"
+          ],
+          "status": "COMPATIBLE_WITHIN_SAME_R2_SEMIDISCRETE_CONTRACT_ONLY",
+          "uncertainty": {
+            "continuum_alignment": "not_tested",
+            "kind": "categorical"
+          }
+        },
+        "delta_a_reference": {
+          "attribution_confidence": "high_for_audit_only",
+          "evidence": [
+            "../03_dataset/samples/r2_regular_n6__t0.000000.json",
+            "../03_dataset/references/r2_regular_n6__r2_reference.json"
+          ],
+          "status": "BOUNDED_ROUNDOFF_AND_DOP853_SENSITIVITY",
+          "uncertainty": {
+            "DOP853_sensitivity_Linf": 0.0,
+            "dense_forward_reverse_Linf": 1.1102230246251565e-16,
+            "float64_bound": 1.1368683772161603e-12,
+            "units": "m s^-2"
+          }
+        },
+        "delta_a_space": {
+          "attribution_confidence": "none",
+          "evidence": [
+            "../03_dataset/samples/r2_regular_n6__t0.000000.json",
+            "../03_dataset/references/r2_regular_n6__r2_reference.json"
+          ],
+          "status": "UNRESOLVED_NOT_OBSERVED_BY_R2_ASSEMBLY_EQUIVALENCE",
+          "uncertainty": {
+            "kind": "not_quantified",
+            "reason": "no continuum-compatible spatial reference"
+          }
+        },
+        "delta_a_time": {
+          "attribution_confidence": "moderate",
+          "evidence": [
+            "../03_dataset/samples/r2_regular_n6__t0.000000.json",
+            "../03_dataset/references/r2_regular_n6__r2_reference.json"
+          ],
+          "status": "BOUNDED_REPORTED_NO_SMALLNESS_THRESHOLD",
+          "uncertainty": {
+            "DOP853_primary_vs_sensitivity_L2": 0.0,
+            "RK2_vs_DOP853_acceleration_Linf": 0.0,
+            "units": "m s^-2"
+          }
+        }
+      },
+      "equation": "delta_a = delta_a_space + delta_a_time + delta_a_reference + delta_a_forcing + delta_a_model_form + cross",
+      "observed_delta_a": {
+        "L2_rms_vector": 0.0,
+        "Linf_vector": 0.0,
+        "units": "m s^-2"
+      },
+      "sample_id": "r2_regular_n6__t0.000000"
+    },
+    {
+      "attribution_verdict": "diagnostic",
+      "components": {
+        "cross": {
+          "attribution_confidence": "none",
+          "evidence": [
+            "../03_dataset/samples/r2_regular_n6__t0.002000.json",
+            "../03_dataset/references/r2_regular_n6__r2_reference.json"
+          ],
+          "status": "UNRESOLVED",
+          "uncertainty": {
+            "kind": "not_quantified"
+          }
+        },
+        "delta_a_forcing": {
+          "attribution_confidence": "high",
+          "evidence": [
+            "../03_dataset/samples/r2_regular_n6__t0.002000.json",
+            "../03_dataset/references/r2_regular_n6__r2_reference.json"
+          ],
+          "status": "ZERO_AND_MATCHED",
+          "uncertainty": {
+            "units": "m s^-2",
+            "value": 0.0
+          }
+        },
+        "delta_a_model_form": {
+          "attribution_confidence": "moderate",
+          "evidence": [
+            "../03_dataset/samples/r2_regular_n6__t0.002000.json",
+            "../03_dataset/references/r2_regular_n6__r2_reference.json"
+          ],
+          "status": "COMPATIBLE_WITHIN_SAME_R2_SEMIDISCRETE_CONTRACT_ONLY",
+          "uncertainty": {
+            "continuum_alignment": "not_tested",
+            "kind": "categorical"
+          }
+        },
+        "delta_a_reference": {
+          "attribution_confidence": "high_for_audit_only",
+          "evidence": [
+            "../03_dataset/samples/r2_regular_n6__t0.002000.json",
+            "../03_dataset/references/r2_regular_n6__r2_reference.json"
+          ],
+          "status": "BOUNDED_ROUNDOFF_AND_DOP853_SENSITIVITY",
+          "uncertainty": {
+            "DOP853_sensitivity_Linf": 0.0,
+            "dense_forward_reverse_Linf": 1.6653345369377348e-16,
+            "float64_bound": 1.1368683772161603e-12,
+            "units": "m s^-2"
+          }
+        },
+        "delta_a_space": {
+          "attribution_confidence": "none",
+          "evidence": [
+            "../03_dataset/samples/r2_regular_n6__t0.002000.json",
+            "../03_dataset/references/r2_regular_n6__r2_reference.json"
+          ],
+          "status": "UNRESOLVED_NOT_OBSERVED_BY_R2_ASSEMBLY_EQUIVALENCE",
+          "uncertainty": {
+            "kind": "not_quantified",
+            "reason": "no continuum-compatible spatial reference"
+          }
+        },
+        "delta_a_time": {
+          "attribution_confidence": "moderate",
+          "evidence": [
+            "../03_dataset/samples/r2_regular_n6__t0.002000.json",
+            "../03_dataset/references/r2_regular_n6__r2_reference.json"
+          ],
+          "status": "BOUNDED_REPORTED_NO_SMALLNESS_THRESHOLD",
+          "uncertainty": {
+            "DOP853_primary_vs_sensitivity_L2": 0.0,
+            "RK2_vs_DOP853_acceleration_Linf": 2.9884600571961073e-07,
+            "units": "m s^-2"
+          }
+        }
+      },
+      "equation": "delta_a = delta_a_space + delta_a_time + delta_a_reference + delta_a_forcing + delta_a_model_form + cross",
+      "observed_delta_a": {
+        "L2_rms_vector": 0.0,
+        "Linf_vector": 0.0,
+        "units": "m s^-2"
+      },
+      "sample_id": "r2_regular_n6__t0.002000"
+    },
+    {
+      "attribution_verdict": "diagnostic",
+      "components": {
+        "cross": {
+          "attribution_confidence": "none",
+          "evidence": [
+            "../03_dataset/samples/r2_jitter05_n8__t0.000000.json",
+            "../03_dataset/references/r2_jitter05_n8__r2_reference.json"
+          ],
+          "status": "UNRESOLVED",
+          "uncertainty": {
+            "kind": "not_quantified"
+          }
+        },
+        "delta_a_forcing": {
+          "attribution_confidence": "high",
+          "evidence": [
+            "../03_dataset/samples/r2_jitter05_n8__t0.000000.json",
+            "../03_dataset/references/r2_jitter05_n8__r2_reference.json"
+          ],
+          "status": "ZERO_AND_MATCHED",
+          "uncertainty": {
+            "units": "m s^-2",
+            "value": 0.0
+          }
+        },
+        "delta_a_model_form": {
+          "attribution_confidence": "moderate",
+          "evidence": [
+            "../03_dataset/samples/r2_jitter05_n8__t0.000000.json",
+            "../03_dataset/references/r2_jitter05_n8__r2_reference.json"
+          ],
+          "status": "COMPATIBLE_WITHIN_SAME_R2_SEMIDISCRETE_CONTRACT_ONLY",
+          "uncertainty": {
+            "continuum_alignment": "not_tested",
+            "kind": "categorical"
+          }
+        },
+        "delta_a_reference": {
+          "attribution_confidence": "high_for_audit_only",
+          "evidence": [
+            "../03_dataset/samples/r2_jitter05_n8__t0.000000.json",
+            "../03_dataset/references/r2_jitter05_n8__r2_reference.json"
+          ],
+          "status": "BOUNDED_ROUNDOFF_AND_DOP853_SENSITIVITY",
+          "uncertainty": {
+            "DOP853_sensitivity_Linf": 0.0,
+            "dense_forward_reverse_Linf": 1.942890293094024e-16,
+            "float64_bound": 1.1368683772161603e-12,
+            "units": "m s^-2"
+          }
+        },
+        "delta_a_space": {
+          "attribution_confidence": "none",
+          "evidence": [
+            "../03_dataset/samples/r2_jitter05_n8__t0.000000.json",
+            "../03_dataset/references/r2_jitter05_n8__r2_reference.json"
+          ],
+          "status": "UNRESOLVED_NOT_OBSERVED_BY_R2_ASSEMBLY_EQUIVALENCE",
+          "uncertainty": {
+            "kind": "not_quantified",
+            "reason": "no continuum-compatible spatial reference"
+          }
+        },
+        "delta_a_time": {
+          "attribution_confidence": "moderate",
+          "evidence": [
+            "../03_dataset/samples/r2_jitter05_n8__t0.000000.json",
+            "../03_dataset/references/r2_jitter05_n8__r2_reference.json"
+          ],
+          "status": "BOUNDED_REPORTED_NO_SMALLNESS_THRESHOLD",
+          "uncertainty": {
+            "DOP853_primary_vs_sensitivity_L2": 0.0,
+            "RK2_vs_DOP853_acceleration_Linf": 0.0,
+            "units": "m s^-2"
+          }
+        }
+      },
+      "equation": "delta_a = delta_a_space + delta_a_time + delta_a_reference + delta_a_forcing + delta_a_model_form + cross",
+      "observed_delta_a": {
+        "L2_rms_vector": 0.0,
+        "Linf_vector": 0.0,
+        "units": "m s^-2"
+      },
+      "sample_id": "r2_jitter05_n8__t0.000000"
+    },
+    {
+      "attribution_verdict": "diagnostic",
+      "components": {
+        "cross": {
+          "attribution_confidence": "none",
+          "evidence": [
+            "../03_dataset/samples/r2_jitter05_n8__t0.002000.json",
+            "../03_dataset/references/r2_jitter05_n8__r2_reference.json"
+          ],
+          "status": "UNRESOLVED",
+          "uncertainty": {
+            "kind": "not_quantified"
+          }
+        },
+        "delta_a_forcing": {
+          "attribution_confidence": "high",
+          "evidence": [
+            "../03_dataset/samples/r2_jitter05_n8__t0.002000.json",
+            "../03_dataset/references/r2_jitter05_n8__r2_reference.json"
+          ],
+          "status": "ZERO_AND_MATCHED",
+          "uncertainty": {
+            "units": "m s^-2",
+            "value": 0.0
+          }
+        },
+        "delta_a_model_form": {
+          "attribution_confidence": "moderate",
+          "evidence": [
+            "../03_dataset/samples/r2_jitter05_n8__t0.002000.json",
+            "../03_dataset/references/r2_jitter05_n8__r2_reference.json"
+          ],
+          "status": "COMPATIBLE_WITHIN_SAME_R2_SEMIDISCRETE_CONTRACT_ONLY",
+          "uncertainty": {
+            "continuum_alignment": "not_tested",
+            "kind": "categorical"
+          }
+        },
+        "delta_a_reference": {
+          "attribution_confidence": "high_for_audit_only",
+          "evidence": [
+            "../03_dataset/samples/r2_jitter05_n8__t0.002000.json",
+            "../03_dataset/references/r2_jitter05_n8__r2_reference.json"
+          ],
+          "status": "BOUNDED_ROUNDOFF_AND_DOP853_SENSITIVITY",
+          "uncertainty": {
+            "DOP853_sensitivity_Linf": 0.0,
+            "dense_forward_reverse_Linf": 2.220446049250313e-16,
+            "float64_bound": 1.1368683772161603e-12,
+            "units": "m s^-2"
+          }
+        },
+        "delta_a_space": {
+          "attribution_confidence": "none",
+          "evidence": [
+            "../03_dataset/samples/r2_jitter05_n8__t0.002000.json",
+            "../03_dataset/references/r2_jitter05_n8__r2_reference.json"
+          ],
+          "status": "UNRESOLVED_NOT_OBSERVED_BY_R2_ASSEMBLY_EQUIVALENCE",
+          "uncertainty": {
+            "kind": "not_quantified",
+            "reason": "no continuum-compatible spatial reference"
+          }
+        },
+        "delta_a_time": {
+          "attribution_confidence": "moderate",
+          "evidence": [
+            "../03_dataset/samples/r2_jitter05_n8__t0.002000.json",
+            "../03_dataset/references/r2_jitter05_n8__r2_reference.json"
+          ],
+          "status": "BOUNDED_REPORTED_NO_SMALLNESS_THRESHOLD",
+          "uncertainty": {
+            "DOP853_primary_vs_sensitivity_L2": 0.0,
+            "RK2_vs_DOP853_acceleration_Linf": 1.3136502255983729e-06,
+            "units": "m s^-2"
+          }
+        }
+      },
+      "equation": "delta_a = delta_a_space + delta_a_time + delta_a_reference + delta_a_forcing + delta_a_model_form + cross",
+      "observed_delta_a": {
+        "L2_rms_vector": 0.0,
+        "Linf_vector": 0.0,
+        "units": "m s^-2"
+      },
+      "sample_id": "r2_jitter05_n8__t0.002000"
+    },
+    {
+      "attribution_verdict": "rejected",
+      "components": {
+        "cross": {
+          "attribution_confidence": "none",
+          "evidence": [
+            "../03_dataset/samples/r2_duplicate_edge_negative_n6__t0.000000.json",
+            "../03_dataset/references/r2_duplicate_edge_negative_n6__r2_reference.json"
+          ],
+          "status": "UNRESOLVED_HARD_FAILURE",
+          "uncertainty": {
+            "kind": "not_quantified"
+          }
+        },
+        "delta_a_forcing": {
+          "attribution_confidence": "high",
+          "evidence": [
+            "../03_dataset/samples/r2_duplicate_edge_negative_n6__t0.000000.json",
+            "../03_dataset/references/r2_duplicate_edge_negative_n6__r2_reference.json"
+          ],
+          "status": "ZERO_BUT_TARGET_INVALID",
+          "uncertainty": {
+            "units": "m s^-2",
+            "value": 0.0
+          }
+        },
+        "delta_a_model_form": {
+          "attribution_confidence": "moderate",
+          "evidence": [
+            "../03_dataset/samples/r2_duplicate_edge_negative_n6__t0.000000.json",
+            "../03_dataset/references/r2_duplicate_edge_negative_n6__r2_reference.json"
+          ],
+          "status": "R2_INTERNAL_COMPATIBILITY_DOES_NOT_OVERRIDE_TOPOLOGY_FAILURE",
+          "uncertainty": {
+            "kind": "categorical"
+          }
+        },
+        "delta_a_reference": {
+          "attribution_confidence": "high_for_failure_cause",
+          "evidence": [
+            "../03_dataset/samples/r2_duplicate_edge_negative_n6__t0.000000.json",
+            "../03_dataset/references/r2_duplicate_edge_negative_n6__r2_reference.json"
+          ],
+          "status": "ASSEMBLY_CONTAMINATED_BY_DUPLICATE_EDGE",
+          "uncertainty": {
+            "assembly_Linf": 0.09210590856762971,
+            "units": "m s^-2"
+          }
+        },
+        "delta_a_space": {
+          "attribution_confidence": "none",
+          "evidence": [
+            "../03_dataset/samples/r2_duplicate_edge_negative_n6__t0.000000.json",
+            "../03_dataset/references/r2_duplicate_edge_negative_n6__r2_reference.json"
+          ],
+          "status": "REJECTED_TOPOLOGY_CONTAMINATED",
+          "uncertainty": {
+            "kind": "invalid_target"
+          }
+        },
+        "delta_a_time": {
+          "attribution_confidence": "none",
+          "evidence": [
+            "../03_dataset/samples/r2_duplicate_edge_negative_n6__t0.000000.json",
+            "../03_dataset/references/r2_duplicate_edge_negative_n6__r2_reference.json"
+          ],
+          "status": "NOT_ATTRIBUTABLE_AFTER_HARD_FAILURE",
+          "uncertainty": {
+            "DOP853_primary_vs_sensitivity_L2": 0.0,
+            "units": "m s^-2"
+          }
+        }
+      },
+      "equation": "delta_a = delta_a_space + delta_a_time + delta_a_reference + delta_a_forcing + delta_a_model_form + cross",
+      "observed_delta_a": {
+        "L2_rms_vector": 0.015350984761271617,
+        "Linf_vector": 0.09210590856762971,
+        "units": "m s^-2"
+      },
+      "sample_id": "r2_duplicate_edge_negative_n6__t0.000000"
+    },
+    {
+      "attribution_verdict": "rejected",
+      "components": {
+        "cross": {
+          "attribution_confidence": "none",
+          "evidence": [
+            "../03_dataset/samples/r2_duplicate_edge_negative_n6__t0.002000.json",
+            "../03_dataset/references/r2_duplicate_edge_negative_n6__r2_reference.json"
+          ],
+          "status": "UNRESOLVED_HARD_FAILURE",
+          "uncertainty": {
+            "kind": "not_quantified"
+          }
+        },
+        "delta_a_forcing": {
+          "attribution_confidence": "high",
+          "evidence": [
+            "../03_dataset/samples/r2_duplicate_edge_negative_n6__t0.002000.json",
+            "../03_dataset/references/r2_duplicate_edge_negative_n6__r2_reference.json"
+          ],
+          "status": "ZERO_BUT_TARGET_INVALID",
+          "uncertainty": {
+            "units": "m s^-2",
+            "value": 0.0
+          }
+        },
+        "delta_a_model_form": {
+          "attribution_confidence": "moderate",
+          "evidence": [
+            "../03_dataset/samples/r2_duplicate_edge_negative_n6__t0.002000.json",
+            "../03_dataset/references/r2_duplicate_edge_negative_n6__r2_reference.json"
+          ],
+          "status": "R2_INTERNAL_COMPATIBILITY_DOES_NOT_OVERRIDE_TOPOLOGY_FAILURE",
+          "uncertainty": {
+            "kind": "categorical"
+          }
+        },
+        "delta_a_reference": {
+          "attribution_confidence": "high_for_failure_cause",
+          "evidence": [
+            "../03_dataset/samples/r2_duplicate_edge_negative_n6__t0.002000.json",
+            "../03_dataset/references/r2_duplicate_edge_negative_n6__r2_reference.json"
+          ],
+          "status": "ASSEMBLY_CONTAMINATED_BY_DUPLICATE_EDGE",
+          "uncertainty": {
+            "assembly_Linf": 0.09163479137793643,
+            "units": "m s^-2"
+          }
+        },
+        "delta_a_space": {
+          "attribution_confidence": "none",
+          "evidence": [
+            "../03_dataset/samples/r2_duplicate_edge_negative_n6__t0.002000.json",
+            "../03_dataset/references/r2_duplicate_edge_negative_n6__r2_reference.json"
+          ],
+          "status": "REJECTED_TOPOLOGY_CONTAMINATED",
+          "uncertainty": {
+            "kind": "invalid_target"
+          }
+        },
+        "delta_a_time": {
+          "attribution_confidence": "none",
+          "evidence": [
+            "../03_dataset/samples/r2_duplicate_edge_negative_n6__t0.002000.json",
+            "../03_dataset/references/r2_duplicate_edge_negative_n6__r2_reference.json"
+          ],
+          "status": "NOT_ATTRIBUTABLE_AFTER_HARD_FAILURE",
+          "uncertainty": {
+            "DOP853_primary_vs_sensitivity_L2": 0.0,
+            "units": "m s^-2"
+          }
+        }
+      },
+      "equation": "delta_a = delta_a_space + delta_a_time + delta_a_reference + delta_a_forcing + delta_a_model_form + cross",
+      "observed_delta_a": {
+        "L2_rms_vector": 0.015272465229656071,
+        "Linf_vector": 0.09163479137793643,
+        "units": "m s^-2"
+      },
+      "sample_id": "r2_duplicate_edge_negative_n6__t0.002000"
+    }
+  ],
+  "summary": {
+    "diagnostic": 4,
+    "rejected": 2
+  }
+}

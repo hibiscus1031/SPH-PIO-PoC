@@ -1,0 +1,47 @@
+{
+  "manifest_version": "stage03b-input-freeze-1.0.0",
+  "stage": "Stage 03B",
+  "freeze_date": "2026-08-05",
+  "request_sha256": "sha256:24487990de8f4fd1af6b9c1d59c948c55919c9dd4cbe9d449de9b1edbdf924fd",
+  "authorization": "DYNAMIC_HYBRID_SOLVER_SPECIFICATION_COMPLETE",
+  "historical_workflow_mode": "read_only_input",
+  "historical_statuses": {
+    "stage01": "V2_QUALIFICATION_FAIL",
+    "stage01h": "FINITE_RESOLUTION_DOMINANT",
+    "viscosity_operator_form": "NOT_CONFIRMED",
+    "stage02_static_learning_route": "TERMINATED",
+    "stage01_shear_acoustic_role": "historical_independent_evidence_only"
+  },
+  "stage03a_inputs": [
+    {"path":"stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03a_final_report.md","sha256":"sha256:c4978103f9c354b06132733136eee69b28bc6c77868172d9eddd75f04cf4ebe1"},
+    {"path":"stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03a_contract_manifest.json","sha256":"sha256:612e0a8799ba33ec9baa2312a310f8852595434b74b48b1a5ad77e997c4cc2e7"},
+    {"path":"stage_03_Dynamic_SPH_Transformer_Hybrid/01_governing_contract/hybrid_equations.md","sha256":"sha256:e720cb9119de2731791856f82a02c9ebcf4f1782706def34a5ccbed2239735b1"},
+    {"path":"stage_03_Dynamic_SPH_Transformer_Hybrid/03_time_integration/rk2_stage_semantics.md","sha256":"sha256:2577e4a7e72747117256b0f9316ce2822af53a9a691e4d6c5cbcb08c9432bc2f"},
+    {"path":"stage_03_Dynamic_SPH_Transformer_Hybrid/03_time_integration/graph_rebuild_contract.md","sha256":"sha256:83b9ab83f9cd5e05d6d274ff6eddf5b34b50df20ae737d116405910dfda848dd"},
+    {"path":"stage_03_Dynamic_SPH_Transformer_Hybrid/03_time_integration/topology_differentiability_boundary.md","sha256":"sha256:865a48d98a2575fc61710271967902c8175b4d264ede07bbecc543c1eb7fecdd"},
+    {"path":"stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/dynamic_reference_hierarchy.md","sha256":"sha256:e03e7d575254d10f63bda63ce84b4f3935346b498ecfba2b8e8299c073ecfb23"},
+    {"path":"stage_03_Dynamic_SPH_Transformer_Hybrid/07_dataset_contract/family_lineage_contract.md","sha256":"sha256:39380794f701800efac0c8c272f1841815e3115febf9a23c16c87f6e0cf2ecce"},
+    {"path":"stage_03_Dynamic_SPH_Transformer_Hybrid/06_vv_contract/dynamic_vv_levels.md","sha256":"sha256:2d92eb1f1be2d94cb0fff4f9abc25e9be2afcb4c491c3961c9421ed2b56d8929"}
+  ],
+  "historical_inputs": [
+    {"path":"07_reports/stage_01f_final_report.md","sha256":"sha256:fd0216c603b5eef268b97bf6312bae8804f7395c750e559ee243fb81ea175128"},
+    {"path":"07_reports/stage_01f2_final_report.md","sha256":"sha256:aaedd195b3f1e569fe2d11d519a357128d1dc68d86b18d196c64f3b9a6eec5e0"},
+    {"path":"06_experiments/stage_01f_mms_design/configs/preregistered_mms_specification.yml","sha256":"sha256:e6fb93a2b1447edb55b0a965a1aaea462fb19d67405d497cb1a5edc581b22cd1"},
+    {"path":"06_experiments/stage_01f_mms_design/results/stage01f_evaluation.json","sha256":"sha256:544b22e885ca8cf34a59006ff5123136c68131452b3e183b68c65ed3899f55ad"},
+    {"path":"06_experiments/stage_01f2_mms_implementation/results/stage01f2_evaluation_v2.json","sha256":"sha256:8bf690e614a235cee9e66962969c56f676afac4b5cc8dab79e79a2dd74d16922"},
+    {"path":"07_reports/stage01g_v2_qualification_report.md","sha256":"sha256:36554b34bad638ee6981e713b995e4c7583838dbba0253b452b3986b6769b1c0"},
+    {"path":"07_reports/stage01h_final_report.md","sha256":"sha256:a2ed692c7eab332b5373c11d24c9644df3781980b663c6c8322d39003ae339e0"}
+  ],
+  "baseline_operator_inputs": [
+    {"path":"01_solver/dynamic_solver/density.py","sha256":"sha256:43af02afe7797ebd21cd3a34a95c329105e18746d56fe6685178e8204a52ada0"},
+    {"path":"01_solver/dynamic_solver/equation_of_state.py","sha256":"sha256:41fcc2f67b35f6e3997d790e3461027d09a9a211a30f9681cd2dcf0996b78e57"},
+    {"path":"01_solver/dynamic_solver/acceleration.py","sha256":"sha256:9835e5a67b177d1991ba8fab80109dc1ab5ea1d783a403b1c8b391d3b809771e"},
+    {"path":"01_solver/structure_preserving/conservative_pressure.py","sha256":"sha256:b6366666ba89cc1f367a95390a411905eee8b7f55fba28a024f5732860004064"},
+    {"path":"01_solver/structure_preserving/conservative_viscosity.py","sha256":"sha256:bdfbcb457f6973130f0131ec3c0a3fecc7197dd117c8256163cf3a1445307852"},
+    {"path":"01_solver/structure_preserving/neighborhood.py","sha256":"sha256:44d61e0abbc9901472dae90f83127f5231fc3f6e8ac92a971228dfdcb230aaa8"},
+    {"path":"01_solver/structure_preserving/kernels.py","sha256":"sha256:bad08e0f49b308c568cd438c9981abd2c906e16c6570ebc0ca7d19d9847b333b"}
+  ],
+  "environment": {"device":"cpu","dtype":"float64","python":"3.13.9","numpy":"1.26.4","scipy":"1.17.1","sympy":"1.14.0","torch":"2.10.0"},
+  "historical_write_operations": 0,
+  "evidence_resolution": "PASS"
+}

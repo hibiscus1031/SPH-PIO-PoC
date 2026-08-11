@@ -1,0 +1,98 @@
+[
+  {
+    "figure": "S14",
+    "panel": "a-b,f",
+    "scientific_claim": "The final stage ledger and claim/access flags define the frozen governance boundary.",
+    "source_file": "stage_08Z_Project_Closure_Publication/01_project_status/project_final_status_ledger.json",
+    "source_hash": "sha256:11d58273c115a6d5197c1192141000653d532646eae235e22a74a42f7a039974",
+    "source_field": "stages and final_flags",
+    "confirmatory_or_diagnostic": "SUPPORTED",
+    "transformation": "Exact values retained in source data; deterministic compact labels in vector cells and cards.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS14_governance.svg; figS14_governance.pdf; figS14_governance.png"
+  },
+  {
+    "figure": "S14",
+    "panel": "f",
+    "scientific_claim": "The closure inventory is hash-complete and frozen immutable.",
+    "source_file": "stage_08Z_Project_Closure_Publication/00_freeze/project_final_evidence_freeze_manifest.json",
+    "source_hash": "sha256:fd07fcb8853989c31e624f558e1c84c9cea6f979fd735d7e0f0f93bfb2ae0157",
+    "source_field": "artifact_count, all_artifacts_mutable_false, inventory_sha256",
+    "confirmatory_or_diagnostic": "SUPPORTED",
+    "transformation": "Exact status-card transcription; artifact payloads not read.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS14_governance.svg; figS14_governance.pdf; figS14_governance.png"
+  },
+  {
+    "figure": "S14",
+    "panel": "c",
+    "scientific_claim": "Stage06 resource execution remained within its frozen engineering audit.",
+    "source_file": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06c/resources/stage06c_resource_execution.json",
+    "source_hash": "sha256:8279a12bcc302ffbcb642c19abebb349ee66ca158bcec92474028c5e97ffa911",
+    "source_field": "peak_rss_bytes, total_wall_time_seconds, pass",
+    "confirmatory_or_diagnostic": "SUPPORTED",
+    "transformation": "Exact GiB unit conversion.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS14_governance.svg; figS14_governance.pdf; figS14_governance.png"
+  },
+  {
+    "figure": "S14",
+    "panel": "c",
+    "scientific_claim": "Stage07 resource execution remained within its frozen engineering audit.",
+    "source_file": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/resources/stage07d_resource_execution.json",
+    "source_hash": "sha256:e4e836f89677cd72e6ee85ee3c8dc989316acc5629abbb69fcf0f23a3c7fe396",
+    "source_field": "peak_rss_bytes, total_run_wall_time_seconds, pass",
+    "confirmatory_or_diagnostic": "SUPPORTED",
+    "transformation": "Exact GiB unit conversion.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS14_governance.svg; figS14_governance.pdf; figS14_governance.png"
+  },
+  {
+    "figure": "S14",
+    "panel": "c",
+    "scientific_claim": "Stage08A coverage preparation remained within its frozen engineering audit.",
+    "source_file": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/resources/stage08a_resource_audit.json",
+    "source_hash": "sha256:04d1e479a2e99c07f016377a95c175a482b35a94b83ec560f82bb4a24acac93c",
+    "source_field": "peak_rss_bytes, elapsed_seconds_before_packaging, verdict",
+    "confirmatory_or_diagnostic": "SUPPORTED",
+    "transformation": "Exact GiB unit conversion.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS14_governance.svg; figS14_governance.pdf; figS14_governance.png"
+  },
+  {
+    "figure": "S14",
+    "panel": "d",
+    "scientific_claim": "The Stage06 checkpoint inventory contains 590 hash-matched entries.",
+    "source_file": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/checkpoint_trajectory/all_590_train_gate_scan.json",
+    "source_hash": "sha256:542977edf16ef988b9d2a6408753ee1bbe9c29c1046a78c8408f496147caff9b",
+    "source_field": "checkpoint_count, all_hashes_match",
+    "confirmatory_or_diagnostic": "SUPPORTED",
+    "transformation": "Exact bar/status transcription.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS14_governance.svg; figS14_governance.pdf; figS14_governance.png"
+  },
+  {
+    "figure": "S14",
+    "panel": "d",
+    "scientific_claim": "The Stage07 checkpoint inventory contains 652 hash-matched entries.",
+    "source_file": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07dr/checkpoint_scan/all_652_checkpoint_gate_scan.json",
+    "source_hash": "sha256:587b35b224910efa8d7fe996b07e660fe4896db0bfa47dcf4f18a9593d4e4d97",
+    "source_field": "checkpoint_count, all_hashes_match",
+    "confirmatory_or_diagnostic": "SUPPORTED",
+    "transformation": "Exact bar/status transcription.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS14_governance.svg; figS14_governance.pdf; figS14_governance.png"
+  },
+  {
+    "figure": "S14",
+    "panel": "e",
+    "scientific_claim": "The final coverage cycle read no predictions and executed no model forward, optimizer, update, or training action.",
+    "source_file": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/qualification/stage08a_qualification_summary.json",
+    "source_hash": "sha256:ee8d6e2a8e061435a7ed2d02e9af638d72e71a946e7d34003900d70b54a20120",
+    "source_field": "counts.* zero-action fields",
+    "confirmatory_or_diagnostic": "SUPPORTED",
+    "transformation": "Exact counter bars.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS14_governance.svg; figS14_governance.pdf; figS14_governance.png"
+  }
+]

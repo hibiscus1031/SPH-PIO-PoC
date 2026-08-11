@@ -1,0 +1,147 @@
+{
+  "rows": [
+    {
+      "failed": "A complete diffSPH solver was not executed as Stage00 truth.",
+      "frozen_status": "CONDITIONAL",
+      "hypothesis": "Apple Silicon CPU/MPS can support a bounded 2D proof of concept.",
+      "next_authorization": "Stage01 minimum verification path",
+      "passed": "Environment/component readiness and bounded CPU/MPS execution checks.",
+      "scientific_consequence": "Environment readiness is not solver verification.",
+      "sealed_test_accessed": false,
+      "sources": [
+        "project_wide_synthesis/02_stage_timeline/complete_stage_timeline.json"
+      ],
+      "stage": "Stage00",
+      "training_occurred": false,
+      "validation_consumed": false
+    },
+    {
+      "failed": "The final independent V2 spatial/shear qualification; high-resolution SPH was not established as truth.",
+      "frozen_status": "V2_QUALIFICATION_FAIL; FINITE_RESOLUTION_DOMINANT",
+      "hypothesis": "A fixed-physics SPH chain can be verified across implementation, conservation, reference, resolution, and independent-validation layers.",
+      "next_authorization": "Stage02 qualification-first target route",
+      "passed": "Structural operator repair, bounded resource policy, dense-equivalent semidiscrete reference, plateau-aware MMS requalification, evaluator and execution infrastructure.",
+      "scientific_consequence": "Model-form, temporal, quadrature, topology, and finite-resolution effects must be separated.",
+      "sealed_test_accessed": false,
+      "sources": [
+        "project_wide_synthesis/02_stage_timeline/complete_stage_timeline.json",
+        "06_experiments/stage_01h_viscous_decay_diagnosis/results/stage01h_status.txt"
+      ],
+      "stage": "Stage01",
+      "training_occurred": false,
+      "validation_consumed": true
+    },
+    {
+      "failed": "Static pair-force fitting v0.1 and v0.2 global train-fit gates; regularity as a hard dataset gate.",
+      "frozen_status": "STAGE02_ROUTE_CLOSED_PUBLICATION_BOUNDARY_COMPLETE",
+      "hypothesis": "A reciprocal conservative pair-force PIO can be structurally qualified and statically fitted.",
+      "next_authorization": "Stage03 dynamic hybrid specification",
+      "passed": "Theory, target/reference hierarchy, blind dataset, and PAIR_FORCE_PIO_ARCHITECTURE_QUALIFIED.",
+      "scientific_consequence": "Structural correctness and representability did not imply successful static learning; the route moved to dynamic accepted-state tasks.",
+      "sealed_test_accessed": false,
+      "sources": [
+        "stage_02_Particle_Interaction_Operator/07_reports/stage02ms_final_report.md",
+        "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/results/stage02k_qualification_summary.json"
+      ],
+      "stage": "Stage02",
+      "training_occurred": true,
+      "validation_consumed": true
+    },
+    {
+      "failed": "Complete multistep AD/FD qualification: 216 stable probes and 144 failures; history gradient 0/6.",
+      "frozen_status": "STAGE03_ROUTE_PAUSED_GRADIENT_BOUNDARY_COMPLETE",
+      "hypothesis": "A conservative RK2 neural hybrid with short history can be implemented and multistep-gradient qualified.",
+      "next_authorization": "Stage04 task-signal boundary",
+      "passed": "Dynamic reference trajectories, RK2 hybrid implementation, zero-correction equivalence, checkpoint identity, one-step AD, and topology component.",
+      "scientific_consequence": "Correct implementation did not establish multistep trainability; task-aligned gradient diagnosis was required.",
+      "sealed_test_accessed": false,
+      "sources": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03ds_final_manifest.json",
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03d_final_manifest.json"
+      ],
+      "stage": "Stage03",
+      "training_occurred": false,
+      "validation_consumed": false
+    },
+    {
+      "failed": "TASK_ALIGNED_PARAMETER_GRADIENT_NOT_QUALIFIED; raw state-loss signal was attenuated; complete parameter-coordinate FD coverage was not established.",
+      "frozen_status": "STAGE04_ROUTE_PAUSED_TASK_SIGNAL_BOUNDARY_COMPLETE",
+      "hypothesis": "A local-causal raw next-state task can avoid history-gradient attenuation while preserving structure.",
+      "next_authorization": "Stage05 scale-aware D0 defect route",
+      "passed": "Local-causal reference-family pool, analytic/topology/DOP853 qualification, sealed role governance, nonzero correction Jacobian and structural safety.",
+      "scientific_consequence": "The target and scale, not only architecture Jacobians, determine detectable optimizer signals.",
+      "sealed_test_accessed": false,
+      "sources": [
+        "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04cs_final_manifest.json",
+        "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04cr_final_manifest.json"
+      ],
+      "stage": "Stage04",
+      "training_occurred": false,
+      "validation_consumed": false
+    },
+    {
+      "failed": "Complete coordinate-level FD qualification and local-descent route remained incomplete/not qualified.",
+      "frozen_status": "PROSPECTIVE_OPTIMIZER_PATH_GRADIENT_CONFIRMATION_NOT_QUALIFIED; target/scale qualified",
+      "hypothesis": "A D0-centered scale-aware conservative discrete-defect target restores identifiable optimization signals.",
+      "next_authorization": "Stage06 actual-optimizer qualification",
+      "passed": "CONSERVATIVE_DISCRETE_DEFECT_TARGET_AND_SCALE_QUALIFIED with 384 origins; representability, scale, uncertainty, conservation and symmetry gates.",
+      "scientific_consequence": "The defect formulation was retained, while optimizer-path evidence was moved to actual update dynamics.",
+      "sealed_test_accessed": false,
+      "sources": [
+        "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/qualification/stage05b_qualification_summary.json",
+        "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05cq_final_manifest.json"
+      ],
+      "stage": "Stage05",
+      "training_occurred": false,
+      "validation_consumed": false
+    },
+    {
+      "failed": "All D1/D2/D3 arms had 0/3 seed passes; transformer route not qualified.",
+      "frozen_status": "FORMAL_TRAINING_FAILURE_ATTRIBUTED",
+      "hypothesis": "Qualified actual AdamW update dynamics can support the frozen formal K=1 campaign.",
+      "next_authorization": "Stage07 heterogeneous development pool",
+      "passed": "ACTUAL_OPTIMIZER_UPDATE_DYNAMICS_QUALIFIED; nine formal runs completed with checkpoint integrity and structure gates.",
+      "scientific_consequence": "Local descent and update-level trainability did not guarantee the frozen global criterion; failure was attributed to TRAIN lineage heterogeneity.",
+      "sealed_test_accessed": false,
+      "sources": [
+        "stage_06_Optimizer_Update_Dynamics_Training/01_update_map_qualification/qualification/stage06a_qualification_summary.json",
+        "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/manifests/stage06cr_final_manifest.json"
+      ],
+      "stage": "Stage06",
+      "training_occurred": true,
+      "validation_consumed": true
+    },
+    {
+      "failed": "All arms 0/3 seed passes; Branch B NOT_SUPPORTED; HET_S2_02 was descriptor and target out of support.",
+      "frozen_status": "TRAIN_V2_RETRAINING_FAILURE_ATTRIBUTED",
+      "hypothesis": "Prospective formula heterogeneity augmentation can restore shared-map training and fresh-validation transfer.",
+      "next_authorization": "Stage08 systematic coverage V3",
+      "passed": "12-lineage pool qualification, TRAIN_V2 target/scale/update qualification, nine retraining runs, and support-gap attribution.",
+      "scientific_consequence": "Formula heterogeneity alone did not guarantee target-manifold support; hash-based role assignment exposed a held-out H2 gap.",
+      "sealed_test_accessed": false,
+      "sources": [
+        "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07dr/results/stage07dr_results.json",
+        "stage_07_Heterogeneous_Development_Pool/08_reports/stage07dr_final_report.md"
+      ],
+      "stage": "Stage07",
+      "training_occurred": true,
+      "validation_consumed": true
+    },
+    {
+      "failed": "20-lineage descriptor/target support, HET_S2_02 target PCA, key envelopes, and formal fresh-validation closure (0/4).",
+      "frozen_status": "SYSTEMATIC_COVERAGE_V3_POOL_NOT_QUALIFIED",
+      "hypothesis": "Prospective four-layer coverage selection can close consumed support and produce four fresh in-support validation lineages.",
+      "next_authorization": "None; FULL_SOLVER_TRAINING_ROUTE_CLOSED",
+      "passed": "128+64 deterministic candidates; 192/192 candidate qualification; eight algorithmic TRAIN selections; TRAIN_V3=14; HET_S2_02 descriptor distance reduced to 1.8606627588827505.",
+      "scientific_consequence": "Descriptor-space support did not imply raw correction-target manifold coverage; final development cycle exhausted.",
+      "sealed_test_accessed": false,
+      "sources": [
+        "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/qualification/stage08a_qualification_summary.json",
+        "stage_08_Systematic_Coverage_V3/08_reports/stage08a_final_report.md"
+      ],
+      "stage": "Stage08",
+      "training_occurred": false,
+      "validation_consumed": false
+    }
+  ]
+}

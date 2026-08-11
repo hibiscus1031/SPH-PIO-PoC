@@ -1,0 +1,78 @@
+{
+  "all_hashes_complete": true,
+  "backend_identity": "CPU_FLOAT64_SDPBackend.MATH",
+  "blind_reverse_jvp_count": 1728,
+  "checkpoint_selections": 0,
+  "coordinate_block_FD_evaluation_paths": 110592,
+  "dense_particle_N_by_N_allocation": false,
+  "diagnostic_full_gradient_backward_count": 48,
+  "diagnostic_graph_rebuild_count": 4518,
+  "diagnostic_local_descent_forward_count": 288,
+  "diagnostic_optimizer_path_FD_evaluation_paths": 1152,
+  "diagnostic_reverse_jvp_count": 18,
+  "finite_completion": true,
+  "formal_FD_evaluation_paths": 124416,
+  "formal_full_gradient_backward_count": 126,
+  "formal_graph_rebuild_count_including_structure": 3069360,
+  "formal_local_descent_forward_count": 756,
+  "formal_parameter_restoration_checks": 15930,
+  "formal_reverse_jvp_count": 1944,
+  "model_rankings": 0,
+  "neural_rollouts": 0,
+  "no_monotonic_retained_autograd_growth": true,
+  "optimizer_instances": 0,
+  "optimizer_path_FD_evaluation_paths": 13824,
+  "optimizer_path_reverse_jvp_count": 216,
+  "optimizer_steps": 0,
+  "pass": true,
+  "peak_rss_delta_bytes": 350339072,
+  "peak_rss_delta_limit_bytes": 1610612736,
+  "per_arm_seed_wall_time_seconds": {
+    "D1_20500521": 1113.4257992079947,
+    "D1_20500522": 1131.5068006670335,
+    "D1_20500523": 1152.7965860000113,
+    "D2_20500521": 2008.79818366596,
+    "D2_20500522": 2074.2195183340227,
+    "D2_20500523": 1988.3460642090067,
+    "D3_20500521": 5277.382916582981,
+    "D3_20500522": 5277.994961583056,
+    "D3_20500523": 5329.70887750003
+  },
+  "performance_evaluations": 0,
+  "persistent_parameter_updates": 0,
+  "retained_autograd_samples": [
+    {
+      "finite_backward": true,
+      "live_autograd_tensor_count": 0,
+      "repeat": 0
+    },
+    {
+      "finite_backward": true,
+      "live_autograd_tensor_count": 0,
+      "repeat": 1
+    },
+    {
+      "finite_backward": true,
+      "live_autograd_tensor_count": 0,
+      "repeat": 2
+    },
+    {
+      "finite_backward": true,
+      "live_autograd_tensor_count": 0,
+      "repeat": 3
+    },
+    {
+      "finite_backward": true,
+      "live_autograd_tensor_count": 0,
+      "repeat": 4
+    },
+    {
+      "finite_backward": true,
+      "live_autograd_tensor_count": 0,
+      "repeat": 5
+    }
+  ],
+  "retention_audit_backward_count": 12,
+  "retention_audit_graph_rebuild_count": 36,
+  "training_runs": 0
+}

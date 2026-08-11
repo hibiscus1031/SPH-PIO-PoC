@@ -1,0 +1,460 @@
+{
+  "ANY_HISTORICAL_CHECKPOINT_TRAIN_B_PASS": false,
+  "SEALED_TEST": "CLOSED",
+  "Stage06C_status_unchanged": "FORMAL_K1_TRAINING_COMPLETE_TRANSFORMER_NOT_QUALIFIED",
+  "Stage06D_authorized": false,
+  "artifacts": [
+    {
+      "bytes": 3415,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/attribution/failure_attribution.json",
+      "sha256": "sha256:d522f1c0aac0e18461a18b04724d5e4be26acb1ed4a5cbfee1b1651ccaafb2be"
+    },
+    {
+      "bytes": 4620,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/capacity_diagnostics/local_tangent_reducibility.json",
+      "sha256": "sha256:589d7a2b9243a6911c3b8333e712695a69416d579c41a472655fd37b752e7091"
+    },
+    {
+      "bytes": 7255,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/capacity_diagnostics/temporal_history_value.json",
+      "sha256": "sha256:05d9f313410cd00396b6266ceb5e3add3c032276a2c71d7d908ecc660c13c428"
+    },
+    {
+      "bytes": 82925,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/checkpoint_selection_tension/selection_tension.json",
+      "sha256": "sha256:f1e46c9d19b811ca85b90d3282dafe4a993b410e40f3ffcf4a928cf50ec2eb5b"
+    },
+    {
+      "bytes": 1059779,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/checkpoint_trajectory/all_590_checkpoint_metrics.jsonl",
+      "sha256": "sha256:20659f95663dd9662d2053207bddd84b87b82dc5e1fd1eeb839bb880052a60f0"
+    },
+    {
+      "bytes": 87936,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/checkpoint_trajectory/all_590_train_gate_scan.json",
+      "sha256": "sha256:542977edf16ef988b9d2a6408753ee1bbe9c29c1046a78c8408f496147caff9b"
+    },
+    {
+      "bytes": 148597,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/coefficient_dynamics/coefficient_and_residual_evolution.json",
+      "sha256": "sha256:7b928bac0e535f5678c31c38fa3be4971ac8f29996b2820c319e096fb0a860f2"
+    },
+    {
+      "bytes": 20953,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/coefficient_dynamics/d3_attention_evolution.json",
+      "sha256": "sha256:f26e54f751c039aeeb052cface59d4a7eb8144fbee88027d6637f54b8a40a1bc"
+    },
+    {
+      "bytes": 8586205,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/complete_history/D1_seed20600611_complete.jsonl",
+      "sha256": "sha256:a0da88c4cfef58ef232e874dec5fb415d2104d18f8d8686fe5a86c1136e057af"
+    },
+    {
+      "bytes": 8586672,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/complete_history/D1_seed20600612_complete.jsonl",
+      "sha256": "sha256:c844ee91b5447b68401595e1c12ecc39b0b4476bd2d77c543e54fd1080167951"
+    },
+    {
+      "bytes": 8586473,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/complete_history/D1_seed20600613_complete.jsonl",
+      "sha256": "sha256:0a8269fd1735127407299c6c5989cdc21aaea4f3709041afb569dfac0b662a04"
+    },
+    {
+      "bytes": 8592037,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/complete_history/D2_seed20600611_complete.jsonl",
+      "sha256": "sha256:ab2621034e6fcf3719973d2ee392fda25341e47e3703afda20703121ffbb1ee2"
+    },
+    {
+      "bytes": 8592067,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/complete_history/D2_seed20600612_complete.jsonl",
+      "sha256": "sha256:ce9a2d94b0ee4621d21bbf9b98cd2cff72e368273ba6c939637b9da745eeb66d"
+    },
+    {
+      "bytes": 8592200,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/complete_history/D2_seed20600613_complete.jsonl",
+      "sha256": "sha256:564058c16643a0fa60f7ccddd2be71c6e4fbbc0fd96687b1536b246be8e1c292"
+    },
+    {
+      "bytes": 4603211,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/complete_history/D3_seed20600611_complete.jsonl",
+      "sha256": "sha256:912f9788c27a81d6adba874fd6bab6eec0ce59621ba8178530613d208734b731"
+    },
+    {
+      "bytes": 4717875,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/complete_history/D3_seed20600612_complete.jsonl",
+      "sha256": "sha256:7c16fab508a28398ca13c9b12c1b501cec2b5455d830fb4a79b68c85443cc2de"
+    },
+    {
+      "bytes": 5751768,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/complete_history/D3_seed20600613_complete.jsonl",
+      "sha256": "sha256:f49c44c91e9f50812cddc6e5aecd2c4b5d0c781cf84690782df44f4cada97eea"
+    },
+    {
+      "bytes": 8486,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/freeze/prepare_stage06cr.py",
+      "sha256": "sha256:6ec9af4ffdbb792ffe05307c3b4f4065fadf39ba6c98dce26e07fbcb80815d5c"
+    },
+    {
+      "bytes": 437,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/freeze/stage06cr_final_historical_audit.json",
+      "sha256": "sha256:3be092cd5cb7c5053205255ba8e8ef4ecc26579fca9799a41a0374aa80d43923"
+    },
+    {
+      "bytes": 166013,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/freeze/stage06cr_input_freeze_record.json",
+      "sha256": "sha256:5ada0e3fb01382f0b4bb5a3b3753e5c915acf9e1d9df772985ede5b294037cda"
+    },
+    {
+      "bytes": 449,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/future_protocol/future_training_options.json",
+      "sha256": "sha256:72119beb30db95c012566bab08ea3f3fbb036b33446ad8b4862c80ceb6e7fd2c"
+    },
+    {
+      "bytes": 16225,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/gradient_alignment/selected_lineage_gradient_alignment.json",
+      "sha256": "sha256:6ad4ea68f1d92c11a64c636b3ae975a29e21df6d04668fd29eb8688d4db26a20"
+    },
+    {
+      "bytes": 5755,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/learning_rate_evidence/learning_rate_evidence_gap.json",
+      "sha256": "sha256:cccf723cdbae2ff72be2057f59d46b8f2707e79170d49d76992caa91c45682eb"
+    },
+    {
+      "bytes": 3969,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/manifests/stage06cr_attribution_manifest.json",
+      "sha256": "sha256:53289bd889738a74f7e22c81c5b4b89fc637de7e61f93d935daadbcb8627bbd9"
+    },
+    {
+      "bytes": 354,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/manifests/stage06cr_checkpoint_inventory_manifest.json",
+      "sha256": "sha256:731a73124cb70c7925cd6cf7205c7d1fc55e9b3000288e69d3f2ba55132eecfc"
+    },
+    {
+      "bytes": 609,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/manifests/stage06cr_diagnostic_manifest.json",
+      "sha256": "sha256:3e8c47d1960ff646582b44d4aebead7a1c9f2b5effa6f866bfb7913d2b8720fc"
+    },
+    {
+      "bytes": 166013,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/manifests/stage06cr_input_freeze_manifest.json",
+      "sha256": "sha256:5ada0e3fb01382f0b4bb5a3b3753e5c915acf9e1d9df772985ede5b294037cda"
+    },
+    {
+      "bytes": 8025,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/optimizer_dynamics/history_and_plateau_summary.json",
+      "sha256": "sha256:a7205038495a90e6f9105d6b9cb4f46506d9c2a1e2155b6f6c6913c56a58e1f9"
+    },
+    {
+      "bytes": 203821,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/optimizer_dynamics/optimizer_dynamics.json",
+      "sha256": "sha256:ab4dadfefe0dee8107911d6dd127a5fe6ff6cc6d1874feee433e4aa3aad2723a"
+    },
+    {
+      "bytes": 552132,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/origin_difficulty/origin_difficulty_map.json",
+      "sha256": "sha256:e50246cd723f8e70f0b7995c453330559383089d2eb5629e4f7c5923524c4f98"
+    },
+    {
+      "bytes": 15323,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/parameter_displacement/parameter_displacement.json",
+      "sha256": "sha256:6f91d475329762367739dd791f37b5d0253f62e2436dbf24c2fe217eb326b771"
+    },
+    {
+      "bytes": 127,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/resources/stage06cr_resource_audit.json",
+      "sha256": "sha256:a2acf78661529162693761ab5b1309f42e9cd286b318c140e365b4761ad1ea8f"
+    },
+    {
+      "bytes": 76157,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/results/run_stage06cr.py",
+      "sha256": "sha256:f7974d4f12db0d2442f15f774f4829a2a4e9816993a4f48b5dcadaad13a01014"
+    },
+    {
+      "bytes": 206679,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/train_lineage_decomposition/D1_seed20600611.json",
+      "sha256": "sha256:4a3d2347c6b816734631dba0d6fac585a88c2610f9ca07991454001c0fcc6f26"
+    },
+    {
+      "bytes": 206709,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/train_lineage_decomposition/D1_seed20600612.json",
+      "sha256": "sha256:3d0f78451f4159199b2be8568ed99d9714d1eecfc143e7af18056b32c9e4e965"
+    },
+    {
+      "bytes": 206735,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/train_lineage_decomposition/D1_seed20600613.json",
+      "sha256": "sha256:20bbf2fab6b20426997bba2bd5d65e8a379b1adc9839397e7793e4c3894c94f2"
+    },
+    {
+      "bytes": 206681,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/train_lineage_decomposition/D2_seed20600611.json",
+      "sha256": "sha256:f41c7855a4f187c1da014b04e5a7e87f131ffb02a06524b20e5675b9ad9405ce"
+    },
+    {
+      "bytes": 206829,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/train_lineage_decomposition/D2_seed20600612.json",
+      "sha256": "sha256:8e580ed290919f4218ebaba1add83c2a1343e2aed7b6bb54db1f94fea78f77b3"
+    },
+    {
+      "bytes": 206731,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/train_lineage_decomposition/D2_seed20600613.json",
+      "sha256": "sha256:1887c42dcb670c3f7399465ed9c470d4c5a15204a77897a66d2ede346942d51f"
+    },
+    {
+      "bytes": 206992,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/train_lineage_decomposition/D3_seed20600611.json",
+      "sha256": "sha256:7b527a3dd3ddf1ee7b1ed8f56cae41009fdf206e22bc625460ff7979d8ecd680"
+    },
+    {
+      "bytes": 206933,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/train_lineage_decomposition/D3_seed20600612.json",
+      "sha256": "sha256:9afdda393fde7d33b0fab14945350d2feff70d33f23d7d1a00ff07f6747e22db"
+    },
+    {
+      "bytes": 206919,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/train_lineage_decomposition/D3_seed20600613.json",
+      "sha256": "sha256:b5f946ef586f172c00e36df05b7e0449305404fc8bbb965296fbff16b40b037d"
+    },
+    {
+      "bytes": 3001864,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/train_lineage_decomposition/aggregate.json",
+      "sha256": "sha256:1f3a5d0bbb22af27b3413a6164ba3a3f73a0733174ec3dc2d12ac85b12fabd17"
+    },
+    {
+      "bytes": 70471,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/validation_decomposition/D1_seed20600611.json",
+      "sha256": "sha256:4d507aaeb557cb463b7267f62c698cf73bab20753d2f842452de15746f2be190"
+    },
+    {
+      "bytes": 70491,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/validation_decomposition/D1_seed20600612.json",
+      "sha256": "sha256:66abdebffa90bc22e4834f8d7aa85036ff1dee5d8d66cdfaf778d43343bb2cf9"
+    },
+    {
+      "bytes": 70493,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/validation_decomposition/D1_seed20600613.json",
+      "sha256": "sha256:8cc9b3dd079211356d1cbcffe1a93dc591abd9a25ff80b8c6e48382d4f1e5b9d"
+    },
+    {
+      "bytes": 70463,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/validation_decomposition/D2_seed20600611.json",
+      "sha256": "sha256:2f2e8367507a6baf45694a6983d9d8f5a5b81e5d48cea765668df444c95a16ac"
+    },
+    {
+      "bytes": 70515,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/validation_decomposition/D2_seed20600612.json",
+      "sha256": "sha256:edbf326b0163158590e18f9573265aba701c3638935d627fa3fb23bcaae7a77e"
+    },
+    {
+      "bytes": 70469,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/validation_decomposition/D2_seed20600613.json",
+      "sha256": "sha256:8728354c70bed9bab32d62481469ea66388434e7a11f2f63a98f364de2a074b2"
+    },
+    {
+      "bytes": 70735,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/validation_decomposition/D3_seed20600611.json",
+      "sha256": "sha256:70470192f4c5ca2457917f63093c026dfe83039726fad852549b15bd62bda11f"
+    },
+    {
+      "bytes": 70712,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/validation_decomposition/D3_seed20600612.json",
+      "sha256": "sha256:9aebc015886d7263c825a44a67080bdd96de1a08660f013505c0b7178ce0b10b"
+    },
+    {
+      "bytes": 70752,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/validation_decomposition/D3_seed20600613.json",
+      "sha256": "sha256:170c689551336eacd602fe4e7ad5af351da0d7a9dfeec181d2895153d341fd1a"
+    },
+    {
+      "bytes": 2988682,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/validation_decomposition/aggregate.json",
+      "sha256": "sha256:13d91dee72f657ff99ec6c5bb5b34d48fc953bdeefd3851fd05692a6d34a977e"
+    }
+  ],
+  "evidence_complete": true,
+  "future_options": {
+    "SEALED_TEST_can_remain_sealed": true,
+    "current_validation_consumed_if_branch_B": true,
+    "options": [
+      {
+        "branch": "B",
+        "requirements": [
+          "retain hard families",
+          "generate new validation lineages",
+          "consume current validation as development evidence"
+        ],
+        "stage": "New heterogeneous TRAIN development pool"
+      }
+    ],
+    "prospective_only": true,
+    "training_authorized_in_stage06cr": false
+  },
+  "historical_checkpoint_count": 590,
+  "historical_hashes_unchanged": true,
+  "historical_optimizer_steps_read": 11620,
+  "new_checkpoints": 0,
+  "new_optimizer_steps": 0,
+  "new_parameter_updates": 0,
+  "new_training_runs": 0,
+  "per_arm_attribution": {
+    "D1": {
+      "evidence": {
+        "any_historical_train_gate_pass": false,
+        "full_network_local_tangent_reducibility": 0.9999999749121558,
+        "higher_LR_has_coverage_gap": true,
+        "negative_lineage_gradient_pair_total": 7,
+        "persistent_hard_lineages": [
+          "LCDF_08"
+        ],
+        "plateau_classes": [
+          "OPTIMIZATION_PLATEAU",
+          "OPTIMIZATION_PLATEAU",
+          "OPTIMIZATION_PLATEAU"
+        ],
+        "selected_mean_TRAIN_Q": 0.9675909911757223,
+        "selected_mean_VALIDATION_Q": 0.6491923286875226,
+        "selection_tension_seed_count": 0,
+        "update_scale_classes": [
+          "SATURATION_OR_STALL_CANDIDATE",
+          "SATURATION_OR_STALL_CANDIDATE",
+          "SATURATION_OR_STALL_CANDIDATE"
+        ],
+        "validation_minus_train_Q": -0.3183986624881997
+      },
+      "primary_attribution": "OPTIMIZATION_PLATEAU_WITH_REDUCIBLE_RESIDUAL",
+      "secondary_evidence": [
+        "LR_OR_UPDATE_SCALE_LIMITED_EVIDENCE_GAP_ONLY",
+        "TARGET_DIFFICULTY_DISTRIBUTION_SHIFT",
+        "TRAIN_LINEAGE_HETEROGENEITY_DOMINANT"
+      ]
+    },
+    "D2": {
+      "evidence": {
+        "any_historical_train_gate_pass": false,
+        "full_network_local_tangent_reducibility": 0.9999999849102014,
+        "higher_LR_has_coverage_gap": true,
+        "negative_lineage_gradient_pair_total": 8,
+        "persistent_hard_lineages": [
+          "LCDF_08"
+        ],
+        "plateau_classes": [
+          "OPTIMIZATION_PLATEAU",
+          "MIXED",
+          "OPTIMIZATION_PLATEAU"
+        ],
+        "selected_mean_TRAIN_Q": 0.9654551894965969,
+        "selected_mean_VALIDATION_Q": 0.6422191116440509,
+        "selection_tension_seed_count": 0,
+        "update_scale_classes": [
+          "SATURATION_OR_STALL_CANDIDATE",
+          "NORMAL_UPDATE_SCALE",
+          "SATURATION_OR_STALL_CANDIDATE"
+        ],
+        "validation_minus_train_Q": -0.32323607785254604
+      },
+      "primary_attribution": "OPTIMIZATION_PLATEAU_WITH_REDUCIBLE_RESIDUAL",
+      "secondary_evidence": [
+        "LR_OR_UPDATE_SCALE_LIMITED_EVIDENCE_GAP_ONLY",
+        "TARGET_DIFFICULTY_DISTRIBUTION_SHIFT",
+        "TRAIN_LINEAGE_HETEROGENEITY_DOMINANT"
+      ]
+    },
+    "D3": {
+      "evidence": {
+        "any_historical_train_gate_pass": false,
+        "full_network_local_tangent_reducibility": 0.9999998141975238,
+        "higher_LR_has_coverage_gap": true,
+        "negative_lineage_gradient_pair_total": 26,
+        "persistent_hard_lineages": [
+          "LCDF_08"
+        ],
+        "plateau_classes": [
+          "VALIDATION_EARLY_STOP_ONLY",
+          "MIXED",
+          "MIXED"
+        ],
+        "selected_mean_TRAIN_Q": 0.7254703095068654,
+        "selected_mean_VALIDATION_Q": 0.1196158239214432,
+        "selection_tension_seed_count": 0,
+        "update_scale_classes": [
+          "NORMAL_UPDATE_SCALE",
+          "NORMAL_UPDATE_SCALE",
+          "NORMAL_UPDATE_SCALE"
+        ],
+        "validation_minus_train_Q": -0.6058544855854222
+      },
+      "primary_attribution": "TRAIN_LINEAGE_HETEROGENEITY_DOMINANT",
+      "secondary_evidence": [
+        "LR_OR_UPDATE_SCALE_LIMITED_EVIDENCE_GAP_ONLY",
+        "TARGET_DIFFICULTY_DISTRIBUTION_SHIFT"
+      ]
+    }
+  },
+  "protocol_sha256": "sha256:b7918bde82b104895b6d47c798801608938c661c3f8b249f4c832c98c3a83cbe",
+  "reports": [
+    {
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/08_reports/stage06cr_freeze_and_scope.md",
+      "sha256": "sha256:8f8ed0dbcc5d64fd0ab9ae5355b453e41dc41e5ef80324578fafae3831936eac"
+    },
+    {
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/08_reports/stage06cr_complete_training_history.md",
+      "sha256": "sha256:73f0ec72995776611d0147be9aee63d0b2aa3d6b7cfa90bd6832cffcf06ae3f4"
+    },
+    {
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/08_reports/stage06cr_train_lineage_decomposition.md",
+      "sha256": "sha256:0fd3816b23cb58d86078ad322016cf51bda6b689f42ab02ba9cb14fe5afc55f6"
+    },
+    {
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/08_reports/stage06cr_validation_decomposition.md",
+      "sha256": "sha256:e56e0dccf584e44b91cc0ea0f2829004e260aafae57def46bcdab6eecb2f3f36"
+    },
+    {
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/08_reports/stage06cr_origin_difficulty.md",
+      "sha256": "sha256:5987cfda5cb855f4b862db72bf13b7535a4f043050bdfdb8f827b030313cc16f"
+    },
+    {
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/08_reports/stage06cr_optimizer_dynamics.md",
+      "sha256": "sha256:eb6cbdd55d59048b0715d51b0c568052908ed5114ce3e4472f030bf1650a601a"
+    },
+    {
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/08_reports/stage06cr_learning_rate_evidence_gap.md",
+      "sha256": "sha256:ee7b46cf1acb58954d59d51257d67d3d978f5347285df84bbd524e9f56ead357"
+    },
+    {
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/08_reports/stage06cr_checkpoint_selection_tension.md",
+      "sha256": "sha256:e8d88ea61353f90127b6e4eeba8cd64e95fc023c2de4217b0eaca310ff49aa5e"
+    },
+    {
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/08_reports/stage06cr_capacity_and_identifiability.md",
+      "sha256": "sha256:acbd68a9630e7e5b5adf1efdd72e0bd57041eda79177135bbca794d0fb7c8516"
+    },
+    {
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/08_reports/stage06cr_failure_attribution.md",
+      "sha256": "sha256:875dcf404ba7b2b6c70ac1b9d66e8b18d91a7dba684d21d71e09c375785dd680"
+    },
+    {
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/08_reports/stage06cr_future_training_options.md",
+      "sha256": "sha256:596e4ab23262f38ece97ab5c2fe11587b995658b5da7c96c65ca1cb1e8d36c3a"
+    },
+    {
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/08_reports/stage06cr_final_report.md",
+      "sha256": "sha256:a4947542557a33e2bbf866cf6a3a7708810d202768a4ebb9fa0a9116b06bf86d"
+    }
+  ],
+  "resources": {
+    "CPU_float64": true,
+    "output_bytes": 77734738,
+    "peak_rss_bytes": 423411712,
+    "wall_time_seconds": 150.49655016709585
+  },
+  "rollouts": 0,
+  "schema": "sph-pio-poc.stage06cr.final.v1",
+  "sealed_decode_counts": {
+    "sealed_formula_decode_count": 0,
+    "sealed_origin_decode_count": 0,
+    "sealed_source_decode_count": 0,
+    "sealed_state_decode_count": 0,
+    "sealed_target_decode_count": 0
+  },
+  "sealed_test_evaluations": 0,
+  "status": "FORMAL_TRAINING_FAILURE_ATTRIBUTED"
+}

@@ -1,0 +1,149 @@
+{
+  "all_candidates_pair_force_compatible": false,
+  "node_residual_only_count": 2,
+  "normalized_internal_force_tolerance": 1e-10,
+  "pair_force_compatible_count": 5,
+  "rows": [
+    {
+      "architecture_compatibility": "pair_force_compatible",
+      "candidate_id": "i_res_n12_h26_regular",
+      "normalized_total_force_residual": 2.357089638190672e-16,
+      "target_mean_subtracted_or_modified": false,
+      "target_power_diagnostic": {
+        "hard_gate": false,
+        "value": -1.1276759298750185e-05
+      },
+      "target_torque_diagnostic": {
+        "coordinate_convention": "wrapped_periodic_position_relative_to_box_center",
+        "hard_gate": false,
+        "value": -1.1342707317834743e-06
+      },
+      "tolerance": 1e-10,
+      "total_target_force": [
+        8.863352760068999e-18,
+        9.595189226496714e-18
+      ]
+    },
+    {
+      "architecture_compatibility": "pair_force_compatible",
+      "candidate_id": "i_anchor_n16_h26_regular",
+      "normalized_total_force_residual": 3.837096049082717e-16,
+      "target_mean_subtracted_or_modified": false,
+      "target_power_diagnostic": {
+        "hard_gate": false,
+        "value": -6.4793612155247375e-06
+      },
+      "target_torque_diagnostic": {
+        "coordinate_convention": "wrapped_periodic_position_relative_to_box_center",
+        "hard_gate": false,
+        "value": -1.1852153163887316e-06
+      },
+      "tolerance": 1e-10,
+      "total_target_force": [
+        4.228388472693467e-18,
+        -1.07742590890747e-17
+      ]
+    },
+    {
+      "architecture_compatibility": "pair_force_compatible",
+      "candidate_id": "i_res_n20_h26_regular",
+      "normalized_total_force_residual": 3.41873154105186e-16,
+      "target_mean_subtracted_or_modified": false,
+      "target_power_diagnostic": {
+        "hard_gate": false,
+        "value": -4.193582482596541e-06
+      },
+      "target_torque_diagnostic": {
+        "coordinate_convention": "wrapped_periodic_position_relative_to_box_center",
+        "hard_gate": false,
+        "value": -1.2100873582670743e-06
+      },
+      "tolerance": 1e-10,
+      "total_target_force": [
+        5.717472393966527e-18,
+        2.2598839032744733e-18
+      ]
+    },
+    {
+      "architecture_compatibility": "pair_force_compatible",
+      "candidate_id": "i_sup_n16_h22_regular",
+      "normalized_total_force_residual": 1.034173595895485e-16,
+      "target_mean_subtracted_or_modified": false,
+      "target_power_diagnostic": {
+        "hard_gate": false,
+        "value": -2.1880541643956833e-05
+      },
+      "target_torque_diagnostic": {
+        "coordinate_convention": "wrapped_periodic_position_relative_to_box_center",
+        "hard_gate": false,
+        "value": -1.0679714663102972e-06
+      },
+      "tolerance": 1e-10,
+      "total_target_force": [
+        -4.065758146820642e-18,
+        -5.664956351236761e-18
+      ]
+    },
+    {
+      "architecture_compatibility": "pair_force_compatible",
+      "candidate_id": "i_sup_n16_h30_regular",
+      "normalized_total_force_residual": 3.837096049082717e-16,
+      "target_mean_subtracted_or_modified": false,
+      "target_power_diagnostic": {
+        "hard_gate": false,
+        "value": -6.4793612155247375e-06
+      },
+      "target_torque_diagnostic": {
+        "coordinate_convention": "wrapped_periodic_position_relative_to_box_center",
+        "hard_gate": false,
+        "value": -1.1852153163887316e-06
+      },
+      "tolerance": 1e-10,
+      "total_target_force": [
+        4.228388472693467e-18,
+        -1.07742590890747e-17
+      ]
+    },
+    {
+      "architecture_compatibility": "node_residual_only",
+      "candidate_id": "i_dis_n16_h26_jitter05",
+      "normalized_total_force_residual": 0.003719907069253067,
+      "target_mean_subtracted_or_modified": false,
+      "target_power_diagnostic": {
+        "hard_gate": false,
+        "value": -6.496754175318877e-06
+      },
+      "target_torque_diagnostic": {
+        "coordinate_convention": "wrapped_periodic_position_relative_to_box_center",
+        "hard_gate": false,
+        "value": 0.0001504879127896281
+      },
+      "tolerance": 1e-10,
+      "total_target_force": [
+        0.0001021053935095437,
+        -0.0001270418222928646
+      ]
+    },
+    {
+      "architecture_compatibility": "node_residual_only",
+      "candidate_id": "i_dis_n16_h26_jitter10",
+      "normalized_total_force_residual": 0.012002372654585858,
+      "target_mean_subtracted_or_modified": false,
+      "target_power_diagnostic": {
+        "hard_gate": false,
+        "value": -7.491727852027802e-06
+      },
+      "target_torque_diagnostic": {
+        "coordinate_convention": "wrapped_periodic_position_relative_to_box_center",
+        "hard_gate": false,
+        "value": 6.43191722746571e-05
+      },
+      "tolerance": 1e-10,
+      "total_target_force": [
+        -0.0006877231671405986,
+        -0.0005937027944290038
+      ]
+    }
+  ],
+  "tolerance_source": "Stage01_frozen_tolerance_inherited_by_Stage02I_contract"
+}

@@ -1,0 +1,26 @@
+{
+  "coordinate_block_reverse_jvp_pass_count": 1728,
+  "full_gradient": {
+    "active_rows": 216,
+    "exact_repeat_rows": 216,
+    "finite_rows": 216,
+    "loss_repeat_exact_contexts": 54,
+    "observed_rows": 216,
+    "parameter_unchanged_contexts": 54,
+    "pass": true,
+    "required_rows": 216
+  },
+  "optimizer_path": {
+    "all_deterministic": true,
+    "all_safe": true,
+    "all_topology_unchanged": true,
+    "fd_stable_rows": 216,
+    "observed_rows": 216,
+    "pass": true,
+    "path_pass_rows": 216,
+    "required_rows": 216,
+    "reverse_jvp_pass_rows": 216
+  },
+  "pass": false,
+  "schema": "sph-pio-poc.stage05cq.gradient-manifest.v1"
+}

@@ -1,0 +1,114 @@
+preregistration_version: stage02jr-independent-family-preregistration-0.2.0
+frozen_before_any_new_acceleration_or_target_evaluation: true
+selection_policy: exact_enumeration_no_posthoc_family_case_resolution_or_support_change
+common_physics:
+  dimension: 2
+  domain: periodic_unit_square
+  evaluation_time: 0.0
+  execution: CPU_float64
+  rho0_source: frozen_stage02c_generation_configuration
+  EOS: isothermal_p_equals_cs_squared_times_rho_minus_rho0
+  sound_speed_source: frozen_stage02c_generation_configuration
+  viscosity_source: frozen_stage02c_generation_configuration
+  baseline_operator: frozen_SPH_pressure_plus_viscosity
+  layout: regular_equal_mass
+  external_source: none
+  trajectory: none
+  temporal_derivative: none
+  k: 2*pi
+  U0: 0.02*cs
+case_template:
+  resolution_path:
+    - {case_suffix: n12_h26, particles_per_axis: 12, h_over_dx: 2.6, resolution_id: N12x12, support_id: Hdx_2p6}
+    - {case_suffix: n16_h26, particles_per_axis: 16, h_over_dx: 2.6, resolution_id: N16x16, support_id: Hdx_2p6}
+    - {case_suffix: n20_h26, particles_per_axis: 20, h_over_dx: 2.6, resolution_id: N20x20, support_id: Hdx_2p6}
+  support_extension:
+    - {case_suffix: n16_h22, particles_per_axis: 16, h_over_dx: 2.2, resolution_id: N16x16, support_id: Hdx_2p2}
+    - {case_suffix: n16_h30, particles_per_axis: 16, h_over_dx: 3.0, resolution_id: N16x16, support_id: Hdx_3p0}
+families:
+  - family_id: FAMILY_PV_EXISTING
+    split_role: future_train
+    source_kind: frozen_stage02j_five_regular_records
+    source_lineage: stage02j_existing_analytic_periodic_vortex
+    initial_condition_lineage: PV_EXISTING_IC_V1
+    solution_family: analytic_periodic_vortex_existing
+    no_parent_trajectory: true
+    no_shared_seed: true
+    resample_or_restart_ancestry: none
+  - family_id: FAMILY_CROSSMODE_A
+    split_role: future_train
+    source_kind: new_independent_analytic_spatial_state
+    source_lineage: stage02jr_crossmode_A_closed_form_v1
+    initial_condition_lineage: CROSSMODE_A_IC_V1
+    analytic_derivative_lineage: CROSSMODE_A_DERIVATIVE_V1
+    solution_family: analytic_crossmode_A
+    no_parent_trajectory: true
+    no_shared_seed: true
+    resample_or_restart_ancestry: none
+    mode_support:
+      density: [[1, 0], [0, 2]]
+      velocity: [[1, 2], [2, 1]]
+    formulas:
+      rho: "rho0*(1 + 0.003*cos(k*x) + 0.002*cos(2*k*y))"
+      pressure: "cs^2*(rho-rho0)"
+      u_x: "U0*(sin(k*x)*cos(2*k*y) + 0.20*sin(2*k*x)*cos(k*y))"
+      u_y: "U0*(-0.70*cos(k*x)*sin(2*k*y) + 0.15*cos(2*k*x)*sin(k*y))"
+      grad_p_x: "cs^2*rho0*(-0.003*k*sin(k*x))"
+      grad_p_y: "cs^2*rho0*(-0.004*k*sin(2*k*y))"
+      laplacian_u_x: "-5*k^2*u_x"
+      laplacian_u_y: "-5*k^2*u_y"
+  - family_id: FAMILY_DIAGONAL_B
+    split_role: future_validation
+    source_kind: new_independent_analytic_spatial_state
+    source_lineage: stage02jr_diagonal_B_closed_form_v1
+    initial_condition_lineage: DIAGONAL_B_IC_V1
+    analytic_derivative_lineage: DIAGONAL_B_DERIVATIVE_V1
+    solution_family: analytic_diagonal_B
+    no_parent_trajectory: true
+    no_shared_seed: true
+    resample_or_restart_ancestry: none
+    mode_support:
+      density: [[1, 1], [2, -1]]
+      velocity: [[2, 1], [1, -2]]
+    formulas:
+      rho: "rho0*(1 + 0.0025*cos(k*(x+y)) + 0.0015*cos(k*(2*x-y)))"
+      pressure: "cs^2*(rho-rho0)"
+      u_x: "U0*(0.80*sin(k*(2*x+y)) + 0.25*sin(k*(x-2*y)))"
+      u_y: "U0*(-0.60*cos(k*(2*x+y)) + 0.20*cos(k*(x-2*y)))"
+      grad_p_x: "cs^2*rho0*(-0.0025*k*sin(k*(x+y)) - 0.0030*k*sin(k*(2*x-y)))"
+      grad_p_y: "cs^2*rho0*(-0.0025*k*sin(k*(x+y)) + 0.0015*k*sin(k*(2*x-y)))"
+      laplacian_u_x: "-5*k^2*u_x"
+      laplacian_u_y: "-5*k^2*u_y"
+  - family_id: FAMILY_MIXED_C
+    split_role: future_test
+    source_kind: new_independent_analytic_spatial_state
+    source_lineage: stage02jr_mixed_C_closed_form_v1
+    initial_condition_lineage: MIXED_C_IC_V1
+    analytic_derivative_lineage: MIXED_C_DERIVATIVE_V1
+    solution_family: analytic_mixed_C
+    no_parent_trajectory: true
+    no_shared_seed: true
+    resample_or_restart_ancestry: none
+    mode_support:
+      density: [[2, 2], [1, 2]]
+      velocity: [[2, 1], [1, 2]]
+    formulas:
+      rho: "rho0*(1 + 0.0020*cos(2*k*x)*cos(2*k*y) + 0.0015*sin(k*x)*sin(2*k*y))"
+      pressure: "cs^2*(rho-rho0)"
+      u_x: "U0*(sin(2*k*x)*cos(k*y) + 0.30*sin(k*x)*cos(2*k*y))"
+      u_y: "U0*(-0.75*cos(2*k*x)*sin(k*y) + 0.25*cos(k*x)*sin(2*k*y))"
+      grad_p_x: "cs^2*rho0*(-0.0040*k*sin(2*k*x)*cos(2*k*y) + 0.0015*k*cos(k*x)*sin(2*k*y))"
+      grad_p_y: "cs^2*rho0*(-0.0040*k*cos(2*k*x)*sin(2*k*y) + 0.0030*k*sin(k*x)*cos(2*k*y))"
+      laplacian_u_x: "-5*k^2*u_x"
+      laplacian_u_y: "-5*k^2*u_y"
+split_assignment:
+  future_train: [FAMILY_PV_EXISTING, FAMILY_CROSSMODE_A]
+  future_validation: [FAMILY_DIAGONAL_B]
+  future_test: [FAMILY_MIXED_C]
+independent_benchmark_isolation:
+  R3_shear: whole_class_independent_validation_only
+  R3_acoustic: whole_class_independent_validation_only
+  records_used: false
+  formula_or_parameter_lineage_reused: false
+  threshold_selection_used: false
+

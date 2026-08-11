@@ -1,0 +1,3 @@
+# Gradient evidence and actual optimizer-path qualification
+
+Gradient-to-optimizer qualification. (a,b) Registered full-gradient and reverse/JVP tests were active and internally consistent. (c) Historical and prospective coordinate/block coverage retained their misses, so all-coordinate FD was not qualified. (d) Frozen optimizer-path directional FD passed. (e) Descent probes restored parameters without writeback. (f,g) Actual AdamW one-step and two-/four-step micro-trajectories qualified in Stage06A. (h) The evidence ladder explicitly separates the failed coordinate-wide claim from the qualified actual update path.

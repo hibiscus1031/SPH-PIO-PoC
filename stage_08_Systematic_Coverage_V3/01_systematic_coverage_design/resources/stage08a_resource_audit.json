@@ -1,0 +1,145 @@
+{
+  "DOP853_cases": 0,
+  "all_hashes_complete": true,
+  "candidate_N8_trajectories": 192,
+  "candidate_defect_origin_evaluations": 6144,
+  "candidate_formula_evaluations": 192,
+  "coverage_optimization": 1,
+  "device": "cpu",
+  "dtype": "float64",
+  "elapsed_seconds_before_packaging": 737.1692412919365,
+  "gates": {
+    "all_hashes_complete": true,
+    "finite_completion": true,
+    "no_monotonic_retention": true,
+    "peak_rss_delta": true
+  },
+  "monotonic_retention_detected": false,
+  "numpy": "1.26.4",
+  "peak_rss_bytes": 367804416,
+  "peak_rss_delta_bytes": 64929792,
+  "phase_wall_times": {
+    "candidate_qualification_seconds": 700.3117796250153,
+    "consumed_development_seconds": 19.88816604204476,
+    "coverage_selection_seconds": 14.769117249990813
+  },
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "python": "3.13.9",
+  "rss_samples": [
+    {
+      "phase": "start",
+      "rss_bytes": 302874624
+    },
+    {
+      "phase": "development",
+      "rss_bytes": 364396544
+    },
+    {
+      "phase": "candidate_8",
+      "rss_bytes": 364920832
+    },
+    {
+      "phase": "candidate_16",
+      "rss_bytes": 366411776
+    },
+    {
+      "phase": "candidate_24",
+      "rss_bytes": 321716224
+    },
+    {
+      "phase": "candidate_32",
+      "rss_bytes": 327811072
+    },
+    {
+      "phase": "candidate_40",
+      "rss_bytes": 328302592
+    },
+    {
+      "phase": "candidate_48",
+      "rss_bytes": 328597504
+    },
+    {
+      "phase": "candidate_56",
+      "rss_bytes": 329842688
+    },
+    {
+      "phase": "candidate_64",
+      "rss_bytes": 332578816
+    },
+    {
+      "phase": "candidate_72",
+      "rss_bytes": 333889536
+    },
+    {
+      "phase": "candidate_80",
+      "rss_bytes": 334299136
+    },
+    {
+      "phase": "candidate_88",
+      "rss_bytes": 334774272
+    },
+    {
+      "phase": "candidate_96",
+      "rss_bytes": 334954496
+    },
+    {
+      "phase": "candidate_104",
+      "rss_bytes": 335298560
+    },
+    {
+      "phase": "candidate_112",
+      "rss_bytes": 335888384
+    },
+    {
+      "phase": "candidate_120",
+      "rss_bytes": 336068608
+    },
+    {
+      "phase": "candidate_128",
+      "rss_bytes": 336510976
+    },
+    {
+      "phase": "candidate_136",
+      "rss_bytes": 336642048
+    },
+    {
+      "phase": "candidate_144",
+      "rss_bytes": 336936960
+    },
+    {
+      "phase": "candidate_152",
+      "rss_bytes": 337248256
+    },
+    {
+      "phase": "candidate_160",
+      "rss_bytes": 337657856
+    },
+    {
+      "phase": "candidate_168",
+      "rss_bytes": 338083840
+    },
+    {
+      "phase": "candidate_176",
+      "rss_bytes": 321732608
+    },
+    {
+      "phase": "candidate_184",
+      "rss_bytes": 332791808
+    },
+    {
+      "phase": "candidate_192",
+      "rss_bytes": 329596928
+    },
+    {
+      "phase": "final",
+      "rss_bytes": 313835520
+    }
+  ],
+  "scipy": "1.17.1",
+  "seal_file_count": 129,
+  "selected_exact_trajectories": 0,
+  "start_rss_bytes": 302874624,
+  "topology_scans": 192,
+  "torch": "2.10.0",
+  "verdict": "PASS"
+}

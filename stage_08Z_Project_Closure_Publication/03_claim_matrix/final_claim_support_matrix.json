@@ -1,0 +1,73 @@
+{
+  "allowed": [
+    {
+      "claim": "Structural correctness, target representability, gradient validity, optimizer-level trainability, and successful solver training are distinct qualification layers.",
+      "evidence": "Stages02–08",
+      "id": "C1",
+      "status": "SUPPORTED"
+    },
+    {
+      "claim": "Hard reciprocal antisymmetry can preserve linear-momentum-compatible correction structure through dynamic RK2 training.",
+      "evidence": "Stages03,06,07",
+      "id": "C2",
+      "status": "SUPPORTED_IN_AUDITED_SCOPE"
+    },
+    {
+      "claim": "A raw next-state loss can provide poorly detectable training gradients even when the neural correction Jacobian is nonzero.",
+      "evidence": "Stage04",
+      "id": "C3",
+      "status": "SUPPORTED_IN_AUDITED_SCOPE"
+    },
+    {
+      "claim": "A D0-centered scale-aware conservative discrete-defect target can restore identifiable optimizer-level training signals.",
+      "evidence": "Stages05–06A",
+      "id": "C4",
+      "status": "SUPPORTED_IN_AUDITED_SCOPE"
+    },
+    {
+      "claim": "Verified local descent and actual optimizer-update dynamics do not guarantee achievement of a frozen global training criterion.",
+      "evidence": "Stages06A–06C",
+      "id": "C5",
+      "status": "SUPPORTED"
+    },
+    {
+      "claim": "Increasing formula heterogeneity alone does not guarantee coverage of the discrete correction-target manifold.",
+      "evidence": "Stage07",
+      "id": "C6",
+      "status": "SUPPORTED"
+    },
+    {
+      "claim": "Formula/physics descriptor coverage does not imply raw correction-target manifold coverage.",
+      "evidence": "Stage08",
+      "id": "C7",
+      "status": "SUPPORTED"
+    },
+    {
+      "claim": "A prospectively systematic coverage design can improve descriptor-space support while still fail target-space coverage.",
+      "evidence": "Stage08",
+      "id": "C8",
+      "status": "SUPPORTED"
+    },
+    {
+      "claim": "The project did not establish a qualified trained SPH–Transformer solver.",
+      "evidence": "Stages06–08",
+      "id": "C9",
+      "status": "SUPPORTED_NEGATIVE_BOUNDARY"
+    }
+  ],
+  "prohibited": [
+    "Transformer is superior to MLP/GRU",
+    "Transformer fails generally",
+    "neural SPH cannot work",
+    "attention is equivalent to an SPH kernel",
+    "Stage01 baseline is fully V2-qualified",
+    "Stage07 heterogeneity augmentation improved the solver",
+    "Stage08 systematic coverage solved the support gap",
+    "validation performance implies sealed-test performance",
+    "formal training succeeded",
+    "autonomous rollout improved SPH",
+    "high-resolution SPH is truth",
+    "all parameter coordinates have qualified FD",
+    "D3 temporal dependence proves Transformer necessity"
+  ]
+}

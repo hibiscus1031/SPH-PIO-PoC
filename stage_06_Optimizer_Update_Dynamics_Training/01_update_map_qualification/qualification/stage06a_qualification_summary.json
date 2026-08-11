@@ -1,0 +1,147 @@
+{
+  "arm_aggregation": {
+    "D1": {
+      "global_pass": true,
+      "global_seed_pass_count": 3,
+      "lineage_pass_count": 6,
+      "lineages": {
+        "LCDF_01": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_04": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_05": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_06": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_07": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_08": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        }
+      },
+      "pass": true
+    },
+    "D2": {
+      "global_pass": true,
+      "global_seed_pass_count": 3,
+      "lineage_pass_count": 6,
+      "lineages": {
+        "LCDF_01": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_04": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_05": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_06": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_07": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_08": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        }
+      },
+      "pass": true
+    },
+    "D3": {
+      "global_pass": true,
+      "global_seed_pass_count": 3,
+      "lineage_pass_count": 6,
+      "lineages": {
+        "LCDF_01": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_04": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_05": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_06": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_07": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_08": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        }
+      },
+      "pass": true
+    }
+  },
+  "counts": {
+    "formal_training_runs": 0,
+    "graph_rebuilds": 842256,
+    "qualification_model_instances": 1606,
+    "qualification_optimizer_instances": 1237,
+    "qualification_optimizer_steps": 2325,
+    "saved_training_checkpoints": 0,
+    "sealed_test_evaluations": 0,
+    "update_paths": 8550,
+    "validation_evaluations": 0
+  },
+  "gates": {
+    "access": true,
+    "actual_update_FD": true,
+    "arms_lineage_and_global": true,
+    "blind_design": true,
+    "contract_unchanged": true,
+    "coordinate_boundary_no_hard_failure": true,
+    "historical_hashes_unchanged": true,
+    "micro_update": true,
+    "models_destroyed": true,
+    "no_formal_training": true,
+    "one_step": true,
+    "resources": true,
+    "structure_safety": true
+  },
+  "schema": "sph-pio-poc.stage06a.qualification.v1",
+  "stage06b_authorized": true,
+  "terminal_status": "ACTUAL_OPTIMIZER_UPDATE_DYNAMICS_QUALIFIED"
+}

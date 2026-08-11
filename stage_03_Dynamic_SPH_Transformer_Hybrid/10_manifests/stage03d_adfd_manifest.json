@@ -1,0 +1,44 @@
+{
+  "artifacts": [
+    {
+      "byte_count": 42327843,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/results/fixed_topology_adfd_results.json",
+      "sha256": "sha256:bd864c0ce1bd2beaf51d1e7e269a80a6606e88dcf2c3efd550a2b818191ba13b"
+    },
+    {
+      "byte_count": 20221,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/history_gradients/reference_prehistory_results.json",
+      "sha256": "sha256:b5be39b2bdd9a796c667da41c23b08eafd545615d811f981db5c91ff13665415"
+    },
+    {
+      "byte_count": 400642,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/conservation_over_time/conservation_results.json",
+      "sha256": "sha256:ac38e56168ea68c47e3e1be8216abb5217f086605dfe311bfe9cdc5e1ff4ffc0"
+    }
+  ],
+  "contract": {
+    "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/contracts/dynamic_multistep_adfd_topology_contract_v0_1.yaml",
+    "sha256": "sha256:a506af65ac124f8edf843e507f70c88566852fdfefb017eea127ddbe227fa692"
+  },
+  "counts": {
+    "adfd_comparison_count": 2880,
+    "cross_event_diagnostic_count": 6,
+    "event_birth_count": 1,
+    "event_death_count": 1,
+    "event_replay_pass_count": 6,
+    "excluded_topology_changing_epsilon_count": 0,
+    "fixed_side_event_adfd_pass_count": 12,
+    "fixed_topology_arm_case_seed_horizon_count": 72,
+    "history_gradient_pass_count": 0,
+    "optimizer_steps": 0,
+    "per_stage_conservation_count": 540,
+    "per_stage_conservation_pass_count": 540,
+    "required_probe_count": 360,
+    "stable_epsilon_window_count": 216,
+    "training_runs": 0
+  },
+  "optimizer_steps": 0,
+  "pass": false,
+  "schema_version": "sph-pio-poc.stage03d.adfd-manifest.v1",
+  "training_runs": 0
+}

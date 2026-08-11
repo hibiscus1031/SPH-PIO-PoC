@@ -1,0 +1,1 @@
+**Figure 9. Stage08 descriptor support improvement but target-manifold failure.** Systematic selection reduced HET_S2_02 descriptor distance below 2.0 while its raw-target residual remained above the TRAIN threshold. All plotted values and statuses must be read from the frozen source list; schematic arrows denote methodological dependency, not performance improvement.

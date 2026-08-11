@@ -1,0 +1,33 @@
+{
+  "contract": {
+    "bytes": 4301,
+    "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/contracts/heterogeneous_lineage_generator_v0_1.yaml",
+    "sha256": "sha256:7b4d609367ade7257e44d878771f099fdde707f8b81c4e4664036865ba2e9731"
+  },
+  "freeze": {
+    "bytes": 1148639,
+    "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/freeze/stage07a_input_freeze_record.json",
+    "sha256": "sha256:b8163a6fb48f2df49edaa2b1abd8ea7dd939a29830bc042770752157091b2505"
+  },
+  "generator": {
+    "bytes": 28151,
+    "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/lineage_generator/stage07a_reference_core.py",
+    "sha256": "sha256:2d04298f1ca9b8983abb3d1614aee6451ca01fb7809cc880bd7ea5824efcdfb9"
+  },
+  "role_assignment": {
+    "bytes": 2600,
+    "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/role_assignment/preregistered_role_assignment.json",
+    "sha256": "sha256:cf2d21c53fe757767f2213167a720c2a72487784d70af71431b1b24871114610"
+  },
+  "runner": {
+    "bytes": 38893,
+    "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/qualification/run_stage07a_qualification.py",
+    "sha256": "sha256:1db3cff24c623ce6f0ccad23d1ca2b57c45e380ef3460db1c8b1710e27227880"
+  },
+  "schema_version": "sph-pio-poc.stage07a.contract-manifest.v1",
+  "semidiscrete": {
+    "bytes": 9193,
+    "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/semidiscrete_audit/stage07a_semidiscrete.py",
+    "sha256": "sha256:7fe9ca80d243b1f72e784ad56dc651a96dce12cae04fbc58eb4f5a09d224ead5"
+  }
+}

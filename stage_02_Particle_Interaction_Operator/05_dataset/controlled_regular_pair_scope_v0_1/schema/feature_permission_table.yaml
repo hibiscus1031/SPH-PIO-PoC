@@ -1,0 +1,47 @@
+contract_version: stage02j-feature-permission-0.1.0
+principle: future_inputs_must_derive_only_from_current_baseline_SPH_state_and_legal_graph
+feature_allowed:
+  node:
+    - position_periodic
+    - velocity
+    - density
+    - pressure
+    - mass
+    - smoothing_length
+    - support
+    - h_over_dx
+    - periodic_domain
+  edge:
+    - minimum_image_relative_displacement
+    - pair_distance
+    - relative_velocity
+    - active_kernel_indicator
+    - zero_weight_exterior_edge_indicator
+    - neighbor_count
+feature_forbidden:
+  - analytic_reference_acceleration
+  - Fourier_reference_acceleration
+  - reference_difference
+  - delta_a
+  - nodal_force
+  - target_derived_statistics
+  - split_label
+  - case_verdict
+  - eligibility_verdict
+audit_only:
+  - particle_id
+  - directed_edge_id
+  - reciprocal_pair_id
+  - reciprocal_edge_mapping
+  - file_order
+  - case_id
+  - family_id
+  - state_hash
+  - graph_hash
+  - provenance_chain
+  - a_SPH
+notes:
+  a_SPH: retained_for_identity_and_baseline_audit_but_not_authorized_as_a_future_model_input_in_v0_1
+  labels: delta_a_and_nodal_force_are_supervision_only_and_never_inputs
+  identifiers: ids_and_order_may_not_be_encoded_as_learnable_features
+

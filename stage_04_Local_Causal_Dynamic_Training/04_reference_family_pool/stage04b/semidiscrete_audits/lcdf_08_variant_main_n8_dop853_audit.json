@@ -1,0 +1,73 @@
+{
+  "family_id": "LCDF_08",
+  "field_primary_sensitivity": {
+    "density": {
+      "normalized_L2": 0.0,
+      "normalized_Linf": 0.0
+    },
+    "position": {
+      "normalized_L2": 0.0,
+      "normalized_Linf": 0.0
+    },
+    "pressure": {
+      "normalized_L2": 0.0,
+      "normalized_Linf": 0.0
+    },
+    "velocity": {
+      "normalized_L2": 0.0,
+      "normalized_Linf": 0.0
+    }
+  },
+  "gates": {
+    "finite": true,
+    "graph_event_sequence_deterministic": true,
+    "primary_repeat_deterministic": true,
+    "primary_sensitivity_L2": true,
+    "primary_sensitivity_Linf": true
+  },
+  "graph_rebuild_count": 1572,
+  "maximum_normalized_L2": 0.0,
+  "maximum_normalized_Linf": 0.0,
+  "output_graph_event_sequence_deterministic": true,
+  "primary_nfev": 524,
+  "primary_repeat_bitwise": true,
+  "private_hashes": {
+    "primary_array_sha256": "sha256:d2103b00069b4a59a1cda4c3d93742b70d8705614b99abe6bd6a593849615e32",
+    "primary_rhs_graph_sequence_sha256": "sha256:9d9052dfb94c2b75a57962409e2dad767e5f396032ed41be7c491b97cff6c439",
+    "repeat_array_sha256": "sha256:d2103b00069b4a59a1cda4c3d93742b70d8705614b99abe6bd6a593849615e32",
+    "repeat_rhs_graph_sequence_sha256": "sha256:9d9052dfb94c2b75a57962409e2dad767e5f396032ed41be7c491b97cff6c439",
+    "sensitivity_array_sha256": "sha256:d2103b00069b4a59a1cda4c3d93742b70d8705614b99abe6bd6a593849615e32",
+    "sensitivity_rhs_graph_sequence_sha256": "sha256:9d9052dfb94c2b75a57962409e2dad767e5f396032ed41be7c491b97cff6c439"
+  },
+  "repeat_nfev": 524,
+  "resolution": 8,
+  "rhs_graph_sequence_repeat": true,
+  "semidiscrete_versus_exact": {
+    "density": {
+      "normalized_L2": 0.0006272232716831989,
+      "normalized_Linf": 0.0018896566089580125,
+      "role": "semidiscrete_spatial_model_form_diagnostic_only"
+    },
+    "position": {
+      "normalized_L2": 1.6980340773564223e-05,
+      "normalized_Linf": 5.53524810642525e-05,
+      "role": "semidiscrete_spatial_model_form_diagnostic_only"
+    },
+    "pressure": {
+      "normalized_L2": 0.0006272232716831985,
+      "normalized_Linf": 0.0018896566089579548,
+      "role": "semidiscrete_spatial_model_form_diagnostic_only"
+    },
+    "velocity": {
+      "normalized_L2": 0.000230924913995322,
+      "normalized_Linf": 0.0005673403059744784,
+      "role": "semidiscrete_spatial_model_form_diagnostic_only"
+    }
+  },
+  "sensitivity_nfev": 524,
+  "spatial_truth": false,
+  "time_reference_role": "same_semidiscrete_time_reference_audit",
+  "training_target": false,
+  "variant": "VARIANT_MAIN",
+  "verdict": "PASS"
+}

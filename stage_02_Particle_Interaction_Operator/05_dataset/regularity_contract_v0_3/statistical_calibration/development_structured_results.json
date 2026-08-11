@@ -1,0 +1,236 @@
+{
+  "audit_version": "stage02jt-development-structured-0.3.0",
+  "development_structured_PASS": false,
+  "resolution_summaries": [
+    {
+      "D_h": [
+        0.5664014524660027,
+        0.4221608836270258,
+        0.3353812809079733
+      ],
+      "D_h_OLS_slope": -0.11551008577901477,
+      "M_h": [
+        0.3034519052278755,
+        0.25699001226858503,
+        0.21828740792217483
+      ],
+      "M_h_OLS_slope": -0.04258224865285031,
+      "case_ids": [
+        "i_res_n12_h26_regular",
+        "i_anchor_n16_h26_regular",
+        "i_res_n20_h26_regular"
+      ],
+      "checks": {
+        "D_endpoint": "PASS",
+        "D_slope": "PASS",
+        "M_endpoint": "PASS",
+        "M_slope": "PASS",
+        "adjacent_low_mode_direction_cosine": "PASS",
+        "all_p_dir": "PASS",
+        "all_p_mag": "PASS",
+        "physical_gradient_scale_coefficient_of_variation": "PASS",
+        "relative_neighbor_variation_strictly_decreasing": "PASS",
+        "target_endpoint_magnitude_nonincreasing": "PASS",
+        "three_levels": "PASS"
+      },
+      "family_id": "FAMILY_PV_EXISTING",
+      "status": "PASS"
+    },
+    {
+      "D_h": [
+        0.7480288662764509,
+        0.5280111244803009,
+        0.3935799807685091
+      ],
+      "D_h_OLS_slope": -0.17722444275397092,
+      "M_h": [
+        0.3997537992324769,
+        0.4141126735742139,
+        0.3863666908420646
+      ],
+      "M_h_OLS_slope": -0.006693554195206137,
+      "case_ids": [
+        "crossmode_a_n12_h26",
+        "crossmode_a_n16_h26",
+        "crossmode_a_n20_h26"
+      ],
+      "checks": {
+        "D_endpoint": "PASS",
+        "D_slope": "PASS",
+        "M_endpoint": "PASS",
+        "M_slope": "PASS",
+        "adjacent_low_mode_direction_cosine": "PASS",
+        "all_p_dir": "PASS",
+        "all_p_mag": "FAIL",
+        "physical_gradient_scale_coefficient_of_variation": "PASS",
+        "relative_neighbor_variation_strictly_decreasing": "PASS",
+        "target_endpoint_magnitude_nonincreasing": "PASS",
+        "three_levels": "PASS"
+      },
+      "family_id": "FAMILY_CROSSMODE_A",
+      "status": "FAIL"
+    }
+  ],
+  "rows": [
+    {
+      "D_h": 0.7480288662764509,
+      "M_h": 0.3997537992324769,
+      "case_id": "crossmode_a_n12_h26",
+      "direction_lower_tail_count": 0,
+      "family_id": "FAMILY_CROSSMODE_A",
+      "h_over_dx": 2.6,
+      "joint_structured_PASS": false,
+      "magnitude_lower_tail_count": 199,
+      "p_dir": 0.0038910505836575876,
+      "p_mag": 0.7782101167315175,
+      "particles_per_axis": 12,
+      "path_membership": [
+        "resolution"
+      ]
+    },
+    {
+      "D_h": 0.5232335307130352,
+      "M_h": 0.37850988406120134,
+      "case_id": "crossmode_a_n16_h22",
+      "direction_lower_tail_count": 0,
+      "family_id": "FAMILY_CROSSMODE_A",
+      "h_over_dx": 2.2,
+      "joint_structured_PASS": true,
+      "magnitude_lower_tail_count": 0,
+      "p_dir": 0.0038910505836575876,
+      "p_mag": 0.0038910505836575876,
+      "particles_per_axis": 16,
+      "path_membership": [
+        "support"
+      ]
+    },
+    {
+      "D_h": 0.5280111244803009,
+      "M_h": 0.4141126735742139,
+      "case_id": "crossmode_a_n16_h26",
+      "direction_lower_tail_count": 0,
+      "family_id": "FAMILY_CROSSMODE_A",
+      "h_over_dx": 2.6,
+      "joint_structured_PASS": true,
+      "magnitude_lower_tail_count": 0,
+      "p_dir": 0.0038910505836575876,
+      "p_mag": 0.0038910505836575876,
+      "particles_per_axis": 16,
+      "path_membership": [
+        "resolution"
+      ]
+    },
+    {
+      "D_h": 0.5280111244803009,
+      "M_h": 0.4141126735742139,
+      "case_id": "crossmode_a_n16_h30",
+      "direction_lower_tail_count": 0,
+      "family_id": "FAMILY_CROSSMODE_A",
+      "h_over_dx": 3.0,
+      "joint_structured_PASS": true,
+      "magnitude_lower_tail_count": 0,
+      "p_dir": 0.0038910505836575876,
+      "p_mag": 0.0038910505836575876,
+      "particles_per_axis": 16,
+      "path_membership": [
+        "support"
+      ]
+    },
+    {
+      "D_h": 0.3935799807685091,
+      "M_h": 0.3863666908420646,
+      "case_id": "crossmode_a_n20_h26",
+      "direction_lower_tail_count": 0,
+      "family_id": "FAMILY_CROSSMODE_A",
+      "h_over_dx": 2.6,
+      "joint_structured_PASS": true,
+      "magnitude_lower_tail_count": 0,
+      "p_dir": 0.0038910505836575876,
+      "p_mag": 0.0038910505836575876,
+      "particles_per_axis": 20,
+      "path_membership": [
+        "resolution"
+      ]
+    },
+    {
+      "D_h": 0.4221608836270258,
+      "M_h": 0.25699001226858503,
+      "case_id": "i_anchor_n16_h26_regular",
+      "direction_lower_tail_count": 0,
+      "family_id": "FAMILY_PV_EXISTING",
+      "h_over_dx": 2.6,
+      "joint_structured_PASS": true,
+      "magnitude_lower_tail_count": 0,
+      "p_dir": 0.0038910505836575876,
+      "p_mag": 0.0038910505836575876,
+      "particles_per_axis": 16,
+      "path_membership": [
+        "resolution"
+      ]
+    },
+    {
+      "D_h": 0.5664014524660027,
+      "M_h": 0.3034519052278755,
+      "case_id": "i_res_n12_h26_regular",
+      "direction_lower_tail_count": 0,
+      "family_id": "FAMILY_PV_EXISTING",
+      "h_over_dx": 2.6,
+      "joint_structured_PASS": true,
+      "magnitude_lower_tail_count": 0,
+      "p_dir": 0.0038910505836575876,
+      "p_mag": 0.0038910505836575876,
+      "particles_per_axis": 12,
+      "path_membership": [
+        "resolution"
+      ]
+    },
+    {
+      "D_h": 0.3353812809079733,
+      "M_h": 0.21828740792217483,
+      "case_id": "i_res_n20_h26_regular",
+      "direction_lower_tail_count": 0,
+      "family_id": "FAMILY_PV_EXISTING",
+      "h_over_dx": 2.6,
+      "joint_structured_PASS": true,
+      "magnitude_lower_tail_count": 0,
+      "p_dir": 0.0038910505836575876,
+      "p_mag": 0.0038910505836575876,
+      "particles_per_axis": 20,
+      "path_membership": [
+        "resolution"
+      ]
+    },
+    {
+      "D_h": 0.4209937108393162,
+      "M_h": 0.27116942394801663,
+      "case_id": "i_sup_n16_h22_regular",
+      "direction_lower_tail_count": 0,
+      "family_id": "FAMILY_PV_EXISTING",
+      "h_over_dx": 2.2,
+      "joint_structured_PASS": true,
+      "magnitude_lower_tail_count": 0,
+      "p_dir": 0.0038910505836575876,
+      "p_mag": 0.0038910505836575876,
+      "particles_per_axis": 16,
+      "path_membership": [
+        "support"
+      ]
+    },
+    {
+      "D_h": 0.4221608836270258,
+      "M_h": 0.25699001226858503,
+      "case_id": "i_sup_n16_h30_regular",
+      "direction_lower_tail_count": 0,
+      "family_id": "FAMILY_PV_EXISTING",
+      "h_over_dx": 3.0,
+      "joint_structured_PASS": true,
+      "magnitude_lower_tail_count": 0,
+      "p_dir": 0.0038910505836575876,
+      "p_mag": 0.0038910505836575876,
+      "particles_per_axis": 16,
+      "path_membership": [
+        "support"
+      ]
+    }
+  ]
+}

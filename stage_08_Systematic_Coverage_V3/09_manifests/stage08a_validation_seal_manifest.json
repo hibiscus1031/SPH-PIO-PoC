@@ -1,0 +1,669 @@
+{
+  "access_denial_audit": {
+    "bytes": 28119,
+    "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/fresh_validation_seal/access_denial_audit.json",
+    "sha256": "sha256:dcb2880e9e391ca9533f2c879a43e3ca9087e81f0ef5c610ceb01b919e314177"
+  },
+  "fresh_validation_lineages": [],
+  "original_sealed_decode_counts": {
+    "evaluation": 0,
+    "formula": 0,
+    "origin": 0,
+    "source": 0,
+    "state": 0,
+    "target": 0
+  },
+  "original_sealed_test": [
+    "LCDF_03",
+    "LCDF_10"
+  ],
+  "payload_sealed": false,
+  "private_artifacts": [
+    {
+      "bytes": 808,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t01_s256_main_n8.json",
+      "sha256": "sha256:a546963d88a517a3f7b2e2efe32a73c513fc8f73d59b1731b8c8226226cfcfe2"
+    },
+    {
+      "bytes": 202192,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t01_s256_main_n8.npz",
+      "sha256": "sha256:6525b87f41c0af68901e0f0c010799304ccee4ff3e20980780512fc141b3974a"
+    },
+    {
+      "bytes": 808,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t01_s257_main_n8.json",
+      "sha256": "sha256:e840a39d3f48b2e795ed15191f33385a219bf7f16e495f5d444b6d49138b6893"
+    },
+    {
+      "bytes": 204933,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t01_s257_main_n8.npz",
+      "sha256": "sha256:ecb8e9d3d496118130e5b318297dcbc5665c0b6b6ac2bbc858ed0b2175e8ea00"
+    },
+    {
+      "bytes": 808,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t01_s258_main_n8.json",
+      "sha256": "sha256:174a445734703351af74b782a031585263d148cbc5f64e407378467a9a889ba1"
+    },
+    {
+      "bytes": 206038,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t01_s258_main_n8.npz",
+      "sha256": "sha256:9151eb2001beaf1963b9e19b733745e8f485a36a513d2579c763e5744ed2c5a8"
+    },
+    {
+      "bytes": 808,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t01_s259_main_n8.json",
+      "sha256": "sha256:b460f41f07fd4b9b9c098650d6433339d6164e6fd34ee5a17c0502fc5a7c3085"
+    },
+    {
+      "bytes": 203743,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t01_s259_main_n8.npz",
+      "sha256": "sha256:289694003ae59c6ffedd9bef2a16065ca004e5a174bed477973e06ad2ecb1906"
+    },
+    {
+      "bytes": 808,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t02_s260_main_n8.json",
+      "sha256": "sha256:3ac662e61a62d2b730c4b3b3922a9140e525d0869cd4a7b21371210a95663445"
+    },
+    {
+      "bytes": 205708,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t02_s260_main_n8.npz",
+      "sha256": "sha256:521a1e25bdc9d152001d9fac63ee2b1f4bc67b99270d36bc62f231c4161b241a"
+    },
+    {
+      "bytes": 808,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t02_s261_main_n8.json",
+      "sha256": "sha256:2fd302197714779e4ef60ff75b6c3eac640ec48b70944e96310bf493a60eca7b"
+    },
+    {
+      "bytes": 208499,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t02_s261_main_n8.npz",
+      "sha256": "sha256:972ead1e803712a1a50b3e57d59ef97bee282ff47de5ecf7bacbf3a107a7a634"
+    },
+    {
+      "bytes": 808,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t02_s262_main_n8.json",
+      "sha256": "sha256:292432e351c6c567d339f4fc5b8285f4dbc21b1c67fa033cc05a3529075d5e1b"
+    },
+    {
+      "bytes": 206509,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t02_s262_main_n8.npz",
+      "sha256": "sha256:4f07dc8886f4e761d262cce45b1533c500cd704d18fd88a07bd55a854bf16919"
+    },
+    {
+      "bytes": 808,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t02_s263_main_n8.json",
+      "sha256": "sha256:49a124369bcc6b3af3846033a1e75e01d5289eff11a2ef28afcc6e5ca7857746"
+    },
+    {
+      "bytes": 206033,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t02_s263_main_n8.npz",
+      "sha256": "sha256:3edfd331d8cd14263b27ee2a31cee2aa3a2495d1421d150a6e2a6523e5caf8ff"
+    },
+    {
+      "bytes": 809,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t03_s264_main_n8.json",
+      "sha256": "sha256:526a99db158da4d3435c9e4603b1d5f41063acb25ca4c7a6d633d5e46f73ea9f"
+    },
+    {
+      "bytes": 151414,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t03_s264_main_n8.npz",
+      "sha256": "sha256:9cb7f9fd42c84ae32236546a8c321ce10cef0846cdbffb5efe2b7ff85985653f"
+    },
+    {
+      "bytes": 809,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t03_s265_main_n8.json",
+      "sha256": "sha256:0d5574686c8b799e0b906df38c7b3743d571a3a4abb31dfbebf58febeee4fe70"
+    },
+    {
+      "bytes": 148896,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t03_s265_main_n8.npz",
+      "sha256": "sha256:534b2a0c344c502f31125061a93f0822187ffea8db238037dbfe479e0344f637"
+    },
+    {
+      "bytes": 809,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t03_s266_main_n8.json",
+      "sha256": "sha256:8ba6ef512033fafe9f4d6dae2e2d3a7397062a0fc4b48d9d028faea00822b24a"
+    },
+    {
+      "bytes": 150676,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t03_s266_main_n8.npz",
+      "sha256": "sha256:ec6911be7298deee0022ad9c739dcf10e51c6dfc1f7b546e3c09af47bcf397bf"
+    },
+    {
+      "bytes": 809,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t03_s267_main_n8.json",
+      "sha256": "sha256:4f763067b03ac4eece6964383169338a6cad522d1d1ee278088a29096759255e"
+    },
+    {
+      "bytes": 147595,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t03_s267_main_n8.npz",
+      "sha256": "sha256:58f9d0b35d19f3934684e6c2935b2295fdb975ed8097cf56cc22153cca8495a7"
+    },
+    {
+      "bytes": 809,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t04_s268_main_n8.json",
+      "sha256": "sha256:ff4226366ab6c2d1d9a5654ccdebb9306668925b319ef739e3d998e208a4baac"
+    },
+    {
+      "bytes": 205355,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t04_s268_main_n8.npz",
+      "sha256": "sha256:13b70f0745f588f0be3567169f55e24c83ca5887ae65183c4070493c02056740"
+    },
+    {
+      "bytes": 809,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t04_s269_main_n8.json",
+      "sha256": "sha256:d689321d8e35a43511677ffaf7da6849b453360035b0a7b48b846d7fcdfa2428"
+    },
+    {
+      "bytes": 206765,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t04_s269_main_n8.npz",
+      "sha256": "sha256:b6f121cb68b4e873632ab117e1888d4d33db60e656014973cae3b32b1420d360"
+    },
+    {
+      "bytes": 809,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t04_s270_main_n8.json",
+      "sha256": "sha256:9990cf5be1afb6eb1fd031ea86cd17aad380e88f8765406406201867e30bfa95"
+    },
+    {
+      "bytes": 204019,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t04_s270_main_n8.npz",
+      "sha256": "sha256:3b1ab12eb59fe432b35da562460aa93f8fa5e6d30f11607bb4014b9ac3075525"
+    },
+    {
+      "bytes": 809,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t04_s271_main_n8.json",
+      "sha256": "sha256:56aa0817c024db4e4afceb3e6b8ecf12d44d7307c9e72ea9f23abb161fe1b9a7"
+    },
+    {
+      "bytes": 202950,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t04_s271_main_n8.npz",
+      "sha256": "sha256:fdc03f92e1be74c43d7974002d5893616fe45d011cf36e77699798b6d9c9f78c"
+    },
+    {
+      "bytes": 869,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t05_s272_main_n8.json",
+      "sha256": "sha256:d26d8a2351f244f1fd19988e8a45d0dde173eacc4677125df5ed2314139bcc81"
+    },
+    {
+      "bytes": 222805,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t05_s272_main_n8.npz",
+      "sha256": "sha256:08d8da575ecfbc57a351b2ae51dcea4ecc0775dde2941e1454dfde2121627554"
+    },
+    {
+      "bytes": 869,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t05_s273_main_n8.json",
+      "sha256": "sha256:f24ddd117e90211260fdb9713d238edd5fa0f73be983504202cb1df00b71746c"
+    },
+    {
+      "bytes": 225605,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t05_s273_main_n8.npz",
+      "sha256": "sha256:3cf5a29c146263cf33f1434dfb4b88b7e2a711ac35c118838a7c2f39a28d2f99"
+    },
+    {
+      "bytes": 869,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t05_s274_main_n8.json",
+      "sha256": "sha256:ca9be6d7c2f14ac2a3f1b1cb680b8bce91ab8a21b6b215c7b97ea0c7da584662"
+    },
+    {
+      "bytes": 226788,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t05_s274_main_n8.npz",
+      "sha256": "sha256:6ab3d15451d336dc355dab05ab8dcc85c4e7b1c594bd12038bab2a458dbd6319"
+    },
+    {
+      "bytes": 869,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t05_s275_main_n8.json",
+      "sha256": "sha256:4f6d957c792e4922cdcb3310614c790383ae3b9d34390c7849050ce44dd7bef9"
+    },
+    {
+      "bytes": 226599,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t05_s275_main_n8.npz",
+      "sha256": "sha256:56b72ed1c4a5cf4b915fb229711abd00ae6379146cf2cd7fe41070bf416b808b"
+    },
+    {
+      "bytes": 869,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t06_s276_main_n8.json",
+      "sha256": "sha256:f0000db4e372597c055c50c5b26bb3379f1bff6567612ebe6e198343ea00b2b9"
+    },
+    {
+      "bytes": 225387,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t06_s276_main_n8.npz",
+      "sha256": "sha256:3f11f51e85b857d14d962f64be255abc1d88c379fe95782b19780aca6eaf4a29"
+    },
+    {
+      "bytes": 869,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t06_s277_main_n8.json",
+      "sha256": "sha256:61454bae72da3a8c426be8fbcf9f1cf3395ea95f53364daf4ca63d9c4c9f8a8b"
+    },
+    {
+      "bytes": 226987,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t06_s277_main_n8.npz",
+      "sha256": "sha256:8c8d04679496e6f0b02af9b8d7294ed83b0065969efd9028643ccfa684fd1685"
+    },
+    {
+      "bytes": 869,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t06_s278_main_n8.json",
+      "sha256": "sha256:658bcc5d2a5f29279f5611f1487d8b27d507825e80de88fc3edfd8085e1f590f"
+    },
+    {
+      "bytes": 225793,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t06_s278_main_n8.npz",
+      "sha256": "sha256:2307f2e6d0e06d79c58d985abef43716f390d05282596453d288825ae67afec1"
+    },
+    {
+      "bytes": 869,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t06_s279_main_n8.json",
+      "sha256": "sha256:799b1ab2866580959fbcd237333bc7c0326426f57d7748f93c236c326df284a1"
+    },
+    {
+      "bytes": 224346,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t06_s279_main_n8.npz",
+      "sha256": "sha256:5867a3844fb1f306c403afffb8217e5e14b63ee30886ccab84634a5ab4f2fbe8"
+    },
+    {
+      "bytes": 870,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t07_s280_main_n8.json",
+      "sha256": "sha256:ca039c1c323a087810b0d80082b63aff1962da364b9bbd1d9f714ac003cce829"
+    },
+    {
+      "bytes": 225200,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t07_s280_main_n8.npz",
+      "sha256": "sha256:73d6d7d385dbbc7a762c5cdf13ffcfc07395b25a04dd787575def3523d67b687"
+    },
+    {
+      "bytes": 870,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t07_s281_main_n8.json",
+      "sha256": "sha256:e003ee2d2b9a276c5d8f42fe326cc4a4e87c169ac368c84fde34605e1ee69f24"
+    },
+    {
+      "bytes": 226988,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t07_s281_main_n8.npz",
+      "sha256": "sha256:d057f046db30806e8edbbea7045d951754fc2149e967fcd215d0e0d205e492ee"
+    },
+    {
+      "bytes": 870,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t07_s282_main_n8.json",
+      "sha256": "sha256:21f6f1c505744cbd3973d1454bcf987d2c0c520f0b6af0881d1be5c0a6dc969a"
+    },
+    {
+      "bytes": 226035,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t07_s282_main_n8.npz",
+      "sha256": "sha256:5ffbde2ef396a000eb094b567863a74d337edd12a6f654d3454a4e592025b6b4"
+    },
+    {
+      "bytes": 870,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t07_s283_main_n8.json",
+      "sha256": "sha256:c13a385afbabd907aacfa51a82b6a89a95ea497c1f87c3f5ecc06bcc11914407"
+    },
+    {
+      "bytes": 226635,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t07_s283_main_n8.npz",
+      "sha256": "sha256:b37d446b3a2ae625f79bcd6a99a84ff52a65a4c04a27af916fb04bf09630d9bc"
+    },
+    {
+      "bytes": 870,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t08_s284_main_n8.json",
+      "sha256": "sha256:e4ca3cae7147de1f408c0f597c56ea8fedc48425471b79edd0f15418e236ab9c"
+    },
+    {
+      "bytes": 202965,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t08_s284_main_n8.npz",
+      "sha256": "sha256:2e1dbbca9886a2f901bd0a7d6a24189ee7313971601678614f4a850e5226cf5c"
+    },
+    {
+      "bytes": 870,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t08_s285_main_n8.json",
+      "sha256": "sha256:9c8917d5cbbd9b4b957cedbd97ce3def01527ef660d01f036427a7b802af2a14"
+    },
+    {
+      "bytes": 205652,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t08_s285_main_n8.npz",
+      "sha256": "sha256:7d9b5b243880cb23a00a81d12b96b8e9aedb9bd011047d95c8b2f6ad86ec7cc6"
+    },
+    {
+      "bytes": 870,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t08_s286_main_n8.json",
+      "sha256": "sha256:47ed13620973532a9730c8ac224834da2407ddff87e6acfa0a3a6911abd80e3b"
+    },
+    {
+      "bytes": 206449,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t08_s286_main_n8.npz",
+      "sha256": "sha256:f24b4c2f7981805a5579da0cad040adcadfa0514e2c95481edd7dc54e41f8b03"
+    },
+    {
+      "bytes": 870,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t08_s287_main_n8.json",
+      "sha256": "sha256:12cafb6974286bfca178b3bce1bf9a398daed50b89d3b258b75ca56e66904dcc"
+    },
+    {
+      "bytes": 203097,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t08_s287_main_n8.npz",
+      "sha256": "sha256:d5cfaf1dcd2117446d10e1f79dd5242ebe35b0d7a14ac5e21011d68bd1214c06"
+    },
+    {
+      "bytes": 852,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t09_s288_main_n8.json",
+      "sha256": "sha256:72042fc94b2cefa6f3752f948ab32c8b3294b92ea2c279d8d7af7349d1f4e412"
+    },
+    {
+      "bytes": 225603,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t09_s288_main_n8.npz",
+      "sha256": "sha256:a06ceff1064b63ebdcecc9325f33f1c13b68d068d509b91b95ed4935d644bd82"
+    },
+    {
+      "bytes": 852,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t09_s289_main_n8.json",
+      "sha256": "sha256:7c5dc7960e50971cdd86f295ff1bbc5d0902af3b8e5547b600485e9e2820fb64"
+    },
+    {
+      "bytes": 227813,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t09_s289_main_n8.npz",
+      "sha256": "sha256:02a61917fcc57824df1fd8d93121f7127f277381416c5fadf9360022e8e4212a"
+    },
+    {
+      "bytes": 852,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t09_s290_main_n8.json",
+      "sha256": "sha256:3e66e4a1dda31fb587807b5f1e7834751b4ba8c1c2eb5ab7c27f5d1d30dbdccf"
+    },
+    {
+      "bytes": 227400,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t09_s290_main_n8.npz",
+      "sha256": "sha256:4e731a7e2c50f405e7804861cbf6b56d2b2f00e3c138156fe7515a4a8e1fe66a"
+    },
+    {
+      "bytes": 852,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t09_s291_main_n8.json",
+      "sha256": "sha256:75f6c7b93971ca5d265decd46748838d7b7d7a39d37aa76ff10b4ed6dfa36425"
+    },
+    {
+      "bytes": 226785,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t09_s291_main_n8.npz",
+      "sha256": "sha256:eecb870f992cd27bce8014c38530a4216da08f97208cdb1bf0a0e4ca1b9cffb3"
+    },
+    {
+      "bytes": 853,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t10_s292_main_n8.json",
+      "sha256": "sha256:040100d46551afec57721292f707593646dd4c9b3f9f593fbee6d4bed0f284ae"
+    },
+    {
+      "bytes": 203358,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t10_s292_main_n8.npz",
+      "sha256": "sha256:444bc7999c5fc58652779b3bae985c57a53c1986778cd63d0306fd4595c6d621"
+    },
+    {
+      "bytes": 853,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t10_s293_main_n8.json",
+      "sha256": "sha256:20ca7dc01495893cf9dde702f0cf388129d30208ef8568a9d00072e9697323e3"
+    },
+    {
+      "bytes": 204592,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t10_s293_main_n8.npz",
+      "sha256": "sha256:7602b5772be9eb1894b7e619b8abbab4d6ba2ad354ae20f1f192c06ff016b167"
+    },
+    {
+      "bytes": 853,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t10_s294_main_n8.json",
+      "sha256": "sha256:50148d5a4f292c6265f9d60d3ada3bf072a97fb82ed59d57b36c22e2c0cb2fc6"
+    },
+    {
+      "bytes": 205638,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t10_s294_main_n8.npz",
+      "sha256": "sha256:d6143fa59742c093c4ed974afd7dafc75913ae164a4247311527ebe24b86e615"
+    },
+    {
+      "bytes": 853,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t10_s295_main_n8.json",
+      "sha256": "sha256:3596af77837cb74ba8b6c15f892c30438e22c8da26c6dd3116fb42d3a1850512"
+    },
+    {
+      "bytes": 203706,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t10_s295_main_n8.npz",
+      "sha256": "sha256:3c5b99622f561458f93a46ce8e01465fb5608cd7c70a8ea033f3283b53a7d299"
+    },
+    {
+      "bytes": 852,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t11_s296_main_n8.json",
+      "sha256": "sha256:58f54fa5efb426c206c5ae4ceb465d46ac6daed99d8a3f7d69a2be7823593ff0"
+    },
+    {
+      "bytes": 225282,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t11_s296_main_n8.npz",
+      "sha256": "sha256:0b5d550da92b721b7a31c420c4390727f03185a4a3e07da884e4ec6d14ca6fa0"
+    },
+    {
+      "bytes": 852,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t11_s297_main_n8.json",
+      "sha256": "sha256:7f4ecb816b88c7c4c9d96625a7b13e33afc9e9f3177e48dfcd9dfbc5d318b77f"
+    },
+    {
+      "bytes": 228111,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t11_s297_main_n8.npz",
+      "sha256": "sha256:aa71a2ebb50cbece372ca7a36a030818f7bf3f32c7bcb5c33a5155ba34c58738"
+    },
+    {
+      "bytes": 852,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t11_s298_main_n8.json",
+      "sha256": "sha256:4979c6d222b99e190ad03a47c74757eea9659bbfb2cb8b10c1368a093a44668a"
+    },
+    {
+      "bytes": 226580,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t11_s298_main_n8.npz",
+      "sha256": "sha256:197f70696f99b891fe4eca1966a644c16103e363a058bbe82cf15be3a73895f1"
+    },
+    {
+      "bytes": 852,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t11_s299_main_n8.json",
+      "sha256": "sha256:54003a2006466d5f166e9a8287b19b51cbe2498a584008da5e53e83386a26579"
+    },
+    {
+      "bytes": 226717,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t11_s299_main_n8.npz",
+      "sha256": "sha256:3029dbcd84ec654836b4e367e6501577061ade414e6d70728cde1037d8e20a89"
+    },
+    {
+      "bytes": 854,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t12_s300_main_n8.json",
+      "sha256": "sha256:323152305956cfbd7613a09911d9d482ca44dc267242dc22592046ed247c3a94"
+    },
+    {
+      "bytes": 202524,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t12_s300_main_n8.npz",
+      "sha256": "sha256:70635b93af9a57df030bcb7c8a969c3909b302dd3aa2efb24e1852ac7ebd92a1"
+    },
+    {
+      "bytes": 854,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t12_s301_main_n8.json",
+      "sha256": "sha256:9c6b3f3b8e0f7cf1bebb6373e6e5a22e7c252413c0c5d2f93c81652d9d202f06"
+    },
+    {
+      "bytes": 203835,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t12_s301_main_n8.npz",
+      "sha256": "sha256:36c88e3572a3ec25eca4dd8a1bb9059e3c4f1baef5d39712b7eeee7b8ddfb58e"
+    },
+    {
+      "bytes": 854,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t12_s302_main_n8.json",
+      "sha256": "sha256:22a457f6c35c744af3530940e8ddf4e5e09cfce6a5468fc6d48c068858eadd80"
+    },
+    {
+      "bytes": 203625,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t12_s302_main_n8.npz",
+      "sha256": "sha256:2d3cba99209fbd2ad5cc62e318b916ddb5c0dee5520416171e8c1f42db4d6ed9"
+    },
+    {
+      "bytes": 854,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t12_s303_main_n8.json",
+      "sha256": "sha256:2f40e0e460e8ecf20d6d20f93b83c46eda158acae228fd20f9f4f7bc93f3ffea"
+    },
+    {
+      "bytes": 202456,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t12_s303_main_n8.npz",
+      "sha256": "sha256:3028e5a1e606d2d61a1aca52cb461f3f6562e90785d3feefa51c30e9e359aa79"
+    },
+    {
+      "bytes": 897,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t13_s304_main_n8.json",
+      "sha256": "sha256:4eb49a065487c2cac4f44525d253c3877c794bef07a6c439c5ef8154fd9dd30f"
+    },
+    {
+      "bytes": 225756,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t13_s304_main_n8.npz",
+      "sha256": "sha256:ebc420d32dfa97d83c4107b983a0ca64fa62dc4ea151fc912f13871a5708f210"
+    },
+    {
+      "bytes": 897,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t13_s305_main_n8.json",
+      "sha256": "sha256:93d3bf25ab5914a9278758b8eb3c58d58501fcfa1d45c17059cd0f1cb9a384d8"
+    },
+    {
+      "bytes": 227080,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t13_s305_main_n8.npz",
+      "sha256": "sha256:b6a8d69f961e32755da2ee0e540ca7c4fdd1972c5070dab498e12f339f8ce4bf"
+    },
+    {
+      "bytes": 897,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t13_s306_main_n8.json",
+      "sha256": "sha256:086a9c3c53ce2b407d36dd8c45866514a921f2e5ec8efbb87858cb92cf654a6f"
+    },
+    {
+      "bytes": 226167,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t13_s306_main_n8.npz",
+      "sha256": "sha256:6686c43a9cd98789aefe4cd416581f605d662431b9e55ff915422fa33d43fd33"
+    },
+    {
+      "bytes": 897,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t13_s307_main_n8.json",
+      "sha256": "sha256:f5979ebd10dc27cf20ee3c4fc6beb748fa881d246195c2f3a2d8a42082fa1755"
+    },
+    {
+      "bytes": 226851,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t13_s307_main_n8.npz",
+      "sha256": "sha256:61a7ab2c67f7b5fd5b1e35b06ee71a9f3633a97b3d4b191b303c7fcd6f70d05a"
+    },
+    {
+      "bytes": 897,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t14_s308_main_n8.json",
+      "sha256": "sha256:75e4f4773e87d918ac43183f7529db09630d24ef04228e2c15b03c3210768fc0"
+    },
+    {
+      "bytes": 204618,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t14_s308_main_n8.npz",
+      "sha256": "sha256:f151d1ec199bb70d92e8962a266c62f524d18b8301f32de9033a14a5e116fbc7"
+    },
+    {
+      "bytes": 897,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t14_s309_main_n8.json",
+      "sha256": "sha256:4127cdc4b51771c08578cb0dffeda1f79cf28d3c1796dce31d0f2ef733927211"
+    },
+    {
+      "bytes": 205674,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t14_s309_main_n8.npz",
+      "sha256": "sha256:c966a530b2eabaadeb7303c5b1c3c2b7adcc1158f2eae35ea5905a31a6d55298"
+    },
+    {
+      "bytes": 897,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t14_s310_main_n8.json",
+      "sha256": "sha256:f1a3b67af2113f654aa1572245b69c5a69e4ddf96d93cc8ae584428fc711f9b4"
+    },
+    {
+      "bytes": 204711,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t14_s310_main_n8.npz",
+      "sha256": "sha256:16c7eb938eb36e0cd8b92b10fe047262a5567f210719118b8d03f2c4e1b19fcd"
+    },
+    {
+      "bytes": 897,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t14_s311_main_n8.json",
+      "sha256": "sha256:37f9708a71d176a2b8e1c3c1f644f15ccc673674010fecae46281e0e8ad5a08f"
+    },
+    {
+      "bytes": 203705,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t14_s311_main_n8.npz",
+      "sha256": "sha256:06d7f580a384e1cae48dbcdea58f95b6d7e40be06bea8ab6207b6adfbd6a36bf"
+    },
+    {
+      "bytes": 897,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t15_s312_main_n8.json",
+      "sha256": "sha256:ef3ef6597fc09ae25ebb6769bf13281c1c1033f2db479a764ddf2d89b8d19335"
+    },
+    {
+      "bytes": 203998,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t15_s312_main_n8.npz",
+      "sha256": "sha256:aba642073eb871e615a90d77d4099e3e6eccdbd11e3b700dd6436e7d018f68be"
+    },
+    {
+      "bytes": 897,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t15_s313_main_n8.json",
+      "sha256": "sha256:9e897ecdbbdd7605d38555fe52bcb6257fe33a0fcfce46164cbf49a5453a4857"
+    },
+    {
+      "bytes": 205740,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t15_s313_main_n8.npz",
+      "sha256": "sha256:67a65854547776899a38f5a1a7c8b0fbc3aa4e271d87da32bc7284b517654aae"
+    },
+    {
+      "bytes": 897,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t15_s314_main_n8.json",
+      "sha256": "sha256:709743e7e975e5832515db941d3172a34466dabae7b72bb3772d7cfb21b318c1"
+    },
+    {
+      "bytes": 207525,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t15_s314_main_n8.npz",
+      "sha256": "sha256:ff1a6268a611476c51f9ac3519db68bc3512dd156e91d59eb09f9220782f2dec"
+    },
+    {
+      "bytes": 897,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t15_s315_main_n8.json",
+      "sha256": "sha256:afc0a0bd7e508e7e5a54b23a9c46a201ba257c46249d59412919d866d4735ca8"
+    },
+    {
+      "bytes": 205981,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t15_s315_main_n8.npz",
+      "sha256": "sha256:8dc79bb30487fca6801af0dd8369e63b74e86e95992c85cc8d9616d70c82de85"
+    },
+    {
+      "bytes": 898,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t16_s316_main_n8.json",
+      "sha256": "sha256:bf131254d2318e9a7340c0aa4dca530c0323e1aedac83dcfe54753ff025534b5"
+    },
+    {
+      "bytes": 202254,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t16_s316_main_n8.npz",
+      "sha256": "sha256:886442a90499338a30a3260911e2b082b3985f28de7bccd937ece7e3bbcc7094"
+    },
+    {
+      "bytes": 898,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t16_s317_main_n8.json",
+      "sha256": "sha256:64b125706e97872bc3c01073142f7dcdc015bc95dd47ddd1183ecad36a90349e"
+    },
+    {
+      "bytes": 203895,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t16_s317_main_n8.npz",
+      "sha256": "sha256:1877027e59d840fededd8a2deaac1665fab989488b6bdcdeba383ed59684a9d6"
+    },
+    {
+      "bytes": 898,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t16_s318_main_n8.json",
+      "sha256": "sha256:879b7f914b65a6c87e8fd91d9efd44edb9ff9492c1218a45a1b6d01ee53df92b"
+    },
+    {
+      "bytes": 202702,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t16_s318_main_n8.npz",
+      "sha256": "sha256:3df7f8fbaba1da6ce16797f0deb7557d5893914042db5a69b696aaee5c28dde3"
+    },
+    {
+      "bytes": 898,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t16_s319_main_n8.json",
+      "sha256": "sha256:1cb9e94fc35703716268ac8892c522abce9f71d40d5798980f134468cbe91b19"
+    },
+    {
+      "bytes": 201375,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/sv3v_t16_s319_main_n8.npz",
+      "sha256": "sha256:ada6755ecbc03853aa4743fc129b3408985a59518a8729de076e8556503b2cef"
+    },
+    {
+      "bytes": 107321,
+      "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_candidate_bank/private_design/validation_candidate_parameters.json",
+      "sha256": "sha256:75cd6a5fe43903d4e9165b2e7fec6c8b4e0fce4a18109b5db7f70d4bbbcbe447"
+    }
+  ],
+  "release_authorized": false
+}

@@ -1,0 +1,523 @@
+{
+  "final_status": "PROJECT_FULL_SOLVER_ROUTE_CLOSED_PUBLICATION_EVIDENCE_FROZEN",
+  "gates": {
+    "all_historical_hashes_pass": true,
+    "claim_boundary_complete": true,
+    "cross_stage_evidence_complete": true,
+    "final_ledger_complete": true,
+    "manuscript_source_pack_complete": true,
+    "no_new_scientific_computation": true,
+    "publication_decision_complete": true,
+    "sealed_test_unopened": true
+  },
+  "historical_freeze": {
+    "path": "stage_08Z_Project_Closure_Publication/00_freeze/project_final_evidence_freeze_manifest.json",
+    "sha256": "sha256:fd07fcb8853989c31e624f558e1c84c9cea6f979fd735d7e0f0f93bfb2ae0157",
+    "size": 7692330
+  },
+  "historical_postscan": {
+    "path": "stage_08Z_Project_Closure_Publication/00_freeze/project_final_evidence_postscan_verification.json",
+    "sha256": "sha256:b18ec6af3b02e895a318e353e6beac683806ae62670f7c7f517fae1d820e5a5a",
+    "size": 272
+  },
+  "new_execution_counts": {
+    "new_checkpoints": 0,
+    "new_model_instances": 0,
+    "new_optimizer_instances": 0,
+    "new_optimizer_steps": 0,
+    "new_parameter_updates": 0,
+    "new_rollouts": 0,
+    "new_training_runs": 0,
+    "sealed_test_evaluations": 0
+  },
+  "next_authorization": "NONE",
+  "output_count": 94,
+  "outputs": [
+    {
+      "path": "stage_08Z_Project_Closure_Publication/00_freeze/project_final_evidence_freeze_manifest.json",
+      "sha256": "sha256:fd07fcb8853989c31e624f558e1c84c9cea6f979fd735d7e0f0f93bfb2ae0157",
+      "size": 7692330
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/00_freeze/project_final_evidence_postscan_verification.json",
+      "sha256": "sha256:b18ec6af3b02e895a318e353e6beac683806ae62670f7c7f517fae1d820e5a5a",
+      "size": 272
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/01_project_status/final_sealed_test_ledger.json",
+      "sha256": "sha256:c553c433c4ba23387e4b679014c36cc47de8e364a902d39a0803f15beca64685",
+      "size": 531
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/01_project_status/final_sealed_test_ledger.md",
+      "sha256": "sha256:3e93636ec40c35f30098155d9081c506b8e3cfeb48c573d192b341c8ed6e6b88",
+      "size": 354
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/01_project_status/project_final_status_ledger.json",
+      "sha256": "sha256:11d58273c115a6d5197c1192141000653d532646eae235e22a74a42f7a039974",
+      "size": 10341
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/01_project_status/project_final_status_ledger.md",
+      "sha256": "sha256:bf600d06dfb003a8062259e5205c8ba99b4796dff9712518537f234566c3dbb0",
+      "size": 8666
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/02_cross_stage_evidence/cross_stage_evidence_matrix.json",
+      "sha256": "sha256:2c822b44b3c0e6f27522b8a19a5873aaf2a055c89047bb431890386b5f90aba4",
+      "size": 9430
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/02_cross_stage_evidence/cross_stage_evidence_matrix.md",
+      "sha256": "sha256:5d1a513494a05a864d7411c65c55f4b79605d279d69f371ecbfc7cbc86bda273",
+      "size": 3779
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/02_cross_stage_evidence/project_methodological_progression.md",
+      "sha256": "sha256:df442c75fe3231cb925a8df1191833d897055e9771ad7b1a430acc36adf7aae7",
+      "size": 913
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/03_claim_matrix/final_claim_boundary.md",
+      "sha256": "sha256:45968eddb439ca81aeda25c5db005c376b062e7c6e32e6c000910329977e7b0d",
+      "size": 2291
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/03_claim_matrix/final_claim_support_matrix.json",
+      "sha256": "sha256:20f3cffba7b50062ae9f6b66b4ba4d020319de3ab747d4ef4eb0b88afe8d8fc9",
+      "size": 2758
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/04_failure_taxonomy/final_failure_graph.json",
+      "sha256": "sha256:66e9e7cce483111aa7dd862bd3dc677dc96bd6713d984a6584e7241032d98271",
+      "size": 1719
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/04_failure_taxonomy/final_failure_taxonomy.json",
+      "sha256": "sha256:d40a396999c4d58f8e0561e43feec539acc3d1d9ce964131a50eb125283a4f97",
+      "size": 5797
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/04_failure_taxonomy/final_failure_taxonomy.md",
+      "sha256": "sha256:c3e2876e277d771a6ceb63df2469750aa2717f072536d8f6c63684535782b53b",
+      "size": 4734
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/05_methodological_contributions/final_innovation_register.json",
+      "sha256": "sha256:d551e73c9ad7118a2cfcd61d1eccfce191969b8accb951513e1cbde0bb34e561",
+      "size": 2083
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/05_methodological_contributions/final_innovation_register.md",
+      "sha256": "sha256:30c63d585d737a8ca16f280f83ff9992434c56c9b98bc94eb3ccdd7afc8ad6f3",
+      "size": 1442
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_01/caption.md",
+      "sha256": "sha256:a968ab867affcdf48fc26268afe08a2a483371be8e229db9f65019e705a41847",
+      "size": 300
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_01/data.json",
+      "sha256": "sha256:65e5828a0f1bcfa6036abc6b41bae81036c25b8abb409feb9611b2f5675e9c7c",
+      "size": 856
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_01/plot_spec.json",
+      "sha256": "sha256:cf7fe6d903c066c67b6c7fdaf852db4d4f751a73b861f351217a123469d090fe",
+      "size": 499
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_01/sources.json",
+      "sha256": "sha256:4f0c44f80cbbae6f9923922792df3e5a998c6fe36ec26abedfd6f20a6a9b7127",
+      "size": 9433
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_02/caption.md",
+      "sha256": "sha256:738c4a585776138f908d7b6e4cc6840427713715bcd205119843614639849887",
+      "size": 346
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_02/data.json",
+      "sha256": "sha256:4b392efb9647c96ef419ed0c3d2b2c73afeae4df8783ffb9366d4b1d01064c8c",
+      "size": 197
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_02/plot_spec.json",
+      "sha256": "sha256:08fd46cf6492938471b5c6226c123172c845d814ec266e9348a400b06e298c85",
+      "size": 534
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_02/sources.json",
+      "sha256": "sha256:966400b3ebf473092d03fea44f8af74d37444d77f40b221745eeb71e436d4dd6",
+      "size": 154
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_03/caption.md",
+      "sha256": "sha256:d4889301b4fd7a7df5e83a410d5d5a3fd34815123d24a9f52215bb8b2095b80f",
+      "size": 335
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_03/data.json",
+      "sha256": "sha256:65b67ae8bb98de1ff984ed1432a661b7dd8a1665ea6ec58eaaabf8ea0ae318bb",
+      "size": 271
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_03/plot_spec.json",
+      "sha256": "sha256:381d3dc531c536583f1925357053c5646c692130b7a94c75bb89b5f8177ae69f",
+      "size": 534
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_03/sources.json",
+      "sha256": "sha256:42ac5197cb32a50eb559c4606f890b510bd76e7c418cec44b9dad9720112550e",
+      "size": 111
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_04/caption.md",
+      "sha256": "sha256:70d4e809a3865e8a3f10cad34752a70e43673da9ec3027d9dd9f682603d3101f",
+      "size": 308
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_04/data.json",
+      "sha256": "sha256:a0d30f69bbe0d85c4a4f3cb15eda875445923ac5466da0e0aed0084b2eb524e8",
+      "size": 268
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_04/plot_spec.json",
+      "sha256": "sha256:bdbd47acd7bd9e6acf393f00f28971db0013933a128171e05458b320ce500aa8",
+      "size": 502
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_04/sources.json",
+      "sha256": "sha256:6783f1597e1c28cffed80ef73ad8bbce42cac692ffb284a08881ddf8b7c85547",
+      "size": 115
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_05/caption.md",
+      "sha256": "sha256:dc7186527abdf04de56eafe6f1b075840030dcc2a10a07b51c8eab51f233e3f8",
+      "size": 346
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_05/data.json",
+      "sha256": "sha256:2a6d82a718bd0974e61eb39a9b922aaaf802adfce9f3f096828ce76129a5c0ca",
+      "size": 358
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_05/plot_spec.json",
+      "sha256": "sha256:e009fa94f6a579bb3185de6541331ffdcbae7b06489e9b2a2013cc364efd5d86",
+      "size": 517
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_05/sources.json",
+      "sha256": "sha256:acfdc9f07764dd55e07bedf989c931a2ab6633a075c5f18fe9ce81d2bd713725",
+      "size": 254
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_06/caption.md",
+      "sha256": "sha256:da55e671ab00439cbf0566fc8f4790a999c2764807e130289d00676c38d723bb",
+      "size": 341
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_06/data.json",
+      "sha256": "sha256:2814e2adf2174fd0b2456151910753dc20928bd46d7866ae7c6cb9201c0984c1",
+      "size": 167
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_06/plot_spec.json",
+      "sha256": "sha256:f90efdced36ddd67d899460b61cb318762542ea675428fe2aa2c1669a6516bbc",
+      "size": 546
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_06/sources.json",
+      "sha256": "sha256:0dfa56bce1074e50ac497d8a34c5bd9e5c211061d78ab1ff08f01dd74233bee3",
+      "size": 1075
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_07/caption.md",
+      "sha256": "sha256:4092885b02869df21b81c8ea5cf36063d019caf579a4f71a3f38a81b4fb41be5",
+      "size": 332
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_07/data.json",
+      "sha256": "sha256:f3aea9af0bab71fa8e5516a810aa3b9b2697273ad808aa4cbad9814c0524df8a",
+      "size": 236
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_07/plot_spec.json",
+      "sha256": "sha256:13116fc379c58c6bcca6c08c19d1fb129a20a4e15af8e6c56f8bec6a5f9d0b19",
+      "size": 521
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_07/sources.json",
+      "sha256": "sha256:e30562db0cbe302fcf62d7ae44f0cde3af5f28ae0ecd716919f7d44661c8048b",
+      "size": 241
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_08/caption.md",
+      "sha256": "sha256:2f991ea825b92f2aa069392fdd3f7035ef137a17f7e899072dbad8f868152104",
+      "size": 323
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_08/data.json",
+      "sha256": "sha256:13d359db691702f8db46d2cdd8f3b55391040804d31b6b1c6779764785b53aae",
+      "size": 322
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_08/plot_spec.json",
+      "sha256": "sha256:3d92aeaf2f00397f983e0e64da9c2a4669592c74e13dd04febce884ed43a4e1f",
+      "size": 515
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_08/sources.json",
+      "sha256": "sha256:d865e0cf5ca031627cfce5aa782c83e89d526f42970fc369d7275659ed3cfa2a",
+      "size": 277
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_09/caption.md",
+      "sha256": "sha256:cf3b1520c2af3386763cdfb7cde692f1e56676585d905549429bf0f173e1b48a",
+      "size": 371
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_09/data.json",
+      "sha256": "sha256:55bbe236a09a97df604b27d01ffd051428e40fdaf88d95df1b7afa3cc0745465",
+      "size": 323
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_09/plot_spec.json",
+      "sha256": "sha256:6641f4fd572dc83b6471b47e434131b0299d3bd5cd595f3acf53aa4a84f52ac7",
+      "size": 540
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_09/sources.json",
+      "sha256": "sha256:7f1ed327aaadea5c9db80447777e6997cba6d56988e7ec20de33ce482170544c",
+      "size": 144
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_10/caption.md",
+      "sha256": "sha256:3d44a20f4cfa6cfec351aec2cbd0de0141d0bec1974803e09d806474e7c504c4",
+      "size": 334
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_10/data.json",
+      "sha256": "sha256:fd1693a531d473550904bdd1bb7d538d8d4d17fad66a49efbc0c9974766e4747",
+      "size": 380
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_10/plot_spec.json",
+      "sha256": "sha256:56fccaef272d66ae7e02b68f2c93bfad7260a6cfe73345a3eef2c7e7a0c5bc9f",
+      "size": 524
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_10/sources.json",
+      "sha256": "sha256:9bfa0579a3ee886d15fca2797900e5d741bf1284df1d1f1717e89097b8fbc0d6",
+      "size": 115
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Table_01.json",
+      "sha256": "sha256:fb0f4d21a31bb7bf931763e5c2b626d6cdfa6927a57aef1ecbc371ca255ef56f",
+      "size": 533
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Table_01.md",
+      "sha256": "sha256:7f923644c829e40ad883320aa39e045932f1ae1a5fe936b62c6a88a1f8ea21ae",
+      "size": 371
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Table_02.json",
+      "sha256": "sha256:c3cb443c1d2df50c2ca78660dd7ddff93be1d9ec65c2ae3c12ef6ba4d9a2182e",
+      "size": 521
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Table_02.md",
+      "sha256": "sha256:6cb448d0c6859f0d8b2d33283e4bc26df5d0bf109559a8a3e0579fe7b85ac237",
+      "size": 359
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Table_03.json",
+      "sha256": "sha256:916e3404d7106f51859b21b2ae8b5c33cc7251a22856ba2e4944a02bf6fc34a6",
+      "size": 1685
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Table_03.md",
+      "sha256": "sha256:70801a1706c4fd78b98c5295278a1cdfe9ea611727aacc6d36d6f899bde54ccd",
+      "size": 1399
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Table_04.json",
+      "sha256": "sha256:28be17fabf8519347e0e855c9c5ef0086b963cb8bf33b24861b99f64642ce9bc",
+      "size": 483
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Table_04.md",
+      "sha256": "sha256:3a5b53cb9f61b7e2bedea52542a16bfb510c7387f809b453c9a888bd3ad6be26",
+      "size": 281
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Table_05.json",
+      "sha256": "sha256:243bef81ecce91a39c3842a909a986f07ccf80e371da4f1ee5e8fcf9b0ad23b1",
+      "size": 351
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Table_05.md",
+      "sha256": "sha256:71489d2c449644bd95c029a2d93a531be2c4b56ed2fce5ced2623231d4c37b0c",
+      "size": 185
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Table_06.json",
+      "sha256": "sha256:74c2b7caac44f9f1503fabf7e052559b9b50d640d5a628ffc7a843c9265e035e",
+      "size": 475
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Table_06.md",
+      "sha256": "sha256:b69d1728cb5aefcc927ed0e0fcfae54ba6efce07c1890a42767dc055e0220ac1",
+      "size": 271
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Table_07.json",
+      "sha256": "sha256:a8fd719283b18605b147e4c7e18c67aa00f9362b9c52d517a129152f53f44e49",
+      "size": 870
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Table_07.md",
+      "sha256": "sha256:8e6ecc065e5faab4bde0ee9897f513d6d572271b8883d9643d691f2cafabc8b6",
+      "size": 534
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Table_08.json",
+      "sha256": "sha256:d0071af75cf347d77e8cc036bf0f393b97935d7d367b4a5f858b1608b64c6bcc",
+      "size": 1942
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Table_08.md",
+      "sha256": "sha256:c2bb2a76fce60df3a94c8a85e44d3605184b316e7a37704cdf680c2e004356e8",
+      "size": 1530
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/formal_training_campaigns.csv",
+      "sha256": "sha256:755fde8c813e37476fa9f872efc0f0f2bbddfeeedb78cc1c9f0ff95c7b67df13",
+      "size": 5695
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/formal_training_campaigns.md",
+      "sha256": "sha256:e854ce5d24b72a34d426ae156f656a16e8a894bedc41193e1649dc85220a7f9d",
+      "size": 3208
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/07_publication_route/final_publication_decision.md",
+      "sha256": "sha256:57ae32f6cd1deb3242a7463f8f871cdac9e4af5d5a588f91a04d927ea9996bf4",
+      "size": 1187
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/07_publication_route/publication_decision.json",
+      "sha256": "sha256:0e8510a1a56d65d34be3fc26a530c27667b553eb0faf97f006b38fce43cf31ca",
+      "size": 958
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/07_publication_route/title_candidates_ranked.md",
+      "sha256": "sha256:4a5d3db900681db19e117f587d3bfdf89b4cf4bb2296dead553f9cd3da486fd9",
+      "size": 707
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/08_manuscript_source_pack/abstract_v0_1.md",
+      "sha256": "sha256:dace98fa034759e5f3d3a53308d04becf5a1c84908484732e73843153abbf3b0",
+      "size": 1937
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/08_manuscript_source_pack/claim_matrix.md",
+      "sha256": "sha256:45968eddb439ca81aeda25c5db005c376b062e7c6e32e6c000910329977e7b0d",
+      "size": 2291
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/08_manuscript_source_pack/conclusion_source.md",
+      "sha256": "sha256:b1cd5e4a67653cc8a45f5c77583da2bccaa40075071a1938a10caf054f29fa6f",
+      "size": 566
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/08_manuscript_source_pack/discussion_source.md",
+      "sha256": "sha256:52e6505035260340fa952369494df4300b8f4470c2ec3093a98e215048ec5090",
+      "size": 766
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/08_manuscript_source_pack/figure_plan.md",
+      "sha256": "sha256:a7adbbaedfcc90cb1c7de8494c4747c8b0740f4645696640e08ce9b4d8b7d25a",
+      "size": 1100
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/08_manuscript_source_pack/introduction_logic.md",
+      "sha256": "sha256:eb34912f6c1f1d284621eb2d0407c7efc668abfdaeade8eddccf807ebd16bddc",
+      "size": 796
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/08_manuscript_source_pack/limitations.md",
+      "sha256": "sha256:4426560874bfc35d3e260573df92abeca057fe49a6b2aae77f358eef04e473af",
+      "size": 703
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/08_manuscript_source_pack/manuscript_narrative.md",
+      "sha256": "sha256:13c7f90e63b386f6202801b28b5a432c01022e19b458828db3073214dab97936",
+      "size": 1873
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/08_manuscript_source_pack/manuscript_scientific_source_en.md",
+      "sha256": "sha256:49eaa9b52a0a3c2536ec405fb7b3363ace9ef4619e8f97862c361aea2cdd473a",
+      "size": 2319
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/08_manuscript_source_pack/methods_source.md",
+      "sha256": "sha256:70b3d1d174c7b0c7d40c4ff5a08a64af61b77089dc895e24dabf834d26f7b539",
+      "size": 715
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/08_manuscript_source_pack/results_source.md",
+      "sha256": "sha256:5881524e5e83caa35a45de60beb46a9f3ce58b0769781e5c27b9d9463b3a0022",
+      "size": 897
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/08_manuscript_source_pack/reviewer_risk_register.json",
+      "sha256": "sha256:9d0813ee770da5b6ea541bf6f0d11dafe5c419df0ea9e9894d95c94b6efb83f9",
+      "size": 3194
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/08_manuscript_source_pack/reviewer_risk_register.md",
+      "sha256": "sha256:fe568ff51a6f64654a0261827b8d7cdb8caee16f97b3753143f76e9a4bb2a33d",
+      "size": 2929
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/08_manuscript_source_pack/source_pack_manifest.json",
+      "sha256": "sha256:e6dd1ecce4808fbcc8fdaae8eab1fc6e0bc39d7b0816374088b2d221391f1fc9",
+      "size": 3463
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/08_manuscript_source_pack/table_plan.md",
+      "sha256": "sha256:79d480989e957aafc4742cb7e4cdf7497ed2d14b690ee5fb45797c3734cc61fe",
+      "size": 394
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/09_manifests/build_stage08z_closure.py",
+      "sha256": "sha256:4d1e4de3b7f587d6cea8138ea4a1a3fbc76680f32bc6d05a7727e7c5a3a84858",
+      "size": 66912
+    },
+    {
+      "path": "stage_08Z_Project_Closure_Publication/10_reports/stage08z_final_report.md",
+      "sha256": "sha256:02e981bf8bf5f2883afe80de708873888a4950860494728c3bbbd5fdf509fe27",
+      "size": 2923
+    }
+  ],
+  "project_flags": {
+    "ACTUAL_OPTIMIZER_UPDATE_DYNAMICS_QUALIFIED": true,
+    "AUTONOMOUS_ROLLOUT_QUALIFIED": false,
+    "CONSERVATIVE_DYNAMIC_ARCHITECTURE_VERIFIED": true,
+    "DISCRETE_DEFECT_TARGET_QUALIFIED": true,
+    "FORMAL_DYNAMIC_TRAINING_EXECUTED": true,
+    "FORMAL_TRAINED_SOLVER_QUALIFIED": false,
+    "FULL_SOLVER_TRAINING_ROUTE_CLOSED": true,
+    "SEALED_TEST_EVALUATED": false,
+    "STAGE08_FINAL_DEVELOPMENT_CYCLE": true,
+    "TRANSFORMER_SUPERIORITY_ESTABLISHED": false,
+    "V2_BASELINE_RESTORED": false,
+    "ZERO_CORRECTION_EQUIVALENCE_VERIFIED": true
+  },
+  "schema": "sph-pio-poc.stage08z.final.v1",
+  "training_route_reentry_authorized": false
+}

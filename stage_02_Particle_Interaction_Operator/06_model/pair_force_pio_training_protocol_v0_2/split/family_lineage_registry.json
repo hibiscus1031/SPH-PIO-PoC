@@ -1,0 +1,101 @@
+{
+  "cross_family_shared_seed": false,
+  "cross_split_lineage": false,
+  "families": [
+    {
+      "derivative_hash": "sha256:1ece0027fb96c64cfd92e15e9981ad322a417bb9d0bb79a43b3012720f4bdf42",
+      "family_id": "BLIND_FAMILY_01",
+      "formula_hash": "sha256:7b4e646592ad32f96c8b22d2dfc7a51c31c5c1aa0d02d1c834eac0e899ac515c",
+      "independent_from_other_blind_families": true,
+      "lineage_id": "BLIND_FAMILY_01_PCG64_2026080401_FROZEN_V1",
+      "record_count": 5,
+      "record_ids": [
+        "blind_family_01_n12_h26",
+        "blind_family_01_n16_h26",
+        "blind_family_01_n20_h26",
+        "blind_family_01_n16_h22",
+        "blind_family_01_n16_h30"
+      ],
+      "role": "future_train",
+      "root_seed": 2026080401,
+      "source_ancestry": {
+        "draw_rule": "single deterministic draw from frozen seed; no redraw",
+        "generator": "Stage02J-T frozen blind generator",
+        "parent_family": null,
+        "root_seed": 2026080401
+      }
+    },
+    {
+      "derivative_hash": "sha256:ccd3680bdaafb218a740c7e87118ac882de8796fb912661b1655ffb765ca8a46",
+      "family_id": "BLIND_FAMILY_02",
+      "formula_hash": "sha256:cf24f177059ad802b548aa3aaffa386ea531daea6f7f481d356aed39ab319319",
+      "independent_from_other_blind_families": true,
+      "lineage_id": "BLIND_FAMILY_02_PCG64_2026080402_FROZEN_V1",
+      "record_count": 5,
+      "record_ids": [
+        "blind_family_02_n12_h26",
+        "blind_family_02_n16_h26",
+        "blind_family_02_n20_h26",
+        "blind_family_02_n16_h22",
+        "blind_family_02_n16_h30"
+      ],
+      "role": "future_train",
+      "root_seed": 2026080402,
+      "source_ancestry": {
+        "draw_rule": "single deterministic draw from frozen seed; no redraw",
+        "generator": "Stage02J-T frozen blind generator",
+        "parent_family": null,
+        "root_seed": 2026080402
+      }
+    },
+    {
+      "derivative_hash": "sha256:90cc11161559efef767ceb8ce59eea41d32f1232c31fdb9aa69930d023eed004",
+      "family_id": "V02_BLIND_VALIDATION_01",
+      "formula_hash": "sha256:28886b28ecad9e2bc0340b69094101ad4b89c72e7d48da8ea7ad4660ac7c973e",
+      "independent_from_other_families": true,
+      "lineage_id": "V02_BLIND_VALIDATION_01_PCG64_2026080501_FROZEN_V02",
+      "record_count": 5,
+      "record_ids": [
+        "v02_blind_validation_01_n12_h26",
+        "v02_blind_validation_01_n16_h22",
+        "v02_blind_validation_01_n16_h26",
+        "v02_blind_validation_01_n16_h30",
+        "v02_blind_validation_01_n20_h26"
+      ],
+      "role": "future_validation",
+      "root_seed": 2026080501,
+      "source_ancestry": {
+        "draw_rule": "single deterministic draw after protocol hash; no redraw",
+        "generator": "Stage02J-T frozen blind generator",
+        "parent_family": null,
+        "root_seed": 2026080501
+      }
+    },
+    {
+      "derivative_hash": "sha256:bb2222a4bd50a5173e4444db4e68a7ad0362f4c66c740fe0113efc4b3643c9e1",
+      "family_id": "V02_BLIND_TEST_01",
+      "formula_hash": "sha256:5e6a31f8512f2c8d14b2b8f15587273c404cd50c1d20f79af7c9d3810204c47d",
+      "independent_from_other_families": true,
+      "lineage_id": "V02_BLIND_TEST_01_PCG64_2026080502_FROZEN_V02",
+      "record_count": 5,
+      "record_ids": [
+        "v02_blind_test_01_n12_h26",
+        "v02_blind_test_01_n16_h22",
+        "v02_blind_test_01_n16_h26",
+        "v02_blind_test_01_n16_h30",
+        "v02_blind_test_01_n20_h26"
+      ],
+      "role": "future_test",
+      "root_seed": 2026080502,
+      "source_ancestry": {
+        "draw_rule": "single deterministic draw after protocol hash; no redraw",
+        "generator": "Stage02J-T frozen blind generator",
+        "parent_family": null,
+        "root_seed": 2026080502
+      }
+    }
+  ],
+  "family_count": 4,
+  "registry_version": "stage02mp-v1.1-lineage-1.0.0",
+  "status": "PASS"
+}

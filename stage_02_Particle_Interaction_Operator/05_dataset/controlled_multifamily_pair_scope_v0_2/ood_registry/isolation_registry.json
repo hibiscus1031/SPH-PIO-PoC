@@ -1,0 +1,78 @@
+{
+  "R3_acoustic": "whole_class_independent_validation_only",
+  "R3_formula_or_parameter_lineage_reused": false,
+  "R3_records_used": false,
+  "R3_shear": "whole_class_independent_validation_only",
+  "R3_threshold_selection_used": false,
+  "jitter_registry_hash": "sha256:6a2f7c406831614c0239ef20007d734e71d412bb967d92127c3b8b6b2431b094",
+  "jitter_registry_source": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/ood_diagnostics/jitter_ood_registry.json",
+  "jitter_role_preserved": "distribution_shift_diagnostic_only",
+  "jitter_rows": [
+    {
+      "case_id": "i_dis_n16_h26_jitter05",
+      "classification": "node_residual_only",
+      "conservation_projection_used": false,
+      "conservation_residual": 0.003719907069253078,
+      "geometry_metrics": {
+        "coverage_isotropy_median": 0.970775680195026,
+        "coverage_isotropy_min": 0.9210648082092329,
+        "first_moment_defect_RMS": 0.0009989446011672903,
+        "zeroth_defect_RMS": 0.013401577737473224
+      },
+      "node_residual": {
+        "node_over_y_ratio": 0.0032354414991526996,
+        "norm": 1.0186759174603557e-05
+      },
+      "normalization_fit_permitted": false,
+      "original_target_hash": "sha256:5e7a71fbe9acbff24925e3fade425fa12922466e10feefad67e6edc27167aa69",
+      "pair_force_supervision_permitted": false,
+      "quadrature_contamination_reason": "particle_quadrature_contamination_under_frozen_equal_mass_target_contract",
+      "reference_uncertainty": {
+        "Fourier_analytic_field_L2": 2.7485655144634966e-14,
+        "status": "PASS"
+      },
+      "role": "distribution_shift_diagnostic_only",
+      "split_membership": "none",
+      "target_amplification_relative_to_regular_anchor": {
+        "L2_ratio": 1.6017705967758509,
+        "Linf_ratio": 3.8590887255578137
+      },
+      "target_modified": false,
+      "training_label_permitted": false
+    },
+    {
+      "case_id": "i_dis_n16_h26_jitter10",
+      "classification": "node_residual_only",
+      "conservation_projection_used": false,
+      "conservation_residual": 0.012002372654585855,
+      "geometry_metrics": {
+        "coverage_isotropy_median": 0.9404130270092075,
+        "coverage_isotropy_min": 0.856081713869631,
+        "first_moment_defect_RMS": 0.0021121993035953792,
+        "zeroth_defect_RMS": 0.027887657616790528
+      },
+      "node_residual": {
+        "node_over_y_ratio": 0.009613098292784348,
+        "norm": 5.678379234590123e-05
+      },
+      "normalization_fit_permitted": false,
+      "original_target_hash": "sha256:0dcfee0fc9de6be8d5daaec06a0cba650ac32e4c2610abfb01feaf94ac4fbd3f",
+      "pair_force_supervision_permitted": false,
+      "quadrature_contamination_reason": "particle_quadrature_contamination_under_frozen_equal_mass_target_contract",
+      "reference_uncertainty": {
+        "Fourier_analytic_field_L2": 1.7164400945057456e-14,
+        "status": "PASS"
+      },
+      "role": "distribution_shift_diagnostic_only",
+      "split_membership": "none",
+      "target_amplification_relative_to_regular_anchor": {
+        "L2_ratio": 3.0050993917569535,
+        "Linf_ratio": 8.582915492175204
+      },
+      "target_modified": false,
+      "training_label_permitted": false
+    }
+  ],
+  "jitter_split_or_normalization_or_training_use": false,
+  "registry_version": "stage02jr-isolation-registry-0.2.0"
+}

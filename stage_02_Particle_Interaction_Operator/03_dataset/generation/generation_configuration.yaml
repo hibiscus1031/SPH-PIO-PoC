@@ -1,0 +1,59 @@
+configuration_version: stage02c-generation-config-1.0.0
+campaign_id: stage02c_r2_audit_scale_20260804
+execution_mode: deterministic_cpu_float64_audit
+data_generation_authorized_for_this_campaign: true
+model_or_training_authorized: false
+domain:
+  dimension: 2
+  box_length: 1.0
+  boundary: periodic
+physics:
+  rho0: 1.0
+  sound_speed: 10.0
+  kinematic_viscosity: 0.01
+  velocity_amplitude: 0.02
+  density_amplitude: 0.001
+  eos: linear_isothermal_p_equals_c0_squared_times_rho_minus_rho0
+kernel:
+  family: cubic_spline_2d
+  smoothing_length_over_dx: 1.3
+  compact_support_over_h: 2.0
+  support_rule: strict_r_less_than_2h
+state_generation:
+  integrator: explicit_midpoint_rk2
+  fixed_dt: 0.0005
+  output_times: [0.0, 0.002]
+reference_generation:
+  class: R2_semidiscrete_qualified
+  identity: stage02c_r2_dense_all_pairs_dop853_v1
+  same_state_acceleration_method: independent_dense_all_pairs_rhs
+  temporal_qualifier: scipy_solve_ivp_DOP853
+  primary_rtol: 1.0e-10
+  primary_atol: 1.0e-12
+  sensitivity_rtol: 1.0e-12
+  sensitivity_atol: 1.0e-14
+target:
+  field: delta_a
+  sign_convention: a_ref_minus_a_sph
+  numeric_dtype: float64
+  sign_check_atol: 1.0e-14
+  sign_check_rtol: 1.0e-13
+reference_uncertainty_rule:
+  rule_id: stage02c_dense_reverse_sum_roundoff_v1
+  bound_multiplier_machine_epsilon: 256.0
+  absolute_floor_acceleration: 1.0e-13
+resource_policy:
+  policy_id: stage02c_audit_resource_policy_v1
+  max_particles_per_case: 64
+  max_directed_edges_per_frame: 4096
+  max_wall_seconds: 60.0
+determinism_policy:
+  policy_id: stage02c_in_memory_double_generation_v1
+  repeats: 2
+  comparison: canonical_sample_bytes_bitwise_equal
+storage:
+  sample_format: canonical_pretty_json_utf8
+  hash_algorithm: sha256
+  overwrite: prohibited
+  split_assignment: prohibited
+  normalization_statistics: prohibited

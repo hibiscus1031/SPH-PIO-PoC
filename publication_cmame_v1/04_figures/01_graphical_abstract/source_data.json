@@ -1,0 +1,35 @@
+{
+  "figure": "graphical_abstract",
+  "title": "Qualification gates separate verified components from the closed full-solver route",
+  "frozen_evidence_only": true,
+  "new_scientific_computation": false,
+  "display_data": {
+    "route_labels": [
+      "SPH\nfoundation",
+      "reciprocal\ninteraction",
+      "dynamic\nRK2",
+      "defect\ntarget",
+      "optimizer\npath",
+      "formal\ncampaigns",
+      "support\ndiagnosis",
+      "systematic\ncoverage",
+      "route\nclosure"
+    ],
+    "route_status": [
+      "VERIFIED",
+      "QUALIFIED",
+      "VERIFIED",
+      "QUALIFIED",
+      "QUALIFIED",
+      "NOT QUALIFIED",
+      "DIAGNOSTIC",
+      "NOT QUALIFIED",
+      "NOT QUALIFIED"
+    ],
+    "source_key_count": 1,
+    "claim_keys": [
+      "allowed",
+      "prohibited"
+    ]
+  }
+}

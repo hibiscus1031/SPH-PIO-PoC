@@ -1,0 +1,131 @@
+{
+  "authorization": "Stage 03C:DYNAMIC_RK2_HYBRID_IMPLEMENTATION_VERIFIED",
+  "completion_date": "2026-08-05",
+  "completion_gates": {
+    "A_freeze": true,
+    "B_fixed_topology_adfd": false,
+    "C_history_and_conservation": false,
+    "D_topology_family": true,
+    "E_event_boundary": true,
+    "F_resources": true,
+    "G_prohibitions": true
+  },
+  "contract": {
+    "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/contracts/dynamic_multistep_adfd_topology_contract_v0_1.yaml",
+    "sha256": "sha256:a506af65ac124f8edf843e507f70c88566852fdfefb017eea127ddbe227fa692"
+  },
+  "counts": {
+    "adfd_comparison_count": 2880,
+    "cross_event_diagnostic_count": 6,
+    "event_birth_count": 1,
+    "event_death_count": 1,
+    "event_replay_pass_count": 6,
+    "excluded_topology_changing_epsilon_count": 0,
+    "fixed_side_event_adfd_pass_count": 12,
+    "fixed_topology_arm_case_seed_horizon_count": 72,
+    "history_gradient_pass_count": 0,
+    "optimizer_steps": 0,
+    "per_stage_conservation_count": 540,
+    "per_stage_conservation_pass_count": 540,
+    "required_probe_count": 360,
+    "stable_epsilon_window_count": 216,
+    "training_runs": 0
+  },
+  "differentiable_neighbor_search_claim": false,
+  "final_status": "DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED",
+  "historical_files_unchanged": true,
+  "input_freeze": {
+    "byte_count": 14146,
+    "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03d_input_freeze_manifest.json",
+    "sha256": "sha256:bc343df68e00e7ba5056208f1ae4197ed7d6d0c14307d7f3994d920a0136c873"
+  },
+  "manifests": [
+    {
+      "byte_count": 1827,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03d_adfd_manifest.json",
+      "sha256": "sha256:80130d9c03c6585e9cc552239797f87e889b7d17b5c05bfbf9e9baa1faac7b44"
+    },
+    {
+      "byte_count": 1574,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03d_topology_event_manifest.json",
+      "sha256": "sha256:e315d474de0f068afefca9334745249fc735c1d9ff229627855fc3e58cffcf86"
+    }
+  ],
+  "next_stage": {
+    "authorization": "NONE",
+    "stage": "Stage 03E \u2014 Trajectory Dataset, Lineage, Split and Test-Seal Qualification",
+    "training_authorized": false
+  },
+  "optimizer_steps": 0,
+  "qualification": {
+    "byte_count": 1211,
+    "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/qualification/stage03d_qualification_summary.json",
+    "sha256": "sha256:08fb6260b6963daefaf3262c3c7ca54b3ccb7cac6e9b1f7f8ee5deb164ab70e7"
+  },
+  "reports": [
+    {
+      "byte_count": 345,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03d_freeze_and_scope.md",
+      "sha256": "sha256:8455c068f13adbf5f10da47822eddee95711de9c962083f34083bdda7b80713a"
+    },
+    {
+      "byte_count": 570,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03d_adfd_contract.md",
+      "sha256": "sha256:a7f9bbc379968a95af51d75d2112dfb85ac5ee8515724d57f6d94e205cc0aaea"
+    },
+    {
+      "byte_count": 389,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03d_fixed_topology_matrix.md",
+      "sha256": "sha256:d074abfae946407062a980965ca0d9a6cc11d263d9c65e9f519c75ddd838f4b7"
+    },
+    {
+      "byte_count": 940,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03d_multistep_adfd.md",
+      "sha256": "sha256:5c33ed8a3709be6f2386202c61b4a30769a574f0841a2f79c122c87ade29a1ca"
+    },
+    {
+      "byte_count": 453,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03d_history_gradient_audit.md",
+      "sha256": "sha256:9072b992b66b66fdea2c20f16cb7f83122f15199519371409ea837f22ee8cd21"
+    },
+    {
+      "byte_count": 424,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03d_conservation_over_time.md",
+      "sha256": "sha256:20f31316ccd80768c0dd5779db76b58e293ce6131c222211edcb6e686124af85"
+    },
+    {
+      "byte_count": 484,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03d_topology_event_family.md",
+      "sha256": "sha256:bd85ac4cf95454e36c468cfc0ddee64060e1d33cffe204591dd1b12d703e6f45"
+    },
+    {
+      "byte_count": 536,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03d_topology_event_scan.md",
+      "sha256": "sha256:d786ed134b2ec6e89831e65ddb468ca225b3572042280edac99439384d7475ca"
+    },
+    {
+      "byte_count": 628,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03d_topology_event_gradient_boundary.md",
+      "sha256": "sha256:0e0bc7e5208e969c79c8a86de46edbbfd8c7c567efa58992bc70489f4b051a08"
+    },
+    {
+      "byte_count": 430,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03d_resource_audit.md",
+      "sha256": "sha256:7ddea7d8780538bebd4a5c9440e3123dd49a2847bc5612d59dc23c99a555ed32"
+    },
+    {
+      "byte_count": 388,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03d_qualification_report.md",
+      "sha256": "sha256:b208d62c057d4e2426b21b48000d21da09b7f37cec48a70b538d7d251562e64e"
+    },
+    {
+      "byte_count": 2373,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03d_final_report.md",
+      "sha256": "sha256:bb40b3821bae9c0c2817b9f8f6ab3168692945a5d9012d02acc9d43cd14a72e8"
+    }
+  ],
+  "rollout_performance_claim": false,
+  "schema_version": "sph-pio-poc.stage03d.final.v1",
+  "stage": "Stage 03D \u2014 Multistep AD/FD and Topology-Event Qualification",
+  "training_runs": 0
+}

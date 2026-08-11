@@ -1,0 +1,474 @@
+{
+  "access_denial_audit": {
+    "byte_count": 22305,
+    "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/access_denial_audit.json",
+    "sha256": "sha256:2de271e99a3a926a63fa3b2a89d4084e21f72caa2ac5b43aa50b241942b48132"
+  },
+  "access_policy": {
+    "byte_count": 439,
+    "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/sealed_access_policy.json",
+    "sha256": "sha256:a2ab0ac2ea003456aba7ce54aaa0e036811e38c4b3096397575a88e77ed7e84e"
+  },
+  "all_access_denial_tests_pass": true,
+  "pre_release_test_formula_parameter_decode_count": 0,
+  "pre_release_test_state_decode_count": 0,
+  "pre_release_test_target_decode_count": 0,
+  "private_artifacts": [
+    {
+      "byte_count": 1812,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_analytic_audit.json",
+      "sha256": "sha256:3a017f644f01f57338ecc0b124c6e1f2a516cc6bbd0dee27213738dd999ebdc0"
+    },
+    {
+      "byte_count": 8481,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n12.json",
+      "sha256": "sha256:fb83e10691c649bcdf72682a71d687dea5c88289f22d8e4fcd58f3ae4d2285e1"
+    },
+    {
+      "byte_count": 158177,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n12.npz",
+      "sha256": "sha256:acd1b7045f04cc1cab55680ad8a7e01da6a8db34ea20fbdc92fbd933743ff510"
+    },
+    {
+      "byte_count": 1093,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n12_topology_margin.json",
+      "sha256": "sha256:f026f3664e0b998d9c8966177ee71752912505e399215ceaa963da5b90815cb3"
+    },
+    {
+      "byte_count": 8481,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n16.json",
+      "sha256": "sha256:2b751264b94616b54c31927377962360f91ec53250c8ce031f683194e11e25a1"
+    },
+    {
+      "byte_count": 232517,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n16.npz",
+      "sha256": "sha256:5e7d7892268b55afd43bf928f60bf722bf51b8610f0126f66ef3c044618aee9f"
+    },
+    {
+      "byte_count": 1093,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n16_topology_margin.json",
+      "sha256": "sha256:f7dbd529585f0944dff850d6df67228a50fedf168cf6a6439d56046906cd7b6b"
+    },
+    {
+      "byte_count": 8478,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n8.json",
+      "sha256": "sha256:fcde0ca38c801b7dda20278bda8601cfd5c14be5a1e5ad99ee9d4c31156f7b1d"
+    },
+    {
+      "byte_count": 60801,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n8.npz",
+      "sha256": "sha256:3fad7c3b5531b62fcc5ad950b645284c268fffc683cd63a71007ee2857473fbc"
+    },
+    {
+      "byte_count": 1090,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n8_topology_margin.json",
+      "sha256": "sha256:874c805d121988d15eca31be9622eaf0620c6aaecf18cc9f38112755f9332dea"
+    },
+    {
+      "byte_count": 1832,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_analytic_audit.json",
+      "sha256": "sha256:12c97b2a9a18b26dc3eb260e8447f2f1c019528137616e1a29303f7d7c3845a4"
+    },
+    {
+      "byte_count": 8483,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n12.json",
+      "sha256": "sha256:2eab7b1771218bcf3acb893107c093235a42f390df2b84ea246d9340e5a7b0d4"
+    },
+    {
+      "byte_count": 158754,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n12.npz",
+      "sha256": "sha256:98d7c08fd62ec72b034ceee947e4b7876dbcc6a662b54cb53e5cea3a7a864fca"
+    },
+    {
+      "byte_count": 1093,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n12_topology_margin.json",
+      "sha256": "sha256:69280b02194e24a1e8b44c9eda85f6336f12d9934cee10e9fa70e8d5e74bf6f9"
+    },
+    {
+      "byte_count": 8483,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n16.json",
+      "sha256": "sha256:e11dcb9367acd57e3a7852efc6e6e3a5270a1bd7e528d45da405d87744b34903"
+    },
+    {
+      "byte_count": 232813,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n16.npz",
+      "sha256": "sha256:aea716da6c542a4c8591d0754ffdb65b4d1d8e7fd2c6512287cf35bc7baabdd5"
+    },
+    {
+      "byte_count": 2537,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n16_dop853_audit.json",
+      "sha256": "sha256:b8aaa8fc32297b3f1626e3f7f5ef86239b656444b748c5b167eec3c8e9bfa08b"
+    },
+    {
+      "byte_count": 1094,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n16_topology_margin.json",
+      "sha256": "sha256:26ba62235f0d07059de9e27a6c0337be594880475b030f261ecdb007260ed7bb"
+    },
+    {
+      "byte_count": 8479,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n8.json",
+      "sha256": "sha256:2256d5b130ba061bf3646d74f10b3f9b8785ebd25c9fd74abe76a2062372ceb4"
+    },
+    {
+      "byte_count": 60897,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n8.npz",
+      "sha256": "sha256:ed60e4312ac404252efe3abad821c9995cbf7e333c5b4a1ed77dd623191d74c7"
+    },
+    {
+      "byte_count": 2536,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n8_dop853_audit.json",
+      "sha256": "sha256:ba8c4c067fc41bfb2e52f554acfa7a813f8555a3f31f59d726a3b28422d94ca6"
+    },
+    {
+      "byte_count": 1091,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n8_topology_margin.json",
+      "sha256": "sha256:9c1951379b262cbf83f19c5ef7c7cc9bab10403ad4b106699bd372be5c39ecd6"
+    },
+    {
+      "byte_count": 1829,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_analytic_audit.json",
+      "sha256": "sha256:7e4addd4b458ca41362c79cec3ad5da9c6f5cffb90aef90a19b7afe99d372d22"
+    },
+    {
+      "byte_count": 8485,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n12.json",
+      "sha256": "sha256:3cef465b1569ef5b30c221c2c8c7c802e5ac3d489e6eba775e634ef76a35c2cf"
+    },
+    {
+      "byte_count": 181458,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n12.npz",
+      "sha256": "sha256:79df6dba952c0291d27145572958a9348e27df9c7fc61603f99d5ad1c241d9d0"
+    },
+    {
+      "byte_count": 1094,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n12_topology_margin.json",
+      "sha256": "sha256:625430b8c58c0fc030a43bf310298454f2d811969159a0d169dc8e7016b0795d"
+    },
+    {
+      "byte_count": 8485,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n16.json",
+      "sha256": "sha256:c18bda9bda3decac0e61f90568d63b206d296eb1425afa2e4f62cb38d0a2c635"
+    },
+    {
+      "byte_count": 281292,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n16.npz",
+      "sha256": "sha256:efe050203965d21a973d43a889e51daba905e8af2efe5fa3f895d90f021753da"
+    },
+    {
+      "byte_count": 1093,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n16_topology_margin.json",
+      "sha256": "sha256:51c5bd8e054c8b86a8da7bbfc3881af6dab8924184570f76f864c4cc7b61ceb7"
+    },
+    {
+      "byte_count": 8480,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n8.json",
+      "sha256": "sha256:86ecfc28368da3ae48951d1247ffdf55dcaf80699f499015541f201f938f9d63"
+    },
+    {
+      "byte_count": 73593,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n8.npz",
+      "sha256": "sha256:b550e2d2ed57fdc43ecb79259e2c399e318e7d5a3ac6ba9f896049eac8c04e05"
+    },
+    {
+      "byte_count": 1088,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n8_topology_margin.json",
+      "sha256": "sha256:2e173c4170347fee402f352f6f2789f2127515f799e73dc8559d074f1e01ccdb"
+    },
+    {
+      "byte_count": 1834,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_analytic_audit.json",
+      "sha256": "sha256:6c5a51a7a54bb61560a1e62a02208f7c71688bd22dfd1a485ab291f68359c2ba"
+    },
+    {
+      "byte_count": 8486,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n12.json",
+      "sha256": "sha256:2207052666c4d181332d691eaa9a61340b46e35a3b2c25eb31ad6be3d3dd3ca7"
+    },
+    {
+      "byte_count": 181932,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n12.npz",
+      "sha256": "sha256:7969369930e4e166af740c90f8b085ae5e5b7df5c75a9f7c2c6fe802d9448fa8"
+    },
+    {
+      "byte_count": 1093,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n12_topology_margin.json",
+      "sha256": "sha256:f606ed0e5edef2028e8a41eb47a6b77fb4491f3ca73773022231f1ee26d84a36"
+    },
+    {
+      "byte_count": 8487,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n16.json",
+      "sha256": "sha256:fa238497be9ea9db2e8e3e686429160844f1424dd9a58f24692141cc832487a8"
+    },
+    {
+      "byte_count": 280913,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n16.npz",
+      "sha256": "sha256:6700f7de33f28b93b60d766909c22f9d3cae0c3ee9a88e64fb7ce6d447c38406"
+    },
+    {
+      "byte_count": 2537,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n16_dop853_audit.json",
+      "sha256": "sha256:ab0c9a4ee1b03e312cc3063b969bfec28ba39aed13e49c3ad39f6d27478890c1"
+    },
+    {
+      "byte_count": 1095,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n16_topology_margin.json",
+      "sha256": "sha256:fe4a5c127d804599c3acb56a94ce937c14cae0517ea76e20a5b7e313d341ba25"
+    },
+    {
+      "byte_count": 8484,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n8.json",
+      "sha256": "sha256:ea6297b1c98997623c935d3019aa313087c6b0de2c69e3215ab74a76edd25e4b"
+    },
+    {
+      "byte_count": 73766,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n8.npz",
+      "sha256": "sha256:75eedd5208d4ab170ed36d56c2fe3bfce7b940c431cb5900deca62fc8117e3f9"
+    },
+    {
+      "byte_count": 2537,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n8_dop853_audit.json",
+      "sha256": "sha256:6368ea9c3905afe7c416ad985a4dc8a3e29e1cd1cd031fbe5d385af4ca991d47"
+    },
+    {
+      "byte_count": 1091,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n8_topology_margin.json",
+      "sha256": "sha256:c6bcefa852b554313967ed672c183a7f5fca12ba13f1a4f5c6ce0ca692949961"
+    },
+    {
+      "byte_count": 1343,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/validation_parameters.json",
+      "sha256": "sha256:a2ec07d6bfe204c5774eab799b0e81c7449611f7bec940bd79e61b50b1fb6ac6"
+    },
+    {
+      "byte_count": 1835,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_analytic_audit.json",
+      "sha256": "sha256:8f800b49bde09ca5679895ee4c092d2caceb3ef5e9152ef1250494c037e884e1"
+    },
+    {
+      "byte_count": 8473,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n12.json",
+      "sha256": "sha256:a45f93abf2b3eef6dd70b1862eabb073d960e7a06a3ec44607e2cce0a5156062"
+    },
+    {
+      "byte_count": 199706,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n12.npz",
+      "sha256": "sha256:e4470b8bd3512cc1086ebd0a7745a1c761e971f4bc38ab7ffbb8ff63901d8895"
+    },
+    {
+      "byte_count": 1093,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n12_topology_margin.json",
+      "sha256": "sha256:f097fca970f4c6ca7e9bcf3dcb157b7c69cce55252b9c1a8d69b7babd120c637"
+    },
+    {
+      "byte_count": 8472,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n16.json",
+      "sha256": "sha256:4f4f7070dd2c2e725e5a4ac0fffc2716d48fb556818e1e8513fa5a69cb6e1a22"
+    },
+    {
+      "byte_count": 301602,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n16.npz",
+      "sha256": "sha256:69444e95166b7ab8c4db10a5c25686122ab3dff3c8a270bd9579f144c7608a9b"
+    },
+    {
+      "byte_count": 1093,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n16_topology_margin.json",
+      "sha256": "sha256:1e25c20a0c2f545dce206cbc39ce03eeab76d9ec08395334cb6d46d5bd2d3010"
+    },
+    {
+      "byte_count": 8470,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n8.json",
+      "sha256": "sha256:4d60007a0f77ed32e1af5513f8e0a3280693424e5028362e59f04117a1393c8c"
+    },
+    {
+      "byte_count": 75201,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n8.npz",
+      "sha256": "sha256:7e672cd072f62daf3cae97366450a6ed4c0ac95efb826feb1778862789149c9c"
+    },
+    {
+      "byte_count": 1090,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n8_topology_margin.json",
+      "sha256": "sha256:0906f947e1293d215a9628a31a5accdbf6371560b71227bf7ca57ff0dfee9e77"
+    },
+    {
+      "byte_count": 1837,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_analytic_audit.json",
+      "sha256": "sha256:5098d2e2e1dc70b988bf08c9b3ed68dd04fa1d27c9f3518484f7f362fbb32829"
+    },
+    {
+      "byte_count": 8475,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n12.json",
+      "sha256": "sha256:ba97a78e1fc06ca9140f022bfa3c4f07f1713a2f57eb839dd85b7315955cb26d"
+    },
+    {
+      "byte_count": 199788,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n12.npz",
+      "sha256": "sha256:c71436c2b58727058266eeda8ce4a0e0cced7ad5216d0b5371a0d9eebdc98619"
+    },
+    {
+      "byte_count": 1094,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n12_topology_margin.json",
+      "sha256": "sha256:87b6828935b77dccde8bb46d00a47e1b012d539697e68bc8e3c9c72a892ab1e7"
+    },
+    {
+      "byte_count": 8475,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n16.json",
+      "sha256": "sha256:0a472732c5b7ebf0a12547db77b41dbe185b3582634e2a0cb0a08ad4a0f8cb22"
+    },
+    {
+      "byte_count": 300856,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n16.npz",
+      "sha256": "sha256:3a557e2ab34a93f6e9ad2b5a9bb0218016c71b2d30b0e6dd8a17e532f6242f60"
+    },
+    {
+      "byte_count": 2537,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n16_dop853_audit.json",
+      "sha256": "sha256:d9572024741e0d25322c5125ece00b4b355fcce8d9275a0249872db17805e076"
+    },
+    {
+      "byte_count": 1095,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n16_topology_margin.json",
+      "sha256": "sha256:96d0325a6a4536511b0fb55c7d0a3448be6a6dcb877436f6d27c2206e88a331d"
+    },
+    {
+      "byte_count": 8472,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n8.json",
+      "sha256": "sha256:d8815a1464e69e3aa0df405b505f18afb64e3cc4ad0ac1b2ab6818dfa5490325"
+    },
+    {
+      "byte_count": 76129,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n8.npz",
+      "sha256": "sha256:9be6d35e70c5d7a2a8041fbae47752a261ac507eb0cef89ec31cd1f98a36f148"
+    },
+    {
+      "byte_count": 2533,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n8_dop853_audit.json",
+      "sha256": "sha256:ded169f6b84bd9188474bb33ab4326e00857ea6086ac48581db69dde78ca9e0d"
+    },
+    {
+      "byte_count": 1092,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n8_topology_margin.json",
+      "sha256": "sha256:f8867d6684b3bfc7878d630dbed40e73244c9a08bd5738934bbd899b1bf78496"
+    },
+    {
+      "byte_count": 1830,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_analytic_audit.json",
+      "sha256": "sha256:0a78dec4520d39903c5a5eed6023f53155f61cb93a32702ad92e6faade12ae86"
+    },
+    {
+      "byte_count": 8469,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n12.json",
+      "sha256": "sha256:cd447605faa9f855c07ddd31d35fa62ea93a2c108866bc2258ecbb24ba71df15"
+    },
+    {
+      "byte_count": 300184,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n12.npz",
+      "sha256": "sha256:d4e4b1c2fedab3ba531c21cd37c26e769f998ade0e640ba1a301243f99654555"
+    },
+    {
+      "byte_count": 1093,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n12_topology_margin.json",
+      "sha256": "sha256:00d92dcbf46c2cee0bee7a30ae9ff90ee2ad6539625760e3d2f59e2d3ae74a3e"
+    },
+    {
+      "byte_count": 8469,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n16.json",
+      "sha256": "sha256:3c25871c9b41dc4e13b974b0a3a350c5cf21e607d80497940df128967d628af8"
+    },
+    {
+      "byte_count": 537191,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n16.npz",
+      "sha256": "sha256:5463f2344feda2c149ac028a209e2581bcdf408e926ae40690b2d240c1e56dd3"
+    },
+    {
+      "byte_count": 1093,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n16_topology_margin.json",
+      "sha256": "sha256:1a4f6144c10542765c1e6b3c3f872d993b8faac041ee765c7df28f0eb160008f"
+    },
+    {
+      "byte_count": 8466,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n8.json",
+      "sha256": "sha256:a7dc2d793026fc1432e283ac981ecfe7683573be09fd97b3f8501ba6650e3d73"
+    },
+    {
+      "byte_count": 130208,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n8.npz",
+      "sha256": "sha256:056e556e5cbac86f015e8d89071222e0e6492deb4669aa68d65ae77e09eb7c28"
+    },
+    {
+      "byte_count": 1089,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n8_topology_margin.json",
+      "sha256": "sha256:03af5dc38c889db441b4d18abb4f39a5d684f0cf1326e9e7ec33401693b5be4c"
+    },
+    {
+      "byte_count": 1827,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_analytic_audit.json",
+      "sha256": "sha256:2bf99c883f237730345bec2354ef5b87fb49bed9c4b03edae6a2639b7e9152a0"
+    },
+    {
+      "byte_count": 8471,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n12.json",
+      "sha256": "sha256:f04d936040e50aaa32827df97e6595015e3dc24db03a1af0bf59cbf01d26c07d"
+    },
+    {
+      "byte_count": 301006,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n12.npz",
+      "sha256": "sha256:bef340157c7ca1f0ea28a5a9a751a10b0153b23862fb82d29e4e8da78ca04b35"
+    },
+    {
+      "byte_count": 1094,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n12_topology_margin.json",
+      "sha256": "sha256:1b5795e199fd7c5f611add13f2d9332cf31aaa14623d4ce8f92fa5b907c9e4f3"
+    },
+    {
+      "byte_count": 8470,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n16.json",
+      "sha256": "sha256:fe9a57dd44353405a1a19b3f34267eb7d8c6122a5868d676aec73a0538b14d11"
+    },
+    {
+      "byte_count": 538749,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n16.npz",
+      "sha256": "sha256:db408f26fb9615a7cc0505cb38abe2701b1b60e83255e1751dae685c0586b3e9"
+    },
+    {
+      "byte_count": 2540,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n16_dop853_audit.json",
+      "sha256": "sha256:a4f2aac90038c1e537aa5ee3629cc6d9e16ea4bf7c5ab25099de72c92e6c8806"
+    },
+    {
+      "byte_count": 1094,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n16_topology_margin.json",
+      "sha256": "sha256:77e343a4b82df77561080bc80068da6059a736c7e89381694da3c568a0bfe270"
+    },
+    {
+      "byte_count": 8469,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n8.json",
+      "sha256": "sha256:9f7202236211cfc50d7e52f05de343ac292f8f14724c3e83e8af229b1be0c636"
+    },
+    {
+      "byte_count": 130712,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n8.npz",
+      "sha256": "sha256:e37e226f8c9b4f8da04df39f823c20e01b4e7db0abad5cea113645c53bbfbe9c"
+    },
+    {
+      "byte_count": 2536,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n8_dop853_audit.json",
+      "sha256": "sha256:c4dd547ecfb0e7febe782a0cbf0f81815d2c4bbe14ddffada6d639406afc25c1"
+    },
+    {
+      "byte_count": 1092,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n8_topology_margin.json",
+      "sha256": "sha256:99c68b5a3aafaa7c697181b9631154d78780beb89a388c1c12b0460cb2e1668d"
+    },
+    {
+      "byte_count": 1344,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/sealed_parameters.json",
+      "sha256": "sha256:3b3bf6d8da1ff1c1ddb8665194a8a9048e1c5e4594b28eac43c9faacf415e44c"
+    }
+  ],
+  "release_authorized": false,
+  "schema_version": "sph-pio-poc.stage04b.test-seal-manifest.v1",
+  "sealed_lineages": [
+    "LCDF_03",
+    "LCDF_10"
+  ]
+}

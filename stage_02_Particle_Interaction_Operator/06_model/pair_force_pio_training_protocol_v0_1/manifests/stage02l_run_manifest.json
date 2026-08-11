@@ -1,0 +1,258 @@
+{
+  "architecture_hash": "sha256:1e313f871b13f3f2fc0cc780ab24d50a7fd9fe8a96866da91fae5ede9ab555a4",
+  "artifacts": [
+    {
+      "byte_count": 5208,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/freeze/build_stage02l_freeze.py",
+      "sha256": "sha256:0771d32460786e4bc54b6d77942a90d6077571f9f61dcca65e4f794db10ef33b"
+    },
+    {
+      "byte_count": 7122,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/freeze/historical_integrity_verification.json",
+      "sha256": "sha256:def0f08075d281a3a4c292b86f336c1244865a8119beb5ef02cd48b1bb67dcd3"
+    },
+    {
+      "byte_count": 12928,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/freeze/stage02l_input_and_protocol_freeze_manifest.json",
+      "sha256": "sha256:2285898c6ebe894e0a136c54aefb8fb5983c42988745ed105125f42b7902656b"
+    },
+    {
+      "byte_count": 94,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/freeze/training_protocol_v0_1.sha256",
+      "sha256": "sha256:610b2c53e3b98257849879c457cd303975536c2d91516ea5d93347e66a887c2f"
+    },
+    {
+      "byte_count": 7429,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/freeze/training_protocol_v0_1.yaml",
+      "sha256": "sha256:ab02a49a508c4ddcab5db037886abd329ab29d2eedfc8ffe5d818ad691668648"
+    },
+    {
+      "byte_count": 1,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/hypotheses/.gitkeep",
+      "sha256": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "byte_count": 560,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/hypotheses/hypotheses.json",
+      "sha256": "sha256:1b8bd3c3d00d3e3225c2470350a59beb488667e39d17d89ba6a60ddc71fbde60"
+    },
+    {
+      "byte_count": 1,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/model_arms/.gitkeep",
+      "sha256": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "byte_count": 1288,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/model_arms/model_arm_registry.json",
+      "sha256": "sha256:243999ddc5cadfcde35b64b5d692ea71e52113a966db418e6dced41cdd36940c"
+    },
+    {
+      "byte_count": 1427,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/loss/loss_contract.py",
+      "sha256": "sha256:d2e3b3ce20e95a0b1d41c17eb0b205ecc97a4c973fcb1b43299af3e962b77882"
+    },
+    {
+      "byte_count": 462,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/loss/loss_static_audit.json",
+      "sha256": "sha256:af631d6e1ec52c0790cdd107b5505b004a9385cbf669269a619e522ed910359e"
+    },
+    {
+      "byte_count": 1767,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/optimizer/optimizer_schedule_audit.json",
+      "sha256": "sha256:e49cb4b9bce98a20bc9458bf4fbe9230cbfd7c13ad45fa662eb9b927663153f8"
+    },
+    {
+      "byte_count": 1228,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/optimizer/prospective_optimizer.py",
+      "sha256": "sha256:98c81f0e3d71a99ed548f01042bc95779692bea995571f46fae527c36f2a2da8"
+    },
+    {
+      "byte_count": 1,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/run_matrix/.gitkeep",
+      "sha256": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "byte_count": 4937,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/run_matrix/run_matrix.json",
+      "sha256": "sha256:b1989dc2195d311233dd35e6f09cdde4f6c3a6c6efbaa2b61c7a80bee2add1c8"
+    },
+    {
+      "byte_count": 5025,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/data_access/data_access_audit.json",
+      "sha256": "sha256:09ea51123ff31adc63e0519a1a2ae68ffbe9eb59dd367b344c11d9ef11e75e45"
+    },
+    {
+      "byte_count": 8283,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/data_access/sealed_loader.py",
+      "sha256": "sha256:ab07f3f8a9c4afabfd37d4d75c6cc370f489678c5518d1c47b3c6075429c4f5e"
+    },
+    {
+      "byte_count": 1,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/test_seal/.gitkeep",
+      "sha256": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "byte_count": 440,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/test_seal/test_seal_status.json",
+      "sha256": "sha256:789981ae49f45c33781e85dac3a38e80d5311230e3167b5c1f7311c2e601a884"
+    },
+    {
+      "byte_count": 1,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/checkpointing/.gitkeep",
+      "sha256": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "byte_count": 35721,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/checkpointing/K0_seed20261201_update0000.pt",
+      "sha256": "sha256:3b408e911d3e50fea77bad514e26c7e365bccc0b6186a91ffe4b386f75bee1ee"
+    },
+    {
+      "byte_count": 35977,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/checkpointing/K1_seed20261201_update0000.pt",
+      "sha256": "sha256:1f3cc9823dbc10a98ed65c4381fb81bf8c2e04de08b43fe8d5d2fa3a2268d139"
+    },
+    {
+      "byte_count": 288458,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/checkpointing/K2_seed20261201_update0000.pt",
+      "sha256": "sha256:509fcec357ba6e32d3c1fc64149a38bf280aff7f920c4e9a974900a8322377d5"
+    },
+    {
+      "byte_count": 2312,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/checkpointing/checkpoint_roundtrip_audit.json",
+      "sha256": "sha256:e412e0ae4e72340229f0ba11bbdfe877e68ea02f64dce5a9ef8de36b1f835c0b"
+    },
+    {
+      "byte_count": 36593,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/harness/run_stage02l_static_audit.py",
+      "sha256": "sha256:c988b9bf06942d4ce502a5c03c22af0888d5c43d12079d521f4b8d517462ff46"
+    },
+    {
+      "byte_count": 1836,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/harness/training_harness_static_audit.json",
+      "sha256": "sha256:b75bbb9945f1be9f3304acc9310ff7109ce46eb61adf3c5e474cf01e46b2836a"
+    },
+    {
+      "byte_count": 1,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/dry_runs/.gitkeep",
+      "sha256": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "byte_count": 158,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/dry_runs/zero_step_dry_run.json",
+      "sha256": "sha256:cc7d16177eaf583eff138853cebebae7ce44b9ddfcf22ad3b3e0fbc1808a05e7"
+    },
+    {
+      "byte_count": 1,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/static_metrics/.gitkeep",
+      "sha256": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "byte_count": 490,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/static_metrics/static_metric_contract_audit.json",
+      "sha256": "sha256:8b556db030f3c9761f91170b27d1bc570b2bc66db1acf3731d9ee759999a2eb0"
+    },
+    {
+      "byte_count": 1,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/resource_forecast/.gitkeep",
+      "sha256": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "byte_count": 1312,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/resource_forecast/resource_forecast.json",
+      "sha256": "sha256:8588180942a108fd976d7d2bd1228949347727fd0a4e2f86efd3e379008cf09f"
+    },
+    {
+      "byte_count": 1,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/success_gates/.gitkeep",
+      "sha256": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "byte_count": 1257,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/success_gates/future_success_gates.json",
+      "sha256": "sha256:6b2480bf1712583a8bc12f4871fc3e3aab217e1b9def9bf1b377bd96961a9ef3"
+    },
+    {
+      "byte_count": 1,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/results/.gitkeep",
+      "sha256": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "byte_count": 778,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/results/stage02l_qualification_summary.json",
+      "sha256": "sha256:07c4b0b6e569b0e802ab3ac6a8b4ec87bcc8f43622a2cd52b247bf49bd2cf7e1"
+    },
+    {
+      "byte_count": 277,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02l_checkpoint_contract.md",
+      "sha256": "sha256:92554897d38be4ce05cd7654195e4817dc9d750e6a5844f2bd99a59a560e1ead"
+    },
+    {
+      "byte_count": 359,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02l_data_access_and_test_seal.md",
+      "sha256": "sha256:6202535a9f4e9b639918956b965059145d2144a5d3a054af1acc32a6a958b050"
+    },
+    {
+      "byte_count": 2466,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02l_final_report.md",
+      "sha256": "sha256:3f31a94d4de2bafdd09f2f1bc8375a042cdb33e8a7a34ee8f6ca42322e526eaf"
+    },
+    {
+      "byte_count": 357,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02l_freeze_and_scope.md",
+      "sha256": "sha256:7b9d950c78c9e29d3f364d4d075a51fc2da716ff846f021872da2264d7a6e9dd"
+    },
+    {
+      "byte_count": 331,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02l_hypotheses_and_baselines.md",
+      "sha256": "sha256:924405600d17edc0d77aba8d5bb40f00517ef420a856b97ad640358a58a59c75"
+    },
+    {
+      "byte_count": 343,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02l_loss_contract.md",
+      "sha256": "sha256:5d872b5f1436d10198784083d005e74df8fc3356983d4e4b5368810c6f833180"
+    },
+    {
+      "byte_count": 326,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02l_optimizer_schedule.md",
+      "sha256": "sha256:4d6d97c84a4119610728d4fb9f1e63b6e39ace9f2b39f89d7ffe75690b0e910b"
+    },
+    {
+      "byte_count": 296,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02l_resource_forecast.md",
+      "sha256": "sha256:d4e07bbe76c4e5cd66090c61f7667fbda0dc5dc9a7e3a925fa2d788972ea797c"
+    },
+    {
+      "byte_count": 284,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02l_run_matrix.md",
+      "sha256": "sha256:e94ab1f18b2f730198ce706564b30aae9b5dfeebe4d22ffd925880eacc33a851"
+    },
+    {
+      "byte_count": 346,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02l_static_metric_contract.md",
+      "sha256": "sha256:11b48434fcc5ced22e348c2ef41b5c3ad1b6742605458c6a7fe4ddd185315fc6"
+    },
+    {
+      "byte_count": 396,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02l_success_criteria.md",
+      "sha256": "sha256:151fbea5e5dcadb7ba4f6f28717846fd3464877af19faa222d911f5c0d6bf777"
+    },
+    {
+      "byte_count": 364,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02l_training_harness_audit.md",
+      "sha256": "sha256:3f3871fa5dacdac5a4239d9b02dc19511b7a56658ec23aa21a3d7fa8a015b579"
+    }
+  ],
+  "device": "CPU",
+  "dtype": "float64",
+  "manifest_version": "stage02l-run-1.0.0",
+  "numpy": "1.26.4",
+  "optimizer_steps": 0,
+  "parameter_updates": 0,
+  "protocol_sha256": "sha256:ab02a49a508c4ddcab5db037886abd329ab29d2eedfc8ffe5d818ad691668648",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:11:29) [Clang 20.1.8 ]",
+  "scheduler_steps": 0,
+  "status": "STATIC_FITTING_PROTOCOL_READY",
+  "test_target_access": false,
+  "torch": "2.10.0",
+  "training_runs": 0
+}

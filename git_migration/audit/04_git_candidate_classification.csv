@@ -1,0 +1,55 @@
+scope,scope_type,file_count,size_bytes,category,recommended_action,reason
+stage_07_Heterogeneous_Development_Pool,top_level,5797,489935264,J,MANUAL_REVIEW_DO_NOT_TRACK,unknown or generated large file
+stage_02_Particle_Interaction_Operator,top_level,1648,402958516,J,MANUAL_REVIEW_DO_NOT_TRACK,unknown or generated large file
+stage_06_Optimizer_Update_Dynamics_Training,top_level,2459,383051846,J,MANUAL_REVIEW_DO_NOT_TRACK,unknown or generated large file
+publication,top_level,601,292998495,G,SELECTIVE_TRACK,"track sources, maps, and final small artifacts; exclude literature/cache/export archives"
+06_experiments,top_level,2246,142145914,J,MANUAL_REVIEW_DO_NOT_TRACK,unknown or generated large file
+publication_cmame_v1,top_level,356,137210964,G,SELECTIVE_TRACK,"track sources, maps, and final small artifacts; exclude literature/cache/export archives"
+stage_05_Scale_Aware_Discrete_Defect_Training,top_level,1254,128152372,J,MANUAL_REVIEW_DO_NOT_TRACK,unknown or generated large file
+stage_03_Dynamic_SPH_Transformer_Hybrid,top_level,468,101801968,J,MANUAL_REVIEW_DO_NOT_TRACK,unknown or generated large file
+stage_04_Local_Causal_Dynamic_Training,top_level,490,70210357,J,MANUAL_REVIEW_DO_NOT_TRACK,unknown or generated large file
+stage_08_Systematic_Coverage_V3,top_level,417,47509942,J,MANUAL_REVIEW_DO_NOT_TRACK,unknown or generated large file
+project_wide_synthesis,top_level,116,23690305,J,MANUAL_REVIEW_DO_NOT_TRACK,unknown or generated large file
+stage_08Z_Project_Closure_Publication,top_level,97,8003047,J,MANUAL_REVIEW,file role is not safely inferable from type and path
+tests,top_level,659,2858526,B,TRACK,"small report, manifest, configuration, test, or provenance evidence"
+01_solver,top_level,273,1971929,J,MANUAL_REVIEW,file role is not safely inferable from type and path
+07_reports,top_level,210,1050149,B,TRACK,"small report, manifest, configuration, test, or provenance evidence"
+05_metrics,top_level,16,107580,J,MANUAL_REVIEW,file role is not safely inferable from type and path
+00_environment,top_level,10,85652,J,MANUAL_REVIEW,file role is not safely inferable from type and path
+stage_01_verification,top_level,1,55551,J,MANUAL_REVIEW,file role is not safely inferable from type and path
+.pytest_cache,top_level,6,46770,F,IGNORE,"cache, temporary, editor, or generated runtime state"
+.DS_Store,top_level,1,6148,F,IGNORE,"cache, temporary, editor, or generated runtime state"
+README.md,top_level,1,3238,J,MANUAL_REVIEW,file role is not safely inferable from type and path
+__pycache__,top_level,2,2558,F,IGNORE,"cache, temporary, editor, or generated runtime state"
+.gitignore,top_level,1,1571,J,MANUAL_REVIEW,file role is not safely inferable from type and path
+conftest.py,top_level,1,945,J,MANUAL_REVIEW,file role is not safely inferable from type and path
+pytest.ini,top_level,1,372,J,MANUAL_REVIEW,file role is not safely inferable from type and path
+.gitattributes,top_level,1,201,J,MANUAL_REVIEW,file role is not safely inferable from type and path
+.bib,extension,1,16499,J,MANUAL_REVIEW,file role is not safely inferable from type and path
+.bin,extension,45,26147622,J,MANUAL_REVIEW,file role is not safely inferable from type and path
+.cache-9,extension,9,12636760,J,MANUAL_REVIEW,file role is not safely inferable from type and path
+.csv,extension,557,35913592,B,TRACK_AFTER_CONTEXT_REVIEW,small diffable scientific metadata or summary
+.docx,extension,8,1221827,J,MANUAL_REVIEW,file role is not safely inferable from type and path
+.ini,extension,1,372,A,TRACK,source code or diffable scientific/project text
+.json,extension,5986,507365525,B,TRACK_AFTER_CONTEXT_REVIEW,small diffable scientific metadata or summary
+.jsonl,extension,110,278118489,J,MANUAL_REVIEW,file role is not safely inferable from type and path
+.log,extension,426,644753,J,MANUAL_REVIEW,file role is not safely inferable from type and path
+.md,extension,1027,1944775,A,TRACK,source code or diffable scientific/project text
+.mjs,extension,2,13289,J,MANUAL_REVIEW,file role is not safely inferable from type and path
+.ndjson,extension,2,188212,J,MANUAL_REVIEW,file role is not safely inferable from type and path
+.npz,extension,4364,223565452,D,EXTERNAL_DATA_OR_CHECKPOINT,large/generated numerical or model payload
+.pdf,extension,105,165276542,G,TRACK_IF_FINAL,small figure/document artifact
+.png,extension,769,244758723,G,TRACK_IF_FINAL,small figure/document artifact
+.pt,extension,1882,668334034,D,EXTERNAL_DATA_OR_CHECKPOINT,large/generated numerical or model payload
+.py,extension,656,6459790,A,TRACK,source code or diffable scientific/project text
+.pyc,extension,841,10581264,F,IGNORE,"cache, temporary, editor, or generated runtime state"
+.sha256,extension,2,1549,J,MANUAL_REVIEW,file role is not safely inferable from type and path
+.svg,extension,50,22580544,G,TRACK_IF_FINAL,small figure/document artifact
+.tag,extension,3,591,J,MANUAL_REVIEW,file role is not safely inferable from type and path
+.txt,extension,69,1691249,A,TRACK,source code or diffable scientific/project text
+.xlsx,extension,2,20109,J,MANUAL_REVIEW,file role is not safely inferable from type and path
+.xml,extension,5,23681,J,MANUAL_REVIEW,file role is not safely inferable from type and path
+.yaml,extension,47,539244,A,TRACK,source code or diffable scientific/project text
+.yml,extension,35,142946,A,TRACK,source code or diffable scientific/project text
+.zip,extension,1,25265812,E,EXCLUDE_ARCHIVE,generated/export archive; retain on disk
+[none],extension,127,406935,J,MANUAL_REVIEW,file role is not safely inferable from type and path

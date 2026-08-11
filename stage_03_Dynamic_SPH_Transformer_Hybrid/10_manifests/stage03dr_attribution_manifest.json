@@ -1,0 +1,73 @@
+{
+  "artifacts": [
+    {
+      "byte_count": 698720,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/ad_crosscheck/reverse_vs_jvp.json",
+      "sha256": "sha256:853b224aac8543ef1f473a4c5dfb93bdfab85e410aedd6b5163047b66d9e655b"
+    },
+    {
+      "byte_count": 94311,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/attribution/failure_attribution.json",
+      "sha256": "sha256:cda1d0138c0e08bcb8ddd838a9de676cf0617826b9b4df7184a47c7c214424fc"
+    },
+    {
+      "byte_count": 720651,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/failure_matrix/stage03d_complete_360_row_matrix.json",
+      "sha256": "sha256:a0b925593f3cda97be6826658f308e05635da4dec5e2553dd56bc2aaa39b7991"
+    },
+    {
+      "byte_count": 7334809,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/fd_conditioning/extended_fd_results.json",
+      "sha256": "sha256:a4d11212be2583a6146e83588baf68fce4bf439cb35372499f8e4d257a2cba71"
+    },
+    {
+      "byte_count": 39434,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/freeze/selected_row_manifest.json",
+      "sha256": "sha256:adead03cc3d45f5c04153156ef20b7b912e7f117790aa4f487edff4f5af01c8f"
+    },
+    {
+      "byte_count": 95135,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/history_path/reference_prehistory_trace.json",
+      "sha256": "sha256:fed16b4b4919ca83308482c1902f0615a1d6df612c68fb2f48302c933e84a05e"
+    },
+    {
+      "byte_count": 57518,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/horizon_scaling/horizon_gradient_scaling.json",
+      "sha256": "sha256:438d8e2c344941a4650f67034f5b84f65c6540be8b667ed3570a8d6543b6ee2d"
+    },
+    {
+      "byte_count": 31824,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/objective_decomposition/component_results.json",
+      "sha256": "sha256:d9a659f1dd5cc4582321ec9036472bb3ddaf1f0bbdee962313c13c80cba148e0"
+    },
+    {
+      "byte_count": 712,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/results/resource_audit.json",
+      "sha256": "sha256:b94aa655bce4aa975278854f65138afcfec590d57848494c5de943c57271c16f"
+    },
+    {
+      "byte_count": 6782,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/results/stage03dr_summary.json",
+      "sha256": "sha256:7cbb89e4ea568ad3407c7dc9d56ae7c6b395c28d7c16c6e7c500b5cfa9b6c2e2"
+    },
+    {
+      "byte_count": 651,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/route_decision/dynamic_route_decision.json",
+      "sha256": "sha256:5dec4c29c1bc7fe82445712d4aaba92a751cbba2913e9e0ada21bac7c132145c"
+    },
+    {
+      "byte_count": 387,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/topology_preservation/topology_component_status.json",
+      "sha256": "sha256:a0436c35e9ee1fb15685f7e98ae20dfa1d92156f7f49f719b0e0ba465f912e62"
+    }
+  ],
+  "contract": {
+    "byte_count": 5850,
+    "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/freeze/stage03dr_attribution_contract_v0_1.yaml",
+    "sha256": "sha256:63ef93fe7af7c10ffb6a6e1d944003b5e3e85818f98bac6f6b1b9333a479c2d9"
+  },
+  "final_status": "DYNAMIC_GRADIENT_FAILURE_MIXED_OR_UNRESOLVED",
+  "new_optimizer_steps": 0,
+  "new_training_runs": 0,
+  "schema_version": "sph-pio-poc.stage03dr.attribution-manifest.v1"
+}

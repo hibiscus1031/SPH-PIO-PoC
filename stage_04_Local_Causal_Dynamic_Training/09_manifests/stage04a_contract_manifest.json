@@ -1,0 +1,80 @@
+{
+  "schema_version": "sph-pio-poc.stage04a.contract.v1",
+  "stage": "Stage 04A — Local-Causal Dynamic Training Hypothesis and Prospective Qualification Contract",
+  "contract_version": "v0.1",
+  "formal_training_horizon": 1,
+  "accepted_history_length": 4,
+  "formal_environment": {
+    "device": "cpu",
+    "dtype": "float64",
+    "d3_attention_backend": "PyTorch SDPBackend.MATH",
+    "flash_sdpa": false,
+    "memory_efficient_sdpa": false,
+    "backend_auto_selection": false,
+    "mps_float32_role": "resource_or_smoke_diagnostic_only"
+  },
+  "model_arms": [
+    "INSTANTANEOUS_CONSERVATIVE_PAIR_MLP",
+    "CAUSAL_RECURRENT_PAIR_PIO",
+    "CAUSAL_TEMPORAL_RECIPROCAL_TRANSFORMER_PIO"
+  ],
+  "hard_gradient_methods": [
+    "reverse_vjp",
+    "forward_jvp",
+    "central_fd_at_least_3_epsilon",
+    "stable_window",
+    "deterministic_repeat"
+  ],
+  "success_gate_categories": [
+    "numerical_safety",
+    "train_state_transition_fit",
+    "validation_family_transfer",
+    "sealed_test_transfer",
+    "conservation_equivariance",
+    "autonomous_rollout_stability",
+    "baseline_comparison"
+  ],
+  "artifact_inventory": [
+    {"path":"stage_04_Local_Causal_Dynamic_Training/README.md","byte_count":1640,"sha256":"sha256:5a1c1985eaa60bbecc3dbfc503efe552d62ac66d2fab228760a2d31b026744b4"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/00_planning/stage04_dependency_map.md","byte_count":2034,"sha256":"sha256:4ab3111d716d135d1685f55fad22d61576b9a9a505a7acacd61a3d8aef291641"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/00_planning/stage04_hypothesis_register.md","byte_count":2265,"sha256":"sha256:265a570043df8da1105987362c4f16e4bf13beaeabd88b69326c81e7a9aeb307"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/00_planning/stage04_scope.md","byte_count":2305,"sha256":"sha256:13f9d50fdc2fb690b18344f0a823ff03118ddf7b4839cfd1db13ce855a14bf01"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/00_planning/stage04_status_policy.md","byte_count":1966,"sha256":"sha256:de13b454019eb6e7d0199034082e8be312a87eadd9321d441528f4a3bf07e682"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/01_training_formulation/autonomous_rollout_boundary.md","byte_count":1464,"sha256":"sha256:2a8c45e3ff258a769eabc06044227962ee43d25e08396917889dddf6f7c7a237"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/01_training_formulation/local_causal_training_definition.md","byte_count":2184,"sha256":"sha256:bba9bc5fa526397e3d0e7b8400310c5a6ae02aaffb5f1908b39a467b0d220bf8"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/01_training_formulation/one_step_rk2_loss.md","byte_count":1930,"sha256":"sha256:f3e281ce01a85d15892c73894211bbc71c34cfafd3de91b615c3d2762b3d2a57"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/01_training_formulation/short_window_progression.md","byte_count":1353,"sha256":"sha256:79872f757e59aee0d1ac2e37cd0c34917cb877e6f608958612bf1fa7035439b2"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/01_training_formulation/teacher_forcing_boundary.md","byte_count":1650,"sha256":"sha256:bd79ceb5b91792d41e8075c28ec62342eec067e0e91c32e719078dff516dd79f"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/02_backend_contract/deterministic_execution.md","byte_count":1316,"sha256":"sha256:b7c78308aad5b422844152c1a585e570157544e5846b4b1834779e82f29f9275"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/02_backend_contract/math_sdpa_contract.md","byte_count":1352,"sha256":"sha256:4ab8982a652915f1817c3397288835d8c4a1eabc7f37e0abaab2b988726b9236"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/02_backend_contract/precision_contract.md","byte_count":1101,"sha256":"sha256:ead022bfb81d6c4f42c90f580e77863f6ed338789241107182c00fe2d5ad9d6f"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/03_gradient_qualification/blind_probe_policy.md","byte_count":1187,"sha256":"sha256:e44b960726767b6335b1b72c178efba792d3a24afd0ef0bdbd77609051466487"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/03_gradient_qualification/pass_fail_policy.md","byte_count":1473,"sha256":"sha256:4a56e61785ebaa8d89da0d35489d6648454897b064d04e2d0f21049ac032e520"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/03_gradient_qualification/reverse_jvp_fd_contract.md","byte_count":1420,"sha256":"sha256:c6a6362f0049a88eafc9cf81559de3e53ddbe4d10df4d52038459aa6ac57d3db"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/03_gradient_qualification/task_aligned_parameter_gradient_contract.md","byte_count":1637,"sha256":"sha256:42a1664dfc36f399c55be414b92c17720cf0edd5520279d9bce9b5ef6d7a1b7e"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/04_dataset_requirements/lineage_and_leakage_contract.md","byte_count":1349,"sha256":"sha256:f0b53f3402ea689ab6ccdc69b4fc25ab8d0e700a693c8d4487918cd300a1bdae"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/04_dataset_requirements/new_trajectory_family_requirements.md","byte_count":1376,"sha256":"sha256:6a44d9af060271943a0ac6edd68179389571589c0f23d0731c9ce01b62f5a552"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/04_dataset_requirements/reference_role_boundary.md","byte_count":1193,"sha256":"sha256:0f672a320e377372df9fe60301094f6c3995f367aef0696563f8b910d1e42109"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/04_dataset_requirements/split_and_test_seal_contract.md","byte_count":1097,"sha256":"sha256:f9e9c5d845fe948fff7943b33b773e4b1285193f72fc4af78ab3f6d758508c38"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/05_model_arms/common_pair_head_contract.md","byte_count":1275,"sha256":"sha256:abcd86b1a5b370adf5b958120ef26eaea7292d32bb05cbae8d221455235712b0"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/05_model_arms/d1_contract.md","byte_count":919,"sha256":"sha256:74188fc49e20e06f488287424ddfd6864261c0d93acbf036e18afc8f8df6d4d0"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/05_model_arms/d2_contract.md","byte_count":892,"sha256":"sha256:a06e7f34933f2fcceb11bfcdfca48143098e294ef12a347afe124fe613a68e0d"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/05_model_arms/d3_contract.md","byte_count":975,"sha256":"sha256:3aac95da5959c4701a579436025004e655919a2e5385126b40453de042e7268c"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/05_model_arms/initialization_contract.md","byte_count":1123,"sha256":"sha256:e2caedf6272cea5a4e7a68d8a9f8f358d7ce0628a499ac296eff50dddbb0972d"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/06_training_protocol_boundary/checkpoint_selection_boundary.md","byte_count":975,"sha256":"sha256:5f2276395dcf487ca5c9de53a56ad4e36f4aa12d68874219210c71f40d387845"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/06_training_protocol_boundary/optimizer_boundary.md","byte_count":1143,"sha256":"sha256:0c335f5a3669cf1dc25ec453031606a858d901366dc1be4290a0b7a6e9e50b24"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/06_training_protocol_boundary/resource_boundary.md","byte_count":1099,"sha256":"sha256:6ea8909702aea04a52026847b949a31d2169cb53bce98c043794022bb2715c7a"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/06_training_protocol_boundary/success_gate_boundary.md","byte_count":1392,"sha256":"sha256:80effa936157c8d89885df94e939cadb27ecd7fe2aec627e11c7c27578303624"},
+    {"path":"stage_04_Local_Causal_Dynamic_Training/07_roadmap/stage04b_to_stage04g.md","byte_count":2256,"sha256":"sha256:16700980201c1b97e552e3e2551d4c41af65dbf7f10ad26e4a3f727603460fb1"}
+  ],
+  "contract_artifact_count": 31,
+  "prohibitions": {
+    "trajectory_generation": true,
+    "optimizer_or_parameter_update": true,
+    "training": true,
+    "rollout": true,
+    "test_creation_or_release": true,
+    "stage01_to_stage03_modification": true,
+    "trainability_claim": true
+  }
+}

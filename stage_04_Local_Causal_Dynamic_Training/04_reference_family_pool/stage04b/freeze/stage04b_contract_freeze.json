@@ -1,0 +1,43 @@
+{
+  "schema_version": "sph-pio-poc.stage04b.contract-freeze.v1",
+  "stage": "Stage 04B — New Dynamic Reference-Family Pool and Lineage Qualification",
+  "freeze_date": "2026-08-05",
+  "freeze_timing": "before_parameter_materialization_analytic_results_topology_dop853_and_trajectory_arrays",
+  "stage04a_verdict": "STAGE04A_TARGET_VERIFIED",
+  "stage04a_verification": [
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/00_stage04a_verification/reports/stage04a_target_verification_report.md",
+      "byte_count": 4224,
+      "sha256": "sha256:c3fb54900182235f4a1791d2fb90335c853693b03310e9fcc914b2f6506682ee"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/00_stage04a_verification/manifests/stage04a_target_verification_manifest.json",
+      "byte_count": 3318,
+      "sha256": "sha256:0cffa51ceda4cc8b098a2a3bd329a1a636d24d239c1f38635b1b92cb4e8fad33"
+    }
+  ],
+  "contract": {
+    "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/contracts/local_causal_reference_family_contract_v0_1.yaml",
+    "byte_count": 8973,
+    "sha256": "sha256:c0d377f7b4b626186fcae076a076b336d774d3bf17c96153b13c4a5f85d0336f"
+  },
+  "frozen_items": [
+    "formula_template_library",
+    "parameter_generation_algorithm",
+    "parameter_salt",
+    "family_ids",
+    "variant_rules",
+    "resolution_rules",
+    "output_time_grid",
+    "analytic_gates",
+    "topology_margin_gate",
+    "role_assignment_algorithm",
+    "role_assignment_salt",
+    "lineage_rules",
+    "sealed_test_access_policy",
+    "DOP853_audit_matrix",
+    "resource_gates"
+  ],
+  "stage04a_conflict": false,
+  "status": "PASS"
+}

@@ -1,0 +1,246 @@
+{
+  "audit_version": "stage02d-state-alignment-1.0.0",
+  "negative_control_status": "EXPECTED_FAIL_RETAINED",
+  "reference_identity": "stage02c_r2_dense_all_pairs_dop853_v1",
+  "rows": [
+    {
+      "evidence": [
+        "../03_dataset/samples/r2_regular_n6__t0.000000.json",
+        "../03_dataset/references/r2_regular_n6__r2_reference.json",
+        "../03_dataset/generation/generation_configuration.yaml"
+      ],
+      "overall_alignment_status": "PASS",
+      "reference_identity": "stage02c_r2_dense_all_pairs_dop853_v1",
+      "same_configuration": {
+        "checks": {
+          "EOS": true,
+          "configuration_hash": true,
+          "kernel": true,
+          "mass": true,
+          "neighbor_contract": true,
+          "smoothing_length": true,
+          "support": true
+        },
+        "configuration_hash": "sha256:6c8f6f8a1f8c1af3ef2800c7b5f1f049f032ba85bfc78c40ee2f38f7eaa72849",
+        "status": "PASS"
+      },
+      "same_graph_contract": {
+        "expected_dense_support_edge_count": 720,
+        "neighbor_graph_hash": "sha256:cc4749569b3de3ca288f140e69bc6e531d75ca40be37b23514e1c23f57f355f6",
+        "observed_edge_count": 720,
+        "status": "PASS",
+        "topology_status": "PASS"
+      },
+      "same_state": {
+        "state_hash": "sha256:e753025687186449fa6d1069cc0b81a3da67eed6e77b70089d173b91eb3c6d15",
+        "status": "PASS"
+      },
+      "same_timestamp": {
+        "comparison_time": 0.0,
+        "status": "PASS",
+        "units": "s"
+      },
+      "sample_id": "r2_regular_n6__t0.000000"
+    },
+    {
+      "evidence": [
+        "../03_dataset/samples/r2_regular_n6__t0.002000.json",
+        "../03_dataset/references/r2_regular_n6__r2_reference.json",
+        "../03_dataset/generation/generation_configuration.yaml"
+      ],
+      "overall_alignment_status": "PASS",
+      "reference_identity": "stage02c_r2_dense_all_pairs_dop853_v1",
+      "same_configuration": {
+        "checks": {
+          "EOS": true,
+          "configuration_hash": true,
+          "kernel": true,
+          "mass": true,
+          "neighbor_contract": true,
+          "smoothing_length": true,
+          "support": true
+        },
+        "configuration_hash": "sha256:6c8f6f8a1f8c1af3ef2800c7b5f1f049f032ba85bfc78c40ee2f38f7eaa72849",
+        "status": "PASS"
+      },
+      "same_graph_contract": {
+        "expected_dense_support_edge_count": 720,
+        "neighbor_graph_hash": "sha256:09be86552c889bde8ba899792decfc6e3d3748fdfdbc2c69a2db6f787b9527d4",
+        "observed_edge_count": 720,
+        "status": "PASS",
+        "topology_status": "PASS"
+      },
+      "same_state": {
+        "state_hash": "sha256:d4d247487ef06833bec830234119bbbef768580475ecc6dede645e9cc548736d",
+        "status": "PASS"
+      },
+      "same_timestamp": {
+        "comparison_time": 0.002,
+        "status": "PASS",
+        "units": "s"
+      },
+      "sample_id": "r2_regular_n6__t0.002000"
+    },
+    {
+      "evidence": [
+        "../03_dataset/samples/r2_jitter05_n8__t0.000000.json",
+        "../03_dataset/references/r2_jitter05_n8__r2_reference.json",
+        "../03_dataset/generation/generation_configuration.yaml"
+      ],
+      "overall_alignment_status": "PASS",
+      "reference_identity": "stage02c_r2_dense_all_pairs_dop853_v1",
+      "same_configuration": {
+        "checks": {
+          "EOS": true,
+          "configuration_hash": true,
+          "kernel": true,
+          "mass": true,
+          "neighbor_contract": true,
+          "smoothing_length": true,
+          "support": true
+        },
+        "configuration_hash": "sha256:68f615946d58897743b29a2bc54a7ac8ad6e59fbeb508bb4be6f9d9e5c18bea5",
+        "status": "PASS"
+      },
+      "same_graph_contract": {
+        "expected_dense_support_edge_count": 1280,
+        "neighbor_graph_hash": "sha256:57a4b0053f2f80985d32755e601449110a1f129b0babe9410008e3a146109cb0",
+        "observed_edge_count": 1280,
+        "status": "PASS",
+        "topology_status": "PASS"
+      },
+      "same_state": {
+        "state_hash": "sha256:bb231a1eb14ae42f81f37500f2f390aa807671e47788847e1f19b29d5289f5d6",
+        "status": "PASS"
+      },
+      "same_timestamp": {
+        "comparison_time": 0.0,
+        "status": "PASS",
+        "units": "s"
+      },
+      "sample_id": "r2_jitter05_n8__t0.000000"
+    },
+    {
+      "evidence": [
+        "../03_dataset/samples/r2_jitter05_n8__t0.002000.json",
+        "../03_dataset/references/r2_jitter05_n8__r2_reference.json",
+        "../03_dataset/generation/generation_configuration.yaml"
+      ],
+      "overall_alignment_status": "PASS",
+      "reference_identity": "stage02c_r2_dense_all_pairs_dop853_v1",
+      "same_configuration": {
+        "checks": {
+          "EOS": true,
+          "configuration_hash": true,
+          "kernel": true,
+          "mass": true,
+          "neighbor_contract": true,
+          "smoothing_length": true,
+          "support": true
+        },
+        "configuration_hash": "sha256:68f615946d58897743b29a2bc54a7ac8ad6e59fbeb508bb4be6f9d9e5c18bea5",
+        "status": "PASS"
+      },
+      "same_graph_contract": {
+        "expected_dense_support_edge_count": 1280,
+        "neighbor_graph_hash": "sha256:3fa4e73ce4c5beaec0672aad8823d64c17a529368a6998692795b67457056084",
+        "observed_edge_count": 1280,
+        "status": "PASS",
+        "topology_status": "PASS"
+      },
+      "same_state": {
+        "state_hash": "sha256:fe38697eea3e8fbf2f61d115fbd9f3a17d139c99cf7b750c2bdba575b43f5068",
+        "status": "PASS"
+      },
+      "same_timestamp": {
+        "comparison_time": 0.002,
+        "status": "PASS",
+        "units": "s"
+      },
+      "sample_id": "r2_jitter05_n8__t0.002000"
+    },
+    {
+      "evidence": [
+        "../03_dataset/samples/r2_duplicate_edge_negative_n6__t0.000000.json",
+        "../03_dataset/references/r2_duplicate_edge_negative_n6__r2_reference.json",
+        "../03_dataset/generation/generation_configuration.yaml"
+      ],
+      "overall_alignment_status": "FAIL",
+      "reference_identity": "stage02c_r2_dense_all_pairs_dop853_v1",
+      "same_configuration": {
+        "checks": {
+          "EOS": true,
+          "configuration_hash": true,
+          "kernel": true,
+          "mass": true,
+          "neighbor_contract": true,
+          "smoothing_length": true,
+          "support": true
+        },
+        "configuration_hash": "sha256:75f0826a30e08d37d60dcf7b6b23a68db95052692369b92e5c7e31b3bfeb6f28",
+        "status": "PASS"
+      },
+      "same_graph_contract": {
+        "expected_dense_support_edge_count": 720,
+        "neighbor_graph_hash": "sha256:0b008d9e3d8e64b4512bfac3f680b84031854739ba9f8fe2e5d941d8e26929b1",
+        "observed_edge_count": 721,
+        "status": "FAIL",
+        "topology_status": "FAIL"
+      },
+      "same_state": {
+        "state_hash": "sha256:e753025687186449fa6d1069cc0b81a3da67eed6e77b70089d173b91eb3c6d15",
+        "status": "PASS"
+      },
+      "same_timestamp": {
+        "comparison_time": 0.0,
+        "status": "PASS",
+        "units": "s"
+      },
+      "sample_id": "r2_duplicate_edge_negative_n6__t0.000000"
+    },
+    {
+      "evidence": [
+        "../03_dataset/samples/r2_duplicate_edge_negative_n6__t0.002000.json",
+        "../03_dataset/references/r2_duplicate_edge_negative_n6__r2_reference.json",
+        "../03_dataset/generation/generation_configuration.yaml"
+      ],
+      "overall_alignment_status": "FAIL",
+      "reference_identity": "stage02c_r2_dense_all_pairs_dop853_v1",
+      "same_configuration": {
+        "checks": {
+          "EOS": true,
+          "configuration_hash": true,
+          "kernel": true,
+          "mass": true,
+          "neighbor_contract": true,
+          "smoothing_length": true,
+          "support": true
+        },
+        "configuration_hash": "sha256:75f0826a30e08d37d60dcf7b6b23a68db95052692369b92e5c7e31b3bfeb6f28",
+        "status": "PASS"
+      },
+      "same_graph_contract": {
+        "expected_dense_support_edge_count": 720,
+        "neighbor_graph_hash": "sha256:917ec9be3abc23e15e78c6b2726a9389725fc341633f3f7d8857c6360f549c18",
+        "observed_edge_count": 721,
+        "status": "FAIL",
+        "topology_status": "FAIL"
+      },
+      "same_state": {
+        "state_hash": "sha256:d4d247487ef06833bec830234119bbbef768580475ecc6dede645e9cc548736d",
+        "status": "PASS"
+      },
+      "same_timestamp": {
+        "comparison_time": 0.002,
+        "status": "PASS",
+        "units": "s"
+      },
+      "sample_id": "r2_duplicate_edge_negative_n6__t0.002000"
+    }
+  ],
+  "summary": {
+    "FAIL": 2,
+    "PASS": 4
+  },
+  "topology_qualified_alignment_status": "PASS"
+}

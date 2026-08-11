@@ -1,0 +1,71 @@
+{
+  "pass": true,
+  "rows": [
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/contracts/optimizer_aligned_defect_gradient_contract_v0_1.yaml",
+      "sha256": "sha256:829adb1d62c1bd8310d51f8b59b91c78d959646a4185fcfb7458580979382589",
+      "size_bytes": 4840
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05c_probe_manifest.json",
+      "sha256": "sha256:bf823f4c14c377e48669783591ea39116000d8e952fcde0288272ecc13d139d1",
+      "size_bytes": 1776
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05c_gradient_manifest.json",
+      "sha256": "sha256:b1e1489530585eb607e4d25a6da2fb7e3b1b324e191195cac20b9552ecd3521d",
+      "size_bytes": 2384
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05c_local_descent_manifest.json",
+      "sha256": "sha256:34d39eff46f04cea02ae311aaee735cc86ef5291c668b7b86ee93d4ab11cab0a",
+      "size_bytes": 279
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/model_instantiation/preregistered_model_identities.json",
+      "sha256": "sha256:25550c4694c27a579eff8a3508c21eb4451dcade5143440e7f58789e6d4ea263",
+      "size_bytes": 22388
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/parameter_groups/preregistered_probe_plan.json",
+      "sha256": "sha256:9aad2c87d819618310726ae156246091b3a3fd6156c01d5d940311b90904675d",
+      "size_bytes": 775650
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/full_gradient/full_gradient_evidence.json",
+      "sha256": "sha256:0616dfcd279210fabb6808b0788ad17a75cd2d44c8436ec0bbde4a00f7862565",
+      "size_bytes": 359
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/reverse_jvp/reverse_jvp_evidence.json",
+      "sha256": "sha256:59c53e1dac50c111a5afd26932f0197fcafe9159f4c6289226b65cf60b6b482e",
+      "size_bytes": 136
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/coordinate_fd/coordinate_and_block_fd_evidence.json",
+      "sha256": "sha256:4e97c2cd0089c45a0ec463bbf71e449572352aa05fa34433ea49aa8d27180020",
+      "size_bytes": 1604
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/structure_and_safety/structure_and_safety_evidence.json",
+      "sha256": "sha256:b278c87fe42e1e67252fcff766730e10fefdcf351115e32b48c4bf63aa7ad54b",
+      "size_bytes": 231
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/access_control/end_allowlist_denial_audit.json",
+      "sha256": "sha256:db3926774c310865bc9dd6c905029bef1a40f031f7e55c50564e5e1a48d2f1f0",
+      "size_bytes": 2108
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/resources/resource_audit.json",
+      "sha256": "sha256:cb688db8ee0054b4a0f01d7a52e4e28a4ad8314d2a3d0cee1ae7b65d94646d75",
+      "size_bytes": 3215
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05c_final_manifest.json",
+      "sha256": "sha256:d4f1eb706d7491eb56bb5298837ff9026b279bc44d95e1868b9823e1f8e60882",
+      "size_bytes": 47031
+    }
+  ],
+  "schema": "sph-pio-poc.stage05cr.input-freeze.v1"
+}

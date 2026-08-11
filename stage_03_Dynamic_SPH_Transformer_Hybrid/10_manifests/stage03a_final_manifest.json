@@ -1,0 +1,64 @@
+{
+  "manifest_version": "stage03a-final-1.0.0",
+  "stage": "Stage 03A — Dynamic Hybrid Solver Specification and V&V Contract",
+  "completion_date": "2026-08-04",
+  "final_status": "DYNAMIC_HYBRID_SOLVER_SPECIFICATION_COMPLETE",
+  "artifact_count_including_this_manifest": 55,
+  "entrypoint": {
+    "path": "README.md",
+    "sha256": "sha256:2b50e89e9dfddb4082dd67013a7fc21e4d2c9390f4150c6224f7ac5ca2387ab7"
+  },
+  "manifests": [
+    {"path":"10_manifests/stage03a_input_freeze_manifest.json","sha256":"sha256:4ea52ba9503fed2ac4bb8cfd945f57302357beee7abb88bbacc084956032b1e4"},
+    {"path":"10_manifests/stage03a_contract_manifest.json","sha256":"sha256:612e0a8799ba33ec9baa2312a310f8852595434b74b48b1a5ad77e997c4cc2e7"}
+  ],
+  "reports": [
+    {"path":"09_reports/stage03a_dynamic_solver_specification.md","sha256":"sha256:65e1779d7d7cb0a7e5588914212997a645a121187d177a3217927ab19516678f"},
+    {"path":"09_reports/stage03a_temporal_architecture_report.md","sha256":"sha256:a2100cced8a87d7de14c5d613a6ac0e98bd9cfd9b6fdb248538ed5f793d8c58a"},
+    {"path":"09_reports/stage03a_time_integration_report.md","sha256":"sha256:1bc1cc3913ed08078c1562b00afef4f59f3bb275b175e1768fa266c8cc0ade20"},
+    {"path":"09_reports/stage03a_reference_hierarchy_report.md","sha256":"sha256:ef2a1c315d367654da54f86b62b07cc4a0e0395a38cb108d1d7af0192322a083"},
+    {"path":"09_reports/stage03a_rollout_vv_report.md","sha256":"sha256:67e51c8632e3e60407e174adfabf9a0695bba2966c59331342e8280bc0b38958"},
+    {"path":"09_reports/stage03a_final_report.md","sha256":"sha256:c4978103f9c354b06132733136eee69b28bc6c77868172d9eddd75f04cf4ebe1"}
+  ],
+  "completion_checks": {
+    "governing_equations_complete": true,
+    "correction_scope_complete": true,
+    "causal_transformer_contract_complete": true,
+    "baseline_arm_matrix_complete": true,
+    "rk2_stage_semantics_complete": true,
+    "graph_history_semantics_complete": true,
+    "topology_differentiability_boundary_complete": true,
+    "zero_correction_contract_complete": true,
+    "reference_hierarchy_complete": true,
+    "trajectory_leakage_contract_complete": true,
+    "rollout_loss_boundary_complete": true,
+    "vv_levels_d0_through_d8_complete": true,
+    "resource_boundary_complete": true,
+    "historical_freeze_hash_checks": "20/20_PASS",
+    "contract_hash_checks": "45/45_PASS",
+    "historical_files_unchanged": true,
+    "status_alias_conflicts": 0,
+    "required_files_present": "55/55"
+  },
+  "execution_absence": {
+    "dynamic_model_implementation_count": 0,
+    "trajectory_payload_count": 0,
+    "optimizer_count": 0,
+    "training_run_count": 0,
+    "rollout_execution_count": 0,
+    "solver_in_the_loop_execution_count": 0,
+    "performance_claim_count": 0
+  },
+  "historical_checkpoint_policy": {
+    "role": "historical_static_diagnostic_only",
+    "dynamic_initialization_permitted": false,
+    "checkpoint_files_copied_into_stage03": 0
+  },
+  "next_stage": {
+    "authorization": "LIMITED",
+    "stage": "Stage 03B — Dynamic Reference Trajectory Qualification",
+    "implementation_authorized": false,
+    "training_authorized": false,
+    "rollout_authorized": false
+  }
+}

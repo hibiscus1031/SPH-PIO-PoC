@@ -1,0 +1,105 @@
+{
+  "allocation_policy": "edge_local_no_global_all_pairs_attention",
+  "audit_version": "stage02k-resource-1.0.0",
+  "dataset_graph_sizes_N_E": [
+    [
+      144,
+      1440
+    ],
+    [
+      256,
+      1536
+    ],
+    [
+      256,
+      2560
+    ],
+    [
+      256,
+      3072
+    ],
+    [
+      400,
+      4000
+    ]
+  ],
+  "empirical_memory_interpretation": "observed bounded live outputs and edge-shaped intermediates are consistent with O(E*d); no N-by-N allocation exists",
+  "hard_gate_device": "CPU_float64",
+  "optional_MPS_smoke_executed": false,
+  "rows": [
+    {
+      "RSS_after_bytes": 480411648,
+      "RSS_before_bytes": 480411648,
+      "RSS_sampling_interval_seconds": 0.002,
+      "architecture": "K1",
+      "dense_N_by_N_tensor": false,
+      "device": "CPU",
+      "dtype": "float64",
+      "largest_pair_hidden_shape": [
+        4000,
+        32
+      ],
+      "live_output_tensor_retention_count": 0,
+      "live_output_tensor_retention_sequence": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "monotonic_live_tensor_retention": false,
+      "node_count": 400,
+      "parameter_count": 2754,
+      "peak_RSS_bytes_sampled": 480444416,
+      "peak_RSS_delta_bytes_sampled": 32768,
+      "repeated_forward_backward_count": 8,
+      "runtime_seconds_max": 0.00527600001078099,
+      "runtime_seconds_median": 0.004973646078724414,
+      "scaling_model": "O(E*d)",
+      "status": "PASS",
+      "undirected_edge_count": 4000
+    },
+    {
+      "RSS_after_bytes": 501268480,
+      "RSS_before_bytes": 480509952,
+      "RSS_sampling_interval_seconds": 0.002,
+      "architecture": "K2",
+      "dense_N_by_N_tensor": false,
+      "device": "CPU",
+      "dtype": "float64",
+      "largest_pair_hidden_shape": [
+        4000,
+        81
+      ],
+      "live_output_tensor_retention_count": 0,
+      "live_output_tensor_retention_sequence": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "monotonic_live_tensor_retention": false,
+      "node_count": 400,
+      "parameter_count": 32586,
+      "peak_RSS_bytes_sampled": 501301248,
+      "peak_RSS_delta_bytes_sampled": 20791296,
+      "repeated_forward_backward_count": 8,
+      "runtime_seconds_max": 0.027162666083313525,
+      "runtime_seconds_median": 0.024943457974586636,
+      "scaling_model": "O(E*d)",
+      "status": "PASS",
+      "undirected_edge_count": 4000
+    }
+  ],
+  "status_by_architecture": {
+    "K1": "PASS",
+    "K2": "PASS"
+  }
+}

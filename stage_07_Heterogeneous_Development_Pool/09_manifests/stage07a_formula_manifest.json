@@ -1,0 +1,291 @@
+{
+  "complete": 12,
+  "formulas": [
+    {
+      "formula_sha256": "sha256:a976a277a30a126ef4f14cf8d0c1d3750211eb51240ded1ae9514b84c7c013a4",
+      "generator_seed_sha256": "sha256:cdcd6c44f78280f56fb812e55a929e6848b4ada8808e5aec2c9b8c7eff7b913c",
+      "lineage_id": "HET_S1_01",
+      "material_map": "x=(X,Y)+sum A_m(cos(theta_m)e_L+sin(theta_m)e_T)sin(p_m xi+q_m eta+phi_m)g_m(tau)",
+      "mode_count": 2,
+      "role": "FRESH_VALIDATION_V2",
+      "stratum": "H1",
+      "wavevectors": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "formula_sha256": "sha256:3b0c7af2788104c72014b19eab8f3ffec433541aa0c7299d57062b79db4bd07b",
+      "generator_seed_sha256": "sha256:0b481292ba34d92caa51e2389adb07db8aa66913b1b3194317333f54cd1e77cd",
+      "lineage_id": "HET_S1_02",
+      "material_map": "x=(X,Y)+sum A_m(cos(theta_m)e_L+sin(theta_m)e_T)sin(p_m xi+q_m eta+phi_m)g_m(tau)",
+      "mode_count": 2,
+      "role": "NEW_TRAIN_V2",
+      "stratum": "H1",
+      "wavevectors": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "formula_sha256": "sha256:a65c202769824a9fbc4f50af5ba7ce9946c6f1f0f860e3616551f65106674e39",
+      "generator_seed_sha256": "sha256:5f6c5b4a45245ccc5dd5e932a4e22237d437b9c1546ec9f13e9022f6d695e468",
+      "lineage_id": "HET_S1_03",
+      "material_map": "x=(X,Y)+sum A_m(cos(theta_m)e_L+sin(theta_m)e_T)sin(p_m xi+q_m eta+phi_m)g_m(tau)",
+      "mode_count": 2,
+      "role": "NEW_TRAIN_V2",
+      "stratum": "H1",
+      "wavevectors": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "formula_sha256": "sha256:dbc9da2ab0f91518ec2621320a32525d6329f7f98564566e38b07bf1d692047f",
+      "generator_seed_sha256": "sha256:9b50cf6bdad93b96cf6ef015193c3eac46180456028e2940c4088f438de14b20",
+      "lineage_id": "HET_S2_01",
+      "material_map": "x=(X,Y)+sum A_m(cos(theta_m)e_L+sin(theta_m)e_T)sin(p_m xi+q_m eta+phi_m)g_m(tau)",
+      "mode_count": 3,
+      "role": "NEW_TRAIN_V2",
+      "stratum": "H2",
+      "wavevectors": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "formula_sha256": "sha256:8097af5f32c857c4935450c41578d2e33777a2bca1e5dfe27d291b6c33ea6ab5",
+      "generator_seed_sha256": "sha256:830262a5833dcfce2f0b7f08c83157e4a7f87cd93b66a6c227a061a1846b1d85",
+      "lineage_id": "HET_S2_02",
+      "material_map": "x=(X,Y)+sum A_m(cos(theta_m)e_L+sin(theta_m)e_T)sin(p_m xi+q_m eta+phi_m)g_m(tau)",
+      "mode_count": 3,
+      "role": "FRESH_VALIDATION_V2",
+      "stratum": "H2",
+      "wavevectors": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "formula_sha256": "sha256:b1fde09e48ac23081f4a3641c82d102f4f32350734a13260d15455d2aac45467",
+      "generator_seed_sha256": "sha256:ac5a8a60e7c45dc7864ca1a1600ce59c2eeef7bebe0debd664d09e443428dbea",
+      "lineage_id": "HET_S2_03",
+      "material_map": "x=(X,Y)+sum A_m(cos(theta_m)e_L+sin(theta_m)e_T)sin(p_m xi+q_m eta+phi_m)g_m(tau)",
+      "mode_count": 3,
+      "role": "NEW_TRAIN_V2",
+      "stratum": "H2",
+      "wavevectors": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "formula_sha256": "sha256:5412fd4cff5158934e00dd3ffac87874419570a7d20b8189cddac24ff0118664",
+      "generator_seed_sha256": "sha256:eeec1b9c25fe9170ad052796808b0bca62b29faca953b4f8bac424913ac93ad5",
+      "lineage_id": "HET_S3_01",
+      "material_map": "x=(X,Y)+sum A_m(cos(theta_m)e_L+sin(theta_m)e_T)sin(p_m xi+q_m eta+phi_m)g_m(tau)",
+      "mode_count": 3,
+      "role": "NEW_TRAIN_V2",
+      "stratum": "H3",
+      "wavevectors": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "formula_sha256": "sha256:087f71be0095fab92e7521af4aa54e8c9d5f67594937799489f09dc803a4b74e",
+      "generator_seed_sha256": "sha256:9704833e9f59d831ce6a90477a2bac1edee828ebdb009e4a8c7d3d20d64a863c",
+      "lineage_id": "HET_S3_02",
+      "material_map": "x=(X,Y)+sum A_m(cos(theta_m)e_L+sin(theta_m)e_T)sin(p_m xi+q_m eta+phi_m)g_m(tau)",
+      "mode_count": 3,
+      "role": "NEW_TRAIN_V2",
+      "stratum": "H3",
+      "wavevectors": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "formula_sha256": "sha256:99f422f646d55a5a67bd223817f16f8887b1664dd22102b010f809f3d5bf2ef7",
+      "generator_seed_sha256": "sha256:36acb6175b38473a5edd521f24c8ac2dcb416498786ba6ff2ee74030e040ef94",
+      "lineage_id": "HET_S3_03",
+      "material_map": "x=(X,Y)+sum A_m(cos(theta_m)e_L+sin(theta_m)e_T)sin(p_m xi+q_m eta+phi_m)g_m(tau)",
+      "mode_count": 3,
+      "role": "FRESH_VALIDATION_V2",
+      "stratum": "H3",
+      "wavevectors": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "formula_sha256": "sha256:a9fdfd49e6a89e601ef0b4efbffa6543524a5293ceeb12ab77296320a6888dc6",
+      "generator_seed_sha256": "sha256:dc88672501292336f929e0e15294e06080fc3982114a6ec298236cd9c20524a1",
+      "lineage_id": "HET_S4_01",
+      "material_map": "x=(X,Y)+sum A_m(cos(theta_m)e_L+sin(theta_m)e_T)sin(p_m xi+q_m eta+phi_m)g_m(tau)",
+      "mode_count": 4,
+      "role": "NEW_TRAIN_V2",
+      "stratum": "H4",
+      "wavevectors": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          -1
+        ]
+      ]
+    },
+    {
+      "formula_sha256": "sha256:fc84dc8dd7845181c668f140a64a35b1d7cd1dbb436ca6770fec6f0e83ee8d96",
+      "generator_seed_sha256": "sha256:28250cbcd627ea752b7ec98e2456debfd80595a9571cfa34ff88031d805d27e8",
+      "lineage_id": "HET_S4_02",
+      "material_map": "x=(X,Y)+sum A_m(cos(theta_m)e_L+sin(theta_m)e_T)sin(p_m xi+q_m eta+phi_m)g_m(tau)",
+      "mode_count": 4,
+      "role": "NEW_TRAIN_V2",
+      "stratum": "H4",
+      "wavevectors": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          -1
+        ]
+      ]
+    },
+    {
+      "formula_sha256": "sha256:7d2d316e9cd29b401a69ce1300c01bdb4921bff801ac18ff9f8620684157d90b",
+      "generator_seed_sha256": "sha256:9c110e289db7ca7f500ef323cceaf19e646a34ed976ce24f0449685dbcd18186",
+      "lineage_id": "HET_S4_03",
+      "material_map": "x=(X,Y)+sum A_m(cos(theta_m)e_L+sin(theta_m)e_T)sin(p_m xi+q_m eta+phi_m)g_m(tau)",
+      "mode_count": 4,
+      "role": "FRESH_VALIDATION_V2",
+      "stratum": "H4",
+      "wavevectors": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          -1
+        ]
+      ]
+    }
+  ],
+  "fresh_validation_parameters": {
+    "location": "FRESH_VALIDATION_SEAL",
+    "sha256": "sha256:cbb7ffd88b3bffa786b1e9fa86760e10ca083843a1f7649cb6cb6aad8a70ddde"
+  },
+  "required": 12,
+  "train_parameters": {
+    "bytes": 12628,
+    "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/parameter_generation/new_train_parameters.json",
+    "sha256": "sha256:11c748f907fe0f16ca57c6eb3bce403a903697680c57bad68ce38495f0696412"
+  }
+}

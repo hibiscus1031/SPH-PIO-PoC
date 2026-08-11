@@ -1,0 +1,25 @@
+{
+  "pass": true,
+  "qualification": {
+    "bytes": 590,
+    "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/validation_qualification/validation_target_qualification.json",
+    "sha256": "sha256:f8c503780c2cea9c6b672a51064f5cc9004ed890dd1dc2a892e0b2fcdfe0e665"
+  },
+  "record_count": 256,
+  "release": {
+    "bytes": 19026,
+    "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/fresh_validation_release/fresh_validation_release_manifest.json",
+    "sha256": "sha256:fdad49860a1c2e37d010402e2a7e03fb53db66d5763559a8cf2f2029c950639a"
+  },
+  "schema": "stage07c-validation-manifest-v1",
+  "targets": {
+    "bytes": 156522,
+    "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/manifests/validation_target_manifest.json",
+    "sha256": "sha256:925852d9d3738b6168ae3fd4fb36d09432cf4361a595b38666356035d77b9bf5"
+  },
+  "zero_baseline": {
+    "bytes": 564,
+    "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/validation_qualification/fresh_validation_zero_baseline.json",
+    "sha256": "sha256:4c38b420518c268e04ca95da9c719feca29313a1d02e4832260537fc6b33f24a"
+  }
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "figure": "S05",
+    "panel": "a-f",
+    "scientific_claim": "The complete fixed-topology 360-probe matrix retains every historical pass and failure.",
+    "source_file": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/failure_matrix/stage03d_complete_360_row_matrix.json",
+    "source_hash": "sha256:a0b925593f3cda97be6826658f308e05635da4dec5e2553dd56bc2aaa39b7991",
+    "source_field": "rows[*] and summary.axis_counts",
+    "confirmatory_or_diagnostic": "DIAGNOSTIC_ONLY",
+    "transformation": "Source-order heatmaps; log10 display; frozen summary bars.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS05_stage03_360_probe.svg; figS05_stage03_360_probe.pdf; figS05_stage03_360_probe.png"
+  }
+]

@@ -1,0 +1,116 @@
+{
+  "D0_pass_count": 384,
+  "bounded": {
+    "family_balanced_mean": 2.1902197853523936e-15,
+    "gates": {
+      "lineages": true,
+      "maximum": true,
+      "mean": true,
+      "p95": true
+    },
+    "lineage_means": {
+      "LCDF_01": 2.0703556215104998e-15,
+      "LCDF_04": 2.0485577610347882e-15,
+      "LCDF_05": 1.9002232571077213e-15,
+      "LCDF_06": 3.1697346607333593e-15,
+      "LCDF_07": 2.263162082274567e-15,
+      "LCDF_08": 1.6892853294534248e-15
+    },
+    "maximum": 4.9111171561006524e-15,
+    "percentile95": 3.493458308747123e-15
+  },
+  "compatibility": {
+    "family_balanced_mean": 2.2255861861821514e-30,
+    "gates": {
+      "lineages": true,
+      "maximum": true,
+      "mean": true,
+      "p95": true,
+      "zero_force": true
+    },
+    "lineage_means": {
+      "LCDF_01": 4.038342882961502e-30,
+      "LCDF_04": 2.4494769289949726e-31,
+      "LCDF_05": 4.092997135672358e-32,
+      "LCDF_06": 1.2652336270447892e-32,
+      "LCDF_07": 7.589078582933514e-30,
+      "LCDF_08": 1.4275656506712226e-30
+    },
+    "maximum": 1.335013486606681e-28,
+    "percentile95": 9.960919607894301e-30,
+    "zero_force_max": 8.317482328836778e-16
+  },
+  "defect_complete_count": 384,
+  "intermediate_artifacts": [
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/defect_construction/lcdf_01_variant_low_n8_formal_defects.npz",
+      "sha256": "sha256:d047a8b6e1b5e2378621d6ace4fb0ecc9515ae731959c6cece28a92bc2b2425d"
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/defect_construction/lcdf_01_variant_main_n8_formal_defects.npz",
+      "sha256": "sha256:153601a3a8a82fd02983048c8b26c19a77ade946f891968fb1e3c616bb7a660d"
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/defect_construction/lcdf_04_variant_low_n8_formal_defects.npz",
+      "sha256": "sha256:a4d348a78030365faa1b7f87c70196c3be0c08a6a891fe0c3ebd2dabf4d8ec76"
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/defect_construction/lcdf_04_variant_main_n8_formal_defects.npz",
+      "sha256": "sha256:4191c2ecb5392807b11f6435f8b381dde7659eef6d33d3011aa016c8bc3d0076"
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/defect_construction/lcdf_05_variant_low_n8_formal_defects.npz",
+      "sha256": "sha256:9ec13ad485cd99f62aed40cf8fffdc34ead225d35538b71e28fa7776f6074739"
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/defect_construction/lcdf_05_variant_main_n8_formal_defects.npz",
+      "sha256": "sha256:7093a9f6ddb7fc3f3d577f7af96fa8626bef8b603508a396a7e0abdc5e16bbf3"
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/defect_construction/lcdf_06_variant_low_n8_formal_defects.npz",
+      "sha256": "sha256:66685a3ed2e6d0e2db350bb85fff35f8a2c9a5defd8dcad9f1a583658b5624fc"
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/defect_construction/lcdf_06_variant_main_n8_formal_defects.npz",
+      "sha256": "sha256:f7d4b93cc40feed41dc58eea0c26666260cb8dfd1fc55fb1b0cc64cd7fa5990b"
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/defect_construction/lcdf_07_variant_low_n8_formal_defects.npz",
+      "sha256": "sha256:2f89dd7d445cef4580f4407e29320c19a99b735374d137cf68d74561c84f0471"
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/defect_construction/lcdf_07_variant_main_n8_formal_defects.npz",
+      "sha256": "sha256:3f9645e066f1cdc31350cb3c281cf8b7e383dd057e819195e427a0d430f98887"
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/defect_construction/lcdf_08_variant_low_n8_formal_defects.npz",
+      "sha256": "sha256:d463cd2e963228b6bcbe1c24298716e97fbaae02b6ca037474623311d9e93c70"
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/defect_construction/lcdf_08_variant_main_n8_formal_defects.npz",
+      "sha256": "sha256:33358a9a9ecf0ead643fa43515fb272101b49037b30d32fbfc1d8f84b531b750"
+    }
+  ],
+  "origin_count": 384,
+  "schema": "sph-pio-poc.stage05b.defect-manifest.v1",
+  "signal_bearing_count": 384,
+  "unbounded": {
+    "family_balanced_mean": 2.1902197853523936e-15,
+    "gates": {
+      "lineages": true,
+      "maximum": true,
+      "mean": true,
+      "p95": true
+    },
+    "lineage_means": {
+      "LCDF_01": 2.0703556215104998e-15,
+      "LCDF_04": 2.0485577610347882e-15,
+      "LCDF_05": 1.9002232571077213e-15,
+      "LCDF_06": 3.1697346607333593e-15,
+      "LCDF_07": 2.263162082274567e-15,
+      "LCDF_08": 1.6892853294534248e-15
+    },
+    "maximum": 4.9111171561006524e-15,
+    "percentile95": 3.493458308747123e-15
+  }
+}

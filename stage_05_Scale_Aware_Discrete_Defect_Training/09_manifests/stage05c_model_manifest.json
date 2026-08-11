@@ -1,0 +1,467 @@
+{
+  "architecture": {
+    "D1": {
+      "architecture_sha256": "sha256:a43e495a2b35f18c04baa504c78e6d88d0f42f2ce47231a2b6b965b5f4eb88ca",
+      "parameter_count": 5762,
+      "parameter_schema": [
+        {
+          "count": 320,
+          "name": "encoder.linear_1.weight",
+          "shape": [
+            32,
+            10
+          ]
+        },
+        {
+          "count": 32,
+          "name": "encoder.linear_1.bias",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "count": 1024,
+          "name": "encoder.linear_2.weight",
+          "shape": [
+            32,
+            32
+          ]
+        },
+        {
+          "count": 32,
+          "name": "encoder.linear_2.bias",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "count": 3200,
+          "name": "pair_head.hidden_1.weight",
+          "shape": [
+            32,
+            100
+          ]
+        },
+        {
+          "count": 32,
+          "name": "pair_head.hidden_1.bias",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "count": 1024,
+          "name": "pair_head.hidden_2.weight",
+          "shape": [
+            32,
+            32
+          ]
+        },
+        {
+          "count": 32,
+          "name": "pair_head.hidden_2.bias",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "count": 64,
+          "name": "pair_head.output.weight",
+          "shape": [
+            2,
+            32
+          ]
+        },
+        {
+          "count": 2,
+          "name": "pair_head.output.bias",
+          "shape": [
+            2
+          ]
+        }
+      ]
+    },
+    "D2": {
+      "architecture_sha256": "sha256:a3fe06d0abf59e9fad0d37d3027ec24eb9a266b0abf9137f1288a619ede8022a",
+      "parameter_count": 12098,
+      "parameter_schema": [
+        {
+          "count": 320,
+          "name": "encoder.linear_1.weight",
+          "shape": [
+            32,
+            10
+          ]
+        },
+        {
+          "count": 32,
+          "name": "encoder.linear_1.bias",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "count": 1024,
+          "name": "encoder.linear_2.weight",
+          "shape": [
+            32,
+            32
+          ]
+        },
+        {
+          "count": 32,
+          "name": "encoder.linear_2.bias",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "count": 3072,
+          "name": "recurrent.weight_ih",
+          "shape": [
+            96,
+            32
+          ]
+        },
+        {
+          "count": 3072,
+          "name": "recurrent.weight_hh",
+          "shape": [
+            96,
+            32
+          ]
+        },
+        {
+          "count": 96,
+          "name": "recurrent.bias_ih",
+          "shape": [
+            96
+          ]
+        },
+        {
+          "count": 96,
+          "name": "recurrent.bias_hh",
+          "shape": [
+            96
+          ]
+        },
+        {
+          "count": 3200,
+          "name": "pair_head.hidden_1.weight",
+          "shape": [
+            32,
+            100
+          ]
+        },
+        {
+          "count": 32,
+          "name": "pair_head.hidden_1.bias",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "count": 1024,
+          "name": "pair_head.hidden_2.weight",
+          "shape": [
+            32,
+            32
+          ]
+        },
+        {
+          "count": 32,
+          "name": "pair_head.hidden_2.bias",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "count": 64,
+          "name": "pair_head.output.weight",
+          "shape": [
+            2,
+            32
+          ]
+        },
+        {
+          "count": 2,
+          "name": "pair_head.output.bias",
+          "shape": [
+            2
+          ]
+        }
+      ]
+    },
+    "D3": {
+      "architecture_sha256": "sha256:4fbda0bc38386c5d46985b10a6186ba835472452d2ad0ace204170eacfa95eb1",
+      "parameter_count": 22978,
+      "parameter_schema": [
+        {
+          "count": 128,
+          "name": "relative_offset_embedding",
+          "shape": [
+            4,
+            32
+          ]
+        },
+        {
+          "count": 320,
+          "name": "encoder.linear_1.weight",
+          "shape": [
+            32,
+            10
+          ]
+        },
+        {
+          "count": 32,
+          "name": "encoder.linear_1.bias",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "count": 1024,
+          "name": "encoder.linear_2.weight",
+          "shape": [
+            32,
+            32
+          ]
+        },
+        {
+          "count": 32,
+          "name": "encoder.linear_2.bias",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "count": 3072,
+          "name": "temporal.layers.0.self_attn.in_proj_weight",
+          "shape": [
+            96,
+            32
+          ]
+        },
+        {
+          "count": 96,
+          "name": "temporal.layers.0.self_attn.in_proj_bias",
+          "shape": [
+            96
+          ]
+        },
+        {
+          "count": 1024,
+          "name": "temporal.layers.0.self_attn.out_proj.weight",
+          "shape": [
+            32,
+            32
+          ]
+        },
+        {
+          "count": 32,
+          "name": "temporal.layers.0.self_attn.out_proj.bias",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "count": 2048,
+          "name": "temporal.layers.0.linear1.weight",
+          "shape": [
+            64,
+            32
+          ]
+        },
+        {
+          "count": 64,
+          "name": "temporal.layers.0.linear1.bias",
+          "shape": [
+            64
+          ]
+        },
+        {
+          "count": 2048,
+          "name": "temporal.layers.0.linear2.weight",
+          "shape": [
+            32,
+            64
+          ]
+        },
+        {
+          "count": 32,
+          "name": "temporal.layers.0.linear2.bias",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "count": 32,
+          "name": "temporal.layers.0.norm1.weight",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "count": 32,
+          "name": "temporal.layers.0.norm1.bias",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "count": 32,
+          "name": "temporal.layers.0.norm2.weight",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "count": 32,
+          "name": "temporal.layers.0.norm2.bias",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "count": 3072,
+          "name": "temporal.layers.1.self_attn.in_proj_weight",
+          "shape": [
+            96,
+            32
+          ]
+        },
+        {
+          "count": 96,
+          "name": "temporal.layers.1.self_attn.in_proj_bias",
+          "shape": [
+            96
+          ]
+        },
+        {
+          "count": 1024,
+          "name": "temporal.layers.1.self_attn.out_proj.weight",
+          "shape": [
+            32,
+            32
+          ]
+        },
+        {
+          "count": 32,
+          "name": "temporal.layers.1.self_attn.out_proj.bias",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "count": 2048,
+          "name": "temporal.layers.1.linear1.weight",
+          "shape": [
+            64,
+            32
+          ]
+        },
+        {
+          "count": 64,
+          "name": "temporal.layers.1.linear1.bias",
+          "shape": [
+            64
+          ]
+        },
+        {
+          "count": 2048,
+          "name": "temporal.layers.1.linear2.weight",
+          "shape": [
+            32,
+            64
+          ]
+        },
+        {
+          "count": 32,
+          "name": "temporal.layers.1.linear2.bias",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "count": 32,
+          "name": "temporal.layers.1.norm1.weight",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "count": 32,
+          "name": "temporal.layers.1.norm1.bias",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "count": 32,
+          "name": "temporal.layers.1.norm2.weight",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "count": 32,
+          "name": "temporal.layers.1.norm2.bias",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "count": 3200,
+          "name": "pair_head.hidden_1.weight",
+          "shape": [
+            32,
+            100
+          ]
+        },
+        {
+          "count": 32,
+          "name": "pair_head.hidden_1.bias",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "count": 1024,
+          "name": "pair_head.hidden_2.weight",
+          "shape": [
+            32,
+            32
+          ]
+        },
+        {
+          "count": 32,
+          "name": "pair_head.hidden_2.bias",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "count": 64,
+          "name": "pair_head.output.weight",
+          "shape": [
+            2,
+            32
+          ]
+        },
+        {
+          "count": 2,
+          "name": "pair_head.output.bias",
+          "shape": [
+            2
+          ]
+        }
+      ]
+    }
+  },
+  "checkpoint_reads": false,
+  "fresh": true,
+  "identity_path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/model_instantiation/preregistered_model_identities.json",
+  "identity_sha256": "sha256:25550c4694c27a579eff8a3508c21eb4451dcade5143440e7f58789e6d4ea263",
+  "pass": true,
+  "schema": "sph-pio-poc.stage05c.model-manifest.v1"
+}

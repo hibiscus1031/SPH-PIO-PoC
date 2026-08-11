@@ -1,0 +1,389 @@
+{
+  "schema_version": "sph-pio-poc.publication-p1.final-manifest.v1",
+  "workflow": "Publication Track P1 — Evidence-Locked Manuscript Architecture and Chinese Draft v0.1",
+  "status": "PUBLICATION_EVIDENCE_LOCK_AND_DRAFT_V01_COMPLETE",
+  "all_gates_pass": true,
+  "generated_at_utc": "2026-08-05T04:55:33.019040+00:00",
+  "scope": {
+    "independent_publication_workflow": true,
+    "stage03e": false,
+    "stage04": false,
+    "historical_stage_directories_modified": false,
+    "new_computation": false,
+    "dynamic_training": "NOT_EXECUTED",
+    "rollout_performance": "NOT_TESTED",
+    "figure_mode": "P1_DETAILED_DESIGN"
+  },
+  "preserved_statuses": {
+    "dynamic_training": "NOT_EXECUTED",
+    "rollout_performance": "NOT_TESTED",
+    "stage01": "V2_QUALIFICATION_FAIL",
+    "stage01h": "FINITE_RESOLUTION_DOMINANT",
+    "stage02_route": "STAGE02_ROUTE_CLOSED_PUBLICATION_BOUNDARY_COMPLETE",
+    "stage03c": "DYNAMIC_RK2_HYBRID_IMPLEMENTATION_VERIFIED",
+    "stage03d": "DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED",
+    "stage03dr": "DYNAMIC_GRADIENT_FAILURE_MIXED_OR_UNRESOLVED",
+    "stage03e_authorization": false,
+    "topology_component": "TOPOLOGY_EVENT_COMPONENT_QUALIFIED",
+    "viscosity_operator_form": "NOT_CONFIRMED"
+  },
+  "freeze_reverification": {
+    "status": "PASS",
+    "input_count": 48,
+    "missing_inputs": [],
+    "hash_mismatches": []
+  },
+  "package_summary": {
+    "manuscript_character_count": 18799,
+    "docx_page_count": 20,
+    "claim_count": 30,
+    "figure_design_count": 9,
+    "table_count": 6,
+    "reviewer_question_count": 12,
+    "readiness": "METHODS_PAPER_DRAFTABLE_WITH_CLAIM_LIMITATION"
+  },
+  "gates": [
+    {
+      "gate": "freeze_pass_and_48_inputs_hash_reverified",
+      "status": "PASS",
+      "detail": {
+        "input_count": 48,
+        "missing": [],
+        "mismatches": []
+      }
+    },
+    {
+      "gate": "manuscript_complete",
+      "status": "PASS",
+      "detail": {
+        "character_count": 18799,
+        "required_sections": 15
+      }
+    },
+    {
+      "gate": "claim_map_and_claim_audit_complete",
+      "status": "PASS",
+      "detail": {
+        "claim_count": 30,
+        "audit": "publication/verification_first_dynamic_neural_sph_v0_1/08_claim_audit/publication_p1_claim_audit.json"
+      }
+    },
+    {
+      "gate": "figure_package_complete",
+      "status": "PASS",
+      "detail": {
+        "count": 9,
+        "mode": "P1_DETAILED_DESIGN"
+      }
+    },
+    {
+      "gate": "table_package_complete",
+      "status": "PASS",
+      "detail": {
+        "count": 6
+      }
+    },
+    {
+      "gate": "supplement_plan_complete",
+      "status": "PASS",
+      "detail": {
+        "required_tokens": [
+          "360",
+          "2880",
+          "2640",
+          "history",
+          "horizon",
+          "TE1",
+          "manifest",
+          "negative evidence"
+        ]
+      }
+    },
+    {
+      "gate": "reviewer_risk_analysis_complete",
+      "status": "PASS",
+      "detail": {
+        "question_count": 12
+      }
+    },
+    {
+      "gate": "readiness_classification_allowed",
+      "status": "PASS",
+      "detail": {
+        "primary": "METHODS_PAPER_DRAFTABLE_WITH_CLAIM_LIMITATION",
+        "secondary": "TOPICALLY_COMPATIBLE_BUT_EVIDENCE_INCOMPLETE"
+      }
+    },
+    {
+      "gate": "docx_render_audit_pass",
+      "status": "PASS",
+      "detail": {
+        "page_count": 20,
+        "audit": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/publication_p1_docx_render_audit.json"
+      }
+    },
+    {
+      "gate": "required_outputs_present",
+      "status": "PASS",
+      "detail": {
+        "count": 10
+      }
+    },
+    {
+      "gate": "no_new_computation_training_or_rollout",
+      "status": "PASS",
+      "detail": {
+        "training": "NOT_EXECUTED",
+        "rollout_performance": "NOT_TESTED",
+        "stage03e_authorized": false
+      }
+    }
+  ],
+  "required_outputs": [
+    "publication/verification_first_dynamic_neural_sph_v0_1/03_manuscript_cn/manuscript_cn_v0_1.md",
+    "publication/verification_first_dynamic_neural_sph_v0_1/03_manuscript_cn/manuscript_cn_v0_1.docx",
+    "publication/verification_first_dynamic_neural_sph_v0_1/03_manuscript_cn/structured_abstract_cn.md",
+    "publication/verification_first_dynamic_neural_sph_v0_1/03_manuscript_cn/title_and_keywords.md",
+    "publication/verification_first_dynamic_neural_sph_v0_1/01_claim_map/claim_to_evidence_matrix.json",
+    "publication/verification_first_dynamic_neural_sph_v0_1/04_figures/figure_package_plan.md",
+    "publication/verification_first_dynamic_neural_sph_v0_1/05_tables/table_package.md",
+    "publication/verification_first_dynamic_neural_sph_v0_1/06_supplement/supplementary_structure.md",
+    "publication/verification_first_dynamic_neural_sph_v0_1/09_reports/anticipated_reviewer_questions.md",
+    "publication/verification_first_dynamic_neural_sph_v0_1/09_reports/publication_readiness_v0_1.md",
+    "publication/verification_first_dynamic_neural_sph_v0_1/09_reports/publication_p1_final_report.md",
+    "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/publication_p1_final_manifest.json"
+  ],
+  "audits": {
+    "claim": "publication/verification_first_dynamic_neural_sph_v0_1/08_claim_audit/publication_p1_claim_audit.json",
+    "docx_render": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/publication_p1_docx_render_audit.json",
+    "docx_a11y": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/publication_p1_docx_a11y_audit.json"
+  },
+  "artifact_inventory_count": 44,
+  "artifact_inventory": [
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/00_freeze/build_publication_p1_freeze.py",
+      "byte_count": 8589,
+      "sha256": "sha256:9789586360fa3d198575edb98fc4a3f549d61497991f1f37c5fc57da8f68e32f"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/00_freeze/publication_input_freeze_manifest.json",
+      "byte_count": 15557,
+      "sha256": "sha256:8761ee88c1d8c2ca085f01de9fec0e2cc2be7122318e2b6167cbcd6aed86c482"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/01_claim_map/claim_to_evidence_matrix.json",
+      "byte_count": 17522,
+      "sha256": "sha256:c980a4dd118247e96f04eae22920e778357fb7a8b7b34c8723340c12f06caa7c"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/02_outline/manuscript_architecture.md",
+      "byte_count": 1208,
+      "sha256": "sha256:d1450093bb083bc5c85ddf6e2528d01e3a15d29266d9325755b06434548c8aae"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/03_manuscript_cn/manuscript_cn_v0_1.docx",
+      "byte_count": 57929,
+      "sha256": "sha256:ec1a14660495b002f6b96c491acd39c2f590c6258a0cd71424a97db6c1531231"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/03_manuscript_cn/manuscript_cn_v0_1.md",
+      "byte_count": 30481,
+      "sha256": "sha256:8da45be372fca960b6aa6378d145d2dc3e3d7be603400e7eae5d70f8abe60015"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/03_manuscript_cn/structured_abstract_cn.md",
+      "byte_count": 1612,
+      "sha256": "sha256:cb09a1ef42dd45f5ac8fd9a7bfb1d08e2fcd4762da614f07492d3d1dc91a7086"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/03_manuscript_cn/title_and_keywords.md",
+      "byte_count": 701,
+      "sha256": "sha256:1f6137100ff1b389cefe93625dacde84991efff3526987940e370dc6fabf144f"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/04_figures/figure_package_plan.md",
+      "byte_count": 1712,
+      "sha256": "sha256:77083a3d49bf2effdd95a194c057f541f54453a72b646361b832e6d431375cc0"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/05_tables/table_package.md",
+      "byte_count": 5007,
+      "sha256": "sha256:8b03a141d3718aeb4a307fbd651df39a6cb6a1c8ebb2f972e0e79c4bc6ff2981"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/06_supplement/supplementary_structure.md",
+      "byte_count": 1532,
+      "sha256": "sha256:20f08eaf14e6fcee625575c40be7d1318738e6805f6cc62f9317e86f29121cc6"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/07_internal_only/internal_only_register.md",
+      "byte_count": 496,
+      "sha256": "sha256:3773b2336e14a01371306226d35d7338f15d0e717edece4b6971c350d3adf6aa"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/08_claim_audit/publication_p1_claim_audit.json",
+      "byte_count": 1212,
+      "sha256": "sha256:cc6926a2161b79c57512226bbe74a45807c29d20fd10fc4806c4fa5867fd95d0"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/09_reports/anticipated_reviewer_questions.md",
+      "byte_count": 3004,
+      "sha256": "sha256:c17926264d0f3e9e60306bda563ebb1125a866da8ab212c7f491e86def9a4ab1"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/09_reports/publication_p1_final_report.md",
+      "byte_count": 2728,
+      "sha256": "sha256:cf66f0666c629d76d1f27eeaf9d97fc44684beb32d4303fad25125e1f52b851a"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/09_reports/publication_readiness_v0_1.md",
+      "byte_count": 1399,
+      "sha256": "sha256:6a08636b42354dfb82a832f30c6f78b0feea0d9f46fb910b9083a359e4cdaebf"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/build_manuscript_docx.py",
+      "byte_count": 18250,
+      "sha256": "sha256:74ec06a73ff34513700bf690b0c2f5ff8a77363754a2130c6aeeef81a9ffd670"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/build_publication_p1_content.py",
+      "byte_count": 67781,
+      "sha256": "sha256:5b1893e75d6f50edae2d39fa947c2901a23e71d58148f5c5be85c93a7c017bd2"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/build_publication_p1_final.py",
+      "byte_count": 22063,
+      "sha256": "sha256:703d642da7592df84d76d36894fbdc5bc5363ed5f0845ad717b22f3252d1194c"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/fontconfig_p1.xml",
+      "byte_count": 789,
+      "sha256": "sha256:a60b24b6a870283c86b722d00ece878d48d703c02084b9fb889f60263c92df3a"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/publication_p1_docx_a11y_audit.json",
+      "byte_count": 232,
+      "sha256": "sha256:a7b98b805451f8fd8d4242b42dac974cd00f77624aa19a504939f0b1f5270caf"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/publication_p1_docx_render_audit.json",
+      "byte_count": 1802,
+      "sha256": "sha256:d745b8a6a42c40b87e88d793ca806a346dd51851a078a5a50d0fa771d089a1b7"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/render_final_v2/manuscript_cn_v0_1.pdf",
+      "byte_count": 928675,
+      "sha256": "sha256:92144292ea16a0e9b1120531d874d3c0f23b2d1eabf84dd2a1bacd9f15bb5423"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/render_final_v2/page-1.png",
+      "byte_count": 121754,
+      "sha256": "sha256:6d631baad72da2ef9dab49f0804e028a7b1e3afa8995ea95e77e59d81c29d952"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/render_final_v2/page-10.png",
+      "byte_count": 379715,
+      "sha256": "sha256:90d734d6eb2779a98f24452580ca5fa085c83fe172d02263bea7bdf05e81baca"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/render_final_v2/page-11.png",
+      "byte_count": 439545,
+      "sha256": "sha256:8b4c9349b1629eb047f7f73a49628444eb82e818f57489f1e60f57c7a49a7bf1"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/render_final_v2/page-12.png",
+      "byte_count": 347491,
+      "sha256": "sha256:12f3c8d047946769cdc5c9bb9edae3242af1cc265fb85b4247f8b1e14fcbaa42"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/render_final_v2/page-13.png",
+      "byte_count": 443938,
+      "sha256": "sha256:af742b66a254be0690243a2fdaf7c0654e415ff35556d36cf1ee4f69534cee2d"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/render_final_v2/page-14.png",
+      "byte_count": 317314,
+      "sha256": "sha256:0003b07cf140dcb65caeffe81cc9642266c661fb5c9abd9a67c9a194470ad82a"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/render_final_v2/page-15.png",
+      "byte_count": 447100,
+      "sha256": "sha256:cb8982f0cff2b7c8e81489795a5b36a75aced794fa45fc5eab7d6445bb7dc069"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/render_final_v2/page-16.png",
+      "byte_count": 385588,
+      "sha256": "sha256:77b9151c0d0122cf805567333e0a0fcd8578085b5d7f3bbfb869433f387e6a8a"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/render_final_v2/page-17.png",
+      "byte_count": 525840,
+      "sha256": "sha256:e6bbcaed1317c1ac558d24863ddf2e2a1d442e3be1e3fad01dd258bc7624c196"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/render_final_v2/page-18.png",
+      "byte_count": 354451,
+      "sha256": "sha256:35418e29f28dbc832abbfb071522175da4ceeab28715b45323a4a83bac349ae3"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/render_final_v2/page-19.png",
+      "byte_count": 432663,
+      "sha256": "sha256:aae915e756c610748205211fe996b5ccd02cc91dad23993016dca49d0d4e9468"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/render_final_v2/page-2.png",
+      "byte_count": 145400,
+      "sha256": "sha256:09ea9fea9661e4f87a4da1578f25ab604e40c07ee6ca812b33ba399f2afe3672"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/render_final_v2/page-20.png",
+      "byte_count": 81599,
+      "sha256": "sha256:17b1a8a159cf1eb64e69252932e65dd5ab683f4cdca68ee1512322f818c6c9ed"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/render_final_v2/page-3.png",
+      "byte_count": 526049,
+      "sha256": "sha256:238665bfbca7b9ec187d52f7590612c17a67162525287331ac3cfc4835473b16"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/render_final_v2/page-4.png",
+      "byte_count": 587172,
+      "sha256": "sha256:c33eb00a9a73b0577661dc75b9e94c16d0fd315729453639253815a0bcb6778c"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/render_final_v2/page-5.png",
+      "byte_count": 381734,
+      "sha256": "sha256:e01357d5125d6fc73d30ac88b1a4d6a9c21db92412469a52c1d30129ae494ecb"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/render_final_v2/page-6.png",
+      "byte_count": 441335,
+      "sha256": "sha256:b9523250aa82a2dd15d3da056ef0ac115ff42edd7868c11df47b190fe1e9fcf1"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/render_final_v2/page-7.png",
+      "byte_count": 262360,
+      "sha256": "sha256:9519b8bb66bb3f8e99c0a69d36ea9f263a7b2ddb61a0a769d8ac4a6cc5a9b53a"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/render_final_v2/page-8.png",
+      "byte_count": 463954,
+      "sha256": "sha256:cd40d91397ca43fa3384a1f73ab277d3a46a1fc7196414f06cee960d69ea4a09"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/render_final_v2/page-9.png",
+      "byte_count": 405015,
+      "sha256": "sha256:f8c4d6cfda56f2526ec145de6e81398e4f463e3834016a7dfee1431ca933c3d9"
+    },
+    {
+      "path": "publication/verification_first_dynamic_neural_sph_v0_1/10_manifests/toc_pages.json",
+      "byte_count": 308,
+      "sha256": "sha256:3d217fcfec7e80191a2cc2797ff8f8fbb86d78bae4a9510f3cd73b597c18ab26"
+    }
+  ],
+  "self_hash_note": "The manifest excludes its own hash to avoid recursive self-reference.",
+  "terminal_rule": {
+    "pass": "PUBLICATION_EVIDENCE_LOCK_AND_DRAFT_V01_COMPLETE",
+    "fail": "PUBLICATION_EVIDENCE_LOCK_AND_DRAFT_V01_INCOMPLETE"
+  }
+}

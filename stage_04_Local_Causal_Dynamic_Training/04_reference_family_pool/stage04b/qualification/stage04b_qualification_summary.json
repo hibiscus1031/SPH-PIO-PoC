@@ -1,0 +1,49 @@
+{
+  "counts": {
+    "dop853_case_count": 20,
+    "dop853_pass": 20,
+    "exact_trajectory_count": 60,
+    "exact_trajectory_pass": 60,
+    "family_variant_analytic_pass": 20,
+    "fixed_topology_lineages": 10,
+    "formula_templates": 10,
+    "lineage_components": 10,
+    "neural_rollouts": 0,
+    "optimizer_steps": 0,
+    "performance_evaluations": 0,
+    "pre_release_test_formula_parameter_decode_count": 0,
+    "pre_release_test_state_decode_count": 0,
+    "pre_release_test_target_decode_count": 0,
+    "training_runs": 0,
+    "variable_topology_lineages": 0
+  },
+  "final_status": "LOCAL_CAUSAL_REFERENCE_FAMILY_POOL_QUALIFIED",
+  "fixed_topology_lineages": [
+    "LCDF_01",
+    "LCDF_02",
+    "LCDF_03",
+    "LCDF_04",
+    "LCDF_05",
+    "LCDF_06",
+    "LCDF_07",
+    "LCDF_08",
+    "LCDF_09",
+    "LCDF_10"
+  ],
+  "gates": {
+    "A_stage04a_verification": true,
+    "B_contract_frozen_no_conflict": true,
+    "C_formula_pool": true,
+    "D_analytic_and_exact": true,
+    "E_topology": true,
+    "F_DOP853": true,
+    "G_lineage": true,
+    "H_test_seal": true,
+    "I_provenance": true,
+    "J_prohibitions": true,
+    "resource": true
+  },
+  "schema_version": "sph-pio-poc.stage04b.qualification.v1",
+  "stage04c_authorization": true,
+  "variable_topology_lineages": []
+}

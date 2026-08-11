@@ -1,0 +1,731 @@
+{
+  "all_case_control_Clopper_Pearson_PASS": true,
+  "audit_version": "stage02jt-control-calibration-0.3.0",
+  "permutations_per_realization": 256,
+  "raw_rate_only_gate_used": false,
+  "realization_root": 20260804,
+  "realizations_per_case_control": 512,
+  "rows": [
+    {
+      "case_id": "crossmode_a_n12_h26",
+      "control_id": "FULL_PARTICLE_PERMUTATION",
+      "direction_significant_count": 6,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_CROSSMODE_A",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 6,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.5311284046692607,
+        "0.95": 0.9550583657587549,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.5214007782101168,
+        "0.95": 0.9369649805447469,
+        "1.0": 1.0
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "crossmode_a_n12_h26",
+      "control_id": "GAUSSIAN_WHITE_MATCHED_RMS",
+      "direction_significant_count": 3,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_CROSSMODE_A",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 4,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.5252918287937743,
+        "0.95": 0.9494163424124513,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.4961089494163424,
+        "0.95": 0.9628404669260701,
+        "1.0": 1.0
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "crossmode_a_n12_h26",
+      "control_id": "INDEPENDENT_COMPONENT_PERMUTATION",
+      "direction_significant_count": 1,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_CROSSMODE_A",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 2,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 0.007782101167315175,
+        "0.5": 0.490272373540856,
+        "0.95": 0.9455252918287937,
+        "1.0": 0.9961089494163424
+      },
+      "p_mag_quantiles": {
+        "0.0": 0.007782101167315175,
+        "0.5": 0.5019455252918288,
+        "0.95": 0.9571984435797666,
+        "1.0": 1.0
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "crossmode_a_n12_h26",
+      "control_id": "NYQUIST_CHECKERBOARD_MATCHED_RMS",
+      "direction_significant_count": 0,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_CROSSMODE_A",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 0,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 1.0,
+        "0.5": 1.0,
+        "0.95": 1.0,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 1.0,
+        "0.5": 1.0,
+        "0.95": 1.0,
+        "1.0": 1.0
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "crossmode_a_n12_h26",
+      "control_id": "RANDOM_PARTICLE_SIGN_FLIP",
+      "direction_significant_count": 1,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_CROSSMODE_A",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 0,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.48638132295719844,
+        "0.95": 0.9589494163424125,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 0.7782101167315175,
+        "0.5": 0.7782101167315175,
+        "0.95": 0.7782101167315175,
+        "1.0": 0.7782101167315175
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "crossmode_a_n16_h26",
+      "control_id": "FULL_PARTICLE_PERMUTATION",
+      "direction_significant_count": 4,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_CROSSMODE_A",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 6,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.5252918287937743,
+        "0.95": 0.9511673151750972,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.5097276264591439,
+        "0.95": 0.9278210116731518,
+        "1.0": 0.9961089494163424
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "crossmode_a_n16_h26",
+      "control_id": "GAUSSIAN_WHITE_MATCHED_RMS",
+      "direction_significant_count": 2,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_CROSSMODE_A",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 2,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.5097276264591439,
+        "0.95": 0.9550583657587549,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.47665369649805445,
+        "0.95": 0.9472762645914397,
+        "1.0": 1.0
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "crossmode_a_n16_h26",
+      "control_id": "INDEPENDENT_COMPONENT_PERMUTATION",
+      "direction_significant_count": 1,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_CROSSMODE_A",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 4,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.45136186770428016,
+        "0.95": 0.9377431906614786,
+        "1.0": 0.9961089494163424
+      },
+      "p_mag_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.5019455252918288,
+        "0.95": 0.9455252918287937,
+        "1.0": 1.0
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "crossmode_a_n16_h26",
+      "control_id": "NYQUIST_CHECKERBOARD_MATCHED_RMS",
+      "direction_significant_count": 0,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_CROSSMODE_A",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 0,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 1.0,
+        "0.5": 1.0,
+        "0.95": 1.0,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 1.0,
+        "0.5": 1.0,
+        "0.95": 1.0,
+        "1.0": 1.0
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "crossmode_a_n16_h26",
+      "control_id": "RANDOM_PARTICLE_SIGN_FLIP",
+      "direction_significant_count": 2,
+      "empirical_joint_false_positive_rate": 0.00390625,
+      "family_id": "FAMILY_CROSSMODE_A",
+      "joint_false_positive_count": 2,
+      "magnitude_significant_count": 512,
+      "one_sided_95_Clopper_Pearson_upper": 0.012244988396149322,
+      "p_dir_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.8813229571984436,
+        "0.95": 1.0,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.0038910505836575876,
+        "0.95": 0.0038910505836575876,
+        "1.0": 0.0038910505836575876
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "crossmode_a_n20_h26",
+      "control_id": "FULL_PARTICLE_PERMUTATION",
+      "direction_significant_count": 4,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_CROSSMODE_A",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 2,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.46108949416342415,
+        "0.95": 0.9472762645914397,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.48443579766536965,
+        "0.95": 0.9494163424124513,
+        "1.0": 1.0
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "crossmode_a_n20_h26",
+      "control_id": "GAUSSIAN_WHITE_MATCHED_RMS",
+      "direction_significant_count": 1,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_CROSSMODE_A",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 4,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 0.007782101167315175,
+        "0.5": 0.5252918287937743,
+        "0.95": 0.9589494163424125,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.490272373540856,
+        "0.95": 0.9490272373540856,
+        "1.0": 1.0
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "crossmode_a_n20_h26",
+      "control_id": "INDEPENDENT_COMPONENT_PERMUTATION",
+      "direction_significant_count": 6,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_CROSSMODE_A",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 4,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.47665369649805445,
+        "0.95": 0.9571984435797666,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 0.007782101167315175,
+        "0.5": 0.5252918287937743,
+        "0.95": 0.9568093385214007,
+        "1.0": 1.0
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "crossmode_a_n20_h26",
+      "control_id": "NYQUIST_CHECKERBOARD_MATCHED_RMS",
+      "direction_significant_count": 0,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_CROSSMODE_A",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 0,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 1.0,
+        "0.5": 1.0,
+        "0.95": 1.0,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 1.0,
+        "0.5": 1.0,
+        "0.95": 1.0,
+        "1.0": 1.0
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "crossmode_a_n20_h26",
+      "control_id": "RANDOM_PARTICLE_SIGN_FLIP",
+      "direction_significant_count": 0,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_CROSSMODE_A",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 512,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 0.13229571984435798,
+        "0.5": 1.0,
+        "0.95": 1.0,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.0038910505836575876,
+        "0.95": 0.0038910505836575876,
+        "1.0": 0.0038910505836575876
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "i_anchor_n16_h26_regular",
+      "control_id": "FULL_PARTICLE_PERMUTATION",
+      "direction_significant_count": 6,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_PV_EXISTING",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 1,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.5058365758754864,
+        "0.95": 0.9571984435797666,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 0.007782101167315175,
+        "0.5": 0.48638132295719844,
+        "0.95": 0.9472762645914397,
+        "1.0": 1.0
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "i_anchor_n16_h26_regular",
+      "control_id": "GAUSSIAN_WHITE_MATCHED_RMS",
+      "direction_significant_count": 1,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_PV_EXISTING",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 1,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 0.007782101167315175,
+        "0.5": 0.4980544747081712,
+        "0.95": 0.9571984435797666,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 0.007782101167315175,
+        "0.5": 0.48638132295719844,
+        "0.95": 0.9571984435797666,
+        "1.0": 1.0
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "i_anchor_n16_h26_regular",
+      "control_id": "INDEPENDENT_COMPONENT_PERMUTATION",
+      "direction_significant_count": 8,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_PV_EXISTING",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 4,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.5252918287937743,
+        "0.95": 0.9550583657587549,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.4805447470817121,
+        "0.95": 0.9507782101167314,
+        "1.0": 1.0
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "i_anchor_n16_h26_regular",
+      "control_id": "NYQUIST_CHECKERBOARD_MATCHED_RMS",
+      "direction_significant_count": 0,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_PV_EXISTING",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 0,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 1.0,
+        "0.5": 1.0,
+        "0.95": 1.0,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 1.0,
+        "0.5": 1.0,
+        "0.95": 1.0,
+        "1.0": 1.0
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "i_anchor_n16_h26_regular",
+      "control_id": "RANDOM_PARTICLE_SIGN_FLIP",
+      "direction_significant_count": 2,
+      "empirical_joint_false_positive_rate": 0.00390625,
+      "family_id": "FAMILY_PV_EXISTING",
+      "joint_false_positive_count": 2,
+      "magnitude_significant_count": 512,
+      "one_sided_95_Clopper_Pearson_upper": 0.012244988396149322,
+      "p_dir_quantiles": {
+        "0.0": 0.007782101167315175,
+        "0.5": 0.9883268482490273,
+        "0.95": 1.0,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.0038910505836575876,
+        "0.95": 0.0038910505836575876,
+        "1.0": 0.0038910505836575876
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "i_res_n12_h26_regular",
+      "control_id": "FULL_PARTICLE_PERMUTATION",
+      "direction_significant_count": 3,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_PV_EXISTING",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 8,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.5389105058365758,
+        "0.95": 0.9529182879377431,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.5136186770428015,
+        "0.95": 0.9416342412451362,
+        "1.0": 1.0
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "i_res_n12_h26_regular",
+      "control_id": "GAUSSIAN_WHITE_MATCHED_RMS",
+      "direction_significant_count": 2,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_PV_EXISTING",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 3,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.5116731517509727,
+        "0.95": 0.953307392996109,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.4980544747081712,
+        "0.95": 0.9455252918287937,
+        "1.0": 1.0
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "i_res_n12_h26_regular",
+      "control_id": "INDEPENDENT_COMPONENT_PERMUTATION",
+      "direction_significant_count": 2,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_PV_EXISTING",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 3,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 0.007782101167315175,
+        "0.5": 0.5019455252918288,
+        "0.95": 0.9568093385214007,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.5,
+        "0.95": 0.9217898832684824,
+        "1.0": 1.0
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "i_res_n12_h26_regular",
+      "control_id": "NYQUIST_CHECKERBOARD_MATCHED_RMS",
+      "direction_significant_count": 0,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_PV_EXISTING",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 0,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 1.0,
+        "0.5": 1.0,
+        "0.95": 1.0,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 1.0,
+        "0.5": 1.0,
+        "0.95": 1.0,
+        "1.0": 1.0
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "i_res_n12_h26_regular",
+      "control_id": "RANDOM_PARTICLE_SIGN_FLIP",
+      "direction_significant_count": 7,
+      "empirical_joint_false_positive_rate": 0.013671875,
+      "family_id": "FAMILY_PV_EXISTING",
+      "joint_false_positive_count": 7,
+      "magnitude_significant_count": 512,
+      "one_sided_95_Clopper_Pearson_upper": 0.025525872900366696,
+      "p_dir_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.7801556420233463,
+        "0.95": 1.0,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.0038910505836575876,
+        "0.95": 0.0038910505836575876,
+        "1.0": 0.0038910505836575876
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "i_res_n20_h26_regular",
+      "control_id": "FULL_PARTICLE_PERMUTATION",
+      "direction_significant_count": 0,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_PV_EXISTING",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 4,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 0.011673151750972763,
+        "0.5": 0.5019455252918288,
+        "0.95": 0.9571984435797666,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.5369649805447471,
+        "0.95": 0.9628404669260701,
+        "1.0": 1.0
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "i_res_n20_h26_regular",
+      "control_id": "GAUSSIAN_WHITE_MATCHED_RMS",
+      "direction_significant_count": 4,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_PV_EXISTING",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 4,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 0.007782101167315175,
+        "0.5": 0.5408560311284046,
+        "0.95": 0.9416342412451362,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.49416342412451364,
+        "0.95": 0.9511673151750972,
+        "1.0": 0.9922178988326849
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "i_res_n20_h26_regular",
+      "control_id": "INDEPENDENT_COMPONENT_PERMUTATION",
+      "direction_significant_count": 6,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_PV_EXISTING",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 5,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.4727626459143969,
+        "0.95": 0.9200389105058365,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.4980544747081712,
+        "0.95": 0.9511673151750972,
+        "1.0": 1.0
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "i_res_n20_h26_regular",
+      "control_id": "NYQUIST_CHECKERBOARD_MATCHED_RMS",
+      "direction_significant_count": 0,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_PV_EXISTING",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 0,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 1.0,
+        "0.5": 1.0,
+        "0.95": 1.0,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 1.0,
+        "0.5": 1.0,
+        "0.95": 1.0,
+        "1.0": 1.0
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    },
+    {
+      "case_id": "i_res_n20_h26_regular",
+      "control_id": "RANDOM_PARTICLE_SIGN_FLIP",
+      "direction_significant_count": 0,
+      "empirical_joint_false_positive_rate": 0.0,
+      "family_id": "FAMILY_PV_EXISTING",
+      "joint_false_positive_count": 0,
+      "magnitude_significant_count": 512,
+      "one_sided_95_Clopper_Pearson_upper": 0.005833955600556271,
+      "p_dir_quantiles": {
+        "0.0": 0.12840466926070038,
+        "0.5": 1.0,
+        "0.95": 1.0,
+        "1.0": 1.0
+      },
+      "p_mag_quantiles": {
+        "0.0": 0.0038910505836575876,
+        "0.5": 0.0038910505836575876,
+        "0.95": 0.0038910505836575876,
+        "1.0": 0.0038910505836575876
+      },
+      "realization_count": 512,
+      "status": "PASS"
+    }
+  ],
+  "seed_screening_or_replacement_used": false
+}

@@ -1,0 +1,62 @@
+matrix_version: stage02f-spatial-target-matrix-1.0.0
+campaign_id: stage02f_r2s_spatial_audit_20260804
+purpose: semidiscrete_spatial_target_evaluation_not_dataset_generation
+evaluation_time: 0.0
+initial_condition_family: periodic_vortex
+selection_policy: enumerate_all_frozen_cases_no_posthoc_filter
+zero_target_deletion_permitted: false
+
+target:
+  equation: a_R2S - a_SPH
+  field: delta_a_space
+  sign_convention: a_R2S_minus_a_SPH
+
+paths:
+  resolution:
+    fixed: {h_over_dx: 2.6, initial_condition: periodic_vortex, disorder: regular}
+    cases: [f_res_n6_h26, f_anchor_n8_h26, f_res_n10_h26]
+  support:
+    fixed: {particles_per_axis: 8, initial_condition: periodic_vortex, disorder: regular}
+    cases: [f_sup_n8_h22, f_anchor_n8_h26, f_sup_n8_h30]
+
+cases:
+  - case_id: f_res_n6_h26
+    study_membership: [resolution]
+    resolution_identity: N6x6
+    particles_per_axis: 6
+    support_identity: Hdx_2p6
+    h_over_dx: 2.6
+    disorder_fraction_dx: 0.0
+    random_seed: 6106
+  - case_id: f_anchor_n8_h26
+    study_membership: [resolution, support]
+    resolution_identity: N8x8
+    particles_per_axis: 8
+    support_identity: Hdx_2p6
+    h_over_dx: 2.6
+    disorder_fraction_dx: 0.0
+    random_seed: 6208
+  - case_id: f_res_n10_h26
+    study_membership: [resolution]
+    resolution_identity: N10x10
+    particles_per_axis: 10
+    support_identity: Hdx_2p6
+    h_over_dx: 2.6
+    disorder_fraction_dx: 0.0
+    random_seed: 6310
+  - case_id: f_sup_n8_h22
+    study_membership: [support]
+    resolution_identity: N8x8
+    particles_per_axis: 8
+    support_identity: Hdx_2p2
+    h_over_dx: 2.2
+    disorder_fraction_dx: 0.0
+    random_seed: 6422
+  - case_id: f_sup_n8_h30
+    study_membership: [support]
+    resolution_identity: N8x8
+    particles_per_axis: 8
+    support_identity: Hdx_3p0
+    h_over_dx: 3.0
+    disorder_fraction_dx: 0.0
+    random_seed: 6430

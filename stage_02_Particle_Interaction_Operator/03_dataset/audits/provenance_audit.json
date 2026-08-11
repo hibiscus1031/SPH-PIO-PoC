@@ -1,0 +1,67 @@
+{
+  "audit_version": "stage02c-provenance-audit-1.0.0",
+  "determinism_status": "PASS",
+  "pipeline_hash_status": "PASS",
+  "reference_rows": [
+    {
+      "case_id": "r2_duplicate_edge_negative_n6",
+      "path": "stage_02_Particle_Interaction_Operator/03_dataset/references/r2_duplicate_edge_negative_n6__r2_reference.json",
+      "status": "PASS"
+    },
+    {
+      "case_id": "r2_jitter05_n8",
+      "path": "stage_02_Particle_Interaction_Operator/03_dataset/references/r2_jitter05_n8__r2_reference.json",
+      "status": "PASS"
+    },
+    {
+      "case_id": "r2_regular_n6",
+      "path": "stage_02_Particle_Interaction_Operator/03_dataset/references/r2_regular_n6__r2_reference.json",
+      "status": "PASS"
+    }
+  ],
+  "sample_rows": [
+    {
+      "file_hash_status": "PASS",
+      "graph_hash_status": "PASS",
+      "provenance_fields_status": "PASS",
+      "sample_id": "r2_duplicate_edge_negative_n6__t0.000000",
+      "state_hash_status": "PASS"
+    },
+    {
+      "file_hash_status": "PASS",
+      "graph_hash_status": "PASS",
+      "provenance_fields_status": "PASS",
+      "sample_id": "r2_duplicate_edge_negative_n6__t0.002000",
+      "state_hash_status": "PASS"
+    },
+    {
+      "file_hash_status": "PASS",
+      "graph_hash_status": "PASS",
+      "provenance_fields_status": "PASS",
+      "sample_id": "r2_jitter05_n8__t0.000000",
+      "state_hash_status": "PASS"
+    },
+    {
+      "file_hash_status": "PASS",
+      "graph_hash_status": "PASS",
+      "provenance_fields_status": "PASS",
+      "sample_id": "r2_jitter05_n8__t0.002000",
+      "state_hash_status": "PASS"
+    },
+    {
+      "file_hash_status": "PASS",
+      "graph_hash_status": "PASS",
+      "provenance_fields_status": "PASS",
+      "sample_id": "r2_regular_n6__t0.000000",
+      "state_hash_status": "PASS"
+    },
+    {
+      "file_hash_status": "PASS",
+      "graph_hash_status": "PASS",
+      "provenance_fields_status": "PASS",
+      "sample_id": "r2_regular_n6__t0.002000",
+      "state_hash_status": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

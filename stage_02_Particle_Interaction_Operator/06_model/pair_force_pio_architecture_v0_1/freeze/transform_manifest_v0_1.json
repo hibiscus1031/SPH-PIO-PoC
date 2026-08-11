@@ -1,0 +1,35 @@
+{
+  "manifest_version": "stage02k-transform-freeze-1.0.0",
+  "frozen_before_transform_execution": true,
+  "seed": 20261004,
+  "permutation_recipes": [
+    "rng_permutation_00", "rng_permutation_01", "rng_permutation_02", "rng_permutation_03",
+    "rng_permutation_04", "rng_permutation_05", "rng_permutation_06", "rng_permutation_07",
+    "rng_permutation_08", "rng_permutation_09", "rng_permutation_10", "rng_permutation_11",
+    "rng_permutation_12", "rng_permutation_13", "rng_permutation_14", "reverse_order"
+  ],
+  "translations": [
+    [0.137, -0.219], [0.311, 0.407], [-0.463, 0.173], [0.719, -0.283],
+    [-0.827, -0.541], [1.125, 0.375], [-1.625, 1.875], [2.25, -2.75]
+  ],
+  "galilean_boosts_over_cs": [
+    [0.031, -0.047], [-0.083, 0.019], [0.127, 0.211], [-0.307, 0.101],
+    [0.503, -0.409], [-0.719, -0.233], [1.125, 0.875], [-1.375, 1.625]
+  ],
+  "rotation_angles_radians": [
+    0.113, 0.331, 0.557, 0.779, 1.019, 1.237, 1.571, 1.913,
+    2.117, 2.443, 2.719, 2.941, 3.337, 3.883, 4.731, 5.617
+  ],
+  "reflection_matrices": [
+    [[1.0, 0.0], [0.0, -1.0]],
+    [[-1.0, 0.0], [0.0, 1.0]],
+    [[0.0, 1.0], [1.0, 0.0]],
+    [[0.0, -1.0], [-1.0, 0.0]]
+  ],
+  "periodic_integer_shift_recipes": [
+    "checkerboard_x_plus_1", "checkerboard_y_minus_1", "quadrant_xy_plus_minus_1",
+    "particle_stride_3_x_plus_2", "particle_stride_5_y_minus_2", "half_particles_xy_plus_1",
+    "rng_integer_shifts_seed_plus_6", "rng_integer_shifts_seed_plus_7"
+  ],
+  "selection_after_execution_permitted": false
+}

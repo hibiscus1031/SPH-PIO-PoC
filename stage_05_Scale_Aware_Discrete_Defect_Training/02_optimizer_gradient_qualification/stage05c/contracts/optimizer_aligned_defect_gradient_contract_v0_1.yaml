@@ -1,0 +1,151 @@
+contract_id: optimizer_aligned_defect_gradient_contract_v0_1
+schema: sph-pio-poc.stage05c.contract.v1
+authorization:
+  required_status: CONSERVATIVE_DISCRETE_DEFECT_TARGET_AND_SCALE_QUALIFIED
+  stage05b_contract_sha256: sha256:6992ce3e9e7aa76b2b29fc3e6b15ac5533386ce9bee07c5d7316b5ee9609b9dc
+  s_a: 0.3456328553384328
+  s_a_hash: sha256:78beec16affbae72345d220b7f7c1455f85c212ad006c4d29516946d5c76f296
+  u_a: 7.275957614183426e-10
+  target_records: 384
+backend:
+  device: CPU
+  dtype: float64
+  sdpa: SDPBackend.MATH
+  flash: false
+  memory_efficient: false
+  auto_selection: false
+models:
+  seeds:
+  - 20500501
+  - 20500502
+  - 20500503
+  identity_manifest: stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/model_instantiation/preregistered_model_identities.json
+  identity_manifest_sha256: sha256:25550c4694c27a579eff8a3508c21eb4451dcade5143440e7f58789e6d4ea263
+  fresh: true
+  checkpoint_reads: false
+parameter_groups:
+  manifest: stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/parameter_groups/preregistered_parameter_groups.json
+  manifest_sha256: sha256:95926f5081f583ad7a438f072ab5170d0969a5ba7679d17444aa7fdb1f7c2abf
+  unique_complete: true
+batches:
+  manifest: stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/preregistered_batches.json
+  manifest_sha256: sha256:958e87f8398acc8ed627126f1b1d744f54803d417400b2334fd1c01da12c25b3
+  N8_lineage_batch: 2 variants x 4 origins
+  global: 6 lineages x 2 variants x 4 origins
+probes:
+  manifest: stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/parameter_groups/preregistered_probe_plan.json
+  manifest_sha256: sha256:9aad2c87d819618310726ae156246091b3a3fd6156c01d5d940311b90904675d
+  coordinates_per_context: 3
+  blocks_per_context: 2
+  block_size: min(32,group_count)
+  cyclic_indices: true
+  block_direction: hash Rademacher normalized to L2=1
+loss:
+  identity: nested mean over lineage/variant/origin/node/component of ((a_eff-a_cons)/s_a)^2
+  a_eff: (v_theta^(n+1)-v_0^(n+1))/dt
+  zero_correction_loss: 1.0
+  tolerance: 1.0e-12
+full_gradient:
+  repeats: 2
+  noise: max(RMS(g1-g2),128*eps*max(1,RMS(g1)))
+  activity_ratio_min: 100
+  finite: true
+  parameter_hash_unchanged: true
+reverse_jvp:
+  genuine_forward_jvp: true
+  abs_max: 1.0e-10
+  rel_max: 1.0e-07
+  near_zero_below: 1.0e-12
+  near_zero_abs_max: 1.0e-12
+  required_fraction: 1.0
+finite_difference:
+  epsilon_ladder:
+  - 0.01
+  - 0.003
+  - 0.001
+  - 0.0003
+  - 0.0001
+  - 3.0e-05
+  central: true
+  plus_minus_repeats: 2
+  coordinate_scale: max(1,abs(theta_j))
+  block_scale: max(1,block_parameter_RMS)
+  fd_ad_abs_max: 1.0e-08
+  fd_ad_rel_max: 0.0001
+  adjacent_relative_change_max: 0.001
+  minimum_smooth_epsilons: 3
+  stable_adjacent_count_min: 2
+  near_zero_fd_abs_max: 1.0e-08
+  fresh_state_history: true
+  fixed_rng: true
+  complete_RK2: true
+aggregation:
+  group_lineage_seed: active and 5/5 probes stable and >=1 nonzero and safe deterministic
+    restored
+  group_lineage: at least 2/3 seeds
+  group: 6/6 lineages
+  arm: all groups
+local_descent:
+  radii:
+  - 1.0e-06
+  - 3.0e-06
+  - 1.0e-05
+  - 3.0e-05
+  - 0.0001
+  - 0.0003
+  direction: -g/max(norm(g),1e-30)
+  theta_norm_ref: max(norm(theta),sqrt(P)*1e-3)
+  loss_floor: max(abs(L1-L2),128*eps*max(1,abs(Lbase)))
+  observed_below: -100*u_L
+  ratio_range:
+  - 0.2
+  - 1.8
+  adjacent_pass_min: 2
+  lineage: at least 2/3 seeds for each of 6/6
+  global: 3/3 seeds
+  optimizer: false
+  writeback: false
+structure_safety:
+  contexts: arm x seed x lineage
+  force_residual_max: 1.0e-10
+  transforms:
+  - permutation
+  - edge_reorder
+  - translation
+  - Galilean
+  - SO2
+  - reflection
+  - periodic_shift
+  positive_density: true
+  finite_hidden_coefficients: true
+  deterministic_topology: true
+  accepted_commit: one for D2/D3, zero for D1
+  midpoint_commit: 0
+resolution_diagnostics:
+  N12: 6 MAIN lineages x 3 arms x seed20500501 x hashed origin
+  N16: D3 x 6 MAIN lineages x seed20500501 x hashed origin
+  role: diagnostic_only
+  uses_N8_s_a: true
+access:
+  TRAIN_only: true
+  start_end_denial: true
+  validation_and_sealed_decode_counts: 0
+resources:
+  peak_rss_delta_max_bytes: 1610612736
+  no_monotonic_retained_autograd: true
+  no_persistent_mutation: true
+  no_dense_particle_N_by_N: true
+  all_hashes: true
+prohibitions:
+  optimizer_instances: 0
+  optimizer_steps: 0
+  persistent_parameter_updates: 0
+  training_runs: 0
+  neural_rollouts: 0
+  performance_evaluations: 0
+  checkpoint_selection: 0
+  model_ranking: 0
+terminal_statuses:
+  qualified: OPTIMIZER_ALIGNED_DEFECT_GRADIENT_AND_LOCAL_DESCENT_QUALIFIED
+  not_qualified: OPTIMIZER_ALIGNED_DEFECT_GRADIENT_AND_LOCAL_DESCENT_NOT_QUALIFIED
+  incomplete: OPTIMIZER_ALIGNED_DEFECT_GRADIENT_AND_LOCAL_DESCENT_EVIDENCE_INCOMPLETE

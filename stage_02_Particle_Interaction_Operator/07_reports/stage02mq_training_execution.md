@@ -1,0 +1,3 @@
+# Stage 02M-Q — Training execution
+
+The preregistered K0/K1/K2 × seeds 20261211/20261212/20261213 matrix completed with terminal states `['COMPLETED_MAX_UPDATES', 'COMPLETED_MAX_UPDATES', 'COMPLETED_MAX_UPDATES', 'COMPLETED_MAX_UPDATES', 'COMPLETED_MAX_UPDATES', 'COMPLETED_MAX_UPDATES', 'EARLY_STOPPED', 'EARLY_STOPPED', 'COMPLETED_MAX_UPDATES']` and optimizer counts `[1000, 1000, 1000, 1000, 1000, 1000, 700, 740, 1000]`. All updates used 10 complete training graphs, scaled graph-balanced loss, AdamW `(lr=1e-3, betas=0.9/0.999, eps=1e-12, weight_decay=0)`, global clip 1.0, and the frozen warmup/cosine schedule. No run or seed was added or replaced.

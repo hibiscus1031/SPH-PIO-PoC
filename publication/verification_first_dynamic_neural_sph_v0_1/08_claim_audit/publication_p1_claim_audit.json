@@ -1,0 +1,39 @@
+{
+  "schema_version": "sph-pio-poc.publication-p1.claim-audit.v1",
+  "status": "PASS",
+  "checks": {
+    "claim_schema_complete": true,
+    "all_main_claims_referenced_in_manuscript": true,
+    "no_unknown_claim_markers": true,
+    "no_unresolved_unsupported_markers": true,
+    "no_unsupported_positive_performance_claim": true,
+    "stage03d_not_qualified_visible_in_abstract_results_discussion": true,
+    "both_216_and_144_visible_in_abstract_results_discussion": true,
+    "topology_component_separately_labeled": true,
+    "negative_scope_disclosures_complete": true,
+    "reference_placeholders_not_fake_citations": true
+  },
+  "claim_count": 30,
+  "marked_claim_count": 30,
+  "unknown_marker_ids": [],
+  "unreferenced_main_claims": [],
+  "unsupported_markers": [],
+  "forbidden_positive_hits": {},
+  "status_visibility": {
+    "abstract": true,
+    "results": true,
+    "discussion": true
+  },
+  "counts_visibility": {
+    "abstract": true,
+    "results": true,
+    "discussion": true
+  },
+  "negative_scope_disclosures": {
+    "no_training_executed": true,
+    "no_autonomous_rollout": true,
+    "no_performance_validation": true,
+    "stage03e_not_authorized": true
+  },
+  "reference_todo_count": 13
+}

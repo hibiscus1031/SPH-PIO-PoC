@@ -1,0 +1,87 @@
+{
+  "counts": {
+    "SEALED_TEST_LINEAGE": 2,
+    "TRAIN_LINEAGE": 6,
+    "VALIDATION_LINEAGE": 2
+  },
+  "failed_family_replacement_count": 0,
+  "manual_swap_count": 0,
+  "ordered_assignments": [
+    {
+      "family_id": "LCDF_06",
+      "rank": 1,
+      "role": "TRAIN_LINEAGE",
+      "role_key": "2527de199975190eaad2e21fc03bbc10ed30298c11e5130fdb9abe2d61a4800f",
+      "template": "OBLIQUE_TRANSVERSE"
+    },
+    {
+      "family_id": "LCDF_05",
+      "rank": 2,
+      "role": "TRAIN_LINEAGE",
+      "role_key": "5459fc1d2f0a63f820aaf1e404b272fa75a917d4877a0515b31a50d5528f4240",
+      "template": "OBLIQUE_LONGITUDINAL"
+    },
+    {
+      "family_id": "LCDF_01",
+      "rank": 3,
+      "role": "TRAIN_LINEAGE",
+      "role_key": "6d3a60ef796e5222d21f7ddf7e61b9a5e0f6b7976b17f33b39d09f476f83f5c1",
+      "template": "AXIAL_COMPRESSION"
+    },
+    {
+      "family_id": "LCDF_04",
+      "rank": 4,
+      "role": "TRAIN_LINEAGE",
+      "role_key": "71f475134acfc79c85efe0032c93cc2a72becedce4c8eeddb0346b54630f8c81",
+      "template": "ROTATING_CELL"
+    },
+    {
+      "family_id": "LCDF_08",
+      "rank": 5,
+      "role": "TRAIN_LINEAGE",
+      "role_key": "7c32985297b5c0cd825fb9020c14bc16a36912abbdebe659d7d79eaa748c6c3a",
+      "template": "ANISOTROPIC_DOUBLE_MODE"
+    },
+    {
+      "family_id": "LCDF_07",
+      "rank": 6,
+      "role": "TRAIN_LINEAGE",
+      "role_key": "a8bffc31dfac1eb9c841be1cfb0970881f36006f66ef83bbf755cb65a5607242",
+      "template": "MULTIMODE_CROSS"
+    },
+    {
+      "family_id": "LCDF_02",
+      "rank": 7,
+      "role": "VALIDATION_LINEAGE",
+      "role_key": "b3ce0d72abb783f731cb373fa3cedf9116fc3eaf43d552e6bf6246721e020032",
+      "template": "BIAXIAL_BREATHING"
+    },
+    {
+      "family_id": "LCDF_09",
+      "rank": 8,
+      "role": "VALIDATION_LINEAGE",
+      "role_key": "ca69571011ceda13ca2e78d00c7d219cea34cefe88c078f23aed617df552d87f",
+      "template": "PHASE_COUPLED_OBLIQUE"
+    },
+    {
+      "family_id": "LCDF_10",
+      "rank": 9,
+      "role": "SEALED_TEST_LINEAGE",
+      "role_key": "d54d6f9e38b3d91fe2411c4c6f79fafc18d923b5d005f33f59bca7ff095888c1",
+      "template": "ROTATING_MULTIMODE"
+    },
+    {
+      "family_id": "LCDF_03",
+      "rank": 10,
+      "role": "SEALED_TEST_LINEAGE",
+      "role_key": "f8dc4555d2198b37789e46946395aae9a112b7ab9c598e28119f3e534f0f1389",
+      "template": "SHEAR_COMPRESSION_CELL"
+    }
+  ],
+  "preregistered": {
+    "byte_count": 2297,
+    "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/role_assignment/preregistered_role_assignment.json",
+    "sha256": "sha256:024f797d3fe14d73a217a372f914a3ae4b07693d769372ac87892da1a326c301"
+  },
+  "schema_version": "sph-pio-poc.stage04b.role-assignment-manifest.v1"
+}

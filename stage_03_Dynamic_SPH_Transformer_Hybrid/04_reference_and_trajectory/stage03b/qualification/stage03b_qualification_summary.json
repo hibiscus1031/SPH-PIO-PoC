@@ -1,0 +1,37 @@
+{
+  "acoustic_classification": "DR3_ACOUSTIC_LINEAR_REGIME_CONDITIONAL",
+  "dr1_family_verdicts": {
+    "DR1_COUPLED_DEFORMATION": "PASS",
+    "DR1_LAGRANGIAN_COMPRESSION": "PASS"
+  },
+  "dr2_case_verdicts": {
+    "DR1_COUPLED_DEFORMATION_N12": "PASS",
+    "DR1_COUPLED_DEFORMATION_N16": "PASS",
+    "DR1_COUPLED_DEFORMATION_N8": "PASS",
+    "DR1_LAGRANGIAN_COMPRESSION_N12": "PASS",
+    "DR1_LAGRANGIAN_COMPRESSION_N16": "PASS",
+    "DR1_LAGRANGIAN_COMPRESSION_N8": "PASS"
+  },
+  "dr3_case_verdicts": {
+    "DR3_OBLIQUE_SHEAR_A": "PASS",
+    "DR3_OBLIQUE_SHEAR_B": "PASS"
+  },
+  "final_status": "DYNAMIC_REFERENCE_TRAJECTORY_QUALIFICATION_COMPLETE",
+  "gates": {
+    "A_DR1": true,
+    "B_DR2": true,
+    "C_DR3": true,
+    "D_boundary_classification": true,
+    "E_topology_determinism": true,
+    "F_provenance_uncertainty": true,
+    "no_model": true,
+    "no_neural_rollout": true,
+    "no_optimizer": true,
+    "no_split_or_normalization": true,
+    "no_training": true
+  },
+  "schema_version": "sph-pio-poc.stage03b.qualification.v1",
+  "stage03c_authorized": true,
+  "topology_event_count": 0,
+  "vortex_classification": "DR3_PERIODIC_VORTEX_REJECTED_AS_EXACT_SOURCE_FREE_REFERENCE"
+}

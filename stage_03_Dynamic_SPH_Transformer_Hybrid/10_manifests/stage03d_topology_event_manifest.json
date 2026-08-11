@@ -1,0 +1,33 @@
+{
+  "artifacts": [
+    {
+      "byte_count": 2657106,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/topology_event_scan/te1_dense_scan_results.json",
+      "sha256": "sha256:cfd79cab48e6c468634802c30a2784a47e84b8bb09499e27f791bdfb2686fe58"
+    },
+    {
+      "byte_count": 6185,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/topology_stage_replay/replay_results.json",
+      "sha256": "sha256:29da7801f24b41a4dfc9a8ead876930840dac1a6c15711860c29251208305f3b"
+    },
+    {
+      "byte_count": 41777,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/event_side_gradients/event_side_gradient_results.json",
+      "sha256": "sha256:f0293c8f56b83e3c4e69fd64a500c052c600bca0946d19926d17a9b52426ff25"
+    },
+    {
+      "byte_count": 9403,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/event_jump_audit/event_force_jump_results.json",
+      "sha256": "sha256:c900d639e3db0efe7b468275a48d36d89714212fe9c13fc7d05281f35ab0910e"
+    }
+  ],
+  "contract": {
+    "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/contracts/dynamic_multistep_adfd_topology_contract_v0_1.yaml",
+    "sha256": "sha256:a506af65ac124f8edf843e507f70c88566852fdfefb017eea127ddbe227fa692"
+  },
+  "family": "TE1_TAGGED_PAIR_OSCILLATION",
+  "optimizer_steps": 0,
+  "pass": true,
+  "schema_version": "sph-pio-poc.stage03d.topology-event-manifest.v1",
+  "training_runs": 0
+}

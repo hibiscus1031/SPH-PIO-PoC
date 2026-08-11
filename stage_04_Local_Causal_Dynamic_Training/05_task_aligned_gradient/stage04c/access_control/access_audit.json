@@ -1,0 +1,84 @@
+{
+  "counters": {
+    "neural_rollouts": 0,
+    "optimizer_instances": 0,
+    "optimizer_steps": 0,
+    "parameter_updates": 0,
+    "performance_evaluations": 0,
+    "sealed_formula_decode_count": 0,
+    "sealed_state_decode_count": 0,
+    "sealed_target_decode_count": 0,
+    "train_state_array_decode_count": 114,
+    "training_runs": 0,
+    "validation_target_decode_count": 0
+  },
+  "end": {
+    "allowlist_module": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/stage04c_access.py",
+    "decode_counts": {
+      "sealed_formula_decode_count": 0,
+      "sealed_state_decode_count": 0,
+      "sealed_target_decode_count": 0,
+      "train_state_array_decode_count": 114,
+      "validation_target_decode_count": 0
+    },
+    "pass": true,
+    "phase": "END",
+    "rows": [
+      {
+        "denied_before_os_read": true,
+        "kind": "validation_target",
+        "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n8.npz"
+      },
+      {
+        "denied_before_os_read": true,
+        "kind": "sealed_formula",
+        "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/sealed_parameters.json"
+      },
+      {
+        "denied_before_os_read": true,
+        "kind": "sealed_state",
+        "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n8.npz"
+      },
+      {
+        "denied_before_os_read": true,
+        "kind": "sealed_target",
+        "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n8.npz"
+      }
+    ]
+  },
+  "pass": true,
+  "start": {
+    "allowlist_module": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/stage04c_access.py",
+    "decode_counts": {
+      "sealed_formula_decode_count": 0,
+      "sealed_state_decode_count": 0,
+      "sealed_target_decode_count": 0,
+      "train_state_array_decode_count": 0,
+      "validation_target_decode_count": 0
+    },
+    "pass": true,
+    "phase": "START",
+    "rows": [
+      {
+        "denied_before_os_read": true,
+        "kind": "validation_target",
+        "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n8.npz"
+      },
+      {
+        "denied_before_os_read": true,
+        "kind": "sealed_formula",
+        "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/sealed_parameters.json"
+      },
+      {
+        "denied_before_os_read": true,
+        "kind": "sealed_state",
+        "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n8.npz"
+      },
+      {
+        "denied_before_os_read": true,
+        "kind": "sealed_target",
+        "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n8.npz"
+      }
+    ]
+  }
+}

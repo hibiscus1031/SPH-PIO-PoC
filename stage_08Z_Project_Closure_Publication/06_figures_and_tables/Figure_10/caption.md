@@ -1,0 +1,1 @@
+**Figure 10. Final qualification ladder and claim boundary.** Verified architecture, target, gradient/update and executed training remain distinct from a qualified trained solver. All plotted values and statuses must be read from the frozen source list; schematic arrows denote methodological dependency, not performance improvement.

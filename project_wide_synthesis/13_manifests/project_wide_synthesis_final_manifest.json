@@ -1,0 +1,317 @@
+{
+  "schema": "SPH-PIO-PoC.project-wide-synthesis-final-manifest.v1",
+  "workflow": "Cross-Stage Synthesis S1",
+  "finalized_utc": "2026-08-05T15:27:24.436235+00:00",
+  "root": "/Users/xiejinbo/Documents/SPH-PIO-PoC",
+  "final_status": "PROJECT_WIDE_EVIDENCE_SYNTHESIS_AND_PUBLICATION_DOSSIER_COMPLETE",
+  "historical_freeze": {
+    "path": "project_wide_synthesis/00_freeze/project_wide_input_freeze_manifest.json",
+    "git_head": "ff86f5e0b99966ad6fa5896fe3d9a0c3f001cd57",
+    "file_count": 4889,
+    "total_bytes": 788536770,
+    "postscan_verification": "project_wide_synthesis/13_manifests/project_wide_input_postscan_verification.json",
+    "integrity": "PASS"
+  },
+  "gates": {
+    "full_project_freeze": true,
+    "complete_artifact_inventory": true,
+    "complete_timeline": true,
+    "complete_hypothesis_register": true,
+    "complete_failure_register": true,
+    "complete_innovation_register": true,
+    "status_ontology_complete": true,
+    "evidence_matrix_complete": true,
+    "claim_boundary_complete": true,
+    "publication_options_complete": true,
+    "overlap_audit_complete": true,
+    "stage04_decision_tree_complete": true,
+    "research_synthesis_docx_complete": true,
+    "render_audit": true,
+    "required_deliverables_present": true,
+    "status_conflicts_unresolved": false,
+    "machine_readable_result_unavailable": false,
+    "new_scientific_computation_executed": false,
+    "training_executed": false,
+    "rollout_executed": false,
+    "historical_artifact_modified": false,
+    "all_completion_conditions_satisfied": true,
+    "missing_required_deliverables": []
+  },
+  "evidence_counts": {
+    "timeline_rows": 61,
+    "hypotheses": 11,
+    "failure_categories": 18,
+    "innovations": 20,
+    "claims": 12,
+    "publication_options": 3,
+    "stage04_scenarios": 6
+  },
+  "non_computation_attestation": {
+    "new_model_execution": false,
+    "new_numerical_experiment": false,
+    "optimizer_created": false,
+    "training": false,
+    "rollout": false,
+    "historical_verdict_rewritten": false,
+    "historical_artifact_modified": false
+  },
+  "output_inventory_excluding_this_self_referential_manifest": [
+    {
+      "path": "project_wide_synthesis/00_freeze/project_wide_input_freeze_manifest.json",
+      "sha256": "24b1ed4effe65c492be0cf96d4bbf586a550d27e4f77a6c217fc82963c70a5f0",
+      "size_bytes": 3916911
+    },
+    {
+      "path": "project_wide_synthesis/01_artifact_inventory/complete_artifact_inventory.json",
+      "sha256": "e995ddbea5edd3f07888cc2eac1edb8eaa694826b1819ebf456233ef322b03d7",
+      "size_bytes": 4325448
+    },
+    {
+      "path": "project_wide_synthesis/02_stage_timeline/complete_stage_timeline.json",
+      "sha256": "54373f683a9c10e726892ff983c1f3b9405bb751c8ea615e28465e0b9a248ba3",
+      "size_bytes": 61010
+    },
+    {
+      "path": "project_wide_synthesis/02_stage_timeline/complete_stage_timeline.md",
+      "sha256": "6b0db4a802057198736cfa832fecc50dc4a031e75461bb47fec996a5d0d56958",
+      "size_bytes": 15769
+    },
+    {
+      "path": "project_wide_synthesis/03_hypothesis_register/complete_hypothesis_register.json",
+      "sha256": "1f238987dfe1dc6957ab35477c1bd6c088e074a8d4d1ef81ffbd3c505687a424",
+      "size_bytes": 5990
+    },
+    {
+      "path": "project_wide_synthesis/03_hypothesis_register/complete_hypothesis_register.md",
+      "sha256": "05e1ded7208fee222f804f4e2c4150eb79f8c52453070955a8eb1dc562d16fbb",
+      "size_bytes": 3932
+    },
+    {
+      "path": "project_wide_synthesis/04_failure_register/complete_failure_register.json",
+      "sha256": "cc52cea0023dabebe087430bddb49003f4120c5693e38188f6c14a11bbc06fdc",
+      "size_bytes": 17505
+    },
+    {
+      "path": "project_wide_synthesis/04_failure_register/complete_failure_register.md",
+      "sha256": "6176f6106d3eece59ddff07da2917f3b3e480a661e6c5c8b194cba75d6d2b53d",
+      "size_bytes": 7548
+    },
+    {
+      "path": "project_wide_synthesis/04_failure_register/failure_causal_tree.json",
+      "sha256": "12041a0c963cc2a5f2a7971b7a5fd8b0511f0ecfd2a80f0efd03c98b15df7bb6",
+      "size_bytes": 1421
+    },
+    {
+      "path": "project_wide_synthesis/04_failure_register/failure_causal_tree.md",
+      "sha256": "b92a44b1cf61c6226a78d0a6af2df100e3df75a285dd78f30fd2273fabf55393",
+      "size_bytes": 711
+    },
+    {
+      "path": "project_wide_synthesis/05_innovation_register/complete_innovation_register.json",
+      "sha256": "0a386f961d30f7ea276529efaf4086f236f288ac849ffad4379f35365c80331c",
+      "size_bytes": 16246
+    },
+    {
+      "path": "project_wide_synthesis/05_innovation_register/complete_innovation_register.md",
+      "sha256": "e6e503c445c6566dbeca47f06c31ff0edd80db3dd883b6c66da2ca22806646c0",
+      "size_bytes": 4197
+    },
+    {
+      "path": "project_wide_synthesis/05_innovation_register/innovation_evidence_map.json",
+      "sha256": "681ff3b7cc5d0acab14c39bd8dd38fe5eee79c047add0f7ea0a6ed9b66269801",
+      "size_bytes": 6025
+    },
+    {
+      "path": "project_wide_synthesis/06_evidence_hierarchy/project_wide_evidence_matrix.json",
+      "sha256": "8e3fb25efc528667169fb0ad87e194b807bd875a80684936e6b762eee3f78cef",
+      "size_bytes": 2185
+    },
+    {
+      "path": "project_wide_synthesis/06_evidence_hierarchy/project_wide_evidence_matrix.md",
+      "sha256": "3b62395008077dcbede691601d2fbf5468e9b4069be0e6398dc769d1a24309d6",
+      "size_bytes": 1513
+    },
+    {
+      "path": "project_wide_synthesis/06_evidence_hierarchy/status_ontology.json",
+      "sha256": "0622c41e3eb987ba25fbe64c44e683c93d17b4140e495d83f8a007fa51b95e36",
+      "size_bytes": 1473
+    },
+    {
+      "path": "project_wide_synthesis/06_evidence_hierarchy/status_ontology.md",
+      "sha256": "d8b3fee41d857af6a2c50f4d3c40a90496586de43234f1d431f3d7046ff6f241",
+      "size_bytes": 1059
+    },
+    {
+      "path": "project_wide_synthesis/07_claim_boundary/project_wide_claim_boundary.json",
+      "sha256": "1a75f6da594a3ed90d372d122cc1eda72a52a8aa1ecc8e5e0968237c4e328033",
+      "size_bytes": 4902
+    },
+    {
+      "path": "project_wide_synthesis/07_claim_boundary/project_wide_claim_boundary.md",
+      "sha256": "1bb8e707985606f433081797dadebfe705806bbb43ac903668e59d63a0eb13e1",
+      "size_bytes": 1941
+    },
+    {
+      "path": "project_wide_synthesis/08_publication_assets/code_asset_inventory.json",
+      "sha256": "6bdd4ec0b4b5841d956c2cf231073e8beab7d9fcedf7618f65b0e28ee7bb4825",
+      "size_bytes": 258800
+    },
+    {
+      "path": "project_wide_synthesis/08_publication_assets/data_asset_inventory.json",
+      "sha256": "3f73f2c249cb85d183c46d939c4da69992940d39da25d07361c23049b8370cbf",
+      "size_bytes": 1224745
+    },
+    {
+      "path": "project_wide_synthesis/08_publication_assets/figure_asset_inventory.json",
+      "sha256": "300f1bcb6ebfb665795236d20a306a7d138dc8ab2526584e9b55108d92b0f813",
+      "size_bytes": 76651
+    },
+    {
+      "path": "project_wide_synthesis/08_publication_assets/manuscript_asset_inventory.json",
+      "sha256": "6c0c5d27a08074a7055793c18cdef2771ad82d96603b0ed13b1598519826bce5",
+      "size_bytes": 272769
+    },
+    {
+      "path": "project_wide_synthesis/08_publication_assets/table_asset_inventory.json",
+      "sha256": "98d1b3e5fed1b4cb9e2620dab8b41daaf05324cb9659830562840d216e47c9ad",
+      "size_bytes": 254175
+    },
+    {
+      "path": "project_wide_synthesis/09_publication_options/anti_salami_publication_rules.md",
+      "sha256": "cc96fbba87eb3d62c6f400b21315184ce05511eb9fe413cfc3eec57b4bd30f1f",
+      "size_bytes": 622
+    },
+    {
+      "path": "project_wide_synthesis/09_publication_options/cross_paper_overlap_matrix.json",
+      "sha256": "2e9b188877547daea6dd88cd132bba42d72e92a99703d02ec514343cb26bf3f4",
+      "size_bytes": 2461
+    },
+    {
+      "path": "project_wide_synthesis/09_publication_options/cross_paper_overlap_matrix.xlsx",
+      "sha256": "2e5c047c5a836b8ed414dfdd0748c98cbe5e4c8edff14a03bc17f083db84a63c",
+      "size_bytes": 7297
+    },
+    {
+      "path": "project_wide_synthesis/09_publication_options/cross_paper_overlap_matrix.xlsx.inspect.ndjson",
+      "sha256": "39c385f9ff13e535d24028dd8047aa01a4de44bf7c94709dfbb45d0e9da89164",
+      "size_bytes": 50041
+    },
+    {
+      "path": "project_wide_synthesis/09_publication_options/publication_option_A_single_integrated_paper.md",
+      "sha256": "6e9fecb22fe2c0621913238f18fa8905cdd290a789eb24b93043a081c62373e8",
+      "size_bytes": 891
+    },
+    {
+      "path": "project_wide_synthesis/09_publication_options/publication_option_B_two_paper_split.md",
+      "sha256": "cd507b6eb801e48495f04266d26053181d58699ca9d944f1158916cb404c11a3",
+      "size_bytes": 1484
+    },
+    {
+      "path": "project_wide_synthesis/09_publication_options/publication_option_C_verification_only_fallback.md",
+      "sha256": "37ebf6dad84ff37a8f94255a4cbcf6cdf4ac8f40ff607976487dbdfd0690ec96",
+      "size_bytes": 592
+    },
+    {
+      "path": "project_wide_synthesis/09_publication_options/publication_option_comparison_matrix.json",
+      "sha256": "283627c87f8f2e7180f6292722539af7630d2ce902119c25e69a2b7c1fde244e",
+      "size_bytes": 893
+    },
+    {
+      "path": "project_wide_synthesis/10_merge_split_decision/post_stage04_merge_split_decision_tree.json",
+      "sha256": "f245104672a2a478f71aef5a1962a615d994d7c03a16771c9b673c46be4090ac",
+      "size_bytes": 2616
+    },
+    {
+      "path": "project_wide_synthesis/10_merge_split_decision/post_stage04_merge_split_decision_tree.md",
+      "sha256": "84e4e1714831aa354ec5603a5811eb008289af8412e86189155312923ccb6f9c",
+      "size_bytes": 1395
+    },
+    {
+      "path": "project_wide_synthesis/11_stage04_update_interface/stage04_decision_update_template.md",
+      "sha256": "31a85a21f41085915442a3636e2f84b125a5c6bf529f3c0efb34b36fae861da3",
+      "size_bytes": 435
+    },
+    {
+      "path": "project_wide_synthesis/11_stage04_update_interface/stage04_delta_manifest_template.json",
+      "sha256": "e388752001a78ecf653ecebc9dbca51443ae33626ae540f0c4ed98d75560f38d",
+      "size_bytes": 255
+    },
+    {
+      "path": "project_wide_synthesis/11_stage04_update_interface/stage04_evidence_import_schema.json",
+      "sha256": "37b81d9a0600022e3ad192ce204948fdfb94a67cf4be57281cae65691cebb361",
+      "size_bytes": 951
+    },
+    {
+      "path": "project_wide_synthesis/12_reports/how_failures_generated_methodological_progress.md",
+      "sha256": "f50892d7a99b94934eb805a479edb66f26010f13b976a4c66dbd7190665a87a3",
+      "size_bytes": 1936
+    },
+    {
+      "path": "project_wide_synthesis/12_reports/project_wide_publication_decision_dossier.md",
+      "sha256": "ffb3afb3c7b121e8558d2e4e01e27232672667f501cb3b2184a23b33e1447286",
+      "size_bytes": 1440
+    },
+    {
+      "path": "project_wide_synthesis/12_reports/project_wide_research_synthesis.md",
+      "sha256": "decce15f90f1e8c5acd74a8b0bf34a8d7ef20c72e8233d6676c0c5ab89eb55d2",
+      "size_bytes": 14529
+    },
+    {
+      "path": "project_wide_synthesis/12_reports/project_wide_synthesis_final_report.md",
+      "sha256": "6ee0a400a5f33ef237dd97661e5ddbd59f3c8efd97c81c5c701c4db3d3c18b53",
+      "size_bytes": 2189
+    },
+    {
+      "path": "project_wide_synthesis/13_manifests/build_overlap_workbook.mjs",
+      "sha256": "ec36f754841120752622862feab1c69eb6432a9482b4850526a32ff893e48ad3",
+      "size_bytes": 6310
+    },
+    {
+      "path": "project_wide_synthesis/13_manifests/build_project_wide_docx.py",
+      "sha256": "6e4a727d88887688ecbfcccbdb815c8c6fb2b9cd7c124de5bea0aa748cd7b214",
+      "size_bytes": 13906
+    },
+    {
+      "path": "project_wide_synthesis/13_manifests/build_project_wide_freeze.py",
+      "sha256": "697f2f180345c7589685e39af4eeee2ea4b899d0b0caf7e10b2a8eec44b51d0b",
+      "size_bytes": 10062
+    },
+    {
+      "path": "project_wide_synthesis/13_manifests/build_synthesis_content.py",
+      "sha256": "b446a71cb26480a1e4a53367f93fb6d4c05136215131ffa29bae6b6bd42d25a4",
+      "size_bytes": 70486
+    },
+    {
+      "path": "project_wide_synthesis/13_manifests/cross_paper_overlap_workbook_inspection.json",
+      "sha256": "64b40e902e5437e7299ce3f20a3588a06ca936b0f5adb02e28673c4422cfc7e5",
+      "size_bytes": 4493
+    },
+    {
+      "path": "project_wide_synthesis/13_manifests/finalize_project_wide_synthesis.py",
+      "sha256": "f15b5afe19ecd48d5cfa885d38c99422ebcf7aa0670ddcd00dcc2c4a79838646",
+      "size_bytes": 23262
+    },
+    {
+      "path": "project_wide_synthesis/13_manifests/project_wide_docx_a11y_audit.json",
+      "sha256": "aebc8fe405c415196a1f203c3c83b144eeb23f0082b71554353fe1420ed50998",
+      "size_bytes": 180
+    },
+    {
+      "path": "project_wide_synthesis/13_manifests/project_wide_input_postscan_verification.json",
+      "sha256": "1f1c292439b9197b3eee127640ad3978898a2d8a5caf96e9d37f12175a958720",
+      "size_bytes": 765
+    },
+    {
+      "path": "project_wide_synthesis/13_manifests/project_wide_render_audit.json",
+      "sha256": "042d4760b48c2b8a1b619ec2c0313c551cdffd319557d04e3379e25ff3ac274c",
+      "size_bytes": 7344
+    },
+    {
+      "path": "project_wide_synthesis/documents/SPH_PIO_PoC_Project_Wide_Research_Synthesis.docx",
+      "sha256": "eb1a49dbddef9b65560ef6614adf9d1fbc2f6ce166f04af97f83acfa379a8b9f",
+      "size_bytes": 209615
+    }
+  ],
+  "output_inventory_aggregate_sha256": "d6abdb8011551a531a4f8aafcc1b90955a2b68ac8b68d27e40f1e9ef99f93bcd",
+  "self_reference": "project_wide_synthesis/13_manifests/project_wide_synthesis_final_manifest.json"
+}

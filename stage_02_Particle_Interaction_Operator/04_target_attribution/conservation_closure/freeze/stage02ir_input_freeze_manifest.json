@@ -1,0 +1,34 @@
+{
+  "Stage02J_authorized": false,
+  "candidate_discretization_target_count": 7,
+  "created_before_controlled_recomputation": true,
+  "frozen_files": {
+    "stage_02_Particle_Interaction_Operator/02_operator_design/constraints/pio_conservation_contract.md": "sha256:1631e6b83d939f007cf3045a2b6e33494803a4aac3068eec9253348cf51b527c",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/acceptance/reference_acceptance_results.json": "sha256:44d6e43d83ee00c5b05d10bf1172e4f643b0150c63b11f6194a116dd73258ebe",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/acceptance/reference_acceptance_rules.yaml": "sha256:4f317c1e8ba79a5c176b38781edda9353eba477d896b627cc3a981f7c377c71e",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/qualified_spatial_targets/attribution/disorder_audit.json": "sha256:6878ba48579db2f60208811798ee9eff9a9d074258948753cc58d2e011b40d4a",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/qualified_spatial_targets/attribution/resolution_attribution.json": "sha256:9259b96da169ac607c1464aa4a20c925b341769ac6e39ee32aa922d5b77ad6db",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/qualified_spatial_targets/attribution/six_component_attribution.json": "sha256:c47884944330bceafd06225b8d8c704c4381cb6730d4c6f0b160eeb82732759d",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/qualified_spatial_targets/attribution/support_attribution.json": "sha256:3c333967f99ab0d9ecf20dcb9e621fff725b50d185bbc4ecb97d8eef55ed58ac",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/qualified_spatial_targets/case_matrix/preregistered_stage02i_case_matrix.yaml": "sha256:24f0c2ae35cec8ee882f0402ffb0d06d81c7282f4b4137d8deea51113baeedae",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/qualified_spatial_targets/conservation/conservation_compatibility_audit.json": "sha256:1849bd13a63a78c76b8de927ae2e1a2cbe2adefdc10f9da93ac9ef94951e5b31",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/qualified_spatial_targets/results/stage02i_eligibility_results.json": "sha256:80d60313478dc352d5ff8b9b323f261d22e4af99730e2f3012a783bf68ca3f65",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/qualified_spatial_targets/targets/spatial_target_candidates.json": "sha256:9c4684bd8f047b4a253565b27e261405776934b6699690d56fe0228fcfbf4d38",
+    "stage_02_Particle_Interaction_Operator/07_reports/stage02i_final_report.md": "sha256:2fdd1d45b81b074d2f2a1ff49a60c77d0a131c1b542923d6ed4f9e2111ddf89d"
+  },
+  "hash_algorithm": "sha256",
+  "historical_record_overwrite_permitted": false,
+  "manifest_version": "stage02ir-input-freeze-1.0.0",
+  "node_residual_only_count": 2,
+  "pair_force_compatible_count": 5,
+  "seven_target_record_hashes": {
+    "i_anchor_n16_h26_regular": "sha256:a8d3e84cef0cbc9f2398c2b01ec7fe7cc048878cbde44e66835a2137be666686",
+    "i_dis_n16_h26_jitter05": "sha256:5e7a71fbe9acbff24925e3fade425fa12922466e10feefad67e6edc27167aa69",
+    "i_dis_n16_h26_jitter10": "sha256:0dcfee0fc9de6be8d5daaec06a0cba650ac32e4c2610abfb01feaf94ac4fbd3f",
+    "i_res_n12_h26_regular": "sha256:da88650fa5836e8b3e181102ca70859ec7a65c6a66b7883c5937feac4a9ccce0",
+    "i_res_n20_h26_regular": "sha256:23786c8984b94cb3e731207e99ac57e6140a3554362cf47dcbcae3348023138c",
+    "i_sup_n16_h22_regular": "sha256:b247749d1c744d072cc0384c3851a28ffe3da97ee22cad3d9ac937c6c4ae809d",
+    "i_sup_n16_h30_regular": "sha256:f36a9d7abebb332fc2762165e65e58676d4cf1a78237b889e1dcaee3956ab21a"
+  },
+  "target_projection_writeback_permitted": false
+}

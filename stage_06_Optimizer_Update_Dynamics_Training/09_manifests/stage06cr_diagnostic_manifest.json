@@ -1,0 +1,26 @@
+{
+  "attention_D3_seed_count": 3,
+  "capacity_arms": [
+    "D1",
+    "D2",
+    "D3"
+  ],
+  "checkpoint_scan_count": 590,
+  "complete_history_run_count": 9,
+  "gradient_alignment_run_count": 9,
+  "historical_update_count": 11620,
+  "history_value_D3_seed_count": 3,
+  "new_optimizer_steps": 0,
+  "new_parameter_updates": 0,
+  "new_training_runs": 0,
+  "origin_arm_seed_matrix_shape": [
+    384,
+    3,
+    3
+  ],
+  "rollouts": 0,
+  "schema": "sph-pio-poc.stage06cr.diagnostics.v1",
+  "sealed_test_evaluations": 0,
+  "selected_terminal_train_evaluations": 18,
+  "selected_terminal_validation_evaluations": 18
+}

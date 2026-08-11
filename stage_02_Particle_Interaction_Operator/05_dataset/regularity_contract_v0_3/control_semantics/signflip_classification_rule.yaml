@@ -1,0 +1,27 @@
+rule_version: stage02jt-signflip-mechanism-0.3.0
+frozen_before_signflip_recalculation: true
+population: all_stage02js_RANDOM_PARTICLE_SIGN_FLIP_realizations
+old_false_positive_definition: stage02js_S_h_p_smooth_at_most_0p01
+component_significance:
+  magnitude: p_mag_at_most_0p01
+  direction: p_dir_at_most_0p01
+classification:
+  SIGNFLIP_FALSE_POSITIVE_MAGNITUDE_DOMINATED:
+    requires:
+      - particlewise_magnitude_position_mapping_preserved_for_all_realizations
+      - at_least_80_percent_of_old_false_positives_magnitude_significant
+      - at_most_20_percent_of_old_false_positives_direction_significant
+  SIGNFLIP_FALSE_POSITIVE_DIRECTION_DOMINATED:
+    requires:
+      - at_least_80_percent_of_old_false_positives_direction_significant
+      - at_most_20_percent_of_old_false_positives_magnitude_significant
+  SIGNFLIP_FALSE_POSITIVE_MIXED:
+    requires_any:
+      - both_component_significance_rates_above_20_percent
+      - neither_dominance_rule_satisfied_but_mechanism_counts_are_complete
+  SIGNFLIP_MECHANISM_UNRESOLVED:
+    applies_if:
+      - no_old_false_positive_realization
+      - magnitude_mapping_check_failure
+      - decomposition_or_p_value_evidence_incomplete
+thresholds_changed_after_observation: false

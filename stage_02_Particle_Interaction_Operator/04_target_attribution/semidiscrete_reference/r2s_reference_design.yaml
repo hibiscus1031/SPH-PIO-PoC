@@ -1,0 +1,48 @@
+design_version: stage02f-r2s-reference-1.0.0
+reference_class: R2S_semidiscrete_spatial_qualified
+reference_identity: r2s_quadratic_kernel_weighted_wls_v1
+temporal_derivative_used: false
+
+invariants:
+  same_particle_state: required
+  same_EOS: required
+  same_kernel_family: cubic_spline_2d
+  same_physical_model: weakly_compressible_pressure_plus_kinematic_viscosity
+  same_neighbor_graph: required
+  same_timestamp: required
+
+spatial_operator:
+  method: local_quadratic_weighted_least_squares
+  kernel_weights: cubic_spline_2d
+  normalized_coordinates: displacement_divided_by_support
+  basis:
+    - xi_x
+    - xi_y
+    - 0.5_xi_x_squared
+    - xi_x_xi_y
+    - 0.5_xi_y_squared
+  reconstructed_quantities:
+    - pressure_gradient
+    - velocity_laplacian
+  acceleration: negative_pressure_gradient_divided_by_density_plus_nu_velocity_laplacian
+
+reference_qualification_thresholds:
+  minimum_matrix_rank: 5
+  maximum_condition_number: 1.0e8
+  maximum_quadratic_reproduction_Linf: 1.0e-10
+  maximum_solver_sensitivity_relative_L2: 1.0e-10
+  maximum_deterministic_repeat_difference: 0.0
+
+attribution_thresholds:
+  target_nonzero_rule: Linf_strictly_greater_than_zero
+  resolution_endpoint_L2_ratio_max: 1.0
+  resolution_min_adjacent_fourier_direction_cosine: 0.8
+  resolution_max_smoothness_ratio_to_cyclic_null: 0.9
+  support_min_adjacent_fourier_direction_cosine: 0.5
+  support_max_L2_magnitude_ratio: 10.0
+
+limitations:
+  pairwise_conservation_qualification: not_claimed
+  angular_momentum_qualification: not_claimed
+  training_permission: false
+  model_performance_claim: prohibited

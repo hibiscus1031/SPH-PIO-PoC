@@ -1,0 +1,1320 @@
+{
+  "N": 8,
+  "gates": {
+    "D0_all": true,
+    "complete_128": true,
+    "finite_all": true,
+    "frozen_train_scale": true,
+    "permissions_restored": true,
+    "protocol_unchanged": true,
+    "reference_all": true,
+    "sealed_denial": true,
+    "symmetry_all": true,
+    "unique_128": true,
+    "zero_force_all": true
+  },
+  "lineages": [
+    "LCDF_02",
+    "LCDF_09"
+  ],
+  "opened_after_protocol_freeze": true,
+  "pass": true,
+  "protocol_sha256": "sha256:b7918bde82b104895b6d47c798801608938c661c3f8b249f4c832c98c3a83cbe",
+  "record_count": 128,
+  "records": [
+    {
+      "canonical_sha256": "sha256:9d5000087579f62fcb0ef150e087b9e88869cd469b1c342970f1a73263105e95",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O00.npz",
+      "case_cache_sha256": "sha256:30d7daac01ed24c508083ea0037dc7faebbef86a851252b63ac7edfa57d1ba6e",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O00.json",
+      "json_sha256": "sha256:818c5d75f426a2438608a161c4f16393554a6c7389fec83484dc5e8ee21622c4",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O00.npz",
+      "npz_sha256": "sha256:84cc17b72b8d9c90b90d0a1a3434d5182444e04d39674c948da3f8cb50106ce6",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O00"
+    },
+    {
+      "canonical_sha256": "sha256:39455d565a96e4acd5b1ae406ed6b79ec6392bf1b17c48520a76162dc13c4162",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O01.npz",
+      "case_cache_sha256": "sha256:62d2563af8d863b9fcdaf5f10677995cf92f2f7a1b49c04bc32c051b0931b823",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O01.json",
+      "json_sha256": "sha256:7a7f8e172fd6be641a79341aca6fcb8e499d936696142a9b6714a459f8ddaa1b",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O01.npz",
+      "npz_sha256": "sha256:0ce0564d578a904c736a6ff038b00093602630a96220ade39d6b727306fe37c4",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O01"
+    },
+    {
+      "canonical_sha256": "sha256:a8247153bb8a90068278dc0875defb71877462e89072377981759d7120627960",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O02.npz",
+      "case_cache_sha256": "sha256:03114522fcfaa6c1387266b09dafdeddd72ebd141d9a3d7b89c66f1bd2adadcc",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O02.json",
+      "json_sha256": "sha256:7d9e6c862a3a2284096f2ced219686c751a43849002ad6940ec7ee1afb223ca0",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O02.npz",
+      "npz_sha256": "sha256:d365b1e747700501337d86c801639c71cd49b5814cc09136a7dc1a98b42140f7",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O02"
+    },
+    {
+      "canonical_sha256": "sha256:337b7fc1188978aefb4cc157a876289406b1b91da1821cd099ce65a3e9ea45bf",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O03.npz",
+      "case_cache_sha256": "sha256:0d66c1da87b7c6aafc8a72535becdf443290494dee31a06208beab0d4c035638",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O03.json",
+      "json_sha256": "sha256:a58704621cfb057e350c970d91a589f3609049861415db39e48c93b1509ffc76",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O03.npz",
+      "npz_sha256": "sha256:34abc121e3eec6ed93b90261796ce6851244cf2eb23d37594a887bf3ac92b5d5",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O03"
+    },
+    {
+      "canonical_sha256": "sha256:b2f6d55fbef7f933f8f1dc495c1520da8ef483824f59470cb36e16fa1bac7f6f",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O04.npz",
+      "case_cache_sha256": "sha256:27a137a6e3376bc8ffc2eec76f612b511593e84b2cbfd5445a9945c7dd221f24",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O04.json",
+      "json_sha256": "sha256:df5110d6dbae9870467e043b9cc94eda5d738bed5383d6e89ab297bb47d3fcc8",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O04.npz",
+      "npz_sha256": "sha256:521400fbbdf884dc34c24517d4f250e25e81317406a62ad11e5e5b361351d591",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O04"
+    },
+    {
+      "canonical_sha256": "sha256:0971e5c722b35e67629621b6bc35dd2fbaf8b08e835c1001fa9547cb1efa7fa4",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O05.npz",
+      "case_cache_sha256": "sha256:574a31b275bb4a929b33b256c4c7567c66c483b69f2e812d14aba202129c075d",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O05.json",
+      "json_sha256": "sha256:77179f7f67c7fe7c0c9209447da821d4e451ca1414bc6d428617630eafefcc5a",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O05.npz",
+      "npz_sha256": "sha256:7b0fd1ff645af432bb2bd8f43d2072b5f5236c66e0dc1d5eec21aa0b753f6a06",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O05"
+    },
+    {
+      "canonical_sha256": "sha256:4affd9872dffddb39aa4bb6ceefe12fc0ffab0193a4d95a6c18a8f56875989c6",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O06.npz",
+      "case_cache_sha256": "sha256:89596abfb1b74fbb86aa7b478485f2b385762f198667ef39b617297ee776d2d7",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O06.json",
+      "json_sha256": "sha256:56cde988874b3de0188b11274becf8ba5372d5d65eba335648f0e668f6dd35a6",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O06.npz",
+      "npz_sha256": "sha256:e986c3d5b64550f02134395c7c8618383bfc20cf6c83a4a12721b83eb66e8897",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O06"
+    },
+    {
+      "canonical_sha256": "sha256:a5b131f4ec3712bec4727af78fa3a89533e04f9e85c6448a518639527a5f4fa4",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O07.npz",
+      "case_cache_sha256": "sha256:ebe0464cb330a0b332a124299ccb849e95cf8e48e137d0768b16f3db428ae60c",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O07.json",
+      "json_sha256": "sha256:8e4090bc3e9b88c551fcb0b64ddfbe2520efadd747d1c4c330c55ba6258896a3",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O07.npz",
+      "npz_sha256": "sha256:7fd0b60ec8b59ea54deef95d52df0ddcacd0b3f5e0f4adc8d5ad1e8d16fa11de",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O07"
+    },
+    {
+      "canonical_sha256": "sha256:77b6f3bd081f137015b3f7e584ce3dbf159ebf63021681774060712590033f3e",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O08.npz",
+      "case_cache_sha256": "sha256:f585532750e0f27e4894a966f4f7ce1e25351cab4ad29002125b787d779ef5be",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O08.json",
+      "json_sha256": "sha256:2f97f965753ad3f1a0d8ffbb2fdcf6096008b44601b19814f0df244ca44e73d5",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O08.npz",
+      "npz_sha256": "sha256:f88575a0f9c44d70520943455544970fdee140f370e97a605953a21c04bfda01",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O08"
+    },
+    {
+      "canonical_sha256": "sha256:a24d2ef141612c3ddb87b939c1dc6c5b7ec6ca840bbe2197d8c1e05cd26b7157",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O09.npz",
+      "case_cache_sha256": "sha256:7d7b28281e4f8d5e9e2409543e56f8e35a5bc03e0875a7cc2adf8e3845442b4e",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O09.json",
+      "json_sha256": "sha256:36c4021f867384190abdc816d37c127d5d1a5aa3d3cbfabc72038ce44549edb1",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O09.npz",
+      "npz_sha256": "sha256:ee4b58d90dfaa76a837d52b3611a50b1eb14d3670a137a9de84a50652af7da5a",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O09"
+    },
+    {
+      "canonical_sha256": "sha256:a7572aaf86991285802c9ea6fc9150404fbd1c4597897fc7de75ca66efda311e",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O10.npz",
+      "case_cache_sha256": "sha256:5b4ed5ce46435512bae85ef62461ba633ab4ce99e428c47ac4624033d3278b61",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O10.json",
+      "json_sha256": "sha256:fc1ab7285c2f3f7187057cfdf10cdb01582af65645e2cc48e222fed86d6be27c",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O10.npz",
+      "npz_sha256": "sha256:d187a6e1abf0c9d7a6f5cf373c545a3ae249f09b51b4e1cbc112b090f67a95d4",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O10"
+    },
+    {
+      "canonical_sha256": "sha256:e6c64dea72a0ec3cf8fa50973b32988fe061c7ecd86e6362356e22f92aefa4aa",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O11.npz",
+      "case_cache_sha256": "sha256:24e9c2af68e1312161a93fa551779e3c0fa6e1eec842ac7298c037b8a69313fe",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O11.json",
+      "json_sha256": "sha256:ad993dd6219ba346ec8e9a2a4ae2315afa0e3506982320bbb3a5e76914167d3f",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O11.npz",
+      "npz_sha256": "sha256:003a4e0d023cc7205dff2283297ae115804b8da26d74f9901c2b269561a67a44",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O11"
+    },
+    {
+      "canonical_sha256": "sha256:ef3c436531de7b20f8f124acfbdba550237afaacb3abf52585be85404847b7ce",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O12.npz",
+      "case_cache_sha256": "sha256:68af6ad91825e1d4221daa939a23463697339bb810b9589e4cd3363bd6e2ad96",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O12.json",
+      "json_sha256": "sha256:4e08cff7195417c684353dcbc6b9a0fd88bcdb8020788700bb9e0a5ffd0e2ec7",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O12.npz",
+      "npz_sha256": "sha256:077aa2caca8fa7d394aad9ac76727ee99c50263add0cf2c45ce604955706ca1b",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O12"
+    },
+    {
+      "canonical_sha256": "sha256:34d7681b14a65929625d5446b45ecaed92687facd845bfccc3b29536ae30a727",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O13.npz",
+      "case_cache_sha256": "sha256:9ff93d2fdebea20a357cd6b0cf917f45fa23d2a3bdcaac01a0bb542e136b1a48",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O13.json",
+      "json_sha256": "sha256:96c23c5307c0d798f40e731b0d1906d893957695d5ce6c7600ae43c268adb3f2",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O13.npz",
+      "npz_sha256": "sha256:5176d639c41f6b4cbec974910988661b9aa216e70fd1210e9e8a25cae0074a30",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O13"
+    },
+    {
+      "canonical_sha256": "sha256:c08726ccdb4b262c3ef3d0bf5a6579dcae1d3fde87f0724fd724ff1d79e82a1f",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O14.npz",
+      "case_cache_sha256": "sha256:0c9aa8a1b985015c7a414b91ee52f801cee5fc5743b0c86135e547e446e410be",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O14.json",
+      "json_sha256": "sha256:31187ce0539eea7ead18317be15e37bf00500ced01c6f4cc5c5993f9d031a495",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O14.npz",
+      "npz_sha256": "sha256:18e3364ac3fc01e4e45d8cf266d5336d19d8925887d0a78068a7efb3e0f83fb3",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O14"
+    },
+    {
+      "canonical_sha256": "sha256:2d45c9ffbf869fc340a72625523c15b861c0411fdbb7803da289112ee7176efa",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O15.npz",
+      "case_cache_sha256": "sha256:15eb9677b85d65dcecb73671d1987774062703b76a180d5e763543d5d3c661f2",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O15.json",
+      "json_sha256": "sha256:9fa0e0e248609b02ac877f0bf0c77279ef16859e9761c3337a36d1a474fb299c",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O15.npz",
+      "npz_sha256": "sha256:86317c77422f6999180c7ced6e274915d87223ae0d1a59dc5d4d88d260296e57",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O15"
+    },
+    {
+      "canonical_sha256": "sha256:6c790bff3222a7ef45f3e4e42b29989e47d894e1132bf6766546a53004a926c5",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O16.npz",
+      "case_cache_sha256": "sha256:c5689f4aac2d9dbebd0bd62d2245a1d15c6a503e06cd86f164e03f2b718b8e42",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O16.json",
+      "json_sha256": "sha256:3bff536ca59e43ff92687afe531befe82f4d5f9269154d0dd26f0d8d9c07ea34",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O16.npz",
+      "npz_sha256": "sha256:fae922b88d9dfbfd2710805edcb161038a2818a2c52194a8b2163c41de1f1d09",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O16"
+    },
+    {
+      "canonical_sha256": "sha256:067abb6f0c7dd12f72fc23a5cbbeff197e5759c25c4bf0c519a9082ed6883fc1",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O17.npz",
+      "case_cache_sha256": "sha256:43fef877be117fb71de915b27b78f7e9dd3e956c85d1449c17fb69ee0983ae13",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O17.json",
+      "json_sha256": "sha256:ed5e89e2463f7dbddc77f430087a9fdbdc0618583a8c8d4a0d7480aa4c73cc2a",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O17.npz",
+      "npz_sha256": "sha256:3c97b8857464d69cfe4ad3c93acd0a583cc84ebe2c0394d795912547f7a3f07f",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O17"
+    },
+    {
+      "canonical_sha256": "sha256:b49c1d900954eab3c3d64b5ab5f1e23071382f9912e07cadea1f213d84e2533b",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O18.npz",
+      "case_cache_sha256": "sha256:b68655f3ecb325daa776345280c873c0ff779c97e1863b18f824b4061b269a21",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O18.json",
+      "json_sha256": "sha256:2b104abf095bbf16273477ba11758cf11e619e3d04eed0261eedd6c194711f7c",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O18.npz",
+      "npz_sha256": "sha256:f29535f2492d633bc012337f3e196fef1690dc36738de6e4c1f098e0ced62eba",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O18"
+    },
+    {
+      "canonical_sha256": "sha256:64066ac569f472bbb291578b98f409e2395fbaa73a10b2ef1f1011f89d032e2f",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O19.npz",
+      "case_cache_sha256": "sha256:c1b86f5f9f6cf6ad777d2c96fb394f0e358251bfc326ee5bffc726eb73f136f7",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O19.json",
+      "json_sha256": "sha256:a4dc2c8af980f116b726b10f4b99bf230e12d48c6b8dcbeb24a54581fedf590d",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O19.npz",
+      "npz_sha256": "sha256:a3c88756f73ee51cbff457b66362973c1572ea663a9c972e8826ff633f83a689",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O19"
+    },
+    {
+      "canonical_sha256": "sha256:1780ed82634289c2c2da81d2c49a0e0a5be91e993933d7a9e3f1d3fbcce03c35",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O20.npz",
+      "case_cache_sha256": "sha256:5817834c5593ec24fd206f53fd90fb3eaabeba6bf746ac5a2abe266d465b0eb1",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O20.json",
+      "json_sha256": "sha256:0f62948d4c54325c86c2c384ba706c89b6ae8823c68078ef0653023746e8422a",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O20.npz",
+      "npz_sha256": "sha256:445be8ba223322dd733e1591c9c4dc5da446a77714849967e6115e461b1bf8e1",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O20"
+    },
+    {
+      "canonical_sha256": "sha256:d21bcfaa922654b7022385f9fe287ed3fdccee055b4632749f17e0a2cd60bccd",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O21.npz",
+      "case_cache_sha256": "sha256:587b99c7027d09dc16a6aa056bbf982edd0ab8eecc035b1edc86e9e285147896",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O21.json",
+      "json_sha256": "sha256:94a7e330a1f7776f474e0c3b17f358a99b79dcd8aca00792ac593b8566fe168b",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O21.npz",
+      "npz_sha256": "sha256:b34f4c926247fb3f876a6a42efef54f19a1fd3f6003dc9dbf31ed9f9b3f8ebe1",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O21"
+    },
+    {
+      "canonical_sha256": "sha256:5e0362bdbb58ff289f2cecf3212d8194f696e22c21cc6b8922033f20fdda7f04",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O22.npz",
+      "case_cache_sha256": "sha256:4cfd08e56f23c62857662ce451b5bc8c9ed68923b1522733b83a5d1c7d95d239",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O22.json",
+      "json_sha256": "sha256:1e219ec2f740760f0ad340d99ac304e843460ecd91b38e3563221137eb2ae3ae",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O22.npz",
+      "npz_sha256": "sha256:f5147d1b361fa32aaba395eff5604884c743c1ef593cd4f878ddcae483da9035",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O22"
+    },
+    {
+      "canonical_sha256": "sha256:ef736b4616da5597352b1de86f465ac76925914353e73b14012c5c8d22600e96",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O23.npz",
+      "case_cache_sha256": "sha256:858f411d8fba6162db903a6b901f1c7ece4852536e26d42430958c246342b999",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O23.json",
+      "json_sha256": "sha256:03aae072d5a0e90d28013038e26593722f5f5e224d0c3e0d03b06704dc5c4ca2",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O23.npz",
+      "npz_sha256": "sha256:ae573f1f3e3b8a63f320165bb082bee1ce416b57cff1b3b4a18d352e216fbb77",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O23"
+    },
+    {
+      "canonical_sha256": "sha256:02ac497410ceb1fc058011fe6db8889952b7de2737a46e2a4f45743ee057b169",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O24.npz",
+      "case_cache_sha256": "sha256:440419eeda8565011a4b77de02a9ea5c0453dca12395117cd6c1d920c6c1cbbe",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O24.json",
+      "json_sha256": "sha256:ccdc6d99a3c05f3b82dd3ceb65691f7f25c089b302afecc4ac242e9e5d57808c",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O24.npz",
+      "npz_sha256": "sha256:76a265fb057f68eac20408f4a221908e5aeb3fa0fef4838c9a0c125c363e2581",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O24"
+    },
+    {
+      "canonical_sha256": "sha256:231332d2ebbc4cb76576b6c82ce903bb1101232f9b0416c1f738e66132f673df",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O25.npz",
+      "case_cache_sha256": "sha256:be40efab9cc55b3737123bcfbebed08f3dd90d0f409abaa1ab0e561869390278",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O25.json",
+      "json_sha256": "sha256:66b126eea8394de52bcd3e1de14fcbd174be8147e9c1165ef4a591f1907c7724",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O25.npz",
+      "npz_sha256": "sha256:28e63325d28ed519710081cd4bd1eb4d2369b08400422dd1454d7dc511e74450",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O25"
+    },
+    {
+      "canonical_sha256": "sha256:52a4890b40172e6ddb777a3f7c79fb0f9e85b711879041c847eb5cd142ce2dc8",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O26.npz",
+      "case_cache_sha256": "sha256:e94726dacc8576df1578760c94c9f4dad656810eaf0f4789162ae6cd74d0bc58",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O26.json",
+      "json_sha256": "sha256:7e67cdd2c944266e922f00dcb5d62510530afa9ece79439ee190153a79500d3a",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O26.npz",
+      "npz_sha256": "sha256:054f33191baa385b08f3c93a56f70aa633ec3539bba4da31bcdce2186c91292b",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O26"
+    },
+    {
+      "canonical_sha256": "sha256:9ff2b28ddf1849facb1ea813c61acdaf5a660641ad51b3b9b2f67ddf56190e58",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O27.npz",
+      "case_cache_sha256": "sha256:5e2dc6ddb09fdd533f281858520e3b9e7d1b89c3b2ee2fd885336e1e5ac513aa",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O27.json",
+      "json_sha256": "sha256:6297c4703f83f9c9ee201d5e0d2788c66f33c52641d59609b4269cecb83c6126",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O27.npz",
+      "npz_sha256": "sha256:51fe348704242222ed6ef99eb672904cb247e51b57661ac174d4401e9797eaa7",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O27"
+    },
+    {
+      "canonical_sha256": "sha256:b638365b69f9ec2a85b82bd1a109a6770c0be71dab5ee4c138932f3904abf452",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O28.npz",
+      "case_cache_sha256": "sha256:ef5dc67f562aa0da7a26fe180d68d0594ab666d09eaead048beadd2f708b5f22",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O28.json",
+      "json_sha256": "sha256:e56f3e21736edf3d370870cdd2ab1e03c39e1ec4ba3920e268ad96e3f6a9f3d9",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O28.npz",
+      "npz_sha256": "sha256:4dee734e013d3aa57254ea700a25f03a038f2e89dc8b00e64129b2af52e36ba6",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O28"
+    },
+    {
+      "canonical_sha256": "sha256:ffaacf26798f5b725ef0503ccbd7bfa1bd14ba8d4363acd2e45c745a92dc01ae",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O29.npz",
+      "case_cache_sha256": "sha256:7b39143e3282d961846fc566a49e8610c05b092e6ae50fddb81c3fe115929317",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O29.json",
+      "json_sha256": "sha256:929628dba7c4678b66458c08a6f1fc9c9bab63b8b703e76557e34449cd248275",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O29.npz",
+      "npz_sha256": "sha256:56df6a3b8b0a5acf31174348909544467766dacc604c06d1db769bfd0510e331",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O29"
+    },
+    {
+      "canonical_sha256": "sha256:b065d30a06fc026009475e08bd8474e6c0c71f49206c30529ea1b176185cd9e0",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O30.npz",
+      "case_cache_sha256": "sha256:fffd053d424e5d4f30e95de6c07fb8e99fdd766d34994d0d67937eb2841e52b7",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O30.json",
+      "json_sha256": "sha256:5b66aa199fd3de4142f3c2f25be7bf7921a4acbf202f9577d0d5cfd3e60c6294",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O30.npz",
+      "npz_sha256": "sha256:c145cd827dade2405bc10d9920c725885a93ace0d9e67e0d8867b4685591fca1",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O30"
+    },
+    {
+      "canonical_sha256": "sha256:bbbece01c1cf1cd4138f201455d1fcb9a8effda4d4ab3941d05952a18209a3fa",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_LOW_N8_O31.npz",
+      "case_cache_sha256": "sha256:cbec0b0f56bbb81331ec149f62dae6bc21244098148c0ee2e5d4a4f025f7ccac",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O31.json",
+      "json_sha256": "sha256:c4c5338df4e5d449294a52f02bdc94e54988914d221933d51d4fcbe1697223e3",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_LOW_N8_O31.npz",
+      "npz_sha256": "sha256:5a41e8899a54bc7ee263036c3857db83634d0de443c675ada2996217d65c1732",
+      "record_id": "LCDF_02_VARIANT_LOW_N8_O31"
+    },
+    {
+      "canonical_sha256": "sha256:03d0f0058b74736a9bb6d1cf2d55b8579b6bd6246dc8a2970a229526a6b1397a",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O00.npz",
+      "case_cache_sha256": "sha256:0e30977f1434e5613d9b1673f140d623d623ff6c61b73cea432d0656ad2e364f",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O00.json",
+      "json_sha256": "sha256:0499ead6769669220e9c3edbe2bf7c1b76b1cf5e02ebcfa0b007b124ec7c0114",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O00.npz",
+      "npz_sha256": "sha256:cdfa85b08090ad754609718640de36e9e134c0c7ce78ec84a919148b683b98a9",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O00"
+    },
+    {
+      "canonical_sha256": "sha256:bfdc7837b1254472f5e1705e12f69d59fbf136cf36b3363f5703fda592366e10",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O01.npz",
+      "case_cache_sha256": "sha256:ac98013b2a36b3a074bfef6f279c9c1215aa519c42323257097bf2e86f865136",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O01.json",
+      "json_sha256": "sha256:4c3b1547e987fd85874b12ccb56b700f97ce358b3427aeb52af318d345861e45",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O01.npz",
+      "npz_sha256": "sha256:0e14ee12a3e63f929117cfd32dbfadbd36db0e30c5db0a055f85cfa91451e529",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O01"
+    },
+    {
+      "canonical_sha256": "sha256:25383ddd25c062d5fac6624f6df28369289c6a47b337ef22be71fbd043e36d47",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O02.npz",
+      "case_cache_sha256": "sha256:25c09ba042add1e8f9488c7866ef8997c5d8a2557bcf2b3ae20fc9f50604214d",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O02.json",
+      "json_sha256": "sha256:97246a7eb59d24c84a0329c1df019dd0e276a673b248f88576dbe24881633b3e",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O02.npz",
+      "npz_sha256": "sha256:2b9ebac597c6672485dad225178d044be9bcc589d6c85e6b4b9e57e46873aedd",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O02"
+    },
+    {
+      "canonical_sha256": "sha256:31b6c42c5a420c905d2d3067fab1a04d59769cacfe8d22043879481588f38d3b",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O03.npz",
+      "case_cache_sha256": "sha256:b5bd2e6dbd6dcbf18bf2489e5863f7daecce0729cf505bab1b4a2a2fec707eab",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O03.json",
+      "json_sha256": "sha256:e1ea876d639e482d3e9e10aac51f3190af4e3c1ea4e9fc582d54679cfa0f6ab7",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O03.npz",
+      "npz_sha256": "sha256:72f2d4beb4e6fa494e3126c6d73d2e9422e8dea7d11c6768c1c393bb3c1ff1c6",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O03"
+    },
+    {
+      "canonical_sha256": "sha256:d8017e8f4c0820933d32639a4d74970d033945a88bcea4771213e67ee1cfd806",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O04.npz",
+      "case_cache_sha256": "sha256:057bb346a8329455b9159863e547d9e1d72cc9247e6ca1009e87b330f13bfd82",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O04.json",
+      "json_sha256": "sha256:f30437fb04efa9ba1ee2be7a65ccc69c7890cca7af67e4827468d1a2261622a6",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O04.npz",
+      "npz_sha256": "sha256:8036483776cfddb1abebbaf459692a09ecef59e73c602745570161bbd29ca222",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O04"
+    },
+    {
+      "canonical_sha256": "sha256:bce593ae7a1bb832bc862e44f42e79513df809c964d6122d528860bcb2eb4d38",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O05.npz",
+      "case_cache_sha256": "sha256:64acb3f5d4afef45f4dfb5cbd58db3c6116c510a7c32534a3a5c9937ff9488ed",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O05.json",
+      "json_sha256": "sha256:9221f88a677ba65b228bc0ed915498f31e884bdd88f3ecc5332144dea9d2c338",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O05.npz",
+      "npz_sha256": "sha256:4a8a9d5476246a50051a859fe98d8059a87f4e091dd2163b4c7b3978fc1ccee0",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O05"
+    },
+    {
+      "canonical_sha256": "sha256:3062d6cb8ef83135936839bbbea0d5357c3ae5fb6e2fa987d9f0dc802a7b9012",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O06.npz",
+      "case_cache_sha256": "sha256:e06861c90f32fdda1c5492689c33ab32778baf21fcae960aa84027fd13cafd9a",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O06.json",
+      "json_sha256": "sha256:2bb153c8881153a72de12a983f27cedc3861f90393154a04140370d0ad4f265c",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O06.npz",
+      "npz_sha256": "sha256:d968bd318358203e9e8368257457e6c655366a9bd2c9806a95c8dfdc82d7b4f0",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O06"
+    },
+    {
+      "canonical_sha256": "sha256:1d7dfb4f3f8ea066c46b8649529083045a4f68c819247e3794ebc4463cb09c2e",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O07.npz",
+      "case_cache_sha256": "sha256:27efa61af704fa500d295c70da1dbcfcdd5653acade95da2430277702fead59a",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O07.json",
+      "json_sha256": "sha256:cc1ee703d4b157a6eedb0ccd7eb3c331b1692760b63eb7eb0b2c4447171a8cd7",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O07.npz",
+      "npz_sha256": "sha256:c2e723c94ff3cea8a680996435823d253d908c54b23c8eeace51e27ff105acff",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O07"
+    },
+    {
+      "canonical_sha256": "sha256:7795cac84289f5c30645dfa6258ff2e8d58c08b82392d7caf2d334f862df82cd",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O08.npz",
+      "case_cache_sha256": "sha256:8cc0d309675f875a5bf68c7f9e8519d245c6a9d2716cba4f793ef3845be90747",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O08.json",
+      "json_sha256": "sha256:163d808c7cca40d84d49a26bfc4f75dbca3d58556d58327aba1bbd79afe173f3",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O08.npz",
+      "npz_sha256": "sha256:3fd3bbef0a14fd9bfeb15a08633faf60d06fdaf81804fcaf075aaec20934ff89",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O08"
+    },
+    {
+      "canonical_sha256": "sha256:bb2a411914ad442208046ba020aa19c73a5ca8892ec10102db3c47edc510c250",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O09.npz",
+      "case_cache_sha256": "sha256:ffc9b6ee3e99c637902cab89a2ce38172adffcfe98738d6c393f0530cdbfb67a",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O09.json",
+      "json_sha256": "sha256:a74ffd21d75180ff4cd42c507b7013b25495ea0e190fbddef8904111572a1d3b",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O09.npz",
+      "npz_sha256": "sha256:ef6fb2e548d0866f14f164361141b112e462696db3b8be691fd930ed74a62bc0",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O09"
+    },
+    {
+      "canonical_sha256": "sha256:8f3ab2773a77645d03138dfedf524d14b46ff07ea43134b8be5770baa2e1f8d5",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O10.npz",
+      "case_cache_sha256": "sha256:c2743001ddcf34aa2fafa86bac98136620d994aec9f4ce982e2da08327ff6a22",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O10.json",
+      "json_sha256": "sha256:f2de381968b5365f1a13961876fc1b5bc55cfe7a4da56a854d49fc27960af9aa",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O10.npz",
+      "npz_sha256": "sha256:247f9586ec42c23783bde7c1fc1aead8fa859ccaa9df3892839caf10167ed033",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O10"
+    },
+    {
+      "canonical_sha256": "sha256:a2089663bd0ef703337a9c4a6ac54c8c43e2f5222c8c155e1d7e0e534e4470a1",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O11.npz",
+      "case_cache_sha256": "sha256:23c915327c4c49a3beb7847271a7e45687121c1bda92ec681d5bc5838e5f65b5",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O11.json",
+      "json_sha256": "sha256:21debfc595ebe9be50ff2dd11ac6b4e0201fa3afd2e07446db7275a0196ce0ee",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O11.npz",
+      "npz_sha256": "sha256:b27168108b7e121bf211552bde91c9722264d619fdce1c30ce0ea4901895612e",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O11"
+    },
+    {
+      "canonical_sha256": "sha256:cfb1f20f6736b5665149fb2b0eb40ca1454d8b6d232f4862aeb8da4266afc9f9",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O12.npz",
+      "case_cache_sha256": "sha256:9a2c2dded9aaf5470866acb13a878e3cc49040eeb44fa4326d663e37ca0d35d6",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O12.json",
+      "json_sha256": "sha256:032fcb63a5cb35944c4e26b214e36f07e32c919a551ce5ec6833ba4c87b177a2",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O12.npz",
+      "npz_sha256": "sha256:9296cd3bd255594bb807844121e0f72d2fcbf439e727c4628a0a13c9e24eb69c",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O12"
+    },
+    {
+      "canonical_sha256": "sha256:a179685058b72630670add3f1c43c834e97094bb2c61b751a4f7d9000f01e6ef",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O13.npz",
+      "case_cache_sha256": "sha256:d58dcbfff33e73283357df3ed2001b7bce0d240f12d72a449a1f145bb93e2ef9",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O13.json",
+      "json_sha256": "sha256:4b78cf871701f5adb04cd4dff0d0d1687995ec56f09d7d3d1e674f06e4980289",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O13.npz",
+      "npz_sha256": "sha256:c00275b5900a111f7d7d47f0ee9b9239d042689f81e96f142bba45b68da8d661",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O13"
+    },
+    {
+      "canonical_sha256": "sha256:d7039bdc6aab551cdd4d879bbae3d913080729e4905dc4708b175cfb97719eba",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O14.npz",
+      "case_cache_sha256": "sha256:bde3cd5a414551b66456eeecd02ac65cf769592b65f226b7050b666fdf602096",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O14.json",
+      "json_sha256": "sha256:b7e2569857d5a4db7c6fa6dfb8e5ef476b5289ff4ba4c711189a5659e94464ca",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O14.npz",
+      "npz_sha256": "sha256:1f0a1101cf0b6db283f7969258259b3c0b619f15d3a7195890a2821867fd3e89",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O14"
+    },
+    {
+      "canonical_sha256": "sha256:0db2d84c60b8490aabe5410769bf069d04dad43e1412b27acbfa5bffce2432a2",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O15.npz",
+      "case_cache_sha256": "sha256:955faacd902549ac31f9008d0a58a98fb0b99e2ce39eae851ac6cb7560cd129c",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O15.json",
+      "json_sha256": "sha256:5d0d6d84470e5880788520adf2502582884050b26ba38ff56a7f6b1f4a3c6503",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O15.npz",
+      "npz_sha256": "sha256:d5c7decfd5efc919be66faa0870e008c7486fa1d76f91ead603a515690fccc62",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O15"
+    },
+    {
+      "canonical_sha256": "sha256:67c11c6794f7f23a872d1de673d1f25462577b092646ac09698162baccaad916",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O16.npz",
+      "case_cache_sha256": "sha256:6e147b0fb3651dbd6353c17b11294af4dc770da2eee42cf8f80c7f68c6faa758",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O16.json",
+      "json_sha256": "sha256:f68f3d7767dc315d6425cb92d9adc8aaacb4c976615e14f73dffe58d571a733a",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O16.npz",
+      "npz_sha256": "sha256:68e6210357fc80ff44498e70941b60355a7841329504578d52a82c2429162334",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O16"
+    },
+    {
+      "canonical_sha256": "sha256:d1af3b041b1bff165095b08b2157cf483c46a6d89d9ac00d0ac06346086bc5e0",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O17.npz",
+      "case_cache_sha256": "sha256:aa61384db7ad5b259f3df46d3601a6b8b0f92b7500ac0c8b5c6b715845d766ca",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O17.json",
+      "json_sha256": "sha256:22faaa79d36f71352a0d51ca757e61c95b64ec126f243f50468ce005480f5001",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O17.npz",
+      "npz_sha256": "sha256:23468089b091cbb941e7c368cfcb4ecf2e647101121cb92f524a0bdc817f5449",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O17"
+    },
+    {
+      "canonical_sha256": "sha256:4060a95b3dcb6dc12a341ab5e4cc1772b29fb05d3fe4a9018ebcb1fb5775dd57",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O18.npz",
+      "case_cache_sha256": "sha256:f7f289173623bf78e6eddea43cdc1fffe5c227e2ab204fb10db93f81ff1c7289",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O18.json",
+      "json_sha256": "sha256:273638ad482e690625263a368a0aa8771429ea04aa1fd11e3519994fc454c921",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O18.npz",
+      "npz_sha256": "sha256:8dd4590e553a133638a28fc34c5a310452ae06c554f2adae956d0b1e5e790390",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O18"
+    },
+    {
+      "canonical_sha256": "sha256:21b84d0578bc6aa9737ee064d7400263ce42e5e3819c844c8477bb38f3bab12b",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O19.npz",
+      "case_cache_sha256": "sha256:f5b070af3bfe78d8669a863edfea685767384a4326611152f8bf6612449577b5",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O19.json",
+      "json_sha256": "sha256:8fb65c3c44e02e061730f0f7f39177eab20280ff5a143126957c83847acfb1a5",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O19.npz",
+      "npz_sha256": "sha256:97947d3379fab4db06c07f2412912bac5c7bbc59cd6dbefbbeab9d059fcae2e0",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O19"
+    },
+    {
+      "canonical_sha256": "sha256:ac2c6419e4eb9b3a9a99ef6eca27d01f29a3e00f1b2ff7c3534f2c524b2da969",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O20.npz",
+      "case_cache_sha256": "sha256:918cc3770069ed0c2736a3b587e2878153c2938c3df9e35c8ecf99e89b803f6f",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O20.json",
+      "json_sha256": "sha256:2218ec7e01a94ae6b69d4449a268fd692a0c9d3868cd0167e9c114d933574e90",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O20.npz",
+      "npz_sha256": "sha256:209799c0fac305a9bf43ae391aea66f12aca778b8dfdf4a683329613d8c1d914",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O20"
+    },
+    {
+      "canonical_sha256": "sha256:5c54afa95e9b657858ef4c94af1aa6c2beb5a1d92c7ceff8151e466c50b66375",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O21.npz",
+      "case_cache_sha256": "sha256:9387b34c328d78883dbec5eddc393360abf5f1c28dcb5e0ddd9f799b39cb5355",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O21.json",
+      "json_sha256": "sha256:a367ba9e9ab90c367d2bd56cbec0bb4f8de4f21d0d576d5d3da50b20e59c7bca",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O21.npz",
+      "npz_sha256": "sha256:2ed27f292ef8e082648ac419f9524a6fcd51bfe5e1ec06bc85b1c7c03d9adbe4",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O21"
+    },
+    {
+      "canonical_sha256": "sha256:f8d0fc0b577241690d64c9d3e171c4aac54108ec7268efb5e1c5d3512eac4892",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O22.npz",
+      "case_cache_sha256": "sha256:83c16ba77cfcd7dc542d171e701ec5fe56a97947ecfb6ca23c52391763158736",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O22.json",
+      "json_sha256": "sha256:6f4910cad93fdf9893616d4cc78147a5b78c7e4dfb1bb7734b46a62296c201de",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O22.npz",
+      "npz_sha256": "sha256:b8f5c465cfe592a7d856d65f9b879f5f9c788437203c7e713d220a3e35aef749",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O22"
+    },
+    {
+      "canonical_sha256": "sha256:89c65e36455f037f28f1786387984ff52cc99dd1ec6bf7dd656aff7c0313ec10",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O23.npz",
+      "case_cache_sha256": "sha256:3ec9fc0feff6bbf79b87ee1254830b10f2249629b83743d1c0e83624bf4e57a4",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O23.json",
+      "json_sha256": "sha256:6e46c72fde1f72ba29b879e14df6193daae1995adf41c18d589ccda02d2efeee",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O23.npz",
+      "npz_sha256": "sha256:6268bd39e295453e9b0054398c644dc277675c214574fc44e28797dc8188a55b",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O23"
+    },
+    {
+      "canonical_sha256": "sha256:33ba8eb9eeb32320a73e144ea6c104cd4a4472969c33c6b5ac171b0474615503",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O24.npz",
+      "case_cache_sha256": "sha256:08ae43f45375d4e2a870e5bacb418b0bcaf79ce33e22d7be5abcb08df5efd459",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O24.json",
+      "json_sha256": "sha256:9c9506f8010413e14bfada2e73c57e0e240011a7ff0a7c2b3c366ddcb3bf155a",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O24.npz",
+      "npz_sha256": "sha256:29d0183f81bc25f3eab24cb6e022c909c3f98f1a75fae3a3471d0fe900cb478a",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O24"
+    },
+    {
+      "canonical_sha256": "sha256:7e225ced2a6458f8705a46f034c911af78a223582db0eeb5db4d45f7308453bf",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O25.npz",
+      "case_cache_sha256": "sha256:e6f28febb4c8e59044e2a0efd4e7fdf23b574fa6b520ac8f1ab80e9685f1e9b0",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O25.json",
+      "json_sha256": "sha256:8e49768ddeb4b9b017e40371af3c6efad16bb7e6861f0d1a410fb9ee9f675529",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O25.npz",
+      "npz_sha256": "sha256:06b825c733b8d619371522f75760169bfc2ddd97fe4372cec6384656b2761cb9",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O25"
+    },
+    {
+      "canonical_sha256": "sha256:d502172757ee579a6dda75838041d8732040d398136b544c80b3e259caa13343",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O26.npz",
+      "case_cache_sha256": "sha256:ccca35897c48d2c4b373e4d1789668014285f19fba284b62a4210787503d3327",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O26.json",
+      "json_sha256": "sha256:7fda84719e9a9b46f7f7ab259b818c69183e677aac195c049da8b2922b8d786d",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O26.npz",
+      "npz_sha256": "sha256:1884b8653a9afadc708d2a66c7696d9af520c434ac9d814ad5ba74f09e9669ab",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O26"
+    },
+    {
+      "canonical_sha256": "sha256:4b3f3c203ed92d3ff16a13829b4d7aff219c1ced17c9c987c415d84af0c43726",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O27.npz",
+      "case_cache_sha256": "sha256:acf97a4c063eeaa3de328264d6da5a10c6c69a8974ad535144e92f05a0a11053",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O27.json",
+      "json_sha256": "sha256:7feada2aa8604f06d7c73cf12e890779b7ee1416b2a04465bd6493a5871ae689",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O27.npz",
+      "npz_sha256": "sha256:5f2464173ca2e23368e893bd003292b4320f235345234b39e08a4ba14442acbe",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O27"
+    },
+    {
+      "canonical_sha256": "sha256:e8cc4992dddc40dd57d732205b10685e61d01612aed6623b499e0dbb31f17077",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O28.npz",
+      "case_cache_sha256": "sha256:647f36f418e47f44105df6fe4c4f1cfe73b638f6b4e208c0cea736fa7d64ef53",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O28.json",
+      "json_sha256": "sha256:6bbc743e9690f2e8789ea257762c14ee8fe753895669829cfb7d2d262dd2acff",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O28.npz",
+      "npz_sha256": "sha256:37fa7904939367b22f1a98afd753ac586818ea02aa45af9973d41b3a0c831730",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O28"
+    },
+    {
+      "canonical_sha256": "sha256:2da84e3eb12b11c13e290660eb18f15843fe160984dc5bb2387ced558d3d66b8",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O29.npz",
+      "case_cache_sha256": "sha256:d1cf2aa13a1419c8b488d01c225ad32e9b4d79ef91c7392081b57994554f6fde",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O29.json",
+      "json_sha256": "sha256:0d7d590553d86e2698e355e31adc8793ee2391cd24596277682a44572fdf5c70",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O29.npz",
+      "npz_sha256": "sha256:1da665e790f83e6e24161e700699bdcc8bad10fdd8be33fd50d4e7075863b768",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O29"
+    },
+    {
+      "canonical_sha256": "sha256:3229ed0cda39c81cedf011570f6236053c2e7a738808ab1b32dccc360fb3a90f",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O30.npz",
+      "case_cache_sha256": "sha256:ed54587fe4b06031ddb809c339737b73083635bf67d2571dccb77fd43a7bf287",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O30.json",
+      "json_sha256": "sha256:742904bbafec34525533fe5ac34ea003c9710959dc5021e931565fbababd1ff4",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O30.npz",
+      "npz_sha256": "sha256:aab32090a66d00efc4ebdabc23406f97d98b486707e8318bfc142f0af3d1fb3f",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O30"
+    },
+    {
+      "canonical_sha256": "sha256:85f1f7b80a3833816bf935861e5d2e44e029659e136725598a898f780edfbc58",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O31.npz",
+      "case_cache_sha256": "sha256:f04f7dc4fc4358537cdc4b37bfc53a071368685370db0c52f20485b172792c26",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O31.json",
+      "json_sha256": "sha256:17c27849dd8095497f6f5bee7597ec9448365f5abf4f63389fe18cc40e024ec0",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O31.npz",
+      "npz_sha256": "sha256:6082b6aa7f16e5f8147a8f13d8f6d2a5a0c31610ad13dd87c7ac3d4aa3b9cead",
+      "record_id": "LCDF_02_VARIANT_MAIN_N8_O31"
+    },
+    {
+      "canonical_sha256": "sha256:4b841ca190938b81f67207299b48afdbc3249535805b0f1234bff850d82b7f96",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O00.npz",
+      "case_cache_sha256": "sha256:4e9d36b422fdecf6057afdf03dec6b50d3555b664611150a5451d5ebe00f39b0",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O00.json",
+      "json_sha256": "sha256:84d1dc71270fc155deeb984bdaa43dba6ecdb3e78dc11857d32cb9147287a25f",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O00.npz",
+      "npz_sha256": "sha256:e54789208722bdd2f543ad2fb920991c06ffa6ca874f3ac9fef32d0aee69e1aa",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O00"
+    },
+    {
+      "canonical_sha256": "sha256:79bb36eea9b22465f7fa6a76c9f8b5972b7915d60c251cf622444e90bdb1e5f3",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O01.npz",
+      "case_cache_sha256": "sha256:63a73d70cac3ddeb70a139fb5f6ca3325498bd66d073c627e71a4594fe60c58d",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O01.json",
+      "json_sha256": "sha256:2b2aae651f29f963ad6e2b0e3810ad419985e04c9a9ddb2fe78001541974d5a6",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O01.npz",
+      "npz_sha256": "sha256:150d7975904bbf2171e30d349fa57e7dfffb86ac5b19a201f7b45e754db3fd42",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O01"
+    },
+    {
+      "canonical_sha256": "sha256:3d20b1cc9bd58d2ee181dbb7e036d34720f64d4f0f14a7ce82e3e3ff32934c69",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O02.npz",
+      "case_cache_sha256": "sha256:f942085eaf4b7aa0b6cfd00c3f36b8f355d54aeb5b417d69701b5a54c8246aaf",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O02.json",
+      "json_sha256": "sha256:7a2ada0a827f5e2267f431ea52d0474e2ba653969fa8a5b2204ccb5991eb4368",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O02.npz",
+      "npz_sha256": "sha256:17944c22fc45c7825433839174740332ee0ca979b9cee9efd62010f82dc9ab17",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O02"
+    },
+    {
+      "canonical_sha256": "sha256:0eed1d6002194732d69afed33a10f09017d21ad1efc77c6cfe40838eae979947",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O03.npz",
+      "case_cache_sha256": "sha256:527dbc9911e0f37f47d8b9068da70d38cdd42004be08b8d7c08d8a6ecb2b59a3",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O03.json",
+      "json_sha256": "sha256:90199b9f5af59603163c6bc9d18ae1c5da2e9f94387b7d012c494aa12a1a122f",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O03.npz",
+      "npz_sha256": "sha256:a044a397952d430d697b4748f1028edb7adc2d5ad88ef57fd063cbcd5609bd8a",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O03"
+    },
+    {
+      "canonical_sha256": "sha256:befe03fc3737f228ec5a30d7662ce746a37c6e6f589deedf6d83185f79320f4d",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O04.npz",
+      "case_cache_sha256": "sha256:441378d439d1c03c56382daeba9388259fbbfa50c1f03660956ad7e24f7a88da",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O04.json",
+      "json_sha256": "sha256:696acd25c2238e9a3e1ecea21c55f35842781f1d6e92f6383fa5b5068f8eb31a",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O04.npz",
+      "npz_sha256": "sha256:ad1b603da791f1276f1e17f9a572559677c3be63ffeeef0b96a814cede0b7def",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O04"
+    },
+    {
+      "canonical_sha256": "sha256:a1b654b9efaaaca99a96c52d4858054904fbdcdf2c3dda0312d5afa81d0d2b1a",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O05.npz",
+      "case_cache_sha256": "sha256:6cef78e4f0b5d03548c417745c22360a56ca379f7fea88078e90aa2eabe4bd8e",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O05.json",
+      "json_sha256": "sha256:a662b59ceaff20097518969eeb1323c1a5d9f077cdac0b08fe28ec028f09cb4a",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O05.npz",
+      "npz_sha256": "sha256:6da91490d5f6878e8e1e8e6de7133fb86db32201a356b1aa216515ae40438002",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O05"
+    },
+    {
+      "canonical_sha256": "sha256:dc88d2cc6fb8bafacfa284b2644f937d813bff0dafae500c73aaff98a0e636d4",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O06.npz",
+      "case_cache_sha256": "sha256:271c95df9dfc18af3ddcac150a99ba596ab32362cb3936764891650a264f6812",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O06.json",
+      "json_sha256": "sha256:e36c3caf433c7103196e57b42c243946cfac791d2829af43919bc2c0926a3922",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O06.npz",
+      "npz_sha256": "sha256:2265ffd50bae3e71c5e30c7b79633beedc5cb9c5ad338de888d517cea3e7a989",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O06"
+    },
+    {
+      "canonical_sha256": "sha256:29b268580b236a83e081ffbcea245ed80a9389c957c625f81adc108a56c021f2",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O07.npz",
+      "case_cache_sha256": "sha256:eada9baf2da8714646edf115a162e332ffdd2287a403fdab6b220b35ce1bce4d",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O07.json",
+      "json_sha256": "sha256:e18038f2bf2cc7bbd6c63ca493ee416d2e42d28963e0d7e3140a3757f163934f",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O07.npz",
+      "npz_sha256": "sha256:80bd94ec7a0deaede82b0c708a0a8c33fa0c5da77633bf2522eee1141babf5c4",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O07"
+    },
+    {
+      "canonical_sha256": "sha256:35ddbb9fe1e6f2c53d7b2af052e30dd1a5e18c9748d01366a9a520a8988c89ee",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O08.npz",
+      "case_cache_sha256": "sha256:0af47f0e94b68738ed94747cfb606c1706fe9531c9debdabfdbb661816b550d2",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O08.json",
+      "json_sha256": "sha256:50ea6f72607a856b26c6ac5e11b4df071c9cea12ec36f974baed60f7784b080d",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O08.npz",
+      "npz_sha256": "sha256:a748c860313bc34a00ebeedb2ffe1cdeb9b61e3998721b9d3dced8683413838f",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O08"
+    },
+    {
+      "canonical_sha256": "sha256:48a69673fbb17b9f6d03d29c7a142c80fce316cccd9ac461a29ea9c951e90cb9",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O09.npz",
+      "case_cache_sha256": "sha256:ada43e88c864a23aa7f40a19d6af2d4b518e536f561f1bff104891ca74bf6dad",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O09.json",
+      "json_sha256": "sha256:86f2d92bf3fd2c2a54da593d270e34f0fd276f47da6f6fc773a1116283d4d611",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O09.npz",
+      "npz_sha256": "sha256:d9953698864b314dd3b7d5bf3a0347ed784e938e6f9e81d58474e65c2254b7f2",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O09"
+    },
+    {
+      "canonical_sha256": "sha256:aedeb10c319f6414f8243f7c700c5e4e62f90ada120e3c15fd2d50e568a67925",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O10.npz",
+      "case_cache_sha256": "sha256:ebb670bb795f0be1dde3f586ac338f12f0b8034e390769b9e6f32c8a27aba37b",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O10.json",
+      "json_sha256": "sha256:b777458b1085dd24127190552f36913a4164dc4d5c32cb71efedce35d0920cfc",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O10.npz",
+      "npz_sha256": "sha256:5287362065efa0608f314e32e018a0a000b47261804cf291a6c4c4ad3a3ac2d8",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O10"
+    },
+    {
+      "canonical_sha256": "sha256:d8f764f138d2d3668f38a7f9bc4131e1c9c1750e13a9dfb82261017df2910736",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O11.npz",
+      "case_cache_sha256": "sha256:426729d2ea596f9b528fdd8b97e50d5bdbd73c27653e8af035b4c5086e88d63d",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O11.json",
+      "json_sha256": "sha256:01a9dbe8a7f558cc3826ab888f911dce8df1145d399b13519c4919b759295636",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O11.npz",
+      "npz_sha256": "sha256:b32ef3f9bbfb35d497b97b628e58473d4be8c584783746829d43528acf124346",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O11"
+    },
+    {
+      "canonical_sha256": "sha256:3a05ae4650f99b17082d32eb3bd06f2873e5e20e37679ce35910da027e1ebc19",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O12.npz",
+      "case_cache_sha256": "sha256:17f1560dbf0fe35f8fb1216dc51d6237aedd3ba25bbf22311fddbcb335c794c9",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O12.json",
+      "json_sha256": "sha256:703edcf0b1652308e911494cedf91d22c2b48275a5d9568a9f283f0153d21773",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O12.npz",
+      "npz_sha256": "sha256:7fb0ad1484440b5854a27591e3f545f0bd508d729b60ecfbf870d704bbbb5788",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O12"
+    },
+    {
+      "canonical_sha256": "sha256:f06510a95137bed03c251ce564e42b816978e0657d827e2872907fe68993bc68",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O13.npz",
+      "case_cache_sha256": "sha256:0686e7020ce49377d2551323943b09ef577fa85b528b26363e93861ff7f62bfa",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O13.json",
+      "json_sha256": "sha256:554db44d83719213043647451bb07ef58f1e2a60b06c626562cdadd921108ad0",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O13.npz",
+      "npz_sha256": "sha256:f4e07993f7cf6fa1c501b5cdf20277f7e4044ece710e4b55bf698d4e68de8b86",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O13"
+    },
+    {
+      "canonical_sha256": "sha256:3b7143e5c42883626e1e209bc6ae794efcf4085732c8d9497d7a334f886b972a",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O14.npz",
+      "case_cache_sha256": "sha256:de047640399375f8f03b9118596043ab1f52668590772a899f3e391656df1ff0",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O14.json",
+      "json_sha256": "sha256:9189efafb751eaa99e4aaf868b4b9667d419f1feb94b4bc914203500c4f42864",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O14.npz",
+      "npz_sha256": "sha256:d9048645ee295204bdbede0a600fb8c33630922e2254af176bffdfdaa479a4c7",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O14"
+    },
+    {
+      "canonical_sha256": "sha256:501e2a65736dd07882731281c83acd19e5f5fc3ba69e15456bfe4b6cc2c50362",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O15.npz",
+      "case_cache_sha256": "sha256:5b527a1ceaa035667944fbbffdca04cd93f5062931c6b93a6fbc338c2d40c8be",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O15.json",
+      "json_sha256": "sha256:ba42e129d10235dcf47c4a123933481d7b089bfb7862a474142f6345fbd92786",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O15.npz",
+      "npz_sha256": "sha256:daba9f7d28bb37ca02ee3c2176da2aeba388d648b0a73fa17e2149d0dcf00009",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O15"
+    },
+    {
+      "canonical_sha256": "sha256:add6ddb891db6a797d87f035f5af72110083461e3a6dc674c0dd71f45c11be00",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O16.npz",
+      "case_cache_sha256": "sha256:3d4af8d9e8954f4e7c7dba17f419d94f43bb710110e0f215e7d3b9186198c0eb",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O16.json",
+      "json_sha256": "sha256:0d2332586d715d25a7871d39f5484dbc74c4d76f241633fa7ece0b23e15107aa",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O16.npz",
+      "npz_sha256": "sha256:4fadfc5e1b47133ccbb34c532c9c5fa88f5e6eb33cf4892eab10fa90f87cb8fb",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O16"
+    },
+    {
+      "canonical_sha256": "sha256:a141e4323e2c2b0d8006776b2cf920ee2582547b4b7ea24769e024e3480e1fda",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O17.npz",
+      "case_cache_sha256": "sha256:e6bc41f0d81256a1c00ffb89affc1be0ab51101de94d79e1d77c31dedfeca752",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O17.json",
+      "json_sha256": "sha256:eaa469b4433f37378c83c5f20966e504975f943a6b6f98859906b569b5d871b9",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O17.npz",
+      "npz_sha256": "sha256:c5a11085d9b022b9f139f53b9d9391e64589ac460bc59c493af4c92b9903218b",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O17"
+    },
+    {
+      "canonical_sha256": "sha256:17dd60ecda9ca07cd315aa93a50821adf53141057e1222041826c5df4079202c",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O18.npz",
+      "case_cache_sha256": "sha256:6f3c0bdd5a58c7e3a59fe3987fca311e5190f4ed04d314379edafce232318aa8",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O18.json",
+      "json_sha256": "sha256:f5aea6381638588d1c006bd01c45f2d2d00e3aac64f85ebea1284058a0335420",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O18.npz",
+      "npz_sha256": "sha256:56fd80bc013dfc6830b59f9cd4c76cac14afa6fb77b9db128c1f65675ecc69bd",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O18"
+    },
+    {
+      "canonical_sha256": "sha256:c16d3474f999fee6180bd6e2b0d32f7f1dfe82fba0c250730b691223155ebd75",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O19.npz",
+      "case_cache_sha256": "sha256:00ff83bd3a337bebbe0f664a1c5ab643b9c156ea0ebb5cc86781ffaac29f0477",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O19.json",
+      "json_sha256": "sha256:9349db45b349c72d6b43d5a77dfdfa842cd8a4d783d49b04ebb03c0e3fe3eaa2",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O19.npz",
+      "npz_sha256": "sha256:dece56e6e14cb0be0d945a2f0fab949b306705e4c0a445984e1be448398a0889",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O19"
+    },
+    {
+      "canonical_sha256": "sha256:5c7ea76dfa458160be8d1398f4705273e4907c23180e95cbb91db1208622061d",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O20.npz",
+      "case_cache_sha256": "sha256:9ae935426b4c8b87bdb79c466f6bdd3808859149d1df016e81b82cb48bc5d162",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O20.json",
+      "json_sha256": "sha256:2d0d1b627b33fedb429ed910e3bdc9cf99905d18958e2684c32b3012fe00c57a",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O20.npz",
+      "npz_sha256": "sha256:3e73b49467f9ce1ee5f8d1d3eabd1a2e69493491a70eb86b3ed32833cce672fd",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O20"
+    },
+    {
+      "canonical_sha256": "sha256:ef127459435a0d24a2475d6c0ae1bd29ff511873dcc5a2c9eaa6fd99cf43c0b6",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O21.npz",
+      "case_cache_sha256": "sha256:040d19845292b4791303ca94756e63158e4837c036d28bcb198e2cf3315a6898",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O21.json",
+      "json_sha256": "sha256:312d3b142023f70167dd4ae7991c34d67bc0288bb20b1d4d66910adda5fddb38",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O21.npz",
+      "npz_sha256": "sha256:3b779597c1bab2490d8c1844f874371a5c55ab80650ad4caacd17bcbeec65eda",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O21"
+    },
+    {
+      "canonical_sha256": "sha256:a804f1f31de116159b4649cccb24713c642509c151e98d74ba0c6561f82dc70c",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O22.npz",
+      "case_cache_sha256": "sha256:ece7e0c2761b7c1103d79ab2176c2c17c722da7dcaf5e9e49c0c219d15456d27",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O22.json",
+      "json_sha256": "sha256:e6542e10bf04c43e2fa50217a25e6b20b12750e4118255bb29cb039d90472bd7",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O22.npz",
+      "npz_sha256": "sha256:205afd5d1e93404a53f910c710dd32cb7faa59368ef2685e8974711de4728dbf",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O22"
+    },
+    {
+      "canonical_sha256": "sha256:d7e34689e80ee39179640325912e1bfd24ece252625f3a099202552e1c951deb",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O23.npz",
+      "case_cache_sha256": "sha256:fc961c69105fc73deb54cd2b8989c22cada8b5e430cbaccb845450c073c20c0e",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O23.json",
+      "json_sha256": "sha256:9d4e126e3ea6c0844f09394adb748f043341518d0ce7fd6454f168681a658963",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O23.npz",
+      "npz_sha256": "sha256:22fb086691c30fe678425fe4f7eb4b35e0f81d04074cc114c9e5b17f529d06f4",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O23"
+    },
+    {
+      "canonical_sha256": "sha256:f955b0725862fb2f4a9d43f77f8a736a7d8b05e912e00d3fdd718c1e5aff7763",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O24.npz",
+      "case_cache_sha256": "sha256:1e69b30c5f8eb800d106829a8cac69770536fd48e200290c8d42683795fa7466",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O24.json",
+      "json_sha256": "sha256:acabfdce21b209813f745235ede89b1ef1b955e4814ed7b6b50f1df7f6061e99",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O24.npz",
+      "npz_sha256": "sha256:70f75c2e8958df7b361e90aac22f58e936ad0b6099bdaec653916e6afb1ef7e1",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O24"
+    },
+    {
+      "canonical_sha256": "sha256:44fae0dbf1de7d5518a7fa12da23ee54813f3df026f2024ed1ac01954f9cd4a6",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O25.npz",
+      "case_cache_sha256": "sha256:ffa03035666785a6a609bd876426709a1f31e8e4abbae83b329189f8c675a7ab",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O25.json",
+      "json_sha256": "sha256:f43135e337ac0c33c64cd8618610f2b195b1ea721d38e05d79288e4e57c4922c",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O25.npz",
+      "npz_sha256": "sha256:9bb39fda5384e4f5255870949d0d8b4370fdda38894db10503867483011ef9cf",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O25"
+    },
+    {
+      "canonical_sha256": "sha256:a1f1faffc9c26198eefd2ef50bf5710a712a9d982ff48ca409b6957b02f7d833",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O26.npz",
+      "case_cache_sha256": "sha256:b654b931a55f71d563c0189a21454e3242db810d15af4920bd1d138957247752",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O26.json",
+      "json_sha256": "sha256:1219b3284ecfd461659e6f293f444546c6d47a3ee7b15c9b6148917a084498a7",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O26.npz",
+      "npz_sha256": "sha256:3423e8e75f29763855d3f9ea19b6c4e6a4e60c1787f491b3b06381ed8a11e09f",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O26"
+    },
+    {
+      "canonical_sha256": "sha256:e21233e8098aa1eba1150bb912c8bf92b4454e442e5fae1a0cafe86635f933e5",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O27.npz",
+      "case_cache_sha256": "sha256:c9a00348631a5b7bc7d4d4aa134ae326030d14096c886aa2df7c2e841cc8109a",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O27.json",
+      "json_sha256": "sha256:86f78e31a68a53d62752e616cf49752e88ada527fa74dc42da84f964074352dc",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O27.npz",
+      "npz_sha256": "sha256:735f45247054ad893e2a80e015b5ac0fa06bdf979128f1a0ce30406c6e43e618",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O27"
+    },
+    {
+      "canonical_sha256": "sha256:6a5df5a19d81c63ff35254ea670bd18363cd85f97595767b691c5589b6bdad44",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O28.npz",
+      "case_cache_sha256": "sha256:56e4818cb1f663d47316e5b9a1c21944171a36d779055c13b3845dcd85d7dae1",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O28.json",
+      "json_sha256": "sha256:6dd14d86ca3ab5aac7e0d75a2208a5d5a9b56f94b11fe536f7ea9cbaaa833939",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O28.npz",
+      "npz_sha256": "sha256:e0f401fb97fdf90c620531f18aa0f3c6ad913b69712f6a7183ac59d90eda3758",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O28"
+    },
+    {
+      "canonical_sha256": "sha256:461bc77f4440d941317b01779df7931498fb29afb30762396f89fe3fe751e246",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O29.npz",
+      "case_cache_sha256": "sha256:ce2838eb610d444370303a1db0e5c9888b800c7733c5d1970f4e5682c3f8bc01",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O29.json",
+      "json_sha256": "sha256:5bf78aacc88351e527952ae7ae421ab5cfca92ab277f1c544d9c4d80757e2f76",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O29.npz",
+      "npz_sha256": "sha256:8132d7672b37133e4af6043934b882652847cf35ad3a0927279088adfb77bf2d",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O29"
+    },
+    {
+      "canonical_sha256": "sha256:3b3d6d99b713d70cddc785cb5db16a9a802f5a64d5dca1de1d1ff979227d6a39",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O30.npz",
+      "case_cache_sha256": "sha256:8c3c91e9a0ea1e9ff40c9483d0467a4c01c721c634b8afa1e4371bc921b3e09b",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O30.json",
+      "json_sha256": "sha256:15173a9a5fbd747696dfb8130a9f273779340438cdc3ca793b02deab38411c37",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O30.npz",
+      "npz_sha256": "sha256:1745d2b761f16b994a1d396ef0f43bc458b74541ac1f284ddde40e7f8697797d",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O30"
+    },
+    {
+      "canonical_sha256": "sha256:dd1043f4df4a950b54b0c06cc05537c5286e99aa7a224deacf91b095be3f8d88",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O31.npz",
+      "case_cache_sha256": "sha256:06703440dc89d77931673d965d4b1832f4e7dfb8015cc2b84cefb21f90880a58",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O31.json",
+      "json_sha256": "sha256:312aea9df3b5648a8cc5e9c2cf54e8deec1891db9e6e0ba3bf436fa462e2e229",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O31.npz",
+      "npz_sha256": "sha256:d06c86012a10e9c1381e76211107b20c0188f0c408b911c1a6d56772ccf3ea14",
+      "record_id": "LCDF_09_VARIANT_LOW_N8_O31"
+    },
+    {
+      "canonical_sha256": "sha256:c63367a07bc3383a168f097b7ccce9241d74d4ff912bdb0fab7f10b856a91437",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O00.npz",
+      "case_cache_sha256": "sha256:b007924ffd5f5b5f2f6ab8c83013af743929e3061ad662c9a7d85a41f04762e4",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O00.json",
+      "json_sha256": "sha256:033e93f548f58308db3b6e9d125e417d110c2b7d6be1e666229547fba6b1a18e",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O00.npz",
+      "npz_sha256": "sha256:22089f237f9ce9464ce5d3bf16b991cc603b9c12c21d112cf6fe504a3d20f051",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O00"
+    },
+    {
+      "canonical_sha256": "sha256:9ef0bb19701cf734acaa9b952a9f221e60fdd40396d09da73ac515a66231d243",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O01.npz",
+      "case_cache_sha256": "sha256:0507c1ff181669138b39cb03f4cb6538c2c3e9276082c66084b009ea9074286d",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O01.json",
+      "json_sha256": "sha256:ce37de481b535a7d1824e9a9a0220b95a015fcfc37de8cb98d541019ca74e990",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O01.npz",
+      "npz_sha256": "sha256:07d3dae6dc171bfeaba5d78b9291eedb4b2990d714d9ee3ed23563e8e0b09cff",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O01"
+    },
+    {
+      "canonical_sha256": "sha256:dacce6b1b368f1d47628fa48c1ace932b9f73a5ef4d5eb8f675a8eb1f165efb7",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O02.npz",
+      "case_cache_sha256": "sha256:a7f806e83b3581679da865f96bfbfcd0e048bd01718e30aef87b1332ff4c6c28",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O02.json",
+      "json_sha256": "sha256:73cc4bc9fbdafb5bf4be7ccaec20584cc87b9a6da948fed8bd5a423213b121ae",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O02.npz",
+      "npz_sha256": "sha256:8f706debdd6e6469e9a4841abec99037b88103727833fed5dcd8b0610b4ce8fa",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O02"
+    },
+    {
+      "canonical_sha256": "sha256:03406d605b70eca3ef54bf864dbba4e613627e8aa30ceafbc8d67a9003d9641d",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O03.npz",
+      "case_cache_sha256": "sha256:70b6e7b4180f2d9b1bbd229263c05b0fb4b142d268502da6afab8f1b341f3950",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O03.json",
+      "json_sha256": "sha256:94d8b360326095b15ad69d98ac150cd567d05b31413f32ca1542b03c6f91b1bf",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O03.npz",
+      "npz_sha256": "sha256:1fd77865cc65c325b866b362d730190d0329bc58fee9d0a479208591b79bed59",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O03"
+    },
+    {
+      "canonical_sha256": "sha256:76056bd69a739c99a39e5f5541962e1f85534548f914b2e9d47f36f92945e33b",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O04.npz",
+      "case_cache_sha256": "sha256:8395fb38ce9a6ddba5e40c72d0f4dbaf4c211296a38244c8e710a73bc03c6d23",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O04.json",
+      "json_sha256": "sha256:ec128dd0865845c80bd9b3272cc22b1aafffe1cd09015e1ab2dbff356bd97ff2",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O04.npz",
+      "npz_sha256": "sha256:965f04479174ba782af64f89b71fc864fca52f739ff5b2d7737a6dedf5f0f25d",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O04"
+    },
+    {
+      "canonical_sha256": "sha256:fc29c0b1f023b9918fea7837f532d6290739483812d8c7f4f01b79942662519b",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O05.npz",
+      "case_cache_sha256": "sha256:4a55a42dd88598ed6f184acaf0556855ed72a24b6a380bd0d9fc898393d27128",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O05.json",
+      "json_sha256": "sha256:97dcdb6441261644039be4b5824103df94321b42fff8fbdce5c4e201b5bb1ed0",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O05.npz",
+      "npz_sha256": "sha256:545ee2c5d41a87f20c4252a325f1e6911b7269d62af505c9f4764eb2edd35c7d",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O05"
+    },
+    {
+      "canonical_sha256": "sha256:2b8699a7104e11ebc4fb7fda9cdde7311a20a9c8ffb94e9cd185c5ba2e81f355",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O06.npz",
+      "case_cache_sha256": "sha256:848bf93906849fd519a25552dcdfc924984474798e0102714579067a0c078713",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O06.json",
+      "json_sha256": "sha256:b35f2b8f9ec613d734125d67bf5e188fd0b9b3b99ae3197b5333c5027da596aa",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O06.npz",
+      "npz_sha256": "sha256:8b4acfcd023bd7c52e7c0c5ea457249bd6e5ea97eb4d7fdeda576f5cccf46b18",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O06"
+    },
+    {
+      "canonical_sha256": "sha256:4dfa15448760d00897b67047a52f73a8a2e8c678bc117a26af08af97e5016a9d",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O07.npz",
+      "case_cache_sha256": "sha256:bdb9a9328546dc9e8a34da5545f6875c30bccf60a081cc0ce614ef104267a46f",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O07.json",
+      "json_sha256": "sha256:a67cf909e6e3a990d163db67405402e6164bf89d903839d37b2ebb824b734b8b",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O07.npz",
+      "npz_sha256": "sha256:e29535a6cca4533ff2d2c7514f9c3cb5507068b722bea2e05f2cb98d0f65c691",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O07"
+    },
+    {
+      "canonical_sha256": "sha256:0c7bee31bdeb9d4aeb10a8cec35e142250f845b5a609d498c8e8bc153f5ce43d",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O08.npz",
+      "case_cache_sha256": "sha256:90f852e8621aeec72fadbccb90f21709f873fe73844f00861c51f96b8a7e2bdf",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O08.json",
+      "json_sha256": "sha256:c1afa712dce99f61fe1059036ac45184dbae7a8763e9c8308faf6b79dca38556",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O08.npz",
+      "npz_sha256": "sha256:aff74e498f2c9c93738e9a49ff47470c3444a25d718177cae8c23c15fd9e4e34",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O08"
+    },
+    {
+      "canonical_sha256": "sha256:5bca56de9e84cb2aa8545a414e79840623380fe85d02d83d4ea991d05c238be3",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O09.npz",
+      "case_cache_sha256": "sha256:cd78ba5a1d5dbb2af6476bcf0cd908cb4ffe22b1e7c5396fdfb28af7530acd88",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O09.json",
+      "json_sha256": "sha256:6dc31282af274ccbea274fd769715066094a52557d2403d3dd2fa5d8d307fbef",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O09.npz",
+      "npz_sha256": "sha256:bcd1bb4d1d8ee23f43387ae90e1af070dcdb57c30d648ea94415f36a1a49c55b",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O09"
+    },
+    {
+      "canonical_sha256": "sha256:ddf9d02037acbaac38f225c48860ce71f7bb821fcb0842bb1a5137484bec1390",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O10.npz",
+      "case_cache_sha256": "sha256:06baeb567cc77a3ab102b8fdf256b9e3e999cc8f76f2518217a7d18a076f0494",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O10.json",
+      "json_sha256": "sha256:9a294775d901374e95df4f326e7f20c2e45d70b4a08fbb481fd53e9226778cb8",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O10.npz",
+      "npz_sha256": "sha256:31839cd37f6a49d2952a68aa5926e99fe80941bd1b7e325b4beb75791402928f",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O10"
+    },
+    {
+      "canonical_sha256": "sha256:ba239e4c549e7c793eca6c0a51ee9a18572aec60f254ef91688fbce5068b4611",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O11.npz",
+      "case_cache_sha256": "sha256:738224c6582c44e7dfa0d80962b999409b01126c6373e4fadd41f516fbec64e2",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O11.json",
+      "json_sha256": "sha256:2300f223b9ac864455561a72244560c8144ba31011b56cec9d131c27f5783194",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O11.npz",
+      "npz_sha256": "sha256:481298231cb2da654b735167aa5e5f60c2814949531c7d560571835daa8be7ee",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O11"
+    },
+    {
+      "canonical_sha256": "sha256:f601368abc11c0f492d42c1abd24e75ce0e28cd391ed0e80965023bb55628f2a",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O12.npz",
+      "case_cache_sha256": "sha256:7f3df3ae23b4c21b97ad50ded9002a0d92f4c8c2c8175361fb137b8e3440fb8f",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O12.json",
+      "json_sha256": "sha256:63144cdc8757675800e93bfb18bfc9241b1ca77fadc0301c62a32e76528eb8ea",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O12.npz",
+      "npz_sha256": "sha256:8bd00a975cdc8b773fae89224c04d6297df06005e23d5d767b77ab877162290f",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O12"
+    },
+    {
+      "canonical_sha256": "sha256:94d89fb58b2d425e05a224c70370bc6724826e99b5e11eac403e5f16d68a883f",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O13.npz",
+      "case_cache_sha256": "sha256:f39f7de8df616091876bfb201cf9a8bbf8ca6fca0eeaa6dc40a77239656ac9ed",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O13.json",
+      "json_sha256": "sha256:012b0e9545f4dcf415280be5c6f00c1e0863d0a8721df7899584f76af08d8460",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O13.npz",
+      "npz_sha256": "sha256:bc6ef75e5355574b759859d8e9892517e351ccc4610a13b89f198a401d361917",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O13"
+    },
+    {
+      "canonical_sha256": "sha256:e4840ad259f327a86cd4e351ba0b941a465a43e939774c9514a9bab169b8fd9a",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O14.npz",
+      "case_cache_sha256": "sha256:fee1607c9a95e37630d37a6580156a503423a8970e1367e59f03041486e292dc",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O14.json",
+      "json_sha256": "sha256:b734d44b3411c0277e1a17ad4a1d62e8267ab2c1af7aea6f60355ab8eb6b8b03",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O14.npz",
+      "npz_sha256": "sha256:093ff46c949361ed89f539086eb911aa8829c76407a5902c542802bce7d4fca3",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O14"
+    },
+    {
+      "canonical_sha256": "sha256:6cb47ca6c12760afd88c05a0aa75bef370efe00b8a339cf0325a833795e41b57",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O15.npz",
+      "case_cache_sha256": "sha256:8020b9451a5eeef8706f96e1624d6161a2bbc927f7cecb21245b1c5fb6194fe2",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O15.json",
+      "json_sha256": "sha256:67778b13af4ac53eb9e99af1a19fdab9b1f7c43e307ec92a3b695a7237d8f770",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O15.npz",
+      "npz_sha256": "sha256:52934e6be949761156cc2d91c8af9cdee28a57223f3a845e22d2e9b71e0b6bb4",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O15"
+    },
+    {
+      "canonical_sha256": "sha256:c8b304f45207d80afac2787967f235619cce2044d2a6d142f900af4fb77f9715",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O16.npz",
+      "case_cache_sha256": "sha256:e3666e0755d7808f924090e8a632829bb17d483d121db9e4446e8b4193d87a2b",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O16.json",
+      "json_sha256": "sha256:2b6bca86fd96561bfe20fc48a54f948932be13509997a2c84a997ddfffb91f68",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O16.npz",
+      "npz_sha256": "sha256:d6354b6f2e360f086916e60a78e4d68aa32aa5177a7244fe87178d1adb008a11",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O16"
+    },
+    {
+      "canonical_sha256": "sha256:0218e6b73e58adbdf2a6ca655b9750ed653f8a41e31cd397fbe394b6c6fc6adf",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O17.npz",
+      "case_cache_sha256": "sha256:c715eb43d56b31f635949f2b3d13e4a64521e85f44864fab9681ac8b1ac2f9de",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O17.json",
+      "json_sha256": "sha256:d26aee9616ee5b8d31deba7c93fffa13352ec44d13c0733b973af142cfc411a1",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O17.npz",
+      "npz_sha256": "sha256:be7ea4aea508cdc657cfc791bb34cf9a02521b0f94d9c326d21e77c0f1252981",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O17"
+    },
+    {
+      "canonical_sha256": "sha256:df71b2f9621a9fc39614af6e96b5e1b23dfc1dd3e33b3ba2af3a80aa9a07e411",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O18.npz",
+      "case_cache_sha256": "sha256:e0b82f653ce0801f966a65269f9df3841832cfb4dfa22f6ff862fc4df62b21c0",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O18.json",
+      "json_sha256": "sha256:7ad35e642ce5ac3df7e0b152eabe682d46c2e591490793cab8c6f8229b115a1b",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O18.npz",
+      "npz_sha256": "sha256:3d7f5f5b9669fffdb0491fdde42868cecde10feebf0cacb1a2b9fcfcdf243be6",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O18"
+    },
+    {
+      "canonical_sha256": "sha256:aa5255907e264de9f0e1dad2c8950e57a9de680509db41f8cb07bae2d551a6ea",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O19.npz",
+      "case_cache_sha256": "sha256:3e4680187d64389a7af92b6bacc6db4f8b7a3017417191a40298d21bccd69278",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O19.json",
+      "json_sha256": "sha256:ee6f295f1e4765acaaa0225f82df8e558b80e581cb941bf219d2866e462bb42f",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O19.npz",
+      "npz_sha256": "sha256:fc33cdde286158cd6cc8f9b3551f1c8a5e7c7bddd5ae7800f0692c3f3042095f",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O19"
+    },
+    {
+      "canonical_sha256": "sha256:19273b750f33098d5f1d5aeaf00b63bd8daced87d80b52761b6e21d6083965e1",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O20.npz",
+      "case_cache_sha256": "sha256:5126613fd2e2d66d4d8743651de18673e570a496585dce08c1e9e71accf86738",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O20.json",
+      "json_sha256": "sha256:d0d720ec663db69525bfca68943abb3f0ab2b663482fea10c18a542c876a6582",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O20.npz",
+      "npz_sha256": "sha256:34aae1cd69034e2665b7c5df2d583274d6c9daaa52fa32115dd1f09d2165143b",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O20"
+    },
+    {
+      "canonical_sha256": "sha256:15763cad00edfab999a594417a10650317297a91a7d71309f3fcfaf8927ba024",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O21.npz",
+      "case_cache_sha256": "sha256:9d065ed8406185712df6417a3165530f2f8b06531503eea87beb34e3b134c179",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O21.json",
+      "json_sha256": "sha256:b8b292bc387c42e1ce8924cf8077237eea29055b580fbe01492463872e388b50",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O21.npz",
+      "npz_sha256": "sha256:7a4c71745cea18db6ab5702833be4ff4c20629888cb4316cac1c3733f923114c",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O21"
+    },
+    {
+      "canonical_sha256": "sha256:66b5b9d55152c2da8ce001e97d1d12e41fc254cc5c09f08ccd36ca0cbc3f8e13",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O22.npz",
+      "case_cache_sha256": "sha256:8cffdcd5be6db139b840bbca3e0b7e34b5b210dd93763f93b3fb26804e54f595",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O22.json",
+      "json_sha256": "sha256:bf6371f97aa340900c34c3e1897d61162df743ae4e5216b933f90916e71a1a2d",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O22.npz",
+      "npz_sha256": "sha256:dc775a813279d9e3e2284d8e2b560d22e1c81ee5aeed891a3efe75e02d06675b",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O22"
+    },
+    {
+      "canonical_sha256": "sha256:990d2892175c51f5f2f29d060be7a6a13a17a419138c1b3ae1cfabde059695d6",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O23.npz",
+      "case_cache_sha256": "sha256:cee6904a19dc142cd476647f2781fc50cce85028f405d2710ac74ae4cbea2665",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O23.json",
+      "json_sha256": "sha256:7d1ed50dcf2d060669bb4bace0cd31dabf66aae4c3747e2192a692b03f3191ec",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O23.npz",
+      "npz_sha256": "sha256:1410e81373105f60b77c685975df9958fdbb0af2db61edfb7412d814bc12a28b",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O23"
+    },
+    {
+      "canonical_sha256": "sha256:2261188d8f71f40eb508124eeafd2642bf229a396da3121efb683f8eea381675",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O24.npz",
+      "case_cache_sha256": "sha256:41dc2df48101839711d91b42af571e11edc900edf2c287a68e203d3df4c57f5a",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O24.json",
+      "json_sha256": "sha256:95bb86a324f463889ed36d434fde7a2de0601ff84dc9913847cbb9435e6d0f4a",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O24.npz",
+      "npz_sha256": "sha256:11db96c7f9bfa790df387a9c9576f9fc894e750f5ac8f605554501676cca4993",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O24"
+    },
+    {
+      "canonical_sha256": "sha256:a1d9df622da26abfbe380bf202e4897cdda7728dcbc301156a97ddcc8c75ea9e",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O25.npz",
+      "case_cache_sha256": "sha256:fffb04efca835e559cf8bf20de02cd5e13d6c8f65aa808f666f19d0f60667459",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O25.json",
+      "json_sha256": "sha256:aab83dd7f5ebd4728ca95613f55bacecfe0407c47c72af5404b5360fb79b361c",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O25.npz",
+      "npz_sha256": "sha256:866840b5e22f0ce2d3609b9f01cb42c9edd71930896c0d0acf2504b7c68a24bf",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O25"
+    },
+    {
+      "canonical_sha256": "sha256:c2967af3856857a73d0e30a6731c94593fd92e88e6e169efb58d3d3ed056a8cd",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O26.npz",
+      "case_cache_sha256": "sha256:345cdd3464320ebfdb1000e90f2efb9309e36ef6ae6344bfc501a83624c043f8",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O26.json",
+      "json_sha256": "sha256:f4026a645fceb3ac95a7c5393d3dd1899d9ff7c8fed431f488004cc65050081d",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O26.npz",
+      "npz_sha256": "sha256:c871e725f368319eec9b656163570f28b4c5ba9fdc4dbd2362dfa087fcc16513",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O26"
+    },
+    {
+      "canonical_sha256": "sha256:8fe9e44d96c7996ade7c421d30ff97b81c0e487be13c58310d2b8aa7fc0049a0",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O27.npz",
+      "case_cache_sha256": "sha256:5d7b096e5fbe010f80e406451e834571285d2b41102fbbb3f2cb563fe3504743",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O27.json",
+      "json_sha256": "sha256:926077c5dec488d478df002bb5671c9def97a4dd3680dc96366a1ad418175b6a",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O27.npz",
+      "npz_sha256": "sha256:eb1298de985b68f197b59048ab47c92eff6433226936db802511444cebee8571",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O27"
+    },
+    {
+      "canonical_sha256": "sha256:4e5c30a74f64ece520d20818d2ec04045b9c105cb7981b45880d25329e33cac9",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O28.npz",
+      "case_cache_sha256": "sha256:da357c3e0f35c6c8e7d9d483b16c143ee5064e456327e25ea28951bb2cc950be",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O28.json",
+      "json_sha256": "sha256:4b25aa0319199d44fdaed1289185c48a62e69efc3e948d60bf4e0cf795634380",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O28.npz",
+      "npz_sha256": "sha256:cbdf2e294117ffd8ac8249d9911b109303cb6ffa80de49539f713518d98dc70d",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O28"
+    },
+    {
+      "canonical_sha256": "sha256:550a526b628930e696893aff4572b6a93f825b01fde8033b6c57a846ff5fe967",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O29.npz",
+      "case_cache_sha256": "sha256:085c4d32bc3b12f5ce7127e12457155ad7098fcdd1c4ac5e577792a052d37135",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O29.json",
+      "json_sha256": "sha256:28092a9df3352b85ad7960ad876855cf655225b1ac4852fd5d5c8ff02f5ee1e1",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O29.npz",
+      "npz_sha256": "sha256:441b2bb9728f8d941884a380922a091c9198a7778855e4cbdc6f1f563a329ab8",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O29"
+    },
+    {
+      "canonical_sha256": "sha256:4de52f3e860e36800fbc0e48964dca514dc80f10a3efa93e600d2a5b65892883",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O30.npz",
+      "case_cache_sha256": "sha256:ae04eaa0817b0a4444d0300e1cc6cb1979e7cd289e281e495b25c2df791e632b",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O30.json",
+      "json_sha256": "sha256:57c7f57e6c3cc421c5b7e2ad2759ba16b75be4a8489fd052a87c1ba1633cf891",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O30.npz",
+      "npz_sha256": "sha256:ac162897007ca30be95ad08046b3012e3e4bd2cbb9df1c91e3494744884b807b",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O30"
+    },
+    {
+      "canonical_sha256": "sha256:ba019af448708dc6011634e531bff15fd4e31dfadd43e83669b519fa34eb7b00",
+      "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O31.npz",
+      "case_cache_sha256": "sha256:35652a4bcb8599fff8fec7626961dda6f57789b8aa19c5e692b80f04cd142485",
+      "json_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O31.json",
+      "json_sha256": "sha256:9706a91b07082ff205a95ba3252c78f8e9becd261857e5776b9601c4721a447d",
+      "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O31.npz",
+      "npz_sha256": "sha256:aceaac7f15dd7ab94c42458a8521cb52813f714b6d14730b1c8fcad58dc892fc",
+      "record_id": "LCDF_09_VARIANT_MAIN_N8_O31"
+    }
+  ],
+  "required_record_count": 128,
+  "schema": "sph-pio-poc.stage06b.validation-manifest.v1",
+  "sealed_decode_counts": {
+    "sealed_formula_decode_count": 0,
+    "sealed_origin_decode_count": 0,
+    "sealed_source_decode_count": 0,
+    "sealed_state_decode_count": 0,
+    "sealed_target_decode_count": 0
+  },
+  "validation_protocol_feedback_count": 0,
+  "variants": [
+    "VARIANT_LOW",
+    "VARIANT_MAIN"
+  ]
+}

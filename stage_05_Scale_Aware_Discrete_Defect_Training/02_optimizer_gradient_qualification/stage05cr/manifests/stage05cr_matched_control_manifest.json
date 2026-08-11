@@ -1,0 +1,88 @@
+{
+  "pass": false,
+  "rows": [
+    {
+      "failed_probe_key": "sha256:3e83f230a85ff39ee97ea8f9964fa11ad2668f84291c8bbce244ccf2ca8526f8",
+      "historical_pass_candidate_count": 2,
+      "historical_pass_candidate_keys": [
+        "sha256:2091427b35f163315716ec88fb2f2f9507d0c7e6b9106c621d8a8fbb4b6614fe",
+        "sha256:fcd41c213218d80c55494a47375fc63436073c3ded69a792c16bbf1094da3dfd"
+      ],
+      "matching_stratum": {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "kind": "coordinate",
+        "lineage": "LCDF_07",
+        "seed": 20500502
+      },
+      "observed_distinct_control_count": 2,
+      "pass": true,
+      "required_distinct_control_count": 2,
+      "selected_control_keys": [
+        "sha256:2091427b35f163315716ec88fb2f2f9507d0c7e6b9106c621d8a8fbb4b6614fe",
+        "sha256:fcd41c213218d80c55494a47375fc63436073c3ded69a792c16bbf1094da3dfd"
+      ]
+    },
+    {
+      "failed_probe_key": "sha256:1cc6c29e128dae209787d9e95468f6a3cd675beed7c7b403b94a62da2564eb92",
+      "historical_pass_candidate_count": 1,
+      "historical_pass_candidate_keys": [
+        "sha256:90725927ccf18bf07304aff6d780652a5fe45ebc8dc2257e42f2baa768b3c99e"
+      ],
+      "matching_stratum": {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "kind": "block",
+        "lineage": "LCDF_07",
+        "seed": 20500502
+      },
+      "observed_distinct_control_count": 1,
+      "pass": false,
+      "required_distinct_control_count": 2,
+      "selected_control_keys": [
+        "sha256:90725927ccf18bf07304aff6d780652a5fe45ebc8dc2257e42f2baa768b3c99e"
+      ]
+    },
+    {
+      "failed_probe_key": "sha256:9fb0443d1cbac82cd765f6a2642297e9307a89a07034f0f68d4079762a228a69",
+      "historical_pass_candidate_count": 1,
+      "historical_pass_candidate_keys": [
+        "sha256:2d661c786f111b01dc021365e3379a6e7aebfa085c2255d9f2f1100c904b2e3b"
+      ],
+      "matching_stratum": {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "kind": "coordinate",
+        "lineage": "LCDF_06",
+        "seed": 20500503
+      },
+      "observed_distinct_control_count": 1,
+      "pass": false,
+      "required_distinct_control_count": 2,
+      "selected_control_keys": [
+        "sha256:2d661c786f111b01dc021365e3379a6e7aebfa085c2255d9f2f1100c904b2e3b"
+      ]
+    },
+    {
+      "failed_probe_key": "sha256:b0aa122c427bea6da621fd27751034f17184b92e878ee50c76afe36044b59fb7",
+      "historical_pass_candidate_count": 1,
+      "historical_pass_candidate_keys": [
+        "sha256:2d661c786f111b01dc021365e3379a6e7aebfa085c2255d9f2f1100c904b2e3b"
+      ],
+      "matching_stratum": {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "kind": "coordinate",
+        "lineage": "LCDF_06",
+        "seed": 20500503
+      },
+      "observed_distinct_control_count": 1,
+      "pass": false,
+      "required_distinct_control_count": 2,
+      "selected_control_keys": [
+        "sha256:2d661c786f111b01dc021365e3379a6e7aebfa085c2255d9f2f1100c904b2e3b"
+      ]
+    }
+  ],
+  "schema": "sph-pio-poc.stage05cr.controls.v1"
+}

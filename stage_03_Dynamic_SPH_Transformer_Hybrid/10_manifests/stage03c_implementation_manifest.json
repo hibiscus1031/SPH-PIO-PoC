@@ -1,0 +1,159 @@
+{
+  "D2_over_D3": 0.5265036121507529,
+  "arms": {
+    "D0": {
+      "parameter_count": 0,
+      "parameter_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "D1": {
+      "parameter_count": 5762,
+      "parameter_hash": "sha256:b7145af0ef4cfe75bff22a3d21eed7ad9c48a62c55be61630b60568561709e5f"
+    },
+    "D2": {
+      "parameter_count": 12098,
+      "parameter_hash": "sha256:5acdf4a580e608c3bb03f8afd08c6d6c990f406d8cf71ab30dc8af6b16ba4595"
+    },
+    "D3": {
+      "parameter_count": 22978,
+      "parameter_hash": "sha256:a292ebb2944fb21660e2e0511fabe96eafd1d85b4807ec28583a87fe4a2a9efc"
+    }
+  },
+  "contract": {
+    "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/contracts/dynamic_solver_implementation_contract_v0_1.yaml",
+    "sha256": "sha256:0872955dc49c781c48c98a13b7f367d85d70869461a0d06e163c858b20c30e87"
+  },
+  "files": [
+    {
+      "byte_count": 78,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/__init__.py",
+      "sha256": "sha256:ecc065fe5f4dc32d8da2b27b92e68c4e8c0a5d0b01f8f2217764486644444c45"
+    },
+    {
+      "byte_count": 1255,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/arm_d1/model.py",
+      "sha256": "sha256:c1372a07737ebb56792aa73c327b81423ef87068d0136627b1507c813ee8b3a1"
+    },
+    {
+      "byte_count": 1668,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/arm_d2/model.py",
+      "sha256": "sha256:a5df1be7b861bffe6c3de7467de36e1a21229cb0c75391f148cdfd5edd0d1d72"
+    },
+    {
+      "byte_count": 2663,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/arm_d3/model.py",
+      "sha256": "sha256:1fe69939c5ed0ab5c12955b2c037c0f046ac853d0b40f19b93b01d78127dab83"
+    },
+    {
+      "byte_count": 2082,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/baseline_d0/rhs.py",
+      "sha256": "sha256:fc1d0ad7043e5f14b3c79dfdf346d86c01d689e841760bfd952c8da2a6fbac2e"
+    },
+    {
+      "byte_count": 4261,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/baseline_d0/state.py",
+      "sha256": "sha256:a6f024bf2f7e44eba2031aca441cb26c0ee8e254dba3fd80cf33390d266e516e"
+    },
+    {
+      "byte_count": 5886,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/checkpoint_resume/checkpoint.py",
+      "sha256": "sha256:e4ac7815de6992124596c3f296a1fd45b2f19d41437793d3813415e4d7549985"
+    },
+    {
+      "byte_count": 1528,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/contracts/model_factory.py",
+      "sha256": "sha256:106c3e33b2729f956e8a31640fd5ee5f90ea5f82282be1321f32404764b216ab"
+    },
+    {
+      "byte_count": 5062,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/differentiability_smoke/autograd_smoke.py",
+      "sha256": "sha256:0d2b5fafe5225423a86274f96a74f50f8832a486f8582d90ee569613b127e2e3"
+    },
+    {
+      "byte_count": 5328,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/freeze/freeze_inputs.py",
+      "sha256": "sha256:35895e7afe98a80ac71434f5c37c97036e1fb958441a15d50d73e7848e15c8d0"
+    },
+    {
+      "byte_count": 3383,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/graph_rebuild/graph.py",
+      "sha256": "sha256:d29fd86979150f98eb2e5927d1688b1df920181030aa275a5f244fb1f19c8c4f"
+    },
+    {
+      "byte_count": 646,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/manifests/verify.py",
+      "sha256": "sha256:93ec4b21fce3a71627b3c005240b349c7a9ea4a25e799ebb235b9881eabf8c81"
+    },
+    {
+      "byte_count": 3179,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/pair_force_head/head.py",
+      "sha256": "sha256:77831de4312ce1ca1406e7d7f41e6c19c90e38a6259a9d053037ea398c77139a"
+    },
+    {
+      "byte_count": 40760,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/qualification/run_stage03c_qualification.py",
+      "sha256": "sha256:0278db3b071e322bc87a89ded5a48c9a0a31b00cd32c72522b1546df774cff84"
+    },
+    {
+      "byte_count": 5016,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/reference_loader/loader.py",
+      "sha256": "sha256:aa4abce28939fe6bae7b0160e85aa919ad50f3af150e4e2b145af900bc99a156"
+    },
+    {
+      "byte_count": 8323,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/resources/audit.py",
+      "sha256": "sha256:03163b0d49ff5003b03121f0c8985e3c3de1e93abccccf9a894678ac32e338da"
+    },
+    {
+      "byte_count": 2829,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/rk2_core/independent_functional.py",
+      "sha256": "sha256:eacbd2d9695dbfd793dcbcee607e94c86e432575d8c4f8db565df8bee3095cf4"
+    },
+    {
+      "byte_count": 12292,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/rk2_core/solver.py",
+      "sha256": "sha256:c6d9dde841e218e66a2e5036b4b8ec2459f9cc38512b990a6a2e7ac8c5e4e788"
+    },
+    {
+      "byte_count": 1371,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/safety/checks.py",
+      "sha256": "sha256:9e8b5ea2e0e25739670bf8fe15c1888372cb65cc522c296c96110bd6f311c376"
+    },
+    {
+      "byte_count": 1039,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/source_interface/source.py",
+      "sha256": "sha256:22565211c72dd05f6a22ccaf1065c0187f71c968ed7a6fc73bd5c4961a152228"
+    },
+    {
+      "byte_count": 7862,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/structural_smoke/audit.py",
+      "sha256": "sha256:31adafd6b0bb533d1414c1e0813be521e928c7aa60357d648da8445436187af7"
+    },
+    {
+      "byte_count": 4191,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/temporal_history/history.py",
+      "sha256": "sha256:60f9e4caa228fe8696ef2ef171da364d3918136711e1e2f37e0c2bfc7823858c"
+    },
+    {
+      "byte_count": 1977,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/tokenization/tokens.py",
+      "sha256": "sha256:6a0f2ad0a011c7d39f90668aa1b4c73d124f90eaf6871a8bb9a57756ee8dea56"
+    },
+    {
+      "byte_count": 905,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/zero_correction/equality.py",
+      "sha256": "sha256:913fa3ae3d551a76669c4b38681d486db974363c17e45288b41fdf845d6af70e"
+    },
+    {
+      "byte_count": 9978,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/contracts/dynamic_solver_implementation_contract_v0_1.yaml",
+      "sha256": "sha256:0872955dc49c781c48c98a13b7f367d85d70869461a0d06e163c858b20c30e87"
+    }
+  ],
+  "optimizer_objects": 0,
+  "optimizer_steps": 0,
+  "pass": true,
+  "schema_version": "sph-pio-poc.stage03c.implementation.v1",
+  "shared_antisymmetric_pair_head": true,
+  "token_fields": 10,
+  "training_runs": 0
+}

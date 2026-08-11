@@ -1,0 +1,42 @@
+{
+  "family_id": "V02_BLIND_TEST_01",
+  "hash_sealed": true,
+  "payloads": [
+    {
+      "canonical_path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_2/canonical_records/v02_blind_test_01_n12_h26.bin",
+      "canonical_sha256": "sha256:d14dfa215c1ff778363a97164e750efa61e318ee0055623eca61c32a57042376",
+      "case_id": "v02_blind_test_01_n12_h26",
+      "target_hash": "sha256:f72be7fb4f743e04614b90841ff73ea0dfe4ab78711976f2f791433c06792a88"
+    },
+    {
+      "canonical_path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_2/canonical_records/v02_blind_test_01_n16_h22.bin",
+      "canonical_sha256": "sha256:4d6dffde69c7e7b2077cd70cea095a0f7136c12fd42ab33129582baee32af22f",
+      "case_id": "v02_blind_test_01_n16_h22",
+      "target_hash": "sha256:57426e265e88d94e46f17c2e4a6e404ea516d3a4bc3c8aef0e1dd203e9b74669"
+    },
+    {
+      "canonical_path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_2/canonical_records/v02_blind_test_01_n16_h26.bin",
+      "canonical_sha256": "sha256:4e25f6fe51ffe14a37167f3e96829d425a70423acf45b767ff8f32f2e399a6fe",
+      "case_id": "v02_blind_test_01_n16_h26",
+      "target_hash": "sha256:df4deb3a3b58967bee3e6e1e67565d60dbc9aa41a72cf7b3970e59ec5de9c07c"
+    },
+    {
+      "canonical_path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_2/canonical_records/v02_blind_test_01_n16_h30.bin",
+      "canonical_sha256": "sha256:0a87d897368ca5dd6170c59554461f31cb2cc18f036ba0954b15e3dc1cf55ab1",
+      "case_id": "v02_blind_test_01_n16_h30",
+      "target_hash": "sha256:df4deb3a3b58967bee3e6e1e67565d60dbc9aa41a72cf7b3970e59ec5de9c07c"
+    },
+    {
+      "canonical_path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_2/canonical_records/v02_blind_test_01_n20_h26.bin",
+      "canonical_sha256": "sha256:41bcf01c3742bbb0193120c4d3eef30427f4604fd77db3430279a546d15462bf",
+      "case_id": "v02_blind_test_01_n20_h26",
+      "target_hash": "sha256:a9f726d91129d4beb8372e8d01f5791f7a43b7b8113066e1055cb7dab4488e1c"
+    }
+  ],
+  "protocol_sha256": "sha256:8cd068c5b23eacfbcb2c56846352fd6f3c560b46d8562806e3ed568c278ddb6e",
+  "release_manifest_created": false,
+  "seal_version": "stage02mp-v02-test-payload-seal-1.0.0",
+  "status": "SEALED",
+  "test_record_count": 5,
+  "test_target_access": false
+}

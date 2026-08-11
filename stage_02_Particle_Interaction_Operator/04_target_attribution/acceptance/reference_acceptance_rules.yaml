@@ -1,0 +1,38 @@
+rules_version: stage02h-reference-acceptance-1.0.0
+frozen_before_execution: true
+threshold_change_after_observation_permitted: false
+manual_verdict_override_permitted: false
+
+required_checks:
+  same_state: PASS
+  same_physics: PASS
+  deterministic: PASS
+  low_reconstruction_bias: PASS
+  cross_reference_agreement: PASS
+  uncertainty_qualified: PASS
+
+numeric_thresholds:
+  deterministic_max_repeat_Linf: 0.0
+  bias_to_reference_target_L2_ratio_max: 0.10
+  uncertainty_to_reference_target_L2_ratio_max: 0.10
+  cross_reference_pair_L2_to_max_target_L2_ratio_max: 0.10
+  cross_reference_pair_Linf_to_max_target_Linf_ratio_max: 0.15
+  cross_reference_target_pattern_cosine_min: 0.99
+  minimum_independent_agreeing_peer_count: 1
+  local_minimum_matrix_rank:
+    H_REF_QWLS2_INCUMBENT: 5
+    H_REF_CWLS3: 9
+  local_maximum_condition_number: 1.0e8
+  polynomial_reproduction_Linf_max: 1.0e-10
+
+uncertainty_definition:
+  analytic: deterministic_roundoff_floor_plus_zero_closed_form_reconstruction_bias
+  numerical: analytic_bias_L2_plus_primary_vs_pseudoinverse_sensitivity_L2
+  single_total_GCI_generated: false
+  GCI_status: not_justified
+
+candidate_spatial_reference_rule: all_required_checks_PASS
+failure_retention_required: true
+incumbent_stage02g_bias_diagnostic_override_permitted: false
+continuum_model_form_confirmation_implied: false
+training_permission_implied: false

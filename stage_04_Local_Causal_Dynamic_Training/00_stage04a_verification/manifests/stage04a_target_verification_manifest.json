@@ -1,0 +1,89 @@
+{
+  "schema_version": "sph-pio-poc.stage04a.target-verification.v1",
+  "stage": "Stage 04A Target Verification and Conditional Stage 04B Launch",
+  "verification_date": "2026-08-05",
+  "verdict": "STAGE04A_TARGET_VERIFIED",
+  "verified_core": [
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04a_final_report.md",
+      "byte_count": 4645,
+      "sha256": "sha256:6e027e64439240a9a9670575eceae50a96fd3b5f27580971b32cdcf9f591d442"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04a_input_freeze_manifest.json",
+      "byte_count": 2750,
+      "sha256": "sha256:6efe1e9bfdbde880c846b2a207fdff26f32a54eb3972470152a23ed10a42998a"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04a_contract_manifest.json",
+      "byte_count": 7682,
+      "sha256": "sha256:e391fca3fa564f8c569dcb5d5de55a09da574b1824e8dfe8afcdd12dfd87d1bf"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04a_final_manifest.json",
+      "byte_count": 3803,
+      "sha256": "sha256:fb7d11e94af8bf3c3a1bb09036f3599d5e61dbc42e7f8fe9d6529178b5976b0b"
+    }
+  ],
+  "artifact_integrity": {
+    "unique_final_report_count": 1,
+    "json_manifest_parse_count": 3,
+    "json_manifest_parse_failures": 0,
+    "contract_inventory_checked": 31,
+    "contract_inventory_missing": 0,
+    "contract_inventory_hash_mismatch": 0,
+    "final_manifest_references_checked": 6,
+    "final_manifest_references_missing": 0,
+    "final_manifest_reference_hash_mismatch": 0,
+    "conflicting_final_status_count": 0
+  },
+  "contract_gates": {
+    "new_scientific_hypothesis": true,
+    "stage03_non_override": true,
+    "unique_k1_rk2_definition": true,
+    "state_loss_boundary": true,
+    "optimizer_parameter_gradient_boundary": true,
+    "cpu_float64_math_sdpa": true,
+    "fair_d1_d2_d3_comparison": true,
+    "new_lineage_and_sealed_test_requirement": true,
+    "stage04b_to_stage04g_dependency": true,
+    "no_skip_to_training": true
+  },
+  "historical_integrity": {
+    "frozen_paths_checked": 1976,
+    "frozen_paths_missing": 0,
+    "frozen_paths_hash_mismatch": 0,
+    "stage03ds_artifacts_checked": 57,
+    "stage03ds_artifacts_missing": 0,
+    "stage03ds_artifacts_hash_mismatch": 0,
+    "status_sources_checked": 8,
+    "status_sources_missing": 0,
+    "status_sources_hash_mismatch": 0,
+    "status_conflict": 0,
+    "historical_modification": 0
+  },
+  "preserved_states": {
+    "stage03c": "DYNAMIC_RK2_HYBRID_IMPLEMENTATION_VERIFIED",
+    "stage03d": "DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED",
+    "stage03dr": "DYNAMIC_GRADIENT_FAILURE_MIXED_OR_UNRESOLVED",
+    "stage03ds": "STAGE03_ROUTE_PAUSED_GRADIENT_BOUNDARY_COMPLETE",
+    "topology_component": "TOPOLOGY_EVENT_COMPONENT_QUALIFIED",
+    "stage03e_authorization": false
+  },
+  "prohibited_execution": {
+    "trajectory_arrays": 0,
+    "reference_datasets": 0,
+    "optimizer_steps": 0,
+    "training_runs": 0,
+    "neural_rollouts": 0,
+    "performance_evaluations": 0,
+    "sealed_test_releases": 0
+  },
+  "authorization": {
+    "next_stage": "Stage 04B — New Dynamic Reference-Family Pool and Lineage Qualification",
+    "stage04b_authorized": true,
+    "stage04c_authorized": false,
+    "training_authorized": false,
+    "automatic_launch": true
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "neural_rollouts": 0,
+  "optimizer_instances": 0,
+  "optimizer_steps": 0,
+  "performance_evaluations": 0,
+  "persistent_parameter_updates": 0,
+  "reason": "Three failed-probe strata contain fewer than two distinct historical PASS probes under the mandatory exact matching constraints.",
+  "required_for_stage05cp": "DEFECT_GRADIENT_FD_FAILURE_ATTRIBUTED_WINDOW_CONDITIONING",
+  "schema": "sph-pio-poc.stage05cr.route-decision.v1",
+  "stage05cp_scientific_result_count": 0,
+  "stage05cp_started": false,
+  "stage05cp_status": "NOT_STARTED",
+  "stage05cr_status": "DEFECT_GRADIENT_FD_FAILURE_EVIDENCE_INCOMPLETE",
+  "stage05d_authorized": false,
+  "training_runs": 0,
+  "validation_and_sealed_decode_counts": {
+    "sealed_formula_decode_count": 0,
+    "sealed_origin_decode_count": 0,
+    "sealed_source_decode_count": 0,
+    "sealed_state_decode_count": 0,
+    "sealed_target_decode_count": 0,
+    "validation_state_decode_count": 0,
+    "validation_target_decode_count": 0
+  }
+}

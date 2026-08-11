@@ -1,0 +1,3 @@
+# Methods scientific source
+
+Organize the methods by evidence layer rather than project stage: (i) SPH equation and finite-resolution verification; (ii) analytic, exact-trajectory and same-semidiscrete references; (iii) reciprocal antisymmetric pair corrections; (iv) dynamic RK2 state/history semantics; (v) accepted-state D0 defect and conservative decomposition; (vi) frozen target scale and uncertainty; (vii) AD/FD and actual AdamW update qualification; (viii) role, seal and checkpoint governance; and (ix) descriptor and target-manifold support geometry. Every threshold must cite its frozen contract. High-resolution SPH and DOP853 tolerance audits must not be labelled truth outside their registered role.

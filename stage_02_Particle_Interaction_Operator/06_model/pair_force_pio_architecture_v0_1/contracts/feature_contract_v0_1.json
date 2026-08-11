@@ -1,0 +1,45 @@
+{
+  "contract_version": "stage02k-feature-contract-1.0.0",
+  "principle": "inputs_derive_only_from_baseline_state_and_legal_reciprocal_graph",
+  "allowed_node_scalars": [
+    "normalized_density_deviation",
+    "normalized_pressure",
+    "normalized_mass",
+    "normalized_smoothing_length",
+    "constant_one"
+  ],
+  "allowed_edge_vectors_and_scalars": [
+    "minimum_image_r_ij_over_h_ij",
+    "distance_over_h_ij",
+    "relative_velocity_over_cs",
+    "radial_relative_velocity",
+    "transverse_relative_velocity",
+    "density_sum",
+    "absolute_density_difference",
+    "pressure_sum",
+    "absolute_pressure_difference",
+    "mass_symmetric_combinations",
+    "h_symmetric_combinations",
+    "active_kernel_indicator"
+  ],
+  "forbidden_inputs": [
+    "a_FOURIER",
+    "a_ANALYTIC",
+    "delta_a",
+    "nodal_target_force",
+    "target_statistics",
+    "eligibility_verdict",
+    "split_label",
+    "family_role",
+    "reference_difference",
+    "regularity_metrics",
+    "particle_id",
+    "edge_id",
+    "canonical_file_order",
+    "a_SPH",
+    "absolute_position",
+    "absolute_velocity"
+  ],
+  "pair_coefficient_feature_exchange_invariance": "hard_by_sum_absdiff_product_and_pair_invariants",
+  "target_access_in_forward": false
+}

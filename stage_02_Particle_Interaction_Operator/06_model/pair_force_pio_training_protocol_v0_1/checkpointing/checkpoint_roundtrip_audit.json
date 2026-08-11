@@ -1,0 +1,56 @@
+{
+  "contract_version": "stage02l-zero-step-checkpoint-1.0.0",
+  "optimizer_steps": 0,
+  "required_future_interval_updates": 20,
+  "rows": [
+    {
+      "all_required_fields_present": true,
+      "architecture": "K0",
+      "checkpoint_byte_count": 35721,
+      "checkpoint_path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/checkpointing/K0_seed20261201_update0000.pt",
+      "checkpoint_sha256": "sha256:3b408e911d3e50fea77bad514e26c7e365bccc0b6186a91ffe4b386f75bee1ee",
+      "optimizer_counter_after": 0,
+      "optimizer_counter_before": 0,
+      "parameter_bitwise_identity": true,
+      "resume_next_forward_bitwise_identity": true,
+      "scheduler_counter_after": 0,
+      "scheduler_counter_before": 0,
+      "split_normalization_identity": true,
+      "status": "PASS",
+      "update_number": 0
+    },
+    {
+      "all_required_fields_present": true,
+      "architecture": "K1",
+      "checkpoint_byte_count": 35977,
+      "checkpoint_path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/checkpointing/K1_seed20261201_update0000.pt",
+      "checkpoint_sha256": "sha256:1f3cc9823dbc10a98ed65c4381fb81bf8c2e04de08b43fe8d5d2fa3a2268d139",
+      "optimizer_counter_after": 0,
+      "optimizer_counter_before": 0,
+      "parameter_bitwise_identity": true,
+      "resume_next_forward_bitwise_identity": true,
+      "scheduler_counter_after": 0,
+      "scheduler_counter_before": 0,
+      "split_normalization_identity": true,
+      "status": "PASS",
+      "update_number": 0
+    },
+    {
+      "all_required_fields_present": true,
+      "architecture": "K2",
+      "checkpoint_byte_count": 288458,
+      "checkpoint_path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/checkpointing/K2_seed20261201_update0000.pt",
+      "checkpoint_sha256": "sha256:509fcec357ba6e32d3c1fc64149a38bf280aff7f920c4e9a974900a8322377d5",
+      "optimizer_counter_after": 0,
+      "optimizer_counter_before": 0,
+      "parameter_bitwise_identity": true,
+      "resume_next_forward_bitwise_identity": true,
+      "scheduler_counter_after": 0,
+      "scheduler_counter_before": 0,
+      "split_normalization_identity": true,
+      "status": "PASS",
+      "update_number": 0
+    }
+  ],
+  "status": "PASS"
+}

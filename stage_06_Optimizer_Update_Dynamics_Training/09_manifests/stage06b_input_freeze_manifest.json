@@ -1,0 +1,575 @@
+{
+  "authorization_status": "ACTUAL_OPTIMIZER_UPDATE_DYNAMICS_QUALIFIED",
+  "historical_files_changed": [],
+  "historical_statuses": {
+    "Stage05C": "OPTIMIZER_ALIGNED_DEFECT_GRADIENT_AND_LOCAL_DESCENT_NOT_QUALIFIED",
+    "Stage05C-Q": "PROSPECTIVE_OPTIMIZER_PATH_GRADIENT_CONFIRMATION_NOT_QUALIFIED",
+    "Stage05C-R": "DEFECT_GRADIENT_FD_FAILURE_EVIDENCE_INCOMPLETE",
+    "Stage06A": "ACTUAL_OPTIMIZER_UPDATE_DYNAMICS_QUALIFIED",
+    "coordinate_block_coverage": "NOT_QUALIFIED"
+  },
+  "pass": true,
+  "protocol_frozen_before_validation_decode": true,
+  "protocol_sha256": "sha256:b7918bde82b104895b6d47c798801608938c661c3f8b249f4c832c98c3a83cbe",
+  "schema": "sph-pio-poc.stage06b.input-freeze.v1",
+  "stage01_05_artifact_count": 3700,
+  "stage05c_failure_hashes": [
+    "sha256:1cc6c29e128dae209787d9e95468f6a3cd675beed7c7b403b94a62da2564eb92",
+    "sha256:3e83f230a85ff39ee97ea8f9964fa11ad2668f84291c8bbce244ccf2ca8526f8",
+    "sha256:9fb0443d1cbac82cd765f6a2642297e9307a89a07034f0f68d4079762a228a69",
+    "sha256:b0aa122c427bea6da621fd27751034f17184b92e878ee50c76afe36044b59fb7"
+  ],
+  "stage05cq_failure_hashes": [
+    "sha256:34fbf73aa8c0221cfb3a588c0669b0e28f125448eb2467533505fff4a12c7dbc",
+    "sha256:62f4722bdc8bce75d9966a8aeb335101871f8ef7dda3bfe5587d60bfdd7a3cb0",
+    "sha256:823f17db030aa9c007e8f096e0ca94164ef3b4b2a1fc203c15589eeb830d717f",
+    "sha256:a013995b33970f2bcc8c426c1c141655acd41ff69dcff5f15a3195ecc086b798",
+    "sha256:a4b939ec0f38b99571fca116758d385016f11db7116779e451bc816c0f88fc61",
+    "sha256:c5b3322ea469b6282dafd5c2757a0881c5b377dde85c931d266c47f50cf679d1"
+  ],
+  "stage06a_artifact_count": 207,
+  "stage06a_final_manifest_sha256": "sha256:c7e15ed4fc3a285e50a7ffc687d506807a66d25324bb1c9d90323cc849707219",
+  "unreadable_private_artifacts": [
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_analytic_audit.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1812
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n12.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 8481
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n12.npz",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 158177
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n12_topology_margin.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1093
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n16.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 8481
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n16.npz",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 232517
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n16_topology_margin.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1093
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n8.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 8478
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n8.npz",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 60801
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n8_topology_margin.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1090
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_analytic_audit.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1832
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n12.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 8483
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n12.npz",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 158754
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n12_topology_margin.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1093
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n16.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 8483
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n16.npz",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 232813
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n16_dop853_audit.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 2537
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n16_topology_margin.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1094
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n8.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 8479
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n8.npz",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 60897
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n8_dop853_audit.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 2536
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n8_topology_margin.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1091
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_analytic_audit.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1829
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n12.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 8485
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n12.npz",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 181458
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n12_topology_margin.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1094
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n16.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 8485
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n16.npz",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 281292
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n16_topology_margin.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1093
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n8.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 8480
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n8.npz",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 73593
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n8_topology_margin.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1088
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_analytic_audit.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1834
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n12.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 8486
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n12.npz",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 181932
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n12_topology_margin.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1093
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n16.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 8487
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n16.npz",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 280913
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n16_dop853_audit.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 2537
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n16_topology_margin.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1095
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n8.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 8484
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n8.npz",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 73766
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n8_dop853_audit.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 2537
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n8_topology_margin.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1091
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/validation_parameters.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1343
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_analytic_audit.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1835
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n12.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 8473
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n12.npz",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 199706
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n12_topology_margin.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1093
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n16.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 8472
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n16.npz",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 301602
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n16_topology_margin.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1093
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n8.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 8470
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n8.npz",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 75201
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n8_topology_margin.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1090
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_analytic_audit.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1837
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n12.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 8475
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n12.npz",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 199788
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n12_topology_margin.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1094
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n16.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 8475
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n16.npz",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 300856
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n16_dop853_audit.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 2537
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n16_topology_margin.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1095
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n8.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 8472
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n8.npz",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 76129
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n8_dop853_audit.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 2533
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n8_topology_margin.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1092
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_analytic_audit.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1830
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n12.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 8469
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n12.npz",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 300184
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n12_topology_margin.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1093
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n16.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 8469
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n16.npz",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 537191
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n16_topology_margin.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1093
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n8.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 8466
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n8.npz",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 130208
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n8_topology_margin.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1089
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_analytic_audit.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1827
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n12.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 8471
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n12.npz",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 301006
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n12_topology_margin.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1094
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n16.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 8470
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n16.npz",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 538749
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n16_dop853_audit.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 2540
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n16_topology_margin.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1094
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n8.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 8469
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n8.npz",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 130712
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n8_dop853_audit.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 2536
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n8_topology_margin.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1092
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/sealed_parameters.json",
+      "payload_read": false,
+      "posix_mode": 0,
+      "size_bytes": 1344
+    }
+  ],
+  "validation_decode_count_at_freeze": 0
+}

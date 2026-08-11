@@ -1,0 +1,44 @@
+contract_version: stage02jr-multifamily-pair-scope-0.2.0
+dataset_version: controlled_multifamily_pair_scope_v0_2
+historical_stage02j:
+  readiness: not_ready
+  leakage_component_count: 1
+  diagnostic_record_count: 5
+  eligible_record_count: 0
+  normalization_fitted: false
+  Stage02K_authorized: false
+sample_unit: complete_particle_graph
+maximum_record_count: 20
+new_family_count: 3
+new_cases_per_family: 5
+manual_override_permitted: false
+target_contract:
+  sign: a_reference_minus_a_sph
+  node_labels: [delta_a, mass_times_delta_a]
+  edge_pair_force_target_permitted: false
+  incidence_projection_writeback_permitted: false
+conservation_contract:
+  normalized_total_target_force_residual_max: 1.0e-10
+  general_pair_projection_residual_max: 1.0e-10
+  central_pair_gate: diagnostic_only
+split_contract:
+  assignment_frozen_before_target_generation: true
+  atomic_unit: family_leakage_component
+  particle_edge_patch_split_permitted: false
+normalization_contract:
+  prerequisite_components: 4
+  future_train_only: true
+  graph_balanced: true
+  target_or_reference_fields_permitted: false
+prohibitions:
+  trajectory: true
+  temporal_frame_expansion: true
+  DOP853: true
+  velocity_finite_difference_target: true
+  jitter_training_label: true
+  augmentation: true
+  graph_slicing: true
+  model: true
+  training: true
+  performance_claim: true
+

@@ -1,0 +1,18 @@
+{
+  "aggregations_frozen": [
+    "equal_weight_graph_mean",
+    "equal_weight_family_mean",
+    "median",
+    "maximum",
+    "per_resolution",
+    "per_support"
+  ],
+  "contract_version": "stage02l-static-metrics-1.0.0",
+  "dataset_performance_computed": false,
+  "epsilon_metric": 4e-10,
+  "exact_prediction_Q_L2": 0.0,
+  "implemented_epsilon_adjusted_identity_error": 0.0,
+  "pseudoreplication_by_particles_or_edges": false,
+  "status": "PASS",
+  "zero_correction_Q_L2_convention": 1.0
+}

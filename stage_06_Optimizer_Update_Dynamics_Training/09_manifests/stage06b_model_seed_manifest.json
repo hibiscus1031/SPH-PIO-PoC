@@ -1,0 +1,273 @@
+{
+  "formal_seeds": [
+    20600611,
+    20600612,
+    20600613
+  ],
+  "pass": true,
+  "run_count": 9,
+  "runs": [
+    {
+      "architecture_sha256": "sha256:8ae11d8876287b2a273326b8ffa0716313d596b417f34bdd37320b378797bc05",
+      "arm": "D1",
+      "backend": "CPU_FLOAT64_SDPBackend.MATH",
+      "batch_manifest_sha256": "sha256:c62562e7f57cdea8ac167a3d5b325131662a2ab76c38942fd9fdf46898afc50f",
+      "formal_learning_rate": 1e-05,
+      "formal_seed": 20600611,
+      "historical_weight_reads": 0,
+      "initial_parameter_sha256": "sha256:7bc35d579838b540337858fe67587e829969cb5ddb56a2d3b896b575d8e9133e",
+      "optimizer_config": {
+        "amsgrad": false,
+        "arm_specific_family": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-12,
+        "family": "AdamW",
+        "global_gradient_clip": 1.0,
+        "weight_decay": 0
+      },
+      "parameter_count": 5762,
+      "protocol_sha256": "sha256:b7918bde82b104895b6d47c798801608938c661c3f8b249f4c832c98c3a83cbe",
+      "qualification_weight_reads": 0,
+      "run_id": "D1_seed20600611",
+      "run_identity_sha256": "sha256:648a4f98f2d7f15a1096a47af20aadd7e0a95e3850df2bf4410d71d355561dca",
+      "scale_sha256": "sha256:67fa876308d81e65f39fd90d08e0a4586ccca1e72466cebf114aa582148a3437",
+      "target_manifest_sha256": "sha256:834521190405954809f12fb1f9678c0465a7012c2ef2689f40a60ecf2fb03126"
+    },
+    {
+      "architecture_sha256": "sha256:8ae11d8876287b2a273326b8ffa0716313d596b417f34bdd37320b378797bc05",
+      "arm": "D1",
+      "backend": "CPU_FLOAT64_SDPBackend.MATH",
+      "batch_manifest_sha256": "sha256:c62562e7f57cdea8ac167a3d5b325131662a2ab76c38942fd9fdf46898afc50f",
+      "formal_learning_rate": 1e-05,
+      "formal_seed": 20600612,
+      "historical_weight_reads": 0,
+      "initial_parameter_sha256": "sha256:ce30b23f5e500927687f2b27e37b8b63a4599ee9ec032b9df1eb098c70904cca",
+      "optimizer_config": {
+        "amsgrad": false,
+        "arm_specific_family": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-12,
+        "family": "AdamW",
+        "global_gradient_clip": 1.0,
+        "weight_decay": 0
+      },
+      "parameter_count": 5762,
+      "protocol_sha256": "sha256:b7918bde82b104895b6d47c798801608938c661c3f8b249f4c832c98c3a83cbe",
+      "qualification_weight_reads": 0,
+      "run_id": "D1_seed20600612",
+      "run_identity_sha256": "sha256:4132d7fa0ef6317d2bb142748add489e397d16cc3092cdb002849610699366e2",
+      "scale_sha256": "sha256:67fa876308d81e65f39fd90d08e0a4586ccca1e72466cebf114aa582148a3437",
+      "target_manifest_sha256": "sha256:834521190405954809f12fb1f9678c0465a7012c2ef2689f40a60ecf2fb03126"
+    },
+    {
+      "architecture_sha256": "sha256:8ae11d8876287b2a273326b8ffa0716313d596b417f34bdd37320b378797bc05",
+      "arm": "D1",
+      "backend": "CPU_FLOAT64_SDPBackend.MATH",
+      "batch_manifest_sha256": "sha256:c62562e7f57cdea8ac167a3d5b325131662a2ab76c38942fd9fdf46898afc50f",
+      "formal_learning_rate": 1e-05,
+      "formal_seed": 20600613,
+      "historical_weight_reads": 0,
+      "initial_parameter_sha256": "sha256:c17c0c90b863be904f2c75c05f6dc44a23bd151002e32cf9a556de1ea50bb8fe",
+      "optimizer_config": {
+        "amsgrad": false,
+        "arm_specific_family": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-12,
+        "family": "AdamW",
+        "global_gradient_clip": 1.0,
+        "weight_decay": 0
+      },
+      "parameter_count": 5762,
+      "protocol_sha256": "sha256:b7918bde82b104895b6d47c798801608938c661c3f8b249f4c832c98c3a83cbe",
+      "qualification_weight_reads": 0,
+      "run_id": "D1_seed20600613",
+      "run_identity_sha256": "sha256:9a80db66a3954bc54950f6c3eb4a62b7a20ccc0e4f465eb31fc04d27f49e3ca8",
+      "scale_sha256": "sha256:67fa876308d81e65f39fd90d08e0a4586ccca1e72466cebf114aa582148a3437",
+      "target_manifest_sha256": "sha256:834521190405954809f12fb1f9678c0465a7012c2ef2689f40a60ecf2fb03126"
+    },
+    {
+      "architecture_sha256": "sha256:d01a4b836286d9b5d017f94b6ef27a10cc8ee865eaa84b3dbd261cbddf4b1a81",
+      "arm": "D2",
+      "backend": "CPU_FLOAT64_SDPBackend.MATH",
+      "batch_manifest_sha256": "sha256:c62562e7f57cdea8ac167a3d5b325131662a2ab76c38942fd9fdf46898afc50f",
+      "formal_learning_rate": 1e-05,
+      "formal_seed": 20600611,
+      "historical_weight_reads": 0,
+      "initial_parameter_sha256": "sha256:37e813320853ab1c257bbbcba1fd665308aef555d3812b476106df5f8bd590cd",
+      "optimizer_config": {
+        "amsgrad": false,
+        "arm_specific_family": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-12,
+        "family": "AdamW",
+        "global_gradient_clip": 1.0,
+        "weight_decay": 0
+      },
+      "parameter_count": 12098,
+      "protocol_sha256": "sha256:b7918bde82b104895b6d47c798801608938c661c3f8b249f4c832c98c3a83cbe",
+      "qualification_weight_reads": 0,
+      "run_id": "D2_seed20600611",
+      "run_identity_sha256": "sha256:1c9d8366858d1fd1805e1e3f6a386780d335d2fa9496208c6cd6ea409c421eca",
+      "scale_sha256": "sha256:67fa876308d81e65f39fd90d08e0a4586ccca1e72466cebf114aa582148a3437",
+      "target_manifest_sha256": "sha256:834521190405954809f12fb1f9678c0465a7012c2ef2689f40a60ecf2fb03126"
+    },
+    {
+      "architecture_sha256": "sha256:d01a4b836286d9b5d017f94b6ef27a10cc8ee865eaa84b3dbd261cbddf4b1a81",
+      "arm": "D2",
+      "backend": "CPU_FLOAT64_SDPBackend.MATH",
+      "batch_manifest_sha256": "sha256:c62562e7f57cdea8ac167a3d5b325131662a2ab76c38942fd9fdf46898afc50f",
+      "formal_learning_rate": 1e-05,
+      "formal_seed": 20600612,
+      "historical_weight_reads": 0,
+      "initial_parameter_sha256": "sha256:f2e70dbb954a015fb2ceda05623552bf7645284d9fbdf04090654044dd22f9bd",
+      "optimizer_config": {
+        "amsgrad": false,
+        "arm_specific_family": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-12,
+        "family": "AdamW",
+        "global_gradient_clip": 1.0,
+        "weight_decay": 0
+      },
+      "parameter_count": 12098,
+      "protocol_sha256": "sha256:b7918bde82b104895b6d47c798801608938c661c3f8b249f4c832c98c3a83cbe",
+      "qualification_weight_reads": 0,
+      "run_id": "D2_seed20600612",
+      "run_identity_sha256": "sha256:ca8c0da4b0cf7093aa349bfe7dccbd8547fdef201852b27d6a1b95d1223abd87",
+      "scale_sha256": "sha256:67fa876308d81e65f39fd90d08e0a4586ccca1e72466cebf114aa582148a3437",
+      "target_manifest_sha256": "sha256:834521190405954809f12fb1f9678c0465a7012c2ef2689f40a60ecf2fb03126"
+    },
+    {
+      "architecture_sha256": "sha256:d01a4b836286d9b5d017f94b6ef27a10cc8ee865eaa84b3dbd261cbddf4b1a81",
+      "arm": "D2",
+      "backend": "CPU_FLOAT64_SDPBackend.MATH",
+      "batch_manifest_sha256": "sha256:c62562e7f57cdea8ac167a3d5b325131662a2ab76c38942fd9fdf46898afc50f",
+      "formal_learning_rate": 1e-05,
+      "formal_seed": 20600613,
+      "historical_weight_reads": 0,
+      "initial_parameter_sha256": "sha256:9fb8a7218d73016d34ada54d1a52b479d2f3ed8f13f8b2c05b4028a6db27f9ca",
+      "optimizer_config": {
+        "amsgrad": false,
+        "arm_specific_family": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-12,
+        "family": "AdamW",
+        "global_gradient_clip": 1.0,
+        "weight_decay": 0
+      },
+      "parameter_count": 12098,
+      "protocol_sha256": "sha256:b7918bde82b104895b6d47c798801608938c661c3f8b249f4c832c98c3a83cbe",
+      "qualification_weight_reads": 0,
+      "run_id": "D2_seed20600613",
+      "run_identity_sha256": "sha256:79137c425cc1fe4d79011abeafcd3b63d6982720686c2c9ce6e91780441979df",
+      "scale_sha256": "sha256:67fa876308d81e65f39fd90d08e0a4586ccca1e72466cebf114aa582148a3437",
+      "target_manifest_sha256": "sha256:834521190405954809f12fb1f9678c0465a7012c2ef2689f40a60ecf2fb03126"
+    },
+    {
+      "architecture_sha256": "sha256:720311f4ffe2645411f2a4b05c35049ec1abefd6f080fdc0445407c8faa17209",
+      "arm": "D3",
+      "backend": "CPU_FLOAT64_SDPBackend.MATH",
+      "batch_manifest_sha256": "sha256:c62562e7f57cdea8ac167a3d5b325131662a2ab76c38942fd9fdf46898afc50f",
+      "formal_learning_rate": 1e-05,
+      "formal_seed": 20600611,
+      "historical_weight_reads": 0,
+      "initial_parameter_sha256": "sha256:69277dbb8db8e605222288e1aace7c1bf118feda652efdf030566da06c61cdb4",
+      "optimizer_config": {
+        "amsgrad": false,
+        "arm_specific_family": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-12,
+        "family": "AdamW",
+        "global_gradient_clip": 1.0,
+        "weight_decay": 0
+      },
+      "parameter_count": 22978,
+      "protocol_sha256": "sha256:b7918bde82b104895b6d47c798801608938c661c3f8b249f4c832c98c3a83cbe",
+      "qualification_weight_reads": 0,
+      "run_id": "D3_seed20600611",
+      "run_identity_sha256": "sha256:c9a69c10a43e27b1027b8aab267ec7d58c6008fcd88de246a3edbd8a60bd9fae",
+      "scale_sha256": "sha256:67fa876308d81e65f39fd90d08e0a4586ccca1e72466cebf114aa582148a3437",
+      "target_manifest_sha256": "sha256:834521190405954809f12fb1f9678c0465a7012c2ef2689f40a60ecf2fb03126"
+    },
+    {
+      "architecture_sha256": "sha256:720311f4ffe2645411f2a4b05c35049ec1abefd6f080fdc0445407c8faa17209",
+      "arm": "D3",
+      "backend": "CPU_FLOAT64_SDPBackend.MATH",
+      "batch_manifest_sha256": "sha256:c62562e7f57cdea8ac167a3d5b325131662a2ab76c38942fd9fdf46898afc50f",
+      "formal_learning_rate": 1e-05,
+      "formal_seed": 20600612,
+      "historical_weight_reads": 0,
+      "initial_parameter_sha256": "sha256:adae1a818ecde836f418cd0f030cc14a77a266d054b2ee865e064d53f04db9ec",
+      "optimizer_config": {
+        "amsgrad": false,
+        "arm_specific_family": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-12,
+        "family": "AdamW",
+        "global_gradient_clip": 1.0,
+        "weight_decay": 0
+      },
+      "parameter_count": 22978,
+      "protocol_sha256": "sha256:b7918bde82b104895b6d47c798801608938c661c3f8b249f4c832c98c3a83cbe",
+      "qualification_weight_reads": 0,
+      "run_id": "D3_seed20600612",
+      "run_identity_sha256": "sha256:2c8a89c89dd02c16236df3464bc9c7811e464a3525e0f2e15c82332b884c898b",
+      "scale_sha256": "sha256:67fa876308d81e65f39fd90d08e0a4586ccca1e72466cebf114aa582148a3437",
+      "target_manifest_sha256": "sha256:834521190405954809f12fb1f9678c0465a7012c2ef2689f40a60ecf2fb03126"
+    },
+    {
+      "architecture_sha256": "sha256:720311f4ffe2645411f2a4b05c35049ec1abefd6f080fdc0445407c8faa17209",
+      "arm": "D3",
+      "backend": "CPU_FLOAT64_SDPBackend.MATH",
+      "batch_manifest_sha256": "sha256:c62562e7f57cdea8ac167a3d5b325131662a2ab76c38942fd9fdf46898afc50f",
+      "formal_learning_rate": 1e-05,
+      "formal_seed": 20600613,
+      "historical_weight_reads": 0,
+      "initial_parameter_sha256": "sha256:8005b574a7c92001979f2664a1446f056a827beeb8b683e3cb5580bf7e698d4d",
+      "optimizer_config": {
+        "amsgrad": false,
+        "arm_specific_family": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-12,
+        "family": "AdamW",
+        "global_gradient_clip": 1.0,
+        "weight_decay": 0
+      },
+      "parameter_count": 22978,
+      "protocol_sha256": "sha256:b7918bde82b104895b6d47c798801608938c661c3f8b249f4c832c98c3a83cbe",
+      "qualification_weight_reads": 0,
+      "run_id": "D3_seed20600613",
+      "run_identity_sha256": "sha256:528cd6a5296abc590232931dfa9549326878cfa5e5aff2cd36d2e3706d1fce2e",
+      "scale_sha256": "sha256:67fa876308d81e65f39fd90d08e0a4586ccca1e72466cebf114aa582148a3437",
+      "target_manifest_sha256": "sha256:834521190405954809f12fb1f9678c0465a7012c2ef2689f40a60ecf2fb03126"
+    }
+  ],
+  "schema": "sph-pio-poc.stage06b.formal-model-seeds.v1"
+}

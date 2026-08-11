@@ -1,0 +1,1154 @@
+{
+  "aggregates_by_split": {
+    "future_test": {
+      "convex_hull_mean": 6.431946238683652,
+      "nearest_neighbor_mean": 6.829064592375715
+    },
+    "future_train": {
+      "convex_hull_mean": 1.675788743361186e-16,
+      "nearest_neighbor_mean": 7.456802204211475
+    },
+    "future_validation": {
+      "convex_hull_mean": 11.984062413236867,
+      "nearest_neighbor_mean": 12.26160530210801
+    }
+  },
+  "current_test_status": "consumed_confirmatory_test",
+  "graph_summary_rows": [
+    {
+      "case_id": "blind_family_01_n12_h26",
+      "convex_hull_solver_success": true,
+      "family_id": "BLIND_FAMILY_01",
+      "resolution_id": "N12x12",
+      "split_role": "future_train",
+      "support_id": "Hdx_2p6",
+      "train_convex_hull_distance": 8.886119947416683e-17,
+      "train_nearest_neighbor_distance": 11.957308998792755
+    },
+    {
+      "case_id": "blind_family_01_n16_h22",
+      "convex_hull_solver_success": true,
+      "family_id": "BLIND_FAMILY_01",
+      "resolution_id": "N16x16",
+      "split_role": "future_train",
+      "support_id": "Hdx_2p2",
+      "train_convex_hull_distance": 1.0769145623660762e-23,
+      "train_nearest_neighbor_distance": 5.566465180653455
+    },
+    {
+      "case_id": "blind_family_01_n16_h26",
+      "convex_hull_solver_success": true,
+      "family_id": "BLIND_FAMILY_01",
+      "resolution_id": "N16x16",
+      "split_role": "future_train",
+      "support_id": "Hdx_2p6",
+      "train_convex_hull_distance": 0.0,
+      "train_nearest_neighbor_distance": 5.566465180653455
+    },
+    {
+      "case_id": "blind_family_01_n16_h30",
+      "convex_hull_solver_success": true,
+      "family_id": "BLIND_FAMILY_01",
+      "resolution_id": "N16x16",
+      "split_role": "future_train",
+      "support_id": "Hdx_3p0",
+      "train_convex_hull_distance": 0.0,
+      "train_nearest_neighbor_distance": 7.127100819428445
+    },
+    {
+      "case_id": "blind_family_01_n20_h26",
+      "convex_hull_solver_success": true,
+      "family_id": "BLIND_FAMILY_01",
+      "resolution_id": "N20x20",
+      "split_role": "future_train",
+      "support_id": "Hdx_2p6",
+      "train_convex_hull_distance": 1.2905608363000454e-15,
+      "train_nearest_neighbor_distance": 6.917702125914505
+    },
+    {
+      "case_id": "blind_family_02_n12_h26",
+      "convex_hull_solver_success": true,
+      "family_id": "BLIND_FAMILY_02",
+      "resolution_id": "N12x12",
+      "split_role": "future_train",
+      "support_id": "Hdx_2p6",
+      "train_convex_hull_distance": 2.7284202680863366e-21,
+      "train_nearest_neighbor_distance": 11.957308998792755
+    },
+    {
+      "case_id": "blind_family_02_n16_h22",
+      "convex_hull_solver_success": true,
+      "family_id": "BLIND_FAMILY_02",
+      "resolution_id": "N16x16",
+      "split_role": "future_train",
+      "support_id": "Hdx_2p2",
+      "train_convex_hull_distance": 3.0096438743784912e-21,
+      "train_nearest_neighbor_distance": 5.640647963173957
+    },
+    {
+      "case_id": "blind_family_02_n16_h26",
+      "convex_hull_solver_success": true,
+      "family_id": "BLIND_FAMILY_02",
+      "resolution_id": "N16x16",
+      "split_role": "future_train",
+      "support_id": "Hdx_2p6",
+      "train_convex_hull_distance": 2.963519570983803e-16,
+      "train_nearest_neighbor_distance": 5.640647963173957
+    },
+    {
+      "case_id": "blind_family_02_n16_h30",
+      "convex_hull_solver_success": true,
+      "family_id": "BLIND_FAMILY_02",
+      "resolution_id": "N16x16",
+      "split_role": "future_train",
+      "support_id": "Hdx_3p0",
+      "train_convex_hull_distance": 9.001655305389548e-21,
+      "train_nearest_neighbor_distance": 7.173132244942997
+    },
+    {
+      "case_id": "blind_family_02_n20_h26",
+      "convex_hull_solver_success": true,
+      "family_id": "BLIND_FAMILY_02",
+      "resolution_id": "N20x20",
+      "split_role": "future_train",
+      "support_id": "Hdx_2p6",
+      "train_convex_hull_distance": 0.0,
+      "train_nearest_neighbor_distance": 7.0212425665884695
+    },
+    {
+      "case_id": "blind_family_03_n12_h26",
+      "convex_hull_solver_success": false,
+      "family_id": "BLIND_FAMILY_03",
+      "resolution_id": "N12x12",
+      "split_role": "future_validation",
+      "support_id": "Hdx_2p6",
+      "train_convex_hull_distance": 12.142804222933005,
+      "train_nearest_neighbor_distance": 12.651337119581024
+    },
+    {
+      "case_id": "blind_family_03_n16_h22",
+      "convex_hull_solver_success": false,
+      "family_id": "BLIND_FAMILY_03",
+      "resolution_id": "N16x16",
+      "split_role": "future_validation",
+      "support_id": "Hdx_2p2",
+      "train_convex_hull_distance": 11.937593749117218,
+      "train_nearest_neighbor_distance": 11.938443567474032
+    },
+    {
+      "case_id": "blind_family_03_n16_h26",
+      "convex_hull_solver_success": true,
+      "family_id": "BLIND_FAMILY_03",
+      "resolution_id": "N16x16",
+      "split_role": "future_validation",
+      "support_id": "Hdx_2p6",
+      "train_convex_hull_distance": 11.89015944268634,
+      "train_nearest_neighbor_distance": 12.207657258117651
+    },
+    {
+      "case_id": "blind_family_03_n16_h30",
+      "convex_hull_solver_success": true,
+      "family_id": "BLIND_FAMILY_03",
+      "resolution_id": "N16x16",
+      "split_role": "future_validation",
+      "support_id": "Hdx_3p0",
+      "train_convex_hull_distance": 13.201394228722233,
+      "train_nearest_neighbor_distance": 13.745756908240386
+    },
+    {
+      "case_id": "blind_family_03_n20_h26",
+      "convex_hull_solver_success": true,
+      "family_id": "BLIND_FAMILY_03",
+      "resolution_id": "N20x20",
+      "split_role": "future_validation",
+      "support_id": "Hdx_2p6",
+      "train_convex_hull_distance": 10.748360422725531,
+      "train_nearest_neighbor_distance": 10.764831657126955
+    },
+    {
+      "case_id": "blind_family_04_n12_h26",
+      "convex_hull_solver_success": true,
+      "family_id": "BLIND_FAMILY_04",
+      "resolution_id": "N12x12",
+      "split_role": "future_test",
+      "support_id": "Hdx_2p6",
+      "train_convex_hull_distance": 9.573137245954777,
+      "train_nearest_neighbor_distance": 9.573137245958959
+    },
+    {
+      "case_id": "blind_family_04_n16_h22",
+      "convex_hull_solver_success": true,
+      "family_id": "BLIND_FAMILY_04",
+      "resolution_id": "N16x16",
+      "split_role": "future_test",
+      "support_id": "Hdx_2p2",
+      "train_convex_hull_distance": 5.098023891726058,
+      "train_nearest_neighbor_distance": 5.545049064720684
+    },
+    {
+      "case_id": "blind_family_04_n16_h26",
+      "convex_hull_solver_success": true,
+      "family_id": "BLIND_FAMILY_04",
+      "resolution_id": "N16x16",
+      "split_role": "future_test",
+      "support_id": "Hdx_2p6",
+      "train_convex_hull_distance": 5.927169832148612,
+      "train_nearest_neighbor_distance": 6.483694872024258
+    },
+    {
+      "case_id": "blind_family_04_n16_h30",
+      "convex_hull_solver_success": true,
+      "family_id": "BLIND_FAMILY_04",
+      "resolution_id": "N16x16",
+      "split_role": "future_test",
+      "support_id": "Hdx_3p0",
+      "train_convex_hull_distance": 6.192207228292122,
+      "train_nearest_neighbor_distance": 6.590243084843476
+    },
+    {
+      "case_id": "blind_family_04_n20_h26",
+      "convex_hull_solver_success": true,
+      "family_id": "BLIND_FAMILY_04",
+      "resolution_id": "N20x20",
+      "split_role": "future_test",
+      "support_id": "Hdx_2p6",
+      "train_convex_hull_distance": 5.3691929952966895,
+      "train_nearest_neighbor_distance": 5.953198694331196
+    }
+  ],
+  "historical_sealed_test_manifest_sha256": "sha256:2ea61ccc99565b9bc5a64f97c8f3457b6458464c02d878c523e8a41c66911ecf",
+  "historical_sealed_test_metrics_descriptive_only": {
+    "checkpoint_evaluation_count": 9,
+    "each_checkpoint_evaluated_once": true,
+    "evaluations": [
+      {
+        "checkpoint_hash": "sha256:fe3f6a26b542b01b4a43ab44b7014cc9d513f9fcb0f680048a723b6c114657f1",
+        "evaluation_count": 1,
+        "metrics": {
+          "family_balanced_mean": {
+            "Q_L2": 1.019462444499187,
+            "Q_Linf": 1.0377004239230123,
+            "cosine": -0.16477443081639304
+          },
+          "family_means": {
+            "BLIND_FAMILY_04": {
+              "Q_L2": 1.019462444499187,
+              "Q_Linf": 1.0377004239230123,
+              "cosine": -0.16477443081639304
+            }
+          },
+          "graph_balanced_mean": {
+            "Q_L2": 1.019462444499187,
+            "Q_Linf": 1.0377004239230123,
+            "cosine": -0.16477443081639304
+          },
+          "maximum": {
+            "Q_L2": 1.0255718280160058,
+            "Q_Linf": 1.0569910057847869
+          },
+          "median": {
+            "Q_L2": 1.0233581039999202,
+            "Q_Linf": 1.0477633682563674,
+            "cosine": -0.17474999966566448
+          },
+          "per_graph": [
+            {
+              "Q_L2": 1.020096413211924,
+              "Q_Linf": 1.024422122382958,
+              "case_id": "blind_family_04_n12_h26",
+              "cosine": -0.1685747664769881,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N12x12",
+              "support_id": "Hdx_2p6"
+            },
+            {
+              "Q_L2": 1.0049277732681656,
+              "Q_Linf": 1.0023346174061625,
+              "case_id": "blind_family_04_n16_h22",
+              "cosine": -0.12937409243072928,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_2p2"
+            },
+            {
+              "Q_L2": 1.0233581039999202,
+              "Q_Linf": 1.0569910057847869,
+              "case_id": "blind_family_04_n16_h26",
+              "cosine": -0.17474999966566448,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_2p6"
+            },
+            {
+              "Q_L2": 1.0233581039999202,
+              "Q_Linf": 1.0569910057847869,
+              "case_id": "blind_family_04_n16_h30",
+              "cosine": -0.17474999966566448,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_3p0"
+            },
+            {
+              "Q_L2": 1.0255718280160058,
+              "Q_Linf": 1.0477633682563674,
+              "case_id": "blind_family_04_n20_h26",
+              "cosine": -0.17642329584291874,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N20x20",
+              "support_id": "Hdx_2p6"
+            }
+          ],
+          "per_resolution_Q_L2": {
+            "N12x12": 1.020096413211924,
+            "N16x16": 1.0172146604226688,
+            "N20x20": 1.0255718280160058
+          },
+          "per_support_Q_L2": {
+            "Hdx_2p2": 1.0049277732681656,
+            "Hdx_2p6": 1.0230087817426166,
+            "Hdx_3p0": 1.0233581039999202
+          }
+        },
+        "run_id": "K0_seed20261201"
+      },
+      {
+        "checkpoint_hash": "sha256:f45a51ad1ae374fa045a9b46c86b990e5839d84891ac9c380743f3349813ac98",
+        "evaluation_count": 1,
+        "metrics": {
+          "family_balanced_mean": {
+            "Q_L2": 1.0193964482550864,
+            "Q_Linf": 1.0372848587086778,
+            "cosine": -0.16542064806094797
+          },
+          "family_means": {
+            "BLIND_FAMILY_04": {
+              "Q_L2": 1.0193964482550864,
+              "Q_Linf": 1.0372848587086778,
+              "cosine": -0.16542064806094797
+            }
+          },
+          "graph_balanced_mean": {
+            "Q_L2": 1.0193964482550864,
+            "Q_Linf": 1.0372848587086778,
+            "cosine": -0.16542064806094797
+          },
+          "maximum": {
+            "Q_L2": 1.0253772360266975,
+            "Q_Linf": 1.0568195829969196
+          },
+          "median": {
+            "Q_L2": 1.023376371541677,
+            "Q_Linf": 1.046986523628446,
+            "cosine": -0.17614282067131357
+          },
+          "per_graph": [
+            {
+              "Q_L2": 1.0203793272695156,
+              "Q_Linf": 1.0249404304962095,
+              "case_id": "blind_family_04_n12_h26",
+              "cosine": -0.1693133353873159,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N12x12",
+              "support_id": "Hdx_2p6"
+            },
+            {
+              "Q_L2": 1.0044729348958648,
+              "Q_Linf": 1.0008581734248951,
+              "case_id": "blind_family_04_n16_h22",
+              "cosine": -0.12721973935261666,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_2p2"
+            },
+            {
+              "Q_L2": 1.023376371541677,
+              "Q_Linf": 1.0568195829969196,
+              "case_id": "blind_family_04_n16_h26",
+              "cosine": -0.17614282067131357,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_2p6"
+            },
+            {
+              "Q_L2": 1.023376371541677,
+              "Q_Linf": 1.0568195829969196,
+              "case_id": "blind_family_04_n16_h30",
+              "cosine": -0.17614282067131357,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_3p0"
+            },
+            {
+              "Q_L2": 1.0253772360266975,
+              "Q_Linf": 1.046986523628446,
+              "case_id": "blind_family_04_n20_h26",
+              "cosine": -0.1782845242221802,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N20x20",
+              "support_id": "Hdx_2p6"
+            }
+          ],
+          "per_resolution_Q_L2": {
+            "N12x12": 1.0203793272695156,
+            "N16x16": 1.017075225993073,
+            "N20x20": 1.0253772360266975
+          },
+          "per_support_Q_L2": {
+            "Hdx_2p2": 1.0044729348958648,
+            "Hdx_2p6": 1.0230443116126302,
+            "Hdx_3p0": 1.023376371541677
+          }
+        },
+        "run_id": "K0_seed20261202"
+      },
+      {
+        "checkpoint_hash": "sha256:78d427a6da56242205f3d7cfcccd6188aa56d7b09dac9fe946d10bef170f6014",
+        "evaluation_count": 1,
+        "metrics": {
+          "family_balanced_mean": {
+            "Q_L2": 1.0147351866103904,
+            "Q_Linf": 1.0269863194924986,
+            "cosine": -0.1654768670967766
+          },
+          "family_means": {
+            "BLIND_FAMILY_04": {
+              "Q_L2": 1.0147351866103904,
+              "Q_Linf": 1.0269863194924986,
+              "cosine": -0.1654768670967766
+            }
+          },
+          "graph_balanced_mean": {
+            "Q_L2": 1.0147351866103904,
+            "Q_Linf": 1.0269863194924986,
+            "cosine": -0.1654768670967766
+          },
+          "maximum": {
+            "Q_L2": 1.019388362959519,
+            "Q_Linf": 1.0431238298770684
+          },
+          "median": {
+            "Q_L2": 1.0177160490065482,
+            "Q_Linf": 1.032705875869241,
+            "cosine": -0.1758399893510565
+          },
+          "per_graph": [
+            {
+              "Q_L2": 1.0152265417170772,
+              "Q_Linf": 1.017919623560499,
+              "case_id": "blind_family_04_n12_h26",
+              "cosine": -0.16920585280443504,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N12x12",
+              "support_id": "Hdx_2p6"
+            },
+            {
+              "Q_L2": 1.0036289303622594,
+              "Q_Linf": 0.998058438278616,
+              "case_id": "blind_family_04_n16_h22",
+              "cosine": -0.1286429173252434,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_2p2"
+            },
+            {
+              "Q_L2": 1.0177160490065482,
+              "Q_Linf": 1.0431238298770684,
+              "case_id": "blind_family_04_n16_h26",
+              "cosine": -0.1758399893510565,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_2p6"
+            },
+            {
+              "Q_L2": 1.0177160490065482,
+              "Q_Linf": 1.0431238298770684,
+              "case_id": "blind_family_04_n16_h30",
+              "cosine": -0.1758399893510565,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_3p0"
+            },
+            {
+              "Q_L2": 1.019388362959519,
+              "Q_Linf": 1.032705875869241,
+              "case_id": "blind_family_04_n20_h26",
+              "cosine": -0.17785558665209145,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N20x20",
+              "support_id": "Hdx_2p6"
+            }
+          ],
+          "per_resolution_Q_L2": {
+            "N12x12": 1.0152265417170772,
+            "N16x16": 1.0130203427917852,
+            "N20x20": 1.019388362959519
+          },
+          "per_support_Q_L2": {
+            "Hdx_2p2": 1.0036289303622594,
+            "Hdx_2p6": 1.0174436512277147,
+            "Hdx_3p0": 1.0177160490065482
+          }
+        },
+        "run_id": "K0_seed20261203"
+      },
+      {
+        "checkpoint_hash": "sha256:f190f7d6444926befc867e3d93b7310634b579e20b7c168b3879349f518f74bf",
+        "evaluation_count": 1,
+        "metrics": {
+          "family_balanced_mean": {
+            "Q_L2": 1.0177069097745421,
+            "Q_Linf": 1.032455425180084,
+            "cosine": -0.1667256651296129
+          },
+          "family_means": {
+            "BLIND_FAMILY_04": {
+              "Q_L2": 1.0177069097745421,
+              "Q_Linf": 1.032455425180084,
+              "cosine": -0.1667256651296129
+            }
+          },
+          "graph_balanced_mean": {
+            "Q_L2": 1.0177069097745421,
+            "Q_Linf": 1.032455425180084,
+            "cosine": -0.1667256651296129
+          },
+          "maximum": {
+            "Q_L2": 1.0231839802710985,
+            "Q_Linf": 1.0490233611733875
+          },
+          "median": {
+            "Q_L2": 1.0212485058055587,
+            "Q_Linf": 1.0387699793848835,
+            "cosine": -0.18154220317840833
+          },
+          "per_graph": [
+            {
+              "Q_L2": 1.018391564098033,
+              "Q_Linf": 1.0211268204191357,
+              "case_id": "blind_family_04_n12_h26",
+              "cosine": -0.173815350872797,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N12x12",
+              "support_id": "Hdx_2p6"
+            },
+            {
+              "Q_L2": 1.0044619928924625,
+              "Q_Linf": 1.0043336037496253,
+              "case_id": "blind_family_04_n16_h22",
+              "cosine": -0.11266884288785696,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_2p2"
+            },
+            {
+              "Q_L2": 1.0212485058055587,
+              "Q_Linf": 1.0490233611733875,
+              "case_id": "blind_family_04_n16_h26",
+              "cosine": -0.18154220317840833,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_2p6"
+            },
+            {
+              "Q_L2": 1.0212485058055587,
+              "Q_Linf": 1.0490233611733875,
+              "case_id": "blind_family_04_n16_h30",
+              "cosine": -0.18154220317840833,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_3p0"
+            },
+            {
+              "Q_L2": 1.0231839802710985,
+              "Q_Linf": 1.0387699793848835,
+              "case_id": "blind_family_04_n20_h26",
+              "cosine": -0.18405972553059377,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N20x20",
+              "support_id": "Hdx_2p6"
+            }
+          ],
+          "per_resolution_Q_L2": {
+            "N12x12": 1.018391564098033,
+            "N16x16": 1.0156530015011933,
+            "N20x20": 1.0231839802710985
+          },
+          "per_support_Q_L2": {
+            "Hdx_2p2": 1.0044619928924625,
+            "Hdx_2p6": 1.02094135005823,
+            "Hdx_3p0": 1.0212485058055587
+          }
+        },
+        "run_id": "K1_seed20261201"
+      },
+      {
+        "checkpoint_hash": "sha256:a8a7255be0323f2c4589062b8e9f2173e5754435b72a860a71aea1e3b5c7abd1",
+        "evaluation_count": 1,
+        "metrics": {
+          "family_balanced_mean": {
+            "Q_L2": 1.0167933615096443,
+            "Q_Linf": 1.0113988143812553,
+            "cosine": -0.17500527931234672
+          },
+          "family_means": {
+            "BLIND_FAMILY_04": {
+              "Q_L2": 1.0167933615096443,
+              "Q_Linf": 1.0113988143812553,
+              "cosine": -0.17500527931234672
+            }
+          },
+          "graph_balanced_mean": {
+            "Q_L2": 1.0167933615096443,
+            "Q_Linf": 1.0113988143812553,
+            "cosine": -0.17500527931234672
+          },
+          "maximum": {
+            "Q_L2": 1.0225981132589137,
+            "Q_Linf": 1.0207086018493448
+          },
+          "median": {
+            "Q_L2": 1.0205197483025445,
+            "Q_Linf": 1.0169456127382963,
+            "cosine": -0.19346971023157272
+          },
+          "per_graph": [
+            {
+              "Q_L2": 1.0173440621905514,
+              "Q_Linf": 1.0034069455847996,
+              "case_id": "blind_family_04_n12_h26",
+              "cosine": -0.190416682903645,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N12x12",
+              "support_id": "Hdx_2p6"
+            },
+            {
+              "Q_L2": 1.0029851354936672,
+              "Q_Linf": 0.9989872989955401,
+              "case_id": "blind_family_04_n16_h22",
+              "cosine": -0.10369512849524075,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_2p2"
+            },
+            {
+              "Q_L2": 1.0205197483025445,
+              "Q_Linf": 1.0169456127382963,
+              "case_id": "blind_family_04_n16_h26",
+              "cosine": -0.19346971023157272,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_2p6"
+            },
+            {
+              "Q_L2": 1.0205197483025445,
+              "Q_Linf": 1.0169456127382963,
+              "case_id": "blind_family_04_n16_h30",
+              "cosine": -0.19346971023157272,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_3p0"
+            },
+            {
+              "Q_L2": 1.0225981132589137,
+              "Q_Linf": 1.0207086018493448,
+              "case_id": "blind_family_04_n20_h26",
+              "cosine": -0.19397516469970227,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N20x20",
+              "support_id": "Hdx_2p6"
+            }
+          ],
+          "per_resolution_Q_L2": {
+            "N12x12": 1.0173440621905514,
+            "N16x16": 1.0146748773662522,
+            "N20x20": 1.0225981132589137
+          },
+          "per_support_Q_L2": {
+            "Hdx_2p2": 1.0029851354936672,
+            "Hdx_2p6": 1.0201539745840031,
+            "Hdx_3p0": 1.0205197483025445
+          }
+        },
+        "run_id": "K1_seed20261202"
+      },
+      {
+        "checkpoint_hash": "sha256:e5ffe44227afb90bf57b9ceb39476174784bd0c1d61a076e6b670cf3b92ceee7",
+        "evaluation_count": 1,
+        "metrics": {
+          "family_balanced_mean": {
+            "Q_L2": 1.0175603313122934,
+            "Q_Linf": 1.0273940388487872,
+            "cosine": -0.17266549204692724
+          },
+          "family_means": {
+            "BLIND_FAMILY_04": {
+              "Q_L2": 1.0175603313122934,
+              "Q_Linf": 1.0273940388487872,
+              "cosine": -0.17266549204692724
+            }
+          },
+          "graph_balanced_mean": {
+            "Q_L2": 1.0175603313122934,
+            "Q_Linf": 1.0273940388487872,
+            "cosine": -0.17266549204692724
+          },
+          "maximum": {
+            "Q_L2": 1.022754847310819,
+            "Q_Linf": 1.0409355022775022
+          },
+          "median": {
+            "Q_L2": 1.0210031235443562,
+            "Q_Linf": 1.0276279011008875,
+            "cosine": -0.1936232746910926
+          },
+          "per_graph": [
+            {
+              "Q_L2": 1.0184576181885387,
+              "Q_Linf": 1.0189505176998142,
+              "case_id": "blind_family_04_n12_h26",
+              "cosine": -0.1811131984801677,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N12x12",
+              "support_id": "Hdx_2p6"
+            },
+            {
+              "Q_L2": 1.0045829439733973,
+              "Q_Linf": 1.0085207708882302,
+              "case_id": "blind_family_04_n16_h22",
+              "cosine": -0.09662059886096487,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_2p2"
+            },
+            {
+              "Q_L2": 1.0210031235443562,
+              "Q_Linf": 1.0409355022775022,
+              "case_id": "blind_family_04_n16_h26",
+              "cosine": -0.1936232746910926,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_2p6"
+            },
+            {
+              "Q_L2": 1.0210031235443562,
+              "Q_Linf": 1.0409355022775022,
+              "case_id": "blind_family_04_n16_h30",
+              "cosine": -0.1936232746910926,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_3p0"
+            },
+            {
+              "Q_L2": 1.022754847310819,
+              "Q_Linf": 1.0276279011008875,
+              "case_id": "blind_family_04_n20_h26",
+              "cosine": -0.1983471135113184,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N20x20",
+              "support_id": "Hdx_2p6"
+            }
+          ],
+          "per_resolution_Q_L2": {
+            "N12x12": 1.0184576181885387,
+            "N16x16": 1.0155297303540367,
+            "N20x20": 1.022754847310819
+          },
+          "per_support_Q_L2": {
+            "Hdx_2p2": 1.0045829439733973,
+            "Hdx_2p6": 1.020738529681238,
+            "Hdx_3p0": 1.0210031235443562
+          }
+        },
+        "run_id": "K1_seed20261203"
+      },
+      {
+        "checkpoint_hash": "sha256:2ab391cfb762b97cc3d9d0c6b86d7b078fbd0ba94b29229c256d6383f6d6db8f",
+        "evaluation_count": 1,
+        "metrics": {
+          "family_balanced_mean": {
+            "Q_L2": 0.999596720357439,
+            "Q_Linf": 1.0113204072055142,
+            "cosine": 0.04021051819498343
+          },
+          "family_means": {
+            "BLIND_FAMILY_04": {
+              "Q_L2": 0.999596720357439,
+              "Q_Linf": 1.0113204072055142,
+              "cosine": 0.04021051819498343
+            }
+          },
+          "graph_balanced_mean": {
+            "Q_L2": 0.999596720357439,
+            "Q_Linf": 1.0113204072055142,
+            "cosine": 0.04021051819498343
+          },
+          "maximum": {
+            "Q_L2": 1.0098251182917426,
+            "Q_Linf": 1.0273674918759292
+          },
+          "median": {
+            "Q_L2": 1.0023466025364973,
+            "Q_Linf": 1.0189065628279166,
+            "cosine": 0.025115880528940204
+          },
+          "per_graph": [
+            {
+              "Q_L2": 1.0021679171657594,
+              "Q_Linf": 0.9948076055269595,
+              "case_id": "blind_family_04_n12_h26",
+              "cosine": -0.007873246312339521,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N12x12",
+              "support_id": "Hdx_2p6"
+            },
+            {
+              "Q_L2": 1.0098251182917426,
+              "Q_Linf": 1.0273674918759292,
+              "case_id": "blind_family_04_n16_h22",
+              "cosine": -0.09636601011631754,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_2p2"
+            },
+            {
+              "Q_L2": 1.0023466025364973,
+              "Q_Linf": 1.0189065628279166,
+              "case_id": "blind_family_04_n16_h26",
+              "cosine": 0.025115880528940204,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_2p6"
+            },
+            {
+              "Q_L2": 1.0023466025364973,
+              "Q_Linf": 1.0189065628279166,
+              "case_id": "blind_family_04_n16_h30",
+              "cosine": 0.025115880528940204,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_3p0"
+            },
+            {
+              "Q_L2": 0.9812973612566983,
+              "Q_Linf": 0.9966138129688483,
+              "case_id": "blind_family_04_n20_h26",
+              "cosine": 0.2550600863456938,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N20x20",
+              "support_id": "Hdx_2p6"
+            }
+          ],
+          "per_resolution_Q_L2": {
+            "N12x12": 1.0021679171657594,
+            "N16x16": 1.004839441121579,
+            "N20x20": 0.9812973612566983
+          },
+          "per_support_Q_L2": {
+            "Hdx_2p2": 1.0098251182917426,
+            "Hdx_2p6": 0.9952706269863184,
+            "Hdx_3p0": 1.0023466025364973
+          }
+        },
+        "run_id": "K2_seed20261201"
+      },
+      {
+        "checkpoint_hash": "sha256:fa5088d2a4ea41f6e47665192ba1f76c3591d6004a483f2dc2f3503e3ec4cc42",
+        "evaluation_count": 1,
+        "metrics": {
+          "family_balanced_mean": {
+            "Q_L2": 0.8936142536922091,
+            "Q_Linf": 0.9091373370544964,
+            "cosine": 0.597911891854459
+          },
+          "family_means": {
+            "BLIND_FAMILY_04": {
+              "Q_L2": 0.8936142536922091,
+              "Q_Linf": 0.9091373370544964,
+              "cosine": 0.597911891854459
+            }
+          },
+          "graph_balanced_mean": {
+            "Q_L2": 0.8936142536922091,
+            "Q_Linf": 0.9091373370544964,
+            "cosine": 0.597911891854459
+          },
+          "maximum": {
+            "Q_L2": 0.9749320846716474,
+            "Q_Linf": 1.007627856230662
+          },
+          "median": {
+            "Q_L2": 0.8655071737922888,
+            "Q_Linf": 0.8883565021494811,
+            "cosine": 0.6937278133349286
+          },
+          "per_graph": [
+            {
+              "Q_L2": 0.9195259227446856,
+              "Q_Linf": 0.9047377473980991,
+              "case_id": "blind_family_04_n12_h26",
+              "cosine": 0.5226149699327808,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N12x12",
+              "support_id": "Hdx_2p6"
+            },
+            {
+              "Q_L2": 0.9749320846716474,
+              "Q_Linf": 1.007627856230662,
+              "case_id": "blind_family_04_n16_h22",
+              "cosine": 0.2891492772719498,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_2p2"
+            },
+            {
+              "Q_L2": 0.8655071737922888,
+              "Q_Linf": 0.8724822897471199,
+              "case_id": "blind_family_04_n16_h26",
+              "cosine": 0.7420336993663179,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_2p6"
+            },
+            {
+              "Q_L2": 0.8655071737922888,
+              "Q_Linf": 0.8724822897471199,
+              "case_id": "blind_family_04_n16_h30",
+              "cosine": 0.7420336993663179,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_3p0"
+            },
+            {
+              "Q_L2": 0.8425989134601352,
+              "Q_Linf": 0.8883565021494811,
+              "case_id": "blind_family_04_n20_h26",
+              "cosine": 0.6937278133349286,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N20x20",
+              "support_id": "Hdx_2p6"
+            }
+          ],
+          "per_resolution_Q_L2": {
+            "N12x12": 0.9195259227446856,
+            "N16x16": 0.9019821440854083,
+            "N20x20": 0.8425989134601352
+          },
+          "per_support_Q_L2": {
+            "Hdx_2p2": 0.9749320846716474,
+            "Hdx_2p6": 0.8758773366657032,
+            "Hdx_3p0": 0.8655071737922888
+          }
+        },
+        "run_id": "K2_seed20261202"
+      },
+      {
+        "checkpoint_hash": "sha256:5372d24fa1ce54b838e288137edbfbe72e3abcdc3121dcf534fd0f3a349cff2d",
+        "evaluation_count": 1,
+        "metrics": {
+          "family_balanced_mean": {
+            "Q_L2": 1.0106898322092916,
+            "Q_Linf": 1.0169329627838,
+            "cosine": -0.16722454637759512
+          },
+          "family_means": {
+            "BLIND_FAMILY_04": {
+              "Q_L2": 1.0106898322092916,
+              "Q_Linf": 1.0169329627838,
+              "cosine": -0.16722454637759512
+            }
+          },
+          "graph_balanced_mean": {
+            "Q_L2": 1.0106898322092916,
+            "Q_Linf": 1.0169329627838,
+            "cosine": -0.16722454637759512
+          },
+          "maximum": {
+            "Q_L2": 1.014090341898187,
+            "Q_Linf": 1.0288769208832502
+          },
+          "median": {
+            "Q_L2": 1.012895893640486,
+            "Q_Linf": 1.0169710468091753,
+            "cosine": -0.17920647054899996
+          },
+          "per_graph": [
+            {
+              "Q_L2": 1.0110497902396698,
+              "Q_Linf": 1.0114079810651306,
+              "case_id": "blind_family_04_n12_h26",
+              "cosine": -0.17153314537845216,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N12x12",
+              "support_id": "Hdx_2p6"
+            },
+            {
+              "Q_L2": 1.0025172416276302,
+              "Q_Linf": 0.9985319442781937,
+              "case_id": "blind_family_04_n16_h22",
+              "cosine": -0.1245574074457848,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_2p2"
+            },
+            {
+              "Q_L2": 1.012895893640486,
+              "Q_Linf": 1.0288769208832502,
+              "case_id": "blind_family_04_n16_h26",
+              "cosine": -0.17920647054899996,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_2p6"
+            },
+            {
+              "Q_L2": 1.012895893640486,
+              "Q_Linf": 1.0288769208832502,
+              "case_id": "blind_family_04_n16_h30",
+              "cosine": -0.17920647054899996,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N16x16",
+              "support_id": "Hdx_3p0"
+            },
+            {
+              "Q_L2": 1.014090341898187,
+              "Q_Linf": 1.0169710468091753,
+              "case_id": "blind_family_04_n20_h26",
+              "cosine": -0.1816192379657387,
+              "family_id": "BLIND_FAMILY_04",
+              "resolution_id": "N20x20",
+              "support_id": "Hdx_2p6"
+            }
+          ],
+          "per_resolution_Q_L2": {
+            "N12x12": 1.0110497902396698,
+            "N16x16": 1.009436342969534,
+            "N20x20": 1.014090341898187
+          },
+          "per_support_Q_L2": {
+            "Hdx_2p2": 1.0025172416276302,
+            "Hdx_2p6": 1.0126786752594474,
+            "Hdx_3p0": 1.012895893640486
+          }
+        },
+        "run_id": "K2_seed20261203"
+      }
+    ],
+    "manifest_version": "stage02m-sealed-test-evaluation-1.0.0",
+    "post_test_checkpoint_changes": 0,
+    "post_test_training_updates": 0,
+    "release_manifest_sha256": "sha256:ae083e66f2c003258a3f9387b8eb16cf862dbbdf4d780960c751e461733f802d",
+    "status": "CLOSED",
+    "test_target_decode_count": 5,
+    "zero_correction_baseline": {
+      "epsilon_metric": 4e-10,
+      "family_balanced_mean": {
+        "Q_L2": 0.9999999991904692,
+        "Q_Linf": 0.9999999995631143,
+        "cosine": 0.0
+      },
+      "family_means": {
+        "BLIND_FAMILY_04": {
+          "Q_L2": 0.9999999991904692,
+          "Q_Linf": 0.9999999995631143,
+          "cosine": 0.0
+        }
+      },
+      "graph_balanced_mean": {
+        "Q_L2": 0.9999999991904692,
+        "Q_Linf": 0.9999999995631143,
+        "cosine": 0.0
+      },
+      "maximum": {
+        "Q_L2": 0.9999999995103968,
+        "Q_Linf": 0.9999999997404322
+      },
+      "median": {
+        "Q_L2": 0.9999999991723493,
+        "Q_Linf": 0.9999999995507736,
+        "cosine": 0.0
+      },
+      "per_graph": [
+        {
+          "Q_L2": 0.9999999995103968,
+          "Q_Linf": 0.9999999997404322,
+          "case_id": "blind_family_04_n12_h26",
+          "cosine": 0.0,
+          "family_id": "BLIND_FAMILY_04",
+          "resolution_id": "N12x12",
+          "support_id": "Hdx_2p6"
+        },
+        {
+          "Q_L2": 0.9999999993847092,
+          "Q_Linf": 0.9999999996674551,
+          "case_id": "blind_family_04_n16_h22",
+          "cosine": 0.0,
+          "family_id": "BLIND_FAMILY_04",
+          "resolution_id": "N16x16",
+          "support_id": "Hdx_2p2"
+        },
+        {
+          "Q_L2": 0.9999999991723493,
+          "Q_Linf": 0.9999999995507736,
+          "case_id": "blind_family_04_n16_h26",
+          "cosine": 0.0,
+          "family_id": "BLIND_FAMILY_04",
+          "resolution_id": "N16x16",
+          "support_id": "Hdx_2p6"
+        },
+        {
+          "Q_L2": 0.9999999991723493,
+          "Q_Linf": 0.9999999995507736,
+          "case_id": "blind_family_04_n16_h30",
+          "cosine": 0.0,
+          "family_id": "BLIND_FAMILY_04",
+          "resolution_id": "N16x16",
+          "support_id": "Hdx_3p0"
+        },
+        {
+          "Q_L2": 0.9999999987125415,
+          "Q_Linf": 0.999999999306137,
+          "case_id": "blind_family_04_n20_h26",
+          "cosine": 0.0,
+          "family_id": "BLIND_FAMILY_04",
+          "resolution_id": "N20x20",
+          "support_id": "Hdx_2p6"
+        }
+      ],
+      "per_resolution_Q_L2": {
+        "N12x12": 0.9999999995103968,
+        "N16x16": 0.999999999243136,
+        "N20x20": 0.9999999987125415
+      },
+      "per_support_Q_L2": {
+        "Hdx_2p2": 0.9999999993847092,
+        "Hdx_2p6": 0.9999999991317625,
+        "Hdx_3p0": 0.9999999991723493
+      },
+      "theoretical_Q_L2_convention": 1.0
+    }
+  },
+  "new_test_evaluations": 0,
+  "per_resolution": {
+    "N12x12": {
+      "nearest_neighbor_mean": 11.534773090781373
+    },
+    "N16x16": {
+      "nearest_neighbor_mean": 7.7687753422872285
+    },
+    "N20x20": {
+      "nearest_neighbor_mean": 7.664243760990281
+    }
+  },
+  "per_support": {
+    "Hdx_2p2": {
+      "nearest_neighbor_mean": 7.172651444005532
+    },
+    "Hdx_2p6": {
+      "nearest_neighbor_mean": 8.891211056754662
+    },
+    "Hdx_3p0": {
+      "nearest_neighbor_mean": 8.659058264363827
+    }
+  },
+  "test_inputs_decoded": 5,
+  "test_targets_decoded": 0
+}

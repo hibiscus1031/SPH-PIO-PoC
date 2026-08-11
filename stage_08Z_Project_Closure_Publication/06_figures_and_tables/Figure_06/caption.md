@@ -1,0 +1,1 @@
+**Figure 6. Stage06 formal training curves.** Nine terminal campaigns document execution and failure of the frozen global criterion; curves must be sourced from their training histories. All plotted values and statuses must be read from the frozen source list; schematic arrows denote methodological dependency, not performance improvement.

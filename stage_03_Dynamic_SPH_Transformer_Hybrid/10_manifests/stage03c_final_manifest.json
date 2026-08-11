@@ -1,0 +1,106 @@
+{
+  "completion_date": "2026-08-05",
+  "completion_gates": {
+    "A_freeze": true,
+    "B_D0_implementation_48_of_48": true,
+    "C_zero_correction_288_of_288": true,
+    "D_history": true,
+    "E_structure": true,
+    "F_checkpoint_resume": true,
+    "G_differentiability_plumbing": true,
+    "H_resources": true,
+    "I_prohibitions": true,
+    "safety_rejection": true
+  },
+  "final_status": "DYNAMIC_RK2_HYBRID_IMPLEMENTATION_VERIFIED",
+  "historical_files_unchanged": true,
+  "manifests": [
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03c_input_freeze_manifest.json",
+      "sha256": "sha256:54804a0c49c06ebd5a77f6a4ea20b7d19c0e7159eb4b9bddd3971b2437e0f46d"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03c_implementation_manifest.json",
+      "sha256": "sha256:f6b394a01eef4619d6a5ca6192057ecc56290be7a305ed764945a18b6bcd6929"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03c_test_manifest.json",
+      "sha256": "sha256:57530669791188ddeef66f77fb7683675643b15edd207a0d4c3994a279429133"
+    }
+  ],
+  "next_stage": {
+    "authorization": "LIMITED",
+    "stage": "Stage 03D \u2014 Multistep AD/FD and Topology-Event Qualification",
+    "training_authorized": false
+  },
+  "optimizer_steps": 0,
+  "qualification": {
+    "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/qualification/stage03c_qualification_summary.json",
+    "sha256": "sha256:af00f97504c843bd76f411e0095381d6f3cd8c9e53d54864e22799dfe3e7ba22"
+  },
+  "reports": [
+    {
+      "byte_count": 569,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03c_freeze_and_scope.md",
+      "sha256": "sha256:7e97d88bfe07e226c32bcf3d9f317d3c3d1dcb3d9e7af43c1a3d1c850385a7a6"
+    },
+    {
+      "byte_count": 495,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03c_implementation_contract.md",
+      "sha256": "sha256:d986f207eb4b43543310e6af89ec4c8a51fde158a406e574afcd944e20e5ee23"
+    },
+    {
+      "byte_count": 602,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03c_dynamic_state_and_graph.md",
+      "sha256": "sha256:8d834d6a4680894fdc29ecffbb2b28cdd8cad5cfaa52f1499028efaa6255467b"
+    },
+    {
+      "byte_count": 519,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03c_temporal_history_semantics.md",
+      "sha256": "sha256:eb3fe2225fdc29e059e9946dda5d3e7e581df80424a8ef5cc36b2c92d23bedbd"
+    },
+    {
+      "byte_count": 525,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03c_rk2_implementation.md",
+      "sha256": "sha256:3693499936b45dd5924541f4769cc75441a5c19c9d9f8e33558275970ff66162"
+    },
+    {
+      "byte_count": 511,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03c_zero_correction_equivalence.md",
+      "sha256": "sha256:7f6335be34b07ed2c25cb4404ff843ab7cf5506139cd57ef20e20bc7d22b179e"
+    },
+    {
+      "byte_count": 607,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03c_structural_smoke.md",
+      "sha256": "sha256:8db06e8e67fc72624ded9dd8d691559c450b90a66eb9b98832f4a97a90bde906"
+    },
+    {
+      "byte_count": 582,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03c_differentiability_smoke.md",
+      "sha256": "sha256:90c520f34bfc41893370d66e77b22b3ca9983110dac1ad3c01b93e0a087f7f8a"
+    },
+    {
+      "byte_count": 493,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03c_checkpoint_resume.md",
+      "sha256": "sha256:5a161055a558258832f987ef99eb2cbb0a713d66e6b27b3e904045e4540c52b6"
+    },
+    {
+      "byte_count": 533,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03c_resource_audit.md",
+      "sha256": "sha256:3d9c831a19866226ef3f07a3c0eea144ec668e5e061332be8f0bb31de984a4b6"
+    },
+    {
+      "byte_count": 792,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03c_qualification_report.md",
+      "sha256": "sha256:736b02fabf082020909eb375f5d9d0555d7ca910894da9275d284ac346e3eed6"
+    },
+    {
+      "byte_count": 1936,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03c_final_report.md",
+      "sha256": "sha256:ca12e144b9ff1c909607693a554c916c605b6061a96e47390a238ee055b67f29"
+    }
+  ],
+  "schema_version": "sph-pio-poc.stage03c.final.v1",
+  "stage": "Stage 03C \u2014 Differentiable RK2 Hybrid Solver Implementation and Zero-Correction Verification",
+  "training_runs": 0
+}

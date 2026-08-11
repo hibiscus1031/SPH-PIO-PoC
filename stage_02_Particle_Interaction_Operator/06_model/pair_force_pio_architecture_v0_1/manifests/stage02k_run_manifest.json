@@ -1,0 +1,165 @@
+{
+  "architecture_hash": "sha256:1e313f871b13f3f2fc0cc780ab24d50a7fd9fe8a96866da91fae5ede9ab555a4",
+  "artifacts": [
+    {
+      "byte_count": 4874,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/freeze/build_stage02k_freeze.py",
+      "sha256": "sha256:2e818aece6e2930f81f66dcf8e531bb9c418bc91680b205228b3ce3c45abfa4f"
+    },
+    {
+      "byte_count": 7130,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/freeze/historical_integrity_verification.json",
+      "sha256": "sha256:54423dbba5832985929da4b886967a143d373a647cddf9a496b1407bd7d97f25"
+    },
+    {
+      "byte_count": 12327,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/freeze/stage02k_input_and_architecture_freeze_manifest.json",
+      "sha256": "sha256:fc186f595c02a778738ef4fa22ea6ada33442aa8feafff19436afaef7a1dc94c"
+    },
+    {
+      "byte_count": 1510,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/freeze/transform_manifest_v0_1.json",
+      "sha256": "sha256:c7ec4d5645fe337c5af538a7a848d26c2d1c806978c5b4650627cb5e34290fe1"
+    },
+    {
+      "byte_count": 3122,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/contracts/architecture_contract_v0_1.json",
+      "sha256": "sha256:1060b0981f69053828f83fe5bf96cd10f637f4306ea1a8d07a0042f9af5d0c28"
+    },
+    {
+      "byte_count": 6292,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/contracts/dataset_loader_identity_audit.json",
+      "sha256": "sha256:8f026d5bb4ca56931523c44cffce382d5a907b4b4a94b020575a578018b72311"
+    },
+    {
+      "byte_count": 1243,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/contracts/feature_contract_v0_1.json",
+      "sha256": "sha256:719f239444c3b5cc73768566992b5b6d96b7ee1d9aa47dc8829e24baebf71bb1"
+    },
+    {
+      "byte_count": 7502,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/data_loader/identity_loader.py",
+      "sha256": "sha256:500f072392da1f20c143cb1359c401d7bacd5696e637d5247048a6a0df4e6c3a"
+    },
+    {
+      "byte_count": 657,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/feature_policy/feature_contract_audit.json",
+      "sha256": "sha256:a19a213643b92a34f5d2727ccb3586835e64bd77214c0774c9e8163768d2969c"
+    },
+    {
+      "byte_count": 9499,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/implementations/pair_force_models.py",
+      "sha256": "sha256:892db429621db3a982fe8b03d453dd009e07a8bef4b2b2aca1ba792b0967df57"
+    },
+    {
+      "byte_count": 20236,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/representability/pair_basis_representability.json",
+      "sha256": "sha256:fde75cae5457ef4a3a2ff7cb06adcbf5d6c554d6cdff077ad7b0447444737b67"
+    },
+    {
+      "byte_count": 8259,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/symmetry_tests/symmetry_equivariance_results.json",
+      "sha256": "sha256:630ca847140e2854adcde0c1fcb36772bbdce047f4540cb15193f8bc655f54aa"
+    },
+    {
+      "byte_count": 137583,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/conservation_tests/conservation_results.json",
+      "sha256": "sha256:e6b8c01222587ec5285c8b78b37b6f103831b6a6717e46e482f7afa14af08b81"
+    },
+    {
+      "byte_count": 8218,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/differentiability/differentiability_results.json",
+      "sha256": "sha256:3ac882706dc2ea7b842916adbfc5b6488fe3c2822d23fcbad629702550bba627"
+    },
+    {
+      "byte_count": 2532,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/resource_audit/resource_results.json",
+      "sha256": "sha256:54db7a288fd9682519b92165062ffd1a8b6e1fb13ac0998f0203b7e9d6c464dd"
+    },
+    {
+      "byte_count": 539,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/negative_controls/directed_softmax_control.json",
+      "sha256": "sha256:3723fe35690e0ff3913f99dedfff1d8cade1d5e711bd6318ff01b53d92581f7d"
+    },
+    {
+      "byte_count": 726,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/results/stage02k_qualification_summary.json",
+      "sha256": "sha256:75dea2a8e4ae90d200b202f0f43b075d4ae2700de5ceb60f66c43e44cdc06eef"
+    },
+    {
+      "byte_count": 28897,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/results/zero_fallback_results.json",
+      "sha256": "sha256:d43bec9e1790df75a6e88c2a4f359fc6866dad4b0034fbfdb1b520d9e477ef81"
+    },
+    {
+      "byte_count": 953,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02k_architecture_design.md",
+      "sha256": "sha256:7938882052b6298913835a2cce39f0c09196fb825836e9f734452378577a9b4d"
+    },
+    {
+      "byte_count": 430,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02k_conservation_audit.md",
+      "sha256": "sha256:ec5afa7e22af940e4783259e66d538f3953ec6680c94ab4bc43cf3b1eb2d339f"
+    },
+    {
+      "byte_count": 618,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02k_dataset_loader_contract.md",
+      "sha256": "sha256:d020dfeaf93f4c2d9c2e668a9a4fbc120672ac86907e6ae2a1ac653b50426c06"
+    },
+    {
+      "byte_count": 353,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02k_differentiability_audit.md",
+      "sha256": "sha256:4f61e5129f4af5f927890274a281d0479952bc07cd771cdb5fa52199daafc9d0"
+    },
+    {
+      "byte_count": 383,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02k_feature_contract.md",
+      "sha256": "sha256:18cde08da9fd8236672086b65ccecda8012d0d8e9933b2dcd4dfd4bd848e125e"
+    },
+    {
+      "byte_count": 2411,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02k_final_report.md",
+      "sha256": "sha256:bc713e08c3b3f0bd34e50fb3b296a9dd5f0db4540cf4b5392336e6a41887de15"
+    },
+    {
+      "byte_count": 670,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02k_freeze_and_scope.md",
+      "sha256": "sha256:1338bc1059920c4479b6d500cfcf1215501c600efc7ee0af9984af8207811b87"
+    },
+    {
+      "byte_count": 242,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02k_negative_architecture_control.md",
+      "sha256": "sha256:497870ca18fe393984fb6dfb6ca03d966f7facdcf2d4046ce312bc9c5e80a1aa"
+    },
+    {
+      "byte_count": 441,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02k_pair_basis_representability.md",
+      "sha256": "sha256:fd547a55ebb44cd75e7fb138b71ab306697dd40c35e2f3c2f07c757e49c52752"
+    },
+    {
+      "byte_count": 432,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02k_qualification_report.md",
+      "sha256": "sha256:e3548303107776111db0b38b9247574ae338490abebc3828f6dfa9448571b852"
+    },
+    {
+      "byte_count": 356,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02k_resource_audit.md",
+      "sha256": "sha256:9c0415e827a911c6f2f1581295292c9cad049447e78d42629fe2399db03ba826"
+    },
+    {
+      "byte_count": 475,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02k_symmetry_and_equivariance.md",
+      "sha256": "sha256:80463f8a5fdd1b50b5aaa7cf5c1109da654b25b4c82b8e45b9021f7152d090aa"
+    }
+  ],
+  "device": "CPU",
+  "dtype": "float64",
+  "manifest_version": "stage02k-run-1.0.0",
+  "numpy": "1.26.4",
+  "optimizer_present": false,
+  "optimizer_steps": 0,
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:11:29) [Clang 20.1.8 ]",
+  "status": "PAIR_FORCE_PIO_ARCHITECTURE_QUALIFIED",
+  "torch": "2.10.0",
+  "training_runs": 0
+}

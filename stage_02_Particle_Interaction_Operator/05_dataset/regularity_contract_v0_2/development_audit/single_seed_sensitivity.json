@@ -1,0 +1,289 @@
+{
+  "audit_version": "stage02js-v0.1-single-seed-sensitivity-0.2.0",
+  "development_families_only": [
+    "FAMILY_PV_EXISTING",
+    "FAMILY_CROSSMODE_A"
+  ],
+  "family_resolution_summary": [
+    {
+      "family_id": "FAMILY_PV_EXISTING",
+      "gate_pass_fraction_range": [
+        1.0,
+        1.0
+      ],
+      "historical_single_seed_ratios": [
+        0.4876466114695647,
+        0.6382681768388572,
+        0.39792537937423483
+      ],
+      "resolution_case_ids": [
+        "i_anchor_n16_h26_regular",
+        "i_res_n12_h26_regular",
+        "i_res_n20_h26_regular"
+      ]
+    },
+    {
+      "family_id": "FAMILY_CROSSMODE_A",
+      "gate_pass_fraction_range": [
+        0.0,
+        1.0
+      ],
+      "historical_single_seed_ratios": [
+        0.8236109936175194,
+        0.6569643896342305,
+        0.5492441327890225
+      ],
+      "resolution_case_ids": [
+        "crossmode_a_n12_h26",
+        "crossmode_a_n16_h26",
+        "crossmode_a_n20_h26"
+      ]
+    }
+  ],
+  "permutation_count_per_case": 256,
+  "ratio_threshold_changed": false,
+  "root_seed": 20260207,
+  "rows": [
+    {
+      "case_id": "crossmode_a_n12_h26",
+      "family_id": "FAMILY_CROSSMODE_A",
+      "historical_ratio_percentile_in_256_case_hashed_permutations": 0.51171875,
+      "historical_ratio_z_score": -0.1460727064036493,
+      "historical_single_seed_gate": "FAIL",
+      "historical_single_seed_ratio": 0.8236109936175194,
+      "particles_per_axis": 12,
+      "path_membership": [
+        "resolution"
+      ],
+      "ratio_distribution": {
+        "max": 0.8535858528856244,
+        "mean": 0.8249579855234666,
+        "min": 0.8046684919731312,
+        "std": 0.009221379812221122
+      },
+      "v0_1_gate_pass_count_across_256": 0,
+      "v0_1_gate_pass_fraction_Clopper_Pearson_95": [
+        0.0,
+        0.014306362729039375
+      ],
+      "v0_1_gate_pass_fraction_across_256": 0.0
+    },
+    {
+      "case_id": "crossmode_a_n16_h22",
+      "family_id": "FAMILY_CROSSMODE_A",
+      "historical_ratio_percentile_in_256_case_hashed_permutations": 0.0625,
+      "historical_ratio_z_score": -1.354619495860754,
+      "historical_single_seed_gate": "PASS",
+      "historical_single_seed_ratio": 0.5192467486189098,
+      "particles_per_axis": 16,
+      "path_membership": [
+        "support"
+      ],
+      "ratio_distribution": {
+        "max": 0.541222209154157,
+        "mean": 0.5262781834005085,
+        "min": 0.5122938814339151,
+        "std": 0.00519070838939218
+      },
+      "v0_1_gate_pass_count_across_256": 256,
+      "v0_1_gate_pass_fraction_Clopper_Pearson_95": [
+        0.9856936372709606,
+        1.0
+      ],
+      "v0_1_gate_pass_fraction_across_256": 1.0
+    },
+    {
+      "case_id": "crossmode_a_n16_h26",
+      "family_id": "FAMILY_CROSSMODE_A",
+      "historical_ratio_percentile_in_256_case_hashed_permutations": 0.2109375,
+      "historical_ratio_z_score": -0.7693765889523274,
+      "historical_single_seed_gate": "PASS",
+      "historical_single_seed_ratio": 0.6569643896342305,
+      "particles_per_axis": 16,
+      "path_membership": [
+        "resolution"
+      ],
+      "ratio_distribution": {
+        "max": 0.6803699298822179,
+        "mean": 0.6615644906781786,
+        "min": 0.6466404292941443,
+        "std": 0.005978997944572329
+      },
+      "v0_1_gate_pass_count_across_256": 256,
+      "v0_1_gate_pass_fraction_Clopper_Pearson_95": [
+        0.9856936372709606,
+        1.0
+      ],
+      "v0_1_gate_pass_fraction_across_256": 1.0
+    },
+    {
+      "case_id": "crossmode_a_n16_h30",
+      "family_id": "FAMILY_CROSSMODE_A",
+      "historical_ratio_percentile_in_256_case_hashed_permutations": 0.43359375,
+      "historical_ratio_z_score": -0.21908666575266278,
+      "historical_single_seed_gate": "PASS",
+      "historical_single_seed_ratio": 0.7257358671702079,
+      "particles_per_axis": 16,
+      "path_membership": [
+        "support"
+      ],
+      "ratio_distribution": {
+        "max": 0.7418720705215567,
+        "mean": 0.726977546476607,
+        "min": 0.713139825992862,
+        "std": 0.005667525689586506
+      },
+      "v0_1_gate_pass_count_across_256": 256,
+      "v0_1_gate_pass_fraction_Clopper_Pearson_95": [
+        0.9856936372709606,
+        1.0
+      ],
+      "v0_1_gate_pass_fraction_across_256": 1.0
+    },
+    {
+      "case_id": "crossmode_a_n20_h26",
+      "family_id": "FAMILY_CROSSMODE_A",
+      "historical_ratio_percentile_in_256_case_hashed_permutations": 0.7421875,
+      "historical_ratio_z_score": 0.5403881642857165,
+      "historical_single_seed_gate": "PASS",
+      "historical_single_seed_ratio": 0.5492441327890225,
+      "particles_per_axis": 20,
+      "path_membership": [
+        "resolution"
+      ],
+      "ratio_distribution": {
+        "max": 0.5589901582043765,
+        "mean": 0.546989366380358,
+        "min": 0.536081813834243,
+        "std": 0.004172494065714512
+      },
+      "v0_1_gate_pass_count_across_256": 256,
+      "v0_1_gate_pass_fraction_Clopper_Pearson_95": [
+        0.9856936372709606,
+        1.0
+      ],
+      "v0_1_gate_pass_fraction_across_256": 1.0
+    },
+    {
+      "case_id": "i_anchor_n16_h26_regular",
+      "family_id": "FAMILY_PV_EXISTING",
+      "historical_ratio_percentile_in_256_case_hashed_permutations": 0.1640625,
+      "historical_ratio_z_score": -0.943860865379884,
+      "historical_single_seed_gate": "PASS",
+      "historical_single_seed_ratio": 0.4876466114695647,
+      "particles_per_axis": 16,
+      "path_membership": [
+        "resolution"
+      ],
+      "ratio_distribution": {
+        "max": 0.5015774125128106,
+        "mean": 0.4909960488235151,
+        "min": 0.4811032700527323,
+        "std": 0.0035486558207944744
+      },
+      "v0_1_gate_pass_count_across_256": 256,
+      "v0_1_gate_pass_fraction_Clopper_Pearson_95": [
+        0.9856936372709606,
+        1.0
+      ],
+      "v0_1_gate_pass_fraction_across_256": 1.0
+    },
+    {
+      "case_id": "i_res_n12_h26_regular",
+      "family_id": "FAMILY_PV_EXISTING",
+      "historical_ratio_percentile_in_256_case_hashed_permutations": 0.8125,
+      "historical_ratio_z_score": 0.8636814458246649,
+      "historical_single_seed_gate": "PASS",
+      "historical_single_seed_ratio": 0.6382681768388572,
+      "particles_per_axis": 12,
+      "path_membership": [
+        "resolution"
+      ],
+      "ratio_distribution": {
+        "max": 0.6505106142122927,
+        "mean": 0.6336066933078938,
+        "min": 0.6185535420462905,
+        "std": 0.005397225508894085
+      },
+      "v0_1_gate_pass_count_across_256": 256,
+      "v0_1_gate_pass_fraction_Clopper_Pearson_95": [
+        0.9856936372709606,
+        1.0
+      ],
+      "v0_1_gate_pass_fraction_across_256": 1.0
+    },
+    {
+      "case_id": "i_res_n20_h26_regular",
+      "family_id": "FAMILY_PV_EXISTING",
+      "historical_ratio_percentile_in_256_case_hashed_permutations": 0.36328125,
+      "historical_ratio_z_score": -0.39749878711369846,
+      "historical_single_seed_gate": "PASS",
+      "historical_single_seed_ratio": 0.39792537937423483,
+      "particles_per_axis": 20,
+      "path_membership": [
+        "resolution"
+      ],
+      "ratio_distribution": {
+        "max": 0.40489226539200807,
+        "mean": 0.3988468317183382,
+        "min": 0.3928192171129591,
+        "std": 0.0023181261779291387
+      },
+      "v0_1_gate_pass_count_across_256": 256,
+      "v0_1_gate_pass_fraction_Clopper_Pearson_95": [
+        0.9856936372709606,
+        1.0
+      ],
+      "v0_1_gate_pass_fraction_across_256": 1.0
+    },
+    {
+      "case_id": "i_sup_n16_h22_regular",
+      "family_id": "FAMILY_PV_EXISTING",
+      "historical_ratio_percentile_in_256_case_hashed_permutations": 0.1953125,
+      "historical_ratio_z_score": -0.872515548447889,
+      "historical_single_seed_gate": "PASS",
+      "historical_single_seed_ratio": 0.41066752407407897,
+      "particles_per_axis": 16,
+      "path_membership": [
+        "support"
+      ],
+      "ratio_distribution": {
+        "max": 0.42484456375755736,
+        "mean": 0.4139342385216672,
+        "min": 0.404987555742025,
+        "std": 0.003744018606200635
+      },
+      "v0_1_gate_pass_count_across_256": 256,
+      "v0_1_gate_pass_fraction_Clopper_Pearson_95": [
+        0.9856936372709606,
+        1.0
+      ],
+      "v0_1_gate_pass_fraction_across_256": 1.0
+    },
+    {
+      "case_id": "i_sup_n16_h30_regular",
+      "family_id": "FAMILY_PV_EXISTING",
+      "historical_ratio_percentile_in_256_case_hashed_permutations": 0.35546875,
+      "historical_ratio_z_score": -0.3518817828558144,
+      "historical_single_seed_gate": "PASS",
+      "historical_single_seed_ratio": 0.5318636242539199,
+      "particles_per_axis": 16,
+      "path_membership": [
+        "support"
+      ],
+      "ratio_distribution": {
+        "max": 0.5510423804931568,
+        "mean": 0.5330344880859414,
+        "min": 0.5250880484679309,
+        "std": 0.0033274352042866424
+      },
+      "v0_1_gate_pass_count_across_256": 256,
+      "v0_1_gate_pass_fraction_Clopper_Pearson_95": [
+        0.9856936372709606,
+        1.0
+      ],
+      "v0_1_gate_pass_fraction_across_256": 1.0
+    }
+  ],
+  "seed_screening_used": false
+}

@@ -1,0 +1,130 @@
+{
+  "R3_independent_only": true,
+  "Stage02K_authorized": false,
+  "dataset_version": "controlled_multifamily_pair_scope_v0_2",
+  "eligible_record_count": 0,
+  "existing_record_count": 5,
+  "existing_records": [
+    {
+      "canonical_byte_count": 335593,
+      "canonical_record_path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/canonical_records/i_res_n12_h26_regular.bin",
+      "canonical_record_sha256": "sha256:15135dfc0362a99720f0861c6e776e61c433374103b1fc3f6af26d1e8783a136",
+      "case_id": "i_res_n12_h26_regular",
+      "deterministic_repeat_status": "PASS",
+      "graph_hash": "sha256:e204610624a2db3af277831b7d90a9e0298926d8b0909fe70e5f6cbad050daca",
+      "raw_record_path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/raw_graph_records/i_res_n12_h26_regular.json",
+      "raw_record_sha256": "sha256:e9c2a9281a3a94ee172ca8de18d1f6347a2c50b98d37f2b2427282c88fe288e8",
+      "roundtrip_status": "PASS",
+      "state_hash": "sha256:f18920ca98def846784abf7c0a886004c72490b2658385e0b35fc6d21a4e19ea",
+      "target_hash": "sha256:1bc47ab00af37fe05e15f7503ca9be9ac0a304b5e457c3f2bc5e0010a623c84b",
+      "total_target_force_after": [
+        8.863352760068999e-18,
+        9.595189226496714e-18
+      ],
+      "total_target_force_before": [
+        8.863352760068999e-18,
+        9.595189226496714e-18
+      ]
+    },
+    {
+      "canonical_byte_count": 586481,
+      "canonical_record_path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/canonical_records/i_anchor_n16_h26_regular.bin",
+      "canonical_record_sha256": "sha256:34852381cdff33250142b9061c6e68a89d06f6ebad78e4bac92b2e63f18fde87",
+      "case_id": "i_anchor_n16_h26_regular",
+      "deterministic_repeat_status": "PASS",
+      "graph_hash": "sha256:da35db3cf432b171501eeda0a8245c1a806183d00bd87b50a82db4f56834993a",
+      "raw_record_path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/raw_graph_records/i_anchor_n16_h26_regular.json",
+      "raw_record_sha256": "sha256:26550de0b09bd0ce83c277e0698e6ddcdc39f573c03dd7da896544c0ab50b048",
+      "roundtrip_status": "PASS",
+      "state_hash": "sha256:bb665e754c2abcb92ee1408f9a2bb5f85c66525550e5267bed568f77efe349a2",
+      "target_hash": "sha256:cfa9acdf622087a5b09abb1bc9e2c391e3613e1691d56227396e95474d236436",
+      "total_target_force_after": [
+        4.228388472693467e-18,
+        -1.07742590890747e-17
+      ],
+      "total_target_force_before": [
+        4.228388472693467e-18,
+        -1.07742590890747e-17
+      ]
+    },
+    {
+      "canonical_byte_count": 909032,
+      "canonical_record_path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/canonical_records/i_res_n20_h26_regular.bin",
+      "canonical_record_sha256": "sha256:555ca4e3547bdb7355547a21f25aa7040ffaaad10bb70663f00969200a96b035",
+      "case_id": "i_res_n20_h26_regular",
+      "deterministic_repeat_status": "PASS",
+      "graph_hash": "sha256:55e00f79af51783c565cef4cd25ca95ba5db0890ea2eb0f7577aff0187711e50",
+      "raw_record_path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/raw_graph_records/i_res_n20_h26_regular.json",
+      "raw_record_sha256": "sha256:05e57b5bb1826d86b1549a213f53587b474d3eaebc161820330a6dfe1174c85b",
+      "roundtrip_status": "PASS",
+      "state_hash": "sha256:3f54c3a0c588782d78bc9330a80740a69cc77cb3d95c2837bf01ecee88ea2744",
+      "target_hash": "sha256:e3806ae2d3a65cfa1ff9c7f3329cf1e07bd7047d541e8c90a809da49171954c7",
+      "total_target_force_after": [
+        5.717472393966527e-18,
+        2.2598839032744733e-18
+      ],
+      "total_target_force_before": [
+        5.717472393966527e-18,
+        2.2598839032744733e-18
+      ]
+    },
+    {
+      "canonical_byte_count": 385770,
+      "canonical_record_path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/canonical_records/i_sup_n16_h22_regular.bin",
+      "canonical_record_sha256": "sha256:cc4da41ad5b76422cd477500ae34ba4b53bf993f61bc09a8640db68219952d19",
+      "case_id": "i_sup_n16_h22_regular",
+      "deterministic_repeat_status": "PASS",
+      "graph_hash": "sha256:4047225c7cb7ce02e6dac411854840e5e3627ba1e00106ff44f9641ee456a97d",
+      "raw_record_path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/raw_graph_records/i_sup_n16_h22_regular.json",
+      "raw_record_sha256": "sha256:c8bf30069ddfcbaf3a26607c4fd3f8d237247d113ade0915125966488699c4e4",
+      "roundtrip_status": "PASS",
+      "state_hash": "sha256:bb665e754c2abcb92ee1408f9a2bb5f85c66525550e5267bed568f77efe349a2",
+      "target_hash": "sha256:466f5bb7c7ff275f59eb149efcdcef1f18df6064f0f155667cf7d302b8a5b815",
+      "total_target_force_after": [
+        -4.065758146820642e-18,
+        -5.664956351236761e-18
+      ],
+      "total_target_force_before": [
+        -4.065758146820642e-18,
+        -5.664956351236761e-18
+      ]
+    },
+    {
+      "canonical_byte_count": 686824,
+      "canonical_record_path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/canonical_records/i_sup_n16_h30_regular.bin",
+      "canonical_record_sha256": "sha256:9374101064e0c6ce63e2022760fdc0683cff22b3f6f80374cd4ee44393d0a9bf",
+      "case_id": "i_sup_n16_h30_regular",
+      "deterministic_repeat_status": "PASS",
+      "graph_hash": "sha256:803425c5ec49a22456b2e5907e00997f654543bc446b06a6a4df8856fe1e2c1e",
+      "raw_record_path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/raw_graph_records/i_sup_n16_h30_regular.json",
+      "raw_record_sha256": "sha256:8dab92781df58c2b637114082eb1aa78e554a30e7d612f989a31687fa3c62714",
+      "roundtrip_status": "PASS",
+      "state_hash": "sha256:bb665e754c2abcb92ee1408f9a2bb5f85c66525550e5267bed568f77efe349a2",
+      "target_hash": "sha256:cfa9acdf622087a5b09abb1bc9e2c391e3613e1691d56227396e95474d236436",
+      "total_target_force_after": [
+        4.228388472693467e-18,
+        -1.07742590890747e-17
+      ],
+      "total_target_force_before": [
+        4.228388472693467e-18,
+        -1.07742590890747e-17
+      ]
+    }
+  ],
+  "expanded_record_count": 5,
+  "formal_split_created": false,
+  "jitter_OOD_only": true,
+  "leakage_component_count": 1,
+  "manifest_version": "stage02jr-controlled-multifamily-dataset-0.2.0",
+  "maximum_preregistered_record_count": 20,
+  "model_created": false,
+  "new_record_count": 0,
+  "new_records": [],
+  "new_target_candidate_count": 15,
+  "new_target_candidates_are_training_dataset_records": false,
+  "normalization_fitted": false,
+  "qualified_family_count": 1,
+  "readiness_category": "not_ready",
+  "sample_unit": "complete_particle_graph",
+  "training_performed": false
+}

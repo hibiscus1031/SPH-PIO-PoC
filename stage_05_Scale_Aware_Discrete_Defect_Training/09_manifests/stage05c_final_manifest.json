@@ -1,0 +1,872 @@
+{
+  "arm_aggregation": {
+    "D1": true,
+    "D2": true,
+    "D3": true
+  },
+  "artifact_count_excluding_self": 164,
+  "artifact_storage_bytes_excluding_self": 70185622,
+  "artifacts": [
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/access_control/end_allowlist_denial_audit.json",
+      "sha256": "sha256:db3926774c310865bc9dd6c905029bef1a40f031f7e55c50564e5e1a48d2f1f0",
+      "size_bytes": 2108
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/access_control/stage05c_train_access.py",
+      "sha256": "sha256:161fdd6e0270cc987cb83b04be50dd60f98ffb4e4ffa4926ec4e97eb61737688",
+      "size_bytes": 1643
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/access_control/start_allowlist_denial_audit.json",
+      "sha256": "sha256:e6951350756a0c1dc3502e53f63aaea77763e1f2bdc4a8fbf050d479af085d3c",
+      "size_bytes": 2105
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/cached_formal_batch_manifest.json",
+      "sha256": "sha256:c42a6f8c6fada32fb1a64de22d4afcf014cee5ed14ffd0a14d1a3a8f968095b2",
+      "size_bytes": 25178
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_01_VARIANT_LOW_N8_O05.npz",
+      "sha256": "sha256:2a4ebb8afcad5855007540aac84586f2654c6241f7a8742d856c23d408daaa1b",
+      "size_bytes": 6144
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_01_VARIANT_LOW_N8_O13.npz",
+      "sha256": "sha256:31775a566be667a97791cade02d1ac446e1bbd1119b26d9cd592ca93acdcd097",
+      "size_bytes": 6148
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_01_VARIANT_LOW_N8_O15.npz",
+      "sha256": "sha256:de9cc86614c4a080b8ff2d65c5fb86c83ad4fc2ad85d2050c342b385dce1899f",
+      "size_bytes": 6335
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_01_VARIANT_LOW_N8_O27.npz",
+      "sha256": "sha256:3fa499cdf4f245b51e4a9869a19d567fda363924c39a6446da90fea565770f9a",
+      "size_bytes": 6188
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_01_VARIANT_MAIN_N8_O08.npz",
+      "sha256": "sha256:d9a69e533ef395f193a3a4e825a08156ac79d17e2fd710b7c4512923546f5b0a",
+      "size_bytes": 6214
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_01_VARIANT_MAIN_N8_O09.npz",
+      "sha256": "sha256:0418b37606db248ce72d000a155dd861d01abd675a4aa4eb28a73aff5d4e978b",
+      "size_bytes": 5685
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_01_VARIANT_MAIN_N8_O12.npz",
+      "sha256": "sha256:f602b416c07a528cb4c6aa311e8d9638715fd54edd625cdf6995b87b638bf2aa",
+      "size_bytes": 6367
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_01_VARIANT_MAIN_N8_O30.npz",
+      "sha256": "sha256:439b86bcfd9176242f5c33132035487efb4c712b48d93805e7073c796a65fdc6",
+      "size_bytes": 6499
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_04_VARIANT_LOW_N8_O06.npz",
+      "sha256": "sha256:20886fb5ef649f4a952f54bee2bba0086b1115886c3b96e4df6d4370723d99ee",
+      "size_bytes": 10358
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_04_VARIANT_LOW_N8_O07.npz",
+      "sha256": "sha256:fcbfda192d9788f2fa726a4f2f57916f04f042bef79a0e77b25acb7638ea8c0c",
+      "size_bytes": 10200
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_04_VARIANT_LOW_N8_O10.npz",
+      "sha256": "sha256:03072a120db9f900471f103e437caacf97941a7b874fadd33ca6f15e986ca0d5",
+      "size_bytes": 10640
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_04_VARIANT_LOW_N8_O26.npz",
+      "sha256": "sha256:10814d2a0e734f27b1cea51a165bfacaaaba8936c34e8b72227ace6ff3cf4554",
+      "size_bytes": 10233
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_04_VARIANT_MAIN_N8_O14.npz",
+      "sha256": "sha256:9b484c5d4c58b9e29cc1c3677b5e688c9619e568a8a8dc6d539c76dfe10467da",
+      "size_bytes": 10508
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_04_VARIANT_MAIN_N8_O15.npz",
+      "sha256": "sha256:b66a82daa9c2f280141b56cec5f6294a6bb26870c15a2ba1e83b1bda5bb63487",
+      "size_bytes": 10558
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_04_VARIANT_MAIN_N8_O25.npz",
+      "sha256": "sha256:cef3b6c3602f9db6a9a9d120d128de50ca8fd947a326edcaa486f1f327c1d85e",
+      "size_bytes": 10395
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_04_VARIANT_MAIN_N8_O26.npz",
+      "sha256": "sha256:a0701429e4f24bba8edcbbeeedfa0b15e8361c7e7625dbaf1edba132b01c7b0c",
+      "size_bytes": 10399
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_05_VARIANT_LOW_N8_O05.npz",
+      "sha256": "sha256:74acfa80b9aab6c0ca13bb8b04b68b46561c037240061d10bf9e5cce1300205d",
+      "size_bytes": 8384
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_05_VARIANT_LOW_N8_O10.npz",
+      "sha256": "sha256:24e3144da450f989abec5ffa273b793ebee31f524f842b9f4c3b148c1dd01da6",
+      "size_bytes": 7878
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_05_VARIANT_LOW_N8_O29.npz",
+      "sha256": "sha256:daafa7fc0f2a9cc42bdc57b38fb5caffea301f80ff0f36619b470027e2fbac79",
+      "size_bytes": 8291
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_05_VARIANT_LOW_N8_O31.npz",
+      "sha256": "sha256:98c76f00dc3b499d417f4a6ded45e7fff50c794373c1ac757f567d9cc4f4c181",
+      "size_bytes": 8556
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_05_VARIANT_MAIN_N8_O05.npz",
+      "sha256": "sha256:e9aa9f5bfff98446d64229aee07e8d7db444e7d2c42c39b6419f6b422e75a858",
+      "size_bytes": 8439
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_05_VARIANT_MAIN_N8_O14.npz",
+      "sha256": "sha256:413dd5ce06edf2a2afcb0be1b1340108bee01dbe6a26dfbb903ff37598fbaf44",
+      "size_bytes": 8664
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_05_VARIANT_MAIN_N8_O20.npz",
+      "sha256": "sha256:fa498de060dc608c62330c15b856fd781783a316ca1427fdd270de3d36aa935e",
+      "size_bytes": 8710
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_05_VARIANT_MAIN_N8_O23.npz",
+      "sha256": "sha256:10737f29612f78e48463c9dde013a7e6cd3bd5924b75c2d74be0aa17db0936ec",
+      "size_bytes": 8901
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_06_VARIANT_LOW_N8_O05.npz",
+      "sha256": "sha256:ba9daa2c88daff4eb821e9cfe99271f1716c6abd5df4782088981d1f0ca36874",
+      "size_bytes": 8076
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_06_VARIANT_LOW_N8_O09.npz",
+      "sha256": "sha256:7148b18b958059e960df3f6f073d5868692d565553af01c63a97c3ad274f3b5b",
+      "size_bytes": 8125
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_06_VARIANT_LOW_N8_O25.npz",
+      "sha256": "sha256:1d482ff62e95d714845fcdd658c5242155e50ca8f43ca8080915c67b4e5c9efb",
+      "size_bytes": 7666
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_06_VARIANT_LOW_N8_O30.npz",
+      "sha256": "sha256:bf876c7eed1e219eabca0cab4e51126a586570e7351c68d81bf75b9d901d069f",
+      "size_bytes": 8088
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_06_VARIANT_MAIN_N8_O09.npz",
+      "sha256": "sha256:0d3331731d0f08d437c13ae3cd4b72156921cb904ef9f549787d470490daa075",
+      "size_bytes": 8039
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_06_VARIANT_MAIN_N8_O12.npz",
+      "sha256": "sha256:38f3c56a3655064f532e8042b7b9b33172739edd46c5b03045812137a729f824",
+      "size_bytes": 7971
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_06_VARIANT_MAIN_N8_O20.npz",
+      "sha256": "sha256:f55c8bfc0fcaa2db75956fc1d53522a96c6bea1374c905c85f6a8251e89f8046",
+      "size_bytes": 7908
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_06_VARIANT_MAIN_N8_O31.npz",
+      "sha256": "sha256:8886a56e58c9b4ef7260d398f4a32f913d53a2f10872451fd8daa23284e9dbab",
+      "size_bytes": 7858
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_07_VARIANT_LOW_N8_O01.npz",
+      "sha256": "sha256:919dd1af2d7aa92e38c2257a301c96669dd5ff60dc8921b58cb93de4d17a161f",
+      "size_bytes": 12542
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_07_VARIANT_LOW_N8_O05.npz",
+      "sha256": "sha256:ad087a301cc4bab644fcf435059858903f9c6c588bfcd4c9314dfa324eb96967",
+      "size_bytes": 12091
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_07_VARIANT_LOW_N8_O09.npz",
+      "sha256": "sha256:0f19e35b82d180027a7056b55aa180d36c90ebf0ebbad40b4b3959a0bd8770a0",
+      "size_bytes": 12409
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_07_VARIANT_LOW_N8_O28.npz",
+      "sha256": "sha256:3e52c2aff528442c730f3d938480c3c7d716e2b610a909a8bd060b85d2c75d65",
+      "size_bytes": 12060
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_07_VARIANT_MAIN_N8_O11.npz",
+      "sha256": "sha256:c4f668260fbb94e4db2c86cf69456fe7d7de93a04c45c4bb8eabf10bd225c844",
+      "size_bytes": 12395
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_07_VARIANT_MAIN_N8_O20.npz",
+      "sha256": "sha256:5b96b3b43ee25b363b51785b10c5fbb1a89e3196397698f66176c0d8a0ca5e4c",
+      "size_bytes": 12327
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_07_VARIANT_MAIN_N8_O21.npz",
+      "sha256": "sha256:6a7f654989cc61137f056c01d237bab8d5334aee4efbe1ae17098dd918946abb",
+      "size_bytes": 12448
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_07_VARIANT_MAIN_N8_O22.npz",
+      "sha256": "sha256:45e80cc2f0d5dfecb4f3cb06ab5f610c2543aaf77be99aa88e35e77cdecee122",
+      "size_bytes": 12371
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_08_VARIANT_LOW_N8_O01.npz",
+      "sha256": "sha256:42ff9c91680e44d2e11e8edc6fdf95565ac9e037977d5ab4e158f8b549e1801f",
+      "size_bytes": 12280
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_08_VARIANT_LOW_N8_O11.npz",
+      "sha256": "sha256:6cbad98b7fcebb020c9f7ec56f33d70bdd9339e56ff2019f4bef7cba3d327c1b",
+      "size_bytes": 12405
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_08_VARIANT_LOW_N8_O28.npz",
+      "sha256": "sha256:fb40e7655fd2ba96ceb6b77e27b3e0a4a224cb3a30b858f95a3e949dbe9fb263",
+      "size_bytes": 12238
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_08_VARIANT_LOW_N8_O30.npz",
+      "sha256": "sha256:51f3b2d36d12a0af39aeb5c3dfc236554853f69dc9e1f0aa8fa9800c9a4f7efc",
+      "size_bytes": 11865
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_08_VARIANT_MAIN_N8_O04.npz",
+      "sha256": "sha256:873bb6f55bef8acc0b36b40aad11cb37867a929e88c2b5b8c7545a554efc3b55",
+      "size_bytes": 12355
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_08_VARIANT_MAIN_N8_O17.npz",
+      "sha256": "sha256:adea6df9a49025288bac4b5ad4a0cd5bf395a31c9d3155f3a0a38c3037d627c7",
+      "size_bytes": 12113
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_08_VARIANT_MAIN_N8_O22.npz",
+      "sha256": "sha256:4f2f3d8ad1ba7568c2112b851826720399215a8d9962320a26f612e4d6b84167",
+      "size_bytes": 11967
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/case_cache/LCDF_08_VARIANT_MAIN_N8_O25.npz",
+      "sha256": "sha256:955859dd00e4ac8fca4aaedea8963e23319eb2d5d8366c7a4743edd5f5ab340f",
+      "size_bytes": 12141
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/batch_selection/preregistered_batches.json",
+      "sha256": "sha256:958e87f8398acc8ed627126f1b1d744f54803d417400b2334fd1c01da12c25b3",
+      "size_bytes": 8759
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/block_fd/coordinate_and_block_fd_evidence.json",
+      "sha256": "sha256:4e97c2cd0089c45a0ec463bbf71e449572352aa05fa34433ea49aa8d27180020",
+      "size_bytes": 1604
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/contracts/optimizer_aligned_defect_gradient_contract_v0_1.yaml",
+      "sha256": "sha256:829adb1d62c1bd8310d51f8b59b91c78d959646a4185fcfb7458580979382589",
+      "size_bytes": 4840
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/coordinate_fd/coordinate_and_block_fd_evidence.json",
+      "sha256": "sha256:4e97c2cd0089c45a0ec463bbf71e449572352aa05fa34433ea49aa8d27180020",
+      "size_bytes": 1604
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/determinism/determinism_evidence.json",
+      "sha256": "sha256:5970e82166501ec4e14e6fc2d8ca3a0810aab82450323dd0ee38714ec92df45f",
+      "size_bytes": 147
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/freeze/prepare_stage05c.py",
+      "sha256": "sha256:e071c836a38e2d77b0e49e79b3019d37f26eb0dde6ee0323537237af6c10eb22",
+      "size_bytes": 15952
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/freeze/stage05c_freeze_record.json",
+      "sha256": "sha256:f607516e19b6e13b4c742efcfc6e8dbd88f09fc8103aae76f9e5d5ccfc58b2f7",
+      "size_bytes": 4495
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/full_gradient/full_gradient_evidence.json",
+      "sha256": "sha256:0616dfcd279210fabb6808b0788ad17a75cd2d44c8436ec0bbde4a00f7862565",
+      "size_bytes": 359
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/local_descent/local_descent_evidence.json",
+      "sha256": "sha256:88991ee7a7267a2a0cdaf18e0f96eaa5db80b1e2569a76cf419e7d55622576c1",
+      "size_bytes": 217
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/loss_and_signal/loss_and_signal_evidence.json",
+      "sha256": "sha256:c2d73bb01a366cd6c6b70618178fe3c67b6d76a2f2e86044f35669077f116dff",
+      "size_bytes": 238
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/manifests/finalize_stage05c.py",
+      "sha256": "sha256:6aa08491b2a20381586bd89f113d4f6243ef1e5e65ae5bcdbad9e519c747aff6",
+      "size_bytes": 29249
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/model_instantiation/preregistered_model_identities.json",
+      "sha256": "sha256:25550c4694c27a579eff8a3508c21eb4451dcade5143440e7f58789e6d4ea263",
+      "size_bytes": 22388
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/parameter_groups/preregistered_parameter_groups.json",
+      "sha256": "sha256:95926f5081f583ad7a438f072ab5170d0969a5ba7679d17444aa7fdb1f7c2abf",
+      "size_bytes": 18673
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/parameter_groups/preregistered_probe_plan.json",
+      "sha256": "sha256:9aad2c87d819618310726ae156246091b3a3fd6156c01d5d940311b90904675d",
+      "size_bytes": 775650
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/qualification/d1_qualification_summary.json",
+      "sha256": "sha256:0eb602a46b5ac65348ae764fd0bd3f6006d70fbc7f8f38795378c7a0fbb55f4d",
+      "size_bytes": 3878
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/qualification/d2_qualification_summary.json",
+      "sha256": "sha256:4c9acb6fd97c436902c2c6965a454ec6c644370158f95852399af18ad407f84a",
+      "size_bytes": 4396
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/qualification/d3_aborted_attempt_pre_math_reference.json",
+      "sha256": "sha256:5b8bfb865d0ce7f7bd3ac64323240b1ae62c1f18dbf0c8b6d52f0ad734f3b32b",
+      "size_bytes": 904
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/qualification/d3_qualification_summary.json",
+      "sha256": "sha256:253570906a73872296d2667de4eec38925928485b76fdfb6999f0a2b21ca6c65",
+      "size_bytes": 6549
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/qualification/prepare_stage05c_data.py",
+      "sha256": "sha256:b4973346bcd6ad256a4a6491e1a35ceb7dffc1e68bec796e83730fc70bab1226",
+      "size_bytes": 7474
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/qualification/run_stage05c_arm.py",
+      "sha256": "sha256:f834cc7269437233f52e79975559be1942e07e3de7c5e2c523dd1a7b3928cdc0",
+      "size_bytes": 28695
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/qualification/stage05c_qualification_summary.json",
+      "sha256": "sha256:a54bced22b7f5824ead9cddfded1816f7aeb9a4d486d85a6999275f3d4c82a9f",
+      "size_bytes": 1044
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/resolution_diagnostics/resolution_diagnostics.json",
+      "sha256": "sha256:2d26c64dc1a07f1cf725a63ffac6f6579661363283921c4d4b68be28beeb7e23",
+      "size_bytes": 243452
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/resolution_diagnostics/run_stage05c_resolution_diagnostics.py",
+      "sha256": "sha256:20d293e4cabe5a2cc36d4f6a85b50b431b273df74404de1f67a8a59010c962b9",
+      "size_bytes": 13128
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/resources/resource_audit.json",
+      "sha256": "sha256:cb688db8ee0054b4a0f01d7a52e4e28a4ad8314d2a3d0cee1ae7b65d94646d75",
+      "size_bytes": 3215
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/resources/retained_autograd_audit.json",
+      "sha256": "sha256:6a21d2f8dcbe6705d15751baeaa001f30d0ad6882c99f920148a6c18c67940f4",
+      "size_bytes": 1017
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/resources/run_retained_autograd_audit.py",
+      "sha256": "sha256:faee84b3ce9495aa2d33722debe3ebde25c0d0b97ab41e4b7f4cc7b2ab6f9feb",
+      "size_bytes": 2520
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d1/D1_20500501_GLOBAL.json",
+      "sha256": "sha256:7fb0f83e2b2fd27dda969c77ae1ddb761e19a840a170feb9b1cb93fc240863a8",
+      "size_bytes": 154710
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d1/D1_20500501_LCDF_01.json",
+      "sha256": "sha256:9e6880e57ea47f0ca7bd0a271e54012409036a2fb4330e6c0ea24a0dba8021c9",
+      "size_bytes": 636526
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d1/D1_20500501_LCDF_04.json",
+      "sha256": "sha256:1018c5a150c96a48bb123a273767deb8a8d6919ca872d8319ba829dfbfb86333",
+      "size_bytes": 636458
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d1/D1_20500501_LCDF_05.json",
+      "sha256": "sha256:f362ed57a52e0d505ce2a194875c19b2a34882373144b8917decd9511c7bbeda",
+      "size_bytes": 636215
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d1/D1_20500501_LCDF_06.json",
+      "sha256": "sha256:7d898990f3c8a1d248dcb21c11e99fbed61231491277672b3c78aaa1ff01129c",
+      "size_bytes": 637319
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d1/D1_20500501_LCDF_07.json",
+      "sha256": "sha256:8fc6ddc23d908039900fed97452dcc20c5fdcb65865b2a609abd3483acfb9c0c",
+      "size_bytes": 636774
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d1/D1_20500501_LCDF_08.json",
+      "sha256": "sha256:81724fa7431bad9186c4704251dd713f66aa30c03a4335cb4a4d80c7c55314fd",
+      "size_bytes": 636235
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d1/D1_20500502_GLOBAL.json",
+      "sha256": "sha256:1a8235833621c184a9bb710b27185d616e5ffb0a3658a4d93434c510a4624b31",
+      "size_bytes": 154714
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d1/D1_20500502_LCDF_01.json",
+      "sha256": "sha256:983cba8a86fce4d72e9956b9e6c17abd1817bd4f3f004eedd0e220aa4268dfaa",
+      "size_bytes": 636522
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d1/D1_20500502_LCDF_04.json",
+      "sha256": "sha256:7c775f54c6a14680158381f9d00c19e37cadc72e4245d67af696b9797fa46b52",
+      "size_bytes": 636176
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d1/D1_20500502_LCDF_05.json",
+      "sha256": "sha256:d289c96d3308ad6e2b646e85bda2a7e48d06866be7a50475b58c297c5897f858",
+      "size_bytes": 636430
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d1/D1_20500502_LCDF_06.json",
+      "sha256": "sha256:2b8c65fb265125fc7a5ef7ade974380cfe1093dca8974e0316aee72ebab362c9",
+      "size_bytes": 637453
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d1/D1_20500502_LCDF_07.json",
+      "sha256": "sha256:1f0bd734144af7d9110809425397ead914eb461bc85e3a7fa3b3392fdab575b8",
+      "size_bytes": 636636
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d1/D1_20500502_LCDF_08.json",
+      "sha256": "sha256:3549569890b531284e7b315f5af2ec2cd520e95e9d680b597298fffaaa3450fb",
+      "size_bytes": 636229
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d1/D1_20500503_GLOBAL.json",
+      "sha256": "sha256:bb4435cdb2bfe58d236e92f4f2a596fdafce44c8bf1c3d2c6ec42beb4911207e",
+      "size_bytes": 154704
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d1/D1_20500503_LCDF_01.json",
+      "sha256": "sha256:d74bb31a2f92fcadff284b6df6cc628e5790c1aeeff9e5e423c53180601e0730",
+      "size_bytes": 636454
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d1/D1_20500503_LCDF_04.json",
+      "sha256": "sha256:f814691a6dfff89f98e8e5c626c0a7a62a4fc9bf92a7f35c17d7df710c9b09bd",
+      "size_bytes": 636285
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d1/D1_20500503_LCDF_05.json",
+      "sha256": "sha256:218d9075ba5f7a713e855a465ecee1b1bfc7fc11296cb1b3cba77b4dd6164c17",
+      "size_bytes": 636289
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d1/D1_20500503_LCDF_06.json",
+      "sha256": "sha256:41af9fdab014ffbeb5f8629905ed8796edd5d381c8e21779ddd6c3196d8c2628",
+      "size_bytes": 637573
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d1/D1_20500503_LCDF_07.json",
+      "sha256": "sha256:73870fbceedde4588bd5404b858320acaa2e91bff46703222a1af7bf6d6ccee1",
+      "size_bytes": 636657
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d1/D1_20500503_LCDF_08.json",
+      "sha256": "sha256:249a6c4496ab1e38ca700dd58908e50ad416743a63b0bf7606bbebef5c789e2c",
+      "size_bytes": 636263
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d2/D2_20500501_GLOBAL.json",
+      "sha256": "sha256:9f3f9a9eef0ff33c8bbfca0d34365c832e4bf4a6656444ab85a949524d7d33f9",
+      "size_bytes": 154706
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d2/D2_20500501_LCDF_01.json",
+      "sha256": "sha256:46d53c0af19b0774396878b517d116c3107f2b9104dfe57abdb9301d0dad0764",
+      "size_bytes": 939519
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d2/D2_20500501_LCDF_04.json",
+      "sha256": "sha256:d52245dbbe6c5e433a04b2f89117ed5906fb266c5d19ef54f31fcdf3ce8cb0c0",
+      "size_bytes": 939054
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d2/D2_20500501_LCDF_05.json",
+      "sha256": "sha256:c2e4bcdcd561e32b5f434761c014f50677c60e3fb8e32d29a477070fb60ee4d7",
+      "size_bytes": 939008
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d2/D2_20500501_LCDF_06.json",
+      "sha256": "sha256:d6f6ecb05b6b0a9eedda7f1569c225cf30c79ebecdd0a8be92e666115cb2825f",
+      "size_bytes": 940694
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d2/D2_20500501_LCDF_07.json",
+      "sha256": "sha256:106c95dc0f6b96ae1c37c29b7f1861c4cbe00e9657ddda273e49034616a3af11",
+      "size_bytes": 939634
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d2/D2_20500501_LCDF_08.json",
+      "sha256": "sha256:c40c7a8543f8c710c82d256c6257dce30abf679e7d458bea0cab1548e0903fdf",
+      "size_bytes": 938934
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d2/D2_20500502_GLOBAL.json",
+      "sha256": "sha256:790e0321375b8ab0f08b426beb8d63f0cc12b87009d0a582798ae0533281934f",
+      "size_bytes": 154710
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d2/D2_20500502_LCDF_01.json",
+      "sha256": "sha256:4056ff54ec2adb610c0214e11406e391a379c9051671f83c40ca3021119f4851",
+      "size_bytes": 939401
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d2/D2_20500502_LCDF_04.json",
+      "sha256": "sha256:41111a70925fd09f622f7377ed68d969bdb1ad98113201a7abe0aaf5f20daf2a",
+      "size_bytes": 939041
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d2/D2_20500502_LCDF_05.json",
+      "sha256": "sha256:753cae3a8adef443fce0a0520e831f98a16181da25171a31da99d7f476fe48ae",
+      "size_bytes": 938946
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d2/D2_20500502_LCDF_06.json",
+      "sha256": "sha256:3df599acce92465b45f89294c6279c3e58eb04e0ae9742f2741942f96ea42cc0",
+      "size_bytes": 940410
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d2/D2_20500502_LCDF_07.json",
+      "sha256": "sha256:1dc8d402a7a09006f1f4b3018c657dac96c8a27c94db2c0c9fe76491aab62428",
+      "size_bytes": 939703
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d2/D2_20500502_LCDF_08.json",
+      "sha256": "sha256:95d1d528899863e7af90727e7381b596b7737cd45dd88105b48c7519067e5c80",
+      "size_bytes": 938882
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d2/D2_20500503_GLOBAL.json",
+      "sha256": "sha256:693105936013b7ea0c3ecf4a6ec3261bd18f6f47bc3fd5d6a3a543c99bde53e6",
+      "size_bytes": 154706
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d2/D2_20500503_LCDF_01.json",
+      "sha256": "sha256:aa204fdf8943110c63651b5037b23bbcc828010f42463438b144fe9d3f68f7af",
+      "size_bytes": 939396
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d2/D2_20500503_LCDF_04.json",
+      "sha256": "sha256:3c1f53a9fe795445679609f11d02678659155d49b33714a351d5f46fb5b6f64f",
+      "size_bytes": 939108
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d2/D2_20500503_LCDF_05.json",
+      "sha256": "sha256:90067fe565deb038d5f7d5a123d495dbd310cbdfbfea8cc38cf10d77b26c2b55",
+      "size_bytes": 938939
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d2/D2_20500503_LCDF_06.json",
+      "sha256": "sha256:94d385ba3343e2abd2002174fbc45d1761dafa94a993fcd01d1dfa4413cc5b4f",
+      "size_bytes": 940334
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d2/D2_20500503_LCDF_07.json",
+      "sha256": "sha256:e9ea691772a3d7d6aea83cf8412f15e4c46d485e3c4bff795f94252a7f1c8fe3",
+      "size_bytes": 939591
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d2/D2_20500503_LCDF_08.json",
+      "sha256": "sha256:3662c20bf8e4744a6b2a422c84db624b00b879b57d42b919e2a74b36dc1a3bf2",
+      "size_bytes": 938846
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d3/D3_20500501_GLOBAL.json",
+      "sha256": "sha256:46e81faf9862c63395f9046e8fe13eb31075022ba72d684a6d847c56e4521070",
+      "size_bytes": 154698
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d3/D3_20500501_LCDF_01.json",
+      "sha256": "sha256:100b77cf5355aac1a3c6d77fd2cd40103c82f2e37c04125511a998c1dde603ea",
+      "size_bytes": 2150317
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d3/D3_20500501_LCDF_04.json",
+      "sha256": "sha256:4208779f3f8a3a4b0fb903d38a7878c55c8fbdc0d9a52d0402c3599e8f50aeb6",
+      "size_bytes": 2149310
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d3/D3_20500501_LCDF_05.json",
+      "sha256": "sha256:0c081eec7ebef5ca217e1dd47b3e7e9d41c7f6ddee55e0958c14a843cbd69ebb",
+      "size_bytes": 2149236
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d3/D3_20500501_LCDF_06.json",
+      "sha256": "sha256:329d32116e4dc5a4f632efe0bbbe3616216ee890120eb7f10833b80f85964335",
+      "size_bytes": 2153347
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d3/D3_20500501_LCDF_07.json",
+      "sha256": "sha256:a3595a0f015079ca95a20ca441c3c22dcc2f52dd9f5c2641a7ae720937b6e892",
+      "size_bytes": 2150757
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d3/D3_20500501_LCDF_08.json",
+      "sha256": "sha256:9b3747dbcf96791020b465587b326191238dcb0bde802b33c2f4446f8038789c",
+      "size_bytes": 2148937
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d3/D3_20500502_GLOBAL.json",
+      "sha256": "sha256:f0f851e26e280ce667fba05e7d742d60feb6b73327bc1c784078999319364033",
+      "size_bytes": 154700
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d3/D3_20500502_LCDF_01.json",
+      "sha256": "sha256:0748933b2699b199ea8522226fc5a63e0b50543d0c520e1b6f6b19731a919411",
+      "size_bytes": 2150055
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d3/D3_20500502_LCDF_04.json",
+      "sha256": "sha256:a631a7ff7795b7c7a00e25695e7a51914ef6247a21b03f1e33e99eb650c29a1f",
+      "size_bytes": 2149552
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d3/D3_20500502_LCDF_05.json",
+      "sha256": "sha256:efb58f1488bcfb37bada88bfc49aaee1e08adc2946f62a664fce1c198f3b81d1",
+      "size_bytes": 2149217
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d3/D3_20500502_LCDF_06.json",
+      "sha256": "sha256:af8b2837701ef55b272ca83e6b07d339b6fcd7ddceb14af9de4bee654defbeec",
+      "size_bytes": 2153554
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d3/D3_20500502_LCDF_07.json",
+      "sha256": "sha256:fb4aa6a758a01d418ee8430dce6f42483673f0d241ca4005ed56965d645e3a5a",
+      "size_bytes": 2150902
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d3/D3_20500502_LCDF_08.json",
+      "sha256": "sha256:74842e5f8174f817786ac82bd088b35950aa407460401b91b23543144394dbfe",
+      "size_bytes": 2148792
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d3/D3_20500503_GLOBAL.json",
+      "sha256": "sha256:05a163773cc27cc2d331ca62ffe5ed48a1cfeba57851f6e96754cbeb5bd20ade",
+      "size_bytes": 154698
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d3/D3_20500503_LCDF_01.json",
+      "sha256": "sha256:ebcfd57e40aba7163a4a6dd0564d6175c794e6ce8a6a23e62820a289cd5f1736",
+      "size_bytes": 2150333
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d3/D3_20500503_LCDF_04.json",
+      "sha256": "sha256:30a5ec737d4fac4c2cc4cc01ef88a29f89062b453501f03aec9374eadbba43f3",
+      "size_bytes": 2150058
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d3/D3_20500503_LCDF_05.json",
+      "sha256": "sha256:30e2416e946ba9536af82bd23cfa786b0d8d905560c0a5af8077c8eb02014bcd",
+      "size_bytes": 2149385
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d3/D3_20500503_LCDF_06.json",
+      "sha256": "sha256:29a36a16bfd6796fd5c40bb3e9f01e6a92478939ea1687d40e142e7c310589a0",
+      "size_bytes": 2152751
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d3/D3_20500503_LCDF_07.json",
+      "sha256": "sha256:2c400e9de4de7efd314fccb296df757dd86e9e6d3096c66fcea8cfe96727bf51",
+      "size_bytes": 2150476
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/results/d3/D3_20500503_LCDF_08.json",
+      "sha256": "sha256:f6fe7670213ef0a560b5ab5ea4c6bd884e8b11829355288b950a2986e8f0b651",
+      "size_bytes": 2148665
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/reverse_jvp/reverse_jvp_evidence.json",
+      "sha256": "sha256:59c53e1dac50c111a5afd26932f0197fcafe9159f4c6289226b65cf60b6b482e",
+      "size_bytes": 136
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05c/structure_and_safety/structure_and_safety_evidence.json",
+      "sha256": "sha256:b278c87fe42e1e67252fcff766730e10fefdcf351115e32b48c4bf63aa7ad54b",
+      "size_bytes": 231
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/08_reports/stage05c_access_control.md",
+      "sha256": "sha256:e3feabc9419f4962fa30f283a2cc027dda1c446af928d5bc56641e22540ac998",
+      "size_bytes": 312
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/08_reports/stage05c_batch_selection.md",
+      "sha256": "sha256:42d5526047b8c09fc0730630a18baf39e175a6005df86426ee14df37df2eb19c",
+      "size_bytes": 378
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/08_reports/stage05c_coordinate_and_block_fd.md",
+      "sha256": "sha256:af9219df944827fb91599150cc7d03be49d4affce3b027333014bfff2820bdc4",
+      "size_bytes": 1044
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/08_reports/stage05c_final_report.md",
+      "sha256": "sha256:f083bd6a74c4c2a83d9393974f878f9dee2059bfdecf76ac6755e3c902eb3ba5",
+      "size_bytes": 469
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/08_reports/stage05c_freeze_and_scope.md",
+      "sha256": "sha256:8367bb93d83587b41d37fa1836949383bc2f7cbf06faf0d81d1226f3f066fa44",
+      "size_bytes": 471
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/08_reports/stage05c_full_gradient_evidence.md",
+      "sha256": "sha256:2459d398b82d1e607b5a1bafa73ac1744cd34fe6075a3a533758a7116853027b",
+      "size_bytes": 392
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/08_reports/stage05c_local_descent.md",
+      "sha256": "sha256:4b981524ce426210d93f6730dc59978a38260f1971ddf0e87b50b1dfbc5fdb44",
+      "size_bytes": 318
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/08_reports/stage05c_model_and_parameter_groups.md",
+      "sha256": "sha256:e4f5cd849b7185229d11396528cc3e08c1a4d800197b550b6d4744e15a82a2a1",
+      "size_bytes": 367
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/08_reports/stage05c_qualification_report.md",
+      "sha256": "sha256:05b02e02b294bab4aee08c81eda52c271f9f8397103cc4dc411d5ab35e44a884",
+      "size_bytes": 492
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/08_reports/stage05c_resolution_diagnostics.md",
+      "sha256": "sha256:082ce84ca2f4a2e7764e47945a07ca5a9543327263e1a928d65be43bf3e3f7d6",
+      "size_bytes": 445
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/08_reports/stage05c_resource_audit.md",
+      "sha256": "sha256:3eb2e7c73e1f6e6286a1faae6d6a429c3216e88ba418474f7a47c5926d6c0e32",
+      "size_bytes": 596
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/08_reports/stage05c_reverse_jvp.md",
+      "sha256": "sha256:10dc022cd31f90176eceebe86c18fa4944b31aa37817b680b5e3b1ee7306fb53",
+      "size_bytes": 209
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/08_reports/stage05c_structure_and_safety.md",
+      "sha256": "sha256:df73adb1162525bcf746a491d5cf089207f1ca4572e6710c8c4bb1776aed30ef",
+      "size_bytes": 809
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05c_batch_manifest.json",
+      "sha256": "sha256:f6fc29f5f6bc430d7993b818bbe5bcc1575818eb6da2af4567bb57b7be521412",
+      "size_bytes": 417
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05c_contract_manifest.json",
+      "sha256": "sha256:6c1db6a7d39b4c3a9117bf65297059f147d1d81705672795eff29b7c9ceef712",
+      "size_bytes": 424
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05c_gradient_manifest.json",
+      "sha256": "sha256:b1e1489530585eb607e4d25a6da2fb7e3b1b324e191195cac20b9552ecd3521d",
+      "size_bytes": 2384
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05c_input_freeze_manifest.json",
+      "sha256": "sha256:c28531aa72647346e2110778d1a39fb357f7e4698484700b7a132f8ec750b424",
+      "size_bytes": 5643
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05c_local_descent_manifest.json",
+      "sha256": "sha256:34d39eff46f04cea02ae311aaee735cc86ef5291c668b7b86ee93d4ab11cab0a",
+      "size_bytes": 279
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05c_model_manifest.json",
+      "sha256": "sha256:85519852e95afa72ecefd9adb93a006aa1b8f28d27818ee7007b6186eccab20c",
+      "size_bytes": 9747
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05c_parameter_group_manifest.json",
+      "sha256": "sha256:6ddf2fb6580d722aa955c11c2dfcbecf0643eb27e42e6bb480081bec746a66e5",
+      "size_bytes": 446
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05c_probe_manifest.json",
+      "sha256": "sha256:bf823f4c14c377e48669783591ea39116000d8e952fcde0288272ecc13d139d1",
+      "size_bytes": 1776
+    }
+  ],
+  "contract_sha256": "sha256:829adb1d62c1bd8310d51f8b59b91c78d959646a4185fcfb7458580979382589",
+  "decode_counts": {
+    "sealed_formula_decode_count": 0,
+    "sealed_origin_decode_count": 0,
+    "sealed_source_decode_count": 0,
+    "sealed_state_decode_count": 0,
+    "sealed_target_decode_count": 0,
+    "train_target_json_decode_count": 48,
+    "train_target_npz_decode_count": 384,
+    "train_trajectory_json_decode_count": 24,
+    "train_trajectory_npz_decode_count": 24,
+    "validation_state_decode_count": 0,
+    "validation_target_decode_count": 0
+  },
+  "failed_hard_gates": [
+    "F_coordinate_block_FD"
+  ],
+  "hard_gates": {
+    "A_historical_freeze": true,
+    "B_access": true,
+    "C_model_fairness": true,
+    "D_full_gradients": true,
+    "E_reverse_JVP": true,
+    "F_coordinate_block_FD": false,
+    "G_local_descent": true,
+    "H_structure_safety": true,
+    "I_resources_provenance": true,
+    "J_prohibitions": true
+  },
+  "overall_pass": false,
+  "prohibitions": {
+    "neural_rollouts": 0,
+    "optimizer_instances": 0,
+    "optimizer_steps": 0,
+    "performance_evaluations": 0,
+    "persistent_parameter_updates": 0,
+    "training_runs": 0
+  },
+  "schema": "sph-pio-poc.stage05c.final-manifest.v1",
+  "stage05d_authorized": false,
+  "terminal_status": "OPTIMIZER_ALIGNED_DEFECT_GRADIENT_AND_LOCAL_DESCENT_NOT_QUALIFIED"
+}

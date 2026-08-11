@@ -1,0 +1,33 @@
+{
+  "D0_state_hash": "sha256:f2bce175a35326b71ca17454b81ee904345132563b567954269423dc741eea4a",
+  "N": 8,
+  "array_hashes": {
+    "a_cm": "sha256:6b7970fcdb77baf186d842433f39eb22aa83e3151b1724404635e732b8f028de",
+    "a_cons": "sha256:5de0ff1f493193a1bae1311b4d0bc465986184f44ca69427a4d2b21926c405f1",
+    "a_def": "sha256:3a5ee779e18f360a66b1abbda20466506ac58b87e201be118b1d3fd84ce54441",
+    "a_incompatible": "sha256:305a424f7bb89e1bc8e8ec0f0c5d0d7b92a5ebf2b4fad84f9acd1add22e06444",
+    "y_def": "sha256:5f4c257373344c56b629aec7a034ed1097dccd0b1673288ae197a285644f8758"
+  },
+  "canonical_sha256": "sha256:501e2a65736dd07882731281c83acd19e5f5fc3ba69e15456bfe4b6cc2c50362",
+  "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_LOW_N8_O15.npz",
+  "case_cache_sha256": "sha256:5b527a1ceaa035667944fbbffdca04cd93f5062931c6b93a6fbc338c2d40c8be",
+  "dt": 0.000390625,
+  "lineage": "LCDF_09",
+  "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_LOW_N8_O15.npz",
+  "npz_sha256": "sha256:daba9f7d28bb37ca02ee3c2176da2aeba388d648b0a73fa17e2149d0dcf00009",
+  "origin": 15,
+  "qualification_verdict": "QUALIFIED_STAGE06B_VALIDATION",
+  "record_id": "LCDF_09_VARIANT_LOW_N8_O15",
+  "reference_accepted_hash": "sha256:dced4a0633f2cef5077713a8ef98ec5f0255044e723bc99e38011dd567cf43c5",
+  "reference_history_hashes": [
+    "sha256:c3715083558c6ecfc899b3f78ec8a08b113d00a2bb53566881059aac6f7cb012",
+    "sha256:780e6e3ee1e21ad492bd754a30a469d987b9e287bd6240842cb69cce5157c512",
+    "sha256:7f9b977c699942d6fd403985888def2983458127a2812e0a6fa311821120d895",
+    "sha256:afe15f745fc500c2754f1c5e7f87e572f330cc3850a3f22f17fca1b53f3ec399"
+  ],
+  "s_a": 0.3456328553384328,
+  "s_a_source": "frozen_STAGE05B_TRAIN_scale",
+  "schema": "sph-pio-poc.stage06b.validation-target-record.v1",
+  "validation_did_not_modify_scale": true,
+  "variant": "VARIANT_LOW"
+}

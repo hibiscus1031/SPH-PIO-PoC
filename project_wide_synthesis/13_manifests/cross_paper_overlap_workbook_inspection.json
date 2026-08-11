@@ -1,0 +1,27 @@
+{
+  "ndjson": "{\"kind\":\"sheet\",\"id\":\"ws/ilv6pw\",\"name\":\"Overlap Matrix\",\"index\":0,\"range\":\"A1:D17\",\"address\":\"A1:D17\"}\n{\"kind\":\"region\",\"sheet\":\"Overlap Matrix\",\"address\":\"A4:D17\",\"rows\":14,\"cols\":4,\"nonEmpty\":56,\"text\":56,\"maxTextLength\":33,\"preview\":[[\"Item\",\"Paper 1 role\",\"Paper 2 role\",\"Anti-duplication rule\"],[\"equations\",\"SHARED_BACKGROUND_ONLY\",\"PAPER_2_PRIMARY\",\"基础方程可简述并交叉引用；不重复完整推导\"],[\"reference\",\"PAPER_1_PRIMARY\",\"SHARED_BACKGROUND_ONLY\",\"Paper2仅引入训练所需摘要\"],[\"architecture\",\"PAPER_1_PRIMARY\",\"SHARED_BACKGROUND_ONLY\",\"结构合同一次作为主贡献\"],[\"zero correction\",\"PAPER_1_PRIMARY\",\"SUPPLEMENT_ONLY\",\"Paper2不得再次作为主创新\"],[\"AD/FD\",\"PAPER_1_PRIMARY\",\"SHARED_BACKGROUND_ONLY\",\"Stage04新task-aligned梯度可属Paper2\"],[\"topology\",\"PAPER_1_PRIMARY\",\"SUPPLEMENT_ONLY\",\"相同TE1结果不可重复\"],[\"dataset\",\"SUPPLEMENT_ONLY\",\"PAPER_2_PRIMARY\",\"Paper1讲资格原则，Paper2讲Stage04训练数据\"],[\"training\",\"CANNOT_REPEAT\",\"PAPER_2_PRIMARY\",\"Paper1明确NOT_EXECUTED\"],[\"rollout\",\"CANNOT_REPEAT\",\"PAPER_2_PRIMARY\",\"Paper1不得有性能结论\"],[\"validation\",\"SHARED_BACKGROUND_ONLY\",\"PAPER_2_PRIMARY\",\"Stage01独立验证只作边界；Stage04新验证为Paper2\"],[\"figures\",\"DUPLICATION_RISK\",\"DUPLICATION_RISK\",\"同一图不在两篇重复；只允许重新绘制共享背景小图\"],[\"tables\",\"DUPLICATION_RISK\",\"DUPLICATION_RISK\",\"状态表与性能表分属不同论文\"],[\"conclusions\",\"PAPER_1_PRIMARY\",\"PAPER_2_PRIMARY\",\"Paper1结论是资格边界；Paper2结论是性能与效用\"]],\"previewAddress\":\"A4:D17\",\"previewRows\":14,\"previewCols\":4}\n{\"kind\":\"sheet\",\"id\":\"ws/gej3e3\",\"name\":\"Label Definitions\",\"index\":1,\"range\":\"A1:C9\",\"address\":\"A1:C9\"}\n{\"kind\":\"region\",\"sheet\":\"Label Definitions\",\"address\":\"A3:C9\",\"rows\":7,\"cols\":3,\"nonEmpty\":21,\"text\":21,\"maxTextLength\":22,\"preview\":[[\"Label\",\"Operational meaning\",\"Publication constraint\"],[\"PAPER_1_PRIMARY\",\"Paper 1的主要结果/贡献\",\"Paper 2只能最小背景引用\"],[\"PAPER_2_PRIMARY\",\"Paper 2的主要新结果/贡献\",\"Paper 1不得预先声称\"],[\"SHARED_BACKGROUND_ONLY\",\"两篇都可最小化介绍\",\"不得重复完整推导/结果\"],[\"SUPPLEMENT_ONLY\",\"仅补充材料或审计用途\",\"不得作为双稿主贡献\"],[\"DUPLICATION_RISK\",\"高重复风险\",\"投稿前必须人工逐图逐表核对\"],[\"CANNOT_REPEAT\",\"该稿不得出现为结果\",\"仅可明确NOT_EXECUTED或引用\"]],\"previewAddress\":\"A3:C9\",\"previewRows\":7,\"previewCols\":3}\n{\"kind\":\"sheet\",\"id\":\"ws/c87kgt\",\"name\":\"Decision Guide\",\"index\":2,\"range\":\"A1:B9\",\"address\":\"A1:B9\",\"formulas\":4}\n{\"kind\":\"region\",\"sheet\":\"Decision Guide\",\"address\":\"A3:B9\",\"rows\":7,\"cols\":2,\"nonEmpty\":14,\"text\":14,\"maxTextLength\":75,\"preview\":[[\"Control\",\"Workbook formula / interpretation\"],[\"Duplication-risk rows\",\"4\"],[\"Cannot-repeat rows\",\"2\"],[\"Paper 1 primary rows\",\"6\"],[\"Paper 2 primary rows\",\"6\"],[\"Hard rule\",\"Same frozen result can be primary in only one paper.\"],[\"Decision\",\"If Paper 2 lacks independent Stage 04 evidence, merge or keep Paper 1 only.\"]],\"previewAddress\":\"A3:B9\",\"previewRows\":7,\"previewCols\":2}\n{\"kind\":\"formula\",\"sheet\":\"Decision Guide\",\"address\":\"B4\",\"formula\":\"=COUNTIF('Overlap Matrix'!B5:C17,\\\"DUPLICATION_RISK\\\")\"}\n{\"kind\":\"formula\",\"sheet\":\"Decision Guide\",\"address\":\"B5\",\"formula\":\"=COUNTIF('Overlap Matrix'!B5:C17,\\\"CANNOT_REPEAT\\\")\"}\n{\"kind\":\"formula\",\"sheet\":\"Decision Guide\",\"address\":\"B6\",\"formula\":\"=COUNTIF('Overlap Matrix'!B5:C17,\\\"PAPER_1_PRIMARY\\\")\"}\n{\"kind\":\"formula\",\"sheet\":\"Decision Guide\",\"address\":\"B7\",\"formula\":\"=COUNTIF('Overlap Matrix'!B5:C17,\\\"PAPER_2_PRIMARY\\\")\"}",
+  "truncated": false,
+  "metadata": {
+    "revision": "eall25",
+    "target": {
+      "id": "wb/dw08fp",
+      "beforeLines": 0,
+      "afterLines": 0
+    },
+    "kind": {
+      "requested": "sheet,formula,region",
+      "tokens": [
+        "sheet",
+        "formula",
+        "region"
+      ]
+    },
+    "include": {
+      "tokens": []
+    },
+    "exclude": {
+      "tokens": []
+    },
+    "notices": []
+  }
+}

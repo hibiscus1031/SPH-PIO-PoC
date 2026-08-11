@@ -1,0 +1,206 @@
+{
+  "artifacts": {
+    "access_contract": {
+      "bytes": 11909,
+      "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/access_control/fresh_validation_access_contract.json",
+      "sha256": "sha256:49bdd90ad22ca57ee14014744a705c0051426c1b3391f4d33bb6bbaba64ae440"
+    },
+    "batches": {
+      "bytes": 3603437,
+      "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/train_v2_batch_schedule/formal_train_v2_batch_schedule.json",
+      "sha256": "sha256:c26f77cc794ca87a1103bd55eee87d19113c639a292603dc6b3ab114a260f526"
+    },
+    "models": {
+      "bytes": 9588,
+      "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/model_seed_schedule/formal_model_seed_schedule.json",
+      "sha256": "sha256:b4005346bd88cf0ff25c2b83a913071d4a6d9e0b1fa29c512ee9187a2a580259"
+    },
+    "protocol": {
+      "bytes": 11304,
+      "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/contracts/formal_train_v2_k1_retraining_protocol_v0_1.yaml",
+      "sha256": "sha256:21b52f0aca3791cdc0d58165f1edd980667bafe0eee5a9d52544c24a8f518dbb"
+    },
+    "scheduler": {
+      "bytes": 219842,
+      "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/optimizer_schedule/formal_scheduler_values.json",
+      "sha256": "sha256:0ef3f4e41b752137ed31ba683f6fdf4963b7bf9e37a815f5ab3107f0602a1fd5"
+    }
+  },
+  "authorization_status": "TRAIN_V2_DEFECT_SCALE_AND_ACTUAL_OPTIMIZER_UPDATE_QUALIFIED",
+  "decode_counts_at_freeze": {
+    "consumed_validation": 0,
+    "fresh_formula_private": 0,
+    "fresh_origin": 0,
+    "fresh_source": 0,
+    "fresh_state": 0,
+    "fresh_target": 0,
+    "sealed_formula": 0,
+    "sealed_origin": 0,
+    "sealed_source": 0,
+    "sealed_state": 0,
+    "sealed_target": 0
+  },
+  "execution_counts_at_freeze": {
+    "formal_optimizer_steps": 0,
+    "formal_parameter_updates": 0,
+    "formal_training_runs": 0,
+    "rollouts": 0,
+    "saved_training_checkpoints": 0,
+    "sealed_test_evaluations": 0
+  },
+  "fresh_validation": [
+    "HET_S1_01",
+    "HET_S2_02",
+    "HET_S3_03",
+    "HET_S4_03"
+  ],
+  "fresh_validation_decode_count_at_freeze": 0,
+  "historical_checkpoint_audit": {
+    "bytes": 229709,
+    "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/freeze/historical_checkpoint_audit.json",
+    "sha256": "sha256:1a7ea7cbbe2748e478827bd085a047712c0d5ce9918c14a71951ff5f3ff6ba4d"
+  },
+  "historical_hashes_unchanged": true,
+  "historical_inputs": [
+    {
+      "bytes": 1364,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07a_final_report.md",
+      "sha256": "sha256:0418c771b6619e85f431b930adf778d4d824153433a2e5d2eb325f50e6ed5961"
+    },
+    {
+      "bytes": 3647,
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07a_role_manifest.json",
+      "sha256": "sha256:2cab2e1ef75d0e59d3e185d3d33c8df5244d40bf5e05be76d6af97b851e4b71d"
+    },
+    {
+      "bytes": 25778,
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07a_validation_seal_manifest.json",
+      "sha256": "sha256:6cb86ec112cb4a3c406306058570bd564002336d781057488057fdb396031786"
+    },
+    {
+      "bytes": 4510,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07b_final_report.md",
+      "sha256": "sha256:ed7b5df532aab4284a98354191efe55ad8939d10f35d8c9d58b8974cbe2536ce"
+    },
+    {
+      "bytes": 6008,
+      "path": "stage_07_Heterogeneous_Development_Pool/02_defect_scale_requalification/stage07b/contracts/train_v2_defect_scale_optimizer_requalification_v0_1.yaml",
+      "sha256": "sha256:1056cc069e27696ee0451896497f95923edd18c9568e4fcaa3b73c504cb26504"
+    },
+    {
+      "bytes": 589334,
+      "path": "stage_07_Heterogeneous_Development_Pool/02_defect_scale_requalification/stage07b/manifests/target_record_manifest.json",
+      "sha256": "sha256:9672352d3a9ee0798d86a52a92151167c3bb83ddb38e5eef1e31e491fa1d4198"
+    },
+    {
+      "bytes": 466,
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07b_scale_manifest.json",
+      "sha256": "sha256:54ae81ff0450d45f04bd7661aee1264923e22f138a23e7830d4233c0f39bb49d"
+    },
+    {
+      "bytes": 636,
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07b_uncertainty_manifest.json",
+      "sha256": "sha256:6b4fd2c8f78dc717c2dd91128bff0d7947861f55b07666c063eee4fbf225842e"
+    },
+    {
+      "bytes": 59762,
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07b_update_manifest.json",
+      "sha256": "sha256:7cdac97d463f4dec6086bdab4042a9313d6146186a3af4570ebb008eaed449c8"
+    },
+    {
+      "bytes": 11126,
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07b_final_manifest.json",
+      "sha256": "sha256:e603b772e235136bde879fcf2c3b577b84450ca348fcf18343ebc3522c2af988"
+    },
+    {
+      "bytes": 6404,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/contracts/formal_k1_defect_training_protocol_v0_1.yaml",
+      "sha256": "sha256:b7918bde82b104895b6d47c798801608938c661c3f8b249f4c832c98c3a83cbe"
+    },
+    {
+      "bytes": 166767,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/09_manifests/stage06b_final_manifest.json",
+      "sha256": "sha256:ca97bd1639d90c57f06b64e17934751276ab0537210a10a6949f5149aa5466fd"
+    },
+    {
+      "bytes": 4373,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/09_manifests/stage06c_final_manifest.json",
+      "sha256": "sha256:b3e6bad8e7cd9e11ef95ff502e18bd458b0bbf7488a479a09936e792db4474d4"
+    },
+    {
+      "bytes": 151882,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/09_manifests/stage06c_checkpoint_manifest.json",
+      "sha256": "sha256:e806070f05c31ffb9f0f5a865a1937812581f11c588815e4118899f8221b0d52"
+    },
+    {
+      "bytes": 3934,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/09_manifests/stage06c_selected_checkpoint_manifest.json",
+      "sha256": "sha256:dc0653834ed04ae1fe7ba00294b4f5b2b095e09ebd92beba0cae894b8bb29984"
+    },
+    {
+      "bytes": 21325,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/09_manifests/stage06cr_final_manifest.json",
+      "sha256": "sha256:4b029d27802414428015957a4b31d075276787c6ddbd248f17b293e57ae1d936"
+    },
+    {
+      "bytes": 3969,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/09_manifests/stage06cr_attribution_manifest.json",
+      "sha256": "sha256:53289bd889738a74f7e22c81c5b4b89fc637de7e61f93d935daadbcb8627bbd9"
+    },
+    {
+      "bytes": 4168,
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05a_final_manifest.json",
+      "sha256": "sha256:2911f69509daae2c908cec2860db45942725231efbf787061d9cad345b1f6939"
+    },
+    {
+      "bytes": 2760,
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05b_final_manifest.json",
+      "sha256": "sha256:f3ad68457eee7341c88160a544e7d57dec757e7eed7ce36ff08d0e50c26eb0d0"
+    },
+    {
+      "bytes": 47031,
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05c_final_manifest.json",
+      "sha256": "sha256:d4f1eb706d7491eb56bb5298837ff9026b279bc44d95e1868b9823e1f8e60882"
+    },
+    {
+      "bytes": 48901,
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05cq_final_manifest.json",
+      "sha256": "sha256:4b47d362b453202a38d5145aaf7749debfb988cffcbf1595b5e218e9f5c3e619"
+    },
+    {
+      "bytes": 6186,
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05cr/manifests/stage05cr_final_manifest.json",
+      "sha256": "sha256:123da7b7b0e22c076c2724b1536bc2bef8b72bced3d3e985921f7054c26f8335"
+    },
+    {
+      "bytes": 26266,
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_test_seal_manifest.json",
+      "sha256": "sha256:f3fc8bc263b5cd0862aad21e6331e280bff59fa70df5d2dd172491ee9ed438a5"
+    }
+  ],
+  "minimum_release_count": 41,
+  "pass": true,
+  "private_artifact_count": 89,
+  "protocol": {
+    "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/contracts/formal_train_v2_k1_retraining_protocol_v0_1.yaml",
+    "sha256": "sha256:21b52f0aca3791cdc0d58165f1edd980667bafe0eee5a9d52544c24a8f518dbb"
+  },
+  "protocol_frozen_before_fresh_validation_decode": true,
+  "schema": "sph-pio-poc.stage07c.input-freeze.v1",
+  "train_v2": [
+    "LCDF_01",
+    "LCDF_04",
+    "LCDF_05",
+    "LCDF_06",
+    "LCDF_07",
+    "LCDF_08",
+    "HET_S1_02",
+    "HET_S1_03",
+    "HET_S2_01",
+    "HET_S2_03",
+    "HET_S3_01",
+    "HET_S3_02",
+    "HET_S4_01",
+    "HET_S4_02"
+  ]
+}

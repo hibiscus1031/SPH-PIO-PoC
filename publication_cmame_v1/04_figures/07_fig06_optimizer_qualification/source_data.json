@@ -1,0 +1,5043 @@
+{
+  "figure": "fig06",
+  "title": "Gradient evidence and actual optimizer-path qualification",
+  "frozen_evidence_only": true,
+  "new_scientific_computation": false,
+  "display_data": {
+    "full_gradient": {
+      "active_rows": 216,
+      "deterministic_repeat_rows": 216,
+      "finite_rows": 216,
+      "group_lineage_seed_count": 216,
+      "group_lineage_seed_pass_count": 214,
+      "loss_repeat_exact_contexts": 54,
+      "observed_rows": 216,
+      "parameter_group_aggregation_pass": true,
+      "parameter_unchanged_contexts": 54,
+      "pass": true,
+      "required_group_lineage_seed_rows": 216
+    },
+    "reverse_jvp": {
+      "genuine_forward_jvp": true,
+      "observed_probe_count": 1080,
+      "pass": true,
+      "pass_count": 1080,
+      "required_probe_count": 1080
+    },
+    "coordinate_historical": {
+      "FD_path_count": 25920,
+      "all_paths_deterministic": true,
+      "all_paths_safe": true,
+      "all_paths_topology_unchanged": true,
+      "failed_probe_count": 4,
+      "failed_probes": [
+        {
+          "arm": "D1",
+          "group": "D1_TOKEN_ENCODER",
+          "kind": "coordinate",
+          "lineage": "LCDF_07",
+          "reverse_jvp_pass": true,
+          "seed": 20500502,
+          "selection_key": "sha256:3e83f230a85ff39ee97ea8f9964fa11ad2668f84291c8bbce244ccf2ca8526f8",
+          "smooth_epsilon_count": 6,
+          "stable_window": false
+        },
+        {
+          "arm": "D1",
+          "group": "D1_TOKEN_ENCODER",
+          "kind": "block",
+          "lineage": "LCDF_07",
+          "reverse_jvp_pass": true,
+          "seed": 20500502,
+          "selection_key": "sha256:1cc6c29e128dae209787d9e95468f6a3cd675beed7c7b403b94a62da2564eb92",
+          "smooth_epsilon_count": 6,
+          "stable_window": false
+        },
+        {
+          "arm": "D2",
+          "group": "D2_PAIR_HEAD",
+          "kind": "coordinate",
+          "lineage": "LCDF_06",
+          "reverse_jvp_pass": true,
+          "seed": 20500503,
+          "selection_key": "sha256:9fb0443d1cbac82cd765f6a2642297e9307a89a07034f0f68d4079762a228a69",
+          "smooth_epsilon_count": 6,
+          "stable_window": false
+        },
+        {
+          "arm": "D2",
+          "group": "D2_PAIR_HEAD",
+          "kind": "coordinate",
+          "lineage": "LCDF_06",
+          "reverse_jvp_pass": true,
+          "seed": 20500503,
+          "selection_key": "sha256:b0aa122c427bea6da621fd27751034f17184b92e878ee50c76afe36044b59fb7",
+          "smooth_epsilon_count": 6,
+          "stable_window": false
+        }
+      ],
+      "pass": false,
+      "required_probe_count": 1080,
+      "stable_probe_count": 1076
+    },
+    "coordinate_blind": {
+      "arms": [
+        {
+          "arm": "D1",
+          "group_count": 2,
+          "pass": false,
+          "passing_group_count": 1,
+          "raw_pass_or_consistent_rate": 0.9930555555555556,
+          "raw_rate_gate": true
+        },
+        {
+          "arm": "D2",
+          "group_count": 3,
+          "pass": false,
+          "passing_group_count": 2,
+          "raw_pass_or_consistent_rate": 0.9953703703703703,
+          "raw_rate_gate": true
+        },
+        {
+          "arm": "D3",
+          "group_count": 7,
+          "pass": true,
+          "passing_group_count": 7,
+          "raw_pass_or_consistent_rate": 0.998015873015873,
+          "raw_rate_gate": true
+        }
+      ],
+      "classification_counts": {
+        "FD_WINDOW_MISSING": 6,
+        "NEAR_ZERO_CONSISTENT": 4,
+        "NONDETERMINISTIC": 0,
+        "PASS": 1718,
+        "SAFETY_FAIL": 0,
+        "SIGN_OR_MAPPING_CONTRADICTION": 0,
+        "TOPOLOGY_CHANGED": 0
+      },
+      "failure_count": 6,
+      "failures": [
+        {
+          "arm": "D1",
+          "classification": "FD_WINDOW_MISSING",
+          "group": "D1_PAIR_HEAD",
+          "kind": "coordinate",
+          "lineage": "LCDF_06",
+          "seed": 20500522,
+          "selection_key": "sha256:a4b939ec0f38b99571fca116758d385016f11db7116779e451bc816c0f88fc61",
+          "tensor_slices": [
+            "pair_head.hidden_1.weight"
+          ]
+        },
+        {
+          "arm": "D1",
+          "classification": "FD_WINDOW_MISSING",
+          "group": "D1_PAIR_HEAD",
+          "kind": "coordinate",
+          "lineage": "LCDF_06",
+          "seed": 20500522,
+          "selection_key": "sha256:c5b3322ea469b6282dafd5c2757a0881c5b377dde85c931d266c47f50cf679d1",
+          "tensor_slices": [
+            "pair_head.hidden_1.weight"
+          ]
+        },
+        {
+          "arm": "D2",
+          "classification": "FD_WINDOW_MISSING",
+          "group": "D2_PAIR_HEAD",
+          "kind": "coordinate",
+          "lineage": "LCDF_06",
+          "seed": 20500521,
+          "selection_key": "sha256:34fbf73aa8c0221cfb3a588c0669b0e28f125448eb2467533505fff4a12c7dbc",
+          "tensor_slices": [
+            "pair_head.hidden_1.weight"
+          ]
+        },
+        {
+          "arm": "D2",
+          "classification": "FD_WINDOW_MISSING",
+          "group": "D2_PAIR_HEAD",
+          "kind": "coordinate",
+          "lineage": "LCDF_06",
+          "seed": 20500523,
+          "selection_key": "sha256:62f4722bdc8bce75d9966a8aeb335101871f8ef7dda3bfe5587d60bfdd7a3cb0",
+          "tensor_slices": [
+            "pair_head.hidden_1.weight"
+          ]
+        },
+        {
+          "arm": "D3",
+          "classification": "FD_WINDOW_MISSING",
+          "group": "D3_PAIR_HEAD",
+          "kind": "coordinate",
+          "lineage": "LCDF_01",
+          "seed": 20500521,
+          "selection_key": "sha256:a013995b33970f2bcc8c426c1c141655acd41ff69dcff5f15a3195ecc086b798",
+          "tensor_slices": [
+            "pair_head.hidden_1.weight"
+          ]
+        },
+        {
+          "arm": "D3",
+          "classification": "FD_WINDOW_MISSING",
+          "group": "D3_PAIR_HEAD",
+          "kind": "coordinate",
+          "lineage": "LCDF_06",
+          "seed": 20500523,
+          "selection_key": "sha256:823f17db030aa9c007e8f096e0ca94164ef3b4b2a1fc203c15589eeb830d717f",
+          "tensor_slices": [
+            "pair_head.hidden_1.weight"
+          ]
+        }
+      ],
+      "forbidden_classification_count": 0,
+      "group_lineages": [
+        {
+          "arm": "D1",
+          "group": "D1_TOKEN_ENCODER",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D1",
+          "group": "D1_TOKEN_ENCODER",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D1",
+          "group": "D1_TOKEN_ENCODER",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D1",
+          "group": "D1_TOKEN_ENCODER",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D1",
+          "group": "D1_TOKEN_ENCODER",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D1",
+          "group": "D1_TOKEN_ENCODER",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D1",
+          "group": "D1_PAIR_HEAD",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D1",
+          "group": "D1_PAIR_HEAD",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D1",
+          "group": "D1_PAIR_HEAD",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D1",
+          "group": "D1_PAIR_HEAD",
+          "lineage": "LCDF_06",
+          "pass": false,
+          "pass_or_consistent_count": 22,
+          "passing_seed_count": 2,
+          "probe_count": 24,
+          "raw_23_of_24_pass": false,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D1",
+          "group": "D1_PAIR_HEAD",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D1",
+          "group": "D1_PAIR_HEAD",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D2",
+          "group": "D2_TOKEN_ENCODER",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D2",
+          "group": "D2_TOKEN_ENCODER",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D2",
+          "group": "D2_TOKEN_ENCODER",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D2",
+          "group": "D2_TOKEN_ENCODER",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D2",
+          "group": "D2_TOKEN_ENCODER",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D2",
+          "group": "D2_TOKEN_ENCODER",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D2",
+          "group": "D2_GRU",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D2",
+          "group": "D2_GRU",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D2",
+          "group": "D2_GRU",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D2",
+          "group": "D2_GRU",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D2",
+          "group": "D2_GRU",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D2",
+          "group": "D2_GRU",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D2",
+          "group": "D2_PAIR_HEAD",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D2",
+          "group": "D2_PAIR_HEAD",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D2",
+          "group": "D2_PAIR_HEAD",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D2",
+          "group": "D2_PAIR_HEAD",
+          "lineage": "LCDF_06",
+          "pass": false,
+          "pass_or_consistent_count": 22,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": false,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D2",
+          "group": "D2_PAIR_HEAD",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D2",
+          "group": "D2_PAIR_HEAD",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_TOKEN_ENCODER",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_TOKEN_ENCODER",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_TOKEN_ENCODER",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_TOKEN_ENCODER",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_TOKEN_ENCODER",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_TOKEN_ENCODER",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_Q",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_Q",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_Q",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_Q",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_Q",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_Q",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_K",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_K",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_K",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_K",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_K",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_K",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_V",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_V",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_V",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_V",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_V",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_V",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_O",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_O",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_O",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_O",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_O",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_O",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_FEED_FORWARD",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_FEED_FORWARD",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_FEED_FORWARD",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_FEED_FORWARD",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_FEED_FORWARD",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_FEED_FORWARD",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_PAIR_HEAD",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 23,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_PAIR_HEAD",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_PAIR_HEAD",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_PAIR_HEAD",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 23,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_PAIR_HEAD",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        },
+        {
+          "arm": "D3",
+          "group": "D3_PAIR_HEAD",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 24,
+          "passing_seed_count": 3,
+          "probe_count": 24,
+          "raw_23_of_24_pass": true,
+          "seed_aggregation_pass": true,
+          "seed_count": 3
+        }
+      ],
+      "groups": [
+        {
+          "arm": "D1",
+          "group": "D1_TOKEN_ENCODER",
+          "lineage_count": 6,
+          "pass": true,
+          "passing_lineage_count": 6,
+          "raw_pass_or_consistent_rate": 1.0,
+          "raw_rate_gate": true
+        },
+        {
+          "arm": "D1",
+          "group": "D1_PAIR_HEAD",
+          "lineage_count": 6,
+          "pass": false,
+          "passing_lineage_count": 5,
+          "raw_pass_or_consistent_rate": 0.9861111111111112,
+          "raw_rate_gate": true
+        },
+        {
+          "arm": "D2",
+          "group": "D2_TOKEN_ENCODER",
+          "lineage_count": 6,
+          "pass": true,
+          "passing_lineage_count": 6,
+          "raw_pass_or_consistent_rate": 1.0,
+          "raw_rate_gate": true
+        },
+        {
+          "arm": "D2",
+          "group": "D2_GRU",
+          "lineage_count": 6,
+          "pass": true,
+          "passing_lineage_count": 6,
+          "raw_pass_or_consistent_rate": 1.0,
+          "raw_rate_gate": true
+        },
+        {
+          "arm": "D2",
+          "group": "D2_PAIR_HEAD",
+          "lineage_count": 6,
+          "pass": false,
+          "passing_lineage_count": 5,
+          "raw_pass_or_consistent_rate": 0.9861111111111112,
+          "raw_rate_gate": true
+        },
+        {
+          "arm": "D3",
+          "group": "D3_TOKEN_ENCODER",
+          "lineage_count": 6,
+          "pass": true,
+          "passing_lineage_count": 6,
+          "raw_pass_or_consistent_rate": 1.0,
+          "raw_rate_gate": true
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_Q",
+          "lineage_count": 6,
+          "pass": true,
+          "passing_lineage_count": 6,
+          "raw_pass_or_consistent_rate": 1.0,
+          "raw_rate_gate": true
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_K",
+          "lineage_count": 6,
+          "pass": true,
+          "passing_lineage_count": 6,
+          "raw_pass_or_consistent_rate": 1.0,
+          "raw_rate_gate": true
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_V",
+          "lineage_count": 6,
+          "pass": true,
+          "passing_lineage_count": 6,
+          "raw_pass_or_consistent_rate": 1.0,
+          "raw_rate_gate": true
+        },
+        {
+          "arm": "D3",
+          "group": "D3_ATTENTION_O",
+          "lineage_count": 6,
+          "pass": true,
+          "passing_lineage_count": 6,
+          "raw_pass_or_consistent_rate": 1.0,
+          "raw_rate_gate": true
+        },
+        {
+          "arm": "D3",
+          "group": "D3_FEED_FORWARD",
+          "lineage_count": 6,
+          "pass": true,
+          "passing_lineage_count": 6,
+          "raw_pass_or_consistent_rate": 1.0,
+          "raw_rate_gate": true
+        },
+        {
+          "arm": "D3",
+          "group": "D3_PAIR_HEAD",
+          "lineage_count": 6,
+          "pass": true,
+          "passing_lineage_count": 6,
+          "raw_pass_or_consistent_rate": 0.9861111111111112,
+          "raw_rate_gate": true
+        }
+      ],
+      "observed_probe_count": 1728,
+      "pass": false,
+      "pass_or_consistent_count": 1722,
+      "repeated_failure_classes_across_two_or_more_seeds": [
+        {
+          "arm": "D2",
+          "group": "D2_PAIR_HEAD",
+          "identity": "coordinate",
+          "identity_type": "probe_class",
+          "seeds": [
+            20500521,
+            20500523
+          ]
+        },
+        {
+          "arm": "D2",
+          "group": "D2_PAIR_HEAD",
+          "identity": "pair_head.hidden_1.weight",
+          "identity_type": "tensor_slice",
+          "seeds": [
+            20500521,
+            20500523
+          ]
+        },
+        {
+          "arm": "D3",
+          "group": "D3_PAIR_HEAD",
+          "identity": "coordinate",
+          "identity_type": "probe_class",
+          "seeds": [
+            20500521,
+            20500523
+          ]
+        },
+        {
+          "arm": "D3",
+          "group": "D3_PAIR_HEAD",
+          "identity": "pair_head.hidden_1.weight",
+          "identity_type": "tensor_slice",
+          "seeds": [
+            20500521,
+            20500523
+          ]
+        }
+      ],
+      "required_probe_count": 1728,
+      "reverse_jvp_pass_count": 1728,
+      "seed_contexts": [
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_PAIR_HEAD",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_PAIR_HEAD",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_PAIR_HEAD",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_PAIR_HEAD",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_PAIR_HEAD",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_PAIR_HEAD",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_PAIR_HEAD",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_PAIR_HEAD",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_PAIR_HEAD",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_PAIR_HEAD",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_PAIR_HEAD",
+          "lineage": "LCDF_06",
+          "pass": false,
+          "pass_or_consistent_count": 6,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 6
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_PAIR_HEAD",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_PAIR_HEAD",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_PAIR_HEAD",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_PAIR_HEAD",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_PAIR_HEAD",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_PAIR_HEAD",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_PAIR_HEAD",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_TOKEN_ENCODER",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_TOKEN_ENCODER",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_TOKEN_ENCODER",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_TOKEN_ENCODER",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_TOKEN_ENCODER",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_TOKEN_ENCODER",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_TOKEN_ENCODER",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_TOKEN_ENCODER",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_TOKEN_ENCODER",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_TOKEN_ENCODER",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_TOKEN_ENCODER",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_TOKEN_ENCODER",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_TOKEN_ENCODER",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_TOKEN_ENCODER",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_TOKEN_ENCODER",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_TOKEN_ENCODER",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_TOKEN_ENCODER",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D1",
+          "forbidden_classifications": [],
+          "group": "D1_TOKEN_ENCODER",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_GRU",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_GRU",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_GRU",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_GRU",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_GRU",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_GRU",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_GRU",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_GRU",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_GRU",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_GRU",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_GRU",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_GRU",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_GRU",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_GRU",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_GRU",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_GRU",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_GRU",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_GRU",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_PAIR_HEAD",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_PAIR_HEAD",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_PAIR_HEAD",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_PAIR_HEAD",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_PAIR_HEAD",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_PAIR_HEAD",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_PAIR_HEAD",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_PAIR_HEAD",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_PAIR_HEAD",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_PAIR_HEAD",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 7,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 7
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_PAIR_HEAD",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_PAIR_HEAD",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 7,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 7
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_PAIR_HEAD",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_PAIR_HEAD",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_PAIR_HEAD",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_PAIR_HEAD",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_PAIR_HEAD",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_PAIR_HEAD",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_TOKEN_ENCODER",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_TOKEN_ENCODER",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_TOKEN_ENCODER",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_TOKEN_ENCODER",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_TOKEN_ENCODER",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_TOKEN_ENCODER",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_TOKEN_ENCODER",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_TOKEN_ENCODER",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_TOKEN_ENCODER",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_TOKEN_ENCODER",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_TOKEN_ENCODER",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_TOKEN_ENCODER",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_TOKEN_ENCODER",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_TOKEN_ENCODER",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_TOKEN_ENCODER",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_TOKEN_ENCODER",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_TOKEN_ENCODER",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D2",
+          "forbidden_classifications": [],
+          "group": "D2_TOKEN_ENCODER",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_K",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_K",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_K",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 7
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_K",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_K",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_K",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_K",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_K",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 7
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_K",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 7
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_K",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_K",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_K",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_K",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_K",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 7
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_K",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_K",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_K",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_K",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_O",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_O",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_O",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_O",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_O",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_O",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_O",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_O",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_O",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_O",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_O",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_O",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_O",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_O",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_O",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_O",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_O",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_O",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_Q",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_Q",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_Q",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_Q",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_Q",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_Q",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_Q",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_Q",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_Q",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_Q",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_Q",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_Q",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_Q",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_Q",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_Q",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_Q",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_Q",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_Q",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_V",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_V",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_V",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_V",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_V",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_V",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_V",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_V",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_V",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_V",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_V",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_V",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_V",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_V",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_V",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_V",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_V",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_ATTENTION_V",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_FEED_FORWARD",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_FEED_FORWARD",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_FEED_FORWARD",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_FEED_FORWARD",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_FEED_FORWARD",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_FEED_FORWARD",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_FEED_FORWARD",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_FEED_FORWARD",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_FEED_FORWARD",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_FEED_FORWARD",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_FEED_FORWARD",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_FEED_FORWARD",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_FEED_FORWARD",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_FEED_FORWARD",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_FEED_FORWARD",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_FEED_FORWARD",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_FEED_FORWARD",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_FEED_FORWARD",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_PAIR_HEAD",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 7,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 7
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_PAIR_HEAD",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_PAIR_HEAD",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_PAIR_HEAD",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_PAIR_HEAD",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_PAIR_HEAD",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_PAIR_HEAD",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_PAIR_HEAD",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_PAIR_HEAD",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_PAIR_HEAD",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_PAIR_HEAD",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_PAIR_HEAD",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 7,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 7
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_PAIR_HEAD",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_PAIR_HEAD",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_PAIR_HEAD",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_PAIR_HEAD",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_PAIR_HEAD",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_PAIR_HEAD",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_TOKEN_ENCODER",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_TOKEN_ENCODER",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_TOKEN_ENCODER",
+          "lineage": "LCDF_01",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_TOKEN_ENCODER",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_TOKEN_ENCODER",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_TOKEN_ENCODER",
+          "lineage": "LCDF_04",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_TOKEN_ENCODER",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_TOKEN_ENCODER",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_TOKEN_ENCODER",
+          "lineage": "LCDF_05",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_TOKEN_ENCODER",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_TOKEN_ENCODER",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_TOKEN_ENCODER",
+          "lineage": "LCDF_06",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_TOKEN_ENCODER",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_TOKEN_ENCODER",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_TOKEN_ENCODER",
+          "lineage": "LCDF_07",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_TOKEN_ENCODER",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500521,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_TOKEN_ENCODER",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500522,
+          "stable_nonzero_count": 8
+        },
+        {
+          "arm": "D3",
+          "forbidden_classifications": [],
+          "group": "D3_TOKEN_ENCODER",
+          "lineage": "LCDF_08",
+          "pass": true,
+          "pass_or_consistent_count": 8,
+          "probe_count": 8,
+          "seed": 20500523,
+          "stable_nonzero_count": 8
+        }
+      ]
+    },
+    "optimizer_path": {
+      "all_deterministic": true,
+      "all_safe": true,
+      "all_topology_unchanged": true,
+      "fd_stable_rows": 216,
+      "observed_rows": 216,
+      "pass": true,
+      "path_pass_rows": 216,
+      "required_rows": 216,
+      "reverse_jvp_pass_rows": 216
+    },
+    "local_descent": {
+      "all_radii_restored": true,
+      "global_context_count": 9,
+      "global_window_count": 9,
+      "lineage_context_count": 54,
+      "lineage_window_count": 54,
+      "optimizer_instances": 0,
+      "pass": true,
+      "writeback": false
+    },
+    "one_step_rows": [
+      {
+        "arm": "D1",
+        "seed": 20600601,
+        "learning_rate": 1e-05,
+        "Delta_L": -7.491814740923086e-05,
+        "pass": true
+      },
+      {
+        "arm": "D1",
+        "seed": 20600601,
+        "learning_rate": 3e-05,
+        "Delta_L": -0.00022469025113636132,
+        "pass": true
+      },
+      {
+        "arm": "D1",
+        "seed": 20600601,
+        "learning_rate": 0.0001,
+        "Delta_L": -0.0007482132896285965,
+        "pass": true
+      },
+      {
+        "arm": "D1",
+        "seed": 20600601,
+        "learning_rate": 0.0003,
+        "Delta_L": -0.0022380215312012286,
+        "pass": true
+      },
+      {
+        "arm": "D1",
+        "seed": 20600601,
+        "learning_rate": 0.001,
+        "Delta_L": -0.007377205247336649,
+        "pass": false
+      },
+      {
+        "arm": "D1",
+        "seed": 20600602,
+        "learning_rate": 1e-05,
+        "Delta_L": -7.442130649804035e-05,
+        "pass": true
+      },
+      {
+        "arm": "D1",
+        "seed": 20600602,
+        "learning_rate": 3e-05,
+        "Delta_L": -0.00022321749804121715,
+        "pass": true
+      },
+      {
+        "arm": "D1",
+        "seed": 20600602,
+        "learning_rate": 0.0001,
+        "Delta_L": -0.0007434940109516397,
+        "pass": true
+      },
+      {
+        "arm": "D1",
+        "seed": 20600602,
+        "learning_rate": 0.0003,
+        "Delta_L": -0.002225435365340811,
+        "pass": true
+      },
+      {
+        "arm": "D1",
+        "seed": 20600602,
+        "learning_rate": 0.001,
+        "Delta_L": -0.007353716422570988,
+        "pass": false
+      },
+      {
+        "arm": "D1",
+        "seed": 20600603,
+        "learning_rate": 1e-05,
+        "Delta_L": -5.576498033088573e-05,
+        "pass": true
+      },
+      {
+        "arm": "D1",
+        "seed": 20600603,
+        "learning_rate": 3e-05,
+        "Delta_L": -0.00016725682612417359,
+        "pass": true
+      },
+      {
+        "arm": "D1",
+        "seed": 20600603,
+        "learning_rate": 0.0001,
+        "Delta_L": -0.0005570758786227481,
+        "pass": true
+      },
+      {
+        "arm": "D1",
+        "seed": 20600603,
+        "learning_rate": 0.0003,
+        "Delta_L": -0.0016673433529039716,
+        "pass": true
+      },
+      {
+        "arm": "D1",
+        "seed": 20600603,
+        "learning_rate": 0.001,
+        "Delta_L": -0.0055104389838405154,
+        "pass": false
+      },
+      {
+        "arm": "D2",
+        "seed": 20600601,
+        "learning_rate": 1e-05,
+        "Delta_L": -5.985820455478574e-05,
+        "pass": true
+      },
+      {
+        "arm": "D2",
+        "seed": 20600601,
+        "learning_rate": 3e-05,
+        "Delta_L": -0.00017951446037844931,
+        "pass": true
+      },
+      {
+        "arm": "D2",
+        "seed": 20600601,
+        "learning_rate": 0.0001,
+        "Delta_L": -0.000597676347949383,
+        "pass": true
+      },
+      {
+        "arm": "D2",
+        "seed": 20600601,
+        "learning_rate": 0.0003,
+        "Delta_L": -0.0017868830829856908,
+        "pass": true
+      },
+      {
+        "arm": "D2",
+        "seed": 20600601,
+        "learning_rate": 0.001,
+        "Delta_L": -0.005881047473433654,
+        "pass": false
+      },
+      {
+        "arm": "D2",
+        "seed": 20600602,
+        "learning_rate": 1e-05,
+        "Delta_L": -5.6596279206067024e-05,
+        "pass": true
+      },
+      {
+        "arm": "D2",
+        "seed": 20600602,
+        "learning_rate": 3e-05,
+        "Delta_L": -0.0001697498558550503,
+        "pass": true
+      },
+      {
+        "arm": "D2",
+        "seed": 20600602,
+        "learning_rate": 0.0001,
+        "Delta_L": -0.0005653737537014702,
+        "pass": true
+      },
+      {
+        "arm": "D2",
+        "seed": 20600602,
+        "learning_rate": 0.0003,
+        "Delta_L": -0.0016921015463902123,
+        "pass": true
+      },
+      {
+        "arm": "D2",
+        "seed": 20600602,
+        "learning_rate": 0.001,
+        "Delta_L": -0.00559042249754671,
+        "pass": false
+      },
+      {
+        "arm": "D2",
+        "seed": 20600603,
+        "learning_rate": 1e-05,
+        "Delta_L": -5.9501137606221555e-05,
+        "pass": true
+      },
+      {
+        "arm": "D2",
+        "seed": 20600603,
+        "learning_rate": 3e-05,
+        "Delta_L": -0.00017845768150781538,
+        "pass": true
+      },
+      {
+        "arm": "D2",
+        "seed": 20600603,
+        "learning_rate": 0.0001,
+        "Delta_L": -0.000594323974712041,
+        "pass": true
+      },
+      {
+        "arm": "D2",
+        "seed": 20600603,
+        "learning_rate": 0.0003,
+        "Delta_L": -0.001778304224432925,
+        "pass": true
+      },
+      {
+        "arm": "D2",
+        "seed": 20600603,
+        "learning_rate": 0.001,
+        "Delta_L": -0.005869422430777926,
+        "pass": false
+      },
+      {
+        "arm": "D3",
+        "seed": 20600601,
+        "learning_rate": 1e-05,
+        "Delta_L": -0.00035727279875308326,
+        "pass": true
+      },
+      {
+        "arm": "D3",
+        "seed": 20600601,
+        "learning_rate": 3e-05,
+        "Delta_L": -0.0010717222578479069,
+        "pass": true
+      },
+      {
+        "arm": "D3",
+        "seed": 20600601,
+        "learning_rate": 0.0001,
+        "Delta_L": -0.0035694845911803386,
+        "pass": true
+      },
+      {
+        "arm": "D3",
+        "seed": 20600601,
+        "learning_rate": 0.0003,
+        "Delta_L": -0.01064839005284901,
+        "pass": true
+      },
+      {
+        "arm": "D3",
+        "seed": 20600601,
+        "learning_rate": 0.001,
+        "Delta_L": -0.03368757777985465,
+        "pass": true
+      },
+      {
+        "arm": "D3",
+        "seed": 20600602,
+        "learning_rate": 1e-05,
+        "Delta_L": -0.00031716039001628005,
+        "pass": true
+      },
+      {
+        "arm": "D3",
+        "seed": 20600602,
+        "learning_rate": 3e-05,
+        "Delta_L": -0.0009520892483466659,
+        "pass": true
+      },
+      {
+        "arm": "D3",
+        "seed": 20600602,
+        "learning_rate": 0.0001,
+        "Delta_L": -0.0031750013617590778,
+        "pass": true
+      },
+      {
+        "arm": "D3",
+        "seed": 20600602,
+        "learning_rate": 0.0003,
+        "Delta_L": -0.009506828609491924,
+        "pass": true
+      },
+      {
+        "arm": "D3",
+        "seed": 20600602,
+        "learning_rate": 0.001,
+        "Delta_L": -0.03027018238391832,
+        "pass": true
+      },
+      {
+        "arm": "D3",
+        "seed": 20600603,
+        "learning_rate": 1e-05,
+        "Delta_L": -0.00043151322693379957,
+        "pass": true
+      },
+      {
+        "arm": "D3",
+        "seed": 20600603,
+        "learning_rate": 3e-05,
+        "Delta_L": -0.0012957901151464668,
+        "pass": true
+      },
+      {
+        "arm": "D3",
+        "seed": 20600603,
+        "learning_rate": 0.0001,
+        "Delta_L": -0.004330592876704675,
+        "pass": true
+      },
+      {
+        "arm": "D3",
+        "seed": 20600603,
+        "learning_rate": 0.0003,
+        "Delta_L": -0.012998429443262904,
+        "pass": true
+      },
+      {
+        "arm": "D3",
+        "seed": 20600603,
+        "learning_rate": 0.001,
+        "Delta_L": -0.039667106056259116,
+        "pass": true
+      }
+    ],
+    "micro_rows": [
+      {
+        "arm": "D1",
+        "seed": 20600601,
+        "horizon": 2,
+        "learning_rate": 1e-05,
+        "loss_sequence": [
+          0.9385809630821499,
+          0.9385060449347407,
+          0.9384311487530569
+        ]
+      },
+      {
+        "arm": "D1",
+        "seed": 20600601,
+        "horizon": 4,
+        "learning_rate": 1e-05,
+        "loss_sequence": [
+          0.9385809630821499,
+          0.9385060449347407,
+          0.9384311487530569,
+          0.9383562748240682,
+          0.9382814232669169
+        ]
+      },
+      {
+        "arm": "D1",
+        "seed": 20600601,
+        "horizon": 2,
+        "learning_rate": 3e-05,
+        "loss_sequence": [
+          0.9385809630821499,
+          0.9383562728310135,
+          0.938131779534262
+        ]
+      },
+      {
+        "arm": "D1",
+        "seed": 20600601,
+        "horizon": 4,
+        "learning_rate": 3e-05,
+        "loss_sequence": [
+          0.9385809630821499,
+          0.9383562728310135,
+          0.938131779534262,
+          0.937907482155373,
+          0.9376833798700245
+        ]
+      },
+      {
+        "arm": "D1",
+        "seed": 20600601,
+        "horizon": 2,
+        "learning_rate": 0.0001,
+        "loss_sequence": [
+          0.9385809630821499,
+          0.9378327497925213,
+          0.9370867013933314
+        ]
+      },
+      {
+        "arm": "D1",
+        "seed": 20600601,
+        "horizon": 4,
+        "learning_rate": 0.0001,
+        "loss_sequence": [
+          0.9385809630821499,
+          0.9378327497925213,
+          0.9370867013933314,
+          0.9363428007793694,
+          0.9356010467919793
+        ]
+      },
+      {
+        "arm": "D1",
+        "seed": 20600601,
+        "horizon": 2,
+        "learning_rate": 0.0003,
+        "loss_sequence": [
+          0.9385809630821499,
+          0.9363429415509487,
+          0.9341247600725394
+        ]
+      },
+      {
+        "arm": "D1",
+        "seed": 20600601,
+        "horizon": 4,
+        "learning_rate": 0.0003,
+        "loss_sequence": [
+          0.9385809630821499,
+          0.9363429415509487,
+          0.9341247600725394,
+          0.9319257562490179,
+          0.9297455837361853
+        ]
+      },
+      {
+        "arm": "D1",
+        "seed": 20600602,
+        "horizon": 2,
+        "learning_rate": 1e-05,
+        "loss_sequence": [
+          0.932994249778221,
+          0.932919828471723,
+          0.9328454235573357
+        ]
+      },
+      {
+        "arm": "D1",
+        "seed": 20600602,
+        "horizon": 4,
+        "learning_rate": 1e-05,
+        "loss_sequence": [
+          0.932994249778221,
+          0.932919828471723,
+          0.9328454235573357,
+          0.9327710337124011,
+          0.9326966665627682
+        ]
+      },
+      {
+        "arm": "D1",
+        "seed": 20600602,
+        "horizon": 2,
+        "learning_rate": 3e-05,
+        "loss_sequence": [
+          0.932994249778221,
+          0.9327710322801798,
+          0.9325479719851097
+        ]
+      },
+      {
+        "arm": "D1",
+        "seed": 20600602,
+        "horizon": 4,
+        "learning_rate": 3e-05,
+        "loss_sequence": [
+          0.932994249778221,
+          0.9327710322801798,
+          0.9325479719851097,
+          0.9323250397813544,
+          0.9321022820569441
+        ]
+      },
+      {
+        "arm": "D1",
+        "seed": 20600602,
+        "horizon": 2,
+        "learning_rate": 0.0001,
+        "loss_sequence": [
+          0.932994249778221,
+          0.9322507557672693,
+          0.9315089720103797
+        ]
+      },
+      {
+        "arm": "D1",
+        "seed": 20600602,
+        "horizon": 4,
+        "learning_rate": 0.0001,
+        "loss_sequence": [
+          0.932994249778221,
+          0.9322507557672693,
+          0.9315089720103797,
+          0.9307688834645936,
+          0.9300305594088432
+        ]
+      },
+      {
+        "arm": "D1",
+        "seed": 20600602,
+        "horizon": 2,
+        "learning_rate": 0.0003,
+        "loss_sequence": [
+          0.932994249778221,
+          0.9307688144128802,
+          0.9285593090589918
+        ]
+      },
+      {
+        "arm": "D1",
+        "seed": 20600602,
+        "horizon": 4,
+        "learning_rate": 0.0003,
+        "loss_sequence": [
+          0.932994249778221,
+          0.9307688144128802,
+          0.9285593090589918,
+          0.9263658865729129,
+          0.9241882406660347
+        ]
+      },
+      {
+        "arm": "D1",
+        "seed": 20600603,
+        "horizon": 2,
+        "learning_rate": 1e-05,
+        "loss_sequence": [
+          0.923422115578863,
+          0.9233663505985321,
+          0.9233105986290687
+        ]
+      },
+      {
+        "arm": "D1",
+        "seed": 20600603,
+        "horizon": 4,
+        "learning_rate": 1e-05,
+        "loss_sequence": [
+          0.923422115578863,
+          0.9233663505985321,
+          0.9233105986290687,
+          0.9232548597894205,
+          0.9231991342414455
+        ]
+      },
+      {
+        "arm": "D1",
+        "seed": 20600603,
+        "horizon": 2,
+        "learning_rate": 3e-05,
+        "loss_sequence": [
+          0.923422115578863,
+          0.9232548587527388,
+          0.9230877187199704
+        ]
+      },
+      {
+        "arm": "D1",
+        "seed": 20600603,
+        "horizon": 4,
+        "learning_rate": 3e-05,
+        "loss_sequence": [
+          0.923422115578863,
+          0.9232548587527388,
+          0.9230877187199704,
+          0.9229206971148093,
+          0.9227537955727659
+        ]
+      },
+      {
+        "arm": "D1",
+        "seed": 20600603,
+        "horizon": 2,
+        "learning_rate": 0.0001,
+        "loss_sequence": [
+          0.923422115578863,
+          0.9228650397002403,
+          0.9223092777388509
+        ]
+      },
+      {
+        "arm": "D1",
+        "seed": 20600603,
+        "horizon": 4,
+        "learning_rate": 0.0001,
+        "loss_sequence": [
+          0.923422115578863,
+          0.9228650397002403,
+          0.9223092777388509,
+          0.9217548455034588,
+          0.9212017397435089
+        ]
+      },
+      {
+        "arm": "D1",
+        "seed": 20600603,
+        "horizon": 2,
+        "learning_rate": 0.0003,
+        "loss_sequence": [
+          0.923422115578863,
+          0.921754772225959,
+          0.9200995141033982
+        ]
+      },
+      {
+        "arm": "D1",
+        "seed": 20600603,
+        "horizon": 4,
+        "learning_rate": 0.0003,
+        "loss_sequence": [
+          0.923422115578863,
+          0.921754772225959,
+          0.9200995141033982,
+          0.918456003864217,
+          0.9168236642936618
+        ]
+      },
+      {
+        "arm": "D2",
+        "seed": 20600601,
+        "horizon": 2,
+        "learning_rate": 1e-05,
+        "loss_sequence": [
+          0.9337446654764167,
+          0.9336848072718619,
+          0.9336249696930955
+        ]
+      },
+      {
+        "arm": "D2",
+        "seed": 20600601,
+        "horizon": 4,
+        "learning_rate": 1e-05,
+        "loss_sequence": [
+          0.9337446654764167,
+          0.9336848072718619,
+          0.9336249696930955,
+          0.9335651529925789,
+          0.933505357530899
+        ]
+      },
+      {
+        "arm": "D2",
+        "seed": 20600601,
+        "horizon": 2,
+        "learning_rate": 3e-05,
+        "loss_sequence": [
+          0.9337446654764167,
+          0.9335651510160382,
+          0.9333858223155064
+        ]
+      },
+      {
+        "arm": "D2",
+        "seed": 20600601,
+        "horizon": 4,
+        "learning_rate": 3e-05,
+        "loss_sequence": [
+          0.9337446654764167,
+          0.9335651510160382,
+          0.9333858223155064,
+          0.9332066821097809,
+          0.9330277307207521
+        ]
+      },
+      {
+        "arm": "D2",
+        "seed": 20600601,
+        "horizon": 2,
+        "learning_rate": 0.0001,
+        "loss_sequence": [
+          0.9337446654764167,
+          0.9331469891284673,
+          0.9325513864218538
+        ]
+      },
+      {
+        "arm": "D2",
+        "seed": 20600601,
+        "horizon": 4,
+        "learning_rate": 0.0001,
+        "loss_sequence": [
+          0.9337446654764167,
+          0.9331469891284673,
+          0.9325513864218538,
+          0.9319578350274352,
+          0.9313663219542717
+        ]
+      },
+      {
+        "arm": "D2",
+        "seed": 20600601,
+        "horizon": 2,
+        "learning_rate": 0.0003,
+        "loss_sequence": [
+          0.9337446654764167,
+          0.931957782393431,
+          0.9301897381744882
+        ]
+      },
+      {
+        "arm": "D2",
+        "seed": 20600601,
+        "horizon": 4,
+        "learning_rate": 0.0003,
+        "loss_sequence": [
+          0.9337446654764167,
+          0.931957782393431,
+          0.9301897381744882,
+          0.928439590371385,
+          0.9267058149597522
+        ]
+      },
+      {
+        "arm": "D2",
+        "seed": 20600602,
+        "horizon": 2,
+        "learning_rate": 1e-05,
+        "loss_sequence": [
+          0.94144348895909,
+          0.941386892679884,
+          0.9413303096075903
+        ]
+      },
+      {
+        "arm": "D2",
+        "seed": 20600602,
+        "horizon": 4,
+        "learning_rate": 1e-05,
+        "loss_sequence": [
+          0.94144348895909,
+          0.941386892679884,
+          0.9413303096075903,
+          0.9412737400268902,
+          0.9412171838800477
+        ]
+      },
+      {
+        "arm": "D2",
+        "seed": 20600602,
+        "horizon": 2,
+        "learning_rate": 3e-05,
+        "loss_sequence": [
+          0.94144348895909,
+          0.941273739103235,
+          0.9411041083293549
+        ]
+      },
+      {
+        "arm": "D2",
+        "seed": 20600602,
+        "horizon": 4,
+        "learning_rate": 3e-05,
+        "loss_sequence": [
+          0.94144348895909,
+          0.941273739103235,
+          0.9411041083293549,
+          0.9409345970470687,
+          0.9407652064899996
+        ]
+      },
+      {
+        "arm": "D2",
+        "seed": 20600602,
+        "horizon": 2,
+        "learning_rate": 0.0001,
+        "loss_sequence": [
+          0.94144348895909,
+          0.9408781152053886,
+          0.9403140784207361
+        ]
+      },
+      {
+        "arm": "D2",
+        "seed": 20600602,
+        "horizon": 4,
+        "learning_rate": 0.0001,
+        "loss_sequence": [
+          0.94144348895909,
+          0.9408781152053886,
+          0.9403140784207361,
+          0.9397513699787924,
+          0.9391899533121646
+        ]
+      },
+      {
+        "arm": "D2",
+        "seed": 20600602,
+        "horizon": 2,
+        "learning_rate": 0.0003,
+        "loss_sequence": [
+          0.94144348895909,
+          0.9397513874126998,
+          0.9380714929734598
+        ]
+      },
+      {
+        "arm": "D2",
+        "seed": 20600602,
+        "horizon": 4,
+        "learning_rate": 0.0003,
+        "loss_sequence": [
+          0.94144348895909,
+          0.9397513874126998,
+          0.9380714929734598,
+          0.9364024654019341,
+          0.9347424478535512
+        ]
+      },
+      {
+        "arm": "D2",
+        "seed": 20600603,
+        "horizon": 2,
+        "learning_rate": 1e-05,
+        "loss_sequence": [
+          0.932760796619772,
+          0.9327012954821657,
+          0.9326418098669381
+        ]
+      },
+      {
+        "arm": "D2",
+        "seed": 20600603,
+        "horizon": 4,
+        "learning_rate": 1e-05,
+        "loss_sequence": [
+          0.932760796619772,
+          0.9327012954821657,
+          0.9326418098669381,
+          0.9325823396548275,
+          0.9325228846634109
+        ]
+      },
+      {
+        "arm": "D2",
+        "seed": 20600603,
+        "horizon": 2,
+        "learning_rate": 3e-05,
+        "loss_sequence": [
+          0.932760796619772,
+          0.9325823389382641,
+          0.9324040171322966
+        ]
+      },
+      {
+        "arm": "D2",
+        "seed": 20600603,
+        "horizon": 4,
+        "learning_rate": 3e-05,
+        "loss_sequence": [
+          0.932760796619772,
+          0.9325823389382641,
+          0.9324040171322966,
+          0.9322258299847705,
+          0.9320477775245823
+        ]
+      },
+      {
+        "arm": "D2",
+        "seed": 20600603,
+        "horizon": 2,
+        "learning_rate": 0.0001,
+        "loss_sequence": [
+          0.932760796619772,
+          0.9321664726450599,
+          0.9315736507650794
+        ]
+      },
+      {
+        "arm": "D2",
+        "seed": 20600603,
+        "horizon": 4,
+        "learning_rate": 0.0001,
+        "loss_sequence": [
+          0.932760796619772,
+          0.9321664726450599,
+          0.9315736507650794,
+          0.9309822929405988,
+          0.9303923456885919
+        ]
+      },
+      {
+        "arm": "D2",
+        "seed": 20600603,
+        "horizon": 2,
+        "learning_rate": 0.0003,
+        "loss_sequence": [
+          0.932760796619772,
+          0.930982492395339,
+          0.9292177153028632
+        ]
+      },
+      {
+        "arm": "D2",
+        "seed": 20600603,
+        "horizon": 4,
+        "learning_rate": 0.0003,
+        "loss_sequence": [
+          0.932760796619772,
+          0.930982492395339,
+          0.9292177153028632,
+          0.9274647797070602,
+          0.9257217225033223
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600601,
+        "horizon": 2,
+        "learning_rate": 1e-05,
+        "loss_sequence": [
+          0.9251708231291706,
+          0.9248135503304181,
+          0.9244562770921229
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600601,
+        "horizon": 4,
+        "learning_rate": 1e-05,
+        "loss_sequence": [
+          0.9251708231291706,
+          0.9248135503304181,
+          0.9244562770921229,
+          0.9240990836511968,
+          0.9237419455601534
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600601,
+        "horizon": 2,
+        "learning_rate": 3e-05,
+        "loss_sequence": [
+          0.9251708231291706,
+          0.9240991008713225,
+          0.9230279790615642
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600601,
+        "horizon": 4,
+        "learning_rate": 3e-05,
+        "loss_sequence": [
+          0.9251708231291706,
+          0.9240991008713225,
+          0.9230279790615642,
+          0.9219573918596966,
+          0.9208875983718716
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600601,
+        "horizon": 2,
+        "learning_rate": 0.0001,
+        "loss_sequence": [
+          0.9251708231291706,
+          0.9216013385379905,
+          0.9180450842047095
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600601,
+        "horizon": 4,
+        "learning_rate": 0.0001,
+        "loss_sequence": [
+          0.9251708231291706,
+          0.9216013385379905,
+          0.9180450842047095,
+          0.9145047673951624,
+          0.9109806986308465
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600601,
+        "horizon": 2,
+        "learning_rate": 0.0003,
+        "loss_sequence": [
+          0.9251708231291706,
+          0.9145224330763219,
+          0.9041197008945193
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600601,
+        "horizon": 4,
+        "learning_rate": 0.0003,
+        "loss_sequence": [
+          0.9251708231291706,
+          0.9145224330763219,
+          0.9041197008945193,
+          0.8940103173925001,
+          0.8842790486927704
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600601,
+        "horizon": 2,
+        "learning_rate": 0.001,
+        "loss_sequence": [
+          0.9251708231291706,
+          0.8914832453493154,
+          0.8644890331577252
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600601,
+        "horizon": 4,
+        "learning_rate": 0.001,
+        "loss_sequence": [
+          0.9251708231291706,
+          0.8914832453493154,
+          0.8644890331577252,
+          0.8459133358952742,
+          0.8258450601155753
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600602,
+        "horizon": 2,
+        "learning_rate": 1e-05,
+        "loss_sequence": [
+          0.9240250080725273,
+          0.9237078476825108,
+          0.9233905542055526
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600602,
+        "horizon": 4,
+        "learning_rate": 1e-05,
+        "loss_sequence": [
+          0.9240250080725273,
+          0.9237078476825108,
+          0.9233905542055526,
+          0.923072888276201,
+          0.9227554036720805
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600602,
+        "horizon": 2,
+        "learning_rate": 3e-05,
+        "loss_sequence": [
+          0.9240250080725273,
+          0.923072918824181,
+          0.922120347561726
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600602,
+        "horizon": 4,
+        "learning_rate": 3e-05,
+        "loss_sequence": [
+          0.9240250080725273,
+          0.923072918824181,
+          0.922120347561726,
+          0.9211670285588617,
+          0.9202130214876943
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600602,
+        "horizon": 2,
+        "learning_rate": 0.0001,
+        "loss_sequence": [
+          0.9240250080725273,
+          0.9208500067107689,
+          0.9176727107542734
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600602,
+        "horizon": 4,
+        "learning_rate": 0.0001,
+        "loss_sequence": [
+          0.9240250080725273,
+          0.9208500067107689,
+          0.9176727107542734,
+          0.9144959958218948,
+          0.9113207683290366
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600602,
+        "horizon": 2,
+        "learning_rate": 0.0003,
+        "loss_sequence": [
+          0.9240250080725273,
+          0.9145181794630354,
+          0.9051195104542152
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600602,
+        "horizon": 4,
+        "learning_rate": 0.0003,
+        "loss_sequence": [
+          0.9240250080725273,
+          0.9145181794630354,
+          0.9051195104542152,
+          0.895796552186115,
+          0.8863537990699525
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600602,
+        "horizon": 2,
+        "learning_rate": 0.001,
+        "loss_sequence": [
+          0.9240250080725273,
+          0.8937548256886091,
+          0.8640055066013447
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600602,
+        "horizon": 4,
+        "learning_rate": 0.001,
+        "loss_sequence": [
+          0.9240250080725273,
+          0.8937548256886091,
+          0.8640055066013447,
+          0.8272905262827722,
+          0.781415381293486
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600603,
+        "horizon": 2,
+        "learning_rate": 1e-05,
+        "loss_sequence": [
+          0.9227977553645662,
+          0.9223662421376325,
+          0.921934254777305
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600603,
+        "horizon": 4,
+        "learning_rate": 1e-05,
+        "loss_sequence": [
+          0.9227977553645662,
+          0.9223662421376325,
+          0.921934254777305,
+          0.921501785245571,
+          0.9210688323737214
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600603,
+        "horizon": 2,
+        "learning_rate": 3e-05,
+        "loss_sequence": [
+          0.9227977553645662,
+          0.9215019652494197,
+          0.920202267824684
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600603,
+        "horizon": 4,
+        "learning_rate": 3e-05,
+        "loss_sequence": [
+          0.9227977553645662,
+          0.9215019652494197,
+          0.920202267824684,
+          0.9188988258997107,
+          0.9175917806860142
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600603,
+        "horizon": 2,
+        "learning_rate": 0.0001,
+        "loss_sequence": [
+          0.9227977553645662,
+          0.9184671624878612,
+          0.9141082083637034
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600603,
+        "horizon": 4,
+        "learning_rate": 0.0001,
+        "loss_sequence": [
+          0.9227977553645662,
+          0.9184671624878612,
+          0.9141082083637034,
+          0.9097313367790584,
+          0.9053485823393482
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600603,
+        "horizon": 2,
+        "learning_rate": 0.0003,
+        "loss_sequence": [
+          0.9227977553645662,
+          0.9097993259213029,
+          0.8969628388712914
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600603,
+        "horizon": 4,
+        "learning_rate": 0.0003,
+        "loss_sequence": [
+          0.9227977553645662,
+          0.9097993259213029,
+          0.8969628388712914,
+          0.8847153995142024,
+          0.8734657717040522
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600603,
+        "horizon": 2,
+        "learning_rate": 0.001,
+        "loss_sequence": [
+          0.9227977553645662,
+          0.8831306493083071,
+          0.8570769813491541
+        ]
+      },
+      {
+        "arm": "D3",
+        "seed": 20600603,
+        "horizon": 4,
+        "learning_rate": 0.001,
+        "loss_sequence": [
+          0.9227977553645662,
+          0.8831306493083071,
+          0.8570769813491541,
+          0.8365809388411213,
+          0.8054964481485188
+        ]
+      }
+    ],
+    "ladder": [
+      [
+        "full gradient",
+        "QUALIFIED"
+      ],
+      [
+        "reverse/JVP",
+        "QUALIFIED"
+      ],
+      [
+        "all-coordinate FD",
+        "NOT QUALIFIED"
+      ],
+      [
+        "optimizer-path FD",
+        "QUALIFIED"
+      ],
+      [
+        "actual AdamW update",
+        "QUALIFIED"
+      ]
+    ],
+    "stage06a": {
+      "arm_aggregation": {
+        "D1": {
+          "global_pass": true,
+          "global_seed_pass_count": 3,
+          "lineage_pass_count": 6,
+          "lineages": {
+            "LCDF_01": {
+              "pass": true,
+              "required": 2,
+              "seed_pass_count": 3
+            },
+            "LCDF_04": {
+              "pass": true,
+              "required": 2,
+              "seed_pass_count": 3
+            },
+            "LCDF_05": {
+              "pass": true,
+              "required": 2,
+              "seed_pass_count": 3
+            },
+            "LCDF_06": {
+              "pass": true,
+              "required": 2,
+              "seed_pass_count": 3
+            },
+            "LCDF_07": {
+              "pass": true,
+              "required": 2,
+              "seed_pass_count": 3
+            },
+            "LCDF_08": {
+              "pass": true,
+              "required": 2,
+              "seed_pass_count": 3
+            }
+          },
+          "pass": true
+        },
+        "D2": {
+          "global_pass": true,
+          "global_seed_pass_count": 3,
+          "lineage_pass_count": 6,
+          "lineages": {
+            "LCDF_01": {
+              "pass": true,
+              "required": 2,
+              "seed_pass_count": 3
+            },
+            "LCDF_04": {
+              "pass": true,
+              "required": 2,
+              "seed_pass_count": 3
+            },
+            "LCDF_05": {
+              "pass": true,
+              "required": 2,
+              "seed_pass_count": 3
+            },
+            "LCDF_06": {
+              "pass": true,
+              "required": 2,
+              "seed_pass_count": 3
+            },
+            "LCDF_07": {
+              "pass": true,
+              "required": 2,
+              "seed_pass_count": 3
+            },
+            "LCDF_08": {
+              "pass": true,
+              "required": 2,
+              "seed_pass_count": 3
+            }
+          },
+          "pass": true
+        },
+        "D3": {
+          "global_pass": true,
+          "global_seed_pass_count": 3,
+          "lineage_pass_count": 6,
+          "lineages": {
+            "LCDF_01": {
+              "pass": true,
+              "required": 2,
+              "seed_pass_count": 3
+            },
+            "LCDF_04": {
+              "pass": true,
+              "required": 2,
+              "seed_pass_count": 3
+            },
+            "LCDF_05": {
+              "pass": true,
+              "required": 2,
+              "seed_pass_count": 3
+            },
+            "LCDF_06": {
+              "pass": true,
+              "required": 2,
+              "seed_pass_count": 3
+            },
+            "LCDF_07": {
+              "pass": true,
+              "required": 2,
+              "seed_pass_count": 3
+            },
+            "LCDF_08": {
+              "pass": true,
+              "required": 2,
+              "seed_pass_count": 3
+            }
+          },
+          "pass": true
+        }
+      },
+      "counts": {
+        "formal_training_runs": 0,
+        "graph_rebuilds": 842256,
+        "qualification_model_instances": 1606,
+        "qualification_optimizer_instances": 1237,
+        "qualification_optimizer_steps": 2325,
+        "saved_training_checkpoints": 0,
+        "sealed_test_evaluations": 0,
+        "update_paths": 8550,
+        "validation_evaluations": 0
+      },
+      "gates": {
+        "access": true,
+        "actual_update_FD": true,
+        "arms_lineage_and_global": true,
+        "blind_design": true,
+        "contract_unchanged": true,
+        "coordinate_boundary_no_hard_failure": true,
+        "historical_hashes_unchanged": true,
+        "micro_update": true,
+        "models_destroyed": true,
+        "no_formal_training": true,
+        "one_step": true,
+        "resources": true,
+        "structure_safety": true
+      },
+      "schema": "sph-pio-poc.stage06a.qualification.v1",
+      "stage06b_authorized": true,
+      "terminal_status": "ACTUAL_OPTIMIZER_UPDATE_DYNAMICS_QUALIFIED"
+    }
+  }
+}

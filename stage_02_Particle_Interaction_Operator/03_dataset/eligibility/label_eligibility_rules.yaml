@@ -1,0 +1,157 @@
+schema_version: pio-label-eligibility-1.0.0
+contract_kind: design_only
+data_generation_authorized: false
+
+target:
+  field: delta_a
+  equation: a_ref - a_SPH
+  sign_convention: a_ref_minus_a_sph
+  required_attribution: discretization_attributed
+
+verdicts:
+  eligible: eligible_for_future_training
+  diagnostic: diagnostic
+  rejected: rejected
+
+reference_policy:
+  R1_continuum_compatible:
+    known_class: true
+    training_target_permitted: conditional
+    default_verdict: diagnostic
+    eligible_only_if_all_gates_pass: true
+  R2_semidiscrete_qualified:
+    known_class: true
+    training_target_permitted: false
+    default_verdict: diagnostic
+    role: temporal_and_state_error_isolation
+  R3_independent_benchmark:
+    known_class: true
+    training_target_permitted: false
+    default_verdict: diagnostic
+    role: independent_validation_only
+  RX_model_form_misaligned:
+    known_class: true
+    training_target_permitted: false
+    default_verdict: rejected
+    role: model_form_diagnostic_only
+
+required_gates:
+  reference_class:
+    required: true
+    eligible_value: R1_continuum_compatible
+  reference_uncertainty:
+    required: true
+    availability_status: available
+    required_fields:
+      - value
+      - units
+      - norm
+      - method
+      - qualification_rule_id
+      - qualification_status
+      - evidence_uris
+    eligible_qualification_status: PASS
+  state_hash:
+    required: true
+    format: sha256_prefixed_hex
+  configuration_hash:
+    required: true
+    format: sha256_prefixed_hex
+  neighbor_graph_hash:
+    required: true
+    format: sha256_prefixed_hex
+  topology_status:
+    required: true
+    eligible_value: PASS
+    zero_required_defects:
+      - duplicate_edges
+      - nonreciprocal_edges
+      - strict_support_omissions
+      - unexpected_exterior_edges
+    reciprocal_cutoff_crossing_is_not_a_defect: true
+  resource_status:
+    required: true
+    eligible_value: PASS
+  determinism_status:
+    required: true
+    eligible_value: PASS
+  model_form_compatibility:
+    required: true
+    eligible_value: compatible
+  failure_flags:
+    required: true
+    eligible_value: []
+  state_alignment:
+    required: true
+    eligible_value: same_state_verified
+  target_component_attribution:
+    required: true
+    eligible_value: discretization_attributed
+  finite_values:
+    required: true
+    eligible_value: PASS
+  leakage_status:
+    required: true
+    eligible_value: PASS
+
+decision_order:
+  - rule_id: hard_reject_unknown_or_misaligned_reference
+    if_any:
+      - reference_class_not_in_policy
+      - reference_class_equals_RX_model_form_misaligned
+      - model_form_compatibility_equals_misaligned
+    verdict: rejected
+  - rule_id: hard_reject_scientific_or_execution_failure
+    if_any:
+      - topology_status_equals_FAIL
+      - resource_status_equals_FAIL
+      - determinism_status_equals_FAIL
+      - finite_values_equals_FAIL
+      - leakage_status_equals_FAIL
+      - failure_flags_nonempty
+      - target_sign_check_equals_FAIL
+      - required_hash_invalid_or_mismatched
+    verdict: rejected
+  - rule_id: preserve_nontraining_reference_roles
+    if_any:
+      - reference_class_equals_R2_semidiscrete_qualified
+      - reference_class_equals_R3_independent_benchmark
+    verdict: diagnostic
+  - rule_id: preserve_unresolved_or_incomplete_evidence
+    if_any:
+      - required_field_missing
+      - required_gate_equals_UNRESOLVED
+      - reference_uncertainty_not_available
+      - reference_uncertainty_qualification_not_PASS
+      - target_component_attribution_not_discretization_attributed
+      - state_alignment_not_same_state_verified
+    verdict: diagnostic
+  - rule_id: allow_future_training_candidate
+    if_all_required_gates_pass: true
+    reference_training_target_permitted: true
+    verdict: eligible_for_future_training
+
+invariants:
+  - verdict_is_derived_not_hand_edited
+  - failed_and_diagnostic_records_are_retained
+  - sample_id_is_not_a_learnable_feature
+  - R3_is_excluded_from_training_and_normalization_statistics
+  - eligibility_does_not_authorize_data_generation_or_training
+
+reason_code_namespaces:
+  diagnostic:
+    - DIAG_R2_TEMPORAL_REFERENCE
+    - DIAG_R3_INDEPENDENT_VALIDATION
+    - DIAG_UNCERTAINTY_UNRESOLVED
+    - DIAG_ATTRIBUTION_UNRESOLVED
+    - DIAG_EVIDENCE_INCOMPLETE
+  rejected:
+    - REJECT_RX_MODEL_FORM
+    - REJECT_TOPOLOGY
+    - REJECT_RESOURCE
+    - REJECT_DETERMINISM
+    - REJECT_NONFINITE
+    - REJECT_HASH
+    - REJECT_SIGN_CONVENTION
+    - REJECT_LEAKAGE
+    - REJECT_FAILURE_FLAG

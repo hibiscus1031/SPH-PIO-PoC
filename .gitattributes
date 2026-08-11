@@ -1,0 +1,15 @@
+* text=auto
+*.py text eol=lf
+*.sh text eol=lf
+
+# Preserve the current bytes of hashed scientific evidence. The `diff`
+# attribute keeps reviewable text diffs without line-ending normalization.
+*.md -text diff
+*.csv -text diff
+*.tsv -text diff
+*.json -text diff
+*.txt -text diff
+*.yaml -text diff
+*.yml -text diff
+
+# Git LFS is not installed. No LFS filter rules are activated.

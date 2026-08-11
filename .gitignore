@@ -51,3 +51,60 @@ cmake-build-*/
 *.prof
 *.trace
 *.sqlite
+
+# Secrets and local credentials (retain on disk; never commit)
+.env
+.env.*
+!.env.example
+credentials/
+.aws/
+id_rsa
+id_ed25519
+*.pem
+
+# ML experiment services and local run state
+wandb/
+runs/
+
+# Bulk generated scientific payloads. Formal reports and manifests are not
+# excluded by these rules and remain eligible for selective tracking.
+**/results/
+**/outputs/
+**/raw_graph_records/
+**/graph_records/
+**/records/
+**/canonical_records/
+**/verified_records/
+**/training_histories/
+**/validation_histories/
+**/complete_history/
+**/checkpoint_dynamics/
+*.jsonl
+
+# Role-controlled or sealed validation payloads are intentionally inaccessible
+# during migration. Do not change permissions merely to add them to Git.
+**/access_control/validation_private/
+**/validation_candidate_bank/private_design/
+
+# Render, document-build, and literature caches
+**/fulltext_cache/
+**/font_cache/
+**/.build/
+**/render/
+**/render_*/
+**/rendered_*/
+**/*_render/
+**/*_render_*/
+**/diff_pages/
+**/docx_render/
+**/docx_render_*/
+node_modules/
+.codex_tmp*/
+
+# Export archives are retained externally; source and individual final files
+# are reviewed independently.
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z

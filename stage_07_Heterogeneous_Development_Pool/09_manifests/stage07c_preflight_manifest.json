@@ -1,0 +1,76 @@
+{
+  "counters": {
+    "formal_optimizer_steps": 0,
+    "formal_parameter_updates": 0,
+    "formal_training_runs": 0,
+    "rollouts": 0,
+    "saved_training_checkpoints": 0,
+    "sealed_test_evaluations": 0
+  },
+  "identity_artifacts": [
+    {
+      "bytes": 6119,
+      "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/zero_step_preflight/identities/D1_seed20700711.json",
+      "sha256": "sha256:e72a87a22635d2ec89fdec0aa8211c3d39751040be87cb02205740f5af982237"
+    },
+    {
+      "bytes": 6083,
+      "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/zero_step_preflight/identities/D1_seed20700712.json",
+      "sha256": "sha256:231ea281b3651ba811a8799e933855e087fc64359e4845dce869e405f97c65d5"
+    },
+    {
+      "bytes": 6121,
+      "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/zero_step_preflight/identities/D1_seed20700713.json",
+      "sha256": "sha256:a0e5b6177ac4eb1dc0130e115579ce9414973af3887f3b60b6cc84c0b54d66c5"
+    },
+    {
+      "bytes": 6127,
+      "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/zero_step_preflight/identities/D2_seed20700711.json",
+      "sha256": "sha256:fbed2b37c65ba4100a7e2569310f1df5b799bcc8d51ea66d3b010bd8f34c9c95"
+    },
+    {
+      "bytes": 6123,
+      "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/zero_step_preflight/identities/D2_seed20700712.json",
+      "sha256": "sha256:5996269c3b91b39c0089b873475a652d84cc5fab7fe10096804325b60441589c"
+    },
+    {
+      "bytes": 6122,
+      "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/zero_step_preflight/identities/D2_seed20700713.json",
+      "sha256": "sha256:7278595694c8ffc2cd270cb3569a36c90d7259be7ed45ba10e8d3984a38d74dc"
+    },
+    {
+      "bytes": 6105,
+      "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/zero_step_preflight/identities/D3_seed20700711.json",
+      "sha256": "sha256:b2f5f3cab5ab2a138f255ff4bb1c8a39dacd6a554c5d7d5400748b0c311f94aa"
+    },
+    {
+      "bytes": 6131,
+      "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/zero_step_preflight/identities/D3_seed20700712.json",
+      "sha256": "sha256:713c28964c082c5a4d700803f2bb16118f97fe9e2f906d3e7c7178982542638d"
+    },
+    {
+      "bytes": 6124,
+      "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/zero_step_preflight/identities/D3_seed20700713.json",
+      "sha256": "sha256:9a30e497d9c033f7f3571cdbcd7863bb4daf9bb59c606661ae54e0c3f4accc3d"
+    }
+  ],
+  "pass": true,
+  "passed": 9,
+  "run_count": 9,
+  "schema": "stage07c-preflight-manifest-v1",
+  "sealed_denial": {
+    "bytes": 15739,
+    "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/sealed_test_preflight/original_sealed_test_denial.json",
+    "sha256": "sha256:e4403ee6caa6eac7d27a90826075ee8b8be5a96ed40785635c1b117e4f3e8497"
+  },
+  "train_memory": {
+    "bytes": 2249,
+    "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/memory_preflight/train_112_memory_preflight.json",
+    "sha256": "sha256:89c9e8026bc9faa9b6a2dd81de353dadf0f7e8f9fd5fc2ad00d7f7f1993f529b"
+  },
+  "validation_memory": {
+    "bytes": 1763,
+    "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/memory_preflight/validation_256_memory_preflight.json",
+    "sha256": "sha256:5e296ac84cd4144bd8332b904177f98004efe5433adfec9f6b0397a1aea40a82"
+  }
+}

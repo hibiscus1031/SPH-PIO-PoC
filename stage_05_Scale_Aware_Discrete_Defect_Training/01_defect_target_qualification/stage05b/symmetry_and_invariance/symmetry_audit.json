@@ -1,0 +1,761 @@
+{
+  "pass": true,
+  "rows": [
+    {
+      "lineage": "LCDF_01",
+      "origin": 0,
+      "pass": true,
+      "scalar_relative_difference": 9.308679306319727e-17,
+      "transform": "particle_permutation",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 7.949915955823738e-37
+    },
+    {
+      "lineage": "LCDF_01",
+      "origin": 0,
+      "pass": true,
+      "scalar_relative_difference": 1.4999684576879963e-17,
+      "transform": "edge_reorder",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_01",
+      "origin": 0,
+      "pass": true,
+      "scalar_relative_difference": 4.1146878591837587e-16,
+      "transform": "translation",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_01",
+      "origin": 0,
+      "pass": true,
+      "scalar_relative_difference": 4.520070997723712e-16,
+      "transform": "galilean_boost",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_01",
+      "origin": 0,
+      "pass": true,
+      "scalar_relative_difference": 7.625150847224635e-17,
+      "transform": "SO2_rotation",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_01",
+      "origin": 0,
+      "pass": true,
+      "scalar_relative_difference": 7.844045065456726e-17,
+      "transform": "reflection",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_01",
+      "origin": 0,
+      "pass": true,
+      "scalar_relative_difference": 3.6311320520417487e-16,
+      "transform": "periodic_representative_shift",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_01",
+      "origin": 6,
+      "pass": true,
+      "scalar_relative_difference": 5.451430356571514e-16,
+      "transform": "particle_permutation",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 3.727045847998434e-32
+    },
+    {
+      "lineage": "LCDF_01",
+      "origin": 6,
+      "pass": true,
+      "scalar_relative_difference": 6.453052185405094e-16,
+      "transform": "edge_reorder",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_01",
+      "origin": 6,
+      "pass": true,
+      "scalar_relative_difference": 5.0242904792695315e-18,
+      "transform": "translation",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_01",
+      "origin": 6,
+      "pass": true,
+      "scalar_relative_difference": 4.226836775216804e-16,
+      "transform": "galilean_boost",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_01",
+      "origin": 6,
+      "pass": true,
+      "scalar_relative_difference": 1.6349735258302138e-16,
+      "transform": "SO2_rotation",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_01",
+      "origin": 6,
+      "pass": true,
+      "scalar_relative_difference": 2.6589159622453002e-17,
+      "transform": "reflection",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_01",
+      "origin": 6,
+      "pass": true,
+      "scalar_relative_difference": 7.451639069120124e-18,
+      "transform": "periodic_representative_shift",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_04",
+      "origin": 0,
+      "pass": true,
+      "scalar_relative_difference": 3.4344556227753186e-17,
+      "transform": "particle_permutation",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 1.1633521851595008e-17
+    },
+    {
+      "lineage": "LCDF_04",
+      "origin": 0,
+      "pass": true,
+      "scalar_relative_difference": 1.8303107359397568e-16,
+      "transform": "edge_reorder",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_04",
+      "origin": 0,
+      "pass": true,
+      "scalar_relative_difference": 2.8653078490757173e-16,
+      "transform": "translation",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_04",
+      "origin": 0,
+      "pass": true,
+      "scalar_relative_difference": 2.521603067283249e-16,
+      "transform": "galilean_boost",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_04",
+      "origin": 0,
+      "pass": true,
+      "scalar_relative_difference": 1.5842594872943814e-15,
+      "transform": "SO2_rotation",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_04",
+      "origin": 0,
+      "pass": true,
+      "scalar_relative_difference": 1.7945939596848973e-16,
+      "transform": "reflection",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_04",
+      "origin": 0,
+      "pass": true,
+      "scalar_relative_difference": 1.5510719630089946e-16,
+      "transform": "periodic_representative_shift",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_04",
+      "origin": 14,
+      "pass": true,
+      "scalar_relative_difference": 6.616244950567316e-17,
+      "transform": "particle_permutation",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_04",
+      "origin": 14,
+      "pass": true,
+      "scalar_relative_difference": 2.0783821805537678e-16,
+      "transform": "edge_reorder",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_04",
+      "origin": 14,
+      "pass": true,
+      "scalar_relative_difference": 9.895147804674716e-17,
+      "transform": "translation",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_04",
+      "origin": 14,
+      "pass": true,
+      "scalar_relative_difference": 8.19248047296498e-16,
+      "transform": "galilean_boost",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_04",
+      "origin": 14,
+      "pass": true,
+      "scalar_relative_difference": 2.4484118049119986e-16,
+      "transform": "SO2_rotation",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_04",
+      "origin": 14,
+      "pass": true,
+      "scalar_relative_difference": 1.4879256685937131e-16,
+      "transform": "reflection",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_04",
+      "origin": 14,
+      "pass": true,
+      "scalar_relative_difference": 3.7421584515221934e-17,
+      "transform": "periodic_representative_shift",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_05",
+      "origin": 2,
+      "pass": true,
+      "scalar_relative_difference": 5.496779380967211e-16,
+      "transform": "particle_permutation",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 6.3191937939647334e-18
+    },
+    {
+      "lineage": "LCDF_05",
+      "origin": 2,
+      "pass": true,
+      "scalar_relative_difference": 3.3038930970712706e-16,
+      "transform": "edge_reorder",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_05",
+      "origin": 2,
+      "pass": true,
+      "scalar_relative_difference": 4.2773786713324053e-16,
+      "transform": "translation",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_05",
+      "origin": 2,
+      "pass": true,
+      "scalar_relative_difference": 6.51023968096112e-20,
+      "transform": "galilean_boost",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_05",
+      "origin": 2,
+      "pass": true,
+      "scalar_relative_difference": 3.4637901720153497e-17,
+      "transform": "SO2_rotation",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_05",
+      "origin": 2,
+      "pass": true,
+      "scalar_relative_difference": 6.174748508918756e-17,
+      "transform": "reflection",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_05",
+      "origin": 2,
+      "pass": true,
+      "scalar_relative_difference": 1.9173360162425652e-16,
+      "transform": "periodic_representative_shift",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_05",
+      "origin": 28,
+      "pass": true,
+      "scalar_relative_difference": 8.833957502804425e-17,
+      "transform": "particle_permutation",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 4.0995832723301495e-18
+    },
+    {
+      "lineage": "LCDF_05",
+      "origin": 28,
+      "pass": true,
+      "scalar_relative_difference": 9.685775957474221e-17,
+      "transform": "edge_reorder",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_05",
+      "origin": 28,
+      "pass": true,
+      "scalar_relative_difference": 7.373985584678649e-17,
+      "transform": "translation",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_05",
+      "origin": 28,
+      "pass": true,
+      "scalar_relative_difference": 2.568902144071001e-16,
+      "transform": "galilean_boost",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_05",
+      "origin": 28,
+      "pass": true,
+      "scalar_relative_difference": 1.1874615203381566e-16,
+      "transform": "SO2_rotation",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_05",
+      "origin": 28,
+      "pass": true,
+      "scalar_relative_difference": 3.3417550740707145e-16,
+      "transform": "reflection",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_05",
+      "origin": 28,
+      "pass": true,
+      "scalar_relative_difference": 2.0063672477639643e-17,
+      "transform": "periodic_representative_shift",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_06",
+      "origin": 26,
+      "pass": true,
+      "scalar_relative_difference": 9.329065156170394e-16,
+      "transform": "particle_permutation",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 5.535468712842317e-18
+    },
+    {
+      "lineage": "LCDF_06",
+      "origin": 26,
+      "pass": true,
+      "scalar_relative_difference": 1.1357895225209371e-15,
+      "transform": "edge_reorder",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_06",
+      "origin": 26,
+      "pass": true,
+      "scalar_relative_difference": 1.2710066676126591e-15,
+      "transform": "translation",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_06",
+      "origin": 26,
+      "pass": true,
+      "scalar_relative_difference": 2.1233552831610594e-15,
+      "transform": "galilean_boost",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_06",
+      "origin": 26,
+      "pass": true,
+      "scalar_relative_difference": 1.5559826629620918e-15,
+      "transform": "SO2_rotation",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_06",
+      "origin": 26,
+      "pass": true,
+      "scalar_relative_difference": 2.027338803379316e-15,
+      "transform": "reflection",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_06",
+      "origin": 26,
+      "pass": true,
+      "scalar_relative_difference": 1.7757971875902483e-16,
+      "transform": "periodic_representative_shift",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_06",
+      "origin": 9,
+      "pass": true,
+      "scalar_relative_difference": 2.6994731188537527e-16,
+      "transform": "particle_permutation",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 7.282184283546124e-18
+    },
+    {
+      "lineage": "LCDF_06",
+      "origin": 9,
+      "pass": true,
+      "scalar_relative_difference": 1.063254075154484e-15,
+      "transform": "edge_reorder",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_06",
+      "origin": 9,
+      "pass": true,
+      "scalar_relative_difference": 1.8118901535039295e-16,
+      "transform": "translation",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_06",
+      "origin": 9,
+      "pass": true,
+      "scalar_relative_difference": 1.1979288100537857e-16,
+      "transform": "galilean_boost",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_06",
+      "origin": 9,
+      "pass": true,
+      "scalar_relative_difference": 2.733541553114431e-16,
+      "transform": "SO2_rotation",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_06",
+      "origin": 9,
+      "pass": true,
+      "scalar_relative_difference": 5.065160892354716e-16,
+      "transform": "reflection",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_06",
+      "origin": 9,
+      "pass": true,
+      "scalar_relative_difference": 2.407469380000735e-16,
+      "transform": "periodic_representative_shift",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_07",
+      "origin": 10,
+      "pass": true,
+      "scalar_relative_difference": 5.301789015579116e-17,
+      "transform": "particle_permutation",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 9.770136090961246e-17
+    },
+    {
+      "lineage": "LCDF_07",
+      "origin": 10,
+      "pass": true,
+      "scalar_relative_difference": 3.891381103663626e-16,
+      "transform": "edge_reorder",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_07",
+      "origin": 10,
+      "pass": true,
+      "scalar_relative_difference": 6.884499267170303e-16,
+      "transform": "translation",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_07",
+      "origin": 10,
+      "pass": true,
+      "scalar_relative_difference": 3.175443428078936e-17,
+      "transform": "galilean_boost",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_07",
+      "origin": 10,
+      "pass": true,
+      "scalar_relative_difference": 1.878408029018183e-16,
+      "transform": "SO2_rotation",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_07",
+      "origin": 10,
+      "pass": true,
+      "scalar_relative_difference": 3.603829139630321e-16,
+      "transform": "reflection",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_07",
+      "origin": 10,
+      "pass": true,
+      "scalar_relative_difference": 2.41892540449149e-16,
+      "transform": "periodic_representative_shift",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_07",
+      "origin": 31,
+      "pass": true,
+      "scalar_relative_difference": 1.8362269731373132e-16,
+      "transform": "particle_permutation",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_07",
+      "origin": 31,
+      "pass": true,
+      "scalar_relative_difference": 7.56383124083071e-16,
+      "transform": "edge_reorder",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_07",
+      "origin": 31,
+      "pass": true,
+      "scalar_relative_difference": 4.13485907793212e-16,
+      "transform": "translation",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_07",
+      "origin": 31,
+      "pass": true,
+      "scalar_relative_difference": 9.069799884072863e-16,
+      "transform": "galilean_boost",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_07",
+      "origin": 31,
+      "pass": true,
+      "scalar_relative_difference": 2.232078109917819e-16,
+      "transform": "SO2_rotation",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_07",
+      "origin": 31,
+      "pass": true,
+      "scalar_relative_difference": 3.9233120724632046e-16,
+      "transform": "reflection",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_07",
+      "origin": 31,
+      "pass": true,
+      "scalar_relative_difference": 2.0435644839221103e-16,
+      "transform": "periodic_representative_shift",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_08",
+      "origin": 22,
+      "pass": true,
+      "scalar_relative_difference": 5.716602203395404e-16,
+      "transform": "particle_permutation",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_08",
+      "origin": 22,
+      "pass": true,
+      "scalar_relative_difference": 1.2110493482395113e-16,
+      "transform": "edge_reorder",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_08",
+      "origin": 22,
+      "pass": true,
+      "scalar_relative_difference": 1.9443480288315764e-16,
+      "transform": "translation",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_08",
+      "origin": 22,
+      "pass": true,
+      "scalar_relative_difference": 6.119971489826217e-16,
+      "transform": "galilean_boost",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_08",
+      "origin": 22,
+      "pass": true,
+      "scalar_relative_difference": 3.5242782167573136e-16,
+      "transform": "SO2_rotation",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_08",
+      "origin": 22,
+      "pass": true,
+      "scalar_relative_difference": 2.710827419281825e-16,
+      "transform": "reflection",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_08",
+      "origin": 22,
+      "pass": true,
+      "scalar_relative_difference": 5.216244579335167e-16,
+      "transform": "periodic_representative_shift",
+      "variant": "VARIANT_LOW",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_08",
+      "origin": 21,
+      "pass": true,
+      "scalar_relative_difference": 3.8686471231364017e-16,
+      "transform": "particle_permutation",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_08",
+      "origin": 21,
+      "pass": true,
+      "scalar_relative_difference": 3.0413391725676673e-16,
+      "transform": "edge_reorder",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_08",
+      "origin": 21,
+      "pass": true,
+      "scalar_relative_difference": 5.738936582476103e-17,
+      "transform": "translation",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_08",
+      "origin": 21,
+      "pass": true,
+      "scalar_relative_difference": 3.1812029443975126e-16,
+      "transform": "galilean_boost",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_08",
+      "origin": 21,
+      "pass": true,
+      "scalar_relative_difference": 4.286789737586452e-16,
+      "transform": "SO2_rotation",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_08",
+      "origin": 21,
+      "pass": true,
+      "scalar_relative_difference": 1.470825988006251e-16,
+      "transform": "reflection",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    },
+    {
+      "lineage": "LCDF_08",
+      "origin": 21,
+      "pass": true,
+      "scalar_relative_difference": 2.512010305648116e-16,
+      "transform": "periodic_representative_shift",
+      "variant": "VARIANT_MAIN",
+      "vector_equivariance_normalized_error": 0.0
+    }
+  ]
+}

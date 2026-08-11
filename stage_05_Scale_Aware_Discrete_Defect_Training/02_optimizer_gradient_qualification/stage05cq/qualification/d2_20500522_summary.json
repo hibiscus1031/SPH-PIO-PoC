@@ -1,0 +1,93 @@
+{
+  "FD_path_count": 10368,
+  "adapter_forward_count": 10628,
+  "arm": "D2",
+  "contexts": [
+    {
+      "groups": {
+        "D2_GRU": true,
+        "D2_PAIR_HEAD": true,
+        "D2_TOKEN_ENCODER": true
+      },
+      "lineage": "LCDF_01",
+      "local": true,
+      "pass": true,
+      "structure": true
+    },
+    {
+      "groups": {
+        "D2_GRU": true,
+        "D2_PAIR_HEAD": true,
+        "D2_TOKEN_ENCODER": true
+      },
+      "lineage": "LCDF_04",
+      "local": true,
+      "pass": true,
+      "structure": true
+    },
+    {
+      "groups": {
+        "D2_GRU": true,
+        "D2_PAIR_HEAD": true,
+        "D2_TOKEN_ENCODER": true
+      },
+      "lineage": "LCDF_05",
+      "local": true,
+      "pass": true,
+      "structure": true
+    },
+    {
+      "groups": {
+        "D2_GRU": true,
+        "D2_PAIR_HEAD": true,
+        "D2_TOKEN_ENCODER": true
+      },
+      "lineage": "LCDF_06",
+      "local": true,
+      "pass": true,
+      "structure": true
+    },
+    {
+      "groups": {
+        "D2_GRU": true,
+        "D2_PAIR_HEAD": true,
+        "D2_TOKEN_ENCODER": true
+      },
+      "lineage": "LCDF_07",
+      "local": true,
+      "pass": true,
+      "structure": true
+    },
+    {
+      "groups": {
+        "D2_GRU": true,
+        "D2_PAIR_HEAD": true,
+        "D2_TOKEN_ENCODER": true
+      },
+      "lineage": "LCDF_08",
+      "local": true,
+      "pass": true,
+      "structure": true
+    }
+  ],
+  "full_gradient_backward_count": 14,
+  "global_pass": true,
+  "graph_rebuild_count": 256752,
+  "lineage_context_count": 6,
+  "lineage_context_pass_count": 6,
+  "local_descent_forward_count": 84,
+  "neural_rollouts": 0,
+  "optimizer_instances": 0,
+  "optimizer_steps": 0,
+  "parameter_restoration_checks": 1338,
+  "pass": true,
+  "peak_rss_bytes": 402407424,
+  "peak_rss_delta_bytes": 192577536,
+  "performance_evaluations": 0,
+  "persistent_parameter_updates": 0,
+  "reverse_jvp_count": 162,
+  "rss_start_bytes": 209829888,
+  "seed": 20500522,
+  "training_runs": 0,
+  "wall_time_seconds": 2074.2195183340227
+}

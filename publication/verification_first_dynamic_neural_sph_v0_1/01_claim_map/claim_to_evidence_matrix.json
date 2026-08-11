@@ -1,0 +1,401 @@
+{
+  "claim_count": 30,
+  "claims": [
+    {
+      "allowed_wording": "保持历史边界。",
+      "claim_id": "C01",
+      "evidence_artifact": [
+        "07_reports/stage01h_final_report.md"
+      ],
+      "evidence_status": "PASS_BOUNDARY",
+      "exact_wording": "Stage 01仍为V2_QUALIFICATION_FAIL，Stage 01H为FINITE_RESOLUTION_DOMINANT，黏性算子形式未被确认错误。",
+      "limitation": "不构成对Stage 01模型的修复。",
+      "manuscript_location": "9.5",
+      "prohibited_wording": "Stage 03恢复Stage 01 V2。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "静态路线已关闭。",
+      "claim_id": "C02",
+      "evidence_artifact": [
+        "stage_02_Particle_Interaction_Operator/07_reports/stage02ms_final_report.md"
+      ],
+      "evidence_status": "PASS_BOUNDARY",
+      "exact_wording": "Stage 02静态学习路线以STAGE02_ROUTE_CLOSED_PUBLICATION_BOUNDARY_COMPLETE关闭。",
+      "limitation": "Stage 02权重与结果不作为Stage 03性能证据。",
+      "manuscript_location": "9.5",
+      "prohibited_wording": "静态失败被动态模型修复。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "分层资格链已建立。",
+      "claim_id": "C03",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03ds_status_ledger.json"
+      ],
+      "evidence_status": "PASS",
+      "exact_wording": "Stage 03建立规格、参考、实现、多步梯度与拓扑事件的分层资格链。",
+      "limitation": "各层级结论不可互相替代。",
+      "manuscript_location": "3.1",
+      "prohibited_wording": "完整求解器已资格化。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "参考轨迹资格化完成。",
+      "claim_id": "C04",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/qualification/stage03b_qualification_summary.json",
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03b_trajectory_manifest.json"
+      ],
+      "evidence_status": "PASS",
+      "exact_wording": "D-R1两族、D-R2六例与D-R3两族通过，形成18条canonical trajectories。",
+      "limitation": "参考数据未用于训练。",
+      "manuscript_location": "4",
+      "prohibited_wording": "这些轨迹证明模型性能。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "明确条件与拒绝边界。",
+      "claim_id": "C05",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/qualification/stage03b_qualification_summary.json"
+      ],
+      "evidence_status": "PASS_BOUNDARY",
+      "exact_wording": "声学参考仅为线性区间条件证据，周期涡旋被拒绝为无源精确D-R3。",
+      "limitation": "不外推到非线性声学或任意涡旋。",
+      "manuscript_location": "4.4–4.5",
+      "prohibited_wording": "二者均为无限制精确参考。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "实现合同通过。",
+      "claim_id": "C06",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03ds_status_ledger.json"
+      ],
+      "evidence_status": "PASS",
+      "exact_wording": "D0–D3统一动态接口及冻结实现合同通过Stage 03C。",
+      "limitation": "实现验证不等于性能验证。",
+      "manuscript_location": "2.4, 5",
+      "prohibited_wording": "D3性能或优越性已证实。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "48/48通过。",
+      "claim_id": "C07",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/results/independent_rk2_results.json"
+      ],
+      "evidence_status": "PASS",
+      "exact_wording": "独立RK2实现48/48检查通过。",
+      "limitation": "仅覆盖冻结实现检查。",
+      "manuscript_location": "6.1",
+      "prohibited_wording": "长期时间积分稳定性已证明。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "bitwise等价。",
+      "claim_id": "C08",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/results/zero_correction_results.json"
+      ],
+      "evidence_status": "PASS",
+      "exact_wording": "零修正288/288与D0基线bitwise等价。",
+      "limitation": "只证明退化极限。",
+      "manuscript_location": "6.2",
+      "prohibited_wording": "非零修正准确或必要。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "冻结结构门通过。",
+      "claim_id": "C09",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/results/structural_smoke_results.json"
+      ],
+      "evidence_status": "PASS",
+      "exact_wording": "结构smoke 72/72通过。",
+      "limitation": "结构性质不等于性能。",
+      "manuscript_location": "6.3–6.4",
+      "prohibited_wording": "自主rollout长期守恒。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "冻结状态与缓存可复现。",
+      "claim_id": "C10",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/results/checkpoint_resume_results.json"
+      ],
+      "evidence_status": "PASS",
+      "exact_wording": "checkpoint/resume 6/6通过。",
+      "limitation": "检查对象不是训练模型。",
+      "manuscript_location": "5.5",
+      "prohibited_wording": "存在训练checkpoint。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "一步梯度通路通过。",
+      "claim_id": "C11",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/results/differentiability_smoke_results.json"
+      ],
+      "evidence_status": "PASS",
+      "exact_wording": "one-step autograd 6/6通过。",
+      "limitation": "未包含有限差分或多步资格。",
+      "manuscript_location": "6.5",
+      "prohibited_wording": "完整多步可微性通过。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "报告执行边界。",
+      "claim_id": "C12",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/results/resource_audit_results.json"
+      ],
+      "evidence_status": "PASS_BOUNDARY",
+      "exact_wording": "Stage 03C资源审计为CPU float64，优化器步数和训练运行数均为0。",
+      "limitation": "机器资源仅用于复现。",
+      "manuscript_location": "6.6",
+      "prohibited_wording": "给出速度或成本优势。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "完整报告216/144。",
+      "claim_id": "C13",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/results/fixed_topology_adfd_results.json",
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/failure_matrix/stage03d_complete_360_row_matrix.json"
+      ],
+      "evidence_status": "NOT_QUALIFIED",
+      "exact_wording": "冻结360个probes产生2880次AD/FD比较，其中216个获得稳定窗口、144个失败。",
+      "limitation": "总体Stage 03D保持NOT_QUALIFIED。",
+      "manuscript_location": "7.1–7.3",
+      "prohibited_wording": "只报告216个通过项或声明全部通过。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "公开完整分类及未决项。",
+      "claim_id": "C14",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/attribution/failure_attribution.json"
+      ],
+      "evidence_status": "UNRESOLVED",
+      "exact_wording": "144个失败按七类唯一主因归档，其中19项UNRESOLVED。",
+      "limitation": "归因是诊断，不是修复。",
+      "manuscript_location": "7.4",
+      "prohibited_wording": "所有失败已有单一根因。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "history 0/6。",
+      "claim_id": "C15",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/history_gradients/reference_prehistory_results.json"
+      ],
+      "evidence_status": "NOT_QUALIFIED",
+      "exact_wording": "history资格门0/6通过。",
+      "limitation": "未执行训练。",
+      "manuscript_location": "7.7",
+      "prohibited_wording": "时间记忆无用或训练失败。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "AD实现交叉一致。",
+      "claim_id": "C16",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/ad_crosscheck/reverse_vs_jvp.json"
+      ],
+      "evidence_status": "PASS_DIAGNOSTIC",
+      "exact_wording": "同数学后端reverse/JVP 60/60通过。",
+      "limitation": "不替代FD外部校验。",
+      "manuscript_location": "7.5",
+      "prohibited_wording": "AD/FD总体通过。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "conditioning贡献于部分失败。",
+      "claim_id": "C17",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/fd_conditioning/extended_fd_results.json"
+      ],
+      "evidence_status": "DIAGNOSTIC",
+      "exact_wording": "extended FD覆盖2640条路径，60个选择路径中30个稳定。",
+      "limitation": "结果依赖路径。",
+      "manuscript_location": "7.6",
+      "prohibited_wording": "全部失败均为FD伪影。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "冻结诊断显示backend sensitivity。",
+      "claim_id": "C18",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/ad_crosscheck/reverse_vs_jvp.json"
+      ],
+      "evidence_status": "DIAGNOSTIC",
+      "exact_wording": "历史默认后端与数学JVP在60个选择诊断中匹配48个，12个不匹配。",
+      "limitation": "未授权切换后重新资格化。",
+      "manuscript_location": "7.8",
+      "prohibited_wording": "D3内在不可微。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "未检测到系统性vanish/explode。",
+      "claim_id": "C19",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/horizon_scaling/horizon_gradient_scaling.json"
+      ],
+      "evidence_status": "DIAGNOSTIC",
+      "exact_wording": "90条horizon traces均分类为bounded或nonmonotone，未观察到系统性vanish/explode。",
+      "limitation": "不证明可训练性。",
+      "manuscript_location": "7.9",
+      "prohibited_wording": "训练梯度健康。",
+      "role": "supplement"
+    },
+    {
+      "allowed_wording": "多阶段结构守恒通过。",
+      "claim_id": "C20",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/conservation_over_time/conservation_results.json"
+      ],
+      "evidence_status": "PASS",
+      "exact_wording": "冻结多阶段审计中540/540 stage conservation检查通过。",
+      "limitation": "仅覆盖冻结horizon与配置。",
+      "manuscript_location": "6.3, 7.3",
+      "prohibited_wording": "长期稳定性已建立。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "事件语义资格化。",
+      "claim_id": "C21",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/topology_event_scan/te1_dense_scan_results.json"
+      ],
+      "evidence_status": "PASS",
+      "exact_wording": "TE1记录一次确定性edge birth和一次death。",
+      "limitation": "边存在性为离散映射。",
+      "manuscript_location": "8.2",
+      "prohibited_wording": "cutoff membership可微。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "冻结重放确定。",
+      "claim_id": "C22",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/topology_stage_replay/replay_results.json"
+      ],
+      "evidence_status": "PASS",
+      "exact_wording": "topology-stage replay 6/6通过。",
+      "limitation": "仅TE1。",
+      "manuscript_location": "8.3",
+      "prohibited_wording": "任意拓扑族均通过。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "事件两侧梯度通过。",
+      "claim_id": "C23",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/event_side_gradients/event_side_gradient_results.json"
+      ],
+      "evidence_status": "PASS",
+      "exact_wording": "event-side fixed-topology gradients 12/12通过。",
+      "limitation": "不穿越cutoff membership求导。",
+      "manuscript_location": "8.4",
+      "prohibited_wording": "跨事件导数存在。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "有限跳跃与空图语义通过。",
+      "claim_id": "C24",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/event_jump_audit/event_force_jump_results.json",
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/topology_stage_replay/replay_results.json"
+      ],
+      "evidence_status": "PASS",
+      "exact_wording": "TE1两侧力跳有限有界，空图语义确定。",
+      "limitation": "连续性不是资格要求。",
+      "manuscript_location": "8.5–8.6",
+      "prohibited_wording": "力在事件处连续。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "拓扑组件独立通过。",
+      "claim_id": "C25",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/topology_preservation/topology_component_status.json"
+      ],
+      "evidence_status": "PASS",
+      "exact_wording": "TOPOLOGY_EVENT_COMPONENT_QUALIFIED是独立组件状态。",
+      "limitation": "不得覆盖梯度总体失败。",
+      "manuscript_location": "8.7",
+      "prohibited_wording": "Stage 03D总体通过。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "两个状态同时可见。",
+      "claim_id": "C26",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03ds_status_ledger.json"
+      ],
+      "evidence_status": "NOT_QUALIFIED",
+      "exact_wording": "Stage 03D保持DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED，Stage 03D-R保持DYNAMIC_GRADIENT_FAILURE_MIXED_OR_UNRESOLVED。",
+      "limitation": "路线暂停。",
+      "manuscript_location": "Abstract, 7.9, 9",
+      "prohibited_wording": "D-R修复或覆盖D。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "NOT_EXECUTED/NOT_TESTED。",
+      "claim_id": "C27",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03ds_status_ledger.json"
+      ],
+      "evidence_status": "NOT_EXECUTED",
+      "exact_wording": "未执行动态训练、自主rollout或性能评价，Stage 03E authorization=false。",
+      "limitation": "未执行不等于失败。",
+      "manuscript_location": "Abstract, 9.3, 10",
+      "prohibited_wording": "训练失败、性能不足或模型提升。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "明确三类缺口。",
+      "claim_id": "C28",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/08_route_closure/manuscript_assessment/stage03ds_manuscript_readiness.json"
+      ],
+      "evidence_status": "READINESS_BOUNDARY",
+      "exact_wording": "当前完整求解器论文证据不完整，缺少训练资格、rollout性能/稳定性与独立D-R4等价验证。",
+      "limitation": "P1只形成受限方法/验证稿。",
+      "manuscript_location": "9.6",
+      "prohibited_wording": "完整求解器已可投稿。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "Paper B + Paper C边界。",
+      "claim_id": "C29",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/08_route_closure/manuscript_assessment/stage03ds_manuscript_readiness.json"
+      ],
+      "evidence_status": "MANUSCRIPT_POSITION",
+      "exact_wording": "论文采用verification-first方法/验证主线并吸收多步可微性边界。",
+      "limitation": "工作标题不是最终投稿题名。",
+      "manuscript_location": "1.3, 9.4",
+      "prohibited_wording": "successful Transformer solver。",
+      "role": "main"
+    },
+    {
+      "allowed_wording": "使用冻结claim boundary。",
+      "claim_id": "C30",
+      "evidence_artifact": [
+        "stage_03_Dynamic_SPH_Transformer_Hybrid/08_route_closure/claim_boundary/stage03ds_claim_boundary.json"
+      ],
+      "evidence_status": "PASS_BOUNDARY",
+      "exact_wording": "支持、条件与不支持主张必须分层，训练与性能主张不进入提交稿。",
+      "limitation": "P2前保留REF-TODO。",
+      "manuscript_location": "3.4, 9",
+      "prohibited_wording": "将条件诊断写成普遍结论。",
+      "role": "main"
+    }
+  ],
+  "schema_version": "sph-pio-poc.publication-p1.claim-to-evidence.v1",
+  "unsupported_marker": "UNSUPPORTED_DRAFT_STATEMENT",
+  "workflow": "Publication Track P1"
+}

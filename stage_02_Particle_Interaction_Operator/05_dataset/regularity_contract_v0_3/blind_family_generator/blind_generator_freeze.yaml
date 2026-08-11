@@ -1,0 +1,46 @@
+freeze_version: stage02jt-blind-generator-0.3.0
+frozen_before_v0_3_contract_hash: true
+formula_materialization_before_contract_hash_permitted: false
+common_contract:
+  dimension: 2
+  domain: periodic_unit_square
+  evaluation_time: 0.0
+  execution: CPU_float64
+  physics_source: frozen_stage02c_generation_configuration
+  EOS: isothermal_p_equals_cs_squared_times_rho_minus_rho0
+  layout: regular_equal_mass
+  external_source: none
+  trajectory: none
+  temporal_derivative: none
+mode_pool:
+  - [1, 0]
+  - [0, 1]
+  - [1, 1]
+  - [1, -1]
+  - [2, 0]
+  - [0, 2]
+  - [2, 1]
+  - [1, 2]
+  - [2, -1]
+  - [1, -2]
+family_algorithm:
+  density_mode_count: 3
+  velocity_mode_count_per_component: 4
+  mode_selection: PCG64_without_replacement_per_field
+  phase_selection: PCG64_uniform_0_to_2pi
+  density_amplitude_generation: PCG64_uniform_weights_normalized_to_L1_0p0045_with_independent_signs
+  density_amplitude_absolute_sum_max: 0.0045
+  velocity_amplitude_generation: PCG64_uniform_weights_normalized_to_component_L1_0p018_with_independent_signs
+  velocity_component_L1: 0.018
+  analytic_Mach_upper_bound: 0.02545584412271571
+  family_rejection_or_replacement_permitted: false
+families:
+  - {family_id: BLIND_FAMILY_01, role: future_train, root_seed: 2026080401}
+  - {family_id: BLIND_FAMILY_02, role: future_train, root_seed: 2026080402}
+  - {family_id: BLIND_FAMILY_03, role: future_validation, root_seed: 2026080403}
+  - {family_id: BLIND_FAMILY_04, role: future_test, root_seed: 2026080404}
+resolution_path:
+  - {case_suffix: n12_h26, particles_per_axis: 12, h_over_dx: 2.6}
+  - {case_suffix: n16_h26, particles_per_axis: 16, h_over_dx: 2.6}
+  - {case_suffix: n20_h26, particles_per_axis: 20, h_over_dx: 2.6}
+

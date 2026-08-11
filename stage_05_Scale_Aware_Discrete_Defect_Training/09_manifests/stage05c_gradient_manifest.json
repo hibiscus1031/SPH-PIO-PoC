@@ -1,0 +1,80 @@
+{
+  "finite_difference": {
+    "FD_path_count": 25920,
+    "all_paths_deterministic": true,
+    "all_paths_safe": true,
+    "all_paths_topology_unchanged": true,
+    "failed_probe_count": 4,
+    "failed_probes": [
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "kind": "coordinate",
+        "lineage": "LCDF_07",
+        "reverse_jvp_pass": true,
+        "seed": 20500502,
+        "selection_key": "sha256:3e83f230a85ff39ee97ea8f9964fa11ad2668f84291c8bbce244ccf2ca8526f8",
+        "smooth_epsilon_count": 6,
+        "stable_window": false
+      },
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "kind": "block",
+        "lineage": "LCDF_07",
+        "reverse_jvp_pass": true,
+        "seed": 20500502,
+        "selection_key": "sha256:1cc6c29e128dae209787d9e95468f6a3cd675beed7c7b403b94a62da2564eb92",
+        "smooth_epsilon_count": 6,
+        "stable_window": false
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "kind": "coordinate",
+        "lineage": "LCDF_06",
+        "reverse_jvp_pass": true,
+        "seed": 20500503,
+        "selection_key": "sha256:9fb0443d1cbac82cd765f6a2642297e9307a89a07034f0f68d4079762a228a69",
+        "smooth_epsilon_count": 6,
+        "stable_window": false
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "kind": "coordinate",
+        "lineage": "LCDF_06",
+        "reverse_jvp_pass": true,
+        "seed": 20500503,
+        "selection_key": "sha256:b0aa122c427bea6da621fd27751034f17184b92e878ee50c76afe36044b59fb7",
+        "smooth_epsilon_count": 6,
+        "stable_window": false
+      }
+    ],
+    "pass": false,
+    "required_probe_count": 1080,
+    "stable_probe_count": 1076
+  },
+  "full_gradient": {
+    "active_rows": 216,
+    "deterministic_repeat_rows": 216,
+    "finite_rows": 216,
+    "group_lineage_seed_count": 216,
+    "group_lineage_seed_pass_count": 214,
+    "loss_repeat_exact_contexts": 54,
+    "observed_rows": 216,
+    "parameter_group_aggregation_pass": true,
+    "parameter_unchanged_contexts": 54,
+    "pass": true,
+    "required_group_lineage_seed_rows": 216
+  },
+  "pass": false,
+  "reverse_jvp": {
+    "genuine_forward_jvp": true,
+    "observed_probe_count": 1080,
+    "pass": true,
+    "pass_count": 1080,
+    "required_probe_count": 1080
+  },
+  "schema": "sph-pio-poc.stage05c.gradient-manifest.v1"
+}

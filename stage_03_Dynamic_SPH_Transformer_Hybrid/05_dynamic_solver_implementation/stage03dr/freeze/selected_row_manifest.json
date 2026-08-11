@@ -1,0 +1,1239 @@
+{
+  "contract_hash": "sha256:63ef93fe7af7c10ffb6a6e1d944003b5e3e85818f98bac6f6b1b9333a479c2d9",
+  "historical_control_selected_count": 13,
+  "historical_failure_selected_count": 47,
+  "rows": [
+    {
+      "arm": "D1",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "basis_hash": "sha256:242c852cbb88bab6c83eba88b9dfd465cc126be573c8cb5cee387edb0ece4f22",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": -1.4846182130653215e-11,
+      "historical_verdict": false,
+      "horizon": 1,
+      "parameter_path": "pair_head.output.bias",
+      "probe_type": "coefficient_head_parameter",
+      "row_id": "D1|FT_DR1_COMPRESSION_N8|20300403|K1|coefficient_head_parameter",
+      "seed": 20300403,
+      "selection_role": "historical_failure",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D1",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "basis_hash": "sha256:242c852cbb88bab6c83eba88b9dfd465cc126be573c8cb5cee387edb0ece4f22",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": -2.997874442254938e-10,
+      "historical_verdict": false,
+      "horizon": 2,
+      "parameter_path": "pair_head.output.bias",
+      "probe_type": "coefficient_head_parameter",
+      "row_id": "D1|FT_DR1_COMPRESSION_N8|20300402|K2|coefficient_head_parameter",
+      "seed": 20300402,
+      "selection_role": "historical_failure",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D1",
+      "case_id": "FT_DR3_SHEAR_A_N8",
+      "direction": {
+        "basis_hash": "sha256:242c852cbb88bab6c83eba88b9dfd465cc126be573c8cb5cee387edb0ece4f22",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": 2.4881592825595072e-21,
+      "historical_verdict": false,
+      "horizon": 4,
+      "parameter_path": "pair_head.output.bias",
+      "probe_type": "coefficient_head_parameter",
+      "row_id": "D1|FT_DR3_SHEAR_A_N8|20300401|K4|coefficient_head_parameter",
+      "seed": 20300401,
+      "selection_role": "historical_failure",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D1",
+      "case_id": "FT_DR3_SHEAR_A_N8",
+      "direction": {
+        "basis_hash": "sha256:242c852cbb88bab6c83eba88b9dfd465cc126be573c8cb5cee387edb0ece4f22",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": -2.8415308402421607e-20,
+      "historical_verdict": false,
+      "horizon": 8,
+      "parameter_path": "pair_head.output.bias",
+      "probe_type": "coefficient_head_parameter",
+      "row_id": "D1|FT_DR3_SHEAR_A_N8|20300401|K8|coefficient_head_parameter",
+      "seed": 20300401,
+      "selection_role": "historical_failure",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D1",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 1.0,
+        "shape": [
+          64
+        ],
+        "tensor_hash": "sha256:7bf0bf92fca075df5fca4d162ab10370fcee82c35ea1439342570ca83cc5edef"
+      },
+      "historical_ad": -0.002823974149840992,
+      "historical_verdict": false,
+      "horizon": 1,
+      "parameter_path": null,
+      "probe_type": "initial_density",
+      "row_id": "D1|FT_DR1_COMPRESSION_N8|20300402|K1|initial_density",
+      "seed": 20300402,
+      "selection_role": "historical_failure",
+      "tensor_index": null
+    },
+    {
+      "arm": "D1",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 1.0,
+        "shape": [
+          64
+        ],
+        "tensor_hash": "sha256:7bf0bf92fca075df5fca4d162ab10370fcee82c35ea1439342570ca83cc5edef"
+      },
+      "historical_ad": -0.0025722149527832995,
+      "historical_verdict": false,
+      "horizon": 2,
+      "parameter_path": null,
+      "probe_type": "initial_density",
+      "row_id": "D1|FT_DR1_COMPRESSION_N8|20300402|K2|initial_density",
+      "seed": 20300402,
+      "selection_role": "historical_failure",
+      "tensor_index": null
+    },
+    {
+      "arm": "D1",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 1.0,
+        "shape": [
+          64
+        ],
+        "tensor_hash": "sha256:7bf0bf92fca075df5fca4d162ab10370fcee82c35ea1439342570ca83cc5edef"
+      },
+      "historical_ad": -0.0020676350940016675,
+      "historical_verdict": false,
+      "horizon": 4,
+      "parameter_path": null,
+      "probe_type": "initial_density",
+      "row_id": "D1|FT_DR1_COMPRESSION_N8|20300402|K4|initial_density",
+      "seed": 20300402,
+      "selection_role": "historical_failure",
+      "tensor_index": null
+    },
+    {
+      "arm": "D1",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 1.0,
+        "shape": [
+          64
+        ],
+        "tensor_hash": "sha256:e8a98eb917319f552c06f440c410fa5a44e8e39b48827fa3b614cc688034e0e7"
+      },
+      "historical_ad": 0.005976947617381902,
+      "historical_verdict": false,
+      "horizon": 8,
+      "parameter_path": null,
+      "probe_type": "initial_density",
+      "row_id": "D1|FT_DR1_COMPRESSION_N8|20300401|K8|initial_density",
+      "seed": 20300401,
+      "selection_role": "historical_failure",
+      "tensor_index": null
+    },
+    {
+      "arm": "D1",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 0.9999999999999998,
+        "shape": [
+          64,
+          2
+        ],
+        "tensor_hash": "sha256:2b2d147971c94215c778ff6c100371463ca003e3a97943febff0c6b8a1f924a5"
+      },
+      "historical_ad": -0.013584759943091778,
+      "historical_verdict": true,
+      "horizon": 1,
+      "parameter_path": null,
+      "probe_type": "initial_velocity",
+      "row_id": "D1|FT_DR1_COMPRESSION_N8|20300401|K1|initial_velocity",
+      "seed": 20300401,
+      "selection_role": "historical_pass_control",
+      "tensor_index": null
+    },
+    {
+      "arm": "D1",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 0.9999999999999998,
+        "shape": [
+          64,
+          2
+        ],
+        "tensor_hash": "sha256:2b2d147971c94215c778ff6c100371463ca003e3a97943febff0c6b8a1f924a5"
+      },
+      "historical_ad": -0.013599951629605964,
+      "historical_verdict": true,
+      "horizon": 2,
+      "parameter_path": null,
+      "probe_type": "initial_velocity",
+      "row_id": "D1|FT_DR1_COMPRESSION_N8|20300401|K2|initial_velocity",
+      "seed": 20300401,
+      "selection_role": "historical_pass_control",
+      "tensor_index": null
+    },
+    {
+      "arm": "D1",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 0.9999999999999998,
+        "shape": [
+          64,
+          2
+        ],
+        "tensor_hash": "sha256:2b2d147971c94215c778ff6c100371463ca003e3a97943febff0c6b8a1f924a5"
+      },
+      "historical_ad": -0.013611541170907517,
+      "historical_verdict": true,
+      "horizon": 4,
+      "parameter_path": null,
+      "probe_type": "initial_velocity",
+      "row_id": "D1|FT_DR1_COMPRESSION_N8|20300401|K4|initial_velocity",
+      "seed": 20300401,
+      "selection_role": "historical_pass_control",
+      "tensor_index": null
+    },
+    {
+      "arm": "D1",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 0.9999999999999998,
+        "shape": [
+          64,
+          2
+        ],
+        "tensor_hash": "sha256:2b2d147971c94215c778ff6c100371463ca003e3a97943febff0c6b8a1f924a5"
+      },
+      "historical_ad": -0.01355925902368637,
+      "historical_verdict": true,
+      "horizon": 8,
+      "parameter_path": null,
+      "probe_type": "initial_velocity",
+      "row_id": "D1|FT_DR1_COMPRESSION_N8|20300401|K8|initial_velocity",
+      "seed": 20300401,
+      "selection_role": "historical_pass_control",
+      "tensor_index": null
+    },
+    {
+      "arm": "D1",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "basis_hash": "sha256:63bf350a4abb310ba99e4dd4d954903900bcadefe290d31ca9fbd31a69782f2f",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": -3.466297109088306e-11,
+      "historical_verdict": false,
+      "horizon": 1,
+      "parameter_path": "encoder.linear_1.bias",
+      "probe_type": "token_encoder_parameter",
+      "row_id": "D1|FT_DR1_COMPRESSION_N8|20300401|K1|token_encoder_parameter",
+      "seed": 20300401,
+      "selection_role": "historical_failure",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D1",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "basis_hash": "sha256:63bf350a4abb310ba99e4dd4d954903900bcadefe290d31ca9fbd31a69782f2f",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": -1.3971997039979209e-10,
+      "historical_verdict": false,
+      "horizon": 2,
+      "parameter_path": "encoder.linear_1.bias",
+      "probe_type": "token_encoder_parameter",
+      "row_id": "D1|FT_DR1_COMPRESSION_N8|20300401|K2|token_encoder_parameter",
+      "seed": 20300401,
+      "selection_role": "historical_failure",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D1",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "basis_hash": "sha256:63bf350a4abb310ba99e4dd4d954903900bcadefe290d31ca9fbd31a69782f2f",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": 1.3688525937220084e-10,
+      "historical_verdict": false,
+      "horizon": 4,
+      "parameter_path": "encoder.linear_1.bias",
+      "probe_type": "token_encoder_parameter",
+      "row_id": "D1|FT_DR1_COMPRESSION_N8|20300402|K4|token_encoder_parameter",
+      "seed": 20300402,
+      "selection_role": "historical_failure",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D1",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "basis_hash": "sha256:63bf350a4abb310ba99e4dd4d954903900bcadefe290d31ca9fbd31a69782f2f",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": 6.591493262053411e-10,
+      "historical_verdict": false,
+      "horizon": 8,
+      "parameter_path": "encoder.linear_1.bias",
+      "probe_type": "token_encoder_parameter",
+      "row_id": "D1|FT_DR1_COMPRESSION_N8|20300402|K8|token_encoder_parameter",
+      "seed": 20300402,
+      "selection_role": "historical_failure",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D2",
+      "case_id": "FT_DR3_SHEAR_B_N8",
+      "direction": {
+        "basis_hash": "sha256:242c852cbb88bab6c83eba88b9dfd465cc126be573c8cb5cee387edb0ece4f22",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": -4.102815838263017e-20,
+      "historical_verdict": false,
+      "horizon": 1,
+      "parameter_path": "pair_head.output.bias",
+      "probe_type": "coefficient_head_parameter",
+      "row_id": "D2|FT_DR3_SHEAR_B_N8|20300401|K1|coefficient_head_parameter",
+      "seed": 20300401,
+      "selection_role": "historical_failure",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D2",
+      "case_id": "FT_DR1_COUPLED_N8",
+      "direction": {
+        "basis_hash": "sha256:242c852cbb88bab6c83eba88b9dfd465cc126be573c8cb5cee387edb0ece4f22",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": 1.3420178258060321e-20,
+      "historical_verdict": false,
+      "horizon": 2,
+      "parameter_path": "pair_head.output.bias",
+      "probe_type": "coefficient_head_parameter",
+      "row_id": "D2|FT_DR1_COUPLED_N8|20300402|K2|coefficient_head_parameter",
+      "seed": 20300402,
+      "selection_role": "historical_failure",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D2",
+      "case_id": "FT_DR1_COUPLED_N8",
+      "direction": {
+        "basis_hash": "sha256:242c852cbb88bab6c83eba88b9dfd465cc126be573c8cb5cee387edb0ece4f22",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": 3.5998900258307764e-21,
+      "historical_verdict": false,
+      "horizon": 4,
+      "parameter_path": "pair_head.output.bias",
+      "probe_type": "coefficient_head_parameter",
+      "row_id": "D2|FT_DR1_COUPLED_N8|20300401|K4|coefficient_head_parameter",
+      "seed": 20300401,
+      "selection_role": "historical_failure",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D2",
+      "case_id": "FT_DR1_COUPLED_N8",
+      "direction": {
+        "basis_hash": "sha256:242c852cbb88bab6c83eba88b9dfd465cc126be573c8cb5cee387edb0ece4f22",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": -2.3081647812679684e-20,
+      "historical_verdict": false,
+      "horizon": 8,
+      "parameter_path": "pair_head.output.bias",
+      "probe_type": "coefficient_head_parameter",
+      "row_id": "D2|FT_DR1_COUPLED_N8|20300402|K8|coefficient_head_parameter",
+      "seed": 20300402,
+      "selection_role": "historical_failure",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D2",
+      "case_id": "FT_DR1_COUPLED_N8",
+      "direction": {
+        "basis_hash": "sha256:e5f56e6a3050d367b5e0fd5ca2e4ebfaff4a344abe75986db5689f8bfab901a2",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": 5.169878828456423e-26,
+      "historical_verdict": true,
+      "horizon": 1,
+      "parameter_path": "recurrent.bias_ih",
+      "probe_type": "gru_parameter",
+      "row_id": "D2|FT_DR1_COUPLED_N8|20300401|K1|gru_parameter",
+      "seed": 20300401,
+      "selection_role": "historical_pass_control",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D2",
+      "case_id": "FT_DR1_COUPLED_N8",
+      "direction": {
+        "basis_hash": "sha256:e5f56e6a3050d367b5e0fd5ca2e4ebfaff4a344abe75986db5689f8bfab901a2",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": 3.970466940254533e-23,
+      "historical_verdict": false,
+      "horizon": 2,
+      "parameter_path": "recurrent.bias_ih",
+      "probe_type": "gru_parameter",
+      "row_id": "D2|FT_DR1_COUPLED_N8|20300402|K2|gru_parameter",
+      "seed": 20300402,
+      "selection_role": "historical_failure",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D2",
+      "case_id": "FT_DR1_COUPLED_N8",
+      "direction": {
+        "basis_hash": "sha256:e5f56e6a3050d367b5e0fd5ca2e4ebfaff4a344abe75986db5689f8bfab901a2",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": 7.940933880509066e-23,
+      "historical_verdict": false,
+      "horizon": 4,
+      "parameter_path": "recurrent.bias_ih",
+      "probe_type": "gru_parameter",
+      "row_id": "D2|FT_DR1_COUPLED_N8|20300402|K4|gru_parameter",
+      "seed": 20300402,
+      "selection_role": "historical_failure",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D2",
+      "case_id": "FT_DR1_COUPLED_N8",
+      "direction": {
+        "basis_hash": "sha256:e5f56e6a3050d367b5e0fd5ca2e4ebfaff4a344abe75986db5689f8bfab901a2",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": 1.3028094647710186e-23,
+      "historical_verdict": false,
+      "horizon": 8,
+      "parameter_path": "recurrent.bias_ih",
+      "probe_type": "gru_parameter",
+      "row_id": "D2|FT_DR1_COUPLED_N8|20300401|K8|gru_parameter",
+      "seed": 20300401,
+      "selection_role": "historical_failure",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D2",
+      "case_id": "FT_DR1_COUPLED_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 1.0,
+        "shape": [
+          64
+        ],
+        "tensor_hash": "sha256:32b7bd4ed560f19e609e0a5a0667fed2df9692b1b517883083761bf8c8f66bdc"
+      },
+      "historical_ad": -0.008055463485045256,
+      "historical_verdict": true,
+      "horizon": 1,
+      "parameter_path": null,
+      "probe_type": "initial_density",
+      "row_id": "D2|FT_DR1_COUPLED_N8|20300401|K1|initial_density",
+      "seed": 20300401,
+      "selection_role": "historical_pass_control",
+      "tensor_index": null
+    },
+    {
+      "arm": "D2",
+      "case_id": "FT_DR1_COUPLED_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 0.9999999999999998,
+        "shape": [
+          64
+        ],
+        "tensor_hash": "sha256:a9acb31ad76bad6dfaf59a4793b579a931583d7029031e00036d4ae4be6c15e0"
+      },
+      "historical_ad": -0.0038395895956608826,
+      "historical_verdict": false,
+      "horizon": 2,
+      "parameter_path": null,
+      "probe_type": "initial_density",
+      "row_id": "D2|FT_DR1_COUPLED_N8|20300402|K2|initial_density",
+      "seed": 20300402,
+      "selection_role": "historical_failure",
+      "tensor_index": null
+    },
+    {
+      "arm": "D2",
+      "case_id": "FT_DR1_COUPLED_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 0.9999999999999998,
+        "shape": [
+          64
+        ],
+        "tensor_hash": "sha256:a9acb31ad76bad6dfaf59a4793b579a931583d7029031e00036d4ae4be6c15e0"
+      },
+      "historical_ad": -0.003557657320072174,
+      "historical_verdict": false,
+      "horizon": 4,
+      "parameter_path": null,
+      "probe_type": "initial_density",
+      "row_id": "D2|FT_DR1_COUPLED_N8|20300402|K4|initial_density",
+      "seed": 20300402,
+      "selection_role": "historical_failure",
+      "tensor_index": null
+    },
+    {
+      "arm": "D2",
+      "case_id": "FT_DR1_COUPLED_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 0.9999999999999998,
+        "shape": [
+          64
+        ],
+        "tensor_hash": "sha256:a9acb31ad76bad6dfaf59a4793b579a931583d7029031e00036d4ae4be6c15e0"
+      },
+      "historical_ad": -0.0029526872693193644,
+      "historical_verdict": false,
+      "horizon": 8,
+      "parameter_path": null,
+      "probe_type": "initial_density",
+      "row_id": "D2|FT_DR1_COUPLED_N8|20300402|K8|initial_density",
+      "seed": 20300402,
+      "selection_role": "historical_failure",
+      "tensor_index": null
+    },
+    {
+      "arm": "D2",
+      "case_id": "FT_DR1_COUPLED_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 0.9999999999999994,
+        "shape": [
+          64,
+          32
+        ],
+        "tensor_hash": "sha256:9bbb55ed31f8da7961a1599120a94083ec2c9bb93dba6e58994efaa5bb845e9e"
+      },
+      "historical_ad": 2.52530554832214e-08,
+      "historical_verdict": false,
+      "horizon": 1,
+      "parameter_path": null,
+      "probe_type": "initial_hidden_state",
+      "row_id": "D2|FT_DR1_COUPLED_N8|20300401|K1|initial_hidden_state",
+      "seed": 20300401,
+      "selection_role": "historical_failure",
+      "tensor_index": null
+    },
+    {
+      "arm": "D2",
+      "case_id": "FT_DR1_COUPLED_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 0.9999999999999994,
+        "shape": [
+          64,
+          32
+        ],
+        "tensor_hash": "sha256:9bbb55ed31f8da7961a1599120a94083ec2c9bb93dba6e58994efaa5bb845e9e"
+      },
+      "historical_ad": 8.860990203899365e-08,
+      "historical_verdict": false,
+      "horizon": 2,
+      "parameter_path": null,
+      "probe_type": "initial_hidden_state",
+      "row_id": "D2|FT_DR1_COUPLED_N8|20300401|K2|initial_hidden_state",
+      "seed": 20300401,
+      "selection_role": "historical_failure",
+      "tensor_index": null
+    },
+    {
+      "arm": "D2",
+      "case_id": "FT_DR1_COUPLED_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 0.9999999999999994,
+        "shape": [
+          64,
+          32
+        ],
+        "tensor_hash": "sha256:9bbb55ed31f8da7961a1599120a94083ec2c9bb93dba6e58994efaa5bb845e9e"
+      },
+      "historical_ad": 1.9100872353202694e-07,
+      "historical_verdict": false,
+      "horizon": 4,
+      "parameter_path": null,
+      "probe_type": "initial_hidden_state",
+      "row_id": "D2|FT_DR1_COUPLED_N8|20300401|K4|initial_hidden_state",
+      "seed": 20300401,
+      "selection_role": "historical_failure",
+      "tensor_index": null
+    },
+    {
+      "arm": "D2",
+      "case_id": "FT_DR1_COUPLED_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 0.9999999999999994,
+        "shape": [
+          64,
+          32
+        ],
+        "tensor_hash": "sha256:9bbb55ed31f8da7961a1599120a94083ec2c9bb93dba6e58994efaa5bb845e9e"
+      },
+      "historical_ad": 2.7691280494261566e-07,
+      "historical_verdict": false,
+      "horizon": 8,
+      "parameter_path": null,
+      "probe_type": "initial_hidden_state",
+      "row_id": "D2|FT_DR1_COUPLED_N8|20300401|K8|initial_hidden_state",
+      "seed": 20300401,
+      "selection_role": "historical_failure",
+      "tensor_index": null
+    },
+    {
+      "arm": "D2",
+      "case_id": "FT_DR1_COUPLED_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 1.0,
+        "shape": [
+          64,
+          2
+        ],
+        "tensor_hash": "sha256:be2c8a052273944f827cfa326554bf8d381c4a7bfbb00441528c1ccc0c7be4bf"
+      },
+      "historical_ad": 0.012222140939127312,
+      "historical_verdict": true,
+      "horizon": 1,
+      "parameter_path": null,
+      "probe_type": "initial_velocity",
+      "row_id": "D2|FT_DR1_COUPLED_N8|20300401|K1|initial_velocity",
+      "seed": 20300401,
+      "selection_role": "historical_pass_control",
+      "tensor_index": null
+    },
+    {
+      "arm": "D2",
+      "case_id": "FT_DR1_COUPLED_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 1.0,
+        "shape": [
+          64,
+          2
+        ],
+        "tensor_hash": "sha256:be2c8a052273944f827cfa326554bf8d381c4a7bfbb00441528c1ccc0c7be4bf"
+      },
+      "historical_ad": 0.012310498095565049,
+      "historical_verdict": true,
+      "horizon": 2,
+      "parameter_path": null,
+      "probe_type": "initial_velocity",
+      "row_id": "D2|FT_DR1_COUPLED_N8|20300401|K2|initial_velocity",
+      "seed": 20300401,
+      "selection_role": "historical_pass_control",
+      "tensor_index": null
+    },
+    {
+      "arm": "D2",
+      "case_id": "FT_DR1_COUPLED_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 1.0,
+        "shape": [
+          64,
+          2
+        ],
+        "tensor_hash": "sha256:be2c8a052273944f827cfa326554bf8d381c4a7bfbb00441528c1ccc0c7be4bf"
+      },
+      "historical_ad": 0.01247005539461779,
+      "historical_verdict": true,
+      "horizon": 4,
+      "parameter_path": null,
+      "probe_type": "initial_velocity",
+      "row_id": "D2|FT_DR1_COUPLED_N8|20300401|K4|initial_velocity",
+      "seed": 20300401,
+      "selection_role": "historical_pass_control",
+      "tensor_index": null
+    },
+    {
+      "arm": "D2",
+      "case_id": "FT_DR1_COUPLED_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 1.0,
+        "shape": [
+          64,
+          2
+        ],
+        "tensor_hash": "sha256:be2c8a052273944f827cfa326554bf8d381c4a7bfbb00441528c1ccc0c7be4bf"
+      },
+      "historical_ad": 0.012718544679834281,
+      "historical_verdict": true,
+      "horizon": 8,
+      "parameter_path": null,
+      "probe_type": "initial_velocity",
+      "row_id": "D2|FT_DR1_COUPLED_N8|20300401|K8|initial_velocity",
+      "seed": 20300401,
+      "selection_role": "historical_pass_control",
+      "tensor_index": null
+    },
+    {
+      "arm": "D3",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "basis_hash": "sha256:242c852cbb88bab6c83eba88b9dfd465cc126be573c8cb5cee387edb0ece4f22",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": 8.195145735540804e-13,
+      "historical_verdict": false,
+      "horizon": 1,
+      "parameter_path": "pair_head.output.bias",
+      "probe_type": "coefficient_head_parameter",
+      "row_id": "D3|FT_DR1_COMPRESSION_N8|20300402|K1|coefficient_head_parameter",
+      "seed": 20300402,
+      "selection_role": "historical_failure",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D3",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "basis_hash": "sha256:242c852cbb88bab6c83eba88b9dfd465cc126be573c8cb5cee387edb0ece4f22",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": 1.4576748519940664e-10,
+      "historical_verdict": false,
+      "horizon": 2,
+      "parameter_path": "pair_head.output.bias",
+      "probe_type": "coefficient_head_parameter",
+      "row_id": "D3|FT_DR1_COMPRESSION_N8|20300402|K2|coefficient_head_parameter",
+      "seed": 20300402,
+      "selection_role": "historical_failure",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D3",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "basis_hash": "sha256:242c852cbb88bab6c83eba88b9dfd465cc126be573c8cb5cee387edb0ece4f22",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": -3.8278381599164266e-10,
+      "historical_verdict": true,
+      "horizon": 4,
+      "parameter_path": "pair_head.output.bias",
+      "probe_type": "coefficient_head_parameter",
+      "row_id": "D3|FT_DR1_COMPRESSION_N8|20300401|K4|coefficient_head_parameter",
+      "seed": 20300401,
+      "selection_role": "historical_pass_control",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D3",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "basis_hash": "sha256:242c852cbb88bab6c83eba88b9dfd465cc126be573c8cb5cee387edb0ece4f22",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": 4.477194212013786e-09,
+      "historical_verdict": true,
+      "horizon": 8,
+      "parameter_path": "pair_head.output.bias",
+      "probe_type": "coefficient_head_parameter",
+      "row_id": "D3|FT_DR1_COMPRESSION_N8|20300401|K8|coefficient_head_parameter",
+      "seed": 20300401,
+      "selection_role": "historical_pass_control",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D3",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 0.9999999999999996,
+        "shape": [
+          64,
+          4,
+          10
+        ],
+        "tensor_hash": "sha256:40a66f6ecd5b7b050f050ff0b0a876be5bd3eed988475a331b3356d9787de4e1"
+      },
+      "historical_ad": -1.5297074127800682e-07,
+      "historical_verdict": false,
+      "horizon": 1,
+      "parameter_path": null,
+      "probe_type": "historical_token",
+      "row_id": "D3|FT_DR1_COMPRESSION_N8|20300401|K1|historical_token",
+      "seed": 20300401,
+      "selection_role": "historical_failure",
+      "tensor_index": null
+    },
+    {
+      "arm": "D3",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 0.9999999999999996,
+        "shape": [
+          64,
+          4,
+          10
+        ],
+        "tensor_hash": "sha256:40a66f6ecd5b7b050f050ff0b0a876be5bd3eed988475a331b3356d9787de4e1"
+      },
+      "historical_ad": -2.551571105134115e-07,
+      "historical_verdict": false,
+      "horizon": 2,
+      "parameter_path": null,
+      "probe_type": "historical_token",
+      "row_id": "D3|FT_DR1_COMPRESSION_N8|20300401|K2|historical_token",
+      "seed": 20300401,
+      "selection_role": "historical_failure",
+      "tensor_index": null
+    },
+    {
+      "arm": "D3",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 0.9999999999999996,
+        "shape": [
+          64,
+          4,
+          10
+        ],
+        "tensor_hash": "sha256:40a66f6ecd5b7b050f050ff0b0a876be5bd3eed988475a331b3356d9787de4e1"
+      },
+      "historical_ad": -4.1629216975515116e-07,
+      "historical_verdict": false,
+      "horizon": 4,
+      "parameter_path": null,
+      "probe_type": "historical_token",
+      "row_id": "D3|FT_DR1_COMPRESSION_N8|20300401|K4|historical_token",
+      "seed": 20300401,
+      "selection_role": "historical_failure",
+      "tensor_index": null
+    },
+    {
+      "arm": "D3",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 0.9999999999999996,
+        "shape": [
+          64,
+          4,
+          10
+        ],
+        "tensor_hash": "sha256:40a66f6ecd5b7b050f050ff0b0a876be5bd3eed988475a331b3356d9787de4e1"
+      },
+      "historical_ad": -3.111647397720317e-07,
+      "historical_verdict": false,
+      "horizon": 8,
+      "parameter_path": null,
+      "probe_type": "historical_token",
+      "row_id": "D3|FT_DR1_COMPRESSION_N8|20300401|K8|historical_token",
+      "seed": 20300401,
+      "selection_role": "historical_failure",
+      "tensor_index": null
+    },
+    {
+      "arm": "D3",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 1.0,
+        "shape": [
+          64
+        ],
+        "tensor_hash": "sha256:0c10a6da1ed226b292ce0653e5e0b737525ec7f592b1041d08f1466df607ff05"
+      },
+      "historical_ad": 0.00013043688908182666,
+      "historical_verdict": false,
+      "horizon": 1,
+      "parameter_path": null,
+      "probe_type": "initial_density",
+      "row_id": "D3|FT_DR1_COMPRESSION_N8|20300401|K1|initial_density",
+      "seed": 20300401,
+      "selection_role": "historical_failure",
+      "tensor_index": null
+    },
+    {
+      "arm": "D3",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 1.0,
+        "shape": [
+          64
+        ],
+        "tensor_hash": "sha256:0c10a6da1ed226b292ce0653e5e0b737525ec7f592b1041d08f1466df607ff05"
+      },
+      "historical_ad": 0.0002995862539868152,
+      "historical_verdict": false,
+      "horizon": 2,
+      "parameter_path": null,
+      "probe_type": "initial_density",
+      "row_id": "D3|FT_DR1_COMPRESSION_N8|20300401|K2|initial_density",
+      "seed": 20300401,
+      "selection_role": "historical_failure",
+      "tensor_index": null
+    },
+    {
+      "arm": "D3",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 1.0,
+        "shape": [
+          64
+        ],
+        "tensor_hash": "sha256:0c10a6da1ed226b292ce0653e5e0b737525ec7f592b1041d08f1466df607ff05"
+      },
+      "historical_ad": 0.0006398687489479081,
+      "historical_verdict": false,
+      "horizon": 4,
+      "parameter_path": null,
+      "probe_type": "initial_density",
+      "row_id": "D3|FT_DR1_COMPRESSION_N8|20300401|K4|initial_density",
+      "seed": 20300401,
+      "selection_role": "historical_failure",
+      "tensor_index": null
+    },
+    {
+      "arm": "D3",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 1.0,
+        "shape": [
+          64
+        ],
+        "tensor_hash": "sha256:0c10a6da1ed226b292ce0653e5e0b737525ec7f592b1041d08f1466df607ff05"
+      },
+      "historical_ad": 0.001321617289220515,
+      "historical_verdict": false,
+      "horizon": 8,
+      "parameter_path": null,
+      "probe_type": "initial_density",
+      "row_id": "D3|FT_DR1_COMPRESSION_N8|20300401|K8|initial_density",
+      "seed": 20300401,
+      "selection_role": "historical_failure",
+      "tensor_index": null
+    },
+    {
+      "arm": "D3",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 1.0,
+        "shape": [
+          64,
+          2
+        ],
+        "tensor_hash": "sha256:1a69b9d8442776499b077013fbfaf6004a9653cad8042bcfaa004e7a9ee046ce"
+      },
+      "historical_ad": -0.003131073512868177,
+      "historical_verdict": false,
+      "horizon": 1,
+      "parameter_path": null,
+      "probe_type": "initial_velocity",
+      "row_id": "D3|FT_DR1_COMPRESSION_N8|20300403|K1|initial_velocity",
+      "seed": 20300403,
+      "selection_role": "historical_failure",
+      "tensor_index": null
+    },
+    {
+      "arm": "D3",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 1.0,
+        "shape": [
+          64,
+          2
+        ],
+        "tensor_hash": "sha256:1a69b9d8442776499b077013fbfaf6004a9653cad8042bcfaa004e7a9ee046ce"
+      },
+      "historical_ad": -0.003515834780393366,
+      "historical_verdict": false,
+      "horizon": 2,
+      "parameter_path": null,
+      "probe_type": "initial_velocity",
+      "row_id": "D3|FT_DR1_COMPRESSION_N8|20300403|K2|initial_velocity",
+      "seed": 20300403,
+      "selection_role": "historical_failure",
+      "tensor_index": null
+    },
+    {
+      "arm": "D3",
+      "case_id": "FT_DR3_SHEAR_A_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 1.0000000000000002,
+        "shape": [
+          64,
+          2
+        ],
+        "tensor_hash": "sha256:6c65b42740d7fba266276eaa906c62adf59fe386daea782d32cfed28f69d27db"
+      },
+      "historical_ad": -0.001488447481307329,
+      "historical_verdict": false,
+      "horizon": 4,
+      "parameter_path": null,
+      "probe_type": "initial_velocity",
+      "row_id": "D3|FT_DR3_SHEAR_A_N8|20300402|K4|initial_velocity",
+      "seed": 20300402,
+      "selection_role": "historical_failure",
+      "tensor_index": null
+    },
+    {
+      "arm": "D3",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "kind": "sha256_direction",
+        "l2_norm": 1.0000000000000002,
+        "shape": [
+          64,
+          2
+        ],
+        "tensor_hash": "sha256:ef4b23c4e6871e3586048e5cbc8fd19342c85c17750495a603aaa9f8105853fb"
+      },
+      "historical_ad": -0.0142186107104646,
+      "historical_verdict": false,
+      "horizon": 8,
+      "parameter_path": null,
+      "probe_type": "initial_velocity",
+      "row_id": "D3|FT_DR1_COMPRESSION_N8|20300402|K8|initial_velocity",
+      "seed": 20300402,
+      "selection_role": "historical_failure",
+      "tensor_index": null
+    },
+    {
+      "arm": "D3",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "basis_hash": "sha256:8a2cc31f61a84ec0c8b2293800e9e79872f064478054df98628928b2c39acc48",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": -5.646405989183639e-13,
+      "historical_verdict": false,
+      "horizon": 1,
+      "parameter_path": "temporal.layers.0.self_attn.in_proj_bias",
+      "probe_type": "temporal_attention_query_parameter",
+      "row_id": "D3|FT_DR1_COMPRESSION_N8|20300403|K1|temporal_attention_query_parameter",
+      "seed": 20300403,
+      "selection_role": "historical_failure",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D3",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "basis_hash": "sha256:8a2cc31f61a84ec0c8b2293800e9e79872f064478054df98628928b2c39acc48",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": -1.4237346135713995e-12,
+      "historical_verdict": false,
+      "horizon": 2,
+      "parameter_path": "temporal.layers.0.self_attn.in_proj_bias",
+      "probe_type": "temporal_attention_query_parameter",
+      "row_id": "D3|FT_DR1_COMPRESSION_N8|20300401|K2|temporal_attention_query_parameter",
+      "seed": 20300401,
+      "selection_role": "historical_failure",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D3",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "basis_hash": "sha256:8a2cc31f61a84ec0c8b2293800e9e79872f064478054df98628928b2c39acc48",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": -4.944625042467219e-12,
+      "historical_verdict": false,
+      "horizon": 4,
+      "parameter_path": "temporal.layers.0.self_attn.in_proj_bias",
+      "probe_type": "temporal_attention_query_parameter",
+      "row_id": "D3|FT_DR1_COMPRESSION_N8|20300401|K4|temporal_attention_query_parameter",
+      "seed": 20300401,
+      "selection_role": "historical_failure",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D3",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "basis_hash": "sha256:8a2cc31f61a84ec0c8b2293800e9e79872f064478054df98628928b2c39acc48",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": -1.5514943223726768e-11,
+      "historical_verdict": false,
+      "horizon": 8,
+      "parameter_path": "temporal.layers.0.self_attn.in_proj_bias",
+      "probe_type": "temporal_attention_query_parameter",
+      "row_id": "D3|FT_DR1_COMPRESSION_N8|20300401|K8|temporal_attention_query_parameter",
+      "seed": 20300401,
+      "selection_role": "historical_failure",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D3",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "basis_hash": "sha256:63bf350a4abb310ba99e4dd4d954903900bcadefe290d31ca9fbd31a69782f2f",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": -1.7616823599672815e-10,
+      "historical_verdict": false,
+      "horizon": 1,
+      "parameter_path": "encoder.linear_1.bias",
+      "probe_type": "token_encoder_parameter",
+      "row_id": "D3|FT_DR1_COMPRESSION_N8|20300402|K1|token_encoder_parameter",
+      "seed": 20300402,
+      "selection_role": "historical_failure",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D3",
+      "case_id": "FT_DR1_COMPRESSION_N8",
+      "direction": {
+        "basis_hash": "sha256:63bf350a4abb310ba99e4dd4d954903900bcadefe290d31ca9fbd31a69782f2f",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": -1.3388405852669588e-09,
+      "historical_verdict": true,
+      "horizon": 2,
+      "parameter_path": "encoder.linear_1.bias",
+      "probe_type": "token_encoder_parameter",
+      "row_id": "D3|FT_DR1_COMPRESSION_N8|20300401|K2|token_encoder_parameter",
+      "seed": 20300401,
+      "selection_role": "historical_pass_control",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D3",
+      "case_id": "FT_DR3_SHEAR_A_N8",
+      "direction": {
+        "basis_hash": "sha256:63bf350a4abb310ba99e4dd4d954903900bcadefe290d31ca9fbd31a69782f2f",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": -5.985478912433708e-21,
+      "historical_verdict": false,
+      "horizon": 4,
+      "parameter_path": "encoder.linear_1.bias",
+      "probe_type": "token_encoder_parameter",
+      "row_id": "D3|FT_DR3_SHEAR_A_N8|20300401|K4|token_encoder_parameter",
+      "seed": 20300401,
+      "selection_role": "historical_failure",
+      "tensor_index": [
+        0
+      ]
+    },
+    {
+      "arm": "D3",
+      "case_id": "FT_DR3_SHEAR_A_N8",
+      "direction": {
+        "basis_hash": "sha256:63bf350a4abb310ba99e4dd4d954903900bcadefe290d31ca9fbd31a69782f2f",
+        "kind": "registered_scalar_basis"
+      },
+      "historical_ad": -3.738856368739685e-21,
+      "historical_verdict": false,
+      "horizon": 8,
+      "parameter_path": "encoder.linear_1.bias",
+      "probe_type": "token_encoder_parameter",
+      "row_id": "D3|FT_DR3_SHEAR_A_N8|20300403|K8|token_encoder_parameter",
+      "seed": 20300403,
+      "selection_role": "historical_failure",
+      "tensor_index": [
+        0
+      ]
+    }
+  ],
+  "schema_version": "sph-pio-poc.stage03dr.selected-row-manifest.v1",
+  "selected_count": 60,
+  "selection_frozen_before_extended_epsilon_decode": true,
+  "selection_rule": "for each arm x probe_type x horizon, lexicographically first failed (case_id,seed,row_id), else first PASS control"
+}

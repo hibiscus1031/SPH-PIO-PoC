@@ -1,0 +1,797 @@
+{
+  "groups": [
+    {
+      "arm": "D1",
+      "flatten_ordering": "named_parameters order, C-contiguous, listed slice order",
+      "group": "D1_TOKEN_ENCODER",
+      "group_hash": "sha256:3dbc8832b18490cf3561936e482b2f8346832c724b9ccb267877ad4c6be3b96b",
+      "parameter_count": 1408,
+      "tensors": [
+        {
+          "parameter_count": 320,
+          "shape": [
+            32,
+            10
+          ],
+          "slice": "all",
+          "tensor_path": "encoder.linear_1.weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "encoder.linear_1.bias"
+        },
+        {
+          "parameter_count": 1024,
+          "shape": [
+            32,
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "encoder.linear_2.weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "encoder.linear_2.bias"
+        }
+      ]
+    },
+    {
+      "arm": "D1",
+      "flatten_ordering": "named_parameters order, C-contiguous, listed slice order",
+      "group": "D1_PAIR_HEAD",
+      "group_hash": "sha256:9bde3c750cb0643ecd34b5abfdfaa1b1c163f3c9a07a30a3d8851aaf7ba48bf8",
+      "parameter_count": 4354,
+      "tensors": [
+        {
+          "parameter_count": 3200,
+          "shape": [
+            32,
+            100
+          ],
+          "slice": "all",
+          "tensor_path": "pair_head.hidden_1.weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "pair_head.hidden_1.bias"
+        },
+        {
+          "parameter_count": 1024,
+          "shape": [
+            32,
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "pair_head.hidden_2.weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "pair_head.hidden_2.bias"
+        },
+        {
+          "parameter_count": 64,
+          "shape": [
+            2,
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "pair_head.output.weight"
+        },
+        {
+          "parameter_count": 2,
+          "shape": [
+            2
+          ],
+          "slice": "all",
+          "tensor_path": "pair_head.output.bias"
+        }
+      ]
+    },
+    {
+      "arm": "D2",
+      "flatten_ordering": "named_parameters order, C-contiguous, listed slice order",
+      "group": "D2_TOKEN_ENCODER",
+      "group_hash": "sha256:2703db0bc13d5d9d28a1bbbccde6286812dc49d98a973cb1bcb24e5778f4dedb",
+      "parameter_count": 1408,
+      "tensors": [
+        {
+          "parameter_count": 320,
+          "shape": [
+            32,
+            10
+          ],
+          "slice": "all",
+          "tensor_path": "encoder.linear_1.weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "encoder.linear_1.bias"
+        },
+        {
+          "parameter_count": 1024,
+          "shape": [
+            32,
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "encoder.linear_2.weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "encoder.linear_2.bias"
+        }
+      ]
+    },
+    {
+      "arm": "D2",
+      "flatten_ordering": "named_parameters order, C-contiguous, listed slice order",
+      "group": "D2_GRU",
+      "group_hash": "sha256:7dc06d90feaca6f079d76d63a7450d140ea5e5d16bae23ede293802629ca5cb7",
+      "parameter_count": 6336,
+      "tensors": [
+        {
+          "parameter_count": 3072,
+          "shape": [
+            96,
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "recurrent.weight_ih"
+        },
+        {
+          "parameter_count": 3072,
+          "shape": [
+            96,
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "recurrent.weight_hh"
+        },
+        {
+          "parameter_count": 96,
+          "shape": [
+            96
+          ],
+          "slice": "all",
+          "tensor_path": "recurrent.bias_ih"
+        },
+        {
+          "parameter_count": 96,
+          "shape": [
+            96
+          ],
+          "slice": "all",
+          "tensor_path": "recurrent.bias_hh"
+        }
+      ]
+    },
+    {
+      "arm": "D2",
+      "flatten_ordering": "named_parameters order, C-contiguous, listed slice order",
+      "group": "D2_PAIR_HEAD",
+      "group_hash": "sha256:786de1849031fbcacf90fd478465f4aed5df35a367bb262c571d735b0baf9cd3",
+      "parameter_count": 4354,
+      "tensors": [
+        {
+          "parameter_count": 3200,
+          "shape": [
+            32,
+            100
+          ],
+          "slice": "all",
+          "tensor_path": "pair_head.hidden_1.weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "pair_head.hidden_1.bias"
+        },
+        {
+          "parameter_count": 1024,
+          "shape": [
+            32,
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "pair_head.hidden_2.weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "pair_head.hidden_2.bias"
+        },
+        {
+          "parameter_count": 64,
+          "shape": [
+            2,
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "pair_head.output.weight"
+        },
+        {
+          "parameter_count": 2,
+          "shape": [
+            2
+          ],
+          "slice": "all",
+          "tensor_path": "pair_head.output.bias"
+        }
+      ]
+    },
+    {
+      "arm": "D3",
+      "flatten_ordering": "named_parameters order, C-contiguous, listed slice order",
+      "group": "D3_TOKEN_ENCODER",
+      "group_hash": "sha256:9a209bd22930130dab12edf6be249ba04380e547bc64afc699fd5a3677188c46",
+      "parameter_count": 1408,
+      "tensors": [
+        {
+          "parameter_count": 320,
+          "shape": [
+            32,
+            10
+          ],
+          "slice": "all",
+          "tensor_path": "encoder.linear_1.weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "encoder.linear_1.bias"
+        },
+        {
+          "parameter_count": 1024,
+          "shape": [
+            32,
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "encoder.linear_2.weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "encoder.linear_2.bias"
+        }
+      ]
+    },
+    {
+      "arm": "D3",
+      "flatten_ordering": "named_parameters order, C-contiguous, listed slice order",
+      "group": "D3_ATTENTION_O",
+      "group_hash": "sha256:73992b9af59d65f897c7f544a7362a0e376a3e3c66a037880b2f07966a409209",
+      "parameter_count": 2112,
+      "tensors": [
+        {
+          "parameter_count": 1024,
+          "shape": [
+            32,
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "temporal.layers.0.self_attn.out_proj.weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "temporal.layers.0.self_attn.out_proj.bias"
+        },
+        {
+          "parameter_count": 1024,
+          "shape": [
+            32,
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "temporal.layers.1.self_attn.out_proj.weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "temporal.layers.1.self_attn.out_proj.bias"
+        }
+      ]
+    },
+    {
+      "arm": "D3",
+      "flatten_ordering": "named_parameters order, C-contiguous, listed slice order",
+      "group": "D3_FEED_FORWARD",
+      "group_hash": "sha256:a6b482b83369ce35a69d238e247588213d676d43dea7782c82d70643c02511a7",
+      "parameter_count": 8768,
+      "tensors": [
+        {
+          "parameter_count": 128,
+          "shape": [
+            4,
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "relative_offset_embedding"
+        },
+        {
+          "parameter_count": 2048,
+          "shape": [
+            64,
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "temporal.layers.0.linear1.weight"
+        },
+        {
+          "parameter_count": 64,
+          "shape": [
+            64
+          ],
+          "slice": "all",
+          "tensor_path": "temporal.layers.0.linear1.bias"
+        },
+        {
+          "parameter_count": 2048,
+          "shape": [
+            32,
+            64
+          ],
+          "slice": "all",
+          "tensor_path": "temporal.layers.0.linear2.weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "temporal.layers.0.linear2.bias"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "temporal.layers.0.norm1.weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "temporal.layers.0.norm1.bias"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "temporal.layers.0.norm2.weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "temporal.layers.0.norm2.bias"
+        },
+        {
+          "parameter_count": 2048,
+          "shape": [
+            64,
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "temporal.layers.1.linear1.weight"
+        },
+        {
+          "parameter_count": 64,
+          "shape": [
+            64
+          ],
+          "slice": "all",
+          "tensor_path": "temporal.layers.1.linear1.bias"
+        },
+        {
+          "parameter_count": 2048,
+          "shape": [
+            32,
+            64
+          ],
+          "slice": "all",
+          "tensor_path": "temporal.layers.1.linear2.weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "temporal.layers.1.linear2.bias"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "temporal.layers.1.norm1.weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "temporal.layers.1.norm1.bias"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "temporal.layers.1.norm2.weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "temporal.layers.1.norm2.bias"
+        }
+      ]
+    },
+    {
+      "arm": "D3",
+      "flatten_ordering": "named_parameters order, C-contiguous, listed slice order",
+      "group": "D3_PAIR_HEAD",
+      "group_hash": "sha256:9525dfbf14e994d8a2b276c2c480f2662ca0f5102b97aae6645601615ad4c64c",
+      "parameter_count": 4354,
+      "tensors": [
+        {
+          "parameter_count": 3200,
+          "shape": [
+            32,
+            100
+          ],
+          "slice": "all",
+          "tensor_path": "pair_head.hidden_1.weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "pair_head.hidden_1.bias"
+        },
+        {
+          "parameter_count": 1024,
+          "shape": [
+            32,
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "pair_head.hidden_2.weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "pair_head.hidden_2.bias"
+        },
+        {
+          "parameter_count": 64,
+          "shape": [
+            2,
+            32
+          ],
+          "slice": "all",
+          "tensor_path": "pair_head.output.weight"
+        },
+        {
+          "parameter_count": 2,
+          "shape": [
+            2
+          ],
+          "slice": "all",
+          "tensor_path": "pair_head.output.bias"
+        }
+      ]
+    },
+    {
+      "arm": "D3",
+      "flatten_ordering": "named_parameters order, C-contiguous, listed slice order",
+      "group": "D3_ATTENTION_Q",
+      "group_hash": "sha256:467523ffc68c2c58758e1b215967c0165474b6d13921d9ab90c8ec05c3cf6671",
+      "parameter_count": 2112,
+      "tensors": [
+        {
+          "parameter_count": 1024,
+          "shape": [
+            32,
+            32
+          ],
+          "slice": "[0:32,:]",
+          "tensor_path": "temporal.layers.0.self_attn.in_proj_weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "[0:32]",
+          "tensor_path": "temporal.layers.0.self_attn.in_proj_bias"
+        },
+        {
+          "parameter_count": 1024,
+          "shape": [
+            32,
+            32
+          ],
+          "slice": "[0:32,:]",
+          "tensor_path": "temporal.layers.1.self_attn.in_proj_weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "[0:32]",
+          "tensor_path": "temporal.layers.1.self_attn.in_proj_bias"
+        }
+      ]
+    },
+    {
+      "arm": "D3",
+      "flatten_ordering": "named_parameters order, C-contiguous, listed slice order",
+      "group": "D3_ATTENTION_K",
+      "group_hash": "sha256:0b7ec3ec6eb837b99871029decdab1ee09fbe603b753a31304c57b0d00dc4f62",
+      "parameter_count": 2112,
+      "tensors": [
+        {
+          "parameter_count": 1024,
+          "shape": [
+            32,
+            32
+          ],
+          "slice": "[32:64,:]",
+          "tensor_path": "temporal.layers.0.self_attn.in_proj_weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "[32:64]",
+          "tensor_path": "temporal.layers.0.self_attn.in_proj_bias"
+        },
+        {
+          "parameter_count": 1024,
+          "shape": [
+            32,
+            32
+          ],
+          "slice": "[32:64,:]",
+          "tensor_path": "temporal.layers.1.self_attn.in_proj_weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "[32:64]",
+          "tensor_path": "temporal.layers.1.self_attn.in_proj_bias"
+        }
+      ]
+    },
+    {
+      "arm": "D3",
+      "flatten_ordering": "named_parameters order, C-contiguous, listed slice order",
+      "group": "D3_ATTENTION_V",
+      "group_hash": "sha256:ea960b5c38691b96b7bb89f9470565fcb9a3c2aa766ae088a11e57aa07f128b7",
+      "parameter_count": 2112,
+      "tensors": [
+        {
+          "parameter_count": 1024,
+          "shape": [
+            32,
+            32
+          ],
+          "slice": "[64:96,:]",
+          "tensor_path": "temporal.layers.0.self_attn.in_proj_weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "[64:96]",
+          "tensor_path": "temporal.layers.0.self_attn.in_proj_bias"
+        },
+        {
+          "parameter_count": 1024,
+          "shape": [
+            32,
+            32
+          ],
+          "slice": "[64:96,:]",
+          "tensor_path": "temporal.layers.1.self_attn.in_proj_weight"
+        },
+        {
+          "parameter_count": 32,
+          "shape": [
+            32
+          ],
+          "slice": "[64:96]",
+          "tensor_path": "temporal.layers.1.self_attn.in_proj_bias"
+        }
+      ]
+    }
+  ],
+  "models": [
+    {
+      "architecture": "D1_INSTANTANEOUS_CONSERVATIVE_PAIR_MLP",
+      "arm": "D1",
+      "backend_identity": "CPU_FLOAT64_TORCH_SDPA_EXPLICIT_MATH_NO_AUTO",
+      "complete_parameter_hash": "sha256:1e313b4a1063ad00e0b74ba0bffdec22c79b223b2c612ba7f694a9653ba56218",
+      "model_seed": 20400401,
+      "parameter_count": 5762,
+      "per_module_hashes": {
+        "encoder": "sha256:fa8fd47a70697c5ef776f3c982fb27da052b0cd9d5e4900c64ce8e3543c7faa8",
+        "pair_head": "sha256:797e5cae92a11949169bbf88a1556798fab3151909ab4aeb6ba9b575649ddbc1"
+      }
+    },
+    {
+      "architecture": "D1_INSTANTANEOUS_CONSERVATIVE_PAIR_MLP",
+      "arm": "D1",
+      "backend_identity": "CPU_FLOAT64_TORCH_SDPA_EXPLICIT_MATH_NO_AUTO",
+      "complete_parameter_hash": "sha256:c8878c8b0255214ff65cd739b2002264b014343a6d05a6ac6a8d3f9f16ed29cb",
+      "model_seed": 20400402,
+      "parameter_count": 5762,
+      "per_module_hashes": {
+        "encoder": "sha256:7c889049b999d43e2908267ede24fd70bcac456f1a68104d37f7fece39b4506c",
+        "pair_head": "sha256:65121c2be2593130ffd5dfe7dfcb6055bbc39ea6a936c290a9b110ef4e4f8f41"
+      }
+    },
+    {
+      "architecture": "D1_INSTANTANEOUS_CONSERVATIVE_PAIR_MLP",
+      "arm": "D1",
+      "backend_identity": "CPU_FLOAT64_TORCH_SDPA_EXPLICIT_MATH_NO_AUTO",
+      "complete_parameter_hash": "sha256:5975ae0b5bc68cd1ff5181b54f9914c36716447417549b3945f8aa3639fe0987",
+      "model_seed": 20400403,
+      "parameter_count": 5762,
+      "per_module_hashes": {
+        "encoder": "sha256:2532f0dbbb6bc88754fda4059c94fa12cdb6a69f6df181b25ef7e98c16bc59e0",
+        "pair_head": "sha256:89f52f34653e2d6be1456c7aecf100d70c1adf37034586f6e060dc1c982b8e99"
+      }
+    },
+    {
+      "architecture": "D2_CAUSAL_RECURRENT_PAIR_PIO",
+      "arm": "D2",
+      "backend_identity": "CPU_FLOAT64_TORCH_SDPA_EXPLICIT_MATH_NO_AUTO",
+      "complete_parameter_hash": "sha256:cd734f191e7c895a93819c274a40ed364c7b6a76ba757ae4085bf0cc4f4855b6",
+      "model_seed": 20400401,
+      "parameter_count": 12098,
+      "per_module_hashes": {
+        "encoder": "sha256:fa8fd47a70697c5ef776f3c982fb27da052b0cd9d5e4900c64ce8e3543c7faa8",
+        "pair_head": "sha256:2869340bee64f71b584c7e855cbd1524ce15955a0a405432c27501971fa0e18f",
+        "recurrent": "sha256:2645cb20067f2a8af4d975ac0b27c9b57f1c53cfeb7eb25f01e78ec509e7a5cd"
+      }
+    },
+    {
+      "architecture": "D2_CAUSAL_RECURRENT_PAIR_PIO",
+      "arm": "D2",
+      "backend_identity": "CPU_FLOAT64_TORCH_SDPA_EXPLICIT_MATH_NO_AUTO",
+      "complete_parameter_hash": "sha256:9f67ea3150abf4f87200e15b4dcbbe22eea1ee20ca81bb2f48a0c26dacb7454a",
+      "model_seed": 20400402,
+      "parameter_count": 12098,
+      "per_module_hashes": {
+        "encoder": "sha256:7c889049b999d43e2908267ede24fd70bcac456f1a68104d37f7fece39b4506c",
+        "pair_head": "sha256:355d2f2c822869f9ea68995f88ba05e052beff90c0752f4037a06d8dab164f83",
+        "recurrent": "sha256:aa1873ceebbbbf56f46d3d2a365324c124354e8fb0ede76ed840f9d24b61b477"
+      }
+    },
+    {
+      "architecture": "D2_CAUSAL_RECURRENT_PAIR_PIO",
+      "arm": "D2",
+      "backend_identity": "CPU_FLOAT64_TORCH_SDPA_EXPLICIT_MATH_NO_AUTO",
+      "complete_parameter_hash": "sha256:08604906c94185c3ee8e66c217d901d2eaf14cd1eb584583f4739ec083bcd4fd",
+      "model_seed": 20400403,
+      "parameter_count": 12098,
+      "per_module_hashes": {
+        "encoder": "sha256:2532f0dbbb6bc88754fda4059c94fa12cdb6a69f6df181b25ef7e98c16bc59e0",
+        "pair_head": "sha256:03a1acc74bc21d0426d8f61f211d4e9e5209a4434721b13819115ccc7f79f15e",
+        "recurrent": "sha256:c4ed3cacd8ef880808866b928f168c14ecd103c7ed3c2fd12123cde16f33c589"
+      }
+    },
+    {
+      "architecture": "D3_CAUSAL_TEMPORAL_RECIPROCAL_TRANSFORMER_PIO",
+      "arm": "D3",
+      "backend_identity": "CPU_FLOAT64_TORCH_SDPA_EXPLICIT_MATH_NO_AUTO",
+      "complete_parameter_hash": "sha256:264f1f80d17ae6e58d8df03b5487eb719d5bf57f98d770f1524b8f2a86913663",
+      "model_seed": 20400401,
+      "parameter_count": 22978,
+      "per_module_hashes": {
+        "encoder": "sha256:fa8fd47a70697c5ef776f3c982fb27da052b0cd9d5e4900c64ce8e3543c7faa8",
+        "pair_head": "sha256:1f5e86d595887cf39952064c39d8b19abcba544dc1e00ba9356093ac74af603d",
+        "temporal": "sha256:b1051121c6f1c690cbfa47e82f075072d8e7934e2c10110124b1936cbe08633d"
+      }
+    },
+    {
+      "architecture": "D3_CAUSAL_TEMPORAL_RECIPROCAL_TRANSFORMER_PIO",
+      "arm": "D3",
+      "backend_identity": "CPU_FLOAT64_TORCH_SDPA_EXPLICIT_MATH_NO_AUTO",
+      "complete_parameter_hash": "sha256:1b4cf1476b48c54ec984cc1772a4f63816616779aa1e5949b5da6ba046140311",
+      "model_seed": 20400402,
+      "parameter_count": 22978,
+      "per_module_hashes": {
+        "encoder": "sha256:7c889049b999d43e2908267ede24fd70bcac456f1a68104d37f7fece39b4506c",
+        "pair_head": "sha256:42ed817f59112c32a64c1a54152ab3cf683ff2d6e7b4f65c942d3909607dadcf",
+        "temporal": "sha256:a0657d4e1a82ca14b11b0e9e907cfa909f9bf052dac3adec7d8ec155d97ab6a6"
+      }
+    },
+    {
+      "architecture": "D3_CAUSAL_TEMPORAL_RECIPROCAL_TRANSFORMER_PIO",
+      "arm": "D3",
+      "backend_identity": "CPU_FLOAT64_TORCH_SDPA_EXPLICIT_MATH_NO_AUTO",
+      "complete_parameter_hash": "sha256:4820e0c6c909b61cdfa86bed9511a68bd0e0dbe8c521ff79903a9cf6c9cfdb06",
+      "model_seed": 20400403,
+      "parameter_count": 22978,
+      "per_module_hashes": {
+        "encoder": "sha256:2532f0dbbb6bc88754fda4059c94fa12cdb6a69f6df181b25ef7e98c16bc59e0",
+        "pair_head": "sha256:4963c0d6add94720370b92c20ca39abb7d8acbd44db072a3e57b559aeeec5253",
+        "temporal": "sha256:5f896c4e377e2e7ff6feadb1f9a1645c86bd4d24ec16822c8e1443e4db7e2a73"
+      }
+    }
+  ],
+  "multiply_assigned_parameter_elements": 0,
+  "unassigned_parameter_elements": 0,
+  "unique_complete_assignment": true
+}

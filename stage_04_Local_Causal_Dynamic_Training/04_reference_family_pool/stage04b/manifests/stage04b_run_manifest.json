@@ -1,0 +1,22 @@
+{
+  "contract_sha256": "sha256:c0d377f7b4b626186fcae076a076b336d774d3bf17c96153b13c4a5f85d0336f",
+  "elapsed_seconds": 392.96988866699394,
+  "neural_rollouts": 0,
+  "official_final_manifest": {
+    "byte_count": 6912,
+    "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_final_manifest.json",
+    "sha256": "sha256:ddad3b5a6f91b1e4a7dde1592e1e5a32803a1462648cb2106aef9f68bb8e2c6d"
+  },
+  "optimizer_steps": 0,
+  "performance_evaluations": 0,
+  "preflight_smoke_disclosure": {
+    "analytic_case": "LCDF_01 VARIANT_MAIN in-memory",
+    "dop853_case": "LCDF_01 N8 in-memory",
+    "role": "implementation_preflight_after_contract_and_role_freeze",
+    "used_for_parameter_or_role_selection": false
+  },
+  "role_preregistration_sha256": "sha256:024f797d3fe14d73a217a372f914a3ae4b07693d769372ac87892da1a326c301",
+  "schema_version": "sph-pio-poc.stage04b.run.v1",
+  "status": "LOCAL_CAUSAL_REFERENCE_FAMILY_POOL_QUALIFIED",
+  "training_runs": 0
+}

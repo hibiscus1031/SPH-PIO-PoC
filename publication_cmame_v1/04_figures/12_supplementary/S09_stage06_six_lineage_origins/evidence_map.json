@@ -1,0 +1,14 @@
+[
+  {
+    "figure": "S09",
+    "panel": "a-f",
+    "scientific_claim": "Every Stage06 TRAIN origin error is retained across six lineages, two variants, three arms, and three seeds.",
+    "source_file": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/origin_difficulty/origin_difficulty_map.json",
+    "source_hash": "sha256:e50246cd723f8e70f0b7995c453330559383089d2eb5629e4f7c5923524c4f98",
+    "source_field": "TRAIN_rows[*].errors and origin descriptors",
+    "confirmatory_or_diagnostic": "DIAGNOSTIC_ONLY",
+    "transformation": "Exact origin traces; variant coordinate offset only.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS09_stage06_six_lineage_origins.svg; figS09_stage06_six_lineage_origins.pdf; figS09_stage06_six_lineage_origins.png"
+  }
+]

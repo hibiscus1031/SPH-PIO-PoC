@@ -1,0 +1,89 @@
+{
+  "blind_target_decode_count_at_freeze": 0,
+  "contract_path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05cq/contracts/prospective_blind_optimizer_path_confirmation_v0_1.yaml",
+  "contract_sha256": "sha256:9622a7fbc74107caf028001eacdfa17fd1664fd0ffeb348400c7f0c76d7b8083",
+  "frozen_before_first_blind_target_decode": true,
+  "group_manifest_sha256": "sha256:95926f5081f583ad7a438f072ab5170d0969a5ba7679d17444aa7fdb1f7c2abf",
+  "historical_files_modified": 0,
+  "inputs": [
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/08_reports/stage05a_final_report.md",
+      "sha256": "sha256:a46cfebfcb2ba65fce4b8b89af620679feab6c03449983a123bca95d34f989bc",
+      "size_bytes": 1814
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05b_final_manifest.json",
+      "sha256": "sha256:f3ad68457eee7341c88160a544e7d57dec757e7eed7ce36ff08d0e50c26eb0d0",
+      "size_bytes": 2760
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05b_target_manifest.json",
+      "sha256": "sha256:834521190405954809f12fb1f9678c0465a7012c2ef2689f40a60ecf2fb03126",
+      "size_bytes": 254671
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05b_scale_manifest.json",
+      "sha256": "sha256:67fa876308d81e65f39fd90d08e0a4586ccca1e72466cebf114aa582148a3437",
+      "size_bytes": 1872
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05b_uncertainty_manifest.json",
+      "sha256": "sha256:7c445c068706cd9c830e63038aae6a0035964646b11eeabe18ff1ff3b373a3b2",
+      "size_bytes": 1534
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05c_final_manifest.json",
+      "sha256": "sha256:d4f1eb706d7491eb56bb5298837ff9026b279bc44d95e1868b9823e1f8e60882",
+      "size_bytes": 47031
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05c_probe_manifest.json",
+      "sha256": "sha256:bf823f4c14c377e48669783591ea39116000d8e952fcde0288272ecc13d139d1",
+      "size_bytes": 1776
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/08_reports/stage05cr_final_report.md",
+      "sha256": "sha256:14d9665537b95c1c9052c89bd9da05ffdd505ba872bce6bd486b0814ace01317",
+      "size_bytes": 534
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05cr/manifests/stage05cr_matched_control_manifest.json",
+      "sha256": "sha256:5a6802c4c4c9aecf7354e85cd273430e628a0b3dde1b9891c06fdf187e656237",
+      "size_bytes": 3049
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05cr/manifests/stage05cr_final_manifest.json",
+      "sha256": "sha256:123da7b7b0e22c076c2724b1536bc2bef8b72bced3d3e985921f7054c26f8335",
+      "size_bytes": 6186
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_role_assignment_manifest.json",
+      "sha256": "sha256:642f91985176774bf71795f2e72391082a9a43cdc0f3f6f7aaec7f1c432db47e",
+      "size_bytes": 2737
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_test_seal_manifest.json",
+      "sha256": "sha256:f3fc8bc263b5cd0862aad21e6331e280bff59fa70df5d2dd172491ee9ed438a5",
+      "size_bytes": 26266
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/arm_d1/model.py",
+      "sha256": "sha256:c1372a07737ebb56792aa73c327b81423ef87068d0136627b1507c813ee8b3a1",
+      "size_bytes": 1255
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/arm_d2/model.py",
+      "sha256": "sha256:a5df1be7b861bffe6c3de7467de36e1a21229cb0c75391f148cdfd5edd0d1d72",
+      "size_bytes": 1668
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/arm_d3/model.py",
+      "sha256": "sha256:1fe69939c5ed0ab5c12955b2c037c0f046ac853d0b40f19b93b01d78127dab83",
+      "size_bytes": 2663
+    }
+  ],
+  "model_manifest_sha256": "sha256:36619f824c15075532b37b7f83b57674903fb120e8bcb28b2fe2b3407dbb2135",
+  "origin_manifest_sha256": "sha256:7464ae11d7b6dc843eba9d85abe696b4b980770969c4db12e0eb807bb663a885",
+  "probe_manifest_sha256": "sha256:0710ee04170406002391a7ad9b30192d374689054e4f2ae61bb66294121343a5",
+  "schema": "sph-pio-poc.stage05cq.freeze.v1"
+}

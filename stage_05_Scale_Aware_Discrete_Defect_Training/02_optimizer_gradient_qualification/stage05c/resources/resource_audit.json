@@ -1,0 +1,99 @@
+{
+  "aborted_D3_attempt_model_instances": 1,
+  "aborted_attempt": {
+    "arm": "D3",
+    "attempt": 1,
+    "batch_changed": false,
+    "completed_lineage_contexts": 2,
+    "frozen_contract_changed": false,
+    "neural_rollouts": 0,
+    "observed_issue": "The structural-audit reference output was evaluated before entering the explicit SDPBackend.MATH context while repeated evaluations were inside that context.",
+    "optimizer_instances": 0,
+    "optimizer_steps": 0,
+    "partial_context_in_progress": "LCDF_05",
+    "performance_evaluations": 0,
+    "persistent_parameter_updates": 0,
+    "probe_plan_changed": false,
+    "qualification_use": false,
+    "resource_accounting_note": "Include one D3 model instance and the two completed plus one partial lineage contexts in the final resource audit.",
+    "seed": 20500501,
+    "seed_changed": false,
+    "status": "ABORTED_IMPLEMENTATION_ERROR",
+    "termination": "SIGINT after read-only diagnosis",
+    "threshold_changed": false,
+    "training_runs": 0
+  },
+  "aborted_completed_context_minimum_graph_rebuild_count": 42688,
+  "aborted_partial_graph_count_exactly_recoverable": false,
+  "backend": "CPU_FLOAT64_SDPBackend.MATH",
+  "checkpoint_selections": 0,
+  "dense_particle_N_by_N_allocation": false,
+  "diagnostic_full_gradient_backward_count": 48,
+  "diagnostic_graph_rebuild_count": 1062,
+  "diagnostic_local_descent_forward_count": 288,
+  "diagnostic_model_instances": 3,
+  "diagnostic_reverse_jvp_count": 18,
+  "formal_FD_path_count": 25920,
+  "formal_full_gradient_backward_count": 126,
+  "formal_graph_rebuild_count_including_structure_audits": 684720,
+  "formal_local_descent_forward_count": 756,
+  "formal_model_instances": 9,
+  "formal_parameter_restoration_checks": 13338,
+  "formal_reverse_jvp_probe_count": 1080,
+  "freeze_model_instances": 9,
+  "model_rankings": 0,
+  "neural_rollouts": 0,
+  "no_monotonic_retained_autograd_growth": true,
+  "optimizer_instances": 0,
+  "optimizer_steps": 0,
+  "pass": true,
+  "peak_rss_delta_bytes": 882819072,
+  "peak_rss_delta_limit_bytes": 1610612736,
+  "per_arm_wall_time_seconds": {
+    "D1": 650.036607875023,
+    "D2": 1010.3135195838986,
+    "D3": 3006.9996965830214
+  },
+  "performance_evaluations": 0,
+  "persistent_parameter_updates": 0,
+  "preformal_hash_failure_model_instances": 1,
+  "prefreeze_introspection_model_instances": 3,
+  "retained_autograd_samples": [
+    {
+      "finite_backward": true,
+      "live_autograd_tensor_count": 0,
+      "repeat": 0
+    },
+    {
+      "finite_backward": true,
+      "live_autograd_tensor_count": 0,
+      "repeat": 1
+    },
+    {
+      "finite_backward": true,
+      "live_autograd_tensor_count": 0,
+      "repeat": 2
+    },
+    {
+      "finite_backward": true,
+      "live_autograd_tensor_count": 0,
+      "repeat": 3
+    },
+    {
+      "finite_backward": true,
+      "live_autograd_tensor_count": 0,
+      "repeat": 4
+    },
+    {
+      "finite_backward": true,
+      "live_autograd_tensor_count": 0,
+      "repeat": 5
+    }
+  ],
+  "retention_audit_backward_count": 12,
+  "retention_audit_graph_rebuild_count": 36,
+  "retention_audit_model_instances": 1,
+  "smoke_model_instances": 2,
+  "total_model_instances_all_attempts": 29,
+  "training_runs": 0
+}

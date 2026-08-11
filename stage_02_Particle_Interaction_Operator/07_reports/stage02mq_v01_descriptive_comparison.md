@@ -1,0 +1,3 @@
+# Stage 02M-Q — v0.1 descriptive protocol comparison
+
+This comparison uses only the frozen Stage 02M summary and stored v0.1 artifacts; historical test was not reevaluated. New and historical validation/test families are not treated as paired or identically distributed. The recorded train Q_L2, transfer pass counts, conditioning and resources are a **descriptive protocol comparison**, not a statistical significance or attention-superiority claim. Machine-readable comparison: `stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/comparison/stage02mq_v01_descriptive_comparison.json`.

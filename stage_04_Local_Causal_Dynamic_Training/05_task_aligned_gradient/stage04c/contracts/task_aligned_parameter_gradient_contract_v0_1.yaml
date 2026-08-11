@@ -1,0 +1,624 @@
+stage: Stage 04C — Task-Aligned Parameter-Gradient Qualification
+version: v0.1
+authorization: LOCAL_CAUSAL_REFERENCE_FAMILY_POOL_QUALIFIED
+historical_statuses:
+  stage04a: STAGE04A_TARGET_VERIFIED
+  stage03d: DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED
+  stage03dr: DYNAMIC_GRADIENT_FAILURE_MIXED_OR_UNRESOLVED
+  stage03e_authorization: false
+  stage04_training: NOT_AUTHORIZED
+formal_environment:
+  device: CPU
+  dtype: float64
+  attention_backend: SDPBackend.MATH
+  backend_identity: CPU_FLOAT64_TORCH_SDPA_EXPLICIT_MATH_NO_AUTO
+  flash_sdpa: false
+  memory_efficient_sdpa: false
+  automatic_selection: false
+source_hashes:
+- path: stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/arm_d1/model.py
+  sha256: sha256:c1372a07737ebb56792aa73c327b81423ef87068d0136627b1507c813ee8b3a1
+- path: stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/arm_d2/model.py
+  sha256: sha256:a5df1be7b861bffe6c3de7467de36e1a21229cb0c75391f148cdfd5edd0d1d72
+- path: stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/arm_d3/model.py
+  sha256: sha256:1fe69939c5ed0ab5c12955b2c037c0f046ac853d0b40f19b93b01d78127dab83
+- path: stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/baseline_d0/rhs.py
+  sha256: sha256:fc1d0ad7043e5f14b3c79dfdf346d86c01d689e841760bfd952c8da2a6fbac2e
+- path: stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/baseline_d0/state.py
+  sha256: sha256:a6f024bf2f7e44eba2031aca441cb26c0ee8e254dba3fd80cf33390d266e516e
+- path: stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/graph_rebuild/graph.py
+  sha256: sha256:d29fd86979150f98eb2e5927d1688b1df920181030aa275a5f244fb1f19c8c4f
+- path: stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/pair_force_head/head.py
+  sha256: sha256:77831de4312ce1ca1406e7d7f41e6c19c90e38a6259a9d053037ea398c77139a
+- path: stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/rk2_core/independent_functional.py
+  sha256: sha256:eacbd2d9695dbfd793dcbcee607e94c86e432575d8c4f8db565df8bee3095cf4
+- path: stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/rk2_core/solver.py
+  sha256: sha256:c6d9dde841e218e66a2e5036b4b8ec2459f9cc38512b990a6a2e7ac8c5e4e788
+- path: stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/source_interface/source.py
+  sha256: sha256:22565211c72dd05f6a22ccaf1065c0187f71c968ed7a6fc73bd5c4961a152228
+- path: stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/temporal_history/history.py
+  sha256: sha256:60f9e4caa228fe8696ef2ef171da364d3918136711e1e2f37e0c2bfc7823858c
+- path: stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/tokenization/tokens.py
+  sha256: sha256:6a0f2ad0a011c7d39f90668aa1b4c73d124f90eaf6871a8bb9a57756ee8dea56
+model_seeds: &id001
+- 20400401
+- 20400402
+- 20400403
+train_lineages:
+- LCDF_01
+- LCDF_04
+- LCDF_05
+- LCDF_06
+- LCDF_07
+- LCDF_08
+variants:
+- VARIANT_LOW
+- VARIANT_MAIN
+resolution: 8
+origin_selection:
+  namespace: stage04c_origin_selection_v1
+  legal_origins:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
+  count: 2
+  ranking: ascending SHA256 hex
+parameter_groups:
+- arm: D1
+  group: D1_TOKEN_ENCODER
+  flatten_ordering: named_parameters order, C-contiguous, listed slice order
+  tensors:
+  - tensor_path: encoder.linear_1.weight
+    slice: all
+    shape:
+    - 32
+    - 10
+    parameter_count: 320
+  - tensor_path: encoder.linear_1.bias
+    slice: all
+    shape:
+    - 32
+    parameter_count: 32
+  - tensor_path: encoder.linear_2.weight
+    slice: all
+    shape:
+    - 32
+    - 32
+    parameter_count: 1024
+  - tensor_path: encoder.linear_2.bias
+    slice: all
+    shape:
+    - 32
+    parameter_count: 32
+  parameter_count: 1408
+  group_hash: sha256:3dbc8832b18490cf3561936e482b2f8346832c724b9ccb267877ad4c6be3b96b
+- arm: D1
+  group: D1_PAIR_HEAD
+  flatten_ordering: named_parameters order, C-contiguous, listed slice order
+  tensors:
+  - tensor_path: pair_head.hidden_1.weight
+    slice: all
+    shape:
+    - 32
+    - 100
+    parameter_count: 3200
+  - tensor_path: pair_head.hidden_1.bias
+    slice: all
+    shape:
+    - 32
+    parameter_count: 32
+  - tensor_path: pair_head.hidden_2.weight
+    slice: all
+    shape:
+    - 32
+    - 32
+    parameter_count: 1024
+  - tensor_path: pair_head.hidden_2.bias
+    slice: all
+    shape:
+    - 32
+    parameter_count: 32
+  - tensor_path: pair_head.output.weight
+    slice: all
+    shape:
+    - 2
+    - 32
+    parameter_count: 64
+  - tensor_path: pair_head.output.bias
+    slice: all
+    shape:
+    - 2
+    parameter_count: 2
+  parameter_count: 4354
+  group_hash: sha256:9bde3c750cb0643ecd34b5abfdfaa1b1c163f3c9a07a30a3d8851aaf7ba48bf8
+- arm: D2
+  group: D2_TOKEN_ENCODER
+  flatten_ordering: named_parameters order, C-contiguous, listed slice order
+  tensors:
+  - tensor_path: encoder.linear_1.weight
+    slice: all
+    shape:
+    - 32
+    - 10
+    parameter_count: 320
+  - tensor_path: encoder.linear_1.bias
+    slice: all
+    shape:
+    - 32
+    parameter_count: 32
+  - tensor_path: encoder.linear_2.weight
+    slice: all
+    shape:
+    - 32
+    - 32
+    parameter_count: 1024
+  - tensor_path: encoder.linear_2.bias
+    slice: all
+    shape:
+    - 32
+    parameter_count: 32
+  parameter_count: 1408
+  group_hash: sha256:2703db0bc13d5d9d28a1bbbccde6286812dc49d98a973cb1bcb24e5778f4dedb
+- arm: D2
+  group: D2_GRU
+  flatten_ordering: named_parameters order, C-contiguous, listed slice order
+  tensors:
+  - tensor_path: recurrent.weight_ih
+    slice: all
+    shape:
+    - 96
+    - 32
+    parameter_count: 3072
+  - tensor_path: recurrent.weight_hh
+    slice: all
+    shape:
+    - 96
+    - 32
+    parameter_count: 3072
+  - tensor_path: recurrent.bias_ih
+    slice: all
+    shape:
+    - 96
+    parameter_count: 96
+  - tensor_path: recurrent.bias_hh
+    slice: all
+    shape:
+    - 96
+    parameter_count: 96
+  parameter_count: 6336
+  group_hash: sha256:7dc06d90feaca6f079d76d63a7450d140ea5e5d16bae23ede293802629ca5cb7
+- arm: D2
+  group: D2_PAIR_HEAD
+  flatten_ordering: named_parameters order, C-contiguous, listed slice order
+  tensors:
+  - tensor_path: pair_head.hidden_1.weight
+    slice: all
+    shape:
+    - 32
+    - 100
+    parameter_count: 3200
+  - tensor_path: pair_head.hidden_1.bias
+    slice: all
+    shape:
+    - 32
+    parameter_count: 32
+  - tensor_path: pair_head.hidden_2.weight
+    slice: all
+    shape:
+    - 32
+    - 32
+    parameter_count: 1024
+  - tensor_path: pair_head.hidden_2.bias
+    slice: all
+    shape:
+    - 32
+    parameter_count: 32
+  - tensor_path: pair_head.output.weight
+    slice: all
+    shape:
+    - 2
+    - 32
+    parameter_count: 64
+  - tensor_path: pair_head.output.bias
+    slice: all
+    shape:
+    - 2
+    parameter_count: 2
+  parameter_count: 4354
+  group_hash: sha256:786de1849031fbcacf90fd478465f4aed5df35a367bb262c571d735b0baf9cd3
+- arm: D3
+  group: D3_TOKEN_ENCODER
+  flatten_ordering: named_parameters order, C-contiguous, listed slice order
+  tensors:
+  - tensor_path: encoder.linear_1.weight
+    slice: all
+    shape:
+    - 32
+    - 10
+    parameter_count: 320
+  - tensor_path: encoder.linear_1.bias
+    slice: all
+    shape:
+    - 32
+    parameter_count: 32
+  - tensor_path: encoder.linear_2.weight
+    slice: all
+    shape:
+    - 32
+    - 32
+    parameter_count: 1024
+  - tensor_path: encoder.linear_2.bias
+    slice: all
+    shape:
+    - 32
+    parameter_count: 32
+  parameter_count: 1408
+  group_hash: sha256:9a209bd22930130dab12edf6be249ba04380e547bc64afc699fd5a3677188c46
+- arm: D3
+  group: D3_ATTENTION_O
+  flatten_ordering: named_parameters order, C-contiguous, listed slice order
+  tensors:
+  - tensor_path: temporal.layers.0.self_attn.out_proj.weight
+    slice: all
+    shape:
+    - 32
+    - 32
+    parameter_count: 1024
+  - tensor_path: temporal.layers.0.self_attn.out_proj.bias
+    slice: all
+    shape:
+    - 32
+    parameter_count: 32
+  - tensor_path: temporal.layers.1.self_attn.out_proj.weight
+    slice: all
+    shape:
+    - 32
+    - 32
+    parameter_count: 1024
+  - tensor_path: temporal.layers.1.self_attn.out_proj.bias
+    slice: all
+    shape:
+    - 32
+    parameter_count: 32
+  parameter_count: 2112
+  group_hash: sha256:73992b9af59d65f897c7f544a7362a0e376a3e3c66a037880b2f07966a409209
+- arm: D3
+  group: D3_FEED_FORWARD
+  flatten_ordering: named_parameters order, C-contiguous, listed slice order
+  tensors:
+  - tensor_path: relative_offset_embedding
+    slice: all
+    shape:
+    - 4
+    - 32
+    parameter_count: 128
+  - tensor_path: temporal.layers.0.linear1.weight
+    slice: all
+    shape:
+    - 64
+    - 32
+    parameter_count: 2048
+  - tensor_path: temporal.layers.0.linear1.bias
+    slice: all
+    shape:
+    - 64
+    parameter_count: 64
+  - tensor_path: temporal.layers.0.linear2.weight
+    slice: all
+    shape:
+    - 32
+    - 64
+    parameter_count: 2048
+  - tensor_path: temporal.layers.0.linear2.bias
+    slice: all
+    shape:
+    - 32
+    parameter_count: 32
+  - tensor_path: temporal.layers.0.norm1.weight
+    slice: all
+    shape:
+    - 32
+    parameter_count: 32
+  - tensor_path: temporal.layers.0.norm1.bias
+    slice: all
+    shape:
+    - 32
+    parameter_count: 32
+  - tensor_path: temporal.layers.0.norm2.weight
+    slice: all
+    shape:
+    - 32
+    parameter_count: 32
+  - tensor_path: temporal.layers.0.norm2.bias
+    slice: all
+    shape:
+    - 32
+    parameter_count: 32
+  - tensor_path: temporal.layers.1.linear1.weight
+    slice: all
+    shape:
+    - 64
+    - 32
+    parameter_count: 2048
+  - tensor_path: temporal.layers.1.linear1.bias
+    slice: all
+    shape:
+    - 64
+    parameter_count: 64
+  - tensor_path: temporal.layers.1.linear2.weight
+    slice: all
+    shape:
+    - 32
+    - 64
+    parameter_count: 2048
+  - tensor_path: temporal.layers.1.linear2.bias
+    slice: all
+    shape:
+    - 32
+    parameter_count: 32
+  - tensor_path: temporal.layers.1.norm1.weight
+    slice: all
+    shape:
+    - 32
+    parameter_count: 32
+  - tensor_path: temporal.layers.1.norm1.bias
+    slice: all
+    shape:
+    - 32
+    parameter_count: 32
+  - tensor_path: temporal.layers.1.norm2.weight
+    slice: all
+    shape:
+    - 32
+    parameter_count: 32
+  - tensor_path: temporal.layers.1.norm2.bias
+    slice: all
+    shape:
+    - 32
+    parameter_count: 32
+  parameter_count: 8768
+  group_hash: sha256:a6b482b83369ce35a69d238e247588213d676d43dea7782c82d70643c02511a7
+- arm: D3
+  group: D3_PAIR_HEAD
+  flatten_ordering: named_parameters order, C-contiguous, listed slice order
+  tensors:
+  - tensor_path: pair_head.hidden_1.weight
+    slice: all
+    shape:
+    - 32
+    - 100
+    parameter_count: 3200
+  - tensor_path: pair_head.hidden_1.bias
+    slice: all
+    shape:
+    - 32
+    parameter_count: 32
+  - tensor_path: pair_head.hidden_2.weight
+    slice: all
+    shape:
+    - 32
+    - 32
+    parameter_count: 1024
+  - tensor_path: pair_head.hidden_2.bias
+    slice: all
+    shape:
+    - 32
+    parameter_count: 32
+  - tensor_path: pair_head.output.weight
+    slice: all
+    shape:
+    - 2
+    - 32
+    parameter_count: 64
+  - tensor_path: pair_head.output.bias
+    slice: all
+    shape:
+    - 2
+    parameter_count: 2
+  parameter_count: 4354
+  group_hash: sha256:9525dfbf14e994d8a2b276c2c480f2662ca0f5102b97aae6645601615ad4c64c
+- arm: D3
+  group: D3_ATTENTION_Q
+  flatten_ordering: named_parameters order, C-contiguous, listed slice order
+  tensors:
+  - tensor_path: temporal.layers.0.self_attn.in_proj_weight
+    slice: '[0:32,:]'
+    shape:
+    - 32
+    - 32
+    parameter_count: 1024
+  - tensor_path: temporal.layers.0.self_attn.in_proj_bias
+    slice: '[0:32]'
+    shape:
+    - 32
+    parameter_count: 32
+  - tensor_path: temporal.layers.1.self_attn.in_proj_weight
+    slice: '[0:32,:]'
+    shape:
+    - 32
+    - 32
+    parameter_count: 1024
+  - tensor_path: temporal.layers.1.self_attn.in_proj_bias
+    slice: '[0:32]'
+    shape:
+    - 32
+    parameter_count: 32
+  parameter_count: 2112
+  group_hash: sha256:467523ffc68c2c58758e1b215967c0165474b6d13921d9ab90c8ec05c3cf6671
+- arm: D3
+  group: D3_ATTENTION_K
+  flatten_ordering: named_parameters order, C-contiguous, listed slice order
+  tensors:
+  - tensor_path: temporal.layers.0.self_attn.in_proj_weight
+    slice: '[32:64,:]'
+    shape:
+    - 32
+    - 32
+    parameter_count: 1024
+  - tensor_path: temporal.layers.0.self_attn.in_proj_bias
+    slice: '[32:64]'
+    shape:
+    - 32
+    parameter_count: 32
+  - tensor_path: temporal.layers.1.self_attn.in_proj_weight
+    slice: '[32:64,:]'
+    shape:
+    - 32
+    - 32
+    parameter_count: 1024
+  - tensor_path: temporal.layers.1.self_attn.in_proj_bias
+    slice: '[32:64]'
+    shape:
+    - 32
+    parameter_count: 32
+  parameter_count: 2112
+  group_hash: sha256:0b7ec3ec6eb837b99871029decdab1ee09fbe603b753a31304c57b0d00dc4f62
+- arm: D3
+  group: D3_ATTENTION_V
+  flatten_ordering: named_parameters order, C-contiguous, listed slice order
+  tensors:
+  - tensor_path: temporal.layers.0.self_attn.in_proj_weight
+    slice: '[64:96,:]'
+    shape:
+    - 32
+    - 32
+    parameter_count: 1024
+  - tensor_path: temporal.layers.0.self_attn.in_proj_bias
+    slice: '[64:96]'
+    shape:
+    - 32
+    parameter_count: 32
+  - tensor_path: temporal.layers.1.self_attn.in_proj_weight
+    slice: '[64:96,:]'
+    shape:
+    - 32
+    - 32
+    parameter_count: 1024
+  - tensor_path: temporal.layers.1.self_attn.in_proj_bias
+    slice: '[64:96]'
+    shape:
+    - 32
+    parameter_count: 32
+  parameter_count: 2112
+  group_hash: sha256:ea960b5c38691b96b7bb89f9470565fcb9a3c2aa766ae088a11e57aa07f128b7
+direction_generation:
+  namespace: stage04c_parameter_direction_v1
+  distribution: Rademacher
+  normalization: L2=1
+  mutation: false
+loss_components:
+  vector:
+  - L_x
+  - L_v
+  - L_rho
+  transition: complete K=1 explicit-midpoint RK2 start/midpoint/accept
+  L_x: mean(||minimum_image(x_pred-x_ref)||^2/L^2)
+  L_v: mean(||v_pred-v_ref||^2/cs^2)
+  L_rho: mean((rho_pred-rho_ref)^2/rho0^2)
+  constants:
+    L: 2.0
+    cs: 20.0
+    rho0: 1.0
+  L_sum_training_weight_authority: false
+reverse_jvp_gate:
+  absolute: 1.0e-10
+  relative: 1.0e-07
+  near_zero_both: 1.0e-12
+  near_zero_abs_difference: 1.0e-12
+  required_pass_rate: 1.0
+finite_difference:
+  scheme: central
+  epsilon_ladder:
+  - 0.01
+  - 0.003
+  - 0.001
+  - 0.0003
+  - 0.0001
+  epsilon_actual: epsilon*max(1,group_RMS)
+  repeats: 2
+  minimum_topology_preserving_epsilons: 3
+stable_window:
+  fd_ad_absolute: 1.0e-08
+  fd_ad_relative: 0.0001
+  adjacent_fd_relative: 0.001
+  minimum_adjacent_epsilons: 2
+near_zero:
+  reverse_and_jvp_absolute_below: 1.0e-10
+  stable_fd_absolute: 1.0e-08
+  at_least_one_nonzero_component_per_probe: true
+aggregation:
+  seed_lineage_group: at least 3/4 probes
+  lineage_group: at least 2/3 seeds
+  parameter_group: all 6 lineages
+  arm: all groups
+  minimum_arm_probe_pass_rate: 0.85
+input_gradient_diagnostics:
+  hard_gate: false
+  lineages:
+  - LCDF_01
+  - LCDF_04
+  variant: VARIANT_MAIN
+  origins_per_lineage: 1
+  seeds: *id001
+structure_safety:
+  correction_force_residual_max: 1.0e-10
+  audit_granularity: arm*seed*lineage
+  accepted_history_commits: 1
+  midpoint_commits: 0
+resource_gates:
+  peak_rss_delta_gib_max: 1.5
+  retained_autograd_growth: false
+  parameter_mutation: false
+  dense_particle_nxn: false
+  finite_completion: true
+access_policy:
+  allowed: TRAIN exact trajectories/source/formula parameters/graph/origin metadata
+  validation_lineages:
+  - LCDF_02
+  - LCDF_09
+  sealed_lineages:
+  - LCDF_03
+  - LCDF_10
+  all_prohibited_decode_counts: 0
+prohibited_counts:
+  optimizer_instances: 0
+  optimizer_steps: 0
+  training_runs: 0
+  parameter_updates: 0
+  neural_rollouts: 0
+  performance_evaluations: 0
+formal_counts:
+  contexts_per_arm: 72
+  D1_probes: 144
+  D2_probes: 216
+  D3_probes: 504
+  total_probes: 864

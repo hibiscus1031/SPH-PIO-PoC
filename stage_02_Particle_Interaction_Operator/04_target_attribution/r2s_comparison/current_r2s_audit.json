@@ -1,0 +1,139 @@
+{
+  "Stage02G_artifact_hashes": {
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/qualification_closure/attribution_closure.json": "sha256:0dde97b251b018eb3d021dc6005edc94b95e23033b523df5fc44864feba58f04",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/r2s_bias_audit/r2s_bias_audit.json": "sha256:d980df5364a042ace18987468c16d516e4aa47a11fe310dbb1a48d2256066428"
+  },
+  "Stage02G_bias_audit_status": "DIAGNOSTIC",
+  "Stage02G_bias_failure_retained": true,
+  "Stage02G_closure_verdict": "diagnostic",
+  "Stage02G_maximum_bias_to_target_ratio": 68.40862306798715,
+  "acceptance_verdict": {
+    "candidate_id": "H_REF_QWLS2_INCUMBENT",
+    "candidate_spatial_reference": false,
+    "checks": {
+      "cross_reference_agreement": "FAIL",
+      "deterministic": "PASS",
+      "low_reconstruction_bias": "FAIL",
+      "same_physics": "PASS",
+      "same_state": "PASS",
+      "uncertainty_qualified": "FAIL"
+    },
+    "independent_agreeing_peers": [],
+    "maximum_bias_to_reference_target_L2_ratio": 68.40862306798715,
+    "maximum_uncertainty_to_reference_target_L2_ratio": 68.40862306800912,
+    "scope": "stage02h_controlled_periodic_vortex_audit_scope",
+    "verdict": "diagnostic"
+  },
+  "recomputed_case_audits": [
+    {
+      "bias_metrics": {
+        "L2_particle_rms": 0.05464030623343015,
+        "Linf_particle_vector": 0.07230038029133963
+      },
+      "bias_to_reference_target_L2_ratio": 17.766373893875414,
+      "case_id": "h_regular_n12",
+      "condition_number": 5.31051042706002,
+      "geometry_isotropy_ratio_min": 0.9999999999999986,
+      "reconstruction_residual": 0.09352599888477447,
+      "reference_uncertainty": {
+        "GCI_status": "not_justified",
+        "L2_particle_rms_bound": 0.05464030623344032,
+        "method": "analytic_bias_L2_plus_primary_pseudoinverse_sensitivity_L2_plus_roundoff_floor",
+        "single_total_GCI_generated": false,
+        "to_reference_target_L2_ratio": 17.766373893878722
+      }
+    },
+    {
+      "bias_metrics": {
+        "L2_particle_rms": 0.03152940090998118,
+        "Linf_particle_vector": 0.04293398781793776
+      },
+      "bias_to_reference_target_L2_ratio": 68.40862306798715,
+      "case_id": "h_regular_n16",
+      "condition_number": 5.310510427060015,
+      "geometry_isotropy_ratio_min": 0.9999999999999998,
+      "reconstruction_residual": 0.052615580449198576,
+      "reference_uncertainty": {
+        "GCI_status": "not_justified",
+        "L2_particle_rms_bound": 0.031529400909991304,
+        "method": "analytic_bias_L2_plus_primary_pseudoinverse_sensitivity_L2_plus_roundoff_floor",
+        "single_total_GCI_generated": false,
+        "to_reference_target_L2_ratio": 68.40862306800912
+      }
+    },
+    {
+      "bias_metrics": {
+        "L2_particle_rms": 0.02041957465565285,
+        "Linf_particle_vector": 0.028184161201869142
+      },
+      "bias_to_reference_target_L2_ratio": 11.784985983309511,
+      "case_id": "h_regular_n20",
+      "condition_number": 5.31051042706002,
+      "geometry_isotropy_ratio_min": 0.999999999999998,
+      "reconstruction_residual": 0.033613858920121045,
+      "reference_uncertainty": {
+        "GCI_status": "not_justified",
+        "L2_particle_rms_bound": 0.020419574655663027,
+        "method": "analytic_bias_L2_plus_primary_pseudoinverse_sensitivity_L2_plus_roundoff_floor",
+        "single_total_GCI_generated": false,
+        "to_reference_target_L2_ratio": 11.784985983315384
+      }
+    },
+    {
+      "bias_metrics": {
+        "L2_particle_rms": 0.05464030623343015,
+        "Linf_particle_vector": 0.07230038029133963
+      },
+      "bias_to_reference_target_L2_ratio": 17.766373893875414,
+      "case_id": "h_disorder_regular_n12",
+      "condition_number": 5.31051042706002,
+      "geometry_isotropy_ratio_min": 0.9999999999999986,
+      "reconstruction_residual": 0.09352599888477447,
+      "reference_uncertainty": {
+        "GCI_status": "not_justified",
+        "L2_particle_rms_bound": 0.05464030623344032,
+        "method": "analytic_bias_L2_plus_primary_pseudoinverse_sensitivity_L2_plus_roundoff_floor",
+        "single_total_GCI_generated": false,
+        "to_reference_target_L2_ratio": 17.766373893878722
+      }
+    },
+    {
+      "bias_metrics": {
+        "L2_particle_rms": 0.05473263654997702,
+        "Linf_particle_vector": 0.07448677672025004
+      },
+      "bias_to_reference_target_L2_ratio": 1.4534853980971583,
+      "case_id": "h_disorder_jitter05_n12",
+      "condition_number": 5.546015946899035,
+      "geometry_isotropy_ratio_min": 0.9153940992619246,
+      "reconstruction_residual": 0.0970583912130961,
+      "reference_uncertainty": {
+        "GCI_status": "not_justified",
+        "L2_particle_rms_bound": 0.05473263654998733,
+        "method": "analytic_bias_L2_plus_primary_pseudoinverse_sensitivity_L2_plus_roundoff_floor",
+        "single_total_GCI_generated": false,
+        "to_reference_target_L2_ratio": 1.453485398097432
+      }
+    },
+    {
+      "bias_metrics": {
+        "L2_particle_rms": 0.05499905179025551,
+        "Linf_particle_vector": 0.07624343207746241
+      },
+      "bias_to_reference_target_L2_ratio": 0.8164917383323724,
+      "case_id": "h_disorder_jitter10_n12",
+      "condition_number": 5.736291794232366,
+      "geometry_isotropy_ratio_min": 0.8210880015102895,
+      "reconstruction_residual": 0.10095769714867593,
+      "reference_uncertainty": {
+        "GCI_status": "not_justified",
+        "L2_particle_rms_bound": 0.05499905179026577,
+        "method": "analytic_bias_L2_plus_primary_pseudoinverse_sensitivity_L2_plus_roundoff_floor",
+        "single_total_GCI_generated": false,
+        "to_reference_target_L2_ratio": 0.8164917383325248
+      }
+    }
+  ],
+  "requested_identity_alias": "r2_quadratic_kernel_weighted_wls_v1",
+  "resolved_identity": "r2s_quadratic_kernel_weighted_wls_v1"
+}

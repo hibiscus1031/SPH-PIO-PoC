@@ -1,0 +1,25 @@
+{
+  "minimum_selectable_update": 320,
+  "payload": [
+    "model",
+    "optimizer",
+    "scheduler",
+    "RNG",
+    "update",
+    "protocol_hash",
+    "run_identity"
+  ],
+  "pre_320_results_recorded_but_not_selectable": true,
+  "protocol_sha256": "sha256:b7918bde82b104895b6d47c798801608938c661c3f8b249f4c832c98c3a83cbe",
+  "save": {
+    "interval_updates": 20,
+    "selected": true,
+    "terminal": true,
+    "update_0_identity": true
+  },
+  "schema": "sph-pio-poc.stage06b.checkpoint-policy-manifest.v1",
+  "sealed_test_participates": false,
+  "selection_metric": "validation.global_balanced_Q_def",
+  "selection_rule": "minimum",
+  "tie_break": "earlier_update"
+}

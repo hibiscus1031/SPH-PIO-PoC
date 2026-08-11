@@ -1,0 +1,3 @@
+# Discussion scientific source
+
+The central interpretation is separation, not generalized algorithm failure. Reciprocal antisymmetry constrained correction structure but did not guarantee target relevance or train fit. The D0 defect restored optimizer-level signal without guaranteeing the global training criterion. Heterogeneity augmentation and systematic descriptor coverage did not guarantee the raw target manifold. Discuss thresholds as preregistered decision rules whose value lies in preventing post hoc reinterpretation, while acknowledging that their external calibration remains problem-dependent. Explain that withholding the sealed test preserves inferential validity because no qualified checkpoint or validation closure existed to authorize release.

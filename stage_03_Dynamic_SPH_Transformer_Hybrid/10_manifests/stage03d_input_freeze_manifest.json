@@ -1,0 +1,388 @@
+{
+  "all_parameter_paths_uniquely_resolved": true,
+  "authorization": "Stage 03C:DYNAMIC_RK2_HYBRID_IMPLEMENTATION_VERIFIED",
+  "contract": {
+    "immutable": true,
+    "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/contracts/dynamic_multistep_adfd_topology_contract_v0_1.yaml",
+    "sha256": "sha256:a506af65ac124f8edf843e507f70c88566852fdfefb017eea127ddbe227fa692"
+  },
+  "freeze_date": "2026-08-05",
+  "freeze_method": "contract_frozen_then_byte_hash_only_no_trajectory_array_decode",
+  "historical_tree_ledger": {
+    "aggregate_sha256": "sha256:2f3eef2387e7aac782f962de8480a1f4967ec42ff740209298d875888bc3e68c",
+    "file_count": 2149,
+    "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/freeze/historical_tree_hash_ledger.json",
+    "sha256": "sha256:97f4348f6d89f4db2aa82ccc15fc4d97149b4483d463bc01d290f79c13b4fc12"
+  },
+  "historical_verdicts": {
+    "Stage_01": "V2_QUALIFICATION_FAIL",
+    "Stage_01H": "FINITE_RESOLUTION_DOMINANT",
+    "Stage_02_static_learning_route": "TERMINATED",
+    "Stage_03B_required_topology": "NO_EVENT_FIXED_TOPOLOGY",
+    "Stage_03C": "fixed_topology_implementation_verified",
+    "viscosity_operator_form": "NOT_CONFIRMED"
+  },
+  "parameter_inventory": {
+    "D1": {
+      "20300401": {
+        "parameter_count": 5762,
+        "parameter_hash": "sha256:98b06b7946fe7b7ad7487a6067c114ce35e6ca3d362e651d4ce9b93357ecc7a0",
+        "probe_paths": [
+          {
+            "frozen_value": -0.2097296118736267,
+            "module_path": "encoder.linear_1.bias",
+            "resolved": true,
+            "tensor_index": [
+              0
+            ]
+          },
+          {
+            "frozen_value": -0.10307782888412476,
+            "module_path": "pair_head.output.bias",
+            "resolved": true,
+            "tensor_index": [
+              0
+            ]
+          }
+        ]
+      },
+      "20300402": {
+        "parameter_count": 5762,
+        "parameter_hash": "sha256:204af23542ae0c79939ec4b2b2cac1c8442642c3dceadaaaa7b3ec44f1e66c5f",
+        "probe_paths": [
+          {
+            "frozen_value": -0.15669450163841248,
+            "module_path": "encoder.linear_1.bias",
+            "resolved": true,
+            "tensor_index": [
+              0
+            ]
+          },
+          {
+            "frozen_value": -0.07272860407829285,
+            "module_path": "pair_head.output.bias",
+            "resolved": true,
+            "tensor_index": [
+              0
+            ]
+          }
+        ]
+      },
+      "20300403": {
+        "parameter_count": 5762,
+        "parameter_hash": "sha256:81a569e315fdb6907ee6bada62bca4e7ce19f7569ca6beb0f7f2ab2b8999f009",
+        "probe_paths": [
+          {
+            "frozen_value": -0.26189154386520386,
+            "module_path": "encoder.linear_1.bias",
+            "resolved": true,
+            "tensor_index": [
+              0
+            ]
+          },
+          {
+            "frozen_value": 0.11314032226800919,
+            "module_path": "pair_head.output.bias",
+            "resolved": true,
+            "tensor_index": [
+              0
+            ]
+          }
+        ]
+      }
+    },
+    "D2": {
+      "20300401": {
+        "parameter_count": 12098,
+        "parameter_hash": "sha256:576b5cd30437d4183ba033e1cff5b8d8af8a7dce05039de302de1dde462b1014",
+        "probe_paths": [
+          {
+            "frozen_value": -0.16774044930934906,
+            "module_path": "recurrent.bias_ih",
+            "resolved": true,
+            "tensor_index": [
+              0
+            ]
+          },
+          {
+            "frozen_value": 0.0022178934887051582,
+            "module_path": "pair_head.output.bias",
+            "resolved": true,
+            "tensor_index": [
+              0
+            ]
+          }
+        ]
+      },
+      "20300402": {
+        "parameter_count": 12098,
+        "parameter_hash": "sha256:87f48f01efa00146c5b3355c9172993b970115e13d7756ad47808caf104963aa",
+        "probe_paths": [
+          {
+            "frozen_value": -0.0837164968252182,
+            "module_path": "recurrent.bias_ih",
+            "resolved": true,
+            "tensor_index": [
+              0
+            ]
+          },
+          {
+            "frozen_value": -0.02617652155458927,
+            "module_path": "pair_head.output.bias",
+            "resolved": true,
+            "tensor_index": [
+              0
+            ]
+          }
+        ]
+      },
+      "20300403": {
+        "parameter_count": 12098,
+        "parameter_hash": "sha256:913f1871459191e6e480927bc12890575af9fd61bb705159e26252f747d863d9",
+        "probe_paths": [
+          {
+            "frozen_value": 0.08443674445152283,
+            "module_path": "recurrent.bias_ih",
+            "resolved": true,
+            "tensor_index": [
+              0
+            ]
+          },
+          {
+            "frozen_value": -0.08472844213247299,
+            "module_path": "pair_head.output.bias",
+            "resolved": true,
+            "tensor_index": [
+              0
+            ]
+          }
+        ]
+      }
+    },
+    "D3": {
+      "20300401": {
+        "parameter_count": 22978,
+        "parameter_hash": "sha256:a8fb0890d69ffd249588f13defa17b2d4cc91f58b071705f80612c47e2a12969",
+        "probe_paths": [
+          {
+            "frozen_value": -0.2097296118736267,
+            "module_path": "encoder.linear_1.bias",
+            "resolved": true,
+            "tensor_index": [
+              0
+            ]
+          },
+          {
+            "frozen_value": 0.0,
+            "module_path": "temporal.layers.0.self_attn.in_proj_bias",
+            "resolved": true,
+            "tensor_index": [
+              0
+            ]
+          },
+          {
+            "frozen_value": -0.09389982372522354,
+            "module_path": "pair_head.output.bias",
+            "resolved": true,
+            "tensor_index": [
+              0
+            ]
+          }
+        ]
+      },
+      "20300402": {
+        "parameter_count": 22978,
+        "parameter_hash": "sha256:1a6423d9d2b1ae9b6f56274d30827246fcd8673f9d88779907643bec57abc3e6",
+        "probe_paths": [
+          {
+            "frozen_value": -0.15669450163841248,
+            "module_path": "encoder.linear_1.bias",
+            "resolved": true,
+            "tensor_index": [
+              0
+            ]
+          },
+          {
+            "frozen_value": 0.0,
+            "module_path": "temporal.layers.0.self_attn.in_proj_bias",
+            "resolved": true,
+            "tensor_index": [
+              0
+            ]
+          },
+          {
+            "frozen_value": -0.15017366409301758,
+            "module_path": "pair_head.output.bias",
+            "resolved": true,
+            "tensor_index": [
+              0
+            ]
+          }
+        ]
+      },
+      "20300403": {
+        "parameter_count": 22978,
+        "parameter_hash": "sha256:add5a085e011ed07f2977158885252612fe95411fe5382793850f98fee4811fe",
+        "probe_paths": [
+          {
+            "frozen_value": -0.26189154386520386,
+            "module_path": "encoder.linear_1.bias",
+            "resolved": true,
+            "tensor_index": [
+              0
+            ]
+          },
+          {
+            "frozen_value": 0.0,
+            "module_path": "temporal.layers.0.self_attn.in_proj_bias",
+            "resolved": true,
+            "tensor_index": [
+              0
+            ]
+          },
+          {
+            "frozen_value": 0.17566214501857758,
+            "module_path": "pair_head.output.bias",
+            "resolved": true,
+            "tensor_index": [
+              0
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "pass": true,
+  "schema_version": "sph-pio-poc.stage03d.input-freeze.v1",
+  "selected_evidence": [
+    {
+      "byte_count": 1093,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/03_time_integration/topology_differentiability_boundary.md",
+      "sha256": "sha256:865a48d98a2575fc61710271967902c8175b4d264ede07bbecc543c1eb7fecdd"
+    },
+    {
+      "byte_count": 2124,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/topology_events/dr1b_topology_event_registry.json",
+      "sha256": "sha256:3d8f34421894864e8eb0c2a0064753f895133ea5ae4ab694274f07c993cefe83"
+    },
+    {
+      "byte_count": 1255,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/arm_d1/model.py",
+      "sha256": "sha256:c1372a07737ebb56792aa73c327b81423ef87068d0136627b1507c813ee8b3a1"
+    },
+    {
+      "byte_count": 1668,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/arm_d2/model.py",
+      "sha256": "sha256:a5df1be7b861bffe6c3de7467de36e1a21229cb0c75391f148cdfd5edd0d1d72"
+    },
+    {
+      "byte_count": 2663,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/arm_d3/model.py",
+      "sha256": "sha256:1fe69939c5ed0ab5c12955b2c037c0f046ac853d0b40f19b93b01d78127dab83"
+    },
+    {
+      "byte_count": 2082,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/baseline_d0/rhs.py",
+      "sha256": "sha256:fc1d0ad7043e5f14b3c79dfdf346d86c01d689e841760bfd952c8da2a6fbac2e"
+    },
+    {
+      "byte_count": 4261,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/baseline_d0/state.py",
+      "sha256": "sha256:a6f024bf2f7e44eba2031aca441cb26c0ee8e254dba3fd80cf33390d266e516e"
+    },
+    {
+      "byte_count": 9978,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/contracts/dynamic_solver_implementation_contract_v0_1.yaml",
+      "sha256": "sha256:0872955dc49c781c48c98a13b7f367d85d70869461a0d06e163c858b20c30e87"
+    },
+    {
+      "byte_count": 3383,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/graph_rebuild/graph.py",
+      "sha256": "sha256:d29fd86979150f98eb2e5927d1688b1df920181030aa275a5f244fb1f19c8c4f"
+    },
+    {
+      "byte_count": 3179,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/pair_force_head/head.py",
+      "sha256": "sha256:77831de4312ce1ca1406e7d7f41e6c19c90e38a6259a9d053037ea398c77139a"
+    },
+    {
+      "byte_count": 3757,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/results/checkpoint_resume_results.json",
+      "sha256": "sha256:2aa84929bbe800f1c4f6a8dfac2dd8ea4b9461de42da85dd61e266151dd9a87a"
+    },
+    {
+      "byte_count": 9688,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/results/differentiability_smoke_results.json",
+      "sha256": "sha256:b25c262bd7f6ccd4ea4f788a01dd8ba7798c245e476f29b1e92cf9f86a8e7ce8"
+    },
+    {
+      "byte_count": 7484,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/results/resource_audit_results.json",
+      "sha256": "sha256:b6b5d44b15a14e44e07d15bb23c817552a24b5b9d2bbe2ddea8c86593af46289"
+    },
+    {
+      "byte_count": 213634,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/results/zero_correction_results.json",
+      "sha256": "sha256:b42c22e335efde77e65ee676fe4194d0e85d1e4946e620663d6725f6d12130c9"
+    },
+    {
+      "byte_count": 2829,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/rk2_core/independent_functional.py",
+      "sha256": "sha256:eacbd2d9695dbfd793dcbcee607e94c86e432575d8c4f8db565df8bee3095cf4"
+    },
+    {
+      "byte_count": 12292,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/rk2_core/solver.py",
+      "sha256": "sha256:c6d9dde841e218e66a2e5036b4b8ec2459f9cc38512b990a6a2e7ac8c5e4e788"
+    },
+    {
+      "byte_count": 1039,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/source_interface/source.py",
+      "sha256": "sha256:22565211c72dd05f6a22ccaf1065c0187f71c968ed7a6fc73bd5c4961a152228"
+    },
+    {
+      "byte_count": 4191,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/temporal_history/history.py",
+      "sha256": "sha256:60f9e4caa228fe8696ef2ef171da364d3918136711e1e2f37e0c2bfc7823858c"
+    },
+    {
+      "byte_count": 1977,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/tokenization/tokens.py",
+      "sha256": "sha256:6a0f2ad0a011c7d39f90668aa1b4c73d124f90eaf6871a8bb9a57756ee8dea56"
+    },
+    {
+      "byte_count": 986,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/06_vv_contract/multistep_ad_fd_contract.md",
+      "sha256": "sha256:b7477b242d482be3c0f9cad780a85ae69bc4e9810046298b234c6dfb6e1c816a"
+    },
+    {
+      "byte_count": 11034,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03a_final_report.md",
+      "sha256": "sha256:c4978103f9c354b06132733136eee69b28bc6c77868172d9eddd75f04cf4ebe1"
+    },
+    {
+      "byte_count": 6633,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03b_final_report.md",
+      "sha256": "sha256:3e1839fde37bf841cc0fd282c538f90881195b0ed4a5659926b4c0030226749c"
+    },
+    {
+      "byte_count": 1936,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03c_final_report.md",
+      "sha256": "sha256:ca12e144b9ff1c909607693a554c916c605b6061a96e47390a238ee055b67f29"
+    },
+    {
+      "byte_count": 19353,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03b_trajectory_manifest.json",
+      "sha256": "sha256:92974b660461a01ba1a326be8b2fedc31929a319aa97e2f5bc3418bd45435aac"
+    },
+    {
+      "byte_count": 4527,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03c_final_manifest.json",
+      "sha256": "sha256:bf5e0e3f1ac68e4b2df8ed847a1cf9a0cb0290c158b3813b1d4fa65a74abb5af"
+    }
+  ],
+  "stage": "Stage 03D",
+  "trajectory_array_count": 18,
+  "trajectory_arrays_decoded_during_freeze": 0,
+  "trajectory_sidecar_count": 18
+}

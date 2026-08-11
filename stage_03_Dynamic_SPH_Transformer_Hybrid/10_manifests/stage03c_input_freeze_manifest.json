@@ -1,0 +1,383 @@
+{
+  "authorization": "Stage 03B:DYNAMIC_REFERENCE_TRAJECTORY_QUALIFICATION_COMPLETE",
+  "freeze_date": "2026-08-05",
+  "freeze_method": "byte_hash_only_no_trajectory_array_decode",
+  "historical_files_mutable": false,
+  "historical_verdicts": {
+    "Stage_01": "V2_QUALIFICATION_FAIL",
+    "Stage_01H": "FINITE_RESOLUTION_DOMINANT",
+    "Stage_02_static_learning_route": "TERMINATED",
+    "viscosity_operator_form": "NOT_CONFIRMED"
+  },
+  "implementation_contract": {
+    "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/contracts/dynamic_solver_implementation_contract_v0_1.yaml",
+    "sha256": "sha256:0872955dc49c781c48c98a13b7f367d85d70869461a0d06e163c858b20c30e87"
+  },
+  "input_count": 60,
+  "inputs": [
+    {
+      "byte_count": 11034,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03a_final_report.md",
+      "role": "stage03a_authorization",
+      "sha256": "sha256:c4978103f9c354b06132733136eee69b28bc6c77868172d9eddd75f04cf4ebe1"
+    },
+    {
+      "byte_count": 1024,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/01_governing_contract/hybrid_equations.md",
+      "role": "governing_equations",
+      "sha256": "sha256:e720cb9119de2731791856f82a02c9ebcf4f1782706def34a5ccbed2239735b1"
+    },
+    {
+      "byte_count": 1521,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/02_temporal_architecture/causal_token_contract.md",
+      "role": "temporal_contract",
+      "sha256": "sha256:d6c529141429f36a32c0c901a4e57e9a05e754f58f2d3966ca65f512868913d7"
+    },
+    {
+      "byte_count": 1258,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/02_temporal_architecture/hidden_state_contract.md",
+      "role": "temporal_contract",
+      "sha256": "sha256:44961a5d75746222c5c2b693540f4c8419185526b05a26230db17bff2fc8137b"
+    },
+    {
+      "byte_count": 1005,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/02_temporal_architecture/reciprocal_pair_head_contract.md",
+      "role": "temporal_contract",
+      "sha256": "sha256:0465ca0211e55f4fbbf3db7a4a88d927028207ff947ece088691080685f9057c"
+    },
+    {
+      "byte_count": 1213,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/02_temporal_architecture/temporal_transformer_contract.md",
+      "role": "temporal_contract",
+      "sha256": "sha256:b6c51bf8911a7dbc4839b19762f6a8774a90b6b04763018a2d5dbbb2dc2138a9"
+    },
+    {
+      "byte_count": 1076,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/02_temporal_architecture/zero_fallback_contract.md",
+      "role": "zero_contract",
+      "sha256": "sha256:ad124d68c2bd2f3f89be045591cd6358619150b3ab3f746f56f206d264cd5498"
+    },
+    {
+      "byte_count": 1130,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/03_time_integration/rk2_stage_semantics.md",
+      "role": "rk2_contract",
+      "sha256": "sha256:2577e4a7e72747117256b0f9316ce2822af53a9a691e4d6c5cbcb08c9432bc2f"
+    },
+    {
+      "byte_count": 982,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/03_time_integration/graph_rebuild_contract.md",
+      "role": "graph_contract",
+      "sha256": "sha256:83b9ab83f9cd5e05d6d274ff6eddf5b34b50df20ae737d116405910dfda848dd"
+    },
+    {
+      "byte_count": 980,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/03_time_integration/history_commit_contract.md",
+      "role": "history_contract",
+      "sha256": "sha256:43a683835f5032eac42e421d4bdad21beec78e86f40d62597becabac15d7d0e5"
+    },
+    {
+      "byte_count": 1093,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/03_time_integration/topology_differentiability_boundary.md",
+      "role": "topology_boundary",
+      "sha256": "sha256:865a48d98a2575fc61710271967902c8175b4d264ede07bbecc543c1eb7fecdd"
+    },
+    {
+      "byte_count": 6633,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03b_final_report.md",
+      "role": "stage03b_authorization",
+      "sha256": "sha256:3e1839fde37bf841cc0fd282c538f90881195b0ed4a5659926b4c0030226749c"
+    },
+    {
+      "byte_count": 1117,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03b_reference_contract.md",
+      "role": "reference_contract",
+      "sha256": "sha256:a40c6835f6c542c19bfbaeb0d7931104598806c05caffb966a5197768cc3cfe0"
+    },
+    {
+      "byte_count": 4286,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03b_final_manifest.json",
+      "role": "stage03b_final_manifest",
+      "sha256": "sha256:c3bef0df24f373fe2eff33b0cfeb078768ebd502227a725b9911470306c86f41"
+    },
+    {
+      "byte_count": 19353,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03b_trajectory_manifest.json",
+      "role": "trajectory_manifest",
+      "sha256": "sha256:92974b660461a01ba1a326be8b2fedc31929a319aa97e2f5bc3418bd45435aac"
+    },
+    {
+      "byte_count": 32511,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/analytic_core/reference_core.py",
+      "role": "source_definition",
+      "sha256": "sha256:627e9d8bd1c9bf4b82290b946303dea6219d5123eabc1108d2316fb3a399f309"
+    },
+    {
+      "byte_count": 7638,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/dr2_semidiscrete_time_reference/semidiscrete_rhs.py",
+      "role": "dr2_reference_implementation",
+      "sha256": "sha256:5341dd36b30d94e93ade8383246f67a4ada1f87af75ed317a6eda41ae6ade46c"
+    },
+    {
+      "byte_count": 2124,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/topology_events/dr1b_topology_event_registry.json",
+      "role": "topology_registry",
+      "sha256": "sha256:3d8f34421894864e8eb0c2a0064753f895133ea5ae4ab694274f07c993cefe83"
+    },
+    {
+      "byte_count": 4705,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/uncertainty/trajectory_reference_uncertainty.json",
+      "role": "uncertainty",
+      "sha256": "sha256:8efdc8890a9364fa19ce1d6445d670fe3a6ceb6f41b82da2eeadcc14f6155e99"
+    },
+    {
+      "byte_count": 13959,
+      "path": "01_solver/structure_preserving/neighborhood.py",
+      "role": "baseline_graph",
+      "sha256": "sha256:44d61e0abbc9901472dae90f83127f5231fc3f6e8ac92a971228dfdcb230aaa8"
+    },
+    {
+      "byte_count": 13005,
+      "path": "01_solver/structure_preserving/kernels.py",
+      "role": "baseline_kernel_and_continuity",
+      "sha256": "sha256:bad08e0f49b308c568cd438c9981abd2c906e16c6570ebc0ca7d19d9847b333b"
+    },
+    {
+      "byte_count": 6583,
+      "path": "01_solver/structure_preserving/conservative_pressure.py",
+      "role": "baseline_pressure",
+      "sha256": "sha256:b6366666ba89cc1f367a95390a411905eee8b7f55fba28a024f5732860004064"
+    },
+    {
+      "byte_count": 10205,
+      "path": "01_solver/structure_preserving/conservative_viscosity.py",
+      "role": "baseline_viscosity",
+      "sha256": "sha256:bdfbcb457f6973130f0131ec3c0a3fecc7197dd117c8256163cf3a1445307852"
+    },
+    {
+      "byte_count": 2512,
+      "path": "01_solver/dynamic_solver/equation_of_state.py",
+      "role": "baseline_eos",
+      "sha256": "sha256:41fcc2f67b35f6e3997d790e3461027d09a9a211a30f9681cd2dcf0996b78e57"
+    },
+    {
+      "byte_count": 2291,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_coupled_deformation_n12_dop853.json",
+      "role": "canonical_trajectory_sidecar",
+      "sha256": "sha256:85b392f6fbfeacc001ef32f43bc8f272e548533f3be0a4c74153464b27432b7e"
+    },
+    {
+      "byte_count": 178819,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_coupled_deformation_n12_dop853.npz",
+      "role": "canonical_trajectory_array",
+      "sha256": "sha256:ff209df03aaa182939bceb49a490d7837fbd7384bff57356bc1179764bb21fc7"
+    },
+    {
+      "byte_count": 2758,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_coupled_deformation_n12_exact.json",
+      "role": "canonical_trajectory_sidecar",
+      "sha256": "sha256:a2b1a11393581b02fa4155f2bfc0f01506bbc23ce42e522401160c1e4cc1b62e"
+    },
+    {
+      "byte_count": 167772,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_coupled_deformation_n12_exact.npz",
+      "role": "canonical_trajectory_array",
+      "sha256": "sha256:b096f5f4cae0f0cdfda48fc1e3bcb744c3a528504602ca7391852ef3c1189a85"
+    },
+    {
+      "byte_count": 2291,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_coupled_deformation_n16_dop853.json",
+      "role": "canonical_trajectory_sidecar",
+      "sha256": "sha256:323b0cbc144eff091b37f539ddd904a1b35acdd1ff2ed25c2789e2e8798c39bd"
+    },
+    {
+      "byte_count": 359122,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_coupled_deformation_n16_dop853.npz",
+      "role": "canonical_trajectory_array",
+      "sha256": "sha256:f03963297e95d1bbf380cae33301ca79a8b34ad211435145dd60bf928dbbbc25"
+    },
+    {
+      "byte_count": 2755,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_coupled_deformation_n16_exact.json",
+      "role": "canonical_trajectory_sidecar",
+      "sha256": "sha256:fce106a1aeb7d41536d3dcd27caa2ec5b4370b2d2c89ef2dfe39b3f6c6248b79"
+    },
+    {
+      "byte_count": 316120,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_coupled_deformation_n16_exact.npz",
+      "role": "canonical_trajectory_array",
+      "sha256": "sha256:e2ddc65a6957134f67c4bb0fa7c89a60e1163f5c227eaa52f553ba4e88981ac3"
+    },
+    {
+      "byte_count": 2286,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_coupled_deformation_n8_dop853.json",
+      "role": "canonical_trajectory_sidecar",
+      "sha256": "sha256:fcab1ae0282bb166feea45004b4d341465f57af758078852036291bc1b0891e2"
+    },
+    {
+      "byte_count": 73585,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_coupled_deformation_n8_dop853.npz",
+      "role": "canonical_trajectory_array",
+      "sha256": "sha256:039ecf15c16309e5f785df89ead333260e7f92cc6e8df0b6cb8ed1f0d319f256"
+    },
+    {
+      "byte_count": 2753,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_coupled_deformation_n8_exact.json",
+      "role": "canonical_trajectory_sidecar",
+      "sha256": "sha256:09ada89da202faa69931400d954ad58b4d25c295ed68108b5783eeabdadcffd7"
+    },
+    {
+      "byte_count": 71972,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_coupled_deformation_n8_exact.npz",
+      "role": "canonical_trajectory_array",
+      "sha256": "sha256:caed1433edce26ea67cba63c0e249e0f637259e7a15ebf0ed8ed121bce893290"
+    },
+    {
+      "byte_count": 2303,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_lagrangian_compression_n12_dop853.json",
+      "role": "canonical_trajectory_sidecar",
+      "sha256": "sha256:818dac0e2da195df11f617311c438b9fdbd1cc45cf19031057a96e0534940ddc"
+    },
+    {
+      "byte_count": 115683,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_lagrangian_compression_n12_dop853.npz",
+      "role": "canonical_trajectory_array",
+      "sha256": "sha256:1b90268b60f63240d8b9eae14f7f344ce5f82e49a8054f1dea168c54f291213f"
+    },
+    {
+      "byte_count": 2769,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_lagrangian_compression_n12_exact.json",
+      "role": "canonical_trajectory_sidecar",
+      "sha256": "sha256:e93047648b9246c18508cb173bdb4041756fb45f795598180b03100441ca1868"
+    },
+    {
+      "byte_count": 125084,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_lagrangian_compression_n12_exact.npz",
+      "role": "canonical_trajectory_array",
+      "sha256": "sha256:c2b1ec9b0901a29ce0c737ec045c5ce661366b8c175abe11cb0a02c4aaf30018"
+    },
+    {
+      "byte_count": 2303,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_lagrangian_compression_n16_dop853.json",
+      "role": "canonical_trajectory_sidecar",
+      "sha256": "sha256:06feffb8fd6fcca0d97ce2cdef85db5eef23c7ecee0d0df4003c250cb6961611"
+    },
+    {
+      "byte_count": 238890,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_lagrangian_compression_n16_dop853.npz",
+      "role": "canonical_trajectory_array",
+      "sha256": "sha256:b662bc7dfa4ddc5dcb86d461503b3f3c3e6720b8058aaa134de6c8feed93a2e9"
+    },
+    {
+      "byte_count": 2769,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_lagrangian_compression_n16_exact.json",
+      "role": "canonical_trajectory_sidecar",
+      "sha256": "sha256:c101b6aa3a9c430171d1d27f2547afec966763cb749301ea9cc539a8c56ee092"
+    },
+    {
+      "byte_count": 251592,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_lagrangian_compression_n16_exact.npz",
+      "role": "canonical_trajectory_array",
+      "sha256": "sha256:f61ee6e07213bd4e6f8a9ac4d5d54d46ac9e05a985614ce6102699d8ea553f90"
+    },
+    {
+      "byte_count": 2298,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_lagrangian_compression_n8_dop853.json",
+      "role": "canonical_trajectory_sidecar",
+      "sha256": "sha256:ac90bc8b476b588602f02f1297517595e7ebfcb2374d4c2d314534724cdc4670"
+    },
+    {
+      "byte_count": 53539,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_lagrangian_compression_n8_dop853.npz",
+      "role": "canonical_trajectory_array",
+      "sha256": "sha256:c21921e3cdfd1955b8a6ece18fafb2a11db071d4d2a2cb4270ff9788018c9af7"
+    },
+    {
+      "byte_count": 2764,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_lagrangian_compression_n8_exact.json",
+      "role": "canonical_trajectory_sidecar",
+      "sha256": "sha256:061b2921f4bc2df3971d2b306cf0d22b32a559f7104482a3839087430149783c"
+    },
+    {
+      "byte_count": 58505,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_lagrangian_compression_n8_exact.npz",
+      "role": "canonical_trajectory_array",
+      "sha256": "sha256:9f91336c6708227e34d8522bb746c56d43cbfcb0fbd399b9cdf8e2ce9c5df74a"
+    },
+    {
+      "byte_count": 2392,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr3_oblique_shear_a_n12_exact.json",
+      "role": "canonical_trajectory_sidecar",
+      "sha256": "sha256:fe6cdc84ebf2983c17f2b6995dfb656342e733a533eb94cafc9dd4658460ab0c"
+    },
+    {
+      "byte_count": 182456,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr3_oblique_shear_a_n12_exact.npz",
+      "role": "canonical_trajectory_array",
+      "sha256": "sha256:d4e6f9bade9feebf5743e01743da09dc59e0fe42f11e7a1442d233635a7cde58"
+    },
+    {
+      "byte_count": 2393,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr3_oblique_shear_a_n16_exact.json",
+      "role": "canonical_trajectory_sidecar",
+      "sha256": "sha256:ea6adcaae7fab4d54d20ee9b1c740dafacf79756a7dd8dc9d8aaaef2d8ff1d5c"
+    },
+    {
+      "byte_count": 331357,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr3_oblique_shear_a_n16_exact.npz",
+      "role": "canonical_trajectory_array",
+      "sha256": "sha256:bec5161f8d7486694e81d81c79ee2e36c5960b96c96c7cfb9f60c4c5d17f8e22"
+    },
+    {
+      "byte_count": 2388,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr3_oblique_shear_a_n8_exact.json",
+      "role": "canonical_trajectory_sidecar",
+      "sha256": "sha256:b5c3377f9848986bdb9b85a4b1c7483d686a5916dd3b42127cf039bd05991245"
+    },
+    {
+      "byte_count": 78826,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr3_oblique_shear_a_n8_exact.npz",
+      "role": "canonical_trajectory_array",
+      "sha256": "sha256:1fee390b691fb63a37cb5f61f2c33b178522c6d709dbaff87de2f4d061e6f0fb"
+    },
+    {
+      "byte_count": 2393,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr3_oblique_shear_b_n12_exact.json",
+      "role": "canonical_trajectory_sidecar",
+      "sha256": "sha256:4d0df3a7b072635871ef79782a8bec1f82cdd68b21b0ff403f11373ead422c74"
+    },
+    {
+      "byte_count": 182781,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr3_oblique_shear_b_n12_exact.npz",
+      "role": "canonical_trajectory_array",
+      "sha256": "sha256:312b562dff4f3ffb7c7b2d898e6a80ef3cca9b671f9a820abc0381c1b7091a91"
+    },
+    {
+      "byte_count": 2393,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr3_oblique_shear_b_n16_exact.json",
+      "role": "canonical_trajectory_sidecar",
+      "sha256": "sha256:6c7c8722ece103f6e931256e642ebe8540a779aa42a888f70a6c7fce42dddeef"
+    },
+    {
+      "byte_count": 334046,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr3_oblique_shear_b_n16_exact.npz",
+      "role": "canonical_trajectory_array",
+      "sha256": "sha256:ff5e8f90f363dc246df07fbfce0c5a60e6bf5dd6d9ac003185d1926043418871"
+    },
+    {
+      "byte_count": 2388,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr3_oblique_shear_b_n8_exact.json",
+      "role": "canonical_trajectory_sidecar",
+      "sha256": "sha256:b3533b577a6e0c8b7eeddcaa8eea3b358168e8681b68e3b8235d72ff5ee39a7f"
+    },
+    {
+      "byte_count": 79458,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr3_oblique_shear_b_n8_exact.npz",
+      "role": "canonical_trajectory_array",
+      "sha256": "sha256:52bace3daae66e9c5242c594c6cb759b05143154b9b037fee6f83002cd8d64de"
+    }
+  ],
+  "schema_version": "sph-pio-poc.stage03c.input-freeze.v1",
+  "stage": "Stage 03C",
+  "trajectory_array_count": 18,
+  "trajectory_sidecar_count": 18
+}

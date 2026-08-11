@@ -1,0 +1,74 @@
+{
+  "checkpoints": [
+    {
+      "parameter_sha256": "sha256:ae2d15f248ecf17e6764647f6dd86933d204526e1c7f015232dc09bf73b98783",
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/checkpoint_selection/D1_seed20700711_selected.pt",
+      "run_id": "D1_seed20700711",
+      "sha256": "sha256:c0c375be619e49f38702f841bda8ca9a28ec49ec2ee23dada44ae004de0c7268",
+      "update": 1500
+    },
+    {
+      "parameter_sha256": "sha256:9fbb320557e2c820bbdf9cad90006ee33c5dd30c20b51e745323fe678e511ece",
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/checkpoint_selection/D1_seed20700712_selected.pt",
+      "run_id": "D1_seed20700712",
+      "sha256": "sha256:ec8b5b1ebb01f74599930fc867bf5dca8a27aa93fd102f86bd43a75314e842a5",
+      "update": 1500
+    },
+    {
+      "parameter_sha256": "sha256:9b3c1dcee846c68cb700f852aa0a267ccd3012bcf3d26dc72a252d146c7bb1e2",
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/checkpoint_selection/D1_seed20700713_selected.pt",
+      "run_id": "D1_seed20700713",
+      "sha256": "sha256:3a830cf68c9a77f25991458e871e74085e7c02ac457983cb72f6bc992e923cd8",
+      "update": 1500
+    },
+    {
+      "parameter_sha256": "sha256:eca18c6e6b3a3a962f66ef89fadf6d95cdd568331761e52e8ca265b2bdde7c99",
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/checkpoint_selection/D2_seed20700711_selected.pt",
+      "run_id": "D2_seed20700711",
+      "sha256": "sha256:bbfbadffeb87ff98f3dec0441c61b909f9164aa077b49df5a4ac93e730f6c1ca",
+      "update": 1500
+    },
+    {
+      "parameter_sha256": "sha256:a51d7e610c434d72488401344fdbac47f74bc64bee4abca0de5a72dff227cf0d",
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/checkpoint_selection/D2_seed20700712_selected.pt",
+      "run_id": "D2_seed20700712",
+      "sha256": "sha256:8b15e26bf68a311aa93f6a9a7083159cb0e752749b25ec96b90abe4ee9924a16",
+      "update": 1500
+    },
+    {
+      "parameter_sha256": "sha256:4040c007d0217df415248346941bdcf775aea42681e9aa3e700e10e90b9cda47",
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/checkpoint_selection/D2_seed20700713_selected.pt",
+      "run_id": "D2_seed20700713",
+      "sha256": "sha256:cfe490640d2f72062714b97a940cd770a724e8fa92f0911c6f5e6125846e6c2c",
+      "update": 1500
+    },
+    {
+      "parameter_sha256": "sha256:43d46c72e88db66aa78db788586d99ffc8514a63d334abc17b059eae5db46c39",
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/checkpoint_selection/D3_seed20700711_selected.pt",
+      "run_id": "D3_seed20700711",
+      "sha256": "sha256:d69f500775d7dbf95191dea75cd51e46ac6c75c2c5b3eaa918dcc5592c13081c",
+      "update": 940
+    },
+    {
+      "parameter_sha256": "sha256:6410ac0d445294967e414d3210d68b78e7ebf38b772cf5e0f945d7c0dba01ead",
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/checkpoint_selection/D3_seed20700712_selected.pt",
+      "run_id": "D3_seed20700712",
+      "sha256": "sha256:3b2608fd30aa8542da0252fc41369a50e24496518cc93a217d1232d24b08494e",
+      "update": 1080
+    },
+    {
+      "parameter_sha256": "sha256:047287b0c4e5d222afb6acb6b379e4b414d423835d84080fdec34edd20cf07cd",
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/checkpoint_selection/D3_seed20700713_selected.pt",
+      "run_id": "D3_seed20700713",
+      "sha256": "sha256:c6e4e3c85d12c15cd9ebe2a37caff1779ec3043f256487947cbf30013cdbb25e",
+      "update": 940
+    }
+  ],
+  "hashes_closed": true,
+  "minimum_update": 320,
+  "protocol_sha256": "sha256:21b52f0aca3791cdc0d58165f1edd980667bafe0eee5a9d52544c24a8f518dbb",
+  "schema": "sph-pio-poc.stage07d.selected-checkpoints.v1",
+  "selected_count": 9,
+  "selection_metric": "FRESH_VALIDATION_V2.global_balanced_Q_def_v2",
+  "tie_break": "earlier_update"
+}

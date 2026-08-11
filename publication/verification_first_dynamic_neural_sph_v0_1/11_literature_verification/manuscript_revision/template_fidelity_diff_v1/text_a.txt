@@ -1,0 +1,363 @@
+PUBLICATION TRACK P1
+守恒型动态神经–SPH求解器的验证优先开发
+零修正等价、拓扑事件与多步梯度资格边界
+Verification-first development of a conservative dynamic neural–SPH solver
+中文稿 v0.1  |  Evidence-locked  |  非投稿定稿
+Stage 03D: NOT_QUALIFIED  |  Training / rollout: NOT EXECUTED  |  Stage 03E: false
+目录
+摘要 · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · 3
+关键词 · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · 3
+1. 引言 · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · 3
+2. 控制方程与模型形式 · · · · · · · · · · · · · · · · · · · · · · · 5
+3. 验证与资格框架 · · · · · · · · · · · · · · · · · · · · · · · · · 6
+4. 动态参考轨迹 · · · · · · · · · · · · · · · · · · · · · · · · · · 8
+5. 动态求解器实现 · · · · · · · · · · · · · · · · · · · · · · · · · 10
+6. 结构验证 · · · · · · · · · · · · · · · · · · · · · · · · · · · · 11
+7. 多步可微性资格 · · · · · · · · · · · · · · · · · · · · · · · · · 12
+8. 拓扑事件资格 · · · · · · · · · · · · · · · · · · · · · · · · · · 15
+9. 讨论 · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · 17
+10. 结论 · · · · · · · · · · · · · · · · · · · · · · · · · · · · · 19
+Data availability · · · · · · · · · · · · · · · · · · 19
+Code availability · · · · · · · · · · · · · · · · · · 19
+Author contributions · · · · · · · · · · · · · · · 19
+Conflict of interest · · · · · · · · · · · · · · · 19
+References · · · · · · · · · · · · · · · · · · · · · · · · · 20
+目录为headless-safe静态索引；条目包含内部链接，页码由最终渲染校正。
+摘要
+动态神经–SPH耦合把时间积分、动态图重建、历史状态提交和多步自动微分置于同一计算链中；若缺少分层合同，架构正确、梯度有效与性能提升会被错误地合并为单一结论。本文采用verification-first路线，构建D0基线、D1瞬时MLP、D2循环模型与D3因果时间注意力模型的统一动态框架，并依次审计动态参考、独立RK2、zero correction、反对称reciprocal pair-force、多步AD/FD与确定性拓扑事件。独立RK2的48/48检查、zero correction的288/288 bitwise等价、结构smoke的72/72、checkpoint/resume的6/6与one-step autograd的6/6均通过；冻结多阶段测试中540/540守恒检查通过。完整360-probe矩阵中216个probe获得stable AD/FD window，144个失败，history门为0/6。因此，Stage 03D保持DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED；Stage 03D-R将失败归因为mixed or unresolved。确定性TE1记录一次edge birth与一次death，6/6 replay和12/12 event-side gradients通过，但cutoff edge membership仍为离散事件。本文没有执行动态训练、自主rollout或性能验证，因而不主张Transformer可训练、优于D1/D2或改进SPH。贡献在于建立可审计的资格链，并完整公开其正负证据边界。
+关键词
+光滑粒子流体动力学；物理机器学习；验证与确认；守恒型神经修正；多步可微性；拓扑事件；负证据
+1. 引言
+1.1 SPH与物理机器学习耦合的验证问题
+光滑粒子流体动力学（SPH）以粒子邻域上的核近似离散连续介质方程，具有无网格与大变形适应性，但其误差同时受核、粒子分辨率、邻域、边界、黏性离散和时间推进影响。[REF-TODO: SPH foundations and verification] 当神经网络以加性修正进入动量方程时，新的误差源不仅来自函数逼近，还来自模型接口、成对力对称性、动态图构造、缓存状态和自动微分后端。[REF-TODO: conservative neural particle methods]
+因此，“代码能够运行”不能替代实现验证，“一步梯度存在”不能替代多步梯度资格，“结构守恒”不能替代精度或稳定性证据。本文把这些命题拆成彼此独立的证据层级，并要求每个事实性结果句可追溯到冻结artifact。该做法的目标不是预设模型有效，而是允许验证流程在遇到负结果时停止，并保留仍然成立的局部结论。
+1.2 动态图、时间积分与可微性的证据缺口
+动态图粒子求解器的计算图随粒子位置变化。显式midpoint/RK2在start和midpoint分别评估右端项；如果邻域只在整步开始重建，或midpoint临时history被错误提交，形式上相同的积分公式会对应不同的算法。另一方面，cutoff crossing引起edge birth/death，使edge membership成为离散映射；事件两侧可以讨论固定图分支内的梯度，跨事件的中心差分则混合了两套计算图。[REF-TODO: differentiable simulation with dynamic graphs]
+这些问题使“可微”成为需要资格合同的经验命题。本文采用AD/FD stable-window规则，不以单个epsilon或最佳probe替代完整矩阵；同时采用reverse/JVP、extended FD、history路径和backend sensitivity作为归因诊断。所有诊断都保留原合同，不通过切换后端或事后放宽阈值重写结论。
+1.3 verification-first研究思路
+本文采用Paper B的verification-first conservative dynamic neural–SPH coupling主线，并吸收Paper C关于多步可微性边界的分析。主叙事由“先定义可执行合同，再分别判断PASS、NOT_QUALIFIED与NOT_EXECUTED”驱动，而不是由“Transformer改善SPH”的性能前提驱动。当前工作标题仅用于P1架构，不是最终投稿题名。
+FIGURE 1 — P1 DETAILED DESIGNStage 03 verification-first资格链：按03A→03B→03C→03D→03D-R→03D-S排列，TE1 topology作为独立组件分支，Stage 03E=false；不得把topology component PASS连接为Stage 03D总体PASS。
+图1  P1证据锁定图件设计（最终科研图待P2/Python或R后端确认）
+1.4 研究问题与贡献
+RQ1询问如何把守恒、时间推进、history commit与邻域重建转化为可执行验证合同；RQ2询问zero correction、结构守恒和离散拓扑事件能否独立资格认定；RQ3询问固定拓扑多步rollout中，标准AD/FD资格门在哪些条件下不能形成完整证据。本文不把“模型是否提高精度”作为已回答问题。
+贡献包括：（1）建立reference–implementation–multistep gradient–topology的verification-first资格链；（2）实现D0–D3统一动态框架，并建立zero correction 288/288与D0 bitwise等价；（3）以反对称reciprocal pair-force在冻结多阶段测试中保持540/540离散线动量守恒；（4）建立TE1 deterministic topology-event audit；（5）公开全部360 probes，包含216 PASS、144 failure和mixed/unresolved归因。
+2. 控制方程与模型形式
+2.1 WCSPH基线
+冻结的半离散系统以粒子状态S={x_i, v_i, ρ_i}为基本变量。位置、密度和速度的演化写为：
+dx_i/dt = v_i
+dρ_i/dt = C_SPH,i(S)
+dv_i/dt = a_SPH,i(S) + a_θ,i(S_history, H_history, G_history)
+压力采用冻结的弱可压EOS：
+p_i = c_s²(ρ_i - ρ₀)
+本文不重新资格认定基线黏性算子，也不把Stage 03结果解释为Stage 01 V2恢复。基线方程、图和时间步选择仍由SPH求解器控制。
+2.2 additive momentum correction
+神经模块只产生加性加速度修正：
+a_θ,i = (1/m_i) Σ_{j:{i,j}∈G} f_θ,ij
+这一接口把网络约束在动量修正层，不允许其直接预测粒子位置、替代EOS、改变邻域membership或覆盖baseline加速度。zero correction时，a_θ,i严格为零，从而定义可执行的baseline退化合同。
+2.3 reciprocal antisymmetric pair-force
+成对修正力写为：
+f_θ,ij = F⁰_ij [ α_ij r̂_ij + β_ij t_ij ]
+其中α_ij=α_ji、β_ij=β_ji，且r̂_ji=-r̂_ij、t_ji=-t_ij，因此f_θ,ji=-f_θ,ij。该硬反对称构造在图上直接消去成对内力和；它建立结构守恒，不建立非零修正的准确性、必要性或性能优势。[REF-TODO: antisymmetric pair-force conservation]
+2.4 D0–D3架构
+D0为无修正baseline；D1使用瞬时局部token与MLP；D2引入循环hidden state；D3使用因果temporal attention处理accepted history。D1–D3共享tokenization、reciprocal head、RK2、graph rebuild与安全拒绝语义。D0–D3的作用是控制结构复杂度，不是经过训练的性能排序。冻结实现合同在Stage 03C通过，但不证明D3优于D1/D2。
+FIGURE 2 — P1 DETAILED DESIGND0–D3统一动态架构：并列展示baseline、instantaneous MLP、recurrent state与causal temporal attention，共享RK2、graph rebuild、history semantics与reciprocal head；图形不编码模型优越性。
+图2  P1证据锁定图件设计（最终科研图待P2/Python或R后端确认）
+2.5 不允许的替代与软守恒方式
+合同禁止网络改变edge membership、使用单向非reciprocal边、以损失惩罚替代硬反对称、在midpoint提交history、把wrapped position用于动力学推进，或将topology事件通过未登记的soft edge规避。本文不评价这些替代设计的普遍有效性，只说明它们不属于本次冻结证据。
+3. 验证与资格框架
+3.1 状态等级
+资格链按时间顺序包含Stage 03A specification、Stage 03B reference qualification、Stage 03C implementation verification、Stage 03D multistep gradient/topology campaign、Stage 03D-R attribution和Stage 03D-S route closure。每一状态只回答本层问题，不继承为后续层的自动PASS。
+表1 Stage 03状态账本。
+阶段
+唯一状态
+主要通过证据
+主要边界
+Stage 03A
+DYNAMIC_HYBRID_SOLVER_SPECIFICATION_COMPLETE
+45/45 contract hash checks；20/20 historical freeze checks；55/55 required files。
+尚无动态实现、trajectory payload 或计算资格化。
+Stage 03B
+DYNAMIC_REFERENCE_TRAJECTORY_QUALIFICATION_COMPLETE
+D-R1 两族、D-R2 六例、D-R3 两族 PASS；18/18 canonical trajectories；4302 RHS/rebuilds。
+acoustic 仅 linear-regime conditional；periodic vortex 不是 exact source-free reference；D-R4 不可用。
+Stage 03C
+DYNAMIC_RK2_HYBRID_IMPLEMENTATION_VERIFIED
+D0 48/48；zero correction 288/288 bitwise；checkpoint 6/6；one-step autograd 6/6；全部结构/资源门 PASS。
+未执行 multistep AD/FD、训练或 rollout 性能评价。
+Stage 03D
+DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED
+216/360 stable windows；540/540 stage conservation；TE1 birth/death、6/6 replay、12/12 event-side gradients PASS。
+144/360 probes failure；history gradient 0/6；固定拓扑 AD/FD 与 history gate 未通过。
+Stage 03D-R
+DYNAMIC_GRADIENT_FAILURE_MIXED_OR_UNRESOLVED
+reverse/JVP 60/60；extended FD 2640 paths、30/60 stable；90 个 horizon 均 bounded/nonmonotone；topology status preserved。
+19 unresolved；多类 FD conditioning/non-smooth/structural-zero 贡献并存；history rollout influence strongly attenuated。
+3.2 reference hierarchy
+D-R1用于解析/MMS verification，D-R2用于同半离散时间参考，D-R3用于source-free exact/independent validation，D-R4要求外部V&V-qualified reference。层级越高，允许的确认性解释越强；但任何一层都不等于训练或性能数据。D-R4当前不可用，是投稿证据缺口而不是被低层级参考替代的空位。
+3.3 FAIL、NOT_QUALIFIED与NOT_EXECUTED区别
+FAIL表示执行了冻结门且不满足；NOT_QUALIFIED表示整体所需证据未满足，可能同时包含局部PASS；NOT_EXECUTED表示相关工作没有被授权或运行。Stage 03D属于NOT_QUALIFIED，因为144/360失败且history为0/6；动态训练属于NOT_EXECUTED，不能写为“训练失败”。
+3.4 claim boundary
+SUPPORTED claim可以直接由冻结证据支持；CONDITIONAL claim必须保留选择范围和限定词；UNSUPPORTED claim不得进入可提交稿。每条事实性结果句在P1源稿中以不可见CLAIM标记映射到claim_to_evidence_matrix.json，未映射语句在审计中标记UNSUPPORTED_DRAFT_STATEMENT。
+4. 动态参考轨迹
+4.1 D-R1 Lagrangian MMS
+D-R1包含Lagrangian compression与coupled deformation两族，通过解析闭包与符号定义检查。其作用是验证控制方程、源项和Lagrangian状态演化的一致性；MMS不构成无源物理验证，也不允许作为模型性能数据。[REF-TODO: method of manufactured solutions]
+4.2 D-R2 semidiscrete DOP853
+D-R2对两族、N=8/12/16共六个case建立同半离散算子的高精度DOP853时间参考，6/6通过。该层隔离时间积分误差，但空间离散与核误差仍在两条轨迹中共享，因此DOP853不是连续方程真值。[REF-TODO: high-order time reference for semidiscrete systems]
+4.3 D-R3 oblique shear
+D-R3采用oblique shear A/B两族source-free exact reference，并在N=8/12/16形成六条精确轨迹。结合D-R1与D-R2，Stage 03B最终形成18条canonical trajectories；这些轨迹只用于资格化与后续冻结probe，不用于训练、normalization或阈值选择。
+4.4 acoustic conditional boundary
+声学候选仅被分类为DR3_ACOUSTIC_LINEAR_REGIME_CONDITIONAL。因此正文只能将其视为线性区间的条件性参考，不能外推为任意振幅或长期声学传播的精确D-R3。
+4.5 periodic-vortex rejection
+periodic vortex被拒绝为exact source-free reference。拒绝结果被保留，因为reference qualification的价值包括排除角色不匹配的候选，而不是只展示通过家族。该候选不进入性能比较，也不被重新命名为外部独立验证。
+FIGURE 4 — P1 DETAILED DESIGND-R1/D-R2/D-R3参考层级：分层显示MMS verification、semidiscrete time reference与source-free validation，并在侧栏标记acoustic conditional、periodic-vortex rejection与D-R4缺口。
+图4  P1证据锁定图件设计（最终科研图待P2/Python或R后端确认）
+表2 动态参考轨迹清单。
+层级
+冻结对象
+结果
+证据角色与边界
+D-R1
+Lagrangian compression；coupled deformation
+两族PASS
+解析/MMS verification，不等于物理验证
+D-R2
+同半离散DOP853 time reference
+6/6 PASS
+时间参考，不是空间真值
+D-R3
+oblique shear A/B
+两族PASS；6条exact trajectories
+source-free independent validation
+Acoustic
+acoustic candidate
+linear-regime conditional
+不外推为无限制精确D-R3
+Vortex
+periodic vortex candidate
+rejected as exact source-free
+不作为D-R3精确参考
+D-R4
+外部V&V-qualified reference
+NOT_AVAILABLE
+当前独立验证缺口
+5. 动态求解器实现
+5.1 unwrapped/wrapped position
+动力学状态保存unwrapped position以保持时间连续性；wrapped position仅用于周期邻域搜索与最小镜像表示。该分离避免粒子跨越周期边界时在积分状态中引入人为跳跃，同时使graph construction保持确定。
+5.2 RK2 start/midpoint/accept
+显式midpoint/RK2采用：
+k₁ = F(Sⁿ, historyⁿ)
+Sⁿ⁺¹ᐟ² = Sⁿ + (Δt/2) k₁
+k₂ = F(Sⁿ⁺¹ᐟ², historyⁿ + ephemeral token)
+Sⁿ⁺¹ = Sⁿ + Δt k₂
+start与midpoint是独立RHS evaluation。accepted state必须通过finite与safety checks，拒绝步同时回滚state和history。
+5.3 graph rebuild
+每次RHS evaluation从对应state重建reciprocal graph，禁止固定整步topology。该语义保证midpoint的邻域由midpoint位置决定；同时，Stage 03D的fixed-topology AD/FD会显式筛选graph sequence identity，以免将edge change混入连续路径的梯度比较。
+5.4 temporal history commit
+start和midpoint只读committed snapshot；midpoint token为ephemeral，不得append、evict或覆盖accepted history。只有Sⁿ⁺¹被接受后，才在物理时刻tₙ₊₁原子提交一个token。该事务语义是D2/D3可复现与checkpoint一致性的必要条件。
+FIGURE 3 — P1 DETAILED DESIGNRK2 graph rebuild与history commit：Sⁿ→start RHS/rebuild→midpoint/ephemeral token→midpoint RHS/rebuild→accept checks→一次accepted commit；拒绝路径回滚state与cache。
+图3  P1证据锁定图件设计（最终科研图待P2/Python或R后端确认）
+5.5 checkpoint/resume
+checkpoint记录state、graph、history、模型参数与RNG语义。冻结6种配置的resume结果为6/6通过，说明指定执行路径可复现；这里不存在训练checkpoint，不能把该结果解释为训练过程可恢复。
+6. 结构验证
+6.1 independent RK2 48/48
+独立functional RK2与主实现的48/48冻结检查全部通过，覆盖指定状态、时间和graph语义。该结果支持实现一致性，但不覆盖长时间稳定性或自主rollout。
+6.2 zero correction 288/288
+zero correction在288/288检查中与D0 baseline bitwise相同，且没有使用事后容差。该结果是D1–D3接口的退化极限验证：当神经修正严格为零时，动态框架不改变baseline；它不证明非零修正准确。
+6.3 pair-force conservation
+反对称reciprocal pair-force使每条无序边的修正内力成对抵消。结构smoke包含72/72通过，多步campaign的540/540 stage conservation检查也通过。两者共同支持冻结实现中的离散线动量结构保持，但不支持长期稳定性或误差收敛主张。
+6.4 O(2)、Galilean与周期性
+冻结structural smoke同时覆盖O(2)变换、粒子置换、Galilean与周期一致性。这里的PASS表示特定变换合同通过，不表示神经表示已经学习出一般物理规律。[REF-TODO: equivariant neural operators for particle systems]
+6.5 one-step autograd
+one-step autograd共6/6运行返回预期的有限非零梯度，证明基础计算图连接存在。Stage 03C没有运行finite difference或multistep AD/FD，因此该PASS不能用于推导完整多步可微性。
+6.6 resource boundary
+Stage 03C和Stage 03D的正式执行采用CPU float64以降低数值路径歧义；资源记录只服务复现，不构成速度、成本或加速比较。优化器对象、参数更新和训练运行均为0。
+FIGURE 5 — P1 DETAILED DESIGNZero-correction与结构资格矩阵：展示48/48、288/288、72/72、6/6、6/6，并以独立灰色栏标记training/performance为NOT EXECUTED，禁止把结构PASS解释为性能PASS。
+图5  P1证据锁定图件设计（最终科研图待P2/Python或R后端确认）
+表3 实现与结构资格门。
+资格门
+结果
+状态
+允许解释
+Independent RK2
+48/48
+PASS
+冻结RK2实现一致
+Zero correction
+288/288
+PASS
+与D0 bitwise等价
+Structural smoke
+72/72
+PASS
+结构守恒/等变等冻结门通过
+Checkpoint/resume
+6/6
+PASS
+state/graph/history/RNG可复现
+One-step autograd
+6/6
+PASS
+一步梯度通路有限非零
+Dynamic training / performance
+0 / 0
+NOT_EXECUTED
+不可写为训练失败或性能不足
+7. 多步可微性资格
+7.1 frozen 360-probe design
+正式合同包含D1–D3、四个固定拓扑case、三个seed、K=1/2/4/8 horizon及参数、初值和history probe，合计360 rows。每个probe保存AD重复、四个冻结epsilon的FD值、graph sequence identity和stable-window verdict，形成2880次历史AD/FD比较。矩阵在结果前冻结，不允许根据结果增加epsilon或删probe。
+7.2 AD/FD stable-window rule
+资格门要求相邻epsilon形成稳定窗口，并同时满足方向、相对/绝对误差和确定性条件。单个epsilon的偶然接近不足以PASS；导数接近结构零时，需要结合绝对误差和尺度分类。该规则的目的是把roundoff、truncation与非光滑影响暴露出来，而不是优化通过率。[REF-TODO: finite-difference verification of algorithmic derivatives]
+7.3 complete results：216/360
+360个probe中216个获得stable window，144个未通过，总体通过率不被用作模型排名。按horizon，K=1/2/4/8分别为60/57/51/48个PASS；按arm，D1、D2、D3分别为65/96、75/120、76/144。完整结果意味着正负证据必须共同出现，Stage 03D据此保持NOT_QUALIFIED。冻结多阶段守恒同时为540/540通过，说明结构守恒可以在梯度资格失败时独立成立。
+FIGURE 6 — P1 DETAILED DESIGN完整360-probe AD/FD outcome matrix：按arm/case/horizon/probe组织全部360格，216个PASS与144个failure同时显示；附七类failure taxonomy及19 unresolved，不允许筛选最佳子集。
+图6  P1证据锁定图件设计（最终科研图待P2/Python或R后端确认）
+7.4 failure taxonomy
+144个失败按唯一主因分为：方向/符号不一致5、接近结构零29、FD非单调且无相邻窗69、roundoff主导3、truncation主导3、固定图数值非光滑16和UNRESOLVED 19。分类覆盖所有失败，但“唯一主因”是账本规则，不意味着每个失败只有一个物理贡献。19个未决row必须保留在主文和补充材料。
+表4 AD/FD失败分类。
+主因
+数量
+解释边界
+AD/FD方向或符号不一致 (AD_FD_DIRECTION_OR_SIGN_MISMATCH)
+5
+归因诊断，不代表合同已修复
+导数接近结构零 (DERIVATIVE_NEAR_STRUCTURAL_ZERO)
+29
+归因诊断，不代表合同已修复
+FD非单调且无相邻稳定窗 (FD_NONMONOTONE_NO_ADJACENT_WINDOW)
+69
+归因诊断，不代表合同已修复
+FD舍入误差主导 (FD_ROUNDOFF_DOMINATED)
+3
+归因诊断，不代表合同已修复
+FD截断误差主导 (FD_TRUNCATION_DOMINATED)
+3
+归因诊断，不代表合同已修复
+固定图数值非光滑 (NUMERICAL_NONSMOOTHNESS_WITH_FIXED_GRAPH)
+16
+归因诊断，不代表合同已修复
+未决 (UNRESOLVED)
+19
+归因诊断，不代表合同已修复
+7.5 reverse/JVP crosscheck
+在统一数学attention后端上，reverse-mode与JVP的60/60选择比较通过。这支持两条AD实现路径的一致性，却不能替代FD或使360矩阵整体转为PASS。
+7.6 extended FD
+extended FD扩展至2640条路径；60个选择路径中30个显示扩展稳定性，另30个呈U形conditioning特征。该诊断支持“FD conditioning对部分失败有贡献”，但不支持“全部失败都是FD伪影”。
+7.7 history attenuation
+history资格门0/6通过；在reference-prehistory追踪中，一条路径被归为conditioning limited，五条低于FD resolution。该结果表示当前冻结路径中的history influence在rollout传播中强烈衰减，而不是证明temporal memory无用，更不是训练失败。
+7.8 backend sensitivity
+历史默认后端reverse与math JVP在60个选择诊断中匹配48个，12个不匹配，且不匹配集中在选定D3路径。正文只能写为“冻结选择诊断中存在backend sensitivity”；不能写为D3内在不可微，也不能在P1切换后端后重新资格化。
+FIGURE 7 — P1 DETAILED DESIGNHistory attenuation与backend sensitivity多面板：history 0/6、reverse/JVP 60/60、extended FD 30/60与historical-backend match 48/60；标题和图例均使用diagnostic限定。
+图7  P1证据锁定图件设计（最终科研图待P2/Python或R后端确认）
+7.9 mixed/unresolved attribution
+90条horizon traces均被分类为bounded或nonmonotone，没有检测到系统性vanish/explode；该结果不证明训练梯度健康。综合AD crosscheck、extended FD、history attenuation、backend sensitivity与19个未决row，Stage 03D-R的唯一结论为DYNAMIC_GRADIENT_FAILURE_MIXED_OR_UNRESOLVED。D-R是归因而非修复，不覆盖Stage 03D。
+8. 拓扑事件资格
+8.1 TE1设计
+TE1_TAGGED_PAIR_OSCILLATION使用两粒子确定性路径穿越cutoff Rc，在s=0.25附近发生birth、s=0.75附近发生death。4097点dense scan、三次bitwise重复及reciprocity/duplicate检查共同锁定事件语义。TE1是kinematic audit family，不代表任意动态图问题。[REF-TODO: nonsmooth events in particle neighbor graphs]
+8.2 birth/death
+dense scan记录恰好一次edge birth和一次death，顺序、bracket、margin、minimum-image及reciprocity门均通过。edge existence从0跳到1或从1跳到0，故该变量本身不是连续可微映射。
+8.3 stage replay
+D1、D2、D3在birth/death两侧的topology-stage replay共6/6通过，重复构造得到一致graph和pair语义。该结果仅资格认定冻结TE1实现。
+8.4 fixed-side gradients
+在事件前后各自固定edge membership，D1–D3的12/12 event-side gradient检查通过。允许的主张是事件两侧分支内piecewise-smooth；禁止的主张是跨cutoff membership存在普通导数。
+8.5 force jump
+事件两侧的修正力跳被登记为有限、有界、确定且满足成对守恒；连续性不是该离散事件的资格要求。跨事件中心差分随epsilon呈离散图变化特征，不能归因为网络梯度本身失败。
+8.6 empty graph
+edge absent侧保留canonical self records但不制造synthetic self pair；非self pair聚合为exact zero，token保持finite。D1–D3在两侧共6条empty-graph记录确定。
+8.7 piecewise-smooth boundary
+TE1组件状态为TOPOLOGY_EVENT_COMPONENT_QUALIFIED，因为birth/death、replay、fixed-side gradients、finite jumps和empty graph语义均满足；该组件PASS与Stage 03D整体NOT_QUALIFIED同时成立。
+FIGURE 8 — P1 DETAILED DESIGNTE1 edge birth/death与piecewise-smooth boundary：显示s=0.25 birth、s=0.75 death、两侧固定拓扑梯度、有限力跳与空图语义；edge membership以阶跃呈现，不画成连续可微曲线。
+图8  P1证据锁定图件设计（最终科研图待P2/Python或R后端确认）
+表5 拓扑事件证据。
+TE1证据
+结果
+状态
+禁止外推
+edge birth
+1/1
+PASS
+非任意拓扑族
+edge death
+1/1
+PASS
+非连续edge membership
+stage replay
+6/6
+PASS
+仅冻结TE1语义
+fixed-side gradients
+12/12
+PASS
+不穿过cutoff事件求导
+force jump
+finite and bounded
+PASS
+不声称事件处连续
+empty graph
+deterministic
+PASS
+不构造合成非物理pair
+9. 讨论
+9.1 架构正确性与可训练性的区别
+Stage 03C支持冻结动态实现、零修正退化、结构性质、checkpoint和一步梯度；Stage 03D则否定完整多步梯度资格。两者不矛盾：前者回答实现是否遵守合同，后者回答特定多步导数能否经AD/FD外部校验。没有执行训练意味着无法从任一结果推导Transformer可训练或不可训练。
+9.2 fixed-topology gradient与discrete topology
+fixed-topology梯度验证要求graph sequence identity，确保AD与FD比较同一分支；topology事件审计则承认edge membership离散，并分别检查两侧分支与事件跳。把两者合并会导致两类错误：要么把跨事件FD发散误写为网络梯度失败，要么把event-side PASS误写为edge existence可微。TE1的分离资格为动态图求解器提供可复用的验证模式，但其跨实现一般性仍需后续研究。[REF-TODO: piecewise differentiability and hybrid systems]
+9.3 verification evidence与performance evidence
+本文没有动态训练、自主rollout、长期稳定性、速度或误差对比。因而“implementation verified”不能写成“solver performance verified”，“540/540守恒”不能写成长时稳定，“216个stable windows”不能写成训练准备完成。未执行的性能工作属于NOT_TESTED，不是负性能结果。
+9.4 对dynamic neural particle solvers的含义
+最直接的方法意义是：动态神经粒子求解器可以先资格认定结构与实现，再允许多步梯度门独立失败。透明报告144个失败与19个未决row，为选择训练目标、伴随方法或连续邻域假设提供边界，但这些均是未来新假设，不属于P1结果。当前最可辩护的论文定位是verification-first方法/验证稿，而非successful Transformer-corrected solver。
+9.5 与Stage 01/02边界
+Stage 01保持V2_QUALIFICATION_FAIL，Stage 01H将shear偏差归为FINITE_RESOLUTION_DOMINANT，黏性算子形式仍为NOT_CONFIRMED。Stage 02静态路线以STAGE02_ROUTE_CLOSED_PUBLICATION_BOUNDARY_COMPLETE关闭。Stage 03未恢复这些状态，也未复用Stage 02失败权重构造动态性能主张。
+9.6 limitations
+第一，没有正式动态训练资格，不能讨论可训练性与优化稳定性；第二，没有受控或自主rollout性能/稳定性证据；第三，没有独立D-R4或等价外部验证；第四，当前为单一项目实现，跨SPH代码和问题族的一般性有限；第五，部分gradient failure仍为mixed/unresolved。上述限制使完整求解器论文证据不完整。
+FIGURE 9 — P1 DETAILED DESIGNSupported/conditional/unsupported claim map：列出6项支持、4项条件与8项不支持主张，明确training/rollout NOT EXECUTED、Stage 01未恢复及long-time stability未建立。
+图9  P1证据锁定图件设计（最终科研图待P2/Python或R后端确认）
+表6 最终claim/evidence矩阵。
+主张类别
+可写入正文
+不可写入正文
+主要证据状态
+实现
+RK2 hybrid冻结实现通过
+solver performance verified
+PASS
+退化极限
+zero correction 288/288 bitwise等价
+nonzero correction准确
+PASS
+守恒
+540/540多阶段守恒检查通过
+长时稳定性已证明
+PASS
+多步梯度
+216/360稳定窗；144 failure
+全部梯度有效
+NOT_QUALIFIED
+失败归因
+mixed or unresolved；19未决
+单一根因已解决
+UNRESOLVED
+拓扑
+TE1 birth/death与fixed-side通过
+cutoff membership可微
+COMPONENT PASS
+训练
+未授权、未执行
+Transformer可训练
+NOT_EXECUTED
+性能
+未测试
+rollout改进SPH或D3优于D1/D2
+NOT_TESTED
+10. 结论
+本文建立了守恒型动态神经–SPH耦合的verification-first资格链。D0–D3统一接口、独立RK2、zero correction、结构守恒、checkpoint与one-step autograd形成正实现证据；完整360-probe矩阵则使多步梯度总体保持NOT_QUALIFIED。TE1证明离散edge birth/death可与事件两侧fixed-topology gradients分开资格认定，但不能把edge membership写成可微。Stage 03D-R保留mixed/unresolved边界，Stage 03E未授权。
+因此，本稿的贡献是验证架构及其证据边界，而不是证明训练成功、rollout改进或Transformer优越性。P1可以形成带严格claim limitation的方法/验证中文稿；完整求解器主张仍需训练资格、rollout性能/稳定性和独立验证三类新证据。
+Data availability
+本文P1使用的全部数值结果均来自publication_input_freeze_manifest.json登记的项目内部机器artifact，并由hash锁定。360-row matrix、AD/FD comparisons、extended FD、history、horizon、TE1与manifest拟作为补充数据组织；公开仓库、持久标识和许可将在投稿前核验后填写。[REF-TODO: repository, DOI and data license]
+Code availability
+本文涉及的Stage 01–03实现与审计代码当前保存在项目工作区。P1不修改历史代码，也不产生新的计算。投稿前需确定可公开代码范围、版本标签、环境文件与许可，并填写持久链接。[REF-TODO: code repository and software citation]
+Author contributions
+[AUTHOR-TODO: 按CRediT taxonomy核验并填写作者贡献，不在P1虚构作者角色。]
+Conflict of interest
+[AUTHOR-TODO: 投稿前由全体作者核验并填写竞争利益声明。]
+References
+P1不生成未经检索核验的外部文献。正文中的[REF-TODO: topic]将在Publication Track P2中逐项检索、核验并替换为真实引用；历史项目文档不作为外部学术文献。

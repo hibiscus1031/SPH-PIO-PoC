@@ -1,0 +1,293 @@
+contract_id: formal_k1_defect_training_protocol_v0_1
+schema: sph-pio-poc.stage06b.protocol.v1
+authorization:
+  source: Stage06A
+  status: ACTUAL_OPTIMIZER_UPDATE_DYNAMICS_QUALIFIED
+  stage06b_only: true
+  formal_training_authorized_in_stage06b: false
+backend:
+  device: CPU
+  dtype: float64
+  sdpa: SDPBackend.MATH
+data_roles:
+  TRAIN:
+  - LCDF_01
+  - LCDF_04
+  - LCDF_05
+  - LCDF_06
+  - LCDF_07
+  - LCDF_08
+  VALIDATION:
+  - LCDF_02
+  - LCDF_09
+  SEALED_TEST:
+  - LCDF_03
+  - LCDF_10
+  split_atom: complete formula lineage component
+  random_subsplit_forbidden: true
+formal_models:
+  seeds:
+  - 20600611
+  - 20600612
+  - 20600613
+  qualification_seeds_excluded:
+  - 20600601
+  - 20600602
+  - 20600603
+  run_ids:
+  - D1_seed20600611
+  - D1_seed20600612
+  - D1_seed20600613
+  - D2_seed20600611
+  - D2_seed20600612
+  - D2_seed20600613
+  - D3_seed20600611
+  - D3_seed20600612
+  - D3_seed20600613
+  architecture_hashes:
+    D1: sha256:8ae11d8876287b2a273326b8ffa0716313d596b417f34bdd37320b378797bc05
+    D2: sha256:d01a4b836286d9b5d017f94b6ef27a10cc8ee865eaa84b3dbd261cbddf4b1a81
+    D3: sha256:720311f4ffe2645411f2a4b05c35049ec1abefd6f080fdc0445407c8faa17209
+  fresh_initialization: true
+  historical_or_qualification_weight_reads: 0
+optimizer:
+  family: AdamW
+  betas:
+  - 0.9
+  - 0.999
+  eps: 1.0e-12
+  weight_decay: 0
+  amsgrad: false
+  global_gradient_clip: 1.0
+  arm_specific_family: false
+formal_learning_rate:
+  candidates:
+  - 1.0e-05
+  - 3.0e-05
+  - 0.0001
+  - 0.0003
+  - 0.001
+  selection_matrix: stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/lr_selection/formal_lr_selection_matrix.json
+  algorithm: maximum(common_fully_qualified_LR_set)
+  selected: 1.0e-05
+  validation_used: false
+training_batches:
+  manifest: stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/train_batch_schedule/formal_train_batch_schedule.json
+  all_384_origins: true
+  base_batches: 8
+  origins_per_batch: 48
+  updates_per_epoch: 8
+  assignment_salt: stage06b_train_batch_v1
+  order_salt: stage06b_batch_order_v1
+  random_augmentation: false
+budget:
+  max_updates: 1500
+  minimum_updates: 320
+  epochs: 187.5
+  validation_interval: 20
+  checkpoint_interval: 20
+scheduler:
+  warmup_updates: 40
+  warmup_start_factor: 0.1
+  warmup_end_factor: 1.0
+  post_warmup: cosine
+  terminal_factor: 0.1
+  terminal_update: 1500
+  values_manifest: stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/optimizer_schedule/formal_scheduler_values.json
+  subqualification_decay_only: true
+  subqualification_note: warmup and cosine tail below 1e-5 are schedule-only and create
+    no gradient-qualification claim
+loss:
+  identity: balanced mean ||(a_eff_theta-a_cons_star)/s_a||^2
+  s_a: 0.3456328553384328
+  target: a_cons_star
+  complete_RK2: true
+  D0_centered_accepted_velocity_defect: true
+  no_auxiliary_penalty: true
+  target_in_token: false
+metrics:
+  Q_def: sqrt(L_def)
+  zero_correction_baseline: 1.0
+  train:
+  - global balanced
+  - per lineage
+  - per variant
+  - maximum origin
+  validation:
+  - global balanced
+  - LCDF_02
+  - LCDF_09
+  - per variant
+  - maximum origin
+  - zero baseline identity
+  diagnostic_only:
+  - accepted velocity
+  - position
+  - density
+  - coefficient RMS/saturation
+  - correction force residual
+validation:
+  open_only_after_protocol_hash: true
+  record_count: 128
+  construction: Stage05B D0/reference/defect/conservative schema with frozen TRAIN
+    s_a
+  cadence_updates:
+  - 20
+  - 40
+  - 60
+  - 80
+  - 100
+  - 120
+  - 140
+  - 160
+  - 180
+  - 200
+  - 220
+  - 240
+  - 260
+  - 280
+  - 300
+  - 320
+  - 340
+  - 360
+  - 380
+  - 400
+  - 420
+  - 440
+  - 460
+  - 480
+  - 500
+  - 520
+  - 540
+  - 560
+  - 580
+  - 600
+  - 620
+  - 640
+  - 660
+  - 680
+  - 700
+  - 720
+  - 740
+  - 760
+  - 780
+  - 800
+  - 820
+  - 840
+  - 860
+  - 880
+  - 900
+  - 920
+  - 940
+  - 960
+  - 980
+  - 1000
+  - 1020
+  - 1040
+  - 1060
+  - 1080
+  - 1100
+  - 1120
+  - 1140
+  - 1160
+  - 1180
+  - 1200
+  - 1220
+  - 1240
+  - 1260
+  - 1280
+  - 1300
+  - 1320
+  - 1340
+  - 1360
+  - 1380
+  - 1400
+  - 1420
+  - 1440
+  - 1460
+  - 1480
+  - 1500
+  hyperparameter_feedback: false
+  hard_origin_deletion: false
+early_stopping:
+  enabled_at_update: 320
+  patience_updates: 300
+  minimum_Q_def_improvement: 1.0e-05
+  terminal_label: EARLY_STOPPED
+  budget_extension_forbidden: true
+checkpoint_policy:
+  save:
+    update_0_identity: true
+    interval_updates: 20
+    terminal: true
+    selected: true
+  selection_metric: validation.global_balanced_Q_def
+  selection_rule: minimum
+  tie_break: earlier_update
+  minimum_selectable_update: 320
+  pre_320_results_recorded_but_not_selectable: true
+  sealed_test_participates: false
+  payload:
+  - model
+  - optimizer
+  - scheduler
+  - RNG
+  - update
+  - protocol_hash
+  - run_identity
+success_gates:
+  A_numerical_safety:
+  - no NaN/Inf
+  - positive density
+  - finite hidden/coefficient
+  - deterministic evaluation
+  B_train_global_Q_def_max: 0.5
+  C_validation_global_Q_def_max: 0.9
+  D_validation_lineage_Q_def_max:
+    LCDF_02: 1.0
+    LCDF_09: 1.0
+  E_structure:
+  - correction force residual <=1e-10
+  - permutation
+  - edge reorder
+  - translation
+  - Galilean
+  - SO(2)
+  - reflection
+  - periodic shift
+  - history semantics
+  seed_pass: A+B+C+D+E
+  arm_pass: at least 2/3 seeds
+  transformer_route: D3 arm PASS
+  D1_D2_completion_required: true
+  D1_D2_pass_required_for_sealed_test: false
+retry_policy:
+  scientific_retry: false
+  failed_run_replacement: false
+  budget_increase: false
+  infrastructure_resume_max: 2
+  resume_requires_exact_checkpoint_RNG_optimizer_scheduler_protocol_identity: true
+  unrecoverable_interruption_status: FORMAL_K1_TRAINING_EVIDENCE_INCOMPLETE
+resource_limits:
+  peak_RSS_bytes: 1610612736
+  checkpoint_storage_bytes: 10737418240
+  budget_reduction_on_forecast_failure: false
+sealed_test_release:
+  stage06b_decode: false
+  required_prior_status: FORMAL_K1_TRANSFORMER_TRAINING_QUALIFIED
+  selected_checkpoints_frozen: true
+  explicit_stage06d_authorization: true
+  one_time_evaluation: true
+stage06c_terminal_statuses:
+- FORMAL_K1_TRANSFORMER_TRAINING_QUALIFIED
+- FORMAL_K1_TRAINING_COMPLETE_TRANSFORMER_NOT_QUALIFIED
+- FORMAL_K1_TRAINING_EVIDENCE_INCOMPLETE
+prohibitions:
+  formal_optimizer_steps: 0
+  formal_parameter_updates: 0
+  formal_training_runs: 0
+  sealed_test_evaluations: 0
+  rollouts: 0
+  performance_evaluations: 0
+  validation_derived_changes: false
+  model_ranking: false

@@ -1,0 +1,70 @@
+{
+  "field_primary_sensitivity": {
+    "density": {
+      "normalized_L2": 0.0,
+      "normalized_Linf": 0.0
+    },
+    "position": {
+      "normalized_L2": 0.0,
+      "normalized_Linf": 0.0
+    },
+    "pressure": {
+      "normalized_L2": 0.0,
+      "normalized_Linf": 0.0
+    },
+    "velocity": {
+      "normalized_L2": 0.0,
+      "normalized_Linf": 0.0
+    }
+  },
+  "gates": {
+    "finite": true,
+    "graph_sequence_deterministic": true,
+    "normalized_L2": true,
+    "normalized_Linf": true,
+    "primary_repeat_deterministic": true
+  },
+  "graph_rebuild_count": 1572,
+  "lineage_id": "HET_S4_01",
+  "maximum_normalized_L2": 0.0,
+  "maximum_normalized_Linf": 0.0,
+  "output_graph_event_sequence_deterministic": true,
+  "primary_nfev": 524,
+  "primary_repeat_bitwise": true,
+  "private_hashes": {
+    "primary_array_sha256": "sha256:0e44834650cfc37c08c07ae51ffa827513240041eb6301a9c4200e7f9f737582",
+    "primary_rhs_graph_sequence_sha256": "sha256:9d9052dfb94c2b75a57962409e2dad767e5f396032ed41be7c491b97cff6c439",
+    "repeat_array_sha256": "sha256:0e44834650cfc37c08c07ae51ffa827513240041eb6301a9c4200e7f9f737582",
+    "repeat_rhs_graph_sequence_sha256": "sha256:9d9052dfb94c2b75a57962409e2dad767e5f396032ed41be7c491b97cff6c439",
+    "sensitivity_array_sha256": "sha256:0e44834650cfc37c08c07ae51ffa827513240041eb6301a9c4200e7f9f737582",
+    "sensitivity_rhs_graph_sequence_sha256": "sha256:9d9052dfb94c2b75a57962409e2dad767e5f396032ed41be7c491b97cff6c439"
+  },
+  "repeat_nfev": 524,
+  "resolution": 8,
+  "rhs_graph_sequence_repeat": true,
+  "semidiscrete_versus_exact": {
+    "density": {
+      "normalized_L2": 0.0014510359934511877,
+      "normalized_Linf": 0.004854915209694166,
+      "role": "semidiscrete_spatial_model_form_diagnostic_only"
+    },
+    "position": {
+      "normalized_L2": 3.0736138589582036e-05,
+      "normalized_Linf": 0.00011669421181981221,
+      "role": "semidiscrete_spatial_model_form_diagnostic_only"
+    },
+    "pressure": {
+      "normalized_L2": 0.0014510359934511877,
+      "normalized_Linf": 0.004854915209694166,
+      "role": "semidiscrete_spatial_model_form_diagnostic_only"
+    },
+    "velocity": {
+      "normalized_L2": 0.0004318219784831988,
+      "normalized_Linf": 0.0011769038035349855,
+      "role": "semidiscrete_spatial_model_form_diagnostic_only"
+    }
+  },
+  "sensitivity_nfev": 524,
+  "variant": "MAIN",
+  "verdict": "PASS"
+}

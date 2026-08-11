@@ -1,0 +1,124 @@
+{
+  "attempt_history": [
+    {
+      "attempt_id": "stage02c_generation_attempt_01",
+      "failure_class": "manifest_serialization_infrastructure",
+      "failure_detail": "YAML timestamp decoded as datetime during canonical manifest hashing",
+      "partial_sample_and_reference_outputs_removed_before_retry": true,
+      "scientific_generation_failure": false,
+      "status": "FAIL"
+    },
+    {
+      "attempt_id": "stage02c_generation_attempt_02",
+      "change_scope": "quote campaign timestamp as a string; no numerical method or scientific case change",
+      "status": "PASS"
+    }
+  ],
+  "campaign_id": "stage02c_r2_audit_scale_20260804",
+  "case_summary": [
+    {
+      "case_id": "r2_regular_n6",
+      "configuration_hash": "sha256:6c8f6f8a1f8c1af3ef2800c7b5f1f049f032ba85bfc78c40ee2f38f7eaa72849",
+      "reference_record_hash": "sha256:5e0d603c2d998e63943e29335413223a9c463693ad6bcfbceb4c72bd6fb6462c",
+      "sample_ids": [
+        "r2_regular_n6__t0.000000",
+        "r2_regular_n6__t0.002000"
+      ],
+      "status": "PASS"
+    },
+    {
+      "case_id": "r2_jitter05_n8",
+      "configuration_hash": "sha256:68f615946d58897743b29a2bc54a7ac8ad6e59fbeb508bb4be6f9d9e5c18bea5",
+      "reference_record_hash": "sha256:de82fc772d3698e691fa96b828d0393614f5d590d96f61ec2b1a8d2cb4b5d958",
+      "sample_ids": [
+        "r2_jitter05_n8__t0.000000",
+        "r2_jitter05_n8__t0.002000"
+      ],
+      "status": "PASS"
+    },
+    {
+      "case_id": "r2_duplicate_edge_negative_n6",
+      "configuration_hash": "sha256:75f0826a30e08d37d60dcf7b6b23a68db95052692369b92e5c7e31b3bfeb6f28",
+      "reference_record_hash": "sha256:c07d6f3fffb5c067364b138aa1fdb5df2ddbc991a2c57a4be8bbebb86ac9553f",
+      "sample_ids": [
+        "r2_duplicate_edge_negative_n6__t0.000000",
+        "r2_duplicate_edge_negative_n6__t0.002000"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "determinism": {
+    "canonical_in_memory_bytes_equal": true,
+    "policy_id": "stage02c_in_memory_double_generation_v1",
+    "repeats": 2,
+    "status": "PASS"
+  },
+  "execution_status": "PASS",
+  "historical_boundaries": {
+    "V2": "V2_QUALIFICATION_FAIL",
+    "shear": "finite-resolution dominant",
+    "viscosity_operator_form_failure": "NOT CONFIRMED"
+  },
+  "pipeline_steps": [
+    {
+      "input_hashes": {
+        "case_manifest": "sha256:6c659ef2bbb2e91840a320fa35f900cfc4421615dc2adab05211e837f20798a6",
+        "dataset_schema": "sha256:714c97de51ce8d476edc7d8b306641c0dcb178ad476b5e30f02f7171af27c35f",
+        "eligibility_rules": "sha256:f917461a65c7d29067e1a210e1b40eeb9b100216bb7547e550980c05927b254a",
+        "generation_configuration": "sha256:7ac0a412f9bd7f5dd28cb1affa27d44e00a05b3d4deeac7f1e8a4dcc268993cf",
+        "generator_source": "sha256:03b674f0aab07a1d9f8c4506b9378c32d763bac6797c062892adc127b8e112f9"
+      },
+      "output_hash": "sha256:d6ede78d0eee4aced02dd0714b36845a2f677ed72b35840af28388048fe7161f",
+      "status": "PASS",
+      "step": "configuration"
+    },
+    {
+      "output_hash": "sha256:075bc09565ee09559b8ce09688709d732694003b7ff83ba10de294e90a56fd9d",
+      "provenance": "explicit_midpoint_RK2_CPU_float64",
+      "status": "PASS",
+      "step": "SPH_state_generation"
+    },
+    {
+      "output_hash": "sha256:effe623cefe698c2ec3b0eb644b0c189be2e9e59c5efd8e7ddb5329373b643e0",
+      "provenance": "stage02c_r2_dense_all_pairs_dop853_v1",
+      "status": "PASS",
+      "step": "R2_reference_evaluation"
+    },
+    {
+      "output_hash": "sha256:9201dc8742854d814eeedea2ecab73d1865b5728fe85ebeebe61b0a8d7389fbd",
+      "provenance": "a_ref_minus_a_sph",
+      "status": "PASS",
+      "step": "delta_a_computation"
+    },
+    {
+      "output_hash": "sha256:87a651f889ac1fe9a50b9aee9b0858b49a3b47fd3b39350329c316e4321e832f",
+      "provenance": "pio-label-eligibility-1.0.0",
+      "status": "PASS",
+      "step": "eligibility_engine"
+    },
+    {
+      "output_hash": "sha256:ae5cbaf0f028067f965b510043d57cbc09f1b314c420acbde47d2969143a0728",
+      "provenance": "canonical_pretty_json_utf8_no_overwrite",
+      "status": "PASS",
+      "step": "sample_storage"
+    }
+  ],
+  "prohibited_outputs": {
+    "model": false,
+    "normalization_statistics": false,
+    "split_assignment": false,
+    "training": false,
+    "validation_or_performance_evaluation": false
+  },
+  "resource": {
+    "max_rss_raw": 89849856,
+    "max_wall_seconds": 60.0,
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "policy_id": "stage02c_audit_resource_policy_v1",
+    "status": "PASS",
+    "wall_seconds": 1.9641127919312567
+  },
+  "rules_version": "pio-label-eligibility-1.0.0",
+  "run_manifest_version": "stage02c-generation-run-1.0.0",
+  "schema_identity": "https://local.sph-pio-poc/schema/pio-dataset-frame-1.0.0.json"
+}

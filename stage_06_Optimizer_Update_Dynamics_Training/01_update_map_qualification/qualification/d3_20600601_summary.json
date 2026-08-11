@@ -1,0 +1,135 @@
+{
+  "all_qualification_models_destroyed": true,
+  "arm": "D3",
+  "contexts": [
+    {
+      "actual_update_FD_pass": true,
+      "context": "LCDF_01",
+      "coordinate_boundary_pass": true,
+      "micro_pass_count": 5,
+      "pass": true,
+      "stable_learning_rates": [
+        1e-05,
+        3e-05,
+        0.0001,
+        0.0003,
+        0.001
+      ]
+    },
+    {
+      "actual_update_FD_pass": true,
+      "context": "LCDF_04",
+      "coordinate_boundary_pass": true,
+      "micro_pass_count": 5,
+      "pass": true,
+      "stable_learning_rates": [
+        1e-05,
+        3e-05,
+        0.0001,
+        0.0003,
+        0.001
+      ]
+    },
+    {
+      "actual_update_FD_pass": true,
+      "context": "LCDF_05",
+      "coordinate_boundary_pass": true,
+      "micro_pass_count": 5,
+      "pass": true,
+      "stable_learning_rates": [
+        1e-05,
+        3e-05,
+        0.0001,
+        0.0003,
+        0.001
+      ]
+    },
+    {
+      "actual_update_FD_pass": true,
+      "context": "LCDF_06",
+      "coordinate_boundary_pass": true,
+      "micro_pass_count": 4,
+      "pass": true,
+      "stable_learning_rates": [
+        1e-05,
+        3e-05,
+        0.0001,
+        0.0003,
+        0.001
+      ]
+    },
+    {
+      "actual_update_FD_pass": true,
+      "context": "LCDF_07",
+      "coordinate_boundary_pass": true,
+      "micro_pass_count": 5,
+      "pass": true,
+      "stable_learning_rates": [
+        1e-05,
+        3e-05,
+        0.0001,
+        0.0003,
+        0.001
+      ]
+    },
+    {
+      "actual_update_FD_pass": true,
+      "context": "LCDF_08",
+      "coordinate_boundary_pass": true,
+      "micro_pass_count": 5,
+      "pass": true,
+      "stable_learning_rates": [
+        1e-05,
+        3e-05,
+        0.0001,
+        0.0003,
+        0.001
+      ]
+    },
+    {
+      "actual_update_FD_pass": true,
+      "context": "GLOBAL",
+      "coordinate_boundary_pass": null,
+      "micro_pass_count": 5,
+      "pass": true,
+      "stable_learning_rates": [
+        1e-05,
+        3e-05,
+        0.0001,
+        0.0003,
+        0.001
+      ]
+    }
+  ],
+  "dense_particle_N_by_N_allocation_observed": false,
+  "formal_training_runs": 0,
+  "global_pass": true,
+  "graph_rebuilds": 129360,
+  "lineage_pass_count": 6,
+  "optimizer_state_memory_peak_upper_bound_bytes": 367648,
+  "pass": true,
+  "peak_rss_bytes": 1270464512,
+  "peak_rss_delta_bytes": 1057144832,
+  "qualification_model_instances": 188,
+  "qualification_optimizer_instances": 147,
+  "qualification_optimizer_steps": 287,
+  "qualification_weights_saved": 0,
+  "resource_pass": true,
+  "retained_autograd_monotonic_growth": false,
+  "retention_rss_samples": [
+    377192448,
+    425246720,
+    559513600,
+    612401152,
+    551878656,
+    430817280,
+    835813376
+  ],
+  "rss_start_bytes": 213319680,
+  "saved_training_checkpoints": 0,
+  "sealed_test_evaluations": 0,
+  "seed": 20600601,
+  "update_paths": 1526,
+  "validation_evaluations": 0,
+  "wall_time_seconds": 2488.7485275419895
+}

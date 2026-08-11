@@ -1,0 +1,49 @@
+{
+  "Stage02G_overwritten": false,
+  "campaign_id": "stage02h_reference_fidelity_20260804",
+  "determinism": {
+    "H_REF_ANALYTIC": {
+      "canonical_records_equal": true,
+      "maximum_repeat_Linf": 0.0
+    },
+    "H_REF_CWLS3": {
+      "canonical_records_equal": true,
+      "maximum_repeat_Linf": 0.0
+    },
+    "H_REF_FOURIER2": {
+      "canonical_records_equal": true,
+      "maximum_repeat_Linf": 0.0
+    },
+    "H_REF_QWLS2_INCUMBENT": {
+      "canonical_records_equal": true,
+      "maximum_repeat_Linf": 0.0
+    }
+  },
+  "failed_candidates_retained": true,
+  "input_files": {
+    "stage_02_Particle_Interaction_Operator/03_dataset/generation/generate_audit_dataset.py": "sha256:03b674f0aab07a1d9f8c4506b9378c32d763bac6797c062892adc127b8e112f9",
+    "stage_02_Particle_Interaction_Operator/03_dataset/generation/generation_configuration.yaml": "sha256:7ac0a412f9bd7f5dd28cb1affa27d44e00a05b3d4deeac7f1e8a4dcc268993cf",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/acceptance/reference_acceptance_rules.yaml": "sha256:4f317c1e8ba79a5c176b38781edda9353eba477d896b627cc3a981f7c377c71e",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/qualification_closure/attribution_closure.json": "sha256:0dde97b251b018eb3d021dc6005edc94b95e23033b523df5fc44864feba58f04",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/r2s_bias_audit/r2s_bias_audit.json": "sha256:d980df5364a042ace18987468c16d516e4aa47a11fe310dbb1a48d2256066428",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/reference_fidelity/reference_candidate_matrix.yaml": "sha256:881c8c23c5f8f8e7841ccec487fdbe9426111c5ee984a41fc3525765cbb9581b",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/semidiscrete_reference/construct_spatial_targets.py": "sha256:0e8bef3792fd1ca4abbfb6dba0286f4c6f81984f6a08fb95dbbfc7af3a69207f",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/semidiscrete_reference/r2s_reference_design.yaml": "sha256:5cab873d3ea9a05135660e3428f8bc6ac59a7508984155599e12c24513d7f8bf",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/spatial_refinement/run_stage02g_refinement.py": "sha256:f16f8438642e4a77f02ddbcddc9e96cb95f07b4ffd47cc0df5cf3a6e061aa8a0"
+  },
+  "no_model_implementation": true,
+  "no_normalization": true,
+  "no_performance_evaluation": true,
+  "no_split_assignment": true,
+  "no_target_dataset_generated": true,
+  "no_training": true,
+  "no_trajectory_generated": true,
+  "output_files": {
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/acceptance/reference_acceptance_results.json": "sha256:44d6e43d83ee00c5b05d10bf1172e4f643b0150c63b11f6194a116dd73258ebe",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/bias_analysis/reference_bias_analysis.json": "sha256:a1f1044db92713d706a149a65c948559fc92b5e8ad1704bbb7b709793b31dca4",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/r2s_comparison/cross_reference_audit.json": "sha256:34a5e849c3808366cb3d7a306dc20190e4c6c89c3f9e60ee5f906a1d1b7adb3d",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/r2s_comparison/current_r2s_audit.json": "sha256:6d7a1faf08a42719f42abe61c8097f5ee82d079cec29c21d61ad5f9419c1948d",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/reference_fidelity/reference_candidate_results.json": "sha256:83f515001c0fc382e8f0fa9933873135f3c55c064a15e85377fc661a4c0f404b"
+  },
+  "provenance_complete": true
+}

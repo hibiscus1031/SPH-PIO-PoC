@@ -1,0 +1,38 @@
+{
+  "KNEG_optimizer_created": false,
+  "architecture_hash": "sha256:1e313f871b13f3f2fc0cc780ab24d50a7fd9fe8a96866da91fae5ede9ab555a4",
+  "arms": {
+    "K0": {
+      "beta": "identically_zero",
+      "future_static_fitting_required": true,
+      "name": "CENTRAL_PAIR_MLP_DIAGNOSTIC",
+      "role": "mandatory_central_and_angular_momentum_diagnostic_baseline",
+      "route_hard_gate": false,
+      "source": "Stage02K_frozen_implementation"
+    },
+    "K1": {
+      "architecture_changes_permitted": false,
+      "future_static_fitting_required": true,
+      "name": "CONSERVATIVE_PAIR_MLP_BASELINE",
+      "role": "mandatory_non_attention_baseline",
+      "route_hard_gate": true,
+      "source": "Stage02K_frozen_implementation"
+    },
+    "K2": {
+      "architecture_changes_permitted": false,
+      "future_static_fitting_required": true,
+      "name": "RECIPROCAL_PAIR_ATTENTION_PIO",
+      "role": "reciprocal_attention_candidate",
+      "route_hard_gate": true,
+      "source": "Stage02K_frozen_implementation"
+    },
+    "KNEG": {
+      "evidence_role": "Stage02K_negative_control_only",
+      "optimizer_permitted": false,
+      "training_matrix_member": false
+    }
+  },
+  "new_architecture_added": false,
+  "registry_version": "stage02l-model-arms-1.0.0",
+  "status": "PASS"
+}

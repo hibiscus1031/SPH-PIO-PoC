@@ -1,0 +1,125 @@
+{
+  "dataset_collection": "blind_multifamily_pair_scope_v1_1_protocol_v02",
+  "family_components": [
+    {
+      "family_id": "BLIND_FAMILY_01",
+      "record_count": 5,
+      "role": "future_train"
+    },
+    {
+      "family_id": "BLIND_FAMILY_02",
+      "record_count": 5,
+      "role": "future_train"
+    },
+    {
+      "family_id": "V02_BLIND_VALIDATION_01",
+      "record_count": 5,
+      "role": "future_validation"
+    },
+    {
+      "family_id": "V02_BLIND_TEST_01",
+      "record_count": 5,
+      "role": "future_test"
+    }
+  ],
+  "historical_consumed_families_excluded": [
+    "BLIND_FAMILY_03",
+    "BLIND_FAMILY_04"
+  ],
+  "input_normalization_hash": "sha256:2208d2f4b9b7c848f2cd1b93624f9f6a3d9fb29e65cdd70ee453e6122c43d051",
+  "lineage_component_count": 4,
+  "manifest_version": "stage02mp-v1.1-collection-1.0.0",
+  "protocol_sha256": "sha256:8cd068c5b23eacfbcb2c56846352fd6f3c560b46d8562806e3ed568c278ddb6e",
+  "record_count": 20,
+  "record_hashes": [
+    {
+      "case_id": "blind_family_01_n12_h26",
+      "sha256": "sha256:9dd34ebfa97e221024192359aa8dbde68ab2f5964990a918d69fc6bd5b7f7eab"
+    },
+    {
+      "case_id": "blind_family_01_n16_h22",
+      "sha256": "sha256:d708acca04f9043df85bc3ebf65ed1b2b15a2158a719ebe31e52c3abefcaf414"
+    },
+    {
+      "case_id": "blind_family_01_n16_h26",
+      "sha256": "sha256:6872cad9a62a74ab2642acc0a6c0c6dee41d816d0185b81c6aed9d775d602c64"
+    },
+    {
+      "case_id": "blind_family_01_n16_h30",
+      "sha256": "sha256:d4676e7da59e2e6ef72a13ad39c8f8b4e432fe012520d01915bbc57f6e2becc7"
+    },
+    {
+      "case_id": "blind_family_01_n20_h26",
+      "sha256": "sha256:c734dbd1489325180309cb511769deb1b49aa2841ac9b3f08ba47a5e3bb08360"
+    },
+    {
+      "case_id": "blind_family_02_n12_h26",
+      "sha256": "sha256:4c857e6b0edda93600cb24775723f976460cdfbf45b9d31de9dee04c7fe56dd0"
+    },
+    {
+      "case_id": "blind_family_02_n16_h22",
+      "sha256": "sha256:647ad88a239a46ceb75b9297eee1b57069dd11f6a20a5d9b444b187c95b817e8"
+    },
+    {
+      "case_id": "blind_family_02_n16_h26",
+      "sha256": "sha256:b1ae733c66dd2533b298a0f32bca4245fe48721ba80ac2f90c4a76d9c7cbf4e1"
+    },
+    {
+      "case_id": "blind_family_02_n16_h30",
+      "sha256": "sha256:ad432b6401d1aa059bb328c1a0e1d1725d663bbada420dc5af006eaf48888100"
+    },
+    {
+      "case_id": "blind_family_02_n20_h26",
+      "sha256": "sha256:9b99b13a9619d376de1e10053d5c2e160d496054e78fd3e7d0efb92cedc86097"
+    },
+    {
+      "case_id": "v02_blind_test_01_n12_h26",
+      "sha256": "sha256:d14dfa215c1ff778363a97164e750efa61e318ee0055623eca61c32a57042376"
+    },
+    {
+      "case_id": "v02_blind_test_01_n16_h22",
+      "sha256": "sha256:4d6dffde69c7e7b2077cd70cea095a0f7136c12fd42ab33129582baee32af22f"
+    },
+    {
+      "case_id": "v02_blind_test_01_n16_h26",
+      "sha256": "sha256:4e25f6fe51ffe14a37167f3e96829d425a70423acf45b767ff8f32f2e399a6fe"
+    },
+    {
+      "case_id": "v02_blind_test_01_n16_h30",
+      "sha256": "sha256:0a87d897368ca5dd6170c59554461f31cb2cc18f036ba0954b15e3dc1cf55ab1"
+    },
+    {
+      "case_id": "v02_blind_test_01_n20_h26",
+      "sha256": "sha256:41bcf01c3742bbb0193120c4d3eef30427f4604fd77db3430279a546d15462bf"
+    },
+    {
+      "case_id": "v02_blind_validation_01_n12_h26",
+      "sha256": "sha256:6395ddf9cf9e1e18e5ef42dcafff11965e34ee7a63c253e3119983d65dbb33e5"
+    },
+    {
+      "case_id": "v02_blind_validation_01_n16_h22",
+      "sha256": "sha256:b24309ab03755335b3ee891d8019cda1952d30c8cca185275adf4be6fa5926f7"
+    },
+    {
+      "case_id": "v02_blind_validation_01_n16_h26",
+      "sha256": "sha256:caa05ba3b1e56774bcc313d413b619b8027e774c13018eebf9b4a4b0260529c2"
+    },
+    {
+      "case_id": "v02_blind_validation_01_n16_h30",
+      "sha256": "sha256:3db6197ed101cf7023e700e3c6418cfa9d1844f4b013d73d0274782c8c51c45f"
+    },
+    {
+      "case_id": "v02_blind_validation_01_n20_h26",
+      "sha256": "sha256:c85eade29770bba5a90c39ef94cca640dbc44b0a9bd8fa050379e0b9ba64121f"
+    }
+  ],
+  "regularity_role": "diagnostic_only",
+  "schema_compatibility_identifier": "controlled_regular_pair_scope_v0_1",
+  "split_counts": {
+    "future_test": 5,
+    "future_train": 10,
+    "future_validation": 5
+  },
+  "status": "BLIND_MULTIFAMILY_DATASET_V1_1_READY",
+  "supervision_scale_hash": "sha256:85d5339dde02c29dba5bfa753096ab25598bd29a5df576def7691dcdbfef838e"
+}

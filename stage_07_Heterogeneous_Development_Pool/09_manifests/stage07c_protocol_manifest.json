@@ -1,0 +1,29 @@
+{
+  "access_contract": {
+    "bytes": 11909,
+    "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/access_control/fresh_validation_access_contract.json",
+    "sha256": "sha256:49bdd90ad22ca57ee14014744a705c0051426c1b3391f4d33bb6bbaba64ae440"
+  },
+  "batch_manifest": {
+    "bytes": 3603437,
+    "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/train_v2_batch_schedule/formal_train_v2_batch_schedule.json",
+    "sha256": "sha256:c26f77cc794ca87a1103bd55eee87d19113c639a292603dc6b3ab114a260f526"
+  },
+  "fresh_validation_decode_count_at_freeze": 0,
+  "frozen_before_fresh_validation_decode": true,
+  "model_manifest": {
+    "bytes": 9588,
+    "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/model_seed_schedule/formal_model_seed_schedule.json",
+    "sha256": "sha256:b4005346bd88cf0ff25c2b83a913071d4a6d9e0b1fa29c512ee9187a2a580259"
+  },
+  "pass": true,
+  "protocol_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/contracts/formal_train_v2_k1_retraining_protocol_v0_1.yaml",
+  "protocol_sha256": "sha256:21b52f0aca3791cdc0d58165f1edd980667bafe0eee5a9d52544c24a8f518dbb",
+  "scheduler_manifest": {
+    "bytes": 219842,
+    "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/optimizer_schedule/formal_scheduler_values.json",
+    "sha256": "sha256:0ef3f4e41b752137ed31ba683f6fdf4963b7bf9e37a815f5ab3107f0602a1fd5"
+  },
+  "schema": "sph-pio-poc.stage07c.protocol-manifest.v1",
+  "success_gates_frozen_before_validation": true
+}

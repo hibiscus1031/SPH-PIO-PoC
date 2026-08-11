@@ -1,0 +1,23 @@
+# Stage 04A — Final report
+
+1. **New hypothesis.** A conservative dynamic neural-SPH model may be trained through task-aligned one-step or short-window RK2 state-transition supervision without relying on a fully qualified long-chain K=8 reverse-mode gradient. This is prospective, not a trainability claim.
+2. **Stage 03 failure preservation.** Stage 03C remains `DYNAMIC_RK2_HYBRID_IMPLEMENTATION_VERIFIED`; Stage 03D remains `DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED`; Stage 03D-R remains `DYNAMIC_GRADIENT_FAILURE_MIXED_OR_UNRESOLVED`; Stage 03D-S remains `STAGE03_ROUTE_PAUSED_GRADIENT_BOUNDARY_COMPLETE`; topology remains `TOPOLOGY_EVENT_COMPONENT_QUALIFIED`; Stage 03E authorization remains `false`.
+3. **Why long-chain training is not reused.** The K=8 Stage 03D route was not qualified and its failure attribution was mixed or unresolved. Stage 04 poses a different, local task-aligned hypothesis; fixed math SDPA does not reinterpret or repair historical evidence.
+4. **One-step RK2 training definition.** Formal v0.1 uses `K=1`, with three reference states strictly before the origin plus current `S_ref^n` (`H=4`). From `S_ref^n`, the model completes start → midpoint → accepted RK2, rebuilds the midpoint graph, uses an ephemeral noncommitted token, and predicts `S_theta^(n+1)` without reference-midpoint injection.
+5. **D1/D2/D3 roles.** D1 is `INSTANTANEOUS_CONSERVATIVE_PAIR_MLP`; D2 is `CAUSAL_RECURRENT_PAIR_PIO`; D3 is `CAUSAL_TEMPORAL_RECIPROCAL_TRANSFORMER_PIO`. All are freshly initialized and share legal tokens, the reciprocal antisymmetric pair head, split, loss, optimizer budget, and checkpoint rule. D3 superiority is not assumed.
+6. **Task-aligned state loss.** `L_state` comprises periodic minimum-image position MSE normalized by `L^2`, velocity MSE by `cs^2`, and density MSE by `rho0^2`, aggregated as family-balanced, trajectory-origin-balanced, node means. Exact weights/normalization are deferred to prospective Stage 04D registration. Direct acceleration/pair-force targets, conservation/antisymmetry penalties, and validation/test/D-R3-derived tuning are prohibited.
+7. **Optimizer-variable gradient boundary.** Hard gates cover D1 encoder/head; D2 encoder/GRU/head; and D3 encoder/Q-K-V-O/feed-forward/head. Initial velocity, initial density, and reference prehistory tokens are fixed inputs and diagnostic only; their gradients are not claimed repaired.
+8. **Math attention backend.** Formal qualification uses CPU float64; formal D3 evidence requires PyTorch `SDPBackend.MATH`, with flash, memory-efficient, and automatic selection disabled. Backend identity is bound to checkpoints, manifests, and result hashes. MPS float32 is smoke/resource diagnostic only.
+9. **New trajectory-family requirement.** Stage 04B must prospectively create and qualify new D-R1 formula lineages covering compression, coupled shear/compression, rotating/deforming, multimode, and controlled low-Mach regimes. The Stage 03B 18 trajectories are not reused as a split.
+10. **Lineage, split, and seal.** The split atom is a complete formula-lineage component; random frame/window/particle/edge splits are forbidden. Train, validation, and sealed-test families are disjoint. Before release, sealed target/state decode count is `0`. D-R3 stays `independent_validation_only`.
+11. **Horizon progression.** K=1 qualification → K=1 formal training → K=1 sealed evaluation → optional K=2 qualification → optional K=2 training → autonomous rollout. K=4/K=8 are not first-round training backpropagation horizons.
+12. **Autonomous-rollout boundary.** Short-window success does not establish autonomous stability. Full-solver claims require later autonomous rollout, independent D-R3 validation, and refinement evidence.
+13. **Roadmap.** 04B new pool; 04C task-aligned gradients; 04D preregistration/seal preflight; 04E K=1 training; 04F conditional K=2/rollout; 04G D-R3/refinement/utility. 04B–04D cannot be skipped.
+14. **No optimizer.** Optimizer instances/steps in Stage 04A: `0`.
+15. **No training.** Training runs and parameter updates in Stage 04A: `0`.
+16. **No performance claim.** Rollouts, performance evaluations, and solver-success claims in Stage 04A: `0`/`0`/`false`.
+17. **Historical hashes unchanged.** The Stage 03D-S 1976-file historical freeze was rechecked before and after Stage 04A creation: zero missing and zero mismatched paths. No Stage 01–03 file was modified.
+
+Final status: `LOCAL_CAUSAL_TRAINING_HYPOTHESIS_CONTRACT_COMPLETE`.
+
+Limited authorization: **Stage 04B — New Dynamic Reference-Family Pool and Lineage Qualification**. No later stage and no training are authorized.

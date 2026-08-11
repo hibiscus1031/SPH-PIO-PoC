@@ -1,0 +1,33 @@
+{
+  "D0_state_hash": "sha256:3c6c56702a77a928c84123d0dfbcfa17c57f1d33697c2c0bc9619708fc23364b",
+  "N": 8,
+  "array_hashes": {
+    "a_cm": "sha256:836399fcb20b53d631aebe338fccffc8ca59d94ff74d085fdc77a6bf91d21c77",
+    "a_cons": "sha256:52b6999ebd6f1bcf3f082cf7cc65ae807e6997f5bef0c74b3a0c38fae67d46f7",
+    "a_def": "sha256:52b6999ebd6f1bcf3f082cf7cc65ae807e6997f5bef0c74b3a0c38fae67d46f7",
+    "a_incompatible": "sha256:79a118686903fcf364894049da12dc7ed2b02a8258fc1e35797608c21fd620fe",
+    "y_def": "sha256:6e4bc09d3fbe76c7edbcf7ffa673162365c71ba356ffc524c5eefc450aa91945"
+  },
+  "canonical_sha256": "sha256:7e225ced2a6458f8705a46f034c911af78a223582db0eeb5db4d45f7308453bf",
+  "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_02_VARIANT_MAIN_N8_O25.npz",
+  "case_cache_sha256": "sha256:e6f28febb4c8e59044e2a0efd4e7fdf23b574fa6b520ac8f1ab80e9685f1e9b0",
+  "dt": 0.000390625,
+  "lineage": "LCDF_02",
+  "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_02_VARIANT_MAIN_N8_O25.npz",
+  "npz_sha256": "sha256:06b825c733b8d619371522f75760169bfc2ddd97fe4372cec6384656b2761cb9",
+  "origin": 25,
+  "qualification_verdict": "QUALIFIED_STAGE06B_VALIDATION",
+  "record_id": "LCDF_02_VARIANT_MAIN_N8_O25",
+  "reference_accepted_hash": "sha256:1b014fa97489d1c5ee046077616dfdf2e950a7ea22bd9b05734dfb36002b288b",
+  "reference_history_hashes": [
+    "sha256:268042cec628187d0c0b5a025fb86b4f4f1a07ef5b73c574394d97c3a2f5587e",
+    "sha256:10765ba9bc6889b05c3d8c7f8d690be1b4a0eb4c763da2414fe148d83134e504",
+    "sha256:c9d8a45d1115aa69d3974ddb2ed54cdd2ca55bd8873d158d40ffd3b6ddd15bcc",
+    "sha256:e60f6a350ebf6c2024faf360e55ca3a20b010d40f1beb22462fd1c2e346527c7"
+  ],
+  "s_a": 0.3456328553384328,
+  "s_a_source": "frozen_STAGE05B_TRAIN_scale",
+  "schema": "sph-pio-poc.stage06b.validation-target-record.v1",
+  "validation_did_not_modify_scale": true,
+  "variant": "VARIANT_MAIN"
+}

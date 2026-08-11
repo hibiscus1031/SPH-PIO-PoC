@@ -1,0 +1,104 @@
+{
+  "conditional_claims": [
+    {
+      "allowed_wording": "在冻结的 selected diagnostics 内，D3 的部分梯度显示 backend sensitivity。",
+      "claim": "D3 gradients show backend sensitivity",
+      "prohibited_wording": "D3 is intrinsically non-differentiable"
+    },
+    {
+      "allowed_wording": "当前 reference-prehistory paths 显示 rollout 中 history influence 强烈衰减。",
+      "claim": "temporal-history influence is strongly attenuated through rollout",
+      "prohibited_wording": "temporal memory is useless"
+    },
+    {
+      "allowed_wording": "extended FD 支持 conditioning 对部分 failure 的贡献。",
+      "claim": "finite-difference conditioning contributes to some failures",
+      "prohibited_wording": "all failures are finite-difference artifacts"
+    },
+    {
+      "allowed_wording": "冻结 horizon diagnostics 未检测到系统性 vanish/explode。",
+      "claim": "no systematic vanishing/exploding gradient was detected",
+      "prohibited_wording": "gradient health is proven for training"
+    }
+  ],
+  "schema_version": "sph-pio-poc.stage03ds.claim-boundary.v1",
+  "semantic_guards": {
+    "solver": "Stage 03D NOT_QUALIFIED; never whole Transformer solver failed",
+    "topology": "component qualified; never Stage 03D overall qualified",
+    "training": "NOT AUTHORIZED / NOT EXECUTED; never training failed"
+  },
+  "supported_claims": [
+    {
+      "allowed_wording": "动态 RK2 hybrid solver 的冻结实现合同已通过 Stage 03C。",
+      "claim": "dynamic RK2 hybrid solver implementation is verified",
+      "prohibited_wording": "dynamic solver performance is verified"
+    },
+    {
+      "allowed_wording": "zero correction 在 288/288 检查中与 D0 bitwise 等价。",
+      "claim": "zero-correction equivalence is bitwise established",
+      "prohibited_wording": "nonzero learned correction is accurate"
+    },
+    {
+      "allowed_wording": "冻结多步审计的 540/540 stage conservation checks 通过。",
+      "claim": "reciprocal pair-force conservation persists through multiple stages",
+      "prohibited_wording": "long-time conservation and stability are proven"
+    },
+    {
+      "allowed_wording": "TE1 的 birth/death、replay 和 fixed-side gradients 已资格化。",
+      "claim": "deterministic edge birth/death semantics are qualified",
+      "prohibited_wording": "cutoff membership is differentiable"
+    },
+    {
+      "allowed_wording": "360 个冻结 probes 中 216 个获得 stable AD/FD window。",
+      "claim": "gradients are valid on many fixed-topology paths",
+      "prohibited_wording": "all multistep gradients are valid"
+    },
+    {
+      "allowed_wording": "Stage 03D 保持 NOT_QUALIFIED，D-R 保持 MIXED_OR_UNRESOLVED。",
+      "claim": "complete multistep gradient qualification was not achieved",
+      "prohibited_wording": "Stage 03D-R repaired the Stage 03D failure"
+    }
+  ],
+  "unsupported_claims": [
+    {
+      "allowed_wording": "动态训练尚未授权或执行。",
+      "claim": "dynamic Transformer is trainable",
+      "prohibited_wording": "the dynamic Transformer is trainable"
+    },
+    {
+      "allowed_wording": "solver-in-the-loop 为 NOT AUTHORIZED / NOT EXECUTED。",
+      "claim": "solver-in-the-loop training is valid",
+      "prohibited_wording": "solver-in-the-loop training is valid"
+    },
+    {
+      "allowed_wording": "未进行 rollout 性能评价。",
+      "claim": "rollout improves SPH",
+      "prohibited_wording": "rollout improves SPH"
+    },
+    {
+      "allowed_wording": "D1/D2/D3 未训练、未比较。",
+      "claim": "Transformer outperforms recurrent/instantaneous baselines",
+      "prohibited_wording": "Transformer outperforms D1/D2"
+    },
+    {
+      "allowed_wording": "只能主张 event 两侧的 piecewise-smooth gradients。",
+      "claim": "cutoff edge existence is differentiable",
+      "prohibited_wording": "edge membership is differentiable"
+    },
+    {
+      "allowed_wording": "Stage 01 仍为 V2_QUALIFICATION_FAIL。",
+      "claim": "Stage 01 V2 is restored",
+      "prohibited_wording": "Stage 03 restores Stage 01 V2"
+    },
+    {
+      "allowed_wording": "viscosity operator form 仍为 NOT_CONFIRMED。",
+      "claim": "viscosity operator is confirmed",
+      "prohibited_wording": "viscosity operator is confirmed"
+    },
+    {
+      "allowed_wording": "未执行 long-time rollout/stability qualification。",
+      "claim": "long-time stability is established",
+      "prohibited_wording": "long-time stability is established"
+    }
+  ]
+}

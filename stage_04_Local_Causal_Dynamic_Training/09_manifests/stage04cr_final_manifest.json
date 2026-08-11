@@ -1,0 +1,148 @@
+{
+  "access_pass": true,
+  "artifacts": [
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/historical_matrix/historical_864_machine_matrix.json",
+      "sha256": "sha256:617561d3a572c5365c3d4a95a1ce43896ccebf1eb96553b777324d7d71e34cdc"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/full_gradient_norm/full_gradient_norms.json",
+      "sha256": "sha256:ce3a30f1f6ce1c0418e0af9bda733ce86cadc826529aca616dd65d37d6e72e75"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/directional_projection/directional_projection_and_factors.json",
+      "sha256": "sha256:8cedf91d13901fa0b8958189db1c8c094f2532589e16c63753b0ec3dedab0fdb"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/state_residual/state_residual_and_D0_comparison.json",
+      "sha256": "sha256:36c775ac32c36075af5933e05244d7a3598dcace5388a1b436b01383837354b6"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/loss_factorization/exact_loss_factorization.json",
+      "sha256": "sha256:91781a24631134b9c73a0d4e5e59a287422afcf5c6fd2f2fe4e4da58195c4e0a"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/acceleration_sensitivity/network_sensitivity_chain.json",
+      "sha256": "sha256:ef279b2a9681ec24fb1019b6b13c125eb9ee604805e0cf371cd69ad31b7700b5"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/linear_probe_diagnostic/linear_probe_results.json",
+      "sha256": "sha256:496b0540dbabd8f63602d2e5900499940225e4916b2d83a7c756fe51b520c9e9"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/initialization_diagnostic/initialization_diagnostic.json",
+      "sha256": "sha256:98c5edd3e88f153c9e13e9c9115be2ae1d937f5d9c69b66b408f49b98c222a40"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/rk2_attenuation/rk2_attenuation.json",
+      "sha256": "sha256:1cd05d45441f1d4f529ba24583a78e800a1cdbf8b75f81550dcdade6241e517a"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/resources/resource_audit.json",
+      "sha256": "sha256:0b5e0ae90455e6524e70d3a60657472787d6c730cf68a9c6b697d14b7b567c50"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/qualification/stage04cr_summary.json",
+      "sha256": "sha256:3b24b834bca6deeca61f6388706ebc739beb22b5773fddfa26854754035c8cdb"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_freeze_and_scope.md",
+      "sha256": "sha256:aabade564f0b6744e1368c2a099bfd48e24a10232cd8a95d0d9c834fa86b9f68"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_historical_failure_matrix.md",
+      "sha256": "sha256:b461c50f30478ca74f451d6ec3487bc68a1352e3671ec92c267bcec1bcc447d4"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_full_gradient_norm.md",
+      "sha256": "sha256:13591024faaddbbe97be8807542ede3d4fe9b3bf15e48334962ed3b7f6073ad0"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_directional_projection.md",
+      "sha256": "sha256:2d1922749d17cdccecd46f614b01137f8f10fa9ef421711cc4f945bdc9bfc6fe"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_state_residual_and_jacobian.md",
+      "sha256": "sha256:594c9842452fb3c907490cfcdc867bc22b249092bdfbdb712f48a1ece58451af"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_loss_factorization.md",
+      "sha256": "sha256:e6e7cb11a03013df42dd3e344a066837dc1b26e842a548dc93765435614028ff"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_coefficient_and_acceleration_sensitivity.md",
+      "sha256": "sha256:7130e5c1aba7418f67509dbf2ef9c40750cfeb211a2dc647793adfc6e0fa72e1"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_rk2_attenuation.md",
+      "sha256": "sha256:099cd1993f343e795cdb8c6ad5afd896212c099ea7fa144b60a974f28c2a0135"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_linear_probe_diagnostic.md",
+      "sha256": "sha256:b900a12722836f1372d44e09df5b8c9aa2691ce87eefef6c26584fb674a9d14e"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_failure_attribution.md",
+      "sha256": "sha256:7ab9260ad824d15da0cab1d06864f578aecf3cec0670e225c3a6cafef7573e15"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_route_decision.md",
+      "sha256": "sha256:478fe25a1998cdac23185ba32bee362c1ac767ae4f468e19eea0e863513216f4"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_resource_audit.md",
+      "sha256": "sha256:a198995dcee132e4c42dd1c4fb49c551fdf72227b1f3af70c3e9de10f82cd4b4"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_final_report.md",
+      "sha256": "sha256:f97a373fd809990dcdc733ac4b356610e18f74957d257199bca016727915c3a7"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04cr_input_freeze_manifest.json",
+      "sha256": "sha256:eadad4fcca9922901e478ce6b4b53ebecd25378ae3519eca4a6482ee41fcabc8"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04cr_contract_manifest.json",
+      "sha256": "sha256:beea06e35ffef51992990c5b81d57f8a218428092795c4d14effde0e0fde4024"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04cr_attribution_manifest.json",
+      "sha256": "sha256:88c86184e1885f8d8dfc651db2d3efbf0f2c77671799c56ef9cf2f780c141c6c"
+    }
+  ],
+  "authorized_next_branch": "NONE",
+  "contract_sha256": "sha256:e05a5e7b8738bf152c7d05b0ac14aa996fc887cc09e93b48d40bbb0defbc3ef0",
+  "decode_counts": {
+    "new_train_state_array_decode_count": 24,
+    "sealed_formula_decode_count": 0,
+    "sealed_state_decode_count": 0,
+    "sealed_target_decode_count": 0,
+    "validation_target_decode_count": 0
+  },
+  "direction_projection_fraction": 0.25925925925925924,
+  "factorization_components": 2592,
+  "final_status": "TASK_GRADIENT_FAILURE_MIXED_OR_UNRESOLVED",
+  "full_gradient_rows": 864,
+  "historical_hashes_unchanged": true,
+  "historical_rows": 864,
+  "linear_probe_rows": 864,
+  "median_scaled_projection": 0.654647262011381,
+  "network_chain_rows": 864,
+  "prohibited_counts": {
+    "new_optimizer_instances": 0,
+    "new_optimizer_steps": 0,
+    "new_parameter_updates": 0,
+    "new_performance_evaluations": 0,
+    "new_training_runs": 0
+  },
+  "reason_counts": {
+    "GROUP_DIRECTION_PROJECTION_DILUTION": 672,
+    "TASK_RESIDUAL_TOO_SMALL": 1316,
+    "UNRESOLVED": 604
+  },
+  "resource_pass": true,
+  "stage04c_historical_failure_preserved": true,
+  "stage04c_status": "TASK_ALIGNED_PARAMETER_GRADIENT_NOT_QUALIFIED",
+  "stage04d_authorization": false,
+  "training_authorized": false
+}

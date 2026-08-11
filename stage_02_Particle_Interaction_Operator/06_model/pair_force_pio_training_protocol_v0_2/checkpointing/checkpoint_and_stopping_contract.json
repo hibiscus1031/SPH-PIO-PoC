@@ -1,0 +1,13 @@
+{
+  "contract_version": "stage02mp-checkpoint-stopping-1.0.0",
+  "maximum_updates": 1000,
+  "validation_interval_updates": 20,
+  "minimum_updates_before_stopping": 300,
+  "patience_updates": 200,
+  "minimum_validation_improvement": 1e-6,
+  "checkpoint_interval_updates": 20,
+  "best_checkpoint_metric": "lowest_validation_graph_mean_Q_L2",
+  "tie_break": "earlier_update",
+  "unchanged_from_stage02l": true,
+  "checkpoint_selection_executed": false
+}

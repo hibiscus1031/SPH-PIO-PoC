@@ -1,0 +1,61 @@
+{
+  "code": [
+    {
+      "byte_count": 32511,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/analytic_core/reference_core.py",
+      "sha256": "sha256:627e9d8bd1c9bf4b82290b946303dea6219d5123eabc1108d2316fb3a399f309"
+    },
+    {
+      "byte_count": 7638,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/dr2_semidiscrete_time_reference/semidiscrete_rhs.py",
+      "sha256": "sha256:5341dd36b30d94e93ade8383246f67a4ada1f87af75ed317a6eda41ae6ade46c"
+    },
+    {
+      "byte_count": 41301,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/manifests/run_stage03b_qualification.py",
+      "sha256": "sha256:b3529abc791d33655b586e165d17f930370ddcf936178b4bf7ef125337e8c7c1"
+    }
+  ],
+  "config": {
+    "byte_count": 2629,
+    "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/freeze/stage03b_frozen_config.json",
+    "sha256": "sha256:2531f577d78378b3e7e32144e58d7b2d3f1eb1b32cf22096c23dae82ae51ec00"
+  },
+  "environment": {
+    "device": "cpu",
+    "dtype": "float64",
+    "numpy": "1.26.4",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.9",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "torch": "2.10.0"
+  },
+  "final_status": "DYNAMIC_REFERENCE_TRAJECTORY_QUALIFICATION_COMPLETE",
+  "historical_write_operations": 0,
+  "manifest_version": "stage03b-run-1.0.0",
+  "model_implementation_count": 0,
+  "neural_rollout_count": 0,
+  "optimizer_count": 0,
+  "qualification": {
+    "byte_count": 1193,
+    "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/qualification/stage03b_qualification_summary.json",
+    "sha256": "sha256:fcb895e990cdb3a92def306da6b7b931fc05ed52bdef6b5fee927ae67b04386c"
+  },
+  "reference_family_manifest": {
+    "byte_count": 3367,
+    "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03b_reference_family_manifest.json",
+    "sha256": "sha256:2ba410f686c8764871780998368be8f674cfb5cedb75ba81ce6b3f9bdda80cfd"
+  },
+  "resource_execution": {
+    "byte_count": 650,
+    "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/results/resource_execution.json",
+    "sha256": "sha256:13d81372429bb6b18969f49c6afc83465d1aea681a826ec73160d37d361750ee"
+  },
+  "training_run_count": 0,
+  "trajectory_manifest": {
+    "byte_count": 19353,
+    "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03b_trajectory_manifest.json",
+    "sha256": "sha256:92974b660461a01ba1a326be8b2fedc31929a319aa97e2f5bc3418bd45435aac"
+  }
+}

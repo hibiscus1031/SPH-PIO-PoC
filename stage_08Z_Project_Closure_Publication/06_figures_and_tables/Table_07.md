@@ -1,0 +1,16 @@
+# Table 7. Stage08 systematic coverage evidence
+
+| Item | Value |
+|---|---|
+| TRAIN candidates | 128 |
+| Validation candidates | 64 |
+| Candidate qualification | 192/192 |
+| Selected new TRAIN | 8 |
+| TRAIN_V3 | 14 |
+| HET_S2_02 Stage07 descriptor distance | 6.5115373494207205 |
+| HET_S2_02 Stage08 descriptor distance | 1.8606627588827505 |
+| HET_S2_02 target PCA residual | 3.5113172977959843 |
+| Target threshold | 1.5385435220163268 |
+| Formal fresh validation closure | 0/4 |
+| Model predictions read | 0 |
+| Stage08B | False |

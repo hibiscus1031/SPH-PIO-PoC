@@ -1,0 +1,178 @@
+protocol_version: stage02l-training-protocol-1.0.0
+authorization:
+  source: "Stage02K:PAIR_FORCE_PIO_ARCHITECTURE_QUALIFIED"
+  current_stage_scope: training_protocol_preregistration_and_zero_step_static_preflight_only
+  optimizer_steps_required: 0
+  training_runs_required: 0
+dataset:
+  collection_id: blind_multifamily_pair_scope_v1_0
+  record_schema_compatibility_identifier: controlled_regular_pair_scope_v0_1
+  split_counts: {train: 10, validation: 5, test: 5}
+  normalization_statistics_hash: "sha256:2208d2f4b9b7c848f2cd1b93624f9f6a3d9fb29e65cdd70ee453e6122c43d051"
+  graph_unit: complete_particle_graph
+model_arms:
+  K0:
+    name: CENTRAL_PAIR_MLP_DIAGNOSTIC
+    source: Stage02K_frozen_implementation
+    beta: identically_zero
+    role: mandatory_central_and_angular_momentum_diagnostic_baseline
+    future_static_fitting_required: true
+    route_hard_gate: false
+  K1:
+    name: CONSERVATIVE_PAIR_MLP_BASELINE
+    source: Stage02K_frozen_implementation
+    role: mandatory_non_attention_baseline
+    architecture_changes_permitted: false
+    future_static_fitting_required: true
+    route_hard_gate: true
+  K2:
+    name: RECIPROCAL_PAIR_ATTENTION_PIO
+    source: Stage02K_frozen_implementation
+    role: reciprocal_attention_candidate
+    architecture_changes_permitted: false
+    future_static_fitting_required: true
+    route_hard_gate: true
+  KNEG:
+    training_matrix_member: false
+    optimizer_permitted: false
+    evidence_role: Stage02K_negative_control_only
+hypotheses:
+  H1: "At least one of K1/K2 can learn a nonzero spatial correction under node-level supervision."
+  H2: "Every selected fitted checkpoint retains hard pair antisymmetry and global linear-momentum conservation."
+  H3: "K2 is not presumed superior to K1; attention non-necessity remains open."
+  H4: "Because Stage02K central-basis representability passed, K0 is a mandatory diagnostic baseline."
+feature_and_supervision:
+  feature_contract: Stage02K_frozen_feature_contract_v0_1
+  forbidden_inputs: [a_SPH, a_FOURIER, a_ANALYTIC, delta_a, y, target_statistics, family_role, split_role, particle_id, edge_id, canonical_order, regularity_metrics]
+  supervision: node_level_delta_a_or_equivalent_nodal_force
+  edge_pair_force_target: forbidden
+  incidence_pseudoinverse_label: forbidden
+scales:
+  sound_speed: 20.0
+  periodic_domain_length: 1.0
+  acceleration_scale_definition: "a0=cs^2/L"
+  acceleration_scale_value: 400.0
+  target_definition: "target_tilde=delta_a/a0"
+  prediction_definition: "prediction_tilde=delta_a_hat/a0"
+  target_statistic_normalization: forbidden
+loss:
+  primary: graph_balanced_node_MSE
+  formula: "mean_over_train_graphs(mean_over_nodes(||prediction_tilde-target_tilde||^2))"
+  total_loss: L_node_only
+  equal_complete_graph_weight: true
+  conservation_penalty: false
+  regularity_loss: false
+  reference_loss: false
+  trajectory_or_rollout_loss: false
+  validation_or_test_backward: false
+  parameter_regularization: optimizer_weight_decay_only
+  diagnostics_only: [pair_coefficient_norm, attention_entropy, torque, power]
+static_metrics:
+  epsilon_metric_definition: "1e-12*a0"
+  epsilon_metric_value: 4.0e-10
+  per_graph: [Q_L2, Q_Linf, cosine]
+  aggregation: [equal_weight_graph_mean, equal_weight_family_mean, median, maximum, per_resolution, per_support]
+  zero_correction_Q_L2: 1.0
+  particle_or_edge_pseudoreplication: forbidden
+optimizer:
+  class: AdamW
+  learning_rate: 1.0e-3
+  betas: [0.9, 0.999]
+  epsilon: 1.0e-8
+  weight_decay: 1.0e-6
+  gradient_clipping_global_norm: 1.0
+  grids_or_architecture_specific_values: forbidden
+schedule:
+  warmup_updates: 50
+  decay: cosine
+  minimum_learning_rate: 1.0e-5
+  maximum_optimizer_updates: 1000
+  result_dependent_restart: forbidden
+  posthoc_budget_extension: forbidden
+initialization:
+  hidden_weights: deterministic_xavier_uniform_gain_1
+  hidden_biases: zero
+  coefficient_head_weights: deterministic_normal_std_1e-3
+  coefficient_head_bias: zero
+  seed_redraw: forbidden
+training_seeds: [20261201, 20261202, 20261203]
+run_matrix:
+  prospective_run_count: 9
+  runs:
+    - {run_id: K0_seed20261201, architecture: K0, seed: 20261201}
+    - {run_id: K0_seed20261202, architecture: K0, seed: 20261202}
+    - {run_id: K0_seed20261203, architecture: K0, seed: 20261203}
+    - {run_id: K1_seed20261201, architecture: K1, seed: 20261201}
+    - {run_id: K1_seed20261202, architecture: K1, seed: 20261202}
+    - {run_id: K1_seed20261203, architecture: K1, seed: 20261203}
+    - {run_id: K2_seed20261201, architecture: K2, seed: 20261201}
+    - {run_id: K2_seed20261202, architecture: K2, seed: 20261202}
+    - {run_id: K2_seed20261203, architecture: K2, seed: 20261203}
+full_batch_update:
+  train_graph_count: 10
+  graph_loss_then_equal_graph_mean: true
+  gradient_accumulation_permitted: true
+  gradient_accumulation_equivalence_tolerance: 1.0e-10
+  random_particle_edge_or_patch_batch: forbidden
+  graph_repetition: forbidden
+validation_and_early_stopping:
+  graph_count: 5
+  metric: validation_equal_weight_graph_mean_Q_L2
+  evaluation_interval_updates: 20
+  minimum_updates_before_stopping: 300
+  patience_updates: 200
+  minimum_improvement: 1.0e-6
+  checkpoint_selection: minimum_validation_equal_weight_graph_mean_Q_L2
+  tie_break: earlier_checkpoint
+  validation_gradient_access: false
+test_seal:
+  test_target_access_default: false
+  current_stage_test_target_access: false
+  release_once: true
+  prerequisites:
+    - protocol_hash_frozen
+    - nine_run_configurations_frozen
+    - all_training_complete
+    - nine_validation_selected_checkpoints_frozen
+    - checkpoint_hashes_generated
+    - training_validation_summary_manifest_closed
+    - no_pending_restart
+  test_selects_nothing: true
+  post_test_training_or_selection_change: forbidden
+checkpointing:
+  interval_updates: 20
+  required_fields: [architecture_id, architecture_hash, protocol_hash, dataset_collection_id, train_split_hash, validation_split_hash, normalization_hash, training_seed, optimizer_state, scheduler_state, update_number, model_parameters, RNG_states, best_validation_metric, provenance]
+  static_stage_round_trip_update: 0
+  verify: [bitwise_parameter_identity, resume_next_forward_equality, optimizer_counter_identity, scheduler_counter_identity, split_identity, normalization_identity]
+future_success_gates:
+  numerical_stability:
+    seeds_finite: 3/3
+    no_nan_inf: true
+    no_corrupted_checkpoint: true
+    trained_symmetry_conservation_reaudit: PASS
+  train_fit:
+    applies_to: [K1, K2]
+    seed_rule: at_least_2_of_3
+    family_balanced_mean_Q_L2_max: 0.25
+  validation_transfer:
+    applies_to: [K1, K2]
+    seed_rule: at_least_2_of_3
+    family_balanced_mean_Q_L2_max: 0.90
+    every_graph_Q_L2_max: 1.10
+  test_transfer:
+    applies_to: [K1, K2]
+    release_required: true
+    seed_rule: at_least_2_of_3
+    family_balanced_mean_Q_L2_max: 0.90
+    every_graph_Q_L2_max: 1.10
+  conservation_after_fitting:
+    all_selected_checkpoints: true
+    pair_residual_max: 1.0e-10
+    normalized_total_force_max: 1.0e-10
+  route_rule: at_least_one_of_K1_or_K2_passes_all_A_through_E
+  K0_role: report_same_metrics_diagnostic_only
+comparison_boundary:
+  future_K1_K2_both_required: true
+  scope: controlled_descriptive_comparison
+  superiority_or_necessity_claim: forbidden
+current_stage_prohibitions: [optimizer_step, scheduler_step, parameter_update, formal_training, hyperparameter_search, validation_test_model_performance, solver_in_the_loop, rollout, benchmark_claim]

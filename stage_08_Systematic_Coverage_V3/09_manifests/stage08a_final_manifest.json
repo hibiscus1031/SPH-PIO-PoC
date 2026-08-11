@@ -1,0 +1,138 @@
+{
+  "all_required_gates_pass": false,
+  "candidate_qualification": {
+    "bytes": 889254,
+    "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/qualification/candidate_level_qualification.json",
+    "sha256": "sha256:25e49bd1d191ffaba0df7bf5de4d46445c0ee47b9788fa95c649506cef86f793"
+  },
+  "completion_date": "2026-08-08",
+  "consumed_envelope": {
+    "bytes": 44475,
+    "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/consumed_development_envelope/consumed_development_support_envelope.json",
+    "sha256": "sha256:8cf8af2053674cdeb1cecbed6605f9bdb36c68e6acb4532e05ab4113f55b3e4f"
+  },
+  "contract": {
+    "bytes": 7191,
+    "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/contracts/systematic_coverage_v3_contract_v0_1.yaml",
+    "sha256": "sha256:f783234648a5b0ddb9fdd0ec1e20865d23f6992bbfccc90478af7237ae422539"
+  },
+  "counts": {
+    "DOP853_pass": 0,
+    "DOP853_required": 24,
+    "TRAIN_V3": 14,
+    "analytic_pass": 0,
+    "analytic_required": 24,
+    "candidate_pass": 192,
+    "checkpoint_loads": 0,
+    "consumed_development": 20,
+    "fresh_validation_selected": 0,
+    "model_forwards": 0,
+    "model_instances": 0,
+    "model_predictions_read": 0,
+    "optimizer_instances": 0,
+    "optimizer_steps": 0,
+    "parameter_updates": 0,
+    "systematic_train_selected": 8,
+    "topology_pass": 0,
+    "topology_required": 72,
+    "train_candidates": 128,
+    "training_runs": 0,
+    "trajectory_complete": 0,
+    "trajectory_required": 72,
+    "validation_candidates": 64
+  },
+  "final_status": "SYSTEMATIC_COVERAGE_V3_POOL_NOT_QUALIFIED",
+  "freeze": {
+    "bytes": 3115707,
+    "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/freeze/stage08a_input_freeze_record.json",
+    "sha256": "sha256:7ab3442cc48e670eb7dbf6a4556099cd29891edcc90b735bb02369f8f1287dcf"
+  },
+  "gates": {
+    "A_historical_freeze": true,
+    "B_final_cycle_policy": true,
+    "C_descriptor_contract_pre_candidate": true,
+    "D_train_candidates_128": true,
+    "E_validation_candidates_64_disjoint": true,
+    "F_candidate_qualification_192": true,
+    "G_systematic_train_selected_8": true,
+    "H_TRAIN_V3_exactly_14": true,
+    "I_consumed_20_descriptor_support": false,
+    "J_HET_S2_02_descriptor_support": true,
+    "K_HET_S2_02_target_support": false,
+    "L_envelope_gates": false,
+    "M_fresh_validation_selected_4": false,
+    "N_fresh_validation_descriptor_support": false,
+    "O_fresh_validation_target_support": false,
+    "P_fresh_validation_nonduplicate": false,
+    "Q_analytic_24": false,
+    "R_trajectories_72": false,
+    "S_fixed_topology_12": false,
+    "T_DOP853_24": false,
+    "U_lineage_leakage_zero": true,
+    "V_fresh_validation_private_seal": false,
+    "W_original_sealed_test_untouched": true,
+    "X_no_model_optimizer_training": true,
+    "Y_resources_provenance": true
+  },
+  "historical_integrity": {
+    "checked": 9937,
+    "hash_mismatch": [],
+    "missing": [],
+    "mode_mismatch": [],
+    "pass": true
+  },
+  "lineage_graph": {
+    "bytes": 9064,
+    "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/lineage_graph/stage04_stage08_lineage_dependency_graph.json",
+    "sha256": "sha256:39536bbdc099cce4cd73f6edc6118f1471961363a4db8f097fc8e4a49ef1403d"
+  },
+  "next_stage": {
+    "authorization": "NONE",
+    "stage": "Stage08B — TRAIN_V3 Defect/Scale and Actual-Optimizer Requalification",
+    "training_authorized": false
+  },
+  "prohibitions": {
+    "checkpoint_loads": 0,
+    "model_forwards": 0,
+    "model_instances": 0,
+    "model_predictions_read": 0,
+    "optimizer_instances": 0,
+    "optimizer_steps": 0,
+    "parameter_updates": 0,
+    "training_runs": 0
+  },
+  "qualification": {
+    "bytes": 2492,
+    "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/qualification/stage08a_qualification_summary.json",
+    "sha256": "sha256:ee8d6e2a8e061435a7ed2d02e9af638d72e71a946e7d34003900d70b54a20120"
+  },
+  "report": {
+    "bytes": 3182,
+    "path": "stage_08_Systematic_Coverage_V3/08_reports/stage08a_final_report.md",
+    "sha256": "sha256:d3378942dc653e8bd4d147449873be68ee3a7f6e66adc567af8f824a13ddfd57"
+  },
+  "resource_audit": {
+    "bytes": 3022,
+    "path": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/resources/stage08a_resource_audit.json",
+    "sha256": "sha256:04d1e479a2e99c07f016377a95c175a482b35a94b83ec560f82bb4a24acac93c"
+  },
+  "role_manifest": {
+    "bytes": 840,
+    "path": "stage_08_Systematic_Coverage_V3/09_manifests/stage08a_role_manifest.json",
+    "sha256": "sha256:0add6bbc87e940869de19c658443d0d74489106a7b1590aa6e099503eeac568b"
+  },
+  "schema_version": "sph-pio-poc.stage08a.final.v1",
+  "seal_manifest": {
+    "bytes": 35569,
+    "path": "stage_08_Systematic_Coverage_V3/09_manifests/stage08a_validation_seal_manifest.json",
+    "sha256": "sha256:05934c321d6c98c35dfd828d4f787773a1288196584f19f6461860d059d067e1"
+  },
+  "sealed_test_decode_counts": {
+    "evaluation": 0,
+    "formula": 0,
+    "origin": 0,
+    "source": 0,
+    "state": 0,
+    "target": 0
+  }
+}

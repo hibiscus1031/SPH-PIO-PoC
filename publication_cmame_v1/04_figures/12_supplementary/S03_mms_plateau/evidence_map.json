@@ -1,0 +1,50 @@
+[
+  {
+    "figure": "S03",
+    "panel": "a-b",
+    "scientific_claim": "The frozen spatial sequence and its support ratios are displayed directly.",
+    "source_file": "06_experiments/stage_01d2_v2_requalification/results/space_results.csv",
+    "source_hash": "sha256:5e13450a399d903ef93a431ff177ad02dc70fe14dc4adce3c73491769ad8172b",
+    "source_field": "resolution, support_ratio, velocity_relative_l2, modal_error, kinetic_energy_error",
+    "confirmatory_or_diagnostic": "DIAGNOSTIC_ONLY",
+    "transformation": "Resolution sort; exact values; log-y for errors.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS03_mms_plateau.svg; figS03_mms_plateau.pdf; figS03_mms_plateau.png"
+  },
+  {
+    "figure": "S03",
+    "panel": "c-d",
+    "scientific_claim": "Time refinement shows a retained error plateau without a newly fitted convergence order.",
+    "source_file": "06_experiments/stage_01d2_v2_requalification/results/time_results.csv",
+    "source_hash": "sha256:a31313c86dd1150c73d6415f8f0ab63b33bc3d8e055090843841cd0963cc1213",
+    "source_field": "dt and three error fields",
+    "confirmatory_or_diagnostic": "DIAGNOSTIC_ONLY",
+    "transformation": "Descending-dt coordinate placement; log-log display.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS03_mms_plateau.svg; figS03_mms_plateau.pdf; figS03_mms_plateau.png"
+  },
+  {
+    "figure": "S03",
+    "panel": "e",
+    "scientific_claim": "All frozen disorder outcomes, including failures, remain visible.",
+    "source_file": "06_experiments/stage_01d2_v2_requalification/results/disorder_results.csv",
+    "source_hash": "sha256:7f836754e3e619a96738febb6fd0d4385831d8427e090de85f914cf4265983aa",
+    "source_field": "status and diagnostic fields",
+    "confirmatory_or_diagnostic": "DIAGNOSTIC_ONLY",
+    "transformation": "Source order; status color; log-y display.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS03_mms_plateau.svg; figS03_mms_plateau.pdf; figS03_mms_plateau.png"
+  },
+  {
+    "figure": "S03",
+    "panel": "f",
+    "scientific_claim": "The frozen evaluation does not restore V2 or justify a GCI statement.",
+    "source_file": "06_experiments/stage_01d2_v2_requalification/results/stage01d2_evaluation.json",
+    "source_hash": "sha256:e6f1cb6e7bcd9cdebb628e0196c3dd99a0314efe219bcff5f176f2fff3f3f8ab",
+    "source_field": "final_status, space_slope_velocity, gci_justified, resource_pass",
+    "confirmatory_or_diagnostic": "SUPPORTED",
+    "transformation": "Exact scalar annotation and status-card transcription.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS03_mms_plateau.svg; figS03_mms_plateau.pdf; figS03_mms_plateau.png"
+  }
+]

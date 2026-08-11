@@ -1,0 +1,5 @@
+# Stage 03D-R Derivative Scale
+
+Stage 03D remains `DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED`. Stage 03D-R contract: `sha256:63ef93fe7af7c10ffb6a6e1d944003b5e3e85818f98bac6f6b1b9333a479c2d9`.
+
+Historical derivative-decade distribution: `{"1e-10": {"fail": 9, "pass": 13, "total": 22}, "1e-11": {"fail": 8, "pass": 2, "total": 10}, "1e-12": {"fail": 5, "total": 5}, "1e-13": {"fail": 3, "pass": 2, "total": 5}, "1e-19": {"fail": 2, "pass": 2, "total": 4}, "1e-2": {"fail": 12, "pass": 36, "total": 48}, "1e-20": {"fail": 7, "pass": 32, "total": 39}, "1e-21": {"fail": 7, "pass": 16, "total": 23}, "1e-22": {"fail": 4, "pass": 9, "total": 13}, "1e-23": {"fail": 6, "pass": 12, "total": 18}, "1e-24": {"pass": 10, "total": 10}, "1e-26": {"pass": 1, "total": 1}, "1e-3": {"fail": 25, "pass": 56, "total": 81}, "1e-4": {"fail": 9, "pass": 5, "total": 14}, "1e-5": {"fail": 1, "total": 1}, "1e-6": {"fail": 8, "total": 8}, "1e-7": {"fail": 23, "total": 23}, "1e-8": {"fail": 15, "pass": 6, "total": 21}, "1e-9": {"pass": 14, "total": 14}}`. Near-zero derivatives are classified explicitly and are not promoted to Stage 03D passes.

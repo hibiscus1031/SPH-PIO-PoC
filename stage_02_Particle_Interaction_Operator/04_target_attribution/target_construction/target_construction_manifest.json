@@ -1,0 +1,43 @@
+{
+  "campaign_id": "stage02e_r2_nonzero_target_audit_20260804",
+  "candidate_count": 8,
+  "determinism": {
+    "canonical_bytes_equal": true,
+    "repeats": 2,
+    "status": "PASS"
+  },
+  "failure_retention": {
+    "stage02d_records_unchanged": true,
+    "topology_failures_retained": true,
+    "unresolved_retained": true,
+    "zero_targets_retained": true
+  },
+  "inputs": {
+    "constructor": "sha256:8badd256cf4d77c0651d0f60344ad6b20a4b65077c30e3e1778872efd4cd6254",
+    "excitation_matrix": "sha256:b56d54b3a1e03bf2f53af564edea001fd848fcdddbf12c7db0afc76ff86ea801",
+    "generation_configuration": "sha256:7ac0a412f9bd7f5dd28cb1affa27d44e00a05b3d4deeac7f1e8a4dcc268993cf",
+    "stage02c_generator": "sha256:03b674f0aab07a1d9f8c4506b9378c32d763bac6797c062892adc127b8e112f9",
+    "stage02d_decision": "sha256:2b3f7f655a0237c08d15c9e28e91152a08cffee316afcd5c49c06a63c9660ce3"
+  },
+  "manifest_version": "stage02e-target-construction-manifest-1.0.0",
+  "nonzero_count": 8,
+  "outputs": {
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/disorder_study/disorder_study.json": "sha256:276b6bf0ddd028c6406978aa4d7d29c8be339ea57b36ff74aedfbb994c716a3e",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/qualification/attribution_results_stage02e.json": "sha256:2b13a09e7527d040d9e7fcd1aee5e68f383e1e31b57338772784e6d6135ae031",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/qualification/reference_qualification_audit_stage02e.json": "sha256:a176f25bb5aa96f9ddb804e99f34e92ab93e4426e73a0fd853211c0204672e0d",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/qualification/stage02f_decision.json": "sha256:a21c4b61b518065aa33186b6d1ee8e2bbd1ee233fd86acacea6efc75017841fb",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/resolution_study/resolution_study.json": "sha256:6a8922bd7f644e421965941d22038cd13435185cb644cb590fc8b7f24c52cdc9",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/support_study/support_study.json": "sha256:3bd073e5b7f969b827b6ab3605c7266571804be7bbdf9efa00a648cda013d5ff",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/target_construction/candidate_target_pool.json": "sha256:ddb56ae03cfe21e588c42be11d8025bb52391e8772cc0f2567a19345be40d49d"
+  },
+  "prohibited_outputs": {
+    "model": false,
+    "normalization": false,
+    "performance_evaluation": false,
+    "split_assignment": false,
+    "training": false,
+    "training_dataset": false
+  },
+  "qualified_count": 0,
+  "status": "PASS"
+}

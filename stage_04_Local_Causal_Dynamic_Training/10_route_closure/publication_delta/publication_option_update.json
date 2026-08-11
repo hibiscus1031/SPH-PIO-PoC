@@ -1,0 +1,42 @@
+{
+  "decision_finalized": false,
+  "options": [
+    {
+      "CMAME_readiness": "Not ready",
+      "current_support": "NOT_SUPPORTED",
+      "definition": "Stage00–04 single integrated solver paper",
+      "generality": "Limited by missing training/rollout",
+      "innovation": "Broad but incomplete",
+      "length": "Very high",
+      "mainline_coherence": "Low under current evidence",
+      "option": "A",
+      "realistic_tier": "Not assessable before training evidence",
+      "reason": "No training, rollout or performance evidence."
+    },
+    {
+      "CMAME_readiness": "Stage04 training paper not ready",
+      "current_support": "PARTIAL",
+      "definition": "Stage00–03 verification-first paper + independent Stage04 training paper",
+      "generality": "Requires broader confirmation for standalone methods paper",
+      "innovation": "Stage04 negative evidence is methodological",
+      "length": "Manageable if split",
+      "mainline_coherence": "Strong for Stage00–03; incomplete for Stage04",
+      "option": "B",
+      "realistic_tier": "Methodology/verification venue after generalization",
+      "reason": "Stage04 cannot yet support a training paper; negative task-gradient evidence may join the methods paper or later generalize."
+    },
+    {
+      "CMAME_readiness": "Potentially closer than A/B, not yet established",
+      "current_support": "PROMISING_BUT_NOT_SELECTED",
+      "definition": "Stage00–04 verification-first negative-evidence methods paper",
+      "generality": "Needs literature verification and cross-case framing",
+      "innovation": "Strong methodological transparency",
+      "length": "High but controllable",
+      "mainline_coherence": "High: preregistration, failure preservation, attribution",
+      "option": "C",
+      "realistic_tier": "Verification/computational-methods journal; exact tier deferred",
+      "reason": "Best current narrative coherence, but no final submission decision is authorized."
+    }
+  ],
+  "selection": "DEFERRED"
+}

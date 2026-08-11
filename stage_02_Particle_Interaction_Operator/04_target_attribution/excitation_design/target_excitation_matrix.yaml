@@ -1,0 +1,142 @@
+matrix_version: stage02e-target-excitation-1.0.0
+campaign_id: stage02e_r2_nonzero_target_audit_20260804
+purpose: controlled_nonzero_target_construction_and_attribution
+scale: audit_only
+selection_policy: enumerate_all_frozen_cases_no_posthoc_filter
+small_target_deletion_permitted: false
+training_dataset: false
+
+target:
+  equation: a_ref - a_SPH
+  sign_convention: a_ref_minus_a_sph
+  evaluation_time: 0.002
+
+reference:
+  class: R2_semidiscrete_qualified
+  identity: stage02e_r2_dop853_five_point_derivative_v1
+  center_state: DOP853_primary_state_at_evaluation_time
+  primary_derivative_half_window: 0.001
+  window_sensitivity_half_window: 0.0005
+  primary_rtol: 1.0e-10
+  primary_atol: 1.0e-12
+  sensitivity_rtol: 1.0e-12
+  sensitivity_atol: 1.0e-14
+  instantaneous_assembly_reference: dense_all_pairs_RHS_at_same_center_state
+
+frozen_families:
+  resolution_levels: [N6x6, N8x8, N10x10]
+  h_over_dx_levels: [2.2, 2.6, 3.0]
+  disorder_levels: [regular, jitter_05pct, jitter_10pct]
+  state_families: [periodic_vortex, compressive_wave]
+
+cases:
+  - case_id: e_res_n6_h26_regular_vortex
+    study_membership: [resolution]
+    trajectory_family: e_vortex_resolution_path
+    initial_condition_family: periodic_vortex
+    resolution_family: N6x6
+    particles_per_axis: 6
+    h_over_dx: 2.6
+    h_over_dx_family: Hdx_2p6
+    disorder_fraction_dx: 0.0
+    disorder_family: regular
+    random_seed: 5106
+    time_horizon: 0.004
+  - case_id: e_n8_h26_regular_vortex
+    study_membership: [resolution, support, disorder, state]
+    trajectory_family: e_vortex_common_anchor
+    initial_condition_family: periodic_vortex
+    resolution_family: N8x8
+    particles_per_axis: 8
+    h_over_dx: 2.6
+    h_over_dx_family: Hdx_2p6
+    disorder_fraction_dx: 0.0
+    disorder_family: regular
+    random_seed: 5208
+    time_horizon: 0.004
+  - case_id: e_res_n10_h26_regular_vortex
+    study_membership: [resolution]
+    trajectory_family: e_vortex_resolution_path
+    initial_condition_family: periodic_vortex
+    resolution_family: N10x10
+    particles_per_axis: 10
+    h_over_dx: 2.6
+    h_over_dx_family: Hdx_2p6
+    disorder_fraction_dx: 0.0
+    disorder_family: regular
+    random_seed: 5310
+    time_horizon: 0.004
+  - case_id: e_sup_n8_h22_regular_vortex
+    study_membership: [support]
+    trajectory_family: e_vortex_support_path
+    initial_condition_family: periodic_vortex
+    resolution_family: N8x8
+    particles_per_axis: 8
+    h_over_dx: 2.2
+    h_over_dx_family: Hdx_2p2
+    disorder_fraction_dx: 0.0
+    disorder_family: regular
+    random_seed: 5422
+    time_horizon: 0.004
+  - case_id: e_sup_n8_h30_regular_vortex
+    study_membership: [support]
+    trajectory_family: e_vortex_support_path
+    initial_condition_family: periodic_vortex
+    resolution_family: N8x8
+    particles_per_axis: 8
+    h_over_dx: 3.0
+    h_over_dx_family: Hdx_3p0
+    disorder_fraction_dx: 0.0
+    disorder_family: regular
+    random_seed: 5430
+    time_horizon: 0.004
+  - case_id: e_dis_n8_h26_jitter05_vortex
+    study_membership: [disorder]
+    trajectory_family: e_vortex_disorder_path_jitter05
+    initial_condition_family: periodic_vortex
+    resolution_family: N8x8
+    particles_per_axis: 8
+    h_over_dx: 2.6
+    h_over_dx_family: Hdx_2p6
+    disorder_fraction_dx: 0.05
+    disorder_family: jitter_05pct_seed_5505
+    random_seed: 5505
+    time_horizon: 0.004
+  - case_id: e_dis_n8_h26_jitter10_vortex
+    study_membership: [disorder]
+    trajectory_family: e_vortex_disorder_path_jitter10
+    initial_condition_family: periodic_vortex
+    resolution_family: N8x8
+    particles_per_axis: 8
+    h_over_dx: 2.6
+    h_over_dx_family: Hdx_2p6
+    disorder_fraction_dx: 0.10
+    disorder_family: jitter_10pct_seed_5510
+    random_seed: 5510
+    time_horizon: 0.004
+  - case_id: e_state_n8_h26_regular_compressive
+    study_membership: [state]
+    trajectory_family: e_compressive_state_path
+    initial_condition_family: compressive_wave
+    resolution_family: N8x8
+    particles_per_axis: 8
+    h_over_dx: 2.6
+    h_over_dx_family: Hdx_2p6
+    disorder_fraction_dx: 0.0
+    disorder_family: regular
+    random_seed: 5608
+    time_horizon: 0.004
+
+separation_contracts:
+  resolution:
+    fixed: {h_over_dx: 2.6, disorder: regular, initial_condition_family: periodic_vortex}
+    varied: [N6x6, N8x8, N10x10]
+  support:
+    fixed: {resolution: N8x8, disorder: regular, initial_condition_family: periodic_vortex}
+    varied: [2.2, 2.6, 3.0]
+  disorder:
+    fixed: {resolution: N8x8, h_over_dx: 2.6, initial_condition_family: periodic_vortex}
+    varied: [regular, jitter_05pct, jitter_10pct]
+  state:
+    fixed: {resolution: N8x8, h_over_dx: 2.6, disorder: regular}
+    varied: [periodic_vortex, compressive_wave]

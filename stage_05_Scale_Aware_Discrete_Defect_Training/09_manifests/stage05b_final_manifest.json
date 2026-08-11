@@ -1,0 +1,71 @@
+{
+  "Stage05C_authorized": true,
+  "all_hashes_complete": true,
+  "artifact_index": {
+    "artifact_count_excluding_index_and_final_manifest": 837,
+    "canonical_listing_sha256": "sha256:9a12d5161775f5339e51082cd272fbcea7534df353c397f6cc3136df36c62c3d",
+    "path": "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/manifests/final_artifact_index.json",
+    "sha256": "sha256:97c90826ba412b08fe8ac935cf57fbc652bbedf406542db4207269c26e045a50"
+  },
+  "closure_audit": {
+    "pass": true,
+    "path": "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/target_records/target_record_verification_audit.json",
+    "sha256": "sha256:4f4f98b016dc12b3857c0752d290340a55f7f03838f55f86126e89e272cfc510"
+  },
+  "complete": true,
+  "contract_sha256": "sha256:6992ce3e9e7aa76b2b29fc3e6b15ac5533386ce9bee07c5d7316b5ee9609b9dc",
+  "decode_counts": {
+    "diagnostic_train_json_decode_count": 12,
+    "diagnostic_train_npz_decode_count": 12,
+    "formal_train_json_decode_count": 12,
+    "formal_train_npz_decode_count": 12,
+    "preformal_train_json_decode_count": 28,
+    "preformal_train_npz_decode_count": 28,
+    "sealed_formula_decode_count": 0,
+    "sealed_origin_decode_count": 0,
+    "sealed_source_decode_count": 0,
+    "sealed_state_decode_count": 0,
+    "sealed_target_decode_count": 0,
+    "validation_state_decode_count": 0,
+    "validation_target_decode_count": 0
+  },
+  "execution_counts": {
+    "checkpoint_selections": 0,
+    "model_instances": 0,
+    "neural_forwards": 0,
+    "neural_rollouts": 0,
+    "optimizer_instances": 0,
+    "optimizer_steps": 0,
+    "parameter_gradients": 0,
+    "parameter_updates": 0,
+    "performance_evaluations": 0,
+    "training_runs": 0
+  },
+  "formal_origin_count": 384,
+  "gates": {
+    "D0_transition": true,
+    "access_end": true,
+    "access_start": true,
+    "conservative_compatibility": true,
+    "defect_construction": true,
+    "historical_freeze": true,
+    "pair_basis_representability": true,
+    "prohibitions": true,
+    "provenance_resources": true,
+    "scale": true,
+    "signal_distinguishability": true,
+    "symmetry_invariance": true,
+    "uncertainty": true
+  },
+  "historical_statuses_unchanged": true,
+  "next_authorization": "Stage 05C — Optimizer-Aligned Gradient and No-Writeback Local-Descent Qualification",
+  "required_report_count": 14,
+  "required_top_manifest_count": 8,
+  "s_a": 0.3456328553384328,
+  "s_a_hash": "sha256:78beec16affbae72345d220b7f7c1455f85c212ad006c4d29516946d5c76f296",
+  "s_a_over_u_a": 475034179.2325337,
+  "schema": "sph-pio-poc.stage05b.final-manifest.v1",
+  "status": "CONSERVATIVE_DISCRETE_DEFECT_TARGET_AND_SCALE_QUALIFIED",
+  "target_record_count": 384,
+  "u_a": 7.275957614183426e-10
+}

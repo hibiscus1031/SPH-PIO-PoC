@@ -1,0 +1,27 @@
+{
+  "case": "DR3_OBLIQUE_SHEAR_B",
+  "continuity_residual": 0.0,
+  "density_drift": 0.0,
+  "formula_is_new_relative_to_stage01_specific_records": true,
+  "galilean_boost_consistency_residual": 2.7755575615628914e-17,
+  "gates": {
+    "continuity": true,
+    "density_pressure": true,
+    "invariance": true,
+    "mach": true,
+    "momentum": true,
+    "particle_path": true,
+    "source_absent": true
+  },
+  "maximum_mach": 0.01974218834175694,
+  "minimum_density": 1.0,
+  "particle_path_residual": 0.0,
+  "periodic_seam_residual": 0.0,
+  "pressure_drift": 0.0,
+  "role": "independent_source_free_validation_only",
+  "rotation_consistency_residual": 0.0,
+  "source_free_momentum_residual": 1.3964254612015911e-16,
+  "source_present": false,
+  "verdict": "PASS",
+  "wavevector_transversality_residual": 0.0
+}

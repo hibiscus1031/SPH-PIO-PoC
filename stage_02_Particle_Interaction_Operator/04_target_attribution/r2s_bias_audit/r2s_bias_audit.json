@@ -1,0 +1,250 @@
+{
+  "analytic_audit_reference_used_as_target_source": false,
+  "bias_audit_status": "DIAGNOSTIC",
+  "continuum_model_form_confirmation_claimed": false,
+  "disorder_sensitivity": {
+    "bounded_disorder_sensitivity": true,
+    "maximum_bias_amplification_over_regular": 1.0065655846673471,
+    "rows": [
+      {
+        "candidate_id": "g_bias_regular_n12",
+        "disorder_fraction_dx": 0.0,
+        "disorder_identity": "regular",
+        "geometry": {
+          "active_kernel_neighbor_count_max": 20,
+          "active_kernel_neighbor_count_min": 20,
+          "geometry_isotropy_ratio_min": 0.9999999999999986,
+          "maximum_angular_gap_radians": 0.4636476090008066,
+          "maximum_condition_number": 5.31051042706002,
+          "maximum_polynomial_reproduction_error_Linf": 6.022959908591474e-15,
+          "minimum_local_matrix_rank": 5,
+          "reconstruction_relative_residual_max": 0.09352599888477447,
+          "reconstruction_relative_residual_median": 0.09037009017191516
+        },
+        "r2s_bias_L2_particle_rms": 0.05464030623343015,
+        "r2s_bias_amplification_over_regular": 1.0,
+        "r2s_bias_to_target_L2_ratio": 17.766373893875414,
+        "random_seed": 271828
+      },
+      {
+        "candidate_id": "g_bias_jitter05_n12",
+        "disorder_fraction_dx": 0.05,
+        "disorder_identity": "jitter_5_percent",
+        "geometry": {
+          "active_kernel_neighbor_count_max": 20,
+          "active_kernel_neighbor_count_min": 20,
+          "geometry_isotropy_ratio_min": 0.9153940992619246,
+          "maximum_angular_gap_radians": 0.518991370244787,
+          "maximum_condition_number": 5.546015946899035,
+          "maximum_polynomial_reproduction_error_Linf": 4.3298697960381105e-15,
+          "minimum_local_matrix_rank": 5,
+          "reconstruction_relative_residual_max": 0.0970583912130961,
+          "reconstruction_relative_residual_median": 0.09191365352884462
+        },
+        "r2s_bias_L2_particle_rms": 0.05473263654997702,
+        "r2s_bias_amplification_over_regular": 1.001689784024131,
+        "r2s_bias_to_target_L2_ratio": 1.4534853980971583,
+        "random_seed": 314159
+      },
+      {
+        "candidate_id": "g_bias_jitter10_n12",
+        "disorder_fraction_dx": 0.1,
+        "disorder_identity": "jitter_10_percent",
+        "geometry": {
+          "active_kernel_neighbor_count_max": 21,
+          "active_kernel_neighbor_count_min": 20,
+          "geometry_isotropy_ratio_min": 0.8210880015102895,
+          "maximum_angular_gap_radians": 0.581262152248559,
+          "maximum_condition_number": 5.736291794232366,
+          "maximum_polynomial_reproduction_error_Linf": 4.801714581503802e-15,
+          "minimum_local_matrix_rank": 5,
+          "reconstruction_relative_residual_max": 0.10095769714867593,
+          "reconstruction_relative_residual_median": 0.09221470191901979
+        },
+        "r2s_bias_L2_particle_rms": 0.05499905179025551,
+        "r2s_bias_amplification_over_regular": 1.0065655846673471,
+        "r2s_bias_to_target_L2_ratio": 0.8164917383323724,
+        "random_seed": 161803
+      }
+    ]
+  },
+  "local_audits": [
+    {
+      "analytic_bias_metrics": {
+        "r2s_bias_L2_particle_rms": 0.05464030623343015,
+        "r2s_bias_to_target_L2_ratio": 17.766373893875414,
+        "sph_bias_L2_particle_rms": 0.05768921260482899
+      },
+      "candidate_id": "g_res_n12_h26",
+      "checks": {
+        "condition_number": "PASS",
+        "local_matrix_rank": "PASS",
+        "particle_geometry_quality_recorded": "PASS",
+        "polynomial_reproduction": "PASS",
+        "reconstruction_residual_recorded": "PASS"
+      },
+      "status": "PASS",
+      "summary": {
+        "active_kernel_neighbor_count_max": 20,
+        "active_kernel_neighbor_count_min": 20,
+        "geometry_isotropy_ratio_min": 0.9999999999999986,
+        "maximum_angular_gap_radians": 0.4636476090008066,
+        "maximum_condition_number": 5.31051042706002,
+        "maximum_polynomial_reproduction_error_Linf": 6.022959908591474e-15,
+        "minimum_local_matrix_rank": 5,
+        "reconstruction_relative_residual_max": 0.09352599888477447,
+        "reconstruction_relative_residual_median": 0.09037009017191516
+      }
+    },
+    {
+      "analytic_bias_metrics": {
+        "r2s_bias_L2_particle_rms": 0.03152940090998118,
+        "r2s_bias_to_target_L2_ratio": 68.40862306798715,
+        "sph_bias_L2_particle_rms": 0.031450108853716206
+      },
+      "candidate_id": "g_res_n16_h26",
+      "checks": {
+        "condition_number": "PASS",
+        "local_matrix_rank": "PASS",
+        "particle_geometry_quality_recorded": "PASS",
+        "polynomial_reproduction": "PASS",
+        "reconstruction_residual_recorded": "PASS"
+      },
+      "status": "PASS",
+      "summary": {
+        "active_kernel_neighbor_count_max": 20,
+        "active_kernel_neighbor_count_min": 20,
+        "geometry_isotropy_ratio_min": 0.9999999999999998,
+        "maximum_angular_gap_radians": 0.46364760900080615,
+        "maximum_condition_number": 5.310510427060015,
+        "maximum_polynomial_reproduction_error_Linf": 1.1879386363489175e-14,
+        "minimum_local_matrix_rank": 5,
+        "reconstruction_relative_residual_max": 0.052615580449198576,
+        "reconstruction_relative_residual_median": 0.05211217385838346
+      }
+    },
+    {
+      "analytic_bias_metrics": {
+        "r2s_bias_L2_particle_rms": 0.02041957465565285,
+        "r2s_bias_to_target_L2_ratio": 11.784985983309511,
+        "sph_bias_L2_particle_rms": 0.01876449549222998
+      },
+      "candidate_id": "g_res_n20_h26",
+      "checks": {
+        "condition_number": "PASS",
+        "local_matrix_rank": "PASS",
+        "particle_geometry_quality_recorded": "PASS",
+        "polynomial_reproduction": "PASS",
+        "reconstruction_residual_recorded": "PASS"
+      },
+      "status": "PASS",
+      "summary": {
+        "active_kernel_neighbor_count_max": 20,
+        "active_kernel_neighbor_count_min": 20,
+        "geometry_isotropy_ratio_min": 0.999999999999998,
+        "maximum_angular_gap_radians": 0.46364760900080704,
+        "maximum_condition_number": 5.31051042706002,
+        "maximum_polynomial_reproduction_error_Linf": 5.995204332975845e-15,
+        "minimum_local_matrix_rank": 5,
+        "reconstruction_relative_residual_max": 0.033613858920121045,
+        "reconstruction_relative_residual_median": 0.03325389550104241
+      }
+    },
+    {
+      "analytic_bias_metrics": {
+        "r2s_bias_L2_particle_rms": 0.05464030623343015,
+        "r2s_bias_to_target_L2_ratio": 17.766373893875414,
+        "sph_bias_L2_particle_rms": 0.05768921260482899
+      },
+      "candidate_id": "g_bias_regular_n12",
+      "checks": {
+        "condition_number": "PASS",
+        "local_matrix_rank": "PASS",
+        "particle_geometry_quality_recorded": "PASS",
+        "polynomial_reproduction": "PASS",
+        "reconstruction_residual_recorded": "PASS"
+      },
+      "status": "PASS",
+      "summary": {
+        "active_kernel_neighbor_count_max": 20,
+        "active_kernel_neighbor_count_min": 20,
+        "geometry_isotropy_ratio_min": 0.9999999999999986,
+        "maximum_angular_gap_radians": 0.4636476090008066,
+        "maximum_condition_number": 5.31051042706002,
+        "maximum_polynomial_reproduction_error_Linf": 6.022959908591474e-15,
+        "minimum_local_matrix_rank": 5,
+        "reconstruction_relative_residual_max": 0.09352599888477447,
+        "reconstruction_relative_residual_median": 0.09037009017191516
+      }
+    },
+    {
+      "analytic_bias_metrics": {
+        "r2s_bias_L2_particle_rms": 0.05473263654997702,
+        "r2s_bias_to_target_L2_ratio": 1.4534853980971583,
+        "sph_bias_L2_particle_rms": 0.07291029495813478
+      },
+      "candidate_id": "g_bias_jitter05_n12",
+      "checks": {
+        "condition_number": "PASS",
+        "local_matrix_rank": "PASS",
+        "particle_geometry_quality_recorded": "PASS",
+        "polynomial_reproduction": "PASS",
+        "reconstruction_residual_recorded": "PASS"
+      },
+      "status": "PASS",
+      "summary": {
+        "active_kernel_neighbor_count_max": 20,
+        "active_kernel_neighbor_count_min": 20,
+        "geometry_isotropy_ratio_min": 0.9153940992619246,
+        "maximum_angular_gap_radians": 0.518991370244787,
+        "maximum_condition_number": 5.546015946899035,
+        "maximum_polynomial_reproduction_error_Linf": 4.3298697960381105e-15,
+        "minimum_local_matrix_rank": 5,
+        "reconstruction_relative_residual_max": 0.0970583912130961,
+        "reconstruction_relative_residual_median": 0.09191365352884462
+      }
+    },
+    {
+      "analytic_bias_metrics": {
+        "r2s_bias_L2_particle_rms": 0.05499905179025551,
+        "r2s_bias_to_target_L2_ratio": 0.8164917383323724,
+        "sph_bias_L2_particle_rms": 0.09324642320654215
+      },
+      "candidate_id": "g_bias_jitter10_n12",
+      "checks": {
+        "condition_number": "PASS",
+        "local_matrix_rank": "PASS",
+        "particle_geometry_quality_recorded": "PASS",
+        "polynomial_reproduction": "PASS",
+        "reconstruction_residual_recorded": "PASS"
+      },
+      "status": "PASS",
+      "summary": {
+        "active_kernel_neighbor_count_max": 21,
+        "active_kernel_neighbor_count_min": 20,
+        "geometry_isotropy_ratio_min": 0.8210880015102895,
+        "maximum_angular_gap_radians": 0.581262152248559,
+        "maximum_condition_number": 5.736291794232366,
+        "maximum_polynomial_reproduction_error_Linf": 4.801714581503802e-15,
+        "minimum_local_matrix_rank": 5,
+        "reconstruction_relative_residual_max": 0.10095769714867593,
+        "reconstruction_relative_residual_median": 0.09221470191901979
+      }
+    }
+  ],
+  "r2s_reconstruction_bias": {
+    "bounded_under_predeclared_ratio": false,
+    "interpretation": "R2S is a finite-fidelity spatial reference; its measured bias is part of delta_a_space uncertainty",
+    "maximum_resolution_path_bias_to_target_L2_ratio": 68.40862306798715,
+    "target_contains_measurable_R2S_reconstruction_bias": true
+  },
+  "reference_identity": "r2s_quadratic_kernel_weighted_wls_v1",
+  "temporal_derivative_used": false,
+  "thresholds_frozen_before_execution": {
+    "maximum_condition_number": "1.0e8",
+    "maximum_disorder_bias_amplification_for_bounded_sensitivity": 2.0,
+    "maximum_polynomial_reproduction_Linf": 1e-10,
+    "maximum_r2s_bias_to_target_L2_ratio_for_bounded_bias": 0.25,
+    "minimum_matrix_rank": 5
+  }
+}

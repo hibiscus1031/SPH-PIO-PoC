@@ -1,0 +1,74 @@
+matrix_version: stage02h-reference-candidate-matrix-1.0.0
+campaign_id: stage02h_reference_fidelity_20260804
+frozen_before_execution: true
+posthoc_candidate_deletion_permitted: false
+requested_incumbent_alias: r2_quadratic_kernel_weighted_wls_v1
+resolved_incumbent_identity: r2s_quadratic_kernel_weighted_wls_v1
+
+shared_physics:
+  state_family: analytic_periodic_vortex_at_t0
+  timestamp: 0.0
+  EOS: linear_isothermal_p_equals_c0_squared_times_rho_minus_rho0
+  acceleration: negative_pressure_gradient_divided_by_density_plus_nu_velocity_laplacian
+  temporal_derivative_used: false
+
+evaluation_suite:
+  resolution_cases:
+    - {case_id: h_regular_n12, particles_per_axis: 12, h_over_dx: 2.6, disorder_fraction_dx: 0.0, random_seed: 120026}
+    - {case_id: h_regular_n16, particles_per_axis: 16, h_over_dx: 2.6, disorder_fraction_dx: 0.0, random_seed: 160026}
+    - {case_id: h_regular_n20, particles_per_axis: 20, h_over_dx: 2.6, disorder_fraction_dx: 0.0, random_seed: 200026}
+  disorder_cases:
+    - {case_id: h_disorder_regular_n12, particles_per_axis: 12, h_over_dx: 2.6, disorder_fraction_dx: 0.0, disorder_identity: regular, random_seed: 271828}
+    - {case_id: h_disorder_jitter05_n12, particles_per_axis: 12, h_over_dx: 2.6, disorder_fraction_dx: 0.05, disorder_identity: jitter_5_percent, random_seed: 314159}
+    - {case_id: h_disorder_jitter10_n12, particles_per_axis: 12, h_over_dx: 2.6, disorder_fraction_dx: 0.10, disorder_identity: jitter_10_percent, random_seed: 161803}
+
+candidates:
+  - candidate_id: H_REF_QWLS2_INCUMBENT
+    method: local_quadratic_kernel_weighted_least_squares
+    implementation_identity: r2s_quadratic_kernel_weighted_wls_v1
+    independence_class: local_kernel_polynomial_reconstruction
+    basis: [x, y, x2_over_2, xy, y2_over_2]
+    support: H_over_dx_2.6_with_cubic_spline_kernel_weights
+    resolution: [N12x12, N16x16, N20x20]
+    cost:
+      class: low_local
+      per_particle_dense_solve: 5_by_5
+      asymptotic: O_particles_times_local_neighbors_times_5_squared
+  - candidate_id: H_REF_CWLS3
+    method: local_cubic_wendland_weighted_least_squares
+    implementation_identity: r2s_cubic_wendland_wls_v1
+    independence_class: local_wendland_polynomial_reconstruction
+    basis: [x, y, x2_over_2, xy, y2_over_2, x3_over_6, x2y_over_2, xy2_over_2, y3_over_6]
+    support: H_over_dx_4.1_with_Wendland_C2_regression_weights
+    resolution: [N12x12, N16x16, N20x20]
+    cost:
+      class: medium_local
+      per_particle_dense_solve: 9_by_9
+      asymptotic: O_particles_times_local_neighbors_times_9_squared
+  - candidate_id: H_REF_FOURIER2
+    method: global_periodic_complex_Fourier_least_squares
+    implementation_identity: r2s_global_fourier_ls_k2_v1
+    independence_class: global_spectral_reconstruction
+    basis: complex_modes_kx_ky_in_minus2_to_2
+    support: global_periodic_state
+    resolution: [N12x12, N16x16, N20x20]
+    cost:
+      class: medium_global_audit_only
+      global_dense_solve: particles_by_25_modes
+      asymptotic: O_particles_times_25_squared
+  - candidate_id: H_REF_ANALYTIC
+    method: analytic_spatial_differentiation
+    implementation_identity: periodic_vortex_analytic_spatial_v1
+    independence_class: closed_form_manufactured_spatial_derivative
+    basis: exact_trigonometric_periodic_vortex
+    support: none_closed_form
+    resolution: [N12x12, N16x16, N20x20]
+    cost:
+      class: low_closed_form_audit_scope_only
+      asymptotic: O_particles
+
+scope_limits:
+  analytic_candidate_general_reference: false
+  analytic_candidate_scope: periodic_vortex_family_only
+  target_dataset_generation_authorized: false
+  model_or_training_authorized: false

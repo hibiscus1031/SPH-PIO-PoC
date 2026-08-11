@@ -1,0 +1,837 @@
+{
+  "a_sup": 0.392220124168075,
+  "audit_version": "stage02mp-zero-step-conditioning-1.0.0",
+  "gates": {
+    "A_9_of_9_finite_forward_backward": true,
+    "B_K1_K2_6_of_6_initial_scaled_loss_0p1_to_10": true,
+    "C_K1_K2_6_of_6_epsilon_dominated_fraction_le_0p25": true,
+    "D_K1_K2_6_of_6_weight_decay_dominated_fraction_zero": true,
+    "E_K1_K2_each_major_module_finite_nonzero_gradient_fraction_ge_0p10": true,
+    "F_no_target_or_reference_leakage": true,
+    "G_no_optimizer_or_scheduler_step": true
+  },
+  "loader_audit": {
+    "decode_log": [
+      {
+        "case_id": "blind_family_01_n12_h26",
+        "role": "future_train",
+        "target_decoded": false
+      },
+      {
+        "case_id": "blind_family_01_n16_h22",
+        "role": "future_train",
+        "target_decoded": false
+      },
+      {
+        "case_id": "blind_family_01_n16_h26",
+        "role": "future_train",
+        "target_decoded": false
+      },
+      {
+        "case_id": "blind_family_01_n16_h30",
+        "role": "future_train",
+        "target_decoded": false
+      },
+      {
+        "case_id": "blind_family_01_n20_h26",
+        "role": "future_train",
+        "target_decoded": false
+      },
+      {
+        "case_id": "blind_family_02_n12_h26",
+        "role": "future_train",
+        "target_decoded": false
+      },
+      {
+        "case_id": "blind_family_02_n16_h22",
+        "role": "future_train",
+        "target_decoded": false
+      },
+      {
+        "case_id": "blind_family_02_n16_h26",
+        "role": "future_train",
+        "target_decoded": false
+      },
+      {
+        "case_id": "blind_family_02_n16_h30",
+        "role": "future_train",
+        "target_decoded": false
+      },
+      {
+        "case_id": "blind_family_02_n20_h26",
+        "role": "future_train",
+        "target_decoded": false
+      },
+      {
+        "case_id": "blind_family_01_n12_h26",
+        "role": "future_train",
+        "target_decoded": true
+      },
+      {
+        "case_id": "blind_family_01_n16_h22",
+        "role": "future_train",
+        "target_decoded": true
+      },
+      {
+        "case_id": "blind_family_01_n16_h26",
+        "role": "future_train",
+        "target_decoded": true
+      },
+      {
+        "case_id": "blind_family_01_n16_h30",
+        "role": "future_train",
+        "target_decoded": true
+      },
+      {
+        "case_id": "blind_family_01_n20_h26",
+        "role": "future_train",
+        "target_decoded": true
+      },
+      {
+        "case_id": "blind_family_02_n12_h26",
+        "role": "future_train",
+        "target_decoded": true
+      },
+      {
+        "case_id": "blind_family_02_n16_h22",
+        "role": "future_train",
+        "target_decoded": true
+      },
+      {
+        "case_id": "blind_family_02_n16_h26",
+        "role": "future_train",
+        "target_decoded": true
+      },
+      {
+        "case_id": "blind_family_02_n16_h30",
+        "role": "future_train",
+        "target_decoded": true
+      },
+      {
+        "case_id": "blind_family_02_n20_h26",
+        "role": "future_train",
+        "target_decoded": true
+      }
+    ],
+    "record_count": 20,
+    "test_target_access": false,
+    "test_target_decode_count": 0,
+    "train_target_decode_count": 10,
+    "validation_target_decode_count": 0
+  },
+  "new_optimizer_steps": 0,
+  "new_test_evaluations": 0,
+  "new_training_runs": 0,
+  "rows": [
+    {
+      "architecture": "K0",
+      "clip_factor": 0.32616299128553944,
+      "clipping_status": "CLIPPED",
+      "finite_forward_backward": true,
+      "forward_backward_seconds": 0.06576175009831786,
+      "initial_scaled_loss": 0.9979403984704369,
+      "major_module_gradient_gate_PASS": true,
+      "major_modules": [
+        "encoder",
+        "coefficient_head"
+      ],
+      "modules": {
+        "coefficient_head": {
+          "epsilon_dominated_fraction": 0.0,
+          "finite_nonzero_gradient_fraction": 1.0,
+          "gradient_L2": 0.9999385254563431,
+          "gradient_Linf": 0.47375602658289556,
+          "hypothetical_sqrt_v_mean": 0.00437182695261952,
+          "parameter_L2": 0.005916327331104726,
+          "parameter_count": 33,
+          "predicted_effective_update_L2": 0.00011489125049020054,
+          "update_to_parameter_ratio": 0.01941935326772183,
+          "weight_decay_dominated_fraction": 0.0
+        },
+        "encoder": {
+          "epsilon_dominated_fraction": 0.04985119047619048,
+          "finite_nonzero_gradient_fraction": 0.9761904761904762,
+          "gradient_L2": 0.011088070535238604,
+          "gradient_Linf": 0.0020300376220924324,
+          "hypothetical_sqrt_v_mean": 3.7710434618882843e-06,
+          "parameter_L2": 9.231441668959823,
+          "parameter_count": 2688,
+          "predicted_effective_update_L2": 0.0010119067207283265,
+          "update_to_parameter_ratio": 0.00010961524288571341,
+          "weight_decay_dominated_fraction": 0.0
+        }
+      },
+      "parameter_hash_after": "sha256:6eaf78983de2b1833e5d5f94bef368dadc9e86622ebbb22c108f6bd135422777",
+      "parameter_hash_before": "sha256:6eaf78983de2b1833e5d5f94bef368dadc9e86622ebbb22c108f6bd135422777",
+      "parameter_hash_unchanged": true,
+      "parameter_norm": 9.231443564813512,
+      "parameter_weighted_epsilon_dominated_fraction": 0.04924660051451672,
+      "parameter_weighted_nonzero_gradient_fraction": 0.9764792355751561,
+      "parameter_weighted_weight_decay_dominated_fraction": 0.0,
+      "predicted_effective_update_norm": 0.0010184081749938763,
+      "readiness_A_finite": true,
+      "readiness_B_loss_range_if_K1_K2": true,
+      "readiness_C_epsilon_if_K1_K2": true,
+      "readiness_D_zero_weight_decay_if_K1_K2": true,
+      "readiness_E_major_module_gradient_if_K1_K2": true,
+      "run_id": "K0_seed20261211",
+      "scaled_target_RMS_per_graph": [
+        1.6045639221037844,
+        1.322893429747587,
+        0.9456304831408101,
+        0.9456304831408101,
+        0.6062647817192405,
+        1.1731333999032214,
+        1.001775192623403,
+        0.6880482813470242,
+        0.6880482813470242,
+        0.4389990901094534
+      ],
+      "seed": 20261211,
+      "status": "PASS",
+      "total_gradient_norm_postclip": 1.0,
+      "total_gradient_norm_preclip": 3.065951768649773,
+      "update_to_parameter_ratio": 0.00011031949313708984
+    },
+    {
+      "architecture": "K0",
+      "clip_factor": 0.25671721867620656,
+      "clipping_status": "CLIPPED",
+      "finite_forward_backward": true,
+      "forward_backward_seconds": 0.03171933407429606,
+      "initial_scaled_loss": 0.9941846923308149,
+      "major_module_gradient_gate_PASS": true,
+      "major_modules": [
+        "encoder",
+        "coefficient_head"
+      ],
+      "modules": {
+        "coefficient_head": {
+          "epsilon_dominated_fraction": 0.0,
+          "finite_nonzero_gradient_fraction": 1.0,
+          "gradient_L2": 0.9999800590868042,
+          "gradient_Linf": 0.41337105268840885,
+          "hypothetical_sqrt_v_mean": 0.004213395471585479,
+          "parameter_L2": 0.0047481166773965765,
+          "parameter_count": 33,
+          "predicted_effective_update_L2": 0.00011489125201717272,
+          "update_to_parameter_ratio": 0.024197225936783077,
+          "weight_decay_dominated_fraction": 0.0
+        },
+        "encoder": {
+          "epsilon_dominated_fraction": 0.05133928571428571,
+          "finite_nonzero_gradient_fraction": 0.9761904761904762,
+          "gradient_L2": 0.006315174483061553,
+          "gradient_Linf": 0.0015341750576408858,
+          "hypothetical_sqrt_v_mean": 2.1768082828531166e-06,
+          "parameter_L2": 9.293020183364042,
+          "parameter_count": 2688,
+          "predicted_effective_update_L2": 0.0010118693468241227,
+          "update_to_parameter_ratio": 0.0001088848756226234,
+          "weight_decay_dominated_fraction": 0.0
+        }
+      },
+      "parameter_hash_after": "sha256:e1aee209cb36e6d2a94c58a2cc4970f3bbbe1012236eaa0155d7a49ded6eb240",
+      "parameter_hash_before": "sha256:e1aee209cb36e6d2a94c58a2cc4970f3bbbe1012236eaa0155d7a49ded6eb240",
+      "parameter_hash_unchanged": true,
+      "parameter_norm": 9.293021396350245,
+      "parameter_weighted_epsilon_dominated_fraction": 0.050716648291069456,
+      "parameter_weighted_nonzero_gradient_fraction": 0.9764792355751561,
+      "parameter_weighted_weight_decay_dominated_fraction": 0.0,
+      "predicted_effective_update_norm": 0.0010183710398633447,
+      "readiness_A_finite": true,
+      "readiness_B_loss_range_if_K1_K2": true,
+      "readiness_C_epsilon_if_K1_K2": true,
+      "readiness_D_zero_weight_decay_if_K1_K2": true,
+      "readiness_E_major_module_gradient_if_K1_K2": true,
+      "run_id": "K0_seed20261212",
+      "scaled_target_RMS_per_graph": [
+        1.6045639221037844,
+        1.322893429747587,
+        0.9456304831408101,
+        0.9456304831408101,
+        0.6062647817192405,
+        1.1731333999032214,
+        1.001775192623403,
+        0.6880482813470242,
+        0.6880482813470242,
+        0.4389990901094534
+      ],
+      "seed": 20261212,
+      "status": "PASS",
+      "total_gradient_norm_postclip": 1.0,
+      "total_gradient_norm_preclip": 3.8953366866337253,
+      "update_to_parameter_ratio": 0.00010958449318359487
+    },
+    {
+      "architecture": "K0",
+      "clip_factor": 0.25610236685548127,
+      "clipping_status": "CLIPPED",
+      "finite_forward_backward": true,
+      "forward_backward_seconds": 0.029367499984800816,
+      "initial_scaled_loss": 1.0029330020620582,
+      "major_module_gradient_gate_PASS": true,
+      "major_modules": [
+        "encoder",
+        "coefficient_head"
+      ],
+      "modules": {
+        "coefficient_head": {
+          "epsilon_dominated_fraction": 0.0,
+          "finite_nonzero_gradient_fraction": 1.0,
+          "gradient_L2": 0.9999450825326727,
+          "gradient_Linf": 0.4852234967500209,
+          "hypothetical_sqrt_v_mean": 0.004310705286850383,
+          "parameter_L2": 0.005284817289959665,
+          "parameter_count": 33,
+          "predicted_effective_update_L2": 0.00011489125195123651,
+          "update_to_parameter_ratio": 0.0217398720991759,
+          "weight_decay_dominated_fraction": 0.0
+        },
+        "encoder": {
+          "epsilon_dominated_fraction": 0.04985119047619048,
+          "finite_nonzero_gradient_fraction": 0.9761904761904762,
+          "gradient_L2": 0.010480072458076658,
+          "gradient_Linf": 0.0023039256416739194,
+          "hypothetical_sqrt_v_mean": 3.582469298955835e-06,
+          "parameter_L2": 9.139099690897767,
+          "parameter_count": 2688,
+          "predicted_effective_update_L2": 0.0010119016580555553,
+          "update_to_parameter_ratio": 0.00011072224751671928,
+          "weight_decay_dominated_fraction": 0.0
+        }
+      },
+      "parameter_hash_after": "sha256:24a62b54861a31be923ecf0e32b15fcfa1a67ee4dc3f7278df83205e1c5ba702",
+      "parameter_hash_before": "sha256:24a62b54861a31be923ecf0e32b15fcfa1a67ee4dc3f7278df83205e1c5ba702",
+      "parameter_hash_unchanged": true,
+      "parameter_norm": 9.139101218908863,
+      "parameter_weighted_epsilon_dominated_fraction": 0.04924660051451672,
+      "parameter_weighted_nonzero_gradient_fraction": 0.9764792355751561,
+      "parameter_weighted_weight_decay_dominated_fraction": 0.0,
+      "predicted_effective_update_norm": 0.0010184031448058795,
+      "readiness_A_finite": true,
+      "readiness_B_loss_range_if_K1_K2": true,
+      "readiness_C_epsilon_if_K1_K2": true,
+      "readiness_D_zero_weight_decay_if_K1_K2": true,
+      "readiness_E_major_module_gradient_if_K1_K2": true,
+      "run_id": "K0_seed20261213",
+      "scaled_target_RMS_per_graph": [
+        1.6045639221037844,
+        1.322893429747587,
+        0.9456304831408101,
+        0.9456304831408101,
+        0.6062647817192405,
+        1.1731333999032214,
+        1.001775192623403,
+        0.6880482813470242,
+        0.6880482813470242,
+        0.4389990901094534
+      ],
+      "seed": 20261213,
+      "status": "PASS",
+      "total_gradient_norm_postclip": 1.0,
+      "total_gradient_norm_preclip": 3.904688630091032,
+      "update_to_parameter_ratio": 0.00011143362136079602
+    },
+    {
+      "architecture": "K1",
+      "clip_factor": 0.08795524571598447,
+      "clipping_status": "CLIPPED",
+      "finite_forward_backward": true,
+      "forward_backward_seconds": 0.031863249954767525,
+      "initial_scaled_loss": 1.0099596626297098,
+      "major_module_gradient_gate_PASS": true,
+      "major_modules": [
+        "encoder",
+        "coefficient_head"
+      ],
+      "modules": {
+        "coefficient_head": {
+          "epsilon_dominated_fraction": 0.0,
+          "finite_nonzero_gradient_fraction": 1.0,
+          "gradient_L2": 0.9999608800538817,
+          "gradient_Linf": 0.44314792650968365,
+          "hypothetical_sqrt_v_mean": 0.0029902769578370736,
+          "parameter_L2": 0.008023417517248856,
+          "parameter_count": 66,
+          "predicted_effective_update_L2": 0.00016248076323734776,
+          "update_to_parameter_ratio": 0.02025081742138488,
+          "weight_decay_dominated_fraction": 0.0
+        },
+        "encoder": {
+          "epsilon_dominated_fraction": 0.05022321428571429,
+          "finite_nonzero_gradient_fraction": 0.9761904761904762,
+          "gradient_L2": 0.00884524515578957,
+          "gradient_Linf": 0.001180360480559186,
+          "hypothetical_sqrt_v_mean": 3.5001664750423216e-06,
+          "parameter_L2": 9.231441668959823,
+          "parameter_count": 2688,
+          "predicted_effective_update_L2": 0.001011867864147485,
+          "update_to_parameter_ratio": 0.00010961103372941529,
+          "weight_decay_dominated_fraction": 0.0
+        }
+      },
+      "parameter_hash_after": "sha256:85f72d5f9bc729c79ad3680d7e196e4cd3b70efc618cc3e59e27f042861f7181",
+      "parameter_hash_before": "sha256:85f72d5f9bc729c79ad3680d7e196e4cd3b70efc618cc3e59e27f042861f7181",
+      "parameter_hash_unchanged": true,
+      "parameter_norm": 9.231445155696717,
+      "parameter_weighted_epsilon_dominated_fraction": 0.049019607843137254,
+      "parameter_weighted_nonzero_gradient_fraction": 0.9767610748002905,
+      "parameter_weighted_weight_decay_dominated_fraction": 0.0,
+      "predicted_effective_update_norm": 0.0010248300214750667,
+      "readiness_A_finite": true,
+      "readiness_B_loss_range_if_K1_K2": true,
+      "readiness_C_epsilon_if_K1_K2": true,
+      "readiness_D_zero_weight_decay_if_K1_K2": true,
+      "readiness_E_major_module_gradient_if_K1_K2": true,
+      "run_id": "K1_seed20261211",
+      "scaled_target_RMS_per_graph": [
+        1.6045639221037844,
+        1.322893429747587,
+        0.9456304831408101,
+        0.9456304831408101,
+        0.6062647817192405,
+        1.1731333999032214,
+        1.001775192623403,
+        0.6880482813470242,
+        0.6880482813470242,
+        0.4389990901094534
+      ],
+      "seed": 20261211,
+      "status": "PASS",
+      "total_gradient_norm_postclip": 0.9999999999999999,
+      "total_gradient_norm_preclip": 11.36941852483809,
+      "update_to_parameter_ratio": 0.0001110151232218116
+    },
+    {
+      "architecture": "K1",
+      "clip_factor": 0.11795599356724744,
+      "clipping_status": "CLIPPED",
+      "finite_forward_backward": true,
+      "forward_backward_seconds": 0.028466583928093314,
+      "initial_scaled_loss": 0.9979128117105569,
+      "major_module_gradient_gate_PASS": true,
+      "major_modules": [
+        "encoder",
+        "coefficient_head"
+      ],
+      "modules": {
+        "coefficient_head": {
+          "epsilon_dominated_fraction": 0.0,
+          "finite_nonzero_gradient_fraction": 1.0,
+          "gradient_L2": 0.9999567640911493,
+          "gradient_Linf": 0.38492177779628195,
+          "hypothetical_sqrt_v_mean": 0.0030860695474253185,
+          "parameter_L2": 0.0073210819414753475,
+          "parameter_count": 66,
+          "predicted_effective_update_L2": 0.00016248076687740498,
+          "update_to_parameter_ratio": 0.02219354573221206,
+          "weight_decay_dominated_fraction": 0.0
+        },
+        "encoder": {
+          "epsilon_dominated_fraction": 0.050967261904761904,
+          "finite_nonzero_gradient_fraction": 0.9761904761904762,
+          "gradient_L2": 0.009298921892215694,
+          "gradient_Linf": 0.0018073897058208442,
+          "hypothetical_sqrt_v_mean": 3.6501260769680114e-06,
+          "parameter_L2": 9.293020183364042,
+          "parameter_count": 2688,
+          "predicted_effective_update_L2": 0.0010117517160730704,
+          "update_to_parameter_ratio": 0.00010887221765473661,
+          "weight_decay_dominated_fraction": 0.0
+        }
+      },
+      "parameter_hash_after": "sha256:74fe26fd6bb142a86ccc162296e8671d2491f5e829f0e24c4562878453d97f29",
+      "parameter_hash_before": "sha256:74fe26fd6bb142a86ccc162296e8671d2491f5e829f0e24c4562878453d97f29",
+      "parameter_hash_unchanged": true,
+      "parameter_norm": 9.293023067153781,
+      "parameter_weighted_epsilon_dominated_fraction": 0.04974582425562818,
+      "parameter_weighted_nonzero_gradient_fraction": 0.9767610748002905,
+      "parameter_weighted_weight_decay_dominated_fraction": 0.0,
+      "predicted_effective_update_norm": 0.0010247153431962813,
+      "readiness_A_finite": true,
+      "readiness_B_loss_range_if_K1_K2": true,
+      "readiness_C_epsilon_if_K1_K2": true,
+      "readiness_D_zero_weight_decay_if_K1_K2": true,
+      "readiness_E_major_module_gradient_if_K1_K2": true,
+      "run_id": "K1_seed20261212",
+      "scaled_target_RMS_per_graph": [
+        1.6045639221037844,
+        1.322893429747587,
+        0.9456304831408101,
+        0.9456304831408101,
+        0.6062647817192405,
+        1.1731333999032214,
+        1.001775192623403,
+        0.6880482813470242,
+        0.6880482813470242,
+        0.4389990901094534
+      ],
+      "seed": 20261212,
+      "status": "PASS",
+      "total_gradient_norm_postclip": 1.0,
+      "total_gradient_norm_preclip": 8.477737923761321,
+      "update_to_parameter_ratio": 0.00011026716879872395
+    },
+    {
+      "architecture": "K1",
+      "clip_factor": 0.08373135646410546,
+      "clipping_status": "CLIPPED",
+      "finite_forward_backward": true,
+      "forward_backward_seconds": 0.03202445793431252,
+      "initial_scaled_loss": 1.0100042916775174,
+      "major_module_gradient_gate_PASS": true,
+      "major_modules": [
+        "encoder",
+        "coefficient_head"
+      ],
+      "modules": {
+        "coefficient_head": {
+          "epsilon_dominated_fraction": 0.0,
+          "finite_nonzero_gradient_fraction": 1.0,
+          "gradient_L2": 0.9999603663461836,
+          "gradient_Linf": 0.3777266313030507,
+          "hypothetical_sqrt_v_mean": 0.0028407920385397968,
+          "parameter_L2": 0.007356114788799926,
+          "parameter_count": 66,
+          "predicted_effective_update_L2": 0.00016248076627730347,
+          "update_to_parameter_ratio": 0.022087850848207132,
+          "weight_decay_dominated_fraction": 0.0
+        },
+        "encoder": {
+          "epsilon_dominated_fraction": 0.04985119047619048,
+          "finite_nonzero_gradient_fraction": 0.9761904761904762,
+          "gradient_L2": 0.00890313073061775,
+          "gradient_Linf": 0.0015777009687635093,
+          "hypothetical_sqrt_v_mean": 3.3520201490734615e-06,
+          "parameter_L2": 9.139099690897767,
+          "parameter_count": 2688,
+          "predicted_effective_update_L2": 0.0010118729252200007,
+          "update_to_parameter_ratio": 0.00011071910357075891,
+          "weight_decay_dominated_fraction": 0.0
+        }
+      },
+      "parameter_hash_after": "sha256:49f6b3b943b811d9e5c16b808246b1114a20776c34ab40451149582e7a9463ec",
+      "parameter_hash_before": "sha256:49f6b3b943b811d9e5c16b808246b1114a20776c34ab40451149582e7a9463ec",
+      "parameter_hash_unchanged": true,
+      "parameter_norm": 9.139102651387196,
+      "parameter_weighted_epsilon_dominated_fraction": 0.048656499636891795,
+      "parameter_weighted_nonzero_gradient_fraction": 0.9767610748002905,
+      "parameter_weighted_weight_decay_dominated_fraction": 0.0,
+      "predicted_effective_update_norm": 0.0010248350190168861,
+      "readiness_A_finite": true,
+      "readiness_B_loss_range_if_K1_K2": true,
+      "readiness_C_epsilon_if_K1_K2": true,
+      "readiness_D_zero_weight_decay_if_K1_K2": true,
+      "readiness_E_major_module_gradient_if_K1_K2": true,
+      "run_id": "K1_seed20261213",
+      "scaled_target_RMS_per_graph": [
+        1.6045639221037844,
+        1.322893429747587,
+        0.9456304831408101,
+        0.9456304831408101,
+        0.6062647817192405,
+        1.1731333999032214,
+        1.001775192623403,
+        0.6880482813470242,
+        0.6880482813470242,
+        0.4389990901094534
+      ],
+      "seed": 20261213,
+      "status": "PASS",
+      "total_gradient_norm_postclip": 1.0,
+      "total_gradient_norm_preclip": 11.942957121788503,
+      "update_to_parameter_ratio": 0.00011213737913987973
+    },
+    {
+      "architecture": "K2",
+      "clip_factor": 0.1363944262229405,
+      "clipping_status": "CLIPPED",
+      "finite_forward_backward": true,
+      "forward_backward_seconds": 0.18137012503575534,
+      "initial_scaled_loss": 1.0014042443587319,
+      "major_module_gradient_gate_PASS": true,
+      "major_modules": [
+        "node_encoder",
+        "interaction_blocks",
+        "pair_decoder",
+        "coefficient_head"
+      ],
+      "modules": {
+        "coefficient_head": {
+          "epsilon_dominated_fraction": 0.0,
+          "finite_nonzero_gradient_fraction": 1.0,
+          "gradient_L2": 0.9997885580426709,
+          "gradient_Linf": 0.41229699914004264,
+          "hypothetical_sqrt_v_mean": 0.0028030238241330916,
+          "parameter_L2": 0.008449008132767662,
+          "parameter_count": 66,
+          "predicted_effective_update_L2": 0.00016248076339796068,
+          "update_to_parameter_ratio": 0.019230750029440018,
+          "weight_decay_dominated_fraction": 0.0
+        },
+        "interaction_blocks": {
+          "epsilon_dominated_fraction": 0.0968210361067504,
+          "finite_nonzero_gradient_fraction": 0.9899529042386185,
+          "gradient_L2": 0.014199712155514122,
+          "gradient_Linf": 0.0011242991895620029,
+          "hypothetical_sqrt_v_mean": 1.3921971538256207e-06,
+          "parameter_L2": 24.629628374404973,
+          "parameter_count": 25480,
+          "predicted_effective_update_L2": 0.0031420120547876857,
+          "update_to_parameter_ratio": 0.00012757042075603762,
+          "weight_decay_dominated_fraction": 0.0
+        },
+        "node_encoder": {
+          "epsilon_dominated_fraction": 0.0008680555555555555,
+          "finite_nonzero_gradient_fraction": 1.0,
+          "gradient_L2": 0.009709445202699793,
+          "gradient_Linf": 0.0011211878418396217,
+          "hypothetical_sqrt_v_mean": 4.198575665462579e-06,
+          "parameter_L2": 8.450687740831444,
+          "parameter_count": 2304,
+          "predicted_effective_update_L2": 0.0009599833369273934,
+          "update_to_parameter_ratio": 0.00011359824979557732,
+          "weight_decay_dominated_fraction": 0.0
+        },
+        "pair_decoder": {
+          "epsilon_dominated_fraction": 0.02934966216216216,
+          "finite_nonzero_gradient_fraction": 0.9864864864864865,
+          "gradient_L2": 0.011266501476208456,
+          "gradient_Linf": 0.0015929971363256978,
+          "hypothetical_sqrt_v_mean": 2.7778843281073547e-06,
+          "parameter_L2": 10.498735601724903,
+          "parameter_count": 4736,
+          "predicted_effective_update_L2": 0.001357566940911748,
+          "update_to_parameter_ratio": 0.00012930766069475116,
+          "weight_decay_dominated_fraction": 0.0
+        }
+      },
+      "parameter_hash_after": "sha256:7280b2bfda9a40a4a7f51b4cc0bdf88f573176941da5f569493bf8c789a5e31a",
+      "parameter_hash_before": "sha256:7280b2bfda9a40a4a7f51b4cc0bdf88f573176941da5f569493bf8c789a5e31a",
+      "parameter_hash_unchanged": true,
+      "parameter_norm": 28.075901370659462,
+      "parameter_weighted_epsilon_dominated_fraction": 0.08003437058859633,
+      "parameter_weighted_nonzero_gradient_fraction": 0.9901798318296201,
+      "parameter_weighted_weight_decay_dominated_fraction": 0.0,
+      "predicted_effective_update_norm": 0.0035585384299091486,
+      "readiness_A_finite": true,
+      "readiness_B_loss_range_if_K1_K2": true,
+      "readiness_C_epsilon_if_K1_K2": true,
+      "readiness_D_zero_weight_decay_if_K1_K2": true,
+      "readiness_E_major_module_gradient_if_K1_K2": true,
+      "run_id": "K2_seed20261211",
+      "scaled_target_RMS_per_graph": [
+        1.6045639221037844,
+        1.322893429747587,
+        0.9456304831408101,
+        0.9456304831408101,
+        0.6062647817192405,
+        1.1731333999032214,
+        1.001775192623403,
+        0.6880482813470242,
+        0.6880482813470242,
+        0.4389990901094534
+      ],
+      "seed": 20261211,
+      "status": "PASS",
+      "total_gradient_norm_postclip": 1.0,
+      "total_gradient_norm_preclip": 7.331677896906667,
+      "update_to_parameter_ratio": 0.00012674707689449202
+    },
+    {
+      "architecture": "K2",
+      "clip_factor": 0.3803103776941752,
+      "clipping_status": "CLIPPED",
+      "finite_forward_backward": true,
+      "forward_backward_seconds": 0.17181579093448818,
+      "initial_scaled_loss": 0.9948365900406625,
+      "major_module_gradient_gate_PASS": true,
+      "major_modules": [
+        "node_encoder",
+        "interaction_blocks",
+        "pair_decoder",
+        "coefficient_head"
+      ],
+      "modules": {
+        "coefficient_head": {
+          "epsilon_dominated_fraction": 0.0,
+          "finite_nonzero_gradient_fraction": 1.0,
+          "gradient_L2": 0.999783513931574,
+          "gradient_Linf": 0.3648189936657894,
+          "hypothetical_sqrt_v_mean": 0.003029166290393433,
+          "parameter_L2": 0.008097781385420326,
+          "parameter_count": 66,
+          "predicted_effective_update_L2": 0.00016248076480122143,
+          "update_to_parameter_ratio": 0.02006484950232917,
+          "weight_decay_dominated_fraction": 0.0
+        },
+        "interaction_blocks": {
+          "epsilon_dominated_fraction": 0.06770015698587127,
+          "finite_nonzero_gradient_fraction": 0.9899529042386185,
+          "gradient_L2": 0.014258278293475176,
+          "gradient_Linf": 0.001124290693458514,
+          "hypothetical_sqrt_v_mean": 1.4186285790851864e-06,
+          "parameter_L2": 24.546765243074635,
+          "parameter_count": 25480,
+          "predicted_effective_update_L2": 0.0031498728222420537,
+          "update_to_parameter_ratio": 0.0001283212998148799,
+          "weight_decay_dominated_fraction": 0.0
+        },
+        "node_encoder": {
+          "epsilon_dominated_fraction": 0.0008680555555555555,
+          "finite_nonzero_gradient_fraction": 1.0,
+          "gradient_L2": 0.008669891681285779,
+          "gradient_Linf": 0.0010445005426062775,
+          "hypothetical_sqrt_v_mean": 3.6713994026526476e-06,
+          "parameter_L2": 8.511190859919612,
+          "parameter_count": 2304,
+          "predicted_effective_update_L2": 0.0009599855456642385,
+          "update_to_parameter_ratio": 0.00011279097854390091,
+          "weight_decay_dominated_fraction": 0.0
+        },
+        "pair_decoder": {
+          "epsilon_dominated_fraction": 0.02934966216216216,
+          "finite_nonzero_gradient_fraction": 0.9864864864864865,
+          "gradient_L2": 0.012428183655491469,
+          "gradient_Linf": 0.0018813912852071308,
+          "hypothetical_sqrt_v_mean": 3.1129576996744645e-06,
+          "parameter_L2": 10.442125943044692,
+          "parameter_count": 4736,
+          "predicted_effective_update_L2": 0.001357598622042447,
+          "update_to_parameter_ratio": 0.0001300117073330952,
+          "weight_decay_dominated_fraction": 0.0
+        }
+      },
+      "parameter_hash_after": "sha256:f39fd96844c7e72dd08650fd22a9c7dd7b168d0c98ac164b16566e49943fbcbe",
+      "parameter_hash_before": "sha256:f39fd96844c7e72dd08650fd22a9c7dd7b168d0c98ac164b16566e49943fbcbe",
+      "parameter_hash_unchanged": true,
+      "parameter_norm": 28.00039488180598,
+      "parameter_weighted_epsilon_dominated_fraction": 0.05726385564352789,
+      "parameter_weighted_nonzero_gradient_fraction": 0.9901798318296201,
+      "parameter_weighted_weight_decay_dominated_fraction": 0.0,
+      "predicted_effective_update_norm": 0.0035654936631110833,
+      "readiness_A_finite": true,
+      "readiness_B_loss_range_if_K1_K2": true,
+      "readiness_C_epsilon_if_K1_K2": true,
+      "readiness_D_zero_weight_decay_if_K1_K2": true,
+      "readiness_E_major_module_gradient_if_K1_K2": true,
+      "run_id": "K2_seed20261212",
+      "scaled_target_RMS_per_graph": [
+        1.6045639221037844,
+        1.322893429747587,
+        0.9456304831408101,
+        0.9456304831408101,
+        0.6062647817192405,
+        1.1731333999032214,
+        1.001775192623403,
+        0.6880482813470242,
+        0.6880482813470242,
+        0.4389990901094534
+      ],
+      "seed": 20261212,
+      "status": "PASS",
+      "total_gradient_norm_postclip": 1.0,
+      "total_gradient_norm_preclip": 2.6294312715393353,
+      "update_to_parameter_ratio": 0.00012733726356937416
+    },
+    {
+      "architecture": "K2",
+      "clip_factor": 0.13777946410971614,
+      "clipping_status": "CLIPPED",
+      "finite_forward_backward": true,
+      "forward_backward_seconds": 0.18122483289334923,
+      "initial_scaled_loss": 0.9995259407521576,
+      "major_module_gradient_gate_PASS": true,
+      "major_modules": [
+        "node_encoder",
+        "interaction_blocks",
+        "pair_decoder",
+        "coefficient_head"
+      ],
+      "modules": {
+        "coefficient_head": {
+          "epsilon_dominated_fraction": 0.0,
+          "finite_nonzero_gradient_fraction": 1.0,
+          "gradient_L2": 0.9997534614566609,
+          "gradient_Linf": 0.43770976415285845,
+          "hypothetical_sqrt_v_mean": 0.00270451728502158,
+          "parameter_L2": 0.00655522477253651,
+          "parameter_count": 66,
+          "predicted_effective_update_L2": 0.00016248076663741076,
+          "update_to_parameter_ratio": 0.024786452375841216,
+          "weight_decay_dominated_fraction": 0.0
+        },
+        "interaction_blocks": {
+          "epsilon_dominated_fraction": 0.10341444270015698,
+          "finite_nonzero_gradient_fraction": 0.9899529042386185,
+          "gradient_L2": 0.015959056716403554,
+          "gradient_Linf": 0.0013440080154200416,
+          "hypothetical_sqrt_v_mean": 1.5567162244595904e-06,
+          "parameter_L2": 24.498662437130015,
+          "parameter_count": 25480,
+          "predicted_effective_update_L2": 0.003142201327388709,
+          "update_to_parameter_ratio": 0.00012826011768815625,
+          "weight_decay_dominated_fraction": 0.0
+        },
+        "node_encoder": {
+          "epsilon_dominated_fraction": 0.0008680555555555555,
+          "finite_nonzero_gradient_fraction": 1.0,
+          "gradient_L2": 0.011314835787699616,
+          "gradient_Linf": 0.0015856443338227223,
+          "hypothetical_sqrt_v_mean": 4.517150032707403e-06,
+          "parameter_L2": 8.369840962618346,
+          "parameter_count": 2304,
+          "predicted_effective_update_L2": 0.0009599674564977941,
+          "update_to_parameter_ratio": 0.00011469363166937481,
+          "weight_decay_dominated_fraction": 0.0
+        },
+        "pair_decoder": {
+          "epsilon_dominated_fraction": 0.028505067567567568,
+          "finite_nonzero_gradient_fraction": 0.9864864864864865,
+          "gradient_L2": 0.010502347606371433,
+          "gradient_Linf": 0.0011822534027262357,
+          "hypothetical_sqrt_v_mean": 2.654754429163848e-06,
+          "parameter_L2": 10.503258812865841,
+          "parameter_count": 4736,
+          "predicted_effective_update_L2": 0.0013576165890124014,
+          "update_to_parameter_ratio": 0.00012925670148672384,
+          "weight_decay_dominated_fraction": 0.0
+        }
+      },
+      "parameter_hash_after": "sha256:ae799b991421a4cc8c5ef1d72f65e8c7fe1c22d413a1fefcff40234994d40fbd",
+      "parameter_hash_before": "sha256:ae799b991421a4cc8c5ef1d72f65e8c7fe1c22d413a1fefcff40234994d40fbd",
+      "parameter_hash_unchanged": true,
+      "parameter_norm": 27.938453565095276,
+      "parameter_weighted_epsilon_dominated_fraction": 0.08506720677591603,
+      "parameter_weighted_nonzero_gradient_fraction": 0.9901798318296201,
+      "parameter_weighted_weight_decay_dominated_fraction": 0.0,
+      "predicted_effective_update_norm": 0.0035587202055889344,
+      "readiness_A_finite": true,
+      "readiness_B_loss_range_if_K1_K2": true,
+      "readiness_C_epsilon_if_K1_K2": true,
+      "readiness_D_zero_weight_decay_if_K1_K2": true,
+      "readiness_E_major_module_gradient_if_K1_K2": true,
+      "run_id": "K2_seed20261213",
+      "scaled_target_RMS_per_graph": [
+        1.6045639221037844,
+        1.322893429747587,
+        0.9456304831408101,
+        0.9456304831408101,
+        0.6062647817192405,
+        1.1731333999032214,
+        1.001775192623403,
+        0.6880482813470242,
+        0.6880482813470242,
+        0.4389990901094534
+      ],
+      "seed": 20261213,
+      "status": "PASS",
+      "total_gradient_norm_postclip": 1.0,
+      "total_gradient_norm_preclip": 7.257975682092093,
+      "update_to_parameter_ratio": 0.00012737713622184866
+    }
+  ],
+  "status": "PASS",
+  "train_graph_count": 10
+}

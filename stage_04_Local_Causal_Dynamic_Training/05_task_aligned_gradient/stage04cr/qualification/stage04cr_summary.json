@@ -1,0 +1,39 @@
+{
+  "D0_all_contexts_already_resolved": false,
+  "access_pass": true,
+  "authorized_next_branch": "NONE",
+  "counters": {
+    "new_optimizer_instances": 0,
+    "new_optimizer_steps": 0,
+    "new_parameter_updates": 0,
+    "new_performance_evaluations": 0,
+    "new_train_state_array_decode_count": 24,
+    "new_training_runs": 0,
+    "sealed_formula_decode_count": 0,
+    "sealed_state_decode_count": 0,
+    "sealed_target_decode_count": 0,
+    "validation_target_decode_count": 0
+  },
+  "dead_parameterization_fraction": 0.0,
+  "direction_projection_fraction": 0.25925925925925924,
+  "factorization_rows": 864,
+  "final_status": "TASK_GRADIENT_FAILURE_MIXED_OR_UNRESOLVED",
+  "formal_contexts": 216,
+  "full_gradient_group_rows": 864,
+  "full_gradient_repeat_failures": 0,
+  "historical_rows": 864,
+  "linear_probe_rows": 864,
+  "loss_factorization_all_pass": true,
+  "median_scaled_projection": 0.654647262011381,
+  "network_chain_finite": true,
+  "network_chain_rows": 864,
+  "parameter_hash_failures": 0,
+  "reason_counts": {
+    "GROUP_DIRECTION_PROJECTION_DILUTION": 672,
+    "TASK_RESIDUAL_TOO_SMALL": 1316,
+    "UNRESOLVED": 604
+  },
+  "resource_pass": true,
+  "stage04c_status_preserved": "TASK_ALIGNED_PARAMETER_GRADIENT_NOT_QUALIFIED",
+  "stage04d_authorization": false
+}

@@ -1,0 +1,251 @@
+{
+  "authorization": "Stage 03D:DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED",
+  "contract": {
+    "immutable": true,
+    "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/freeze/stage03dr_attribution_contract_v0_1.yaml",
+    "sha256": "sha256:63ef93fe7af7c10ffb6a6e1d944003b5e3e85818f98bac6f6b1b9333a479c2d9"
+  },
+  "evidence": [
+    {
+      "byte_count": 178819,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_coupled_deformation_n12_dop853.npz",
+      "sha256": "sha256:ff209df03aaa182939bceb49a490d7837fbd7384bff57356bc1179764bb21fc7"
+    },
+    {
+      "byte_count": 167772,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_coupled_deformation_n12_exact.npz",
+      "sha256": "sha256:b096f5f4cae0f0cdfda48fc1e3bcb744c3a528504602ca7391852ef3c1189a85"
+    },
+    {
+      "byte_count": 359122,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_coupled_deformation_n16_dop853.npz",
+      "sha256": "sha256:f03963297e95d1bbf380cae33301ca79a8b34ad211435145dd60bf928dbbbc25"
+    },
+    {
+      "byte_count": 316120,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_coupled_deformation_n16_exact.npz",
+      "sha256": "sha256:e2ddc65a6957134f67c4bb0fa7c89a60e1163f5c227eaa52f553ba4e88981ac3"
+    },
+    {
+      "byte_count": 73585,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_coupled_deformation_n8_dop853.npz",
+      "sha256": "sha256:039ecf15c16309e5f785df89ead333260e7f92cc6e8df0b6cb8ed1f0d319f256"
+    },
+    {
+      "byte_count": 71972,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_coupled_deformation_n8_exact.npz",
+      "sha256": "sha256:caed1433edce26ea67cba63c0e249e0f637259e7a15ebf0ed8ed121bce893290"
+    },
+    {
+      "byte_count": 115683,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_lagrangian_compression_n12_dop853.npz",
+      "sha256": "sha256:1b90268b60f63240d8b9eae14f7f344ce5f82e49a8054f1dea168c54f291213f"
+    },
+    {
+      "byte_count": 125084,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_lagrangian_compression_n12_exact.npz",
+      "sha256": "sha256:c2b1ec9b0901a29ce0c737ec045c5ce661366b8c175abe11cb0a02c4aaf30018"
+    },
+    {
+      "byte_count": 238890,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_lagrangian_compression_n16_dop853.npz",
+      "sha256": "sha256:b662bc7dfa4ddc5dcb86d461503b3f3c3e6720b8058aaa134de6c8feed93a2e9"
+    },
+    {
+      "byte_count": 251592,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_lagrangian_compression_n16_exact.npz",
+      "sha256": "sha256:f61ee6e07213bd4e6f8a9ac4d5d54d46ac9e05a985614ce6102699d8ea553f90"
+    },
+    {
+      "byte_count": 53539,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_lagrangian_compression_n8_dop853.npz",
+      "sha256": "sha256:c21921e3cdfd1955b8a6ece18fafb2a11db071d4d2a2cb4270ff9788018c9af7"
+    },
+    {
+      "byte_count": 58505,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr1_lagrangian_compression_n8_exact.npz",
+      "sha256": "sha256:9f91336c6708227e34d8522bb746c56d43cbfcb0fbd399b9cdf8e2ce9c5df74a"
+    },
+    {
+      "byte_count": 182456,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr3_oblique_shear_a_n12_exact.npz",
+      "sha256": "sha256:d4e6f9bade9feebf5743e01743da09dc59e0fe42f11e7a1442d233635a7cde58"
+    },
+    {
+      "byte_count": 331357,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr3_oblique_shear_a_n16_exact.npz",
+      "sha256": "sha256:bec5161f8d7486694e81d81c79ee2e36c5960b96c96c7cfb9f60c4c5d17f8e22"
+    },
+    {
+      "byte_count": 78826,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr3_oblique_shear_a_n8_exact.npz",
+      "sha256": "sha256:1fee390b691fb63a37cb5f61f2c33b178522c6d709dbaff87de2f4d061e6f0fb"
+    },
+    {
+      "byte_count": 182781,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr3_oblique_shear_b_n12_exact.npz",
+      "sha256": "sha256:312b562dff4f3ffb7c7b2d898e6a80ef3cca9b671f9a820abc0381c1b7091a91"
+    },
+    {
+      "byte_count": 334046,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr3_oblique_shear_b_n16_exact.npz",
+      "sha256": "sha256:ff5e8f90f363dc246df07fbfce0c5a60e6bf5dd6d9ac003185d1926043418871"
+    },
+    {
+      "byte_count": 79458,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/04_reference_and_trajectory/stage03b/trajectory_records/dr3_oblique_shear_b_n8_exact.npz",
+      "sha256": "sha256:52bace3daae66e9c5242c594c6cb759b05143154b9b037fee6f83002cd8d64de"
+    },
+    {
+      "byte_count": 1255,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/arm_d1/model.py",
+      "sha256": "sha256:c1372a07737ebb56792aa73c327b81423ef87068d0136627b1507c813ee8b3a1"
+    },
+    {
+      "byte_count": 1668,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/arm_d2/model.py",
+      "sha256": "sha256:a5df1be7b861bffe6c3de7467de36e1a21229cb0c75391f148cdfd5edd0d1d72"
+    },
+    {
+      "byte_count": 2663,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/arm_d3/model.py",
+      "sha256": "sha256:1fe69939c5ed0ab5c12955b2c037c0f046ac853d0b40f19b93b01d78127dab83"
+    },
+    {
+      "byte_count": 9978,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/contracts/dynamic_solver_implementation_contract_v0_1.yaml",
+      "sha256": "sha256:0872955dc49c781c48c98a13b7f367d85d70869461a0d06e163c858b20c30e87"
+    },
+    {
+      "byte_count": 3383,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/graph_rebuild/graph.py",
+      "sha256": "sha256:d29fd86979150f98eb2e5927d1688b1df920181030aa275a5f244fb1f19c8c4f"
+    },
+    {
+      "byte_count": 3179,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/pair_force_head/head.py",
+      "sha256": "sha256:77831de4312ce1ca1406e7d7f41e6c19c90e38a6259a9d053037ea398c77139a"
+    },
+    {
+      "byte_count": 5016,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/reference_loader/loader.py",
+      "sha256": "sha256:aa4abce28939fe6bae7b0160e85aa919ad50f3af150e4e2b145af900bc99a156"
+    },
+    {
+      "byte_count": 2829,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/rk2_core/independent_functional.py",
+      "sha256": "sha256:eacbd2d9695dbfd793dcbcee607e94c86e432575d8c4f8db565df8bee3095cf4"
+    },
+    {
+      "byte_count": 12292,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/rk2_core/solver.py",
+      "sha256": "sha256:c6d9dde841e218e66a2e5036b4b8ec2459f9cc38512b990a6a2e7ac8c5e4e788"
+    },
+    {
+      "byte_count": 4191,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/temporal_history/history.py",
+      "sha256": "sha256:60f9e4caa228fe8696ef2ef171da364d3918136711e1e2f37e0c2bfc7823858c"
+    },
+    {
+      "byte_count": 1977,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/tokenization/tokens.py",
+      "sha256": "sha256:6a0f2ad0a011c7d39f90668aa1b4c73d124f90eaf6871a8bb9a57756ee8dea56"
+    },
+    {
+      "byte_count": 400642,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/conservation_over_time/conservation_results.json",
+      "sha256": "sha256:ac38e56168ea68c47e3e1be8216abb5217f086605dfe311bfe9cdc5e1ff4ffc0"
+    },
+    {
+      "byte_count": 8858,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/contracts/dynamic_multistep_adfd_topology_contract_v0_1.yaml",
+      "sha256": "sha256:a506af65ac124f8edf843e507f70c88566852fdfefb017eea127ddbe227fa692"
+    },
+    {
+      "byte_count": 9403,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/event_jump_audit/event_force_jump_results.json",
+      "sha256": "sha256:c900d639e3db0efe7b468275a48d36d89714212fe9c13fc7d05281f35ab0910e"
+    },
+    {
+      "byte_count": 41777,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/event_side_gradients/event_side_gradient_results.json",
+      "sha256": "sha256:f0293c8f56b83e3c4e69fd64a500c052c600bca0946d19926d17a9b52426ff25"
+    },
+    {
+      "byte_count": 20221,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/history_gradients/reference_prehistory_results.json",
+      "sha256": "sha256:b5be39b2bdd9a796c667da41c23b08eafd545615d811f981db5c91ff13665415"
+    },
+    {
+      "byte_count": 1211,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/qualification/stage03d_qualification_summary.json",
+      "sha256": "sha256:08fb6260b6963daefaf3262c3c7ca54b3ccb7cac6e9b1f7f8ee5deb164ab70e7"
+    },
+    {
+      "byte_count": 42327843,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/results/fixed_topology_adfd_results.json",
+      "sha256": "sha256:bd864c0ce1bd2beaf51d1e7e269a80a6606e88dcf2c3efd550a2b818191ba13b"
+    },
+    {
+      "byte_count": 2657106,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/topology_event_scan/te1_dense_scan_results.json",
+      "sha256": "sha256:cfd79cab48e6c468634802c30a2784a47e84b8bb09499e27f791bdfb2686fe58"
+    },
+    {
+      "byte_count": 6185,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03d/topology_stage_replay/replay_results.json",
+      "sha256": "sha256:29da7801f24b41a4dfc9a8ead876930840dac1a6c15711860c29251208305f3b"
+    },
+    {
+      "byte_count": 2373,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03d_final_report.md",
+      "sha256": "sha256:bb40b3821bae9c0c2817b9f8f6ab3168692945a5d9012d02acc9d43cd14a72e8"
+    },
+    {
+      "byte_count": 1827,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03d_adfd_manifest.json",
+      "sha256": "sha256:80130d9c03c6585e9cc552239797f87e889b7d17b5c05bfbf9e9baa1faac7b44"
+    },
+    {
+      "byte_count": 5522,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03d_final_manifest.json",
+      "sha256": "sha256:c0862a16d0a43e283e80df2edc08cd6123b18f16bdcea6645564ea99146b32f3"
+    },
+    {
+      "byte_count": 14146,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03d_input_freeze_manifest.json",
+      "sha256": "sha256:bc343df68e00e7ba5056208f1ae4197ed7d6d0c14307d7f3994d920a0136c873"
+    },
+    {
+      "byte_count": 1574,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03d_topology_event_manifest.json",
+      "sha256": "sha256:e315d474de0f068afefca9334745249fc735c1d9ff229627855fc3e58cffcf86"
+    }
+  ],
+  "extended_fd_results_observed_before_selection": false,
+  "historical_verdicts": {
+    "Stage_01": "V2_QUALIFICATION_FAIL",
+    "Stage_02_static_route": "TERMINATED",
+    "Stage_03C": "DYNAMIC_RK2_HYBRID_IMPLEMENTATION_VERIFIED",
+    "Stage_03D": "DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED",
+    "Stage_03E_authorization": false
+  },
+  "new_optimizer_steps": 0,
+  "new_training_runs": 0,
+  "pass": true,
+  "reference_prehistory_historical_pass": 0,
+  "reference_prehistory_historical_total": 6,
+  "schema_version": "sph-pio-poc.stage03dr.input-freeze.v1",
+  "selected_row_manifest": {
+    "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/freeze/selected_row_manifest.json",
+    "rows": 60,
+    "sha256": "sha256:adead03cc3d45f5c04153156ef20b7b912e7f117790aa4f487edff4f5af01c8f"
+  },
+  "stage": "Stage 03D-R",
+  "stage03d_failure_matrix": {
+    "failures": 144,
+    "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/failure_matrix/stage03d_complete_360_row_matrix.json",
+    "rows": 360,
+    "sha256": "sha256:a0b925593f3cda97be6826658f308e05635da4dec5e2553dd56bc2aaa39b7991"
+  }
+}

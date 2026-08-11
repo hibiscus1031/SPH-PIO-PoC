@@ -1,0 +1,91 @@
+{
+  "schema": "s1.cross-paper-overlap.v1",
+  "labels": [
+    "PAPER_1_PRIMARY",
+    "PAPER_2_PRIMARY",
+    "SHARED_BACKGROUND_ONLY",
+    "SUPPLEMENT_ONLY",
+    "DUPLICATION_RISK",
+    "CANNOT_REPEAT"
+  ],
+  "rows": [
+    {
+      "item": "equations",
+      "paper1": "SHARED_BACKGROUND_ONLY",
+      "paper2": "PAPER_2_PRIMARY",
+      "rule": "基础方程可简述并交叉引用；不重复完整推导"
+    },
+    {
+      "item": "reference",
+      "paper1": "PAPER_1_PRIMARY",
+      "paper2": "SHARED_BACKGROUND_ONLY",
+      "rule": "Paper2仅引入训练所需摘要"
+    },
+    {
+      "item": "architecture",
+      "paper1": "PAPER_1_PRIMARY",
+      "paper2": "SHARED_BACKGROUND_ONLY",
+      "rule": "结构合同一次作为主贡献"
+    },
+    {
+      "item": "zero correction",
+      "paper1": "PAPER_1_PRIMARY",
+      "paper2": "SUPPLEMENT_ONLY",
+      "rule": "Paper2不得再次作为主创新"
+    },
+    {
+      "item": "AD/FD",
+      "paper1": "PAPER_1_PRIMARY",
+      "paper2": "SHARED_BACKGROUND_ONLY",
+      "rule": "Stage04新task-aligned梯度可属Paper2"
+    },
+    {
+      "item": "topology",
+      "paper1": "PAPER_1_PRIMARY",
+      "paper2": "SUPPLEMENT_ONLY",
+      "rule": "相同TE1结果不可重复"
+    },
+    {
+      "item": "dataset",
+      "paper1": "SUPPLEMENT_ONLY",
+      "paper2": "PAPER_2_PRIMARY",
+      "rule": "Paper1讲资格原则，Paper2讲Stage04训练数据"
+    },
+    {
+      "item": "training",
+      "paper1": "CANNOT_REPEAT",
+      "paper2": "PAPER_2_PRIMARY",
+      "rule": "Paper1明确NOT_EXECUTED"
+    },
+    {
+      "item": "rollout",
+      "paper1": "CANNOT_REPEAT",
+      "paper2": "PAPER_2_PRIMARY",
+      "rule": "Paper1不得有性能结论"
+    },
+    {
+      "item": "validation",
+      "paper1": "SHARED_BACKGROUND_ONLY",
+      "paper2": "PAPER_2_PRIMARY",
+      "rule": "Stage01独立验证只作边界；Stage04新验证为Paper2"
+    },
+    {
+      "item": "figures",
+      "paper1": "DUPLICATION_RISK",
+      "paper2": "DUPLICATION_RISK",
+      "rule": "同一图不在两篇重复；只允许重新绘制共享背景小图"
+    },
+    {
+      "item": "tables",
+      "paper1": "DUPLICATION_RISK",
+      "paper2": "DUPLICATION_RISK",
+      "rule": "状态表与性能表分属不同论文"
+    },
+    {
+      "item": "conclusions",
+      "paper1": "PAPER_1_PRIMARY",
+      "paper2": "PAPER_2_PRIMARY",
+      "rule": "Paper1结论是资格边界；Paper2结论是性能与效用"
+    }
+  ]
+}

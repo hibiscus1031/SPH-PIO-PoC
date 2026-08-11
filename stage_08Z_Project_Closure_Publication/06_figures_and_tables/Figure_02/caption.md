@@ -1,0 +1,1 @@
+**Figure 2. Conservative reciprocal pair-force architecture.** Hard reciprocal antisymmetry provides a linear-momentum-compatible correction structure but does not establish training success. All plotted values and statuses must be read from the frozen source list; schematic arrows denote methodological dependency, not performance improvement.

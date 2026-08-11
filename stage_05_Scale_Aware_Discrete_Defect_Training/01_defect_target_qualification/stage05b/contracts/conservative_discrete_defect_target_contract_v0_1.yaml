@@ -1,0 +1,203 @@
+contract_id: conservative_discrete_defect_target_contract_v0_1
+schema: sph-pio-poc.stage05b.contract.v1
+stage: Stage 05B — TRAIN-Only Defect Target, Conservative Compatibility, Scale and Uncertainty Qualification
+authorization:
+  source_stage: Stage 05A
+  required_status: SCALE_AWARE_DISCRETE_DEFECT_TRAINING_CONTRACT_COMPLETE
+  next_stage_if_qualified: Stage 05C — Optimizer-Aligned Gradient and No-Writeback Local-Descent Qualification
+backend:
+  device: cpu
+  dtype: float64
+  torch_threads: 1
+historical_status_freeze:
+  stage04c: TASK_ALIGNED_PARAMETER_GRADIENT_NOT_QUALIFIED
+  stage04cr: TASK_GRADIENT_FAILURE_MIXED_OR_UNRESOLVED
+  stage04d_authorization: false
+  stage05_training: NOT_AUTHORIZED
+formal_population:
+  resolution: 8
+  lineages: [LCDF_01, LCDF_04, LCDF_05, LCDF_06, LCDF_07, LCDF_08]
+  variants: [VARIANT_LOW, VARIANT_MAIN]
+  origins: {first: 0, last: 31, stride: 1}
+  counts: {lineages: 6, variants_per_lineage: 2, origins_per_variant: 32, total: 384}
+  rule: all Cartesian products; no sampling, deletion, replacement, or result-dependent exclusion
+d0_transition:
+  identity: complete frozen explicit-midpoint RK2 from S_ref^n
+  start_state_graph_rebuild: true
+  start_eos_rhs_exact_source: true
+  midpoint_provisional_from_k1: true
+  midpoint_graph_rebuild: true
+  midpoint_eos_rhs_exact_source: true
+  accepted_state_and_graph: true
+  class_route: stage05b class orchestration using frozen Stage03C state/graph/EOS and Stage04C baseline operators
+  independent_route: separate functional orchestration using the same frozen low-level operators and independently evaluated exact source
+  forbidden_inputs: [reference_midpoint, reference_accepted_target_in_rhs, neural_history, learned_correction]
+  gates:
+    normalized_state_l2_route_disagreement_max: 1.0e-13
+    normalized_state_linf_route_disagreement_max: 1.0e-12
+    graph_hash_sequence: exact
+    source_evaluation_identity: exact
+    deterministic_repeat: bitwise_or_64eps_normalized_bound
+    required_pass_count: 384
+reference_transition:
+  accepted_state: S_ref^(n+1) from Stage04B qualified exact trajectory
+  identity_checks: [material_labels, physical_time, dt, eos, source_family, periodic_convention, lineage, target_hash]
+  forbidden: [DOP853_as_target, high_resolution_SPH_as_target, interpolated_future, validation, sealed_test]
+defect:
+  delta_v: Delta_v_def^star = v_ref^(n+1) - v_0^(n+1)
+  acceleration: a_def^star = Delta_v_def^star / dt
+  position_diagnostic: Delta_x_def^star = minimum_image(x_ref^(n+1) - x_0^(n+1))
+  density_diagnostic: Delta_rho_def^star = rho_ref^(n+1) - rho_0^(n+1)
+  semantic_role: discrete accepted-state correction requirement
+  prohibited_names: [continuum_acceleration, pair_force_label, Stage02_delta_a, physical_truth, DOP853_truth]
+mass_weighted_decomposition:
+  total_mass: M = sum_i m_i
+  center: a_cm^star = sum_i(m_i a_def,i^star) / M
+  conservative: a_cons,i^star = a_def,i^star - a_cm^star
+  incompatible: a_incompatible,i^star = a_cm^star
+  norm_squared: norm_m_squared(a) = sum_i(m_i * norm2(a_i)^2) / M
+  total_energy: E_total = norm_m_squared(a_def^star)
+  conservative_energy: E_cons = norm_m_squared(a_cons^star)
+  incompatible_energy: E_incompatible = norm_m_squared(a_incompatible^star)
+  incompatible_fraction: E_incompatible / max(E_total, u_origin^2)
+  conservative_coverage: E_cons / max(E_total, u_origin^2)
+  zero_force_normalized_residual: norm2(sum_i m_i a_cons,i) / max(sum_i m_i norm2(a_cons,i), u_origin*M)
+uncertainty:
+  U1: mass-weighted RMS of closed-form versus independent-autodiff accepted velocity divided by dt
+  U2: mass-weighted RMS of class versus functional D0 accepted velocity divided by dt
+  U3: mass-weighted RMS of class D0 versus deterministic class repeat accepted velocity divided by dt
+  U4: maximum start/midpoint mass-weighted RMS source-route disagreement as equivalent accepted-velocity effect divided by dt
+  U5: same-family same-resolution DOP853 primary-versus-sensitivity velocity difference divided by relevant time scale; exact hash identity maps to zero
+  excluded: DOP853-versus-exact semidiscrete spatial/model-form difference
+  roundoff_floor: 64 * eps_float64 * cs / dt
+  origin: u_origin = max(U1,U2,U3,U4,U5,u_roundoff_floor)
+  aggregation: nested RMS over lineage, variant, origin; u_origin is scalar so node/component levels are identity replicas
+  combine: max_not_RSS
+signal_bearing:
+  signal_norm: r_def = norm_m(a_def^star)
+  rule: r_def >= 10*u_origin
+  low_signal_retained_in_scale: true
+  gates:
+    each_lineage_fraction_min: 0.90
+    overall_fraction_min: 0.95
+conservative_compatibility_gates_signal_bearing_only:
+  family_balanced_mean_incompatible_fraction_max: 5.0e-3
+  percentile95_incompatible_fraction_max: 1.0e-2
+  maximum_incompatible_fraction_max: 5.0e-2
+  each_lineage_mean_incompatible_fraction_max: 1.0e-2
+  zero_force_normalized_residual_max: 1.0e-12
+pair_basis:
+  primary_state: D0 provisional midpoint and its actual frozen reciprocal graph
+  unordered_pair_selection: graph.unordered AND graph.active_kernel
+  F0: sqrt(m_i*m_j)*cs^2/L
+  architecture_coefficient_bound: 0.05
+  normalized_coordinates: c_alpha,c_beta in [-1,1]
+  columns:
+    radial: signed_incidence_mass_normalized(0.05*F0*rhat_ij)
+    transverse: signed_incidence_mass_normalized(0.05*F0*transverse_ij)
+  epsilon_r: 2.0e-12
+  unbounded_solver: minimum-norm solution via B^T pseudoinverse(B B^T), fixed rcond=1e-12
+  bounded_solver: use unbounded solution when feasible; otherwise scipy.optimize.lsq_linear bounds [-1,1] with fixed tolerances
+  metric: Q = norm_m(Bc-a_cons^star) / max(norm_m(a_cons^star),u_origin)
+  unbounded_gates:
+    family_balanced_mean_max: 0.02
+    percentile95_max: 0.05
+    maximum_max: 0.10
+    each_lineage_mean_max: 0.05
+  bounded_gates:
+    family_balanced_mean_max: 0.05
+    percentile95_max: 0.10
+    maximum_max: 0.20
+    each_lineage_mean_max: 0.10
+scale:
+  formula: s_a^2 = mean_lineage mean_variant mean_origin mean_node mean_component (a_cons,component^star)^2
+  includes_low_signal: true
+  includes_all_384: true
+  requirements: [positive, finite, model_independent]
+  normalized_target: y_def = a_cons^star / s_a
+  zero_baseline_identity: L_def_zero_baseline = nested_mean(norm2(y_def)^2 / spatial_dimension)
+  zero_baseline_absolute_error_max: 1.0e-12
+distinguishability_gates:
+  global_s_a_over_u_a_min: 100
+  each_lineage_ratio_min: 20
+  each_variant_within_lineage_ratio_min: 20
+distribution_policy:
+  percentiles: [5, 25, 50, 75, 95]
+  report_components: [x, y]
+  clipping: false
+  winsorization: false
+  outlier_deletion: false
+symmetry_invariance:
+  audit_subset_seed: stage05b_symmetry_v1
+  cases:
+    - [LCDF_01, VARIANT_LOW, 0]
+    - [LCDF_01, VARIANT_MAIN, 6]
+    - [LCDF_04, VARIANT_LOW, 0]
+    - [LCDF_04, VARIANT_MAIN, 14]
+    - [LCDF_05, VARIANT_LOW, 2]
+    - [LCDF_05, VARIANT_MAIN, 28]
+    - [LCDF_06, VARIANT_LOW, 26]
+    - [LCDF_06, VARIANT_MAIN, 9]
+    - [LCDF_07, VARIANT_LOW, 10]
+    - [LCDF_07, VARIANT_MAIN, 31]
+    - [LCDF_08, VARIANT_LOW, 22]
+    - [LCDF_08, VARIANT_MAIN, 21]
+  transforms:
+    particle_permutation: SHA256-derived permutation
+    edge_reorder: reverse unordered-pair column order
+    translation: [0.371, -0.283]
+    galilean_boost: [0.173, -0.119]
+    SO2_rotation: 90_degrees
+    reflection: x_axis_sign_flip
+    periodic_representative_shift: [2.0, -2.0]
+  scalar_relative_difference_max: 1.0e-12
+  vector_equivariance_normalized_error_max: 1.0e-10
+resolution_diagnostics:
+  resolutions: [12, 16]
+  lineages: [LCDF_01, LCDF_04, LCDF_05, LCDF_06, LCDF_07, LCDF_08]
+  variants: [VARIANT_MAIN]
+  origins: {first: 0, last: 31, stride: 1}
+  role: diagnostic_only
+  cannot_affect: [N8_s_a, hard_gates, N8_failure, model_selection]
+  prohibited_claims: [spatial_convergence, GCI]
+target_record_schema:
+  format: per-origin compressed NPZ plus canonical JSON sidecar
+  required_fields: [lineage, variant, N, origin, reference_history_hashes, D0_state_hash, reference_accepted_hash, dt, a_def, a_cm, a_cons, a_incompatible, s_a_hash, y_def, u_origin, signal_bearing, incompatible_fraction, Q_unbounded, Q_bounded, graph_hashes, source_identity, qualification_verdict, canonical_sha256]
+  prohibited_fields: [model_output, gradient, optimizer, validation_payload, sealed_test_payload, checkpoint]
+access:
+  allowed_payload_root: stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train
+  allowed_lineages: [LCDF_01, LCDF_04, LCDF_05, LCDF_06, LCDF_07, LCDF_08]
+  denied_validation_lineages: [LCDF_02, LCDF_09]
+  denied_sealed_test_lineages: [LCDF_03, LCDF_10]
+  start_and_end_denial_tests: true
+  required_final_decode_counts:
+    validation_state: 0
+    validation_target: 0
+    sealed_formula: 0
+    sealed_state: 0
+    sealed_source: 0
+    sealed_target: 0
+    sealed_origin: 0
+resources:
+  peak_rss_delta_bytes_max: 1610612736
+  completion_finite: true
+  dense_particle_N_by_N_neural_allocation: false
+  monotonic_live_object_retention: false
+  parameter_and_model_counts_zero: true
+  hashes_complete: true
+  representability_matrix_role: audit_linear_system
+prohibitions:
+  model_instances: 0
+  neural_forwards: 0
+  parameter_gradients: 0
+  optimizer_instances: 0
+  optimizer_steps: 0
+  parameter_updates: 0
+  training_runs: 0
+  checkpoint_selection: 0
+  neural_rollouts: 0
+  performance_evaluations: 0
+terminal_statuses:
+  qualified: CONSERVATIVE_DISCRETE_DEFECT_TARGET_AND_SCALE_QUALIFIED
+  not_qualified: CONSERVATIVE_DISCRETE_DEFECT_TARGET_AND_SCALE_NOT_QUALIFIED
+  evidence_incomplete: CONSERVATIVE_DISCRETE_DEFECT_TARGET_AND_SCALE_EVIDENCE_INCOMPLETE

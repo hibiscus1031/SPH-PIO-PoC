@@ -1,0 +1,50 @@
+[
+  {
+    "figure": "Figure 1",
+    "panel": "a,c",
+    "scientific_claim": "The workflow is qualification-first and evidence-layered.",
+    "source_file": "stage_08Z_Project_Closure_Publication/06_figures_and_tables/Figure_01/data.json",
+    "source_hash": "sha256:65e5828a0f1bcfa6036abc6b41bae81036c25b8abb409feb9611b2f5675e9c7c",
+    "source_field": "frozen_data.progression",
+    "confirmatory_or_diagnostic": "CONFIRMATORY",
+    "transformation": "Scientific layers grouped from frozen progression; stage IDs suppressed from hierarchy.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/02_fig01_framework/fig01_framework.svg;publication_cmame_v1/04_figures/02_fig01_framework/fig01_framework.pdf;publication_cmame_v1/04_figures/02_fig01_framework/fig01_framework.png"
+  },
+  {
+    "figure": "Figure 1",
+    "panel": "b,e",
+    "scientific_claim": "V2 and the trained-solver route remain not qualified.",
+    "source_file": "stage_08Z_Project_Closure_Publication/01_project_status/project_final_status_ledger.md",
+    "source_hash": "sha256:bf600d06dfb003a8062259e5205c8ba99b4796dff9712518537f234566c3dbb0",
+    "source_field": "reference hierarchy and final flags",
+    "confirmatory_or_diagnostic": "NEGATIVE_CONFIRMATORY",
+    "transformation": "Verbatim status categories rendered as cards.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/02_fig01_framework/fig01_framework.svg;publication_cmame_v1/04_figures/02_fig01_framework/fig01_framework.pdf;publication_cmame_v1/04_figures/02_fig01_framework/fig01_framework.png"
+  },
+  {
+    "figure": "Figure 1",
+    "panel": "d",
+    "scientific_claim": "Nine documented failures motivated bounded methodological responses.",
+    "source_file": "stage_08Z_Project_Closure_Publication/04_failure_taxonomy/final_failure_taxonomy.json",
+    "source_hash": "sha256:d40a396999c4d58f8e0561e43feec539acc3d1d9ce964131a50eb125283a4f97",
+    "source_field": "failures F1--F9",
+    "confirmatory_or_diagnostic": "CONFIRMATORY",
+    "transformation": "Frozen sequence shown in row-major layout; no causal magnitude implied.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/02_fig01_framework/fig01_framework.svg;publication_cmame_v1/04_figures/02_fig01_framework/fig01_framework.pdf;publication_cmame_v1/04_figures/02_fig01_framework/fig01_framework.png"
+  },
+  {
+    "figure": "Figure 1",
+    "panel": "e",
+    "scientific_claim": "Allowed and prohibited claims are separated.",
+    "source_file": "stage_08Z_Project_Closure_Publication/03_claim_matrix/final_claim_support_matrix.json",
+    "source_hash": "sha256:20f3cffba7b50062ae9f6b66b4ba4d020319de3ab747d4ef4eb0b88afe8d8fc9",
+    "source_field": "allowed_claims/prohibited_claims",
+    "confirmatory_or_diagnostic": "NEGATIVE_CONFIRMATORY",
+    "transformation": "Claims grouped by final qualification boundary.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/02_fig01_framework/fig01_framework.svg;publication_cmame_v1/04_figures/02_fig01_framework/fig01_framework.pdf;publication_cmame_v1/04_figures/02_fig01_framework/fig01_framework.png"
+  }
+]

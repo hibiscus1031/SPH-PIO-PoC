@@ -1,0 +1,174 @@
+{
+  "dense_particle_N_by_N_allocation": false,
+  "device": "cpu",
+  "dop853_rhs_graph_rebuild_count": 31440,
+  "dtype": "float64",
+  "elapsed_seconds_before_report_packaging": 392.9620715000201,
+  "gates": {
+    "finite_completion": true,
+    "hashes_complete": true,
+    "no_dense_N_by_N": true,
+    "no_monotonic_live_object_retention": true,
+    "peak_rss_delta": true
+  },
+  "graph_scan_count": 184500,
+  "hash_count": 190,
+  "numpy": "1.26.4",
+  "peak_rss_bytes": 381501440,
+  "peak_rss_delta_bytes": 109903872,
+  "phase_wall_times": {
+    "analytic_seconds": 4.483810832956806,
+    "dop853_seconds": 327.18907016701996,
+    "trajectory_topology_seconds": 60.28735337499529
+  },
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "python": "3.13.9",
+  "rss_samples": [
+    {
+      "phase": "start",
+      "rss_bytes": 271597568
+    },
+    {
+      "phase": "parameters",
+      "rss_bytes": 271974400
+    },
+    {
+      "phase": "analytic_LCDF_01",
+      "rss_bytes": 310411264
+    },
+    {
+      "phase": "analytic_LCDF_02",
+      "rss_bytes": 333496320
+    },
+    {
+      "phase": "analytic_LCDF_03",
+      "rss_bytes": 340279296
+    },
+    {
+      "phase": "analytic_LCDF_04",
+      "rss_bytes": 342802432
+    },
+    {
+      "phase": "analytic_LCDF_05",
+      "rss_bytes": 342933504
+    },
+    {
+      "phase": "analytic_LCDF_06",
+      "rss_bytes": 343523328
+    },
+    {
+      "phase": "analytic_LCDF_07",
+      "rss_bytes": 345309184
+    },
+    {
+      "phase": "analytic_LCDF_08",
+      "rss_bytes": 348274688
+    },
+    {
+      "phase": "analytic_LCDF_09",
+      "rss_bytes": 351272960
+    },
+    {
+      "phase": "analytic_LCDF_10",
+      "rss_bytes": 354713600
+    },
+    {
+      "phase": "trajectories_topology_LCDF_01",
+      "rss_bytes": 361168896
+    },
+    {
+      "phase": "trajectories_topology_LCDF_02",
+      "rss_bytes": 363855872
+    },
+    {
+      "phase": "trajectories_topology_LCDF_03",
+      "rss_bytes": 364314624
+    },
+    {
+      "phase": "trajectories_topology_LCDF_04",
+      "rss_bytes": 364429312
+    },
+    {
+      "phase": "trajectories_topology_LCDF_05",
+      "rss_bytes": 364822528
+    },
+    {
+      "phase": "trajectories_topology_LCDF_06",
+      "rss_bytes": 365035520
+    },
+    {
+      "phase": "trajectories_topology_LCDF_07",
+      "rss_bytes": 365084672
+    },
+    {
+      "phase": "trajectories_topology_LCDF_08",
+      "rss_bytes": 365117440
+    },
+    {
+      "phase": "trajectories_topology_LCDF_09",
+      "rss_bytes": 365182976
+    },
+    {
+      "phase": "trajectories_topology_LCDF_10",
+      "rss_bytes": 365281280
+    },
+    {
+      "phase": "dop853_LCDF_01",
+      "rss_bytes": 367984640
+    },
+    {
+      "phase": "dop853_LCDF_02",
+      "rss_bytes": 369295360
+    },
+    {
+      "phase": "dop853_LCDF_03",
+      "rss_bytes": 369393664
+    },
+    {
+      "phase": "dop853_LCDF_04",
+      "rss_bytes": 369393664
+    },
+    {
+      "phase": "dop853_LCDF_05",
+      "rss_bytes": 322551808
+    },
+    {
+      "phase": "dop853_LCDF_06",
+      "rss_bytes": 326418432
+    },
+    {
+      "phase": "dop853_LCDF_07",
+      "rss_bytes": 328679424
+    },
+    {
+      "phase": "dop853_LCDF_08",
+      "rss_bytes": 329908224
+    },
+    {
+      "phase": "dop853_LCDF_09",
+      "rss_bytes": 331972608
+    },
+    {
+      "phase": "dop853_LCDF_10",
+      "rss_bytes": 332333056
+    },
+    {
+      "phase": "post_gc_canary",
+      "rss_bytes": 332333056
+    },
+    {
+      "phase": "final",
+      "rss_bytes": 381485056
+    }
+  ],
+  "scipy": "1.17.1",
+  "sealed_payload_file_count": 45,
+  "start_rss_bytes": 271597568,
+  "sympy": "1.14.0",
+  "torch": "2.10.0",
+  "torch_threads": 4,
+  "trajectory_storage_bytes_before_report_packaging": 10239780,
+  "verdict": "PASS",
+  "weakref_canary_collected": 3,
+  "weakref_canary_total": 3
+}

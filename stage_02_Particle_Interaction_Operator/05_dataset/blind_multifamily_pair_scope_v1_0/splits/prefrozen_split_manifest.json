@@ -1,0 +1,42 @@
+{
+  "assignment_source": "Stage02J-T/V roles frozen before formula materialization",
+  "counts": {
+    "future_test": 5,
+    "future_train": 10,
+    "future_validation": 5
+  },
+  "family_assignments": {
+    "BLIND_FAMILY_01": "future_train",
+    "BLIND_FAMILY_02": "future_train",
+    "BLIND_FAMILY_03": "future_validation",
+    "BLIND_FAMILY_04": "future_test"
+  },
+  "family_level_assignment": true,
+  "manifest_version": "stage02jw-prefrozen-family-split-1.0.0",
+  "no_cross_split_leakage_path": true,
+  "particle_edge_patch_split_used": false,
+  "record_assignments": {
+    "blind_family_01_n12_h26": "future_train",
+    "blind_family_01_n16_h22": "future_train",
+    "blind_family_01_n16_h26": "future_train",
+    "blind_family_01_n16_h30": "future_train",
+    "blind_family_01_n20_h26": "future_train",
+    "blind_family_02_n12_h26": "future_train",
+    "blind_family_02_n16_h22": "future_train",
+    "blind_family_02_n16_h26": "future_train",
+    "blind_family_02_n16_h30": "future_train",
+    "blind_family_02_n20_h26": "future_train",
+    "blind_family_03_n12_h26": "future_validation",
+    "blind_family_03_n16_h22": "future_validation",
+    "blind_family_03_n16_h26": "future_validation",
+    "blind_family_03_n16_h30": "future_validation",
+    "blind_family_03_n20_h26": "future_validation",
+    "blind_family_04_n12_h26": "future_test",
+    "blind_family_04_n16_h22": "future_test",
+    "blind_family_04_n16_h26": "future_test",
+    "blind_family_04_n16_h30": "future_test",
+    "blind_family_04_n20_h26": "future_test"
+  },
+  "resolution_support_pseudo_independence_used": false,
+  "status": "PASS"
+}

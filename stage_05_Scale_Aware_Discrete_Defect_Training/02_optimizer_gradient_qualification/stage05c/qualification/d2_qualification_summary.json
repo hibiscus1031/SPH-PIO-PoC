@@ -1,0 +1,229 @@
+{
+  "FD_path_count": 6480,
+  "FD_probe_pass_count": 268,
+  "JVP_count": 270,
+  "arm": "D2",
+  "context_count": 18,
+  "full_gradient_backward_count": 42,
+  "global_pass": true,
+  "global_seed_pass_count": 3,
+  "graph_rebuild_count": 0,
+  "group_lineage": {
+    "D2_GRU": {
+      "LCDF_01": {
+        "pass": true,
+        "seed_pass_count": 3
+      },
+      "LCDF_04": {
+        "pass": true,
+        "seed_pass_count": 3
+      },
+      "LCDF_05": {
+        "pass": true,
+        "seed_pass_count": 3
+      },
+      "LCDF_06": {
+        "pass": true,
+        "seed_pass_count": 3
+      },
+      "LCDF_07": {
+        "pass": true,
+        "seed_pass_count": 3
+      },
+      "LCDF_08": {
+        "pass": true,
+        "seed_pass_count": 3
+      }
+    },
+    "D2_PAIR_HEAD": {
+      "LCDF_01": {
+        "pass": true,
+        "seed_pass_count": 3
+      },
+      "LCDF_04": {
+        "pass": true,
+        "seed_pass_count": 3
+      },
+      "LCDF_05": {
+        "pass": true,
+        "seed_pass_count": 3
+      },
+      "LCDF_06": {
+        "pass": true,
+        "seed_pass_count": 2
+      },
+      "LCDF_07": {
+        "pass": true,
+        "seed_pass_count": 3
+      },
+      "LCDF_08": {
+        "pass": true,
+        "seed_pass_count": 3
+      }
+    },
+    "D2_TOKEN_ENCODER": {
+      "LCDF_01": {
+        "pass": true,
+        "seed_pass_count": 3
+      },
+      "LCDF_04": {
+        "pass": true,
+        "seed_pass_count": 3
+      },
+      "LCDF_05": {
+        "pass": true,
+        "seed_pass_count": 3
+      },
+      "LCDF_06": {
+        "pass": true,
+        "seed_pass_count": 3
+      },
+      "LCDF_07": {
+        "pass": true,
+        "seed_pass_count": 3
+      },
+      "LCDF_08": {
+        "pass": true,
+        "seed_pass_count": 3
+      }
+    }
+  },
+  "group_pass": {
+    "D2_GRU": true,
+    "D2_PAIR_HEAD": true,
+    "D2_TOKEN_ENCODER": true
+  },
+  "local_descent_forward_count": 252,
+  "local_descent_lineage": {
+    "LCDF_01": {
+      "pass": true,
+      "seed_pass_count": 3
+    },
+    "LCDF_04": {
+      "pass": true,
+      "seed_pass_count": 3
+    },
+    "LCDF_05": {
+      "pass": true,
+      "seed_pass_count": 3
+    },
+    "LCDF_06": {
+      "pass": true,
+      "seed_pass_count": 3
+    },
+    "LCDF_07": {
+      "pass": true,
+      "seed_pass_count": 3
+    },
+    "LCDF_08": {
+      "pass": true,
+      "seed_pass_count": 3
+    }
+  },
+  "neural_rollouts": 0,
+  "optimizer_instances": 0,
+  "optimizer_steps": 0,
+  "parameter_restoration_checks": 3366,
+  "pass": true,
+  "peak_rss_bytes": 870694912,
+  "peak_rss_delta_bytes": 656572416,
+  "performance_evaluations": 0,
+  "persistent_updates": 0,
+  "retention_samples": [
+    {
+      "lineage": "LCDF_01",
+      "rss": 542654464,
+      "seed": 20500501
+    },
+    {
+      "lineage": "LCDF_04",
+      "rss": 546308096,
+      "seed": 20500501
+    },
+    {
+      "lineage": "LCDF_05",
+      "rss": 548339712,
+      "seed": 20500501
+    },
+    {
+      "lineage": "LCDF_06",
+      "rss": 549126144,
+      "seed": 20500501
+    },
+    {
+      "lineage": "LCDF_07",
+      "rss": 550748160,
+      "seed": 20500501
+    },
+    {
+      "lineage": "LCDF_08",
+      "rss": 550944768,
+      "seed": 20500501
+    },
+    {
+      "lineage": "LCDF_01",
+      "rss": 748929024,
+      "seed": 20500502
+    },
+    {
+      "lineage": "LCDF_04",
+      "rss": 749486080,
+      "seed": 20500502
+    },
+    {
+      "lineage": "LCDF_05",
+      "rss": 751730688,
+      "seed": 20500502
+    },
+    {
+      "lineage": "LCDF_06",
+      "rss": 751730688,
+      "seed": 20500502
+    },
+    {
+      "lineage": "LCDF_07",
+      "rss": 751730688,
+      "seed": 20500502
+    },
+    {
+      "lineage": "LCDF_08",
+      "rss": 751730688,
+      "seed": 20500502
+    },
+    {
+      "lineage": "LCDF_01",
+      "rss": 841515008,
+      "seed": 20500503
+    },
+    {
+      "lineage": "LCDF_04",
+      "rss": 743997440,
+      "seed": 20500503
+    },
+    {
+      "lineage": "LCDF_05",
+      "rss": 748158976,
+      "seed": 20500503
+    },
+    {
+      "lineage": "LCDF_06",
+      "rss": 748371968,
+      "seed": 20500503
+    },
+    {
+      "lineage": "LCDF_07",
+      "rss": 748240896,
+      "seed": 20500503
+    },
+    {
+      "lineage": "LCDF_08",
+      "rss": 749092864,
+      "seed": 20500503
+    }
+  ],
+  "reverse_jvp_pass_count": 270,
+  "reverse_jvp_probe_count": 270,
+  "rss_start_bytes": 214122496,
+  "training_runs": 0,
+  "wall_time_seconds": 1010.3135195838986
+}

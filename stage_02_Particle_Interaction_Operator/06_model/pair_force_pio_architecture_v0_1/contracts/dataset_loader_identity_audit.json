@@ -1,0 +1,149 @@
+{
+  "collection_id": "blind_multifamily_pair_scope_v1_0",
+  "collection_identity": "PASS",
+  "contract_version": "stage02k-loader-identity-1.0.0",
+  "normalization_statistics_hash": "sha256:2208d2f4b9b7c848f2cd1b93624f9f6a3d9fb29e65cdd70ee453e6122c43d051",
+  "operation_order": [
+    "collection_manifest",
+    "collection_id_verified",
+    "20_record_hashes_verified",
+    "split_manifest_verified",
+    "train_only_normalization_verified",
+    "canonical_records_decoded"
+  ],
+  "record_hash_checks": [
+    {
+      "actual": "sha256:9dd34ebfa97e221024192359aa8dbde68ab2f5964990a918d69fc6bd5b7f7eab",
+      "case_id": "blind_family_01_n12_h26",
+      "expected": "sha256:9dd34ebfa97e221024192359aa8dbde68ab2f5964990a918d69fc6bd5b7f7eab",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:6872cad9a62a74ab2642acc0a6c0c6dee41d816d0185b81c6aed9d775d602c64",
+      "case_id": "blind_family_01_n16_h26",
+      "expected": "sha256:6872cad9a62a74ab2642acc0a6c0c6dee41d816d0185b81c6aed9d775d602c64",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:c734dbd1489325180309cb511769deb1b49aa2841ac9b3f08ba47a5e3bb08360",
+      "case_id": "blind_family_01_n20_h26",
+      "expected": "sha256:c734dbd1489325180309cb511769deb1b49aa2841ac9b3f08ba47a5e3bb08360",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:d708acca04f9043df85bc3ebf65ed1b2b15a2158a719ebe31e52c3abefcaf414",
+      "case_id": "blind_family_01_n16_h22",
+      "expected": "sha256:d708acca04f9043df85bc3ebf65ed1b2b15a2158a719ebe31e52c3abefcaf414",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:d4676e7da59e2e6ef72a13ad39c8f8b4e432fe012520d01915bbc57f6e2becc7",
+      "case_id": "blind_family_01_n16_h30",
+      "expected": "sha256:d4676e7da59e2e6ef72a13ad39c8f8b4e432fe012520d01915bbc57f6e2becc7",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:4c857e6b0edda93600cb24775723f976460cdfbf45b9d31de9dee04c7fe56dd0",
+      "case_id": "blind_family_02_n12_h26",
+      "expected": "sha256:4c857e6b0edda93600cb24775723f976460cdfbf45b9d31de9dee04c7fe56dd0",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:b1ae733c66dd2533b298a0f32bca4245fe48721ba80ac2f90c4a76d9c7cbf4e1",
+      "case_id": "blind_family_02_n16_h26",
+      "expected": "sha256:b1ae733c66dd2533b298a0f32bca4245fe48721ba80ac2f90c4a76d9c7cbf4e1",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:9b99b13a9619d376de1e10053d5c2e160d496054e78fd3e7d0efb92cedc86097",
+      "case_id": "blind_family_02_n20_h26",
+      "expected": "sha256:9b99b13a9619d376de1e10053d5c2e160d496054e78fd3e7d0efb92cedc86097",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:647ad88a239a46ceb75b9297eee1b57069dd11f6a20a5d9b444b187c95b817e8",
+      "case_id": "blind_family_02_n16_h22",
+      "expected": "sha256:647ad88a239a46ceb75b9297eee1b57069dd11f6a20a5d9b444b187c95b817e8",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:ad432b6401d1aa059bb328c1a0e1d1725d663bbada420dc5af006eaf48888100",
+      "case_id": "blind_family_02_n16_h30",
+      "expected": "sha256:ad432b6401d1aa059bb328c1a0e1d1725d663bbada420dc5af006eaf48888100",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:b57da63133d6b5ac14cf425ddd3d3908145c0a74080d22462ad6ab34d1179555",
+      "case_id": "blind_family_03_n12_h26",
+      "expected": "sha256:b57da63133d6b5ac14cf425ddd3d3908145c0a74080d22462ad6ab34d1179555",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:5b22838e51c41ea7cccd434ae717285812c15beb8c908ec593892a71071ae742",
+      "case_id": "blind_family_03_n16_h26",
+      "expected": "sha256:5b22838e51c41ea7cccd434ae717285812c15beb8c908ec593892a71071ae742",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:26c74d68d8ec1704112fd43162b2821e58d0dbd01af603601e81c015b403e087",
+      "case_id": "blind_family_03_n20_h26",
+      "expected": "sha256:26c74d68d8ec1704112fd43162b2821e58d0dbd01af603601e81c015b403e087",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:06d35168dc3cf6170c0c05074cd2ede87916c059c63f169a26900acd73d9f1f9",
+      "case_id": "blind_family_03_n16_h22",
+      "expected": "sha256:06d35168dc3cf6170c0c05074cd2ede87916c059c63f169a26900acd73d9f1f9",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:5a178f690579b5233cc5ed24dc550aeab44d549428f597b041a1fa23fd7bc45c",
+      "case_id": "blind_family_03_n16_h30",
+      "expected": "sha256:5a178f690579b5233cc5ed24dc550aeab44d549428f597b041a1fa23fd7bc45c",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:4d303d820a58fe06dd72871d6b0c7d4e34ed2963f68bea05cfcd9fd9dc91649b",
+      "case_id": "blind_family_04_n12_h26",
+      "expected": "sha256:4d303d820a58fe06dd72871d6b0c7d4e34ed2963f68bea05cfcd9fd9dc91649b",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:50163610fac752e79bea7bb2ff05123566e8c35513a03b63b0a66c8dc9c5462b",
+      "case_id": "blind_family_04_n16_h26",
+      "expected": "sha256:50163610fac752e79bea7bb2ff05123566e8c35513a03b63b0a66c8dc9c5462b",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:18e18afffc9d436f07ce50040a63dddd5235caadf762d2c159a32ca896ece99c",
+      "case_id": "blind_family_04_n20_h26",
+      "expected": "sha256:18e18afffc9d436f07ce50040a63dddd5235caadf762d2c159a32ca896ece99c",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:a94bc6a9fb3ccc8f096d32423ed661a2e5b7cee74bd6e6aaac1e24f4ccaa7f47",
+      "case_id": "blind_family_04_n16_h22",
+      "expected": "sha256:a94bc6a9fb3ccc8f096d32423ed661a2e5b7cee74bd6e6aaac1e24f4ccaa7f47",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:488e60b0f9fc31920c725fe61371cc79328f66a44956f77d3cd86eff09bba4fe",
+      "case_id": "blind_family_04_n16_h30",
+      "expected": "sha256:488e60b0f9fc31920c725fe61371cc79328f66a44956f77d3cd86eff09bba4fe",
+      "status": "PASS"
+    }
+  ],
+  "record_hash_pass_count": 20,
+  "schema_compatibility_identifier": "controlled_regular_pair_scope_v0_1",
+  "schema_compatibility_identity": "PASS",
+  "schema_identifier_used_for_collection_selection": false,
+  "schema_identifier_used_for_lineage_identity": false,
+  "schema_identifier_used_for_normalization_selection": false,
+  "schema_identifier_used_for_split_selection": false,
+  "split_counts": {
+    "future_test": 5,
+    "future_train": 10,
+    "future_validation": 5
+  },
+  "status": "PASS"
+}

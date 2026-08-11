@@ -1,0 +1,1717 @@
+{
+  "cross_stage_file_count": 6,
+  "cross_stage_status": {
+    "stage01_terminal_stage": "Stage 01H",
+    "stage01_terminal_status": "VISCOSITY_DIAGNOSIS_COMPLETE",
+    "stage01_v2_status": "V2_QUALIFICATION_FAIL",
+    "stage02_closure": "STAGE02_ROUTE_CLOSED_PUBLICATION_BOUNDARY_COMPLETE",
+    "stage02_training_terminal": "STATIC_PAIR_FORCE_FITTING_V02_NOT_QUALIFIED",
+    "stage03_closure": "STAGE03_ROUTE_PAUSED_GRADIENT_BOUNDARY_COMPLETE"
+  },
+  "files": [
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/00_planning/stage04_dependency_map.md",
+      "sha256": "sha256:4ab3111d716d135d1685f55fad22d61576b9a9a505a7acacd61a3d8aef291641",
+      "size_bytes": 2034
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/00_planning/stage04_hypothesis_register.md",
+      "sha256": "sha256:265a570043df8da1105987362c4f16e4bf13beaeabd88b69326c81e7a9aeb307",
+      "size_bytes": 2265
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/00_planning/stage04_scope.md",
+      "sha256": "sha256:13f9d50fdc2fb690b18344f0a823ff03118ddf7b4839cfd1db13ce855a14bf01",
+      "size_bytes": 2305
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/00_planning/stage04_status_policy.md",
+      "sha256": "sha256:de13b454019eb6e7d0199034082e8be312a87eadd9321d441528f4a3bf07e682",
+      "size_bytes": 1966
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/00_stage04a_verification/manifests/stage04a_target_verification_manifest.json",
+      "sha256": "sha256:0cffa51ceda4cc8b098a2a3bd329a1a636d24d239c1f38635b1b92cb4e8fad33",
+      "size_bytes": 3318
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/00_stage04a_verification/reports/stage04a_target_verification_report.md",
+      "sha256": "sha256:c3fb54900182235f4a1791d2fb90335c853693b03310e9fcc914b2f6506682ee",
+      "size_bytes": 4224
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/01_training_formulation/autonomous_rollout_boundary.md",
+      "sha256": "sha256:2a8c45e3ff258a769eabc06044227962ee43d25e08396917889dddf6f7c7a237",
+      "size_bytes": 1464
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/01_training_formulation/local_causal_training_definition.md",
+      "sha256": "sha256:bba9bc5fa526397e3d0e7b8400310c5a6ae02aaffb5f1908b39a467b0d220bf8",
+      "size_bytes": 2184
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/01_training_formulation/one_step_rk2_loss.md",
+      "sha256": "sha256:f3e281ce01a85d15892c73894211bbc71c34cfafd3de91b615c3d2762b3d2a57",
+      "size_bytes": 1930
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/01_training_formulation/short_window_progression.md",
+      "sha256": "sha256:79872f757e59aee0d1ac2e37cd0c34917cb877e6f608958612bf1fa7035439b2",
+      "size_bytes": 1353
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/01_training_formulation/teacher_forcing_boundary.md",
+      "sha256": "sha256:bd79ceb5b91792d41e8075c28ec62342eec067e0e91c32e719078dff516dd79f",
+      "size_bytes": 1650
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/02_backend_contract/deterministic_execution.md",
+      "sha256": "sha256:b7c78308aad5b422844152c1a585e570157544e5846b4b1834779e82f29f9275",
+      "size_bytes": 1316
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/02_backend_contract/math_sdpa_contract.md",
+      "sha256": "sha256:4ab8982a652915f1817c3397288835d8c4a1eabc7f37e0abaab2b988726b9236",
+      "size_bytes": 1352
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/02_backend_contract/precision_contract.md",
+      "sha256": "sha256:ead022bfb81d6c4f42c90f580e77863f6ed338789241107182c00fe2d5ad9d6f",
+      "size_bytes": 1101
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/03_gradient_qualification/blind_probe_policy.md",
+      "sha256": "sha256:e44b960726767b6335b1b72c178efba792d3a24afd0ef0bdbd77609051466487",
+      "size_bytes": 1187
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/03_gradient_qualification/pass_fail_policy.md",
+      "sha256": "sha256:4a56e61785ebaa8d89da0d35489d6648454897b064d04e2d0f21049ac032e520",
+      "size_bytes": 1473
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/03_gradient_qualification/reverse_jvp_fd_contract.md",
+      "sha256": "sha256:c6a6362f0049a88eafc9cf81559de3e53ddbe4d10df4d52038459aa6ac57d3db",
+      "size_bytes": 1420
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/03_gradient_qualification/task_aligned_parameter_gradient_contract.md",
+      "sha256": "sha256:42a1664dfc36f399c55be414b92c17720cf0edd5520279d9bce9b5ef6d7a1b7e",
+      "size_bytes": 1637
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_dataset_requirements/lineage_and_leakage_contract.md",
+      "sha256": "sha256:f0b53f3402ea689ab6ccdc69b4fc25ab8d0e700a693c8d4487918cd300a1bdae",
+      "size_bytes": 1349
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_dataset_requirements/new_trajectory_family_requirements.md",
+      "sha256": "sha256:6a44d9af060271943a0ac6edd68179389571589c0f23d0731c9ce01b62f5a552",
+      "size_bytes": 1376
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_dataset_requirements/reference_role_boundary.md",
+      "sha256": "sha256:0f672a320e377372df9fe60301094f6c3995f367aef0696563f8b910d1e42109",
+      "size_bytes": 1193
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_dataset_requirements/split_and_test_seal_contract.md",
+      "sha256": "sha256:f9e9c5d845fe948fff7943b33b773e4b1285193f72fc4af78ab3f6d758508c38",
+      "size_bytes": 1097
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/__pycache__/stage04c_access.cpython-313.pyc",
+      "sha256": "sha256:6bbc96e14262f76997e7b033ac7af43512bba430e031a32a648fee6d84310c98",
+      "size_bytes": 2102
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/access_denial_audit.json",
+      "sha256": "sha256:2de271e99a3a926a63fa3b2a89d4084e21f72caa2ac5b43aa50b241942b48132",
+      "size_bytes": 22305
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/sealed_access_policy.json",
+      "sha256": "sha256:a2ab0ac2ea003456aba7ce54aaa0e036811e38c4b3096397575a88e77ed7e84e",
+      "size_bytes": 439
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/stage04c_access.py",
+      "sha256": "sha256:f372b39a46feae785b8a09cf694612a8eb241c389c3eb6d85e18cd4bb89a03ce",
+      "size_bytes": 1038
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/analytic_qualification/analytic_qualification_summary.json",
+      "sha256": "sha256:2dd0ad663c0291a25e0276ea8195e621b90953de1bf9d2a419e17a6b5090399d",
+      "size_bytes": 9718
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/analytic_qualification/lcdf_01_variant_low_analytic_audit.json",
+      "sha256": "sha256:e08c38c10c9b19545d26f424ddc153b160c88f2e7e09620a0db182edf3d99868",
+      "size_bytes": 1789
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/analytic_qualification/lcdf_01_variant_main_analytic_audit.json",
+      "sha256": "sha256:45d90c16bd20fd3f1ecf49b737e9831ad169a2eb7cab91d3c13e60590cb25337",
+      "size_bytes": 1809
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/analytic_qualification/lcdf_04_variant_low_analytic_audit.json",
+      "sha256": "sha256:698f88cda8ac2ab6e96052b287a74750080b4decb25b74d5ccc14aa1e86b3d73",
+      "size_bytes": 1822
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/analytic_qualification/lcdf_04_variant_main_analytic_audit.json",
+      "sha256": "sha256:376b12812c7a56ee010b6341a6805fd66ac43f545c54ef045c6493c4602997b3",
+      "size_bytes": 1824
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/analytic_qualification/lcdf_05_variant_low_analytic_audit.json",
+      "sha256": "sha256:a8e24c072ff3efca77b0be7e7f77539011867f3a10725d03efb2d9f816b41394",
+      "size_bytes": 1831
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/analytic_qualification/lcdf_05_variant_main_analytic_audit.json",
+      "sha256": "sha256:d52a2a90aa054dfafa07985649a3bee3be51739541c12221b5cb77afe3435dcc",
+      "size_bytes": 1831
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/analytic_qualification/lcdf_06_variant_low_analytic_audit.json",
+      "sha256": "sha256:0105a44585070a6bdcf01faf05ea776ede4e915ce2beb6fe463c86a702c5fb8d",
+      "size_bytes": 1832
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/analytic_qualification/lcdf_06_variant_main_analytic_audit.json",
+      "sha256": "sha256:72840767e7824c7a12b4e31ca45dec4df5706753cd193211ae39d91e19082bba",
+      "size_bytes": 1831
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/analytic_qualification/lcdf_07_variant_low_analytic_audit.json",
+      "sha256": "sha256:712cda9a346b2f5191193829fa37506cb830fb3f7e61010edc30a2234936213c",
+      "size_bytes": 1830
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/analytic_qualification/lcdf_07_variant_main_analytic_audit.json",
+      "sha256": "sha256:3fb5c3fd2c6e42c8e7772f3759003ca94021e0c3e894f7133a67570d2fad44bb",
+      "size_bytes": 1830
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/analytic_qualification/lcdf_08_variant_low_analytic_audit.json",
+      "sha256": "sha256:05c6aae2268ce97d9118d314e765d4101b370c727a358821928e8849f1e834b2",
+      "size_bytes": 1837
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/analytic_qualification/lcdf_08_variant_main_analytic_audit.json",
+      "sha256": "sha256:b7c41344882132446041cd4aa4b80ec5c3129a503ef1c3e6a61001f47be1b824",
+      "size_bytes": 1836
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/contracts/local_causal_reference_family_contract_v0_1.yaml",
+      "sha256": "sha256:c0d377f7b4b626186fcae076a076b336d774d3bf17c96153b13c4a5f85d0336f",
+      "size_bytes": 8973
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_01_variant_low_n12.json",
+      "sha256": "sha256:61abcd3a62728b72a84702894a6c5dc62e20fe9bea69ad111a495a340b54a28a",
+      "size_bytes": 9019
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_01_variant_low_n12.npz",
+      "sha256": "sha256:2e81561d665acac179d4f50a97005ef291b6343de239f0cd83dda0e7e74a4dc4",
+      "size_bytes": 46511
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_01_variant_low_n16.json",
+      "sha256": "sha256:539d320ed455b6445ad42e0bc9ffe99ab9e7e018f30a2ff98b9432f4f39198c7",
+      "size_bytes": 9018
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_01_variant_low_n16.npz",
+      "sha256": "sha256:0a0ca4f459367732bb4aecff43d65a7b86170eddcecab140e92fdab7f4069e7a",
+      "size_bytes": 54779
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_01_variant_low_n8.json",
+      "sha256": "sha256:c8ef09d780c55d5f1dbd16484b87965c32a6f696898a90c4b559b0cc773b43ae",
+      "size_bytes": 9016
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_01_variant_low_n8.npz",
+      "sha256": "sha256:cfd92f4265bdf9b6d92fc24f390350b55e87c4068c03c7d1572eea0f2d62e077",
+      "size_bytes": 23614
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_01_variant_main_n12.json",
+      "sha256": "sha256:be7a25d64e8209b9988140c7d41b4b9aac245001ee2d6df943d77b10f5feb7eb",
+      "size_bytes": 9021
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_01_variant_main_n12.npz",
+      "sha256": "sha256:76af08cfc97f8af098ae5bb107ab53434b38e4b9386ac5a27cb4b94213a65a1b",
+      "size_bytes": 46263
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_01_variant_main_n16.json",
+      "sha256": "sha256:2b60941e73defdffe9be41985eff6a6a9997c431dafb5f92a10194ac0d232df9",
+      "size_bytes": 9021
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_01_variant_main_n16.npz",
+      "sha256": "sha256:fbcf4c648e4faf46f2e5ce575dac7d9acbb6a9925f3bf61ad8e42148f975901d",
+      "size_bytes": 54901
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_01_variant_main_n8.json",
+      "sha256": "sha256:3dfe928312eff12d5109c8afb70adc9e213fda855fc2dfa82949beac33bda409",
+      "size_bytes": 9019
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_01_variant_main_n8.npz",
+      "sha256": "sha256:21830edbcda9cb1f2ec542d299d7dd3035365db0f91666ad1a5d8c6c20c3c6ae",
+      "size_bytes": 23624
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_04_variant_low_n12.json",
+      "sha256": "sha256:90113908b84928cc491385abaa5bb365170ca697ddb3051aa22a06d23c497044",
+      "size_bytes": 9008
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_04_variant_low_n12.npz",
+      "sha256": "sha256:9325f896bc7ecc9b5a6318fd09bce11fbbc3ee6401e1b56c1f7a096202e022d7",
+      "size_bytes": 158432
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_04_variant_low_n16.json",
+      "sha256": "sha256:2f2a45f1fd0c52da4c36108203e4afd3acad0e1ea70b23a4ddbfe43a4e23e9bc",
+      "size_bytes": 9008
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_04_variant_low_n16.npz",
+      "sha256": "sha256:3d499cb5f1ba0adbdd024ba2f6ce7b03c0081000acc80ed2f8cd770ac6fc9328",
+      "size_bytes": 231120
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_04_variant_low_n8.json",
+      "sha256": "sha256:57b4f09b168071bc1b48dbc4996f350d678937e366ed8e211814dc44eef6c360",
+      "size_bytes": 9005
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_04_variant_low_n8.npz",
+      "sha256": "sha256:ba6d17bfc7013938af82d33cf83824d6c054f2437b3ff625c1d593ef1b66f274",
+      "size_bytes": 60540
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_04_variant_main_n12.json",
+      "sha256": "sha256:e214abc5072f9ecb23613c68841e98db298e71cc6b20207a6ce4a8a6221d46c9",
+      "size_bytes": 9009
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_04_variant_main_n12.npz",
+      "sha256": "sha256:ffceb6f0d9d87708bc6cb3c4396f96353967c8b80ed2c678a90d39c6f50b6049",
+      "size_bytes": 159050
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_04_variant_main_n16.json",
+      "sha256": "sha256:d4c40ee23474e86afb89acd85b9976d356d08b2dd74698f70c83d3ec6b44f1f9",
+      "size_bytes": 9009
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_04_variant_main_n16.npz",
+      "sha256": "sha256:c2f77d37e4df25af802f520a7f9d6618612135e534f7cd502abd910347c7d42b",
+      "size_bytes": 231526
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_04_variant_main_n8.json",
+      "sha256": "sha256:2987b4796e574e3d4bbad9a2e41e031d421ba463022ea1248d5a5a6807d78933",
+      "size_bytes": 9007
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_04_variant_main_n8.npz",
+      "sha256": "sha256:e8171027d3082df886a94d14c95e08914ae2d2fca017888ef3159414ed40115c",
+      "size_bytes": 60696
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_05_variant_low_n12.json",
+      "sha256": "sha256:754215a2ef74f64d717855c51e291e555b85874b72f663f9cf8e48768124ecc5",
+      "size_bytes": 9021
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_05_variant_low_n12.npz",
+      "sha256": "sha256:71f454e520e42fb3d6e2c4c2da8ee304f964a77a551f9c6d86e1ec0c04d4b3d1",
+      "size_bytes": 95026
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_05_variant_low_n16.json",
+      "sha256": "sha256:d62b903c37c286bcd50de8df6704160ea99f42314a074e28eda0fcb0559531d3",
+      "size_bytes": 9022
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_05_variant_low_n16.npz",
+      "sha256": "sha256:5b156161ac056bc039f975f08a424a597440ebc3835bdfc55b32837a2524be08",
+      "size_bytes": 135299
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_05_variant_low_n8.json",
+      "sha256": "sha256:fa37f7acd71571b8a87c13d408b75a298350fe5d35b72e80b3f5c2229dc5f061",
+      "size_bytes": 9019
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_05_variant_low_n8.npz",
+      "sha256": "sha256:cf79436ebd8a453cf4bddeb4bb833ed60d2329e1b2780e2c4c5f626710098456",
+      "size_bytes": 37803
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_05_variant_main_n12.json",
+      "sha256": "sha256:a4a7dcec9a351cf3d6a172ee69239678b8c0c23a238a5e2cc84f6dc04f291d85",
+      "size_bytes": 9022
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_05_variant_main_n12.npz",
+      "sha256": "sha256:85a8888380bf9682424286f606cf918a21ec5a91b445972b16d6f1d1c71a7cf1",
+      "size_bytes": 95421
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_05_variant_main_n16.json",
+      "sha256": "sha256:08505e0cad4bb0cd5319a1a4bd11ad1aaaaee6a09399a8b9a6fc0aab2277afe6",
+      "size_bytes": 9023
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_05_variant_main_n16.npz",
+      "sha256": "sha256:7676545af264f272edd5c5953d5e2cdce6632052281baa078e141447478a691e",
+      "size_bytes": 135731
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_05_variant_main_n8.json",
+      "sha256": "sha256:dde5d93123cf3864257303ba47906f7b181be66a552cabf54fc3d2b67351dbfb",
+      "size_bytes": 9020
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_05_variant_main_n8.npz",
+      "sha256": "sha256:61c4538ab9a74979bb90581c53112dce35d08d92da566b198b34c0699054d91f",
+      "size_bytes": 37815
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_06_variant_low_n12.json",
+      "sha256": "sha256:13b0ced754860a19bdfebb1d0ae2ead2b9aff94ee46de1fd6376772aba9eaf0a",
+      "size_bytes": 9017
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_06_variant_low_n12.npz",
+      "sha256": "sha256:82d0ccd2adb1c033e8c4a7bba5394efee858706e06cf9f822d88fbf9056995a5",
+      "size_bytes": 90334
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_06_variant_low_n16.json",
+      "sha256": "sha256:3e0477b825730f0352a0fc898bc53e0980be2536b11da739d84609cc73af80f9",
+      "size_bytes": 9018
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_06_variant_low_n16.npz",
+      "sha256": "sha256:2b77393397670265c25e2853a1206395ed553eb488a406503ead9b4eb7939a53",
+      "size_bytes": 128273
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_06_variant_low_n8.json",
+      "sha256": "sha256:2939b5c32ccfb67f1b0492f2db1a85da3c1aa3dc160e8c888d82de3b920bc80a",
+      "size_bytes": 9015
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_06_variant_low_n8.npz",
+      "sha256": "sha256:4ab399de72ed9e7b5d3c02e62c1e48c85445c1d1c87a903c32305ddc8edc3144",
+      "size_bytes": 33893
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_06_variant_main_n12.json",
+      "sha256": "sha256:3bb342cd76522b3d870f06453b0e0f3722acab262ff83217c6b7474e93b127fc",
+      "size_bytes": 9019
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_06_variant_main_n12.npz",
+      "sha256": "sha256:17d3a14587cdc31b617277dfcee5f3a70beb71ff6e7f2d2007e4e05b18a0d4c1",
+      "size_bytes": 90981
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_06_variant_main_n16.json",
+      "sha256": "sha256:4c8bb52a3d024092bc474e605d2b174acb9e923fb5f56beae4d51703a5fff206",
+      "size_bytes": 9020
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_06_variant_main_n16.npz",
+      "sha256": "sha256:fcf7305a8cb0e409955df498593fc71f4f37a2e8b2043c9d0ba2e9d69b8e27a3",
+      "size_bytes": 129614
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_06_variant_main_n8.json",
+      "sha256": "sha256:8edea9a48c2d9aadccbf8898e30ca9af042b190ee7ee62aabb25313e58f6daa2",
+      "size_bytes": 9017
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_06_variant_main_n8.npz",
+      "sha256": "sha256:77f9e8c7deca441819a91c06771a8ffbfb6cdf8f430cada55186c4d84f5e400e",
+      "size_bytes": 34122
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_07_variant_low_n12.json",
+      "sha256": "sha256:429cb9761c433569d2b8d75cb172d4b57ec11f72baa64370e68719b72d0804ec",
+      "size_bytes": 9015
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_07_variant_low_n12.npz",
+      "sha256": "sha256:dbf068d93bd932d73e1c3b0156240603dd4062d668e47e506781e1d5a9761d3b",
+      "size_bytes": 157867
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_07_variant_low_n16.json",
+      "sha256": "sha256:27fee03b9099d3fde5b109305f7da67d611504d33dae434554d7641255d31049",
+      "size_bytes": 9014
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_07_variant_low_n16.npz",
+      "sha256": "sha256:41651ae971b9a15619b7283f1d1acc5624cd52e5e0ecdff0a93473946041036e",
+      "size_bytes": 249499
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_07_variant_low_n8.json",
+      "sha256": "sha256:776eeaa65dc45784f7210d164237ee36de2a6b8ab33e53a73ca5b5421b590307",
+      "size_bytes": 9012
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_07_variant_low_n8.npz",
+      "sha256": "sha256:85caed392e7fb21aa3af57526915dd700d9617ce77b34ba83fe0c0c9193bbdf3",
+      "size_bytes": 60921
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_07_variant_main_n12.json",
+      "sha256": "sha256:919af0712363c1ac45ac9b1fc049cc3fa3eb0f40d59182bf8f3faf11447840eb",
+      "size_bytes": 9016
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_07_variant_main_n12.npz",
+      "sha256": "sha256:542b9820ae714f37882a6ec0d3ee31b8804684eec8c60b8aeb85a2ff489b48a4",
+      "size_bytes": 157769
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_07_variant_main_n16.json",
+      "sha256": "sha256:95936df8e40efea62e9a3fe04247ea341a68cc0c2412d29cea29cfc7a2c71e52",
+      "size_bytes": 9016
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_07_variant_main_n16.npz",
+      "sha256": "sha256:1b1c95a7c74d8b4745e67c93a5fca6e9fca148ae529483ec0ee28db8cb8d59a1",
+      "size_bytes": 250572
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_07_variant_main_n8.json",
+      "sha256": "sha256:5703aeaabe9c71b6cb7cf47ab99c0cc9aac30232969d8f6dcecbc4ab34ab920c",
+      "size_bytes": 9011
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_07_variant_main_n8.npz",
+      "sha256": "sha256:0a47c07b2c7680ad0ea5162ecb6fe54c823c711cfe7255689eda119dfbb8c5c1",
+      "size_bytes": 61189
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_08_variant_low_n12.json",
+      "sha256": "sha256:d1a85b9c59d432c77b3063caac4db2049e8899685ea93135ed8a4f8a7c55b2eb",
+      "size_bytes": 9028
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_08_variant_low_n12.npz",
+      "sha256": "sha256:e252d4f74a7692a5aa3795db28ed0e9521734b6defc2dcb618117b0482d7073b",
+      "size_bytes": 184711
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_08_variant_low_n16.json",
+      "sha256": "sha256:ea3fe108748be474d153a237938b690cd570f9de0ff94abc33ecfc284a6e3ff6",
+      "size_bytes": 9028
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_08_variant_low_n16.npz",
+      "sha256": "sha256:a23872d2a6f2aa774a20a8b2c63ed86ee725aa8f0dd9aa03b8412088196730be",
+      "size_bytes": 270053
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_08_variant_low_n8.json",
+      "sha256": "sha256:91754fcd7541a59cb4a5a8236e739dab9a2fdb2244965933df55cf5fc89638ce",
+      "size_bytes": 9025
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_08_variant_low_n8.npz",
+      "sha256": "sha256:80f6065f39092fa05726bf65b2e75f631a94ae952c612964d23a60b3b57ccba8",
+      "size_bytes": 68163
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_08_variant_main_n12.json",
+      "sha256": "sha256:698ed700c51553232839329594ba58a5a46175be2ee712216132ffaaf65fe177",
+      "size_bytes": 9032
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_08_variant_main_n12.npz",
+      "sha256": "sha256:b88b54d3418049bfd8a0d018f3258d3dd5180a3c8634a05be662032fc13dbeb1",
+      "size_bytes": 185031
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_08_variant_main_n16.json",
+      "sha256": "sha256:a1c977d19dcb22238c4de18af3f3844492a29fe9bdd9b40c14e91d5c8dec877a",
+      "size_bytes": 9032
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_08_variant_main_n16.npz",
+      "sha256": "sha256:4bc9a76c6431c21ae04e4e83ca68aacbfe83473da1b9be80effa54701a45e6bb",
+      "size_bytes": 272269
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_08_variant_main_n8.json",
+      "sha256": "sha256:e4c7df9e5f150ededa77c9d154a738135a4873afd3841334a48a899599824b58",
+      "size_bytes": 9029
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/exact_trajectories/train/lcdf_08_variant_main_n8.npz",
+      "sha256": "sha256:464d75aa2e27f6d5d54161131da22dff8b85be4b999a04f5ac2e76782d72121e",
+      "size_bytes": 68059
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/formula_templates/__pycache__/stage04b_reference_core.cpython-313.pyc",
+      "sha256": "sha256:02a69db3acfc7248d1f4f679302d03909c877bf950d6f29692de3d3461c8c3de",
+      "size_bytes": 47194
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/formula_templates/formula_template_library.json",
+      "sha256": "sha256:89491eb81b5c6b04154ab1e809c0a8085bdba6f6635161c58a95b5877627d627",
+      "size_bytes": 7740
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/formula_templates/stage04b_reference_core.py",
+      "sha256": "sha256:613c601cab008335907d0aa16e03d974e809c9e1f5ce938986d432c4a1593a83",
+      "size_bytes": 27987
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/freeze/stage04b_contract_freeze.json",
+      "sha256": "sha256:1abee3a7061265a929b0507ba6fcbb5d3e3b83ca72733a43c46fcb43eaff2fd8",
+      "size_bytes": 1645
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/lineage_graph/lineage_dependency_graph.json",
+      "sha256": "sha256:1cbd1e5ff5a12004904f5fa65207b34b1ac0a8d5cd8b962f96add12551174b83",
+      "size_bytes": 19451
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/manifests/__pycache__/run_stage04b_qualification.cpython-313.pyc",
+      "sha256": "sha256:50cee37f1fcc4749e3489eac2a602d1902560a2cc7676e7183aad54fe2b11ae8",
+      "size_bytes": 51085
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/manifests/run_stage04b_qualification.py",
+      "sha256": "sha256:14df4fe0d65465f46dcfd43b7e8e201b10d0a26f3f78a6f62d37f5d94346b691",
+      "size_bytes": 40338
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/manifests/stage04b_run_manifest.json",
+      "sha256": "sha256:224d4c9dc1d4c5f91cfed2015bb2e6985a9f45cbbad56c22dea3e1b4693b8f30",
+      "size_bytes": 963
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/parameter_generation/train_parameters.json",
+      "sha256": "sha256:8d58dacabb40d616c6c58505b9a549f9885f172c6bc1289ff85a2c65087d8a84",
+      "size_bytes": 3863
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/qualification/stage04b_qualification_summary.json",
+      "sha256": "sha256:170c7335d4cf44cada12c5649d59f5131d2c633bc85287ae02f1f0971c840146",
+      "size_bytes": 1283
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/resources/stage04b_resource_audit.json",
+      "sha256": "sha256:d31f5cee128071fd277b5e8e4a8df7947a54b2f5e111e465c0f72a67cae30eac",
+      "size_bytes": 3780
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/role_assignment/preregistered_role_assignment.json",
+      "sha256": "sha256:024f797d3fe14d73a217a372f914a3ae4b07693d769372ac87892da1a326c301",
+      "size_bytes": 2297
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/semidiscrete_audits/__pycache__/stage04b_semidiscrete.cpython-313.pyc",
+      "sha256": "sha256:d739a264561c755e75b09e0187ca29f508b01fb9924d6c9ad8528d3f08cc8e43",
+      "size_bytes": 17325
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/semidiscrete_audits/dop853_audit_summary.json",
+      "sha256": "sha256:b9f2a8d232b0621e5e5e079425b704b2cc9b7c4a0ea6d5c62e8c94c8ad1dc536",
+      "size_bytes": 7839
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/semidiscrete_audits/lcdf_01_variant_main_n16_dop853_audit.json",
+      "sha256": "sha256:1b5dde772b4fc4ecb978b3a613f050fa3631e19fddbfca85c2a098807263839a",
+      "size_bytes": 2536
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/semidiscrete_audits/lcdf_01_variant_main_n8_dop853_audit.json",
+      "sha256": "sha256:d6e84784cb6ef0cc55888314c3e1ca61ee29ebcec8728bd0e8dafcaad580aa3c",
+      "size_bytes": 2540
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/semidiscrete_audits/lcdf_04_variant_main_n16_dop853_audit.json",
+      "sha256": "sha256:b39b1c91bb1991d2d145f345b305b4e6bba057f4eac4bd9d8b7d02f21471a217",
+      "size_bytes": 2537
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/semidiscrete_audits/lcdf_04_variant_main_n8_dop853_audit.json",
+      "sha256": "sha256:381662816ca67c863998e2d76ff4755bfcbbcf26310e5965351b276fc18f8e7a",
+      "size_bytes": 2535
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/semidiscrete_audits/lcdf_05_variant_main_n16_dop853_audit.json",
+      "sha256": "sha256:9a65f0d6243703fab60e4f23aeeb0e2109407e624bdf45de3f1f882a844a332a",
+      "size_bytes": 2539
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/semidiscrete_audits/lcdf_05_variant_main_n8_dop853_audit.json",
+      "sha256": "sha256:64916aa36dbed44870c8d41580cd53254e3208813379f8984d262a335d168fb9",
+      "size_bytes": 2540
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/semidiscrete_audits/lcdf_06_variant_main_n16_dop853_audit.json",
+      "sha256": "sha256:4b4a2d99d2fbceba63b8af65f01f975734c05622ec34915100562c83cf0d51fb",
+      "size_bytes": 2540
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/semidiscrete_audits/lcdf_06_variant_main_n8_dop853_audit.json",
+      "sha256": "sha256:38202a672c53b0e1e23af08578043c44715662b82a93094668b562969b942078",
+      "size_bytes": 2537
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/semidiscrete_audits/lcdf_07_variant_main_n16_dop853_audit.json",
+      "sha256": "sha256:b61b58af86e3c5886e272e71680dfd32e5eb762ac9a32ba67630e514a81c3cce",
+      "size_bytes": 2537
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/semidiscrete_audits/lcdf_07_variant_main_n8_dop853_audit.json",
+      "sha256": "sha256:f040ea22e356668018056ff8de337cd857673e26e683b854ef0f0bf2560f6d3d",
+      "size_bytes": 2537
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/semidiscrete_audits/lcdf_08_variant_main_n16_dop853_audit.json",
+      "sha256": "sha256:5db04daa5cf61e57a7477184959116ede5fc9d8936d3a8e08880da1e4d67de4d",
+      "size_bytes": 2538
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/semidiscrete_audits/lcdf_08_variant_main_n8_dop853_audit.json",
+      "sha256": "sha256:995ba3cf2c3ef914426cf3c3251af4dbbae828f3a279a3afaaab486dd2b29c66",
+      "size_bytes": 2533
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/semidiscrete_audits/stage04b_semidiscrete.py",
+      "sha256": "sha256:e2cf74f057baad66c0d0e9ac498624465f64c6ce3b62e523d53792b52e0dbef7",
+      "size_bytes": 10798
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_01_variant_low_n12_topology_margin.json",
+      "sha256": "sha256:bf17ab291f6d56559b7cd9314d3e2f98ed544eb7eae09bbe687a6d5934c56962",
+      "size_bytes": 1093
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_01_variant_low_n16_topology_margin.json",
+      "sha256": "sha256:29032bfe8324f95b28ddc42cbb4ed6e1ef89c862bc32c4340abe1b5fce7cba38",
+      "size_bytes": 1093
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_01_variant_low_n8_topology_margin.json",
+      "sha256": "sha256:2936034271ab0e744ed36c58fc19e18e1f79b127a4be68ed149989aab8e88bd4",
+      "size_bytes": 1089
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_01_variant_main_n12_topology_margin.json",
+      "sha256": "sha256:8b06630bbf17072055eba27e736e3af96ed7e2ae86fa4b37677fa4cfc9570696",
+      "size_bytes": 1094
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_01_variant_main_n16_topology_margin.json",
+      "sha256": "sha256:765ccabae4b0716b5ad46253b6f4712efd2b082fd002ea973ff18eb0680341ca",
+      "size_bytes": 1095
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_01_variant_main_n8_topology_margin.json",
+      "sha256": "sha256:4bc6c3c5914d8f953334a3edc440c07f838760cce0a5f6c4db6c77d2a42cd42f",
+      "size_bytes": 1091
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_04_variant_low_n12_topology_margin.json",
+      "sha256": "sha256:cd7d6c2d400e4447b4d7efb03b85c608b24d21ec4ff547111939f61624d2dcda",
+      "size_bytes": 1094
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_04_variant_low_n16_topology_margin.json",
+      "sha256": "sha256:ae6012fe411a37974a774a20aef8546f27d194676b5066e9c5308e119823d5d2",
+      "size_bytes": 1093
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_04_variant_low_n8_topology_margin.json",
+      "sha256": "sha256:8e001be7e6a89f999c0aca85c615b1f6416bcb19b060e969501cf42e08597270",
+      "size_bytes": 1091
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_04_variant_main_n12_topology_margin.json",
+      "sha256": "sha256:0fa01d38edf59d8c07c88655fca6594f6084b6c96034162f1105aa9da892656a",
+      "size_bytes": 1092
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_04_variant_main_n16_topology_margin.json",
+      "sha256": "sha256:473152f83cfc4835edfec7e2c8855614df93d4615f4721537af0d2adad990356",
+      "size_bytes": 1094
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_04_variant_main_n8_topology_margin.json",
+      "sha256": "sha256:2211153e0aba5d97bb33577460fdf4af5b1dde31f7925ae919cbb9718aeaf3c4",
+      "size_bytes": 1091
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_05_variant_low_n12_topology_margin.json",
+      "sha256": "sha256:1e5b20007bd711762fbd71c8ba185e7b7b11330d83fd7fb920417bf052ad49b4",
+      "size_bytes": 1093
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_05_variant_low_n16_topology_margin.json",
+      "sha256": "sha256:2531c299d1edd21b741f8ef99c5728ddbb4392f3aeab62ccc877d07a95e492fc",
+      "size_bytes": 1094
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_05_variant_low_n8_topology_margin.json",
+      "sha256": "sha256:8c2656c1a16f70687c9fa608ac69eb8cb2f521d01b2643bbaa7c534936db8048",
+      "size_bytes": 1090
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_05_variant_main_n12_topology_margin.json",
+      "sha256": "sha256:ae9252d262bfc9dcb4bf70115527fb23e84377e0537e9a9f87f98a517c4e3eb0",
+      "size_bytes": 1093
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_05_variant_main_n16_topology_margin.json",
+      "sha256": "sha256:9d9a57916825b04c731ab0c2332d32386412d1c7fd4b8ab404e9ff469960d8bf",
+      "size_bytes": 1094
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_05_variant_main_n8_topology_margin.json",
+      "sha256": "sha256:132c89c62cc0036ef9021f8c309c94a72811c2a2ef8bb2831a82e9fb60bc9a08",
+      "size_bytes": 1089
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_06_variant_low_n12_topology_margin.json",
+      "sha256": "sha256:299b66b6266bfa053712e38d475feeea643dbd512579bd2cc19bdf1def2181c8",
+      "size_bytes": 1094
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_06_variant_low_n16_topology_margin.json",
+      "sha256": "sha256:555757f8305a40d29ac396ae0a3aa726ffb822f84fe1a1d9d142840bc532804f",
+      "size_bytes": 1093
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_06_variant_low_n8_topology_margin.json",
+      "sha256": "sha256:b3f4d5f3d16b3494ccadd3d9b29bc2045c45a45c2263ffa35eb70dd53f7389fd",
+      "size_bytes": 1090
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_06_variant_main_n12_topology_margin.json",
+      "sha256": "sha256:7fd9178c82488b31494b3b269e159292e8809cf726ee8e34f7810ddd30a462bd",
+      "size_bytes": 1095
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_06_variant_main_n16_topology_margin.json",
+      "sha256": "sha256:111e39c504bf976df7173b74d83d4218b300ce4bd2b8cf0334e95e4a1a945dbd",
+      "size_bytes": 1094
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_06_variant_main_n8_topology_margin.json",
+      "sha256": "sha256:b9edd33c1bc226dc84b2ff0c6056c53e625e8e6a25c13d361b15b7f6da4cf9b4",
+      "size_bytes": 1091
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_07_variant_low_n12_topology_margin.json",
+      "sha256": "sha256:ad52d4ff69485eebf76d03e17bc2723644197b74b257c16c3458776843c1448f",
+      "size_bytes": 1093
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_07_variant_low_n16_topology_margin.json",
+      "sha256": "sha256:2afd478c86f42c219619b304bd28b02c28159de6786316a2c8f6398564213809",
+      "size_bytes": 1092
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_07_variant_low_n8_topology_margin.json",
+      "sha256": "sha256:9c75bd9f02a576bd72843c1ad686add5a5b1707944c6cef2935c1ad2def7c687",
+      "size_bytes": 1091
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_07_variant_main_n12_topology_margin.json",
+      "sha256": "sha256:4c684c1ffde79e67afcab9626a0e1e2eaf2289cb259fc43ec3cc2c1203b7ba97",
+      "size_bytes": 1094
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_07_variant_main_n16_topology_margin.json",
+      "sha256": "sha256:e75b590ec2c396fc2342559b6e92db43fbc2114206cd6f15e269dd7fb847c538",
+      "size_bytes": 1095
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_07_variant_main_n8_topology_margin.json",
+      "sha256": "sha256:3858db57365b11227275239178c7b08196a36ab366c70bd5aa4eda719fb77b29",
+      "size_bytes": 1087
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_08_variant_low_n12_topology_margin.json",
+      "sha256": "sha256:9db606aff8c88b84c523bb9aeb8a02571dcf21742de76fd92c0569637e293232",
+      "size_bytes": 1092
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_08_variant_low_n16_topology_margin.json",
+      "sha256": "sha256:dd53da40e7f3514791c0b0332e7858add29c7e219b7b3d617f2681f3450f11df",
+      "size_bytes": 1093
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_08_variant_low_n8_topology_margin.json",
+      "sha256": "sha256:1350b33af7e6502a2054d1b866fb48991b5cf1a7abb060b21e8a001bc2997663",
+      "size_bytes": 1089
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_08_variant_main_n12_topology_margin.json",
+      "sha256": "sha256:e04fe88bf63a9039e7648924d5c5adcdd8632f582e2f3d4386526bdc1bf308f3",
+      "size_bytes": 1095
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_08_variant_main_n16_topology_margin.json",
+      "sha256": "sha256:88ef8bc21db20383d5f56f6aae77e064ea6065cd4336285230671a40dd202890",
+      "size_bytes": 1095
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/lcdf_08_variant_main_n8_topology_margin.json",
+      "sha256": "sha256:e75821ef1c70c9f144229868c52011693dffe2f592521700c33fb35a2f38dfe4",
+      "size_bytes": 1091
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/topology_margin_summary.json",
+      "sha256": "sha256:f63f95264cc89ac6ec2f89f0cecec95b8be266284173897a24348cb4dae8fcf5",
+      "size_bytes": 23758
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/uncertainty/stage04b_uncertainty_registry.json",
+      "sha256": "sha256:e502276255609e96c9ce48b1cf7cce359ccc25c29fc17c4fa2575c529da30427",
+      "size_bytes": 660
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_model_arms/common_pair_head_contract.md",
+      "sha256": "sha256:abcd86b1a5b370adf5b958120ef26eaea7292d32bb05cbae8d221455235712b0",
+      "size_bytes": 1275
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_model_arms/d1_contract.md",
+      "sha256": "sha256:74188fc49e20e06f488287424ddfd6864261c0d93acbf036e18afc8f8df6d4d0",
+      "size_bytes": 919
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_model_arms/d2_contract.md",
+      "sha256": "sha256:a06e7f34933f2fcceb11bfcdfca48143098e294ef12a347afe124fe613a68e0d",
+      "size_bytes": 892
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_model_arms/d3_contract.md",
+      "sha256": "sha256:3aac95da5959c4701a579436025004e655919a2e5385126b40453de042e7268c",
+      "size_bytes": 975
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_model_arms/initialization_contract.md",
+      "sha256": "sha256:e2caedf6272cea5a4e7a68d8a9f8f358d7ce0628a499ac296eff50dddbb0972d",
+      "size_bytes": 1123
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/access_control/access_audit.json",
+      "sha256": "sha256:078836fa36a1c7dd4522be318c2ba633725ceb958cf77130b4f958769b95000b",
+      "size_bytes": 3136
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/contracts/task_aligned_parameter_gradient_contract_v0_1.yaml",
+      "sha256": "sha256:eb63d659d8c4a868160c952ed9aed7aadf79938353a5d8129b238f22f7ef1840",
+      "size_bytes": 15966
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/determinism/determinism_summary.json",
+      "sha256": "sha256:05efb075701ac2c6b6f278d22997077cbfcd11235dfdc1b1349d2346c591e00e",
+      "size_bytes": 142
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/diagnostic_input_gradients/input_gradient_diagnostics.json",
+      "sha256": "sha256:c2cbaecd33b3032c872ccda1fab4fb7c9e36e6669b5a7f2507269979faa04340",
+      "size_bytes": 27511
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/direction_generation/preregistered_directions.json",
+      "sha256": "sha256:e3a28df00ebab896a5932e447b7a40d0bb6ad4748c6a990a01998aa19b33efdd",
+      "size_bytes": 343373
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/finite_difference/central_fd_results.json",
+      "sha256": "sha256:5ce2c9b1e6686894a355256cb23cab06422ff7d37b82761c1c14b28afed1484b",
+      "size_bytes": 10356149
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/forward_jvp/forward_jvp_summary.json",
+      "sha256": "sha256:1794dc9c2a4ed41c24d3fd9ea633a787a58e2389dd771b73948b9a1e5779b943",
+      "size_bytes": 72
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/freeze/__pycache__/freeze_stage04c.cpython-313.pyc",
+      "sha256": "sha256:f8df2ab666770eea16d471de821cc3843b69107e6fe36933cdfa5511c4b00538",
+      "size_bytes": 22955
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/freeze/freeze_stage04c.py",
+      "sha256": "sha256:2320002ff5db7f7b7a1967fba4c24837c27d776792aab6ef6033864dccd7975e",
+      "size_bytes": 17267
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/freeze/stage04c_freeze_record.json",
+      "sha256": "sha256:68b09ca09545380c1d3c17b123a7b912078557c8b669ab17e512f84bdde311f7",
+      "size_bytes": 7044
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/loss_components/task_aligned_loss_contract.json",
+      "sha256": "sha256:73e18c1044adffa25f574eca555dab3dbc41d88cf643ef41ab38af45b0d2759c",
+      "size_bytes": 204
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/manifests/__pycache__/build_stage04c_reports.cpython-313.pyc",
+      "sha256": "sha256:c08a8a59409812d254a08251269aa4ce3e8dea8b2dce5b49e8cd7c09cf6e127a",
+      "size_bytes": 24788
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/manifests/artifact_index.json",
+      "sha256": "sha256:8848119989da46338b88f4d6b993daacb2bb481a5736e616dd2708af5cfe72e9",
+      "size_bytes": 646
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/manifests/build_stage04c_reports.py",
+      "sha256": "sha256:59997836ff5ea087fc0a40de3122264a350cb273bf1e42c9b0dd728c76120fb5",
+      "size_bytes": 18102
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/model_instantiation/fresh_model_instances.json",
+      "sha256": "sha256:aebf52191f19142107c8ba7842cbe6b6ec7ea6bf0d2369d1060eaf72099d5ec6",
+      "size_bytes": 5722
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/parameter_group_map/exact_parameter_groups.json",
+      "sha256": "sha256:0b6731bbcddf9b5a12ff01cda905e7e28442133066d6593ad8672bb6b6020ed8",
+      "size_bytes": 16685
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/qualification/__pycache__/run_stage04c_qualification.cpython-313.pyc",
+      "sha256": "sha256:12478870c5563c6b1e750b2eec125b656ef54d364b2ffb4a1edc181281ed44ff",
+      "size_bytes": 65623
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/qualification/run_stage04c_qualification.py",
+      "sha256": "sha256:20ec3a6c5e9cd8ded1b687408291e3e8483600e5cd99a2e28b864c98e8f73c86",
+      "size_bytes": 37106
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/qualification/stage04c_qualification_summary.json",
+      "sha256": "sha256:54b51e478cdc1e907b265350e209a3d4b33a965ea84d7eea91fe2c76518cc6bf",
+      "size_bytes": 60102
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/resources/resource_audit.json",
+      "sha256": "sha256:db3fb952eb583da228b328c35da4a6d707eea11472c4b9f9c940e6cc5ad416bc",
+      "size_bytes": 592
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/results/N12_N16_audit.json",
+      "sha256": "sha256:f59a8a4d00d4c4eeafc9184329475d7619bb46095aac946bc642ea41a5e17f5c",
+      "size_bytes": 437510
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/results/formal_864_probe_results.json",
+      "sha256": "sha256:fea114278b89368bb05759ece536df9464f52db58d6603aef639e4feb9f659e5",
+      "size_bytes": 13986905
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/results/stage04c_smoke.json",
+      "sha256": "sha256:c0b09613203e249717d81ca519ebefadf7da3c8e66e0654870286c74be744119",
+      "size_bytes": 18790
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/reverse_vjp/reverse_vjp_summary.json",
+      "sha256": "sha256:1794dc9c2a4ed41c24d3fd9ea633a787a58e2389dd771b73948b9a1e5779b943",
+      "size_bytes": 72
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/stable_windows/stable_window_results.json",
+      "sha256": "sha256:0719dddfc0243775cdc379d26a155d6d819aa6d5500344a46df2435f4b457a89",
+      "size_bytes": 1270901
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/structure_and_safety/structure_audit.json",
+      "sha256": "sha256:633ef5ab4e55581eb50d8a49380ad4d8601e59324dd8fd6c46528e74edc48ef1",
+      "size_bytes": 66596
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/train_case_selection/formal_case_selection.json",
+      "sha256": "sha256:f69886c64e6ad4c43216d113e3865625caaf35543416728f92194239fc3c5d93",
+      "size_bytes": 14205
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/acceleration_sensitivity/network_sensitivity_chain.json",
+      "sha256": "sha256:ef279b2a9681ec24fb1019b6b13c125eb9ee604805e0cf371cd69ad31b7700b5",
+      "size_bytes": 4075435
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/coefficient_sensitivity/initialization_and_coefficients.json",
+      "sha256": "sha256:7cef8e51218ceb0fd401ccb925863ec20d783978507354409bc0a7e207f97dba",
+      "size_bytes": 147036
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/contracts/task_signal_sensitivity_attribution_contract_v0_1.yaml",
+      "sha256": "sha256:e05a5e7b8738bf152c7d05b0ac14aa996fc887cc09e93b48d40bbb0defbc3ef0",
+      "size_bytes": 348317
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/directional_projection/directional_projection_and_factors.json",
+      "sha256": "sha256:8cedf91d13901fa0b8958189db1c8c094f2532589e16c63753b0ec3dedab0fdb",
+      "size_bytes": 2575239
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/freeze/__pycache__/freeze_stage04cr.cpython-313.pyc",
+      "sha256": "sha256:836931271e46aabd4670770c1433f155df8e82d20d436c50778c0b1cf0d8b990",
+      "size_bytes": 12919
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/freeze/freeze_stage04cr.py",
+      "sha256": "sha256:e9ea095eb6c6a951af3e68da86372eb1692b8859698a82d9dfaccfd4795d2115",
+      "size_bytes": 9746
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/freeze/stage04cr_freeze_record.json",
+      "sha256": "sha256:eadad4fcca9922901e478ce6b4b53ebecd25378ae3519eca4a6482ee41fcabc8",
+      "size_bytes": 6827
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/full_gradient_norm/full_gradient_norms.json",
+      "sha256": "sha256:ce3a30f1f6ce1c0418e0af9bda733ce86cadc826529aca616dd65d37d6e72e75",
+      "size_bytes": 2160241
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/historical_matrix/historical_864_machine_matrix.json",
+      "sha256": "sha256:617561d3a572c5365c3d4a95a1ce43896ccebf1eb96553b777324d7d71e34cdc",
+      "size_bytes": 1849034
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/historical_matrix/reconstructed_864_definitions.json",
+      "sha256": "sha256:df4d424e6441d2b2aa01c129afac603b752bd419a94f5bc6d4e45d301af5ca88",
+      "size_bytes": 261385
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/initialization_diagnostic/initialization_diagnostic.json",
+      "sha256": "sha256:98c5edd3e88f153c9e13e9c9115be2ae1d937f5d9c69b66b408f49b98c222a40",
+      "size_bytes": 147012
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/linear_probe_diagnostic/linear_probe_results.json",
+      "sha256": "sha256:496b0540dbabd8f63602d2e5900499940225e4916b2d83a7c756fe51b520c9e9",
+      "size_bytes": 1578086
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/linear_probe_diagnostic/preregistered_linear_probe_identities.json",
+      "sha256": "sha256:5ffd6acf09209b0af258cfec0e0b931b1b3aee028e7f03bf3f0d09d63757fbc4",
+      "size_bytes": 174110
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/loss_factorization/exact_loss_factorization.json",
+      "sha256": "sha256:91781a24631134b9c73a0d4e5e59a287422afcf5c6fd2f2fe4e4da58195c4e0a",
+      "size_bytes": 2575126
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/manifests/__pycache__/build_stage04cr_reports.cpython-313.pyc",
+      "sha256": "sha256:5d736bf1352f110122564bcfd8aab12e240d753707de19c6af2b5933699a5228",
+      "size_bytes": 33325
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/manifests/artifact_index.json",
+      "sha256": "sha256:4e6168745321c6df876e016a52f8c07f484b84287c80d140efa33ed6f23a9732",
+      "size_bytes": 1601
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/manifests/build_stage04cr_reports.py",
+      "sha256": "sha256:424f0e8ef3d6414cc36f74b91637ba21f3253d54e1422b4c6a8a958af30a4cd9",
+      "size_bytes": 20211
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/qualification/__pycache__/run_stage04cr_attribution.cpython-313.pyc",
+      "sha256": "sha256:cc833d1429a513d568fa1347f340ca355f2c2f6ad00e288a3c98c5e00dc971dc",
+      "size_bytes": 51557
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/qualification/run_stage04cr_attribution.py",
+      "sha256": "sha256:11e5d3e9434012344330a25e2194e5ce5469ec16ed6caba902ef3e711e4697f8",
+      "size_bytes": 27884
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/qualification/stage04cr_summary.json",
+      "sha256": "sha256:3b24b834bca6deeca61f6388706ebc739beb22b5773fddfa26854754035c8cdb",
+      "size_bytes": 1283
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/resources/resource_audit.json",
+      "sha256": "sha256:0b5e0ae90455e6524e70d3a60657472787d6c730cf68a9c6b697d14b7b567c50",
+      "size_bytes": 381
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/results/access_audit.json",
+      "sha256": "sha256:806537a1aa6f0124a7010b91b12c3bcc732f8e3397616e259ac394c3f31e7984",
+      "size_bytes": 3538
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/results/stage04cr_results_index.json",
+      "sha256": "sha256:a94563ce8bb903ef903f948142478d3702e05a8c9db00b7876732192d2058ac8",
+      "size_bytes": 180
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/rk2_attenuation/rk2_attenuation.json",
+      "sha256": "sha256:1cd05d45441f1d4f529ba24583a78e800a1cdbf8b75f81550dcdade6241e517a",
+      "size_bytes": 446562
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/route_decision/route_decision.json",
+      "sha256": "sha256:83d046631a4b6f5f352d3211ec929da56c2c9767dbd29f1927155b2a74539628",
+      "size_bytes": 169
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/state_jacobian/state_jacobian_factorization.json",
+      "sha256": "sha256:6bb5eef1f13f2b2df7cc96aee4aa99c496f453d0607e7c616d58be9f1d6e599a",
+      "size_bytes": 2575141
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/state_residual/state_residual_and_D0_comparison.json",
+      "sha256": "sha256:36c775ac32c36075af5933e05244d7a3598dcace5388a1b436b01383837354b6",
+      "size_bytes": 159428
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/trainability_attribution/primary_attribution.json",
+      "sha256": "sha256:3b24b834bca6deeca61f6388706ebc739beb22b5773fddfa26854754035c8cdb",
+      "size_bytes": 1283
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/06_training_protocol_boundary/checkpoint_selection_boundary.md",
+      "sha256": "sha256:5f2276395dcf487ca5c9de53a56ad4e36f4aa12d68874219210c71f40d387845",
+      "size_bytes": 975
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/06_training_protocol_boundary/optimizer_boundary.md",
+      "sha256": "sha256:0c335f5a3669cf1dc25ec453031606a858d901366dc1be4290a0b7a6e9e50b24",
+      "size_bytes": 1143
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/06_training_protocol_boundary/resource_boundary.md",
+      "sha256": "sha256:6ea8909702aea04a52026847b949a31d2169cb53bce98c043794022bb2715c7a",
+      "size_bytes": 1099
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/06_training_protocol_boundary/success_gate_boundary.md",
+      "sha256": "sha256:80effa936157c8d89885df94e939cadb27ecd7fe2aec627e11c7c27578303624",
+      "size_bytes": 1392
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/07_roadmap/stage04b_to_stage04g.md",
+      "sha256": "sha256:16700980201c1b97e552e3e2551d4c41af65dbf7f10ad26e4a3f727603460fb1",
+      "size_bytes": 2256
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04a_dataset_strategy.md",
+      "sha256": "sha256:32cb92f2134b3330e2a38e1d43077f6e0c042af0a1b19187739888660ad36686",
+      "size_bytes": 1307
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04a_final_report.md",
+      "sha256": "sha256:6e027e64439240a9a9670575eceae50a96fd3b5f27580971b32cdcf9f591d442",
+      "size_bytes": 4645
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04a_gradient_strategy.md",
+      "sha256": "sha256:b9b2259309f91d23fddbd15743c9945288b068a0ba352af79bd1bc722bb5cd69",
+      "size_bytes": 1415
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04a_training_hypothesis.md",
+      "sha256": "sha256:87f09365494ff91a08c145806eae143cdc8ba48d6a4ad679b2f2da8fb87b6b15",
+      "size_bytes": 1610
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_analytic_qualification.md",
+      "sha256": "sha256:5377980d0decc655087f4d1be4033d370e4287b0961100b22a7de05d535a1c6e",
+      "size_bytes": 288
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_final_report.md",
+      "sha256": "sha256:5d2b372643db12f26fa0badbab5f272c3ddadab6afdb8b82b2861b20fdf6f312",
+      "size_bytes": 2367
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_formula_library.md",
+      "sha256": "sha256:5e046b5c4a99cb1a2f47ef6f2a32640e3e6b47e0f71485dc7a87b25eb5c120ba",
+      "size_bytes": 449
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_freeze_and_scope.md",
+      "sha256": "sha256:d188ad78b37a0eb06abc31bf149c7213d94c1c310c52608cea9e896319ddbe4a",
+      "size_bytes": 443
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_lineage_and_split.md",
+      "sha256": "sha256:ff63b315c9d2473c4fe82a13e3944720cc1ff4e681ad8285b181667c55a90d6d",
+      "size_bytes": 343
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_parameter_generation.md",
+      "sha256": "sha256:4f09e48d0197d589990031baa4148cf16d29751652c40cf7829839b652623d28",
+      "size_bytes": 341
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_qualification_report.md",
+      "sha256": "sha256:73206621e7d02ba566855b8fd5c3e15a5dd12f8467618269bd4674fa93018506",
+      "size_bytes": 338
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_resource_audit.md",
+      "sha256": "sha256:f12c1ec011c950ec506d79df0d56edae1f1a0a586c9191188f17213692cf6a3e",
+      "size_bytes": 301
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_semidiscrete_audit.md",
+      "sha256": "sha256:4f8900b2992ef5494c6209d452aea59c3b9cc0e0300a1bef40906032d85bf47c",
+      "size_bytes": 321
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_test_seal.md",
+      "sha256": "sha256:b836c97dbcfe08a73e657513b36df8bff59a885a805024c1d95573d27c875707",
+      "size_bytes": 283
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_topology_margin.md",
+      "sha256": "sha256:8cd4dd70f7b4270feccda29070a5adb461869ee7cc91c9e5392fa22857c69064",
+      "size_bytes": 349
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_trajectory_inventory.md",
+      "sha256": "sha256:4d4faa38925279b2806565bd673232f5b5137f814a57f5f03feda7c0a803c9ff",
+      "size_bytes": 255
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_uncertainty.md",
+      "sha256": "sha256:4e100ee67ef769aaa51d95effcfa95aaba7c1ff6e27d1b5e5233ec07df63349b",
+      "size_bytes": 307
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_access_control.md",
+      "sha256": "sha256:18a76054eac09c2122c9c08a213a4c775d2f46c9c5ff1beb1e629fffd0a73dbf",
+      "size_bytes": 615
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_case_selection.md",
+      "sha256": "sha256:51a13f8f34de9139fb36dc24d52e5be729781cfc860ac0a45433bb13a2061102",
+      "size_bytes": 825
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_final_report.md",
+      "sha256": "sha256:0f1f938b5a1f5aa828f7990f2c00f367ac6add8aa408774b1b689761786e09e2",
+      "size_bytes": 1828
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_finite_difference.md",
+      "sha256": "sha256:6f4719e675ba39e5a89caf98d410cb15355fe57c9ba59bae0d3503d80e58f860",
+      "size_bytes": 550
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_freeze_and_scope.md",
+      "sha256": "sha256:aa7e52c59f36d7137426ed4c6bcb05c1d1eb867301a928afab87c07bb89b6dbc",
+      "size_bytes": 831
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_input_gradient_diagnostics.md",
+      "sha256": "sha256:1b23669b17e94dd9b90610ddc408dd76e60207130904b3c8532bde2c1239cfd7",
+      "size_bytes": 682
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_parameter_group_map.md",
+      "sha256": "sha256:793f20d13f2845a5ae5721022d2bf69f2a611318a1b0bc0bb265ea195e06e6eb",
+      "size_bytes": 1999
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_qualification_report.md",
+      "sha256": "sha256:4846973f1df6fc0871f3f14ead12ac66c15f192308c018551202bf8a52afa66b",
+      "size_bytes": 1191
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_resource_audit.md",
+      "sha256": "sha256:f454948963917123ab172d90ef694a3fc6951f1d8070beb567e323c321926ec5",
+      "size_bytes": 511
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_reverse_jvp.md",
+      "sha256": "sha256:1b16781b5492fcd9ee7b5ff5a9869e74914621fe9b673bcc141f1c166c89d631",
+      "size_bytes": 590
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_stable_window_results.md",
+      "sha256": "sha256:62a419d7a066626a52e18880384d48c7ec2828c7bd4e3069705fa8ffb3d128cb",
+      "size_bytes": 604
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_structure_and_safety.md",
+      "sha256": "sha256:87f0d6d377ef34d96d8345b38b94d5f5f4af6dcffe5a9e260160da8c926561c8",
+      "size_bytes": 683
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_task_aligned_loss.md",
+      "sha256": "sha256:76986bb6d5e89b83e5d63f4616a7b763c9bf3c2902e9440015fb169365720a79",
+      "size_bytes": 694
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_coefficient_and_acceleration_sensitivity.md",
+      "sha256": "sha256:7130e5c1aba7418f67509dbf2ef9c40750cfeb211a2dc647793adfc6e0fa72e1",
+      "size_bytes": 788
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_directional_projection.md",
+      "sha256": "sha256:2d1922749d17cdccecd46f614b01137f8f10fa9ef421711cc4f945bdc9bfc6fe",
+      "size_bytes": 727
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_failure_attribution.md",
+      "sha256": "sha256:7ab9260ad824d15da0cab1d06864f578aecf3cec0670e225c3a6cafef7573e15",
+      "size_bytes": 974
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_final_report.md",
+      "sha256": "sha256:f97a373fd809990dcdc733ac4b356610e18f74957d257199bca016727915c3a7",
+      "size_bytes": 1960
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_freeze_and_scope.md",
+      "sha256": "sha256:aabade564f0b6744e1368c2a099bfd48e24a10232cd8a95d0d9c834fa86b9f68",
+      "size_bytes": 734
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_full_gradient_norm.md",
+      "sha256": "sha256:13591024faaddbbe97be8807542ede3d4fe9b3bf15e48334962ed3b7f6073ad0",
+      "size_bytes": 1219
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_historical_failure_matrix.md",
+      "sha256": "sha256:b461c50f30478ca74f451d6ec3487bc68a1352e3671ec92c267bcec1bcc447d4",
+      "size_bytes": 598
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_linear_probe_diagnostic.md",
+      "sha256": "sha256:b900a12722836f1372d44e09df5b8c9aa2691ce87eefef6c26584fb674a9d14e",
+      "size_bytes": 519
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_loss_factorization.md",
+      "sha256": "sha256:e6e7cb11a03013df42dd3e344a066837dc1b26e842a548dc93765435614028ff",
+      "size_bytes": 622
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_resource_audit.md",
+      "sha256": "sha256:a198995dcee132e4c42dd1c4fb49c551fdf72227b1f3af70c3e9de10f82cd4b4",
+      "size_bytes": 509
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_rk2_attenuation.md",
+      "sha256": "sha256:099cd1993f343e795cdb8c6ad5afd896212c099ea7fa144b60a974f28c2a0135",
+      "size_bytes": 673
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_route_decision.md",
+      "sha256": "sha256:478fe25a1998cdac23185ba32bee362c1ac767ae4f468e19eea0e863513216f4",
+      "size_bytes": 988
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_state_residual_and_jacobian.md",
+      "sha256": "sha256:594c9842452fb3c907490cfcdc867bc22b249092bdfbdb712f48a1ece58451af",
+      "size_bytes": 992
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04a_contract_manifest.json",
+      "sha256": "sha256:e391fca3fa564f8c569dcb5d5de55a09da574b1824e8dfe8afcdd12dfd87d1bf",
+      "size_bytes": 7682
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04a_final_manifest.json",
+      "sha256": "sha256:fb7d11e94af8bf3c3a1bb09036f3599d5e61dbc42e7f8fe9d6529178b5976b0b",
+      "size_bytes": 3803
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04a_input_freeze_manifest.json",
+      "sha256": "sha256:6efe1e9bfdbde880c846b2a207fdff26f32a54eb3972470152a23ed10a42998a",
+      "size_bytes": 2750
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_contract_manifest.json",
+      "sha256": "sha256:325b4d00a3202d5fc8c8dee904e0d87f808400d16767932521a2bf0ab6f6b82c",
+      "size_bytes": 2062
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_final_manifest.json",
+      "sha256": "sha256:ddad3b5a6f91b1e4a7dde1592e1e5a32803a1462648cb2106aef9f68bb8e2c6d",
+      "size_bytes": 6912
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_formula_manifest.json",
+      "sha256": "sha256:f0953cdaa81ddcaa5b3bbc015fc0465c9be8f1f5c9ef7df2393fa5601c93ff77",
+      "size_bytes": 11691
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_input_freeze_manifest.json",
+      "sha256": "sha256:8718c65d3059dfb81e9ce7dcf6450d06dd30b82396c39d6017c91d6c81b108ea",
+      "size_bytes": 2374
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_lineage_manifest.json",
+      "sha256": "sha256:b4754caf8284b3620a85cb042a0684d90471cfd98775018cde961467285ba2fe",
+      "size_bytes": 413
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_role_assignment_manifest.json",
+      "sha256": "sha256:642f91985176774bf71795f2e72391082a9a43cdc0f3f6f7aaec7f1c432db47e",
+      "size_bytes": 2737
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_test_seal_manifest.json",
+      "sha256": "sha256:f3fc8bc263b5cd0862aad21e6331e280bff59fa70df5d2dd172491ee9ed438a5",
+      "size_bytes": 26266
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_trajectory_manifest.json",
+      "sha256": "sha256:6bc2351482b9167c63640699be0f048d65e3981babe0409895ea6a900b3e8ac2",
+      "size_bytes": 58254
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04c_adfd_manifest.json",
+      "sha256": "sha256:4b03577e73720d9502ca9cbfbdfcde6b01cec3f8816304bb278ac20695859f8a",
+      "size_bytes": 366
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04c_case_manifest.json",
+      "sha256": "sha256:63d5d7581277cf7fafd7fb6ebc0abf71ef3db9fd37f4b555497733d074985dd4",
+      "size_bytes": 14279
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04c_contract_manifest.json",
+      "sha256": "sha256:b77f8aae99d6f93628a7b286aff90f5f06e1d537a66c6096185ee12d1f6ee1d8",
+      "size_bytes": 351
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04c_direction_manifest.json",
+      "sha256": "sha256:c58dc48f2e0d28546f477046fa2531ef42e02c971b3b2d7c5b09fb7e2eb3cf85",
+      "size_bytes": 343460
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04c_final_manifest.json",
+      "sha256": "sha256:cc250b4c1fb3a5ce7df2ef65f55e5e8c8060eeea043e1846525c1a7f8357e412",
+      "size_bytes": 7027
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04c_input_freeze_manifest.json",
+      "sha256": "sha256:68b09ca09545380c1d3c17b123a7b912078557c8b669ab17e512f84bdde311f7",
+      "size_bytes": 7044
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04c_parameter_manifest.json",
+      "sha256": "sha256:22a5ff52c7896bcb933462576aa0c718887dfe68df53a406f0840ce1087f1aea",
+      "size_bytes": 22463
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04cr_attribution_manifest.json",
+      "sha256": "sha256:88c86184e1885f8d8dfc651db2d3efbf0f2c77671799c56ef9cf2f780c141c6c",
+      "size_bytes": 3255
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04cr_contract_manifest.json",
+      "sha256": "sha256:beea06e35ffef51992990c5b81d57f8a218428092795c4d14effde0e0fde4024",
+      "size_bytes": 325
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04cr_final_manifest.json",
+      "sha256": "sha256:dbe2f0a7554188236f6b319649120f3bbb54c0a1ab2075faeae18545db0e2626",
+      "size_bytes": 7232
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04cr_input_freeze_manifest.json",
+      "sha256": "sha256:eadad4fcca9922901e478ce6b4b53ebecd25378ae3519eca4a6482ee41fcabc8",
+      "size_bytes": 6827
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/README.md",
+      "sha256": "sha256:5a1c1985eaa60bbecc3dbfc503efe552d62ac66d2fab228760a2d31b026744b4",
+      "size_bytes": 1640
+    },
+    {
+      "path": "project_wide_synthesis/02_stage_timeline/complete_stage_timeline.json",
+      "sha256": "sha256:54373f683a9c10e726892ff983c1f3b9405bb751c8ea615e28465e0b9a248ba3",
+      "size_bytes": 61010
+    },
+    {
+      "path": "stage_02_Particle_Interaction_Operator/08_route_closure/status_ledger/stage02_complete_status_ledger.json",
+      "sha256": "sha256:bf1d19f36640d1500541892ad8b359bf459ae274fd41871e6239192e9e323c5e",
+      "size_bytes": 23642
+    },
+    {
+      "path": "stage_02_Particle_Interaction_Operator/08_route_closure/manifests/stage02ms_closure_manifest.json",
+      "sha256": "sha256:14f6dd91ed115c8a67fbd3205b14b79455db7fb6ac9928c4088087178a20abb8",
+      "size_bytes": 685433
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/08_route_closure/status_ledger/stage03ds_status_ledger.json",
+      "sha256": "sha256:3cfb5777e827e9bb0d8551593c46c06f35cc334e3d3fae6dcb42e38889bd5148",
+      "size_bytes": 6051
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03ds_final_manifest.json",
+      "sha256": "sha256:f13c6adfac8f83b7a0b009c9c7f052a685d446294d9fff01c27683c18239807d",
+      "size_bytes": 17583
+    },
+    {
+      "path": "project_wide_synthesis/13_manifests/project_wide_synthesis_final_manifest.json",
+      "sha256": "sha256:88b4cfc108bb58cfb0d5452c6d21b78afe8d00079bea1781cb44290e5bb67429",
+      "size_bytes": 13374
+    }
+  ],
+  "historical_file_count": 314,
+  "new_scientific_computation": false,
+  "pass": true,
+  "protected_identity_sources": [
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_test_seal_manifest.json",
+      "sha256": "sha256:f3fc8bc263b5cd0862aad21e6331e280bff59fa70df5d2dd172491ee9ed438a5"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_trajectory_manifest.json",
+      "sha256": "sha256:6bc2351482b9167c63640699be0f048d65e3981babe0409895ea6a900b3e8ac2"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_role_assignment_manifest.json",
+      "sha256": "sha256:642f91985176774bf71795f2e72391082a9a43cdc0f3f6f7aaec7f1c432db47e"
+    }
+  ],
+  "protected_payload_read_count": 0,
+  "protected_private_file_count": 90,
+  "protected_private_paths": [
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_analytic_audit.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n12.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n12.npz",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n12_topology_margin.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n16.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n16.npz",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n16_topology_margin.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n8.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n8.npz",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_low_n8_topology_margin.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_analytic_audit.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n12.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n12.npz",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n12_topology_margin.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n16.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n16.npz",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n16_dop853_audit.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n16_topology_margin.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n8.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n8.npz",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n8_dop853_audit.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_02_variant_main_n8_topology_margin.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_analytic_audit.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n12.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n12.npz",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n12_topology_margin.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n16.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n16.npz",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n16_topology_margin.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n8.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n8.npz",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_low_n8_topology_margin.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_analytic_audit.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n12.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n12.npz",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n12_topology_margin.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n16.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n16.npz",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n16_dop853_audit.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n16_topology_margin.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n8.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n8.npz",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n8_dop853_audit.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/lcdf_09_variant_main_n8_topology_margin.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/validation_private/validation_parameters.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_analytic_audit.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n12.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n12.npz",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n12_topology_margin.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n16.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n16.npz",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n16_topology_margin.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n8.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n8.npz",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_low_n8_topology_margin.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_analytic_audit.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n12.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n12.npz",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n12_topology_margin.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n16.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n16.npz",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n16_dop853_audit.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n16_topology_margin.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n8.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n8.npz",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n8_dop853_audit.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n8_topology_margin.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_analytic_audit.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n12.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n12.npz",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n12_topology_margin.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n16.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n16.npz",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n16_topology_margin.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n8.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n8.npz",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_low_n8_topology_margin.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_analytic_audit.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n12.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n12.npz",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n12_topology_margin.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n16.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n16.npz",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n16_dop853_audit.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n16_topology_margin.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n8.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n8.npz",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n8_dop853_audit.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n8_topology_margin.json",
+    "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/sealed_parameters.json"
+  ],
+  "schema": "sph-pio-poc.stage04cs.input-freeze.v1",
+  "stage04_historical_file_count": 308,
+  "status_expected": {
+    "stage04a": "LOCAL_CAUSAL_TRAINING_HYPOTHESIS_CONTRACT_COMPLETE",
+    "stage04a_verification": "STAGE04A_TARGET_VERIFIED",
+    "stage04b": "LOCAL_CAUSAL_REFERENCE_FAMILY_POOL_QUALIFIED",
+    "stage04c": "TASK_ALIGNED_PARAMETER_GRADIENT_NOT_QUALIFIED",
+    "stage04cr": "TASK_GRADIENT_FAILURE_MIXED_OR_UNRESOLVED",
+    "stage04d_authorization": false
+  },
+  "status_observed": {
+    "stage04a": "LOCAL_CAUSAL_TRAINING_HYPOTHESIS_CONTRACT_COMPLETE",
+    "stage04a_verification": "STAGE04A_TARGET_VERIFIED",
+    "stage04b": "LOCAL_CAUSAL_REFERENCE_FAMILY_POOL_QUALIFIED",
+    "stage04c": "TASK_ALIGNED_PARAMETER_GRADIENT_NOT_QUALIFIED",
+    "stage04cr": "TASK_GRADIENT_FAILURE_MIXED_OR_UNRESOLVED",
+    "stage04d_authorization": false
+  },
+  "total_bytes": 52407418,
+  "zero_hash_mismatch": true,
+  "zero_historical_modification_at_freeze": true,
+  "zero_missing": true,
+  "zero_status_conflict": true
+}

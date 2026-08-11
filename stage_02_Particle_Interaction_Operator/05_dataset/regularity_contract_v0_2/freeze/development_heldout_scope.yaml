@@ -1,0 +1,37 @@
+scope_version: stage02js-development-heldout-freeze-0.2.0
+frozen_before_v0_2_metric_evaluation: true
+selection_policy: exact_family_enumeration_no_case_selection
+development:
+  families:
+    - FAMILY_PV_EXISTING
+    - FAMILY_CROSSMODE_A
+  permitted_uses:
+    - statistic_validity
+    - permutation_stability
+    - negative_control_discrimination
+    - invariance
+heldout_validation:
+  families:
+    - FAMILY_DIAGONAL_B
+  split_role: future_validation
+  target_array_access_gate:
+    - regularity_contract_v0_2_file_exists
+    - regularity_contract_v0_2_hash_frozen
+    - development_structured_targets_PASS
+    - negative_controls_PASS
+    - invariance_PASS
+heldout_test:
+  families:
+    - FAMILY_MIXED_C
+  split_role: future_test
+  target_array_access_gate:
+    - regularity_contract_v0_2_file_exists
+    - regularity_contract_v0_2_hash_frozen
+    - development_structured_targets_PASS
+    - negative_controls_PASS
+    - invariance_PASS
+case_template_source: stage_02_Particle_Interaction_Operator/05_dataset/controlled_multifamily_pair_scope_v0_2/family_design/family_preregistration.yaml
+family_roles_mutable_after_heldout_access: false
+case_matrix_mutable_after_heldout_access: false
+manual_override_permitted: false
+

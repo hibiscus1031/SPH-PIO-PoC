@@ -1,0 +1,202 @@
+{
+  "FD_path_count": 4320,
+  "FD_probe_pass_count": 178,
+  "JVP_count": 180,
+  "arm": "D1",
+  "context_count": 18,
+  "full_gradient_backward_count": 42,
+  "global_pass": true,
+  "global_seed_pass_count": 3,
+  "graph_rebuild_count": 0,
+  "group_lineage": {
+    "D1_PAIR_HEAD": {
+      "LCDF_01": {
+        "pass": true,
+        "seed_pass_count": 3
+      },
+      "LCDF_04": {
+        "pass": true,
+        "seed_pass_count": 3
+      },
+      "LCDF_05": {
+        "pass": true,
+        "seed_pass_count": 3
+      },
+      "LCDF_06": {
+        "pass": true,
+        "seed_pass_count": 3
+      },
+      "LCDF_07": {
+        "pass": true,
+        "seed_pass_count": 3
+      },
+      "LCDF_08": {
+        "pass": true,
+        "seed_pass_count": 3
+      }
+    },
+    "D1_TOKEN_ENCODER": {
+      "LCDF_01": {
+        "pass": true,
+        "seed_pass_count": 3
+      },
+      "LCDF_04": {
+        "pass": true,
+        "seed_pass_count": 3
+      },
+      "LCDF_05": {
+        "pass": true,
+        "seed_pass_count": 3
+      },
+      "LCDF_06": {
+        "pass": true,
+        "seed_pass_count": 3
+      },
+      "LCDF_07": {
+        "pass": true,
+        "seed_pass_count": 2
+      },
+      "LCDF_08": {
+        "pass": true,
+        "seed_pass_count": 3
+      }
+    }
+  },
+  "group_pass": {
+    "D1_PAIR_HEAD": true,
+    "D1_TOKEN_ENCODER": true
+  },
+  "local_descent_forward_count": 252,
+  "local_descent_lineage": {
+    "LCDF_01": {
+      "pass": true,
+      "seed_pass_count": 3
+    },
+    "LCDF_04": {
+      "pass": true,
+      "seed_pass_count": 3
+    },
+    "LCDF_05": {
+      "pass": true,
+      "seed_pass_count": 3
+    },
+    "LCDF_06": {
+      "pass": true,
+      "seed_pass_count": 3
+    },
+    "LCDF_07": {
+      "pass": true,
+      "seed_pass_count": 3
+    },
+    "LCDF_08": {
+      "pass": true,
+      "seed_pass_count": 3
+    }
+  },
+  "neural_rollouts": 0,
+  "optimizer_instances": 0,
+  "optimizer_steps": 0,
+  "parameter_restoration_checks": 2286,
+  "pass": true,
+  "peak_rss_bytes": 786497536,
+  "peak_rss_delta_bytes": 571129856,
+  "performance_evaluations": 0,
+  "persistent_updates": 0,
+  "retention_samples": [
+    {
+      "lineage": "LCDF_01",
+      "rss": 467943424,
+      "seed": 20500501
+    },
+    {
+      "lineage": "LCDF_04",
+      "rss": 469401600,
+      "seed": 20500501
+    },
+    {
+      "lineage": "LCDF_05",
+      "rss": 479068160,
+      "seed": 20500501
+    },
+    {
+      "lineage": "LCDF_06",
+      "rss": 478887936,
+      "seed": 20500501
+    },
+    {
+      "lineage": "LCDF_07",
+      "rss": 479903744,
+      "seed": 20500501
+    },
+    {
+      "lineage": "LCDF_08",
+      "rss": 480411648,
+      "seed": 20500501
+    },
+    {
+      "lineage": "LCDF_01",
+      "rss": 733298688,
+      "seed": 20500502
+    },
+    {
+      "lineage": "LCDF_04",
+      "rss": 733331456,
+      "seed": 20500502
+    },
+    {
+      "lineage": "LCDF_05",
+      "rss": 733380608,
+      "seed": 20500502
+    },
+    {
+      "lineage": "LCDF_06",
+      "rss": 732971008,
+      "seed": 20500502
+    },
+    {
+      "lineage": "LCDF_07",
+      "rss": 732971008,
+      "seed": 20500502
+    },
+    {
+      "lineage": "LCDF_08",
+      "rss": 732643328,
+      "seed": 20500502
+    },
+    {
+      "lineage": "LCDF_01",
+      "rss": 785825792,
+      "seed": 20500503
+    },
+    {
+      "lineage": "LCDF_04",
+      "rss": 786300928,
+      "seed": 20500503
+    },
+    {
+      "lineage": "LCDF_05",
+      "rss": 721027072,
+      "seed": 20500503
+    },
+    {
+      "lineage": "LCDF_06",
+      "rss": 689651712,
+      "seed": 20500503
+    },
+    {
+      "lineage": "LCDF_07",
+      "rss": 692142080,
+      "seed": 20500503
+    },
+    {
+      "lineage": "LCDF_08",
+      "rss": 691830784,
+      "seed": 20500503
+    }
+  ],
+  "reverse_jvp_pass_count": 180,
+  "reverse_jvp_probe_count": 180,
+  "rss_start_bytes": 215367680,
+  "training_runs": 0,
+  "wall_time_seconds": 650.036607875023
+}

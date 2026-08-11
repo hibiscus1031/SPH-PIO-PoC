@@ -1,0 +1,72 @@
+{
+  "manifest_version": "stage03a-input-freeze-1.0.0",
+  "stage": "Stage 03A",
+  "freeze_date": "2026-08-04",
+  "freeze_timing": "before_stage03a_contract_synthesis",
+  "request_sha256": "sha256:e1dfe5ebd36a7365e5cf41657cbb53b8f9ae18024a3b105c041e7ae520c84463",
+  "historical_workflow_mode": "read_only_input",
+  "historical_write_operations": 0,
+  "historical_statuses": {
+    "stage01_final": "V2_QUALIFICATION_FAIL",
+    "stage01h_diagnosis": "FINITE_RESOLUTION_DOMINANT",
+    "viscosity_operator_form": "NOT_CONFIRMED",
+    "stage02jw": "BLIND_MULTIFAMILY_DATASET_READY",
+    "stage02k": "PAIR_FORCE_PIO_ARCHITECTURE_QUALIFIED",
+    "stage02m": "STATIC_PAIR_FORCE_FITTING_NOT_QUALIFIED",
+    "stage02mr": "STATIC_FITTING_FAILURE_ATTRIBUTED_OPTIMIZATION_CONDITIONING",
+    "stage02mq": "STATIC_PAIR_FORCE_FITTING_V02_NOT_QUALIFIED",
+    "stage02_static_learning_route": "TERMINATED",
+    "stage02_regularity": "diagnostic_only",
+    "stage02_static_test": "consumed_confirmatory_test"
+  },
+  "reports": [
+    {"path": "07_reports/stage01g_v2_qualification_report.md", "sha256": "sha256:36554b34bad638ee6981e713b995e4c7583838dbba0253b452b3986b6769b1c0", "byte_count": 1475},
+    {"path": "07_reports/stage01h_final_report.md", "sha256": "sha256:a2ed692c7eab332b5373c11d24c9644df3781980b663c6c8322d39003ae339e0", "byte_count": 1561},
+    {"path": "stage_02_Particle_Interaction_Operator/07_reports/stage02jw_final_report.md", "sha256": "sha256:a35161d0fcf8ac43edd21694414f2778936165b589cd21e5205483e042d67c83", "byte_count": 1821},
+    {"path": "stage_02_Particle_Interaction_Operator/07_reports/stage02k_final_report.md", "sha256": "sha256:bc713e08c3b3f0bd34e50fb3b296a9dd5f0db4540cf4b5392336e6a41887de15", "byte_count": 2411},
+    {"path": "stage_02_Particle_Interaction_Operator/07_reports/stage02m_final_report.md", "sha256": "sha256:888d128a2208a7ac041df5174362790c9602e74b24ea8f7abd113755af0ccba4", "byte_count": 4271},
+    {"path": "stage_02_Particle_Interaction_Operator/07_reports/stage02mr_final_report.md", "sha256": "sha256:8dc07f364d91bb730f1687fe49b21c4226399ef9c42f00a8203ad6c9c82917dc", "byte_count": 3181},
+    {"path": "stage_02_Particle_Interaction_Operator/07_reports/stage02mq_final_report.md", "sha256": "sha256:a21a184bb59c25b31bb0487251b9be109158fe5434e8c00cd064d13794ac3c36", "byte_count": 5282},
+    {"path": "stage_02_Particle_Interaction_Operator/07_reports/stage02ms_stage02_status_ledger.md", "sha256": "sha256:d2a1f2df6c6e7e38f9c990efde3db57cd1c6122c7c1006a8093b5c1462463178", "byte_count": 3115}
+  ],
+  "architecture_evidence": {
+    "contract_path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/contracts/architecture_contract_v0_1.json",
+    "contract_sha256": "sha256:1060b0981f69053828f83fe5bf96cd10f637f4306ea1a8d07a0042f9af5d0c28",
+    "architecture_hash": "sha256:1e313f871b13f3f2fc0cc780ab24d50a7fd9fe8a96866da91fae5ede9ab555a4",
+    "role": "historical_structural_evidence_only"
+  },
+  "dataset_evidence": {
+    "manifest_path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/manifests/stage02jw_dataset_manifest.json",
+    "manifest_sha256": "sha256:902154cdd2aff77ecdfb0fc853f7d8b7befb515a891adfc2701dfd895edf90ce",
+    "role": "historical_static_pair_scope_only",
+    "dynamic_trajectory_dataset": false
+  },
+  "status_ledger": {
+    "path": "stage_02_Particle_Interaction_Operator/08_route_closure/status_ledger/stage02_complete_status_ledger.json",
+    "sha256": "sha256:bf1d19f36640d1500541892ad8b359bf459ae274fd41871e6239192e9e323c5e"
+  },
+  "selected_stage02_checkpoints": [
+    {"run_id":"K0_seed20261211","path":"stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/checkpoints/K0_seed20261211/update_1000.pt","sha256":"sha256:8d65286395e5001645e7a9a7bcd5da605fe30e9e3a7825f4107e0106b059fae8"},
+    {"run_id":"K0_seed20261212","path":"stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/checkpoints/K0_seed20261212/update_0840.pt","sha256":"sha256:f667ce47fd91725eeb450599fb12bf54bd104dbf10ee88730dcabeb494def052"},
+    {"run_id":"K0_seed20261213","path":"stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/checkpoints/K0_seed20261213/update_0900.pt","sha256":"sha256:13d23924f96a6764130458d2c2d8bec56277c1dbe2ca74ee377cb1eacb65034f"},
+    {"run_id":"K1_seed20261211","path":"stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/checkpoints/K1_seed20261211/update_1000.pt","sha256":"sha256:12cdd56070edc9beecddef890e77e377417bd72b670746ab3ac3830e72ebfc03"},
+    {"run_id":"K1_seed20261212","path":"stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/checkpoints/K1_seed20261212/update_1000.pt","sha256":"sha256:921cafeaebb66624a5838f1c7ed9160318c65fae95c8f255bab63bc8215a9bcf"},
+    {"run_id":"K1_seed20261213","path":"stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/checkpoints/K1_seed20261213/update_1000.pt","sha256":"sha256:ee948fa7c7c8f0fda52238f25680f7780287a22e275fc5835cfc9754338a3600"},
+    {"run_id":"K2_seed20261211","path":"stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/checkpoints/K2_seed20261211/update_0500.pt","sha256":"sha256:7e608d0dfc85064e03598724238e2b8f47be7e455f635379a2661a8833efcd44"},
+    {"run_id":"K2_seed20261212","path":"stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/checkpoints/K2_seed20261212/update_0540.pt","sha256":"sha256:8924bdae4b531ee2dacf0490e3635fd5214f186f9d6c1a622e43c789bf64e87d"},
+    {"run_id":"K2_seed20261213","path":"stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_2/checkpoints/K2_seed20261213/update_1000.pt","sha256":"sha256:4936eb69bdc5fda7e5743f4e34bbe25f4af58986a051e89fcde0fad6560bb132"}
+  ],
+  "checkpoint_boundary": {
+    "role": "historical_static_diagnostic_only",
+    "dynamic_initialization_permitted": false,
+    "copied_into_stage03": false,
+    "optimizer_state_reuse_permitted": false
+  },
+  "forbidden_historical_uses": [
+    "modify_historical_files",
+    "copy_stage02_checkpoint_as_stage03_weight",
+    "reuse_stage02_test_as_blind_test",
+    "use_stage02_static_metrics_for_stage03_threshold_selection"
+  ],
+  "evidence_resolution": "PASS"
+}

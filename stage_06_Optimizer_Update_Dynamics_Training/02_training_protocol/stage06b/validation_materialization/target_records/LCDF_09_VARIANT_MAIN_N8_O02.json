@@ -1,0 +1,33 @@
+{
+  "D0_state_hash": "sha256:3ef7a3a97fe593ec00bea387b1f96ac2ef05c891091e79c1b3c38f15a0c9c1b1",
+  "N": 8,
+  "array_hashes": {
+    "a_cm": "sha256:e319171f95c44645608a75b524768a3c8b219b71d64217917eac82051a6f21ff",
+    "a_cons": "sha256:68b95c4e6b97ccf7237b09187ba7b6fa0ab2d2f80295899aef19944d7dc09771",
+    "a_def": "sha256:852ecef91677f9571220942d89642c414af34e8279041431c44550e0f8265372",
+    "a_incompatible": "sha256:9e7b377195d5c075eb4b1b630c8430e1941de833f381ec13cddc391c52525ab2",
+    "y_def": "sha256:bcd567d2b67db3322fd6d3397d9186cbc18a96e4174f9dacb922fbea8066f08b"
+  },
+  "canonical_sha256": "sha256:dacce6b1b368f1d47628fa48c1ace932b9f73a5ef4d5eb8f675a8eb1f165efb7",
+  "case_cache_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/case_cache/LCDF_09_VARIANT_MAIN_N8_O02.npz",
+  "case_cache_sha256": "sha256:a7f806e83b3581679da865f96bfbfcd0e048bd01718e30aef87b1332ff4c6c28",
+  "dt": 0.000390625,
+  "lineage": "LCDF_09",
+  "npz_path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/validation_materialization/target_records/LCDF_09_VARIANT_MAIN_N8_O02.npz",
+  "npz_sha256": "sha256:8f706debdd6e6469e9a4841abec99037b88103727833fed5dcd8b0610b4ce8fa",
+  "origin": 2,
+  "qualification_verdict": "QUALIFIED_STAGE06B_VALIDATION",
+  "record_id": "LCDF_09_VARIANT_MAIN_N8_O02",
+  "reference_accepted_hash": "sha256:4cf5243e7ba6b1db2996e1fc8efde4311c854d59c2eaec32cfffa70621642a48",
+  "reference_history_hashes": [
+    "sha256:1ba283e0b9d98bae94c8e45dc0ccd80d98342fdb763f1cb8500da053c4d2c6b7",
+    "sha256:6467727dc88d4072f94a38e016d1f743e655c9d22fa3d12f6962de0ba7a0157b",
+    "sha256:e70f4f9c4e68eb0c6bbd426b533ab1c2cda0d6ed550c917e752f7e5c77f4dc8d",
+    "sha256:3a4e176a16e4b8d1f080ea61ff9d07adacab97625d745d0d02006375fc4c7a77"
+  ],
+  "s_a": 0.3456328553384328,
+  "s_a_source": "frozen_STAGE05B_TRAIN_scale",
+  "schema": "sph-pio-poc.stage06b.validation-target-record.v1",
+  "validation_did_not_modify_scale": true,
+  "variant": "VARIANT_MAIN"
+}

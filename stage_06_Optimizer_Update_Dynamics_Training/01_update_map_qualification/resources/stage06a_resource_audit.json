@@ -1,0 +1,92 @@
+{
+  "all_finite_completion": true,
+  "all_qualification_models_destroyed": true,
+  "dense_particle_N_by_N_allocation_observed": false,
+  "no_retained_autograd_monotonic_growth": true,
+  "pass": true,
+  "peak_rss_delta_limit_bytes": 1610612736,
+  "peak_rss_delta_max_bytes": 1057144832,
+  "per_process": [
+    {
+      "arm": "D1",
+      "optimizer_state_memory_peak_upper_bound_bytes": 92192,
+      "pass": true,
+      "peak_rss_delta_bytes": 451952640,
+      "retained_autograd_monotonic_growth": false,
+      "seed": 20600601,
+      "wall_time_seconds": 551.0022519590566
+    },
+    {
+      "arm": "D1",
+      "optimizer_state_memory_peak_upper_bound_bytes": 92192,
+      "pass": true,
+      "peak_rss_delta_bytes": 387432448,
+      "retained_autograd_monotonic_growth": false,
+      "seed": 20600602,
+      "wall_time_seconds": 997.8235231250292
+    },
+    {
+      "arm": "D1",
+      "optimizer_state_memory_peak_upper_bound_bytes": 92192,
+      "pass": true,
+      "peak_rss_delta_bytes": 399261696,
+      "retained_autograd_monotonic_growth": false,
+      "seed": 20600603,
+      "wall_time_seconds": 1039.749146832968
+    },
+    {
+      "arm": "D2",
+      "optimizer_state_memory_peak_upper_bound_bytes": 193568,
+      "pass": true,
+      "peak_rss_delta_bytes": 458571776,
+      "retained_autograd_monotonic_growth": false,
+      "seed": 20600601,
+      "wall_time_seconds": 1675.3109653330175
+    },
+    {
+      "arm": "D2",
+      "optimizer_state_memory_peak_upper_bound_bytes": 193568,
+      "pass": true,
+      "peak_rss_delta_bytes": 472186880,
+      "retained_autograd_monotonic_growth": false,
+      "seed": 20600602,
+      "wall_time_seconds": 1670.907942458056
+    },
+    {
+      "arm": "D2",
+      "optimizer_state_memory_peak_upper_bound_bytes": 193568,
+      "pass": true,
+      "peak_rss_delta_bytes": 452984832,
+      "retained_autograd_monotonic_growth": false,
+      "seed": 20600603,
+      "wall_time_seconds": 1668.0877813750412
+    },
+    {
+      "arm": "D3",
+      "optimizer_state_memory_peak_upper_bound_bytes": 367648,
+      "pass": true,
+      "peak_rss_delta_bytes": 1057144832,
+      "retained_autograd_monotonic_growth": false,
+      "seed": 20600601,
+      "wall_time_seconds": 2488.7485275419895
+    },
+    {
+      "arm": "D3",
+      "optimizer_state_memory_peak_upper_bound_bytes": 367648,
+      "pass": true,
+      "peak_rss_delta_bytes": 886358016,
+      "retained_autograd_monotonic_growth": false,
+      "seed": 20600602,
+      "wall_time_seconds": 2480.1377246669726
+    },
+    {
+      "arm": "D3",
+      "optimizer_state_memory_peak_upper_bound_bytes": 367648,
+      "pass": true,
+      "peak_rss_delta_bytes": 887455744,
+      "retained_autograd_monotonic_growth": false,
+      "seed": 20600603,
+      "wall_time_seconds": 2492.3215370420367
+    }
+  ]
+}

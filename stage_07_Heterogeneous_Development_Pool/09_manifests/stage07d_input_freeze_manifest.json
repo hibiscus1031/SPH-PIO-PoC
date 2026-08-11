@@ -1,0 +1,52 @@
+{
+  "authorization": "FORMAL_RETRAINING_PROTOCOL_AND_FRESH_VALIDATION_PREFLIGHT_READY",
+  "checks": {
+    "FRESH_VALIDATION_V2_256": true,
+    "TRAIN_V2_896": true,
+    "checkpoint_selection_identity": true,
+    "consumed_validation_unread": true,
+    "eight_112_batches_exact_once": true,
+    "formal_counts_zero_before_start": true,
+    "historical_hashes_unchanged": true,
+    "nine_run_identities": true,
+    "optimizer_scheduler_identity": true,
+    "original_sealed_test_denied": true,
+    "protocol_hash_exact": true,
+    "scale_exact": true,
+    "stage06c_590_checkpoints_unchanged": true,
+    "stage06c_9_selected_unchanged": true,
+    "stage07c_authorization": true,
+    "success_gates_frozen": true,
+    "target_manifest_exact": true
+  },
+  "formal_optimizer_steps_before_freeze": 0,
+  "formal_training_runs_before_freeze": 0,
+  "historical_changed": [],
+  "pass": true,
+  "protocol_sha256": "sha256:21b52f0aca3791cdc0d58165f1edd980667bafe0eee5a9d52544c24a8f518dbb",
+  "run_ids": [
+    "D1_seed20700711",
+    "D1_seed20700712",
+    "D1_seed20700713",
+    "D2_seed20700711",
+    "D2_seed20700712",
+    "D2_seed20700713",
+    "D3_seed20700711",
+    "D3_seed20700712",
+    "D3_seed20700713"
+  ],
+  "scale_hash": "sha256:4ca44e15f2024c5ed02c97d10d1342644fccd17db6a40d7e0e558c8d0214141b",
+  "scale_v2": 1.7254786448147168,
+  "schema": "sph-pio-poc.stage07d.input-freeze.v1",
+  "sealed_decode_counts": {
+    "evaluations": 0,
+    "formula": 0,
+    "origin": 0,
+    "source": 0,
+    "state": 0,
+    "target": 0
+  },
+  "target_manifest_sha256": "sha256:9672352d3a9ee0798d86a52a92151167c3bb83ddb38e5eef1e31e491fa1d4198",
+  "train_case_changed": [],
+  "validation_case_changed": []
+}

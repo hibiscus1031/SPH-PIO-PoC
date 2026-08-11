@@ -1,0 +1,222 @@
+{
+  "passed": 20,
+  "required": 20,
+  "rows": [
+    {
+      "derivative_route_disagreement_max": 9.237055564881302e-14,
+      "evaluator_result_sha256": "sha256:e08c38c10c9b19545d26f424ddc153b160c88f2e7e09620a0db182edf3d99868",
+      "family_id": "LCDF_01",
+      "formula_sha256": "sha256:afa6fbcb866d6e48046190060eb8da32103cdd4b299acd610db7c971011865dd",
+      "maximum_Mach": 0.001106111427263701,
+      "minimum_J": 0.9986194582695149,
+      "qualification_status": "PASS",
+      "role": "TRAIN_LINEAGE",
+      "template": "AXIAL_COMPRESSION",
+      "variant": "VARIANT_LOW"
+    },
+    {
+      "derivative_route_disagreement_max": 6.927791673660977e-14,
+      "evaluator_result_sha256": "sha256:45d90c16bd20fd3f1ecf49b737e9831ad169a2eb7cab91d3c13e60590cb25337",
+      "family_id": "LCDF_01",
+      "formula_sha256": "sha256:afa6fbcb866d6e48046190060eb8da32103cdd4b299acd610db7c971011865dd",
+      "maximum_Mach": 0.001474794288133552,
+      "minimum_J": 0.9981594630377066,
+      "qualification_status": "PASS",
+      "role": "TRAIN_LINEAGE",
+      "template": "AXIAL_COMPRESSION",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "evaluator_result_sha256": "sha256:3a017f644f01f57338ecc0b124c6e1f2a516cc6bbd0dee27213738dd999ebdc0",
+      "family_id": "LCDF_02",
+      "formula_sha256": "sha256:3ddac12f9ebd21e4bb9a101f06c34268b0511df8e6604c6ab41dbcd66e7089b9",
+      "qualification_status": "PASS",
+      "role": "VALIDATION_LINEAGE",
+      "template": "BIAXIAL_BREATHING",
+      "variant": "VARIANT_LOW"
+    },
+    {
+      "evaluator_result_sha256": "sha256:12c97b2a9a18b26dc3eb260e8447f2f1c019528137616e1a29303f7d7c3845a4",
+      "family_id": "LCDF_02",
+      "formula_sha256": "sha256:3ddac12f9ebd21e4bb9a101f06c34268b0511df8e6604c6ab41dbcd66e7089b9",
+      "qualification_status": "PASS",
+      "role": "VALIDATION_LINEAGE",
+      "template": "BIAXIAL_BREATHING",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "evaluator_result_sha256": "sha256:8f800b49bde09ca5679895ee4c092d2caceb3ef5e9152ef1250494c037e884e1",
+      "family_id": "LCDF_03",
+      "formula_sha256": "sha256:c8d8d645b87930cfdbefdba2ad3c0acc94886501a2cdf52370c66435ee4da8ce",
+      "qualification_status": "PASS",
+      "role": "SEALED_TEST_LINEAGE",
+      "template": "SHEAR_COMPRESSION_CELL",
+      "variant": "VARIANT_LOW"
+    },
+    {
+      "evaluator_result_sha256": "sha256:5098d2e2e1dc70b988bf08c9b3ed68dd04fa1d27c9f3518484f7f362fbb32829",
+      "family_id": "LCDF_03",
+      "formula_sha256": "sha256:c8d8d645b87930cfdbefdba2ad3c0acc94886501a2cdf52370c66435ee4da8ce",
+      "qualification_status": "PASS",
+      "role": "SEALED_TEST_LINEAGE",
+      "template": "SHEAR_COMPRESSION_CELL",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "derivative_route_disagreement_max": 1.758593271006248e-13,
+      "evaluator_result_sha256": "sha256:698f88cda8ac2ab6e96052b287a74750080b4decb25b74d5ccc14aa1e86b3d73",
+      "family_id": "LCDF_04",
+      "formula_sha256": "sha256:74570e91b829ec0d7991356c8e3d61e1296f2edbbd4dc13f10d64a4ac4c2a140",
+      "maximum_Mach": 0.001081380539112622,
+      "minimum_J": 0.9984065834882114,
+      "qualification_status": "PASS",
+      "role": "TRAIN_LINEAGE",
+      "template": "ROTATING_CELL",
+      "variant": "VARIANT_LOW"
+    },
+    {
+      "derivative_route_disagreement_max": 1.1723955140041653e-13,
+      "evaluator_result_sha256": "sha256:376b12812c7a56ee010b6341a6805fd66ac43f545c54ef045c6493c4602997b3",
+      "family_id": "LCDF_04",
+      "formula_sha256": "sha256:74570e91b829ec0d7991356c8e3d61e1296f2edbbd4dc13f10d64a4ac4c2a140",
+      "maximum_Mach": 0.001446650661360576,
+      "minimum_J": 0.9978685436921142,
+      "qualification_status": "PASS",
+      "role": "TRAIN_LINEAGE",
+      "template": "ROTATING_CELL",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "derivative_route_disagreement_max": 1.8474111129762605e-13,
+      "evaluator_result_sha256": "sha256:a8e24c072ff3efca77b0be7e7f77539011867f3a10725d03efb2d9f816b41394",
+      "family_id": "LCDF_05",
+      "formula_sha256": "sha256:467b1c6a16b8fed118289473685717e2b22be1488bdf3e6adb2efe8b23e10849",
+      "maximum_Mach": 0.0008260606714938586,
+      "minimum_J": 0.9981445983942983,
+      "qualification_status": "PASS",
+      "role": "TRAIN_LINEAGE",
+      "template": "OBLIQUE_LONGITUDINAL",
+      "variant": "VARIANT_LOW"
+    },
+    {
+      "derivative_route_disagreement_max": 1.936228954946273e-13,
+      "evaluator_result_sha256": "sha256:d52a2a90aa054dfafa07985649a3bee3be51739541c12221b5cb77afe3435dcc",
+      "family_id": "LCDF_05",
+      "formula_sha256": "sha256:467b1c6a16b8fed118289473685717e2b22be1488bdf3e6adb2efe8b23e10849",
+      "maximum_Mach": 0.0011014395008449363,
+      "minimum_J": 0.9975261311923977,
+      "qualification_status": "PASS",
+      "role": "TRAIN_LINEAGE",
+      "template": "OBLIQUE_LONGITUDINAL",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "derivative_route_disagreement_max": 1.1368683772161603e-13,
+      "evaluator_result_sha256": "sha256:0105a44585070a6bdcf01faf05ea776ede4e915ce2beb6fe463c86a702c5fb8d",
+      "family_id": "LCDF_06",
+      "formula_sha256": "sha256:1884345727104dea34ba42ff094bfbcb1d614839957a0dd21f881b30c395ff91",
+      "maximum_Mach": 0.0014762196657941936,
+      "minimum_J": 0.9999999999999999,
+      "qualification_status": "PASS",
+      "role": "TRAIN_LINEAGE",
+      "template": "OBLIQUE_TRANSVERSE",
+      "variant": "VARIANT_LOW"
+    },
+    {
+      "derivative_route_disagreement_max": 1.1368683772161603e-13,
+      "evaluator_result_sha256": "sha256:72840767e7824c7a12b4e31ca45dec4df5706753cd193211ae39d91e19082bba",
+      "family_id": "LCDF_06",
+      "formula_sha256": "sha256:1884345727104dea34ba42ff094bfbcb1d614839957a0dd21f881b30c395ff91",
+      "maximum_Mach": 0.0019682928877255918,
+      "minimum_J": 0.9999999999999999,
+      "qualification_status": "PASS",
+      "role": "TRAIN_LINEAGE",
+      "template": "OBLIQUE_TRANSVERSE",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "derivative_route_disagreement_max": 1.1723955140041653e-13,
+      "evaluator_result_sha256": "sha256:712cda9a346b2f5191193829fa37506cb830fb3f7e61010edc30a2234936213c",
+      "family_id": "LCDF_07",
+      "formula_sha256": "sha256:1bf89b4bef0e9f4e8970338a8230ad14798fe69e3de2cdf98819402f6e4d6c8b",
+      "maximum_Mach": 0.0019396112113592798,
+      "minimum_J": 0.9979287994469085,
+      "qualification_status": "PASS",
+      "role": "TRAIN_LINEAGE",
+      "template": "MULTIMODE_CROSS",
+      "variant": "VARIANT_LOW"
+    },
+    {
+      "derivative_route_disagreement_max": 1.4810859862207708e-13,
+      "evaluator_result_sha256": "sha256:3fb5c3fd2c6e42c8e7772f3759003ca94021e0c3e894f7133a67570d2fad44bb",
+      "family_id": "LCDF_07",
+      "formula_sha256": "sha256:1bf89b4bef0e9f4e8970338a8230ad14798fe69e3de2cdf98819402f6e4d6c8b",
+      "maximum_Mach": 0.0025839497222994935,
+      "minimum_J": 0.9972969823194595,
+      "qualification_status": "PASS",
+      "role": "TRAIN_LINEAGE",
+      "template": "MULTIMODE_CROSS",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "derivative_route_disagreement_max": 1.6172884269747035e-13,
+      "evaluator_result_sha256": "sha256:05c6aae2268ce97d9118d314e765d4101b370c727a358821928e8849f1e834b2",
+      "family_id": "LCDF_08",
+      "formula_sha256": "sha256:b1c60ab511c497373041d6f2ff26858d1db01225710b8c708c853bf7aa45184c",
+      "maximum_Mach": 0.0015608333272135529,
+      "minimum_J": 0.9968876579432746,
+      "qualification_status": "PASS",
+      "role": "TRAIN_LINEAGE",
+      "template": "ANISOTROPIC_DOUBLE_MODE",
+      "variant": "VARIANT_LOW"
+    },
+    {
+      "derivative_route_disagreement_max": 7.028297605255587e-14,
+      "evaluator_result_sha256": "sha256:b7c41344882132446041cd4aa4b80ec5c3129a503ef1c3e6a61001f47be1b824",
+      "family_id": "LCDF_08",
+      "formula_sha256": "sha256:b1c60ab511c497373041d6f2ff26858d1db01225710b8c708c853bf7aa45184c",
+      "maximum_Mach": 0.0020811111029514036,
+      "minimum_J": 0.9959499265604538,
+      "qualification_status": "PASS",
+      "role": "TRAIN_LINEAGE",
+      "template": "ANISOTROPIC_DOUBLE_MODE",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "evaluator_result_sha256": "sha256:7e4addd4b458ca41362c79cec3ad5da9c6f5cffb90aef90a19b7afe99d372d22",
+      "family_id": "LCDF_09",
+      "formula_sha256": "sha256:5d90af5826eb5e19bcdefe90e7dd0f268a8fb4d19219db094a3701ea14882ad5",
+      "qualification_status": "PASS",
+      "role": "VALIDATION_LINEAGE",
+      "template": "PHASE_COUPLED_OBLIQUE",
+      "variant": "VARIANT_LOW"
+    },
+    {
+      "evaluator_result_sha256": "sha256:6c5a51a7a54bb61560a1e62a02208f7c71688bd22dfd1a485ab291f68359c2ba",
+      "family_id": "LCDF_09",
+      "formula_sha256": "sha256:5d90af5826eb5e19bcdefe90e7dd0f268a8fb4d19219db094a3701ea14882ad5",
+      "qualification_status": "PASS",
+      "role": "VALIDATION_LINEAGE",
+      "template": "PHASE_COUPLED_OBLIQUE",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "evaluator_result_sha256": "sha256:0a78dec4520d39903c5a5eed6023f53155f61cb93a32702ad92e6faade12ae86",
+      "family_id": "LCDF_10",
+      "formula_sha256": "sha256:c7ae397e8eb6687fe23b3555a3801356527806503697df7b2ee5a03156ef472e",
+      "qualification_status": "PASS",
+      "role": "SEALED_TEST_LINEAGE",
+      "template": "ROTATING_MULTIMODE",
+      "variant": "VARIANT_LOW"
+    },
+    {
+      "evaluator_result_sha256": "sha256:2bf99c883f237730345bec2354ef5b87fb49bed9c4b03edae6a2639b7e9152a0",
+      "family_id": "LCDF_10",
+      "formula_sha256": "sha256:c7ae397e8eb6687fe23b3555a3801356527806503697df7b2ee5a03156ef472e",
+      "qualification_status": "PASS",
+      "role": "SEALED_TEST_LINEAGE",
+      "template": "ROTATING_MULTIMODE",
+      "variant": "VARIANT_MAIN"
+    }
+  ]
+}

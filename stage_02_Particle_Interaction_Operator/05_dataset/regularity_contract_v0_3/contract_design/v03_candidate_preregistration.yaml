@@ -1,0 +1,82 @@
+candidate_id: attribution_contract_v0_3
+candidate_semantics: magnitude_direction_conjunction
+candidate_count: 1
+metric_sweep_permitted: false
+post_observation_selection_permitted: false
+preregistered_before_development_execution: true
+historical_v0_2_statistic_redefined: false
+decomposition:
+  edge_population: active_nonzero_kernel_undirected_reciprocal_edges
+  reciprocal_reduction: source_index_less_than_target_index
+  q_i: norm(delta_a_i)
+  d_ij_squared: (r_ij/h)^2+epsilon_r
+  E_mag: (q_i-q_j)^2
+  E_dir: max(0,norm(delta_a_i-delta_a_j)^2-E_mag)
+  M_h: sqrt(mean_edges(E_mag/d_ij_squared))/(RMS(delta_a)+epsilon_a)
+  D_h: sqrt(mean_edges(E_dir/d_ij_squared))/(RMS(delta_a)+epsilon_a)
+  closure: S_h^2_equals_M_h^2_plus_D_h^2
+  epsilon_r: 3.5527136788005009e-15
+  epsilon_a: 0.0
+  closure_absolute_tolerance: 1.0e-14
+  closure_relative_tolerance: 1.0e-12
+permutation:
+  generator: PCG64
+  count_per_case: 256
+  root_seed: 20260207
+  seed_rule: first_8_big_endian_bytes_SHA256_UTF8(root_seed_pipe_case_id_pipe_permutation_index)
+  same_particle_permutations_for_M_and_D: true
+  screening_permitted: false
+structured_gate:
+  p_mag_formula: (1+count(M_perm<=M_observed))/257
+  p_dir_formula: (1+count(D_perm<=D_observed))/257
+  p_mag_max: 0.01
+  p_dir_max: 0.01
+  conjunction_required: true
+refinement:
+  high_resolution_M_h_not_above_low: true
+  high_resolution_D_h_not_above_low: true
+  M_h_OLS_slope_against_level_index_max: 0.0
+  D_h_OLS_slope_against_level_index_max: 0.0
+  adjacent_monotonicity_required: false
+  original_non_null_gates_required:
+    - target_endpoint_magnitude_nonincreasing
+    - adjacent_low_mode_direction_cosine
+    - relative_neighbor_variation_strictly_decreasing
+    - physical_gradient_scale_coefficient_of_variation
+  convergence_order_claim_permitted: false
+control_semantics:
+  joint_false_positive: p_mag_at_most_0p01_AND_p_dir_at_most_0p01
+  FULL_PARTICLE_PERMUTATION: joint_PASS_expected_false
+  INDEPENDENT_COMPONENT_PERMUTATION: joint_PASS_expected_false
+  RANDOM_PARTICLE_SIGN_FLIP: magnitude_significance_allowed_direction_significance_expected_false_joint_PASS_expected_false
+  NYQUIST_CHECKERBOARD_MATCHED_RMS: joint_PASS_expected_false
+  GAUSSIAN_WHITE_MATCHED_RMS: joint_PASS_expected_false
+calibration:
+  development_families: [FAMILY_PV_EXISTING, FAMILY_CROSSMODE_A]
+  resolution_cases_per_family: 3
+  realizations_per_case_control: 512
+  realization_root: 20260804
+  realization_seed_rule: first_8_big_endian_bytes_SHA256_UTF8_exact_concat_stage02jt_case_id_control_id_realization_index
+  confidence_interval: exact_one_sided_Clopper_Pearson
+  confidence_level: 0.95
+  qualification: each_case_control_upper_bound_at_most_0p05
+  raw_rate_only_gate_permitted: false
+invariance:
+  transforms:
+    - amplitude_scale_0p1_1_10
+    - periodic_translation
+    - axis_exchange
+    - vector_rotation_90
+    - particle_reorder_then_canonicalize
+    - edge_order_reversal
+  quantities: [M_h, D_h, p_mag, p_dir]
+  metric_absolute_tolerance: 1.0e-14
+  metric_relative_tolerance: 1.0e-12
+  p_value_exact: true
+historical_boundaries:
+  stage02js_status: VERSIONED_MULTIFAMILY_DATASET_NOT_READY
+  v0_2_qualified_candidate_count: 0
+  stage02k_authorized: false
+  DIAGONAL_B_and_MIXED_C_final_blind_proof_permitted: false
+manual_override_permitted: false
+

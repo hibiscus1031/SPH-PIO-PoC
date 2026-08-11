@@ -1,0 +1,31 @@
+{
+  "Stage02K_authorized": false,
+  "existing_records_modified": false,
+  "failed_family_cases_deleted_or_replaced": false,
+  "input_freeze_reverified": true,
+  "model_generated": false,
+  "new_graph_records_materialized": 0,
+  "normalization_fitted": false,
+  "output_hashes": {
+    "stage_02_Particle_Interaction_Operator/05_dataset/controlled_multifamily_pair_scope_v0_2/canonical_records/canonical_inventory.json": "sha256:a8a244d124d9d06cb180cad654380a038abf987f04e655935c595a996f89adf7",
+    "stage_02_Particle_Interaction_Operator/05_dataset/controlled_multifamily_pair_scope_v0_2/eligibility/dataset_eligibility_results.json": "sha256:7c2278f057740848e3718ac4f7eb157e586241f2e249e329f62626ca478d3c0b",
+    "stage_02_Particle_Interaction_Operator/05_dataset/controlled_multifamily_pair_scope_v0_2/leakage/multifamily_leakage_graph.json": "sha256:11c1d7e02ece77c62ecc514852afd0f64cec63fff2757ad8d3c2fcede9c66977",
+    "stage_02_Particle_Interaction_Operator/05_dataset/controlled_multifamily_pair_scope_v0_2/manifests/stage02jr_dataset_manifest.json": "sha256:cc299e15a0b93af8fb4fcc869ee35b2c9b02fe1351ab84ce8cc81ed262304678",
+    "stage_02_Particle_Interaction_Operator/05_dataset/controlled_multifamily_pair_scope_v0_2/normalization/normalization_decision.json": "sha256:11c0f172869f672688c9a77698a4822479706eb0982ea44bb063c2f25840507a",
+    "stage_02_Particle_Interaction_Operator/05_dataset/controlled_multifamily_pair_scope_v0_2/ood_registry/isolation_registry.json": "sha256:5d1dea73b69ac9542df84b4242541bfdee4c5d14cd190f19f82f5d2558521ad1",
+    "stage_02_Particle_Interaction_Operator/05_dataset/controlled_multifamily_pair_scope_v0_2/qc/requalification_qc.json": "sha256:d56bec48789cb65e21a458d23cc673fea4ae1fc2fb5307e5411090f7c27425ed",
+    "stage_02_Particle_Interaction_Operator/05_dataset/controlled_multifamily_pair_scope_v0_2/raw_graph_records/materialization_status.json": "sha256:bf51e8a1c6bd779caaa9b822f64a51f54532680492623aca029ef7d4d9ffde1f",
+    "stage_02_Particle_Interaction_Operator/05_dataset/controlled_multifamily_pair_scope_v0_2/splits/prefrozen_split_result.json": "sha256:b0dafa55fbebc3d0ffccaaea7356cd9b557a6907050303859ac765c514327820"
+  },
+  "performance_claim_generated": false,
+  "qualification_evidence_hashes": {
+    "stage_02_Particle_Interaction_Operator/05_dataset/controlled_multifamily_pair_scope_v0_2/conservation/pair_only_conservation_qualification.json": "sha256:0fab3f169763bdc022227354293e9e8ea3f081221180de763646c82583dadba0",
+    "stage_02_Particle_Interaction_Operator/05_dataset/controlled_multifamily_pair_scope_v0_2/reference_qualification/reference_qualification_results.json": "sha256:fa2a27b9e786097adc513590af0af1ddd99677b3fb373181cda6f00971f8206a",
+    "stage_02_Particle_Interaction_Operator/05_dataset/controlled_multifamily_pair_scope_v0_2/target_qualification/new_family_target_candidates.json": "sha256:53577407fef7b6257182d9cb80e67527d8634c65b8f5e2f2411a498acec9f2d4",
+    "stage_02_Particle_Interaction_Operator/05_dataset/controlled_multifamily_pair_scope_v0_2/target_qualification/six_component_attribution.json": "sha256:4703dafd84b53913932ee4e67bb791741220426e009d7ff2a86aba88460f1380"
+  },
+  "readiness_category": "not_ready",
+  "run_version": "stage02jr-requalification-run-0.2.0",
+  "split_created": false,
+  "training_performed": false
+}

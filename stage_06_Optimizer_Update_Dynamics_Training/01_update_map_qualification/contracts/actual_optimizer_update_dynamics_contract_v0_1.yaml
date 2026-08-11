@@ -1,0 +1,155 @@
+contract_id: actual_optimizer_update_dynamics_contract_v0_1
+schema: sph-pio-poc.stage06a.contract.v1
+stage_nature:
+  user_authorized_new_hypothesis: true
+  formal_training: false
+  preserve_stage05_failures: true
+  qualification_weights_disposable: true
+backend:
+  device: CPU
+  dtype: float64
+  sdpa: SDPBackend.MATH
+models:
+  seeds:
+  - 20600601
+  - 20600602
+  - 20600603
+  manifest: stage_06_Optimizer_Update_Dynamics_Training/01_update_map_qualification/blind_models/preregistered_model_identities.json
+  historical_weight_reads: 0
+  future_formal_seed_namespace: stage06b_formal_seed_v1:not-any-of-20600601-20600603
+blind_batches:
+  manifest: stage_06_Optimizer_Update_Dynamics_Training/01_update_map_qualification/blind_batches/preregistered_blind_origins.json
+  salt: stage06a_blind_origin_v1
+  lineage_batch: 2 variants x 8 origins
+  global_batch: 96
+  historical_overlap: 0
+optimizer:
+  family: AdamW
+  betas:
+  - 0.9
+  - 0.999
+  eps: 1.0e-12
+  weight_decay: 0
+  amsgrad: false
+  global_gradient_clip_L2: 1.0
+  state_starts_at_zero_per_independent_clone: true
+loss:
+  identity: balanced mean ||(a_eff_theta-a_cons_star)/s_a||^2
+  s_a: 0.3456328553384328
+  target_balancing_RK2_unchanged: true
+learning_rate_ladder:
+- 1.0e-05
+- 3.0e-05
+- 0.0001
+- 0.0003
+- 0.001
+learning_rate_policy:
+  qualification_only: true
+  formal_lr_selection: false
+  fresh_clone_same_initial_parameters_same_batch_each_lr: true
+update_horizons:
+- 1
+- 2
+- 4
+gradient_update_gates:
+  finite_active_gradient: true
+  finite_effective_update: true
+  cosine_update_negative_gradient_min_exclusive: 0
+  parameter_relative_update_max_exclusive: 0.01
+  all_parameter_groups_required: true
+  deterministic_repeat: true
+one_step_gates:
+  delta_loss: < -100*u_L
+  u_L: max(repeat loss difference,128*eps_float64*max(1,abs(L_before)))
+  adjacent_lr_pass_count_min: 2
+  density_positive: true
+  correction_force_residual_max: 1.0e-10
+  topology_unchanged: true
+  parameter_relative_update_max_exclusive: 0.01
+  optimizer_state_finite: true
+micro_update_gates:
+  loss_1_lt_loss_0: true
+  loss_2_le_loss_1_plus_floor: true
+  loss_4_le_loss_2_plus_floor: true
+  step4_relative_reduction_min: 0.0001
+  single_step_relative_increase_max: 0.001
+  parameter_relative_displacement_max: 0.05
+  gradient_update_explosion_forbidden: true
+  structure_safety_required: true
+aggregation:
+  arm_lineage_seed: two adjacent one-step LRs and at least one micro-update LR
+  arm_lineage: at least 2/3 seeds
+  arm: 6/6 lineages
+  global: 3/3 seeds
+  overall: D1,D2,D3 all pass
+actual_update_fd:
+  direction: effective AdamW update vector at smallest algorithmic passing LR
+  scales:
+  - 0.25
+  - 0.5
+  - 1.0
+  - 2.0
+  central: true
+  two_adjacent_sign_stable_required: true
+  reverse_fd_sign_consistency: true
+  one_step_local_prediction_consistency: true
+coordinate_fd_boundary:
+  manifest: stage_06_Optimizer_Update_Dynamics_Training/01_update_map_qualification/coordinate_fd_boundary/preregistered_diagnostic_plan.json
+  diagnostic_only: true
+  per_group: 2 hash coordinates + 2 hash blocks
+  fd_window_missing_allowed: true
+  hard_failures:
+  - reverse/JVP contradiction
+  - sign contradiction
+  - mapping contradiction
+  - nondeterminism
+  - safety failure
+  complete_coverage_claim_forbidden: true
+structure_safety:
+  force_residual_max: 1.0e-10
+  positive_density: true
+  transforms:
+  - permutation
+  - edge_reorder
+  - translation
+  - Galilean
+  - SO(2)
+  - reflection
+  - periodic_shift
+  accepted_commit: 1
+  midpoint_commit: 0
+  moments_finite: true
+access:
+  TRAIN_only:
+  - LCDF_01
+  - LCDF_04
+  - LCDF_05
+  - LCDF_06
+  - LCDF_07
+  - LCDF_08
+  validation:
+  - LCDF_02
+  - LCDF_09
+  sealed_test:
+  - LCDF_03
+  - LCDF_10
+  validation_decode_count_required: 0
+  sealed_decode_count_required: 0
+resources:
+  peak_rss_delta_max_bytes: 1610612736
+  no_monotonic_retained_autograd: true
+  dense_particle_N_by_N_forbidden: true
+  finite_completion: true
+  all_models_destroyed: true
+prohibitions:
+  formal_training_runs: 0
+  saved_training_checkpoints: 0
+  validation_evaluations: 0
+  sealed_test_evaluations: 0
+  optimizer_or_lr_selection_for_training: false
+  neural_rollout: false
+  arm_ranking: false
+terminal_statuses:
+- ACTUAL_OPTIMIZER_UPDATE_DYNAMICS_QUALIFIED
+- ACTUAL_OPTIMIZER_UPDATE_DYNAMICS_NOT_QUALIFIED
+- ACTUAL_OPTIMIZER_UPDATE_DYNAMICS_EVIDENCE_INCOMPLETE

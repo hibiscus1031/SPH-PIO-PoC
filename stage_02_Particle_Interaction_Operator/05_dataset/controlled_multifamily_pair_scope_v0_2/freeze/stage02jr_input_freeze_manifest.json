@@ -1,0 +1,142 @@
+{
+  "created_before_family_preflight_and_new_acceleration": true,
+  "family_formula_hashes": {
+    "FAMILY_CROSSMODE_A": "sha256:41ded4d8cc9efd015af43a2c8cd9231e95b37cea5bec24f58cfd304ae14a37d2",
+    "FAMILY_DIAGONAL_B": "sha256:8422e8aa46c7550dc63b6ac51883edabc9f55520cd89b6cb58e237b902c28a59",
+    "FAMILY_MIXED_C": "sha256:f15fd37e431bfacdcce3f16d7014fed99c56cc3012633d8c63e78c08b4dc143b",
+    "FAMILY_PV_EXISTING": "sha256:e8cf476953c517dae9265e11b3a146767b3bf9d252a002e983187870a4a2eb71"
+  },
+  "five_existing_canonical_records": {
+    "i_anchor_n16_h26_regular": {
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/canonical_records/i_anchor_n16_h26_regular.bin",
+      "sha256": "sha256:34852381cdff33250142b9061c6e68a89d06f6ebad78e4bac92b2e63f18fde87"
+    },
+    "i_res_n12_h26_regular": {
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/canonical_records/i_res_n12_h26_regular.bin",
+      "sha256": "sha256:15135dfc0362a99720f0861c6e776e61c433374103b1fc3f6af26d1e8783a136"
+    },
+    "i_res_n20_h26_regular": {
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/canonical_records/i_res_n20_h26_regular.bin",
+      "sha256": "sha256:555ca4e3547bdb7355547a21f25aa7040ffaaad10bb70663f00969200a96b035"
+    },
+    "i_sup_n16_h22_regular": {
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/canonical_records/i_sup_n16_h22_regular.bin",
+      "sha256": "sha256:cc4da41ad5b76422cd477500ae34ba4b53bf993f61bc09a8640db68219952d19"
+    },
+    "i_sup_n16_h30_regular": {
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/canonical_records/i_sup_n16_h30_regular.bin",
+      "sha256": "sha256:9374101064e0c6ce63e2022760fdc0683cff22b3f6f80374cd4ee44393d0a9bf"
+    }
+  },
+  "frozen_roles": {
+    "stage02a_conservation": {
+      "path": "stage_02_Particle_Interaction_Operator/02_operator_design/constraints/pio_conservation_contract.md",
+      "sha256": "sha256:1631e6b83d939f007cf3045a2b6e33494803a4aac3068eec9253348cf51b527c"
+    },
+    "stage02b_eligibility": {
+      "path": "stage_02_Particle_Interaction_Operator/03_dataset/eligibility/label_eligibility_rules.yaml",
+      "sha256": "sha256:f917461a65c7d29067e1a210e1b40eeb9b100216bb7547e550980c05927b254a"
+    },
+    "stage02b_leakage": {
+      "path": "stage_02_Particle_Interaction_Operator/03_dataset/splitting/split_strategy.md",
+      "sha256": "sha256:725ef563e9a9fff04a95fa728f02c9d1201f82f3aa515cb3847f04cfa322009e"
+    },
+    "stage02b_schema": {
+      "path": "stage_02_Particle_Interaction_Operator/03_dataset/schema/pio_dataset_schema.json",
+      "sha256": "sha256:714c97de51ce8d476edc7d8b306641c0dcb178ad476b5e30f02f7171af27c35f"
+    },
+    "stage02b_split": {
+      "path": "stage_02_Particle_Interaction_Operator/03_dataset/splitting/split_strategy.md",
+      "sha256": "sha256:725ef563e9a9fff04a95fa728f02c9d1201f82f3aa515cb3847f04cfa322009e"
+    },
+    "stage02b_uncertainty": {
+      "path": "stage_02_Particle_Interaction_Operator/03_dataset/uncertainty/uncertainty_contract.md",
+      "sha256": "sha256:5b77665068827d18edfa61c2e703de435300cde0e46d72f5535986cacf8abfee"
+    },
+    "stage02h_acceptance_results": {
+      "path": "stage_02_Particle_Interaction_Operator/04_target_attribution/acceptance/reference_acceptance_results.json",
+      "sha256": "sha256:44d6e43d83ee00c5b05d10bf1172e4f643b0150c63b11f6194a116dd73258ebe"
+    },
+    "stage02h_acceptance_rules": {
+      "path": "stage_02_Particle_Interaction_Operator/04_target_attribution/acceptance/reference_acceptance_rules.yaml",
+      "sha256": "sha256:4f317c1e8ba79a5c176b38781edda9353eba477d896b627cc3a981f7c377c71e"
+    },
+    "stage02i_seven_targets": {
+      "path": "stage_02_Particle_Interaction_Operator/04_target_attribution/qualified_spatial_targets/targets/spatial_target_candidates.json",
+      "sha256": "sha256:9c4684bd8f047b4a253565b27e261405776934b6699690d56fe0228fcfbf4d38"
+    },
+    "stage02ir_architecture_scope": {
+      "path": "stage_02_Particle_Interaction_Operator/04_target_attribution/conservation_closure/architecture_scope/architecture_scope_decision.json",
+      "sha256": "sha256:8ffb20a19d2dcb57b86b40038ee0655da3c85c35937fefab6886ec226dccdf9c"
+    },
+    "stage02j_dataset_manifest": {
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/manifests/stage02j_dataset_manifest.json",
+      "sha256": "sha256:52e2f8343a8f610bf54665821feafd96112b257f5ab364567553543e33c6b1b0"
+    },
+    "stage02j_eligibility_results": {
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/eligibility/record_eligibility_results.json",
+      "sha256": "sha256:1f8a54668c98d3a05fb054c329d10634c54cf58fbe39a4d4e44932fbb7009984"
+    },
+    "stage02j_extension_schema": {
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/schema/stage02j_graph_record_schema.json",
+      "sha256": "sha256:4575e5fbec28f55e8c3fd9207798726ced302be60297075ef10cfe8a6cd29f87"
+    },
+    "stage02j_feature_permission": {
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/schema/feature_permission_table.yaml",
+      "sha256": "sha256:24644dae01073d1ddf6aed011af212c74e1799137127a2f391b38e7f533dad0a"
+    },
+    "stage02j_final_report": {
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02j_final_report.md",
+      "sha256": "sha256:3f36ab2851890fd554c52460768248229788609369a75096b3f7d02e31f8b8de"
+    },
+    "stage02j_leakage_graph": {
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/leakage/leakage_graph.json",
+      "sha256": "sha256:95875a6f5fddc4d0bca300da43efe4d4be28214914eb7208fe0cc93359f38978"
+    },
+    "stage02j_normalization_specification": {
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/normalization/prospective_normalization_contract.yaml",
+      "sha256": "sha256:3f89c0ee345249ee44bfc6c3ca1531ddf65365136782487996d457348c6115dd"
+    },
+    "stage02j_serializer_contract": {
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/schema/canonical_serialization_contract.yaml",
+      "sha256": "sha256:920d32390d41cc1e5c731f2b789bf24da99d499ddb8f576959ffc72a0f48c195"
+    },
+    "stage02j_serializer_implementation": {
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/manifests/run_stage02j_controlled_dataset.py",
+      "sha256": "sha256:3b8324ec9cf159128607e60df8e86324c2f986e20ca42dcb3f4fd5cd94d992dd"
+    },
+    "stage02j_split_feasibility": {
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/splits/split_feasibility.json",
+      "sha256": "sha256:f0789d5853803a657c5bdb0a12201cdba312412f5ac0ac895d42ab2036ca45f7"
+    },
+    "stage02jr_analytic_definitions": {
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_multifamily_pair_scope_v0_2/family_design/analytic_family_definitions.py",
+      "sha256": "sha256:dbff79063080337e87239501e6c77644c18b079802e9afd89e8a4feb3886826e"
+    },
+    "stage02jr_family_preregistration": {
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_multifamily_pair_scope_v0_2/family_design/family_preregistration.yaml",
+      "sha256": "sha256:bbb39182b0a489e68d191095644312c52270c506d20149e1a5304192e83425cf"
+    }
+  },
+  "historical_overwrite_permitted": false,
+  "historical_stage02j": {
+    "Stage02K_authorized": false,
+    "diagnostic": 5,
+    "eligible": 0,
+    "leakage_components": 1,
+    "normalization_fitted": false
+  },
+  "manifest_version": "stage02jr-input-freeze-0.2.0",
+  "prefrozen_split_assignment": {
+    "future_test": [
+      "FAMILY_MIXED_C"
+    ],
+    "future_train": [
+      "FAMILY_PV_EXISTING",
+      "FAMILY_CROSSMODE_A"
+    ],
+    "future_validation": [
+      "FAMILY_DIAGONAL_B"
+    ]
+  }
+}

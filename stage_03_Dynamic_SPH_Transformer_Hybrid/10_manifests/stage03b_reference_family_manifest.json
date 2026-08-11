@@ -1,0 +1,82 @@
+{
+  "families": [
+    {
+      "derivative_routes": [
+        "frozen_sympy_closed_form",
+        "independent_pytorch_autograd_from_primitive_map"
+      ],
+      "derivative_sha256": "sha256:627e9d8bd1c9bf4b82290b946303dea6219d5123eabc1108d2316fb3a399f309",
+      "family_id": "DR1_LAGRANGIAN_COMPRESSION",
+      "formula_sha256": "sha256:9cb5bb4febafdbde4ec5d5699ac860fd6a4400819fa818819f75c98ed5bc153e",
+      "lineage_includes_all_N_dt_support_output_times": true,
+      "reference_class": "D-R1",
+      "role": "component_verification_and_future_training_candidate",
+      "verdict": "PASS"
+    },
+    {
+      "derivative_routes": [
+        "frozen_sympy_closed_form",
+        "independent_pytorch_autograd_from_primitive_map"
+      ],
+      "derivative_sha256": "sha256:627e9d8bd1c9bf4b82290b946303dea6219d5123eabc1108d2316fb3a399f309",
+      "family_id": "DR1_COUPLED_DEFORMATION",
+      "formula_sha256": "sha256:83d4e9131fb160acd0a6bdf658edea19d73e40fa4b31d1d02c76cf0e40ced9c1",
+      "lineage_includes_all_N_dt_support_output_times": true,
+      "reference_class": "D-R1",
+      "role": "component_verification_and_future_training_candidate",
+      "verdict": "PASS"
+    },
+    {
+      "derivative_sha256": "sha256:627e9d8bd1c9bf4b82290b946303dea6219d5123eabc1108d2316fb3a399f309",
+      "family_id": "DR2_SEMIDISCRETE_TIME_REFERENCE",
+      "parent_families": [
+        "DR1_LAGRANGIAN_COMPRESSION",
+        "DR1_COUPLED_DEFORMATION"
+      ],
+      "reference_class": "D-R2",
+      "role": "time_error_isolation_only",
+      "semidiscrete_rhs_sha256": "sha256:5341dd36b30d94e93ade8383246f67a4ada1f87af75ed317a6eda41ae6ade46c",
+      "spatial_truth": false,
+      "verdict": "PASS"
+    },
+    {
+      "architecture_selection_permitted": false,
+      "derivative_sha256": "sha256:627e9d8bd1c9bf4b82290b946303dea6219d5123eabc1108d2316fb3a399f309",
+      "family_id": "DR3_OBLIQUE_SHEAR_A",
+      "formula_sha256": "sha256:71489d9eb73d8d095b385b66b946706c72c0a74ebb0dc16a67b3f50f6fcf06df",
+      "normalization_permitted": false,
+      "reference_class": "D-R3",
+      "role": "independent_source_free_validation_only",
+      "threshold_selection_permitted": false,
+      "training_permitted": false,
+      "verdict": "PASS"
+    },
+    {
+      "architecture_selection_permitted": false,
+      "derivative_sha256": "sha256:627e9d8bd1c9bf4b82290b946303dea6219d5123eabc1108d2316fb3a399f309",
+      "family_id": "DR3_OBLIQUE_SHEAR_B",
+      "formula_sha256": "sha256:98c115dd2fb969950cec8eeb5498ab21486e23623cb5c6b386f2f9c39e86e3e6",
+      "normalization_permitted": false,
+      "reference_class": "D-R3",
+      "role": "independent_source_free_validation_only",
+      "threshold_selection_permitted": false,
+      "training_permitted": false,
+      "verdict": "PASS"
+    },
+    {
+      "classification": "DR3_ACOUSTIC_LINEAR_REGIME_CONDITIONAL",
+      "family_id": "ACOUSTIC_CANDIDATE",
+      "reference_class": "boundary_candidate",
+      "role": "conditional_or_rejected"
+    },
+    {
+      "classification": "DR3_PERIODIC_VORTEX_REJECTED_AS_EXACT_SOURCE_FREE_REFERENCE",
+      "family_id": "PERIODIC_VORTEX_CANDIDATE",
+      "reference_class": "boundary_candidate",
+      "role": "qualified_or_reclassified_mms_only"
+    }
+  ],
+  "manifest_version": "stage03b-reference-family-1.0.0",
+  "no_split_assignment": true,
+  "stage01_formula_records_copied": false
+}

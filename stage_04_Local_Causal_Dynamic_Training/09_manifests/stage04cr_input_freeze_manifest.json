@@ -1,0 +1,127 @@
+{
+  "contract_path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/contracts/task_signal_sensitivity_attribution_contract_v0_1.yaml",
+  "contract_sha256": "sha256:e05a5e7b8738bf152c7d05b0ac14aa996fc887cc09e93b48d40bbb0defbc3ef0",
+  "freeze_completed_before_new_train_state_array_decode": true,
+  "historical_input_count": 28,
+  "historical_inputs": [
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_final_report.md",
+      "sha256": "sha256:0f1f938b5a1f5aa828f7990f2c00f367ac6add8aa408774b1b689761786e09e2"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/contracts/task_aligned_parameter_gradient_contract_v0_1.yaml",
+      "sha256": "sha256:eb63d659d8c4a868160c952ed9aed7aadf79938353a5d8129b238f22f7ef1840"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/results/formal_864_probe_results.json",
+      "sha256": "sha256:fea114278b89368bb05759ece536df9464f52db58d6603aef639e4feb9f659e5"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/structure_and_safety/structure_audit.json",
+      "sha256": "sha256:633ef5ab4e55581eb50d8a49380ad4d8601e59324dd8fd6c46528e74edc48ef1"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/resources/resource_audit.json",
+      "sha256": "sha256:db3fb952eb583da228b328c35da4a6d707eea11472c4b9f9c940e6cc5ad416bc"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/diagnostic_input_gradients/input_gradient_diagnostics.json",
+      "sha256": "sha256:c2cbaecd33b3032c872ccda1fab4fb7c9e36e6669b5a7f2507269979faa04340"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04c_final_manifest.json",
+      "sha256": "sha256:cc250b4c1fb3a5ce7df2ef65f55e5e8c8060eeea043e1846525c1a7f8357e412"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04c_case_manifest.json",
+      "sha256": "sha256:63d5d7581277cf7fafd7fb6ebc0abf71ef3db9fd37f4b555497733d074985dd4"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04c_parameter_manifest.json",
+      "sha256": "sha256:22a5ff52c7896bcb933462576aa0c718887dfe68df53a406f0840ce1087f1aea"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04c_direction_manifest.json",
+      "sha256": "sha256:c58dc48f2e0d28546f477046fa2531ef42e02c971b3b2d7c5b09fb7e2eb3cf85"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04c_adfd_manifest.json",
+      "sha256": "sha256:4b03577e73720d9502ca9cbfbdfcde6b01cec3f8816304bb278ac20695859f8a"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_trajectory_manifest.json",
+      "sha256": "sha256:6bc2351482b9167c63640699be0f048d65e3981babe0409895ea6a900b3e8ac2"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_role_assignment_manifest.json",
+      "sha256": "sha256:642f91985176774bf71795f2e72391082a9a43cdc0f3f6f7aaec7f1c432db47e"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_test_seal_manifest.json",
+      "sha256": "sha256:f3fc8bc263b5cd0862aad21e6331e280bff59fa70df5d2dd172491ee9ed438a5"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03c_final_manifest.json",
+      "sha256": "sha256:bf5e0e3f1ac68e4b2df8ed847a1cf9a0cb0290c158b3813b1d4fa65a74abb5af"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03d_final_manifest.json",
+      "sha256": "sha256:c0862a16d0a43e283e80df2edc08cd6123b18f16bdcea6645564ea99146b32f3"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03dr_final_manifest.json",
+      "sha256": "sha256:ad5ef80137ec6aa2e27b22cb51c46bc0f79629ae7c392d9a6f6cd6a6e493bb21"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/arm_d1/model.py",
+      "sha256": "sha256:c1372a07737ebb56792aa73c327b81423ef87068d0136627b1507c813ee8b3a1"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/arm_d2/model.py",
+      "sha256": "sha256:a5df1be7b861bffe6c3de7467de36e1a21229cb0c75391f148cdfd5edd0d1d72"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/arm_d3/model.py",
+      "sha256": "sha256:1fe69939c5ed0ab5c12955b2c037c0f046ac853d0b40f19b93b01d78127dab83"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/baseline_d0/rhs.py",
+      "sha256": "sha256:fc1d0ad7043e5f14b3c79dfdf346d86c01d689e841760bfd952c8da2a6fbac2e"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/baseline_d0/state.py",
+      "sha256": "sha256:a6f024bf2f7e44eba2031aca441cb26c0ee8e254dba3fd80cf33390d266e516e"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/graph_rebuild/graph.py",
+      "sha256": "sha256:d29fd86979150f98eb2e5927d1688b1df920181030aa275a5f244fb1f19c8c4f"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/pair_force_head/head.py",
+      "sha256": "sha256:77831de4312ce1ca1406e7d7f41e6c19c90e38a6259a9d053037ea398c77139a"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/rk2_core/independent_functional.py",
+      "sha256": "sha256:eacbd2d9695dbfd793dcbcee607e94c86e432575d8c4f8db565df8bee3095cf4"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/rk2_core/solver.py",
+      "sha256": "sha256:c6d9dde841e218e66a2e5036b4b8ec2459f9cc38512b990a6a2e7ac8c5e4e788"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/temporal_history/history.py",
+      "sha256": "sha256:60f9e4caa228fe8696ef2ef171da364d3918136711e1e2f37e0c2bfc7823858c"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/tokenization/tokens.py",
+      "sha256": "sha256:6a0f2ad0a011c7d39f90668aa1b4c73d124f90eaf6871a8bb9a57756ee8dea56"
+    }
+  ],
+  "historical_matrix_rows": 864,
+  "historical_matrix_sha256": "sha256:fea114278b89368bb05759ece536df9464f52db58d6603aef639e4feb9f659e5",
+  "linear_probe_identity_count": 648,
+  "new_train_state_array_decode_count_at_freeze": 0,
+  "pass": true,
+  "stage04c_status": "TASK_ALIGNED_PARAMETER_GRADIENT_NOT_QUALIFIED",
+  "stage04d_authorization": false
+}

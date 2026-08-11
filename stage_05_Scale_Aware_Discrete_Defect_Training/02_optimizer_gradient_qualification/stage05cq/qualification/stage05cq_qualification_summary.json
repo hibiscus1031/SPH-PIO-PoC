@@ -1,0 +1,42 @@
+{
+  "contract_sha256": "sha256:9622a7fbc74107caf028001eacdfa17fd1664fd0ffeb348400c7f0c76d7b8083",
+  "failed_hard_gates": [
+    "F_coordinate_block_coverage"
+  ],
+  "hard_gates": {
+    "A_historical_freeze": true,
+    "B_blindness": true,
+    "C_access": true,
+    "D_full_gradients": true,
+    "E_optimizer_path_verification": true,
+    "F_coordinate_block_coverage": false,
+    "G_local_descent": true,
+    "H_structure_safety": true,
+    "I_resources_provenance": true,
+    "J_prohibitions": true
+  },
+  "historical_state": {
+    "Stage05B": "CONSERVATIVE_DISCRETE_DEFECT_TARGET_AND_SCALE_QUALIFIED",
+    "Stage05C": "OPTIMIZER_ALIGNED_DEFECT_GRADIENT_AND_LOCAL_DESCENT_NOT_QUALIFIED",
+    "Stage05C_P": "NOT_STARTED",
+    "Stage05C_R": "DEFECT_GRADIENT_FD_FAILURE_EVIDENCE_INCOMPLETE",
+    "Stage05D_authorized": false,
+    "historical_failed_probe_count": 4,
+    "historical_failed_probe_state": "UNRESOLVED",
+    "historical_probes_reclassified": false,
+    "historical_probes_rerun": false
+  },
+  "incomplete_conditions": {
+    "backend_not_unique": false,
+    "blind_overlap": false,
+    "optimizer_path_identity_incomplete": false,
+    "origin_or_probe_hash_missing_or_changed": false,
+    "parameter_map_incomplete": false,
+    "provenance_conflict": false
+  },
+  "overall_pass": false,
+  "schema": "sph-pio-poc.stage05cq.qualification.v1",
+  "stage05d_authorized": false,
+  "terminal_status": "PROSPECTIVE_OPTIMIZER_PATH_GRADIENT_CONFIRMATION_NOT_QUALIFIED",
+  "user_authorized_prospective_branch": true
+}

@@ -1,0 +1,28 @@
+# Stage 04C-S Claim Boundary
+
+## SUPPORTED
+
+- Stage04B reference-family pool qualified
+- lineage leakage is zero
+- sealed decode is zero
+- reverse/JVP implementation is consistent
+- dynamic model outputs and Jacobians are nonzero
+- the K=1 task-gradient contract was not qualified
+- no training was executed
+
+## CONDITIONAL
+
+- MSE residual scale contributes substantially
+- random direction projection contributes partially
+- RK2 time scaling attenuates the accepted-state signal
+- the velocity state-Jacobian path is detectable
+
+## UNSUPPORTED
+
+- the model is untrainable
+- the Transformer fails
+- loss scaling will solve the problem
+- full-gradient training will succeed
+- D3 is superior
+- rollout improves SPH
+- Stage01 V2 is restored

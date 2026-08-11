@@ -1,0 +1,237 @@
+schema_version: sph-pio-poc.stage03c.implementation-contract.v0.1
+stage: Stage 03C
+freeze_date: 2026-08-05
+authorization: Stage 03B:DYNAMIC_REFERENCE_TRAJECTORY_QUALIFICATION_COMPLETE
+immutability: frozen_before_any_trajectory_state_array_decode
+
+execution:
+  device: cpu
+  dtype: float64
+  deterministic_algorithms: true
+  torch_threads: 4
+  domain_minimum: [-1.0, -1.0]
+  domain_maximum: [1.0, 1.0]
+  domain_length: 2.0
+  rho0: 1.0
+  sound_speed: 20.0
+  kinematic_viscosity: 0.02
+  support_over_dx: 2.6
+  output_dt_physical: 0.000390625
+
+state:
+  class: DynamicParticleState
+  integrated_fields: [x_unwrapped, velocity, density]
+  derived_fields: [x_wrapped, pressure, state_hash]
+  fixed_fields: [mass, smoothing_length, material_labels]
+  metadata_fields: [physical_time, accepted_step_index]
+  pressure_equation: p=cs^2*(rho-rho0)
+  x_unwrapped_role: [integration, checkpoint, continuity, periodic_position_error]
+  x_wrapped_definition: wrap_to_periodic_domain(x_unwrapped)
+  x_wrapped_role: [graph, minimum_image, legal_local_geometry, canonical_output]
+  integrate_wrapped_position: false
+
+graph_api:
+  entry_point: build_reciprocal_graph(state)
+  backend: frozen_stage01_periodic_cell_list
+  support_rule: distance<=edge_support*(1+16*machine_epsilon); active_kernel=distance<edge_support
+  displacement_convention: r_ij=x_i-x_j_for_force_on_i
+  minimum_image_tie_rule: remainder(delta+extent/2,extent)-extent/2
+  ordering: lexicographic_directed_row_then_col
+  includes_self_edges: true
+  correction_pairs: row<col_only
+  reverse_mapping: exact_searchsorted
+  hash_fields: [x_wrapped_float64, smoothing_length_float64, row_int64, col_int64, displacement_convention]
+  flags: [active_kernel, zero_weight_exterior]
+  rebuilds_per_accepted_step: {start: 1, midpoint: 1}
+  whole_step_graph_reuse: false
+
+source_api:
+  signature: evaluate_external_momentum_source(family_id,material_labels,physical_time,current_state)
+  D_R1: frozen_stage03b_exact_material_label_MMS_source
+  D_R3: componentwise_exact_zero
+  token_access: forbidden
+  learned_or_predicted: false
+  shared_by_arms: [D0, D1, D2, D3]
+
+token_schema:
+  width: 10
+  count_scale: 64.0
+  fields:
+    - {index: 0, name: constant, expression: '1', units: dimensionless}
+    - {index: 1, name: density_deviation, expression: '(rho-rho0)/rho0', units: dimensionless}
+    - {index: 2, name: normalized_pressure, expression: 'p/(rho0*cs^2)', units: dimensionless}
+    - {index: 3, name: normalized_mass, expression: 'mass/(rho0*L^2)', units: dimensionless}
+    - {index: 4, name: normalized_smoothing_length, expression: 'smoothing_length/L', units: dimensionless}
+    - {index: 5, name: normalized_active_neighbor_count, expression: 'active_nonself_neighbor_count/64', units: dimensionless}
+    - {index: 6, name: kernel_zeroth_moment, expression: 'sum_j (m_j/rho_j) W_ij', units: dimensionless}
+    - {index: 7, name: kernel_radial_relative_velocity_mean, expression: 'sum_j omega_ij dot((v_j-v_i)/cs,rhat_ij)', units: dimensionless}
+    - {index: 8, name: kernel_relative_speed_second_moment, expression: 'sum_j omega_ij ||(v_j-v_i)/cs||^2', units: dimensionless}
+    - {index: 9, name: kernel_isotropic_second_position_moment, expression: 'sum_j omega_ij ||r_ij/L||^2', units: dimensionless}
+  omega: '(m_j/rho_j)*W_ij'
+  relative_offsets: [0, -1, -2, -3]
+  forbidden: [absolute_position, absolute_velocity, baseline_acceleration, external_source, reference_state, reference_acceleration, delta_a, family_id, split_role, material_label_embedding, absolute_time, absolute_step, particle_id_embedding]
+
+shared_pair_force_head:
+  implementation: AntisymmetricPairForceHead
+  symmetric_hidden_features: [q_i+q_j, abs(q_i-q_j), q_i*q_j]
+  symmetric_pair_scalars: [distance_over_symmetric_smoothing_length, radial_relative_velocity, relative_speed_squared, transverse_speed_squared]
+  pair_input_width: 100
+  hidden_width: 32
+  hidden_layers: 2
+  activation: tanh
+  output: [alpha, beta]
+  alpha_bound: 0.05
+  beta_bound: 0.05
+  epsilon_r: 2.0e-12
+  scale: 'F0_ij=sqrt(m_i*m_j)*cs^2/L'
+  basis: ['rhat_ij=r_ij/(norm(r_ij)+epsilon_r)', 'dv_ij=(v_j-v_i)/cs', 'transverse=dv-dot(dv,rhat)*rhat']
+  evaluation: once_per_unordered_pair
+  aggregation: signed_incidence_index_add
+  guarantees: [alpha_exchange_symmetric, beta_exchange_symmetric, force_antisymmetric]
+
+arms:
+  D0:
+    id: D0_BASELINE_WCSPH
+    neural_parameters: 0
+    temporal_history: false
+    correction: false
+  D1:
+    id: D1_INSTANTANEOUS_CONSERVATIVE_PAIR_MLP
+    token_encoder: {width: 32, layers: 2, activation: tanh}
+    temporal_history: false
+    pair_head: shared_pair_force_head
+    seed: 20300301
+    expected_parameter_count: 5762
+  D2:
+    id: D2_CAUSAL_RECURRENT_PAIR_PIO
+    token_encoder: {width: 32, layers: 2, activation: tanh}
+    recurrent: {class: GRUCell, input_width: 32, hidden_width: 32, layers: 1, shared_across_particles: true}
+    start_hidden: last_accepted_hidden
+    midpoint_hidden: ephemeral_GRU_update_from_last_accepted_hidden
+    accepted_hidden: one_GRU_update_from_last_accepted_hidden_after_accept
+    pair_head: shared_pair_force_head
+    seed: 20300302
+    expected_parameter_count: 12098
+  D3:
+    id: D3_CAUSAL_TEMPORAL_RECIPROCAL_TRANSFORMER_PIO
+    token_encoder: {width: 32, layers: 2, activation: tanh}
+    history_length: 4
+    relative_offset_embedding: {offsets: [0, -1, -2, -3], width: 32}
+    temporal_blocks: 2
+    attention_heads: 4
+    pre_layer_normalization: true
+    feed_forward_width: 64
+    activation: GELU
+    dropout: 0.0
+    causal_mask: required
+    attention_axis: per_particle_time_only
+    hidden_representation: O2_scalar
+    pair_head: shared_pair_force_head
+    seed: 20300303
+    expected_parameter_count: 22978
+  parameter_gates:
+    maximum_per_arm: 150000
+    D2_over_D3_interval: [0.5, 2.0]
+    expected_D2_over_D3: 0.5265036121507529
+
+history:
+  class: TemporalHistoryState
+  length: 4
+  serialization_separate_from_physical_state: true
+  main_gate_warm_start: REPEAT_INITIAL_TOKEN
+  repeat_initial_semantics: four_copies_of_initial_accepted_token_at_initial_time
+  loader_smoke_warm_start: REFERENCE_PREHISTORY_LOAD
+  reference_prehistory_rule: at_most_three_frames_strictly_before_rollout_origin_same_lineage
+  evaluation_window: three_previous_accepted_tokens_plus_current_or_ephemeral_token
+  start_commit_count: 0
+  midpoint_commit_count: 0
+  accepted_commit_count: 1
+  rejected_commit_count: 0
+  accepted_times_only: true
+  future_or_post_origin_reference_access: forbidden
+  permutation_alignment_key: material_labels
+
+rk2:
+  method: explicit_midpoint_RK2
+  start: [recompute_EOS, rebuild_graph, build_token, evaluate_correction, evaluate_baseline_and_source, form_k1]
+  midpoint: [construct_ephemeral_state, recompute_EOS, independent_graph_rebuild, build_ephemeral_token, evaluate_ephemeral_temporal_state, evaluate_baseline_and_source, form_k2]
+  accept: [update_x_unwrapped_velocity_density_from_k2, recompute_EOS, safety_checks, build_accepted_token, commit_history_once, increment_step_once]
+  pressure_integrated: false
+  midpoint_is_physical_step: false
+  rejected_step_atomic_rollback: true
+  counter_expectation_per_step: {graph_rebuilds: 2, source_evaluations: 2, accepted_step_increment: 1}
+
+zero_correction:
+  mode_A: {correction_enabled: false, neural_forward: bypassed, correction: exact_zero}
+  mode_B: {correction_enabled: true, zero_final_head: true, neural_forward: executed, correction: exact_zero}
+  physical_comparison: bitwise_equal_to_D0
+  graph_comparison: exact_hash_sequence
+  counter_comparison: exact
+  posthoc_tolerance_permitted: false
+
+test_matrix:
+  required_families: [DR1_LAGRANGIAN_COMPRESSION, DR1_COUPLED_DEFORMATION, DR3_OBLIQUE_SHEAR_A, DR3_OBLIQUE_SHEAR_B]
+  resolutions: [8, 12, 16]
+  horizons: [1, 2, 4, 8]
+  independent_D0_comparisons: 48
+  zero_modes: [MODE_A, MODE_B]
+  zero_arms: [D1, D2, D3]
+  zero_physical_comparisons: 288
+  structural_stages: [start, midpoint]
+  structural_random_seeds: {D1: 20300301, D2: 20300302, D3: 20300303}
+  checkpoint_cases: [D0, D1_zero_head, D2_zero_head, D3_zero_head, D2_fixed_seed_20300302, D3_fixed_seed_20300303]
+  checkpoint_pattern: continuous_8_vs_4_save_load_4
+  differentiability_cases: [DR1_LAGRANGIAN_COMPRESSION_N8, DR3_OBLIQUE_SHEAR_A_N8]
+  differentiability_steps: 1
+  finite_difference: forbidden
+
+tolerances:
+  independent_state_normalized_l2: 1.0e-13
+  independent_state_normalized_linf: 1.0e-12
+  structural_normalized_correction_force_residual: 1.0e-10
+  structural_transformation_atol: 2.0e-11
+  structural_transformation_rtol: 2.0e-11
+  differentiability_minimum_nonzero_absolute: 1.0e-18
+  zero_correction: bitwise
+  checkpoint_resume: bitwise
+
+safety:
+  require_finite_state: true
+  require_positive_density: true
+  require_reciprocal_graph: true
+  require_finite_force: true
+  require_finite_hidden: true
+  require_deterministic_graph: true
+  rejection: atomic_state_and_history_rollback
+
+resources:
+  formal_device: cpu
+  formal_dtype: float64
+  required_resolutions: [8, 12, 16]
+  audit_only_resolution: 32
+  audit_only_particle_count: 1024
+  maximum_parameter_count: 150000
+  maximum_peak_rss_delta_bytes: 1610612736
+  require_finite_completion: true
+  monotonic_live_tensor_retention: forbidden
+  dense_particle_square_allocation: forbidden
+  expected_scaling: O(H*N*d+E*d)
+  mps_role: optional_float32_smoke_only
+
+prohibitions:
+  optimizer_objects: 0
+  optimizer_steps: 0
+  training_runs: 0
+  loss_fitting: false
+  dataset_split: false
+  normalization_fitting: false
+  multistep_AD_FD: false
+  cutoff_event_gradient_qualification: false
+  neural_rollout_performance_evaluation: false
+  solver_in_the_loop_training: false
+  benchmark_or_error_improvement_claim: false
+
+fixed_topology_boundary:
+  stage03c_claim: fixed-topology_implementation_verified_only
+  cutoff_event_qualified: false
+  stage03d_required_family: {edge_birth_minimum: 1, edge_death_minimum: 1, positive_pre_post_margin: true, deterministic_event_time: true, modify_existing_DR1_amplitude: false}

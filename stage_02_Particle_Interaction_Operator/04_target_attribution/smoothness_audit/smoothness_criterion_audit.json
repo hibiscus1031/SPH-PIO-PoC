@@ -1,0 +1,76 @@
+{
+  "criterion_suitability_verdict": "NOT_SUITABLE_AS_STANDALONE_ATTRIBUTION_GATE",
+  "extension_stage02f_cyclic_null_ratios": [
+    0.9841957556417883,
+    0.9982069704542276,
+    0.9876170410886924
+  ],
+  "mathematical_audit": {
+    "criterion_mathematical_meaning": {
+      "finding": "graph TV measures neighborwise vector variation, but a ratio is meaningful only when the null destroys spatial association without changing vector values",
+      "status": "LIMITED"
+    },
+    "null_field_suitability": {
+      "extension_cyclic_roll_correlations": [
+        -0.7792599311571916,
+        0.6330524173697484,
+        -0.5199021373534
+      ],
+      "finding": "roll-by-7 is an index translation/permutation whose geometric displacement changes with N and can preserve periodic low-mode structure",
+      "status": "FAIL"
+    },
+    "periodic_boundary_effect": {
+      "finding": "the physical graph is periodic and has no boundary, while flattened-index wrap introduces an N-dependent artificial index seam",
+      "status": "DIAGNOSTIC"
+    },
+    "resolution_dependence": {
+      "finding": "a fixed seven-index roll corresponds to different physical rearrangements at different N; its null denominator is not resolution-comparable",
+      "status": "FAIL"
+    },
+    "vector_cancellation": {
+      "finding": "the implemented TV squares componentwise neighbor differences before averaging, so signed vector cancellation does not explain the Stage 02F failure",
+      "status": "PASS"
+    }
+  },
+  "refined_diagnostics": {
+    "decorrelated_null": {
+      "construction": "fixed_seed_PCG64_particle_permutation_preserve_vector_values",
+      "ratio_threshold_max": 0.8,
+      "seed": 20260207
+    },
+    "physical_gradient_scale": {
+      "coefficient_of_variation_max": 0.25,
+      "definition": "graph_TV_RMS_divided_by_mean_undirected_edge_length_and_target_L2_particle_RMS"
+    },
+    "relative_neighbor_variation": {
+      "definition": "graph_TV_RMS_divided_by_target_L2_particle_RMS",
+      "required_resolution_behavior": "strictly_decreasing"
+    },
+    "vector_direction": {
+      "adjacent_cosine_min": 0.95,
+      "definition": "low_mode_Fourier_signature_adjacent_cosine"
+    }
+  },
+  "refined_resolution_checks": {
+    "adjacent_fourier_direction_consistency": "FAIL",
+    "bounded_R2S_bias": "FAIL",
+    "decorrelated_null_smoothness": "PASS",
+    "fixed_H_over_dx": "PASS",
+    "fixed_physical_state_kernel_EOS_support": "PASS",
+    "physical_gradient_scale_resolution_stability": "PASS",
+    "relative_neighbor_variation_strictly_decreasing": "FAIL",
+    "target_endpoint_magnitude_nonincreasing": "PASS",
+    "three_or_more_levels": "PASS"
+  },
+  "refined_resolution_trend_status": "DIAGNOSTIC",
+  "stage02f_criterion": {
+    "metric": "graph_total_variation_divided_by_cyclic_roll_7_null_total_variation",
+    "prior_result": "FAIL",
+    "prior_result_overwrite_permitted": false,
+    "threshold": 0.9,
+    "threshold_changed": false
+  },
+  "stage02f_failure_retained": true,
+  "stage02f_threshold_changed": false,
+  "threshold_lowering_used": false
+}

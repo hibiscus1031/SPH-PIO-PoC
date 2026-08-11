@@ -1,0 +1,70 @@
+{
+  "N16_K8_D3_single_AD_smoke": {
+    "derivative": 4.015133460571253e-09,
+    "finite": true,
+    "horizon": 8,
+    "seconds": 0.7381555000320077,
+    "topology_stage_count": 16
+  },
+  "artifact_storage_bytes_before_reports": 1150603,
+  "fd_evaluation_count": 5760,
+  "formal_device": "cpu",
+  "formal_dtype": "float64",
+  "gates": {
+    "cpu_float64": true,
+    "finite_completion": true,
+    "no_dense_particle_square_allocation": true,
+    "no_monotonic_live_tensor_retention": true,
+    "no_parameter_mutation": true,
+    "peak_rss_delta": true
+  },
+  "maximum_graph_memory_bytes": 311808,
+  "maximum_history_memory_bytes": 348192,
+  "pass": true,
+  "peak_rss_delta_bytes": 454443008,
+  "peak_rss_observed_bytes": 730185728,
+  "peak_rss_start_bytes": 275742720,
+  "retained_autograd_tensor_weakrefs": 0,
+  "timing_by_horizon": {
+    "1": {
+      "backward_count": 36,
+      "backward_max_seconds": 0.012947959010489285,
+      "backward_total_seconds": 0.14149367052596062,
+      "fd_path_count": 1440,
+      "fd_total_seconds": 40.60144970996771,
+      "forward_count": 36,
+      "forward_max_seconds": 0.6487615829100832,
+      "forward_total_seconds": 1.6752373334020376
+    },
+    "2": {
+      "backward_count": 36,
+      "backward_max_seconds": 0.01366120798047632,
+      "backward_total_seconds": 0.2762345419032499,
+      "fd_path_count": 1440,
+      "fd_total_seconds": 71.0441527897492,
+      "forward_count": 36,
+      "forward_max_seconds": 0.06047183403279632,
+      "forward_total_seconds": 1.7578814973821864
+    },
+    "4": {
+      "backward_count": 36,
+      "backward_max_seconds": 0.024697249988093972,
+      "backward_total_seconds": 0.5654108783928677,
+      "fd_path_count": 1440,
+      "fd_total_seconds": 132.26226149895228,
+      "forward_count": 36,
+      "forward_max_seconds": 0.1634218340041116,
+      "forward_total_seconds": 3.3076567099196836
+    },
+    "8": {
+      "backward_count": 36,
+      "backward_max_seconds": 0.04948266700375825,
+      "backward_total_seconds": 1.154590831603855,
+      "fd_path_count": 1440,
+      "fd_total_seconds": 255.74865467566997,
+      "forward_count": 36,
+      "forward_max_seconds": 0.21290862502064556,
+      "forward_total_seconds": 6.26688066823408
+    }
+  }
+}

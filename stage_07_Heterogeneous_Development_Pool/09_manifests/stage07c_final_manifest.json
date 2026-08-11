@@ -1,0 +1,321 @@
+{
+  "all_89_fresh_private_mode_000": true,
+  "all_gates_pass": true,
+  "artifacts": [
+    {
+      "bytes": 349,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07c_freeze_and_scope.md",
+      "sha256": "sha256:3af6b2452d6438f9f1d98cc234b88ef2fb6ff755042aef2e0435e229d795bff7"
+    },
+    {
+      "bytes": 350,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07c_formal_retraining_protocol.md",
+      "sha256": "sha256:a99629daa4840861ba4367502a5899372db215c13a99a6b7ff30a47db8615f7e"
+    },
+    {
+      "bytes": 316,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07c_train_v2_batch_schedule.md",
+      "sha256": "sha256:a3e4d6a7bf1211f017cb915c8560715e046cfe57a08484fc20864c69c3288904"
+    },
+    {
+      "bytes": 297,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07c_success_gates.md",
+      "sha256": "sha256:fb750a26444badd858d97bffe69d04ea840e6d44228a6baa995c14eb1b5a389c"
+    },
+    {
+      "bytes": 273,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07c_checkpoint_selection_policy.md",
+      "sha256": "sha256:d2c43b025ec5ef481bf69b1b6953996974dc5681c632678ae60458eb687cb921"
+    },
+    {
+      "bytes": 376,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07c_fresh_validation_opening.md",
+      "sha256": "sha256:55050aadf778cffbdb85c408b204a59ef7b71382f970abfaa10f8bdd0b69e609"
+    },
+    {
+      "bytes": 379,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07c_validation_target_qualification.md",
+      "sha256": "sha256:7acdab823dcafbee5838ad3a308b0e1eaf21dd8c894ee0920ac99cb1b500835f"
+    },
+    {
+      "bytes": 280,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07c_memory_preflight.md",
+      "sha256": "sha256:39e85b98f02ee9dae2c32385e7a7d14201f9d8340b6f90fbc7cfd7409c8c0b06"
+    },
+    {
+      "bytes": 270,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07c_zero_step_preflight.md",
+      "sha256": "sha256:5846dec89301691cba356802607dea67686613a1a9749ecc67b00aac1b16b747"
+    },
+    {
+      "bytes": 306,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07c_sealed_test_preflight.md",
+      "sha256": "sha256:476306445baa21736bb9ec847539c2292f3938e9b8f62578d2b3c3f4ca44ad4e"
+    },
+    {
+      "bytes": 281,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07c_resource_forecast.md",
+      "sha256": "sha256:0fbf8b95563a0412334686740d5486510e3fdb0c96dfd832656a0d44d233431f"
+    },
+    {
+      "bytes": 975,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07c_qualification_report.md",
+      "sha256": "sha256:c602d09843dd7e0f07b91b0deab08cea8918e0a5a985936dae98c5a84114dc1b"
+    },
+    {
+      "bytes": 3801,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07c_final_report.md",
+      "sha256": "sha256:c6648e959eea8bbe1f0d0bc8d83b25bc34848c219452620f5affd7ac7dde2129"
+    },
+    {
+      "bytes": 659,
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07c_train_batch_manifest.json",
+      "sha256": "sha256:9453c94d7409d56525501f94e44a8022bb6ef05d50b888430abd3ce3bab4a155"
+    },
+    {
+      "bytes": 9577,
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07c_model_seed_manifest.json",
+      "sha256": "sha256:75a3cc7d395ac38d53bb782978dc42e30791d299554b85a0d9cec68f34bdc6b2"
+    },
+    {
+      "bytes": 1179,
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07c_validation_manifest.json",
+      "sha256": "sha256:0ffd188dbd3b70babd5ed79c514fc5b2fe8013aa9aaf993be1c0091755190867"
+    },
+    {
+      "bytes": 628,
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07c_checkpoint_policy_manifest.json",
+      "sha256": "sha256:9c42d60a0fa08dd401ed171b9c3ef4eb0d7d9eabdbb565cdfb879f8e3bb7374d"
+    },
+    {
+      "bytes": 3520,
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07c_preflight_manifest.json",
+      "sha256": "sha256:6fe94d30db284ecfed8ff2bcf176413e8ada04a36984faf16d6406bd310475dc"
+    },
+    {
+      "bytes": 8645,
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07c_input_freeze_manifest.json",
+      "sha256": "sha256:8b722fba1f8d38ca509850a4ceb3afe35746956e339b6bc162049c7eb77b16f1"
+    },
+    {
+      "bytes": 1570,
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07c_protocol_manifest.json",
+      "sha256": "sha256:554a03e978e5edada2298cd1613ed14691e500031a4cfd0160c039b53e38c11c"
+    },
+    {
+      "bytes": 5439,
+      "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/qualification/stage07c_qualification.json",
+      "sha256": "sha256:ecee3b4fa75ca9a34ef96aa7596fe1702cdf9c16e62de4fa9d88e6edc44a9d3f"
+    },
+    {
+      "bytes": 1892,
+      "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/resource_forecast/stage07d_resource_forecast.json",
+      "sha256": "sha256:b7f0af660a004f2d9cf940fe7295dcb19d5cfc711c4f7535833f911df6dcb0f8"
+    }
+  ],
+  "formal_optimizer_steps": 0,
+  "formal_parameter_updates": 0,
+  "formal_seeds": [
+    20700711,
+    20700712,
+    20700713
+  ],
+  "formal_training_runs": 0,
+  "gates": {
+    "A_historical_freeze": true,
+    "B_protocol_frozen_before_fresh_validation_decode": true,
+    "C_formal_seeds_fixed": true,
+    "D_optimizer_LR_unchanged": true,
+    "E_TRAIN_V2_896_exact": true,
+    "F_eight_112_batches_cover_896": true,
+    "G_fresh_validation_256_complete": true,
+    "H_validation_did_not_alter_protocol": true,
+    "I_success_gates_frozen_before_validation": true,
+    "J_nine_run_identities_complete": true,
+    "K_112_memory_preflight_9_of_9": true,
+    "L_validation_memory_preflight_9_of_9": true,
+    "M_zero_step_preflight_9_of_9": true,
+    "N_checkpoint_reload_9_of_9": true,
+    "O_original_sealed_test_denial": true,
+    "P_sealed_decode_counts_zero": true,
+    "Q_resource_forecast": true,
+    "R_formal_optimizer_steps_zero": true,
+    "S_formal_training_runs_zero": true
+  },
+  "historical_hashes_unchanged": true,
+  "historical_inputs": [
+    {
+      "bytes": 1364,
+      "current_sha256": "sha256:0418c771b6619e85f431b930adf778d4d824153433a2e5d2eb325f50e6ed5961",
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07a_final_report.md",
+      "sha256": "sha256:0418c771b6619e85f431b930adf778d4d824153433a2e5d2eb325f50e6ed5961",
+      "unchanged": true
+    },
+    {
+      "bytes": 3647,
+      "current_sha256": "sha256:2cab2e1ef75d0e59d3e185d3d33c8df5244d40bf5e05be76d6af97b851e4b71d",
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07a_role_manifest.json",
+      "sha256": "sha256:2cab2e1ef75d0e59d3e185d3d33c8df5244d40bf5e05be76d6af97b851e4b71d",
+      "unchanged": true
+    },
+    {
+      "bytes": 25778,
+      "current_sha256": "sha256:6cb86ec112cb4a3c406306058570bd564002336d781057488057fdb396031786",
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07a_validation_seal_manifest.json",
+      "sha256": "sha256:6cb86ec112cb4a3c406306058570bd564002336d781057488057fdb396031786",
+      "unchanged": true
+    },
+    {
+      "bytes": 4510,
+      "current_sha256": "sha256:ed7b5df532aab4284a98354191efe55ad8939d10f35d8c9d58b8974cbe2536ce",
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07b_final_report.md",
+      "sha256": "sha256:ed7b5df532aab4284a98354191efe55ad8939d10f35d8c9d58b8974cbe2536ce",
+      "unchanged": true
+    },
+    {
+      "bytes": 6008,
+      "current_sha256": "sha256:1056cc069e27696ee0451896497f95923edd18c9568e4fcaa3b73c504cb26504",
+      "path": "stage_07_Heterogeneous_Development_Pool/02_defect_scale_requalification/stage07b/contracts/train_v2_defect_scale_optimizer_requalification_v0_1.yaml",
+      "sha256": "sha256:1056cc069e27696ee0451896497f95923edd18c9568e4fcaa3b73c504cb26504",
+      "unchanged": true
+    },
+    {
+      "bytes": 589334,
+      "current_sha256": "sha256:9672352d3a9ee0798d86a52a92151167c3bb83ddb38e5eef1e31e491fa1d4198",
+      "path": "stage_07_Heterogeneous_Development_Pool/02_defect_scale_requalification/stage07b/manifests/target_record_manifest.json",
+      "sha256": "sha256:9672352d3a9ee0798d86a52a92151167c3bb83ddb38e5eef1e31e491fa1d4198",
+      "unchanged": true
+    },
+    {
+      "bytes": 466,
+      "current_sha256": "sha256:54ae81ff0450d45f04bd7661aee1264923e22f138a23e7830d4233c0f39bb49d",
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07b_scale_manifest.json",
+      "sha256": "sha256:54ae81ff0450d45f04bd7661aee1264923e22f138a23e7830d4233c0f39bb49d",
+      "unchanged": true
+    },
+    {
+      "bytes": 636,
+      "current_sha256": "sha256:6b4fd2c8f78dc717c2dd91128bff0d7947861f55b07666c063eee4fbf225842e",
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07b_uncertainty_manifest.json",
+      "sha256": "sha256:6b4fd2c8f78dc717c2dd91128bff0d7947861f55b07666c063eee4fbf225842e",
+      "unchanged": true
+    },
+    {
+      "bytes": 59762,
+      "current_sha256": "sha256:7cdac97d463f4dec6086bdab4042a9313d6146186a3af4570ebb008eaed449c8",
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07b_update_manifest.json",
+      "sha256": "sha256:7cdac97d463f4dec6086bdab4042a9313d6146186a3af4570ebb008eaed449c8",
+      "unchanged": true
+    },
+    {
+      "bytes": 11126,
+      "current_sha256": "sha256:e603b772e235136bde879fcf2c3b577b84450ca348fcf18343ebc3522c2af988",
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07b_final_manifest.json",
+      "sha256": "sha256:e603b772e235136bde879fcf2c3b577b84450ca348fcf18343ebc3522c2af988",
+      "unchanged": true
+    },
+    {
+      "bytes": 6404,
+      "current_sha256": "sha256:b7918bde82b104895b6d47c798801608938c661c3f8b249f4c832c98c3a83cbe",
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/02_training_protocol/stage06b/contracts/formal_k1_defect_training_protocol_v0_1.yaml",
+      "sha256": "sha256:b7918bde82b104895b6d47c798801608938c661c3f8b249f4c832c98c3a83cbe",
+      "unchanged": true
+    },
+    {
+      "bytes": 166767,
+      "current_sha256": "sha256:ca97bd1639d90c57f06b64e17934751276ab0537210a10a6949f5149aa5466fd",
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/09_manifests/stage06b_final_manifest.json",
+      "sha256": "sha256:ca97bd1639d90c57f06b64e17934751276ab0537210a10a6949f5149aa5466fd",
+      "unchanged": true
+    },
+    {
+      "bytes": 4373,
+      "current_sha256": "sha256:b3e6bad8e7cd9e11ef95ff502e18bd458b0bbf7488a479a09936e792db4474d4",
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/09_manifests/stage06c_final_manifest.json",
+      "sha256": "sha256:b3e6bad8e7cd9e11ef95ff502e18bd458b0bbf7488a479a09936e792db4474d4",
+      "unchanged": true
+    },
+    {
+      "bytes": 151882,
+      "current_sha256": "sha256:e806070f05c31ffb9f0f5a865a1937812581f11c588815e4118899f8221b0d52",
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/09_manifests/stage06c_checkpoint_manifest.json",
+      "sha256": "sha256:e806070f05c31ffb9f0f5a865a1937812581f11c588815e4118899f8221b0d52",
+      "unchanged": true
+    },
+    {
+      "bytes": 3934,
+      "current_sha256": "sha256:dc0653834ed04ae1fe7ba00294b4f5b2b095e09ebd92beba0cae894b8bb29984",
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/09_manifests/stage06c_selected_checkpoint_manifest.json",
+      "sha256": "sha256:dc0653834ed04ae1fe7ba00294b4f5b2b095e09ebd92beba0cae894b8bb29984",
+      "unchanged": true
+    },
+    {
+      "bytes": 21325,
+      "current_sha256": "sha256:4b029d27802414428015957a4b31d075276787c6ddbd248f17b293e57ae1d936",
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/09_manifests/stage06cr_final_manifest.json",
+      "sha256": "sha256:4b029d27802414428015957a4b31d075276787c6ddbd248f17b293e57ae1d936",
+      "unchanged": true
+    },
+    {
+      "bytes": 3969,
+      "current_sha256": "sha256:53289bd889738a74f7e22c81c5b4b89fc637de7e61f93d935daadbcb8627bbd9",
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/09_manifests/stage06cr_attribution_manifest.json",
+      "sha256": "sha256:53289bd889738a74f7e22c81c5b4b89fc637de7e61f93d935daadbcb8627bbd9",
+      "unchanged": true
+    },
+    {
+      "bytes": 4168,
+      "current_sha256": "sha256:2911f69509daae2c908cec2860db45942725231efbf787061d9cad345b1f6939",
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05a_final_manifest.json",
+      "sha256": "sha256:2911f69509daae2c908cec2860db45942725231efbf787061d9cad345b1f6939",
+      "unchanged": true
+    },
+    {
+      "bytes": 2760,
+      "current_sha256": "sha256:f3ad68457eee7341c88160a544e7d57dec757e7eed7ce36ff08d0e50c26eb0d0",
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05b_final_manifest.json",
+      "sha256": "sha256:f3ad68457eee7341c88160a544e7d57dec757e7eed7ce36ff08d0e50c26eb0d0",
+      "unchanged": true
+    },
+    {
+      "bytes": 47031,
+      "current_sha256": "sha256:d4f1eb706d7491eb56bb5298837ff9026b279bc44d95e1868b9823e1f8e60882",
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05c_final_manifest.json",
+      "sha256": "sha256:d4f1eb706d7491eb56bb5298837ff9026b279bc44d95e1868b9823e1f8e60882",
+      "unchanged": true
+    },
+    {
+      "bytes": 48901,
+      "current_sha256": "sha256:4b47d362b453202a38d5145aaf7749debfb988cffcbf1595b5e218e9f5c3e619",
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05cq_final_manifest.json",
+      "sha256": "sha256:4b47d362b453202a38d5145aaf7749debfb988cffcbf1595b5e218e9f5c3e619",
+      "unchanged": true
+    },
+    {
+      "bytes": 6186,
+      "current_sha256": "sha256:123da7b7b0e22c076c2724b1536bc2bef8b72bced3d3e985921f7054c26f8335",
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05cr/manifests/stage05cr_final_manifest.json",
+      "sha256": "sha256:123da7b7b0e22c076c2724b1536bc2bef8b72bced3d3e985921f7054c26f8335",
+      "unchanged": true
+    },
+    {
+      "bytes": 26266,
+      "current_sha256": "sha256:f3fc8bc263b5cd0862aad21e6331e280bff59fa70df5d2dd172491ee9ed438a5",
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_test_seal_manifest.json",
+      "sha256": "sha256:f3fc8bc263b5cd0862aad21e6331e280bff59fa70df5d2dd172491ee9ed438a5",
+      "unchanged": true
+    }
+  ],
+  "preflight_run_count": 9,
+  "protocol_sha256": "sha256:21b52f0aca3791cdc0d58165f1edd980667bafe0eee5a9d52544c24a8f518dbb",
+  "rollouts": 0,
+  "saved_training_checkpoints": 0,
+  "schema": "stage07c-final-manifest-v1",
+  "sealed_test_evaluations": 0,
+  "stage06c_checkpoint_hashes_unchanged": true,
+  "stage06c_selected_checkpoint_hashes_unchanged": true,
+  "stage07d_authorized": true,
+  "status": "FORMAL_RETRAINING_PROTOCOL_AND_FRESH_VALIDATION_PREFLIGHT_READY",
+  "train_record_count": 896,
+  "validation_record_count": 256
+}

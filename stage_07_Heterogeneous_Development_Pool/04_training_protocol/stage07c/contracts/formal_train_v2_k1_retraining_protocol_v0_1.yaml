@@ -1,0 +1,345 @@
+contract_id: formal_train_v2_k1_retraining_protocol_v0_1
+schema: sph-pio-poc.stage07c.protocol.v1
+authorization:
+  source: Stage07B
+  status: TRAIN_V2_DEFECT_SCALE_AND_ACTUAL_OPTIMIZER_UPDATE_QUALIFIED
+  stage07c_only: true
+  formal_training_authorized_in_stage07c: false
+historical_status_preservation:
+  Stage06C: FORMAL_K1_TRAINING_COMPLETE_TRANSFORMER_NOT_QUALIFIED
+  Stage06C_R: FORMAL_TRAINING_FAILURE_ATTRIBUTED
+  D3_attribution: TRAIN_LINEAGE_HETEROGENEITY_DOMINANT
+  Stage07A_B_rewrite_forbidden: true
+backend:
+  device: CPU
+  dtype: float64
+  D3_sdpa: SDPBackend.MATH
+formal_models:
+  seeds:
+  - 20700711
+  - 20700712
+  - 20700713
+  run_count: 9
+  architectures:
+    D1: sha256:4f1dc1189d58dee5422cfbd16adc6a79f78be4965fd042762468b450bb7d2e4f
+    D2: sha256:925db1cc0d6d5df84d1bc8257dc22e9166426a19ff2445ce5829c9e926d3168b
+    D3: sha256:37ce23b93f5ce6160dcad1d791f15d18b1313ccc839523752e13508b28773fe9
+  runs:
+  - run_id: D1_seed20700711
+    arm: D1
+    formal_seed: 20700711
+    architecture_sha256: sha256:4f1dc1189d58dee5422cfbd16adc6a79f78be4965fd042762468b450bb7d2e4f
+    initial_parameter_sha256: sha256:bc10f9f3d90b05435e04ce2b8cabc153763fdc5c2f499c570e5d0b86767b1893
+    parameter_count: 5762
+    backend: CPU_FLOAT64_SDPBackend.MATH
+    fresh_initialization: true
+    stage06c_weight_reads: 0
+    stage07b_weight_reads: 0
+    prior_optimizer_state_reads: 0
+  - run_id: D1_seed20700712
+    arm: D1
+    formal_seed: 20700712
+    architecture_sha256: sha256:4f1dc1189d58dee5422cfbd16adc6a79f78be4965fd042762468b450bb7d2e4f
+    initial_parameter_sha256: sha256:689cc0612402469b3a16fbd736345345fc477285527d064d710c5b13dc0160d6
+    parameter_count: 5762
+    backend: CPU_FLOAT64_SDPBackend.MATH
+    fresh_initialization: true
+    stage06c_weight_reads: 0
+    stage07b_weight_reads: 0
+    prior_optimizer_state_reads: 0
+  - run_id: D1_seed20700713
+    arm: D1
+    formal_seed: 20700713
+    architecture_sha256: sha256:4f1dc1189d58dee5422cfbd16adc6a79f78be4965fd042762468b450bb7d2e4f
+    initial_parameter_sha256: sha256:84e9329066ce1c489291bf8df1bceb6ccdffad6f8e14f9c32966353f786a6782
+    parameter_count: 5762
+    backend: CPU_FLOAT64_SDPBackend.MATH
+    fresh_initialization: true
+    stage06c_weight_reads: 0
+    stage07b_weight_reads: 0
+    prior_optimizer_state_reads: 0
+  - run_id: D2_seed20700711
+    arm: D2
+    formal_seed: 20700711
+    architecture_sha256: sha256:925db1cc0d6d5df84d1bc8257dc22e9166426a19ff2445ce5829c9e926d3168b
+    initial_parameter_sha256: sha256:9a1fe7853fb78285f61ebd6203fd66bd110c70d1b3cb8735123bd73d44f470da
+    parameter_count: 12098
+    backend: CPU_FLOAT64_SDPBackend.MATH
+    fresh_initialization: true
+    stage06c_weight_reads: 0
+    stage07b_weight_reads: 0
+    prior_optimizer_state_reads: 0
+  - run_id: D2_seed20700712
+    arm: D2
+    formal_seed: 20700712
+    architecture_sha256: sha256:925db1cc0d6d5df84d1bc8257dc22e9166426a19ff2445ce5829c9e926d3168b
+    initial_parameter_sha256: sha256:aaa6f28a3b617eb504623320ad4ce9cf55ab89d49bc9a7fb8aae227607e90824
+    parameter_count: 12098
+    backend: CPU_FLOAT64_SDPBackend.MATH
+    fresh_initialization: true
+    stage06c_weight_reads: 0
+    stage07b_weight_reads: 0
+    prior_optimizer_state_reads: 0
+  - run_id: D2_seed20700713
+    arm: D2
+    formal_seed: 20700713
+    architecture_sha256: sha256:925db1cc0d6d5df84d1bc8257dc22e9166426a19ff2445ce5829c9e926d3168b
+    initial_parameter_sha256: sha256:e635bf54bc50839d7ab76b8b0f9b1ebf50d2ff78971870f2f27f86ee1f116423
+    parameter_count: 12098
+    backend: CPU_FLOAT64_SDPBackend.MATH
+    fresh_initialization: true
+    stage06c_weight_reads: 0
+    stage07b_weight_reads: 0
+    prior_optimizer_state_reads: 0
+  - run_id: D3_seed20700711
+    arm: D3
+    formal_seed: 20700711
+    architecture_sha256: sha256:37ce23b93f5ce6160dcad1d791f15d18b1313ccc839523752e13508b28773fe9
+    initial_parameter_sha256: sha256:6c35e6a361a88ce622cafd8fa032dcfe20d33d8dac3f305b09e3e02a1a8e9694
+    parameter_count: 22978
+    backend: CPU_FLOAT64_SDPBackend.MATH
+    fresh_initialization: true
+    stage06c_weight_reads: 0
+    stage07b_weight_reads: 0
+    prior_optimizer_state_reads: 0
+  - run_id: D3_seed20700712
+    arm: D3
+    formal_seed: 20700712
+    architecture_sha256: sha256:37ce23b93f5ce6160dcad1d791f15d18b1313ccc839523752e13508b28773fe9
+    initial_parameter_sha256: sha256:eb584bac5a4f27f5e45910e40269bffddd98a65b491d397c17b9dcb3ada09fdf
+    parameter_count: 22978
+    backend: CPU_FLOAT64_SDPBackend.MATH
+    fresh_initialization: true
+    stage06c_weight_reads: 0
+    stage07b_weight_reads: 0
+    prior_optimizer_state_reads: 0
+  - run_id: D3_seed20700713
+    arm: D3
+    formal_seed: 20700713
+    architecture_sha256: sha256:37ce23b93f5ce6160dcad1d791f15d18b1313ccc839523752e13508b28773fe9
+    initial_parameter_sha256: sha256:c2f253cbee0c4f6b0b08834ec485020688018ed5a61eb62a81881b8400f65df6
+    parameter_count: 22978
+    backend: CPU_FLOAT64_SDPBackend.MATH
+    fresh_initialization: true
+    stage06c_weight_reads: 0
+    stage07b_weight_reads: 0
+    prior_optimizer_state_reads: 0
+  fresh_initialization: true
+  historical_or_qualification_weight_reads: 0
+  future_preflight_weights_reuse_forbidden: true
+data_roles:
+  TRAIN_V2:
+  - LCDF_01
+  - LCDF_04
+  - LCDF_05
+  - LCDF_06
+  - LCDF_07
+  - LCDF_08
+  - HET_S1_02
+  - HET_S1_03
+  - HET_S2_01
+  - HET_S2_03
+  - HET_S3_01
+  - HET_S3_02
+  - HET_S4_01
+  - HET_S4_02
+  FRESH_VALIDATION_V2:
+  - HET_S1_01
+  - HET_S2_02
+  - HET_S3_03
+  - HET_S4_03
+  CONSUMED_VALIDATION_V1_DIAGNOSTIC_ONLY:
+  - LCDF_02
+  - LCDF_09
+  ORIGINAL_SEALED_TEST:
+  - LCDF_03
+  - LCDF_10
+targets:
+  TRAIN_V2_records: 896
+  target: Stage07B y_def_v2
+  s_a_v2: 1.7254786448147168
+  scale_hash: sha256:4ca44e15f2024c5ed02c97d10d1342644fccd17db6a40d7e0e558c8d0214141b
+  s_a_v1_use_forbidden: true
+  loss: BAL_MEAN ||(a_eff_theta-a_cons)/s_a_v2||^2
+  Q_def_v2: sqrt(L_def_v2)
+  auxiliary_losses: false
+  lineage_weights: false
+  LCDF_08_special_penalty: false
+optimizer:
+  family: AdamW
+  learning_rate: 1.0e-05
+  betas:
+  - 0.9
+  - 0.999
+  eps: 1.0e-12
+  weight_decay: 0
+  amsgrad: false
+  global_gradient_clip: 1.0
+  LR_search: false
+  higher_LR: false
+  arm_specific_LR: false
+training_batches:
+  manifest: stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/train_v2_batch_schedule/formal_train_v2_batch_schedule.json
+  manifest_sha256: sha256:c26f77cc794ca87a1103bd55eee87d19113c639a292603dc6b3ab114a260f526
+  base_batches: 8
+  records_per_batch: 112
+  updates_per_epoch: 8
+  assignment_salt: stage07c_train_batch_v1
+  order_salt: stage07c_batch_order_v1
+  zero_overlap: true
+  zero_omission: true
+  lineage_variant_balanced: true
+budget:
+  max_updates: 1500
+  minimum_updates: 320
+  validation_interval: 20
+  checkpoint_interval: 20
+  budget_increase: false
+scheduler:
+  warmup_updates: 40
+  warmup_start_factor: 0.1
+  warmup_end_factor: 1.0
+  post_warmup: cosine
+  terminal_learning_rate: 1.0e-06
+  values_manifest: stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/optimizer_schedule/formal_scheduler_values.json
+  values_sha256: sha256:f1a8880c629df8f645bcc6869d736378c3e66c12623545fcc4dabee7191f56fd
+early_stopping:
+  enabled_at_update: 320
+  patience_updates: 300
+  minimum_global_fresh_validation_Q_improvement: 1.0e-05
+  arm_seed_lineage_specific_changes: false
+checkpoint_policy:
+  save:
+    update_0_identity: true
+    interval_updates: 20
+    terminal: true
+    selected: true
+  selection_metric: FRESH_VALIDATION_V2.global_balanced_Q_def_v2
+  selection_rule: minimum
+  minimum_selectable_update: 320
+  tie_break: earlier_update
+  train_metric_participates: false
+  consumed_validation_participates: false
+  LCDF_08_participates: false
+  diagnostics_participate: false
+  sealed_test_participates: false
+  arm_comparison_participates: false
+  payload:
+  - model
+  - optimizer
+  - scheduler
+  - RNG
+  - update
+  - protocol_hash
+  - run_id
+  - architecture_hash
+  - parameter_hash
+  - batch_order_state
+  - TRAIN_metrics
+  - fresh_validation_metrics
+  - scale_hash
+  - target_manifest_hash
+  - backend
+success_gates:
+  A_numerical_safety:
+  - no NaN/Inf
+  - positive density
+  - finite coefficient/hidden
+  - deterministic evaluation
+  B_TRAIN_V2_global_Q_def_v2_max: 0.5
+  C_FRESH_VALIDATION_V2_global_Q_def_v2_max: 0.9
+  D_per_fresh_lineage_Q_def_v2_max:
+    HET_S1_01: 1.0
+    HET_S2_02: 1.0
+    HET_S3_03: 1.0
+    HET_S4_03: 1.0
+  E_structure:
+  - correction-force residual <=1e-10
+  - reciprocal antisymmetry
+  - permutation
+  - edge reorder
+  - translation
+  - Galilean
+  - SO(2)
+  - reflection
+  - periodic shift
+  - history semantics
+  seed_pass: A+B+C+D+E
+  arm_pass: '>=2/3 seeds'
+  transformer_route: D3 arm PASS
+  D1_D2_runs_required: 3/3 complete
+  D1_D2_arm_pass_required_for_sealed_test: false
+heterogeneity_hypothesis_diagnostics:
+  hard_gate: false
+  checkpoint_selection: false
+  metrics:
+  - LCDF_08 Q_def_v2
+  - LCDF_08 raw defect RMSE
+  - eight new lineage Q_def_v2
+  - six-anchor mean
+  - eight-new mean
+  - within-stratum mean
+  - anchor-vs-new gap
+  - raw acceleration RMSE
+  - relative reduction versus lineage zero-correction raw baseline
+  stage06c_D3_LCDF_08_history_retained: true
+  cross_stage_normalized_Q_only_comparison_forbidden: true
+validation:
+  open_only_after_protocol_hash_closed: true
+  record_count: 256
+  construction: complete RK2 D0-centered defect/conservative with TRAIN-only s_a_v2
+  scale_refit: false
+  qualification:
+  - D0 class/functional/repeat
+  - graph/source identity
+  - finite
+  - conservative zero-force
+  - provenance
+  - signal diagnostic
+  - pair-basis diagnostic
+  - seven transforms
+  evaluation_chunks:
+    rule: four lineages separately then exact equal-lineage mean
+    chunk_count: 4
+    records_per_chunk: 64
+    within_lineage: equal variant then equal origin mean
+    frozen_before_results: true
+  result_may_change_protocol: false
+access:
+  contract: stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/access_control/fresh_validation_access_contract.json
+  contract_sha256: sha256:49bdd90ad22ca57ee14014744a705c0051426c1b3391f4d33bb6bbaba64ae440
+  temporary_release_count: 41
+  temporary_mode: 0o400
+  restore_mode: 0o0
+  consumed_validation_private_reads: 0
+  original_sealed_test_private_reads: 0
+resume_policy:
+  infrastructure_resume_max: 2
+  requires_exact_checkpoint_RNG_optimizer_scheduler_protocol_batch_order_identity: true
+  scientific_retry: false
+  failed_run_replacement: false
+  unrecoverable_status: FORMAL_TRAIN_V2_RETRAINING_EVIDENCE_INCOMPLETE
+resource_limits:
+  peak_RSS_delta_bytes: 1610612736
+  checkpoint_storage_bytes: 10737418240
+  validation_chunk_change_after_results: false
+  budget_reduction_on_failure: false
+sealed_test_release:
+  stage07c_decode: false
+  required_stage07d_status: FORMAL_TRAIN_V2_TRANSFORMER_RETRAINING_QUALIFIED
+  selected_checkpoint_hashes_closed: true
+  explicit_stage07e_authorization: true
+stage07d_terminal_statuses:
+- FORMAL_TRAIN_V2_TRANSFORMER_RETRAINING_QUALIFIED
+- FORMAL_TRAIN_V2_RETRAINING_COMPLETE_TRANSFORMER_NOT_QUALIFIED
+- FORMAL_TRAIN_V2_RETRAINING_EVIDENCE_INCOMPLETE
+prohibitions:
+  formal_optimizer_steps: 0
+  formal_parameter_updates: 0
+  formal_training_runs: 0
+  saved_training_checkpoints: 0
+  sealed_test_evaluations: 0
+  rollouts: 0
+  model_ranking: false
+  checkpoint_selection: false
+  architecture_or_loss_change: false

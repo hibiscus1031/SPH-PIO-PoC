@@ -1,0 +1,31 @@
+{
+  "Stage06C_authorized": true,
+  "formal_optimizer_steps": 0,
+  "formal_parameter_updates": 0,
+  "formal_training_runs": 0,
+  "gates": {
+    "A_historical_freeze": true,
+    "B_protocol_frozen_before_validation": true,
+    "C_unique_formal_LR": true,
+    "D_384_TRAIN_unchanged": true,
+    "E_128_validation_complete": true,
+    "F_validation_no_feedback": true,
+    "G_nine_run_identities": true,
+    "H_nine_preflights": true,
+    "I_checkpoint_reload_identity": true,
+    "J_sealed_denial": true,
+    "K_sealed_decode_zero": true,
+    "L_resource_forecast": true,
+    "M_formal_optimizer_steps_zero": true,
+    "N_formal_training_runs_zero": true
+  },
+  "schema": "sph-pio-poc.stage06b.qualification.v1",
+  "sealed_decode_counts": {
+    "sealed_formula_decode_count": 0,
+    "sealed_origin_decode_count": 0,
+    "sealed_source_decode_count": 0,
+    "sealed_state_decode_count": 0,
+    "sealed_target_decode_count": 0
+  },
+  "status": "FORMAL_TRAINING_PROTOCOL_AND_VALIDATION_PREFLIGHT_READY"
+}

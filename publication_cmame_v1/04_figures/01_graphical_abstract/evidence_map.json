@@ -1,0 +1,26 @@
+[
+  {
+    "figure": "Graphical abstract",
+    "panel": "route",
+    "scientific_claim": "Cross-stage qualification route is frozen.",
+    "source_file": "stage_08Z_Project_Closure_Publication/02_cross_stage_evidence/cross_stage_evidence_matrix.json",
+    "source_hash": "sha256:2c822b44b3c0e6f27522b8a19a5873aaf2a055c89047bb431890386b5f90aba4",
+    "source_field": "stage rows/status and authorization edges",
+    "confirmatory_or_diagnostic": "CONFIRMATORY",
+    "transformation": "Selected frozen stage nodes; deterministic horizontal layout.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/01_graphical_abstract/graphical_abstract.svg;publication_cmame_v1/04_figures/01_graphical_abstract/graphical_abstract.pdf;publication_cmame_v1/04_figures/01_graphical_abstract/graphical_abstract.png"
+  },
+  {
+    "figure": "Graphical abstract",
+    "panel": "route",
+    "scientific_claim": "Qualified lower layers do not establish a trained solver.",
+    "source_file": "stage_08Z_Project_Closure_Publication/03_claim_matrix/final_claim_support_matrix.json",
+    "source_hash": "sha256:20f3cffba7b50062ae9f6b66b4ba4d020319de3ab747d4ef4eb0b88afe8d8fc9",
+    "source_field": "allowed_claims/prohibited_claims",
+    "confirmatory_or_diagnostic": "NEGATIVE_CONFIRMATORY",
+    "transformation": "Claims grouped by frozen qualification status.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/01_graphical_abstract/graphical_abstract.svg;publication_cmame_v1/04_figures/01_graphical_abstract/graphical_abstract.pdf;publication_cmame_v1/04_figures/01_graphical_abstract/graphical_abstract.png"
+  }
+]

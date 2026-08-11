@@ -1,0 +1,79 @@
+{
+  "schema_version": "sph-pio-poc.stage03b.freeze.v1",
+  "stage": "Stage 03B",
+  "freeze_date": "2026-08-05",
+  "authorization": "Stage 03A:DYNAMIC_HYBRID_SOLVER_SPECIFICATION_COMPLETE",
+  "execution": {
+    "device": "cpu",
+    "dtype": "float64",
+    "deterministic": true,
+    "torch_threads": 4,
+    "random_seed": 20260805,
+    "resolutions": [8, 12, 16],
+    "support_over_dx": 2.6,
+    "output_tau_numerator": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+    "output_tau_denominator": 256,
+    "analytic_audit_point_count": 8192
+  },
+  "physics": {
+    "domain_minimum": [-1.0, -1.0],
+    "domain_maximum": [1.0, 1.0],
+    "domain_length": 2.0,
+    "rho0": 1.0,
+    "sound_speed": 20.0,
+    "kinematic_viscosity": 0.02,
+    "eos": "p=cs^2*(rho-rho0)",
+    "kernel": "Wendland_C4",
+    "continuity_operator": "drho_i/dt=sum_j m_j*(v_i-v_j) dot grad_i W_ij",
+    "pressure_operator": "f_ij=-m_i*m_j*(p_i/rho_i^2+p_j/rho_j^2)*grad_i W_ij",
+    "viscosity_operator_role": "frozen_but_form_not_confirmed"
+  },
+  "dr1": {
+    "compression_amplitude_over_inverse_k": 0.02,
+    "coupled_x_amplitude_over_inverse_k": 0.012,
+    "coupled_y_amplitude_over_inverse_k": 0.01,
+    "formula_retry_permitted": false,
+    "amplitude_retry_permitted": false
+  },
+  "dr2": {
+    "integrator": "scipy.solve_ivp:DOP853",
+    "primary_rtol": 1e-11,
+    "primary_atol": 1e-13,
+    "sensitivity_rtol": 1e-12,
+    "sensitivity_atol": 1e-14,
+    "maximum_step_tau": 0.00390625
+  },
+  "dr3": {
+    "DR3_OBLIQUE_SHEAR_A": {"m": 1, "n": 2, "phi": 0.17, "boost_over_cs": [0.011, -0.007], "amplitude_over_cs": 0.015},
+    "DR3_OBLIQUE_SHEAR_B": {"m": 2, "n": -1, "phi": 0.31, "boost_over_cs": [-0.006, 0.009], "amplitude_over_cs": 0.012}
+  },
+  "acoustic": {
+    "amplitudes": [0.0001, 0.0002, 0.0004],
+    "wavevector": [1, 0],
+    "candidate": "linear_viscous_isothermal_acoustic_eigenmode"
+  },
+  "hard_gates": {
+    "eos_max_absolute_residual": 1e-12,
+    "dr1_continuity_normalized_residual": 1e-10,
+    "dr1_momentum_source_normalized_residual": 1e-10,
+    "particle_path_velocity_residual": 1e-10,
+    "derivative_route_normalized_disagreement": 1e-9,
+    "dr2_field_normalized_l2": 1e-9,
+    "dr2_field_normalized_linf": 1e-8,
+    "dr3_source_free_momentum_residual": 1e-10,
+    "dr3_continuity_residual": 1e-12,
+    "dr3_particle_path_residual": 1e-10
+  },
+  "prohibitions": [
+    "D1_D2_D3_model_implementation",
+    "Transformer",
+    "temporal_hidden_network",
+    "optimizer",
+    "training",
+    "neural_rollout",
+    "solver_in_the_loop",
+    "trajectory_dataset_split",
+    "normalization",
+    "performance_claim"
+  ]
+}

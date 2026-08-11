@@ -1,0 +1,48 @@
+contract_version: stage02g-r2s-bias-audit-1.0.0
+reference_identity: r2s_quadratic_kernel_weighted_wls_v1
+
+required_local_diagnostics:
+  - local_matrix_rank
+  - condition_number
+  - polynomial_reproduction_error
+  - reconstruction_residual
+  - particle_geometry_quality
+
+analytic_audit_reference:
+  use_as_target_source: false
+  purpose: quantify_R2S_reconstruction_bias_only
+  derivative_type: analytic_spatial_derivative
+  temporal_derivative_used: false
+  physical_state: analytic_periodic_vortex_at_t0
+  acceleration: negative_analytic_pressure_gradient_divided_by_density_plus_nu_analytic_velocity_laplacian
+
+predeclared_thresholds:
+  minimum_matrix_rank: 5
+  maximum_condition_number: 1.0e8
+  maximum_polynomial_reproduction_Linf: 1.0e-10
+  maximum_r2s_bias_to_target_L2_ratio_for_bounded_bias: 0.25
+  maximum_disorder_bias_amplification_for_bounded_sensitivity: 2.0
+
+disorder_sensitivity_matrix:
+  fixed:
+    particles_per_axis: 12
+    h_over_dx: 2.6
+    physical_state: analytic_periodic_vortex_at_t0
+    kernel_family: cubic_spline_2d
+    EOS: linear_isothermal
+  cases:
+    - case_id: g_bias_regular_n12
+      disorder_identity: regular
+      disorder_fraction_dx: 0.0
+      random_seed: 271828
+    - case_id: g_bias_jitter05_n12
+      disorder_identity: jitter_5_percent
+      disorder_fraction_dx: 0.05
+      random_seed: 314159
+    - case_id: g_bias_jitter10_n12
+      disorder_identity: jitter_10_percent
+      disorder_fraction_dx: 0.10
+      random_seed: 161803
+
+posthoc_case_deletion_permitted: false
+continuum_model_form_confirmation_claimed: false

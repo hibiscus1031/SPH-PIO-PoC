@@ -1,0 +1,91 @@
+contract_id: attribution_contract_v0_2
+contract_version: stage02js-graph-sobolev-0.2.0
+status: prospective_versioned_contract
+preregistered_before_heldout_target_array_evaluation: true
+historical_contract:
+  contract_id: attribution_contract_v0_1
+  statistic: graph_total_variation_RMS_divided_by_one_PCG64_permuted_null
+  seed: 20260207
+  threshold_max: 0.8
+  historical_result_mutable: false
+  interpretation: historical_diagnostic_not_corrected_or_deleted
+statistic:
+  name: dimensionless_graph_Sobolev_S_h
+  formula: sqrt(mean_edges(norm(delta_i-delta_j)^2/((r_ij/h)^2+epsilon_r)))/(RMS(delta)+epsilon_a)
+  target_sign: a_reference_minus_a_sph
+  edge_population: active_nonzero_kernel_undirected_reciprocal_edges
+  reciprocal_reduction: source_index_less_than_target_index
+  distance: periodic_minimum_image
+  edge_average: one_equal_weight_per_undirected_edge
+  target_RMS: particle_balanced_vector_RMS
+  epsilon_r: 3.5527136788005009e-15
+  epsilon_r_basis: 16_times_IEEE754_binary64_machine_epsilon_not_target_fitted
+  epsilon_a: 0.0
+  epsilon_a_basis: nonzero_target_is_a_separate_qualification_precondition
+  execution: CPU_float64
+  summation: numpy_pairwise_deterministic_fixed_canonical_edge_order
+permutation_null:
+  generator: PCG64
+  permutation_count_per_case: 256
+  root_seed: 20260207
+  case_seed_rule: SHA256_UTF8(root_seed_pipe_case_id_pipe_permutation_index)_first_8_bytes_big_endian_uint64
+  permutation_index_start: 0
+  seed_screening_permitted: false
+  preserves:
+    - particlewise_vector_multiset
+    - target_RMS
+    - component_distribution
+  breaks:
+    - spatial_association
+  p_smooth_formula: (1+count(S_perm_less_than_or_equal_to_S_observed))/257
+  p_smooth_max: 0.01
+  confidence_interval: exact_Clopper_Pearson_95_percent_for_lower_tail_count
+resolution_behavior:
+  cases: resolution_path_only
+  required_levels: 3
+  level_order: increasing_particles_per_axis
+  endpoint_rule: S_h_high_less_than_or_equal_to_S_h_low
+  systematic_rule: OLS_slope_of_S_h_against_integer_level_index_less_than_or_equal_to_zero
+  adjacent_monotonicity_required: false
+  convergence_order_claim_permitted: false
+  legacy_checks_required_to_remain_PASS:
+    - target_endpoint_magnitude_nonincreasing
+    - adjacent_low_mode_direction_cosine
+    - relative_neighbor_variation_strictly_decreasing
+    - physical_gradient_scale_coefficient_of_variation
+negative_controls:
+  development_resolution_cases_only: true
+  realizations_per_control_per_case: 64
+  seed_rule: SHA256_UTF8(root_seed_pipe_case_id_pipe_control_id_pipe_realization_index)_first_8_bytes_big_endian_uint64
+  evaluation_null: corresponding_structured_target_256_permutation_S_h_distribution
+  controls:
+    - FULL_PARTICLE_PERMUTATION
+    - INDEPENDENT_COMPONENT_PERMUTATION
+    - RANDOM_PARTICLE_SIGN_FLIP
+    - NYQUIST_CHECKERBOARD_MATCHED_RMS
+    - GAUSSIAN_WHITE_MATCHED_RMS
+  smooth_false_positive_definition: control_S_h_less_than_or_equal_to_structured_target_permutation_1_percent_empirical_cutoff
+  false_positive_rate_max_each_control: 0.05
+  structured_target_requirement: p_smooth_less_than_or_equal_to_0.01_for_all_development_resolution_cases
+invariance:
+  development_all_five_cases_per_family: true
+  amplitude_scales: [0.1, 1.0, 10.0]
+  periodic_translation_fractional_domain: [0.173, 0.319]
+  axis_exchange: true
+  vector_rotation_degrees: 90
+  canonical_particle_reorder: reverse_then_recanonicalize
+  edge_direction_reversal: true
+  S_h_relative_tolerance: 1.0e-12
+  S_h_absolute_tolerance: 1.0e-14
+  p_smooth_required_exact: true
+heldout_acceptance:
+  exact_family_5_of_5_required: true
+  all_existing_five_attribution_components_PASS: true
+  all_three_resolution_cases_p_smooth_max: 0.01
+  resolution_behavior_PASS: true
+  negative_control_separation_applicable: true
+  historical_reference_PASS: true
+  historical_conservation_PASS: true
+post_observation_changes_permitted: false
+manual_override_permitted: false
+

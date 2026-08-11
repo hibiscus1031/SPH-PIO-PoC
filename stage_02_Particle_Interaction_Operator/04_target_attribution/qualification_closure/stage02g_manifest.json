@@ -1,0 +1,36 @@
+{
+  "campaign_id": "stage02g_spatial_attribution_closure_20260804",
+  "determinism": {
+    "canonical_records_bitwise_equal": true,
+    "repeats": 2
+  },
+  "failure_retention_complete": true,
+  "input_files": {
+    "stage_02_Particle_Interaction_Operator/03_dataset/generation/generate_audit_dataset.py": "sha256:03b674f0aab07a1d9f8c4506b9378c32d763bac6797c062892adc127b8e112f9",
+    "stage_02_Particle_Interaction_Operator/03_dataset/generation/generation_configuration.yaml": "sha256:7ac0a412f9bd7f5dd28cb1affa27d44e00a05b3d4deeac7f1e8a4dcc268993cf",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/qualification/spatial_attribution_results.json": "sha256:8176df225b101c4d6dc4f34093deadfacd86213bca26fdf77bdef2a9455e977d",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/r2s_bias_audit/bias_audit_contract.yaml": "sha256:e91f4097adea6f63211f29007e516b37575f4edd0a207eed2297d59887fc707b",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/resolution_extension/resolution_extension_matrix.yaml": "sha256:a90c5a5406af9259504d5954bfeb8e70b6f549f5812b0c54644498cf25207fc8",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/semidiscrete_reference/construct_spatial_targets.py": "sha256:0e8bef3792fd1ca4abbfb6dba0286f4c6f81984f6a08fb95dbbfc7af3a69207f",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/semidiscrete_reference/r2s_reference_design.yaml": "sha256:5cab873d3ea9a05135660e3428f8bc6ac59a7508984155599e12c24513d7f8bf",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/smoothness_audit/smoothness_criterion_contract.yaml": "sha256:187846e7aa00ce781f07fc7f3bc02e31fea44a3ee38637ff96d8e85d358a4c37",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/spatial_refinement/stage02g_refinement_design.yaml": "sha256:dac662b6ed7a0145c0c683d1160c84d2a9098a0bb7ba1d6455efe55527f6251f",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/support_path/support_path_audit.json": "sha256:44376599b863e38f032d8d11a2eff3dc1210b4b3fe892497918521d81ab3e21a"
+  },
+  "no_dataset_generated": true,
+  "no_model_implementation": true,
+  "no_normalization": true,
+  "no_performance_claim": true,
+  "no_split_assignment": true,
+  "no_training": true,
+  "no_trajectory_generated": true,
+  "output_files": {
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/qualification_closure/attribution_closure.json": "sha256:0dde97b251b018eb3d021dc6005edc94b95e23033b523df5fc44864feba58f04",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/r2s_bias_audit/r2s_bias_audit.json": "sha256:d980df5364a042ace18987468c16d516e4aa47a11fe310dbb1a48d2256066428",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/resolution_extension/resolution_extension_results.json": "sha256:06eabe1cad7b4746a06d26ee4dfff3469b4dc8df4245119b2331598a9f836fef",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/smoothness_audit/smoothness_criterion_audit.json": "sha256:5ffd0cb56b8a655e43f020cb1e56bf67c35204c58f768b3329e131118ca892f3",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/spatial_refinement/controlled_spatial_targets.json": "sha256:2df3f08e073a979519263360328a0876800dfaa2d8a8abc219c998dfeab728ba"
+  },
+  "provenance_complete": true,
+  "stage02f_records_overwritten": false
+}

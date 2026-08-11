@@ -1,0 +1,1 @@
+**Figure 4. Failure-driven methodological progression.** Each frozen failure motivated a new qualification layer without overwriting the earlier verdict. All plotted values and statuses must be read from the frozen source list; schematic arrows denote methodological dependency, not performance improvement.

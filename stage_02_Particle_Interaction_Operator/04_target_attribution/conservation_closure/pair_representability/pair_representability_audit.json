@@ -1,0 +1,203 @@
+{
+  "central_pair_force_is_hard_gate": false,
+  "general_vector_pair_force_is_hard_gate": true,
+  "rows": [
+    {
+      "candidate_id": "i_res_n12_h26_regular",
+      "central_pair_force_diagnostic": {
+        "LSQR_iterations": 11,
+        "LSQR_stop_code": 1,
+        "central_projection_torque": -1.134270731765097e-06,
+        "exact_solvability_within_tolerance": true,
+        "hard_gate": false,
+        "normalized_residual": 3.014999769197609e-14,
+        "periodic_torque_convention": "wrapped_positions_relative_to_box_center_with_minimum_image_edges",
+        "target_torque": -1.1342707317833658e-06,
+        "torque_residual": -1.826880660638075e-17
+      },
+      "disorder_identity": "regular",
+      "general_antisymmetric_vector_pair_force": {
+        "connected_component_count": 1,
+        "edge_force_antisymmetry_by_construction": true,
+        "exact_solvability_within_tolerance": true,
+        "least_squares_residual_norm": 5.3283055770394596e-18,
+        "normalized_projection_residual": 1.1083470208280893e-15,
+        "scalar_incidence_rank": 143,
+        "scalar_null_space_dimension": 1297,
+        "undirected_edge_count": 1440,
+        "vector_incidence_rank": 286,
+        "vector_null_space_dimension": 2594
+      },
+      "projection_written_back_to_target": false
+    },
+    {
+      "candidate_id": "i_anchor_n16_h26_regular",
+      "central_pair_force_diagnostic": {
+        "LSQR_iterations": 13,
+        "LSQR_stop_code": 1,
+        "central_projection_torque": -1.1852153164181244e-06,
+        "exact_solvability_within_tolerance": true,
+        "hard_gate": false,
+        "normalized_residual": 8.388476026887959e-14,
+        "periodic_torque_convention": "wrapped_positions_relative_to_box_center_with_minimum_image_edges",
+        "target_torque": -1.1852153163887316e-06,
+        "torque_residual": 2.9392890302671476e-17
+      },
+      "disorder_identity": "regular",
+      "general_antisymmetric_vector_pair_force": {
+        "connected_component_count": 1,
+        "edge_force_antisymmetry_by_construction": true,
+        "exact_solvability_within_tolerance": true,
+        "least_squares_residual_norm": 4.126340541726597e-18,
+        "normalized_projection_residual": 2.099243884168674e-15,
+        "scalar_incidence_rank": 255,
+        "scalar_null_space_dimension": 2305,
+        "undirected_edge_count": 2560,
+        "vector_incidence_rank": 510,
+        "vector_null_space_dimension": 4610
+      },
+      "projection_written_back_to_target": false
+    },
+    {
+      "candidate_id": "i_res_n20_h26_regular",
+      "central_pair_force_diagnostic": {
+        "LSQR_iterations": 15,
+        "LSQR_stop_code": 1,
+        "central_projection_torque": -1.210087358364761e-06,
+        "exact_solvability_within_tolerance": true,
+        "hard_gate": false,
+        "normalized_residual": 1.7106413193353317e-13,
+        "periodic_torque_convention": "wrapped_positions_relative_to_box_center_with_minimum_image_edges",
+        "target_torque": -1.2100873582670743e-06,
+        "torque_residual": 9.768661574094395e-17
+      },
+      "disorder_identity": "regular",
+      "general_antisymmetric_vector_pair_force": {
+        "connected_component_count": 1,
+        "edge_force_antisymmetry_by_construction": true,
+        "exact_solvability_within_tolerance": true,
+        "least_squares_residual_norm": 3.4308112587402967e-18,
+        "normalized_projection_residual": 3.656705036552755e-15,
+        "scalar_incidence_rank": 399,
+        "scalar_null_space_dimension": 3601,
+        "undirected_edge_count": 4000,
+        "vector_incidence_rank": 798,
+        "vector_null_space_dimension": 7202
+      },
+      "projection_written_back_to_target": false
+    },
+    {
+      "candidate_id": "i_sup_n16_h22_regular",
+      "central_pair_force_diagnostic": {
+        "LSQR_iterations": 14,
+        "LSQR_stop_code": 1,
+        "central_projection_torque": -1.0679714664841694e-06,
+        "exact_solvability_within_tolerance": true,
+        "hard_gate": false,
+        "normalized_residual": 7.601727426545567e-13,
+        "periodic_torque_convention": "wrapped_positions_relative_to_box_center_with_minimum_image_edges",
+        "target_torque": -1.0679714663102972e-06,
+        "torque_residual": 1.7387214714878474e-16
+      },
+      "disorder_identity": "regular",
+      "general_antisymmetric_vector_pair_force": {
+        "connected_component_count": 1,
+        "edge_force_antisymmetry_by_construction": true,
+        "exact_solvability_within_tolerance": true,
+        "least_squares_residual_norm": 1.5045300498432566e-17,
+        "normalized_projection_residual": 3.4245310747534785e-15,
+        "scalar_incidence_rank": 255,
+        "scalar_null_space_dimension": 1281,
+        "undirected_edge_count": 1536,
+        "vector_incidence_rank": 510,
+        "vector_null_space_dimension": 2562
+      },
+      "projection_written_back_to_target": false
+    },
+    {
+      "candidate_id": "i_sup_n16_h30_regular",
+      "central_pair_force_diagnostic": {
+        "LSQR_iterations": 12,
+        "LSQR_stop_code": 1,
+        "central_projection_torque": -1.1852153166009387e-06,
+        "exact_solvability_within_tolerance": true,
+        "hard_gate": false,
+        "normalized_residual": 1.1829560243060161e-13,
+        "periodic_torque_convention": "wrapped_positions_relative_to_box_center_with_minimum_image_edges",
+        "target_torque": -1.1852153163887316e-06,
+        "torque_residual": 2.1220716427561986e-16
+      },
+      "disorder_identity": "regular",
+      "general_antisymmetric_vector_pair_force": {
+        "connected_component_count": 1,
+        "edge_force_antisymmetry_by_construction": true,
+        "exact_solvability_within_tolerance": true,
+        "least_squares_residual_norm": 3.2887302886172947e-18,
+        "normalized_projection_residual": 1.6731161365007786e-15,
+        "scalar_incidence_rank": 255,
+        "scalar_null_space_dimension": 2817,
+        "undirected_edge_count": 3072,
+        "vector_incidence_rank": 510,
+        "vector_null_space_dimension": 5634
+      },
+      "projection_written_back_to_target": false
+    },
+    {
+      "candidate_id": "i_dis_n16_h26_jitter05",
+      "central_pair_force_diagnostic": {
+        "LSQR_iterations": 55,
+        "LSQR_stop_code": 2,
+        "central_projection_torque": 0.000150494985120127,
+        "exact_solvability_within_tolerance": false,
+        "hard_gate": false,
+        "normalized_residual": 0.003235441499152706,
+        "periodic_torque_convention": "wrapped_positions_relative_to_box_center_with_minimum_image_edges",
+        "target_torque": 0.0001504879127896281,
+        "torque_residual": -7.072330498905481e-09
+      },
+      "disorder_identity": "jitter_5_percent",
+      "general_antisymmetric_vector_pair_force": {
+        "connected_component_count": 1,
+        "edge_force_antisymmetry_by_construction": true,
+        "exact_solvability_within_tolerance": false,
+        "least_squares_residual_norm": 1.0186759174603557e-05,
+        "normalized_projection_residual": 0.0032354414991526996,
+        "scalar_incidence_rank": 255,
+        "scalar_null_space_dimension": 2305,
+        "undirected_edge_count": 2560,
+        "vector_incidence_rank": 510,
+        "vector_null_space_dimension": 4610
+      },
+      "projection_written_back_to_target": false
+    },
+    {
+      "candidate_id": "i_dis_n16_h26_jitter10",
+      "central_pair_force_diagnostic": {
+        "LSQR_iterations": 54,
+        "LSQR_stop_code": 2,
+        "central_projection_torque": 6.413054148417415e-05,
+        "exact_solvability_within_tolerance": false,
+        "hard_gate": false,
+        "normalized_residual": 0.009613098292784355,
+        "periodic_torque_convention": "wrapped_positions_relative_to_box_center_with_minimum_image_edges",
+        "target_torque": 6.43191722746571e-05,
+        "torque_residual": 1.8863079048294967e-07
+      },
+      "disorder_identity": "jitter_10_percent",
+      "general_antisymmetric_vector_pair_force": {
+        "connected_component_count": 1,
+        "edge_force_antisymmetry_by_construction": true,
+        "exact_solvability_within_tolerance": false,
+        "least_squares_residual_norm": 5.678379234590123e-05,
+        "normalized_projection_residual": 0.009613098292784348,
+        "scalar_incidence_rank": 255,
+        "scalar_null_space_dimension": 2305,
+        "undirected_edge_count": 2560,
+        "vector_incidence_rank": 510,
+        "vector_null_space_dimension": 4610
+      },
+      "projection_written_back_to_target": false
+    }
+  ],
+  "tolerance": 1e-10
+}

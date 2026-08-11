@@ -1,0 +1,95 @@
+protocol_version: pair-force-pio-training-protocol-v0.2.0
+authorization: STATIC_FITTING_FAILURE_ATTRIBUTED_OPTIMIZATION_CONDITIONING
+design_only_stage: 02M-P
+freeze_order:
+- historical_input_freeze
+- decode_exactly_10_train_targets
+- compute_and_freeze_a_sup
+- freeze_loss
+- freeze_optimizer_and_schedule
+- freeze_architecture_arms
+- freeze_new_seeds
+- freeze_budget_and_early_stopping
+- freeze_success_gates
+- freeze_blind_generator_source_config_seeds_roles
+- generate_training_protocol_v0_2_yaml
+- generate_immutable_protocol_sha256
+- only_then_materialize_blind_formulas
+a_sup: 0.392220124168075
+a_sup_units: m s^-2
+supervision_scale_hash: sha256:85d5339dde02c29dba5bfa753096ab25598bd29a5df576def7691dcdbfef838e
+loss: equal_complete_graph_mean_of_node_vector_MSE_after_division_by_a_sup
+static_metrics: Stage02L_Q_L2_Q_Linf_cosine_unchanged
+optimizer:
+  name: AdamW
+  learning_rate: 0.001
+  betas:
+  - 0.9
+  - 0.999
+  epsilon: 1.0e-12
+  weight_decay: 0.0
+  global_norm_clip: 1.0
+schedule:
+  warmup_updates: 50
+  decay: cosine
+  minimum_learning_rate: 1.0e-05
+  maximum_updates: 1000
+architectures:
+- K0
+- K1
+- K2
+seeds:
+- 20261211
+- 20261212
+- 20261213
+prospective_run_count: 9
+validation_interval: 20
+minimum_updates_before_stopping: 300
+patience_updates: 200
+minimum_validation_improvement: 1.0e-06
+checkpoint_interval: 20
+checkpoint_selection: lowest_validation_graph_mean_Q_L2_then_earlier_update
+success_gates:
+  train_Q_L2_max: 0.25
+  validation_family_mean_max: 0.9
+  validation_every_graph_max: 1.1
+  test_family_mean_max: 0.9
+  test_every_graph_max: 1.1
+  seed_rule: 2_of_3
+new_blind_families:
+- family_id: V02_BLIND_VALIDATION_01
+  root_seed: 2026080501
+  role: future_validation
+  graph_count: 5
+- family_id: V02_BLIND_TEST_01
+  root_seed: 2026080502
+  role: future_test
+  graph_count: 5
+collection: blind_multifamily_pair_scope_v1_1_protocol_v02
+train_families:
+- BLIND_FAMILY_01
+- BLIND_FAMILY_02
+excluded_consumed_families:
+- BLIND_FAMILY_03
+- BLIND_FAMILY_04
+input_normalization_hash: sha256:2208d2f4b9b7c848f2cd1b93624f9f6a3d9fb29e65cdd70ee453e6122c43d051
+test_target_access: false
+test_release_manifest_in_stage02mp: false
+counters:
+  new_optimizer_steps: 0
+  new_training_runs: 0
+  new_test_evaluations: 0
+source_hashes:
+  historical_freeze: sha256:ad6a4857b2427559b580c8bfd8668a32f473e58ef26b9f5be6dc233f022d89fa
+  supervision_scale: sha256:2acf50ed92724ef6ba894d3efda247b245c4f22917b6dda8e680320576369dec
+  loss: sha256:76867adfc307e667831595f46984d96e695628b93329625633cf99c6a3ab483d
+  optimizer: sha256:66eb667fc65c9b1b8ec7ee77985b6556ef94894b9f888cd37b42c2c11c679826
+  model_arms: sha256:a2154c16d2d83c457273a693d1b694cd23a553a21b52269decabdbeeeb987f61
+  run_matrix: sha256:413cd8f5f06c5d6a8a5c4461603cf6b70088f7d8cfbad4346d5bdf4c3c0d809e
+  checkpoint_and_stopping: sha256:87d96d44fc4a7dc8463ae2b0f1178bca38fd851045405ce5202dce89b46a6513
+  success_gates: sha256:10ae4101b36d778a7d01eba5cb52a82c49a3388af017395ffccfaa4ecf164938
+  blind_generator_config: sha256:01dac7eac45f37a2d81da715ead36147aa6ed77c2ed8f8916f1bb18332cf3225
+  input_normalization: sha256:cfcd6aa10529a25938c3c79a74b8079bfcab4c351f4fe926a8d2fee37bf48a23
+  test_seal: sha256:6503a42cd951b74df18686ce2dbe948aaa58abde59bee1674fc130990d52ad75
+  route_termination: sha256:10460fd8f278301581911b45449e036afbae228af758fa9e016f9692e8e051a5
+blind_formulas_materialized_at_protocol_freeze: false

@@ -1,0 +1,339 @@
+{
+  "entries": [
+    {
+      "d_x": "A*sin(xi)*q",
+      "d_y": "0",
+      "family_id": "LCDF_01",
+      "formula_sha256": "sha256:afa6fbcb866d6e48046190060eb8da32103cdd4b299acd610db7c971011865dd",
+      "material_map": {
+        "eta": "2*pi*Y/L",
+        "k": "2*pi/L",
+        "parameter_aliases": {
+          "A": "primary_amplitude",
+          "B": "A*r",
+          "r": "secondary_amplitude_ratio"
+        },
+        "time_primitives": {
+          "c": "cos(theta)",
+          "q": "sin(theta)",
+          "q2": "sin(2*pi*(m+1)*tau+phi/2)",
+          "theta": "2*pi*m*tau+phi"
+        },
+        "x": "X+d_x(xi,eta,tau)/k",
+        "xi": "2*pi*X/L",
+        "y": "Y+d_y(xi,eta,tau)/k"
+      },
+      "parameter_seed_sha256": "sha256:7e233d3a089b8bb256ece2543afeb0ae1d424ed21b8becdeb8aba884608af49b",
+      "parameters": {
+        "amplitude_main": 0.0018449076449087672,
+        "family_id": "LCDF_01",
+        "parameter_seed_sha256": "sha256:7e233d3a089b8bb256ece2543afeb0ae1d424ed21b8becdeb8aba884608af49b",
+        "permitted_frequency_index": 1,
+        "phase": 0.7181242752473849,
+        "secondary_amplitude_ratio": 0.41791041289597974,
+        "template": "AXIAL_COMPRESSION"
+      },
+      "role": "TRAIN_LINEAGE",
+      "template": "AXIAL_COMPRESSION"
+    },
+    {
+      "d_x": "A*sin(xi)*cos(eta)*q",
+      "d_y": "B*cos(xi)*sin(eta)*q",
+      "family_id": "LCDF_02",
+      "formula_sha256": "sha256:3ddac12f9ebd21e4bb9a101f06c34268b0511df8e6604c6ab41dbcd66e7089b9",
+      "material_map": {
+        "eta": "2*pi*Y/L",
+        "k": "2*pi/L",
+        "parameter_aliases": {
+          "A": "primary_amplitude",
+          "B": "A*r",
+          "r": "secondary_amplitude_ratio"
+        },
+        "time_primitives": {
+          "c": "cos(theta)",
+          "q": "sin(theta)",
+          "q2": "sin(2*pi*(m+1)*tau+phi/2)",
+          "theta": "2*pi*m*tau+phi"
+        },
+        "x": "X+d_x(xi,eta,tau)/k",
+        "xi": "2*pi*X/L",
+        "y": "Y+d_y(xi,eta,tau)/k"
+      },
+      "parameter_seed_sha256": "ISOLATED",
+      "parameter_values": "ISOLATED",
+      "role": "VALIDATION_LINEAGE",
+      "template": "BIAXIAL_BREATHING"
+    },
+    {
+      "d_x": "A*sin(xi)*sin(eta)*q",
+      "d_y": "B*(sin(xi)+0.5*sin(2*eta))*q",
+      "family_id": "LCDF_03",
+      "formula_sha256": "sha256:c8d8d645b87930cfdbefdba2ad3c0acc94886501a2cdf52370c66435ee4da8ce",
+      "material_map": {
+        "eta": "2*pi*Y/L",
+        "k": "2*pi/L",
+        "parameter_aliases": {
+          "A": "primary_amplitude",
+          "B": "A*r",
+          "r": "secondary_amplitude_ratio"
+        },
+        "time_primitives": {
+          "c": "cos(theta)",
+          "q": "sin(theta)",
+          "q2": "sin(2*pi*(m+1)*tau+phi/2)",
+          "theta": "2*pi*m*tau+phi"
+        },
+        "x": "X+d_x(xi,eta,tau)/k",
+        "xi": "2*pi*X/L",
+        "y": "Y+d_y(xi,eta,tau)/k"
+      },
+      "parameter_seed_sha256": "ISOLATED",
+      "parameter_values": "ISOLATED",
+      "role": "SEALED_TEST_LINEAGE",
+      "template": "SHEAR_COMPRESSION_CELL"
+    },
+    {
+      "d_x": "A*sin(xi)*cos(eta)*q",
+      "d_y": "-A*cos(xi)*sin(eta)*c",
+      "family_id": "LCDF_04",
+      "formula_sha256": "sha256:74570e91b829ec0d7991356c8e3d61e1296f2edbbd4dc13f10d64a4ac4c2a140",
+      "material_map": {
+        "eta": "2*pi*Y/L",
+        "k": "2*pi/L",
+        "parameter_aliases": {
+          "A": "primary_amplitude",
+          "B": "A*r",
+          "r": "secondary_amplitude_ratio"
+        },
+        "time_primitives": {
+          "c": "cos(theta)",
+          "q": "sin(theta)",
+          "q2": "sin(2*pi*(m+1)*tau+phi/2)",
+          "theta": "2*pi*m*tau+phi"
+        },
+        "x": "X+d_x(xi,eta,tau)/k",
+        "xi": "2*pi*X/L",
+        "y": "Y+d_y(xi,eta,tau)/k"
+      },
+      "parameter_seed_sha256": "sha256:037c600018457f6ec68e1973282fe87fd4d7b902283891c3ce6506508b768c9a",
+      "parameters": {
+        "amplitude_main": 0.0015095315933382062,
+        "family_id": "LCDF_04",
+        "parameter_seed_sha256": "sha256:037c600018457f6ec68e1973282fe87fd4d7b902283891c3ce6506508b768c9a",
+        "permitted_frequency_index": 1,
+        "phase": 5.223944986301222,
+        "secondary_amplitude_ratio": 0.5051211529950137,
+        "template": "ROTATING_CELL"
+      },
+      "role": "TRAIN_LINEAGE",
+      "template": "ROTATING_CELL"
+    },
+    {
+      "d_x": "A*sin(xi+eta)*q/sqrt(2)",
+      "d_y": "A*sin(xi+eta)*q/sqrt(2)",
+      "family_id": "LCDF_05",
+      "formula_sha256": "sha256:467b1c6a16b8fed118289473685717e2b22be1488bdf3e6adb2efe8b23e10849",
+      "material_map": {
+        "eta": "2*pi*Y/L",
+        "k": "2*pi/L",
+        "parameter_aliases": {
+          "A": "primary_amplitude",
+          "B": "A*r",
+          "r": "secondary_amplitude_ratio"
+        },
+        "time_primitives": {
+          "c": "cos(theta)",
+          "q": "sin(theta)",
+          "q2": "sin(2*pi*(m+1)*tau+phi/2)",
+          "theta": "2*pi*m*tau+phi"
+        },
+        "x": "X+d_x(xi,eta,tau)/k",
+        "xi": "2*pi*X/L",
+        "y": "Y+d_y(xi,eta,tau)/k"
+      },
+      "parameter_seed_sha256": "sha256:5b2e4517218d0f41f59347f1fca35d2727400023c99d81c6b446c49e4b0facfc",
+      "parameters": {
+        "amplitude_main": 0.0017493223406820886,
+        "family_id": "LCDF_05",
+        "parameter_seed_sha256": "sha256:5b2e4517218d0f41f59347f1fca35d2727400023c99d81c6b446c49e4b0facfc",
+        "permitted_frequency_index": 1,
+        "phase": 0.9633399871464506,
+        "secondary_amplitude_ratio": 0.541855716052785,
+        "template": "OBLIQUE_LONGITUDINAL"
+      },
+      "role": "TRAIN_LINEAGE",
+      "template": "OBLIQUE_LONGITUDINAL"
+    },
+    {
+      "d_x": "A*sin(xi+eta)*q/sqrt(2)",
+      "d_y": "-A*sin(xi+eta)*q/sqrt(2)",
+      "family_id": "LCDF_06",
+      "formula_sha256": "sha256:1884345727104dea34ba42ff094bfbcb1d614839957a0dd21f881b30c395ff91",
+      "material_map": {
+        "eta": "2*pi*Y/L",
+        "k": "2*pi/L",
+        "parameter_aliases": {
+          "A": "primary_amplitude",
+          "B": "A*r",
+          "r": "secondary_amplitude_ratio"
+        },
+        "time_primitives": {
+          "c": "cos(theta)",
+          "q": "sin(theta)",
+          "q2": "sin(2*pi*(m+1)*tau+phi/2)",
+          "theta": "2*pi*m*tau+phi"
+        },
+        "x": "X+d_x(xi,eta,tau)/k",
+        "xi": "2*pi*X/L",
+        "y": "Y+d_y(xi,eta,tau)/k"
+      },
+      "parameter_seed_sha256": "sha256:ab43ce7645f31848122b3483521b8362f8df9cdea7d61f0af4cbb7a841a6123c",
+      "parameters": {
+        "amplitude_main": 0.001968302376473152,
+        "family_id": "LCDF_06",
+        "parameter_seed_sha256": "sha256:ab43ce7645f31848122b3483521b8362f8df9cdea7d61f0af4cbb7a841a6123c",
+        "permitted_frequency_index": 1,
+        "phase": 6.108274372384713,
+        "secondary_amplitude_ratio": 0.36419435158934127,
+        "template": "OBLIQUE_TRANSVERSE"
+      },
+      "role": "TRAIN_LINEAGE",
+      "template": "OBLIQUE_TRANSVERSE"
+    },
+    {
+      "d_x": "A*(sin(xi)*q+0.5*r*sin(2*eta)*q2)",
+      "d_y": "A*(sin(eta)*q-0.5*r*sin(2*xi)*q2)",
+      "family_id": "LCDF_07",
+      "formula_sha256": "sha256:1bf89b4bef0e9f4e8970338a8230ad14798fe69e3de2cdf98819402f6e4d6c8b",
+      "material_map": {
+        "eta": "2*pi*Y/L",
+        "k": "2*pi/L",
+        "parameter_aliases": {
+          "A": "primary_amplitude",
+          "B": "A*r",
+          "r": "secondary_amplitude_ratio"
+        },
+        "time_primitives": {
+          "c": "cos(theta)",
+          "q": "sin(theta)",
+          "q2": "sin(2*pi*(m+1)*tau+phi/2)",
+          "theta": "2*pi*m*tau+phi"
+        },
+        "x": "X+d_x(xi,eta,tau)/k",
+        "xi": "2*pi*X/L",
+        "y": "Y+d_y(xi,eta,tau)/k"
+      },
+      "parameter_seed_sha256": "sha256:4b155b97a2b5ecf3023bf11e01ee32dfdc80123c40dcf99d3a6d52d428cad976",
+      "parameters": {
+        "amplitude_main": 0.0017053062507288792,
+        "family_id": "LCDF_07",
+        "parameter_seed_sha256": "sha256:4b155b97a2b5ecf3023bf11e01ee32dfdc80123c40dcf99d3a6d52d428cad976",
+        "permitted_frequency_index": 1,
+        "phase": 5.411891048932798,
+        "secondary_amplitude_ratio": 0.35174542805215064,
+        "template": "MULTIMODE_CROSS"
+      },
+      "role": "TRAIN_LINEAGE",
+      "template": "MULTIMODE_CROSS"
+    },
+    {
+      "d_x": "A*sin(2*xi)*cos(eta)*q",
+      "d_y": "B*cos(xi)*sin(2*eta)*q",
+      "family_id": "LCDF_08",
+      "formula_sha256": "sha256:b1c60ab511c497373041d6f2ff26858d1db01225710b8c708c853bf7aa45184c",
+      "material_map": {
+        "eta": "2*pi*Y/L",
+        "k": "2*pi/L",
+        "parameter_aliases": {
+          "A": "primary_amplitude",
+          "B": "A*r",
+          "r": "secondary_amplitude_ratio"
+        },
+        "time_primitives": {
+          "c": "cos(theta)",
+          "q": "sin(theta)",
+          "q2": "sin(2*pi*(m+1)*tau+phi/2)",
+          "theta": "2*pi*m*tau+phi"
+        },
+        "x": "X+d_x(xi,eta,tau)/k",
+        "xi": "2*pi*X/L",
+        "y": "Y+d_y(xi,eta,tau)/k"
+      },
+      "parameter_seed_sha256": "sha256:d55cde0392c02e5f2b3fc4995b6e8c74e1ea70b36e824f0646c83b263de08f82",
+      "parameters": {
+        "amplitude_main": 0.0020834138041597957,
+        "family_id": "LCDF_08",
+        "parameter_seed_sha256": "sha256:d55cde0392c02e5f2b3fc4995b6e8c74e1ea70b36e824f0646c83b263de08f82",
+        "permitted_frequency_index": 1,
+        "phase": 5.544807512692147,
+        "secondary_amplitude_ratio": 0.38378835438551173,
+        "template": "ANISOTROPIC_DOUBLE_MODE"
+      },
+      "role": "TRAIN_LINEAGE",
+      "template": "ANISOTROPIC_DOUBLE_MODE"
+    },
+    {
+      "d_x": "A*sin(xi+eta)*q/sqrt(2)",
+      "d_y": "B*sin(xi-eta)*c/sqrt(2)",
+      "family_id": "LCDF_09",
+      "formula_sha256": "sha256:5d90af5826eb5e19bcdefe90e7dd0f268a8fb4d19219db094a3701ea14882ad5",
+      "material_map": {
+        "eta": "2*pi*Y/L",
+        "k": "2*pi/L",
+        "parameter_aliases": {
+          "A": "primary_amplitude",
+          "B": "A*r",
+          "r": "secondary_amplitude_ratio"
+        },
+        "time_primitives": {
+          "c": "cos(theta)",
+          "q": "sin(theta)",
+          "q2": "sin(2*pi*(m+1)*tau+phi/2)",
+          "theta": "2*pi*m*tau+phi"
+        },
+        "x": "X+d_x(xi,eta,tau)/k",
+        "xi": "2*pi*X/L",
+        "y": "Y+d_y(xi,eta,tau)/k"
+      },
+      "parameter_seed_sha256": "ISOLATED",
+      "parameter_values": "ISOLATED",
+      "role": "VALIDATION_LINEAGE",
+      "template": "PHASE_COUPLED_OBLIQUE"
+    },
+    {
+      "d_x": "A*(sin(xi)*cos(eta)*q+0.5*r*sin(2*xi+eta)*c)",
+      "d_y": "A*(-cos(xi)*sin(eta)*c+0.5*r*sin(xi-2*eta)*q)",
+      "family_id": "LCDF_10",
+      "formula_sha256": "sha256:c7ae397e8eb6687fe23b3555a3801356527806503697df7b2ee5a03156ef472e",
+      "material_map": {
+        "eta": "2*pi*Y/L",
+        "k": "2*pi/L",
+        "parameter_aliases": {
+          "A": "primary_amplitude",
+          "B": "A*r",
+          "r": "secondary_amplitude_ratio"
+        },
+        "time_primitives": {
+          "c": "cos(theta)",
+          "q": "sin(theta)",
+          "q2": "sin(2*pi*(m+1)*tau+phi/2)",
+          "theta": "2*pi*m*tau+phi"
+        },
+        "x": "X+d_x(xi,eta,tau)/k",
+        "xi": "2*pi*X/L",
+        "y": "Y+d_y(xi,eta,tau)/k"
+      },
+      "parameter_seed_sha256": "ISOLATED",
+      "parameter_values": "ISOLATED",
+      "role": "SEALED_TEST_LINEAGE",
+      "template": "ROTATING_MULTIMODE"
+    }
+  ],
+  "formula_library": {
+    "byte_count": 7740,
+    "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/formula_templates/formula_template_library.json",
+    "sha256": "sha256:89491eb81b5c6b04154ab1e809c0a8085bdba6f6635161c58a95b5877627d627"
+  },
+  "required": 10,
+  "schema_version": "sph-pio-poc.stage04b.formula-manifest.v1"
+}

@@ -1,0 +1,42 @@
+{
+  "artifacts": [
+    {
+      "byte_count": 8973,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/contracts/local_causal_reference_family_contract_v0_1.yaml",
+      "sha256": "sha256:c0d377f7b4b626186fcae076a076b336d774d3bf17c96153b13c4a5f85d0336f"
+    },
+    {
+      "byte_count": 1645,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/freeze/stage04b_contract_freeze.json",
+      "sha256": "sha256:1abee3a7061265a929b0507ba6fcbb5d3e3b83ca72733a43c46fcb43eaff2fd8"
+    },
+    {
+      "byte_count": 2297,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/role_assignment/preregistered_role_assignment.json",
+      "sha256": "sha256:024f797d3fe14d73a217a372f914a3ae4b07693d769372ac87892da1a326c301"
+    },
+    {
+      "byte_count": 27987,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/formula_templates/stage04b_reference_core.py",
+      "sha256": "sha256:613c601cab008335907d0aa16e03d974e809c9e1f5ce938986d432c4a1593a83"
+    },
+    {
+      "byte_count": 10798,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/semidiscrete_audits/stage04b_semidiscrete.py",
+      "sha256": "sha256:e2cf74f057baad66c0d0e9ac498624465f64c6ce3b62e523d53792b52e0dbef7"
+    },
+    {
+      "byte_count": 1038,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/access_control/stage04c_access.py",
+      "sha256": "sha256:f372b39a46feae785b8a09cf694612a8eb241c389c3eb6d85e18cd4bb89a03ce"
+    },
+    {
+      "byte_count": 40338,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/manifests/run_stage04b_qualification.py",
+      "sha256": "sha256:14df4fe0d65465f46dcfd43b7e8e201b10d0a26f3f78a6f62d37f5d94346b691"
+    }
+  ],
+  "contract_sha256": "sha256:c0d377f7b4b626186fcae076a076b336d774d3bf17c96153b13c4a5f85d0336f",
+  "schema_version": "sph-pio-poc.stage04b.contract-manifest.v1",
+  "stage04a_conflict": false
+}

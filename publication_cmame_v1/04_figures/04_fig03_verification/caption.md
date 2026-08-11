@@ -1,0 +1,3 @@
+# Numerical and dynamic verification with an explicit V2 boundary
+
+Frozen numerical and dynamic verification. (a) Reference roles are kept distinct. (b) Plateau-aware MMS evidence supports its registered consistency path without a GCI claim. (c) Zero correction passed 288/288 bitwise cases. (d) Independent D0 RK2 checks passed 48/48; D0-versus-exact diagnostics are not a V2 recovery claim. (e) Dense topology scans localize birth/death events. (f) All 540 registered conservation stages passed. (g) The dynamic implementation was verified while finite-resolution V2 and the complete Stage03 route remained not qualified.

@@ -1,0 +1,100 @@
+{
+  "schema_version": "sph-pio-poc.stage04a.final.v1",
+  "stage": "Stage 04A — Local-Causal Dynamic Training Hypothesis and Prospective Qualification Contract",
+  "completion_date": "2026-08-05",
+  "final_status": "LOCAL_CAUSAL_TRAINING_HYPOTHESIS_CONTRACT_COMPLETE",
+  "all_gates_pass": true,
+  "completion_gates": {
+    "new_hypothesis_explicit": true,
+    "stage03_boundaries_preserved": true,
+    "k1_training_definition_unique": true,
+    "task_aligned_parameter_gradient_gate_explicit": true,
+    "math_backend_frozen": true,
+    "dataset_and_lineage_requirements_explicit": true,
+    "d1_d2_d3_fair_comparison_explicit": true,
+    "stage04b_to_stage04g_roadmap_explicit": true,
+    "no_computation": true,
+    "no_training": true,
+    "historical_hashes_unchanged": true
+  },
+  "input_freeze_manifest": {
+    "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04a_input_freeze_manifest.json",
+    "byte_count": 2750,
+    "sha256": "sha256:6efe1e9bfdbde880c846b2a207fdff26f32a54eb3972470152a23ed10a42998a"
+  },
+  "contract_manifest": {
+    "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04a_contract_manifest.json",
+    "byte_count": 7682,
+    "sha256": "sha256:e391fca3fa564f8c569dcb5d5de55a09da574b1824e8dfe8afcdd12dfd87d1bf"
+  },
+  "reports": [
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04a_training_hypothesis.md",
+      "byte_count": 1610,
+      "sha256": "sha256:87f09365494ff91a08c145806eae143cdc8ba48d6a4ad679b2f2da8fb87b6b15"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04a_gradient_strategy.md",
+      "byte_count": 1415,
+      "sha256": "sha256:b9b2259309f91d23fddbd15743c9945288b068a0ba352af79bd1bc722bb5cd69"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04a_dataset_strategy.md",
+      "byte_count": 1307,
+      "sha256": "sha256:32cb92f2134b3330e2a38e1d43077f6e0c042af0a1b19187739888660ad36686"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04a_final_report.md",
+      "byte_count": 4645,
+      "sha256": "sha256:6e027e64439240a9a9670575eceae50a96fd3b5f27580971b32cdcf9f591d442"
+    }
+  ],
+  "historical_states": {
+    "stage03c": "DYNAMIC_RK2_HYBRID_IMPLEMENTATION_VERIFIED",
+    "stage03d": "DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED",
+    "stage03dr": "DYNAMIC_GRADIENT_FAILURE_MIXED_OR_UNRESOLVED",
+    "stage03ds": "STAGE03_ROUTE_PAUSED_GRADIENT_BOUNDARY_COMPLETE",
+    "topology_component": "TOPOLOGY_EVENT_COMPONENT_QUALIFIED",
+    "stage03e_authorization": false
+  },
+  "formal_contract": {
+    "training_horizon": 1,
+    "accepted_history_length": 4,
+    "target": "S_ref^(n+1)",
+    "prediction": "S_theta^(n+1)",
+    "loss": "L_state",
+    "formal_device": "CPU",
+    "formal_dtype": "float64",
+    "d3_attention_backend": "PyTorch SDPBackend.MATH",
+    "stage03b_18_trajectory_resplit_allowed": false,
+    "dr3_role": "independent_validation_only"
+  },
+  "execution_counts": {
+    "trajectory_generation_runs": 0,
+    "test_payloads_created": 0,
+    "target_state_decodes": 0,
+    "gradient_probes": 0,
+    "optimizer_instances": 0,
+    "optimizer_steps": 0,
+    "parameter_updates": 0,
+    "training_runs": 0,
+    "rollouts": 0,
+    "performance_evaluations": 0
+  },
+  "claims": {
+    "trainability_established": false,
+    "model_performance": false,
+    "autonomous_stability": false,
+    "full_solver_success": false,
+    "d3_superiority": false,
+    "historical_gradient_repaired": false
+  },
+  "next_stage": {
+    "stage": "Stage 04B — New Dynamic Reference-Family Pool and Lineage Qualification",
+    "authorization": "LIMITED",
+    "training_authorized": false,
+    "stage04c_authorized": false,
+    "stage04d_authorized": false,
+    "stage04e_authorized": false
+  }
+}

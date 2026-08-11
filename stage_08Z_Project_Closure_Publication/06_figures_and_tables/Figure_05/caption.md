@@ -1,0 +1,1 @@
+**Figure 5. State-loss signal attenuation versus discrete-defect formulation.** The Stage04 raw-state task boundary preceded the Stage05 target/scale and Stage06 actual-update qualifications. All plotted values and statuses must be read from the frozen source list; schematic arrows denote methodological dependency, not performance improvement.

@@ -1,0 +1,72 @@
+{
+  "manifest_version": "stage03b-final-1.0.0",
+  "stage": "Stage 03B — Dynamic Reference Trajectory Qualification",
+  "completion_date": "2026-08-05",
+  "final_status": "DYNAMIC_REFERENCE_TRAJECTORY_QUALIFICATION_COMPLETE",
+  "manifests": [
+    {"path":"10_manifests/stage03b_input_freeze_manifest.json","sha256":"sha256:879e8b7d51d4d4a615c72aaa099371d3077ebea334f4826077f397ae3fa868f5"},
+    {"path":"10_manifests/stage03b_reference_family_manifest.json","sha256":"sha256:2ba410f686c8764871780998368be8f674cfb5cedb75ba81ce6b3f9bdda80cfd"},
+    {"path":"10_manifests/stage03b_trajectory_manifest.json","sha256":"sha256:92974b660461a01ba1a326be8b2fedc31929a319aa97e2f5bc3418bd45435aac"},
+    {"path":"04_reference_and_trajectory/stage03b/manifests/stage03b_run_manifest.json","sha256":"sha256:aeecbc20144ef1476773a283057e0d5b96ff07291a42275c70d9236ba7a4bfa2"}
+  ],
+  "qualification": {
+    "path":"04_reference_and_trajectory/stage03b/qualification/stage03b_qualification_summary.json",
+    "sha256":"sha256:fcb895e990cdb3a92def306da6b7b931fc05ed52bdef6b5fee927ae67b04386c"
+  },
+  "resource_execution": {
+    "path":"04_reference_and_trajectory/stage03b/results/resource_execution.json",
+    "sha256":"sha256:13d81372429bb6b18969f49c6afc83465d1aea681a826ec73160d37d361750ee"
+  },
+  "reports": [
+    {"path":"09_reports/stage03b_freeze_and_scope.md","sha256":"sha256:fb0b4a579bca263f7a0d3f1f2586e0790e3248fc217b062e4bd3bd7098658c6d"},
+    {"path":"09_reports/stage03b_reference_contract.md","sha256":"sha256:a40c6835f6c542c19bfbaeb0d7931104598806c05caffb966a5197768cc3cfe0"},
+    {"path":"09_reports/stage03b_dr1_lagrangian_mms.md","sha256":"sha256:8c821ed5eca99be542def899379d8a4c57b6cd2486f40c7ef23706c26cd622a7"},
+    {"path":"09_reports/stage03b_dr2_semidiscrete_reference.md","sha256":"sha256:34ed6f2c11d3376bee991cbd46e73ca5aa1e6ba991e052268c4d81ca05498fe2"},
+    {"path":"09_reports/stage03b_dr3_source_free_reference.md","sha256":"sha256:12e92676bf6cfd240548c14081fa2e98f8f13ff0b8d69e2a5ab2d4ad3bc0da91"},
+    {"path":"09_reports/stage03b_acoustic_and_vortex_boundary.md","sha256":"sha256:065eec27083e91e4b849e2ddcfbc8987a8b595b072246a01af2639b0e59052dc"},
+    {"path":"09_reports/stage03b_topology_event_audit.md","sha256":"sha256:453ff3a05ad54abb8c0e26e7ea2ccce21e51edcd687f2ab8edbd8bfd70c5b874"},
+    {"path":"09_reports/stage03b_uncertainty_report.md","sha256":"sha256:e04efa0318ce6d2b7bbe1a190d91451a82e0943b9f49503793d0e1110eeba4cf"},
+    {"path":"09_reports/stage03b_qualification_report.md","sha256":"sha256:131609b126d05ed1c59dca9bd298c2d3ef6351c9a23f7b72dffff84d8b779f59"},
+    {"path":"09_reports/stage03b_final_report.md","sha256":"sha256:3e1839fde37bf841cc0fd282c538f90881195b0ed4a5659926b4c0030226749c"}
+  ],
+  "completion_gates": {
+    "A_DR1_two_families_and_six_records": true,
+    "B_DR2_six_primary_sensitivity_repeat_cases": true,
+    "C_DR3_two_families_and_six_records": true,
+    "D_acoustic_vortex_boundary_complete": true,
+    "E_topology_registry_complete": true,
+    "F_uncertainty_lineage_provenance_complete": true,
+    "input_hashes": "23/23_PASS",
+    "trajectory_manifest_hashes": "54/54_PASS",
+    "canonical_records": "18/18_PASS",
+    "historical_files_unchanged": true
+  },
+  "classifications": {
+    "DR1_LAGRANGIAN_COMPRESSION": "PASS",
+    "DR1_COUPLED_DEFORMATION": "PASS",
+    "DR2_SEMIDISCRETE_TIME_REFERENCE": "6/6_PASS",
+    "DR3_OBLIQUE_SHEAR_A": "PASS",
+    "DR3_OBLIQUE_SHEAR_B": "PASS",
+    "ACOUSTIC_CANDIDATE": "DR3_ACOUSTIC_LINEAR_REGIME_CONDITIONAL",
+    "PERIODIC_VORTEX_CANDIDATE": "DR3_PERIODIC_VORTEX_REJECTED_AS_EXACT_SOURCE_FREE_REFERENCE",
+    "TOPOLOGY_EVENT_REGISTRY": "NO_EVENT_FIXED_TOPOLOGY"
+  },
+  "execution_absence": {
+    "D1_D2_D3_model_implementation_count": 0,
+    "transformer_implementation_count": 0,
+    "temporal_hidden_network_count": 0,
+    "optimizer_count": 0,
+    "training_run_count": 0,
+    "neural_rollout_count": 0,
+    "solver_in_the_loop_count": 0,
+    "trajectory_split_count": 0,
+    "normalization_count": 0,
+    "performance_claim_count": 0
+  },
+  "next_stage": {
+    "authorization": "LIMITED",
+    "stage": "Stage 03C — Differentiable RK2 Hybrid Solver Implementation and Zero-Correction Verification",
+    "training_authorized": false,
+    "neural_rollout_authorized": false
+  }
+}

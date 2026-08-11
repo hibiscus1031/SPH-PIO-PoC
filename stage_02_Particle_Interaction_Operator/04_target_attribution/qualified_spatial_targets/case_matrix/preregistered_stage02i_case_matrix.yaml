@@ -1,0 +1,114 @@
+matrix_version: stage02i-preregistered-case-matrix-1.0.0
+campaign_id: stage02i_qualified_spatial_targets_20260804
+preregistered_before_target_evaluation: true
+selection_policy: exact_enumeration_no_posthoc_deletion_replacement_or_addition
+expected_unique_case_count: 7
+
+shared_scope:
+  state_family: analytic_periodic_vortex
+  timestamp: 0.0
+  dimension: 2
+  domain: periodic_unit_square
+  execution_environment: CPU_float64
+  external_source: none
+  trajectory_used: false
+  temporal_derivative_used: false
+
+reference_contract:
+  primary: H_REF_FOURIER2
+  secondary: H_REF_ANALYTIC
+  target_sign: a_reference_minus_a_sph
+  averaging_or_posthoc_weighting_permitted: false
+  diagnostic_reference_target_source_permitted: false
+
+paths:
+  resolution:
+    fixed: {h_over_dx: 2.6, disorder_identity: regular, state_family: analytic_periodic_vortex}
+    case_ids: [i_res_n12_h26_regular, i_anchor_n16_h26_regular, i_res_n20_h26_regular]
+  support:
+    fixed: {particles_per_axis: 16, disorder_identity: regular, state_family: analytic_periodic_vortex}
+    case_ids: [i_sup_n16_h22_regular, i_anchor_n16_h26_regular, i_sup_n16_h30_regular]
+  disorder:
+    fixed: {particles_per_axis: 16, h_over_dx: 2.6, state_family: analytic_periodic_vortex}
+    case_ids: [i_anchor_n16_h26_regular, i_dis_n16_h26_jitter05, i_dis_n16_h26_jitter10]
+
+cases:
+  - case_id: i_res_n12_h26_regular
+    path_membership: [resolution]
+    particles_per_axis: 12
+    resolution_identity: N12x12
+    h_over_dx: 2.6
+    support_identity: Hdx_2p6
+    disorder_fraction_dx: 0.0
+    disorder_identity: regular
+    random_seed: 120026
+    stage02h_scope_status: covered
+  - case_id: i_anchor_n16_h26_regular
+    path_membership: [resolution, support, disorder]
+    particles_per_axis: 16
+    resolution_identity: N16x16
+    h_over_dx: 2.6
+    support_identity: Hdx_2p6
+    disorder_fraction_dx: 0.0
+    disorder_identity: regular
+    random_seed: 160026
+    stage02h_scope_status: covered
+  - case_id: i_res_n20_h26_regular
+    path_membership: [resolution]
+    particles_per_axis: 20
+    resolution_identity: N20x20
+    h_over_dx: 2.6
+    support_identity: Hdx_2p6
+    disorder_fraction_dx: 0.0
+    disorder_identity: regular
+    random_seed: 200026
+    stage02h_scope_status: covered
+  - case_id: i_sup_n16_h22_regular
+    path_membership: [support]
+    particles_per_axis: 16
+    resolution_identity: N16x16
+    h_over_dx: 2.2
+    support_identity: Hdx_2p2
+    disorder_fraction_dx: 0.0
+    disorder_identity: regular
+    random_seed: 160026
+    stage02h_scope_status: extension_required
+  - case_id: i_sup_n16_h30_regular
+    path_membership: [support]
+    particles_per_axis: 16
+    resolution_identity: N16x16
+    h_over_dx: 3.0
+    support_identity: Hdx_3p0
+    disorder_fraction_dx: 0.0
+    disorder_identity: regular
+    random_seed: 160026
+    stage02h_scope_status: extension_required
+  - case_id: i_dis_n16_h26_jitter05
+    path_membership: [disorder]
+    particles_per_axis: 16
+    resolution_identity: N16x16
+    h_over_dx: 2.6
+    support_identity: Hdx_2p6
+    disorder_fraction_dx: 0.05
+    disorder_identity: jitter_5_percent
+    random_seed: 314159
+    seed_source: stage02h_reference_candidate_matrix
+    stage02h_scope_status: extension_required
+  - case_id: i_dis_n16_h26_jitter10
+    path_membership: [disorder]
+    particles_per_axis: 16
+    resolution_identity: N16x16
+    h_over_dx: 2.6
+    support_identity: Hdx_2p6
+    disorder_fraction_dx: 0.10
+    disorder_identity: jitter_10_percent
+    random_seed: 161803
+    seed_source: stage02h_reference_candidate_matrix
+    stage02h_scope_status: extension_required
+
+prohibitions:
+  result_based_case_deletion: true
+  result_based_N_replacement: true
+  result_based_support_replacement: true
+  result_based_disorder_replacement: true
+  favorable_case_addition: true

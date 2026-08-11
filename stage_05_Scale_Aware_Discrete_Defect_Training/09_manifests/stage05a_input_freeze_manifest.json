@@ -1,0 +1,72 @@
+{
+  "schema": "sph-pio-poc.stage05a.input-freeze-manifest.v1",
+  "stage": "Stage 05A — Scale-Aware Conservative Discrete-Defect Training Hypothesis and Qualification Contract",
+  "created_date": "2026-08-06",
+  "mode": "CONTRACT_ONLY_NO_PAYLOAD_DECODE",
+  "inputs": [
+    {
+      "path": "/Users/xiejinbo/.codex/attachments/0f6c6204-61d7-48a4-8eb5-9c27ad9951ae/pasted-text.txt",
+      "role": "USER_AUTHORIZED_STAGE05A_SPECIFICATION",
+      "sha256": "sha256:9e0e8fe0339aa1f9b5cd1c4c676642adff9730e0b76475e3df84b7627aa65f1d",
+      "size_bytes": 15230
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/README.md",
+      "role": "PUBLIC_HISTORICAL_STAGE04_BOUNDARY",
+      "sha256": "sha256:5a1c1985eaa60bbecc3dbfc503efe552d62ac66d2fab228760a2d31b026744b4",
+      "size_bytes": 1640
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cs_status_ledger.md",
+      "role": "PUBLIC_EXACT_STATUS_LEDGER",
+      "sha256": "sha256:23661c6b0cf810d8d0cb421b71147a3c16b0118031e1053fae72a9a0884d7889",
+      "size_bytes": 1650
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_role_assignment_manifest.json",
+      "role": "PUBLIC_6_2_2_ROLE_METADATA",
+      "sha256": "sha256:642f91985176774bf71795f2e72391082a9a43cdc0f3f6f7aaec7f1c432db47e",
+      "size_bytes": 2737
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_lineage_manifest.json",
+      "role": "PUBLIC_LINEAGE_METADATA",
+      "sha256": "sha256:b4754caf8284b3620a85cb042a0684d90471cfd98775018cde961467285ba2fe",
+      "size_bytes": 413
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_trajectory_manifest.json",
+      "role": "PUBLIC_TRAJECTORY_IDENTITY_METADATA",
+      "sha256": "sha256:6bc2351482b9167c63640699be0f048d65e3981babe0409895ea6a900b3e8ac2",
+      "size_bytes": 58254
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_test_seal_manifest.json",
+      "role": "PUBLIC_SEAL_AND_ACCESS_METADATA_ONLY",
+      "sha256": "sha256:f3fc8bc263b5cd0862aad21e6331e280bff59fa70df5d2dd172491ee9ed438a5",
+      "size_bytes": 26266
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04c_final_manifest.json",
+      "role": "PUBLIC_STAGE04C_VERDICT_METADATA",
+      "sha256": "sha256:cc250b4c1fb3a5ce7df2ef65f55e5e8c8060eeea043e1846525c1a7f8357e412",
+      "size_bytes": 7027
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04cr_final_manifest.json",
+      "role": "PUBLIC_STAGE04CR_VERDICT_METADATA",
+      "sha256": "sha256:dbe2f0a7554188236f6b319649120f3bbb54c0a1ab2075faeae18545db0e2626",
+      "size_bytes": 7232
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04cs_final_manifest.json",
+      "role": "PUBLIC_STAGE04CS_CLOSURE_METADATA",
+      "sha256": "sha256:a5ca2f684a135fa89cc7325a1553b1ec66571c51886fb12e009dd3e577fe8465",
+      "size_bytes": 8743
+    }
+  ],
+  "private_payloads_read": 0,
+  "validation_payloads_read": 0,
+  "sealed_test_payloads_read": 0,
+  "historical_artifacts_modified": 0
+}

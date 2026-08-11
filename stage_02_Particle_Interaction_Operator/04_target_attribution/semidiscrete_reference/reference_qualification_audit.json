@@ -1,0 +1,288 @@
+{
+  "candidate_checks": [
+    {
+      "candidate_id": "f_res_n6_h26",
+      "checks": {
+        "determinism": "PASS",
+        "same_configuration": "PASS",
+        "same_graph": "PASS",
+        "same_state": "PASS",
+        "uncertainty": "PASS"
+      },
+      "diagnostics": {
+        "primary": {
+          "active_kernel_neighbor_count_max": 20,
+          "active_kernel_neighbor_count_min": 20,
+          "all_graph_edges_weighted_including_zero_compact_support_weights": true,
+          "maximum_condition_number": 5.3105104270600165,
+          "maximum_quadratic_reproduction_Linf": 1.482147737874584e-14,
+          "minimum_rank": 5
+        },
+        "sensitivity": {
+          "active_kernel_neighbor_count_max": 20,
+          "active_kernel_neighbor_count_min": 20,
+          "all_graph_edges_weighted_including_zero_compact_support_weights": true,
+          "maximum_condition_number": 5.3105104270600165,
+          "maximum_quadratic_reproduction_Linf": 1.4932499681208355e-14,
+          "minimum_rank": 5
+        },
+        "solver_sensitivity_relative_L2": 6.396911745577436e-16,
+        "temporal_derivative_used": false,
+        "temporal_inputs_used": false
+      },
+      "hashes": {
+        "a_r2s_configuration_hash": "sha256:fbd529bdbd1e83bbac5015cabde179c38c56a2d165cb117f6d18ef4374e7437d",
+        "a_r2s_graph_hash": "sha256:d93727c93e44e14163528946439eea4f4d758b332fa85ae9b69ac3551c3a17bd",
+        "a_r2s_state_hash": "sha256:868233a10850a9732ebc4a44409d2d5863a2155ba0c2737b257c6a0475ed105b",
+        "a_sph_configuration_hash": "sha256:fbd529bdbd1e83bbac5015cabde179c38c56a2d165cb117f6d18ef4374e7437d",
+        "a_sph_graph_hash": "sha256:d93727c93e44e14163528946439eea4f4d758b332fa85ae9b69ac3551c3a17bd",
+        "a_sph_state_hash": "sha256:868233a10850a9732ebc4a44409d2d5863a2155ba0c2737b257c6a0475ed105b",
+        "configuration_hash": "sha256:fbd529bdbd1e83bbac5015cabde179c38c56a2d165cb117f6d18ef4374e7437d",
+        "graph_hash": "sha256:d93727c93e44e14163528946439eea4f4d758b332fa85ae9b69ac3551c3a17bd",
+        "state_hash": "sha256:868233a10850a9732ebc4a44409d2d5863a2155ba0c2737b257c6a0475ed105b"
+      },
+      "status": "PASS",
+      "topology": {
+        "defects": {
+          "duplicate_edges": 0,
+          "nonreciprocal_edges": 0,
+          "strict_support_omissions": 0,
+          "unexpected_exterior_edges": 0
+        },
+        "reciprocal_status": "PASS",
+        "status": "PASS"
+      }
+    },
+    {
+      "candidate_id": "f_anchor_n8_h26",
+      "checks": {
+        "determinism": "PASS",
+        "same_configuration": "PASS",
+        "same_graph": "PASS",
+        "same_state": "PASS",
+        "uncertainty": "PASS"
+      },
+      "diagnostics": {
+        "primary": {
+          "active_kernel_neighbor_count_max": 20,
+          "active_kernel_neighbor_count_min": 20,
+          "all_graph_edges_weighted_including_zero_compact_support_weights": true,
+          "maximum_condition_number": 5.310510427060015,
+          "maximum_quadratic_reproduction_Linf": 1.1879386363489175e-14,
+          "minimum_rank": 5
+        },
+        "sensitivity": {
+          "active_kernel_neighbor_count_max": 20,
+          "active_kernel_neighbor_count_min": 20,
+          "all_graph_edges_weighted_including_zero_compact_support_weights": true,
+          "maximum_condition_number": 5.310510427060015,
+          "maximum_quadratic_reproduction_Linf": 1.1712852909795402e-14,
+          "minimum_rank": 5
+        },
+        "solver_sensitivity_relative_L2": 4.351025573921287e-16,
+        "temporal_derivative_used": false,
+        "temporal_inputs_used": false
+      },
+      "hashes": {
+        "a_r2s_configuration_hash": "sha256:fbd529bdbd1e83bbac5015cabde179c38c56a2d165cb117f6d18ef4374e7437d",
+        "a_r2s_graph_hash": "sha256:1f9566a3ee579daec48892443b61afab8bd645ade422327b13b1ac4c39bff1a0",
+        "a_r2s_state_hash": "sha256:01612a316b4288a63ec4d672d9ade6381dfe6faa160dc9948c15d962ceb79707",
+        "a_sph_configuration_hash": "sha256:fbd529bdbd1e83bbac5015cabde179c38c56a2d165cb117f6d18ef4374e7437d",
+        "a_sph_graph_hash": "sha256:1f9566a3ee579daec48892443b61afab8bd645ade422327b13b1ac4c39bff1a0",
+        "a_sph_state_hash": "sha256:01612a316b4288a63ec4d672d9ade6381dfe6faa160dc9948c15d962ceb79707",
+        "configuration_hash": "sha256:fbd529bdbd1e83bbac5015cabde179c38c56a2d165cb117f6d18ef4374e7437d",
+        "graph_hash": "sha256:1f9566a3ee579daec48892443b61afab8bd645ade422327b13b1ac4c39bff1a0",
+        "state_hash": "sha256:01612a316b4288a63ec4d672d9ade6381dfe6faa160dc9948c15d962ceb79707"
+      },
+      "status": "PASS",
+      "topology": {
+        "defects": {
+          "duplicate_edges": 0,
+          "nonreciprocal_edges": 0,
+          "strict_support_omissions": 0,
+          "unexpected_exterior_edges": 0
+        },
+        "reciprocal_status": "PASS",
+        "status": "PASS"
+      }
+    },
+    {
+      "candidate_id": "f_res_n10_h26",
+      "checks": {
+        "determinism": "PASS",
+        "same_configuration": "PASS",
+        "same_graph": "PASS",
+        "same_state": "PASS",
+        "uncertainty": "PASS"
+      },
+      "diagnostics": {
+        "primary": {
+          "active_kernel_neighbor_count_max": 20,
+          "active_kernel_neighbor_count_min": 20,
+          "all_graph_edges_weighted_including_zero_compact_support_weights": true,
+          "maximum_condition_number": 5.310510427060018,
+          "maximum_quadratic_reproduction_Linf": 8.43769498715119e-15,
+          "minimum_rank": 5
+        },
+        "sensitivity": {
+          "active_kernel_neighbor_count_max": 20,
+          "active_kernel_neighbor_count_min": 20,
+          "all_graph_edges_weighted_including_zero_compact_support_weights": true,
+          "maximum_condition_number": 5.310510427060018,
+          "maximum_quadratic_reproduction_Linf": 8.326672684688674e-15,
+          "minimum_rank": 5
+        },
+        "solver_sensitivity_relative_L2": 5.317595026839125e-16,
+        "temporal_derivative_used": false,
+        "temporal_inputs_used": false
+      },
+      "hashes": {
+        "a_r2s_configuration_hash": "sha256:fbd529bdbd1e83bbac5015cabde179c38c56a2d165cb117f6d18ef4374e7437d",
+        "a_r2s_graph_hash": "sha256:3f5bd3a5a71d660b2d1d8e17839259238de1f327ee1e89ebe0e2797383c87f40",
+        "a_r2s_state_hash": "sha256:ae89b9e918bd01b2c3e5622e51d0e407542c04c1d19842f09fd360f5545d277d",
+        "a_sph_configuration_hash": "sha256:fbd529bdbd1e83bbac5015cabde179c38c56a2d165cb117f6d18ef4374e7437d",
+        "a_sph_graph_hash": "sha256:3f5bd3a5a71d660b2d1d8e17839259238de1f327ee1e89ebe0e2797383c87f40",
+        "a_sph_state_hash": "sha256:ae89b9e918bd01b2c3e5622e51d0e407542c04c1d19842f09fd360f5545d277d",
+        "configuration_hash": "sha256:fbd529bdbd1e83bbac5015cabde179c38c56a2d165cb117f6d18ef4374e7437d",
+        "graph_hash": "sha256:3f5bd3a5a71d660b2d1d8e17839259238de1f327ee1e89ebe0e2797383c87f40",
+        "state_hash": "sha256:ae89b9e918bd01b2c3e5622e51d0e407542c04c1d19842f09fd360f5545d277d"
+      },
+      "status": "PASS",
+      "topology": {
+        "defects": {
+          "duplicate_edges": 0,
+          "nonreciprocal_edges": 0,
+          "strict_support_omissions": 0,
+          "unexpected_exterior_edges": 0
+        },
+        "reciprocal_status": "PASS",
+        "status": "PASS"
+      }
+    },
+    {
+      "candidate_id": "f_sup_n8_h22",
+      "checks": {
+        "determinism": "PASS",
+        "same_configuration": "PASS",
+        "same_graph": "PASS",
+        "same_state": "PASS",
+        "uncertainty": "PASS"
+      },
+      "diagnostics": {
+        "primary": {
+          "active_kernel_neighbor_count_max": 12,
+          "active_kernel_neighbor_count_min": 12,
+          "all_graph_edges_weighted_including_zero_compact_support_weights": true,
+          "maximum_condition_number": 4.614263992928583,
+          "maximum_quadratic_reproduction_Linf": 4.468647674116255e-15,
+          "minimum_rank": 5
+        },
+        "sensitivity": {
+          "active_kernel_neighbor_count_max": 12,
+          "active_kernel_neighbor_count_min": 12,
+          "all_graph_edges_weighted_including_zero_compact_support_weights": true,
+          "maximum_condition_number": 4.614263992928583,
+          "maximum_quadratic_reproduction_Linf": 4.551914400963142e-15,
+          "minimum_rank": 5
+        },
+        "solver_sensitivity_relative_L2": 3.476558500966816e-16,
+        "temporal_derivative_used": false,
+        "temporal_inputs_used": false
+      },
+      "hashes": {
+        "a_r2s_configuration_hash": "sha256:d82aa273c860b8777dbaf05a425c924a612dcbd2876d56a476e61ea4d44a4192",
+        "a_r2s_graph_hash": "sha256:1ff576e697d255968ff1a1ef4847472cf9fc03a911daf19a3a105cbeb3bbac8a",
+        "a_r2s_state_hash": "sha256:01612a316b4288a63ec4d672d9ade6381dfe6faa160dc9948c15d962ceb79707",
+        "a_sph_configuration_hash": "sha256:d82aa273c860b8777dbaf05a425c924a612dcbd2876d56a476e61ea4d44a4192",
+        "a_sph_graph_hash": "sha256:1ff576e697d255968ff1a1ef4847472cf9fc03a911daf19a3a105cbeb3bbac8a",
+        "a_sph_state_hash": "sha256:01612a316b4288a63ec4d672d9ade6381dfe6faa160dc9948c15d962ceb79707",
+        "configuration_hash": "sha256:d82aa273c860b8777dbaf05a425c924a612dcbd2876d56a476e61ea4d44a4192",
+        "graph_hash": "sha256:1ff576e697d255968ff1a1ef4847472cf9fc03a911daf19a3a105cbeb3bbac8a",
+        "state_hash": "sha256:01612a316b4288a63ec4d672d9ade6381dfe6faa160dc9948c15d962ceb79707"
+      },
+      "status": "PASS",
+      "topology": {
+        "defects": {
+          "duplicate_edges": 0,
+          "nonreciprocal_edges": 0,
+          "strict_support_omissions": 0,
+          "unexpected_exterior_edges": 0
+        },
+        "reciprocal_status": "PASS",
+        "status": "PASS"
+      }
+    },
+    {
+      "candidate_id": "f_sup_n8_h30",
+      "checks": {
+        "determinism": "PASS",
+        "same_configuration": "PASS",
+        "same_graph": "PASS",
+        "same_state": "PASS",
+        "uncertainty": "PASS"
+      },
+      "diagnostics": {
+        "primary": {
+          "active_kernel_neighbor_count_max": 20,
+          "active_kernel_neighbor_count_min": 20,
+          "all_graph_edges_weighted_including_zero_compact_support_weights": true,
+          "maximum_condition_number": 6.127512031223095,
+          "maximum_quadratic_reproduction_Linf": 2.148281552649678e-14,
+          "minimum_rank": 5
+        },
+        "sensitivity": {
+          "active_kernel_neighbor_count_max": 20,
+          "active_kernel_neighbor_count_min": 20,
+          "all_graph_edges_weighted_including_zero_compact_support_weights": true,
+          "maximum_condition_number": 6.127512031223095,
+          "maximum_quadratic_reproduction_Linf": 2.148281552649678e-14,
+          "minimum_rank": 5
+        },
+        "solver_sensitivity_relative_L2": 4.2240061335151767e-16,
+        "temporal_derivative_used": false,
+        "temporal_inputs_used": false
+      },
+      "hashes": {
+        "a_r2s_configuration_hash": "sha256:d2b0e6f98539018b0fa7c1653ad584386ca664b219ee984e885cfe0d432a48e5",
+        "a_r2s_graph_hash": "sha256:451a289ef2b12677f9e21a5e27d5e428ee2033b0dd7e665a8a1ee8be71179486",
+        "a_r2s_state_hash": "sha256:01612a316b4288a63ec4d672d9ade6381dfe6faa160dc9948c15d962ceb79707",
+        "a_sph_configuration_hash": "sha256:d2b0e6f98539018b0fa7c1653ad584386ca664b219ee984e885cfe0d432a48e5",
+        "a_sph_graph_hash": "sha256:451a289ef2b12677f9e21a5e27d5e428ee2033b0dd7e665a8a1ee8be71179486",
+        "a_sph_state_hash": "sha256:01612a316b4288a63ec4d672d9ade6381dfe6faa160dc9948c15d962ceb79707",
+        "configuration_hash": "sha256:d2b0e6f98539018b0fa7c1653ad584386ca664b219ee984e885cfe0d432a48e5",
+        "graph_hash": "sha256:451a289ef2b12677f9e21a5e27d5e428ee2033b0dd7e665a8a1ee8be71179486",
+        "state_hash": "sha256:01612a316b4288a63ec4d672d9ade6381dfe6faa160dc9948c15d962ceb79707"
+      },
+      "status": "PASS",
+      "topology": {
+        "defects": {
+          "duplicate_edges": 0,
+          "nonreciprocal_edges": 0,
+          "strict_support_omissions": 0,
+          "unexpected_exterior_edges": 0
+        },
+        "reciprocal_status": "PASS",
+        "status": "PASS"
+      }
+    }
+  ],
+  "deterministic_repeat_bitwise_equal": true,
+  "finite_difference_velocity_derivative_used": false,
+  "maximum_repeat_difference_by_candidate": {
+    "f_anchor_n8_h26": 0.0,
+    "f_res_n10_h26": 0.0,
+    "f_res_n6_h26": 0.0,
+    "f_sup_n8_h22": 0.0,
+    "f_sup_n8_h30": 0.0
+  },
+  "reference_class": "R2S_semidiscrete_spatial_qualified",
+  "reference_identity": "r2s_quadratic_kernel_weighted_wls_v1",
+  "temporal_derivative_used": false,
+  "thresholds": {
+    "maximum_condition_number": "1.0e8",
+    "maximum_deterministic_repeat_difference": 0.0,
+    "maximum_quadratic_reproduction_Linf": 1e-10,
+    "maximum_solver_sensitivity_relative_L2": 1e-10,
+    "minimum_matrix_rank": 5
+  }
+}

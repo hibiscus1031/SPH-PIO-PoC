@@ -1,0 +1,726 @@
+{
+  "passed": 72,
+  "required": 72,
+  "rows": [
+    {
+      "evaluator_sha256": "sha256:1a11bd3b508767e61b74208e95e6a4a1be8579e2d674b2ca2d1a45c104eb983d",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.22390447530907887,
+      "opaque_lineage_id": "HET_S1_01",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "FRESH_VALIDATION_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:37f15575050a81a8d14a044438954b1191cf189d6f1311b130afd18bd5fd2168",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.223610073303541,
+      "opaque_lineage_id": "HET_S1_01",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "FRESH_VALIDATION_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:d24b19cba4eab0d384dba50b26c7083f3735fbc5567eafda590f10a319f7f049",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.2235361726145304,
+      "opaque_lineage_id": "HET_S1_01",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "FRESH_VALIDATION_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:8f5c3c9a40883cb2294bcf0635589b1bf4795dd0ee958c36d92465641b8b4a29",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.22239720884931602,
+      "opaque_lineage_id": "HET_S1_01",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "FRESH_VALIDATION_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:f55eb33d98c05c54308cb020c2633891582f07c83e9cce5d8e4064bc9350f8c5",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.22200462045876446,
+      "opaque_lineage_id": "HET_S1_01",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "FRESH_VALIDATION_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:5149542c1fd9c4add2503018df6cf2e0f3325f5544cbe4a8d4249cef8a8de36d",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.22190606025467696,
+      "opaque_lineage_id": "HET_S1_01",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "FRESH_VALIDATION_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:dd8b97a9874dae52ed98a5df05b8dd55c3b1b5c7975ed2aa428390dd314399f6",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.2231581721612459,
+      "opaque_lineage_id": "HET_S1_02",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:978995f59f9e8af160d159a84c2eed4ea24482d31f71b8429bef2fa773607bfa",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.22234654218866257,
+      "opaque_lineage_id": "HET_S1_02",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:26de316c6765ee95402820e68842139dbbc64a7b0e59ee18b36c4a6ae2fec99a",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.22231304628589443,
+      "opaque_lineage_id": "HET_S1_02",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:7d3f9d837da57b81bc4288454e983695aaa6b573f20c94139206d2ea814b3ab6",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.22140341941030384,
+      "opaque_lineage_id": "HET_S1_02",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:e32cfeffa481ef198ba307e38d4cef6c047ece59c95abdddade9648e0882c70c",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.22032300152289308,
+      "opaque_lineage_id": "HET_S1_02",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:68fc2956d53e41d2c89b2d6f6254d887773363d011285ed709444802a2e7b236",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.22027948846116052,
+      "opaque_lineage_id": "HET_S1_02",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:eddfbb2498b3516c04ccbe99324dc29b9409c17c46782d3b02865f215190dfa0",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.22152240765731346,
+      "opaque_lineage_id": "HET_S1_03",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:fdd2f50f50aea3b12aeb6a3c47c4dbb3db52e6a055767939b480cf59b15365ea",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.22112816247633593,
+      "opaque_lineage_id": "HET_S1_03",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:ee5978137af6ee61212bbdc602e4ceec6a18734876af3554b42aec52b3ac034e",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.22075778103263222,
+      "opaque_lineage_id": "HET_S1_03",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:5500acc8bf4524e161e9791ad7a9b931958908d81e6efe4188bfacdca2212fd7",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.21922575699793256,
+      "opaque_lineage_id": "HET_S1_03",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:21f1f534adf00f49b6395161f1beff75cc31de2bc4a4b14bd24dc5c3a273bfd8",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.21870682105231254,
+      "opaque_lineage_id": "HET_S1_03",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:eb066c023c4bc40598350b8f58685e39f81462bb588acabffbf1bb4ede47e734",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.21821526959885773,
+      "opaque_lineage_id": "HET_S1_03",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:882ab5c5fb47173261f0ead3ade395f0479fe0ae2692aa63bf9d52d6bbe7ec37",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.21389608404481741,
+      "opaque_lineage_id": "HET_S2_01",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:ad39c7860ee6eae49a9f61feaa14f88169d80f0d86eec7ceaa3b1c1475ca2c57",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.20604154986618295,
+      "opaque_lineage_id": "HET_S2_01",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:de01083671b74009e1472aff441f52a6039e259989922f7818e057cac3e52b44",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.20196196932452448,
+      "opaque_lineage_id": "HET_S2_01",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:e5d7c260b7f093eee52d1302832749b4b3161a82e25869255f8086719d5e63b2",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.20905257977055536,
+      "opaque_lineage_id": "HET_S2_01",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:511156cb6b6ccffdb1f4533d11466fa0695adf9d17b3e1c2bbeb314aadf985c9",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.1985819866205627,
+      "opaque_lineage_id": "HET_S2_01",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:22f5d8401fbc39a573b8b035774bdf6ab2f48e1c30c7550cf219e9c0a7e8e87b",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.1931458555332184,
+      "opaque_lineage_id": "HET_S2_01",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:333c96b1d8027988d2a16a471a91f60709d185da50881cfeeb6451c1845a21b8",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.20478261154708388,
+      "opaque_lineage_id": "HET_S2_02",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "FRESH_VALIDATION_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:c6811d86998327a778fdf6b3ed25343636c42f8ff201ca89c635b778e2e999eb",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.19306989844079347,
+      "opaque_lineage_id": "HET_S2_02",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "FRESH_VALIDATION_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:b102cf1321bbd0e00a1743944d27990f62cc68d08e4badb5dd84063aba8a4446",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.18737802939208592,
+      "opaque_lineage_id": "HET_S2_02",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "FRESH_VALIDATION_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:7130a733b46bf3d5d689e281dcbed6ae4855d1f280ae8f90f0f53569d3025bd6",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.196902347124694,
+      "opaque_lineage_id": "HET_S2_02",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "FRESH_VALIDATION_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:40a2a1a06dd956dc85fb146bb9acac6e6e6d293176397e2069eb6db0078139f9",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.1812980508816976,
+      "opaque_lineage_id": "HET_S2_02",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "FRESH_VALIDATION_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:537432801f38a44c91e568a2c5a7211bf2c28093d7778f1b01a624b16d729158",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.17371988799970195,
+      "opaque_lineage_id": "HET_S2_02",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "FRESH_VALIDATION_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:e74b6b0d6e78037a8ce40c2304b1d772b199347925abc7d6779b63434e58f9ae",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.20927238200992626,
+      "opaque_lineage_id": "HET_S2_03",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:d05d969afd400ee3379d5adac463f68f75d4d543e7e02f5ed6457966bac00ede",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.20422265217431113,
+      "opaque_lineage_id": "HET_S2_03",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:c2bce9fcaeffa9dd384cb7ea2f0df4bd812e164c8eb0a763d340b963ecda1b20",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.20107547480557253,
+      "opaque_lineage_id": "HET_S2_03",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:227408a70a977af51ebd9bbaf0180142376986bc550cd5d8dbe25a75a0c6245e",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.20290340048360234,
+      "opaque_lineage_id": "HET_S2_03",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:16680e6f6daddb27938ec6806f52ebe6876d5169552ac9b22b79f10f16ca6b75",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.19616825596714738,
+      "opaque_lineage_id": "HET_S2_03",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:2116d92f918d160d55fa74e1c655ca1cc6c2d80ee27e3da2b60f3a1f90575c24",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.1919715455030171,
+      "opaque_lineage_id": "HET_S2_03",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:f3ee89e995a3d22947fed7b3cff6ccb675fe8da65522a4e7c2f0100cb0349e87",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.20632063677028478,
+      "opaque_lineage_id": "HET_S3_01",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:d17a106f75c66ac0081bf650255cc9379da5246dbe80dd15b3d2b4e0fffb5e43",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.20050587618272497,
+      "opaque_lineage_id": "HET_S3_01",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:b85bced45c7b641f784abdbddd1dc7c3d6f125f7722b3b5765108e4ed92dc2aa",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.19748330713635331,
+      "opaque_lineage_id": "HET_S3_01",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:5ad638645ec1495440ebe446e50e4e39e1f087c51d8ef63f6df8250a44a3856b",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.1989586356580153,
+      "opaque_lineage_id": "HET_S3_01",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:f169bebee438e53dc2b3cb7da151e19bd72cae4c35f419bdc742c5de891c8010",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.19120745020962882,
+      "opaque_lineage_id": "HET_S3_01",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:9ce2b7ba9356fe64ef73d1693c6057f9686c325fe08f43dbb38b2a27e0b2a194",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.1871778923701397,
+      "opaque_lineage_id": "HET_S3_01",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:6f77f468ca1543458f47723450a339fa518a9736d926bcbf2a0c66554f040711",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.20934620575996332,
+      "opaque_lineage_id": "HET_S3_02",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:2cd2562092147fedad4d4d339d40e3d8c3efc16845a5f89a41838bf0918c78ad",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.20621585427270128,
+      "opaque_lineage_id": "HET_S3_02",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:830aac958e20aba69a2fe62fd4a85579c8d1c170fb1c5898669b3a152feca4a6",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.20505699053825488,
+      "opaque_lineage_id": "HET_S3_02",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:9891dbd40d65cebd3b8f6e8669fd9f8eee66c2ad7a51463394d9497717b06720",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.20299388092744097,
+      "opaque_lineage_id": "HET_S3_02",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:bf3eabc1a74e7717585656e84a519c59b5d6ac443f8bf5343c9d57e0bac5d9dc",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.19882670916266665,
+      "opaque_lineage_id": "HET_S3_02",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:899e46bb52861ba6981d1ce8815a4e17c7cdfdaa7b0c653eac71394778922172",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.19728466911299147,
+      "opaque_lineage_id": "HET_S3_02",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:39cdb94e96f2f210f418f350d46e36212b5e01870620f48ec07beca85930dbb7",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.2169571463954183,
+      "opaque_lineage_id": "HET_S3_03",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "FRESH_VALIDATION_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:6e2112c3d4dda0a3577b1e81890809737e35724d5fe0c528a78299be8cc16a41",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.2160178994624351,
+      "opaque_lineage_id": "HET_S3_03",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "FRESH_VALIDATION_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:bc4e79959aea72edadd481f39eb7f6a1634e8d69afad6ea344ad85ce3f2e9a94",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.2152632413123592,
+      "opaque_lineage_id": "HET_S3_03",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "FRESH_VALIDATION_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:9fab03ccda5ffe03b47edeba55d5e777a25153265e091924ea676a47dbf94530",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.21316021715332223,
+      "opaque_lineage_id": "HET_S3_03",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "FRESH_VALIDATION_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:c46768462884b18dd8e24623cc5abc8165af827b5ecd41c3ae8078760962b743",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.2119218110698805,
+      "opaque_lineage_id": "HET_S3_03",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "FRESH_VALIDATION_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:ba58054c28b10b00133797e99e52e3486430d2259bc0073108f2cb04d97d3c10",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.21087532380138274,
+      "opaque_lineage_id": "HET_S3_03",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "FRESH_VALIDATION_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:c4875540dd71dbeccd1628272ebd9604e955d5bffc55573349ebb5753c24857d",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.21890840555626223,
+      "opaque_lineage_id": "HET_S4_01",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:ee44477c01cbfa7570bae74a70207afe7bc633f6daef1e83644084a14a2ddf01",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.21793134924984037,
+      "opaque_lineage_id": "HET_S4_01",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:5b1af75c884c0e8f958341a1dffb79cabf8d6a5dd508e7fbc841915ad09ef0de",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.21725115158713226,
+      "opaque_lineage_id": "HET_S4_01",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:af4f630e4ee339196295044364639fa059c8130d9ffc83e8ed11f92d17af6333",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.21573587777631342,
+      "opaque_lineage_id": "HET_S4_01",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:6b0a1a6b43ce9c35fac6b7606e7a3687f16d8714412b95c935f75ab382ad773b",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.21443294508788646,
+      "opaque_lineage_id": "HET_S4_01",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:24dc5ac9a4249065519d196eff261029445b99452076ecd3c5469e70504efc2f",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.21352616965716598,
+      "opaque_lineage_id": "HET_S4_01",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:694514e7f3ccee69b149c5ed3fc2541388dc51450d0c68ae93929fc4f5c4dd84",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.20803195360544935,
+      "opaque_lineage_id": "HET_S4_02",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:56df9b4efdf33b35f9146d6fa6d03f6e0d99c9f009a399620ef73cddfbf022a4",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.2050403390090968,
+      "opaque_lineage_id": "HET_S4_02",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:5f5e81fc4a8876bbd919c04d4525110e787d1c3006f258107f9359df60b49472",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.20309151832487027,
+      "opaque_lineage_id": "HET_S4_02",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:8f7ae3e075a0dc2d7921e1d75d03f21c2117523193fc39dfbb19899ac860634f",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.20123365223009504,
+      "opaque_lineage_id": "HET_S4_02",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:908b8b4041aacc87864537b10ea42ac9f78c55ee7c90cdfa861a2ddbf7e205f5",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.19724563538525264,
+      "opaque_lineage_id": "HET_S4_02",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:0e8d1c880ffafcf24a1e6d19c350f164ab9c4e589987cc071cb60dee6dfb6c58",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.1946470910570417,
+      "opaque_lineage_id": "HET_S4_02",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:b3197ad327ed9ba8ba4c59ccb0ceed6913d9424846a98b471a1707b054f5a38b",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.21284565512708298,
+      "opaque_lineage_id": "HET_S4_03",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "FRESH_VALIDATION_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:d2ddd5ab31872c146a88a3e166327a6bd0bbb8429ae4326371068addeb0c4373",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.21078232254942242,
+      "opaque_lineage_id": "HET_S4_03",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "FRESH_VALIDATION_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:61ddc2f30604ff6ae642d18d8eb4a8f301e50c2a448e16d33ace9fcd80ef0d27",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.2094307715182011,
+      "opaque_lineage_id": "HET_S4_03",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "FRESH_VALIDATION_V2",
+      "variant": "LOW"
+    },
+    {
+      "evaluator_sha256": "sha256:5f3269db98c4dbe30256ff02b4d3b8fd84cfe31898dd2d8ce8b9f98730d2aa41",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.20765214048667513,
+      "opaque_lineage_id": "HET_S4_03",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "FRESH_VALIDATION_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:2ddc724d8104d58d32ed2436404f247078b1ab784022635788cb700375e84338",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.20490077175924593,
+      "opaque_lineage_id": "HET_S4_03",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "FRESH_VALIDATION_V2",
+      "variant": "MAIN"
+    },
+    {
+      "evaluator_sha256": "sha256:9ac0798ddc435b73cef0b7fe833cdd12178324ef9ac0a4446357b1318295df27",
+      "event_count": 0,
+      "minimum_normalized_cutoff_margin": 0.20309866210499816,
+      "opaque_lineage_id": "HET_S4_03",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "FRESH_VALIDATION_V2",
+      "variant": "MAIN"
+    }
+  ]
+}

@@ -1,0 +1,1575 @@
+{
+  "canonical_record_count": 20,
+  "checkpoint_count": 164,
+  "checks": {
+    "canonical_record_count_20": true,
+    "checkpoint_count_164": true,
+    "historical_optimizer_steps_3280": true,
+    "run_mapping_unique_and_exact": true,
+    "selected_checkpoint_count_9": true,
+    "selected_hashes_present": true
+  },
+  "expected_best_updates": [
+    100,
+    40,
+    40,
+    40,
+    20,
+    40,
+    240,
+    540,
+    20
+  ],
+  "expected_optimizer_updates": [
+    300,
+    300,
+    300,
+    300,
+    300,
+    300,
+    440,
+    740,
+    300
+  ],
+  "file_count": 285,
+  "files": [
+    {
+      "bytes": 335935,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_01_n12_h26.bin",
+      "sha256": "sha256:9dd34ebfa97e221024192359aa8dbde68ab2f5964990a918d69fc6bd5b7f7eab"
+    },
+    {
+      "bytes": 386092,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_01_n16_h22.bin",
+      "sha256": "sha256:d708acca04f9043df85bc3ebf65ed1b2b15a2158a719ebe31e52c3abefcaf414"
+    },
+    {
+      "bytes": 586817,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_01_n16_h26.bin",
+      "sha256": "sha256:6872cad9a62a74ab2642acc0a6c0c6dee41d816d0185b81c6aed9d775d602c64"
+    },
+    {
+      "bytes": 687169,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_01_n16_h30.bin",
+      "sha256": "sha256:d4676e7da59e2e6ef72a13ad39c8f8b4e432fe012520d01915bbc57f6e2becc7"
+    },
+    {
+      "bytes": 909377,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_01_n20_h26.bin",
+      "sha256": "sha256:c734dbd1489325180309cb511769deb1b49aa2841ac9b3f08ba47a5e3bb08360"
+    },
+    {
+      "bytes": 335939,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_02_n12_h26.bin",
+      "sha256": "sha256:4c857e6b0edda93600cb24775723f976460cdfbf45b9d31de9dee04c7fe56dd0"
+    },
+    {
+      "bytes": 386109,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_02_n16_h22.bin",
+      "sha256": "sha256:647ad88a239a46ceb75b9297eee1b57069dd11f6a20a5d9b444b187c95b817e8"
+    },
+    {
+      "bytes": 586817,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_02_n16_h26.bin",
+      "sha256": "sha256:b1ae733c66dd2533b298a0f32bca4245fe48721ba80ac2f90c4a76d9c7cbf4e1"
+    },
+    {
+      "bytes": 687169,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_02_n16_h30.bin",
+      "sha256": "sha256:ad432b6401d1aa059bb328c1a0e1d1725d663bbada420dc5af006eaf48888100"
+    },
+    {
+      "bytes": 909377,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_02_n20_h26.bin",
+      "sha256": "sha256:9b99b13a9619d376de1e10053d5c2e160d496054e78fd3e7d0efb92cedc86097"
+    },
+    {
+      "bytes": 335940,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_03_n12_h26.bin",
+      "sha256": "sha256:b57da63133d6b5ac14cf425ddd3d3908145c0a74080d22462ad6ab34d1179555"
+    },
+    {
+      "bytes": 386117,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_03_n16_h22.bin",
+      "sha256": "sha256:06d35168dc3cf6170c0c05074cd2ede87916c059c63f169a26900acd73d9f1f9"
+    },
+    {
+      "bytes": 586822,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_03_n16_h26.bin",
+      "sha256": "sha256:5b22838e51c41ea7cccd434ae717285812c15beb8c908ec593892a71071ae742"
+    },
+    {
+      "bytes": 687174,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_03_n16_h30.bin",
+      "sha256": "sha256:5a178f690579b5233cc5ed24dc550aeab44d549428f597b041a1fa23fd7bc45c"
+    },
+    {
+      "bytes": 909383,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_03_n20_h26.bin",
+      "sha256": "sha256:26c74d68d8ec1704112fd43162b2821e58d0dbd01af603601e81c015b403e087"
+    },
+    {
+      "bytes": 335936,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_04_n12_h26.bin",
+      "sha256": "sha256:4d303d820a58fe06dd72871d6b0c7d4e34ed2963f68bea05cfcd9fd9dc91649b"
+    },
+    {
+      "bytes": 386110,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_04_n16_h22.bin",
+      "sha256": "sha256:a94bc6a9fb3ccc8f096d32423ed661a2e5b7cee74bd6e6aaac1e24f4ccaa7f47"
+    },
+    {
+      "bytes": 586816,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_04_n16_h26.bin",
+      "sha256": "sha256:50163610fac752e79bea7bb2ff05123566e8c35513a03b63b0a66c8dc9c5462b"
+    },
+    {
+      "bytes": 687168,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_04_n16_h30.bin",
+      "sha256": "sha256:488e60b0f9fc31920c725fe61371cc79328f66a44956f77d3cd86eff09bba4fe"
+    },
+    {
+      "bytes": 909373,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_04_n20_h26.bin",
+      "sha256": "sha256:18e18afffc9d436f07ce50040a63dddd5235caadf762d2c159a32ca896ece99c"
+    },
+    {
+      "bytes": 21912,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/canonical_inventory.json",
+      "sha256": "sha256:ba496fd0abadd53c089b4d5ac16edd650a502320b3eedd649d3e6d68c5339b2f"
+    },
+    {
+      "bytes": 18943,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/manifests/stage02jw_dataset_manifest.json",
+      "sha256": "sha256:902154cdd2aff77ecdfb0fc853f7d8b7befb515a891adfc2701dfd895edf90ce"
+    },
+    {
+      "bytes": 2999,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/normalization/train_only_graph_balanced_statistics.json",
+      "sha256": "sha256:0dc26751271399ce278199e657fc35b1ad9ab0492275bccd43d191f8ee97d495"
+    },
+    {
+      "bytes": 1615,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/splits/prefrozen_split_manifest.json",
+      "sha256": "sha256:9b5073f8e4c3d84325ad7023e52dbba270a62f21f7ff326a0aa7dc273b57cff9"
+    },
+    {
+      "bytes": 1191,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/schema/feature_permission_table.yaml",
+      "sha256": "sha256:24644dae01073d1ddf6aed011af212c74e1799137127a2f391b38e7f533dad0a"
+    },
+    {
+      "bytes": 3122,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/contracts/architecture_contract_v0_1.json",
+      "sha256": "sha256:1060b0981f69053828f83fe5bf96cd10f637f4306ea1a8d07a0042f9af5d0c28"
+    },
+    {
+      "bytes": 1243,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/contracts/feature_contract_v0_1.json",
+      "sha256": "sha256:719f239444c3b5cc73768566992b5b6d96b7ee1d9aa47dc8829e24baebf71bb1"
+    },
+    {
+      "bytes": 726,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/results/stage02k_qualification_summary.json",
+      "sha256": "sha256:75dea2a8e4ae90d200b202f0f43b075d4ae2700de5ceb60f66c43e44cdc06eef"
+    },
+    {
+      "bytes": 4654,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_failure_attribution_v0_1/freeze/diagnostic_contract_v0_1.json",
+      "sha256": "sha256:17e72be667db8eef7da05d2cb608df73ed3a62f9c0d2eaf45f9887a981c8cd9a"
+    },
+    {
+      "bytes": 1,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/.gitkeep",
+      "sha256": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 93340,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261201/update_0020.pt",
+      "sha256": "sha256:1798b38351cb5a7339ebd4161018543d72934b66de95e9242e314c1084b94f5e"
+    },
+    {
+      "bytes": 96028,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261201/update_0040.pt",
+      "sha256": "sha256:a3c135a43cefe52d31c20ba15a6b3614c38f2c05cab16afd2dc21ecd147ec308"
+    },
+    {
+      "bytes": 98716,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261201/update_0060.pt",
+      "sha256": "sha256:eecc9cc40ef803e926934aee44bdcf116ab03fac0d56e80b15b57f8abc10bfd5"
+    },
+    {
+      "bytes": 101404,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261201/update_0080.pt",
+      "sha256": "sha256:11dd265fef46f15a93a3a4f40576fc8f8ad2c1446bca591c223264df46a1cc6c"
+    },
+    {
+      "bytes": 104092,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261201/update_0100.pt",
+      "sha256": "sha256:fe3f6a26b542b01b4a43ab44b7014cc9d513f9fcb0f680048a723b6c114657f1"
+    },
+    {
+      "bytes": 106780,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261201/update_0120.pt",
+      "sha256": "sha256:e65772edb07e9657ef62e319f474a502ff763e48e94c63f95e8543e4254d1ea4"
+    },
+    {
+      "bytes": 109532,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261201/update_0140.pt",
+      "sha256": "sha256:fb50c91e845e49f2b741bd7aab4f5b286c4d581ba7bd7052d67b3fb172df5a62"
+    },
+    {
+      "bytes": 112220,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261201/update_0160.pt",
+      "sha256": "sha256:3e1c1923a575c96dd507dda9a6ff470ebc9649b27e8c3a7e1d3ec7c49c56ff80"
+    },
+    {
+      "bytes": 114908,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261201/update_0180.pt",
+      "sha256": "sha256:f7f377411005b30c175b990b992781fb6bf1f6de0cbb1e200d9ae2ebe26cee0f"
+    },
+    {
+      "bytes": 117596,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261201/update_0200.pt",
+      "sha256": "sha256:e78774e78dd65247d6ffc21d6a01494337b72591ac8f4b947d9aaa5704bef552"
+    },
+    {
+      "bytes": 120284,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261201/update_0220.pt",
+      "sha256": "sha256:73dbf3daa2086478f166e2c073c76d3bbec409003c0f63c3a4ac2a933c7a1305"
+    },
+    {
+      "bytes": 122972,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261201/update_0240.pt",
+      "sha256": "sha256:120fc155ad654c40d6d2ab2a2308f0d222aac57296c690df6e37370b59a9f706"
+    },
+    {
+      "bytes": 125660,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261201/update_0260.pt",
+      "sha256": "sha256:f8369c0fd11ea75c609d149946630ae2730ff4a605745b9ece0cb19113c15619"
+    },
+    {
+      "bytes": 128412,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261201/update_0280.pt",
+      "sha256": "sha256:268fefd6de1949a39e1ede6c813d1f4e5bafbaa83e0890e32cc939a395a4a3bd"
+    },
+    {
+      "bytes": 131100,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261201/update_0300.pt",
+      "sha256": "sha256:004fb61ae847e2f1c40551f5c09420aba01c2a1b88ae037f403689f772787e9f"
+    },
+    {
+      "bytes": 93340,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261202/update_0020.pt",
+      "sha256": "sha256:52159a4a0594c55d3f1a8ce21069b3e73f7c1be2473f99b67db1287e72250f32"
+    },
+    {
+      "bytes": 96028,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261202/update_0040.pt",
+      "sha256": "sha256:f45a51ad1ae374fa045a9b46c86b990e5839d84891ac9c380743f3349813ac98"
+    },
+    {
+      "bytes": 98716,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261202/update_0060.pt",
+      "sha256": "sha256:e68c50f260713cc2607f03acee1de699ff02b3376bb11835f4105a93ab4cd9bf"
+    },
+    {
+      "bytes": 101404,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261202/update_0080.pt",
+      "sha256": "sha256:c3cb60608395395bbb0dfaee5e8917503d8022d8dcd0c920d3cdb8de97476c86"
+    },
+    {
+      "bytes": 104092,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261202/update_0100.pt",
+      "sha256": "sha256:0ad09b73926f6f05a8504171988a7ba3b55fdfdd43a109ee475866c72b6a16af"
+    },
+    {
+      "bytes": 106780,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261202/update_0120.pt",
+      "sha256": "sha256:30408710d75060a2f2378a40ab55980f7a0c4ba70c471f9cfc8f86ca5987e2c0"
+    },
+    {
+      "bytes": 109532,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261202/update_0140.pt",
+      "sha256": "sha256:f47652fe4d76da237b17a955c6975de0463c4529eae948498885ab55acd1c347"
+    },
+    {
+      "bytes": 112220,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261202/update_0160.pt",
+      "sha256": "sha256:d8c4b16672ddb10d3a3eb4a97e25f04d9f2fda0602510f7c65e5c91fd75247a3"
+    },
+    {
+      "bytes": 114908,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261202/update_0180.pt",
+      "sha256": "sha256:94ddf174bf6d03b0815c25ef2d2bd94dcf1f118b665b27eaed2b464010e37e5b"
+    },
+    {
+      "bytes": 117596,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261202/update_0200.pt",
+      "sha256": "sha256:ebbdc2290816af61dc1c122dd09ed57b127468eabe953ec600e2b0488531fd2f"
+    },
+    {
+      "bytes": 120284,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261202/update_0220.pt",
+      "sha256": "sha256:de8cd09456dcf4c6f542e7accfff6ec9c112d7ecdbe5b364a77469e19dba2bbf"
+    },
+    {
+      "bytes": 122972,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261202/update_0240.pt",
+      "sha256": "sha256:de6e56df9d9c265f4604189ccfe2fddc84fc4d2e6ed3433313046c135b284ed2"
+    },
+    {
+      "bytes": 125660,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261202/update_0260.pt",
+      "sha256": "sha256:02d961084a2c16bc19395fa894667f790fd8f1c7a9f8b54210ddb20ab34739bc"
+    },
+    {
+      "bytes": 128412,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261202/update_0280.pt",
+      "sha256": "sha256:3032663836c275878d0b25d10e8f38936aded13f6045bf456a86fe91c47e01ca"
+    },
+    {
+      "bytes": 131100,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261202/update_0300.pt",
+      "sha256": "sha256:8651e920ec6ee51829052e886ea4e52cb707e060dced72216f4abd468135ce36"
+    },
+    {
+      "bytes": 93340,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261203/update_0020.pt",
+      "sha256": "sha256:afff79cee12d5346a98f32e5dccf71914dfaf8e5f43cfd03776e6563819d8c6e"
+    },
+    {
+      "bytes": 96028,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261203/update_0040.pt",
+      "sha256": "sha256:78d427a6da56242205f3d7cfcccd6188aa56d7b09dac9fe946d10bef170f6014"
+    },
+    {
+      "bytes": 98716,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261203/update_0060.pt",
+      "sha256": "sha256:a3b0a63d00466aa7bda3333709bdfe27e91f97e2c799db6be9e9cdc201f984d6"
+    },
+    {
+      "bytes": 101404,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261203/update_0080.pt",
+      "sha256": "sha256:c0579826f572657e06197620bcd894f0afa9fc5fd1347aa4821364d868364388"
+    },
+    {
+      "bytes": 104092,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261203/update_0100.pt",
+      "sha256": "sha256:a84f523f2f439e2947af0f78aad9699eb772ca253157b2b4d9f3343dace8606a"
+    },
+    {
+      "bytes": 106780,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261203/update_0120.pt",
+      "sha256": "sha256:e71ab9a158778b3441ba9a8d3d949a8104168364a7183d1159b7c13144c9127e"
+    },
+    {
+      "bytes": 109532,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261203/update_0140.pt",
+      "sha256": "sha256:25d7e4d8333fd10d090fe39511eb4124c968829b699cb1bed146283f27921f82"
+    },
+    {
+      "bytes": 112220,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261203/update_0160.pt",
+      "sha256": "sha256:8592f9c8cde146d4fbf12c18f834e50396d128d77a0a4805b992575d4cfd6d68"
+    },
+    {
+      "bytes": 114908,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261203/update_0180.pt",
+      "sha256": "sha256:148791031d0cfadaab6b0d1e6541616a7de6834269c9a586ff41247257b03723"
+    },
+    {
+      "bytes": 117596,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261203/update_0200.pt",
+      "sha256": "sha256:305ed1ed07697617c523423b8b29afb261e619059479be7db03fcf39c643c35a"
+    },
+    {
+      "bytes": 120284,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261203/update_0220.pt",
+      "sha256": "sha256:0a6993a19caaec0a649438907f244594a81152746320a484b70902670e7ed19c"
+    },
+    {
+      "bytes": 122972,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261203/update_0240.pt",
+      "sha256": "sha256:0281f605e5010bd1217244adfa5109b94d0046530c7cdb3cb3463d0d4882e5fb"
+    },
+    {
+      "bytes": 125660,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261203/update_0260.pt",
+      "sha256": "sha256:55bee49244fc69832ce839827fdc0cad899188406ad2ef06013ef78b127e5b86"
+    },
+    {
+      "bytes": 128412,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261203/update_0280.pt",
+      "sha256": "sha256:9a8861b1e5ff0364ffe837709e5f5e51c824a39fff96e43aea02174b14df5aec"
+    },
+    {
+      "bytes": 131100,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261203/update_0300.pt",
+      "sha256": "sha256:8dc8c68964f9824d6313f59e9ad57c2d8ac1cc0851f04741b218581216cb8e0a"
+    },
+    {
+      "bytes": 94108,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261201/update_0020.pt",
+      "sha256": "sha256:18a8d7191a51ea9706452ddf13ff0acbf200a38110afa5d4d5c32f999a914b60"
+    },
+    {
+      "bytes": 96796,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261201/update_0040.pt",
+      "sha256": "sha256:f190f7d6444926befc867e3d93b7310634b579e20b7c168b3879349f518f74bf"
+    },
+    {
+      "bytes": 99484,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261201/update_0060.pt",
+      "sha256": "sha256:a3ec7aaa7c23cc19ce058124cf62f4118ba63e95c54585d2db3300e315866d8e"
+    },
+    {
+      "bytes": 102172,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261201/update_0080.pt",
+      "sha256": "sha256:9c8d933c70e4551e4e1640894734d2d8d89a036dab05b88f01cc8e98049cb42c"
+    },
+    {
+      "bytes": 104860,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261201/update_0100.pt",
+      "sha256": "sha256:69fce55b7d5e7525e8cc464a90b66f36ffd3e54f4e9b17e03fd7bc007452efc5"
+    },
+    {
+      "bytes": 107548,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261201/update_0120.pt",
+      "sha256": "sha256:290d6f6aaf09ed11c22a1ca0e220ddd55142be0fe83c563b43428fcb0fb1b8c0"
+    },
+    {
+      "bytes": 110300,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261201/update_0140.pt",
+      "sha256": "sha256:b20a35b2428494d9c8d03b3b4b47ca39cd6fabfedda0a61b0d48d9e50119a968"
+    },
+    {
+      "bytes": 112988,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261201/update_0160.pt",
+      "sha256": "sha256:d46a01f2bc1c13f74ff0ee2544b00d28989024864f486555c3f2dd887c733857"
+    },
+    {
+      "bytes": 115676,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261201/update_0180.pt",
+      "sha256": "sha256:56e1583e8e586a0297e52ee62f2ba7909366bca45b5347587e2838fb60eafbd5"
+    },
+    {
+      "bytes": 118364,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261201/update_0200.pt",
+      "sha256": "sha256:82bc9bd4b088c4af811ab95bbfbe2e280718bb38e5735c8442f617b9c1dad407"
+    },
+    {
+      "bytes": 121052,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261201/update_0220.pt",
+      "sha256": "sha256:f6f672c66b6910bb29b8dc5f494710081cb191ac993063593d80e4e2547f1375"
+    },
+    {
+      "bytes": 123740,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261201/update_0240.pt",
+      "sha256": "sha256:b2ec90aad27e7e1df9cf8a97bb901ffa8a13863519e87b27427604fe54ec575d"
+    },
+    {
+      "bytes": 126428,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261201/update_0260.pt",
+      "sha256": "sha256:501d93770824a6ec1388c28c84a0d0133cb234ef53867e2f8bfad01a6527a04e"
+    },
+    {
+      "bytes": 129180,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261201/update_0280.pt",
+      "sha256": "sha256:d1302595484590d75109897b042be3f6779f97cf5db56947fb05d10ff6910b54"
+    },
+    {
+      "bytes": 131868,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261201/update_0300.pt",
+      "sha256": "sha256:cbea00163e96c3719b9a859716b36b04526ef467ff15ad8ec2cd69025fe6adbd"
+    },
+    {
+      "bytes": 94108,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261202/update_0020.pt",
+      "sha256": "sha256:a8a7255be0323f2c4589062b8e9f2173e5754435b72a860a71aea1e3b5c7abd1"
+    },
+    {
+      "bytes": 96796,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261202/update_0040.pt",
+      "sha256": "sha256:575340384af7d41d04c6379971f32230dbeb020b53beb632668e25b678303922"
+    },
+    {
+      "bytes": 99484,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261202/update_0060.pt",
+      "sha256": "sha256:d3ca6eae44f37eb0fe035652bb270f7b7f16c775e086a69d2402391295ea9bad"
+    },
+    {
+      "bytes": 102172,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261202/update_0080.pt",
+      "sha256": "sha256:d65f6991272bd131a01952963ce093a454cda52bb84783adc00f86d420efe97a"
+    },
+    {
+      "bytes": 104860,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261202/update_0100.pt",
+      "sha256": "sha256:189b3496c7b2a928d3d5c2c1896efeeba83fab55698896b67128bd6bbe2559c4"
+    },
+    {
+      "bytes": 107548,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261202/update_0120.pt",
+      "sha256": "sha256:12a6714289d3b733c712e9fdbd185f5faa37110c2bbebc49910a74b5de0123a3"
+    },
+    {
+      "bytes": 110300,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261202/update_0140.pt",
+      "sha256": "sha256:880fdcbc47b770b06454082ff486ddc0857d8dec0a64161937fe9eab3bd05df4"
+    },
+    {
+      "bytes": 112988,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261202/update_0160.pt",
+      "sha256": "sha256:d1e2f79e3b8ddb57ca88b1e71a4e31564cb846da05417b426f88a2fb0897852f"
+    },
+    {
+      "bytes": 115676,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261202/update_0180.pt",
+      "sha256": "sha256:cad2ebc832b738f4836c49a4b021ad8d180dc2067e4f3a975fd171388fee99cc"
+    },
+    {
+      "bytes": 118364,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261202/update_0200.pt",
+      "sha256": "sha256:cc41f80983e12d4805fabd20a4f78eb11b4452d1a5d87f45a8682998fa75427a"
+    },
+    {
+      "bytes": 121052,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261202/update_0220.pt",
+      "sha256": "sha256:a2f2b1119b8ef6b9a56cd1c5fb73e8fa30eafc7e3ac4e54a5d7620a27ebd3ad5"
+    },
+    {
+      "bytes": 123740,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261202/update_0240.pt",
+      "sha256": "sha256:07250f37384c5baf3eecf4cdd13f3fb1eb720617d5309ce60c80de456cac16e1"
+    },
+    {
+      "bytes": 126428,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261202/update_0260.pt",
+      "sha256": "sha256:ca028458188955aefa9d7cbe61a0c57de2939f5675b326f457d1ee8d2c0fa30b"
+    },
+    {
+      "bytes": 129180,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261202/update_0280.pt",
+      "sha256": "sha256:ee687ab667aeddde25df14974145a9de5ce1be291f2d360b54cbf3f3366d9e74"
+    },
+    {
+      "bytes": 131868,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261202/update_0300.pt",
+      "sha256": "sha256:d23d442abd77ef535f2e52dfa0f15e402223548adea47afc21962eb71592dd3e"
+    },
+    {
+      "bytes": 94108,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261203/update_0020.pt",
+      "sha256": "sha256:e8acf1c60ff643d05e194a1237fdfcdafcd999ebe454c1a48ccaa07f1942978f"
+    },
+    {
+      "bytes": 96796,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261203/update_0040.pt",
+      "sha256": "sha256:e5ffe44227afb90bf57b9ceb39476174784bd0c1d61a076e6b670cf3b92ceee7"
+    },
+    {
+      "bytes": 99484,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261203/update_0060.pt",
+      "sha256": "sha256:15ed25c5fd19afd4d22c08aa7bdc245735ae398cbc66476628f31d62711ba1b0"
+    },
+    {
+      "bytes": 102172,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261203/update_0080.pt",
+      "sha256": "sha256:8706fb5be98a450acd1ce238a0dec7cef5dacf84d31579f6ee160f68aff61220"
+    },
+    {
+      "bytes": 104860,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261203/update_0100.pt",
+      "sha256": "sha256:b9071aabbeda283ff93304a56e8ac7bdc7e651990404ce8668fbd00503ff83cf"
+    },
+    {
+      "bytes": 107548,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261203/update_0120.pt",
+      "sha256": "sha256:df2ed67f5a484954cd3bdbc13655739972eaa5bd55a82974ec441aea52f58f50"
+    },
+    {
+      "bytes": 110300,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261203/update_0140.pt",
+      "sha256": "sha256:58825956872b18f82f17037691555b9a34325eab492190500403f6cf05fe933e"
+    },
+    {
+      "bytes": 112988,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261203/update_0160.pt",
+      "sha256": "sha256:1bfc895587858a88a79195f215bd3e38e42d06863f7ca7ed029b0fdf517cd968"
+    },
+    {
+      "bytes": 115676,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261203/update_0180.pt",
+      "sha256": "sha256:9ef10bae941e38b16f9c03dae1319c55a0dd3e89e7c5b2bd676d6f236e2aed12"
+    },
+    {
+      "bytes": 118364,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261203/update_0200.pt",
+      "sha256": "sha256:23159b0eaca6da96a5b9e4cbb51081642948cb9bdb3b292027ef17540c96ca33"
+    },
+    {
+      "bytes": 121052,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261203/update_0220.pt",
+      "sha256": "sha256:cdb45a71d670be86c6b143ac2b4257abc9d9b4ce14d0162592066e0497e651a6"
+    },
+    {
+      "bytes": 123740,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261203/update_0240.pt",
+      "sha256": "sha256:b864a6496f9c14bd09427c5d53fcc735e43cdac424c78c2b8e87d158ce4916ba"
+    },
+    {
+      "bytes": 126428,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261203/update_0260.pt",
+      "sha256": "sha256:5850e0238a3f99d526eb5a460d74743045f69be62626b068c754c0f2ee5a259f"
+    },
+    {
+      "bytes": 129180,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261203/update_0280.pt",
+      "sha256": "sha256:7c0d1788800e7d7ce502ae4130d82a0cb7db5555dc526445ddeac7083d4f31ec"
+    },
+    {
+      "bytes": 131868,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261203/update_0300.pt",
+      "sha256": "sha256:a57df100fb0dfedd1c01d614570b8861e29c52b0446b00e7efd99362199b0971"
+    },
+    {
+      "bytes": 858537,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261201/update_0020.pt",
+      "sha256": "sha256:c81f5bf6b8b03340487537695286f9e18cc00bfec1bf67d2d25caf69ebaf502e"
+    },
+    {
+      "bytes": 861225,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261201/update_0040.pt",
+      "sha256": "sha256:7f734b56f7b722c7a67e38511b90501994cbbe135a81d37814d71aa3142ca493"
+    },
+    {
+      "bytes": 863913,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261201/update_0060.pt",
+      "sha256": "sha256:91dc63d1496b8e792257f47558c9ecc8f64e0f139d05b584baadcae206865205"
+    },
+    {
+      "bytes": 866601,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261201/update_0080.pt",
+      "sha256": "sha256:c8bf81c3797283f50d41f581c3277dd279e2cf7dc0817cb464bbb9c9bb332df2"
+    },
+    {
+      "bytes": 869289,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261201/update_0100.pt",
+      "sha256": "sha256:7af76e456f5a1f17ab35960f6e9ed7641607e64dc1f119a73c82531f90abce54"
+    },
+    {
+      "bytes": 871977,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261201/update_0120.pt",
+      "sha256": "sha256:2cd3079c50e4e5df5809e49b036c34b4ba104ab73e03c33ee57716dc36b6d71f"
+    },
+    {
+      "bytes": 874729,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261201/update_0140.pt",
+      "sha256": "sha256:b183b32352d4237fb509c175eb8293af40cfd31bad9ae6d85ac097bda71f1888"
+    },
+    {
+      "bytes": 877417,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261201/update_0160.pt",
+      "sha256": "sha256:407e87eed3eebaa3dfe72efafe1d2c88f8710376f273338a69361ba2d2118562"
+    },
+    {
+      "bytes": 880105,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261201/update_0180.pt",
+      "sha256": "sha256:41ae0995545cdb744a729723f13ac99b9e3d4ae7fc241144764d1afd9bd291a7"
+    },
+    {
+      "bytes": 882793,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261201/update_0200.pt",
+      "sha256": "sha256:d30f1edb6483a764dbd45e472cc29817825aa0ea52e2e3310d5592f4c910c4a3"
+    },
+    {
+      "bytes": 885481,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261201/update_0220.pt",
+      "sha256": "sha256:25678273516ac54c3426079881192b990a307adfb055dc8a0a80d9b7f9465949"
+    },
+    {
+      "bytes": 888169,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261201/update_0240.pt",
+      "sha256": "sha256:2ab391cfb762b97cc3d9d0c6b86d7b078fbd0ba94b29229c256d6383f6d6db8f"
+    },
+    {
+      "bytes": 890857,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261201/update_0260.pt",
+      "sha256": "sha256:b40872be9c0e595647b1f2fea10ccfcfdb2f10b199152e88ae0fc3c7933efe2a"
+    },
+    {
+      "bytes": 893609,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261201/update_0280.pt",
+      "sha256": "sha256:8f79f7884ce3bb8344c953fdcbcdabfcd1c8f39a31201d27918e279b7327176a"
+    },
+    {
+      "bytes": 896297,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261201/update_0300.pt",
+      "sha256": "sha256:05024c1db945a68a0c6d7fe0a4575932b50122d11647fbead27aaf796926f757"
+    },
+    {
+      "bytes": 898985,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261201/update_0320.pt",
+      "sha256": "sha256:ed92dc4160b95ed750561bf7cbb733661609944c1d05ae59dd876d189d13beb3"
+    },
+    {
+      "bytes": 901737,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261201/update_0340.pt",
+      "sha256": "sha256:a204aae8667d4ed6b87b76675ff1004099163c738232cf15d4736c7461c860a9"
+    },
+    {
+      "bytes": 904425,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261201/update_0360.pt",
+      "sha256": "sha256:cc54c59624e692b03359291d9364d53f73f8b31eb1be854fac8c570b9d869046"
+    },
+    {
+      "bytes": 907177,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261201/update_0380.pt",
+      "sha256": "sha256:59acc5c6b4d9c141474b783a1140c29bee04ac93cbfdaa5db418760ed22e538b"
+    },
+    {
+      "bytes": 909865,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261201/update_0400.pt",
+      "sha256": "sha256:e64e8ac47d318994b7069c08ed4a60ea637e859a58734c746411b413b3d93a76"
+    },
+    {
+      "bytes": 912617,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261201/update_0420.pt",
+      "sha256": "sha256:91d31fd1ad8f72b1dd0ae2466c6914ff4f4798dbb3addeec61d3397e39655574"
+    },
+    {
+      "bytes": 915305,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261201/update_0440.pt",
+      "sha256": "sha256:5dd26d29dd5056157a399a97fa1a5eddc5b596c282e4e7d9b800dfc7f3f1b713"
+    },
+    {
+      "bytes": 858537,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0020.pt",
+      "sha256": "sha256:d4c5bbe4fb11b83133fb883aa9b5532b164244930d54dd0d43584a193a66f604"
+    },
+    {
+      "bytes": 861225,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0040.pt",
+      "sha256": "sha256:7c361504dec5ddf167b0c1bedc06d8565d663208569cae61e1557301eeff6474"
+    },
+    {
+      "bytes": 863913,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0060.pt",
+      "sha256": "sha256:945f8866390d2f1a94562374ebdd96457cf0fd452e9c183927006d6bd674cac3"
+    },
+    {
+      "bytes": 866601,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0080.pt",
+      "sha256": "sha256:bbb51621b60bc3842b1283a318abd5c75f1346a301e9e9dd1c28619e0ef5572f"
+    },
+    {
+      "bytes": 869289,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0100.pt",
+      "sha256": "sha256:2bff9d46e14ab736b287fda6812f46386a7da051fd4b6bb57377918b74ee2d3b"
+    },
+    {
+      "bytes": 871977,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0120.pt",
+      "sha256": "sha256:dfa54de96ea802f318c10a3e6c9b97a366ffab07d81d6e23987f1749ead42a83"
+    },
+    {
+      "bytes": 874729,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0140.pt",
+      "sha256": "sha256:50b862d1a0230f34fdab8981fb26283dc0be1d5685bca9fc6d728b91979b8a9b"
+    },
+    {
+      "bytes": 877417,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0160.pt",
+      "sha256": "sha256:806687f168f7df57eb7df5a1d66dc44f5613adc3da4637af55eee825ca7fcd6f"
+    },
+    {
+      "bytes": 880105,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0180.pt",
+      "sha256": "sha256:d4c4901f16d05ec09b47d0aee0f2165e0bcd363b4185df1bf06fe7f20d0b4c10"
+    },
+    {
+      "bytes": 882793,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0200.pt",
+      "sha256": "sha256:045da5b0ff7a9c8fe4dcd5e300417b8f8aac73cd0a7d77242dda192e33d8594f"
+    },
+    {
+      "bytes": 885481,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0220.pt",
+      "sha256": "sha256:c5835643445801cd56ba8406bb2eaaa82c92b8f7699a885ef6c64327e17567b0"
+    },
+    {
+      "bytes": 888169,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0240.pt",
+      "sha256": "sha256:3955580881f549a8359a127254cd80b95101a40c0b3f4a5794a68b4193ca30d1"
+    },
+    {
+      "bytes": 890857,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0260.pt",
+      "sha256": "sha256:e7f5341be7b43f8eaf2f32d8aabd56ed13409f2602a2df2e3e651cf397851403"
+    },
+    {
+      "bytes": 893609,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0280.pt",
+      "sha256": "sha256:c655a2c7d837142faf80d41a86c07c4c581d5114ae543844bc57db97c9b9bd39"
+    },
+    {
+      "bytes": 896297,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0300.pt",
+      "sha256": "sha256:e72d6e6d3a463ced3dfc77a676e6842d427ed0f06c97af7d0c9e99adf0e24bf4"
+    },
+    {
+      "bytes": 899049,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0320.pt",
+      "sha256": "sha256:8194be38f767bf029574041dfd93384ea8e7941bba4a265f5d465e3afb374537"
+    },
+    {
+      "bytes": 901737,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0340.pt",
+      "sha256": "sha256:b765c2b850bd5856aafc7f430b557baa79ecc3ae67284b5f33e46e2b39bfbaac"
+    },
+    {
+      "bytes": 904425,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0360.pt",
+      "sha256": "sha256:910183b11be766946634febdef8cd96094cf71e1e9aa835cf531efb09e42b843"
+    },
+    {
+      "bytes": 907177,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0380.pt",
+      "sha256": "sha256:1ca49c0609ee3847646f6495ea572686b303de5fd6ddba848e1bbb5892bd1891"
+    },
+    {
+      "bytes": 909865,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0400.pt",
+      "sha256": "sha256:63d3a7faa5dde4d9bc40d119e6459ab96cee09e724273acebde983fe721bcefc"
+    },
+    {
+      "bytes": 912617,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0420.pt",
+      "sha256": "sha256:f527b0a93d3d086c1691694c3d2bb86a554a287d37f05759cf713d0c50bd263e"
+    },
+    {
+      "bytes": 915305,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0440.pt",
+      "sha256": "sha256:52fb90d6a32f9e0012494219824b86572c2b210c2a0a3394b9fd1a3201e5a169"
+    },
+    {
+      "bytes": 917993,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0460.pt",
+      "sha256": "sha256:8a16f785bc604e9a52ca615484fd99a672fc1021bd58d86c458cec1c4eb55f70"
+    },
+    {
+      "bytes": 920745,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0480.pt",
+      "sha256": "sha256:4cfaeae6fc3bb4d53b378765f680e3df1c88e52370575bf6e8f702de1e76e9af"
+    },
+    {
+      "bytes": 923433,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0500.pt",
+      "sha256": "sha256:86d2f4c2251fbc9ebf9de464dd969fbda39f834063d87eaa6e0814f7224f79d4"
+    },
+    {
+      "bytes": 926185,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0520.pt",
+      "sha256": "sha256:086ad61fa65e3385e9e9a45cc4b41f169f7e4af59f9b306cb9bdf4b2f2a20721"
+    },
+    {
+      "bytes": 928873,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0540.pt",
+      "sha256": "sha256:fa5088d2a4ea41f6e47665192ba1f76c3591d6004a483f2dc2f3503e3ec4cc42"
+    },
+    {
+      "bytes": 931625,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0560.pt",
+      "sha256": "sha256:5699924cf1851813d1780df9055e818f3d6a778fdf7f8b8ef41081ce335664cc"
+    },
+    {
+      "bytes": 934313,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0580.pt",
+      "sha256": "sha256:ee47d3144867dace68cac0b8e61727744995ce746d94369adb820de071617d0f"
+    },
+    {
+      "bytes": 937001,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0600.pt",
+      "sha256": "sha256:059eba9a16b42c2c4cc40fe9c36048da483b642a3e655a532cf041cba800ec7c"
+    },
+    {
+      "bytes": 939753,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0620.pt",
+      "sha256": "sha256:ec21378b16dce5f76051334154ddb8ef7a8e207da4d84ef9c15c05eeed5aa9eb"
+    },
+    {
+      "bytes": 942441,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0640.pt",
+      "sha256": "sha256:c0fa1946211ad6a076618ed5444138721204ad4d0cfb6ceb2975ae8957c8d222"
+    },
+    {
+      "bytes": 945193,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0660.pt",
+      "sha256": "sha256:265b04c3a3631a43c271d253ab9a49583f64d8b4a8fa161ad7eaf4d5123ab017"
+    },
+    {
+      "bytes": 947881,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0680.pt",
+      "sha256": "sha256:f5f28a7c0e59c42134fafd8d9bc449ac3e3881d059e209ef116de697a38a7e96"
+    },
+    {
+      "bytes": 950633,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0700.pt",
+      "sha256": "sha256:20beb44407c1b9eca956b10c1d8b1f9e600d126bf611cbab712c1d3e3bd31913"
+    },
+    {
+      "bytes": 953321,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0720.pt",
+      "sha256": "sha256:7696a5469ca7d218297ce24e0cae876f2c501a80f2acfe22a04da7b4413e7d0e"
+    },
+    {
+      "bytes": 956009,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0740.pt",
+      "sha256": "sha256:2038552971ccda571a727e03020ebfbf400a230786a1d65bea29cc72094cc6a9"
+    },
+    {
+      "bytes": 858537,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261203/update_0020.pt",
+      "sha256": "sha256:5372d24fa1ce54b838e288137edbfbe72e3abcdc3121dcf534fd0f3a349cff2d"
+    },
+    {
+      "bytes": 861225,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261203/update_0040.pt",
+      "sha256": "sha256:f780fb0b930aa5532a6ce995b7abb14eefaf3b6448817a4aa6f9b270fd0f7786"
+    },
+    {
+      "bytes": 863913,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261203/update_0060.pt",
+      "sha256": "sha256:84d74dec4ecf41471205a1051232fd10985cabddde6516d76ad438e6852e890c"
+    },
+    {
+      "bytes": 866601,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261203/update_0080.pt",
+      "sha256": "sha256:9040e1a00dddd1aed0ee2089fdcd66b28474b0a1ff791d846f82e10847bb87a5"
+    },
+    {
+      "bytes": 869289,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261203/update_0100.pt",
+      "sha256": "sha256:672ef185603c04c6e65676ab776e7006813fac1c0d71fce752cf23b08da79e33"
+    },
+    {
+      "bytes": 871977,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261203/update_0120.pt",
+      "sha256": "sha256:60e93ced787af7966ac8cabd66e576b9526d84fa21f5ba9b337e193250a8f5b2"
+    },
+    {
+      "bytes": 874729,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261203/update_0140.pt",
+      "sha256": "sha256:310dabbf927e307e3350b2c3e4ebddb435ad2b45d49ad866c00c9a0aa125ada2"
+    },
+    {
+      "bytes": 877417,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261203/update_0160.pt",
+      "sha256": "sha256:3a67e347d31b028c3943764ed5ad974fef63a7084b9f0ef69778f7524840f1f8"
+    },
+    {
+      "bytes": 880105,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261203/update_0180.pt",
+      "sha256": "sha256:ff09aeddff964fb09e20a58904f6cca7d952a4c594e067ff7aed5036afe1cbd1"
+    },
+    {
+      "bytes": 882793,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261203/update_0200.pt",
+      "sha256": "sha256:f67c429caa1fa4bf911650127ec6c05d8b73d731c51f113ca154e5dbb9a99d2f"
+    },
+    {
+      "bytes": 885481,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261203/update_0220.pt",
+      "sha256": "sha256:bafff3f0147aae9f4f73e99273691f3d9ecd8d8181a5ebfba86c2fdc45836965"
+    },
+    {
+      "bytes": 888169,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261203/update_0240.pt",
+      "sha256": "sha256:c42616ade9297281f9b1f61b8f4d2735cb0d91a5a387f0044ce7b7987ddeba3e"
+    },
+    {
+      "bytes": 890857,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261203/update_0260.pt",
+      "sha256": "sha256:c383ea8f5c9bb05c77b2ab5e678468c51c8647bd1f3c4c4fdfa59f783cf21544"
+    },
+    {
+      "bytes": 893609,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261203/update_0280.pt",
+      "sha256": "sha256:f74de5010b84d7432d1956395888b0586123f19d98723d3d26b4859c1ff0c17b"
+    },
+    {
+      "bytes": 896297,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261203/update_0300.pt",
+      "sha256": "sha256:1889dfdc201bc006e829f0b09070d979f8e5fc0bbb0d1712daf6042b2d703a7a"
+    },
+    {
+      "bytes": 14565,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/freeze/stage02m_execution_freeze_manifest.json",
+      "sha256": "sha256:30c5476a7ffcb8fd6326e105afe24a4d11c64252c6731f773f63bccf8b5ef258"
+    },
+    {
+      "bytes": 78099,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/manifests/stage02m_run_manifest.json",
+      "sha256": "sha256:64bf34a9a356998e92498bf0dd54556c0d0dce14911b94cdab436c9ca8db28e3"
+    },
+    {
+      "bytes": 5215,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/manifests/training_validation_summary_manifest.json",
+      "sha256": "sha256:e855e0f2653b153a57bc4131bcf3eadadcab790bccdb3611fe2d471f7d863e6b"
+    },
+    {
+      "bytes": 1521,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/results/frozen_success_gate_evaluation.json",
+      "sha256": "sha256:264be79bf40cc7f03ffaa4f4da1c9f9e4c77f7d45428283d90ecba19a589c4e3"
+    },
+    {
+      "bytes": 2463,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/results/stage02m_qualification_summary.json",
+      "sha256": "sha256:8b3113fec5f890a58e97fd4416a47438be27c726e23a89a859f4dfa1dde878c0"
+    },
+    {
+      "bytes": 1,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261201/.gitkeep",
+      "sha256": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 215,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261201/attempt_history.json",
+      "sha256": "sha256:d22626977ffcfd14492757a1b60eca7be1160201c7a352d45e73c03dae5936b4"
+    },
+    {
+      "bytes": 8144,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261201/checkpoint_integrity.json",
+      "sha256": "sha256:dba49268d30402add46a7ce64eef5b7f18c9c8fdb0f74611533f10f133a78623"
+    },
+    {
+      "bytes": 462,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261201/feature_access_audit.json",
+      "sha256": "sha256:1603ed38193cb42064c25053d9350165ed7d35e8079ab172a403a4b797c7e96f"
+    },
+    {
+      "bytes": 7503,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261201/initial_state.json",
+      "sha256": "sha256:35505dbdd4e2cd061587ddbfbe107b46cd110c94e11cb8f2a240697493b9b2f8"
+    },
+    {
+      "bytes": 1392,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261201/run_terminal.json",
+      "sha256": "sha256:71a6abff84775a6edd912b654fdb989a5a5dfa5abbe9222801ef2aef8804c687"
+    },
+    {
+      "bytes": 6455,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261201/selected_metrics.json",
+      "sha256": "sha256:b904f629f53a9c43d32f2d0a8d462830507bba8d99924e013b40e56f98ea89ec"
+    },
+    {
+      "bytes": 95521,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261201/training_history.json",
+      "sha256": "sha256:9ebccc2b15de2f2542b27ceccc14d1228ea362b90cf005896940ed0a571469ef"
+    },
+    {
+      "bytes": 41944,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261201/validation_history.json",
+      "sha256": "sha256:934d289966a9796e4000d5c23a01f1bbb5bac50046917da1a8b8b3b0a42f76b8"
+    },
+    {
+      "bytes": 1,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261202/.gitkeep",
+      "sha256": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 215,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261202/attempt_history.json",
+      "sha256": "sha256:31d4ba516f6b574e088d2e1a0abaa1af7d596c7db84e709a24e0704bf1a40e86"
+    },
+    {
+      "bytes": 8147,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261202/checkpoint_integrity.json",
+      "sha256": "sha256:c00b53527512d88d8c581827e10a15e21d5fa00d2568eebbd8eeda91ffcfd5ee"
+    },
+    {
+      "bytes": 462,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261202/feature_access_audit.json",
+      "sha256": "sha256:2fef60c12957f2c4f54e396d2adf74d834f6043681875f9370420dfc60b2a01e"
+    },
+    {
+      "bytes": 7515,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261202/initial_state.json",
+      "sha256": "sha256:e944abb023a02b410cf461044b529c80de7d06d870ec7bb31be33fc12872658f"
+    },
+    {
+      "bytes": 1393,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261202/run_terminal.json",
+      "sha256": "sha256:fb6ba2bc87bf761ae9e15d7fd5d8d07875cd0a10d8a1f53aefa220e5b5167809"
+    },
+    {
+      "bytes": 6463,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261202/selected_metrics.json",
+      "sha256": "sha256:1d13ba878c54adbb0ae07d68af9560ce245e39c1193cbd91b8a65627820ea002"
+    },
+    {
+      "bytes": 95581,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261202/training_history.json",
+      "sha256": "sha256:15bdd45dad7be54318f13fbd5d457c318bbe00684403b2333a06d34498474c73"
+    },
+    {
+      "bytes": 41935,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261202/validation_history.json",
+      "sha256": "sha256:e03ddb8e4ffb478b88ad17a47acaa3cca5c05b7848a00b9c9085063e390fc251"
+    },
+    {
+      "bytes": 1,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261203/.gitkeep",
+      "sha256": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 215,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261203/attempt_history.json",
+      "sha256": "sha256:c8f53f20773fc1ca860a6fe1acace920d98eabe534cbe87ff6f9a4d96503d956"
+    },
+    {
+      "bytes": 8147,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261203/checkpoint_integrity.json",
+      "sha256": "sha256:63f4303b8a68730698117f1e650e7a40ec74966e6a6cdda6faceaa46bcb5e842"
+    },
+    {
+      "bytes": 462,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261203/feature_access_audit.json",
+      "sha256": "sha256:6c3c78842b70bc6ba72d008028f8d81c0df8c0bbd1acbf25e9e513ee9dcf2f44"
+    },
+    {
+      "bytes": 7508,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261203/initial_state.json",
+      "sha256": "sha256:079a7ac4cb342654e74b38f9255145d416bccf9e94f5500cb12673ef9613fb0d"
+    },
+    {
+      "bytes": 1393,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261203/run_terminal.json",
+      "sha256": "sha256:f2b9e3ccbc9daed5100875f40f7bd8778ed733967688a1d28d05aedbbf89b132"
+    },
+    {
+      "bytes": 6474,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261203/selected_metrics.json",
+      "sha256": "sha256:339b9487ce9512c2044d9bc11fa5d24b1b0f9bef0f0b4e883d456accc52b4121"
+    },
+    {
+      "bytes": 95523,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261203/training_history.json",
+      "sha256": "sha256:6920f8e9f2723206957feba59177be57e18c0f537931b7e2d87187c120ba91f2"
+    },
+    {
+      "bytes": 41963,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K0/seed_20261203/validation_history.json",
+      "sha256": "sha256:a31f3f7b343d2f4e8fb5bb5520398ddababe62697fdad298e18eefefac26f3f0"
+    },
+    {
+      "bytes": 1,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261201/.gitkeep",
+      "sha256": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 215,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261201/attempt_history.json",
+      "sha256": "sha256:aa95da74dd8c04a88c64bf4ca0a9f87f5b082fd43b5af029ab364a141daed4d2"
+    },
+    {
+      "bytes": 8143,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261201/checkpoint_integrity.json",
+      "sha256": "sha256:0e21014ddbabf04220e3ab64deeee5126e0f505d7c1fc36c607765173f91a92d"
+    },
+    {
+      "bytes": 462,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261201/feature_access_audit.json",
+      "sha256": "sha256:09a22edebb3a25b213a62ad03b328fbb78314dd0738176515228bd79e9d223dc"
+    },
+    {
+      "bytes": 7503,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261201/initial_state.json",
+      "sha256": "sha256:cb11afd985324d84bfbba839df9ce60b14a2108c8dbbb8c9dc7164ee08beb361"
+    },
+    {
+      "bytes": 1391,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261201/run_terminal.json",
+      "sha256": "sha256:37c9c4abf33b09fcad80e570a361030ee5ed1e6d587502dc95a135eef3a9f1e3"
+    },
+    {
+      "bytes": 6463,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261201/selected_metrics.json",
+      "sha256": "sha256:fb9b6c18c589feef3b281850bece4739f89ff74ccc0db4fb3b511d6d7341fbb4"
+    },
+    {
+      "bytes": 95438,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261201/training_history.json",
+      "sha256": "sha256:1ee639fbc884001b5699680487f6013293140ce33cbab11629989d73e7a0e332"
+    },
+    {
+      "bytes": 41933,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261201/validation_history.json",
+      "sha256": "sha256:17533e032f4568ecb1018d8ebf3f9dcae124d181543d71a0cb9207e84c0d49a2"
+    },
+    {
+      "bytes": 1,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261202/.gitkeep",
+      "sha256": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 215,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261202/attempt_history.json",
+      "sha256": "sha256:9deb58db9daf6c1ac4f6cbbaa44756569d7b372ede971f5428b5efe26ebeceed"
+    },
+    {
+      "bytes": 8143,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261202/checkpoint_integrity.json",
+      "sha256": "sha256:98948527f9732f13ad218941749b9b5b0b0908fd321f46a92226a46a5351b7e8"
+    },
+    {
+      "bytes": 462,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261202/feature_access_audit.json",
+      "sha256": "sha256:f5f5bae5126c155e7604d35ff98e71869e9f3db034d30a7a5b66aa5c602cf425"
+    },
+    {
+      "bytes": 7529,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261202/initial_state.json",
+      "sha256": "sha256:49480d716a957cb086702541e790c756e0427b69946b89a9816a461c7d35a208"
+    },
+    {
+      "bytes": 1391,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261202/run_terminal.json",
+      "sha256": "sha256:6b97aa6f55a88d818cc52945d62c5d93644b20bcecef97aa58a55cd638f00ca8"
+    },
+    {
+      "bytes": 6463,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261202/selected_metrics.json",
+      "sha256": "sha256:a1fe689d7a714a0435b6f13e77b8c28d72bee929fc4a3e791480d7ed233ade0b"
+    },
+    {
+      "bytes": 95457,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261202/training_history.json",
+      "sha256": "sha256:1854cbb4d7751bac591b732be2bb4a1c4849d5e35ef0a918d0d31fdc3ea8e776"
+    },
+    {
+      "bytes": 41969,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261202/validation_history.json",
+      "sha256": "sha256:52565705d61bd67b637841d6e13016b389f0f273fcee69032aad47222ddcb579"
+    },
+    {
+      "bytes": 1,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261203/.gitkeep",
+      "sha256": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 215,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261203/attempt_history.json",
+      "sha256": "sha256:a88eaf06bb828cf2a05eadd3038771b59f3fd126cac42dd211586631a23321c0"
+    },
+    {
+      "bytes": 8143,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261203/checkpoint_integrity.json",
+      "sha256": "sha256:b1f75d83734b2e3240d6395d227f8c965d850ff3f2864135ea1ef57ae6be0998"
+    },
+    {
+      "bytes": 462,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261203/feature_access_audit.json",
+      "sha256": "sha256:81a6a3c7f0eb64e5dad0fc4d90eaec18c9cfe7629bedb4fa0ab95626fe94f960"
+    },
+    {
+      "bytes": 7494,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261203/initial_state.json",
+      "sha256": "sha256:4d4fa6cbacbdc6858507091b3b3d317649c5c003e38fc35dd3d7e482b12dce50"
+    },
+    {
+      "bytes": 1393,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261203/run_terminal.json",
+      "sha256": "sha256:36ee91d11c00c03371367145d38bbeada75003cf5382759ebf6588b5104fd8dc"
+    },
+    {
+      "bytes": 6462,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261203/selected_metrics.json",
+      "sha256": "sha256:a613bfa114494dbfb970a591ac789a565b0ef42404c6facaff697e6262002aac"
+    },
+    {
+      "bytes": 95383,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261203/training_history.json",
+      "sha256": "sha256:ab4a29cbf88942b6b365e02f69eb6e09c3f52e37d9cf2d07fd56cce6e2d0da75"
+    },
+    {
+      "bytes": 41930,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K1/seed_20261203/validation_history.json",
+      "sha256": "sha256:da80b3b22e40a4e35eb3ad5ac059289aea34130baf9fb7c5606965f92049397f"
+    },
+    {
+      "bytes": 1,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261201/.gitkeep",
+      "sha256": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 215,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261201/attempt_history.json",
+      "sha256": "sha256:1e4a7f189af58aa4916a8b4fe74a0e25a2c6e52fa522c26854dd082b2a81e2b6"
+    },
+    {
+      "bytes": 11901,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261201/checkpoint_integrity.json",
+      "sha256": "sha256:58f01f2d6079640ee57dce72698ea5dae13b1f39b260f54d7e7baf18715c6ccc"
+    },
+    {
+      "bytes": 462,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261201/feature_access_audit.json",
+      "sha256": "sha256:d6326ec1fdb52411b85e4c2598539405c02e32843b2ab5d35425c8a44497adc8"
+    },
+    {
+      "bytes": 7518,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261201/initial_state.json",
+      "sha256": "sha256:cf4ba9b30af8a6084422823ce1969ce617afc52ab0f2efcb4c986172479bfe3d"
+    },
+    {
+      "bytes": 1440,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261201/run_terminal.json",
+      "sha256": "sha256:fafd8f45311805bf532ac6bc637605d8fe722f832f9a7edb6c6c6e5a7316d7f1"
+    },
+    {
+      "bytes": 6476,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261201/selected_metrics.json",
+      "sha256": "sha256:50595d83035969d7baee3aec572248a191e18db904845d322e3a952a8a8e9c28"
+    },
+    {
+      "bytes": 139709,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261201/training_history.json",
+      "sha256": "sha256:0d4b0f626def91f8ea115d17d9fcd12f15a3e13b2fac4d121c7fd5230081cc26"
+    },
+    {
+      "bytes": 61534,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261201/validation_history.json",
+      "sha256": "sha256:bd4443c28bac8008c585c2fb234655a40e9421337f48a506b8e87bd83c33d60a"
+    },
+    {
+      "bytes": 1,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261202/.gitkeep",
+      "sha256": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 215,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261202/attempt_history.json",
+      "sha256": "sha256:530d4cc7308e394216aca816d299c5d6c6997c80a75ce753bcafb49ccccb3074"
+    },
+    {
+      "bytes": 19970,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261202/checkpoint_integrity.json",
+      "sha256": "sha256:8a2644b6f7b3874d654d2bbf7eeb4019908cfece07f03d9fecf12c9e5ea48faf"
+    },
+    {
+      "bytes": 462,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261202/feature_access_audit.json",
+      "sha256": "sha256:477d05842d33343725f1edecb37afcd44234e486573f5061e32e3bb3227e11b8"
+    },
+    {
+      "bytes": 7522,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261202/initial_state.json",
+      "sha256": "sha256:b224e9630c689951324ca13bb991590d7f934f2b221be82b45578377fb51780b"
+    },
+    {
+      "bytes": 1546,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261202/run_terminal.json",
+      "sha256": "sha256:a7cc13882907da0058d5dbf9dee2fafd5ac98af40912c0c944e74bf3d0d96ad5"
+    },
+    {
+      "bytes": 6455,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261202/selected_metrics.json",
+      "sha256": "sha256:c1f8cd3de200ccb11aa0c69c9e361f6be3948ac2d30a86ae938f576ef1b2e525"
+    },
+    {
+      "bytes": 235807,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261202/training_history.json",
+      "sha256": "sha256:69d86e3d9eae9b1f62dfac87b27716107a1fcf2f75240e64d5a420b73f292889"
+    },
+    {
+      "bytes": 103396,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261202/validation_history.json",
+      "sha256": "sha256:51b13289ab64795c17e58f428c2d30817101e086bf67dd6f29f49f171a9482b9"
+    },
+    {
+      "bytes": 1,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261203/.gitkeep",
+      "sha256": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "bytes": 215,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261203/attempt_history.json",
+      "sha256": "sha256:f5fee4d4c523a5607ed9c487be146b8b521406fbc97fcbf5a2b921c6007b1dca"
+    },
+    {
+      "bytes": 8133,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261203/checkpoint_integrity.json",
+      "sha256": "sha256:0d6ffc9d3addffb62d0136f9351437fbaaf1b4f8bdb1f94c5f0400abf196699e"
+    },
+    {
+      "bytes": 462,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261203/feature_access_audit.json",
+      "sha256": "sha256:ee514aa13e30ae0bfe777a722e5c7095080357496f5a0f376c0bcdfebe5a5fca"
+    },
+    {
+      "bytes": 7511,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261203/initial_state.json",
+      "sha256": "sha256:224ba4d179256927b036a879e9df892f1b327d94b717b0730ce3eb0847c18a52"
+    },
+    {
+      "bytes": 1391,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261203/run_terminal.json",
+      "sha256": "sha256:bbd0fe44522761b03cfc11862583bca5daa2406b22d34e81254ffbb57869fe6d"
+    },
+    {
+      "bytes": 6467,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261203/selected_metrics.json",
+      "sha256": "sha256:7aba9082f68ec523b5fc9245c6fd0b71a91842f088abda325cb43c9449a6a636"
+    },
+    {
+      "bytes": 95119,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261203/training_history.json",
+      "sha256": "sha256:8f20f292b50a6332375f23b73b27d8b5219c79c914dadfc77f4fd328953ae6da"
+    },
+    {
+      "bytes": 41960,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/runs/K2/seed_20261203/validation_history.json",
+      "sha256": "sha256:09de1a737d6156b23945151ebaf9ecebfaba161274eb0525d7268fa96704fd2c"
+    },
+    {
+      "bytes": 29240,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/test_evaluation/sealed_test_evaluation_manifest.json",
+      "sha256": "sha256:2ea61ccc99565b9bc5a64f97c8f3457b6458464c02d878c523e8a41c66911ecf"
+    },
+    {
+      "bytes": 4041,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/test_seal/test_release_manifest.json",
+      "sha256": "sha256:ae083e66f2c003258a3f9387b8eb16cf862dbbdf4d780960c751e461733f802d"
+    },
+    {
+      "bytes": 7429,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/freeze/training_protocol_v0_1.yaml",
+      "sha256": "sha256:ab02a49a508c4ddcab5db037886abd329ab29d2eedfc8ffe5d818ad691668648"
+    },
+    {
+      "bytes": 12838,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/manifests/stage02l_run_manifest.json",
+      "sha256": "sha256:ebd0288fea76969c5b50db6e14ba91a69d8b01553d3271edcd81c320c3c01cce"
+    },
+    {
+      "bytes": 4271,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02m_final_report.md",
+      "sha256": "sha256:888d128a2208a7ac041df5174362790c9602e74b24ea8f7abd113755af0ccba4"
+    }
+  ],
+  "freeze_timing": "before_new_array_decode_forward_backward_jvp_vjp_or_lsqr",
+  "historical_state": {
+    "current_test_status": "consumed_confirmatory_test",
+    "historical_optimizer_steps": 3280,
+    "stage02m_verdict": "STATIC_PAIR_FORCE_FITTING_NOT_QUALIFIED",
+    "stage02n_authorized": false,
+    "test_release_historical": "completed_once"
+  },
+  "manifest_version": "stage02mr-freeze-1.0.0",
+  "run_order": [
+    {
+      "architecture": "K0",
+      "best_update": 100,
+      "optimizer_updates": 300,
+      "run_id": "K0_seed20261201",
+      "seed": 20261201,
+      "selected_checkpoint": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261201/update_0100.pt",
+      "selected_checkpoint_hash": "sha256:fe3f6a26b542b01b4a43ab44b7014cc9d513f9fcb0f680048a723b6c114657f1",
+      "stop_reason": "validation_patience_200_updates_exhausted",
+      "terminal_state": "EARLY_STOPPED"
+    },
+    {
+      "architecture": "K0",
+      "best_update": 40,
+      "optimizer_updates": 300,
+      "run_id": "K0_seed20261202",
+      "seed": 20261202,
+      "selected_checkpoint": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261202/update_0040.pt",
+      "selected_checkpoint_hash": "sha256:f45a51ad1ae374fa045a9b46c86b990e5839d84891ac9c380743f3349813ac98",
+      "stop_reason": "validation_patience_200_updates_exhausted",
+      "terminal_state": "EARLY_STOPPED"
+    },
+    {
+      "architecture": "K0",
+      "best_update": 40,
+      "optimizer_updates": 300,
+      "run_id": "K0_seed20261203",
+      "seed": 20261203,
+      "selected_checkpoint": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261203/update_0040.pt",
+      "selected_checkpoint_hash": "sha256:78d427a6da56242205f3d7cfcccd6188aa56d7b09dac9fe946d10bef170f6014",
+      "stop_reason": "validation_patience_200_updates_exhausted",
+      "terminal_state": "EARLY_STOPPED"
+    },
+    {
+      "architecture": "K1",
+      "best_update": 40,
+      "optimizer_updates": 300,
+      "run_id": "K1_seed20261201",
+      "seed": 20261201,
+      "selected_checkpoint": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261201/update_0040.pt",
+      "selected_checkpoint_hash": "sha256:f190f7d6444926befc867e3d93b7310634b579e20b7c168b3879349f518f74bf",
+      "stop_reason": "validation_patience_200_updates_exhausted",
+      "terminal_state": "EARLY_STOPPED"
+    },
+    {
+      "architecture": "K1",
+      "best_update": 20,
+      "optimizer_updates": 300,
+      "run_id": "K1_seed20261202",
+      "seed": 20261202,
+      "selected_checkpoint": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261202/update_0020.pt",
+      "selected_checkpoint_hash": "sha256:a8a7255be0323f2c4589062b8e9f2173e5754435b72a860a71aea1e3b5c7abd1",
+      "stop_reason": "validation_patience_200_updates_exhausted",
+      "terminal_state": "EARLY_STOPPED"
+    },
+    {
+      "architecture": "K1",
+      "best_update": 40,
+      "optimizer_updates": 300,
+      "run_id": "K1_seed20261203",
+      "seed": 20261203,
+      "selected_checkpoint": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261203/update_0040.pt",
+      "selected_checkpoint_hash": "sha256:e5ffe44227afb90bf57b9ceb39476174784bd0c1d61a076e6b670cf3b92ceee7",
+      "stop_reason": "validation_patience_200_updates_exhausted",
+      "terminal_state": "EARLY_STOPPED"
+    },
+    {
+      "architecture": "K2",
+      "best_update": 240,
+      "optimizer_updates": 440,
+      "run_id": "K2_seed20261201",
+      "seed": 20261201,
+      "selected_checkpoint": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261201/update_0240.pt",
+      "selected_checkpoint_hash": "sha256:2ab391cfb762b97cc3d9d0c6b86d7b078fbd0ba94b29229c256d6383f6d6db8f",
+      "stop_reason": "validation_patience_200_updates_exhausted",
+      "terminal_state": "EARLY_STOPPED"
+    },
+    {
+      "architecture": "K2",
+      "best_update": 540,
+      "optimizer_updates": 740,
+      "run_id": "K2_seed20261202",
+      "seed": 20261202,
+      "selected_checkpoint": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0540.pt",
+      "selected_checkpoint_hash": "sha256:fa5088d2a4ea41f6e47665192ba1f76c3591d6004a483f2dc2f3503e3ec4cc42",
+      "stop_reason": "validation_patience_200_updates_exhausted",
+      "terminal_state": "EARLY_STOPPED"
+    },
+    {
+      "architecture": "K2",
+      "best_update": 20,
+      "optimizer_updates": 300,
+      "run_id": "K2_seed20261203",
+      "seed": 20261203,
+      "selected_checkpoint": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261203/update_0020.pt",
+      "selected_checkpoint_hash": "sha256:5372d24fa1ce54b838e288137edbfbe72e3abcdc3121dcf534fd0f3a349cff2d",
+      "stop_reason": "validation_patience_200_updates_exhausted",
+      "terminal_state": "EARLY_STOPPED"
+    }
+  ],
+  "selected_checkpoint_count": 9,
+  "stage": "02M-R",
+  "status": "PASS"
+}

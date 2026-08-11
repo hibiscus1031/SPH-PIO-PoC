@@ -1,0 +1,36 @@
+contract_version: stage02g-smoothness-audit-1.0.0
+
+stage02f_criterion:
+  metric: graph_total_variation_divided_by_cyclic_roll_7_null_total_variation
+  threshold: 0.9
+  threshold_changed: false
+  prior_result: FAIL
+  prior_result_overwrite_permitted: false
+
+mathematical_audit_dimensions:
+  - criterion_mathematical_meaning
+  - null_field_suitability
+  - periodic_boundary_effect
+  - vector_cancellation
+  - resolution_dependence
+
+refined_diagnostics_frozen_before_extension_execution:
+  decorrelated_null:
+    construction: fixed_seed_PCG64_particle_permutation_preserve_vector_values
+    seed: 20260207
+    ratio_threshold_max: 0.8
+  relative_neighbor_variation:
+    definition: graph_TV_RMS_divided_by_target_L2_particle_RMS
+    required_resolution_behavior: strictly_decreasing
+  physical_gradient_scale:
+    definition: graph_TV_RMS_divided_by_mean_undirected_edge_length_and_target_L2_particle_RMS
+    coefficient_of_variation_max: 0.25
+  vector_direction:
+    definition: low_mode_Fourier_signature_adjacent_cosine
+    adjacent_cosine_min: 0.95
+
+closure_rule:
+  stage02f_cyclic_null_rule_is_reinterpretable_after_audit: false
+  stage02f_result_retained: true
+  extension_resolution_trend_pass_requires_all_refined_diagnostics: true
+  lowering_any_threshold_after_observation_permitted: false

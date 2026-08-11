@@ -1,0 +1,49 @@
+{
+  "arm": "D3",
+  "baseline_live_autograd_tensor_count": 0,
+  "full_gradient_backward_count": 12,
+  "graph_rebuild_count": 36,
+  "maximum_minus_minimum": 0,
+  "model_instances": 1,
+  "monotonic_growth": false,
+  "optimizer_instances": 0,
+  "optimizer_steps": 0,
+  "pass": true,
+  "persistent_parameter_updates": 0,
+  "record_id": "LCDF_01_VARIANT_LOW_N8_O31",
+  "repeat_count": 6,
+  "samples": [
+    {
+      "finite_backward": true,
+      "live_autograd_tensor_count": 0,
+      "repeat": 0
+    },
+    {
+      "finite_backward": true,
+      "live_autograd_tensor_count": 0,
+      "repeat": 1
+    },
+    {
+      "finite_backward": true,
+      "live_autograd_tensor_count": 0,
+      "repeat": 2
+    },
+    {
+      "finite_backward": true,
+      "live_autograd_tensor_count": 0,
+      "repeat": 3
+    },
+    {
+      "finite_backward": true,
+      "live_autograd_tensor_count": 0,
+      "repeat": 4
+    },
+    {
+      "finite_backward": true,
+      "live_autograd_tensor_count": 0,
+      "repeat": 5
+    }
+  ],
+  "schema": "sph-pio-poc.stage05cq.retained-autograd-audit.v1",
+  "seed": 20500521
+}

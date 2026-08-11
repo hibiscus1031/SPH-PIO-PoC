@@ -1,0 +1,3 @@
+# Stage 02M-Q — Freeze and preflight
+
+Stage 02M-P status `STATIC_FITTING_PROTOCOL_V02_READY` is the sole authorization. Before any target decode or optimizer update, protocol `sha256:8cd068c5b23eacfbcb2c56846352fd6f3c560b46d8562806e3ed568c278ddb6e`, collection `blind_multifamily_pair_scope_v1_1_protocol_v02`, architecture `sha256:1e313f871b13f3f2fc0cc780ab24d50a7fd9fe8a96866da91fae5ede9ab555a4`, normalization `sha256:2208d2f4b9b7c848f2cd1b93624f9f6a3d9fb29e65cdd70ee453e6122c43d051`, and supervision scale `sha256:85d5339dde02c29dba5bfa753096ab25598bd29a5df576def7691dcdbfef838e` were frozen. `a_sup=0.392220124168075` m s^-2. Freeze and sealed-test denial preflight: **PASS**. BLIND_FAMILY_03/04 were excluded as consumed historical families.

@@ -1,0 +1,17 @@
+{
+  "schema": "SPH-PIO-PoC.project-wide-input-postscan-verification.v1",
+  "verified_utc": "2026-08-05T15:27:24.102692+00:00",
+  "scope_rule": "read-only historical inputs through Stage 03D-S plus publication; Stage 04 historical tree and new outputs excluded",
+  "frozen_file_count": 4889,
+  "matched_file_count": 4889,
+  "missing_file_count": 0,
+  "hash_mismatch_count": 0,
+  "unavailable_at_freeze_count": 0,
+  "git_head_expected": "ff86f5e0b99966ad6fa5896fe3d9a0c3f001cd57",
+  "git_head_actual": "ff86f5e0b99966ad6fa5896fe3d9a0c3f001cd57",
+  "aggregate_sha256_of_verified_path_hash_pairs": "b6d3e8e74ac3edcc581383f3256367c4461d339f7e24f175c97ba5be35d34c1e",
+  "missing": [],
+  "mismatches": [],
+  "unavailable_at_freeze": [],
+  "historical_integrity": "PASS"
+}

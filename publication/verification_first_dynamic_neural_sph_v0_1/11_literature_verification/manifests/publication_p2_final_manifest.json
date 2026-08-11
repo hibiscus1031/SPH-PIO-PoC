@@ -1,0 +1,226 @@
+{
+  "schema_version": "sph-pio-poc.publication-p2.final-manifest.v1",
+  "workflow": "Publication Track P2 — Literature Verification and Scientific Positioning",
+  "generated_at_utc": "2026-08-05T14:43:47.145735+00:00",
+  "search_cutoff_date": "2026-08-05",
+  "terminal_status": "PUBLICATION_LITERATURE_VERIFICATION_AND_POSITIONING_COMPLETE",
+  "counts": {
+    "raw_candidates": 454,
+    "curated_for_verification": 94,
+    "verified_candidates": 87,
+    "core_references": 40,
+    "core_a": 4,
+    "core_b": 25,
+    "core_c": 58,
+    "unverified_rejected": 7,
+    "bibliographic_conflicts": 0,
+    "evidence_notes": 29,
+    "direct_competitors": 10,
+    "novelty_items": 6,
+    "citation_map_entries": 114,
+    "external_unsupported": 0,
+    "manuscript_render_pages": 31,
+    "references_render_pages": 6
+  },
+  "gates": {
+    "p1_freeze_pass": true,
+    "p1_precondition_exact": true,
+    "historical_hashes_unchanged": true,
+    "raw_candidates_at_least_100": true,
+    "verified_candidates_at_least_60": true,
+    "core_references_between_30_and_50": true,
+    "all_retained_metadata_verified": true,
+    "no_fabricated_or_unresolved_doi": true,
+    "bibliographic_conflicts_zero": true,
+    "core_ab_evidence_notes_complete": true,
+    "direct_competitor_matrix_complete": true,
+    "direct_competitor_xlsx_present": true,
+    "novelty_matrix_bounded": true,
+    "citation_map_complete": true,
+    "no_unverified_citation_in_manuscript": true,
+    "no_reference_todo": true,
+    "introduction_and_discussion_revised": true,
+    "stage03_negative_evidence_retained": true,
+    "no_training_or_performance_fabrication": true,
+    "external_unsupported_zero": true,
+    "docx_render_audit_pass": true,
+    "docx_visual_review_complete": true,
+    "xlsx_inspection_present": true,
+    "all_required_outputs_present": true,
+    "no_new_numerical_work": true
+  },
+  "gate_failures": [],
+  "metadata_failures": [],
+  "doi_failures": [],
+  "unverified_citation_ids": [],
+  "historical_hash_mismatches": [],
+  "preserved_scope": {
+    "stage03e_authorization": false,
+    "dynamic_training": "NOT_EXECUTED",
+    "rollout_performance": "NOT_TESTED",
+    "new_numerical_work": false,
+    "p1_files_mutated": false
+  },
+  "preserved_statuses": {
+    "dynamic_training": "NOT_EXECUTED",
+    "rollout_performance": "NOT_TESTED",
+    "stage01": "V2_QUALIFICATION_FAIL",
+    "stage01h": "FINITE_RESOLUTION_DOMINANT",
+    "stage02_route": "STAGE02_ROUTE_CLOSED_PUBLICATION_BOUNDARY_COMPLETE",
+    "stage03c": "DYNAMIC_RK2_HYBRID_IMPLEMENTATION_VERIFIED",
+    "stage03d": "DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED",
+    "stage03dr": "DYNAMIC_GRADIENT_FAILURE_MIXED_OR_UNRESOLVED",
+    "stage03e_authorization": false,
+    "topology_component": "TOPOLOGY_EVENT_COMPONENT_QUALIFIED",
+    "viscosity_operator_form": "NOT_CONFIRMED"
+  },
+  "readiness": "B. VERIFICATION_METHODS_CMAME_POTENTIAL_BUT_INCOMPLETE",
+  "artifact_inventory": [
+    {
+      "path": "citation_map/citation_to_manuscript_map.json",
+      "byte_count": 85888,
+      "sha256": "sha256:f1baf253e63c300559e2a70bf384af9d443e145fac175c878c52844ce573c1dc"
+    },
+    {
+      "path": "direct_competitors/direct_competitor_matrix.json",
+      "byte_count": 9878,
+      "sha256": "sha256:453a4c756426bd9700018816d2af34ebb84daa66098a55d377ba2db8ae7b9291"
+    },
+    {
+      "path": "direct_competitors/direct_competitor_matrix.xlsx",
+      "byte_count": 12812,
+      "sha256": "sha256:82d0b5f249fe0b1619f21ed61717e25503058dcd148eb033345bd77cc0e15c8d"
+    },
+    {
+      "path": "direct_competitors/direct_competitor_matrix.xlsx.inspect.ndjson",
+      "byte_count": 138171,
+      "sha256": "sha256:33a135114b4f5c8f53be0b372598c46aae2d31f88920b2d1ea8b47ecb94ac8ce"
+    },
+    {
+      "path": "evidence_notes/core_ab_evidence_notes.json",
+      "byte_count": 44942,
+      "sha256": "sha256:b2b3d6d4f560598b742a1d9e07e4a04b685e7076b3da57a9b56e702c5468b5f9"
+    },
+    {
+      "path": "freeze/p2_input_freeze_manifest.json",
+      "byte_count": 9808,
+      "sha256": "sha256:9a96e847993deef7bc664bee07ad8fc74f78d8ee8aebb39a0392c2463f2305da"
+    },
+    {
+      "path": "manuscript_revision/final_section_audit.txt",
+      "byte_count": 425,
+      "sha256": "sha256:d6a9c376b3159e646b13d76cc8e14c5690ab95b81f3455dfbd470110414052bc"
+    },
+    {
+      "path": "manuscript_revision/final_style_lint.txt",
+      "byte_count": 864,
+      "sha256": "sha256:3e5cc156f5c7be3e2e10b8d802cb81bcb7fc68eac583608b5f791e2e00d9afb1"
+    },
+    {
+      "path": "manuscript_revision/manuscript_cn_v0_2_literature_positioned.docx",
+      "byte_count": 63221,
+      "sha256": "sha256:b50af0cc6aeb9acae57533bcb499b41d19de4ad10ee34e9f6e713e2cd1180f01"
+    },
+    {
+      "path": "manuscript_revision/manuscript_cn_v0_2_literature_positioned.md",
+      "byte_count": 43989,
+      "sha256": "sha256:c26cbcaf10a7269f93004896e99a22e3c86de41e6c82451a48431c26dce57e9f"
+    },
+    {
+      "path": "manuscript_revision/structured_abstract_cn_v0_2.md",
+      "byte_count": 877,
+      "sha256": "sha256:16bd68aed02518f8e1a25bbbdddbcea434dd9d96853dc0b74fc52ed2ec68ce23"
+    },
+    {
+      "path": "manuscript_revision/title_candidates_v0_2.md",
+      "byte_count": 1455,
+      "sha256": "sha256:4089cb321c1d64269473fe9ca330da9276ebaf57d2b74168a9d4f245c1c51ab8"
+    },
+    {
+      "path": "novelty_matrix/novelty_positioning_matrix.json",
+      "byte_count": 2555,
+      "sha256": "sha256:71c78d5f96d36fd2625670192247023eb4bb41567d833be60e8308949581f415"
+    },
+    {
+      "path": "novelty_matrix/novelty_positioning_matrix.md",
+      "byte_count": 1851,
+      "sha256": "sha256:e947d7eff3c5caee0e5a5dae4ab54c9872088fe145433e7341e1db2e396209b7"
+    },
+    {
+      "path": "raw_candidates/raw_candidate_bibliography.csv",
+      "byte_count": 194464,
+      "sha256": "sha256:1750a1838cc0c2dcec1f3ea6c07e29fd7b604e579b8ba95c31b002d8cab23749"
+    },
+    {
+      "path": "rejected_records/rejected_bibliography.csv",
+      "byte_count": 65153,
+      "sha256": "sha256:a41faa1b51c62b4f310b4a2a13f36955d41dc6ad937f07ad329896169c863e48"
+    },
+    {
+      "path": "reports/external_claim_audit.json",
+      "byte_count": 110021,
+      "sha256": "sha256:6bc93926e9c7dd132a82cf36abde33f73fcf1e4bb4d406062dddf965bd5f574c"
+    },
+    {
+      "path": "reports/publication_p2_final_report.md",
+      "byte_count": 2009,
+      "sha256": "sha256:0e1fc785750e4bbfa3ce9ab4ede2de69d873e89bc22351766d7694e8c1e4f191"
+    },
+    {
+      "path": "reports/publication_readiness_v0_2.md",
+      "byte_count": 1232,
+      "sha256": "sha256:3d3d47f0878d78bf3dddbd5d3a16f1d58d599a2a00278205cd6000beaf7dc799"
+    },
+    {
+      "path": "reviewer_positioning/reviewer_positioning_report.md",
+      "byte_count": 2716,
+      "sha256": "sha256:9593c5043ed4d19898b6b436329865ec0d6e73f46c5b60f469cf6e4915aebc15"
+    },
+    {
+      "path": "search_protocol/p2_search_protocol.md",
+      "byte_count": 1434,
+      "sha256": "sha256:6dfb3bac267168a205bbae588e63c6ea8925e7f851fabf5d15f3d18e55ad35a6"
+    },
+    {
+      "path": "search_protocol/search_query_log.csv",
+      "byte_count": 16277,
+      "sha256": "sha256:6382a7631d07b0ba3377693ca8b50a9b73e819330b0c7633f53151291ab0cf47"
+    },
+    {
+      "path": "thematic_groups/core_literature_review.md",
+      "byte_count": 2047,
+      "sha256": "sha256:c09fc2f4cc43cd7882f5d2502fa6fb225cde8d7ffb2fb826601e9e7069ac4e0f"
+    },
+    {
+      "path": "verified_records/references_final_section_audit.txt",
+      "byte_count": 425,
+      "sha256": "sha256:d6a9c376b3159e646b13d76cc8e14c5690ab95b81f3455dfbd470110414052bc"
+    },
+    {
+      "path": "verified_records/references_final_style_lint.txt",
+      "byte_count": 289,
+      "sha256": "sha256:56c4a6a729b23fc86750c2c772d9522589f4ad7a1b12dfeb432eafd9c16acdee"
+    },
+    {
+      "path": "verified_records/references_verified.bib",
+      "byte_count": 16499,
+      "sha256": "sha256:ec31cff7fd237db0067b288c796a4aec98bd2fe848b2d7e87cde8d3743a745b4"
+    },
+    {
+      "path": "verified_records/references_verified.docx",
+      "byte_count": 42905,
+      "sha256": "sha256:34e957e76a9625657b36023dfe726a38da1b21a89cdcead33c4ce129184bf98c"
+    },
+    {
+      "path": "verified_records/verified_bibliography.csv",
+      "byte_count": 60643,
+      "sha256": "sha256:2e76410b4eebb579e1f64e713cb805437fbdbe0135a89b111bf80c2c3998650f"
+    },
+    {
+      "path": "verified_records/verified_bibliography.json",
+      "byte_count": 128587,
+      "sha256": "sha256:b8b6779f49a4e1e3c462906f794ec42fe3698595fcdd69591498936a680b2c9e"
+    }
+  ],
+  "manifest_self_hash": "NOT_APPLICABLE_RECURSIVE_ARTIFACT"
+}

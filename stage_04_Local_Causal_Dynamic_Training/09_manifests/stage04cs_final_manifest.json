@@ -1,0 +1,198 @@
+{
+  "schema": "stage04cs.final-manifest.v1",
+  "stage": "Stage 04C-S — Local-Causal Training Route Closure and Project-Wide Publication Update",
+  "non_computational_closure": true,
+  "terminal_state": "STAGE04_ROUTE_PAUSED_TASK_SIGNAL_BOUNDARY_COMPLETE",
+  "complete": true,
+  "gate_results": {
+    "historical_freeze": true,
+    "status_ledger": true,
+    "evidence_matrix": true,
+    "failure_boundary": true,
+    "innovation_register": true,
+    "claim_boundary": true,
+    "research_record_render": true,
+    "project_wide_delta": true,
+    "publication_implications": true,
+    "optimizer_training_rollout_performance_zero": true
+  },
+  "historical_postscan": {
+    "checked_readable_files": 314,
+    "protected_private_files": 90,
+    "protected_payload_read_count": 0,
+    "missing": [],
+    "hash_mismatches": [],
+    "status_conflicts": [],
+    "historical_modifications": [],
+    "pass": true
+  },
+  "exact_statuses": {
+    "Stage 04A": "LOCAL_CAUSAL_TRAINING_HYPOTHESIS_CONTRACT_COMPLETE",
+    "Stage 04A Verification": "STAGE04A_TARGET_VERIFIED",
+    "Stage 04B": "LOCAL_CAUSAL_REFERENCE_FAMILY_POOL_QUALIFIED",
+    "Stage 04C": "TASK_ALIGNED_PARAMETER_GRADIENT_NOT_QUALIFIED",
+    "Stage 04C-R": "TASK_GRADIENT_FAILURE_MIXED_OR_UNRESOLVED"
+  },
+  "stage04d_authorization": false,
+  "training": "NOT_AUTHORIZED / NOT_EXECUTED",
+  "execution_counts": {
+    "optimizer_instances": 0,
+    "optimizer_steps": 0,
+    "parameter_updates": 0,
+    "training_runs": 0,
+    "validation_decode": 0,
+    "sealed_decode": 0,
+    "rollouts": 0,
+    "performance_evaluations": 0
+  },
+  "required_report_missing": [],
+  "required_manifest_missing_before_self": [],
+  "artifacts": [
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cs_freeze_and_scope.md",
+      "sha256": "sha256:8684812fbdc16a0c75ceaa653e4a20822192166ae23fa3b32b3ff6b618b9d999",
+      "size_bytes": 367
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cs_status_ledger.md",
+      "sha256": "sha256:23661c6b0cf810d8d0cb421b71147a3c16b0118031e1053fae72a9a0884d7889",
+      "size_bytes": 1650
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cs_evidence_matrix.md",
+      "sha256": "sha256:15da4caefe528aa5b3e10e29b29770a8bc878425a1ae25ad55c79183542ae40e",
+      "size_bytes": 2033
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cs_task_signal_failure_boundary.md",
+      "sha256": "sha256:a63244b046226eba652d5e153cd4ce1e97abdad61cc5ceb519ceb60a9c4f0271",
+      "size_bytes": 553
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cs_innovation_register.md",
+      "sha256": "sha256:e3ba638fd70ab03704284cce09f8476ac0eed81a302de89448d4cfdba10c9b41",
+      "size_bytes": 1351
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cs_claim_boundary.md",
+      "sha256": "sha256:484b796e4ac0071d1157a84dd43e0b8f36f973b82d882013aac32f9ee7f0fa36",
+      "size_bytes": 738
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cs_publication_implications.md",
+      "sha256": "sha256:02ca7ac421741b31f8f2a7165c45fb8f8b563f83e0c10041eb0bf264739f4882",
+      "size_bytes": 738
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cs_project_wide_delta.md",
+      "sha256": "sha256:6ac4b31e72e84938de7158fe7b9541b38a0c4264a446e71089e406a4a9fc28cf",
+      "size_bytes": 313
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cs_final_report.md",
+      "sha256": "sha256:c29df80ff89bd8333c3bf075d968f746ae7f52c90d1f72cb5f6191371057af08",
+      "size_bytes": 3532
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04cs_input_freeze_manifest.json",
+      "sha256": "sha256:07324df6fc8a4d60b4e28e650eefd0fa02d6418994842891fb9f7c5eb21ef3e8",
+      "size_bytes": 96348
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04cs_status_ledger.json",
+      "sha256": "sha256:3abac842141bf4c98670220050127429eb40da09a94b771dcefefc76a4c98dc2",
+      "size_bytes": 6173
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04cs_evidence_matrix.json",
+      "sha256": "sha256:736d8668bbe00e57e163f4a1d87ddb3966182cc8e6da2a63115e75c6b1c06ac3",
+      "size_bytes": 3538
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04cs_project_wide_delta_manifest.json",
+      "sha256": "sha256:f46c17ee56f8df4d7f0756b1f50e46156dfa91b7f14e50d3bd3a99da75c337e2",
+      "size_bytes": 2026
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/documents/Stage_04_Research_Record.docx",
+      "sha256": "sha256:9b9582e4811dbc6fe16c6257dd5023cb50e204b3d17f7ab9ecbaa1a9fae39806",
+      "size_bytes": 81026
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/10_route_closure/status_ledger/stage04_status_ledger.json",
+      "sha256": "sha256:3abac842141bf4c98670220050127429eb40da09a94b771dcefefc76a4c98dc2",
+      "size_bytes": 6173
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/10_route_closure/evidence_matrix/stage04_evidence_matrix.json",
+      "sha256": "sha256:736d8668bbe00e57e163f4a1d87ddb3966182cc8e6da2a63115e75c6b1c06ac3",
+      "size_bytes": 3538
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/10_route_closure/failure_boundary/stage04_task_signal_failure_boundary.json",
+      "sha256": "sha256:c42df503fac5097db7740950dfeb32c4b308f62b043aae4e889b8773e8ed9e3a",
+      "size_bytes": 1309
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/10_route_closure/innovation_register/stage04_innovation_register.json",
+      "sha256": "sha256:b88d45633d6f53091bc19cd25075d3446e076c3b4f4016a9fcb17e353dda4c52",
+      "size_bytes": 2234
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/10_route_closure/claim_boundary/stage04_claim_boundary.json",
+      "sha256": "sha256:b21a03f25a32947ceeeb3c0b7c5185874445596d1bbdb298f60f8ffdbaaf654f",
+      "size_bytes": 820
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/10_route_closure/publication_delta/publication_option_update.json",
+      "sha256": "sha256:64d8994f14c3b0bf36ec04fc0aa5189b1f1ceca6a80e80fd30638a52392bee6b",
+      "size_bytes": 2007
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/10_route_closure/stage04_research_record/stage04cs_docx_render_audit.json",
+      "sha256": "sha256:b6934af3736db6f159c7465ba5f3efea866cb91ad4fbc8a33cd7a171ad5a263b",
+      "size_bytes": 2785
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/10_route_closure/stage04_research_record/stage04cs_docx_a11y_audit.json",
+      "sha256": "sha256:fbd65181909ec7c483e2b822f08e3da032b5b3a16a78264fefb94818d0bc4dd3",
+      "size_bytes": 177
+    },
+    {
+      "path": "project_wide_synthesis/11_stage04_update_interface/stage04_completed_delta/stage04_status_delta.json",
+      "sha256": "sha256:5350b90d47f3675e32f3a8cfb86c648797a61d98c0210af17c7ef17fa9b75cf2",
+      "size_bytes": 6574
+    },
+    {
+      "path": "project_wide_synthesis/11_stage04_update_interface/stage04_completed_delta/stage04_failure_delta.json",
+      "sha256": "sha256:4359120b24a13634638af3f30c5209771be96a521d1f48aeab84879c43deae48",
+      "size_bytes": 1575
+    },
+    {
+      "path": "project_wide_synthesis/11_stage04_update_interface/stage04_completed_delta/stage04_innovation_delta.json",
+      "sha256": "sha256:1fa05678d8b2dca769e5881f7724563e6bdfc5ce70e02cdd74ec3120e8bc157e",
+      "size_bytes": 2440
+    },
+    {
+      "path": "project_wide_synthesis/11_stage04_update_interface/stage04_completed_delta/stage04_evidence_delta.json",
+      "sha256": "sha256:f4b26771029a7d61c02293da839c70c5014bde5c882a3a90b6261f4ba8729154",
+      "size_bytes": 3828
+    },
+    {
+      "path": "project_wide_synthesis/11_stage04_update_interface/stage04_completed_delta/stage04_claim_delta.json",
+      "sha256": "sha256:0b9cb43f42aeb0d86dfe0282942c4c6f1dde755244d06a8b7a173f5dbb22ecbb",
+      "size_bytes": 937
+    },
+    {
+      "path": "project_wide_synthesis/11_stage04_update_interface/stage04_completed_delta/stage04_publication_delta.md",
+      "sha256": "sha256:b8f782cea8f0079aec25fd361f92b938e44871417fd2a0480cb1f04d521586d7",
+      "size_bytes": 842
+    },
+    {
+      "path": "project_wide_synthesis/11_stage04_update_interface/stage04_completed_delta/stage04_delta_manifest.json",
+      "sha256": "sha256:a40ab8414c2d57c4fd221c79785434a11143e44caff839ed50111e412b75492c",
+      "size_bytes": 1521
+    }
+  ],
+  "self_path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04cs_final_manifest.json"
+}

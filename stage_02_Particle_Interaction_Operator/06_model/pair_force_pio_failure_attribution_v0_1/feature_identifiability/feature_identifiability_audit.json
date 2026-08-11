@@ -1,0 +1,53 @@
+{
+  "edge_collision_interpretation": "No pseudo-inverse pair coefficient was treated as a unique target; edge collisions alone are not hard contradictions.",
+  "exact_edge_collision_group_count": 7680,
+  "exact_edge_collision_instance_count": 19968,
+  "exact_edge_feature_vector_count": 37824,
+  "exact_full_allowed_graph_input_collision_group_count": 0,
+  "family_dependence": {
+    "BLIND_FAMILY_01": {
+      "nearest_other_family_distance_max": 6.329109112602661,
+      "nearest_other_family_distance_mean": 2.2609017981829287,
+      "nearest_other_family_distance_min": 0.6316697816001745,
+      "node_count": 1312
+    },
+    "BLIND_FAMILY_02": {
+      "nearest_other_family_distance_max": 5.7753316686966105,
+      "nearest_other_family_distance_mean": 2.0466250261059535,
+      "nearest_other_family_distance_min": 0.6316697816001745,
+      "node_count": 1312
+    },
+    "BLIND_FAMILY_03": {
+      "nearest_other_family_distance_max": 5.191148121948844,
+      "nearest_other_family_distance_mean": 2.228517022137194,
+      "nearest_other_family_distance_min": 0.6510865754482054,
+      "node_count": 1312
+    }
+  },
+  "hard_incompatible_target_cases": [],
+  "near_collision_audit": [
+    {
+      "no_posthoc_threshold": true,
+      "pair_count": 0,
+      "radius": 1e-06,
+      "target_response_spread_max": null,
+      "target_response_spread_mean": null
+    },
+    {
+      "no_posthoc_threshold": true,
+      "pair_count": 0,
+      "radius": 0.0001,
+      "target_response_spread_max": null,
+      "target_response_spread_mean": null
+    },
+    {
+      "no_posthoc_threshold": true,
+      "pair_count": 0,
+      "radius": 0.01,
+      "target_response_spread_max": null,
+      "target_response_spread_mean": null
+    }
+  ],
+  "status": "NO_HARD_IDENTIFIABILITY_CONTRADICTION_FOUND",
+  "test_target_used": false
+}

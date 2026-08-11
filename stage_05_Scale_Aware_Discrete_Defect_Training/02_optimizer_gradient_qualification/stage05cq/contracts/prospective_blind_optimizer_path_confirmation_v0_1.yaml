@@ -1,0 +1,147 @@
+contract_id: prospective_blind_optimizer_path_confirmation_v0_1
+schema: sph-pio-poc.stage05cq.contract.v1
+branch:
+  user_authorized_prospective: true
+  not_stage05cp: true
+  not_stage05cr_continuation: true
+  preserves_stage05c_verdict: true
+  preserves_four_unresolved_probes: true
+backend:
+  device: CPU
+  dtype: float64
+  sdpa: SDPBackend.MATH
+  flash: false
+  memory_efficient: false
+  automatic: false
+models:
+  seeds:
+  - 20500521
+  - 20500522
+  - 20500523
+  manifest: stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05cq/blind_model_seeds/preregistered_blind_model_identities.json
+  manifest_sha256: sha256:36619f824c15075532b37b7f83b57674903fb120e8bcb28b2fe2b3407dbb2135
+  checkpoint_reads: false
+origins:
+  manifest: stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05cq/blind_origin_selection/preregistered_blind_origins.json
+  manifest_sha256: sha256:7464ae11d7b6dc843eba9d85abe696b4b980770969c4db12e0eb807bb663a885
+  selection_salt: stage05cq_blind_origin_v1
+  exclude_stage05c: true
+  overlap_required: 0
+  lineage_batch: 2 variants x 4 origins
+  global_batch: 48
+parameter_groups:
+  manifest: stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05cq/parameter_groups/preregistered_parameter_groups.json
+  manifest_sha256: sha256:95926f5081f583ad7a438f072ab5170d0969a5ba7679d17444aa7fdb1f7c2abf
+  unique_complete: true
+loss:
+  s_a: 0.3456328553384328
+  s_a_hash: sha256:78beec16affbae72345d220b7f7c1455f85c212ad006c4d29516946d5c76f296
+  identity: balanced mean ||((v_theta_next-v0_next)/dt-a_cons_star)/s_a||^2
+full_gradient:
+  repeats: 2
+  activity_ratio_min: 100
+  noise: max(RMS(g1-g2),128*eps*max(1,RMS(g1)))
+  all_rows_active: true
+optimizer_path:
+  direction: g_group/max(||g_group||_2,1e-30)
+  theta_ref: max(||theta_group||_2,sqrt(dim_group)*1e-3)
+  radii:
+  - 3.0e-07
+  - 1.0e-06
+  - 3.0e-06
+  - 1.0e-05
+  - 3.0e-05
+  - 0.0001
+  - 0.0003
+  - 0.001
+  reverse_jvp_abs_max: 1.0e-10
+  reverse_jvp_rel_max: 1.0e-07
+  required_fraction: 1.0
+finite_difference:
+  three_point: (L(+h)-L(-h))/(2h)
+  five_point: (-L(+2h)+8L(+h)-8L(-h)+L(-2h))/(12h)
+  richardson: adjacent five-point extrapolation (r^4*D_small-D_large)/(r^4-1)
+  path_repeats: 2
+  fd_ad_abs_max: 1.0e-08
+  fd_ad_rel_max: 0.0001
+  adjacent_relative_change_max: 0.001
+  richardson_relative_difference_max: 0.001
+  stable_window: at least one adjacent radius pair (two adjacent radii) satisfying
+    all gates
+  fresh_state_history: true
+  complete_RK2: true
+  parameter_restore: true
+blind_probes:
+  manifest: stage_05_Scale_Aware_Discrete_Defect_Training/02_optimizer_gradient_qualification/stage05cq/coordinate_block_sampling/preregistered_blind_probe_plan.json
+  manifest_sha256: sha256:0710ee04170406002391a7ad9b30192d374689054e4f2ae61bb66294121343a5
+  coordinate_salt: stage05cq_coordinate_v1
+  block_salt: stage05cq_block_v1
+  per_context: 4 coordinates + 4 blocks
+  historical_overlap: 0
+  context_gate: '>=7/8 PASS or NEAR_ZERO_CONSISTENT and >=1 stable nonzero'
+  group_lineage: '>=2/3 seeds'
+  group: 6/6 lineages
+  arm: all groups
+  arm_raw_rate_min: 0.99
+  group_raw_rate_min: 0.98
+  group_lineage_across_seeds_min: 23/24
+  repeat_failure_max_seeds_same_slice_or_class: 1
+local_descent:
+  radii:
+  - 1.0e-06
+  - 3.0e-06
+  - 1.0e-05
+  - 3.0e-05
+  - 0.0001
+  - 0.0003
+  direction: -g_all/max(||g_all||,1e-30)
+  ratio_range:
+  - 0.2
+  - 1.8
+  lineage: 2/3 seeds for 6/6
+  global: 3/3 seeds
+  optimizer: false
+  writeback: false
+structure_safety:
+  contexts: arm x seed x lineage
+  force_residual_max: 1.0e-10
+  transforms:
+  - permutation
+  - edge_reorder
+  - translation
+  - Galilean
+  - SO2
+  - reflection
+  - periodic_shift
+  positive_density: true
+  finite_hidden_coefficients: true
+  deterministic_graph: true
+  midpoint_commit: 0
+resolution_diagnostics:
+  N12: 6 MAIN x D1/D2/D3 x seed20500521 x one blind origin
+  N16: D3 x 6 MAIN x seed20500521 x one blind origin
+  diagnostic_only: true
+access:
+  TRAIN_only: true
+  start_end_denial: true
+  validation_and_sealed_decode_counts: 0
+resources:
+  peak_rss_delta_max_bytes: 1610612736
+  no_monotonic_retained_autograd: true
+  no_persistent_mutation: true
+  no_dense_particle_N_by_N: true
+  finite_completion: true
+  all_hashes: true
+prohibitions:
+  optimizer_instances: 0
+  optimizer_steps: 0
+  persistent_parameter_updates: 0
+  training_runs: 0
+  neural_rollouts: 0
+  performance_evaluations: 0
+  checkpoint_selection: 0
+  model_ranking: 0
+terminal_statuses:
+  qualified: PROSPECTIVE_OPTIMIZER_PATH_GRADIENT_CONFIRMATION_QUALIFIED
+  not_qualified: PROSPECTIVE_OPTIMIZER_PATH_GRADIENT_CONFIRMATION_NOT_QUALIFIED
+  incomplete: PROSPECTIVE_OPTIMIZER_PATH_GRADIENT_CONFIRMATION_EVIDENCE_INCOMPLETE

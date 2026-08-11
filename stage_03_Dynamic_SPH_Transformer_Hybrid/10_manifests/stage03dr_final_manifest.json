@@ -1,0 +1,91 @@
+{
+  "attribution_manifest": {
+    "byte_count": 3741,
+    "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03dr_attribution_manifest.json",
+    "sha256": "sha256:2849c2ae94207be83d3a8e7f13b03e9d5903f08f8cc3438c54b221e1e56c90b5"
+  },
+  "authorization": "Stage 03D:DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED",
+  "completion_date": "2026-08-05",
+  "contract": {
+    "byte_count": 5850,
+    "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/freeze/stage03dr_attribution_contract_v0_1.yaml",
+    "sha256": "sha256:63ef93fe7af7c10ffb6a6e1d944003b5e3e85818f98bac6f6b1b9333a479c2d9"
+  },
+  "final_status": "DYNAMIC_GRADIENT_FAILURE_MIXED_OR_UNRESOLVED",
+  "historical_stage03d_status": "DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED",
+  "input_freeze": {
+    "byte_count": 13074,
+    "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03dr_input_freeze_manifest.json",
+    "sha256": "sha256:ae9ed6ce3405b09d67203706359923df7e54a70c070fec66484344c758e58519"
+  },
+  "new_optimizer_steps": 0,
+  "new_training_runs": 0,
+  "next_authorized_branch": "NONE \u2014 no immediate contract modification or training",
+  "qualification_summary": {
+    "byte_count": 6782,
+    "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03dr/results/stage03dr_summary.json",
+    "sha256": "sha256:7cbb89e4ea568ad3407c7dc9d56ae7c6b395c28d7c16c6e7c500b5cfa9b6c2e2"
+  },
+  "reports": [
+    {
+      "byte_count": 539,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03dr_freeze_and_scope.md",
+      "sha256": "sha256:6a16262a19a62222b1621a1c32eedb9b6d0b064a0de9f1169dfce6002418b641"
+    },
+    {
+      "byte_count": 2140,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03dr_failure_matrix.md",
+      "sha256": "sha256:408fbbe8899fb3b6fa7a8d74d632af101302683b36100d9a05b371ead96cddc8"
+    },
+    {
+      "byte_count": 1133,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03dr_derivative_scale.md",
+      "sha256": "sha256:24e63c3f922b3c0095f954343c2325ba1581fd2538ba08b849fcc56757302c6f"
+    },
+    {
+      "byte_count": 736,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03dr_ad_crosscheck.md",
+      "sha256": "sha256:b04cbbd07704f8231bf8c4c8d326c108c7733f9be8f15a9f30da57d6fb7a5c5a"
+    },
+    {
+      "byte_count": 467,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03dr_fd_conditioning.md",
+      "sha256": "sha256:83344f93970167975cf94e8064636eb0ce8dd5d24f9e7fc5ad82b33c8ce1842f"
+    },
+    {
+      "byte_count": 515,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03dr_objective_decomposition.md",
+      "sha256": "sha256:1f99d5ff58d5c9f77054cddc86e7ebf7369243eceb11f0cc897f6e7222b57c9a"
+    },
+    {
+      "byte_count": 862,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03dr_history_path.md",
+      "sha256": "sha256:5dc385a53f2afe6099716652957abe842c760016cd9c8168b10a7c6bfde7b6e9"
+    },
+    {
+      "byte_count": 381,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03dr_horizon_scaling.md",
+      "sha256": "sha256:28081b477f84752c127653a7a34eaccc798a3076e79d4fdc7968ff9b08e875fe"
+    },
+    {
+      "byte_count": 736,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03dr_failure_attribution.md",
+      "sha256": "sha256:6d7b968c60e1e8f3c056ad8d80a4a6bd563ee9c8a0e1d4b3144b2470aa729ab9"
+    },
+    {
+      "byte_count": 761,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03dr_route_decision.md",
+      "sha256": "sha256:b3ca54113bec097c87549da0f70df9df80ad6907a3b88cc7a8a882576226a2ed"
+    },
+    {
+      "byte_count": 2223,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/09_reports/stage03dr_final_report.md",
+      "sha256": "sha256:5761d89306dcfe7f8b1591e24959f961912e6cbb822b4aa7aeef740e2c7a2def"
+    }
+  ],
+  "rollout_performance_evaluation": false,
+  "schema_version": "sph-pio-poc.stage03dr.final.v1",
+  "stage": "Stage 03D-R \u2014 Multistep Gradient Failure Attribution and Dynamic-Route Decision",
+  "stage03e_authorization": false,
+  "topology_component_status": "TOPOLOGY_EVENT_COMPONENT_QUALIFIED"
+}

@@ -1,0 +1,110 @@
+{
+  "contract_version": "stage02mr-diagnostic-1.0.0",
+  "stage": "02M-R",
+  "frozen_before_new_array_decode_or_autodiff": true,
+  "scope": "audit_only_no_parameter_updates",
+  "historical_state": {
+    "stage02m_verdict": "STATIC_PAIR_FORCE_FITTING_NOT_QUALIFIED",
+    "stage02n_authorized": false,
+    "historical_optimizer_steps": 3280,
+    "current_test_status": "consumed_confirmatory_test",
+    "test_release_historical": "completed_once",
+    "BLIND_FAMILY_04_current_role": "consumed_historical_test_only"
+  },
+  "prohibited_operations": [
+    "optimizer.step",
+    "scheduler.step",
+    "parameter_update",
+    "new_training_run",
+    "new_seed",
+    "new_initialization",
+    "new_checkpoint_selection",
+    "new_test_target_decode",
+    "new_test_metric_evaluation",
+    "architecture_change",
+    "loss_change",
+    "target_scale_change",
+    "feature_change",
+    "rollout",
+    "solver_in_the_loop"
+  ],
+  "counters": {
+    "new_optimizer_steps": 0,
+    "new_training_runs": 0,
+    "new_test_evaluations": 0,
+    "new_checkpoints": 0,
+    "rollouts": 0
+  },
+  "metric_reconstruction": {
+    "checkpoint_source": "all 164 historical interval checkpoints",
+    "splits": ["future_train", "future_validation"],
+    "test_excluded": true,
+    "train_gate_family_balanced_Q_L2": 0.25,
+    "zero_correction_reference_Q_L2": 1.0
+  },
+  "target_scale": {
+    "a0_m_per_s2": 400.0,
+    "unchanged": true
+  },
+  "optimization_conditioning": {
+    "adam_beta1": 0.9,
+    "adam_beta2": 0.999,
+    "adam_epsilon": 1e-8,
+    "weight_decay": 1e-6,
+    "clip_global_norm": 1.0,
+    "epsilon_dominated_definition": "sqrt(v) <= 10 * adam_epsilon",
+    "weight_decay_dominated_definition": "abs(weight_decay * parameter) >= abs(data_gradient)",
+    "near_zero_gradient_definition": "abs(data_gradient) <= 1e-14",
+    "loss_multipliers": [1.0, 1000.0, 1000000.0],
+    "loss_multiplier_split": "future_train_only",
+    "no_step": true
+  },
+  "feature_identifiability": {
+    "allowed_feature_source": "Stage 02K frozen feature contract",
+    "exact_dtype": "CPU float64 canonical C-order bytes",
+    "near_collision_L2_radii": [1e-6, 1e-4, 1e-2],
+    "near_collision_representation": "per-node rooted summary: node_features plus incident symmetric_pair_features componentwise mean/std/max",
+    "normalization": "train-only component mean and population standard deviation; constant components use scale 1",
+    "hard_contradiction_rule": "only exact full rooted/local input equivalence with incompatible mapped nodal target, or proof that no common symmetric mapping exists",
+    "test_target_excluded": true
+  },
+  "tangent_space": {
+    "split": "future_train_only",
+    "points": "K0/K1/K2 x 3 historical seeds x initialization/selected",
+    "weighting": "each complete graph contributes equally; node-vector MSE within graph; a0=400",
+    "solver": "scipy.sparse.linalg.lsqr matrix-free JVP/VJP",
+    "atol": 1e-8,
+    "btol": 1e-8,
+    "conlim": 100000000.0,
+    "iteration_limit": 30,
+    "rank_probe_count": 8,
+    "rank_probe_seed": 20261311,
+    "effective_rank_relative_threshold": 1e-8,
+    "no_parameter_writeback": true,
+    "no_checkpoint": true
+  },
+  "final_head_tangent": {
+    "solver": "dense least_squares_over_head_only_columns",
+    "rcond": 1e-12,
+    "weighting": "same as whole-network tangent audit",
+    "no_parameter_writeback": true
+  },
+  "family_shift": {
+    "input_only_for_consumed_test": true,
+    "graph_summary": "allowed node and symmetric edge features componentwise mean/std/min/max",
+    "normalization": "train graph-summary mean and population standard deviation; constant components use scale 1",
+    "nearest_neighbor_metric": "Euclidean",
+    "convex_hull_solver": "SLSQP nonnegative weights summing to one",
+    "convex_hull_ftol": 1e-12,
+    "convex_hull_maxiter": 2000,
+    "no_new_threshold": true
+  },
+  "attribution_rules": {
+    "A": "STATIC_FITTING_FAILURE_ATTRIBUTED_OPTIMIZATION_CONDITIONING exactly under the five conditions frozen in the Stage 02M-R request",
+    "B": "STATIC_FITTING_FAILURE_ATTRIBUTED_FEATURE_IDENTIFIABILITY exactly under the conditions frozen in the Stage 02M-R request",
+    "C": "STATIC_FITTING_FAILURE_ATTRIBUTED_FUNCTION_CLASS_LIMIT exactly under the conditions frozen in the Stage 02M-R request",
+    "D": "STATIC_FITTING_FAILURE_ATTRIBUTED_SELECTION_OR_TRANSFER exactly under the conditions frozen in the Stage 02M-R request",
+    "E": "STATIC_FITTING_FAILURE_MIXED_OR_UNRESOLVED for simultaneous, contradictory, or non-orderable mechanisms",
+    "F": "STATIC_FITTING_FAILURE_EVIDENCE_INCOMPLETE for unresolved provenance, mapping, hash, feature, or Jacobian evidence"
+  }
+}

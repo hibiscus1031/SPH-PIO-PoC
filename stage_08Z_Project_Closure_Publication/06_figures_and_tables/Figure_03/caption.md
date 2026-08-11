@@ -1,0 +1,1 @@
+**Figure 3. Reference and verification hierarchy.** Continuum formulas, exact trajectories, same-semidiscrete time audits and finite-resolution SPH occupy different evidence roles. All plotted values and statuses must be read from the frozen source list; schematic arrows denote methodological dependency, not performance improvement.

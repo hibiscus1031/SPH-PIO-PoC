@@ -1,0 +1,55 @@
+{
+  "contract": {
+    "byte_count": 8973,
+    "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/contracts/local_causal_reference_family_contract_v0_1.yaml",
+    "sha256": "sha256:c0d377f7b4b626186fcae076a076b336d774d3bf17c96153b13c4a5f85d0336f"
+  },
+  "freeze_before_materialization": true,
+  "historical_integrity": {
+    "anchor": {
+      "byte_count": 628360,
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03ds_input_freeze_manifest.json",
+      "sha256": "sha256:e49251a10d9d4478d7b271fbdc3f8dbf511b0d9747de6637bac628990e0a4904"
+    },
+    "checked": 1976,
+    "hash_mismatch": [],
+    "missing": [],
+    "pass": true,
+    "status_conflict": [],
+    "status_sources_checked": 8
+  },
+  "role_preregistration": {
+    "byte_count": 2297,
+    "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/role_assignment/preregistered_role_assignment.json",
+    "sha256": "sha256:024f797d3fe14d73a217a372f914a3ae4b07693d769372ac87892da1a326c301"
+  },
+  "schema_version": "sph-pio-poc.stage04b.input-freeze.v1",
+  "stage04a_verdict": "STAGE04A_TARGET_VERIFIED",
+  "stage04a_verification_manifest": {
+    "byte_count": 3318,
+    "path": "stage_04_Local_Causal_Dynamic_Training/00_stage04a_verification/manifests/stage04a_target_verification_manifest.json",
+    "sha256": "sha256:0cffa51ceda4cc8b098a2a3bd329a1a636d24d239c1f38635b1b92cb4e8fad33"
+  },
+  "stage04a_verified_core": [
+    {
+      "byte_count": 4645,
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04a_final_report.md",
+      "sha256": "sha256:6e027e64439240a9a9670575eceae50a96fd3b5f27580971b32cdcf9f591d442"
+    },
+    {
+      "byte_count": 2750,
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04a_input_freeze_manifest.json",
+      "sha256": "sha256:6efe1e9bfdbde880c846b2a207fdff26f32a54eb3972470152a23ed10a42998a"
+    },
+    {
+      "byte_count": 7682,
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04a_contract_manifest.json",
+      "sha256": "sha256:e391fca3fa564f8c569dcb5d5de55a09da574b1824e8dfe8afcdd12dfd87d1bf"
+    },
+    {
+      "byte_count": 3803,
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04a_final_manifest.json",
+      "sha256": "sha256:fb7d11e94af8bf3c3a1bb09036f3599d5e61dbc42e7f8fe9d6529178b5976b0b"
+    }
+  ]
+}

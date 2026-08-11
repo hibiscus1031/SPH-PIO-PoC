@@ -1,0 +1,56 @@
+{
+  "all_origins_included": true,
+  "distributions": {
+    "a_cons_flat_percentiles": {
+      "25": -0.0824840764885004,
+      "5": -0.4928438997227858,
+      "50": -7.923107431030692e-38,
+      "75": 0.08248407648850045,
+      "95": 0.4928438997227857,
+      "maximum_absolute": 2.4601141255117476
+    },
+    "origin_r_def_percentiles": {
+      "25": 0.08703276302930253,
+      "5": 0.0009781924819788918,
+      "50": 0.1940679953216847,
+      "75": 0.48054042128664726,
+      "95": 1.1525950895804633
+    },
+    "per_component_rms": {
+      "x": 0.3981439432034338,
+      "y": 0.2835587097396531
+    }
+  },
+  "formal_origin_count": 384,
+  "lineage_scale": {
+    "LCDF_01": 0.11191879324701737,
+    "LCDF_04": 0.24803776694432786,
+    "LCDF_05": 0.401798315509298,
+    "LCDF_06": 0.0007812145620822392,
+    "LCDF_07": 0.07963905210174901,
+    "LCDF_08": 0.6891581812340503
+  },
+  "model_dependent": false,
+  "pass": true,
+  "s_a": 0.3456328553384328,
+  "s_a_hash": "sha256:78beec16affbae72345d220b7f7c1455f85c212ad006c4d29516946d5c76f296",
+  "s_a_over_u_a": 475034179.2325337,
+  "schema": "sph-pio-poc.stage05b.scale-manifest.v1",
+  "u_a": 7.275957614183426e-10,
+  "variant_scale": {
+    "LCDF_01/VARIANT_LOW": 0.09496557476197091,
+    "LCDF_01/VARIANT_MAIN": 0.12662216304370164,
+    "LCDF_04/VARIANT_LOW": 0.2104663843143093,
+    "LCDF_04/VARIANT_MAIN": 0.2806231792548842,
+    "LCDF_05/VARIANT_LOW": 0.3409328430644777,
+    "LCDF_05/VARIANT_MAIN": 0.4545861515842635,
+    "LCDF_06/VARIANT_LOW": 0.0006628824561712796,
+    "LCDF_06/VARIANT_MAIN": 0.0008838434438966106,
+    "LCDF_07/VARIANT_LOW": 0.06757576357605301,
+    "LCDF_07/VARIANT_MAIN": 0.09010146178860574,
+    "LCDF_08/VARIANT_LOW": 0.5847671437639259,
+    "LCDF_08/VARIANT_MAIN": 0.7796957003202135
+  },
+  "zero_baseline_absolute_error": 3.3306690738754696e-16,
+  "zero_baseline_loss": 0.9999999999999997
+}

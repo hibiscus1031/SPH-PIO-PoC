@@ -1,0 +1,1 @@
+**Figure 1. Qualification-first project workflow.** Qualification layers are sequential evidence gates rather than a single predictive benchmark. All plotted values and statuses must be read from the frozen source list; schematic arrows denote methodological dependency, not performance improvement.

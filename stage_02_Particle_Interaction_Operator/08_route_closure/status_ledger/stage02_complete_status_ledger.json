@@ -1,0 +1,478 @@
+{
+  "chronology_rule": "later states extend or branch from earlier states and never overwrite historical failures",
+  "ledger_version": "stage02-complete-status-ledger-1.0.0",
+  "rows": [
+    {
+      "downstream_authorization": "Stage 02B 协议设计",
+      "execution_count": 0,
+      "execution_unit": "protocol_only",
+      "historical_hash": "sha256:893c2d5741e174cf2514112e8d872eaaa6b59957ba2696445a4b24e5ac2d80c5",
+      "input_freeze": "Stage 01 最终边界与理论合同",
+      "optimizer_steps": 0,
+      "order": 1,
+      "principal_blocker": "尚无可训练 target/dataset。",
+      "principal_evidence": {
+        "artifact": "07_reports/stage02a_pio_theory_report.md",
+        "summary": "理论合同完整；未生成数据或模型。"
+      },
+      "purpose": "冻结 PIO 增量形式、reference hierarchy、守恒/对称与标签资格合同。",
+      "scientific_interpretation_boundary": "数学合同不等于模型有效性或性能。",
+      "stage": "Stage 02A",
+      "superseded": false,
+      "training_runs": 0,
+      "unique_status": "PIO_THEORY_QUALIFICATION_COMPLETE",
+      "version_relationship": "initial_contract"
+    },
+    {
+      "downstream_authorization": "Stage 02C audit-scale generation",
+      "execution_count": 0,
+      "execution_unit": "protocol_only",
+      "historical_hash": "sha256:08c5d063534cc01bf79b18c68da4f285da687b448e4db460c4b6c4e5b06302e8",
+      "input_freeze": "Stage 02A 合同",
+      "optimizer_steps": 0,
+      "order": 2,
+      "principal_blocker": "未生成数据，完成协议不授权生成或训练。",
+      "principal_evidence": {
+        "artifact": "07_reports/stage02b_final_report.md",
+        "summary": "数据资格协议与 schema 完成。"
+      },
+      "purpose": "定义 reference-to-target、schema、leakage/split 和 uncertainty 协议。",
+      "scientific_interpretation_boundary": "协议 PASS 不是数据资格 PASS。",
+      "stage": "Stage 02B",
+      "superseded": false,
+      "training_runs": 0,
+      "unique_status": "DATASET_QUALIFICATION_COMPLETE",
+      "version_relationship": "extends_02A_without_superseding"
+    },
+    {
+      "downstream_authorization": "Stage 02D target attribution audit",
+      "execution_count": 1,
+      "execution_unit": "audit_generation_campaign",
+      "historical_hash": "sha256:1e330a51b545fbaaebb4188d20e08c396f7b18e3637979ec85eb849778f1fd5f",
+      "input_freeze": "Stage 02B generation contract",
+      "optimizer_steps": 0,
+      "order": 3,
+      "principal_blocker": "eligible_for_future_training=0。",
+      "principal_evidence": {
+        "artifact": "07_reports/stage02c_final_report.md",
+        "summary": "3 reference records、6 samples；4 diagnostic、2 topology rejected。"
+      },
+      "purpose": "执行小规模 R2 数据生成与 provenance 审计。",
+      "scientific_interpretation_boundary": "R2 记录默认仅为诊断，不是训练标签。",
+      "stage": "Stage 02C",
+      "superseded": false,
+      "training_runs": 0,
+      "unique_status": "DATASET_GENERATION_AUDIT_COMPLETE",
+      "version_relationship": "extends_02B_without_superseding"
+    },
+    {
+      "downstream_authorization": "Stage 02E controlled excitation only",
+      "execution_count": 1,
+      "execution_unit": "six_sample_attribution_campaign",
+      "historical_hash": "sha256:d52f03a026ee936d91c3e3dd9d3825981e45cc0a0cf792154ded680f48a31ac8",
+      "input_freeze": "Stage 02C six-sample corpus",
+      "optimizer_steps": 0,
+      "order": 4,
+      "principal_blocker": "0 attribution PASS；resolution/disorder 混杂。",
+      "principal_evidence": {
+        "artifact": "07_reports/stage02d_final_report.md",
+        "summary": "6/6 完成分解；4 diagnostic、2 rejected。"
+      },
+      "purpose": "分解 space/time/reference/forcing/model-form/cross 误差并冻结升级门。",
+      "scientific_interpretation_boundary": "完成归因程序不等于目标已归因。",
+      "stage": "Stage 02D",
+      "superseded": false,
+      "training_runs": 0,
+      "unique_status": "TARGET_ATTRIBUTION_QUALIFICATION_COMPLETE",
+      "version_relationship": "extends_02C_without_superseding"
+    },
+    {
+      "downstream_authorization": "Stage 02F semidiscrete spatial route only",
+      "execution_count": 1,
+      "execution_unit": "eight_case_target_campaign",
+      "historical_hash": "sha256:18d8e327da81633801a9c668c460c8e0547f4b754ad0b8f552a943cbcc02317a",
+      "input_freeze": "Stage 02D failure-preserving design",
+      "optimizer_steps": 0,
+      "order": 5,
+      "principal_blocker": "空间 assembly 为零/roundoff，时间/reference derivative 主导；0 qualified。",
+      "principal_evidence": {
+        "artifact": "07_reports/stage02e_final_report.md",
+        "summary": "8/8 非零且 reference audit 完整。"
+      },
+      "purpose": "构造八个非零候选并审查 temporal/reference contamination。",
+      "scientific_interpretation_boundary": "非零 target 不自动是空间离散 target。",
+      "stage": "Stage 02E",
+      "superseded": false,
+      "training_runs": 0,
+      "unique_status": "TARGET_CONSTRUCTION_COMPLETE",
+      "version_relationship": "new_target_hypothesis_without_overwriting_02D"
+    },
+    {
+      "downstream_authorization": "Stage 02G attribution closure",
+      "execution_count": 1,
+      "execution_unit": "five_candidate_spatial_campaign",
+      "historical_hash": "sha256:8fe0235718ae56c5c5a32905bc6e3e77de04a377320c9bc83b9e20825a174b0b",
+      "input_freeze": "Stage 02E preserved + R2S contract",
+      "optimizer_steps": 0,
+      "order": 6,
+      "principal_blocker": "resolution smoothness 仍 diagnostic；0 qualified。",
+      "principal_evidence": {
+        "artifact": "07_reports/stage02f_final_report.md",
+        "summary": "5 个非零 same-state spatial candidates；support 与 reference gates 完成。"
+      },
+      "purpose": "定义 R2S same-state semidiscrete spatial target 并评估 resolution/support。",
+      "scientific_interpretation_boundary": "程序完成不代表六分量 attribution PASS。",
+      "stage": "Stage 02F",
+      "superseded": false,
+      "training_runs": 0,
+      "unique_status": "SPATIAL_TARGET_QUALIFICATION_COMPLETE",
+      "version_relationship": "extends_02E_without_superseding"
+    },
+    {
+      "downstream_authorization": "Stage 02H independent reference qualification",
+      "execution_count": 1,
+      "execution_unit": "refinement_and_bias_campaign",
+      "historical_hash": "sha256:6031fe8233397aeca3d51abd818334bbe141f43c1a028e997f5847cafeba4e9e",
+      "input_freeze": "Stage 02F candidates and frozen smoothness",
+      "optimizer_steps": 0,
+      "order": 7,
+      "principal_blocker": "R2S bias relative to target 可测但未受控；仍 diagnostic。",
+      "principal_evidence": {
+        "artifact": "07_reports/stage02g_final_report.md",
+        "summary": "R2S bias、refinement、4/6 attribution 完整。"
+      },
+      "purpose": "审查 R2S bias 并扩展预选 resolution path。",
+      "scientific_interpretation_boundary": "诊断闭包不升级历史 candidate。",
+      "stage": "Stage 02G",
+      "superseded": false,
+      "training_runs": 0,
+      "unique_status": "SPATIAL_ATTRIBUTION_CLOSURE_COMPLETE",
+      "version_relationship": "closure_of_R2S_route_without_superseding"
+    },
+    {
+      "downstream_authorization": "Stage 02I target pool qualification",
+      "execution_count": 1,
+      "execution_unit": "four_reference_candidate_campaign",
+      "historical_hash": "sha256:d0086d056b1e7f47fe4e2ed310b84a508c3832c79747160b42b0689aaa583ccc",
+      "input_freeze": "Stage 02G/H preregistered reference matrix",
+      "optimizer_steps": 0,
+      "order": 8,
+      "principal_blocker": "不授权 dataset；QWLS2/CWLS3 仍 diagnostic。",
+      "principal_evidence": {
+        "artifact": "07_reports/stage02h_final_report.md",
+        "summary": "Fourier 与 analytic 在受控 periodic-vortex scope 内独立一致并 PASS。"
+      },
+      "purpose": "比较 Fourier、analytic、QWLS2、CWLS3 references。",
+      "scientific_interpretation_boundary": "reference PASS 仅限冻结空间算子与 case scope。",
+      "stage": "Stage 02H",
+      "superseded": false,
+      "training_runs": 0,
+      "unique_status": "REFERENCE_FIDELITY_QUALIFICATION_COMPLETE",
+      "version_relationship": "independent_reference_branch"
+    },
+    {
+      "downstream_authorization": "Stage 02I-R scope resolution",
+      "execution_count": 1,
+      "execution_unit": "seven_target_campaign",
+      "historical_hash": "sha256:2fdd1d45b81b074d2f2a1ff49a60c77d0a131c1b542923d6ed4f9e2111ddf89d",
+      "input_freeze": "Stage 02H accepted references",
+      "optimizer_steps": 0,
+      "order": 9,
+      "principal_blocker": "守恒兼容性不完整，Stage 02J 未授权。",
+      "principal_evidence": {
+        "artifact": "07_reports/stage02i_final_report.md",
+        "summary": "7/7 six-component attribution PASS；5 pair-compatible、2 node-residual-only。"
+      },
+      "purpose": "用独立 reference 构建七个归因目标并审查 conservation compatibility。",
+      "scientific_interpretation_boundary": "目标归因 PASS 不等于 pair-force scope 全部可用。",
+      "stage": "Stage 02I",
+      "superseded": false,
+      "training_runs": 0,
+      "unique_status": "QUALIFIED_SPATIAL_TARGET_POOL_NOT_READY",
+      "version_relationship": "extends_02H_without_superseding"
+    },
+    {
+      "downstream_authorization": "Stage 02J limited regular dataset construction",
+      "execution_count": 1,
+      "execution_unit": "conservation_scope_audit",
+      "historical_hash": "sha256:cdf34e6d282f5bad84af9b6d94f015c8bdcabd601738681729597e61611784f6",
+      "input_freeze": "Stage 02I seven-target pool",
+      "optimizer_steps": 0,
+      "order": 10,
+      "principal_blocker": "未形成 versioned dataset/split/normalization。",
+      "principal_evidence": {
+        "artifact": "07_reports/stage02ir_final_report.md",
+        "summary": "五个 regular targets 确认 pair-only；jitter 保留诊断。"
+      },
+      "purpose": "分解总力残差并选择 pair-only regular scope。",
+      "scientific_interpretation_boundary": "scope resolution 不覆盖 Stage 02I NOT READY。",
+      "stage": "Stage 02I-R",
+      "superseded": false,
+      "training_runs": 0,
+      "unique_status": "CONSERVATION_COMPATIBILITY_RESOLVED_PAIR_ONLY",
+      "version_relationship": "resolution_stage_not_superseding_02I"
+    },
+    {
+      "downstream_authorization": "Stage 02J-R independent family attempt",
+      "execution_count": 1,
+      "execution_unit": "five_record_dataset_campaign",
+      "historical_hash": "sha256:3f36ab2851890fd554c52460768248229788609369a75096b3f7d02e31f8b8de",
+      "input_freeze": "Stage 02I-R pair-only candidates",
+      "optimizer_steps": 0,
+      "order": 11,
+      "principal_blocker": "单一 leakage component，无法合法切分；0 eligible。",
+      "principal_evidence": {
+        "artifact": "07_reports/stage02j_final_report.md",
+        "summary": "5 records schema/canonical/QC 完整。"
+      },
+      "purpose": "物化五个 regular graph records 并审查 split feasibility。",
+      "scientific_interpretation_boundary": "受控 corpus 不是 train-ready dataset。",
+      "stage": "Stage 02J",
+      "superseded": false,
+      "training_runs": 0,
+      "unique_status": "CONTROLLED_REGULAR_DATASET_NOT_READY",
+      "version_relationship": "failed_dataset_version_v0_1_preserved"
+    },
+    {
+      "downstream_authorization": "Stage 02J-S versioned regularity contract",
+      "execution_count": 1,
+      "execution_unit": "fifteen_candidate_multifamily_campaign",
+      "historical_hash": "sha256:5e5ad48cfdd12018135a6ec268336a7274b618527f8960554ad7d170d0ffd18f",
+      "input_freeze": "Stage 02J preserved records + frozen families",
+      "optimizer_steps": 0,
+      "order": 12,
+      "principal_blocker": "regularity attribution 5/6 diagnostic，未物化；split/normalization blocked。",
+      "principal_evidence": {
+        "artifact": "07_reports/stage02jr_final_report.md",
+        "summary": "15 candidates reference/conservation PASS，lineages 分离。"
+      },
+      "purpose": "预注册三条新 lineage 并尝试多家族 target qualification。",
+      "scientific_interpretation_boundary": "未物化候选不能计为数据记录。",
+      "stage": "Stage 02J-R",
+      "superseded": false,
+      "training_runs": 0,
+      "unique_status": "MULTIFAMILY_CONTROLLED_DATASET_NOT_READY",
+      "version_relationship": "failed_dataset_version_v0_2_preserved"
+    },
+    {
+      "downstream_authorization": "Stage 02J-T single v0.3 candidate",
+      "execution_count": 1,
+      "execution_unit": "development_regularity_campaign",
+      "historical_hash": "sha256:27061a9b075d71e815695bc3fd56b6f0cf9f835b78a3f186edd3f4647a4e40b7",
+      "input_freeze": "Stage 02J-R candidates + frozen v0.2 contract",
+      "optimizer_steps": 0,
+      "order": 13,
+      "principal_blocker": "negative-control false-positive gate failed；held-out 未释放。",
+      "principal_evidence": {
+        "artifact": "07_reports/stage02js_final_report.md",
+        "summary": "structured development paths PASS；80 invariance checks PASS。"
+      },
+      "purpose": "验证 graph-Sobolev regularity v0.2 与负控制。",
+      "scientific_interpretation_boundary": "开发集规律不能替代 blind qualification。",
+      "stage": "Stage 02J-S",
+      "superseded": false,
+      "training_runs": 0,
+      "unique_status": "VERSIONED_MULTIFAMILY_DATASET_NOT_READY",
+      "version_relationship": "failed_regularity_version_v0_2_preserved"
+    },
+    {
+      "downstream_authorization": "Stage 02J-V final necessity audit",
+      "execution_count": 1,
+      "execution_unit": "v0_3_regularity_campaign",
+      "historical_hash": "sha256:de34f2b6ac4ba2d27da4a72339c3dadba907ba6540fbc5051a6b5e4e54f0a787",
+      "input_freeze": "Stage 02J-S preserved + single candidate preregistration",
+      "optimizer_steps": 0,
+      "order": 14,
+      "principal_blocker": "CROSSMODE N12 magnitude gate failure；blind gate未开启。",
+      "principal_evidence": {
+        "artifact": "07_reports/stage02jt_final_report.md",
+        "summary": "30 control combinations与 invariance 完成。"
+      },
+      "purpose": "检验 magnitude-direction conjunction v0.3。",
+      "scientific_interpretation_boundary": "局部 PASS 不生成最终 v0.3 contract。",
+      "stage": "Stage 02J-T",
+      "superseded": false,
+      "training_runs": 0,
+      "unique_status": "REGULARITY_GATE_V03_NOT_QUALIFIED",
+      "version_relationship": "failed_regularity_version_v0_3_preserved"
+    },
+    {
+      "downstream_authorization": "Stage 02J-W alternate eligibility route with regularity diagnostic-only",
+      "execution_count": 1,
+      "execution_unit": "v0_4_regularity_campaign",
+      "historical_hash": "sha256:1f6bf082a95ace38f47f6f74ccd9c115173024ef7014b17b0fa54e7a9d03287a",
+      "input_freeze": "Stage 02J-T preserved + v0.4 candidate",
+      "optimizer_steps": 0,
+      "order": 15,
+      "principal_blocker": "9/192 invariance rows失败；禁止 v0.5。",
+      "principal_evidence": {
+        "artifact": "07_reports/stage02jv_final_report.md",
+        "summary": "positive/hard-negative controls 与 real targets 完整。"
+      },
+      "purpose": "执行最后的 necessity/Bonferroni regularity 候选并关闭硬门路线。",
+      "scientific_interpretation_boundary": "route terminated 不等于数据或架构失败。",
+      "stage": "Stage 02J-V",
+      "superseded": false,
+      "training_runs": 0,
+      "unique_status": "REGULARITY_HARD_GATE_ROUTE_TERMINATED",
+      "version_relationship": "terminal_regularity_route_state"
+    },
+    {
+      "downstream_authorization": "Stage 02K architecture qualification",
+      "execution_count": 1,
+      "execution_unit": "twenty_record_blind_dataset_campaign",
+      "historical_hash": "sha256:a35161d0fcf8ac43edd21694414f2778936165b589cd21e5205483e042d67c83",
+      "input_freeze": "Stage 02J-V termination + frozen blind generator",
+      "optimizer_steps": 0,
+      "order": 16,
+      "principal_blocker": "仅静态 pair-scope 数据；不含 solver/rollout evidence。",
+      "principal_evidence": {
+        "artifact": "07_reports/stage02jw_final_report.md",
+        "summary": "20/20 reference/target/conservation/QC PASS；4 lineage components；10/5/5 split；train-only normalization。"
+      },
+      "purpose": "在 regularity diagnostic-only 合同下构建 blind multifamily dataset。",
+      "scientific_interpretation_boundary": "READY 不覆盖 J/J-R/J-S/J-T 的历史失败。",
+      "stage": "Stage 02J-W",
+      "superseded": false,
+      "training_runs": 0,
+      "unique_status": "BLIND_MULTIFAMILY_DATASET_READY",
+      "version_relationship": "alternate_eligibility_contract_not_superseding_regularity_failures"
+    },
+    {
+      "downstream_authorization": "Stage 02L protocol preregistration only",
+      "execution_count": 1,
+      "execution_unit": "architecture_hard_gate_campaign",
+      "historical_hash": "sha256:bc713e08c3b3f0bd34e50fb3b296a9dd5f0db4540cf4b5392336e6a41887de15",
+      "input_freeze": "Stage 02J-W ready dataset and frozen normalization",
+      "optimizer_steps": 0,
+      "order": 17,
+      "principal_blocker": "未训练；结构正确性不证明 learnability。",
+      "principal_evidence": {
+        "artifact": "07_reports/stage02k_final_report.md",
+        "summary": "K1/K2 antisymmetry、momentum、O(2)、periodicity、differentiability、O(E d) PASS。"
+      },
+      "purpose": "资格化 K1 pair MLP 与 K2 reciprocal attention PIO 的结构合同。",
+      "scientific_interpretation_boundary": "K0 diagnostic；attention necessity 未建立。",
+      "stage": "Stage 02K",
+      "superseded": false,
+      "training_runs": 0,
+      "unique_status": "PAIR_FORCE_PIO_ARCHITECTURE_QUALIFIED",
+      "version_relationship": "architecture_contract_version_v0_1"
+    },
+    {
+      "downstream_authorization": "Stage 02M formal static fitting",
+      "execution_count": 0,
+      "execution_unit": "preregistration_only",
+      "historical_hash": "sha256:3f31a94d4de2bafdd09f2f1bc8375a042cdb33e8a7a34ee8f6ca42322e526eaf",
+      "input_freeze": "Stage 02K qualified architectures + v1.0 dataset",
+      "optimizer_steps": 0,
+      "order": 18,
+      "principal_blocker": "尚无训练结果。",
+      "principal_evidence": {
+        "artifact": "07_reports/stage02l_final_report.md",
+        "summary": "协议、loss、optimizer、checkpoint、test seal 完整。"
+      },
+      "purpose": "预注册 v0.1 九运行静态拟合、测试封存与门槛。",
+      "scientific_interpretation_boundary": "READY 不是拟合成功。",
+      "stage": "Stage 02L",
+      "superseded": false,
+      "training_runs": 0,
+      "unique_status": "STATIC_FITTING_PROTOCOL_READY",
+      "version_relationship": "training_protocol_v0_1"
+    },
+    {
+      "downstream_authorization": "Stage 02M-R failure attribution only",
+      "execution_count": 9,
+      "execution_unit": "formal_training_runs",
+      "historical_hash": "sha256:888d128a2208a7ac041df5174362790c9602e74b24ea8f7abd113755af0ccba4",
+      "input_freeze": "Stage 02L protocol hash and sealed test",
+      "optimizer_steps": 8020,
+      "order": 19,
+      "principal_blocker": "K1/K2 未满足冻结 A-E，训练拟合失败。",
+      "principal_evidence": {
+        "artifact": "07_reports/stage02m_final_report.md",
+        "summary": "9/9 runs、sealed test、postfit、resources 完整。"
+      },
+      "purpose": "执行 v0.1 K0/K1/K2 × 3 seeds 静态拟合与一次性测试。",
+      "scientific_interpretation_boundary": "validation/test局部结果不覆盖 train-fit failure。",
+      "stage": "Stage 02M",
+      "superseded": false,
+      "training_runs": 9,
+      "unique_status": "STATIC_PAIR_FORCE_FITTING_NOT_QUALIFIED",
+      "version_relationship": "failed_training_protocol_v0_1_preserved"
+    },
+    {
+      "downstream_authorization": "Stage 02M-P one prospective v0.2 design",
+      "execution_count": 1,
+      "execution_unit": "forensic_diagnostic_campaign",
+      "historical_hash": "sha256:8dc07f364d91bb730f1687fe49b21c4226399ef9c42f00a8203ad6c9c82917dc",
+      "input_freeze": "Stage 02M frozen histories/checkpoints",
+      "optimizer_steps": 0,
+      "order": 20,
+      "principal_blocker": "归因是 diagnostic contribution，不证明改参必成功。",
+      "principal_evidence": {
+        "artifact": "07_reports/stage02mr_final_report.md",
+        "summary": "loss scale、Adam epsilon/weight decay、梯度/更新尺度证据一致。"
+      },
+      "purpose": "对 v0.1 失败做 post-hoc、无新训练的唯一归因。",
+      "scientific_interpretation_boundary": "不覆盖 M 的 NOT QUALIFIED。",
+      "stage": "Stage 02M-R",
+      "superseded": false,
+      "training_runs": 0,
+      "unique_status": "STATIC_FITTING_FAILURE_ATTRIBUTED_OPTIMIZATION_CONDITIONING",
+      "version_relationship": "posthoc_attribution_not_verdict_replacement"
+    },
+    {
+      "downstream_authorization": "Stage 02M-Q unique formal retry",
+      "execution_count": 0,
+      "execution_unit": "preregistration_only",
+      "historical_hash": "sha256:e1db308805e5f698acfbfa13800a806509816ad9537590c751d7bb85f2229f5a",
+      "input_freeze": "Stage 02M-R authorization and zero-step diagnostics",
+      "optimizer_steps": 0,
+      "order": 21,
+      "principal_blocker": "无训练；仅授权一次 02M-Q。",
+      "principal_evidence": {
+        "artifact": "07_reports/stage02mp_final_report.md",
+        "summary": "v0.2 protocol、a_sup、9-run matrix、v1.1 collection、test seal READY。"
+      },
+      "purpose": "冻结 a_sup、AdamW conditioning 修复、新 blind families 与唯一重试协议。",
+      "scientific_interpretation_boundary": "conditioning readiness 不是 learnability evidence。",
+      "stage": "Stage 02M-P",
+      "superseded": false,
+      "training_runs": 0,
+      "unique_status": "STATIC_FITTING_PROTOCOL_V02_READY",
+      "version_relationship": "training_protocol_v0_2"
+    },
+    {
+      "downstream_authorization": "Stage 02M-S closure only; Stage 02N unauthorized",
+      "execution_count": 9,
+      "execution_unit": "formal_training_runs",
+      "historical_hash": "sha256:a21a184bb59c25b31bb0487251b9be109158fe5434e8c00cd064d13794ac3c36",
+      "input_freeze": "Stage 02M-P protocol hash and v1.1 sealed test",
+      "optimizer_steps": 8440,
+      "order": 22,
+      "principal_blocker": "K1 train gate 0/3、K2 train gate 1/3；均未达 B 的2/3。",
+      "principal_evidence": {
+        "artifact": "07_reports/stage02mq_final_report.md",
+        "summary": "9/9 conditioning/terminal/closure/test/postfit/resource evidence完整；C/D/E gates PASS。"
+      },
+      "purpose": "执行唯一 v0.2 九运行静态拟合重试并关闭路线。",
+      "scientific_interpretation_boundary": "静态失败不等于 rollout failure；rollout从未执行。",
+      "stage": "Stage 02M-Q",
+      "superseded": false,
+      "training_runs": 9,
+      "unique_status": "STATIC_PAIR_FORCE_FITTING_V02_NOT_QUALIFIED",
+      "version_relationship": "failed_training_protocol_v0_2_terminal_route_state"
+    }
+  ],
+  "stage_count": 22,
+  "status": "PASS",
+  "terminal_route_state": {
+    "Stage02N_authorized": false,
+    "Stage_02M_Q": "STATIC_PAIR_FORCE_FITTING_V02_NOT_QUALIFIED",
+    "rollout_authorized": false,
+    "solver_in_the_loop_authorized": false,
+    "static_pio_learning_route_terminated": true,
+    "training_protocol_v03_permitted": false
+  }
+}

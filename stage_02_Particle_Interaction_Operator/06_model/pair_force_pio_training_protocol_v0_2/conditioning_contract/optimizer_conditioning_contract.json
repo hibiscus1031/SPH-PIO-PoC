@@ -1,0 +1,23 @@
+{
+  "contract_version": "stage02mp-optimizer-conditioning-1.0.0",
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "betas": [0.9, 0.999],
+  "epsilon": 1e-12,
+  "weight_decay": 0.0,
+  "global_gradient_norm_clip": 1.0,
+  "schedule": {
+    "source": "Stage 02L frozen schedule",
+    "warmup_updates": 50,
+    "decay": "cosine",
+    "minimum_learning_rate": 1e-5,
+    "maximum_optimizer_updates": 1000
+  },
+  "architecture_specific_optimizer": false,
+  "optimizer_grid": false,
+  "epsilon_grid": false,
+  "loss_scale_grid": false,
+  "weight_decay_grid": false,
+  "restart_permitted": false,
+  "budget_extension_permitted": false
+}

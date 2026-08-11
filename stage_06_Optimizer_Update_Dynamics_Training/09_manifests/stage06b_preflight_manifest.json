@@ -1,0 +1,32 @@
+{
+  "checkpoint_bytes_max": 209975,
+  "counters": {
+    "checkpoint_reloads": 9,
+    "checkpoint_serializations": 9,
+    "formal_optimizer_steps": 0,
+    "formal_parameter_updates": 0,
+    "formal_training_runs": 0,
+    "full_gradients": 9,
+    "model_instances": 18,
+    "neural_rollouts": 0,
+    "optimizer_instances": 18,
+    "performance_evaluations": 0,
+    "scheduler_instances": 18,
+    "sealed_test_evaluations": 0,
+    "train_forwards": 9,
+    "validation_forwards": 9
+  },
+  "gates": {
+    "all_preflights": true,
+    "forbidden_counts_zero": true,
+    "nine_runs": true,
+    "protocol_unchanged": true,
+    "validation_manifest_qualified": true
+  },
+  "pass": true,
+  "passed": 9,
+  "peak_rss_bytes": 1087602688,
+  "protocol_sha256": "sha256:b7918bde82b104895b6d47c798801608938c661c3f8b249f4c832c98c3a83cbe",
+  "run_count": 9,
+  "schema": "sph-pio-poc.stage06b.preflight-manifest.v1"
+}

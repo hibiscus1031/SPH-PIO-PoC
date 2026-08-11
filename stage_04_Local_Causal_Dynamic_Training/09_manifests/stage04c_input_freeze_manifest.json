@@ -1,0 +1,131 @@
+{
+  "contract_path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/contracts/task_aligned_parameter_gradient_contract_v0_1.yaml",
+  "contract_sha256": "sha256:eb63d659d8c4a868160c952ed9aed7aadf79938353a5d8129b238f22f7ef1840",
+  "freeze_completed_before_train_state_array_decode": true,
+  "historical_input_count": 30,
+  "historical_inputs": [
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04a_final_report.md",
+      "sha256": "sha256:6e027e64439240a9a9670575eceae50a96fd3b5f27580971b32cdcf9f591d442"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04a_gradient_strategy.md",
+      "sha256": "sha256:b9b2259309f91d23fddbd15743c9945288b068a0ba352af79bd1bc722bb5cd69"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04a_training_hypothesis.md",
+      "sha256": "sha256:87f09365494ff91a08c145806eae143cdc8ba48d6a4ad679b2f2da8fb87b6b15"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04a_dataset_strategy.md",
+      "sha256": "sha256:32cb92f2134b3330e2a38e1d43077f6e0c042af0a1b19187739888660ad36686"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/00_stage04a_verification/reports/stage04a_target_verification_report.md",
+      "sha256": "sha256:c3fb54900182235f4a1791d2fb90335c853693b03310e9fcc914b2f6506682ee"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/00_stage04a_verification/manifests/stage04a_target_verification_manifest.json",
+      "sha256": "sha256:0cffa51ceda4cc8b098a2a3bd329a1a636d24d239c1f38635b1b92cb4e8fad33"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_final_report.md",
+      "sha256": "sha256:5d2b372643db12f26fa0badbab5f272c3ddadab6afdb8b82b2861b20fdf6f312"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/contracts/local_causal_reference_family_contract_v0_1.yaml",
+      "sha256": "sha256:c0d377f7b4b626186fcae076a076b336d774d3bf17c96153b13c4a5f85d0336f"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_formula_manifest.json",
+      "sha256": "sha256:f0953cdaa81ddcaa5b3bbc015fc0465c9be8f1f5c9ef7df2393fa5601c93ff77"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_lineage_manifest.json",
+      "sha256": "sha256:b4754caf8284b3620a85cb042a0684d90471cfd98775018cde961467285ba2fe"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_role_assignment_manifest.json",
+      "sha256": "sha256:642f91985176774bf71795f2e72391082a9a43cdc0f3f6f7aaec7f1c432db47e"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_trajectory_manifest.json",
+      "sha256": "sha256:6bc2351482b9167c63640699be0f048d65e3981babe0409895ea6a900b3e8ac2"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_test_seal_manifest.json",
+      "sha256": "sha256:f3fc8bc263b5cd0862aad21e6331e280bff59fa70df5d2dd172491ee9ed438a5"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/topology_margin/topology_margin_summary.json",
+      "sha256": "sha256:f63f95264cc89ac6ec2f89f0cecec95b8be266284173897a24348cb4dae8fcf5"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/analytic_qualification/analytic_qualification_summary.json",
+      "sha256": "sha256:2dd0ad663c0291a25e0276ea8195e621b90953de1bf9d2a419e17a6b5090399d"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03c_final_manifest.json",
+      "sha256": "sha256:bf5e0e3f1ac68e4b2df8ed847a1cf9a0cb0290c158b3813b1d4fa65a74abb5af"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03d_final_manifest.json",
+      "sha256": "sha256:c0862a16d0a43e283e80df2edc08cd6123b18f16bdcea6645564ea99146b32f3"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/10_manifests/stage03dr_final_manifest.json",
+      "sha256": "sha256:ad5ef80137ec6aa2e27b22cb51c46bc0f79629ae7c392d9a6f6cd6a6e493bb21"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/arm_d1/model.py",
+      "sha256": "sha256:c1372a07737ebb56792aa73c327b81423ef87068d0136627b1507c813ee8b3a1"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/arm_d2/model.py",
+      "sha256": "sha256:a5df1be7b861bffe6c3de7467de36e1a21229cb0c75391f148cdfd5edd0d1d72"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/arm_d3/model.py",
+      "sha256": "sha256:1fe69939c5ed0ab5c12955b2c037c0f046ac853d0b40f19b93b01d78127dab83"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/baseline_d0/rhs.py",
+      "sha256": "sha256:fc1d0ad7043e5f14b3c79dfdf346d86c01d689e841760bfd952c8da2a6fbac2e"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/baseline_d0/state.py",
+      "sha256": "sha256:a6f024bf2f7e44eba2031aca441cb26c0ee8e254dba3fd80cf33390d266e516e"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/graph_rebuild/graph.py",
+      "sha256": "sha256:d29fd86979150f98eb2e5927d1688b1df920181030aa275a5f244fb1f19c8c4f"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/pair_force_head/head.py",
+      "sha256": "sha256:77831de4312ce1ca1406e7d7f41e6c19c90e38a6259a9d053037ea398c77139a"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/rk2_core/independent_functional.py",
+      "sha256": "sha256:eacbd2d9695dbfd793dcbcee607e94c86e432575d8c4f8db565df8bee3095cf4"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/rk2_core/solver.py",
+      "sha256": "sha256:c6d9dde841e218e66a2e5036b4b8ec2459f9cc38512b990a6a2e7ac8c5e4e788"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/source_interface/source.py",
+      "sha256": "sha256:22565211c72dd05f6a22ccaf1065c0187f71c968ed7a6fc73bd5c4961a152228"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/temporal_history/history.py",
+      "sha256": "sha256:60f9e4caa228fe8696ef2ef171da364d3918136711e1e2f37e0c2bfc7823858c"
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/tokenization/tokens.py",
+      "sha256": "sha256:6a0f2ad0a011c7d39f90668aa1b4c73d124f90eaf6871a8bb9a57756ee8dea56"
+    }
+  ],
+  "pass": true,
+  "stage04b_authorization": "LOCAL_CAUSAL_REFERENCE_FAMILY_POOL_QUALIFIED",
+  "train_state_array_decode_count_at_freeze": 0
+}

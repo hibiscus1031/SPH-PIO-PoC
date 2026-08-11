@@ -1,0 +1,140 @@
+schema_version: sph-pio-poc.stage03dr.attribution-contract.v0.1
+stage: Stage 03D-R
+freeze_date: 2026-08-05
+authorization: Stage 03D:DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED
+historical_stage03d_verdict_mutable: false
+stage03e_authorized: false
+
+execution:
+  device: cpu
+  dtype: float64
+  deterministic_algorithms: true
+  torch_threads: 4
+  new_optimizer_steps: 0
+  new_training_runs: 0
+
+historical_matrix:
+  required_rows: 360
+  historical_stable_windows: 216
+  historical_missing_windows: 144
+  historical_adfd_repeat_comparisons: 2880
+  topology_changing_fd_exclusions: 0
+  reference_prehistory_pass: 0
+  reference_prehistory_total: 6
+  conservation_pass: 540
+  conservation_total: 540
+
+selected_row_rule:
+  cells: arm_x_probe_type_x_horizon
+  ordering: [case_id, seed, row_id]
+  selection: first_historical_failed_row_lexicographically
+  control_when_no_failure: first_historical_pass_row_lexicographically
+  expected_cell_count: 60
+  selection_after_new_extended_results: forbidden
+
+ad_crosscheck:
+  route_A: reverse_mode_VJP
+  route_B: torch_func_forward_mode_JVP
+  finite_difference_internal_to_AD_routes: forbidden
+  absolute_disagreement_max: 1.0e-10
+  relative_disagreement_max: 1.0e-7
+  relative_floor: 1.0e-30
+  objective_components: [J_x, J_v, J_rho, J_total]
+
+extended_fd:
+  role: attribution_only_no_stage03d_relabel
+  dimensionless_epsilon_ladder: [1.0e-2, 3.0e-3, 1.0e-3, 3.0e-4, 1.0e-4, 3.0e-5, 1.0e-5, 3.0e-6, 1.0e-6, 3.0e-7, 1.0e-7]
+  scalar_parameter_scale: max(1,abs(parameter_value))
+  three_point: '[f(+h)-f(-h)]/(2h)'
+  five_point: '[f(-2h)-8f(-h)+8f(+h)-f(+2h)]/(12h)'
+  richardson_comparison: abs(five_point-three_point)
+  path_requirements: [fixed_structural_graph_sequence, positive_density, finite_state, history_hash_saved, base_parameter_hash_unchanged]
+  extended_stable_point_gate: 'abs(AD-FD)<=1e-8 or rel(AD,FD)<=1e-5'
+  extended_adjacent_gate: relative_change<=5e-4
+  roundoff_region: error_increases_as_epsilon_decreases_after_global_minimum
+  truncation_region: error_decreases_as_epsilon_decreases_before_global_minimum
+  u_shape_required_for_roundoff_dominated: true
+
+objective_decomposition:
+  historical_objective_unchanged: true
+  identity: J_total=J_x+J_v+J_rho
+  cancellation_ratio: '(|dJ_x|+|dJ_v|+|dJ_rho|)/max(|dJ_total|,1e-30)'
+  cancellation_candidate_ratio_min: 1000.0
+  component_stability_required: true
+
+horizon_scaling:
+  horizons: [1, 2, 4, 8]
+  vanishing_candidate: K8_over_K1<=1e-6
+  exploding_candidate: K8_over_K1>=1e6
+  otherwise: BOUNDED_OR_NONMONOTONE
+  zero_denominator_floor: 1.0e-30
+
+history_audit:
+  cases:
+    D2: {case_id: FT_DR1_COUPLED_N8, horizon: 4, seeds: [20300401, 20300402, 20300403]}
+    D3: {case_id: FT_DR1_COMPRESSION_N8, horizon: 4, seeds: [20300401, 20300402, 20300403]}
+  perturbed_object: stored_tokenized_reference_prehistory_slots_0_1_2
+  unperturbed_origin_slot: 3
+  D2_rule: recompute_all_four_GRU_hidden_slots_from_perturbed_tokens
+  D3_rule: consume_perturbed_four_token_sequence_in_transformer_history
+  module_only_scalar_probe: 'dot(current_temporal_hidden, SHA256-derived unit direction)/sqrt(N*hidden_width)'
+  module_probe_direction_payload: 'stage03dr_module_output||arm||case||seed'
+  classifications:
+    object_mismatch: HISTORY_PERTURBATION_CONTRACT_MISMATCH
+    disconnected: HISTORY_AUTOGRAD_PATH_DISCONNECTED
+    path_complete_below_resolution: HISTORY_SENSITIVITY_BELOW_FD_RESOLUTION
+    path_complete_extended_window: HISTORY_FD_CONDITIONING_LIMITED
+
+failure_reason_priority:
+  - AD_FD_DIRECTION_OR_SIGN_MISMATCH
+  - HISTORY_LEAF_OR_DETACH_MISMATCH
+  - FD_AND_AD_PERTURB_DIFFERENT_OBJECT
+  - HORIZON_GRADIENT_EXPLOSION
+  - HORIZON_GRADIENT_VANISHING
+  - OBJECTIVE_COMPONENT_CANCELLATION
+  - DERIVATIVE_NEAR_STRUCTURAL_ZERO
+  - FD_ROUNDOFF_DOMINATED
+  - FD_TRUNCATION_DOMINATED
+  - FD_NONMONOTONE_NO_ADJACENT_WINDOW
+  - NUMERICAL_NONSMOOTHNESS_WITH_FIXED_GRAPH
+  - UNRESOLVED
+  unique_primary_reason_required: true
+  near_structural_zero_absolute_max: 1.0e-12
+  sign_mismatch_requires: 'abs(AD)>1e-12 and majority finite FD sign differs'
+  cancellation_primary_requires: 'ratio>=1000 and all component AD/JVP gates pass and at least two components have opposite signs'
+  roundoff_primary_requires: 'AD/JVP pass and extended stable window exists at epsilon>=3e-4 and U-shaped three-point error'
+  truncation_primary_requires: 'AD/JVP pass and minimum three-point error occurs at epsilon<=1e-6 with decreasing small-epsilon trend'
+  numerical_nonsmooth_primary_requires: 'fixed graphs, AD/JVP pass, no extended stable window, not cancellation, not near-zero'
+
+route_decision:
+  FD_CONDITIONING: 'AD/JVP pass; no history mismatch; extended stable region dominates failures; no systematic explosion'
+  PROBE_CANCELLATION: 'stable components and cancellation dominates; AD/JVP pass; history complete'
+  HISTORY_PATH: 'unique detach/leaf/object/cache mismatch'
+  MULTISTEP_INSTABILITY: 'AD/JVP pass; FD confirms; systematic horizon vanishing/explosion not explained otherwise'
+  MIXED_OR_UNRESOLVED: 'multiple mechanisms materially present or no unique ordering'
+  EVIDENCE_INCOMPLETE: 'mapping/provenance/JVP/FD/history trace incomplete'
+
+topology_preservation:
+  component_status: TOPOLOGY_EVENT_COMPONENT_QUALIFIED
+  rerun_or_redesign_family: forbidden
+  stage03d_overall_pass_claim: forbidden
+
+resources:
+  peak_rss_delta_max_bytes: 1610612736
+  retained_autograd_monotonic_growth: forbidden
+  dense_particle_square_allocation: forbidden
+  parameter_mutation: forbidden
+  finite_completion: required
+
+prohibitions:
+  optimizer: false
+  optimizer_step: false
+  parameter_update: false
+  training: false
+  architecture_modification: false
+  history_implementation_modification: false
+  historical_probe_or_epsilon_replacement: false
+  trajectory_dataset: false
+  split: false
+  normalization: false
+  rollout_performance_evaluation: false

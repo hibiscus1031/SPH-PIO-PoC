@@ -1,0 +1,82 @@
+{
+  "family": "DR1_COUPLED_DEFORMATION",
+  "fixed_topology_and_event_intervals_separated": true,
+  "gradient_audit_executed": false,
+  "purpose": "Stage 03D topology-event input registry",
+  "records": [
+    {
+      "deterministic_repeat": true,
+      "edge_birth_count": 0,
+      "edge_death_count": 0,
+      "event_registry_status": "NO_EVENT_FIXED_TOPOLOGY",
+      "events": [],
+      "family": "DR1_COUPLED_DEFORMATION",
+      "fixed_topology_intervals": [
+        [
+          0.0,
+          0.0625
+        ]
+      ],
+      "gradient_audit_executed": false,
+      "minimum_absolute_cutoff_margin": 0.05693705283249029,
+      "minimum_image_switch_count": 0,
+      "resolution": 8,
+      "scan_point_count": 1025,
+      "support_over_dx": 2.6,
+      "tau_interval": [
+        0.0,
+        0.0625
+      ]
+    },
+    {
+      "deterministic_repeat": true,
+      "edge_birth_count": 0,
+      "edge_death_count": 0,
+      "event_registry_status": "NO_EVENT_FIXED_TOPOLOGY",
+      "events": [],
+      "family": "DR1_COUPLED_DEFORMATION",
+      "fixed_topology_intervals": [
+        [
+          0.0,
+          0.0625
+        ]
+      ],
+      "gradient_audit_executed": false,
+      "minimum_absolute_cutoff_margin": 0.037924856317694156,
+      "minimum_image_switch_count": 0,
+      "resolution": 12,
+      "scan_point_count": 1025,
+      "support_over_dx": 2.6,
+      "tau_interval": [
+        0.0,
+        0.0625
+      ]
+    },
+    {
+      "deterministic_repeat": true,
+      "edge_birth_count": 0,
+      "edge_death_count": 0,
+      "event_registry_status": "NO_EVENT_FIXED_TOPOLOGY",
+      "events": [],
+      "family": "DR1_COUPLED_DEFORMATION",
+      "fixed_topology_intervals": [
+        [
+          0.0,
+          0.0625
+        ]
+      ],
+      "gradient_audit_executed": false,
+      "minimum_absolute_cutoff_margin": 0.02843411864026918,
+      "minimum_image_switch_count": 0,
+      "resolution": 16,
+      "scan_point_count": 1025,
+      "support_over_dx": 2.6,
+      "tau_interval": [
+        0.0,
+        0.0625
+      ]
+    }
+  ],
+  "schema_version": "sph-pio-poc.stage03b.topology.v1",
+  "total_event_count": 0
+}

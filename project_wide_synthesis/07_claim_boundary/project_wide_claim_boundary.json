@@ -1,0 +1,125 @@
+{
+  "schema": "s1.claim-boundary.v1",
+  "claims": [
+    {
+      "id": "C01",
+      "classification": "SUPPORTED",
+      "allowed_wording": "Stage03C实现已验证。",
+      "prohibited_wording": "动态模型整体已验证并优于基线。",
+      "supporting_stage": "Stage03C",
+      "artifact": "stage03c_final_manifest.json",
+      "limitation": "仅实现/one-step范围",
+      "potential_manuscript_role": "Paper1 main"
+    },
+    {
+      "id": "C02",
+      "classification": "SUPPORTED",
+      "allowed_wording": "zero correction对D0为288/288 bitwise等价。",
+      "prohibited_wording": "训练后仍保证所有轨迹bitwise等价。",
+      "supporting_stage": "Stage03C",
+      "artifact": "stage03c_final_manifest.json",
+      "limitation": "只对冻结zero-correction测试",
+      "potential_manuscript_role": "Paper1 main"
+    },
+    {
+      "id": "C03",
+      "classification": "SUPPORTED",
+      "allowed_wording": "K1/K2 pair antisymmetry硬保证线动量守恒。",
+      "prohibited_wording": "所有物理守恒与耗散均已验证。",
+      "supporting_stage": "Stage02K/03C",
+      "artifact": "stage02k_qualification_summary.json",
+      "limitation": "角动量/耗散边界另列",
+      "potential_manuscript_role": "Paper1 main"
+    },
+    {
+      "id": "C04",
+      "classification": "SUPPORTED",
+      "allowed_wording": "TE1 cutoff birth/death拓扑分量通过6/6 replay和12/12 fixed-side gradients。",
+      "prohibited_wording": "neighbor search整体可微。",
+      "supporting_stage": "Stage03D",
+      "artifact": "stage03d_final_manifest.json",
+      "limitation": "piecewise fixed-side component",
+      "potential_manuscript_role": "Paper1 main"
+    },
+    {
+      "id": "C05",
+      "classification": "CONDITIONAL",
+      "allowed_wording": "360 probes中216具有stable epsilon windows。",
+      "prohibited_wording": "多步梯度已资格化。",
+      "supporting_stage": "Stage03D",
+      "artifact": "stage03d_final_manifest.json",
+      "limitation": "144失败、history 0/6",
+      "potential_manuscript_role": "Paper1 main negative"
+    },
+    {
+      "id": "C06",
+      "classification": "SUPPORTED",
+      "allowed_wording": "static pair-force fitting v0.2未资格。",
+      "prohibited_wording": "静态pair correction不可学习的一般定律。",
+      "supporting_stage": "Stage02M-Q",
+      "artifact": "stage02mq_qualification_summary.json",
+      "limitation": "仅冻结dataset/protocol/arms",
+      "potential_manuscript_role": "Paper1 negative"
+    },
+    {
+      "id": "C07",
+      "classification": "SUPPORTED",
+      "allowed_wording": "多步AD/FD整体未资格。",
+      "prohibited_wording": "梯度完全错误或完全不可用。",
+      "supporting_stage": "Stage03D-R",
+      "artifact": "stage03dr_final_manifest.json",
+      "limitation": "reverse/JVP与topology分量通过",
+      "potential_manuscript_role": "Paper1 negative"
+    },
+    {
+      "id": "C08",
+      "classification": "NOT_TESTED",
+      "allowed_wording": "dynamic training未授权且未执行。",
+      "prohibited_wording": "已训练动态Transformer。",
+      "supporting_stage": "Stage03",
+      "artifact": "stage03ds_final_manifest.json",
+      "limitation": "training_runs=0",
+      "potential_manuscript_role": "Future Paper2"
+    },
+    {
+      "id": "C09",
+      "classification": "NOT_TESTED",
+      "allowed_wording": "autonomous rollout未执行。",
+      "prohibited_wording": "rollout稳定或优于SPH。",
+      "supporting_stage": "Stage02/03",
+      "artifact": "stage02ms/stage03ds manifests",
+      "limitation": "rollouts=0",
+      "potential_manuscript_role": "Future Paper2"
+    },
+    {
+      "id": "C10",
+      "classification": "UNSUPPORTED",
+      "allowed_wording": "Stage01最终仍为V2_QUALIFICATION_FAIL。",
+      "prohibited_wording": "Stage01 V2已恢复。",
+      "supporting_stage": "Stage01G/H",
+      "artifact": "stage01g_evaluation_reapplication_01.json",
+      "limitation": "acoustic局部PASS不覆盖shear FAIL",
+      "potential_manuscript_role": "Prohibited"
+    },
+    {
+      "id": "C11",
+      "classification": "UNSUPPORTED",
+      "allowed_wording": "K2结构资格化但attention superiority未建立。",
+      "prohibited_wording": "Transformer优于MLP。",
+      "supporting_stage": "Stage02K/M-Q",
+      "artifact": "stage02mq_qualification_summary.json",
+      "limitation": "无合格公平性能比较",
+      "potential_manuscript_role": "Prohibited"
+    },
+    {
+      "id": "C12",
+      "classification": "NOT_TESTED",
+      "allowed_wording": "full solver improvement/cost/utility未执行。",
+      "prohibited_wording": "求解器更准确、更快或更便宜。",
+      "supporting_stage": "Project",
+      "artifact": "evidence matrix L8–L10",
+      "limitation": "无性能/成本证据",
+      "potential_manuscript_role": "Future Paper2"
+    }
+  ]
+}

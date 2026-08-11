@@ -1,0 +1,59 @@
+contract_version: stage02ir-conservation-closure-1.0.0
+frozen_before_controlled_recomputation: true
+
+historical_boundaries:
+  stage01: V2_QUALIFICATION_FAIL
+  stage01h: FINITE_RESOLUTION_DOMINANT
+  viscosity_operator_form: NOT CONFIRMED
+  stage02i:
+    pool_readiness: not_ready
+    candidate_discretization_target_count: 7
+    pair_force_compatible_count: 5
+    node_residual_only_count: 2
+    Stage02J_authorized: false
+    records_may_be_overwritten: false
+
+analysis_scope:
+  original_target_modification_permitted: false
+  target_mean_subtraction_permitted: false
+  conservation_projection_writeback_permitted: false
+  pair_projection_role: representability_analysis_only
+  controlled_recomputation_role: audit_only
+  normalized_internal_force_tolerance: 1.0e-10
+
+architecture_decision_rules:
+  PAIR_ONLY_REGULAR_SCOPE:
+    required:
+      - five_regular_candidates_remain_pair_force_compatible
+      - jitter_residual_not_removable_under_current_physical_reference_quadrature_contract
+      - jitter_node_residual_above_reference_uncertainty
+      - target_modification_prohibited
+    stage02j_authorization: regular_scope_only
+  VERSIONED_CONSERVATIVE_TARGET_CONTRACT:
+    required:
+      - continuum_exact_total_force_PASS
+      - baseline_SPH_pairwise_cancellation_PASS
+      - jitter_residual_attributed_to_particle_quadrature
+      - independent_physical_preregistered_conservative_reference_quadrature_exists
+      - new_contract_is_not_mean_subtraction
+      - Fourier_analytic_dual_reference_and_uncertainty_PASS
+    stage02j_authorization: false
+  HYBRID_PAIR_NODE_ARCHITECTURE_REQUIRED:
+    required:
+      - jitter_residual_is_true_component_of_frozen_physical_operator_target
+      - pair_and_node_components_stable_and_above_uncertainty
+      - node_residual_not_topology_reference_or_quadrature_artifact
+    stage02j_authorization: false
+  CONSERVATION_SOURCE_UNRESOLVED:
+    required:
+      - residual_source_not_uniquely_attributable
+    stage02j_authorization: false
+
+prohibitions:
+  dataset: true
+  split: true
+  normalization: true
+  model: true
+  training: true
+  optimizer: true
+  benchmark_performance_claim: true

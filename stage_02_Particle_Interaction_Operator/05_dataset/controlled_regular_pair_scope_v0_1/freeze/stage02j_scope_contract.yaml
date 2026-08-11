@@ -1,0 +1,50 @@
+contract_version: stage02j-controlled-regular-pair-scope-0.1.0
+dataset_version: controlled_regular_pair_scope_v0_1
+authorization_source:
+  stage: Stage_02I-R
+  final_state: resolved_pair_only
+  architecture_scope: PAIR_ONLY_REGULAR_SCOPE
+authorized_regular_target_ids:
+  - i_res_n12_h26_regular
+  - i_anchor_n16_h26_regular
+  - i_res_n20_h26_regular
+  - i_sup_n16_h22_regular
+  - i_sup_n16_h30_regular
+jitter_diagnostic_ids:
+  - i_dis_n16_h26_jitter05
+  - i_dis_n16_h26_jitter10
+sample_contract:
+  unit: complete_particle_graph
+  expected_sample_count: 5
+  particle_as_iid_sample: false
+  edge_as_iid_sample: false
+  component_as_iid_sample: false
+  patch_as_iid_sample: false
+target_contract:
+  delta_a: a_reference_minus_a_sph
+  nodal_force: mass_times_delta_a
+  edge_pair_force_target_permitted: false
+  least_squares_pair_projection_role: audit_reference_only
+  projection_writeback_permitted: false
+family_contract:
+  atomic_split_unit: leakage_graph_connected_component
+  random_particle_split_permitted: false
+  random_edge_split_permitted: false
+  within_graph_split_permitted: false
+  pseudo_three_way_split_permitted: false
+normalization_contract:
+  fitted_statistics_require_formal_train_split: true
+  full_corpus_fit_permitted: false
+  jitter_fit_permitted: false
+manual_override_permitted: false
+prohibitions:
+  new_target_generation: true
+  new_physical_state_generation: true
+  trajectory_generation: true
+  temporal_frame_expansion: true
+  random_particle_resampling: true
+  augmentation: true
+  model_implementation: true
+  training: true
+  performance_claim: true
+

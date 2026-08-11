@@ -1,0 +1,3 @@
+# Systematic coverage-by-design and evidence-based route closure
+
+Systematic coverage-by-design and closure. (a--c) Sixteen templates generated a frozen 128-candidate TRAIN bank and 64-candidate validation bank; eight TRAIN candidates were selected without model predictions. (d--f) HET_S2_02 descriptor distance fell from 6.5115 to 1.8607, but its target residual 3.5113 exceeded the 1.5385 TRAIN threshold. (g,h) Only two provisional macro-group winners were eligible and formal fresh closure remained 0/4. (i,j) Model-prediction reads were zero and the full-solver route closed with lower layers qualified but training, rollout, and sealed-test claims unqualified.

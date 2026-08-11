@@ -1,0 +1,2694 @@
+{
+  "N12_N16_audit_pass": true,
+  "access_pass": true,
+  "aggregation": {
+    "arms": {
+      "D1": {
+        "contexts": 72,
+        "groups_pass": false,
+        "pass": false,
+        "passed_probes": 0,
+        "probe_pass_rate": 0.0,
+        "probes": 144
+      },
+      "D2": {
+        "contexts": 72,
+        "groups_pass": false,
+        "pass": false,
+        "passed_probes": 0,
+        "probe_pass_rate": 0.0,
+        "probes": 216
+      },
+      "D3": {
+        "contexts": 72,
+        "groups_pass": false,
+        "pass": false,
+        "passed_probes": 0,
+        "probe_pass_rate": 0.0,
+        "probes": 504
+      }
+    },
+    "groups": [
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "pass": false,
+        "passed_lineages": 0,
+        "total_lineages": 6
+      },
+      {
+        "arm": "D1",
+        "group": "D1_PAIR_HEAD",
+        "pass": false,
+        "passed_lineages": 0,
+        "total_lineages": 6
+      },
+      {
+        "arm": "D2",
+        "group": "D2_TOKEN_ENCODER",
+        "pass": false,
+        "passed_lineages": 0,
+        "total_lineages": 6
+      },
+      {
+        "arm": "D2",
+        "group": "D2_GRU",
+        "pass": false,
+        "passed_lineages": 0,
+        "total_lineages": 6
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "pass": false,
+        "passed_lineages": 0,
+        "total_lineages": 6
+      },
+      {
+        "arm": "D3",
+        "group": "D3_TOKEN_ENCODER",
+        "pass": false,
+        "passed_lineages": 0,
+        "total_lineages": 6
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_O",
+        "pass": false,
+        "passed_lineages": 0,
+        "total_lineages": 6
+      },
+      {
+        "arm": "D3",
+        "group": "D3_FEED_FORWARD",
+        "pass": false,
+        "passed_lineages": 0,
+        "total_lineages": 6
+      },
+      {
+        "arm": "D3",
+        "group": "D3_PAIR_HEAD",
+        "pass": false,
+        "passed_lineages": 0,
+        "total_lineages": 6
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_Q",
+        "pass": false,
+        "passed_lineages": 0,
+        "total_lineages": 6
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_K",
+        "pass": false,
+        "passed_lineages": 0,
+        "total_lineages": 6
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_V",
+        "pass": false,
+        "passed_lineages": 0,
+        "total_lineages": 6
+      }
+    ],
+    "lineages": [
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D1",
+        "group": "D1_PAIR_HEAD",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D1",
+        "group": "D1_PAIR_HEAD",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D1",
+        "group": "D1_PAIR_HEAD",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D1",
+        "group": "D1_PAIR_HEAD",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D1",
+        "group": "D1_PAIR_HEAD",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D1",
+        "group": "D1_PAIR_HEAD",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D2",
+        "group": "D2_TOKEN_ENCODER",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D2",
+        "group": "D2_TOKEN_ENCODER",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D2",
+        "group": "D2_TOKEN_ENCODER",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D2",
+        "group": "D2_TOKEN_ENCODER",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D2",
+        "group": "D2_TOKEN_ENCODER",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D2",
+        "group": "D2_TOKEN_ENCODER",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D2",
+        "group": "D2_GRU",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D2",
+        "group": "D2_GRU",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D2",
+        "group": "D2_GRU",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D2",
+        "group": "D2_GRU",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D2",
+        "group": "D2_GRU",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D2",
+        "group": "D2_GRU",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_TOKEN_ENCODER",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_TOKEN_ENCODER",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_TOKEN_ENCODER",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_TOKEN_ENCODER",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_TOKEN_ENCODER",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_TOKEN_ENCODER",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_O",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_O",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_O",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_O",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_O",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_O",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_FEED_FORWARD",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_FEED_FORWARD",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_FEED_FORWARD",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_FEED_FORWARD",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_FEED_FORWARD",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_FEED_FORWARD",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_PAIR_HEAD",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_PAIR_HEAD",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_PAIR_HEAD",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_PAIR_HEAD",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_PAIR_HEAD",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_PAIR_HEAD",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_Q",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_Q",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_Q",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_Q",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_Q",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_Q",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_K",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_K",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_K",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_K",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_K",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_K",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_V",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_V",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_V",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_V",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_V",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_seeds": 0
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_V",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_seeds": 0
+      }
+    ],
+    "origins": [
+      {
+        "origin": 0,
+        "pass": 0,
+        "total": 36
+      },
+      {
+        "origin": 2,
+        "pass": 0,
+        "total": 72
+      },
+      {
+        "origin": 4,
+        "pass": 0,
+        "total": 72
+      },
+      {
+        "origin": 5,
+        "pass": 0,
+        "total": 36
+      },
+      {
+        "origin": 6,
+        "pass": 0,
+        "total": 72
+      },
+      {
+        "origin": 7,
+        "pass": 0,
+        "total": 36
+      },
+      {
+        "origin": 8,
+        "pass": 0,
+        "total": 36
+      },
+      {
+        "origin": 9,
+        "pass": 0,
+        "total": 108
+      },
+      {
+        "origin": 13,
+        "pass": 0,
+        "total": 36
+      },
+      {
+        "origin": 14,
+        "pass": 0,
+        "total": 36
+      },
+      {
+        "origin": 19,
+        "pass": 0,
+        "total": 36
+      },
+      {
+        "origin": 20,
+        "pass": 0,
+        "total": 36
+      },
+      {
+        "origin": 22,
+        "pass": 0,
+        "total": 36
+      },
+      {
+        "origin": 23,
+        "pass": 0,
+        "total": 72
+      },
+      {
+        "origin": 24,
+        "pass": 0,
+        "total": 36
+      },
+      {
+        "origin": 25,
+        "pass": 0,
+        "total": 36
+      },
+      {
+        "origin": 28,
+        "pass": 0,
+        "total": 36
+      },
+      {
+        "origin": 31,
+        "pass": 0,
+        "total": 36
+      }
+    ],
+    "seed_lineage_groups": [
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_TOKEN_ENCODER",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_PAIR_HEAD",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_PAIR_HEAD",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_PAIR_HEAD",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_PAIR_HEAD",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_PAIR_HEAD",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_PAIR_HEAD",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_PAIR_HEAD",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_PAIR_HEAD",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_PAIR_HEAD",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_PAIR_HEAD",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_PAIR_HEAD",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_PAIR_HEAD",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_PAIR_HEAD",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_PAIR_HEAD",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_PAIR_HEAD",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_PAIR_HEAD",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_PAIR_HEAD",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D1",
+        "group": "D1_PAIR_HEAD",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_TOKEN_ENCODER",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_TOKEN_ENCODER",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_TOKEN_ENCODER",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_TOKEN_ENCODER",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_TOKEN_ENCODER",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_TOKEN_ENCODER",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_TOKEN_ENCODER",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_TOKEN_ENCODER",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_TOKEN_ENCODER",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_TOKEN_ENCODER",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_TOKEN_ENCODER",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_TOKEN_ENCODER",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_TOKEN_ENCODER",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_TOKEN_ENCODER",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_TOKEN_ENCODER",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_TOKEN_ENCODER",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_TOKEN_ENCODER",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_TOKEN_ENCODER",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_GRU",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_GRU",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_GRU",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_GRU",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_GRU",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_GRU",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_GRU",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_GRU",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_GRU",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_GRU",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_GRU",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_GRU",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_GRU",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_GRU",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_GRU",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_GRU",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_GRU",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_GRU",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D2",
+        "group": "D2_PAIR_HEAD",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_TOKEN_ENCODER",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_TOKEN_ENCODER",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_TOKEN_ENCODER",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_TOKEN_ENCODER",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_TOKEN_ENCODER",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_TOKEN_ENCODER",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_TOKEN_ENCODER",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_TOKEN_ENCODER",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_TOKEN_ENCODER",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_TOKEN_ENCODER",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_TOKEN_ENCODER",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_TOKEN_ENCODER",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_TOKEN_ENCODER",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_TOKEN_ENCODER",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_TOKEN_ENCODER",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_TOKEN_ENCODER",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_TOKEN_ENCODER",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_TOKEN_ENCODER",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_O",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_O",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_O",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_O",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_O",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_O",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_O",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_O",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_O",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_O",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_O",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_O",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_O",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_O",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_O",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_O",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_O",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_O",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_FEED_FORWARD",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_FEED_FORWARD",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_FEED_FORWARD",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_FEED_FORWARD",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_FEED_FORWARD",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_FEED_FORWARD",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_FEED_FORWARD",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_FEED_FORWARD",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_FEED_FORWARD",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_FEED_FORWARD",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_FEED_FORWARD",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_FEED_FORWARD",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_FEED_FORWARD",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_FEED_FORWARD",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_FEED_FORWARD",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_FEED_FORWARD",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_FEED_FORWARD",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_FEED_FORWARD",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_PAIR_HEAD",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_PAIR_HEAD",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_PAIR_HEAD",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_PAIR_HEAD",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_PAIR_HEAD",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_PAIR_HEAD",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_PAIR_HEAD",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_PAIR_HEAD",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_PAIR_HEAD",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_PAIR_HEAD",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_PAIR_HEAD",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_PAIR_HEAD",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_PAIR_HEAD",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_PAIR_HEAD",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_PAIR_HEAD",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_PAIR_HEAD",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_PAIR_HEAD",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_PAIR_HEAD",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_Q",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_Q",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_Q",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_Q",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_Q",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_Q",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_Q",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_Q",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_Q",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_Q",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_Q",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_Q",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_Q",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_Q",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_Q",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_Q",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_Q",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_Q",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_K",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_K",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_K",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_K",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_K",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_K",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_K",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_K",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_K",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_K",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_K",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_K",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_K",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_K",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_K",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_K",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_K",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_K",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_V",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_V",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_V",
+        "lineage": "LCDF_01",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_V",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_V",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_V",
+        "lineage": "LCDF_04",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_V",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_V",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_V",
+        "lineage": "LCDF_05",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_V",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_V",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_V",
+        "lineage": "LCDF_06",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_V",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_V",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_V",
+        "lineage": "LCDF_07",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_V",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400401,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_V",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400402,
+        "total_probes": 4
+      },
+      {
+        "arm": "D3",
+        "group": "D3_ATTENTION_V",
+        "lineage": "LCDF_08",
+        "pass": false,
+        "passed_probes": 0,
+        "seed": 20400403,
+        "total_probes": 4
+      }
+    ],
+    "variants": [
+      {
+        "pass": 0,
+        "total": 432,
+        "variant": "VARIANT_LOW"
+      },
+      {
+        "pass": 0,
+        "total": 432,
+        "variant": "VARIANT_MAIN"
+      }
+    ]
+  },
+  "counters": {
+    "neural_rollouts": 0,
+    "optimizer_instances": 0,
+    "optimizer_steps": 0,
+    "parameter_updates": 0,
+    "performance_evaluations": 0,
+    "sealed_formula_decode_count": 0,
+    "sealed_state_decode_count": 0,
+    "sealed_target_decode_count": 0,
+    "train_state_array_decode_count": 114,
+    "training_runs": 0,
+    "validation_target_decode_count": 0
+  },
+  "expected_formal_probe_count": 864,
+  "final_status": "TASK_ALIGNED_PARAMETER_GRADIENT_NOT_QUALIFIED",
+  "formal_contexts_per_arm": 72,
+  "formal_probe_count": 864,
+  "resource_pass": true,
+  "reverse_jvp_100_percent": true,
+  "structure_pass": true
+}

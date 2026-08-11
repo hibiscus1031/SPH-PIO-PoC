@@ -1,0 +1,143 @@
+{
+  "actual_update_FD_context_count": 63,
+  "actual_update_FD_pass_count": 63,
+  "arm_aggregation": {
+    "D1": {
+      "global_pass": true,
+      "global_seed_pass_count": 3,
+      "lineage_pass_count": 6,
+      "lineages": {
+        "LCDF_01": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_04": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_05": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_06": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_07": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_08": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        }
+      },
+      "pass": true
+    },
+    "D2": {
+      "global_pass": true,
+      "global_seed_pass_count": 3,
+      "lineage_pass_count": 6,
+      "lineages": {
+        "LCDF_01": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_04": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_05": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_06": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_07": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_08": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        }
+      },
+      "pass": true
+    },
+    "D3": {
+      "global_pass": true,
+      "global_seed_pass_count": 3,
+      "lineage_pass_count": 6,
+      "lineages": {
+        "LCDF_01": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_04": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_05": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_06": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_07": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        },
+        "LCDF_08": {
+          "pass": true,
+          "required": 2,
+          "seed_pass_count": 3
+        }
+      },
+      "pass": true
+    }
+  },
+  "coordinate_block_complete_coverage_qualified": false,
+  "counts": {
+    "formal_training_runs": 0,
+    "graph_rebuilds": 842256,
+    "qualification_model_instances": 1606,
+    "qualification_optimizer_instances": 1237,
+    "qualification_optimizer_steps": 2325,
+    "saved_training_checkpoints": 0,
+    "sealed_test_evaluations": 0,
+    "update_paths": 8550,
+    "validation_evaluations": 0
+  },
+  "diagnostic_classifications": {
+    "FD_WINDOW_MISSING": 23,
+    "PASS": 841
+  },
+  "diagnostic_probe_count": 864,
+  "micro_update_pass_count": 266,
+  "micro_update_path_count": 272,
+  "one_step_context_count": 63,
+  "one_step_lr_evaluation_count": 315,
+  "one_step_lr_pass_count": 272,
+  "schema": "sph-pio-poc.stage06a.update.v1"
+}

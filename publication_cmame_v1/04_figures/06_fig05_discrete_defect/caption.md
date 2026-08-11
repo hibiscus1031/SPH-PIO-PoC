@@ -1,0 +1,3 @@
+# Scale-aware conservative discrete-defect target
+
+Frozen qualification of the scale-aware conservative discrete defect. (a,b) Accepted-state and velocity-defect geometry are schematic or deterministic transforms of a frozen origin. (c) The target decomposes into conservative and center-of-mass-incompatible parts. (d--f) Signal-to-uncertainty, incompatibility, and pair-basis residuals satisfy the registered target gates across 384 origins. (g) The later prospectively requalified v2 scale is shown only as a distributional change. (h) The zero identity is retained. Target qualification is not training qualification and does not establish target truth.

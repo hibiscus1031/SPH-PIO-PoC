@@ -1,0 +1,51 @@
+{
+  "DOP853_versus_exact_included": false,
+  "component_maxima": {
+    "U1": 2.1609057005487473e-14,
+    "U2": 0.0,
+    "U3": 0.0,
+    "U4": 1.7016001523247964e-15,
+    "U5": 0.0,
+    "u_roundoff_floor": 7.275957614183426e-10
+  },
+  "low_signal_count": 0,
+  "ratios": {
+    "global": 475034179.2325337,
+    "lineage": {
+      "LCDF_01": 153820018.1771921,
+      "LCDF_04": 340900511.1036026,
+      "LCDF_05": 552227399.9041039,
+      "LCDF_06": 1073693.1184966972,
+      "LCDF_07": 109455079.76366466,
+      "LCDF_08": 947171792.0547478
+    },
+    "variant": {
+      "LCDF_01/VARIANT_LOW": 130519692.11152259,
+      "LCDF_01/VARIANT_MAIN": 174028175.75087306,
+      "LCDF_04/VARIANT_LOW": 289262796.0119443,
+      "LCDF_04/VARIANT_MAIN": 385685560.7677675,
+      "LCDF_05/VARIANT_LOW": 468574531.55015427,
+      "LCDF_05/VARIANT_MAIN": 624778449.3660513,
+      "LCDF_06/VARIANT_LOW": 911058.7105112958,
+      "LCDF_06/VARIANT_MAIN": 1214745.179622385,
+      "LCDF_07/VARIANT_LOW": 92875422.25964022,
+      "LCDF_07/VARIANT_MAIN": 123834506.1452337,
+      "LCDF_08/VARIANT_LOW": 803697842.6372455,
+      "LCDF_08/VARIANT_MAIN": 1071605610.7862828
+    }
+  },
+  "roundoff_floor": 7.275957614183426e-10,
+  "schema": "sph-pio-poc.stage05b.uncertainty-manifest.v1",
+  "signal_bearing_by_lineage": {
+    "LCDF_01": 1.0,
+    "LCDF_04": 1.0,
+    "LCDF_05": 1.0,
+    "LCDF_06": 1.0,
+    "LCDF_07": 1.0,
+    "LCDF_08": 1.0
+  },
+  "signal_bearing_overall": 1.0,
+  "signal_pass": true,
+  "u_a": 7.275957614183426e-10,
+  "uncertainty_pass": true
+}

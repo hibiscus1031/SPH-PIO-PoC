@@ -1,0 +1,1 @@
+**Figure 8. HET_S2_02 descriptor and target support gap.** Stage07 diagnosed simultaneous descriptor and raw-target out-of-support behavior for the held-out H2 lineage. All plotted values and statuses must be read from the frozen source list; schematic arrows denote methodological dependency, not performance improvement.

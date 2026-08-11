@@ -1,0 +1,71 @@
+{
+  "audit_version": "stage02c-schema-audit-1.0.0",
+  "sample_count": 6,
+  "semantic_rows": [
+    {
+      "errors": [],
+      "sample_id": "r2_duplicate_edge_negative_n6__t0.000000",
+      "status": "PASS"
+    },
+    {
+      "errors": [],
+      "sample_id": "r2_duplicate_edge_negative_n6__t0.002000",
+      "status": "PASS"
+    },
+    {
+      "errors": [],
+      "sample_id": "r2_jitter05_n8__t0.000000",
+      "status": "PASS"
+    },
+    {
+      "errors": [],
+      "sample_id": "r2_jitter05_n8__t0.002000",
+      "status": "PASS"
+    },
+    {
+      "errors": [],
+      "sample_id": "r2_regular_n6__t0.000000",
+      "status": "PASS"
+    },
+    {
+      "errors": [],
+      "sample_id": "r2_regular_n6__t0.002000",
+      "status": "PASS"
+    }
+  ],
+  "semantic_status": "PASS",
+  "structural_rows": [
+    {
+      "errors": [],
+      "sample_id": "r2_duplicate_edge_negative_n6__t0.000000",
+      "status": "PASS"
+    },
+    {
+      "errors": [],
+      "sample_id": "r2_duplicate_edge_negative_n6__t0.002000",
+      "status": "PASS"
+    },
+    {
+      "errors": [],
+      "sample_id": "r2_jitter05_n8__t0.000000",
+      "status": "PASS"
+    },
+    {
+      "errors": [],
+      "sample_id": "r2_jitter05_n8__t0.002000",
+      "status": "PASS"
+    },
+    {
+      "errors": [],
+      "sample_id": "r2_regular_n6__t0.000000",
+      "status": "PASS"
+    },
+    {
+      "errors": [],
+      "sample_id": "r2_regular_n6__t0.002000",
+      "status": "PASS"
+    }
+  ],
+  "structural_status": "PASS",
+  "validator": "frozen_schema_recursive_subset_plus_semantic_contract"
+}

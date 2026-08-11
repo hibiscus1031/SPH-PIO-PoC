@@ -1,0 +1,23 @@
+{
+  "manifests": [
+    "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04cr_input_freeze_manifest.json",
+    "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04cr_contract_manifest.json",
+    "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04cr_attribution_manifest.json",
+    "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04cr_final_manifest.json"
+  ],
+  "reports": [
+    "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_freeze_and_scope.md",
+    "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_historical_failure_matrix.md",
+    "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_full_gradient_norm.md",
+    "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_directional_projection.md",
+    "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_state_residual_and_jacobian.md",
+    "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_loss_factorization.md",
+    "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_coefficient_and_acceleration_sensitivity.md",
+    "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_rk2_attenuation.md",
+    "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_linear_probe_diagnostic.md",
+    "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_failure_attribution.md",
+    "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_route_decision.md",
+    "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_resource_audit.md",
+    "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04cr_final_report.md"
+  ]
+}

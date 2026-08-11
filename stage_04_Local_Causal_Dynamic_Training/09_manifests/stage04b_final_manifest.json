@@ -1,0 +1,173 @@
+{
+  "all_required_gates_pass": true,
+  "completion_date": "2026-08-05",
+  "contract": {
+    "byte_count": 8973,
+    "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/contracts/local_causal_reference_family_contract_v0_1.yaml",
+    "sha256": "sha256:c0d377f7b4b626186fcae076a076b336d774d3bf17c96153b13c4a5f85d0336f"
+  },
+  "counts": {
+    "dop853_case_count": 20,
+    "dop853_pass": 20,
+    "exact_trajectory_count": 60,
+    "exact_trajectory_pass": 60,
+    "family_variant_analytic_pass": 20,
+    "fixed_topology_lineages": 10,
+    "formula_templates": 10,
+    "lineage_components": 10,
+    "neural_rollouts": 0,
+    "optimizer_steps": 0,
+    "performance_evaluations": 0,
+    "pre_release_test_formula_parameter_decode_count": 0,
+    "pre_release_test_state_decode_count": 0,
+    "pre_release_test_target_decode_count": 0,
+    "training_runs": 0,
+    "variable_topology_lineages": 0
+  },
+  "final_status": "LOCAL_CAUSAL_REFERENCE_FAMILY_POOL_QUALIFIED",
+  "gates": {
+    "A_stage04a_verification": true,
+    "B_contract_frozen_no_conflict": true,
+    "C_formula_pool": true,
+    "D_analytic_and_exact": true,
+    "E_topology": true,
+    "F_DOP853": true,
+    "G_lineage": true,
+    "H_test_seal": true,
+    "I_provenance": true,
+    "J_prohibitions": true,
+    "resource": true
+  },
+  "historical_hashes_unchanged": true,
+  "manifests": [
+    {
+      "byte_count": 2374,
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_input_freeze_manifest.json",
+      "sha256": "sha256:8718c65d3059dfb81e9ce7dcf6450d06dd30b82396c39d6017c91d6c81b108ea"
+    },
+    {
+      "byte_count": 2062,
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_contract_manifest.json",
+      "sha256": "sha256:325b4d00a3202d5fc8c8dee904e0d87f808400d16767932521a2bf0ab6f6b82c"
+    },
+    {
+      "byte_count": 11691,
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_formula_manifest.json",
+      "sha256": "sha256:f0953cdaa81ddcaa5b3bbc015fc0465c9be8f1f5c9ef7df2393fa5601c93ff77"
+    },
+    {
+      "byte_count": 413,
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_lineage_manifest.json",
+      "sha256": "sha256:b4754caf8284b3620a85cb042a0684d90471cfd98775018cde961467285ba2fe"
+    },
+    {
+      "byte_count": 2737,
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_role_assignment_manifest.json",
+      "sha256": "sha256:642f91985176774bf71795f2e72391082a9a43cdc0f3f6f7aaec7f1c432db47e"
+    },
+    {
+      "byte_count": 58254,
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_trajectory_manifest.json",
+      "sha256": "sha256:6bc2351482b9167c63640699be0f048d65e3981babe0409895ea6a900b3e8ac2"
+    },
+    {
+      "byte_count": 26266,
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_test_seal_manifest.json",
+      "sha256": "sha256:f3fc8bc263b5cd0862aad21e6331e280bff59fa70df5d2dd172491ee9ed438a5"
+    }
+  ],
+  "next_stage": {
+    "authorization": "LIMITED",
+    "stage": "Stage 04C — Task-Aligned Parameter-Gradient Qualification",
+    "training_authorized": false
+  },
+  "prohibitions": {
+    "model_forward_runs": 0,
+    "neural_rollouts": 0,
+    "normalization_fits": 0,
+    "optimizer_steps": 0,
+    "performance_evaluations": 0,
+    "training_runs": 0
+  },
+  "qualification": {
+    "byte_count": 1283,
+    "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/qualification/stage04b_qualification_summary.json",
+    "sha256": "sha256:170c7335d4cf44cada12c5649d59f5131d2c633bc85287ae02f1f0971c840146"
+  },
+  "reports": [
+    {
+      "byte_count": 443,
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_freeze_and_scope.md",
+      "sha256": "sha256:d188ad78b37a0eb06abc31bf149c7213d94c1c310c52608cea9e896319ddbe4a"
+    },
+    {
+      "byte_count": 449,
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_formula_library.md",
+      "sha256": "sha256:5e046b5c4a99cb1a2f47ef6f2a32640e3e6b47e0f71485dc7a87b25eb5c120ba"
+    },
+    {
+      "byte_count": 341,
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_parameter_generation.md",
+      "sha256": "sha256:4f09e48d0197d589990031baa4148cf16d29751652c40cf7829839b652623d28"
+    },
+    {
+      "byte_count": 288,
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_analytic_qualification.md",
+      "sha256": "sha256:5377980d0decc655087f4d1be4033d370e4287b0961100b22a7de05d535a1c6e"
+    },
+    {
+      "byte_count": 255,
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_trajectory_inventory.md",
+      "sha256": "sha256:4d4faa38925279b2806565bd673232f5b5137f814a57f5f03feda7c0a803c9ff"
+    },
+    {
+      "byte_count": 321,
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_semidiscrete_audit.md",
+      "sha256": "sha256:4f8900b2992ef5494c6209d452aea59c3b9cc0e0300a1bef40906032d85bf47c"
+    },
+    {
+      "byte_count": 349,
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_topology_margin.md",
+      "sha256": "sha256:8cd4dd70f7b4270feccda29070a5adb461869ee7cc91c9e5392fa22857c69064"
+    },
+    {
+      "byte_count": 343,
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_lineage_and_split.md",
+      "sha256": "sha256:ff63b315c9d2473c4fe82a13e3944720cc1ff4e681ad8285b181667c55a90d6d"
+    },
+    {
+      "byte_count": 283,
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_test_seal.md",
+      "sha256": "sha256:b836c97dbcfe08a73e657513b36df8bff59a885a805024c1d95573d27c875707"
+    },
+    {
+      "byte_count": 307,
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_uncertainty.md",
+      "sha256": "sha256:4e100ee67ef769aaa51d95effcfa95aaba7c1ff6e27d1b5e5233ec07df63349b"
+    },
+    {
+      "byte_count": 301,
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_resource_audit.md",
+      "sha256": "sha256:f12c1ec011c950ec506d79df0d56edae1f1a0a586c9191188f17213692cf6a3e"
+    },
+    {
+      "byte_count": 338,
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_qualification_report.md",
+      "sha256": "sha256:73206621e7d02ba566855b8fd5c3e15a5dd12f8467618269bd4674fa93018506"
+    },
+    {
+      "byte_count": 2367,
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04b_final_report.md",
+      "sha256": "sha256:5d2b372643db12f26fa0badbab5f272c3ddadab6afdb8b82b2861b20fdf6f312"
+    }
+  ],
+  "schema_version": "sph-pio-poc.stage04b.final.v1",
+  "stage04a_verdict": "STAGE04A_TARGET_VERIFIED",
+  "test_seal": {
+    "access_denial_tests_pass": true,
+    "pre_release_test_formula_parameter_decode_count": 0,
+    "pre_release_test_state_decode_count": 0,
+    "pre_release_test_target_decode_count": 0,
+    "release_authorized": false
+  }
+}

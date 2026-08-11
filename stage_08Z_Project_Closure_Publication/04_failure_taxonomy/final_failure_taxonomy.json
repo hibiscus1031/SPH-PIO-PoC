@@ -1,0 +1,124 @@
+{
+  "failures": [
+    {
+      "evidence": [
+        "Stage01E model-form attribution",
+        "Stage01G V2_QUALIFICATION_FAIL",
+        "Stage01H FINITE_RESOLUTION_DOMINANT"
+      ],
+      "final_disposition": "High-resolution SPH is not truth.",
+      "frozen_status": "BOUNDARY_ESTABLISHED_IN_SCOPE",
+      "id": "F1",
+      "methodological_response": "WCSPH-compatible MMS, same-semidiscrete DOP853, plateau-aware and independent validation.",
+      "name": "SPH model-form / finite-resolution boundary",
+      "response_succeeded": "Partially: references were qualified, final V2 was not.",
+      "ruled_out_alternatives": "Time-step and determinism dominance were not supported; operator-form failure was not confirmed."
+    },
+    {
+      "evidence": [
+        "Stage02M STATIC_PAIR_FORCE_FITTING_NOT_QUALIFIED",
+        "Stage02M-Q STATIC_PAIR_FORCE_FITTING_V02_NOT_QUALIFIED"
+      ],
+      "final_disposition": "Retained as falsification evidence.",
+      "frozen_status": "STATIC_ROUTE_CLOSED",
+      "id": "F2",
+      "methodological_response": "Task-aligned dynamic accepted-state formulation.",
+      "name": "Static pair-force fitting failure",
+      "response_succeeded": "Static route no; dynamic method advanced.",
+      "ruled_out_alternatives": "Architecture/conservation qualification passed; conditioning diagnosis did not rescue global train fit."
+    },
+    {
+      "evidence": [
+        "216 stable probes; 144 failures",
+        "history gradient 0/6"
+      ],
+      "final_disposition": "Multistep gradient claim prohibited.",
+      "frozen_status": "DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED",
+      "id": "F3",
+      "methodological_response": "Local-causal task-aligned gradient contract.",
+      "name": "Multistep AD/FD incomplete qualification",
+      "response_succeeded": "No: Stage04 task gradient not qualified.",
+      "ruled_out_alternatives": "Topology component qualified; implementation and one-step AD passed."
+    },
+    {
+      "evidence": [
+        "Stage04C/04C-R",
+        "nonzero correction Jacobian with attenuated task signal"
+      ],
+      "final_disposition": "Core methodological result.",
+      "frozen_status": "TASK_SIGNAL_BOUNDARY_COMPLETE",
+      "id": "F4",
+      "methodological_response": "D0-centered scaled conservative defect loss.",
+      "name": "Raw state-loss signal attenuation",
+      "response_succeeded": "Yes at target/scale and optimizer-update levels.",
+      "ruled_out_alternatives": "A zero neural Jacobian and gross structural failure were excluded in audited cases."
+    },
+    {
+      "evidence": [
+        "Stage05C-R evidence incomplete",
+        "Stage05C-Q not qualified"
+      ],
+      "final_disposition": "All-coordinate FD claim prohibited.",
+      "frozen_status": "NOT_QUALIFIED",
+      "id": "F5",
+      "methodological_response": "Prospective actual AdamW update qualification.",
+      "name": "Coordinate-level FD incomplete coverage",
+      "response_succeeded": "Yes for actual update dynamics, not for universal coordinate FD.",
+      "ruled_out_alternatives": "Directional and block diagnostics did not constitute full coordinate coverage."
+    },
+    {
+      "evidence": [
+        "Stage06C nine terminal runs",
+        "all arms 0/3 seed passes"
+      ],
+      "final_disposition": "No qualified trained solver.",
+      "frozen_status": "FORMAL_K1_TRAINING_COMPLETE_TRANSFORMER_NOT_QUALIFIED",
+      "id": "F6",
+      "methodological_response": "Failure attribution and heterogeneous development pool.",
+      "name": "Formal TRAIN-fit failure",
+      "response_succeeded": "Attribution yes; training criterion no.",
+      "ruled_out_alternatives": "Execution incompleteness, checkpoint corruption, update-path failure and structural-force failure were excluded."
+    },
+    {
+      "evidence": [
+        "Stage07D nine retraining runs",
+        "Branch B NOT_SUPPORTED"
+      ],
+      "final_disposition": "Heterogeneity alone is insufficient.",
+      "frozen_status": "FORMAL_TRAIN_V2_RETRAINING_COMPLETE_TRANSFORMER_NOT_QUALIFIED",
+      "id": "F7",
+      "methodological_response": "Held-out support diagnosis and systematic coverage-by-design.",
+      "name": "Development-pool heterogeneity hypothesis failure",
+      "response_succeeded": "Diagnosis yes; V3 qualification no.",
+      "ruled_out_alternatives": "Pool/reference/update qualifications passed; more formula heterogeneity did not restore global success."
+    },
+    {
+      "evidence": [
+        "HET_S2_02 Stage07 descriptor distance 6.5115373494207205",
+        "TARGET_OUT_OF_SUPPORT"
+      ],
+      "final_disposition": "Support diagnosis retained.",
+      "frozen_status": "HELD_OUT_H2_SUPPORT_GAP_DOMINANT",
+      "id": "F8",
+      "methodological_response": "Four-layer prospective coverage selection.",
+      "name": "Held-out support-gap failure",
+      "response_succeeded": "Descriptor support improved, target support did not.",
+      "ruled_out_alternatives": "Pair-basis failure excluded; optimizer plateau and gradient conflict documented."
+    },
+    {
+      "evidence": [
+        "192/192 candidates",
+        "HET_S2_02 descriptor 1.8606627588827505",
+        "target residual 3.5113172977959843 > 1.5385435220163268",
+        "fresh closure 0/4"
+      ],
+      "final_disposition": "FULL_SOLVER_TRAINING_ROUTE_CLOSED.",
+      "frozen_status": "SYSTEMATIC_COVERAGE_V3_POOL_NOT_QUALIFIED",
+      "id": "F9",
+      "methodological_response": "Final route closure and publication synthesis.",
+      "name": "Systematic coverage V3 target-manifold failure",
+      "response_succeeded": "Yes for evidence closure; no for solver qualification.",
+      "ruled_out_alternatives": "Candidate incompleteness, manual role swapping, model-prediction selection and sealed-test leakage were excluded."
+    }
+  ]
+}

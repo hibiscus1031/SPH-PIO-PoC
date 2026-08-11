@@ -1,0 +1,59 @@
+{
+  "contract_version": "stage02l-optimizer-schedule-1.0.0",
+  "optimizer": {
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "class": "AdamW",
+    "epsilon": 1e-08,
+    "gradient_clipping_global_norm": 1.0,
+    "grids_or_architecture_specific_values": "forbidden",
+    "learning_rate": 0.001,
+    "weight_decay": 1e-06
+  },
+  "optimizer_steps": 0,
+  "schedule": {
+    "decay": "cosine",
+    "maximum_optimizer_updates": 1000,
+    "minimum_learning_rate": 1e-05,
+    "posthoc_budget_extension": "forbidden",
+    "result_dependent_restart": "forbidden",
+    "warmup_updates": 50
+  },
+  "schedule_samples": {
+    "0": 0.0,
+    "1": 2e-05,
+    "1000": 1e-05,
+    "300": 0.000840254377954742,
+    "50": 0.001
+  },
+  "scheduler_steps": 0,
+  "status": "PASS",
+  "step_call_audit": {
+    "files": [
+      {
+        "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/data_access/sealed_loader.py",
+        "step_call_lines": []
+      },
+      {
+        "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/freeze/build_stage02l_freeze.py",
+        "step_call_lines": []
+      },
+      {
+        "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/harness/run_stage02l_static_audit.py",
+        "step_call_lines": []
+      },
+      {
+        "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/loss/loss_contract.py",
+        "step_call_lines": []
+      },
+      {
+        "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_training_protocol_v0_1/optimizer/prospective_optimizer.py",
+        "step_call_lines": []
+      }
+    ],
+    "status": "PASS",
+    "step_call_count": 0
+  }
+}

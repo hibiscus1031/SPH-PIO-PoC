@@ -1,0 +1,52 @@
+{
+  "audit_version": "stage02l-harness-static-1.0.0",
+  "complete_train_graphs_in_full_batch": 10,
+  "optimizer_steps": 0,
+  "parameter_updates": 0,
+  "rows": [
+    {
+      "architecture": "K0",
+      "edge_reorder_loss_absolute_error": 0.0,
+      "finite_forward_backward": true,
+      "gradient_accumulation_relative_error": 3.070784332250313e-16,
+      "gradient_clip_factor_finite": true,
+      "gradient_global_norm": 8.205682467847008e-06,
+      "optimizer_object_step_counter": 0,
+      "parameter_hash_unchanged_after_backward": true,
+      "particle_reorder_loss_absolute_error": 0.0,
+      "scheduler_counter": 0,
+      "status": "PASS"
+    },
+    {
+      "architecture": "K1",
+      "edge_reorder_loss_absolute_error": 1.3552527156068805e-20,
+      "finite_forward_backward": true,
+      "gradient_accumulation_relative_error": 4.3322497977263116e-16,
+      "gradient_clip_factor_finite": true,
+      "gradient_global_norm": 1.2487799589435777e-05,
+      "optimizer_object_step_counter": 0,
+      "parameter_hash_unchanged_after_backward": true,
+      "particle_reorder_loss_absolute_error": 0.0,
+      "scheduler_counter": 0,
+      "status": "PASS"
+    },
+    {
+      "architecture": "K2",
+      "edge_reorder_loss_absolute_error": 0.0,
+      "finite_forward_backward": true,
+      "gradient_accumulation_relative_error": 4.351357380712401e-16,
+      "gradient_clip_factor_finite": true,
+      "gradient_global_norm": 6.845612298461615e-06,
+      "optimizer_object_step_counter": 0,
+      "parameter_hash_unchanged_after_backward": true,
+      "particle_reorder_loss_absolute_error": 0.0,
+      "scheduler_counter": 0,
+      "status": "PASS"
+    }
+  ],
+  "runtime_feature_permission_guard": "PASS",
+  "scheduler_steps": 0,
+  "status": "PASS",
+  "synthetic_supervision_only": true,
+  "target_present_in_input_graph": false
+}

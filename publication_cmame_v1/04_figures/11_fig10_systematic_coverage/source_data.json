@@ -1,0 +1,1176 @@
+{
+  "figure": "fig10",
+  "title": "Systematic coverage-by-design and evidence-based route closure",
+  "frozen_evidence_only": true,
+  "new_scientific_computation": false,
+  "display_data": {
+    "templates": [
+      "T01",
+      "T02",
+      "T03",
+      "T04",
+      "T05",
+      "T06",
+      "T07",
+      "T08",
+      "T09",
+      "T10",
+      "T11",
+      "T12",
+      "T13",
+      "T14",
+      "T15",
+      "T16"
+    ],
+    "candidate_counts": {
+      "DOP853_pass": 0,
+      "DOP853_required": 24,
+      "TRAIN_V3": 14,
+      "analytic_pass": 0,
+      "analytic_required": 24,
+      "candidate_pass": 192,
+      "checkpoint_loads": 0,
+      "consumed_development": 20,
+      "fresh_validation_selected": 0,
+      "model_forwards": 0,
+      "model_instances": 0,
+      "model_predictions_read": 0,
+      "optimizer_instances": 0,
+      "optimizer_steps": 0,
+      "parameter_updates": 0,
+      "systematic_train_selected": 8,
+      "topology_pass": 0,
+      "topology_required": 72,
+      "train_candidates": 128,
+      "training_runs": 0,
+      "trajectory_complete": 0,
+      "trajectory_required": 72,
+      "validation_candidates": 64
+    },
+    "candidate_qualification": {
+      "passed": 192,
+      "required": 192
+    },
+    "selected": [
+      "SV3_T06_S041",
+      "SV3_T16_S120",
+      "SV3_T07_S049",
+      "SV3_T13_S096",
+      "SV3_T05_S037",
+      "SV3_T09_S067",
+      "SV3_T11_S081",
+      "SV3_T10_S078"
+    ],
+    "selection_trace": [
+      {
+        "lexicographic_score": [
+          8.566996658573625,
+          11.981271041394233,
+          11.297635194992598,
+          -1.2687150688071498
+        ],
+        "manual_override": false,
+        "remaining_candidate_count_evaluated": 128,
+        "selected": "SV3_T06_S041",
+        "slot": 1
+      },
+      {
+        "lexicographic_score": [
+          6.622940005295883,
+          5.630199150287957,
+          9.45956518856629,
+          -1.2687150688071498
+        ],
+        "manual_override": false,
+        "remaining_candidate_count_evaluated": 127,
+        "selected": "SV3_T16_S120",
+        "slot": 2
+      },
+      {
+        "lexicographic_score": [
+          4.007204214108678,
+          5.6786518780575275,
+          7.930249386123141,
+          -1.2687150688071498
+        ],
+        "manual_override": false,
+        "remaining_candidate_count_evaluated": 126,
+        "selected": "SV3_T07_S049",
+        "slot": 3
+      },
+      {
+        "lexicographic_score": [
+          3.718413769670946,
+          5.2944056077302895,
+          7.930249386123141,
+          -1.2687150688071498
+        ],
+        "manual_override": false,
+        "remaining_candidate_count_evaluated": 125,
+        "selected": "SV3_T13_S096",
+        "slot": 4
+      },
+      {
+        "lexicographic_score": [
+          3.5173402633292095,
+          7.38078416123914,
+          7.930249386123141,
+          -1.2687150688071498
+        ],
+        "manual_override": false,
+        "remaining_candidate_count_evaluated": 124,
+        "selected": "SV3_T05_S037",
+        "slot": 5
+      },
+      {
+        "lexicographic_score": [
+          3.5173402633292095,
+          5.123472847557323,
+          7.930249386123141,
+          -1.2687150688071498
+        ],
+        "manual_override": false,
+        "remaining_candidate_count_evaluated": 123,
+        "selected": "SV3_T09_S067",
+        "slot": 6
+      },
+      {
+        "lexicographic_score": [
+          3.5173402633292095,
+          4.933645098843122,
+          7.930249386123141,
+          -1.2687150688071498
+        ],
+        "manual_override": false,
+        "remaining_candidate_count_evaluated": 122,
+        "selected": "SV3_T11_S081",
+        "slot": 7
+      },
+      {
+        "lexicographic_score": [
+          3.5173402633292095,
+          4.704377980134841,
+          7.930249386123141,
+          -0.9616370553523761
+        ],
+        "manual_override": false,
+        "remaining_candidate_count_evaluated": 121,
+        "selected": "SV3_T10_S078",
+        "slot": 8
+      }
+    ],
+    "HET_S2_02": {
+      "Stage07_descriptor": "OUTSIDE_TRAIN_SUPPORT",
+      "Stage07_target": "TARGET_OUT_OF_SUPPORT",
+      "Stage08_classification": "OUTSIDE_TRAIN_SUPPORT",
+      "Stage08_descriptor_distance": 1.8606627588827505,
+      "Stage08_target_PCA_residual": 3.5113172977959843,
+      "Stage08_target_threshold": 1.5385435220163268,
+      "design_statement": "KNOWN_H2_SUPPORT_GAP_NOT_COVERED"
+    },
+    "train_gates": {
+      "20_descriptor_support": false,
+      "20_target_support": false,
+      "HET_S2_02_descriptor_support": true,
+      "HET_S2_02_target_support": false,
+      "key_descriptor_envelopes": false
+    },
+    "validation_audit": [
+      {
+        "candidate_count": 16,
+        "eligible_count": 4,
+        "macro_group": "mixed_LT",
+        "rows": [
+          {
+            "candidate_id": "SV3V_T01_S256",
+            "classification": "IN_SUPPORT",
+            "descriptor_NN_distance": 0.9713037471893142,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "mixed_LT",
+            "qualified": true,
+            "target_PCA_residual": 1.1876334936260038,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T01_S257",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 1.1761204227657003,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "mixed_LT",
+            "qualified": false,
+            "target_PCA_residual": 3.1990721723684485,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T01_S258",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 1.0093156497071003,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "mixed_LT",
+            "qualified": false,
+            "target_PCA_residual": 1.9923762888897742,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T01_S259",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 1.571556804601464,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "mixed_LT",
+            "qualified": false,
+            "target_PCA_residual": 3.4598666865245264,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T02_S260",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 1.5953605177179468,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "mixed_LT",
+            "qualified": false,
+            "target_PCA_residual": 1.4062824344704354,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T02_S261",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 2.719018193751729,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "mixed_LT",
+            "qualified": false,
+            "target_PCA_residual": 3.6236102259789686,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T02_S262",
+            "classification": "IN_SUPPORT",
+            "descriptor_NN_distance": 1.5468733919891713,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "mixed_LT",
+            "qualified": true,
+            "target_PCA_residual": 1.2133950473061836,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T02_S263",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 1.1971451128233979,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "mixed_LT",
+            "qualified": false,
+            "target_PCA_residual": 1.4533121415487367,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T03_S264",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 1.143978135884838,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "mixed_LT",
+            "qualified": false,
+            "target_PCA_residual": 3.5943119438599527,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T03_S265",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 5.084562572680204,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": false
+            },
+            "macro_group": "mixed_LT",
+            "qualified": false,
+            "target_PCA_residual": 10.525559279104316,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T03_S266",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 1.1077783564220798,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "mixed_LT",
+            "qualified": false,
+            "target_PCA_residual": 4.090995916859248,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T03_S267",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 2.226705397833655,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "mixed_LT",
+            "qualified": false,
+            "target_PCA_residual": 6.523203466417622,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T04_S268",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 0.7735037558023313,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "mixed_LT",
+            "qualified": false,
+            "target_PCA_residual": 2.1841183700021487,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T04_S269",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 2.1967777100074186,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "mixed_LT",
+            "qualified": false,
+            "target_PCA_residual": 5.66407347195436,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T04_S270",
+            "classification": "IN_SUPPORT",
+            "descriptor_NN_distance": 1.054306518695002,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "mixed_LT",
+            "qualified": true,
+            "target_PCA_residual": 1.35757420885407,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T04_S271",
+            "classification": "IN_SUPPORT",
+            "descriptor_NN_distance": 0.8299407902147609,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "mixed_LT",
+            "qualified": true,
+            "target_PCA_residual": 1.3235564198341596,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          }
+        ],
+        "selected": "SV3V_T02_S262"
+      },
+      {
+        "candidate_count": 16,
+        "eligible_count": 2,
+        "macro_group": "spatial_frequency_heterogeneous",
+        "rows": [
+          {
+            "candidate_id": "SV3V_T05_S272",
+            "classification": "IN_SUPPORT",
+            "descriptor_NN_distance": 1.202379400052733,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "spatial_frequency_heterogeneous",
+            "qualified": true,
+            "target_PCA_residual": 0.8152252835207615,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T05_S273",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 1.614412889741026,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "spatial_frequency_heterogeneous",
+            "qualified": false,
+            "target_PCA_residual": 4.8533840153062435,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T05_S274",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 2.4402664625467514,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "spatial_frequency_heterogeneous",
+            "qualified": false,
+            "target_PCA_residual": 2.6637460216790894,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T05_S275",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 1.5266110124552281,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "spatial_frequency_heterogeneous",
+            "qualified": false,
+            "target_PCA_residual": 2.8779748529123856,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T06_S276",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 1.6667095116163972,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "spatial_frequency_heterogeneous",
+            "qualified": false,
+            "target_PCA_residual": 1.9651671062071223,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T06_S277",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 24.411973984010533,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": false,
+              "raw_a_cons_rms": false,
+              "source_rms": false
+            },
+            "macro_group": "spatial_frequency_heterogeneous",
+            "qualified": false,
+            "target_PCA_residual": 5.789873108180314,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T06_S278",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 1.3949435529227374,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "spatial_frequency_heterogeneous",
+            "qualified": false,
+            "target_PCA_residual": 2.8476994244721334,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T06_S279",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 1.344219102504337,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "spatial_frequency_heterogeneous",
+            "qualified": false,
+            "target_PCA_residual": 2.5327923545917126,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T07_S280",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 1.2791395681319122,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "spatial_frequency_heterogeneous",
+            "qualified": false,
+            "target_PCA_residual": 2.9276402731811055,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T07_S281",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 3.25835293162173,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "spatial_frequency_heterogeneous",
+            "qualified": false,
+            "target_PCA_residual": 16.99390566464369,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T07_S282",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 4.13854334856587,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "spatial_frequency_heterogeneous",
+            "qualified": false,
+            "target_PCA_residual": 3.9697220657653416,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T07_S283",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 2.1226669095469166,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "spatial_frequency_heterogeneous",
+            "qualified": false,
+            "target_PCA_residual": 3.1162402013048327,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T08_S284",
+            "classification": "IN_SUPPORT",
+            "descriptor_NN_distance": 1.5938436817501327,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "spatial_frequency_heterogeneous",
+            "qualified": true,
+            "target_PCA_residual": 1.229741961433488,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T08_S285",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 1.4822718170439972,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "spatial_frequency_heterogeneous",
+            "qualified": false,
+            "target_PCA_residual": 3.494811852351077,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T08_S286",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 2.05606248226981,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "spatial_frequency_heterogeneous",
+            "qualified": false,
+            "target_PCA_residual": 8.232168032421948,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T08_S287",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 1.2125864232076606,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "spatial_frequency_heterogeneous",
+            "qualified": false,
+            "target_PCA_residual": 9.742262289003234,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          }
+        ],
+        "selected": "SV3V_T08_S284"
+      },
+      {
+        "candidate_count": 16,
+        "eligible_count": 0,
+        "macro_group": "multi_temporal",
+        "rows": [
+          {
+            "candidate_id": "SV3V_T09_S288",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 0.6640977382906581,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "multi_temporal",
+            "qualified": false,
+            "target_PCA_residual": 0.9851869264266785,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T09_S289",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 0.7730873142189502,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "multi_temporal",
+            "qualified": false,
+            "target_PCA_residual": 3.2878890681165807,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T09_S290",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 0.9945828879570902,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "multi_temporal",
+            "qualified": false,
+            "target_PCA_residual": 3.3780425099090023,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T09_S291",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 1.039574460771288,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "multi_temporal",
+            "qualified": false,
+            "target_PCA_residual": 4.080558657795368,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T10_S292",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 0.6581660711547794,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "multi_temporal",
+            "qualified": false,
+            "target_PCA_residual": 2.4986499726202243,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T10_S293",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 2.4609878117969686,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": false
+            },
+            "macro_group": "multi_temporal",
+            "qualified": false,
+            "target_PCA_residual": 4.212982654288871,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T10_S294",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 0.5465457645728816,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "multi_temporal",
+            "qualified": false,
+            "target_PCA_residual": 2.0146051741136817,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T10_S295",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 0.8127164382917097,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "multi_temporal",
+            "qualified": false,
+            "target_PCA_residual": 3.26892690632994,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T11_S296",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 1.3409176679524966,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "multi_temporal",
+            "qualified": false,
+            "target_PCA_residual": 2.285217149634412,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T11_S297",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 1.0704480816364266,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "multi_temporal",
+            "qualified": false,
+            "target_PCA_residual": 8.62809323952626,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T11_S298",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 1.5771688307488583,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "multi_temporal",
+            "qualified": false,
+            "target_PCA_residual": 3.3237322214905234,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T11_S299",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 1.1274041078178902,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "multi_temporal",
+            "qualified": false,
+            "target_PCA_residual": 2.731782807287513,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T12_S300",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 1.5997981392886709,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "multi_temporal",
+            "qualified": false,
+            "target_PCA_residual": 4.02211569293687,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T12_S301",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 2.835251784703325,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "multi_temporal",
+            "qualified": false,
+            "target_PCA_residual": 19.913662120393735,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T12_S302",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 1.876619008470271,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "multi_temporal",
+            "qualified": false,
+            "target_PCA_residual": 4.853122851236515,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T12_S303",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 1.3997483813651377,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "multi_temporal",
+            "qualified": false,
+            "target_PCA_residual": 4.102079310475834,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          }
+        ],
+        "selected": null
+      },
+      {
+        "candidate_count": 16,
+        "eligible_count": 0,
+        "macro_group": "rotating_anisotropic",
+        "rows": [
+          {
+            "candidate_id": "SV3V_T13_S304",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 3.282708149687428,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "rotating_anisotropic",
+            "qualified": false,
+            "target_PCA_residual": 3.4542418030392317,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T13_S305",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 7.362398521991811,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "rotating_anisotropic",
+            "qualified": false,
+            "target_PCA_residual": 8.317620605379792,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T13_S306",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 4.085881824071401,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "rotating_anisotropic",
+            "qualified": false,
+            "target_PCA_residual": 2.0394844730455186,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T13_S307",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 2.9767979161598777,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "rotating_anisotropic",
+            "qualified": false,
+            "target_PCA_residual": 4.267004277762124,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T14_S308",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 2.2632494809119845,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "rotating_anisotropic",
+            "qualified": false,
+            "target_PCA_residual": 2.555963534132475,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T14_S309",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 5.834801140154379,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "rotating_anisotropic",
+            "qualified": false,
+            "target_PCA_residual": 6.377540863078502,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T14_S310",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 2.6081326152222193,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "rotating_anisotropic",
+            "qualified": false,
+            "target_PCA_residual": 8.100180025949417,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T14_S311",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 2.2285166392554077,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "rotating_anisotropic",
+            "qualified": false,
+            "target_PCA_residual": 6.547131203424018,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T15_S312",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 2.9428533796240077,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "rotating_anisotropic",
+            "qualified": false,
+            "target_PCA_residual": 1.3235764032305986,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T15_S313",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 13.20726892890554,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "rotating_anisotropic",
+            "qualified": false,
+            "target_PCA_residual": 5.829425749210991,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T15_S314",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 4.179211081143497,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "rotating_anisotropic",
+            "qualified": false,
+            "target_PCA_residual": 4.137926725350642,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T15_S315",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 4.4779821946089635,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "rotating_anisotropic",
+            "qualified": false,
+            "target_PCA_residual": 3.3703021018548474,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T16_S316",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 4.552538295676186,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "rotating_anisotropic",
+            "qualified": false,
+            "target_PCA_residual": 2.2538187618140832,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T16_S317",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 9.261194660965751,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "rotating_anisotropic",
+            "qualified": false,
+            "target_PCA_residual": 3.6558946185146333,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T16_S318",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 5.530274941148073,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "rotating_anisotropic",
+            "qualified": false,
+            "target_PCA_residual": 3.92110456259845,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          },
+          {
+            "candidate_id": "SV3V_T16_S319",
+            "classification": "REJECTED_BY_FROZEN_SUPPORT_GATE",
+            "descriptor_NN_distance": 2.0895298775291766,
+            "key_descriptor_gates": {
+              "oracle_bounded_coefficient_rms": true,
+              "raw_a_cons_rms": true,
+              "source_rms": true
+            },
+            "macro_group": "rotating_anisotropic",
+            "qualified": false,
+            "target_PCA_residual": 4.254491778655182,
+            "target_threshold_TRAIN_p90": 1.3590454519877764
+          }
+        ],
+        "selected": null
+      }
+    ],
+    "validation_provisional": [
+      "SV3V_T02_S262",
+      "SV3V_T08_S284"
+    ],
+    "validation_selected": [],
+    "formal_role_closure": false,
+    "zero_counts": [
+      [
+        "model predictions",
+        0
+      ],
+      [
+        "model forwards",
+        0
+      ],
+      [
+        "training runs",
+        0
+      ]
+    ],
+    "ladder": [
+      [
+        "dynamic architecture",
+        "QUALIFIED"
+      ],
+      [
+        "zero correction",
+        "VERIFIED"
+      ],
+      [
+        "defect target",
+        "QUALIFIED"
+      ],
+      [
+        "actual updates",
+        "QUALIFIED"
+      ],
+      [
+        "formal training",
+        "NOT QUALIFIED"
+      ],
+      [
+        "validation closure",
+        "NOT QUALIFIED"
+      ],
+      [
+        "target support",
+        "NOT QUALIFIED"
+      ],
+      [
+        "autonomous rollout",
+        "NOT QUALIFIED"
+      ],
+      [
+        "sealed test",
+        "NOT ACCESSED"
+      ],
+      [
+        "full-solver route",
+        "NOT QUALIFIED"
+      ]
+    ],
+    "final_status": "SYSTEMATIC_COVERAGE_V3_POOL_NOT_QUALIFIED",
+    "claim_matrix_keys": [
+      "allowed",
+      "prohibited"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "campaign_id": "stage02c_r2_audit_scale_20260804",
+  "manifest_version": "stage02c-dataset-manifest-1.0.0",
+  "normalization_statistics_created": false,
+  "reference_classes": [
+    "R2_semidiscrete_qualified"
+  ],
+  "reference_merkle_root": "sha256:effe623cefe698c2ec3b0eb644b0c189be2e9e59c5efd8e7ddb5329373b643e0",
+  "reference_record_count": 3,
+  "references": [
+    {
+      "case_id": "r2_regular_n6",
+      "path": "stage_02_Particle_Interaction_Operator/03_dataset/references/r2_regular_n6__r2_reference.json",
+      "sha256": "sha256:fcc5a1df49e23c9378e9b03e56a33edbe840cbf0c218117fa319e0878f593f8f",
+      "status": "PASS"
+    },
+    {
+      "case_id": "r2_jitter05_n8",
+      "path": "stage_02_Particle_Interaction_Operator/03_dataset/references/r2_jitter05_n8__r2_reference.json",
+      "sha256": "sha256:9e575e2d8bf54e97f04cc318d45ce1b391e85cdd7f8aabc3f2a8cc5a0fd80013",
+      "status": "PASS"
+    },
+    {
+      "case_id": "r2_duplicate_edge_negative_n6",
+      "path": "stage_02_Particle_Interaction_Operator/03_dataset/references/r2_duplicate_edge_negative_n6__r2_reference.json",
+      "sha256": "sha256:c1ca551d5a40682d47c0d90b2da405f942e256c586c0ae862c431cadc11f3946",
+      "status": "PASS"
+    }
+  ],
+  "sample_count": 6,
+  "sample_merkle_root": "sha256:ae5cbaf0f028067f965b510043d57cbc09f1b314c420acbde47d2969143a0728",
+  "samples": [
+    {
+      "path": "stage_02_Particle_Interaction_Operator/03_dataset/samples/r2_regular_n6__t0.000000.json",
+      "sample_id": "r2_regular_n6__t0.000000",
+      "sha256": "sha256:4de2946fef9bfc2e617cb1bf25465d10f3dd1c681ea8e900af0426652d0791f2",
+      "verdict": "diagnostic"
+    },
+    {
+      "path": "stage_02_Particle_Interaction_Operator/03_dataset/samples/r2_regular_n6__t0.002000.json",
+      "sample_id": "r2_regular_n6__t0.002000",
+      "sha256": "sha256:c657ed110b7bec2cf2094e28d8cb490c513085d8bbe1fdcdbdead1c62f7207f8",
+      "verdict": "diagnostic"
+    },
+    {
+      "path": "stage_02_Particle_Interaction_Operator/03_dataset/samples/r2_jitter05_n8__t0.000000.json",
+      "sample_id": "r2_jitter05_n8__t0.000000",
+      "sha256": "sha256:0b6c3a5a3901d6a25dbce7b09ae2442e06eda6a644b4fcbe38b7ac6a59c2d6fe",
+      "verdict": "diagnostic"
+    },
+    {
+      "path": "stage_02_Particle_Interaction_Operator/03_dataset/samples/r2_jitter05_n8__t0.002000.json",
+      "sample_id": "r2_jitter05_n8__t0.002000",
+      "sha256": "sha256:9ffbd1e7c049182370bf03c60a669838de8187e9a29a556a90dd532b4cdeaeb3",
+      "verdict": "diagnostic"
+    },
+    {
+      "path": "stage_02_Particle_Interaction_Operator/03_dataset/samples/r2_duplicate_edge_negative_n6__t0.000000.json",
+      "sample_id": "r2_duplicate_edge_negative_n6__t0.000000",
+      "sha256": "sha256:3a4f0a4726b9fb82d376fc789ff996e24614aee17fdec2f9efef7b44a3a5e61a",
+      "verdict": "rejected"
+    },
+    {
+      "path": "stage_02_Particle_Interaction_Operator/03_dataset/samples/r2_duplicate_edge_negative_n6__t0.002000.json",
+      "sample_id": "r2_duplicate_edge_negative_n6__t0.002000",
+      "sha256": "sha256:cb24c7da4440493af1fc9841fee2b1170bfaac7d8c19a29a7e729dcdc3e7b01a",
+      "verdict": "rejected"
+    }
+  ],
+  "scale": "audit_only",
+  "split_assignment_created": false,
+  "target_sign_convention": "a_ref_minus_a_sph",
+  "training_artifacts_created": false,
+  "verdict_counts": {
+    "diagnostic": 4,
+    "rejected": 2
+  }
+}

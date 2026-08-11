@@ -1,0 +1,86 @@
+[
+  {
+    "figure": "Figure 2",
+    "panel": "a--e",
+    "scientific_claim": "Reciprocal unordered pair evaluation is antisymmetric and conservation-compatible.",
+    "source_file": "stage_03_Dynamic_SPH_Transformer_Hybrid/02_temporal_architecture/reciprocal_pair_head_contract.md",
+    "source_hash": "sha256:0465ca0211e55f4fbbf3db7a4a88d927028207ff947ece088691080685f9057c",
+    "source_field": "reciprocal pair construction",
+    "confirmatory_or_diagnostic": "CONFIRMATORY",
+    "transformation": "Explanatory vector schematic; no numerical values introduced.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/03_fig02_architecture/fig02_architecture.svg;publication_cmame_v1/04_figures/03_fig02_architecture/fig02_architecture.pdf;publication_cmame_v1/04_figures/03_fig02_architecture/fig02_architecture.png"
+  },
+  {
+    "figure": "Figure 2",
+    "panel": "d",
+    "scientific_claim": "Causal temporal encoding is distinct from an SPH kernel interpretation.",
+    "source_file": "stage_03_Dynamic_SPH_Transformer_Hybrid/02_temporal_architecture/temporal_transformer_contract.md",
+    "source_hash": "sha256:b6c51bf8911a7dbc4839b19762f6a8774a90b6b04763018a2d5dbbb2dc2138a9",
+    "source_field": "token/head semantics",
+    "confirmatory_or_diagnostic": "CONFIRMATORY",
+    "transformation": "Contract blocks arranged left-to-right.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/03_fig02_architecture/fig02_architecture.svg;publication_cmame_v1/04_figures/03_fig02_architecture/fig02_architecture.pdf;publication_cmame_v1/04_figures/03_fig02_architecture/fig02_architecture.png"
+  },
+  {
+    "figure": "Figure 2",
+    "panel": "f",
+    "scientific_claim": "D1/D2/D3 are comparison arms and do not encode superiority.",
+    "source_file": "stage_03_Dynamic_SPH_Transformer_Hybrid/02_temporal_architecture/baseline_arm_contract.md",
+    "source_hash": "sha256:5e4a6e6225ee969dce1a0c5ad3930710e0b75660fb7a85c59ee1ff66d7708273",
+    "source_field": "D1/D2/D3 arm definitions",
+    "confirmatory_or_diagnostic": "CONFIRMATORY",
+    "transformation": "Equal-size arm cards with non-ordinal styling.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/03_fig02_architecture/fig02_architecture.svg;publication_cmame_v1/04_figures/03_fig02_architecture/fig02_architecture.pdf;publication_cmame_v1/04_figures/03_fig02_architecture/fig02_architecture.png"
+  },
+  {
+    "figure": "Figure 2",
+    "panel": "g",
+    "scientific_claim": "Midpoint RK2 rebuilds graph/source state at registered stages.",
+    "source_file": "stage_03_Dynamic_SPH_Transformer_Hybrid/03_time_integration/rk2_stage_semantics.md",
+    "source_hash": "sha256:2577e4a7e72747117256b0f9316ce2822af53a9a691e4d6c5cbcb08c9432bc2f",
+    "source_field": "RK2 stage semantics",
+    "confirmatory_or_diagnostic": "CONFIRMATORY",
+    "transformation": "Stage sequence shown schematically.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/03_fig02_architecture/fig02_architecture.svg;publication_cmame_v1/04_figures/03_fig02_architecture/fig02_architecture.pdf;publication_cmame_v1/04_figures/03_fig02_architecture/fig02_architecture.png"
+  },
+  {
+    "figure": "Figure 2",
+    "panel": "h",
+    "scientific_claim": "Only accepted states commit to causal history.",
+    "source_file": "stage_03_Dynamic_SPH_Transformer_Hybrid/03_time_integration/history_commit_contract.md",
+    "source_hash": "sha256:43a683835f5032eac42e421d4bdad21beec78e86f40d62597becabac15d7d0e5",
+    "source_field": "accepted-only history semantics",
+    "confirmatory_or_diagnostic": "CONFIRMATORY",
+    "transformation": "Accepted and midpoint states visually differentiated.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/03_fig02_architecture/fig02_architecture.svg;publication_cmame_v1/04_figures/03_fig02_architecture/fig02_architecture.pdf;publication_cmame_v1/04_figures/03_fig02_architecture/fig02_architecture.png"
+  },
+  {
+    "figure": "Figure 2",
+    "panel": "i",
+    "scientific_claim": "D0 is the exact zero-correction identity.",
+    "source_file": "stage_03_Dynamic_SPH_Transformer_Hybrid/02_temporal_architecture/zero_fallback_contract.md",
+    "source_hash": "sha256:ad124d68c2bd2f3f89be045591cd6358619150b3ab3f746f56f206d264cd5498",
+    "source_field": "D0 identity",
+    "confirmatory_or_diagnostic": "CONFIRMATORY",
+    "transformation": "Formula typeset verbatim as explanatory identity.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/03_fig02_architecture/fig02_architecture.svg;publication_cmame_v1/04_figures/03_fig02_architecture/fig02_architecture.pdf;publication_cmame_v1/04_figures/03_fig02_architecture/fig02_architecture.png"
+  },
+  {
+    "figure": "Figure 2",
+    "panel": "all",
+    "scientific_claim": "The pair-force architecture passed its frozen structural qualification.",
+    "source_file": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/results/stage02k_qualification_summary.json",
+    "source_hash": "sha256:75dea2a8e4ae90d200b202f0f43b075d4ae2700de5ceb60f66c43e44cdc06eef",
+    "source_field": "status and architecture gates",
+    "confirmatory_or_diagnostic": "CONFIRMATORY",
+    "transformation": "Status used as boundary; no training claim.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/03_fig02_architecture/fig02_architecture.svg;publication_cmame_v1/04_figures/03_fig02_architecture/fig02_architecture.pdf;publication_cmame_v1/04_figures/03_fig02_architecture/fig02_architecture.png"
+  }
+]

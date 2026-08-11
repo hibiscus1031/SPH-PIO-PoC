@@ -1,0 +1,57 @@
+{
+  "schema": "SPH-PIO-PoC.stage00-03-narrative-source-pack-manifest.v1",
+  "created_utc": "2026-08-05T15:58:04.136175+00:00",
+  "final_status": "STAGE00_03_MANUSCRIPT_NARRATIVE_SOURCE_PACK_COMPLETE",
+  "project_root": "/Users/xiejinbo/Documents/SPH-PIO-PoC",
+  "git_head": "ff86f5e0b99966ad6fa5896fe3d9a0c3f001cd57",
+  "source_dossier_status": "PROJECT_WIDE_EVIDENCE_SYNTHESIS_AND_PUBLICATION_DOSSIER_COMPLETE",
+  "source_freeze": "project_wide_synthesis/00_freeze/project_wide_input_freeze_manifest.json",
+  "source_freeze_file_count": 4889,
+  "source_hash_verification": {
+    "matched": 4889,
+    "mismatches": [],
+    "status": "PASS"
+  },
+  "read_only_attestation": {
+    "new_scientific_computation": false,
+    "new_model": false,
+    "checkpoint_loaded": false,
+    "optimizer_created": false,
+    "training": false,
+    "rollout": false,
+    "historical_verdict_changed": false,
+    "historical_artifact_changed": false,
+    "external_literature_or_network": false
+  },
+  "content_counts": {
+    "timeline_rows": 59,
+    "key_facts": 30,
+    "failures": 18,
+    "innovations": 20,
+    "sources": 92
+  },
+  "completeness_audit": "project_wide_synthesis/13_manifests/stage00_03_narrative_completeness_audit.json",
+  "output_files_excluding_this_self_referential_manifest": [
+    {
+      "path": "project_wide_synthesis/12_reports/Stage00_03_Manuscript_Narrative_Source_Pack.md",
+      "sha256": "ede1ac1630ba032c24b7219697c27e3f8096e2bb4f8050bbdb9b3f154a3e4750",
+      "size_bytes": 103498
+    },
+    {
+      "path": "project_wide_synthesis/13_manifests/Stage00_03_Key_Facts_and_Evidence_Index.json",
+      "sha256": "219226abae055ac7dad9b1eeb0d5dd1c15dc10c00a3e8635acd5d585a65152f2",
+      "size_bytes": 206338
+    },
+    {
+      "path": "project_wide_synthesis/13_manifests/stage00_03_narrative_completeness_audit.json",
+      "sha256": "0967dde5b2b07bec2e684dd0529d4b780bdab9e2a1c023a7d9d543f3995411cf",
+      "size_bytes": 5216
+    },
+    {
+      "path": "project_wide_synthesis/13_manifests/build_stage00_03_narrative_source_pack.py",
+      "sha256": "909f3477572d1f2e94b1fbe10e637cc22cfb8ea3d308cba5e9e16cb97509149f",
+      "size_bytes": 61604
+    }
+  ],
+  "self_reference": "project_wide_synthesis/13_manifests/Stage00_03_Narrative_Source_Pack_Manifest.json"
+}

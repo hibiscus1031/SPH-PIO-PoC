@@ -1,0 +1,164 @@
+{
+  "access_end_pass": true,
+  "all_hashes_complete": true,
+  "audit_linear_systems_only": true,
+  "backend": "CPU_FLOAT64",
+  "bounded_solves": 852,
+  "checkpoint_selections": 0,
+  "dense_particle_N_by_N_neural_allocation": false,
+  "forbidden_decode_counts_zero": true,
+  "formal_D0_transitions_by_route_repeat": 1152,
+  "formal_graph_rebuild_count": 3456,
+  "hash_count": 3494,
+  "model_instances": 0,
+  "neural_forwards": 0,
+  "neural_rollouts": 0,
+  "no_monotonic_live_tensor_retention": true,
+  "optimizer_instances": 0,
+  "optimizer_steps": 0,
+  "pair_basis_unbounded_solves": 852,
+  "parameter_gradients": 0,
+  "parameter_updates": 0,
+  "pass": true,
+  "peak_rss_bytes": 517177344,
+  "peak_rss_delta_bytes": 241844224,
+  "peak_rss_delta_gate_bytes": 1610612736,
+  "performance_evaluations": 0,
+  "prior_completed_full_run_count": 1,
+  "prior_completed_full_run_wall_time_seconds": 119.75749279197771,
+  "prior_execution_process_count": 4,
+  "prior_graph_rebuild_count_excluding_DOP853": 7497,
+  "prior_origin_attempt_count": 833,
+  "prior_pair_basis_solve_count": 917,
+  "prior_train_json_decode_count": 28,
+  "prior_train_npz_decode_count": 28,
+  "resolution_diagnostic_origins": 384,
+  "retention_samples": [
+    {
+      "after": "lcdf_01_variant_low_n8",
+      "live_tensor_count": 8,
+      "rss_bytes": 321716224
+    },
+    {
+      "after": "lcdf_01_variant_main_n8",
+      "live_tensor_count": 8,
+      "rss_bytes": 331186176
+    },
+    {
+      "after": "lcdf_04_variant_low_n8",
+      "live_tensor_count": 8,
+      "rss_bytes": 348897280
+    },
+    {
+      "after": "lcdf_04_variant_main_n8",
+      "live_tensor_count": 8,
+      "rss_bytes": 353124352
+    },
+    {
+      "after": "lcdf_05_variant_low_n8",
+      "live_tensor_count": 8,
+      "rss_bytes": 354680832
+    },
+    {
+      "after": "lcdf_05_variant_main_n8",
+      "live_tensor_count": 8,
+      "rss_bytes": 355270656
+    },
+    {
+      "after": "lcdf_06_variant_low_n8",
+      "live_tensor_count": 8,
+      "rss_bytes": 356286464
+    },
+    {
+      "after": "lcdf_06_variant_main_n8",
+      "live_tensor_count": 8,
+      "rss_bytes": 357089280
+    },
+    {
+      "after": "lcdf_07_variant_low_n8",
+      "live_tensor_count": 8,
+      "rss_bytes": 370311168
+    },
+    {
+      "after": "lcdf_07_variant_main_n8",
+      "live_tensor_count": 8,
+      "rss_bytes": 372752384
+    },
+    {
+      "after": "lcdf_08_variant_low_n8",
+      "live_tensor_count": 8,
+      "rss_bytes": 386367488
+    },
+    {
+      "after": "lcdf_08_variant_main_n8",
+      "live_tensor_count": 8,
+      "rss_bytes": 410697728
+    },
+    {
+      "after": "LCDF_01_MAIN_N12",
+      "live_tensor_count": 26,
+      "rss_bytes": 379666432
+    },
+    {
+      "after": "LCDF_04_MAIN_N12",
+      "live_tensor_count": 26,
+      "rss_bytes": 396034048
+    },
+    {
+      "after": "LCDF_05_MAIN_N12",
+      "live_tensor_count": 26,
+      "rss_bytes": 397033472
+    },
+    {
+      "after": "LCDF_06_MAIN_N12",
+      "live_tensor_count": 26,
+      "rss_bytes": 397279232
+    },
+    {
+      "after": "LCDF_07_MAIN_N12",
+      "live_tensor_count": 26,
+      "rss_bytes": 400654336
+    },
+    {
+      "after": "LCDF_08_MAIN_N12",
+      "live_tensor_count": 26,
+      "rss_bytes": 400769024
+    },
+    {
+      "after": "LCDF_01_MAIN_N16",
+      "live_tensor_count": 26,
+      "rss_bytes": 446103552
+    },
+    {
+      "after": "LCDF_04_MAIN_N16",
+      "live_tensor_count": 26,
+      "rss_bytes": 466190336
+    },
+    {
+      "after": "LCDF_05_MAIN_N16",
+      "live_tensor_count": 26,
+      "rss_bytes": 394952704
+    },
+    {
+      "after": "LCDF_06_MAIN_N16",
+      "live_tensor_count": 26,
+      "rss_bytes": 417710080
+    },
+    {
+      "after": "LCDF_07_MAIN_N16",
+      "live_tensor_count": 26,
+      "rss_bytes": 452263936
+    },
+    {
+      "after": "LCDF_08_MAIN_N16",
+      "live_tensor_count": 26,
+      "rss_bytes": 516784128
+    }
+  ],
+  "rss_start_bytes": 275333120,
+  "target_record_count": 384,
+  "target_storage_bytes": 1683101,
+  "total_graph_rebuild_count_excluding_DOP853": 6912,
+  "training_runs": 0,
+  "wall_time_seconds": 125.9995379159227
+}

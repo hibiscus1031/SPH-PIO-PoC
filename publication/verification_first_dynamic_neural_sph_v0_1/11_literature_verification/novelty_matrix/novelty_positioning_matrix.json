@@ -1,0 +1,44 @@
+[
+  {
+    "id": "N1",
+    "question": "dynamic neural-SPH的bitwise zero-correction equivalence是否已有论文建立？",
+    "conclusion": "SUPPORTED_NOVELTY_GAP",
+    "evidence": "V001–V004提供learnable/differentiable SPH直接先例，但在核验全文中未发现以bitwise baseline identity作为正式退化合同。",
+    "boundary": "仅限截至2026-08-05的94篇verified集合；不得写为从未有人做过。"
+  },
+  {
+    "id": "N2",
+    "question": "RK2 start/midpoint graph rebuild与accepted-only history commit是否已有正式验证合同？",
+    "conclusion": "SUPPORTED_NOVELTY_GAP",
+    "evidence": "V002、V003、V004、V013涉及多步粒子动态图或可微SPH，但未核实到该二者联合的事务式合同。",
+    "boundary": "属于合同组合的证据空缺，不主张单个工程做法首次出现。"
+  },
+  {
+    "id": "N3",
+    "question": "是否已有系统的多步AD/FD stable-window资格？",
+    "conclusion": "PARTIAL_PRECEDENT",
+    "evidence": "V002明确比较5步AD与FD，但使用一个预选epsilon；V007等提供AD-CFD验证背景。未见与本项目相同的相邻epsilon稳定窗和完整probe矩阵。",
+    "boundary": "JAX-SPH是直接先例，故不能写成首次多步AD/FD。"
+  },
+  {
+    "id": "N4",
+    "question": "是否已有reverse/JVP、extended FD、history attenuation和backend sensitivity联合报告？",
+    "conclusion": "SUPPORTED_NOVELTY_GAP",
+    "evidence": "核验集合含reverse AD、adjoint checking及可微求解器文献，但未发现四类诊断在同一dynamic neural-SPH资格链中联合报告。",
+    "boundary": "组合证据空缺；各诊断单独均有方法学先例。"
+  },
+  {
+    "id": "N5",
+    "question": "是否已有particle cutoff birth/death、fixed-side gradients与piecewise-smooth boundary独立资格？",
+    "conclusion": "SUPPORTED_NOVELTY_GAP",
+    "evidence": "V002/V004使用动态粒子邻域，V015/V019提供非光滑/可微模拟背景；核验正文未发现SPH cutoff事件的同构资格矩阵。",
+    "boundary": "不能外推到所有动态图或混合系统。"
+  },
+  {
+    "id": "N6",
+    "question": "是否已有工作将complete negative gradient evidence保留在主论文？",
+    "conclusion": "PARTIAL_PRECEDENT",
+    "evidence": "V003、V024等报告rollout不稳定/局限，V025/V029倡导透明报告；未找到与360-probe失败矩阵同规模、同合同的直接先例。",
+    "boundary": "是否置于‘主论文’受版本与补充材料边界影响，不能作全局否定。"
+  }
+]

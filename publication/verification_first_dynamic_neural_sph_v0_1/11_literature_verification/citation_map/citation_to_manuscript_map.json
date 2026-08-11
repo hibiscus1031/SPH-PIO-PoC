@@ -1,0 +1,1142 @@
+[
+  {
+    "map_id": "CM001",
+    "manuscript_section": "摘要",
+    "source_id": "V001",
+    "supported_sentence": "动态神经–SPH耦合把时间积分、动态图重建、历史状态提交和多步自动微分置于同一计算链。已发表研究已覆盖learnable SPH、Neural SPH、可微SPH、solver-in-the-loop和硬守恒粒子网络 [V001,V002,V003,V004,V022,V028]；因此，本文不以SPH–ML结合或可微实现本身作为新颖性，而定位于verification-first资格合同。我们构建D0基线、D1瞬时MLP、D2循环模型与D3因果时间注意力模型的统一动态框架，并审计动态参考、独立RK2、zero correction、反对称reciprocal pair-force、多步AD/FD与确定性拓扑事件。独立RK2的48/48检查、zero correction的288/288 bitwise等价、结构smoke的72/72、checkpoint/resume的6/6与one-step autograd的6/6均通过；冻结多阶段测试中540/540守恒检查通过。完整360-probe矩阵中216个probe获得stable AD/FD window，144个失败，history门为0/6。因此Stage 03D保持`DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED`。TE1记录一次edge birth与一次death，6/6 replay和12/12 event-side gradients通过，但cutoff edge membership仍为离散事件。本文没有执行动态训练、自主rollout或性能验证。结果支持一种有限定位：在当前已核验文献集合内，zero fallback、多步stable-window与topology-event联合审计仍存在方法学证据空缺；该结论不等同于首次性声明。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM002",
+    "manuscript_section": "摘要",
+    "source_id": "V002",
+    "supported_sentence": "动态神经–SPH耦合把时间积分、动态图重建、历史状态提交和多步自动微分置于同一计算链。已发表研究已覆盖learnable SPH、Neural SPH、可微SPH、solver-in-the-loop和硬守恒粒子网络 [V001,V002,V003,V004,V022,V028]；因此，本文不以SPH–ML结合或可微实现本身作为新颖性，而定位于verification-first资格合同。我们构建D0基线、D1瞬时MLP、D2循环模型与D3因果时间注意力模型的统一动态框架，并审计动态参考、独立RK2、zero correction、反对称reciprocal pair-force、多步AD/FD与确定性拓扑事件。独立RK2的48/48检查、zero correction的288/288 bitwise等价、结构smoke的72/72、checkpoint/resume的6/6与one-step autograd的6/6均通过；冻结多阶段测试中540/540守恒检查通过。完整360-probe矩阵中216个probe获得stable AD/FD window，144个失败，history门为0/6。因此Stage 03D保持`DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED`。TE1记录一次edge birth与一次death，6/6 replay和12/12 event-side gradients通过，但cutoff edge membership仍为离散事件。本文没有执行动态训练、自主rollout或性能验证。结果支持一种有限定位：在当前已核验文献集合内，zero fallback、多步stable-window与topology-event联合审计仍存在方法学证据空缺；该结论不等同于首次性声明。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM003",
+    "manuscript_section": "摘要",
+    "source_id": "V003",
+    "supported_sentence": "动态神经–SPH耦合把时间积分、动态图重建、历史状态提交和多步自动微分置于同一计算链。已发表研究已覆盖learnable SPH、Neural SPH、可微SPH、solver-in-the-loop和硬守恒粒子网络 [V001,V002,V003,V004,V022,V028]；因此，本文不以SPH–ML结合或可微实现本身作为新颖性，而定位于verification-first资格合同。我们构建D0基线、D1瞬时MLP、D2循环模型与D3因果时间注意力模型的统一动态框架，并审计动态参考、独立RK2、zero correction、反对称reciprocal pair-force、多步AD/FD与确定性拓扑事件。独立RK2的48/48检查、zero correction的288/288 bitwise等价、结构smoke的72/72、checkpoint/resume的6/6与one-step autograd的6/6均通过；冻结多阶段测试中540/540守恒检查通过。完整360-probe矩阵中216个probe获得stable AD/FD window，144个失败，history门为0/6。因此Stage 03D保持`DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED`。TE1记录一次edge birth与一次death，6/6 replay和12/12 event-side gradients通过，但cutoff edge membership仍为离散事件。本文没有执行动态训练、自主rollout或性能验证。结果支持一种有限定位：在当前已核验文献集合内，zero fallback、多步stable-window与topology-event联合审计仍存在方法学证据空缺；该结论不等同于首次性声明。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM004",
+    "manuscript_section": "摘要",
+    "source_id": "V004",
+    "supported_sentence": "动态神经–SPH耦合把时间积分、动态图重建、历史状态提交和多步自动微分置于同一计算链。已发表研究已覆盖learnable SPH、Neural SPH、可微SPH、solver-in-the-loop和硬守恒粒子网络 [V001,V002,V003,V004,V022,V028]；因此，本文不以SPH–ML结合或可微实现本身作为新颖性，而定位于verification-first资格合同。我们构建D0基线、D1瞬时MLP、D2循环模型与D3因果时间注意力模型的统一动态框架，并审计动态参考、独立RK2、zero correction、反对称reciprocal pair-force、多步AD/FD与确定性拓扑事件。独立RK2的48/48检查、zero correction的288/288 bitwise等价、结构smoke的72/72、checkpoint/resume的6/6与one-step autograd的6/6均通过；冻结多阶段测试中540/540守恒检查通过。完整360-probe矩阵中216个probe获得stable AD/FD window，144个失败，history门为0/6。因此Stage 03D保持`DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED`。TE1记录一次edge birth与一次death，6/6 replay和12/12 event-side gradients通过，但cutoff edge membership仍为离散事件。本文没有执行动态训练、自主rollout或性能验证。结果支持一种有限定位：在当前已核验文献集合内，zero fallback、多步stable-window与topology-event联合审计仍存在方法学证据空缺；该结论不等同于首次性声明。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM005",
+    "manuscript_section": "摘要",
+    "source_id": "V022",
+    "supported_sentence": "动态神经–SPH耦合把时间积分、动态图重建、历史状态提交和多步自动微分置于同一计算链。已发表研究已覆盖learnable SPH、Neural SPH、可微SPH、solver-in-the-loop和硬守恒粒子网络 [V001,V002,V003,V004,V022,V028]；因此，本文不以SPH–ML结合或可微实现本身作为新颖性，而定位于verification-first资格合同。我们构建D0基线、D1瞬时MLP、D2循环模型与D3因果时间注意力模型的统一动态框架，并审计动态参考、独立RK2、zero correction、反对称reciprocal pair-force、多步AD/FD与确定性拓扑事件。独立RK2的48/48检查、zero correction的288/288 bitwise等价、结构smoke的72/72、checkpoint/resume的6/6与one-step autograd的6/6均通过；冻结多阶段测试中540/540守恒检查通过。完整360-probe矩阵中216个probe获得stable AD/FD window，144个失败，history门为0/6。因此Stage 03D保持`DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED`。TE1记录一次edge birth与一次death，6/6 replay和12/12 event-side gradients通过，但cutoff edge membership仍为离散事件。本文没有执行动态训练、自主rollout或性能验证。结果支持一种有限定位：在当前已核验文献集合内，zero fallback、多步stable-window与topology-event联合审计仍存在方法学证据空缺；该结论不等同于首次性声明。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM006",
+    "manuscript_section": "摘要",
+    "source_id": "V028",
+    "supported_sentence": "动态神经–SPH耦合把时间积分、动态图重建、历史状态提交和多步自动微分置于同一计算链。已发表研究已覆盖learnable SPH、Neural SPH、可微SPH、solver-in-the-loop和硬守恒粒子网络 [V001,V002,V003,V004,V022,V028]；因此，本文不以SPH–ML结合或可微实现本身作为新颖性，而定位于verification-first资格合同。我们构建D0基线、D1瞬时MLP、D2循环模型与D3因果时间注意力模型的统一动态框架，并审计动态参考、独立RK2、zero correction、反对称reciprocal pair-force、多步AD/FD与确定性拓扑事件。独立RK2的48/48检查、zero correction的288/288 bitwise等价、结构smoke的72/72、checkpoint/resume的6/6与one-step autograd的6/6均通过；冻结多阶段测试中540/540守恒检查通过。完整360-probe矩阵中216个probe获得stable AD/FD window，144个失败，history门为0/6。因此Stage 03D保持`DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED`。TE1记录一次edge birth与一次death，6/6 replay和12/12 event-side gradients通过，但cutoff edge membership仍为离散事件。本文没有执行动态训练、自主rollout或性能验证。结果支持一种有限定位：在当前已核验文献集合内，zero fallback、多步stable-window与topology-event联合审计仍存在方法学证据空缺；该结论不等同于首次性声明。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM007",
+    "manuscript_section": "1.1 SPH的数值背景与学习型粒子求解器",
+    "source_id": "V042",
+    "supported_sentence": "光滑粒子流体动力学（SPH）以随体粒子和紧支核近似连续介质方程，适合自由表面、大变形和复杂耦合，但其误差与收敛同时受核一致性、邻域尺度、粒子分布、边界、耗散项和时间步约束影响；相关综述与验证研究持续把一致性、收敛、稳定性和边界条件列为核心问题 [V042,V056,V058,V076,V018]。因此，SPH benchmark的通过不自动等同于代码验证、解验证或面向应用的物理确认。",
+    "citation_role": "background_or_reference_hierarchy",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM008",
+    "manuscript_section": "1.1 SPH的数值背景与学习型粒子求解器",
+    "source_id": "V056",
+    "supported_sentence": "光滑粒子流体动力学（SPH）以随体粒子和紧支核近似连续介质方程，适合自由表面、大变形和复杂耦合，但其误差与收敛同时受核一致性、邻域尺度、粒子分布、边界、耗散项和时间步约束影响；相关综述与验证研究持续把一致性、收敛、稳定性和边界条件列为核心问题 [V042,V056,V058,V076,V018]。因此，SPH benchmark的通过不自动等同于代码验证、解验证或面向应用的物理确认。",
+    "citation_role": "background_or_reference_hierarchy",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM009",
+    "manuscript_section": "1.1 SPH的数值背景与学习型粒子求解器",
+    "source_id": "V058",
+    "supported_sentence": "光滑粒子流体动力学（SPH）以随体粒子和紧支核近似连续介质方程，适合自由表面、大变形和复杂耦合，但其误差与收敛同时受核一致性、邻域尺度、粒子分布、边界、耗散项和时间步约束影响；相关综述与验证研究持续把一致性、收敛、稳定性和边界条件列为核心问题 [V042,V056,V058,V076,V018]。因此，SPH benchmark的通过不自动等同于代码验证、解验证或面向应用的物理确认。",
+    "citation_role": "background_or_reference_hierarchy",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM010",
+    "manuscript_section": "1.1 SPH的数值背景与学习型粒子求解器",
+    "source_id": "V076",
+    "supported_sentence": "光滑粒子流体动力学（SPH）以随体粒子和紧支核近似连续介质方程，适合自由表面、大变形和复杂耦合，但其误差与收敛同时受核一致性、邻域尺度、粒子分布、边界、耗散项和时间步约束影响；相关综述与验证研究持续把一致性、收敛、稳定性和边界条件列为核心问题 [V042,V056,V058,V076,V018]。因此，SPH benchmark的通过不自动等同于代码验证、解验证或面向应用的物理确认。",
+    "citation_role": "background_or_reference_hierarchy",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM011",
+    "manuscript_section": "1.1 SPH的数值背景与学习型粒子求解器",
+    "source_id": "V018",
+    "supported_sentence": "光滑粒子流体动力学（SPH）以随体粒子和紧支核近似连续介质方程，适合自由表面、大变形和复杂耦合，但其误差与收敛同时受核一致性、邻域尺度、粒子分布、边界、耗散项和时间步约束影响；相关综述与验证研究持续把一致性、收敛、稳定性和边界条件列为核心问题 [V042,V056,V058,V076,V018]。因此，SPH benchmark的通过不自动等同于代码验证、解验证或面向应用的物理确认。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "ABSTRACT_ONLY"
+  },
+  {
+    "map_id": "CM012",
+    "manuscript_section": "1.1 SPH的数值背景与学习型粒子求解器",
+    "source_id": "V010",
+    "supported_sentence": "学习型Lagrangian模拟器已从连续卷积、动态图消息传递和多尺度交互发展为可进行自回归rollout的粒子代理 [V010,V011,V013,V021,V024]。这些方法通常把传统模拟器作为数据源，并由网络直接预测粒子更新；它们应与“保留SPH时间推进、只学习局部修正”的hybrid correction严格区分。Neural SPH在完全学习GNN的训练与推理阶段加入压力、黏性和外力等SPH分量 [V003]；另一条路线则直接参数化SPH项或平滑核 [V001]。这两类工作均说明“SPH与学习结合”本身不是本文可主张的新颖点。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM013",
+    "manuscript_section": "1.1 SPH的数值背景与学习型粒子求解器",
+    "source_id": "V011",
+    "supported_sentence": "学习型Lagrangian模拟器已从连续卷积、动态图消息传递和多尺度交互发展为可进行自回归rollout的粒子代理 [V010,V011,V013,V021,V024]。这些方法通常把传统模拟器作为数据源，并由网络直接预测粒子更新；它们应与“保留SPH时间推进、只学习局部修正”的hybrid correction严格区分。Neural SPH在完全学习GNN的训练与推理阶段加入压力、黏性和外力等SPH分量 [V003]；另一条路线则直接参数化SPH项或平滑核 [V001]。这两类工作均说明“SPH与学习结合”本身不是本文可主张的新颖点。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM014",
+    "manuscript_section": "1.1 SPH的数值背景与学习型粒子求解器",
+    "source_id": "V013",
+    "supported_sentence": "学习型Lagrangian模拟器已从连续卷积、动态图消息传递和多尺度交互发展为可进行自回归rollout的粒子代理 [V010,V011,V013,V021,V024]。这些方法通常把传统模拟器作为数据源，并由网络直接预测粒子更新；它们应与“保留SPH时间推进、只学习局部修正”的hybrid correction严格区分。Neural SPH在完全学习GNN的训练与推理阶段加入压力、黏性和外力等SPH分量 [V003]；另一条路线则直接参数化SPH项或平滑核 [V001]。这两类工作均说明“SPH与学习结合”本身不是本文可主张的新颖点。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM015",
+    "manuscript_section": "1.1 SPH的数值背景与学习型粒子求解器",
+    "source_id": "V021",
+    "supported_sentence": "学习型Lagrangian模拟器已从连续卷积、动态图消息传递和多尺度交互发展为可进行自回归rollout的粒子代理 [V010,V011,V013,V021,V024]。这些方法通常把传统模拟器作为数据源，并由网络直接预测粒子更新；它们应与“保留SPH时间推进、只学习局部修正”的hybrid correction严格区分。Neural SPH在完全学习GNN的训练与推理阶段加入压力、黏性和外力等SPH分量 [V003]；另一条路线则直接参数化SPH项或平滑核 [V001]。这两类工作均说明“SPH与学习结合”本身不是本文可主张的新颖点。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM016",
+    "manuscript_section": "1.1 SPH的数值背景与学习型粒子求解器",
+    "source_id": "V024",
+    "supported_sentence": "学习型Lagrangian模拟器已从连续卷积、动态图消息传递和多尺度交互发展为可进行自回归rollout的粒子代理 [V010,V011,V013,V021,V024]。这些方法通常把传统模拟器作为数据源，并由网络直接预测粒子更新；它们应与“保留SPH时间推进、只学习局部修正”的hybrid correction严格区分。Neural SPH在完全学习GNN的训练与推理阶段加入压力、黏性和外力等SPH分量 [V003]；另一条路线则直接参数化SPH项或平滑核 [V001]。这两类工作均说明“SPH与学习结合”本身不是本文可主张的新颖点。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM017",
+    "manuscript_section": "1.1 SPH的数值背景与学习型粒子求解器",
+    "source_id": "V003",
+    "supported_sentence": "学习型Lagrangian模拟器已从连续卷积、动态图消息传递和多尺度交互发展为可进行自回归rollout的粒子代理 [V010,V011,V013,V021,V024]。这些方法通常把传统模拟器作为数据源，并由网络直接预测粒子更新；它们应与“保留SPH时间推进、只学习局部修正”的hybrid correction严格区分。Neural SPH在完全学习GNN的训练与推理阶段加入压力、黏性和外力等SPH分量 [V003]；另一条路线则直接参数化SPH项或平滑核 [V001]。这两类工作均说明“SPH与学习结合”本身不是本文可主张的新颖点。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM018",
+    "manuscript_section": "1.1 SPH的数值背景与学习型粒子求解器",
+    "source_id": "V001",
+    "supported_sentence": "学习型Lagrangian模拟器已从连续卷积、动态图消息传递和多尺度交互发展为可进行自回归rollout的粒子代理 [V010,V011,V013,V021,V024]。这些方法通常把传统模拟器作为数据源，并由网络直接预测粒子更新；它们应与“保留SPH时间推进、只学习局部修正”的hybrid correction严格区分。Neural SPH在完全学习GNN的训练与推理阶段加入压力、黏性和外力等SPH分量 [V003]；另一条路线则直接参数化SPH项或平滑核 [V001]。这两类工作均说明“SPH与学习结合”本身不是本文可主张的新颖点。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM019",
+    "manuscript_section": "1.2 保守/等变架构与直接竞争工作",
+    "source_id": "V017",
+    "supported_sentence": "几何等变网络可把平移、旋转或反射对称编码进消息传递，但等变性并不自动等于线动量、角动量或能量守恒 [V017,V023]。面向粒子流体，反对称连续卷积已经被用于硬保证线动量 [V022]；面向6-DoF多体系统，DYNAMI-CAL GRAPHNET进一步以edge-local反对称参考框架同时保持线动量与角动量 [V028]。这些工作构成本稿reciprocal pair-force的直接方法比较，也要求本文避免把soft loss、equivariance与hard conservation混写。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM020",
+    "manuscript_section": "1.2 保守/等变架构与直接竞争工作",
+    "source_id": "V023",
+    "supported_sentence": "几何等变网络可把平移、旋转或反射对称编码进消息传递，但等变性并不自动等于线动量、角动量或能量守恒 [V017,V023]。面向粒子流体，反对称连续卷积已经被用于硬保证线动量 [V022]；面向6-DoF多体系统，DYNAMI-CAL GRAPHNET进一步以edge-local反对称参考框架同时保持线动量与角动量 [V028]。这些工作构成本稿reciprocal pair-force的直接方法比较，也要求本文避免把soft loss、equivariance与hard conservation混写。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM021",
+    "manuscript_section": "1.2 保守/等变架构与直接竞争工作",
+    "source_id": "V022",
+    "supported_sentence": "几何等变网络可把平移、旋转或反射对称编码进消息传递，但等变性并不自动等于线动量、角动量或能量守恒 [V017,V023]。面向粒子流体，反对称连续卷积已经被用于硬保证线动量 [V022]；面向6-DoF多体系统，DYNAMI-CAL GRAPHNET进一步以edge-local反对称参考框架同时保持线动量与角动量 [V028]。这些工作构成本稿reciprocal pair-force的直接方法比较，也要求本文避免把soft loss、equivariance与hard conservation混写。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM022",
+    "manuscript_section": "1.2 保守/等变架构与直接竞争工作",
+    "source_id": "V028",
+    "supported_sentence": "几何等变网络可把平移、旋转或反射对称编码进消息传递，但等变性并不自动等于线动量、角动量或能量守恒 [V017,V023]。面向粒子流体，反对称连续卷积已经被用于硬保证线动量 [V022]；面向6-DoF多体系统，DYNAMI-CAL GRAPHNET进一步以edge-local反对称参考框架同时保持线动量与角动量 [V028]。这些工作构成本稿reciprocal pair-force的直接方法比较，也要求本文避免把soft loss、equivariance与hard conservation混写。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM023",
+    "manuscript_section": "1.2 保守/等变架构与直接竞争工作",
+    "source_id": "V002",
+    "supported_sentence": "更接近本文的是可学习或可微SPH。JAX-SPH实现了JAX中的可微WCSPH，报告了5个求解步的AD/FD比较、100步逆问题和SPH solver-in-the-loop [V002]；diffSPH则在PyTorch中覆盖多类SPH形式、逆问题、优化、混合corrector和跨数百步的梯度传播 [V004]。因此，本稿不能以“首个可微SPH”或“首个SPH solver-in-the-loop”为定位。可辩护的区别只可能来自资格合同、证据粒度与负结果的完整保留。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM024",
+    "manuscript_section": "1.2 保守/等变架构与直接竞争工作",
+    "source_id": "V004",
+    "supported_sentence": "更接近本文的是可学习或可微SPH。JAX-SPH实现了JAX中的可微WCSPH，报告了5个求解步的AD/FD比较、100步逆问题和SPH solver-in-the-loop [V002]；diffSPH则在PyTorch中覆盖多类SPH形式、逆问题、优化、混合corrector和跨数百步的梯度传播 [V004]。因此，本稿不能以“首个可微SPH”或“首个SPH solver-in-the-loop”为定位。可辩护的区别只可能来自资格合同、证据粒度与负结果的完整保留。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM025",
+    "manuscript_section": "1.3 动态solver-in-the-loop的可微性与可信度问题",
+    "source_id": "V016",
+    "supported_sentence": "solver-in-the-loop已经证明学习corrector可以通过可微PDE求解器接受多步训练信号，并在若干Eulerian PDE上形成长期rollout [V016]；可扩展可微物理也已用于学习与控制 [V015]。然而，“代码由AD框架实现”只说明导数路径可构造，不等于该路径在给定步长、时间跨度、状态历史和离散事件下经过外部梯度核验。AD-CFD文献长期使用tangent/adjoint checking、有限差分或相关一致性试验来核验导数实现 [V005,V006,V007,V008]；JAX-SPH提供了粒子求解器中的直接五步先例 [V002]。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM026",
+    "manuscript_section": "1.3 动态solver-in-the-loop的可微性与可信度问题",
+    "source_id": "V015",
+    "supported_sentence": "solver-in-the-loop已经证明学习corrector可以通过可微PDE求解器接受多步训练信号，并在若干Eulerian PDE上形成长期rollout [V016]；可扩展可微物理也已用于学习与控制 [V015]。然而，“代码由AD框架实现”只说明导数路径可构造，不等于该路径在给定步长、时间跨度、状态历史和离散事件下经过外部梯度核验。AD-CFD文献长期使用tangent/adjoint checking、有限差分或相关一致性试验来核验导数实现 [V005,V006,V007,V008]；JAX-SPH提供了粒子求解器中的直接五步先例 [V002]。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM027",
+    "manuscript_section": "1.3 动态solver-in-the-loop的可微性与可信度问题",
+    "source_id": "V005",
+    "supported_sentence": "solver-in-the-loop已经证明学习corrector可以通过可微PDE求解器接受多步训练信号，并在若干Eulerian PDE上形成长期rollout [V016]；可扩展可微物理也已用于学习与控制 [V015]。然而，“代码由AD框架实现”只说明导数路径可构造，不等于该路径在给定步长、时间跨度、状态历史和离散事件下经过外部梯度核验。AD-CFD文献长期使用tangent/adjoint checking、有限差分或相关一致性试验来核验导数实现 [V005,V006,V007,V008]；JAX-SPH提供了粒子求解器中的直接五步先例 [V002]。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM028",
+    "manuscript_section": "1.3 动态solver-in-the-loop的可微性与可信度问题",
+    "source_id": "V006",
+    "supported_sentence": "solver-in-the-loop已经证明学习corrector可以通过可微PDE求解器接受多步训练信号，并在若干Eulerian PDE上形成长期rollout [V016]；可扩展可微物理也已用于学习与控制 [V015]。然而，“代码由AD框架实现”只说明导数路径可构造，不等于该路径在给定步长、时间跨度、状态历史和离散事件下经过外部梯度核验。AD-CFD文献长期使用tangent/adjoint checking、有限差分或相关一致性试验来核验导数实现 [V005,V006,V007,V008]；JAX-SPH提供了粒子求解器中的直接五步先例 [V002]。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM029",
+    "manuscript_section": "1.3 动态solver-in-the-loop的可微性与可信度问题",
+    "source_id": "V007",
+    "supported_sentence": "solver-in-the-loop已经证明学习corrector可以通过可微PDE求解器接受多步训练信号，并在若干Eulerian PDE上形成长期rollout [V016]；可扩展可微物理也已用于学习与控制 [V015]。然而，“代码由AD框架实现”只说明导数路径可构造，不等于该路径在给定步长、时间跨度、状态历史和离散事件下经过外部梯度核验。AD-CFD文献长期使用tangent/adjoint checking、有限差分或相关一致性试验来核验导数实现 [V005,V006,V007,V008]；JAX-SPH提供了粒子求解器中的直接五步先例 [V002]。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM030",
+    "manuscript_section": "1.3 动态solver-in-the-loop的可微性与可信度问题",
+    "source_id": "V008",
+    "supported_sentence": "solver-in-the-loop已经证明学习corrector可以通过可微PDE求解器接受多步训练信号，并在若干Eulerian PDE上形成长期rollout [V016]；可扩展可微物理也已用于学习与控制 [V015]。然而，“代码由AD框架实现”只说明导数路径可构造，不等于该路径在给定步长、时间跨度、状态历史和离散事件下经过外部梯度核验。AD-CFD文献长期使用tangent/adjoint checking、有限差分或相关一致性试验来核验导数实现 [V005,V006,V007,V008]；JAX-SPH提供了粒子求解器中的直接五步先例 [V002]。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM031",
+    "manuscript_section": "1.3 动态solver-in-the-loop的可微性与可信度问题",
+    "source_id": "V002",
+    "supported_sentence": "solver-in-the-loop已经证明学习corrector可以通过可微PDE求解器接受多步训练信号，并在若干Eulerian PDE上形成长期rollout [V016]；可扩展可微物理也已用于学习与控制 [V015]。然而，“代码由AD框架实现”只说明导数路径可构造，不等于该路径在给定步长、时间跨度、状态历史和离散事件下经过外部梯度核验。AD-CFD文献长期使用tangent/adjoint checking、有限差分或相关一致性试验来核验导数实现 [V005,V006,V007,V008]；JAX-SPH提供了粒子求解器中的直接五步先例 [V002]。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM032",
+    "manuscript_section": "1.3 动态solver-in-the-loop的可微性与可信度问题",
+    "source_id": "V002",
+    "supported_sentence": "动态图进一步引入分支边界：近邻关系通常随粒子位置每步重建 [V002,V013]，而离散建边事件不能仅凭连续edge weight直觉处理。现有核验文献中可以找到动态图rollout、可微SPH和非光滑物理模拟的相邻证据，但在本次verified集合内，未发现将SPH cutoff birth/death、事件两侧fixed-topology gradients与piecewise-smooth边界作为独立资格分支的同构报告。该判断仅限当前94篇已核验集合，不能表述为“从未有人做过”。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM033",
+    "manuscript_section": "1.3 动态solver-in-the-loop的可微性与可信度问题",
+    "source_id": "V013",
+    "supported_sentence": "动态图进一步引入分支边界：近邻关系通常随粒子位置每步重建 [V002,V013]，而离散建边事件不能仅凭连续edge weight直觉处理。现有核验文献中可以找到动态图rollout、可微SPH和非光滑物理模拟的相邻证据，但在本次verified集合内，未发现将SPH cutoff birth/death、事件两侧fixed-topology gradients与piecewise-smooth边界作为独立资格分支的同构报告。该判断仅限当前94篇已核验集合，不能表述为“从未有人做过”。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM034",
+    "manuscript_section": "1.4 verification-first定位、研究问题与有限贡献",
+    "source_id": "V020",
+    "supported_sentence": "Scientific ML的可信度讨论正在把传统计算科学中的verification、validation、calibration、uncertainty和适用域重新引入ML增强求解器 [V020,V029]；REFORMS则强调主张、数据、评估与可复现性的透明报告 [V025]。与通常以训练误差、rollout稳定性或加速比为主的论文不同，本研究在训练前先冻结可执行合同，并允许资格链以NOT_QUALIFIED结束。这里的“verification-first”是研究顺序和证据边界，不是对既有性能研究价值的否定。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM035",
+    "manuscript_section": "1.4 verification-first定位、研究问题与有限贡献",
+    "source_id": "V029",
+    "supported_sentence": "Scientific ML的可信度讨论正在把传统计算科学中的verification、validation、calibration、uncertainty和适用域重新引入ML增强求解器 [V020,V029]；REFORMS则强调主张、数据、评估与可复现性的透明报告 [V025]。与通常以训练误差、rollout稳定性或加速比为主的论文不同，本研究在训练前先冻结可执行合同，并允许资格链以NOT_QUALIFIED结束。这里的“verification-first”是研究顺序和证据边界，不是对既有性能研究价值的否定。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "ABSTRACT_ONLY"
+  },
+  {
+    "map_id": "CM036",
+    "manuscript_section": "1.4 verification-first定位、研究问题与有限贡献",
+    "source_id": "V025",
+    "supported_sentence": "Scientific ML的可信度讨论正在把传统计算科学中的verification、validation、calibration、uncertainty和适用域重新引入ML增强求解器 [V020,V029]；REFORMS则强调主张、数据、评估与可复现性的透明报告 [V025]。与通常以训练误差、rollout稳定性或加速比为主的论文不同，本研究在训练前先冻结可执行合同，并允许资格链以NOT_QUALIFIED结束。这里的“verification-first”是研究顺序和证据边界，不是对既有性能研究价值的否定。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM037",
+    "manuscript_section": "2.3 reciprocal antisymmetric pair-force",
+    "source_id": "V022",
+    "supported_sentence": "其中α_ij=α_ji、β_ij=β_ji，且r̂_ji=-r̂_ij、t_ji=-t_ij，因此f_θ,ji=-f_θ,ij。该硬反对称构造在图上直接消去成对内力和；它建立结构守恒，不建立非零修正的准确性、必要性或性能优势。[V022,V028]",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM038",
+    "manuscript_section": "2.3 reciprocal antisymmetric pair-force",
+    "source_id": "V028",
+    "supported_sentence": "其中α_ij=α_ji、β_ij=β_ji，且r̂_ji=-r̂_ij、t_ji=-t_ij，因此f_θ,ji=-f_θ,ij。该硬反对称构造在图上直接消去成对内力和；它建立结构守恒，不建立非零修正的准确性、必要性或性能优势。[V022,V028]",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM039",
+    "manuscript_section": "4.1 D-R1 Lagrangian MMS",
+    "source_id": "V018",
+    "supported_sentence": "D-R1包含Lagrangian compression与coupled deformation两族，通过解析闭包与符号定义检查。其作用是验证控制方程、源项和Lagrangian状态演化的一致性；MMS不构成无源物理验证，也不允许作为模型性能数据。[V018,V035]",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "ABSTRACT_ONLY"
+  },
+  {
+    "map_id": "CM040",
+    "manuscript_section": "4.1 D-R1 Lagrangian MMS",
+    "source_id": "V035",
+    "supported_sentence": "D-R1包含Lagrangian compression与coupled deformation两族，通过解析闭包与符号定义检查。其作用是验证控制方程、源项和Lagrangian状态演化的一致性；MMS不构成无源物理验证，也不允许作为模型性能数据。[V018,V035]",
+    "citation_role": "background_or_reference_hierarchy",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "ABSTRACT_ONLY"
+  },
+  {
+    "map_id": "CM041",
+    "manuscript_section": "4.2 D-R2 semidiscrete DOP853",
+    "source_id": "V005",
+    "supported_sentence": "D-R2对两族、N=8/12/16共六个case建立同半离散算子的高精度DOP853时间参考，6/6通过。该层隔离时间积分误差，但空间离散与核误差仍在两条轨迹中共享，因此DOP853不是连续方程真值。[V005,V006]",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM042",
+    "manuscript_section": "4.2 D-R2 semidiscrete DOP853",
+    "source_id": "V006",
+    "supported_sentence": "D-R2对两族、N=8/12/16共六个case建立同半离散算子的高精度DOP853时间参考，6/6通过。该层隔离时间积分误差，但空间离散与核误差仍在两条轨迹中共享，因此DOP853不是连续方程真值。[V005,V006]",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM043",
+    "manuscript_section": "6.4 O(2)、Galilean与周期性",
+    "source_id": "V017",
+    "supported_sentence": "冻结structural smoke同时覆盖O(2)变换、粒子置换、Galilean与周期一致性。这里的PASS表示特定变换合同通过，不表示神经表示已经学习出一般物理规律。[V017,V023,V028]",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM044",
+    "manuscript_section": "6.4 O(2)、Galilean与周期性",
+    "source_id": "V023",
+    "supported_sentence": "冻结structural smoke同时覆盖O(2)变换、粒子置换、Galilean与周期一致性。这里的PASS表示特定变换合同通过，不表示神经表示已经学习出一般物理规律。[V017,V023,V028]",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM045",
+    "manuscript_section": "6.4 O(2)、Galilean与周期性",
+    "source_id": "V028",
+    "supported_sentence": "冻结structural smoke同时覆盖O(2)变换、粒子置换、Galilean与周期一致性。这里的PASS表示特定变换合同通过，不表示神经表示已经学习出一般物理规律。[V017,V023,V028]",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM046",
+    "manuscript_section": "7.2 AD/FD stable-window rule",
+    "source_id": "V002",
+    "supported_sentence": "资格门要求相邻epsilon形成稳定窗口，并同时满足方向、相对/绝对误差和确定性条件。单个epsilon的偶然接近不足以PASS；导数接近结构零时，需要结合绝对误差和尺度分类。该规则的目的是把roundoff、truncation与非光滑影响暴露出来，而不是优化通过率。[V002,V005,V007]",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM047",
+    "manuscript_section": "7.2 AD/FD stable-window rule",
+    "source_id": "V005",
+    "supported_sentence": "资格门要求相邻epsilon形成稳定窗口，并同时满足方向、相对/绝对误差和确定性条件。单个epsilon的偶然接近不足以PASS；导数接近结构零时，需要结合绝对误差和尺度分类。该规则的目的是把roundoff、truncation与非光滑影响暴露出来，而不是优化通过率。[V002,V005,V007]",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM048",
+    "manuscript_section": "7.2 AD/FD stable-window rule",
+    "source_id": "V007",
+    "supported_sentence": "资格门要求相邻epsilon形成稳定窗口，并同时满足方向、相对/绝对误差和确定性条件。单个epsilon的偶然接近不足以PASS；导数接近结构零时，需要结合绝对误差和尺度分类。该规则的目的是把roundoff、truncation与非光滑影响暴露出来，而不是优化通过率。[V002,V005,V007]",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM049",
+    "manuscript_section": "8.1 TE1设计",
+    "source_id": "V015",
+    "supported_sentence": "TE1_TAGGED_PAIR_OSCILLATION使用两粒子确定性路径穿越cutoff Rc，在s=0.25附近发生birth、s=0.75附近发生death。4097点dense scan、三次bitwise重复及reciprocity/duplicate检查共同锁定事件语义。TE1是kinematic audit family，不代表任意动态图问题。（与可微模拟中的事件敏感性相邻，但本TE1合同由项目证据定义）[V015,V019]",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM050",
+    "manuscript_section": "8.1 TE1设计",
+    "source_id": "V019",
+    "supported_sentence": "TE1_TAGGED_PAIR_OSCILLATION使用两粒子确定性路径穿越cutoff Rc，在s=0.25附近发生birth、s=0.75附近发生death。4097点dense scan、三次bitwise重复及reciprocity/duplicate检查共同锁定事件语义。TE1是kinematic audit family，不代表任意动态图问题。（与可微模拟中的事件敏感性相邻，但本TE1合同由项目证据定义）[V015,V019]",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM051",
+    "manuscript_section": "9.1 与learned SPH correction和fully learned particle simulator的区别",
+    "source_id": "V003",
+    "supported_sentence": "与Neural SPH相比，本项目不是在已训练GNN rollout上加入SPH压力、黏性或外力分量；它保留冻结SPH基线，并把未训练神经项限制为加性reciprocal pair-force，同时要求zero correction严格退化到D0 [V003]。与参数化SPH湍流模型相比，本项目没有训练平滑核或闭合项，也没有DNS性能证据 [V001]。与JAX-SPH和diffSPH相比，本项目的主要增量不是“可微SPH平台”，而是把zero fallback、RK2阶段图重建、history事务、多步AD/FD和topology event拆成独立门；后两项工作已经建立了可微SPH、逆问题和solver-in-the-loop的强直接先例 [V002,V004]。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM052",
+    "manuscript_section": "9.1 与learned SPH correction和fully learned particle simulator的区别",
+    "source_id": "V001",
+    "supported_sentence": "与Neural SPH相比，本项目不是在已训练GNN rollout上加入SPH压力、黏性或外力分量；它保留冻结SPH基线，并把未训练神经项限制为加性reciprocal pair-force，同时要求zero correction严格退化到D0 [V003]。与参数化SPH湍流模型相比，本项目没有训练平滑核或闭合项，也没有DNS性能证据 [V001]。与JAX-SPH和diffSPH相比，本项目的主要增量不是“可微SPH平台”，而是把zero fallback、RK2阶段图重建、history事务、多步AD/FD和topology event拆成独立门；后两项工作已经建立了可微SPH、逆问题和solver-in-the-loop的强直接先例 [V002,V004]。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM053",
+    "manuscript_section": "9.1 与learned SPH correction和fully learned particle simulator的区别",
+    "source_id": "V002",
+    "supported_sentence": "与Neural SPH相比，本项目不是在已训练GNN rollout上加入SPH压力、黏性或外力分量；它保留冻结SPH基线，并把未训练神经项限制为加性reciprocal pair-force，同时要求zero correction严格退化到D0 [V003]。与参数化SPH湍流模型相比，本项目没有训练平滑核或闭合项，也没有DNS性能证据 [V001]。与JAX-SPH和diffSPH相比，本项目的主要增量不是“可微SPH平台”，而是把zero fallback、RK2阶段图重建、history事务、多步AD/FD和topology event拆成独立门；后两项工作已经建立了可微SPH、逆问题和solver-in-the-loop的强直接先例 [V002,V004]。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM054",
+    "manuscript_section": "9.1 与learned SPH correction和fully learned particle simulator的区别",
+    "source_id": "V004",
+    "supported_sentence": "与Neural SPH相比，本项目不是在已训练GNN rollout上加入SPH压力、黏性或外力分量；它保留冻结SPH基线，并把未训练神经项限制为加性reciprocal pair-force，同时要求zero correction严格退化到D0 [V003]。与参数化SPH湍流模型相比，本项目没有训练平滑核或闭合项，也没有DNS性能证据 [V001]。与JAX-SPH和diffSPH相比，本项目的主要增量不是“可微SPH平台”，而是把zero fallback、RK2阶段图重建、history事务、多步AD/FD和topology event拆成独立门；后两项工作已经建立了可微SPH、逆问题和solver-in-the-loop的强直接先例 [V002,V004]。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM055",
+    "manuscript_section": "9.1 与learned SPH correction和fully learned particle simulator的区别",
+    "source_id": "V011",
+    "supported_sentence": "GNS、continuous-convolution模拟器和LagrangeBench基线主要直接学习粒子动力学并自回归rollout [V011,V013,V024]。本项目则不允许网络直接替代位置推进、EOS或邻域membership。这个区别决定了“zero correction”在本项目中具有可执行的基线身份意义，而在完全学习模拟器中通常没有同一语义。它也意味着他人的rollout性能不能被用来暗示本模型会提高精度、稳定性或成本。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM056",
+    "manuscript_section": "9.1 与learned SPH correction和fully learned particle simulator的区别",
+    "source_id": "V013",
+    "supported_sentence": "GNS、continuous-convolution模拟器和LagrangeBench基线主要直接学习粒子动力学并自回归rollout [V011,V013,V024]。本项目则不允许网络直接替代位置推进、EOS或邻域membership。这个区别决定了“zero correction”在本项目中具有可执行的基线身份意义，而在完全学习模拟器中通常没有同一语义。它也意味着他人的rollout性能不能被用来暗示本模型会提高精度、稳定性或成本。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM057",
+    "manuscript_section": "9.1 与learned SPH correction和fully learned particle simulator的区别",
+    "source_id": "V024",
+    "supported_sentence": "GNS、continuous-convolution模拟器和LagrangeBench基线主要直接学习粒子动力学并自回归rollout [V011,V013,V024]。本项目则不允许网络直接替代位置推进、EOS或邻域membership。这个区别决定了“zero correction”在本项目中具有可执行的基线身份意义，而在完全学习模拟器中通常没有同一语义。它也意味着他人的rollout性能不能被用来暗示本模型会提高精度、稳定性或成本。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM058",
+    "manuscript_section": "9.2 与conservative/equivariant GNN的区别",
+    "source_id": "V022",
+    "supported_sentence": "DMCF通过反对称连续卷积硬保证线动量，并已完成训练与大规模粒子rollout [V022]；DYNAMI-CAL GRAPHNET同时编码线、角动量交换，并在颗粒动力学上评估长期rollout [V028]。本项目的reciprocal head同样属于hard architectural constraint，而不是守恒罚项；但当前冻结证据只支持指定阶段检查中的离散线动量消去，不支持角动量、能量、训练稳定性或长时守恒。EGNN/SEGNN等工作进一步说明，几何等变应与守恒结论分开陈述 [V017,V023]。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM059",
+    "manuscript_section": "9.2 与conservative/equivariant GNN的区别",
+    "source_id": "V028",
+    "supported_sentence": "DMCF通过反对称连续卷积硬保证线动量，并已完成训练与大规模粒子rollout [V022]；DYNAMI-CAL GRAPHNET同时编码线、角动量交换，并在颗粒动力学上评估长期rollout [V028]。本项目的reciprocal head同样属于hard architectural constraint，而不是守恒罚项；但当前冻结证据只支持指定阶段检查中的离散线动量消去，不支持角动量、能量、训练稳定性或长时守恒。EGNN/SEGNN等工作进一步说明，几何等变应与守恒结论分开陈述 [V017,V023]。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM060",
+    "manuscript_section": "9.2 与conservative/equivariant GNN的区别",
+    "source_id": "V017",
+    "supported_sentence": "DMCF通过反对称连续卷积硬保证线动量，并已完成训练与大规模粒子rollout [V022]；DYNAMI-CAL GRAPHNET同时编码线、角动量交换，并在颗粒动力学上评估长期rollout [V028]。本项目的reciprocal head同样属于hard architectural constraint，而不是守恒罚项；但当前冻结证据只支持指定阶段检查中的离散线动量消去，不支持角动量、能量、训练稳定性或长时守恒。EGNN/SEGNN等工作进一步说明，几何等变应与守恒结论分开陈述 [V017,V023]。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM061",
+    "manuscript_section": "9.2 与conservative/equivariant GNN的区别",
+    "source_id": "V023",
+    "supported_sentence": "DMCF通过反对称连续卷积硬保证线动量，并已完成训练与大规模粒子rollout [V022]；DYNAMI-CAL GRAPHNET同时编码线、角动量交换，并在颗粒动力学上评估长期rollout [V028]。本项目的reciprocal head同样属于hard architectural constraint，而不是守恒罚项；但当前冻结证据只支持指定阶段检查中的离散线动量消去，不支持角动量、能量、训练稳定性或长时守恒。EGNN/SEGNN等工作进一步说明，几何等变应与守恒结论分开陈述 [V017,V023]。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM062",
+    "manuscript_section": "9.3 与differentiable CFD/physics solver的区别",
+    "source_id": "V005",
+    "supported_sentence": "传统AD-CFD与tangent/adjoint文献把导数检查视为实现核验的一部分 [V005,V007,V008]，solver-in-the-loop则将多步求解器梯度用于训练corrector [V016]。JAX-SPH已报告5步AD/FD比较，但采用单一epsilon；diffSPH报告更长梯度链和广泛应用 [V002,V004]。本项目的差异是使用冻结的多epsilon stable-window、完整360 probes、reverse/JVP、extended FD、history attenuation与backend sensitivity进行资格和归因。由于216/360通过而144/360失败，该差异目前形成的是更严格的负资格结论，不是优于前述框架的性能结论。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM063",
+    "manuscript_section": "9.3 与differentiable CFD/physics solver的区别",
+    "source_id": "V007",
+    "supported_sentence": "传统AD-CFD与tangent/adjoint文献把导数检查视为实现核验的一部分 [V005,V007,V008]，solver-in-the-loop则将多步求解器梯度用于训练corrector [V016]。JAX-SPH已报告5步AD/FD比较，但采用单一epsilon；diffSPH报告更长梯度链和广泛应用 [V002,V004]。本项目的差异是使用冻结的多epsilon stable-window、完整360 probes、reverse/JVP、extended FD、history attenuation与backend sensitivity进行资格和归因。由于216/360通过而144/360失败，该差异目前形成的是更严格的负资格结论，不是优于前述框架的性能结论。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM064",
+    "manuscript_section": "9.3 与differentiable CFD/physics solver的区别",
+    "source_id": "V008",
+    "supported_sentence": "传统AD-CFD与tangent/adjoint文献把导数检查视为实现核验的一部分 [V005,V007,V008]，solver-in-the-loop则将多步求解器梯度用于训练corrector [V016]。JAX-SPH已报告5步AD/FD比较，但采用单一epsilon；diffSPH报告更长梯度链和广泛应用 [V002,V004]。本项目的差异是使用冻结的多epsilon stable-window、完整360 probes、reverse/JVP、extended FD、history attenuation与backend sensitivity进行资格和归因。由于216/360通过而144/360失败，该差异目前形成的是更严格的负资格结论，不是优于前述框架的性能结论。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM065",
+    "manuscript_section": "9.3 与differentiable CFD/physics solver的区别",
+    "source_id": "V016",
+    "supported_sentence": "传统AD-CFD与tangent/adjoint文献把导数检查视为实现核验的一部分 [V005,V007,V008]，solver-in-the-loop则将多步求解器梯度用于训练corrector [V016]。JAX-SPH已报告5步AD/FD比较，但采用单一epsilon；diffSPH报告更长梯度链和广泛应用 [V002,V004]。本项目的差异是使用冻结的多epsilon stable-window、完整360 probes、reverse/JVP、extended FD、history attenuation与backend sensitivity进行资格和归因。由于216/360通过而144/360失败，该差异目前形成的是更严格的负资格结论，不是优于前述框架的性能结论。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM066",
+    "manuscript_section": "9.3 与differentiable CFD/physics solver的区别",
+    "source_id": "V002",
+    "supported_sentence": "传统AD-CFD与tangent/adjoint文献把导数检查视为实现核验的一部分 [V005,V007,V008]，solver-in-the-loop则将多步求解器梯度用于训练corrector [V016]。JAX-SPH已报告5步AD/FD比较，但采用单一epsilon；diffSPH报告更长梯度链和广泛应用 [V002,V004]。本项目的差异是使用冻结的多epsilon stable-window、完整360 probes、reverse/JVP、extended FD、history attenuation与backend sensitivity进行资格和归因。由于216/360通过而144/360失败，该差异目前形成的是更严格的负资格结论，不是优于前述框架的性能结论。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM067",
+    "manuscript_section": "9.3 与differentiable CFD/physics solver的区别",
+    "source_id": "V004",
+    "supported_sentence": "传统AD-CFD与tangent/adjoint文献把导数检查视为实现核验的一部分 [V005,V007,V008]，solver-in-the-loop则将多步求解器梯度用于训练corrector [V016]。JAX-SPH已报告5步AD/FD比较，但采用单一epsilon；diffSPH报告更长梯度链和广泛应用 [V002,V004]。本项目的差异是使用冻结的多epsilon stable-window、完整360 probes、reverse/JVP、extended FD、history attenuation与backend sensitivity进行资格和归因。由于216/360通过而144/360失败，该差异目前形成的是更严格的负资格结论，不是优于前述框架的性能结论。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM068",
+    "manuscript_section": "9.4 zero-correction evidence与216/360、144 failures的含义",
+    "source_id": "V025",
+    "supported_sentence": "完整360-probe矩阵中216个stable windows说明部分固定拓扑多步方向导数可被AD与FD共同支持；144个失败以及history门0/6使Stage 03D整体保持NOT_QUALIFIED。reverse/JVP 60/60一致只排除了若干AD模式实现分歧，extended FD、horizon scaling和backend sensitivity又表明失败来源混合，不能被压缩成单一“FD噪声”或单一“AD错误”。保留这些负结果的价值在于阻止训练授权建立在选择性成功probe上，这与Scientific ML可信度和透明报告的方向一致 [V025,V029]。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM069",
+    "manuscript_section": "9.4 zero-correction evidence与216/360、144 failures的含义",
+    "source_id": "V029",
+    "supported_sentence": "完整360-probe矩阵中216个stable windows说明部分固定拓扑多步方向导数可被AD与FD共同支持；144个失败以及history门0/6使Stage 03D整体保持NOT_QUALIFIED。reverse/JVP 60/60一致只排除了若干AD模式实现分歧，extended FD、horizon scaling和backend sensitivity又表明失败来源混合，不能被压缩成单一“FD噪声”或单一“AD错误”。保留这些负结果的价值在于阻止训练授权建立在选择性成功probe上，这与Scientific ML可信度和透明报告的方向一致 [V025,V029]。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "ABSTRACT_ONLY"
+  },
+  {
+    "map_id": "CM070",
+    "manuscript_section": "9.6 为什么未训练既合理又构成限制",
+    "source_id": "V003",
+    "supported_sentence": "Stage 03E authorization=false，因此不执行训练是预注册资格链的结果，不是训练失败或性能回避。若在多步梯度门未通过时继续训练，将难以区分优化失败、梯度实现问题和离散非光滑性。另一方面，未训练也使本文缺少直接竞争工作通常提供的rollout误差、长期稳定性、外推和成本数据 [V003,V022,V024]。因此，本稿可作为verification methods论文继续修订，但不具备完整solver性能论文的证据等级。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM071",
+    "manuscript_section": "9.6 为什么未训练既合理又构成限制",
+    "source_id": "V022",
+    "supported_sentence": "Stage 03E authorization=false，因此不执行训练是预注册资格链的结果，不是训练失败或性能回避。若在多步梯度门未通过时继续训练，将难以区分优化失败、梯度实现问题和离散非光滑性。另一方面，未训练也使本文缺少直接竞争工作通常提供的rollout误差、长期稳定性、外推和成本数据 [V003,V022,V024]。因此，本稿可作为verification methods论文继续修订，但不具备完整solver性能论文的证据等级。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM072",
+    "manuscript_section": "9.6 为什么未训练既合理又构成限制",
+    "source_id": "V024",
+    "supported_sentence": "Stage 03E authorization=false，因此不执行训练是预注册资格链的结果，不是训练失败或性能回避。若在多步梯度门未通过时继续训练，将难以区分优化失败、梯度实现问题和离散非光滑性。另一方面，未训练也使本文缺少直接竞争工作通常提供的rollout误差、长期稳定性、外推和成本数据 [V003,V022,V024]。因此，本稿可作为verification methods论文继续修订，但不具备完整solver性能论文的证据等级。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM073",
+    "manuscript_section": "9.7 与Scientific ML V&V框架的关系及未来证据",
+    "source_id": "V020",
+    "supported_sentence": "本研究把代码/算法verification、参考层级、validation和未执行performance显式分开，符合SciML可信度框架所强调的适用域与持续证据积累 [V020,V029]。但一般性仍需通过至少两种独立SPH实现、更多动态拓扑家族、不同边界/粒子分辨率、公开可复现实验以及D-R4或等价外部参考证明。若未来要升级为完整CMAME solver论文，还必须在重新授权后完成训练资格、自主rollout、精度–成本曲线、长期守恒/稳定性、跨问题外推与独立验证；任何新增证据都应作为新阶段，不得回写现有Stage 01–03 verdict。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM074",
+    "manuscript_section": "9.7 与Scientific ML V&V框架的关系及未来证据",
+    "source_id": "V029",
+    "supported_sentence": "本研究把代码/算法verification、参考层级、validation和未执行performance显式分开，符合SciML可信度框架所强调的适用域与持续证据积累 [V020,V029]。但一般性仍需通过至少两种独立SPH实现、更多动态拓扑家族、不同边界/粒子分辨率、公开可复现实验以及D-R4或等价外部参考证明。若未来要升级为完整CMAME solver论文，还必须在重新授权后完成训练资格、自主rollout、精度–成本曲线、长期守恒/稳定性、跨问题外推与独立验证；任何新增证据都应作为新阶段，不得回写现有Stage 01–03 verdict。",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "ABSTRACT_ONLY"
+  },
+  {
+    "map_id": "CM075",
+    "manuscript_section": "References",
+    "source_id": "V001",
+    "supported_sentence": "[V001] Michael Woodward; Yifeng Tian; Criston Hyett; Chris Fryer; Mikhail Stepanov; Daniel Livescu; Michael Chertkov (2023). Physics-informed machine learning with smoothed particle hydrodynamics: Hierarchy of reduced Lagrangian models of turbulence. Physical Review Fluids, 8, 5, 054602. https://doi.org/10.1103/physrevfluids.8.054602",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM076",
+    "manuscript_section": "References",
+    "source_id": "V002",
+    "supported_sentence": "[V002] Artur P. Toshev; Harish Ramachandran; Jonas A. Erbesdobler; Gianluca Galletti; Johannes Brandstetter; Nikolaus A. Adams (2024). JAX-SPH: A Differentiable Smoothed Particle Hydrodynamics Framework. ICLR 2024 Workshop on AI4DifferentialEquations in Science. https://openreview.net/forum?id=8X5PXVmsHW",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM077",
+    "manuscript_section": "References",
+    "source_id": "V003",
+    "supported_sentence": "[V003] Artur Toshev; Jonas A. Erbesdobler; Nikolaus A. Adams; Johannes Brandstetter (2024). Neural SPH: Improved Neural Modeling of Lagrangian Fluid Dynamics. Proceedings of the 41st International Conference on Machine Learning, 235, 48428–48452. https://proceedings.mlr.press/v235/toshev24a.html",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM078",
+    "manuscript_section": "References",
+    "source_id": "V004",
+    "supported_sentence": "[V004] Rene Winchenbach; Nils Thuerey (2026). diffSPH: Differentiable smoothed particle hydrodynamics for hybrid machine learning solutions in fluid mechanics. Journal of Computational Physics, 555, 114769. https://doi.org/10.1016/j.jcp.2026.114769",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM079",
+    "manuscript_section": "References",
+    "source_id": "V005",
+    "supported_sentence": "[V005] Eugenia Kalnay (2002). Coding and checking the tangent linear and the adjoint models. Atmospheric Modeling, Data Assimilation and Predictability, 264-275. https://doi.org/10.1017/cbo9780511802270.009",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM080",
+    "manuscript_section": "References",
+    "source_id": "V006",
+    "supported_sentence": "[V006] Adrian Sandu (2008). Reverse Automatic Differentiation of Linear Multistep Methods. Lecture Notes in Computational Science and Engineering Advances in Automatic Differentiation, 1-12. https://doi.org/10.1007/978-3-540-68942-3_1",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM081",
+    "manuscript_section": "References",
+    "source_id": "V007",
+    "supported_sentence": "[V007] Faidon Christakopoulos; Dominic Jones; Jens-Dominik Müller (2011). Pseudo-timestepping and verification for automatic differentiation derived CFD codes. Computers &amp; Fluids, 46, 1, 174-179. https://doi.org/10.1016/j.compfluid.2011.01.039",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM082",
+    "manuscript_section": "References",
+    "source_id": "V008",
+    "supported_sentence": "[V008] Emre Özkaya; Anil Nemili; Nicolas R. Gauger (2012). Application of Automatic Differentiation to an Incompressible URANS Solver. Lecture Notes in Computational Science and Engineering Recent Advances in Algorithmic Differentiation, 35-45. https://doi.org/10.1007/978-3-642-30023-3_4",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM083",
+    "manuscript_section": "References",
+    "source_id": "V009",
+    "supported_sentence": "[V009] Sam Greydanus; Misko Dzamba; Jason Yosinski (2019). Hamiltonian Neural Networks. Advances in Neural Information Processing Systems, 32. https://proceedings.neurips.cc/paper/2019/hash/26cd8ecadce0d4efd6cc8a8725cbd1f8-Abstract.html",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM084",
+    "manuscript_section": "References",
+    "source_id": "V010",
+    "supported_sentence": "[V010] Yunzhu Li; Jiajun Wu; Russ Tedrake; Joshua B. Tenenbaum; Antonio Torralba (2019). Learning Particle Dynamics for Manipulating Rigid Bodies, Deformable Objects, and Fluids. International Conference on Learning Representations. https://openreview.net/forum?id=rJgbSn09Ym",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM085",
+    "manuscript_section": "References",
+    "source_id": "V011",
+    "supported_sentence": "[V011] Benjamin Ummenhofer; Lukas Prantl; Nils Thuerey; Vladlen Koltun (2020). Lagrangian Fluid Simulation with Continuous Convolutions. International Conference on Learning Representations. https://openreview.net/forum?id=B1lDoJSYDH",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM086",
+    "manuscript_section": "References",
+    "source_id": "V012",
+    "supported_sentence": "[V012] Miles Cranmer; Sam Greydanus; Stephan Hoyer; Peter Battaglia; David Spergel; Shirley Ho (2020). Lagrangian Neural Networks. ICLR 2020 Workshop on Integration of Deep Neural Models and Differential Equations. https://openreview.net/forum?id=iE8tFa4Nq",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM087",
+    "manuscript_section": "References",
+    "source_id": "V013",
+    "supported_sentence": "[V013] Alvaro Sanchez-Gonzalez; Jonathan Godwin; Tobias Pfaff; Rex Ying; Jure Leskovec; Peter Battaglia (2020). Learning to Simulate Complex Physics with Graph Networks. Proceedings of the 37th International Conference on Machine Learning, 119, 8459–8468. https://proceedings.mlr.press/v119/sanchez-gonzalez20a.html",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM088",
+    "manuscript_section": "References",
+    "source_id": "V014",
+    "supported_sentence": "[V014] Kenneth I. Aycock; Nuno Rebelo; Brent A. Craven (2020). Method of manufactured solutions code verification of elastostatic solid mechanics problems in a commercial finite element solver. Computers &amp; Structures, 229, 106175. https://doi.org/10.1016/j.compstruc.2019.106175",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM089",
+    "manuscript_section": "References",
+    "source_id": "V015",
+    "supported_sentence": "[V015] Yi-Ling Qiao; Junbang Liang; Vladlen Koltun; Ming C. Lin (2020). Scalable Differentiable Physics for Learning and Control. Proceedings of the 37th International Conference on Machine Learning, 119, 7847–7856. https://proceedings.mlr.press/v119/qiao20a.html",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM090",
+    "manuscript_section": "References",
+    "source_id": "V016",
+    "supported_sentence": "[V016] Kiwon Um; Robert Brand; Yun Fei; Philipp Holl; Nils Thuerey (2020). Solver-in-the-Loop: Learning from Differentiable Physics to Interact with Iterative PDE-Solvers. Advances in Neural Information Processing Systems, 33, 6111–6122. https://proceedings.neurips.cc/paper/2020/hash/43e4e6a6f341e00671e123714de019a8-Abstract.html",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM091",
+    "manuscript_section": "References",
+    "source_id": "V017",
+    "supported_sentence": "[V017] Victor Garcia Satorras; Emiel Hoogeboom; Max Welling (2021). E(n) Equivariant Graph Neural Networks. Proceedings of the 38th International Conference on Machine Learning, 139, 9323–9332. https://proceedings.mlr.press/v139/satorras21a.html",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM092",
+    "manuscript_section": "References",
+    "source_id": "V018",
+    "supported_sentence": "[V018] Pawan Negi; Prabhu Ramachandran (2021). How to train your solver: A method of manufactured solutions for weakly compressible smoothed particle hydrodynamics. Physics of Fluids, 33, 12, 127108. https://doi.org/10.1063/5.0072383",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "ABSTRACT_ONLY"
+  },
+  {
+    "map_id": "CM093",
+    "manuscript_section": "References",
+    "source_id": "V019",
+    "supported_sentence": "[V019] Tobias Pfaff; Meire Fortunato; Alvaro Sanchez-Gonzalez; Peter W. Battaglia (2021). Learning Mesh-Based Simulation with Graph Networks. International Conference on Learning Representations. https://openreview.net/forum?id=roNqYL0_XP",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM094",
+    "manuscript_section": "References",
+    "source_id": "V020",
+    "supported_sentence": "[V020] Erin Acquesta (2022). Adapting Verification and Validation Principles to a Credibility Process for Scientific Machine Learning.. Proposed for presentation at the SIAM UQ 2022 held April 12-15, 2022 in Atlanta , GA. https://doi.org/10.2172/2002271",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM095",
+    "manuscript_section": "References",
+    "source_id": "V021",
+    "supported_sentence": "[V021] Zijie Li; Amir Barati Farimani (2022). Graph neural network-accelerated Lagrangian fluid simulation. Computers &amp; Graphics, 103, 201-211. https://doi.org/10.1016/j.cag.2022.02.004",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM096",
+    "manuscript_section": "References",
+    "source_id": "V022",
+    "supported_sentence": "[V022] Lukas Prantl; Benjamin Ummenhofer; Vladlen Koltun; Nils Thuerey (2022). Guaranteed Conservation of Momentum for Learning Particle-Based Fluid Dynamics. Advances in Neural Information Processing Systems 35, 6901-6913. https://doi.org/10.52202/068431-0500",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM097",
+    "manuscript_section": "References",
+    "source_id": "V023",
+    "supported_sentence": "[V023] Johannes Brandstetter; Rob Hesselink; Elise van der Pol; Erik J. Bekkers; Max Welling (2022). SE(3)-Equivariant and Steerable Graph Networks. International Conference on Learning Representations. https://openreview.net/forum?id=_xwr8gOBeV1",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM098",
+    "manuscript_section": "References",
+    "source_id": "V024",
+    "supported_sentence": "[V024] Artur Toshev; Gianluca Galletti; Fabian Fritz; Stefan Adami; Nikolaus Adams (2023). LagrangeBench: A Lagrangian Fluid Mechanics Benchmarking Suite. Advances in Neural Information Processing Systems 36, 36, 64857-64884. https://doi.org/10.52202/075280-2830",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM099",
+    "manuscript_section": "References",
+    "source_id": "V025",
+    "supported_sentence": "[V025] Sayash Kapoor; Emily M. Cantrell; Kenny Peng; Thanh Hien Pham; Christopher A. Bail; Odd Erik Gundersen; Jake M. Hofman; Jessica Hullman; Michael A. Lones; Momin M. Malik; Priyanka Nanayakkara; Russell A. Poldrack; Inioluwa Deborah Raji; Michael Roberts; Matthew J. Salganik; Marta Serra-Garcia; Brandon M. Stewart; Gilles Vandewiele; Arvind Narayanan (2024). REFORMS: Consensus-based Recommendations for Machine-learning-based Science. Science Advances, 10, 18, eadk3452. https://doi.org/10.1126/sciadv.adk3452",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "FULL_TEXT"
+  },
+  {
+    "map_id": "CM100",
+    "manuscript_section": "References",
+    "source_id": "V026",
+    "supported_sentence": "[V026] Olav Møyner (2025). JutulDarcy.jl - a fully differentiable high-performance reservoir simulator based on automatic differentiation. Computational Geosciences, 29, 4, 30. https://doi.org/10.1007/s10596-025-10366-6",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "ABSTRACT_ONLY"
+  },
+  {
+    "map_id": "CM101",
+    "manuscript_section": "References",
+    "source_id": "V027",
+    "supported_sentence": "[V027] Takefumi Higaki; Yuki Tanabe; Hirotada Hashimoto; Takahito Iida (2025). Step-by-step enhancement of a graph neural network-based surrogate model for Lagrangian fluid simulations with flexible time step sizes. Applied Ocean Research, 154, 104424. https://doi.org/10.1016/j.apor.2025.104424",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM102",
+    "manuscript_section": "References",
+    "source_id": "V028",
+    "supported_sentence": "[V028] Vinay Sharma; Olga Fink (2026). A physics-informed graph neural network conserving linear and angular momentum for dynamical systems. Nature Communications, 17, 1, 1045. https://doi.org/10.1038/s41467-025-67802-5",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM103",
+    "manuscript_section": "References",
+    "source_id": "V029",
+    "supported_sentence": "[V029] John D Jakeman; Lorena A Barba; Joaquim R R A Martins; Thomas O’Leary-Roseberry (2026). Verification and validation for trustworthy scientific machine learning. Machine Learning: Science and Technology, 7, 2, 025055. https://doi.org/10.1088/2632-2153/ae59ec",
+    "citation_role": "direct_method_comparison",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "ABSTRACT_ONLY"
+  },
+  {
+    "map_id": "CM104",
+    "manuscript_section": "References",
+    "source_id": "V035",
+    "supported_sentence": "[V035] Patrick J. Roache (2002). Code Verification by the Method of Manufactured Solutions. Journal of Fluids Engineering, 124, 1, 4-10. https://doi.org/10.1115/1.1436090",
+    "citation_role": "background_or_reference_hierarchy",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "ABSTRACT_ONLY"
+  },
+  {
+    "map_id": "CM105",
+    "manuscript_section": "References",
+    "source_id": "V042",
+    "supported_sentence": "[V042] M.B. Liu; G.R. Liu (2006). Restoring particle consistency in smoothed particle hydrodynamics. Applied Numerical Mathematics, 56, 1, 19-36. https://doi.org/10.1016/j.apnum.2005.02.012",
+    "citation_role": "background_or_reference_hierarchy",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM106",
+    "manuscript_section": "References",
+    "source_id": "V049",
+    "supported_sentence": "[V049] Mostafa Safdari Shadloo; Amir Zainali; Mehmet Yildiz; Afzal Suleman (2012). A robust weakly compressible SPH method and its comparison with an incompressible SPH. International Journal for Numerical Methods in Engineering, 89, 8, 939-956. https://doi.org/10.1002/nme.3267",
+    "citation_role": "background_or_reference_hierarchy",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "ABSTRACT_ONLY"
+  },
+  {
+    "map_id": "CM107",
+    "manuscript_section": "References",
+    "source_id": "V053",
+    "supported_sentence": "[V053] M. Antuono; A. Colagrossi; S. Marrone (2012). Numerical diffusive terms in weakly-compressible SPH schemes. Computer Physics Communications, 183, 12, 2570-2580. https://doi.org/10.1016/j.cpc.2012.07.006",
+    "citation_role": "background_or_reference_hierarchy",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM108",
+    "manuscript_section": "References",
+    "source_id": "V054",
+    "supported_sentence": "[V054] Pablo S. Rojas Fredini; Alejandro C. Limache (2013). Evaluation of weakly compressible SPH variants using derived analytical solutions of Taylor–Couette flows. Computers &amp; Mathematics with Applications, 66, 3, 304-317. https://doi.org/10.1016/j.camwa.2013.05.008",
+    "citation_role": "background_or_reference_hierarchy",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM109",
+    "manuscript_section": "References",
+    "source_id": "V056",
+    "supported_sentence": "[V056] Damien Violeau; Agnès Leroy (2014). On the maximum time step in weakly compressible SPH. Journal of Computational Physics, 256, 388-415. https://doi.org/10.1016/j.jcp.2013.09.001",
+    "citation_role": "background_or_reference_hierarchy",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM110",
+    "manuscript_section": "References",
+    "source_id": "V058",
+    "supported_sentence": "[V058] Qirong Zhu; Lars Hernquist; Yuexing Li (2015). NUMERICAL CONVERGENCE IN SMOOTHED PARTICLE HYDRODYNAMICS. The Astrophysical Journal, 800, 1, 6. https://doi.org/10.1088/0004-637x/800/1/6",
+    "citation_role": "background_or_reference_hierarchy",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM111",
+    "manuscript_section": "References",
+    "source_id": "V072",
+    "supported_sentence": "[V072] Yujie Zhu; Chi Zhang; Xiangyu Hu (2021). A consistency-driven particle-advection formulation for weakly-compressible smoothed particle hydrodynamics. Computers &amp; Fluids, 230, 105140. https://doi.org/10.1016/j.compfluid.2021.105140",
+    "citation_role": "background_or_reference_hierarchy",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM112",
+    "manuscript_section": "References",
+    "source_id": "V076",
+    "supported_sentence": "[V076] Renato Vacondio; Corrado Altomare; Matthieu De Leffe; Xiangyu Hu; David Le Touzé; Steven Lind; Jean-Christophe Marongiu; Salvatore Marrone; Benedict D. Rogers; Antonio Souto-Iglesias (2021). Grand challenges for Smoothed Particle Hydrodynamics numerical schemes. Computational Particle Mechanics, 8, 3, 575-588. https://doi.org/10.1007/s40571-020-00354-1",
+    "citation_role": "background_or_reference_hierarchy",
+    "mode": "paraphrase",
+    "confidence": "MODERATE",
+    "access_level": "METADATA_ONLY"
+  },
+  {
+    "map_id": "CM113",
+    "manuscript_section": "References",
+    "source_id": "V082",
+    "supported_sentence": "[V082] Pawan Negi; Prabhu Ramachandran (2022). Techniques for second-order convergent weakly compressible smoothed particle hydrodynamics schemes without boundaries. Physics of Fluids, 34, 8, 087125. https://doi.org/10.1063/5.0098352",
+    "citation_role": "background_or_reference_hierarchy",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "ABSTRACT_ONLY"
+  },
+  {
+    "map_id": "CM114",
+    "manuscript_section": "References",
+    "source_id": "V092",
+    "supported_sentence": "[V092] Matteo Antuono; Salvatore Marrone (2025). Weakly Compressible Approximation of the Taylor–Green Vortex Solution. Studies in Applied Mathematics, 154, 1, e12792. https://doi.org/10.1111/sapm.12792",
+    "citation_role": "background_or_reference_hierarchy",
+    "mode": "paraphrase",
+    "confidence": "HIGH",
+    "access_level": "ABSTRACT_ONLY"
+  }
+]

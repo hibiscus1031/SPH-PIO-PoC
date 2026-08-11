@@ -1,0 +1,51 @@
+field,value
+progression[0],V&V-qualified SPH foundation
+progression[1],conservative pair interaction architecture
+progression[2],static-learning falsification
+progression[3],dynamic RK2 hybrid implementation
+progression[4],gradient qualification failure
+progression[5],task-signal attribution
+progression[6],scale-aware discrete defect target
+progression[7],target/scale qualification
+progression[8],optimizer-path qualification
+progression[9],actual AdamW update qualification
+progression[10],formal training
+progression[11],lineage heterogeneity attribution
+progression[12],prospective heterogeneous-pool augmentation
+progression[13],fresh-validation failure
+progression[14],support-gap attribution
+progression[15],systematic coverage-by-design
+progression[16],target-manifold coverage failure
+progression[17],route closure
+ladder[0][0],structure
+ladder[0][1],QUALIFIED
+ladder[1][0],target
+ladder[1][1],QUALIFIED
+ladder[2][0],gradient
+ladder[2][1],NOT QUALIFIED
+ladder[3][0],optimizer
+ladder[3][1],QUALIFIED
+ladder[4][0],TRAIN
+ladder[4][1],NOT QUALIFIED
+ladder[5][0],validation
+ladder[5][1],NOT QUALIFIED
+ladder[6][0],support
+ladder[6][1],NOT QUALIFIED
+ladder[7][0],governance
+ladder[7][1],QUALIFIED
+final_items[0][0],dynamic architecture
+final_items[0][1],QUALIFIED
+final_items[1][0],zero correction
+final_items[1][1],VERIFIED
+final_items[2][0],defect target
+final_items[2][1],QUALIFIED
+final_items[3][0],actual updates
+final_items[3][1],QUALIFIED
+final_items[4][0],trained solver
+final_items[4][1],NOT QUALIFIED
+final_items[5][0],autonomous rollout
+final_items[5][1],NOT QUALIFIED
+final_items[6][0],sealed test
+final_items[6][1],NOT ACCESSED
+claim_matrix_keys[0],allowed
+claim_matrix_keys[1],prohibited

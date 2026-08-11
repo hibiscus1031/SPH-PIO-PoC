@@ -1,0 +1,1736 @@
+{
+  "execution": "single_process_serial",
+  "formal_optimizer_steps": 11620,
+  "formal_parameter_updates": 11620,
+  "formal_training_runs": 9,
+  "pass": true,
+  "peak_rss_bytes": 1262108672,
+  "protocol_sha256": "sha256:b7918bde82b104895b6d47c798801608938c661c3f8b249f4c832c98c3a83cbe",
+  "rollouts": 0,
+  "run_order": [
+    "D1_seed20600611",
+    "D1_seed20600612",
+    "D1_seed20600613",
+    "D2_seed20600611",
+    "D2_seed20600612",
+    "D2_seed20600613",
+    "D3_seed20600611",
+    "D3_seed20600612",
+    "D3_seed20600613"
+  ],
+  "runs": [
+    {
+      "arm": "D1",
+      "checkpoint_count": 76,
+      "checkpoint_integrity_pass": true,
+      "checkpoint_storage_bytes_campaign": 12754384,
+      "formal_parameter_update_count": 1500,
+      "formal_run_terminal": true,
+      "formal_seed": 20600611,
+      "graph_rebuilds": 226944,
+      "minimum_validation_Q_def": 0.6421614364622288,
+      "optimizer_memory_bytes": 92272,
+      "optimizer_step_count": 1500,
+      "peak_rss_bytes": 898105344,
+      "retry_resume_history": [],
+      "run_id": "D1_seed20600611",
+      "sealed_decode_counts": {
+        "sealed_formula_decode_count": 0,
+        "sealed_origin_decode_count": 0,
+        "sealed_source_decode_count": 0,
+        "sealed_state_decode_count": 0,
+        "sealed_target_decode_count": 0
+      },
+      "sealed_test_evaluations": 0,
+      "seed_pass": false,
+      "selected_checkpoint": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06c/checkpoint_selection/D1_seed20600611_selected.pt",
+      "selected_checkpoint_sha256": "sha256:80f93e2fcca616635880160dff811a80f5806ab01c5f72b05f0df8cd1e8c188d",
+      "selected_metrics": {
+        "Delta_Q_val": -0.04401565853777123,
+        "TRAIN": {
+          "coefficient_RMS": 0.018568124940863136,
+          "coefficient_saturation_fraction": 0.0,
+          "correction_force_residual_max": 3.346583173225967e-17,
+          "density_min": 0.9974697757482247,
+          "diagnostic_state_errors": {
+            "density_RMS": 8.72690271752169e-06,
+            "position_RMS": 2.5913494598979296e-08,
+            "velocity_RMS": 0.00012990972473941626
+          },
+          "finite": true,
+          "global_balanced_L_def": 0.9258341957801407,
+          "global_balanced_Q_def": 0.9622027830868817,
+          "history_semantics": true,
+          "maximum_origin": {
+            "Q_def": 3.7522295121324474,
+            "record_id": "LCDF_08_VARIANT_MAIN_N8_O00"
+          },
+          "per_lineage_Q_def": {
+            "LCDF_01": 0.3043296766937098,
+            "LCDF_04": 0.6837291477687223,
+            "LCDF_05": 1.1198736822198907,
+            "LCDF_06": 0.11178146429267885,
+            "LCDF_07": 0.1871397441965213,
+            "LCDF_08": 1.921788133824775
+          },
+          "per_variant_Q_def": {
+            "VARIANT_LOW": 0.8164512713401106,
+            "VARIANT_MAIN": 1.088611828471195
+          },
+          "record_count": 384,
+          "role": "TRAIN",
+          "safe": true
+        },
+        "VALIDATION": {
+          "coefficient_RMS": 0.01856831778609344,
+          "coefficient_saturation_fraction": 0.0,
+          "correction_force_residual_max": 1.8902594552672714e-17,
+          "density_min": 0.9975323799498814,
+          "diagnostic_state_errors": {
+            "density_RMS": 7.367271377022585e-06,
+            "position_RMS": 1.654906461960587e-08,
+            "velocity_RMS": 8.670003549713661e-05
+          },
+          "finite": true,
+          "global_balanced_L_def": 0.41237131047923303,
+          "global_balanced_Q_def": 0.6421614364622288,
+          "history_semantics": true,
+          "maximum_origin": {
+            "Q_def": 1.073887822681786,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O00"
+          },
+          "per_lineage_Q_def": {
+            "LCDF_02": 0.6096850301511946,
+            "LCDF_09": 0.6730726446439514
+          },
+          "per_variant_Q_def": {
+            "VARIANT_LOW": 0.5448900051900025,
+            "VARIANT_MAIN": 0.726524261950353
+          },
+          "record_count": 128,
+          "role": "VALIDATION",
+          "safe": true
+        },
+        "baseline_diagnostic": "validation improvement",
+        "deterministic_repeat": true,
+        "frozen_gates_A_E": {
+          "A_numerical_safety": true,
+          "B_train_fit": false,
+          "C_validation_transfer": true,
+          "D_LCDF_02": true,
+          "D_LCDF_09": true,
+          "E_structure": true
+        },
+        "parameter_sha256": "sha256:30dbe13aa4350fe8002b871d973ca31cbc314ef1a9840a035bc9ec1b91e7435f",
+        "run_id": "D1_seed20600611",
+        "seed_pass": false,
+        "selected_checkpoint": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06c/checkpoint_selection/D1_seed20600611_selected.pt",
+        "selected_checkpoint_sha256": "sha256:80f93e2fcca616635880160dff811a80f5806ab01c5f72b05f0df8cd1e8c188d",
+        "selected_update": 1500,
+        "structure": {
+          "gates": {
+            "accepted_history_commit": true,
+            "checkpoint_reload_identity": true,
+            "midpoint": true,
+            "midpoint_not_committed": true,
+            "start": true
+          },
+          "history": {
+            "history_commit_count": 0,
+            "midpoint_commit_count": 0
+          },
+          "midpoint": {
+            "arm": "D1",
+            "gates": {
+              "Galilean_boost": true,
+              "SO2_rotation": true,
+              "correction_force_residual": true,
+              "deterministic_repeat": true,
+              "edge_reorder": true,
+              "finite_output": true,
+              "force_antisymmetry": true,
+              "pair_exchange": true,
+              "periodic_representative_shift": true,
+              "permutation_equivariance": true,
+              "reflection": true,
+              "translation": true
+            },
+            "maximum_errors": {
+              "Galilean_boost": 3.552713678800501e-15,
+              "SO2_rotation": 0.0,
+              "edge_reorder": 8.43769498715119e-15,
+              "periodic_representative_shift": 1.5987211554602254e-14,
+              "permutation": 7.549516567451064e-15,
+              "reflection": 8.881784197001252e-15,
+              "translation": 7.549516567451064e-15
+            },
+            "normalized_correction_force_residual": 1.3393547228657517e-17,
+            "pass": true,
+            "stage": "midpoint"
+          },
+          "pass": true,
+          "run_id": "D1_seed20600611",
+          "start": {
+            "arm": "D1",
+            "gates": {
+              "Galilean_boost": true,
+              "SO2_rotation": true,
+              "correction_force_residual": true,
+              "deterministic_repeat": true,
+              "edge_reorder": true,
+              "finite_output": true,
+              "force_antisymmetry": true,
+              "pair_exchange": true,
+              "periodic_representative_shift": true,
+              "permutation_equivariance": true,
+              "reflection": true,
+              "translation": true
+            },
+            "maximum_errors": {
+              "Galilean_boost": 3.552713678800501e-15,
+              "SO2_rotation": 0.0,
+              "edge_reorder": 4.884981308350689e-15,
+              "periodic_representative_shift": 7.105427357601002e-15,
+              "permutation": 9.325873406851315e-15,
+              "reflection": 7.105427357601002e-15,
+              "translation": 0.0
+            },
+            "normalized_correction_force_residual": 8.274428656940166e-18,
+            "pass": true,
+            "stage": "start"
+          }
+        },
+        "validation_zero_baseline": 0.686177095
+      },
+      "selected_parameter_sha256": "sha256:30dbe13aa4350fe8002b871d973ca31cbc314ef1a9840a035bc9ec1b91e7435f",
+      "selected_update": 1500,
+      "terminal_reason": "MAX_UPDATES",
+      "terminal_update": 1500,
+      "update_count": 1500,
+      "wall_time_seconds": 2049.6696785000386
+    },
+    {
+      "arm": "D1",
+      "checkpoint_count": 76,
+      "checkpoint_integrity_pass": true,
+      "checkpoint_storage_bytes_campaign": 25510185,
+      "formal_parameter_update_count": 1500,
+      "formal_run_terminal": true,
+      "formal_seed": 20600612,
+      "graph_rebuilds": 226944,
+      "minimum_validation_Q_def": 0.6542211423482678,
+      "optimizer_memory_bytes": 92272,
+      "optimizer_step_count": 1500,
+      "peak_rss_bytes": 807731200,
+      "retry_resume_history": [],
+      "run_id": "D1_seed20600612",
+      "sealed_decode_counts": {
+        "sealed_formula_decode_count": 0,
+        "sealed_origin_decode_count": 0,
+        "sealed_source_decode_count": 0,
+        "sealed_state_decode_count": 0,
+        "sealed_target_decode_count": 0
+      },
+      "sealed_test_evaluations": 0,
+      "seed_pass": false,
+      "selected_checkpoint": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06c/checkpoint_selection/D1_seed20600612_selected.pt",
+      "selected_checkpoint_sha256": "sha256:de645c8b734c75997ee1c0a9b5624ca3570cffb75e426f4fb15bef5876a166c0",
+      "selected_metrics": {
+        "Delta_Q_val": -0.03195595265173223,
+        "TRAIN": {
+          "coefficient_RMS": 0.015739859636732592,
+          "coefficient_saturation_fraction": 0.0,
+          "correction_force_residual_max": 2.123620617998375e-17,
+          "density_min": 0.9974697757482247,
+          "diagnostic_state_errors": {
+            "density_RMS": 8.728314183399891e-06,
+            "position_RMS": 2.6173245154158545e-08,
+            "velocity_RMS": 0.00013126441028745803
+          },
+          "finite": true,
+          "global_balanced_L_def": 0.9452438838115512,
+          "global_balanced_Q_def": 0.9722365369659542,
+          "history_semantics": true,
+          "maximum_origin": {
+            "Q_def": 3.778468003532478,
+            "record_id": "LCDF_08_VARIANT_MAIN_N8_O00"
+          },
+          "per_lineage_Q_def": {
+            "LCDF_01": 0.3097677988264524,
+            "LCDF_04": 0.693004711746651,
+            "LCDF_05": 1.1315097787017838,
+            "LCDF_06": 0.08968068990743211,
+            "LCDF_07": 0.1989213065109596,
+            "LCDF_08": 1.9409598119364562
+          },
+          "per_variant_Q_def": {
+            "VARIANT_LOW": 0.8249651244901506,
+            "VARIANT_MAIN": 1.0999637771299804
+          },
+          "record_count": 384,
+          "role": "TRAIN",
+          "safe": true
+        },
+        "VALIDATION": {
+          "coefficient_RMS": 0.015739997514479957,
+          "coefficient_saturation_fraction": 0.0,
+          "correction_force_residual_max": 1.6304514747302718e-17,
+          "density_min": 0.9975323799498814,
+          "diagnostic_state_errors": {
+            "density_RMS": 7.369599282688312e-06,
+            "position_RMS": 1.681977100823154e-08,
+            "velocity_RMS": 8.832825056742308e-05
+          },
+          "finite": true,
+          "global_balanced_L_def": 0.4280053030954724,
+          "global_balanced_Q_def": 0.6542211423482678,
+          "history_semantics": true,
+          "maximum_origin": {
+            "Q_def": 1.0908350286244566,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O00"
+          },
+          "per_lineage_Q_def": {
+            "LCDF_02": 0.6290866403455009,
+            "LCDF_09": 0.6784250917601407
+          },
+          "per_variant_Q_def": {
+            "VARIANT_LOW": 0.5551229278776232,
+            "VARIANT_MAIN": 0.7401683194622153
+          },
+          "record_count": 128,
+          "role": "VALIDATION",
+          "safe": true
+        },
+        "baseline_diagnostic": "validation improvement",
+        "deterministic_repeat": true,
+        "frozen_gates_A_E": {
+          "A_numerical_safety": true,
+          "B_train_fit": false,
+          "C_validation_transfer": true,
+          "D_LCDF_02": true,
+          "D_LCDF_09": true,
+          "E_structure": true
+        },
+        "parameter_sha256": "sha256:c0169db7f1e003ba5e61f00c51dcdbe7007c88d48b2fa18ce46a200c6d9bf6b9",
+        "run_id": "D1_seed20600612",
+        "seed_pass": false,
+        "selected_checkpoint": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06c/checkpoint_selection/D1_seed20600612_selected.pt",
+        "selected_checkpoint_sha256": "sha256:de645c8b734c75997ee1c0a9b5624ca3570cffb75e426f4fb15bef5876a166c0",
+        "selected_update": 1500,
+        "structure": {
+          "gates": {
+            "accepted_history_commit": true,
+            "checkpoint_reload_identity": true,
+            "midpoint": true,
+            "midpoint_not_committed": true,
+            "start": true
+          },
+          "history": {
+            "history_commit_count": 0,
+            "midpoint_commit_count": 0
+          },
+          "midpoint": {
+            "arm": "D1",
+            "gates": {
+              "Galilean_boost": true,
+              "SO2_rotation": true,
+              "correction_force_residual": true,
+              "deterministic_repeat": true,
+              "edge_reorder": true,
+              "finite_output": true,
+              "force_antisymmetry": true,
+              "pair_exchange": true,
+              "periodic_representative_shift": true,
+              "permutation_equivariance": true,
+              "reflection": true,
+              "translation": true
+            },
+            "maximum_errors": {
+              "Galilean_boost": 3.552713678800501e-15,
+              "SO2_rotation": 0.0,
+              "edge_reorder": 5.995204332975845e-15,
+              "periodic_representative_shift": 9.325873406851315e-15,
+              "permutation": 8.881784197001252e-15,
+              "reflection": 9.992007221626409e-15,
+              "translation": 5.10702591327572e-15
+            },
+            "normalized_correction_force_residual": 2.400688848854829e-18,
+            "pass": true,
+            "stage": "midpoint"
+          },
+          "pass": true,
+          "run_id": "D1_seed20600612",
+          "start": {
+            "arm": "D1",
+            "gates": {
+              "Galilean_boost": true,
+              "SO2_rotation": true,
+              "correction_force_residual": true,
+              "deterministic_repeat": true,
+              "edge_reorder": true,
+              "finite_output": true,
+              "force_antisymmetry": true,
+              "pair_exchange": true,
+              "periodic_representative_shift": true,
+              "permutation_equivariance": true,
+              "reflection": true,
+              "translation": true
+            },
+            "maximum_errors": {
+              "Galilean_boost": 3.552713678800501e-15,
+              "SO2_rotation": 0.0,
+              "edge_reorder": 4.440892098500626e-15,
+              "periodic_representative_shift": 3.552713678800501e-15,
+              "permutation": 8.43769498715119e-15,
+              "reflection": 3.552713678800501e-15,
+              "translation": 0.0
+            },
+            "normalized_correction_force_residual": 3.832951070743694e-18,
+            "pass": true,
+            "stage": "start"
+          }
+        },
+        "validation_zero_baseline": 0.686177095
+      },
+      "selected_parameter_sha256": "sha256:c0169db7f1e003ba5e61f00c51dcdbe7007c88d48b2fa18ce46a200c6d9bf6b9",
+      "selected_update": 1500,
+      "terminal_reason": "MAX_UPDATES",
+      "terminal_update": 1500,
+      "update_count": 1500,
+      "wall_time_seconds": 2041.47822954203
+    },
+    {
+      "arm": "D1",
+      "checkpoint_count": 76,
+      "checkpoint_integrity_pass": true,
+      "checkpoint_storage_bytes_campaign": 38270786,
+      "formal_parameter_update_count": 1500,
+      "formal_run_terminal": true,
+      "formal_seed": 20600613,
+      "graph_rebuilds": 226944,
+      "minimum_validation_Q_def": 0.6511944072520713,
+      "optimizer_memory_bytes": 92272,
+      "optimizer_step_count": 1500,
+      "peak_rss_bytes": 1001193472,
+      "retry_resume_history": [],
+      "run_id": "D1_seed20600613",
+      "sealed_decode_counts": {
+        "sealed_formula_decode_count": 0,
+        "sealed_origin_decode_count": 0,
+        "sealed_source_decode_count": 0,
+        "sealed_state_decode_count": 0,
+        "sealed_target_decode_count": 0
+      },
+      "sealed_test_evaluations": 0,
+      "seed_pass": false,
+      "selected_checkpoint": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06c/checkpoint_selection/D1_seed20600613_selected.pt",
+      "selected_checkpoint_sha256": "sha256:059b67f0cc9aaef791094cd1ebeebefa5334ab99e77a50b0d79d4ce2fe8aceaf",
+      "selected_metrics": {
+        "Delta_Q_val": -0.034982687747928676,
+        "TRAIN": {
+          "coefficient_RMS": 0.02056268232482015,
+          "coefficient_saturation_fraction": 0.0,
+          "correction_force_residual_max": 4.500042561142336e-17,
+          "density_min": 0.9974697757482247,
+          "diagnostic_state_errors": {
+            "density_RMS": 8.72784261475502e-06,
+            "position_RMS": 2.6070560582399262e-08,
+            "velocity_RMS": 0.00013073747092602717
+          },
+          "finite": true,
+          "global_balanced_L_def": 0.9376700644509458,
+          "global_balanced_Q_def": 0.968333653474331,
+          "history_semantics": true,
+          "maximum_origin": {
+            "Q_def": 3.7653314171817343,
+            "record_id": "LCDF_08_VARIANT_MAIN_N8_O00"
+          },
+          "per_lineage_Q_def": {
+            "LCDF_01": 0.30883999778872195,
+            "LCDF_04": 0.6900793676805297,
+            "LCDF_05": 1.1271095940807092,
+            "LCDF_06": 0.09351552735186838,
+            "LCDF_07": 0.19780910987456957,
+            "LCDF_08": 1.932919831213682
+          },
+          "per_variant_Q_def": {
+            "VARIANT_LOW": 0.821653423737799,
+            "VARIANT_MAIN": 1.0955481642364449
+          },
+          "record_count": 384,
+          "role": "TRAIN",
+          "safe": true
+        },
+        "VALIDATION": {
+          "coefficient_RMS": 0.020562804690888673,
+          "coefficient_saturation_fraction": 0.0,
+          "correction_force_residual_max": 1.8520917868210767e-17,
+          "density_min": 0.9975323799498814,
+          "diagnostic_state_errors": {
+            "density_RMS": 7.369169367444149e-06,
+            "position_RMS": 1.6750663956475243e-08,
+            "velocity_RMS": 8.791960248396549e-05
+          },
+          "finite": true,
+          "global_balanced_L_def": 0.42405415603637653,
+          "global_balanced_Q_def": 0.6511944072520713,
+          "history_semantics": true,
+          "maximum_origin": {
+            "Q_def": 1.0858465283225445,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O00"
+          },
+          "per_lineage_Q_def": {
+            "LCDF_02": 0.6249594810879542,
+            "LCDF_09": 0.6764125657252592
+          },
+          "per_variant_Q_def": {
+            "VARIANT_LOW": 0.5525546982315931,
+            "VARIANT_MAIN": 0.7367439294184556
+          },
+          "record_count": 128,
+          "role": "VALIDATION",
+          "safe": true
+        },
+        "baseline_diagnostic": "validation improvement",
+        "deterministic_repeat": true,
+        "frozen_gates_A_E": {
+          "A_numerical_safety": true,
+          "B_train_fit": false,
+          "C_validation_transfer": true,
+          "D_LCDF_02": true,
+          "D_LCDF_09": true,
+          "E_structure": true
+        },
+        "parameter_sha256": "sha256:3fdb1bc8de5dd8fa18bfb48c60cc83ea1f77d708bdc0283d0ca7ac3a0678d339",
+        "run_id": "D1_seed20600613",
+        "seed_pass": false,
+        "selected_checkpoint": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06c/checkpoint_selection/D1_seed20600613_selected.pt",
+        "selected_checkpoint_sha256": "sha256:059b67f0cc9aaef791094cd1ebeebefa5334ab99e77a50b0d79d4ce2fe8aceaf",
+        "selected_update": 1500,
+        "structure": {
+          "gates": {
+            "accepted_history_commit": true,
+            "checkpoint_reload_identity": true,
+            "midpoint": true,
+            "midpoint_not_committed": true,
+            "start": true
+          },
+          "history": {
+            "history_commit_count": 0,
+            "midpoint_commit_count": 0
+          },
+          "midpoint": {
+            "arm": "D1",
+            "gates": {
+              "Galilean_boost": true,
+              "SO2_rotation": true,
+              "correction_force_residual": true,
+              "deterministic_repeat": true,
+              "edge_reorder": true,
+              "finite_output": true,
+              "force_antisymmetry": true,
+              "pair_exchange": true,
+              "periodic_representative_shift": true,
+              "permutation_equivariance": true,
+              "reflection": true,
+              "translation": true
+            },
+            "maximum_errors": {
+              "Galilean_boost": 3.552713678800501e-15,
+              "SO2_rotation": 0.0,
+              "edge_reorder": 6.8833827526759706e-15,
+              "periodic_representative_shift": 1.7763568394002505e-14,
+              "permutation": 1.0658141036401503e-14,
+              "reflection": 1.199040866595169e-14,
+              "translation": 1.1546319456101628e-14
+            },
+            "normalized_correction_force_residual": 6.036838027771221e-18,
+            "pass": true,
+            "stage": "midpoint"
+          },
+          "pass": true,
+          "run_id": "D1_seed20600613",
+          "start": {
+            "arm": "D1",
+            "gates": {
+              "Galilean_boost": true,
+              "SO2_rotation": true,
+              "correction_force_residual": true,
+              "deterministic_repeat": true,
+              "edge_reorder": true,
+              "finite_output": true,
+              "force_antisymmetry": true,
+              "pair_exchange": true,
+              "periodic_representative_shift": true,
+              "permutation_equivariance": true,
+              "reflection": true,
+              "translation": true
+            },
+            "maximum_errors": {
+              "Galilean_boost": 0.0,
+              "SO2_rotation": 0.0,
+              "edge_reorder": 1.2434497875801753e-14,
+              "periodic_representative_shift": 5.329070518200751e-15,
+              "permutation": 6.217248937900877e-15,
+              "reflection": 5.329070518200751e-15,
+              "translation": 0.0
+            },
+            "normalized_correction_force_residual": 1.0994577662643708e-17,
+            "pass": true,
+            "stage": "start"
+          }
+        },
+        "validation_zero_baseline": 0.686177095
+      },
+      "selected_parameter_sha256": "sha256:3fdb1bc8de5dd8fa18bfb48c60cc83ea1f77d708bdc0283d0ca7ac3a0678d339",
+      "selected_update": 1500,
+      "terminal_reason": "MAX_UPDATES",
+      "terminal_update": 1500,
+      "update_count": 1500,
+      "wall_time_seconds": 2018.4777559579816
+    },
+    {
+      "arm": "D2",
+      "checkpoint_count": 76,
+      "checkpoint_integrity_pass": true,
+      "checkpoint_storage_bytes_campaign": 62989287,
+      "formal_parameter_update_count": 1500,
+      "formal_run_terminal": true,
+      "formal_seed": 20600611,
+      "graph_rebuilds": 226944,
+      "minimum_validation_Q_def": 0.645522840749206,
+      "optimizer_memory_bytes": 193680,
+      "optimizer_step_count": 1500,
+      "peak_rss_bytes": 921403392,
+      "retry_resume_history": [],
+      "run_id": "D2_seed20600611",
+      "sealed_decode_counts": {
+        "sealed_formula_decode_count": 0,
+        "sealed_origin_decode_count": 0,
+        "sealed_source_decode_count": 0,
+        "sealed_state_decode_count": 0,
+        "sealed_target_decode_count": 0
+      },
+      "sealed_test_evaluations": 0,
+      "seed_pass": false,
+      "selected_checkpoint": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06c/checkpoint_selection/D2_seed20600611_selected.pt",
+      "selected_checkpoint_sha256": "sha256:5a7483ae7636904e5d3249e3ebcc67d8099410ee47e16ef550ccb7d2fbb35e86",
+      "selected_metrics": {
+        "Delta_Q_val": -0.04065425425079405,
+        "TRAIN": {
+          "coefficient_RMS": 0.013585068044831956,
+          "coefficient_saturation_fraction": 0.0,
+          "correction_force_residual_max": 2.803906476160027e-17,
+          "density_min": 0.9974697757482247,
+          "diagnostic_state_errors": {
+            "density_RMS": 8.728644421440235e-06,
+            "position_RMS": 2.6075653220595206e-08,
+            "velocity_RMS": 0.00013058687105117032
+          },
+          "finite": true,
+          "global_balanced_L_def": 0.9355110558681267,
+          "global_balanced_Q_def": 0.9672182048887038,
+          "history_semantics": true,
+          "maximum_origin": {
+            "Q_def": 3.776844307426178,
+            "record_id": "LCDF_08_VARIANT_MAIN_N8_O00"
+          },
+          "per_lineage_Q_def": {
+            "LCDF_01": 0.29761463016954304,
+            "LCDF_04": 0.6831810642948108,
+            "LCDF_05": 1.1147373564528482,
+            "LCDF_06": 0.08614868285807364,
+            "LCDF_07": 0.19227879405470466,
+            "LCDF_08": 1.9418350590186644
+          },
+          "per_variant_Q_def": {
+            "VARIANT_LOW": 0.8207065746512101,
+            "VARIANT_MAIN": 1.0942864479013397
+          },
+          "record_count": 384,
+          "role": "TRAIN",
+          "safe": true
+        },
+        "VALIDATION": {
+          "coefficient_RMS": 0.013585037420866489,
+          "coefficient_saturation_fraction": 0.0,
+          "correction_force_residual_max": 1.8300932643280154e-17,
+          "density_min": 0.9975323799498814,
+          "diagnostic_state_errors": {
+            "density_RMS": 7.369810391088464e-06,
+            "position_RMS": 1.6619758200174113e-08,
+            "velocity_RMS": 8.715386821653301e-05
+          },
+          "finite": true,
+          "global_balanced_L_def": 0.41669973792892473,
+          "global_balanced_Q_def": 0.645522840749206,
+          "history_semantics": true,
+          "maximum_origin": {
+            "Q_def": 1.0758220503322529,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O00"
+          },
+          "per_lineage_Q_def": {
+            "LCDF_02": 0.6221722760017061,
+            "LCDF_09": 0.6680577331583748
+          },
+          "per_variant_Q_def": {
+            "VARIANT_LOW": 0.5477418653014888,
+            "VARIANT_MAIN": 0.7303275462789933
+          },
+          "record_count": 128,
+          "role": "VALIDATION",
+          "safe": true
+        },
+        "baseline_diagnostic": "validation improvement",
+        "deterministic_repeat": true,
+        "frozen_gates_A_E": {
+          "A_numerical_safety": true,
+          "B_train_fit": false,
+          "C_validation_transfer": true,
+          "D_LCDF_02": true,
+          "D_LCDF_09": true,
+          "E_structure": true
+        },
+        "parameter_sha256": "sha256:8d29c7c604b5e71746de8ea3446e9540014d0a5edd270604ad3e2b8ed84b8181",
+        "run_id": "D2_seed20600611",
+        "seed_pass": false,
+        "selected_checkpoint": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06c/checkpoint_selection/D2_seed20600611_selected.pt",
+        "selected_checkpoint_sha256": "sha256:5a7483ae7636904e5d3249e3ebcc67d8099410ee47e16ef550ccb7d2fbb35e86",
+        "selected_update": 1500,
+        "structure": {
+          "gates": {
+            "accepted_history_commit": true,
+            "checkpoint_reload_identity": true,
+            "midpoint": true,
+            "midpoint_not_committed": true,
+            "start": true
+          },
+          "history": {
+            "history_commit_count": 1,
+            "midpoint_commit_count": 0
+          },
+          "midpoint": {
+            "arm": "D2",
+            "gates": {
+              "Galilean_boost": true,
+              "SO2_rotation": true,
+              "correction_force_residual": true,
+              "deterministic_repeat": true,
+              "edge_reorder": true,
+              "finite_output": true,
+              "force_antisymmetry": true,
+              "pair_exchange": true,
+              "periodic_representative_shift": true,
+              "permutation_equivariance": true,
+              "reflection": true,
+              "translation": true
+            },
+            "maximum_errors": {
+              "Galilean_boost": 1.7763568394002505e-15,
+              "SO2_rotation": 0.0,
+              "edge_reorder": 4.3298697960381105e-15,
+              "periodic_representative_shift": 1.1102230246251565e-14,
+              "permutation": 5.10702591327572e-15,
+              "reflection": 7.882583474838611e-15,
+              "translation": 7.105427357601002e-15
+            },
+            "normalized_correction_force_residual": 2.8028272757324775e-18,
+            "pass": true,
+            "stage": "midpoint"
+          },
+          "pass": true,
+          "run_id": "D2_seed20600611",
+          "start": {
+            "arm": "D2",
+            "gates": {
+              "Galilean_boost": true,
+              "SO2_rotation": true,
+              "correction_force_residual": true,
+              "deterministic_repeat": true,
+              "edge_reorder": true,
+              "finite_output": true,
+              "force_antisymmetry": true,
+              "pair_exchange": true,
+              "periodic_representative_shift": true,
+              "permutation_equivariance": true,
+              "reflection": true,
+              "translation": true
+            },
+            "maximum_errors": {
+              "Galilean_boost": 0.0,
+              "SO2_rotation": 0.0,
+              "edge_reorder": 3.552713678800501e-15,
+              "periodic_representative_shift": 4.440892098500626e-15,
+              "permutation": 5.551115123125783e-15,
+              "reflection": 4.440892098500626e-15,
+              "translation": 0.0
+            },
+            "normalized_correction_force_residual": 1.1431247301324854e-17,
+            "pass": true,
+            "stage": "start"
+          }
+        },
+        "validation_zero_baseline": 0.686177095
+      },
+      "selected_parameter_sha256": "sha256:8d29c7c604b5e71746de8ea3446e9540014d0a5edd270604ad3e2b8ed84b8181",
+      "selected_update": 1500,
+      "terminal_reason": "MAX_UPDATES",
+      "terminal_update": 1500,
+      "update_count": 1500,
+      "wall_time_seconds": 2301.5229272920405
+    },
+    {
+      "arm": "D2",
+      "checkpoint_count": 76,
+      "checkpoint_integrity_pass": true,
+      "checkpoint_storage_bytes_campaign": 87712651,
+      "formal_parameter_update_count": 1500,
+      "formal_run_terminal": true,
+      "formal_seed": 20600612,
+      "graph_rebuilds": 226944,
+      "minimum_validation_Q_def": 0.6399460132891721,
+      "optimizer_memory_bytes": 193680,
+      "optimizer_step_count": 1500,
+      "peak_rss_bytes": 904773632,
+      "retry_resume_history": [],
+      "run_id": "D2_seed20600612",
+      "sealed_decode_counts": {
+        "sealed_formula_decode_count": 0,
+        "sealed_origin_decode_count": 0,
+        "sealed_source_decode_count": 0,
+        "sealed_state_decode_count": 0,
+        "sealed_target_decode_count": 0
+      },
+      "sealed_test_evaluations": 0,
+      "seed_pass": false,
+      "selected_checkpoint": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06c/checkpoint_selection/D2_seed20600612_selected.pt",
+      "selected_checkpoint_sha256": "sha256:50e115f3e9330fe8428e37277350c9e703e0eff1458d647fc63abf54067bc64c",
+      "selected_metrics": {
+        "Delta_Q_val": -0.046231081710827904,
+        "TRAIN": {
+          "coefficient_RMS": 0.008626102211496766,
+          "coefficient_saturation_fraction": 0.0,
+          "correction_force_residual_max": 2.2679449683417247e-17,
+          "density_min": 0.9974697757482247,
+          "diagnostic_state_errors": {
+            "density_RMS": 8.730387763493316e-06,
+            "position_RMS": 2.6064437335234095e-08,
+            "velocity_RMS": 0.00013057616935978407
+          },
+          "finite": true,
+          "global_balanced_L_def": 0.935357730494745,
+          "global_balanced_Q_def": 0.967138940636114,
+          "history_semantics": true,
+          "maximum_origin": {
+            "Q_def": 3.797814590092762,
+            "record_id": "LCDF_08_VARIANT_MAIN_N8_O00"
+          },
+          "per_lineage_Q_def": {
+            "LCDF_01": 0.28150169234324457,
+            "LCDF_04": 0.6719600194140203,
+            "LCDF_05": 1.0926119260509397,
+            "LCDF_06": 0.013038511713593532,
+            "LCDF_07": 0.18849211861987025,
+            "LCDF_08": 1.9626188651817278
+          },
+          "per_variant_Q_def": {
+            "VARIANT_LOW": 0.8206397514779991,
+            "VARIANT_MAIN": 1.0941964445581143
+          },
+          "record_count": 384,
+          "role": "TRAIN",
+          "safe": true
+        },
+        "VALIDATION": {
+          "coefficient_RMS": 0.008626184747681448,
+          "coefficient_saturation_fraction": 0.0,
+          "correction_force_residual_max": 1.7014799076781344e-17,
+          "density_min": 0.9975323799498814,
+          "diagnostic_state_errors": {
+            "density_RMS": 7.371848001670927e-06,
+            "position_RMS": 1.6408591805252637e-08,
+            "velocity_RMS": 8.64009249357747e-05
+          },
+          "finite": true,
+          "global_balanced_L_def": 0.40953089992470526,
+          "global_balanced_Q_def": 0.6399460132891721,
+          "history_semantics": true,
+          "maximum_origin": {
+            "Q_def": 1.0616112608342485,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O00"
+          },
+          "per_lineage_Q_def": {
+            "LCDF_02": 0.6264961016993641,
+            "LCDF_09": 0.6531190047800711
+          },
+          "per_variant_Q_def": {
+            "VARIANT_LOW": 0.5430100851533096,
+            "VARIANT_MAIN": 0.7240178501053727
+          },
+          "record_count": 128,
+          "role": "VALIDATION",
+          "safe": true
+        },
+        "baseline_diagnostic": "validation improvement",
+        "deterministic_repeat": true,
+        "frozen_gates_A_E": {
+          "A_numerical_safety": true,
+          "B_train_fit": false,
+          "C_validation_transfer": true,
+          "D_LCDF_02": true,
+          "D_LCDF_09": true,
+          "E_structure": true
+        },
+        "parameter_sha256": "sha256:a82279e83134563d82cc368e778fac5c93898c7fc1652efc9867da35d25eff94",
+        "run_id": "D2_seed20600612",
+        "seed_pass": false,
+        "selected_checkpoint": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06c/checkpoint_selection/D2_seed20600612_selected.pt",
+        "selected_checkpoint_sha256": "sha256:50e115f3e9330fe8428e37277350c9e703e0eff1458d647fc63abf54067bc64c",
+        "selected_update": 1500,
+        "structure": {
+          "gates": {
+            "accepted_history_commit": true,
+            "checkpoint_reload_identity": true,
+            "midpoint": true,
+            "midpoint_not_committed": true,
+            "start": true
+          },
+          "history": {
+            "history_commit_count": 1,
+            "midpoint_commit_count": 0
+          },
+          "midpoint": {
+            "arm": "D2",
+            "gates": {
+              "Galilean_boost": true,
+              "SO2_rotation": true,
+              "correction_force_residual": true,
+              "deterministic_repeat": true,
+              "edge_reorder": true,
+              "finite_output": true,
+              "force_antisymmetry": true,
+              "pair_exchange": true,
+              "periodic_representative_shift": true,
+              "permutation_equivariance": true,
+              "reflection": true,
+              "translation": true
+            },
+            "maximum_errors": {
+              "Galilean_boost": 4.884981308350689e-15,
+              "SO2_rotation": 0.0,
+              "edge_reorder": 5.995204332975845e-15,
+              "periodic_representative_shift": 1.1546319456101628e-14,
+              "permutation": 9.325873406851315e-15,
+              "reflection": 9.769962616701378e-15,
+              "translation": 1.199040866595169e-14
+            },
+            "normalized_correction_force_residual": 2.9769372948641284e-18,
+            "pass": true,
+            "stage": "midpoint"
+          },
+          "pass": true,
+          "run_id": "D2_seed20600612",
+          "start": {
+            "arm": "D2",
+            "gates": {
+              "Galilean_boost": true,
+              "SO2_rotation": true,
+              "correction_force_residual": true,
+              "deterministic_repeat": true,
+              "edge_reorder": true,
+              "finite_output": true,
+              "force_antisymmetry": true,
+              "pair_exchange": true,
+              "periodic_representative_shift": true,
+              "permutation_equivariance": true,
+              "reflection": true,
+              "translation": true
+            },
+            "maximum_errors": {
+              "Galilean_boost": 8.881784197001252e-16,
+              "SO2_rotation": 0.0,
+              "edge_reorder": 5.10702591327572e-15,
+              "periodic_representative_shift": 7.105427357601002e-15,
+              "permutation": 6.439293542825908e-15,
+              "reflection": 7.105427357601002e-15,
+              "translation": 0.0
+            },
+            "normalized_correction_force_residual": 7.175553848659735e-18,
+            "pass": true,
+            "stage": "start"
+          }
+        },
+        "validation_zero_baseline": 0.686177095
+      },
+      "selected_parameter_sha256": "sha256:a82279e83134563d82cc368e778fac5c93898c7fc1652efc9867da35d25eff94",
+      "selected_update": 1500,
+      "terminal_reason": "MAX_UPDATES",
+      "terminal_update": 1500,
+      "update_count": 1500,
+      "wall_time_seconds": 2231.5734314160654
+    },
+    {
+      "arm": "D2",
+      "checkpoint_count": 76,
+      "checkpoint_integrity_pass": true,
+      "checkpoint_storage_bytes_campaign": 112436080,
+      "formal_parameter_update_count": 1500,
+      "formal_run_terminal": true,
+      "formal_seed": 20600613,
+      "graph_rebuilds": 226944,
+      "minimum_validation_Q_def": 0.6411884808937747,
+      "optimizer_memory_bytes": 193680,
+      "optimizer_step_count": 1500,
+      "peak_rss_bytes": 973209600,
+      "retry_resume_history": [],
+      "run_id": "D2_seed20600613",
+      "sealed_decode_counts": {
+        "sealed_formula_decode_count": 0,
+        "sealed_origin_decode_count": 0,
+        "sealed_source_decode_count": 0,
+        "sealed_state_decode_count": 0,
+        "sealed_target_decode_count": 0
+      },
+      "sealed_test_evaluations": 0,
+      "seed_pass": false,
+      "selected_checkpoint": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06c/checkpoint_selection/D2_seed20600613_selected.pt",
+      "selected_checkpoint_sha256": "sha256:e477259f142c164643ce3d1d8c5a9f2a84f152c98f1e5f654b07cc5f22682531",
+      "selected_metrics": {
+        "Delta_Q_val": -0.044988614106225344,
+        "TRAIN": {
+          "coefficient_RMS": 0.018192973097125704,
+          "coefficient_saturation_fraction": 0.0,
+          "correction_force_residual_max": 2.631625698070165e-17,
+          "density_min": 0.9974697757482247,
+          "diagnostic_state_errors": {
+            "density_RMS": 8.728137406683632e-06,
+            "position_RMS": 2.5923416755907786e-08,
+            "velocity_RMS": 0.00012988348362851808
+          },
+          "finite": true,
+          "global_balanced_L_def": 0.925460205855554,
+          "global_balanced_Q_def": 0.9620084229649728,
+          "history_semantics": true,
+          "maximum_origin": {
+            "Q_def": 3.761553637868512,
+            "record_id": "LCDF_08_VARIANT_MAIN_N8_O00"
+          },
+          "per_lineage_Q_def": {
+            "LCDF_01": 0.2970371848521236,
+            "LCDF_04": 0.6781222994730214,
+            "LCDF_05": 1.1085997876219174,
+            "LCDF_06": 0.059442816463759256,
+            "LCDF_07": 0.18657584720238563,
+            "LCDF_08": 1.9332208380322404
+          },
+          "per_variant_Q_def": {
+            "VARIANT_LOW": 0.8162860295255415,
+            "VARIANT_MAIN": 1.088392176429312
+          },
+          "record_count": 384,
+          "role": "TRAIN",
+          "safe": true
+        },
+        "VALIDATION": {
+          "coefficient_RMS": 0.018193011153767355,
+          "coefficient_saturation_fraction": 0.0,
+          "correction_force_residual_max": 1.6114234993451333e-17,
+          "density_min": 0.9975323799498814,
+          "diagnostic_state_errors": {
+            "density_RMS": 7.369218605966668e-06,
+            "position_RMS": 1.6494945803481735e-08,
+            "velocity_RMS": 8.656867400837011e-05
+          },
+          "finite": true,
+          "global_balanced_L_def": 0.41112266803086644,
+          "global_balanced_Q_def": 0.6411884808937747,
+          "history_semantics": true,
+          "maximum_origin": {
+            "Q_def": 1.0690921132768894,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O00"
+          },
+          "per_lineage_Q_def": {
+            "LCDF_02": 0.6163652762048649,
+            "LCDF_09": 0.6650858458504687
+          },
+          "per_variant_Q_def": {
+            "VARIANT_LOW": 0.5440641632789082,
+            "VARIANT_MAIN": 0.7254236846818239
+          },
+          "record_count": 128,
+          "role": "VALIDATION",
+          "safe": true
+        },
+        "baseline_diagnostic": "validation improvement",
+        "deterministic_repeat": true,
+        "frozen_gates_A_E": {
+          "A_numerical_safety": true,
+          "B_train_fit": false,
+          "C_validation_transfer": true,
+          "D_LCDF_02": true,
+          "D_LCDF_09": true,
+          "E_structure": true
+        },
+        "parameter_sha256": "sha256:60721beaed7441d5a5a5ae123a6a095904327eb21476e47a254a4b0deff233b3",
+        "run_id": "D2_seed20600613",
+        "seed_pass": false,
+        "selected_checkpoint": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06c/checkpoint_selection/D2_seed20600613_selected.pt",
+        "selected_checkpoint_sha256": "sha256:e477259f142c164643ce3d1d8c5a9f2a84f152c98f1e5f654b07cc5f22682531",
+        "selected_update": 1500,
+        "structure": {
+          "gates": {
+            "accepted_history_commit": true,
+            "checkpoint_reload_identity": true,
+            "midpoint": true,
+            "midpoint_not_committed": true,
+            "start": true
+          },
+          "history": {
+            "history_commit_count": 1,
+            "midpoint_commit_count": 0
+          },
+          "midpoint": {
+            "arm": "D2",
+            "gates": {
+              "Galilean_boost": true,
+              "SO2_rotation": true,
+              "correction_force_residual": true,
+              "deterministic_repeat": true,
+              "edge_reorder": true,
+              "finite_output": true,
+              "force_antisymmetry": true,
+              "pair_exchange": true,
+              "periodic_representative_shift": true,
+              "permutation_equivariance": true,
+              "reflection": true,
+              "translation": true
+            },
+            "maximum_errors": {
+              "Galilean_boost": 3.552713678800501e-15,
+              "SO2_rotation": 0.0,
+              "edge_reorder": 1.4654943925052066e-14,
+              "periodic_representative_shift": 2.3092638912203256e-14,
+              "permutation": 1.199040866595169e-14,
+              "reflection": 2.353672812205332e-14,
+              "translation": 2.353672812205332e-14
+            },
+            "normalized_correction_force_residual": 2.232095125493619e-17,
+            "pass": true,
+            "stage": "midpoint"
+          },
+          "pass": true,
+          "run_id": "D2_seed20600613",
+          "start": {
+            "arm": "D2",
+            "gates": {
+              "Galilean_boost": true,
+              "SO2_rotation": true,
+              "correction_force_residual": true,
+              "deterministic_repeat": true,
+              "edge_reorder": true,
+              "finite_output": true,
+              "force_antisymmetry": true,
+              "pair_exchange": true,
+              "periodic_representative_shift": true,
+              "permutation_equivariance": true,
+              "reflection": true,
+              "translation": true
+            },
+            "maximum_errors": {
+              "Galilean_boost": 0.0,
+              "SO2_rotation": 0.0,
+              "edge_reorder": 1.2434497875801753e-14,
+              "periodic_representative_shift": 1.1546319456101628e-14,
+              "permutation": 8.881784197001252e-15,
+              "reflection": 1.1546319456101628e-14,
+              "translation": 0.0
+            },
+            "normalized_correction_force_residual": 3.1237536458102936e-18,
+            "pass": true,
+            "stage": "start"
+          }
+        },
+        "validation_zero_baseline": 0.686177095
+      },
+      "selected_parameter_sha256": "sha256:60721beaed7441d5a5a5ae123a6a095904327eb21476e47a254a4b0deff233b3",
+      "selected_update": 1500,
+      "terminal_reason": "MAX_UPDATES",
+      "terminal_update": 1500,
+      "update_count": 1500,
+      "wall_time_seconds": 2222.526681459043
+    },
+    {
+      "arm": "D3",
+      "checkpoint_count": 41,
+      "checkpoint_integrity_pass": true,
+      "checkpoint_storage_bytes_campaign": 137704043,
+      "formal_parameter_update_count": 800,
+      "formal_run_terminal": true,
+      "formal_seed": 20600611,
+      "graph_rebuilds": 121104,
+      "minimum_validation_Q_def": 0.12346395777985979,
+      "optimizer_memory_bytes": 367928,
+      "optimizer_step_count": 800,
+      "peak_rss_bytes": 1262108672,
+      "retry_resume_history": [],
+      "run_id": "D3_seed20600611",
+      "sealed_decode_counts": {
+        "sealed_formula_decode_count": 0,
+        "sealed_origin_decode_count": 0,
+        "sealed_source_decode_count": 0,
+        "sealed_state_decode_count": 0,
+        "sealed_target_decode_count": 0
+      },
+      "sealed_test_evaluations": 0,
+      "seed_pass": false,
+      "selected_checkpoint": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06c/checkpoint_selection/D3_seed20600611_selected.pt",
+      "selected_checkpoint_sha256": "sha256:20ede941351a5df00e9fa334a2701bd3e578a926e20c963fb112c780403e5538",
+      "selected_metrics": {
+        "Delta_Q_val": -0.5627131372201403,
+        "TRAIN": {
+          "coefficient_RMS": 0.0034297814230311347,
+          "coefficient_saturation_fraction": 0.0,
+          "correction_force_residual_max": 3.2881435606078066e-17,
+          "density_min": 0.9974697757482247,
+          "diagnostic_state_errors": {
+            "density_RMS": 8.717810414993014e-06,
+            "position_RMS": 1.9912063412048223e-08,
+            "velocity_RMS": 9.872826432181953e-05
+          },
+          "finite": true,
+          "global_balanced_L_def": 0.5347279639201552,
+          "global_balanced_Q_def": 0.7312509582353757,
+          "history_semantics": true,
+          "maximum_origin": {
+            "Q_def": 3.3356508746230134,
+            "record_id": "LCDF_08_VARIANT_MAIN_N8_O00"
+          },
+          "per_lineage_Q_def": {
+            "LCDF_01": 0.3461169192500801,
+            "LCDF_04": 0.065299630123207,
+            "LCDF_05": 0.1449376999463719,
+            "LCDF_06": 0.026832581924701504,
+            "LCDF_07": 0.38884890657760096,
+            "LCDF_08": 1.7062756001216366
+          },
+          "per_variant_Q_def": {
+            "VARIANT_LOW": 0.620485301286416,
+            "VARIANT_MAIN": 0.827317302325907
+          },
+          "record_count": 384,
+          "role": "TRAIN",
+          "safe": true
+        },
+        "VALIDATION": {
+          "coefficient_RMS": 0.003431709643158279,
+          "coefficient_saturation_fraction": 0.0,
+          "correction_force_residual_max": 2.058334327498438e-17,
+          "density_min": 0.9975323799498814,
+          "diagnostic_state_errors": {
+            "density_RMS": 7.333333787997968e-06,
+            "position_RMS": 4.5522242321231e-09,
+            "velocity_RMS": 1.666921885110807e-05
+          },
+          "finite": true,
+          "global_balanced_L_def": 0.015243348870667,
+          "global_balanced_Q_def": 0.12346395777985979,
+          "history_semantics": true,
+          "maximum_origin": {
+            "Q_def": 0.27242327930222976,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O31"
+          },
+          "per_lineage_Q_def": {
+            "LCDF_02": 0.13928842270969918,
+            "LCDF_09": 0.10528738310157658
+          },
+          "per_variant_Q_def": {
+            "VARIANT_LOW": 0.10475488836403044,
+            "VARIANT_MAIN": 0.13968933783640583
+          },
+          "record_count": 128,
+          "role": "VALIDATION",
+          "safe": true
+        },
+        "baseline_diagnostic": "validation improvement",
+        "deterministic_repeat": true,
+        "frozen_gates_A_E": {
+          "A_numerical_safety": true,
+          "B_train_fit": false,
+          "C_validation_transfer": true,
+          "D_LCDF_02": true,
+          "D_LCDF_09": true,
+          "E_structure": true
+        },
+        "parameter_sha256": "sha256:7af941c9886891742c163549ef28598e06763a3f53f145242815dbf4884321df",
+        "run_id": "D3_seed20600611",
+        "seed_pass": false,
+        "selected_checkpoint": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06c/checkpoint_selection/D3_seed20600611_selected.pt",
+        "selected_checkpoint_sha256": "sha256:20ede941351a5df00e9fa334a2701bd3e578a926e20c963fb112c780403e5538",
+        "selected_update": 500,
+        "structure": {
+          "gates": {
+            "accepted_history_commit": true,
+            "checkpoint_reload_identity": true,
+            "midpoint": true,
+            "midpoint_not_committed": true,
+            "start": true
+          },
+          "history": {
+            "history_commit_count": 1,
+            "midpoint_commit_count": 0
+          },
+          "midpoint": {
+            "arm": "D3",
+            "gates": {
+              "Galilean_boost": true,
+              "SO2_rotation": true,
+              "correction_force_residual": true,
+              "deterministic_repeat": true,
+              "edge_reorder": true,
+              "finite_output": true,
+              "force_antisymmetry": true,
+              "pair_exchange": true,
+              "periodic_representative_shift": true,
+              "permutation_equivariance": true,
+              "reflection": true,
+              "translation": true
+            },
+            "maximum_errors": {
+              "Galilean_boost": 4.440892098500626e-16,
+              "SO2_rotation": 0.0,
+              "edge_reorder": 5.551115123125783e-16,
+              "periodic_representative_shift": 1.1546319456101628e-14,
+              "permutation": 1.3655743202889425e-14,
+              "reflection": 1.099120794378905e-14,
+              "translation": 9.43689570931383e-15
+            },
+            "normalized_correction_force_residual": 1.157538194457501e-17,
+            "pass": true,
+            "stage": "midpoint"
+          },
+          "pass": true,
+          "run_id": "D3_seed20600611",
+          "start": {
+            "arm": "D3",
+            "gates": {
+              "Galilean_boost": true,
+              "SO2_rotation": true,
+              "correction_force_residual": true,
+              "deterministic_repeat": true,
+              "edge_reorder": true,
+              "finite_output": true,
+              "force_antisymmetry": true,
+              "pair_exchange": true,
+              "periodic_representative_shift": true,
+              "permutation_equivariance": true,
+              "reflection": true,
+              "translation": true
+            },
+            "maximum_errors": {
+              "Galilean_boost": 4.440892098500626e-16,
+              "SO2_rotation": 0.0,
+              "edge_reorder": 4.440892098500626e-16,
+              "periodic_representative_shift": 1.7430501486614958e-14,
+              "permutation": 2.0067281170099704e-14,
+              "reflection": 1.7430501486614958e-14,
+              "translation": 0.0
+            },
+            "normalized_correction_force_residual": 4.657051123257787e-18,
+            "pass": true,
+            "stage": "start"
+          }
+        },
+        "validation_zero_baseline": 0.686177095
+      },
+      "selected_parameter_sha256": "sha256:7af941c9886891742c163549ef28598e06763a3f53f145242815dbf4884321df",
+      "selected_update": 500,
+      "terminal_reason": "EARLY_STOPPED",
+      "terminal_update": 800,
+      "update_count": 800,
+      "wall_time_seconds": 1521.404861082905
+    },
+    {
+      "arm": "D3",
+      "checkpoint_count": 42,
+      "checkpoint_integrity_pass": true,
+      "checkpoint_storage_bytes_campaign": 163585837,
+      "formal_parameter_update_count": 820,
+      "formal_run_terminal": true,
+      "formal_seed": 20600612,
+      "graph_rebuilds": 124128,
+      "minimum_validation_Q_def": 0.15666232982783143,
+      "optimizer_memory_bytes": 367928,
+      "optimizer_step_count": 820,
+      "peak_rss_bytes": 1209090048,
+      "retry_resume_history": [],
+      "run_id": "D3_seed20600612",
+      "sealed_decode_counts": {
+        "sealed_formula_decode_count": 0,
+        "sealed_origin_decode_count": 0,
+        "sealed_source_decode_count": 0,
+        "sealed_state_decode_count": 0,
+        "sealed_target_decode_count": 0
+      },
+      "sealed_test_evaluations": 0,
+      "seed_pass": false,
+      "selected_checkpoint": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06c/checkpoint_selection/D3_seed20600612_selected.pt",
+      "selected_checkpoint_sha256": "sha256:8509a842305dc40c20e8f3f8d614627c55df9779042fe43257d84e68e29f70dc",
+      "selected_metrics": {
+        "Delta_Q_val": -0.5295147651721686,
+        "TRAIN": {
+          "coefficient_RMS": 0.01730251400488547,
+          "coefficient_saturation_fraction": 0.0,
+          "correction_force_residual_max": 2.0323697394233656e-17,
+          "density_min": 0.9974697757482247,
+          "diagnostic_state_errors": {
+            "density_RMS": 8.714749499377345e-06,
+            "position_RMS": 1.9648392433118225e-08,
+            "velocity_RMS": 9.727305234013157e-05
+          },
+          "finite": true,
+          "global_balanced_L_def": 0.5190808176274317,
+          "global_balanced_Q_def": 0.7204726348914522,
+          "history_semantics": true,
+          "maximum_origin": {
+            "Q_def": 3.2814136247176364,
+            "record_id": "LCDF_08_VARIANT_MAIN_N8_O00"
+          },
+          "per_lineage_Q_def": {
+            "LCDF_01": 0.3481746792490841,
+            "LCDF_04": 0.08711283869772862,
+            "LCDF_05": 0.13803619612616222,
+            "LCDF_06": 0.12260274467920887,
+            "LCDF_07": 0.4224204827213527,
+            "LCDF_08": 1.6652766025985037
+          },
+          "per_variant_Q_def": {
+            "VARIANT_LOW": 0.6113353471784718,
+            "VARIANT_MAIN": 0.8151262040598626
+          },
+          "record_count": 384,
+          "role": "TRAIN",
+          "safe": true
+        },
+        "VALIDATION": {
+          "coefficient_RMS": 0.017302332934038617,
+          "coefficient_saturation_fraction": 0.0,
+          "correction_force_residual_max": 1.4528206839365805e-17,
+          "density_min": 0.9975323799498814,
+          "diagnostic_state_errors": {
+            "density_RMS": 7.3289110947530394e-06,
+            "position_RMS": 5.559346271210467e-09,
+            "velocity_RMS": 2.1151425149361213e-05
+          },
+          "finite": true,
+          "global_balanced_L_def": 0.024543085587084245,
+          "global_balanced_Q_def": 0.15666232982783143,
+          "history_semantics": true,
+          "maximum_origin": {
+            "Q_def": 0.3456876972067674,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O31"
+          },
+          "per_lineage_Q_def": {
+            "LCDF_02": 0.18900696158122468,
+            "LCDF_09": 0.1155964517102577
+          },
+          "per_variant_Q_def": {
+            "VARIANT_LOW": 0.13293009012741303,
+            "VARIANT_MAIN": 0.1772449218253836
+          },
+          "record_count": 128,
+          "role": "VALIDATION",
+          "safe": true
+        },
+        "baseline_diagnostic": "validation improvement",
+        "deterministic_repeat": true,
+        "frozen_gates_A_E": {
+          "A_numerical_safety": true,
+          "B_train_fit": false,
+          "C_validation_transfer": true,
+          "D_LCDF_02": true,
+          "D_LCDF_09": true,
+          "E_structure": true
+        },
+        "parameter_sha256": "sha256:bd57e6aedc02d521ffdd01b68dbebbc8708b9ac6803b185e3cc4148e2f001085",
+        "run_id": "D3_seed20600612",
+        "seed_pass": false,
+        "selected_checkpoint": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06c/checkpoint_selection/D3_seed20600612_selected.pt",
+        "selected_checkpoint_sha256": "sha256:8509a842305dc40c20e8f3f8d614627c55df9779042fe43257d84e68e29f70dc",
+        "selected_update": 520,
+        "structure": {
+          "gates": {
+            "accepted_history_commit": true,
+            "checkpoint_reload_identity": true,
+            "midpoint": true,
+            "midpoint_not_committed": true,
+            "start": true
+          },
+          "history": {
+            "history_commit_count": 1,
+            "midpoint_commit_count": 0
+          },
+          "midpoint": {
+            "arm": "D3",
+            "gates": {
+              "Galilean_boost": true,
+              "SO2_rotation": true,
+              "correction_force_residual": true,
+              "deterministic_repeat": true,
+              "edge_reorder": true,
+              "finite_output": true,
+              "force_antisymmetry": true,
+              "pair_exchange": true,
+              "periodic_representative_shift": true,
+              "permutation_equivariance": true,
+              "reflection": true,
+              "translation": true
+            },
+            "maximum_errors": {
+              "Galilean_boost": 8.881784197001252e-16,
+              "SO2_rotation": 0.0,
+              "edge_reorder": 1.5543122344752192e-15,
+              "periodic_representative_shift": 1.7930101847696278e-14,
+              "permutation": 1.1657341758564144e-14,
+              "reflection": 1.1046719095020308e-14,
+              "translation": 1.0158540675320182e-14
+            },
+            "normalized_correction_force_residual": 2.6434242160823827e-19,
+            "pass": true,
+            "stage": "midpoint"
+          },
+          "pass": true,
+          "run_id": "D3_seed20600612",
+          "start": {
+            "arm": "D3",
+            "gates": {
+              "Galilean_boost": true,
+              "SO2_rotation": true,
+              "correction_force_residual": true,
+              "deterministic_repeat": true,
+              "edge_reorder": true,
+              "finite_output": true,
+              "force_antisymmetry": true,
+              "pair_exchange": true,
+              "periodic_representative_shift": true,
+              "permutation_equivariance": true,
+              "reflection": true,
+              "translation": true
+            },
+            "maximum_errors": {
+              "Galilean_boost": 4.551914400963142e-15,
+              "SO2_rotation": 0.0,
+              "edge_reorder": 1.7763568394002505e-15,
+              "periodic_representative_shift": 1.1879386363489175e-14,
+              "permutation": 1.7985612998927536e-14,
+              "reflection": 1.1879386363489175e-14,
+              "translation": 0.0
+            },
+            "normalized_correction_force_residual": 2.9554343645815453e-18,
+            "pass": true,
+            "stage": "start"
+          }
+        },
+        "validation_zero_baseline": 0.686177095
+      },
+      "selected_parameter_sha256": "sha256:bd57e6aedc02d521ffdd01b68dbebbc8708b9ac6803b185e3cc4148e2f001085",
+      "selected_update": 520,
+      "terminal_reason": "EARLY_STOPPED",
+      "terminal_update": 820,
+      "update_count": 820,
+      "wall_time_seconds": 1552.7779312919592
+    },
+    {
+      "arm": "D3",
+      "checkpoint_count": 51,
+      "checkpoint_integrity_pass": true,
+      "checkpoint_storage_bytes_campaign": 194967982,
+      "formal_parameter_update_count": 1000,
+      "formal_run_terminal": true,
+      "formal_seed": 20600613,
+      "graph_rebuilds": 151344,
+      "minimum_validation_Q_def": 0.07872118415663835,
+      "optimizer_memory_bytes": 367928,
+      "optimizer_step_count": 1000,
+      "peak_rss_bytes": 1229193216,
+      "retry_resume_history": [],
+      "run_id": "D3_seed20600613",
+      "sealed_decode_counts": {
+        "sealed_formula_decode_count": 0,
+        "sealed_origin_decode_count": 0,
+        "sealed_source_decode_count": 0,
+        "sealed_state_decode_count": 0,
+        "sealed_target_decode_count": 0
+      },
+      "sealed_test_evaluations": 0,
+      "seed_pass": false,
+      "selected_checkpoint": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06c/checkpoint_selection/D3_seed20600613_selected.pt",
+      "selected_checkpoint_sha256": "sha256:b080c6ee85becadf41a616c2b8ebbcafd0ff2cb2fc8507e061fa452d48bde036",
+      "selected_metrics": {
+        "Delta_Q_val": -0.6074559108433617,
+        "TRAIN": {
+          "coefficient_RMS": 0.016211563387195375,
+          "coefficient_saturation_fraction": 0.0,
+          "correction_force_residual_max": 2.0708868083117913e-17,
+          "density_min": 0.9974697757482247,
+          "diagnostic_state_errors": {
+            "density_RMS": 8.717890158131806e-06,
+            "position_RMS": 1.9753726041913458e-08,
+            "velocity_RMS": 9.784209099990179e-05
+          },
+          "finite": true,
+          "global_balanced_L_def": 0.5251717340801197,
+          "global_balanced_Q_def": 0.7246873353937681,
+          "history_semantics": true,
+          "maximum_origin": {
+            "Q_def": 3.3069749011352623,
+            "record_id": "LCDF_08_VARIANT_MAIN_N8_O00"
+          },
+          "per_lineage_Q_def": {
+            "LCDF_01": 0.3904237640683483,
+            "LCDF_04": 0.07756117742914877,
+            "LCDF_05": 0.09856928678594505,
+            "LCDF_06": 0.10753126823039565,
+            "LCDF_07": 0.3392332855644746,
+            "LCDF_08": 1.690037234118713
+          },
+          "per_variant_Q_def": {
+            "VARIANT_LOW": 0.6149136928777483,
+            "VARIANT_MAIN": 0.8198930530695389
+          },
+          "record_count": 384,
+          "role": "TRAIN",
+          "safe": true
+        },
+        "VALIDATION": {
+          "coefficient_RMS": 0.016212294189090995,
+          "coefficient_saturation_fraction": 0.0,
+          "correction_force_residual_max": 2.0422173580970713e-17,
+          "density_min": 0.9975323799498814,
+          "diagnostic_state_errors": {
+            "density_RMS": 7.3406601374811245e-06,
+            "position_RMS": 3.3872000707512386e-09,
+            "velocity_RMS": 1.0628370178000592e-05
+          },
+          "finite": true,
+          "global_balanced_L_def": 0.0061970248350233705,
+          "global_balanced_Q_def": 0.07872118415663835,
+          "history_semantics": true,
+          "maximum_origin": {
+            "Q_def": 0.1507377249509599,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O31"
+          },
+          "per_lineage_Q_def": {
+            "LCDF_02": 0.08169468086724388,
+            "LCDF_09": 0.0756308719244061
+          },
+          "per_variant_Q_def": {
+            "VARIANT_LOW": 0.06678577987487526,
+            "VARIANT_MAIN": 0.08907137181244851
+          },
+          "record_count": 128,
+          "role": "VALIDATION",
+          "safe": true
+        },
+        "baseline_diagnostic": "validation improvement",
+        "deterministic_repeat": true,
+        "frozen_gates_A_E": {
+          "A_numerical_safety": true,
+          "B_train_fit": false,
+          "C_validation_transfer": true,
+          "D_LCDF_02": true,
+          "D_LCDF_09": true,
+          "E_structure": true
+        },
+        "parameter_sha256": "sha256:d13acc5807f5f9d01edaedec68c6186787ccc30b376ed6915b11befa260c5a6f",
+        "run_id": "D3_seed20600613",
+        "seed_pass": false,
+        "selected_checkpoint": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06c/checkpoint_selection/D3_seed20600613_selected.pt",
+        "selected_checkpoint_sha256": "sha256:b080c6ee85becadf41a616c2b8ebbcafd0ff2cb2fc8507e061fa452d48bde036",
+        "selected_update": 700,
+        "structure": {
+          "gates": {
+            "accepted_history_commit": true,
+            "checkpoint_reload_identity": true,
+            "midpoint": true,
+            "midpoint_not_committed": true,
+            "start": true
+          },
+          "history": {
+            "history_commit_count": 1,
+            "midpoint_commit_count": 0
+          },
+          "midpoint": {
+            "arm": "D3",
+            "gates": {
+              "Galilean_boost": true,
+              "SO2_rotation": true,
+              "correction_force_residual": true,
+              "deterministic_repeat": true,
+              "edge_reorder": true,
+              "finite_output": true,
+              "force_antisymmetry": true,
+              "pair_exchange": true,
+              "periodic_representative_shift": true,
+              "permutation_equivariance": true,
+              "reflection": true,
+              "translation": true
+            },
+            "maximum_errors": {
+              "Galilean_boost": 1.7763568394002505e-15,
+              "SO2_rotation": 0.0,
+              "edge_reorder": 2.6645352591003757e-15,
+              "periodic_representative_shift": 2.5979218776228663e-14,
+              "permutation": 1.4765966227514582e-14,
+              "reflection": 1.0436096431476471e-14,
+              "translation": 1.1324274851176597e-14
+            },
+            "normalized_correction_force_residual": 3.937422935351874e-18,
+            "pass": true,
+            "stage": "midpoint"
+          },
+          "pass": true,
+          "run_id": "D3_seed20600613",
+          "start": {
+            "arm": "D3",
+            "gates": {
+              "Galilean_boost": true,
+              "SO2_rotation": true,
+              "correction_force_residual": true,
+              "deterministic_repeat": true,
+              "edge_reorder": true,
+              "finite_output": true,
+              "force_antisymmetry": true,
+              "pair_exchange": true,
+              "periodic_representative_shift": true,
+              "permutation_equivariance": true,
+              "reflection": true,
+              "translation": true
+            },
+            "maximum_errors": {
+              "Galilean_boost": 0.0,
+              "SO2_rotation": 0.0,
+              "edge_reorder": 3.552713678800501e-15,
+              "periodic_representative_shift": 9.43689570931383e-15,
+              "permutation": 2.19824158875781e-14,
+              "reflection": 9.43689570931383e-15,
+              "translation": 0.0
+            },
+            "normalized_correction_force_residual": 7.067893313618031e-18,
+            "pass": true,
+            "stage": "start"
+          }
+        },
+        "validation_zero_baseline": 0.686177095
+      },
+      "selected_parameter_sha256": "sha256:d13acc5807f5f9d01edaedec68c6186787ccc30b376ed6915b11befa260c5a6f",
+      "selected_update": 700,
+      "terminal_reason": "EARLY_STOPPED",
+      "terminal_update": 1000,
+      "update_count": 1000,
+      "wall_time_seconds": 1895.4567350409925
+    }
+  ],
+  "schema": "sph-pio-poc.stage06c.execution.v1",
+  "sealed_test_evaluations": 0,
+  "wall_time_seconds": 17846.315650000004
+}

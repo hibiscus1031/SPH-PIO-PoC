@@ -1,0 +1,157 @@
+{
+  "all_parameter_restored": true,
+  "global_aggregation": [
+    {
+      "arm": "D1",
+      "pass": true,
+      "passing_seed_count": 3,
+      "seed_count": 3
+    },
+    {
+      "arm": "D2",
+      "pass": true,
+      "passing_seed_count": 3,
+      "seed_count": 3
+    },
+    {
+      "arm": "D3",
+      "pass": true,
+      "passing_seed_count": 3,
+      "seed_count": 3
+    }
+  ],
+  "global_context_count": 9,
+  "global_window_count": 9,
+  "lineage_aggregation": [
+    {
+      "arm": "D1",
+      "lineage": "LCDF_01",
+      "pass": true,
+      "passing_seed_count": 3,
+      "seed_count": 3
+    },
+    {
+      "arm": "D1",
+      "lineage": "LCDF_04",
+      "pass": true,
+      "passing_seed_count": 3,
+      "seed_count": 3
+    },
+    {
+      "arm": "D1",
+      "lineage": "LCDF_05",
+      "pass": true,
+      "passing_seed_count": 3,
+      "seed_count": 3
+    },
+    {
+      "arm": "D1",
+      "lineage": "LCDF_06",
+      "pass": true,
+      "passing_seed_count": 3,
+      "seed_count": 3
+    },
+    {
+      "arm": "D1",
+      "lineage": "LCDF_07",
+      "pass": true,
+      "passing_seed_count": 3,
+      "seed_count": 3
+    },
+    {
+      "arm": "D1",
+      "lineage": "LCDF_08",
+      "pass": true,
+      "passing_seed_count": 3,
+      "seed_count": 3
+    },
+    {
+      "arm": "D2",
+      "lineage": "LCDF_01",
+      "pass": true,
+      "passing_seed_count": 3,
+      "seed_count": 3
+    },
+    {
+      "arm": "D2",
+      "lineage": "LCDF_04",
+      "pass": true,
+      "passing_seed_count": 3,
+      "seed_count": 3
+    },
+    {
+      "arm": "D2",
+      "lineage": "LCDF_05",
+      "pass": true,
+      "passing_seed_count": 3,
+      "seed_count": 3
+    },
+    {
+      "arm": "D2",
+      "lineage": "LCDF_06",
+      "pass": true,
+      "passing_seed_count": 3,
+      "seed_count": 3
+    },
+    {
+      "arm": "D2",
+      "lineage": "LCDF_07",
+      "pass": true,
+      "passing_seed_count": 3,
+      "seed_count": 3
+    },
+    {
+      "arm": "D2",
+      "lineage": "LCDF_08",
+      "pass": true,
+      "passing_seed_count": 3,
+      "seed_count": 3
+    },
+    {
+      "arm": "D3",
+      "lineage": "LCDF_01",
+      "pass": true,
+      "passing_seed_count": 3,
+      "seed_count": 3
+    },
+    {
+      "arm": "D3",
+      "lineage": "LCDF_04",
+      "pass": true,
+      "passing_seed_count": 3,
+      "seed_count": 3
+    },
+    {
+      "arm": "D3",
+      "lineage": "LCDF_05",
+      "pass": true,
+      "passing_seed_count": 3,
+      "seed_count": 3
+    },
+    {
+      "arm": "D3",
+      "lineage": "LCDF_06",
+      "pass": true,
+      "passing_seed_count": 3,
+      "seed_count": 3
+    },
+    {
+      "arm": "D3",
+      "lineage": "LCDF_07",
+      "pass": true,
+      "passing_seed_count": 3,
+      "seed_count": 3
+    },
+    {
+      "arm": "D3",
+      "lineage": "LCDF_08",
+      "pass": true,
+      "passing_seed_count": 3,
+      "seed_count": 3
+    }
+  ],
+  "lineage_context_count": 54,
+  "lineage_window_count": 54,
+  "pass": true,
+  "schema": "sph-pio-poc.stage05cq.local-descent-manifest.v1"
+}

@@ -1,0 +1,109 @@
+{
+  "schema": "sph-pio-poc.stage05a.final-manifest.v1",
+  "stage": "Stage 05A — Scale-Aware Conservative Discrete-Defect Training Hypothesis and Qualification Contract",
+  "created_date": "2026-08-06",
+  "complete": true,
+  "non_computational_contract": true,
+  "terminal_status": "SCALE_AWARE_DISCRETE_DEFECT_TRAINING_CONTRACT_COMPLETE",
+  "gate_results": {
+    "new_hypothesis_explicit": true,
+    "historical_stage04_boundary_immutable": true,
+    "baseline_centered_defect_unique": true,
+    "conservative_decomposition_unique": true,
+    "train_only_scale_formula_unique": true,
+    "primary_defect_loss_unique": true,
+    "d1_d2_d3_fairness_complete": true,
+    "optimizer_aligned_gradient_strategy_complete": true,
+    "sealed_test_boundary_complete": true,
+    "stage05b_to_05h_route_complete": true,
+    "required_files_complete": true,
+    "json_validation_pass": true,
+    "prohibited_execution_counts_zero": true
+  },
+  "historical_freeze": {
+    "Stage 03D": "DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED",
+    "Stage 03D-R": "DYNAMIC_GRADIENT_FAILURE_MIXED_OR_UNRESOLVED",
+    "Stage 04B": "LOCAL_CAUSAL_REFERENCE_FAMILY_POOL_QUALIFIED",
+    "Stage 04C": "TASK_ALIGNED_PARAMETER_GRADIENT_NOT_QUALIFIED",
+    "Stage 04C-R": "TASK_GRADIENT_FAILURE_MIXED_OR_UNRESOLVED",
+    "Stage 04C-S": "STAGE04_ROUTE_PAUSED_TASK_SIGNAL_BOUNDARY_COMPLETE",
+    "Stage 04D authorization": false,
+    "Stage 04C all-near-zero failures": "864/864",
+    "Stage 04C near-zero components": 2592,
+    "Stage 04C qualified parameter groups": 0,
+    "superseded": false
+  },
+  "role_freeze": {
+    "formula_components": 10,
+    "TRAIN": ["LCDF_01", "LCDF_04", "LCDF_05", "LCDF_06", "LCDF_07", "LCDF_08"],
+    "VALIDATION": ["LCDF_02", "LCDF_09"],
+    "SEALED_TEST": ["LCDF_03", "LCDF_10"],
+    "cross_role_leakage": 0,
+    "role_swaps": 0,
+    "replacement_families": 0
+  },
+  "execution_counts": {
+    "trajectory_targets_materialized": 0,
+    "d0_defects_computed": 0,
+    "models_instantiated": 0,
+    "model_forwards": 0,
+    "derivative_probes": 0,
+    "optimizer_instances": 0,
+    "optimizer_steps": 0,
+    "parameter_updates": 0,
+    "training_runs": 0,
+    "checkpoints_written": 0,
+    "validation_state_decode": 0,
+    "validation_target_decode": 0,
+    "sealed_formula_decode": 0,
+    "sealed_state_decode": 0,
+    "sealed_target_decode": 0,
+    "sealed_origin_decode": 0,
+    "rollouts": 0,
+    "performance_evaluations": 0
+  },
+  "claim_counts": {
+    "stage04_failure_repaired": 0,
+    "loss_scaling_effective": 0,
+    "full_gradient_training_success": 0,
+    "transformer_trainable": 0,
+    "d3_superiority": 0,
+    "trained_hybrid_solver": 0,
+    "submission_decided": 0
+  },
+  "artifact_inventory": {
+    "pre_final_artifact_count": 46,
+    "final_artifact_count_including_self": 47,
+    "pre_final_total_size_bytes": 45236,
+    "pre_final_sorted_sha256_listing_sha256": "sha256:238613a2e663d1664be0ca8ee186eb9902572ba2443864114e1da07f25b1f6b7",
+    "hash_definition": "sha256 of the UTF-8 shasum -a 256 listing for all pre-final files sorted by path",
+    "directory_file_counts_before_self": {
+      "README.md": 1,
+      "00_planning": 4,
+      "01_defect_formulation": 5,
+      "02_scale_contract": 5,
+      "03_loss_contract": 4,
+      "04_gradient_contract": 5,
+      "05_data_and_seal": 4,
+      "06_model_arms": 5,
+      "07_training_roadmap": 5,
+      "08_reports": 6,
+      "09_manifests": 2
+    },
+    "integrity_operations_only": true,
+    "scientific_numerical_computation": false
+  },
+  "publication_route": {
+    "current_preference": "Stage 02–05 integrated full paper",
+    "submission_decided": false,
+    "full_trained_solver_claim_requires": "strong Stage 05G/H qualification",
+    "failure_fallback": "verification-first / negative-evidence methods paper"
+  },
+  "next_authorization": {
+    "authorized": true,
+    "stage": "Stage 05B — TRAIN-Only Defect Target, Conservative Compatibility, Scale and Uncertainty Qualification",
+    "only": true,
+    "must_preregister_numeric_gates_before_train_target_decode": true
+  },
+  "self_path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05a_final_manifest.json"
+}

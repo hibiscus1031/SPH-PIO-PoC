@@ -1,0 +1,62 @@
+[
+  {
+    "figure": "S01",
+    "panel": "a-b",
+    "scientific_claim": "Frozen kernel zeroth- and first-moment errors are displayed by layout and resolution.",
+    "source_file": "06_experiments/stage_01b_operator_verification/results/kernel_moment_metrics.csv",
+    "source_hash": "sha256:13463a8c5081b2291f06c39131e18d9f52541d2b8f7f10b4a9903d9d300e8795",
+    "source_field": "resolution, layout, s0_l2, s1_l2",
+    "confirmatory_or_diagnostic": "SUPPORTED",
+    "transformation": "Exact rows; log-y display.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS01_operator_checks.svg; figS01_operator_checks.pdf; figS01_operator_checks.png"
+  },
+  {
+    "figure": "S01",
+    "panel": "c",
+    "scientific_claim": "Manufactured static operator errors are displayed without converting them into V2 qualification.",
+    "source_file": "06_experiments/stage_01b_operator_verification/results/manufactured_operator_metrics.csv",
+    "source_hash": "sha256:1629070a7f0dea88f49a7eb666a572b4ab0b19c76a04ca9cf290e47ab4f8fbff",
+    "source_field": "operator, norm=l2, resolution, error",
+    "confirmatory_or_diagnostic": "SUPPORTED",
+    "transformation": "Exact L2 rows; log-y display.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS01_operator_checks.svg; figS01_operator_checks.pdf; figS01_operator_checks.png"
+  },
+  {
+    "figure": "S01",
+    "panel": "d",
+    "scientific_claim": "Instantaneous pairwise conservation residual audits are shown for every frozen row.",
+    "source_file": "06_experiments/stage_01b_operator_verification/results/conservation_audit.csv",
+    "source_hash": "sha256:d068430ce441c17002433c36b3e76eaee767951529997fd44a9e26c760cb2523",
+    "source_field": "characteristic_normalized_internal_force, viscous_power",
+    "confirmatory_or_diagnostic": "SUPPORTED",
+    "transformation": "Source order; log-y display; sign color.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS01_operator_checks.svg; figS01_operator_checks.pdf; figS01_operator_checks.png"
+  },
+  {
+    "figure": "S01",
+    "panel": "e",
+    "scientific_claim": "Frozen scalar integrator error decreases are shown by time step.",
+    "source_file": "06_experiments/stage_01b_operator_verification/results/integrator_order.csv",
+    "source_hash": "sha256:84ef80da04f915bbb8d097525e36686853ecb712cc79a6293bb0c364933fa537",
+    "source_field": "integration_scheme, dt, absolute_error",
+    "confirmatory_or_diagnostic": "SUPPORTED",
+    "transformation": "Exact rows; log-log display.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS01_operator_checks.svg; figS01_operator_checks.pdf; figS01_operator_checks.png"
+  },
+  {
+    "figure": "S01",
+    "panel": "f",
+    "scientific_claim": "Static verification does not restore the retained V2 boundary.",
+    "source_file": "06_experiments/stage_01d2_v2_requalification/results/stage01d2_evaluation.json",
+    "source_hash": "sha256:e6f1cb6e7bcd9cdebb628e0196c3dd99a0314efe219bcff5f176f2fff3f3f8ab",
+    "source_field": "final_status, gci_justified, resource_pass, disorder_status",
+    "confirmatory_or_diagnostic": "SUPPORTED",
+    "transformation": "Status-card transcription.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS01_operator_checks.svg; figS01_operator_checks.pdf; figS01_operator_checks.png"
+  }
+]

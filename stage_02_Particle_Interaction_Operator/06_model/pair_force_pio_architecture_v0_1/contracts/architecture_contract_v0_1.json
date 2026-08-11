@@ -1,0 +1,103 @@
+{
+  "architecture_version": "pair_force_pio_architecture_v0_1",
+  "authorization_source": "Stage02J-W:BLIND_MULTIFAMILY_DATASET_READY",
+  "collection_id": "blind_multifamily_pair_scope_v1_0",
+  "record_dataset_version_semantics": "schema_compatibility_identifier_only",
+  "device": "CPU",
+  "dtype": "float64",
+  "epsilon_r": 1e-12,
+  "alpha_max": 1.0,
+  "beta_max": 1.0,
+  "coefficient_bounds_frozen_before_target_access": true,
+  "model_seed_set": [20261001, 20261002, 20261003],
+  "transform_seed": 20261004,
+  "transform_counts": {
+    "permutations": 16,
+    "translations": 8,
+    "galilean_boosts": 8,
+    "rotations": 16,
+    "reflections": 4,
+    "periodic_boundary_crossings": 8
+  },
+  "hard_tolerance": 1e-10,
+  "ad_fd_relative_tolerance": 1e-5,
+  "ad_fd_epsilons": [1e-4, 3e-5, 1e-5],
+  "resource_limits": {
+    "parameter_count": 100000,
+    "peak_rss_delta_bytes": 1610612736,
+    "dense_n_by_n_forbidden": true,
+    "expected_scaling": "O(E*d)"
+  },
+  "pair_force_scale": "sqrt(m_i*m_j)*cs^2/L",
+  "sound_speed": 20.0,
+  "periodic_domain_length": 1.0,
+  "node_scalar_features": [
+    "normalized_density_deviation",
+    "normalized_pressure",
+    "normalized_mass",
+    "normalized_smoothing_length",
+    "constant_one"
+  ],
+  "pair_scalar_features": [
+    "node_feature_sum",
+    "absolute_node_feature_difference",
+    "node_feature_product",
+    "distance_over_symmetric_h",
+    "relative_velocity_norm_squared",
+    "radial_relative_velocity",
+    "transverse_relative_velocity_norm_squared",
+    "active_kernel_indicator"
+  ],
+  "a_SPH_role": "audit_only",
+  "absolute_position_role": "minimum_image_geometry_only",
+  "absolute_velocity_role": "forbidden_except_relative_velocity_construction",
+  "supervision": "future_node_level_delta_a_or_nodal_force_only",
+  "edge_pair_force_ground_truth": false,
+  "candidates": {
+    "K0": {
+      "name": "CENTRAL_PAIR_MLP_DIAGNOSTIC",
+      "hidden_dimension": 32,
+      "interaction_blocks": 0,
+      "attention_heads": 0,
+      "outputs": ["alpha"],
+      "beta": "identically_zero",
+      "eligibility_role": "diagnostic_only"
+    },
+    "K1": {
+      "name": "CONSERVATIVE_PAIR_MLP_BASELINE",
+      "hidden_dimension": 32,
+      "interaction_blocks": 0,
+      "attention_heads": 0,
+      "outputs": ["alpha", "beta"],
+      "eligible": true
+    },
+    "K2": {
+      "name": "RECIPROCAL_PAIR_ATTENTION_PIO",
+      "hidden_dimension": 32,
+      "interaction_blocks": 2,
+      "attention_heads": 4,
+      "attention_normalization": "exp(clamp(ell_ij))/sqrt(Z_i*Z_j)",
+      "logit_clamp": [-20.0, 20.0],
+      "dense_attention": false,
+      "outputs": ["alpha", "beta"],
+      "eligible": true
+    },
+    "KNEG": {
+      "name": "DIRECTED_SOFTMAX_ATTENTION_CONTROL",
+      "eligible": false,
+      "trained": false,
+      "evidence": "fixed_asymmetric_synthetic_graph_and_logits"
+    }
+  },
+  "prohibitions": [
+    "optimizer",
+    "training",
+    "validation_or_test_performance",
+    "hyperparameter_tuning",
+    "target_error_model_selection",
+    "solver_in_the_loop",
+    "rollout",
+    "benchmark_claim",
+    "target_or_reference_feature_access"
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "architecture_hashes": {
+    "D1": "sha256:8ae11d8876287b2a273326b8ffa0716313d596b417f34bdd37320b378797bc05",
+    "D2": "sha256:d01a4b836286d9b5d017f94b6ef27a10cc8ee865eaa84b3dbd261cbddf4b1a81",
+    "D3": "sha256:720311f4ffe2645411f2a4b05c35049ec1abefd6f080fdc0445407c8faa17209"
+  },
+  "backend": "CPU_FLOAT64_SDPBackend.MATH",
+  "environment": {
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:11:29) [Clang 20.1.8 ]",
+    "torch": "2.10.0"
+  },
+  "existing_formal_checkpoints_before_freeze": [],
+  "formal_learning_rate": 1e-05,
+  "formal_seeds": [
+    20600611,
+    20600612,
+    20600613
+  ],
+  "gates": {
+    "batch_schedule_exact": true,
+    "formal_backend_exact": true,
+    "formal_lr_exact": true,
+    "formal_steps_still_zero": true,
+    "fresh_initialization_only": true,
+    "historical_stage01_05_unchanged": true,
+    "nine_run_order_exact": true,
+    "preflight_9_of_9": true,
+    "preflight_weights_not_reused": true,
+    "protocol_hash_exact": true,
+    "sealed_decode_counts_zero": true,
+    "sealed_denial_all": true,
+    "stage06a_unchanged": true,
+    "stage06b_artifacts_unchanged": true,
+    "stage06b_authorization_exact": true,
+    "stage06b_complete": true,
+    "train_384": true,
+    "validation_128": true
+  },
+  "historical_changes": [],
+  "historical_stage01_05_count": 3700,
+  "pass": true,
+  "protocol_sha256": "sha256:b7918bde82b104895b6d47c798801608938c661c3f8b249f4c832c98c3a83cbe",
+  "run_ids": [
+    "D1_seed20600611",
+    "D1_seed20600612",
+    "D1_seed20600613",
+    "D2_seed20600611",
+    "D2_seed20600612",
+    "D2_seed20600613",
+    "D3_seed20600611",
+    "D3_seed20600612",
+    "D3_seed20600613"
+  ],
+  "scale_sha256": "sha256:67fa876308d81e65f39fd90d08e0a4586ccca1e72466cebf114aa582148a3437",
+  "schema": "sph-pio-poc.stage06c.input-freeze.v1",
+  "sealed_decode_counts": {
+    "sealed_formula_decode_count": 0,
+    "sealed_origin_decode_count": 0,
+    "sealed_source_decode_count": 0,
+    "sealed_state_decode_count": 0,
+    "sealed_target_decode_count": 0
+  },
+  "sealed_denial": [
+    {
+      "denied_before_payload_read": true,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n8.npz"
+    },
+    {
+      "denied_before_payload_read": true,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_03_variant_main_n8.json"
+    },
+    {
+      "denied_before_payload_read": true,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n8.npz"
+    },
+    {
+      "denied_before_payload_read": true,
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/sealed_test/private/lcdf_10_variant_main_n8.json"
+    }
+  ],
+  "sealed_test_evaluations": 0,
+  "stage05_failure_hashes": [
+    "sha256:1cc6c29e128dae209787d9e95468f6a3cd675beed7c7b403b94a62da2564eb92",
+    "sha256:3e83f230a85ff39ee97ea8f9964fa11ad2668f84291c8bbce244ccf2ca8526f8",
+    "sha256:9fb0443d1cbac82cd765f6a2642297e9307a89a07034f0f68d4079762a228a69",
+    "sha256:b0aa122c427bea6da621fd27751034f17184b92e878ee50c76afe36044b59fb7",
+    "sha256:34fbf73aa8c0221cfb3a588c0669b0e28f125448eb2467533505fff4a12c7dbc",
+    "sha256:62f4722bdc8bce75d9966a8aeb335101871f8ef7dda3bfe5587d60bfdd7a3cb0",
+    "sha256:823f17db030aa9c007e8f096e0ca94164ef3b4b2a1fc203c15589eeb830d717f",
+    "sha256:a013995b33970f2bcc8c426c1c141655acd41ff69dcff5f15a3195ecc086b798",
+    "sha256:a4b939ec0f38b99571fca116758d385016f11db7116779e451bc816c0f88fc61",
+    "sha256:c5b3322ea469b6282dafd5c2757a0881c5b377dde85c931d266c47f50cf679d1"
+  ],
+  "stage06a_artifact_count": 206,
+  "stage06a_changes": [],
+  "stage06b_artifact_count": 470,
+  "stage06b_authorization": "FORMAL_TRAINING_PROTOCOL_AND_VALIDATION_PREFLIGHT_READY",
+  "stage06b_changes": [],
+  "status": "STAGE06C_INPUTS_FROZEN",
+  "train_record_count": 384,
+  "validation_record_count": 128
+}

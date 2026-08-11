@@ -1,0 +1,57 @@
+manifest_version: stage02c-case-manifest-1.0.0
+campaign_id: stage02c_r2_audit_scale_20260804
+campaign_frozen_at_utc: "2026-08-04T00:00:00Z"
+purpose: generation_schema_hash_and_eligibility_audit
+scale: audit_only
+selection_policy: enumerate_all_manifest_cases_no_posthoc_filter
+random_generation_then_filtering: prohibited
+reference_policy:
+  allowed_reference_class: R2_semidiscrete_qualified
+  allowed_reference_identity: stage02c_r2_dense_all_pairs_dop853_v1
+  R1_permitted: false
+  R1_future_gate: WCSPH_model_form_alignment_required
+  R3_permitted: false
+sample_times: [0.0, 0.002]
+cases:
+  - case_id: r2_regular_n6
+    audit_role: positive_pipeline_case
+    trajectory_family: periodic_low_mach_vortex_r2_regular
+    initial_condition_family: periodic_low_mach_vortex_ic_v1
+    resolution_family: N6x6
+    particles_per_axis: 6
+    h_over_dx: 2.6
+    h_over_dx_family: Hdx_2p6
+    disorder_fraction_dx: 0.0
+    disorder_family: regular
+    random_seed: 1101
+    reference_identity: stage02c_r2_dense_all_pairs_dop853_v1
+    time_horizon: 0.002
+    topology_control: none
+  - case_id: r2_jitter05_n8
+    audit_role: positive_pipeline_case
+    trajectory_family: periodic_low_mach_vortex_r2_jitter05
+    initial_condition_family: periodic_low_mach_vortex_ic_v1
+    resolution_family: N8x8
+    particles_per_axis: 8
+    h_over_dx: 2.6
+    h_over_dx_family: Hdx_2p6
+    disorder_fraction_dx: 0.05
+    disorder_family: jitter_05pct_seed_2202
+    random_seed: 2202
+    reference_identity: stage02c_r2_dense_all_pairs_dop853_v1
+    time_horizon: 0.002
+    topology_control: none
+  - case_id: r2_duplicate_edge_negative_n6
+    audit_role: predefined_rejection_control
+    trajectory_family: periodic_low_mach_vortex_r2_topology_control
+    initial_condition_family: periodic_low_mach_vortex_ic_v1
+    resolution_family: N6x6
+    particles_per_axis: 6
+    h_over_dx: 2.6
+    h_over_dx_family: Hdx_2p6
+    disorder_fraction_dx: 0.0
+    disorder_family: regular_negative_control
+    random_seed: 3303
+    reference_identity: stage02c_r2_dense_all_pairs_dop853_v1
+    time_horizon: 0.002
+    topology_control: inject_one_duplicate_directed_edge

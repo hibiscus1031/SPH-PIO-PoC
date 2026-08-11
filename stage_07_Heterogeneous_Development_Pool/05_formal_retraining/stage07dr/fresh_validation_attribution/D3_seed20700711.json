@@ -1,0 +1,5945 @@
+{
+  "selected": {
+    "global": {
+      "Q_def": 1.762141387319439,
+      "maximum": {
+        "Q_def": 3.989307914501322,
+        "record_id": "HET_S2_02_MAIN_N8_O15"
+      },
+      "median": 0.4432341252787473,
+      "origin_count": 256,
+      "p90": 3.791847840971622,
+      "raw_acceleration_RMSE": 3.0405373329638707,
+      "relative_reduction": 0.1450678414449169,
+      "zero_correction_raw_RMSE": 3.5564662090880623
+    },
+    "lineages": {
+      "HET_S1_01": {
+        "LOW": {
+          "Q_def": 0.1249249799802517,
+          "maximum": {
+            "Q_def": 0.2226471786967514,
+            "record_id": "HET_S1_01_LOW_N8_O00"
+          },
+          "median": 0.09801545063928202,
+          "origin_count": 32,
+          "p90": 0.197692737807583,
+          "raw_acceleration_RMSE": 0.21555538515983036,
+          "relative_reduction": -0.7387535701311718,
+          "zero_correction_raw_RMSE": 0.12397121067798517
+        },
+        "MAIN": {
+          "Q_def": 0.1665906841031048,
+          "maximum": {
+            "Q_def": 0.29694808309070553,
+            "record_id": "HET_S1_01_MAIN_N8_O00"
+          },
+          "median": 0.13068462812312945,
+          "origin_count": 32,
+          "p90": 0.26364859002589,
+          "raw_acceleration_RMSE": 0.28744866784498185,
+          "relative_reduction": -0.7389561945467991,
+          "zero_correction_raw_RMSE": 0.1652995450640985
+        },
+        "all": {
+          "Q_def": 0.14723910257300324,
+          "maximum": {
+            "Q_def": 0.29694808309070553,
+            "record_id": "HET_S1_01_MAIN_N8_O00"
+          },
+          "median": 0.11252837035206753,
+          "origin_count": 64,
+          "p90": 0.22943235393473083,
+          "raw_acceleration_RMSE": 0.25405792717140074,
+          "relative_reduction": -0.7388832550740172,
+          "zero_correction_raw_RMSE": 0.14610407365190628
+        },
+        "origins": [
+          {
+            "Q_def": 0.2226471786967514,
+            "lineage": "HET_S1_01",
+            "origin": 0,
+            "record_id": "HET_S1_01_LOW_N8_O00",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.21461717974284464,
+            "lineage": "HET_S1_01",
+            "origin": 1,
+            "record_id": "HET_S1_01_LOW_N8_O01",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.20656821966710462,
+            "lineage": "HET_S1_01",
+            "origin": 2,
+            "record_id": "HET_S1_01_LOW_N8_O02",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.19850088192772228,
+            "lineage": "HET_S1_01",
+            "origin": 3,
+            "record_id": "HET_S1_01_LOW_N8_O03",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.1904194407263294,
+            "lineage": "HET_S1_01",
+            "origin": 4,
+            "record_id": "HET_S1_01_LOW_N8_O04",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.18232720111172027,
+            "lineage": "HET_S1_01",
+            "origin": 5,
+            "record_id": "HET_S1_01_LOW_N8_O05",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.17422724125946826,
+            "lineage": "HET_S1_01",
+            "origin": 6,
+            "record_id": "HET_S1_01_LOW_N8_O06",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.16612351894335173,
+            "lineage": "HET_S1_01",
+            "origin": 7,
+            "record_id": "HET_S1_01_LOW_N8_O07",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.15802083798309702,
+            "lineage": "HET_S1_01",
+            "origin": 8,
+            "record_id": "HET_S1_01_LOW_N8_O08",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.14992394666206763,
+            "lineage": "HET_S1_01",
+            "origin": 9,
+            "record_id": "HET_S1_01_LOW_N8_O09",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.14183906920122963,
+            "lineage": "HET_S1_01",
+            "origin": 10,
+            "record_id": "HET_S1_01_LOW_N8_O10",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.13377322836768385,
+            "lineage": "HET_S1_01",
+            "origin": 11,
+            "record_id": "HET_S1_01_LOW_N8_O11",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.1257348494090942,
+            "lineage": "HET_S1_01",
+            "origin": 12,
+            "record_id": "HET_S1_01_LOW_N8_O12",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.11773471816690058,
+            "lineage": "HET_S1_01",
+            "origin": 13,
+            "record_id": "HET_S1_01_LOW_N8_O13",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.1097869743810943,
+            "lineage": "HET_S1_01",
+            "origin": 14,
+            "record_id": "HET_S1_01_LOW_N8_O14",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.10190867924727688,
+            "lineage": "HET_S1_01",
+            "origin": 15,
+            "record_id": "HET_S1_01_LOW_N8_O15",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.09412222203128714,
+            "lineage": "HET_S1_01",
+            "origin": 16,
+            "record_id": "HET_S1_01_LOW_N8_O16",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.08645707057753646,
+            "lineage": "HET_S1_01",
+            "origin": 17,
+            "record_id": "HET_S1_01_LOW_N8_O17",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.07895481322705043,
+            "lineage": "HET_S1_01",
+            "origin": 18,
+            "record_id": "HET_S1_01_LOW_N8_O18",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.07166932236625513,
+            "lineage": "HET_S1_01",
+            "origin": 19,
+            "record_id": "HET_S1_01_LOW_N8_O19",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.06468063801741658,
+            "lineage": "HET_S1_01",
+            "origin": 20,
+            "record_id": "HET_S1_01_LOW_N8_O20",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.05809920832500446,
+            "lineage": "HET_S1_01",
+            "origin": 21,
+            "record_id": "HET_S1_01_LOW_N8_O21",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.05208262888766824,
+            "lineage": "HET_S1_01",
+            "origin": 22,
+            "record_id": "HET_S1_01_LOW_N8_O22",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.04685450917935674,
+            "lineage": "HET_S1_01",
+            "origin": 23,
+            "record_id": "HET_S1_01_LOW_N8_O23",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.042709691473501676,
+            "lineage": "HET_S1_01",
+            "origin": 24,
+            "record_id": "HET_S1_01_LOW_N8_O24",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.039989097271568,
+            "lineage": "HET_S1_01",
+            "origin": 25,
+            "record_id": "HET_S1_01_LOW_N8_O25",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.03899442412350439,
+            "lineage": "HET_S1_01",
+            "origin": 26,
+            "record_id": "HET_S1_01_LOW_N8_O26",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.03985649190698189,
+            "lineage": "HET_S1_01",
+            "origin": 27,
+            "record_id": "HET_S1_01_LOW_N8_O27",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.042463354067047536,
+            "lineage": "HET_S1_01",
+            "origin": 28,
+            "record_id": "HET_S1_01_LOW_N8_O28",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.046522781440448975,
+            "lineage": "HET_S1_01",
+            "origin": 29,
+            "record_id": "HET_S1_01_LOW_N8_O29",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.0516918231048262,
+            "lineage": "HET_S1_01",
+            "origin": 30,
+            "record_id": "HET_S1_01_LOW_N8_O30",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.057671434698380854,
+            "lineage": "HET_S1_01",
+            "origin": 31,
+            "record_id": "HET_S1_01_LOW_N8_O31",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.29694808309070553,
+            "lineage": "HET_S1_01",
+            "origin": 0,
+            "record_id": "HET_S1_01_MAIN_N8_O00",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.28623215390616186,
+            "lineage": "HET_S1_01",
+            "origin": 1,
+            "record_id": "HET_S1_01_MAIN_N8_O01",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.27549176009123266,
+            "lineage": "HET_S1_01",
+            "origin": 2,
+            "record_id": "HET_S1_01_MAIN_N8_O02",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.2647268812115826,
+            "lineage": "HET_S1_01",
+            "origin": 3,
+            "record_id": "HET_S1_01_MAIN_N8_O03",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.25394396935465585,
+            "lineage": "HET_S1_01",
+            "origin": 4,
+            "record_id": "HET_S1_01_MAIN_N8_O04",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.24314698523236167,
+            "lineage": "HET_S1_01",
+            "origin": 5,
+            "record_id": "HET_S1_01_MAIN_N8_O05",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.2323402861795791,
+            "lineage": "HET_S1_01",
+            "origin": 6,
+            "record_id": "HET_S1_01_MAIN_N8_O06",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.22152918285440606,
+            "lineage": "HET_S1_01",
+            "origin": 7,
+            "record_id": "HET_S1_01_MAIN_N8_O07",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.21072011081405587,
+            "lineage": "HET_S1_01",
+            "origin": 8,
+            "record_id": "HET_S1_01_MAIN_N8_O08",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.19991919568532895,
+            "lineage": "HET_S1_01",
+            "origin": 9,
+            "record_id": "HET_S1_01_MAIN_N8_O09",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.18913484298683433,
+            "lineage": "HET_S1_01",
+            "origin": 10,
+            "record_id": "HET_S1_01_MAIN_N8_O10",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.17837628927795635,
+            "lineage": "HET_S1_01",
+            "origin": 11,
+            "record_id": "HET_S1_01_MAIN_N8_O11",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.1676545696916867,
+            "lineage": "HET_S1_01",
+            "origin": 12,
+            "record_id": "HET_S1_01_MAIN_N8_O12",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.15698416600537615,
+            "lineage": "HET_S1_01",
+            "origin": 13,
+            "record_id": "HET_S1_01_MAIN_N8_O13",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.14638402405708373,
+            "lineage": "HET_S1_01",
+            "origin": 14,
+            "record_id": "HET_S1_01_MAIN_N8_O14",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.13587687180133404,
+            "lineage": "HET_S1_01",
+            "origin": 15,
+            "record_id": "HET_S1_01_MAIN_N8_O15",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.12549238444492486,
+            "lineage": "HET_S1_01",
+            "origin": 16,
+            "record_id": "HET_S1_01_MAIN_N8_O16",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.11526976632304076,
+            "lineage": "HET_S1_01",
+            "origin": 17,
+            "record_id": "HET_S1_01_MAIN_N8_O17",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.10526485248150091,
+            "lineage": "HET_S1_01",
+            "origin": 18,
+            "record_id": "HET_S1_01_MAIN_N8_O18",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.09554880917628113,
+            "lineage": "HET_S1_01",
+            "origin": 19,
+            "record_id": "HET_S1_01_MAIN_N8_O19",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.08622882845424394,
+            "lineage": "HET_S1_01",
+            "origin": 20,
+            "record_id": "HET_S1_01_MAIN_N8_O20",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.07745188731986989,
+            "lineage": "HET_S1_01",
+            "origin": 21,
+            "record_id": "HET_S1_01_MAIN_N8_O21",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.06942779852391708,
+            "lineage": "HET_S1_01",
+            "origin": 22,
+            "record_id": "HET_S1_01_MAIN_N8_O22",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.062455283467858363,
+            "lineage": "HET_S1_01",
+            "origin": 23,
+            "record_id": "HET_S1_01_MAIN_N8_O23",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.05692755217020902,
+            "lineage": "HET_S1_01",
+            "origin": 24,
+            "record_id": "HET_S1_01_MAIN_N8_O24",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.053299975332752256,
+            "lineage": "HET_S1_01",
+            "origin": 25,
+            "record_id": "HET_S1_01_MAIN_N8_O25",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.05197532564462376,
+            "lineage": "HET_S1_01",
+            "origin": 26,
+            "record_id": "HET_S1_01_MAIN_N8_O26",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.05312880265879234,
+            "lineage": "HET_S1_01",
+            "origin": 27,
+            "record_id": "HET_S1_01_MAIN_N8_O27",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.0566106565680659,
+            "lineage": "HET_S1_01",
+            "origin": 28,
+            "record_id": "HET_S1_01_MAIN_N8_O28",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.06203110582068278,
+            "lineage": "HET_S1_01",
+            "origin": 29,
+            "record_id": "HET_S1_01_MAIN_N8_O29",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.06893217314229688,
+            "lineage": "HET_S1_01",
+            "origin": 30,
+            "record_id": "HET_S1_01_MAIN_N8_O30",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.07691503780917675,
+            "lineage": "HET_S1_01",
+            "origin": 31,
+            "record_id": "HET_S1_01_MAIN_N8_O31",
+            "variant": "MAIN"
+          }
+        ]
+      },
+      "HET_S2_02": {
+        "LOW": {
+          "Q_def": 2.915121406532346,
+          "maximum": {
+            "Q_def": 2.9892863638916913,
+            "record_id": "HET_S2_02_LOW_N8_O15"
+          },
+          "median": 2.9329866770264816,
+          "origin_count": 32,
+          "p90": 2.9860712735384065,
+          "raw_acceleration_RMSE": 5.029979734013804,
+          "relative_reduction": 0.13771546305729465,
+          "zero_correction_raw_RMSE": 5.833317795362509
+        },
+        "MAIN": {
+          "Q_def": 3.8902641531773368,
+          "maximum": {
+            "Q_def": 3.989307914501322,
+            "record_id": "HET_S2_02_MAIN_N8_O15"
+          },
+          "median": 3.914108430033737,
+          "origin_count": 32,
+          "p90": 3.9849638848234283,
+          "raw_acceleration_RMSE": 6.712567718995703,
+          "relative_reduction": 0.13736053751227806,
+          "zero_correction_raw_RMSE": 7.781428987305625
+        },
+        "all": {
+          "Q_def": 3.437447308419411,
+          "maximum": {
+            "Q_def": 3.989307914501322,
+            "record_id": "HET_S2_02_MAIN_N8_O15"
+          },
+          "median": 3.3388655754615097,
+          "origin_count": 64,
+          "p90": 3.976020032947452,
+          "raw_acceleration_RMSE": 5.931241923353521,
+          "relative_reduction": 0.1374882167032817,
+          "zero_correction_raw_RMSE": 6.876708281807989
+        },
+        "origins": [
+          {
+            "Q_def": 2.795627970373612,
+            "lineage": "HET_S2_02",
+            "origin": 0,
+            "record_id": "HET_S2_02_LOW_N8_O00",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.820531138457832,
+            "lineage": "HET_S2_02",
+            "origin": 1,
+            "record_id": "HET_S2_02_LOW_N8_O01",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.8437684441091826,
+            "lineage": "HET_S2_02",
+            "origin": 2,
+            "record_id": "HET_S2_02_LOW_N8_O02",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.8653257277054562,
+            "lineage": "HET_S2_02",
+            "origin": 3,
+            "record_id": "HET_S2_02_LOW_N8_O03",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.8851898909883613,
+            "lineage": "HET_S2_02",
+            "origin": 4,
+            "record_id": "HET_S2_02_LOW_N8_O04",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.9033489071132563,
+            "lineage": "HET_S2_02",
+            "origin": 5,
+            "record_id": "HET_S2_02_LOW_N8_O05",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.9197917945618417,
+            "lineage": "HET_S2_02",
+            "origin": 6,
+            "record_id": "HET_S2_02_LOW_N8_O06",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.9345087216547734,
+            "lineage": "HET_S2_02",
+            "origin": 7,
+            "record_id": "HET_S2_02_LOW_N8_O07",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.9474909058543526,
+            "lineage": "HET_S2_02",
+            "origin": 8,
+            "record_id": "HET_S2_02_LOW_N8_O08",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.9587306447559176,
+            "lineage": "HET_S2_02",
+            "origin": 9,
+            "record_id": "HET_S2_02_LOW_N8_O09",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.9682213373770048,
+            "lineage": "HET_S2_02",
+            "origin": 10,
+            "record_id": "HET_S2_02_LOW_N8_O10",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.975957524700076,
+            "lineage": "HET_S2_02",
+            "origin": 11,
+            "record_id": "HET_S2_02_LOW_N8_O11",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.9819348273848894,
+            "lineage": "HET_S2_02",
+            "origin": 12,
+            "record_id": "HET_S2_02_LOW_N8_O12",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.9861499804915197,
+            "lineage": "HET_S2_02",
+            "origin": 13,
+            "record_id": "HET_S2_02_LOW_N8_O13",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.988600839854167,
+            "lineage": "HET_S2_02",
+            "origin": 14,
+            "record_id": "HET_S2_02_LOW_N8_O14",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.9892863638916913,
+            "lineage": "HET_S2_02",
+            "origin": 15,
+            "record_id": "HET_S2_02_LOW_N8_O15",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.9882066476453595,
+            "lineage": "HET_S2_02",
+            "origin": 16,
+            "record_id": "HET_S2_02_LOW_N8_O16",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.985362910960389,
+            "lineage": "HET_S2_02",
+            "origin": 17,
+            "record_id": "HET_S2_02_LOW_N8_O17",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.98075746040018,
+            "lineage": "HET_S2_02",
+            "origin": 18,
+            "record_id": "HET_S2_02_LOW_N8_O18",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.9743938665924423,
+            "lineage": "HET_S2_02",
+            "origin": 19,
+            "record_id": "HET_S2_02_LOW_N8_O19",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.966276905979943,
+            "lineage": "HET_S2_02",
+            "origin": 20,
+            "record_id": "HET_S2_02_LOW_N8_O20",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.956411300991787,
+            "lineage": "HET_S2_02",
+            "origin": 21,
+            "record_id": "HET_S2_02_LOW_N8_O21",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.9448049751708254,
+            "lineage": "HET_S2_02",
+            "origin": 22,
+            "record_id": "HET_S2_02_LOW_N8_O22",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.9314646323981894,
+            "lineage": "HET_S2_02",
+            "origin": 23,
+            "record_id": "HET_S2_02_LOW_N8_O23",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.9164004652076536,
+            "lineage": "HET_S2_02",
+            "origin": 24,
+            "record_id": "HET_S2_02_LOW_N8_O24",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.8996224463194333,
+            "lineage": "HET_S2_02",
+            "origin": 25,
+            "record_id": "HET_S2_02_LOW_N8_O25",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.8811415397863693,
+            "lineage": "HET_S2_02",
+            "origin": 26,
+            "record_id": "HET_S2_02_LOW_N8_O26",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.860969825656072,
+            "lineage": "HET_S2_02",
+            "origin": 27,
+            "record_id": "HET_S2_02_LOW_N8_O27",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.83912421123768,
+            "lineage": "HET_S2_02",
+            "origin": 28,
+            "record_id": "HET_S2_02_LOW_N8_O28",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.8156156717225995,
+            "lineage": "HET_S2_02",
+            "origin": 29,
+            "record_id": "HET_S2_02_LOW_N8_O29",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.7904618841619513,
+            "lineage": "HET_S2_02",
+            "origin": 30,
+            "record_id": "HET_S2_02_LOW_N8_O30",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.763679870353075,
+            "lineage": "HET_S2_02",
+            "origin": 31,
+            "record_id": "HET_S2_02_LOW_N8_O31",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.7302311217956525,
+            "lineage": "HET_S2_02",
+            "origin": 0,
+            "record_id": "HET_S2_02_MAIN_N8_O00",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.7635129663264117,
+            "lineage": "HET_S2_02",
+            "origin": 1,
+            "record_id": "HET_S2_02_MAIN_N8_O01",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.794571541313885,
+            "lineage": "HET_S2_02",
+            "origin": 2,
+            "record_id": "HET_S2_02_MAIN_N8_O02",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.8233879178443377,
+            "lineage": "HET_S2_02",
+            "origin": 3,
+            "record_id": "HET_S2_02_MAIN_N8_O03",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.8499444152968234,
+            "lineage": "HET_S2_02",
+            "origin": 4,
+            "record_id": "HET_S2_02_MAIN_N8_O04",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.874224786283762,
+            "lineage": "HET_S2_02",
+            "origin": 5,
+            "record_id": "HET_S2_02_MAIN_N8_O05",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.8962141973972866,
+            "lineage": "HET_S2_02",
+            "origin": 6,
+            "record_id": "HET_S2_02_MAIN_N8_O06",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.9158993221347997,
+            "lineage": "HET_S2_02",
+            "origin": 7,
+            "record_id": "HET_S2_02_MAIN_N8_O07",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.933268275795081,
+            "lineage": "HET_S2_02",
+            "origin": 8,
+            "record_id": "HET_S2_02_MAIN_N8_O08",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.9483105737805357,
+            "lineage": "HET_S2_02",
+            "origin": 9,
+            "record_id": "HET_S2_02_MAIN_N8_O09",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.961017269533123,
+            "lineage": "HET_S2_02",
+            "origin": 10,
+            "record_id": "HET_S2_02_MAIN_N8_O10",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.9713809140178173,
+            "lineage": "HET_S2_02",
+            "origin": 11,
+            "record_id": "HET_S2_02_MAIN_N8_O11",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.9793955303366304,
+            "lineage": "HET_S2_02",
+            "origin": 12,
+            "record_id": "HET_S2_02_MAIN_N8_O12",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.9850566386638056,
+            "lineage": "HET_S2_02",
+            "origin": 13,
+            "record_id": "HET_S2_02_MAIN_N8_O13",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.9883612528242556,
+            "lineage": "HET_S2_02",
+            "origin": 14,
+            "record_id": "HET_S2_02_MAIN_N8_O14",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.989307914501322,
+            "lineage": "HET_S2_02",
+            "origin": 15,
+            "record_id": "HET_S2_02_MAIN_N8_O15",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.98789668645241,
+            "lineage": "HET_S2_02",
+            "origin": 16,
+            "record_id": "HET_S2_02_MAIN_N8_O16",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.984129100260035,
+            "lineage": "HET_S2_02",
+            "origin": 17,
+            "record_id": "HET_S2_02_MAIN_N8_O17",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.9780082267744383,
+            "lineage": "HET_S2_02",
+            "origin": 18,
+            "record_id": "HET_S2_02_MAIN_N8_O18",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.9695390120649043,
+            "lineage": "HET_S2_02",
+            "origin": 19,
+            "record_id": "HET_S2_02_MAIN_N8_O19",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.958726989774705,
+            "lineage": "HET_S2_02",
+            "origin": 20,
+            "record_id": "HET_S2_02_MAIN_N8_O20",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.9455794937323825,
+            "lineage": "HET_S2_02",
+            "origin": 21,
+            "record_id": "HET_S2_02_MAIN_N8_O21",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.9301071336363687,
+            "lineage": "HET_S2_02",
+            "origin": 22,
+            "record_id": "HET_S2_02_MAIN_N8_O22",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.912317537932675,
+            "lineage": "HET_S2_02",
+            "origin": 23,
+            "record_id": "HET_S2_02_MAIN_N8_O23",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.8922256146202368,
+            "lineage": "HET_S2_02",
+            "origin": 24,
+            "record_id": "HET_S2_02_MAIN_N8_O24",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.8698442971752565,
+            "lineage": "HET_S2_02",
+            "origin": 25,
+            "record_id": "HET_S2_02_MAIN_N8_O25",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.845188433899256,
+            "lineage": "HET_S2_02",
+            "origin": 26,
+            "record_id": "HET_S2_02_MAIN_N8_O26",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.8182739517524014,
+            "lineage": "HET_S2_02",
+            "origin": 27,
+            "record_id": "HET_S2_02_MAIN_N8_O27",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.789124140629358,
+            "lineage": "HET_S2_02",
+            "origin": 28,
+            "record_id": "HET_S2_02_MAIN_N8_O28",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.7577540703133896,
+            "lineage": "HET_S2_02",
+            "origin": 29,
+            "record_id": "HET_S2_02_MAIN_N8_O29",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.724186322038043,
+            "lineage": "HET_S2_02",
+            "origin": 30,
+            "record_id": "HET_S2_02_MAIN_N8_O30",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.688444787031328,
+            "lineage": "HET_S2_02",
+            "origin": 31,
+            "record_id": "HET_S2_02_MAIN_N8_O31",
+            "variant": "MAIN"
+          }
+        ]
+      },
+      "HET_S3_03": {
+        "LOW": {
+          "Q_def": 0.19878090217268043,
+          "maximum": {
+            "Q_def": 0.2711004082474213,
+            "record_id": "HET_S3_03_LOW_N8_O00"
+          },
+          "median": 0.19449312668916607,
+          "origin_count": 32,
+          "p90": 0.2608454941635966,
+          "raw_acceleration_RMSE": 0.3429922016959634,
+          "relative_reduction": 0.5576993296172637,
+          "zero_correction_raw_RMSE": 0.7754729410632856
+        },
+        "MAIN": {
+          "Q_def": 0.26533655507398407,
+          "maximum": {
+            "Q_def": 0.36202774586978154,
+            "record_id": "HET_S3_03_MAIN_N8_O00"
+          },
+          "median": 0.2596116151128274,
+          "origin_count": 32,
+          "p90": 0.34833658907635745,
+          "raw_acceleration_RMSE": 0.4578325594688635,
+          "relative_reduction": 0.5572893158850658,
+          "zero_correction_raw_RMSE": 1.0341574664821132
+        },
+        "all": {
+          "Q_def": 0.23443264973880462,
+          "maximum": {
+            "Q_def": 0.36202774586978154,
+            "record_id": "HET_S3_03_MAIN_N8_O00"
+          },
+          "median": 0.22089676608746234,
+          "origin_count": 64,
+          "p90": 0.3301532793166269,
+          "raw_acceleration_RMSE": 0.40450853077163584,
+          "relative_reduction": 0.5574368417126031,
+          "zero_correction_raw_RMSE": 0.9140131147314149
+        },
+        "origins": [
+          {
+            "Q_def": 0.2711004082474213,
+            "lineage": "HET_S3_03",
+            "origin": 0,
+            "record_id": "HET_S3_03_LOW_N8_O00",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.268133305656523,
+            "lineage": "HET_S3_03",
+            "origin": 1,
+            "record_id": "HET_S3_03_LOW_N8_O01",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.26483711284675227,
+            "lineage": "HET_S3_03",
+            "origin": 2,
+            "record_id": "HET_S3_03_LOW_N8_O02",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.26123638035421914,
+            "lineage": "HET_S3_03",
+            "origin": 3,
+            "record_id": "HET_S3_03_LOW_N8_O03",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.25732751844799356,
+            "lineage": "HET_S3_03",
+            "origin": 4,
+            "record_id": "HET_S3_03_LOW_N8_O04",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.25313507904961685,
+            "lineage": "HET_S3_03",
+            "origin": 5,
+            "record_id": "HET_S3_03_LOW_N8_O05",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.2486602305090996,
+            "lineage": "HET_S3_03",
+            "origin": 6,
+            "record_id": "HET_S3_03_LOW_N8_O06",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.2439134762716623,
+            "lineage": "HET_S3_03",
+            "origin": 7,
+            "record_id": "HET_S3_03_LOW_N8_O07",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.2389097505579028,
+            "lineage": "HET_S3_03",
+            "origin": 8,
+            "record_id": "HET_S3_03_LOW_N8_O08",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.23365708404807606,
+            "lineage": "HET_S3_03",
+            "origin": 9,
+            "record_id": "HET_S3_03_LOW_N8_O09",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.22816923824483382,
+            "lineage": "HET_S3_03",
+            "origin": 10,
+            "record_id": "HET_S3_03_LOW_N8_O10",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.22246178925946117,
+            "lineage": "HET_S3_03",
+            "origin": 11,
+            "record_id": "HET_S3_03_LOW_N8_O11",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.21654257127414595,
+            "lineage": "HET_S3_03",
+            "origin": 12,
+            "record_id": "HET_S3_03_LOW_N8_O12",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.21044667360892064,
+            "lineage": "HET_S3_03",
+            "origin": 13,
+            "record_id": "HET_S3_03_LOW_N8_O13",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.204177903422961,
+            "lineage": "HET_S3_03",
+            "origin": 14,
+            "record_id": "HET_S3_03_LOW_N8_O14",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.1977626919748183,
+            "lineage": "HET_S3_03",
+            "origin": 15,
+            "record_id": "HET_S3_03_LOW_N8_O15",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.19122356140351382,
+            "lineage": "HET_S3_03",
+            "origin": 16,
+            "record_id": "HET_S3_03_LOW_N8_O16",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.18458894418982164,
+            "lineage": "HET_S3_03",
+            "origin": 17,
+            "record_id": "HET_S3_03_LOW_N8_O17",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.1778882851316173,
+            "lineage": "HET_S3_03",
+            "origin": 18,
+            "record_id": "HET_S3_03_LOW_N8_O18",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.17114810833034316,
+            "lineage": "HET_S3_03",
+            "origin": 19,
+            "record_id": "HET_S3_03_LOW_N8_O19",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.16440699264233716,
+            "lineage": "HET_S3_03",
+            "origin": 20,
+            "record_id": "HET_S3_03_LOW_N8_O20",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.15770150230657135,
+            "lineage": "HET_S3_03",
+            "origin": 21,
+            "record_id": "HET_S3_03_LOW_N8_O21",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.15107796963861247,
+            "lineage": "HET_S3_03",
+            "origin": 22,
+            "record_id": "HET_S3_03_LOW_N8_O22",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.14458884705419317,
+            "lineage": "HET_S3_03",
+            "origin": 23,
+            "record_id": "HET_S3_03_LOW_N8_O23",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.13829233418155568,
+            "lineage": "HET_S3_03",
+            "origin": 24,
+            "record_id": "HET_S3_03_LOW_N8_O24",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.13225866747438286,
+            "lineage": "HET_S3_03",
+            "origin": 25,
+            "record_id": "HET_S3_03_LOW_N8_O25",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.12656101930180638,
+            "lineage": "HET_S3_03",
+            "origin": 26,
+            "record_id": "HET_S3_03_LOW_N8_O26",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.12127662819418343,
+            "lineage": "HET_S3_03",
+            "origin": 27,
+            "record_id": "HET_S3_03_LOW_N8_O27",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.11650021545379953,
+            "lineage": "HET_S3_03",
+            "origin": 28,
+            "record_id": "HET_S3_03_LOW_N8_O28",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.11232139439049917,
+            "lineage": "HET_S3_03",
+            "origin": 29,
+            "record_id": "HET_S3_03_LOW_N8_O29",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.10883798709952677,
+            "lineage": "HET_S3_03",
+            "origin": 30,
+            "record_id": "HET_S3_03_LOW_N8_O30",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.10613724473302194,
+            "lineage": "HET_S3_03",
+            "origin": 31,
+            "record_id": "HET_S3_03_LOW_N8_O31",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.36202774586978154,
+            "lineage": "HET_S3_03",
+            "origin": 0,
+            "record_id": "HET_S3_03_MAIN_N8_O00",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.3580704870913175,
+            "lineage": "HET_S3_03",
+            "origin": 1,
+            "record_id": "HET_S3_03_MAIN_N8_O01",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.3536696835077073,
+            "lineage": "HET_S3_03",
+            "origin": 2,
+            "record_id": "HET_S3_03_MAIN_N8_O02",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.3488588243700795,
+            "lineage": "HET_S3_03",
+            "origin": 3,
+            "record_id": "HET_S3_03_MAIN_N8_O03",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.34363647143285914,
+            "lineage": "HET_S3_03",
+            "origin": 4,
+            "record_id": "HET_S3_03_MAIN_N8_O04",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.33803600102549536,
+            "lineage": "HET_S3_03",
+            "origin": 5,
+            "record_id": "HET_S3_03_MAIN_N8_O05",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.3320566521911862,
+            "lineage": "HET_S3_03",
+            "origin": 6,
+            "record_id": "HET_S3_03_MAIN_N8_O06",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.3257120759426552,
+            "lineage": "HET_S3_03",
+            "origin": 7,
+            "record_id": "HET_S3_03_MAIN_N8_O07",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.31902525553380945,
+            "lineage": "HET_S3_03",
+            "origin": 8,
+            "record_id": "HET_S3_03_MAIN_N8_O08",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.3120048576579463,
+            "lineage": "HET_S3_03",
+            "origin": 9,
+            "record_id": "HET_S3_03_MAIN_N8_O09",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.3046682393431729,
+            "lineage": "HET_S3_03",
+            "origin": 10,
+            "record_id": "HET_S3_03_MAIN_N8_O10",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.2970360322293425,
+            "lineage": "HET_S3_03",
+            "origin": 11,
+            "record_id": "HET_S3_03_MAIN_N8_O11",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.2891169060822003,
+            "lineage": "HET_S3_03",
+            "origin": 12,
+            "record_id": "HET_S3_03_MAIN_N8_O12",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.2809626407517171,
+            "lineage": "HET_S3_03",
+            "origin": 13,
+            "record_id": "HET_S3_03_MAIN_N8_O13",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.272573961071064,
+            "lineage": "HET_S3_03",
+            "origin": 14,
+            "record_id": "HET_S3_03_MAIN_N8_O14",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.2639882867789228,
+            "lineage": "HET_S3_03",
+            "origin": 15,
+            "record_id": "HET_S3_03_MAIN_N8_O15",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.2552349434467319,
+            "lineage": "HET_S3_03",
+            "origin": 16,
+            "record_id": "HET_S3_03_MAIN_N8_O16",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.24635250692072497,
+            "lineage": "HET_S3_03",
+            "origin": 17,
+            "record_id": "HET_S3_03_MAIN_N8_O17",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.2373827497102144,
+            "lineage": "HET_S3_03",
+            "origin": 18,
+            "record_id": "HET_S3_03_MAIN_N8_O18",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.2283588388764726,
+            "lineage": "HET_S3_03",
+            "origin": 19,
+            "record_id": "HET_S3_03_MAIN_N8_O19",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.21933174291546348,
+            "lineage": "HET_S3_03",
+            "origin": 20,
+            "record_id": "HET_S3_03_MAIN_N8_O20",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.21034935887347098,
+            "lineage": "HET_S3_03",
+            "origin": 21,
+            "record_id": "HET_S3_03_MAIN_N8_O21",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.20147473687148967,
+            "lineage": "HET_S3_03",
+            "origin": 22,
+            "record_id": "HET_S3_03_MAIN_N8_O22",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.19278041873784948,
+            "lineage": "HET_S3_03",
+            "origin": 23,
+            "record_id": "HET_S3_03_MAIN_N8_O23",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.1843417873012097,
+            "lineage": "HET_S3_03",
+            "origin": 24,
+            "record_id": "HET_S3_03_MAIN_N8_O24",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.17625714543827112,
+            "lineage": "HET_S3_03",
+            "origin": 25,
+            "record_id": "HET_S3_03_MAIN_N8_O25",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.16862541767382125,
+            "lineage": "HET_S3_03",
+            "origin": 26,
+            "record_id": "HET_S3_03_MAIN_N8_O26",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.1615494609782149,
+            "lineage": "HET_S3_03",
+            "origin": 27,
+            "record_id": "HET_S3_03_MAIN_N8_O27",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.15515903679765924,
+            "lineage": "HET_S3_03",
+            "origin": 28,
+            "record_id": "HET_S3_03_MAIN_N8_O28",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.14957416363911455,
+            "lineage": "HET_S3_03",
+            "origin": 29,
+            "record_id": "HET_S3_03_MAIN_N8_O29",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.14492868817551277,
+            "lineage": "HET_S3_03",
+            "origin": 30,
+            "record_id": "HET_S3_03_MAIN_N8_O30",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.14134005176043665,
+            "lineage": "HET_S3_03",
+            "origin": 31,
+            "record_id": "HET_S3_03_MAIN_N8_O31",
+            "variant": "MAIN"
+          }
+        ]
+      },
+      "HET_S4_03": {
+        "LOW": {
+          "Q_def": 0.6162543891459471,
+          "maximum": {
+            "Q_def": 0.6544736250420916,
+            "record_id": "HET_S4_03_LOW_N8_O07"
+          },
+          "median": 0.6345470188968065,
+          "origin_count": 32,
+          "p90": 0.6535178131603053,
+          "raw_acceleration_RMSE": 1.0633337882446698,
+          "relative_reduction": 0.19901811674709136,
+          "zero_correction_raw_RMSE": 1.3275378762954169
+        },
+        "MAIN": {
+          "Q_def": 0.822195014331238,
+          "maximum": {
+            "Q_def": 0.8728368668935311,
+            "record_id": "HET_S4_03_MAIN_N8_O07"
+          },
+          "median": 0.8465680883393327,
+          "origin_count": 32,
+          "p90": 0.8716094487566135,
+          "raw_acceleration_RMSE": 1.4186799391016813,
+          "relative_reduction": 0.19856163035227847,
+          "zero_correction_raw_RMSE": 1.7701672303576794
+        },
+        "all": {
+          "Q_def": 0.72655836439091,
+          "maximum": {
+            "Q_def": 0.8728368668935311,
+            "record_id": "HET_S4_03_MAIN_N8_O07"
+          },
+          "median": 0.6774418651928276,
+          "origin_count": 64,
+          "p90": 0.8679606795525935,
+          "raw_acceleration_RMSE": 1.2536609419680247,
+          "relative_reduction": 0.19872592162547276,
+          "zero_correction_raw_RMSE": 1.5645844234861734
+        },
+        "origins": [
+          {
+            "Q_def": 0.6381262137257481,
+            "lineage": "HET_S4_03",
+            "origin": 0,
+            "record_id": "HET_S4_03_LOW_N8_O00",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6422126913543825,
+            "lineage": "HET_S4_03",
+            "origin": 1,
+            "record_id": "HET_S4_03_LOW_N8_O01",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6457545775801475,
+            "lineage": "HET_S4_03",
+            "origin": 2,
+            "record_id": "HET_S4_03_LOW_N8_O02",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6487066427219286,
+            "lineage": "HET_S4_03",
+            "origin": 3,
+            "record_id": "HET_S4_03_LOW_N8_O03",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6510542427589853,
+            "lineage": "HET_S4_03",
+            "origin": 4,
+            "record_id": "HET_S4_03_LOW_N8_O04",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6528047874907912,
+            "lineage": "HET_S4_03",
+            "origin": 5,
+            "record_id": "HET_S4_03_LOW_N8_O05",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6539275089462859,
+            "lineage": "HET_S4_03",
+            "origin": 6,
+            "record_id": "HET_S4_03_LOW_N8_O06",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6544736250420916,
+            "lineage": "HET_S4_03",
+            "origin": 7,
+            "record_id": "HET_S4_03_LOW_N8_O07",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6543755119368584,
+            "lineage": "HET_S4_03",
+            "origin": 8,
+            "record_id": "HET_S4_03_LOW_N8_O08",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6535970382346958,
+            "lineage": "HET_S4_03",
+            "origin": 9,
+            "record_id": "HET_S4_03_LOW_N8_O09",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6522726390523589,
+            "lineage": "HET_S4_03",
+            "origin": 10,
+            "record_id": "HET_S4_03_LOW_N8_O10",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6502939868860479,
+            "lineage": "HET_S4_03",
+            "origin": 11,
+            "record_id": "HET_S4_03_LOW_N8_O11",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.647759303664039,
+            "lineage": "HET_S4_03",
+            "origin": 12,
+            "record_id": "HET_S4_03_LOW_N8_O12",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6446624191968806,
+            "lineage": "HET_S4_03",
+            "origin": 13,
+            "record_id": "HET_S4_03_LOW_N8_O13",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6410440443201559,
+            "lineage": "HET_S4_03",
+            "origin": 14,
+            "record_id": "HET_S4_03_LOW_N8_O14",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6368833492856055,
+            "lineage": "HET_S4_03",
+            "origin": 15,
+            "record_id": "HET_S4_03_LOW_N8_O15",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6322106885080077,
+            "lineage": "HET_S4_03",
+            "origin": 16,
+            "record_id": "HET_S4_03_LOW_N8_O16",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.627058476148974,
+            "lineage": "HET_S4_03",
+            "origin": 17,
+            "record_id": "HET_S4_03_LOW_N8_O17",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6214722046137118,
+            "lineage": "HET_S4_03",
+            "origin": 18,
+            "record_id": "HET_S4_03_LOW_N8_O18",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6154610800120728,
+            "lineage": "HET_S4_03",
+            "origin": 19,
+            "record_id": "HET_S4_03_LOW_N8_O19",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6090491268648132,
+            "lineage": "HET_S4_03",
+            "origin": 20,
+            "record_id": "HET_S4_03_LOW_N8_O20",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6022740380402529,
+            "lineage": "HET_S4_03",
+            "origin": 21,
+            "record_id": "HET_S4_03_LOW_N8_O21",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5951396795980736,
+            "lineage": "HET_S4_03",
+            "origin": 22,
+            "record_id": "HET_S4_03_LOW_N8_O22",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5877280807198452,
+            "lineage": "HET_S4_03",
+            "origin": 23,
+            "record_id": "HET_S4_03_LOW_N8_O23",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5800969361687554,
+            "lineage": "HET_S4_03",
+            "origin": 24,
+            "record_id": "HET_S4_03_LOW_N8_O24",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5723048227301729,
+            "lineage": "HET_S4_03",
+            "origin": 25,
+            "record_id": "HET_S4_03_LOW_N8_O25",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5643329011824354,
+            "lineage": "HET_S4_03",
+            "origin": 26,
+            "record_id": "HET_S4_03_LOW_N8_O26",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5562735301884935,
+            "lineage": "HET_S4_03",
+            "origin": 27,
+            "record_id": "HET_S4_03_LOW_N8_O27",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5481804025590373,
+            "lineage": "HET_S4_03",
+            "origin": 28,
+            "record_id": "HET_S4_03_LOW_N8_O28",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5401515888186488,
+            "lineage": "HET_S4_03",
+            "origin": 29,
+            "record_id": "HET_S4_03_LOW_N8_O29",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5322006417648422,
+            "lineage": "HET_S4_03",
+            "origin": 30,
+            "record_id": "HET_S4_03_LOW_N8_O30",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5244405046877131,
+            "lineage": "HET_S4_03",
+            "origin": 31,
+            "record_id": "HET_S4_03_LOW_N8_O31",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.850902725679958,
+            "lineage": "HET_S4_03",
+            "origin": 0,
+            "record_id": "HET_S4_03_MAIN_N8_O00",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8563629003114416,
+            "lineage": "HET_S4_03",
+            "origin": 1,
+            "record_id": "HET_S4_03_MAIN_N8_O01",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8611026793026236,
+            "lineage": "HET_S4_03",
+            "origin": 2,
+            "record_id": "HET_S4_03_MAIN_N8_O02",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8650543743644459,
+            "lineage": "HET_S4_03",
+            "origin": 3,
+            "record_id": "HET_S4_03_MAIN_N8_O03",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8682047586973517,
+            "lineage": "HET_S4_03",
+            "origin": 4,
+            "record_id": "HET_S4_03_MAIN_N8_O04",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8705625337036584,
+            "lineage": "HET_S4_03",
+            "origin": 5,
+            "record_id": "HET_S4_03_MAIN_N8_O05",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8720823116012285,
+            "lineage": "HET_S4_03",
+            "origin": 6,
+            "record_id": "HET_S4_03_MAIN_N8_O06",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8728368668935311,
+            "lineage": "HET_S4_03",
+            "origin": 7,
+            "record_id": "HET_S4_03_MAIN_N8_O07",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8727350399158994,
+            "lineage": "HET_S4_03",
+            "origin": 8,
+            "record_id": "HET_S4_03_MAIN_N8_O08",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8717257726513863,
+            "lineage": "HET_S4_03",
+            "origin": 9,
+            "record_id": "HET_S4_03_MAIN_N8_O09",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8699917990171064,
+            "lineage": "HET_S4_03",
+            "origin": 10,
+            "record_id": "HET_S4_03_MAIN_N8_O10",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8673911615481575,
+            "lineage": "HET_S4_03",
+            "origin": 11,
+            "record_id": "HET_S4_03_MAIN_N8_O11",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8640462565371315,
+            "lineage": "HET_S4_03",
+            "origin": 12,
+            "record_id": "HET_S4_03_MAIN_N8_O12",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8599531777054649,
+            "lineage": "HET_S4_03",
+            "origin": 13,
+            "record_id": "HET_S4_03_MAIN_N8_O13",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8551680336598572,
+            "lineage": "HET_S4_03",
+            "origin": 14,
+            "record_id": "HET_S4_03_MAIN_N8_O14",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.849660985702889,
+            "lineage": "HET_S4_03",
+            "origin": 15,
+            "record_id": "HET_S4_03_MAIN_N8_O15",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8434751909757765,
+            "lineage": "HET_S4_03",
+            "origin": 16,
+            "record_id": "HET_S4_03_MAIN_N8_O16",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8366462525188655,
+            "lineage": "HET_S4_03",
+            "origin": 17,
+            "record_id": "HET_S4_03_MAIN_N8_O17",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8292385468756347,
+            "lineage": "HET_S4_03",
+            "origin": 18,
+            "record_id": "HET_S4_03_MAIN_N8_O18",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8212690413192245,
+            "lineage": "HET_S4_03",
+            "origin": 19,
+            "record_id": "HET_S4_03_MAIN_N8_O19",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8127622567743065,
+            "lineage": "HET_S4_03",
+            "origin": 20,
+            "record_id": "HET_S4_03_MAIN_N8_O20",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8037728825821135,
+            "lineage": "HET_S4_03",
+            "origin": 21,
+            "record_id": "HET_S4_03_MAIN_N8_O21",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7943065216371868,
+            "lineage": "HET_S4_03",
+            "origin": 22,
+            "record_id": "HET_S4_03_MAIN_N8_O22",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7844686530775341,
+            "lineage": "HET_S4_03",
+            "origin": 23,
+            "record_id": "HET_S4_03_MAIN_N8_O23",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7743396777315957,
+            "lineage": "HET_S4_03",
+            "origin": 24,
+            "record_id": "HET_S4_03_MAIN_N8_O24",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7639957240629356,
+            "lineage": "HET_S4_03",
+            "origin": 25,
+            "record_id": "HET_S4_03_MAIN_N8_O25",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.753411279727053,
+            "lineage": "HET_S4_03",
+            "origin": 26,
+            "record_id": "HET_S4_03_MAIN_N8_O26",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7427080941349102,
+            "lineage": "HET_S4_03",
+            "origin": 27,
+            "record_id": "HET_S4_03_MAIN_N8_O27",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7319568050315146,
+            "lineage": "HET_S4_03",
+            "origin": 28,
+            "record_id": "HET_S4_03_MAIN_N8_O28",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7212893380261512,
+            "lineage": "HET_S4_03",
+            "origin": 29,
+            "record_id": "HET_S4_03_MAIN_N8_O29",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7107240900244123,
+            "lineage": "HET_S4_03",
+            "origin": 30,
+            "record_id": "HET_S4_03_MAIN_N8_O30",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7004101053435636,
+            "lineage": "HET_S4_03",
+            "origin": 31,
+            "record_id": "HET_S4_03_MAIN_N8_O31",
+            "variant": "MAIN"
+          }
+        ]
+      }
+    }
+  },
+  "terminal": {
+    "global": {
+      "Q_def": 1.7645939144599199,
+      "maximum": {
+        "Q_def": 3.9955379849816812,
+        "record_id": "HET_S2_02_MAIN_N8_O15"
+      },
+      "median": 0.43615324350872775,
+      "origin_count": 256,
+      "p90": 3.797704784538575,
+      "raw_acceleration_RMSE": 3.044769116170599,
+      "relative_reduction": 0.14387795717273832,
+      "zero_correction_raw_RMSE": 3.5564662090880623
+    },
+    "lineages": {
+      "HET_S1_01": {
+        "LOW": {
+          "Q_def": 0.12490446413302644,
+          "maximum": {
+            "Q_def": 0.22068602251705202,
+            "record_id": "HET_S1_01_LOW_N8_O00"
+          },
+          "median": 0.09994497700409735,
+          "origin_count": 32,
+          "p90": 0.19654501362882246,
+          "raw_acceleration_RMSE": 0.21551998550356288,
+          "relative_reduction": -0.7384680227361446,
+          "zero_correction_raw_RMSE": 0.12397121067798517
+        },
+        "MAIN": {
+          "Q_def": 0.16658028753551551,
+          "maximum": {
+            "Q_def": 0.29438380904442824,
+            "record_id": "HET_S1_01_MAIN_N8_O00"
+          },
+          "median": 0.13326205639276514,
+          "origin_count": 32,
+          "p90": 0.26215369155586377,
+          "raw_acceleration_RMSE": 0.28743072878962717,
+          "relative_reduction": -0.7388476700172988,
+          "zero_correction_raw_RMSE": 0.1652995450640985
+        },
+        "all": {
+          "Q_def": 0.14722451792377098,
+          "maximum": {
+            "Q_def": 0.29438380904442824,
+            "record_id": "HET_S1_01_MAIN_N8_O00"
+          },
+          "median": 0.114813603061891,
+          "origin_count": 64,
+          "p90": 0.22870404044829626,
+          "raw_acceleration_RMSE": 0.2540327616706083,
+          "relative_reduction": -0.7387110114112401,
+          "zero_correction_raw_RMSE": 0.14610407365190628
+        },
+        "origins": [
+          {
+            "Q_def": 0.22068602251705202,
+            "lineage": "HET_S1_01",
+            "origin": 0,
+            "record_id": "HET_S1_01_LOW_N8_O00",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.21291801090223733,
+            "lineage": "HET_S1_01",
+            "origin": 1,
+            "record_id": "HET_S1_01_LOW_N8_O01",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.2051316459135374,
+            "lineage": "HET_S1_01",
+            "origin": 2,
+            "record_id": "HET_S1_01_LOW_N8_O02",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.19732695148856522,
+            "lineage": "HET_S1_01",
+            "origin": 3,
+            "record_id": "HET_S1_01_LOW_N8_O03",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.18950757289113745,
+            "lineage": "HET_S1_01",
+            "origin": 4,
+            "record_id": "HET_S1_01_LOW_N8_O04",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.18167668043349117,
+            "lineage": "HET_S1_01",
+            "origin": 5,
+            "record_id": "HET_S1_01_LOW_N8_O05",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.17383716259119325,
+            "lineage": "HET_S1_01",
+            "origin": 6,
+            "record_id": "HET_S1_01_LOW_N8_O06",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.16599308513296643,
+            "lineage": "HET_S1_01",
+            "origin": 7,
+            "record_id": "HET_S1_01_LOW_N8_O07",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.15814817878232362,
+            "lineage": "HET_S1_01",
+            "origin": 8,
+            "record_id": "HET_S1_01_LOW_N8_O08",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.15030721185562385,
+            "lineage": "HET_S1_01",
+            "origin": 9,
+            "record_id": "HET_S1_01_LOW_N8_O09",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.14247568251813564,
+            "lineage": "HET_S1_01",
+            "origin": 10,
+            "record_id": "HET_S1_01_LOW_N8_O10",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.13465969396981187,
+            "lineage": "HET_S1_01",
+            "origin": 11,
+            "record_id": "HET_S1_01_LOW_N8_O11",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.12686698130788457,
+            "lineage": "HET_S1_01",
+            "origin": 12,
+            "record_id": "HET_S1_01_LOW_N8_O12",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.11910675698876834,
+            "lineage": "HET_S1_01",
+            "origin": 13,
+            "record_id": "HET_S1_01_LOW_N8_O13",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.11139099257847297,
+            "lineage": "HET_S1_01",
+            "origin": 14,
+            "record_id": "HET_S1_01_LOW_N8_O14",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.1037343180774246,
+            "lineage": "HET_S1_01",
+            "origin": 15,
+            "record_id": "HET_S1_01_LOW_N8_O15",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.09615563593077012,
+            "lineage": "HET_S1_01",
+            "origin": 16,
+            "record_id": "HET_S1_01_LOW_N8_O16",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.08867939782181246,
+            "lineage": "HET_S1_01",
+            "origin": 17,
+            "record_id": "HET_S1_01_LOW_N8_O17",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.0813398548423493,
+            "lineage": "HET_S1_01",
+            "origin": 18,
+            "record_id": "HET_S1_01_LOW_N8_O18",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.07418082372363577,
+            "lineage": "HET_S1_01",
+            "origin": 19,
+            "record_id": "HET_S1_01_LOW_N8_O19",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.06726527689213839,
+            "lineage": "HET_S1_01",
+            "origin": 20,
+            "record_id": "HET_S1_01_LOW_N8_O20",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.060680649224667725,
+            "lineage": "HET_S1_01",
+            "origin": 21,
+            "record_id": "HET_S1_01_LOW_N8_O21",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.05454903755288928,
+            "lineage": "HET_S1_01",
+            "origin": 22,
+            "record_id": "HET_S1_01_LOW_N8_O22",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.04904637495785387,
+            "lineage": "HET_S1_01",
+            "origin": 23,
+            "record_id": "HET_S1_01_LOW_N8_O23",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.044410314431426776,
+            "lineage": "HET_S1_01",
+            "origin": 24,
+            "record_id": "HET_S1_01_LOW_N8_O24",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.040941478216302014,
+            "lineage": "HET_S1_01",
+            "origin": 25,
+            "record_id": "HET_S1_01_LOW_N8_O25",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.03895396554631652,
+            "lineage": "HET_S1_01",
+            "origin": 26,
+            "record_id": "HET_S1_01_LOW_N8_O26",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.03867995837725571,
+            "lineage": "HET_S1_01",
+            "origin": 27,
+            "record_id": "HET_S1_01_LOW_N8_O27",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.040155774366595356,
+            "lineage": "HET_S1_01",
+            "origin": 28,
+            "record_id": "HET_S1_01_LOW_N8_O28",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.043204211287713845,
+            "lineage": "HET_S1_01",
+            "origin": 29,
+            "record_id": "HET_S1_01_LOW_N8_O29",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.04752290643970522,
+            "lineage": "HET_S1_01",
+            "origin": 30,
+            "record_id": "HET_S1_01_LOW_N8_O30",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.05279827412840067,
+            "lineage": "HET_S1_01",
+            "origin": 31,
+            "record_id": "HET_S1_01_LOW_N8_O31",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.29438380904442824,
+            "lineage": "HET_S1_01",
+            "origin": 0,
+            "record_id": "HET_S1_01_MAIN_N8_O00",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.2840118261991117,
+            "lineage": "HET_S1_01",
+            "origin": 1,
+            "record_id": "HET_S1_01_MAIN_N8_O01",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.27361660381293906,
+            "lineage": "HET_S1_01",
+            "origin": 2,
+            "record_id": "HET_S1_01_MAIN_N8_O02",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.26319747380425784,
+            "lineage": "HET_S1_01",
+            "origin": 3,
+            "record_id": "HET_S1_01_MAIN_N8_O03",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.2527596513203169,
+            "lineage": "HET_S1_01",
+            "origin": 4,
+            "record_id": "HET_S1_01_MAIN_N8_O04",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.24230737674968433,
+            "lineage": "HET_S1_01",
+            "origin": 5,
+            "record_id": "HET_S1_01_MAIN_N8_O05",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.23184446344676513,
+            "lineage": "HET_S1_01",
+            "origin": 6,
+            "record_id": "HET_S1_01_MAIN_N8_O06",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.2213763867852021,
+            "lineage": "HET_S1_01",
+            "origin": 7,
+            "record_id": "HET_S1_01_MAIN_N8_O07",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.21090789715540967,
+            "lineage": "HET_S1_01",
+            "origin": 8,
+            "record_id": "HET_S1_01_MAIN_N8_O08",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.20044567885586262,
+            "lineage": "HET_S1_01",
+            "origin": 9,
+            "record_id": "HET_S1_01_MAIN_N8_O09",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.18999676903263366,
+            "lineage": "HET_S1_01",
+            "origin": 10,
+            "record_id": "HET_S1_01_MAIN_N8_O10",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.17956925421231115,
+            "lineage": "HET_S1_01",
+            "origin": 11,
+            "record_id": "HET_S1_01_MAIN_N8_O11",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.16917328638964615,
+            "lineage": "HET_S1_01",
+            "origin": 12,
+            "record_id": "HET_S1_01_MAIN_N8_O12",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.1588212469084574,
+            "lineage": "HET_S1_01",
+            "origin": 13,
+            "record_id": "HET_S1_01_MAIN_N8_O13",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.1485291293350188,
+            "lineage": "HET_S1_01",
+            "origin": 14,
+            "record_id": "HET_S1_01_MAIN_N8_O14",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.13831628685036904,
+            "lineage": "HET_S1_01",
+            "origin": 15,
+            "record_id": "HET_S1_01_MAIN_N8_O15",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.12820782593516125,
+            "lineage": "HET_S1_01",
+            "origin": 16,
+            "record_id": "HET_S1_01_MAIN_N8_O16",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.11823621354530905,
+            "lineage": "HET_S1_01",
+            "origin": 17,
+            "record_id": "HET_S1_01_MAIN_N8_O17",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.10844746479007895,
+            "lineage": "HET_S1_01",
+            "origin": 18,
+            "record_id": "HET_S1_01_MAIN_N8_O18",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.09889954232868207,
+            "lineage": "HET_S1_01",
+            "origin": 19,
+            "record_id": "HET_S1_01_MAIN_N8_O19",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.08967669019579216,
+            "lineage": "HET_S1_01",
+            "origin": 20,
+            "record_id": "HET_S1_01_MAIN_N8_O20",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.0808953872678738,
+            "lineage": "HET_S1_01",
+            "origin": 21,
+            "record_id": "HET_S1_01_MAIN_N8_O21",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.0727178075598767,
+            "lineage": "HET_S1_01",
+            "origin": 22,
+            "record_id": "HET_S1_01_MAIN_N8_O22",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.0653790594635787,
+            "lineage": "HET_S1_01",
+            "origin": 23,
+            "record_id": "HET_S1_01_MAIN_N8_O23",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.05919611765185718,
+            "lineage": "HET_S1_01",
+            "origin": 24,
+            "record_id": "HET_S1_01_MAIN_N8_O24",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.05457053190761985,
+            "lineage": "HET_S1_01",
+            "origin": 25,
+            "record_id": "HET_S1_01_MAIN_N8_O25",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.05192151390639331,
+            "lineage": "HET_S1_01",
+            "origin": 26,
+            "record_id": "HET_S1_01_MAIN_N8_O26",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.05155981131674854,
+            "lineage": "HET_S1_01",
+            "origin": 27,
+            "record_id": "HET_S1_01_MAIN_N8_O27",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.0535337927741103,
+            "lineage": "HET_S1_01",
+            "origin": 28,
+            "record_id": "HET_S1_01_MAIN_N8_O28",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.057607288253745524,
+            "lineage": "HET_S1_01",
+            "origin": 29,
+            "record_id": "HET_S1_01_MAIN_N8_O29",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.0633763578634435,
+            "lineage": "HET_S1_01",
+            "origin": 30,
+            "record_id": "HET_S1_01_MAIN_N8_O30",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.0704222382254087,
+            "lineage": "HET_S1_01",
+            "origin": 31,
+            "record_id": "HET_S1_01_MAIN_N8_O31",
+            "variant": "MAIN"
+          }
+        ]
+      },
+      "HET_S2_02": {
+        "LOW": {
+          "Q_def": 2.92005782307798,
+          "maximum": {
+            "Q_def": 2.994432599671686,
+            "record_id": "HET_S2_02_LOW_N8_O15"
+          },
+          "median": 2.938002856755835,
+          "origin_count": 32,
+          "p90": 2.9913387089614765,
+          "raw_acceleration_RMSE": 5.038497415345204,
+          "relative_reduction": 0.13625528522536312,
+          "zero_correction_raw_RMSE": 5.833317795362509
+        },
+        "MAIN": {
+          "Q_def": 3.8962584386486387,
+          "maximum": {
+            "Q_def": 3.9955379849816812,
+            "record_id": "HET_S2_02_MAIN_N8_O15"
+          },
+          "median": 3.9201997357721137,
+          "origin_count": 32,
+          "p90": 3.991359407968988,
+          "raw_acceleration_RMSE": 6.722910730567358,
+          "relative_reduction": 0.13603134571620445,
+          "zero_correction_raw_RMSE": 7.781428987305625
+        },
+        "all": {
+          "Q_def": 3.442932435501722,
+          "maximum": {
+            "Q_def": 3.9955379849816812,
+            "record_id": "HET_S2_02_MAIN_N8_O15"
+          },
+          "median": 3.3434165183968028,
+          "origin_count": 64,
+          "p90": 3.9821281832373328,
+          "raw_acceleration_RMSE": 5.940706392998144,
+          "relative_reduction": 0.13611190855456157,
+          "zero_correction_raw_RMSE": 6.876708281807989
+        },
+        "origins": [
+          {
+            "Q_def": 2.801506155569704,
+            "lineage": "HET_S2_02",
+            "origin": 0,
+            "record_id": "HET_S2_02_LOW_N8_O00",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.826392050783341,
+            "lineage": "HET_S2_02",
+            "origin": 1,
+            "record_id": "HET_S2_02_LOW_N8_O01",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.8496073869698013,
+            "lineage": "HET_S2_02",
+            "origin": 2,
+            "record_id": "HET_S2_02_LOW_N8_O02",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.8711380093378454,
+            "lineage": "HET_S2_02",
+            "origin": 3,
+            "record_id": "HET_S2_02_LOW_N8_O03",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.890970870664405,
+            "lineage": "HET_S2_02",
+            "origin": 4,
+            "record_id": "HET_S2_02_LOW_N8_O04",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.9090940020851854,
+            "lineage": "HET_S2_02",
+            "origin": 5,
+            "record_id": "HET_S2_02_LOW_N8_O05",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.9254965039436134,
+            "lineage": "HET_S2_02",
+            "origin": 6,
+            "record_id": "HET_S2_02_LOW_N8_O06",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.940168555543417,
+            "lineage": "HET_S2_02",
+            "origin": 7,
+            "record_id": "HET_S2_02_LOW_N8_O07",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.9531014418349844,
+            "lineage": "HET_S2_02",
+            "origin": 8,
+            "record_id": "HET_S2_02_LOW_N8_O08",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.964287527007159,
+            "lineage": "HET_S2_02",
+            "origin": 9,
+            "record_id": "HET_S2_02_LOW_N8_O09",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.9737202721188405,
+            "lineage": "HET_S2_02",
+            "origin": 10,
+            "record_id": "HET_S2_02_LOW_N8_O10",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.981394258598891,
+            "lineage": "HET_S2_02",
+            "origin": 11,
+            "record_id": "HET_S2_02_LOW_N8_O11",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.987305166476891,
+            "lineage": "HET_S2_02",
+            "origin": 12,
+            "record_id": "HET_S2_02_LOW_N8_O12",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.9914497466744745,
+            "lineage": "HET_S2_02",
+            "origin": 13,
+            "record_id": "HET_S2_02_LOW_N8_O13",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.99382588935212,
+            "lineage": "HET_S2_02",
+            "origin": 14,
+            "record_id": "HET_S2_02_LOW_N8_O14",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.994432599671686,
+            "lineage": "HET_S2_02",
+            "origin": 15,
+            "record_id": "HET_S2_02_LOW_N8_O15",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.993270005443842,
+            "lineage": "HET_S2_02",
+            "origin": 16,
+            "record_id": "HET_S2_02_LOW_N8_O16",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.9903393695444924,
+            "lineage": "HET_S2_02",
+            "origin": 17,
+            "record_id": "HET_S2_02_LOW_N8_O17",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.9856430263531917,
+            "lineage": "HET_S2_02",
+            "origin": 18,
+            "record_id": "HET_S2_02_LOW_N8_O18",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.979184509357211,
+            "lineage": "HET_S2_02",
+            "origin": 19,
+            "record_id": "HET_S2_02_LOW_N8_O19",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.970968739644916,
+            "lineage": "HET_S2_02",
+            "origin": 20,
+            "record_id": "HET_S2_02_LOW_N8_O20",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.9610004720767393,
+            "lineage": "HET_S2_02",
+            "origin": 21,
+            "record_id": "HET_S2_02_LOW_N8_O21",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.949287434142812,
+            "lineage": "HET_S2_02",
+            "origin": 22,
+            "record_id": "HET_S2_02_LOW_N8_O22",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.935837157968254,
+            "lineage": "HET_S2_02",
+            "origin": 23,
+            "record_id": "HET_S2_02_LOW_N8_O23",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.9206581979007775,
+            "lineage": "HET_S2_02",
+            "origin": 24,
+            "record_id": "HET_S2_02_LOW_N8_O24",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.9037619476816503,
+            "lineage": "HET_S2_02",
+            "origin": 25,
+            "record_id": "HET_S2_02_LOW_N8_O25",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.885158878959829,
+            "lineage": "HET_S2_02",
+            "origin": 26,
+            "record_id": "HET_S2_02_LOW_N8_O26",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.864861268469373,
+            "lineage": "HET_S2_02",
+            "origin": 27,
+            "record_id": "HET_S2_02_LOW_N8_O27",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.8428849949278563,
+            "lineage": "HET_S2_02",
+            "origin": 28,
+            "record_id": "HET_S2_02_LOW_N8_O28",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.8192429566132082,
+            "lineage": "HET_S2_02",
+            "origin": 29,
+            "record_id": "HET_S2_02_LOW_N8_O29",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.7939518145711877,
+            "lineage": "HET_S2_02",
+            "origin": 30,
+            "record_id": "HET_S2_02_LOW_N8_O30",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 2.7670284989979463,
+            "lineage": "HET_S2_02",
+            "origin": 31,
+            "record_id": "HET_S2_02_LOW_N8_O31",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.7375627990729656,
+            "lineage": "HET_S2_02",
+            "origin": 0,
+            "record_id": "HET_S2_02_MAIN_N8_O00",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.77080726484119,
+            "lineage": "HET_S2_02",
+            "origin": 1,
+            "record_id": "HET_S2_02_MAIN_N8_O01",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.801822988606808,
+            "lineage": "HET_S2_02",
+            "origin": 2,
+            "record_id": "HET_S2_02_MAIN_N8_O02",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.8305910436215282,
+            "lineage": "HET_S2_02",
+            "origin": 3,
+            "record_id": "HET_S2_02_MAIN_N8_O03",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.8570937994513663,
+            "lineage": "HET_S2_02",
+            "origin": 4,
+            "record_id": "HET_S2_02_MAIN_N8_O04",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.88131510638959,
+            "lineage": "HET_S2_02",
+            "origin": 5,
+            "record_id": "HET_S2_02_MAIN_N8_O05",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.903240267629754,
+            "lineage": "HET_S2_02",
+            "origin": 6,
+            "record_id": "HET_S2_02_MAIN_N8_O06",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.9228560272299076,
+            "lineage": "HET_S2_02",
+            "origin": 7,
+            "record_id": "HET_S2_02_MAIN_N8_O07",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.94015059378369,
+            "lineage": "HET_S2_02",
+            "origin": 8,
+            "record_id": "HET_S2_02_MAIN_N8_O08",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.9551136382802476,
+            "lineage": "HET_S2_02",
+            "origin": 9,
+            "record_id": "HET_S2_02_MAIN_N8_O09",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.9677363042834837,
+            "lineage": "HET_S2_02",
+            "origin": 10,
+            "record_id": "HET_S2_02_MAIN_N8_O10",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.9780112148342264,
+            "lineage": "HET_S2_02",
+            "origin": 11,
+            "record_id": "HET_S2_02_MAIN_N8_O11",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.9859324777904406,
+            "lineage": "HET_S2_02",
+            "origin": 12,
+            "record_id": "HET_S2_02_MAIN_N8_O12",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.9914956871705587,
+            "lineage": "HET_S2_02",
+            "origin": 13,
+            "record_id": "HET_S2_02_MAIN_N8_O13",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.99469800859303,
+            "lineage": "HET_S2_02",
+            "origin": 14,
+            "record_id": "HET_S2_02_MAIN_N8_O14",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.9955379849816812,
+            "lineage": "HET_S2_02",
+            "origin": 15,
+            "record_id": "HET_S2_02_MAIN_N8_O15",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.9940157352572916,
+            "lineage": "HET_S2_02",
+            "origin": 16,
+            "record_id": "HET_S2_02_MAIN_N8_O16",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.990132895154853,
+            "lineage": "HET_S2_02",
+            "origin": 17,
+            "record_id": "HET_S2_02_MAIN_N8_O17",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.9838925982672357,
+            "lineage": "HET_S2_02",
+            "origin": 18,
+            "record_id": "HET_S2_02_MAIN_N8_O18",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.9752996620371785,
+            "lineage": "HET_S2_02",
+            "origin": 19,
+            "record_id": "HET_S2_02_MAIN_N8_O19",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.96436014790609,
+            "lineage": "HET_S2_02",
+            "origin": 20,
+            "record_id": "HET_S2_02_MAIN_N8_O20",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.9510807124050586,
+            "lineage": "HET_S2_02",
+            "origin": 21,
+            "record_id": "HET_S2_02_MAIN_N8_O21",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.935472020990812,
+            "lineage": "HET_S2_02",
+            "origin": 22,
+            "record_id": "HET_S2_02_MAIN_N8_O22",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.91754344431432,
+            "lineage": "HET_S2_02",
+            "origin": 23,
+            "record_id": "HET_S2_02_MAIN_N8_O23",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.897306463977496,
+            "lineage": "HET_S2_02",
+            "origin": 24,
+            "record_id": "HET_S2_02_MAIN_N8_O24",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.8747769837796446,
+            "lineage": "HET_S2_02",
+            "origin": 25,
+            "record_id": "HET_S2_02_MAIN_N8_O25",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.849968447315828,
+            "lineage": "HET_S2_02",
+            "origin": 26,
+            "record_id": "HET_S2_02_MAIN_N8_O26",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.8228977244591427,
+            "lineage": "HET_S2_02",
+            "origin": 27,
+            "record_id": "HET_S2_02_MAIN_N8_O27",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.7935865804703424,
+            "lineage": "HET_S2_02",
+            "origin": 28,
+            "record_id": "HET_S2_02_MAIN_N8_O28",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.762051834715212,
+            "lineage": "HET_S2_02",
+            "origin": 29,
+            "record_id": "HET_S2_02_MAIN_N8_O29",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.728315424034236,
+            "lineage": "HET_S2_02",
+            "origin": 30,
+            "record_id": "HET_S2_02_MAIN_N8_O30",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 3.6924004371219197,
+            "lineage": "HET_S2_02",
+            "origin": 31,
+            "record_id": "HET_S2_02_MAIN_N8_O31",
+            "variant": "MAIN"
+          }
+        ]
+      },
+      "HET_S3_03": {
+        "LOW": {
+          "Q_def": 0.19961664449516878,
+          "maximum": {
+            "Q_def": 0.2672853624079851,
+            "record_id": "HET_S3_03_LOW_N8_O00"
+          },
+          "median": 0.19675515924309275,
+          "origin_count": 32,
+          "p90": 0.2581918438933126,
+          "raw_acceleration_RMSE": 0.3444342572259849,
+          "relative_reduction": 0.5558397476078072,
+          "zero_correction_raw_RMSE": 0.7754729410632856
+        },
+        "MAIN": {
+          "Q_def": 0.266560615594926,
+          "maximum": {
+            "Q_def": 0.3571302653523986,
+            "record_id": "HET_S3_03_MAIN_N8_O00"
+          },
+          "median": 0.2627507290803835,
+          "origin_count": 32,
+          "p90": 0.34498572083013235,
+          "raw_acceleration_RMSE": 0.4599446497577095,
+          "relative_reduction": 0.5552469863972453,
+          "zero_correction_raw_RMSE": 1.0341574664821132
+        },
+        "all": {
+          "Q_def": 0.23547968760155988,
+          "maximum": {
+            "Q_def": 0.3571302653523986,
+            "record_id": "HET_S3_03_MAIN_N8_O00"
+          },
+          "median": 0.22373251822051926,
+          "origin_count": 64,
+          "p90": 0.32846018954869965,
+          "raw_acceleration_RMSE": 0.40631517224413244,
+          "relative_reduction": 0.5554602382663523,
+          "zero_correction_raw_RMSE": 0.9140131147314149
+        },
+        "origins": [
+          {
+            "Q_def": 0.2672853624079851,
+            "lineage": "HET_S3_03",
+            "origin": 0,
+            "record_id": "HET_S3_03_LOW_N8_O00",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.2646844351467799,
+            "lineage": "HET_S3_03",
+            "origin": 1,
+            "record_id": "HET_S3_03_LOW_N8_O01",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.2617606647503631,
+            "lineage": "HET_S3_03",
+            "origin": 2,
+            "record_id": "HET_S3_03_LOW_N8_O02",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.25854477439371937,
+            "lineage": "HET_S3_03",
+            "origin": 3,
+            "record_id": "HET_S3_03_LOW_N8_O03",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.255015469389652,
+            "lineage": "HET_S3_03",
+            "origin": 4,
+            "record_id": "HET_S3_03_LOW_N8_O04",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.2512193228350738,
+            "lineage": "HET_S3_03",
+            "origin": 5,
+            "record_id": "HET_S3_03_LOW_N8_O05",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.24713703555392924,
+            "lineage": "HET_S3_03",
+            "origin": 6,
+            "record_id": "HET_S3_03_LOW_N8_O06",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.24279021861560596,
+            "lineage": "HET_S3_03",
+            "origin": 7,
+            "record_id": "HET_S3_03_LOW_N8_O07",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.2381833208035867,
+            "lineage": "HET_S3_03",
+            "origin": 8,
+            "record_id": "HET_S3_03_LOW_N8_O08",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.2333387523528721,
+            "lineage": "HET_S3_03",
+            "origin": 9,
+            "record_id": "HET_S3_03_LOW_N8_O09",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.22825282473116287,
+            "lineage": "HET_S3_03",
+            "origin": 10,
+            "record_id": "HET_S3_03_LOW_N8_O10",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.22295027424238453,
+            "lineage": "HET_S3_03",
+            "origin": 11,
+            "record_id": "HET_S3_03_LOW_N8_O11",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.21743162371615712,
+            "lineage": "HET_S3_03",
+            "origin": 12,
+            "record_id": "HET_S3_03_LOW_N8_O12",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.21173602719530094,
+            "lineage": "HET_S3_03",
+            "origin": 13,
+            "record_id": "HET_S3_03_LOW_N8_O13",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.20586019489939722,
+            "lineage": "HET_S3_03",
+            "origin": 14,
+            "record_id": "HET_S3_03_LOW_N8_O14",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.19983382402607242,
+            "lineage": "HET_S3_03",
+            "origin": 15,
+            "record_id": "HET_S3_03_LOW_N8_O15",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.1936764944601131,
+            "lineage": "HET_S3_03",
+            "origin": 16,
+            "record_id": "HET_S3_03_LOW_N8_O16",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.18740851083534346,
+            "lineage": "HET_S3_03",
+            "origin": 17,
+            "record_id": "HET_S3_03_LOW_N8_O17",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.1810621956824517,
+            "lineage": "HET_S3_03",
+            "origin": 18,
+            "record_id": "HET_S3_03_LOW_N8_O18",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.17466583124792534,
+            "lineage": "HET_S3_03",
+            "origin": 19,
+            "record_id": "HET_S3_03_LOW_N8_O19",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.16824176444121758,
+            "lineage": "HET_S3_03",
+            "origin": 20,
+            "record_id": "HET_S3_03_LOW_N8_O20",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.16183113481634864,
+            "lineage": "HET_S3_03",
+            "origin": 21,
+            "record_id": "HET_S3_03_LOW_N8_O21",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.15546737733938046,
+            "lineage": "HET_S3_03",
+            "origin": 22,
+            "record_id": "HET_S3_03_LOW_N8_O22",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.1492047371518172,
+            "lineage": "HET_S3_03",
+            "origin": 23,
+            "record_id": "HET_S3_03_LOW_N8_O23",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.14308655663999684,
+            "lineage": "HET_S3_03",
+            "origin": 24,
+            "record_id": "HET_S3_03_LOW_N8_O24",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.13717489453057277,
+            "lineage": "HET_S3_03",
+            "origin": 25,
+            "record_id": "HET_S3_03_LOW_N8_O25",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.13153227161446243,
+            "lineage": "HET_S3_03",
+            "origin": 26,
+            "record_id": "HET_S3_03_LOW_N8_O26",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.12622477282088992,
+            "lineage": "HET_S3_03",
+            "origin": 27,
+            "record_id": "HET_S3_03_LOW_N8_O27",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.12133338243269035,
+            "lineage": "HET_S3_03",
+            "origin": 28,
+            "record_id": "HET_S3_03_LOW_N8_O28",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.11693743953499175,
+            "lineage": "HET_S3_03",
+            "origin": 29,
+            "record_id": "HET_S3_03_LOW_N8_O29",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.11312284278392505,
+            "lineage": "HET_S3_03",
+            "origin": 30,
+            "record_id": "HET_S3_03_LOW_N8_O30",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.10997008981254139,
+            "lineage": "HET_S3_03",
+            "origin": 31,
+            "record_id": "HET_S3_03_LOW_N8_O31",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.3571302653523986,
+            "lineage": "HET_S3_03",
+            "origin": 0,
+            "record_id": "HET_S3_03_MAIN_N8_O00",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.3536603584325408,
+            "lineage": "HET_S3_03",
+            "origin": 1,
+            "record_id": "HET_S3_03_MAIN_N8_O01",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.34975380455118615,
+            "lineage": "HET_S3_03",
+            "origin": 2,
+            "record_id": "HET_S3_03_MAIN_N8_O02",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.3454579467432239,
+            "lineage": "HET_S3_03",
+            "origin": 3,
+            "record_id": "HET_S3_03_MAIN_N8_O03",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.34073568761230827,
+            "lineage": "HET_S3_03",
+            "origin": 4,
+            "record_id": "HET_S3_03_MAIN_N8_O04",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.3356631524824269,
+            "lineage": "HET_S3_03",
+            "origin": 5,
+            "record_id": "HET_S3_03_MAIN_N8_O05",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.33020422455176685,
+            "lineage": "HET_S3_03",
+            "origin": 6,
+            "record_id": "HET_S3_03_MAIN_N8_O06",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.3243907745415428,
+            "lineage": "HET_S3_03",
+            "origin": 7,
+            "record_id": "HET_S3_03_MAIN_N8_O07",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.3182275895909457,
+            "lineage": "HET_S3_03",
+            "origin": 8,
+            "record_id": "HET_S3_03_MAIN_N8_O08",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.3117480772652455,
+            "lineage": "HET_S3_03",
+            "origin": 9,
+            "record_id": "HET_S3_03_MAIN_N8_O09",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.3049409635522002,
+            "lineage": "HET_S3_03",
+            "origin": 10,
+            "record_id": "HET_S3_03_MAIN_N8_O10",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.29784402224310613,
+            "lineage": "HET_S3_03",
+            "origin": 11,
+            "record_id": "HET_S3_03_MAIN_N8_O11",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.2904516049955153,
+            "lineage": "HET_S3_03",
+            "origin": 12,
+            "record_id": "HET_S3_03_MAIN_N8_O12",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.2828252640446426,
+            "lineage": "HET_S3_03",
+            "origin": 13,
+            "record_id": "HET_S3_03_MAIN_N8_O13",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.2749527129923605,
+            "lineage": "HET_S3_03",
+            "origin": 14,
+            "record_id": "HET_S3_03_MAIN_N8_O14",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.2668776395912183,
+            "lineage": "HET_S3_03",
+            "origin": 15,
+            "record_id": "HET_S3_03_MAIN_N8_O15",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.2586238185695487,
+            "lineage": "HET_S3_03",
+            "origin": 16,
+            "record_id": "HET_S3_03_MAIN_N8_O16",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.25021967036174037,
+            "lineage": "HET_S3_03",
+            "origin": 17,
+            "record_id": "HET_S3_03_MAIN_N8_O17",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.2417105313039368,
+            "lineage": "HET_S3_03",
+            "origin": 18,
+            "record_id": "HET_S3_03_MAIN_N8_O18",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.2331323709880355,
+            "lineage": "HET_S3_03",
+            "origin": 19,
+            "record_id": "HET_S3_03_MAIN_N8_O19",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.224514762198654,
+            "lineage": "HET_S3_03",
+            "origin": 20,
+            "record_id": "HET_S3_03_MAIN_N8_O20",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.21591416516650025,
+            "lineage": "HET_S3_03",
+            "origin": 21,
+            "record_id": "HET_S3_03_MAIN_N8_O21",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.20737193290423794,
+            "lineage": "HET_S3_03",
+            "origin": 22,
+            "record_id": "HET_S3_03_MAIN_N8_O22",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.19896455848569822,
+            "lineage": "HET_S3_03",
+            "origin": 23,
+            "record_id": "HET_S3_03_MAIN_N8_O23",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.1907505688910647,
+            "lineage": "HET_S3_03",
+            "origin": 24,
+            "record_id": "HET_S3_03_MAIN_N8_O24",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.18281298405580385,
+            "lineage": "HET_S3_03",
+            "origin": 25,
+            "record_id": "HET_S3_03_MAIN_N8_O25",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.17523969813409443,
+            "lineage": "HET_S3_03",
+            "origin": 26,
+            "record_id": "HET_S3_03_MAIN_N8_O26",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.1681172433314404,
+            "lineage": "HET_S3_03",
+            "origin": 27,
+            "record_id": "HET_S3_03_MAIN_N8_O27",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.16155788325343243,
+            "lineage": "HET_S3_03",
+            "origin": 28,
+            "record_id": "HET_S3_03_MAIN_N8_O28",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.15566964012540196,
+            "lineage": "HET_S3_03",
+            "origin": 29,
+            "record_id": "HET_S3_03_MAIN_N8_O29",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.15056927813834847,
+            "lineage": "HET_S3_03",
+            "origin": 30,
+            "record_id": "HET_S3_03_MAIN_N8_O30",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.1463676364279988,
+            "lineage": "HET_S3_03",
+            "origin": 31,
+            "record_id": "HET_S3_03_MAIN_N8_O31",
+            "variant": "MAIN"
+          }
+        ]
+      },
+      "HET_S4_03": {
+        "LOW": {
+          "Q_def": 0.6141109023712857,
+          "maximum": {
+            "Q_def": 0.6552152434830836,
+            "record_id": "HET_S4_03_LOW_N8_O07"
+          },
+          "median": 0.6329538150054934,
+          "origin_count": 32,
+          "p90": 0.6539216526681595,
+          "raw_acceleration_RMSE": 1.059635247589549,
+          "relative_reduction": 0.20180413191182767,
+          "zero_correction_raw_RMSE": 1.3275378762954169
+        },
+        "MAIN": {
+          "Q_def": 0.8193791969651896,
+          "maximum": {
+            "Q_def": 0.8737928149489117,
+            "record_id": "HET_S4_03_MAIN_N8_O07"
+          },
+          "median": 0.8444541495877265,
+          "origin_count": 32,
+          "p90": 0.8721202308393624,
+          "raw_acceleration_RMSE": 1.413821306368866,
+          "relative_reduction": 0.20130636127345447,
+          "zero_correction_raw_RMSE": 1.7701672303576794
+        },
+        "all": {
+          "Q_def": 0.724056098942131,
+          "maximum": {
+            "Q_def": 0.8737928149489117,
+            "record_id": "HET_S4_03_MAIN_N8_O07"
+          },
+          "median": 0.6717792813469723,
+          "origin_count": 64,
+          "p90": 0.8690431414840837,
+          "raw_acceleration_RMSE": 1.2493433363724986,
+          "relative_reduction": 0.20148550783297547,
+          "zero_correction_raw_RMSE": 1.5645844234861734
+        },
+        "origins": [
+          {
+            "Q_def": 0.6398500723012543,
+            "lineage": "HET_S4_03",
+            "origin": 0,
+            "record_id": "HET_S4_03_LOW_N8_O00",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6438602306639868,
+            "lineage": "HET_S4_03",
+            "origin": 1,
+            "record_id": "HET_S4_03_LOW_N8_O01",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.647284033710354,
+            "lineage": "HET_S4_03",
+            "origin": 2,
+            "record_id": "HET_S4_03_LOW_N8_O02",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6501211605169558,
+            "lineage": "HET_S4_03",
+            "origin": 3,
+            "record_id": "HET_S4_03_LOW_N8_O03",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6523252891545945,
+            "lineage": "HET_S4_03",
+            "origin": 4,
+            "record_id": "HET_S4_03_LOW_N8_O04",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6539218746680617,
+            "lineage": "HET_S4_03",
+            "origin": 5,
+            "record_id": "HET_S4_03_LOW_N8_O05",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6548692733199096,
+            "lineage": "HET_S4_03",
+            "origin": 6,
+            "record_id": "HET_S4_03_LOW_N8_O06",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6552152434830836,
+            "lineage": "HET_S4_03",
+            "origin": 7,
+            "record_id": "HET_S4_03_LOW_N8_O07",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6549342479981309,
+            "lineage": "HET_S4_03",
+            "origin": 8,
+            "record_id": "HET_S4_03_LOW_N8_O08",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6539196546690391,
+            "lineage": "HET_S4_03",
+            "origin": 9,
+            "record_id": "HET_S4_03_LOW_N8_O09",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6523495357910176,
+            "lineage": "HET_S4_03",
+            "origin": 10,
+            "record_id": "HET_S4_03_LOW_N8_O10",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6501184880068339,
+            "lineage": "HET_S4_03",
+            "origin": 11,
+            "record_id": "HET_S4_03_LOW_N8_O11",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6473003432322432,
+            "lineage": "HET_S4_03",
+            "origin": 12,
+            "record_id": "HET_S4_03_LOW_N8_O12",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6438974962141215,
+            "lineage": "HET_S4_03",
+            "origin": 13,
+            "record_id": "HET_S4_03_LOW_N8_O13",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6399598117343427,
+            "lineage": "HET_S4_03",
+            "origin": 14,
+            "record_id": "HET_S4_03_LOW_N8_O14",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6354642215009411,
+            "lineage": "HET_S4_03",
+            "origin": 15,
+            "record_id": "HET_S4_03_LOW_N8_O15",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6304434085100458,
+            "lineage": "HET_S4_03",
+            "origin": 16,
+            "record_id": "HET_S4_03_LOW_N8_O16",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6249050161244547,
+            "lineage": "HET_S4_03",
+            "origin": 17,
+            "record_id": "HET_S4_03_LOW_N8_O17",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6189313249166106,
+            "lineage": "HET_S4_03",
+            "origin": 18,
+            "record_id": "HET_S4_03_LOW_N8_O18",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6124993943696914,
+            "lineage": "HET_S4_03",
+            "origin": 19,
+            "record_id": "HET_S4_03_LOW_N8_O19",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6056670661829968,
+            "lineage": "HET_S4_03",
+            "origin": 20,
+            "record_id": "HET_S4_03_LOW_N8_O20",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5984405768585758,
+            "lineage": "HET_S4_03",
+            "origin": 21,
+            "record_id": "HET_S4_03_LOW_N8_O21",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5908557106831474,
+            "lineage": "HET_S4_03",
+            "origin": 22,
+            "record_id": "HET_S4_03_LOW_N8_O22",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5829492032748184,
+            "lineage": "HET_S4_03",
+            "origin": 23,
+            "record_id": "HET_S4_03_LOW_N8_O23",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.574810311482154,
+            "lineage": "HET_S4_03",
+            "origin": 24,
+            "record_id": "HET_S4_03_LOW_N8_O24",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5664987660970532,
+            "lineage": "HET_S4_03",
+            "origin": 25,
+            "record_id": "HET_S4_03_LOW_N8_O25",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5579903838165019,
+            "lineage": "HET_S4_03",
+            "origin": 26,
+            "record_id": "HET_S4_03_LOW_N8_O26",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5493810956545275,
+            "lineage": "HET_S4_03",
+            "origin": 27,
+            "record_id": "HET_S4_03_LOW_N8_O27",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5407088569301278,
+            "lineage": "HET_S4_03",
+            "origin": 28,
+            "record_id": "HET_S4_03_LOW_N8_O28",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5320967347906466,
+            "lineage": "HET_S4_03",
+            "origin": 29,
+            "record_id": "HET_S4_03_LOW_N8_O29",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5235453153422532,
+            "lineage": "HET_S4_03",
+            "origin": 30,
+            "record_id": "HET_S4_03_LOW_N8_O30",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5151762216650569,
+            "lineage": "HET_S4_03",
+            "origin": 31,
+            "record_id": "HET_S4_03_LOW_N8_O31",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.8531620508560859,
+            "lineage": "HET_S4_03",
+            "origin": 0,
+            "record_id": "HET_S4_03_MAIN_N8_O00",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8585191024521445,
+            "lineage": "HET_S4_03",
+            "origin": 1,
+            "record_id": "HET_S4_03_MAIN_N8_O01",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8630997160460907,
+            "lineage": "HET_S4_03",
+            "origin": 2,
+            "record_id": "HET_S4_03_MAIN_N8_O02",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8669016152526706,
+            "lineage": "HET_S4_03",
+            "origin": 3,
+            "record_id": "HET_S4_03_MAIN_N8_O03",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8698594691529952,
+            "lineage": "HET_S4_03",
+            "origin": 4,
+            "record_id": "HET_S4_03_MAIN_N8_O04",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8720134556719983,
+            "lineage": "HET_S4_03",
+            "origin": 5,
+            "record_id": "HET_S4_03_MAIN_N8_O05",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8733032694696863,
+            "lineage": "HET_S4_03",
+            "origin": 6,
+            "record_id": "HET_S4_03_MAIN_N8_O06",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8737928149489117,
+            "lineage": "HET_S4_03",
+            "origin": 7,
+            "record_id": "HET_S4_03_MAIN_N8_O07",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8734509291177814,
+            "lineage": "HET_S4_03",
+            "origin": 8,
+            "record_id": "HET_S4_03_MAIN_N8_O08",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8721320947468473,
+            "lineage": "HET_S4_03",
+            "origin": 9,
+            "record_id": "HET_S4_03_MAIN_N8_O09",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8700731666199121,
+            "lineage": "HET_S4_03",
+            "origin": 10,
+            "record_id": "HET_S4_03_MAIN_N8_O10",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8671383769232902,
+            "lineage": "HET_S4_03",
+            "origin": 11,
+            "record_id": "HET_S4_03_MAIN_N8_O11",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8634198597163208,
+            "lineage": "HET_S4_03",
+            "origin": 12,
+            "record_id": "HET_S4_03_MAIN_N8_O12",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8589256419091881,
+            "lineage": "HET_S4_03",
+            "origin": 13,
+            "record_id": "HET_S4_03_MAIN_N8_O13",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8537215173355772,
+            "lineage": "HET_S4_03",
+            "origin": 14,
+            "record_id": "HET_S4_03_MAIN_N8_O14",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8477764623501256,
+            "lineage": "HET_S4_03",
+            "origin": 15,
+            "record_id": "HET_S4_03_MAIN_N8_O15",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8411318368253273,
+            "lineage": "HET_S4_03",
+            "origin": 16,
+            "record_id": "HET_S4_03_MAIN_N8_O16",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8338004952119779,
+            "lineage": "HET_S4_03",
+            "origin": 17,
+            "record_id": "HET_S4_03_MAIN_N8_O17",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8258863134887287,
+            "lineage": "HET_S4_03",
+            "origin": 18,
+            "record_id": "HET_S4_03_MAIN_N8_O18",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8173688994578344,
+            "lineage": "HET_S4_03",
+            "origin": 19,
+            "record_id": "HET_S4_03_MAIN_N8_O19",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8083167615724117,
+            "lineage": "HET_S4_03",
+            "origin": 20,
+            "record_id": "HET_S4_03_MAIN_N8_O20",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7987379636041982,
+            "lineage": "HET_S4_03",
+            "origin": 21,
+            "record_id": "HET_S4_03_MAIN_N8_O21",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7886865960056073,
+            "lineage": "HET_S4_03",
+            "origin": 22,
+            "record_id": "HET_S4_03_MAIN_N8_O22",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7782050813802833,
+            "lineage": "HET_S4_03",
+            "origin": 23,
+            "record_id": "HET_S4_03_MAIN_N8_O23",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7674158091218934,
+            "lineage": "HET_S4_03",
+            "origin": 24,
+            "record_id": "HET_S4_03_MAIN_N8_O24",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7563974548419293,
+            "lineage": "HET_S4_03",
+            "origin": 25,
+            "record_id": "HET_S4_03_MAIN_N8_O25",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7451165074667775,
+            "lineage": "HET_S4_03",
+            "origin": 26,
+            "record_id": "HET_S4_03_MAIN_N8_O26",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7337020526335398,
+            "lineage": "HET_S4_03",
+            "origin": 27,
+            "record_id": "HET_S4_03_MAIN_N8_O27",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7222019302947711,
+            "lineage": "HET_S4_03",
+            "origin": 28,
+            "record_id": "HET_S4_03_MAIN_N8_O28",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7107819640297538,
+            "lineage": "HET_S4_03",
+            "origin": 29,
+            "record_id": "HET_S4_03_MAIN_N8_O29",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.699441663350912,
+            "lineage": "HET_S4_03",
+            "origin": 30,
+            "record_id": "HET_S4_03_MAIN_N8_O30",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.688343319210861,
+            "lineage": "HET_S4_03",
+            "origin": 31,
+            "record_id": "HET_S4_03_MAIN_N8_O31",
+            "variant": "MAIN"
+          }
+        ]
+      }
+    }
+  },
+  "update0": {
+    "global": {
+      "Q_def": 2.068218456208409,
+      "maximum": {
+        "Q_def": 4.639923664175259,
+        "record_id": "HET_S2_02_MAIN_N8_O15"
+      },
+      "median": 0.6994591670744177,
+      "origin_count": 256,
+      "p90": 4.4069233523514315,
+      "raw_acceleration_RMSE": 3.568666778999271,
+      "relative_reduction": -0.0034305316552796228,
+      "zero_correction_raw_RMSE": 3.5564662090880623
+    },
+    "lineages": {
+      "HET_S1_01": {
+        "LOW": {
+          "Q_def": 0.09478209669653541,
+          "maximum": {
+            "Q_def": 0.11809106206544875,
+            "record_id": "HET_S1_01_LOW_N8_O31"
+          },
+          "median": 0.09121277964744584,
+          "origin_count": 32,
+          "p90": 0.11323497794253036,
+          "raw_acceleration_RMSE": 0.16354448376063538,
+          "relative_reduction": -0.3192134114543872,
+          "zero_correction_raw_RMSE": 0.12397121067798517
+        },
+        "MAIN": {
+          "Q_def": 0.12637647054108364,
+          "maximum": {
+            "Q_def": 0.1574548105035415,
+            "record_id": "HET_S1_01_MAIN_N8_O31"
+          },
+          "median": 0.12161694019484043,
+          "origin_count": 32,
+          "p90": 0.15098443543495696,
+          "raw_acceleration_RMSE": 0.21805990112569598,
+          "relative_reduction": -0.3191802859538331,
+          "zero_correction_raw_RMSE": 0.1652995450640985
+        },
+        "all": {
+          "Q_def": 0.11170196542723135,
+          "maximum": {
+            "Q_def": 0.1574548105035415,
+            "record_id": "HET_S1_01_MAIN_N8_O31"
+          },
+          "median": 0.10799079482439436,
+          "origin_count": 64,
+          "p90": 0.1415099379685151,
+          "raw_acceleration_RMSE": 0.19273935592851948,
+          "relative_reduction": -0.3191922108053058,
+          "zero_correction_raw_RMSE": 0.14610407365190628
+        },
+        "origins": [
+          {
+            "Q_def": 0.11764987791234074,
+            "lineage": "HET_S1_01",
+            "origin": 0,
+            "record_id": "HET_S1_01_LOW_N8_O00",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.11358720471770557,
+            "lineage": "HET_S1_01",
+            "origin": 1,
+            "record_id": "HET_S1_01_LOW_N8_O01",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.10964917982350081,
+            "lineage": "HET_S1_01",
+            "origin": 2,
+            "record_id": "HET_S1_01_LOW_N8_O02",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.10585207042198565,
+            "lineage": "HET_S1_01",
+            "origin": 3,
+            "record_id": "HET_S1_01_LOW_N8_O03",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.10221396051160213,
+            "lineage": "HET_S1_01",
+            "origin": 4,
+            "record_id": "HET_S1_01_LOW_N8_O04",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.09875466909475053,
+            "lineage": "HET_S1_01",
+            "origin": 5,
+            "record_id": "HET_S1_01_LOW_N8_O05",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.09549613879105001,
+            "lineage": "HET_S1_01",
+            "origin": 6,
+            "record_id": "HET_S1_01_LOW_N8_O06",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.09246141906710258,
+            "lineage": "HET_S1_01",
+            "origin": 7,
+            "record_id": "HET_S1_01_LOW_N8_O07",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.08967496207504475,
+            "lineage": "HET_S1_01",
+            "origin": 8,
+            "record_id": "HET_S1_01_LOW_N8_O08",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.08716244328572129,
+            "lineage": "HET_S1_01",
+            "origin": 9,
+            "record_id": "HET_S1_01_LOW_N8_O09",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.08494977017796351,
+            "lineage": "HET_S1_01",
+            "origin": 10,
+            "record_id": "HET_S1_01_LOW_N8_O10",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.08306225995952324,
+            "lineage": "HET_S1_01",
+            "origin": 11,
+            "record_id": "HET_S1_01_LOW_N8_O11",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.08152366119446719,
+            "lineage": "HET_S1_01",
+            "origin": 12,
+            "record_id": "HET_S1_01_LOW_N8_O12",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.08035499897377356,
+            "lineage": "HET_S1_01",
+            "origin": 13,
+            "record_id": "HET_S1_01_LOW_N8_O13",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.07957329912812797,
+            "lineage": "HET_S1_01",
+            "origin": 14,
+            "record_id": "HET_S1_01_LOW_N8_O14",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.0791904566637082,
+            "lineage": "HET_S1_01",
+            "origin": 15,
+            "record_id": "HET_S1_01_LOW_N8_O15",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.07921256999070334,
+            "lineage": "HET_S1_01",
+            "origin": 16,
+            "record_id": "HET_S1_01_LOW_N8_O16",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.07963922998687933,
+            "lineage": "HET_S1_01",
+            "origin": 17,
+            "record_id": "HET_S1_01_LOW_N8_O17",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.08046370573872366,
+            "lineage": "HET_S1_01",
+            "origin": 18,
+            "record_id": "HET_S1_01_LOW_N8_O18",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.08167349985936703,
+            "lineage": "HET_S1_01",
+            "origin": 19,
+            "record_id": "HET_S1_01_LOW_N8_O19",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.08325100417150373,
+            "lineage": "HET_S1_01",
+            "origin": 20,
+            "record_id": "HET_S1_01_LOW_N8_O20",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.08517486442340265,
+            "lineage": "HET_S1_01",
+            "origin": 21,
+            "record_id": "HET_S1_01_LOW_N8_O21",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.08742110754893231,
+            "lineage": "HET_S1_01",
+            "origin": 22,
+            "record_id": "HET_S1_01_LOW_N8_O22",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.0899641402277891,
+            "lineage": "HET_S1_01",
+            "origin": 23,
+            "record_id": "HET_S1_01_LOW_N8_O23",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.09277819176852321,
+            "lineage": "HET_S1_01",
+            "origin": 24,
+            "record_id": "HET_S1_01_LOW_N8_O24",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.09583778405296231,
+            "lineage": "HET_S1_01",
+            "origin": 25,
+            "record_id": "HET_S1_01_LOW_N8_O25",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.09911840399243285,
+            "lineage": "HET_S1_01",
+            "origin": 26,
+            "record_id": "HET_S1_01_LOW_N8_O26",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.10259709172217438,
+            "lineage": "HET_S1_01",
+            "origin": 27,
+            "record_id": "HET_S1_01_LOW_N8_O27",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.10625251678301784,
+            "lineage": "HET_S1_01",
+            "origin": 28,
+            "record_id": "HET_S1_01_LOW_N8_O28",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.1100649369659533,
+            "lineage": "HET_S1_01",
+            "origin": 29,
+            "record_id": "HET_S1_01_LOW_N8_O29",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.11401655861384949,
+            "lineage": "HET_S1_01",
+            "origin": 30,
+            "record_id": "HET_S1_01_LOW_N8_O30",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.11809106206544875,
+            "lineage": "HET_S1_01",
+            "origin": 31,
+            "record_id": "HET_S1_01_LOW_N8_O31",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.1568725088648868,
+            "lineage": "HET_S1_01",
+            "origin": 0,
+            "record_id": "HET_S1_01_MAIN_N8_O00",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.15145468495485712,
+            "lineage": "HET_S1_01",
+            "origin": 1,
+            "record_id": "HET_S1_01_MAIN_N8_O01",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.14620318174600455,
+            "lineage": "HET_S1_01",
+            "origin": 2,
+            "record_id": "HET_S1_01_MAIN_N8_O02",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.14113963598685242,
+            "lineage": "HET_S1_01",
+            "origin": 3,
+            "record_id": "HET_S1_01_MAIN_N8_O03",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.13628813443899734,
+            "lineage": "HET_S1_01",
+            "origin": 4,
+            "record_id": "HET_S1_01_MAIN_N8_O04",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.13167511818552977,
+            "lineage": "HET_S1_01",
+            "origin": 5,
+            "record_id": "HET_S1_01_MAIN_N8_O05",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.12732994548897306,
+            "lineage": "HET_S1_01",
+            "origin": 6,
+            "record_id": "HET_S1_01_MAIN_N8_O06",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.12328324165957032,
+            "lineage": "HET_S1_01",
+            "origin": 7,
+            "record_id": "HET_S1_01_MAIN_N8_O07",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.11956756105302915,
+            "lineage": "HET_S1_01",
+            "origin": 8,
+            "record_id": "HET_S1_01_MAIN_N8_O08",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.11621716792052794,
+            "lineage": "HET_S1_01",
+            "origin": 9,
+            "record_id": "HET_S1_01_MAIN_N8_O09",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.1132666138936969,
+            "lineage": "HET_S1_01",
+            "origin": 10,
+            "record_id": "HET_S1_01_MAIN_N8_O10",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.11074964586572034,
+            "lineage": "HET_S1_01",
+            "origin": 11,
+            "record_id": "HET_S1_01_MAIN_N8_O11",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.10869791585066416,
+            "lineage": "HET_S1_01",
+            "origin": 12,
+            "record_id": "HET_S1_01_MAIN_N8_O12",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.10713946197413812,
+            "lineage": "HET_S1_01",
+            "origin": 13,
+            "record_id": "HET_S1_01_MAIN_N8_O13",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.10609699424417385,
+            "lineage": "HET_S1_01",
+            "origin": 14,
+            "record_id": "HET_S1_01_MAIN_N8_O14",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.10558634997606642,
+            "lineage": "HET_S1_01",
+            "origin": 15,
+            "record_id": "HET_S1_01_MAIN_N8_O15",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.10561569601387497,
+            "lineage": "HET_S1_01",
+            "origin": 16,
+            "record_id": "HET_S1_01_MAIN_N8_O16",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.10618446892632036,
+            "lineage": "HET_S1_01",
+            "origin": 17,
+            "record_id": "HET_S1_01_MAIN_N8_O17",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.10728367379812458,
+            "lineage": "HET_S1_01",
+            "origin": 18,
+            "record_id": "HET_S1_01_MAIN_N8_O18",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.10889667511290724,
+            "lineage": "HET_S1_01",
+            "origin": 19,
+            "record_id": "HET_S1_01_MAIN_N8_O19",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.1109999574311286,
+            "lineage": "HET_S1_01",
+            "origin": 20,
+            "record_id": "HET_S1_01_MAIN_N8_O20",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.11356506583607515,
+            "lineage": "HET_S1_01",
+            "origin": 21,
+            "record_id": "HET_S1_01_MAIN_N8_O21",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.1165599964196284,
+            "lineage": "HET_S1_01",
+            "origin": 22,
+            "record_id": "HET_S1_01_MAIN_N8_O22",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.11995063873011055,
+            "lineage": "HET_S1_01",
+            "origin": 23,
+            "record_id": "HET_S1_01_MAIN_N8_O23",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.12370264279762944,
+            "lineage": "HET_S1_01",
+            "origin": 24,
+            "record_id": "HET_S1_01_MAIN_N8_O24",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.1277820641553288,
+            "lineage": "HET_S1_01",
+            "origin": 25,
+            "record_id": "HET_S1_01_MAIN_N8_O25",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.13215620798831718,
+            "lineage": "HET_S1_01",
+            "origin": 26,
+            "record_id": "HET_S1_01_MAIN_N8_O26",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.13679452623962207,
+            "lineage": "HET_S1_01",
+            "origin": 27,
+            "record_id": "HET_S1_01_MAIN_N8_O27",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.1416686388177991,
+            "lineage": "HET_S1_01",
+            "origin": 28,
+            "record_id": "HET_S1_01_MAIN_N8_O28",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.14675218975585552,
+            "lineage": "HET_S1_01",
+            "origin": 29,
+            "record_id": "HET_S1_01_MAIN_N8_O29",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.15202151131353178,
+            "lineage": "HET_S1_01",
+            "origin": 30,
+            "record_id": "HET_S1_01_MAIN_N8_O30",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.1574548105035415,
+            "lineage": "HET_S1_01",
+            "origin": 31,
+            "record_id": "HET_S1_01_MAIN_N8_O31",
+            "variant": "MAIN"
+          }
+        ]
+      },
+      "HET_S2_02": {
+        "LOW": {
+          "Q_def": 3.3907988799179782,
+          "maximum": {
+            "Q_def": 3.4782347485154963,
+            "record_id": "HET_S2_02_LOW_N8_O15"
+          },
+          "median": 3.4117786611493193,
+          "origin_count": 32,
+          "p90": 3.474106947979475,
+          "raw_acceleration_RMSE": 5.850751056160132,
+          "relative_reduction": -0.002988566954380989,
+          "zero_correction_raw_RMSE": 5.833317795362509
+        },
+        "MAIN": {
+          "Q_def": 4.523205573759072,
+          "maximum": {
+            "Q_def": 4.639923664175259,
+            "record_id": "HET_S2_02_MAIN_N8_O15"
+          },
+          "median": 4.5512060851668545,
+          "origin_count": 32,
+          "p90": 4.634423919627956,
+          "raw_acceleration_RMSE": 7.804694623628178,
+          "relative_reduction": -0.0029898925198068582,
+          "zero_correction_raw_RMSE": 7.781428987305625
+        },
+        "all": {
+          "Q_def": 3.9973056992515694,
+          "maximum": {
+            "Q_def": 4.639923664175259,
+            "record_id": "HET_S2_02_MAIN_N8_O15"
+          },
+          "median": 3.883762810163692,
+          "origin_count": 64,
+          "p90": 4.624460396638313,
+          "raw_acceleration_RMSE": 6.897265620854742,
+          "relative_reduction": -0.002989415604721213,
+          "zero_correction_raw_RMSE": 6.876708281807989
+        },
+        "origins": [
+          {
+            "Q_def": 3.246096224619702,
+            "lineage": "HET_S2_02",
+            "origin": 0,
+            "record_id": "HET_S2_02_LOW_N8_O00",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.275696418078964,
+            "lineage": "HET_S2_02",
+            "origin": 1,
+            "record_id": "HET_S2_02_LOW_N8_O01",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.303336007698247,
+            "lineage": "HET_S2_02",
+            "origin": 2,
+            "record_id": "HET_S2_02_LOW_N8_O02",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.3289980945753235,
+            "lineage": "HET_S2_02",
+            "origin": 3,
+            "record_id": "HET_S2_02_LOW_N8_O03",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.35266700818919,
+            "lineage": "HET_S2_02",
+            "origin": 4,
+            "record_id": "HET_S2_02_LOW_N8_O04",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.3743282770438747,
+            "lineage": "HET_S2_02",
+            "origin": 5,
+            "record_id": "HET_S2_02_LOW_N8_O05",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.39396868980785,
+            "lineage": "HET_S2_02",
+            "origin": 6,
+            "record_id": "HET_S2_02_LOW_N8_O06",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.411576278811301,
+            "lineage": "HET_S2_02",
+            "origin": 7,
+            "record_id": "HET_S2_02_LOW_N8_O07",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.4271402753526945,
+            "lineage": "HET_S2_02",
+            "origin": 8,
+            "record_id": "HET_S2_02_LOW_N8_O08",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.4406512211562474,
+            "lineage": "HET_S2_02",
+            "origin": 9,
+            "record_id": "HET_S2_02_LOW_N8_O09",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.452100958141084,
+            "lineage": "HET_S2_02",
+            "origin": 10,
+            "record_id": "HET_S2_02_LOW_N8_O10",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.4614826028636045,
+            "lineage": "HET_S2_02",
+            "origin": 11,
+            "record_id": "HET_S2_02_LOW_N8_O11",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.468790514450987,
+            "lineage": "HET_S2_02",
+            "origin": 12,
+            "record_id": "HET_S2_02_LOW_N8_O12",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.4740203242222014,
+            "lineage": "HET_S2_02",
+            "origin": 13,
+            "record_id": "HET_S2_02_LOW_N8_O13",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.4771689937864823,
+            "lineage": "HET_S2_02",
+            "origin": 14,
+            "record_id": "HET_S2_02_LOW_N8_O14",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.4782347485154963,
+            "lineage": "HET_S2_02",
+            "origin": 15,
+            "record_id": "HET_S2_02_LOW_N8_O15",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.4772170064959402,
+            "lineage": "HET_S2_02",
+            "origin": 16,
+            "record_id": "HET_S2_02_LOW_N8_O16",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.4741165728413943,
+            "lineage": "HET_S2_02",
+            "origin": 17,
+            "record_id": "HET_S2_02_LOW_N8_O17",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.468935586161242,
+            "lineage": "HET_S2_02",
+            "origin": 18,
+            "record_id": "HET_S2_02_LOW_N8_O18",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.4616771548461083,
+            "lineage": "HET_S2_02",
+            "origin": 19,
+            "record_id": "HET_S2_02_LOW_N8_O19",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.452345990804962,
+            "lineage": "HET_S2_02",
+            "origin": 20,
+            "record_id": "HET_S2_02_LOW_N8_O20",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.4409479218840504,
+            "lineage": "HET_S2_02",
+            "origin": 21,
+            "record_id": "HET_S2_02_LOW_N8_O21",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.4274901078879743,
+            "lineage": "HET_S2_02",
+            "origin": 22,
+            "record_id": "HET_S2_02_LOW_N8_O22",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.4119810434873377,
+            "lineage": "HET_S2_02",
+            "origin": 23,
+            "record_id": "HET_S2_02_LOW_N8_O23",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.3944304943362433,
+            "lineage": "HET_S2_02",
+            "origin": 24,
+            "record_id": "HET_S2_02_LOW_N8_O24",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.374849363974326,
+            "lineage": "HET_S2_02",
+            "origin": 25,
+            "record_id": "HET_S2_02_LOW_N8_O25",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.3532501108206514,
+            "lineage": "HET_S2_02",
+            "origin": 26,
+            "record_id": "HET_S2_02_LOW_N8_O26",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.3296462530210493,
+            "lineage": "HET_S2_02",
+            "origin": 27,
+            "record_id": "HET_S2_02_LOW_N8_O27",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.3040522342350624,
+            "lineage": "HET_S2_02",
+            "origin": 28,
+            "record_id": "HET_S2_02_LOW_N8_O28",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.2764842831133816,
+            "lineage": "HET_S2_02",
+            "origin": 29,
+            "record_id": "HET_S2_02_LOW_N8_O29",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.2469595501267188,
+            "lineage": "HET_S2_02",
+            "origin": 30,
+            "record_id": "HET_S2_02_LOW_N8_O30",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 3.2154964826080743,
+            "lineage": "HET_S2_02",
+            "origin": 31,
+            "record_id": "HET_S2_02_LOW_N8_O31",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 4.329947796533017,
+            "lineage": "HET_S2_02",
+            "origin": 0,
+            "record_id": "HET_S2_02_MAIN_N8_O00",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.369463820857134,
+            "lineage": "HET_S2_02",
+            "origin": 1,
+            "record_id": "HET_S2_02_MAIN_N8_O01",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.406363664361744,
+            "lineage": "HET_S2_02",
+            "origin": 2,
+            "record_id": "HET_S2_02_MAIN_N8_O02",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.4406246295943745,
+            "lineage": "HET_S2_02",
+            "origin": 3,
+            "record_id": "HET_S2_02_MAIN_N8_O03",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.4722256509328755,
+            "lineage": "HET_S2_02",
+            "origin": 4,
+            "record_id": "HET_S2_02_MAIN_N8_O04",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.501147280569686,
+            "lineage": "HET_S2_02",
+            "origin": 5,
+            "record_id": "HET_S2_02_MAIN_N8_O05",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.527371749485328,
+            "lineage": "HET_S2_02",
+            "origin": 6,
+            "record_id": "HET_S2_02_MAIN_N8_O06",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.550882926631116,
+            "lineage": "HET_S2_02",
+            "origin": 7,
+            "record_id": "HET_S2_02_MAIN_N8_O07",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.571666426385102,
+            "lineage": "HET_S2_02",
+            "origin": 8,
+            "record_id": "HET_S2_02_MAIN_N8_O08",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.589709502371412,
+            "lineage": "HET_S2_02",
+            "origin": 9,
+            "record_id": "HET_S2_02_MAIN_N8_O09",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.605001187462005,
+            "lineage": "HET_S2_02",
+            "origin": 10,
+            "record_id": "HET_S2_02_MAIN_N8_O10",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.617532259957053,
+            "lineage": "HET_S2_02",
+            "origin": 11,
+            "record_id": "HET_S2_02_MAIN_N8_O11",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.627294966286516,
+            "lineage": "HET_S2_02",
+            "origin": 12,
+            "record_id": "HET_S2_02_MAIN_N8_O12",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.634283537557688,
+            "lineage": "HET_S2_02",
+            "origin": 13,
+            "record_id": "HET_S2_02_MAIN_N8_O13",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.638493878958074,
+            "lineage": "HET_S2_02",
+            "origin": 14,
+            "record_id": "HET_S2_02_MAIN_N8_O14",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.639923664175259,
+            "lineage": "HET_S2_02",
+            "origin": 15,
+            "record_id": "HET_S2_02_MAIN_N8_O15",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.638571857468398,
+            "lineage": "HET_S2_02",
+            "origin": 16,
+            "record_id": "HET_S2_02_MAIN_N8_O16",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.634439517635763,
+            "lineage": "HET_S2_02",
+            "origin": 17,
+            "record_id": "HET_S2_02_MAIN_N8_O17",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.62752967560756,
+            "lineage": "HET_S2_02",
+            "origin": 18,
+            "record_id": "HET_S2_02_MAIN_N8_O18",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.617846400792509,
+            "lineage": "HET_S2_02",
+            "origin": 19,
+            "record_id": "HET_S2_02_MAIN_N8_O19",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.605396050305707,
+            "lineage": "HET_S2_02",
+            "origin": 20,
+            "record_id": "HET_S2_02_MAIN_N8_O20",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.590186344714387,
+            "lineage": "HET_S2_02",
+            "origin": 21,
+            "record_id": "HET_S2_02_MAIN_N8_O21",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.572226905687665,
+            "lineage": "HET_S2_02",
+            "origin": 22,
+            "record_id": "HET_S2_02_MAIN_N8_O22",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.551529243702593,
+            "lineage": "HET_S2_02",
+            "origin": 23,
+            "record_id": "HET_S2_02_MAIN_N8_O23",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.528106350621716,
+            "lineage": "HET_S2_02",
+            "origin": 24,
+            "record_id": "HET_S2_02_MAIN_N8_O24",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.501972826479474,
+            "lineage": "HET_S2_02",
+            "origin": 25,
+            "record_id": "HET_S2_02_MAIN_N8_O25",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.473145482157725,
+            "lineage": "HET_S2_02",
+            "origin": 26,
+            "record_id": "HET_S2_02_MAIN_N8_O26",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.441642443709115,
+            "lineage": "HET_S2_02",
+            "origin": 27,
+            "record_id": "HET_S2_02_MAIN_N8_O27",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.407483040341119,
+            "lineage": "HET_S2_02",
+            "origin": 28,
+            "record_id": "HET_S2_02_MAIN_N8_O28",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.370688984384039,
+            "lineage": "HET_S2_02",
+            "origin": 29,
+            "record_id": "HET_S2_02_MAIN_N8_O29",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.331283362375152,
+            "lineage": "HET_S2_02",
+            "origin": 30,
+            "record_id": "HET_S2_02_MAIN_N8_O30",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 4.289290871811888,
+            "lineage": "HET_S2_02",
+            "origin": 31,
+            "record_id": "HET_S2_02_MAIN_N8_O31",
+            "variant": "MAIN"
+          }
+        ]
+      },
+      "HET_S3_03": {
+        "LOW": {
+          "Q_def": 0.46151721624306247,
+          "maximum": {
+            "Q_def": 0.5861952987020463,
+            "record_id": "HET_S3_03_LOW_N8_O31"
+          },
+          "median": 0.45384307894104703,
+          "origin_count": 32,
+          "p90": 0.5598931664750662,
+          "raw_acceleration_RMSE": 0.79633810084174,
+          "relative_reduction": -0.026906367293545008,
+          "zero_correction_raw_RMSE": 0.7754729410632856
+        },
+        "MAIN": {
+          "Q_def": 0.6154693841753162,
+          "maximum": {
+            "Q_def": 0.7817363054946904,
+            "record_id": "HET_S3_03_MAIN_N8_O31"
+          },
+          "median": 0.6052208072196907,
+          "origin_count": 32,
+          "p90": 0.7466526225189366,
+          "raw_acceleration_RMSE": 1.0619792789317728,
+          "relative_reduction": -0.026902878286322318,
+          "zero_correction_raw_RMSE": 1.0341574664821132
+        },
+        "all": {
+          "Q_def": 0.5439672341905754,
+          "maximum": {
+            "Q_def": 0.7817363054946904,
+            "record_id": "HET_S3_03_MAIN_N8_O31"
+          },
+          "median": 0.5198890227709767,
+          "origin_count": 64,
+          "p90": 0.7101359731314947,
+          "raw_acceleration_RMSE": 0.9386038460747637,
+          "relative_reduction": -0.026904134029384075,
+          "zero_correction_raw_RMSE": 0.9140131147314149
+        },
+        "origins": [
+          {
+            "Q_def": 0.32762395525867927,
+            "lineage": "HET_S3_03",
+            "origin": 0,
+            "record_id": "HET_S3_03_LOW_N8_O00",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.3353754776770625,
+            "lineage": "HET_S3_03",
+            "origin": 1,
+            "record_id": "HET_S3_03_LOW_N8_O01",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.3431909577823238,
+            "lineage": "HET_S3_03",
+            "origin": 2,
+            "record_id": "HET_S3_03_LOW_N8_O02",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.3510685462434952,
+            "lineage": "HET_S3_03",
+            "origin": 3,
+            "record_id": "HET_S3_03_LOW_N8_O03",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.35900555641143095,
+            "lineage": "HET_S3_03",
+            "origin": 4,
+            "record_id": "HET_S3_03_LOW_N8_O04",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.3669999406771391,
+            "lineage": "HET_S3_03",
+            "origin": 5,
+            "record_id": "HET_S3_03_LOW_N8_O05",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.37504960426679734,
+            "lineage": "HET_S3_03",
+            "origin": 6,
+            "record_id": "HET_S3_03_LOW_N8_O06",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.3831522497220633,
+            "lineage": "HET_S3_03",
+            "origin": 7,
+            "record_id": "HET_S3_03_LOW_N8_O07",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.39130577274845185,
+            "lineage": "HET_S3_03",
+            "origin": 8,
+            "record_id": "HET_S3_03_LOW_N8_O08",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.39950813095858234,
+            "lineage": "HET_S3_03",
+            "origin": 9,
+            "record_id": "HET_S3_03_LOW_N8_O09",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.4077565938510301,
+            "lineage": "HET_S3_03",
+            "origin": 10,
+            "record_id": "HET_S3_03_LOW_N8_O10",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.4160492990599727,
+            "lineage": "HET_S3_03",
+            "origin": 11,
+            "record_id": "HET_S3_03_LOW_N8_O11",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.424383722454639,
+            "lineage": "HET_S3_03",
+            "origin": 12,
+            "record_id": "HET_S3_03_LOW_N8_O12",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.4327565550299682,
+            "lineage": "HET_S3_03",
+            "origin": 13,
+            "record_id": "HET_S3_03_LOW_N8_O13",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.44116535772031545,
+            "lineage": "HET_S3_03",
+            "origin": 14,
+            "record_id": "HET_S3_03_LOW_N8_O14",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.44960712035441247,
+            "lineage": "HET_S3_03",
+            "origin": 15,
+            "record_id": "HET_S3_03_LOW_N8_O15",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.45807903752768164,
+            "lineage": "HET_S3_03",
+            "origin": 16,
+            "record_id": "HET_S3_03_LOW_N8_O16",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.46657775163785103,
+            "lineage": "HET_S3_03",
+            "origin": 17,
+            "record_id": "HET_S3_03_LOW_N8_O17",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.4750996147529818,
+            "lineage": "HET_S3_03",
+            "origin": 18,
+            "record_id": "HET_S3_03_LOW_N8_O18",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.4836412132978452,
+            "lineage": "HET_S3_03",
+            "origin": 19,
+            "record_id": "HET_S3_03_LOW_N8_O19",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.4921989670212238,
+            "lineage": "HET_S3_03",
+            "origin": 20,
+            "record_id": "HET_S3_03_LOW_N8_O20",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5007688927948227,
+            "lineage": "HET_S3_03",
+            "origin": 21,
+            "record_id": "HET_S3_03_LOW_N8_O21",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5093471345214189,
+            "lineage": "HET_S3_03",
+            "origin": 22,
+            "record_id": "HET_S3_03_LOW_N8_O22",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5179292651510788,
+            "lineage": "HET_S3_03",
+            "origin": 23,
+            "record_id": "HET_S3_03_LOW_N8_O23",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.526510957715549,
+            "lineage": "HET_S3_03",
+            "origin": 24,
+            "record_id": "HET_S3_03_LOW_N8_O24",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5350882810507905,
+            "lineage": "HET_S3_03",
+            "origin": 25,
+            "record_id": "HET_S3_03_LOW_N8_O25",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5436564060760158,
+            "lineage": "HET_S3_03",
+            "origin": 26,
+            "record_id": "HET_S3_03_LOW_N8_O26",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5522108286580488,
+            "lineage": "HET_S3_03",
+            "origin": 27,
+            "record_id": "HET_S3_03_LOW_N8_O27",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5607467595658459,
+            "lineage": "HET_S3_03",
+            "origin": 28,
+            "record_id": "HET_S3_03_LOW_N8_O28",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.56925946145014,
+            "lineage": "HET_S3_03",
+            "origin": 29,
+            "record_id": "HET_S3_03_LOW_N8_O29",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5777439026187531,
+            "lineage": "HET_S3_03",
+            "origin": 30,
+            "record_id": "HET_S3_03_LOW_N8_O30",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5861952987020463,
+            "lineage": "HET_S3_03",
+            "origin": 31,
+            "record_id": "HET_S3_03_LOW_N8_O31",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.43698199929748155,
+            "lineage": "HET_S3_03",
+            "origin": 0,
+            "record_id": "HET_S3_03_MAIN_N8_O00",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.4473104829757193,
+            "lineage": "HET_S3_03",
+            "origin": 1,
+            "record_id": "HET_S3_03_MAIN_N8_O01",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.4577247252911247,
+            "lineage": "HET_S3_03",
+            "origin": 2,
+            "record_id": "HET_S3_03_MAIN_N8_O02",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.4682222085062674,
+            "lineage": "HET_S3_03",
+            "origin": 3,
+            "record_id": "HET_S3_03_MAIN_N8_O03",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.4787993326322834,
+            "lineage": "HET_S3_03",
+            "origin": 4,
+            "record_id": "HET_S3_03_MAIN_N8_O04",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.4894534284738924,
+            "lineage": "HET_S3_03",
+            "origin": 5,
+            "record_id": "HET_S3_03_MAIN_N8_O05",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.5001817198232709,
+            "lineage": "HET_S3_03",
+            "origin": 6,
+            "record_id": "HET_S3_03_MAIN_N8_O06",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.5109810603695886,
+            "lineage": "HET_S3_03",
+            "origin": 7,
+            "record_id": "HET_S3_03_MAIN_N8_O07",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.5218487803908745,
+            "lineage": "HET_S3_03",
+            "origin": 8,
+            "record_id": "HET_S3_03_MAIN_N8_O08",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.5327821544442609,
+            "lineage": "HET_S3_03",
+            "origin": 9,
+            "record_id": "HET_S3_03_MAIN_N8_O09",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.5437774003072463,
+            "lineage": "HET_S3_03",
+            "origin": 10,
+            "record_id": "HET_S3_03_MAIN_N8_O10",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.5548322619707926,
+            "lineage": "HET_S3_03",
+            "origin": 11,
+            "record_id": "HET_S3_03_MAIN_N8_O11",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.5659433939092535,
+            "lineage": "HET_S3_03",
+            "origin": 12,
+            "record_id": "HET_S3_03_MAIN_N8_O12",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.5771060831734403,
+            "lineage": "HET_S3_03",
+            "origin": 13,
+            "record_id": "HET_S3_03_MAIN_N8_O13",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.5883171392252968,
+            "lineage": "HET_S3_03",
+            "origin": 14,
+            "record_id": "HET_S3_03_MAIN_N8_O14",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.5995726845696422,
+            "lineage": "HET_S3_03",
+            "origin": 15,
+            "record_id": "HET_S3_03_MAIN_N8_O15",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.6108689298697394,
+            "lineage": "HET_S3_03",
+            "origin": 16,
+            "record_id": "HET_S3_03_MAIN_N8_O16",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.6222013536142701,
+            "lineage": "HET_S3_03",
+            "origin": 17,
+            "record_id": "HET_S3_03_MAIN_N8_O17",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.6335650229856565,
+            "lineage": "HET_S3_03",
+            "origin": 18,
+            "record_id": "HET_S3_03_MAIN_N8_O18",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.644955355839272,
+            "lineage": "HET_S3_03",
+            "origin": 19,
+            "record_id": "HET_S3_03_MAIN_N8_O19",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.656367667186742,
+            "lineage": "HET_S3_03",
+            "origin": 20,
+            "record_id": "HET_S3_03_MAIN_N8_O20",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.6677965704083936,
+            "lineage": "HET_S3_03",
+            "origin": 21,
+            "record_id": "HET_S3_03_MAIN_N8_O21",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.6792368848855582,
+            "lineage": "HET_S3_03",
+            "origin": 22,
+            "record_id": "HET_S3_03_MAIN_N8_O22",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.6906826501068073,
+            "lineage": "HET_S3_03",
+            "origin": 23,
+            "record_id": "HET_S3_03_MAIN_N8_O23",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7021280395784427,
+            "lineage": "HET_S3_03",
+            "origin": 24,
+            "record_id": "HET_S3_03_MAIN_N8_O24",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7135679446542312,
+            "lineage": "HET_S3_03",
+            "origin": 25,
+            "record_id": "HET_S3_03_MAIN_N8_O25",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.724995839539085,
+            "lineage": "HET_S3_03",
+            "origin": 26,
+            "record_id": "HET_S3_03_MAIN_N8_O26",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7364057259306953,
+            "lineage": "HET_S3_03",
+            "origin": 27,
+            "record_id": "HET_S3_03_MAIN_N8_O27",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7477911665842967,
+            "lineage": "HET_S3_03",
+            "origin": 28,
+            "record_id": "HET_S3_03_MAIN_N8_O28",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7591458540696218,
+            "lineage": "HET_S3_03",
+            "origin": 29,
+            "record_id": "HET_S3_03_MAIN_N8_O29",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7704630021581484,
+            "lineage": "HET_S3_03",
+            "origin": 30,
+            "record_id": "HET_S3_03_MAIN_N8_O30",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7817363054946904,
+            "lineage": "HET_S3_03",
+            "origin": 31,
+            "record_id": "HET_S3_03_MAIN_N8_O31",
+            "variant": "MAIN"
+          }
+        ]
+      },
+      "HET_S4_03": {
+        "LOW": {
+          "Q_def": 0.7698775621505272,
+          "maximum": {
+            "Q_def": 0.8444799657118376,
+            "record_id": "HET_S4_03_LOW_N8_O05"
+          },
+          "median": 0.7980395584876359,
+          "origin_count": 32,
+          "p90": 0.8429023908261479,
+          "raw_acceleration_RMSE": 1.3284072926127493,
+          "relative_reduction": -0.0006549088601213171,
+          "zero_correction_raw_RMSE": 1.3275378762954169
+        },
+        "MAIN": {
+          "Q_def": 1.0265710553396996,
+          "maximum": {
+            "Q_def": 1.1260273394801588,
+            "record_id": "HET_S4_03_MAIN_N8_O05"
+          },
+          "median": 1.0641163081719514,
+          "origin_count": 32,
+          "p90": 1.12392304218349,
+          "raw_acceleration_RMSE": 1.7713264333735586,
+          "relative_reduction": -0.0006548550871348091,
+          "zero_correction_raw_RMSE": 1.7701672303576794
+        },
+        "all": {
+          "Q_def": 0.9073476710622295,
+          "maximum": {
+            "Q_def": 1.1260273394801588,
+            "record_id": "HET_S4_03_MAIN_N8_O05"
+          },
+          "median": 0.8434490777885921,
+          "origin_count": 64,
+          "p90": 1.1196023999667675,
+          "raw_acceleration_RMSE": 1.565609029840245,
+          "relative_reduction": -0.00065487444377621,
+          "zero_correction_raw_RMSE": 1.5645844234861734
+        },
+        "origins": [
+          {
+            "Q_def": 0.8335366652380909,
+            "lineage": "HET_S4_03",
+            "origin": 0,
+            "record_id": "HET_S4_03_LOW_N8_O00",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.83737284384651,
+            "lineage": "HET_S4_03",
+            "origin": 1,
+            "record_id": "HET_S4_03_LOW_N8_O01",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.8403984739143951,
+            "lineage": "HET_S4_03",
+            "origin": 2,
+            "record_id": "HET_S4_03_LOW_N8_O02",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.8425984132217346,
+            "lineage": "HET_S4_03",
+            "origin": 3,
+            "record_id": "HET_S4_03_LOW_N8_O03",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.843961989461657,
+            "lineage": "HET_S4_03",
+            "origin": 4,
+            "record_id": "HET_S4_03_LOW_N8_O04",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.8444799657118376,
+            "lineage": "HET_S4_03",
+            "origin": 5,
+            "record_id": "HET_S4_03_LOW_N8_O05",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.8441400340585962,
+            "lineage": "HET_S4_03",
+            "origin": 6,
+            "record_id": "HET_S4_03_LOW_N8_O06",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.8429361661155272,
+            "lineage": "HET_S4_03",
+            "origin": 7,
+            "record_id": "HET_S4_03_LOW_N8_O07",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.8408673659408266,
+            "lineage": "HET_S4_03",
+            "origin": 8,
+            "record_id": "HET_S4_03_LOW_N8_O08",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.8379321708439215,
+            "lineage": "HET_S4_03",
+            "origin": 9,
+            "record_id": "HET_S4_03_LOW_N8_O09",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.8341337801730092,
+            "lineage": "HET_S4_03",
+            "origin": 10,
+            "record_id": "HET_S4_03_LOW_N8_O10",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.8294785081593764,
+            "lineage": "HET_S4_03",
+            "origin": 11,
+            "record_id": "HET_S4_03_LOW_N8_O11",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.823971381040645,
+            "lineage": "HET_S4_03",
+            "origin": 12,
+            "record_id": "HET_S4_03_LOW_N8_O12",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.8176206542994624,
+            "lineage": "HET_S4_03",
+            "origin": 13,
+            "record_id": "HET_S4_03_LOW_N8_O13",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.8104392879690276,
+            "lineage": "HET_S4_03",
+            "origin": 14,
+            "record_id": "HET_S4_03_LOW_N8_O14",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.8024404889534585,
+            "lineage": "HET_S4_03",
+            "origin": 15,
+            "record_id": "HET_S4_03_LOW_N8_O15",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.7936386280218132,
+            "lineage": "HET_S4_03",
+            "origin": 16,
+            "record_id": "HET_S4_03_LOW_N8_O16",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.7840508730963036,
+            "lineage": "HET_S4_03",
+            "origin": 17,
+            "record_id": "HET_S4_03_LOW_N8_O17",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.7736941772104962,
+            "lineage": "HET_S4_03",
+            "origin": 18,
+            "record_id": "HET_S4_03_LOW_N8_O18",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.762589642000467,
+            "lineage": "HET_S4_03",
+            "origin": 19,
+            "record_id": "HET_S4_03_LOW_N8_O19",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.7507607710067428,
+            "lineage": "HET_S4_03",
+            "origin": 20,
+            "record_id": "HET_S4_03_LOW_N8_O20",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.7382350435358983,
+            "lineage": "HET_S4_03",
+            "origin": 21,
+            "record_id": "HET_S4_03_LOW_N8_O21",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.7250436375967885,
+            "lineage": "HET_S4_03",
+            "origin": 22,
+            "record_id": "HET_S4_03_LOW_N8_O22",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.7112172245463981,
+            "lineage": "HET_S4_03",
+            "origin": 23,
+            "record_id": "HET_S4_03_LOW_N8_O23",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6967902945703925,
+            "lineage": "HET_S4_03",
+            "origin": 24,
+            "record_id": "HET_S4_03_LOW_N8_O24",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6818048336886932,
+            "lineage": "HET_S4_03",
+            "origin": 25,
+            "record_id": "HET_S4_03_LOW_N8_O25",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6663044493505704,
+            "lineage": "HET_S4_03",
+            "origin": 26,
+            "record_id": "HET_S4_03_LOW_N8_O26",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6503347134855927,
+            "lineage": "HET_S4_03",
+            "origin": 27,
+            "record_id": "HET_S4_03_LOW_N8_O27",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6339459540334237,
+            "lineage": "HET_S4_03",
+            "origin": 28,
+            "record_id": "HET_S4_03_LOW_N8_O28",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6171940804077402,
+            "lineage": "HET_S4_03",
+            "origin": 29,
+            "record_id": "HET_S4_03_LOW_N8_O29",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.6001390372346882,
+            "lineage": "HET_S4_03",
+            "origin": 30,
+            "record_id": "HET_S4_03_LOW_N8_O30",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 0.5828469192670028,
+            "lineage": "HET_S4_03",
+            "origin": 31,
+            "record_id": "HET_S4_03_LOW_N8_O31",
+            "variant": "LOW"
+          },
+          {
+            "Q_def": 1.111448028271413,
+            "lineage": "HET_S4_03",
+            "origin": 0,
+            "record_id": "HET_S4_03_MAIN_N8_O00",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 1.1165594815801676,
+            "lineage": "HET_S4_03",
+            "origin": 1,
+            "record_id": "HET_S4_03_MAIN_N8_O01",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 1.1205907814715628,
+            "lineage": "HET_S4_03",
+            "origin": 2,
+            "record_id": "HET_S4_03_MAIN_N8_O02",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 1.1235217654377432,
+            "lineage": "HET_S4_03",
+            "origin": 3,
+            "record_id": "HET_S4_03_MAIN_N8_O03",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 1.125338026757113,
+            "lineage": "HET_S4_03",
+            "origin": 4,
+            "record_id": "HET_S4_03_MAIN_N8_O04",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 1.1260273394801588,
+            "lineage": "HET_S4_03",
+            "origin": 5,
+            "record_id": "HET_S4_03_MAIN_N8_O05",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 1.1255732127957478,
+            "lineage": "HET_S4_03",
+            "origin": 6,
+            "record_id": "HET_S4_03_MAIN_N8_O06",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 1.123967628488573,
+            "lineage": "HET_S4_03",
+            "origin": 7,
+            "record_id": "HET_S4_03_MAIN_N8_O07",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 1.1212092590534313,
+            "lineage": "HET_S4_03",
+            "origin": 8,
+            "record_id": "HET_S4_03_MAIN_N8_O08",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 1.1172961764555784,
+            "lineage": "HET_S4_03",
+            "origin": 9,
+            "record_id": "HET_S4_03_MAIN_N8_O09",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 1.1122324396885899,
+            "lineage": "HET_S4_03",
+            "origin": 10,
+            "record_id": "HET_S4_03_MAIN_N8_O10",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 1.1060264836047595,
+            "lineage": "HET_S4_03",
+            "origin": 11,
+            "record_id": "HET_S4_03_MAIN_N8_O11",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 1.098685095130226,
+            "lineage": "HET_S4_03",
+            "origin": 12,
+            "record_id": "HET_S4_03_MAIN_N8_O12",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 1.0902192295667115,
+            "lineage": "HET_S4_03",
+            "origin": 13,
+            "record_id": "HET_S4_03_MAIN_N8_O13",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 1.080646098254694,
+            "lineage": "HET_S4_03",
+            "origin": 14,
+            "record_id": "HET_S4_03_MAIN_N8_O14",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 1.06998310825564,
+            "lineage": "HET_S4_03",
+            "origin": 15,
+            "record_id": "HET_S4_03_MAIN_N8_O15",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 1.0582495080882626,
+            "lineage": "HET_S4_03",
+            "origin": 16,
+            "record_id": "HET_S4_03_MAIN_N8_O16",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 1.045468401759833,
+            "lineage": "HET_S4_03",
+            "origin": 17,
+            "record_id": "HET_S4_03_MAIN_N8_O17",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 1.0316620792315816,
+            "lineage": "HET_S4_03",
+            "origin": 18,
+            "record_id": "HET_S4_03_MAIN_N8_O18",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 1.016858720745814,
+            "lineage": "HET_S4_03",
+            "origin": 19,
+            "record_id": "HET_S4_03_MAIN_N8_O19",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 1.001089663949286,
+            "lineage": "HET_S4_03",
+            "origin": 20,
+            "record_id": "HET_S4_03_MAIN_N8_O20",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.9843913199385077,
+            "lineage": "HET_S4_03",
+            "origin": 21,
+            "record_id": "HET_S4_03_MAIN_N8_O21",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.9668052716245423,
+            "lineage": "HET_S4_03",
+            "origin": 22,
+            "record_id": "HET_S4_03_MAIN_N8_O22",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.9483724285968165,
+            "lineage": "HET_S4_03",
+            "origin": 23,
+            "record_id": "HET_S4_03_MAIN_N8_O23",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.9291387496247215,
+            "lineage": "HET_S4_03",
+            "origin": 24,
+            "record_id": "HET_S4_03_MAIN_N8_O24",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.9091601694335019,
+            "lineage": "HET_S4_03",
+            "origin": 25,
+            "record_id": "HET_S4_03_MAIN_N8_O25",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8884947160657923,
+            "lineage": "HET_S4_03",
+            "origin": 26,
+            "record_id": "HET_S4_03_MAIN_N8_O26",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8672032839474916,
+            "lineage": "HET_S4_03",
+            "origin": 27,
+            "record_id": "HET_S4_03_MAIN_N8_O27",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8453527889425672,
+            "lineage": "HET_S4_03",
+            "origin": 28,
+            "record_id": "HET_S4_03_MAIN_N8_O28",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8230177776151367,
+            "lineage": "HET_S4_03",
+            "origin": 29,
+            "record_id": "HET_S4_03_MAIN_N8_O29",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.8002782623397838,
+            "lineage": "HET_S4_03",
+            "origin": 30,
+            "record_id": "HET_S4_03_MAIN_N8_O30",
+            "variant": "MAIN"
+          },
+          {
+            "Q_def": 0.7772222595267195,
+            "lineage": "HET_S4_03",
+            "origin": 31,
+            "record_id": "HET_S4_03_MAIN_N8_O31",
+            "variant": "MAIN"
+          }
+        ]
+      }
+    }
+  }
+}

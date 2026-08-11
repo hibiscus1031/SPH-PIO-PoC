@@ -1,0 +1,39 @@
+{
+  "contract_hash": "sha256:a506af65ac124f8edf843e507f70c88566852fdfefb017eea127ddbe227fa692",
+  "counts": {
+    "adfd_comparison_count": 2880,
+    "cross_event_diagnostic_count": 6,
+    "event_birth_count": 1,
+    "event_death_count": 1,
+    "event_replay_pass_count": 6,
+    "excluded_topology_changing_epsilon_count": 0,
+    "fixed_side_event_adfd_pass_count": 12,
+    "fixed_topology_arm_case_seed_horizon_count": 72,
+    "history_gradient_pass_count": 0,
+    "optimizer_steps": 0,
+    "per_stage_conservation_count": 540,
+    "per_stage_conservation_pass_count": 540,
+    "required_probe_count": 360,
+    "stable_epsilon_window_count": 216,
+    "training_runs": 0
+  },
+  "final_status": "DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED",
+  "gates": {
+    "A_freeze": true,
+    "B_fixed_topology_adfd": false,
+    "C_history_and_conservation": false,
+    "D_topology_family": true,
+    "E_event_boundary": true,
+    "F_resources": true,
+    "G_prohibitions": true
+  },
+  "historical_freeze": {
+    "checked_file_count": 2149,
+    "mismatches": [],
+    "pass": true
+  },
+  "optimizer_steps": 0,
+  "schema_version": "sph-pio-poc.stage03d.qualification-summary.v1",
+  "smoke": false,
+  "training_runs": 0
+}

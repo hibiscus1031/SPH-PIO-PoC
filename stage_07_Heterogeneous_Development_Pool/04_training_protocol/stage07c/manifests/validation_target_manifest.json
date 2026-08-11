@@ -1,0 +1,2572 @@
+{
+  "first_decode_timestamp": "2026-08-07T09:07:19.694770+00:00",
+  "pass": true,
+  "protocol_sha256": "sha256:21b52f0aca3791cdc0d58165f1edd980667bafe0eee5a9d52544c24a8f518dbb",
+  "record_count": 256,
+  "records": [
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O00.json",
+      "json_sha256": "sha256:353be223af6c3ee6fe504d2e82f175402b5802fb7dfc0dd4e8ff34ff02117ae7",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O00.npz",
+      "npz_sha256": "sha256:3b66c35c044af5689c62d513f40996e53fb7167257a86fbd217002f53d60f48b",
+      "origin": 0,
+      "record_id": "HET_S1_01_LOW_N8_O00",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O01.json",
+      "json_sha256": "sha256:ead53e40f7211f82bb458e9e73b22b1d96876c5f598e5b2113c83e8e38c9f043",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O01.npz",
+      "npz_sha256": "sha256:52e85d00885a357edd4046cf325300efb63c23df321726d881e2cf6074e0b075",
+      "origin": 1,
+      "record_id": "HET_S1_01_LOW_N8_O01",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O02.json",
+      "json_sha256": "sha256:a47b009f4cb58f61dfd22e28ddfdc84dd0f59fb15ea904be7fedfeff6baf0002",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O02.npz",
+      "npz_sha256": "sha256:cb815be741b8329269395d2267c166ada971ee726f430996548a8e43e435d246",
+      "origin": 2,
+      "record_id": "HET_S1_01_LOW_N8_O02",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O03.json",
+      "json_sha256": "sha256:b51406cfc8bbdc5a2178a1e12df6f2a91597d7b122c40a5385ccb7d97b766082",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O03.npz",
+      "npz_sha256": "sha256:d9a7b95feb4664ebb2e7f0b2718c3a2bd3c87c33f876db6ed478b7f98d40df11",
+      "origin": 3,
+      "record_id": "HET_S1_01_LOW_N8_O03",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O04.json",
+      "json_sha256": "sha256:49dd43d0c34079d208884ed15e31f404c8dea1c64d19998f7b7f4026d87f20d8",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O04.npz",
+      "npz_sha256": "sha256:50749f0ab0937cb9be1ec8db4846b9cd26589c9a41411c09b4fcabc93671f398",
+      "origin": 4,
+      "record_id": "HET_S1_01_LOW_N8_O04",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O05.json",
+      "json_sha256": "sha256:fd9d27af68789df9f02986d6aca4f28f011045fdde42fc4f9ca23ec4c546b3f6",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O05.npz",
+      "npz_sha256": "sha256:88dad37bcf6cbb0e4f877f3f3bb112436513347411d0acd0b269d16ac6a91baf",
+      "origin": 5,
+      "record_id": "HET_S1_01_LOW_N8_O05",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O06.json",
+      "json_sha256": "sha256:6dddd3f5172bfe7116e663aac2fe3ad37caec4b4e9b16c1429792b72157abe28",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O06.npz",
+      "npz_sha256": "sha256:ef520c35bc7960958ef7646408b3b864b2bd328536cec9f2e52ff3a5334decb1",
+      "origin": 6,
+      "record_id": "HET_S1_01_LOW_N8_O06",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O07.json",
+      "json_sha256": "sha256:3557dbbefdcc4b1940c56d41e67a3c009e950fcc79b0f9ff2ed7db5606555ff5",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O07.npz",
+      "npz_sha256": "sha256:bae5ab411cbcea4967468019537f865be3fc59d613af858185ec6f5e26b068d5",
+      "origin": 7,
+      "record_id": "HET_S1_01_LOW_N8_O07",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O08.json",
+      "json_sha256": "sha256:24da2dad81ba8f18c67677fd26024f4128d77109351c2c38db594da4400bb1c0",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O08.npz",
+      "npz_sha256": "sha256:c595e922b46e723f94ab0a6b7cc9b54f59c656f9834d5a20663ea41ec414b077",
+      "origin": 8,
+      "record_id": "HET_S1_01_LOW_N8_O08",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O09.json",
+      "json_sha256": "sha256:cc7cce82ae337c55ffe75f1507c9282df609760e96c69231e349cba8d00b4d46",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O09.npz",
+      "npz_sha256": "sha256:d5c28da009e8a94b3688aead90af3b4f09d1baccfaa8d824c77961d4164899d2",
+      "origin": 9,
+      "record_id": "HET_S1_01_LOW_N8_O09",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O10.json",
+      "json_sha256": "sha256:feed0f11fcf94977a0e3a70749c70217a4530359c163a40c0a4796ab3566e08c",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O10.npz",
+      "npz_sha256": "sha256:2341c0fdc5c5b65407baff5b5d3b6d2736a6149292934e1a722218079488f64e",
+      "origin": 10,
+      "record_id": "HET_S1_01_LOW_N8_O10",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O11.json",
+      "json_sha256": "sha256:ea5685bbcc713798331ef378b425c2e18c5a0342d6713eb91f6665797d60b74e",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O11.npz",
+      "npz_sha256": "sha256:9ecbfb40882c8472f518d9cccff3b6f036d67ab3a522148fefe7d33503ac0de7",
+      "origin": 11,
+      "record_id": "HET_S1_01_LOW_N8_O11",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O12.json",
+      "json_sha256": "sha256:63418ad14c53cc8e2dd654109da2fc2d3e64eb50398a2d261f5b63124489129a",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O12.npz",
+      "npz_sha256": "sha256:8d68b17df63e91636bd78c217be23f90fb1ee84c4c9a91900f2b8a5dab6e2b5a",
+      "origin": 12,
+      "record_id": "HET_S1_01_LOW_N8_O12",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O13.json",
+      "json_sha256": "sha256:7e3e26cff748c6442983c048cb1b3e46c48d1be71507a5a069a420eaa576bd0c",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O13.npz",
+      "npz_sha256": "sha256:8c85f5cbb045e00cddae21192b18406c36ff94749e926ea1705a19e48a7437dd",
+      "origin": 13,
+      "record_id": "HET_S1_01_LOW_N8_O13",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O14.json",
+      "json_sha256": "sha256:23d3d56986fade98047a66962c15ad3d666f5e21b57007b43a80cd80212f0862",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O14.npz",
+      "npz_sha256": "sha256:a50d7f308616f83a8973cbfe2adf0181fb9e1fd2fb0cdc11b63062f4a0ed854b",
+      "origin": 14,
+      "record_id": "HET_S1_01_LOW_N8_O14",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O15.json",
+      "json_sha256": "sha256:c36913617d23d0fd3cdbf6cf9e7e16940b1a3269bfb9cfb1b4605cad77e513e8",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O15.npz",
+      "npz_sha256": "sha256:33f9effa8312cfc31a1e87d46786a37b1b0ce90eedb570eae7f2d30ee7f4c369",
+      "origin": 15,
+      "record_id": "HET_S1_01_LOW_N8_O15",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O16.json",
+      "json_sha256": "sha256:2b0a6da05a88b9cce5f4c857430948dc973e46dbdf8f55a1755c796cb9437c00",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O16.npz",
+      "npz_sha256": "sha256:6aa65302fa0646e7c9bdff7081ce668afba0c179bab163da2d0100668f199723",
+      "origin": 16,
+      "record_id": "HET_S1_01_LOW_N8_O16",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O17.json",
+      "json_sha256": "sha256:c7c111fdd7471264de34f909f7657c8b4634ce440043b424e966e17f06b8242e",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O17.npz",
+      "npz_sha256": "sha256:fc2fdacf8356bf5a10ed44dbfe5736f8da32d284d0dcb04579c6ed46ea08c760",
+      "origin": 17,
+      "record_id": "HET_S1_01_LOW_N8_O17",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O18.json",
+      "json_sha256": "sha256:15bb87f7b959a221920c0ccae341445a284fb6d169d4b9fb9822146086643b45",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O18.npz",
+      "npz_sha256": "sha256:5470976c7303ca24286b24f78cfcbedfb4a67c6450c6a472f5e80dffae4fe634",
+      "origin": 18,
+      "record_id": "HET_S1_01_LOW_N8_O18",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O19.json",
+      "json_sha256": "sha256:4d782dc7a986412a59b49ec61adf6fd79e011bffe755a8c00dfba2b1f27d0d4b",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O19.npz",
+      "npz_sha256": "sha256:d6fcf7ab882888e5238d52c5080f7cc704b7775aecfffc205ac027ff738dfc1a",
+      "origin": 19,
+      "record_id": "HET_S1_01_LOW_N8_O19",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O20.json",
+      "json_sha256": "sha256:3f20cfc991d2a844a96d6708e8d508bf294689d772cfb4a0656e51f840ba98ef",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O20.npz",
+      "npz_sha256": "sha256:525e4407ed7fdc6c368ab47bad0c15851e0525682ef0e2386104f5e4401f8a1d",
+      "origin": 20,
+      "record_id": "HET_S1_01_LOW_N8_O20",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O21.json",
+      "json_sha256": "sha256:a134aa2c1a836a8f05a8f2a4d1063d599212f44191be388ad7cf091dec007793",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O21.npz",
+      "npz_sha256": "sha256:3b5fd98eb4570ea31e80801b731b8a58b3cf72b730cd42703ed2b7e1dfc5279f",
+      "origin": 21,
+      "record_id": "HET_S1_01_LOW_N8_O21",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O22.json",
+      "json_sha256": "sha256:1cedc040555bd86b23c40cb9ca7bbf2350bfc5e60a51af069560a6859e340e9b",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O22.npz",
+      "npz_sha256": "sha256:7d8e40faeb1b17c6237f7820bd7a2ec2eec556fa6865a47b00c2db7b753dd9e3",
+      "origin": 22,
+      "record_id": "HET_S1_01_LOW_N8_O22",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O23.json",
+      "json_sha256": "sha256:38d8e7e572980a6f038301bdd3854c921ca3da514ec0812df0bc315bb8b1325e",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O23.npz",
+      "npz_sha256": "sha256:0f0e266d54cbe4d49683063e168ab752983ae0ed9e957e001bdff533c6e283d3",
+      "origin": 23,
+      "record_id": "HET_S1_01_LOW_N8_O23",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O24.json",
+      "json_sha256": "sha256:d3792bdcb58d7bcda14ba2f76f0358a75818931d77945bab3ad533f1fb24bf1f",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O24.npz",
+      "npz_sha256": "sha256:d13226ecd3f8f1fa70c8540a14485718267947f5895bbe006e3f713ddc247d64",
+      "origin": 24,
+      "record_id": "HET_S1_01_LOW_N8_O24",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O25.json",
+      "json_sha256": "sha256:b991b9140d6bddb9307492f8157414a9b21b286d99ee4a56a1766b5f5948d67b",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O25.npz",
+      "npz_sha256": "sha256:613daca578d66ccd2f3ab83f6ff9cef24957ce068f2a854b5ca63de2cb6954c8",
+      "origin": 25,
+      "record_id": "HET_S1_01_LOW_N8_O25",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O26.json",
+      "json_sha256": "sha256:98962e92da9f42b738f5b8ba15000ef0155f30f7cba0eb08c7f5f897c620e993",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O26.npz",
+      "npz_sha256": "sha256:84e726c5c3cf278c1720c7664b566f09b4612fe2c0b8afe53fed19ed3e338629",
+      "origin": 26,
+      "record_id": "HET_S1_01_LOW_N8_O26",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O27.json",
+      "json_sha256": "sha256:89cb8c6508a7d2506b619d1b47bb1f95857c9862e2bd480eeb57d0bd3189a97f",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O27.npz",
+      "npz_sha256": "sha256:10c579e42e683911522890a03e9fef19fb2b2b6853985eced8392ad8cefcbe8a",
+      "origin": 27,
+      "record_id": "HET_S1_01_LOW_N8_O27",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O28.json",
+      "json_sha256": "sha256:c22058065717cd4b4c75bdd7198e845415f79e2340d215eb1d68b2bc442c6d19",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O28.npz",
+      "npz_sha256": "sha256:89679629ea30f9de8d5a1d5c2cf8b91be84358fba4e34978edafaf9f77742a3d",
+      "origin": 28,
+      "record_id": "HET_S1_01_LOW_N8_O28",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O29.json",
+      "json_sha256": "sha256:682c797a840ab2fcb67119d2b04cefdad585e4fd98ad60704c185153f8cb449d",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O29.npz",
+      "npz_sha256": "sha256:d08ac1c6e6b42f15316d8c51b5fd73639f6963644ca56122e94918bf0cdc366d",
+      "origin": 29,
+      "record_id": "HET_S1_01_LOW_N8_O29",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O30.json",
+      "json_sha256": "sha256:d329ea446f6f90b3609876ecef9aa385170a5c08efa710bd16dd65594d90f01b",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O30.npz",
+      "npz_sha256": "sha256:6f54d67391666e7ba111fa1076c13d6d832bb22210ef0bb5087dc79450ddd922",
+      "origin": 30,
+      "record_id": "HET_S1_01_LOW_N8_O30",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O31.json",
+      "json_sha256": "sha256:886f62b6f59f8634909e52feacd4cb76557728a06f1462b86617ea0cc1db093d",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_LOW_N8_O31.npz",
+      "npz_sha256": "sha256:fed13729d6b54019dcdb520f4bd567541391f019b51dae71acbd183d7f248871",
+      "origin": 31,
+      "record_id": "HET_S1_01_LOW_N8_O31",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O00.json",
+      "json_sha256": "sha256:ce0c50ea0506c897aef95518f50ce2eada3a9c52739161818381f5928d69ecf6",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O00.npz",
+      "npz_sha256": "sha256:3cf823e2e13069410c1b71de766570ed03b52b67c7ef5b87875554dde29a8987",
+      "origin": 0,
+      "record_id": "HET_S1_01_MAIN_N8_O00",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O01.json",
+      "json_sha256": "sha256:f438aba74ae1caefde957819c8c9bb3f750bf6b1dc5643ea301c1ed0194b04df",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O01.npz",
+      "npz_sha256": "sha256:329c9328dac39eddefbef4f33306fc0650d0a15fe4c4ba43fa4951f3273c202a",
+      "origin": 1,
+      "record_id": "HET_S1_01_MAIN_N8_O01",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O02.json",
+      "json_sha256": "sha256:a63a26d37b1b04fadb6c43676c773ac44ae7ed559f3366d64bf4d95a7faeb237",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O02.npz",
+      "npz_sha256": "sha256:7b5ff77bec1f5954f64c1358e79e9bd1907a749ed0d5a82b88f7867c8e03dd47",
+      "origin": 2,
+      "record_id": "HET_S1_01_MAIN_N8_O02",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O03.json",
+      "json_sha256": "sha256:1f1dd0c03a940995f634a6a71a7503e94854149b77e60db9a5111bba4d201b9b",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O03.npz",
+      "npz_sha256": "sha256:dc98c49e1cb8765f40391701cdaa520d022cdf439c17e0613abc7ba232fac0cb",
+      "origin": 3,
+      "record_id": "HET_S1_01_MAIN_N8_O03",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O04.json",
+      "json_sha256": "sha256:336230a4361d199512a914c1490a2a75e2f761f64a5a05bde3a59234c613f597",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O04.npz",
+      "npz_sha256": "sha256:be45e84db028ae6f0b050af441637c475fcde095da72e95a2c76b444dc52a9d4",
+      "origin": 4,
+      "record_id": "HET_S1_01_MAIN_N8_O04",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O05.json",
+      "json_sha256": "sha256:7c694a1f17e5f5f396eb708e0c482b5ab9badb353d870e428283e172831851e9",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O05.npz",
+      "npz_sha256": "sha256:26aae6e2d653922a7c4ee202df8f51a25d74dc888467738d80c4e1f36c795d36",
+      "origin": 5,
+      "record_id": "HET_S1_01_MAIN_N8_O05",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O06.json",
+      "json_sha256": "sha256:2601b779b1ab5288fd2b870a92f9530ed284b7c458ca09d041ed31040a259fa1",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O06.npz",
+      "npz_sha256": "sha256:b81e848a3a9e4b3851a5d91126fc0c27ba7a761a58360f5874600f16bbe3f739",
+      "origin": 6,
+      "record_id": "HET_S1_01_MAIN_N8_O06",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O07.json",
+      "json_sha256": "sha256:e1517be135cb6fcbc5a5720c7de0b0ee693ac062bc08b2739a1d9d1935450bd8",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O07.npz",
+      "npz_sha256": "sha256:7f1d6700ba85cddb853bd0568b27de4524b9a0332f4757167fc2241bf240ef45",
+      "origin": 7,
+      "record_id": "HET_S1_01_MAIN_N8_O07",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O08.json",
+      "json_sha256": "sha256:d9a55c205d8185b1aaede08b7e0dc0c9fda9e6d52c3ff997fb6ad21fe10474f8",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O08.npz",
+      "npz_sha256": "sha256:a131a73bdb945994b77b2894a980552a3bc27e79944ea2e7e3781cec4a0786fc",
+      "origin": 8,
+      "record_id": "HET_S1_01_MAIN_N8_O08",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O09.json",
+      "json_sha256": "sha256:9aa3df3063183748ad5e7c499952c19eb379a8ecac8ee4e03a4cbf93ed1a1e0b",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O09.npz",
+      "npz_sha256": "sha256:72bd827f0f73cc8a7c8a8d7b3044eadd905f29a435e7804ea5a2b5cb6422b8aa",
+      "origin": 9,
+      "record_id": "HET_S1_01_MAIN_N8_O09",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O10.json",
+      "json_sha256": "sha256:84fe8db0d7a9713e9056484c80287b64c2c0aa456a430625be842f11aeed226c",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O10.npz",
+      "npz_sha256": "sha256:0e3abe881035f5b81ae066f2b6393f1276edd3c20ab6192716cbf0bef20cb76d",
+      "origin": 10,
+      "record_id": "HET_S1_01_MAIN_N8_O10",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O11.json",
+      "json_sha256": "sha256:753f82c205388b0f48ee36b39767b2732d1fa562e99939a5eb2d4e6a98ba4ba2",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O11.npz",
+      "npz_sha256": "sha256:f0ed0d27d41cbdb851d3d5e9ff33ad595a3c0ee8cf49968c788290ab828292a3",
+      "origin": 11,
+      "record_id": "HET_S1_01_MAIN_N8_O11",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O12.json",
+      "json_sha256": "sha256:d2b373e2f8c2cac83883a4d56037f98b8302ea0028bb2ac3a06085c1bdf7e1f7",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O12.npz",
+      "npz_sha256": "sha256:f7b657a106dc2ded5066e2228fd8c9ac8258ced156c522d31499481d20e95f52",
+      "origin": 12,
+      "record_id": "HET_S1_01_MAIN_N8_O12",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O13.json",
+      "json_sha256": "sha256:08e501e509aad86ec35fcf7f7e1646a709abf0a94f5a883b9c0c80530b4c460f",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O13.npz",
+      "npz_sha256": "sha256:fc630db9a5f09e7639174562d4654472f2417b9d42ce8f9e1696a7c13a9bc7e1",
+      "origin": 13,
+      "record_id": "HET_S1_01_MAIN_N8_O13",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O14.json",
+      "json_sha256": "sha256:386edbdbd8c5bc7ceb88659f84fe529203cb5a33b34046a458dd9b797b057e5a",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O14.npz",
+      "npz_sha256": "sha256:7a45db514a5b5f17385886803563c576c6853cdbc721c42823a26d40f2be77e9",
+      "origin": 14,
+      "record_id": "HET_S1_01_MAIN_N8_O14",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O15.json",
+      "json_sha256": "sha256:e03000420562b75303d0fcfad517a76fcbef189dc10151a4eb9e8293e756b2e3",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O15.npz",
+      "npz_sha256": "sha256:fafc2569eaf69c0fe3eff27a7406c97bb9de54fc47662999cde4cfe6ebcdf7bc",
+      "origin": 15,
+      "record_id": "HET_S1_01_MAIN_N8_O15",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O16.json",
+      "json_sha256": "sha256:17ac2b9aeb33ccdeba10f5562b704fd685eac87ea77a80d465439fa65d26c45c",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O16.npz",
+      "npz_sha256": "sha256:bb996620db6a454029838f1ec046a96bc7ee5eb0a0d704c709f32c46cf193761",
+      "origin": 16,
+      "record_id": "HET_S1_01_MAIN_N8_O16",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O17.json",
+      "json_sha256": "sha256:d84e575a0666241d7b17529aaf76555476e36441f44f763b7f3c005f5c5abda0",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O17.npz",
+      "npz_sha256": "sha256:9fc050924640780b06b1069466a026affb7e600413b69865e1674f060452e957",
+      "origin": 17,
+      "record_id": "HET_S1_01_MAIN_N8_O17",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O18.json",
+      "json_sha256": "sha256:c8126dcdb97e4c3baf80a6977bc9d60af3a83f7ca1953c8e048cb1f3289da476",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O18.npz",
+      "npz_sha256": "sha256:c6a67c70dfec3bd5a3985d1c98da832aa50c8f295f12c86b2e78ec5bf3ebbd13",
+      "origin": 18,
+      "record_id": "HET_S1_01_MAIN_N8_O18",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O19.json",
+      "json_sha256": "sha256:b7346c951d26af5afae71e88f33ee3a72698cee9fe7471f8b188a7fa1c0e3d51",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O19.npz",
+      "npz_sha256": "sha256:01352daf745ec21d8782c8ab4f07f42d2aa1e64cc39b465416b8d8d63bae77da",
+      "origin": 19,
+      "record_id": "HET_S1_01_MAIN_N8_O19",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O20.json",
+      "json_sha256": "sha256:0fe927a263c3cc5db08c602b82208306321b0e3e00389bb2b547f26e7813ebfa",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O20.npz",
+      "npz_sha256": "sha256:10ccda993cd9c9479941c81daac658edf07f30b72e07d369e253e84c3997a78b",
+      "origin": 20,
+      "record_id": "HET_S1_01_MAIN_N8_O20",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O21.json",
+      "json_sha256": "sha256:ac89bed729f104dfced54e3ece014357f1488170e21ec654d59cd6c2ea269bea",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O21.npz",
+      "npz_sha256": "sha256:7a1ee4d2657035fdf41daa12f4320411c673d36c7c885cff499f8d564a622574",
+      "origin": 21,
+      "record_id": "HET_S1_01_MAIN_N8_O21",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O22.json",
+      "json_sha256": "sha256:90375c1034e8073e994c4157f0a75ac34e3ba4a7a8d14bd20214cba974d70b11",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O22.npz",
+      "npz_sha256": "sha256:c582898afe3d7df864e611266e33a077606fa00ce67774d944810da108215cde",
+      "origin": 22,
+      "record_id": "HET_S1_01_MAIN_N8_O22",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O23.json",
+      "json_sha256": "sha256:06f95e6003acbc377808b9262d9d6ed61d13cacf08924ade3125dddd8a1fbbee",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O23.npz",
+      "npz_sha256": "sha256:3c3940b5c2fb4de70801d2e73c26516169da0538670b073e260838081445f11a",
+      "origin": 23,
+      "record_id": "HET_S1_01_MAIN_N8_O23",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O24.json",
+      "json_sha256": "sha256:86d989976810e43da3a98d1d8b59ed55ea178be53e34e5db26f8ce7ea7c86850",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O24.npz",
+      "npz_sha256": "sha256:8c4ae689270d8c6ee901289bc4b33ef84042e35cece9c8c398d32a56a84ca04f",
+      "origin": 24,
+      "record_id": "HET_S1_01_MAIN_N8_O24",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O25.json",
+      "json_sha256": "sha256:3b63585faf307a7373d08b2bbb1185e5cea849edf830f31dc175a36a60d67bc4",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O25.npz",
+      "npz_sha256": "sha256:c802bb829f88d92407653464f5db255375aa671137e11b48e5ce3e7f15617594",
+      "origin": 25,
+      "record_id": "HET_S1_01_MAIN_N8_O25",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O26.json",
+      "json_sha256": "sha256:b9c9b7cc35e6fb8fa5213840749d67d99e742f50c019d61ebf1ed54b0489a4eb",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O26.npz",
+      "npz_sha256": "sha256:1f1408512105d8d3231f5d5d60d34491796d291d2d3c9b4d83a8e4b06e793be3",
+      "origin": 26,
+      "record_id": "HET_S1_01_MAIN_N8_O26",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O27.json",
+      "json_sha256": "sha256:fed023182b419903d7386e0eabdaf03b7ff12dd4b9965c88e4a21f0ec41c54a5",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O27.npz",
+      "npz_sha256": "sha256:3e45ed8fcd44de06b230321bd94ff0bc279e06681991d48ac2e489319f333a85",
+      "origin": 27,
+      "record_id": "HET_S1_01_MAIN_N8_O27",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O28.json",
+      "json_sha256": "sha256:a3a631346fbb3554e8a63375495d65e6bc99b1ee3fc45471c5473c433d9835d8",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O28.npz",
+      "npz_sha256": "sha256:4fc02b12fd118a7500a003033e8cacc734cf6b0bc29350663974c546d343ec53",
+      "origin": 28,
+      "record_id": "HET_S1_01_MAIN_N8_O28",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O29.json",
+      "json_sha256": "sha256:aae532aabb5d5d06eb08035501bc4a1035a3c2be99d81977634c5c51bd02a8b6",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O29.npz",
+      "npz_sha256": "sha256:3597e1853c18371ee8108432e6f16d5ade4c1f908d50fa2251cf4005a0eee78c",
+      "origin": 29,
+      "record_id": "HET_S1_01_MAIN_N8_O29",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O30.json",
+      "json_sha256": "sha256:e60775379e2bd02dc0cc24dd81818e96cf3f3cdbc0a9f0eeb36a86365cd55951",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O30.npz",
+      "npz_sha256": "sha256:f8cf849c160a50af2d9a8a23f1029aa656a6a9c23453bf7303dea9c8046bb7fc",
+      "origin": 30,
+      "record_id": "HET_S1_01_MAIN_N8_O30",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O31.json",
+      "json_sha256": "sha256:55744c233c5d2eec1035b9b3776a766019ead935b184669c8cb93f6cb7be1d38",
+      "lineage": "HET_S1_01",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S1_01_MAIN_N8_O31.npz",
+      "npz_sha256": "sha256:ccea98090ae297a6ef96734f7524b901c35b3a1a9552e8cf8117b3c862135ccd",
+      "origin": 31,
+      "record_id": "HET_S1_01_MAIN_N8_O31",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O00.json",
+      "json_sha256": "sha256:af4accbe632a7cbc42de54c1bd4c9a1a8cb03f8fab423445eeb37ba0bbd657cb",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O00.npz",
+      "npz_sha256": "sha256:d4a48bade0befd451551a0c781d8bc203e63c1d6905b005d937e0a0577fc71dd",
+      "origin": 0,
+      "record_id": "HET_S2_02_LOW_N8_O00",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O01.json",
+      "json_sha256": "sha256:5941932a7afc330ce2e2b76847d77f72224baa29d0c096a575bd1cf178c82e16",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O01.npz",
+      "npz_sha256": "sha256:bd14ce2650305909a8657117695cea9c2f994e9e30781406f21b9ac5a0dc8526",
+      "origin": 1,
+      "record_id": "HET_S2_02_LOW_N8_O01",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O02.json",
+      "json_sha256": "sha256:081f8e77a01cc6089ef98ce6bbf3d275068998a6fbfafa3942556aa206cbc4c3",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O02.npz",
+      "npz_sha256": "sha256:d272dc189ddb4978a1672d2dd4762812729eae99465aad463d2a0b75c94950e4",
+      "origin": 2,
+      "record_id": "HET_S2_02_LOW_N8_O02",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O03.json",
+      "json_sha256": "sha256:d629a45e9aa9244e9853728979fdb045fc6d5a59e0e07312472e50314f5a2f19",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O03.npz",
+      "npz_sha256": "sha256:a6e14de8b3080a95894511491e1186ff4786f6fa394d5c8cee0138b40994bdea",
+      "origin": 3,
+      "record_id": "HET_S2_02_LOW_N8_O03",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O04.json",
+      "json_sha256": "sha256:abb35b215cf23f5b94cc6dfce7cf2a1f42e4eaa2c1dc4d1adcb8dd2a38e49eeb",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O04.npz",
+      "npz_sha256": "sha256:5c98b9eb3d8d61bb718dbef6365b0d6ceb964caf36bd0b1e44b89879f244a2ce",
+      "origin": 4,
+      "record_id": "HET_S2_02_LOW_N8_O04",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O05.json",
+      "json_sha256": "sha256:35d0e8058726d7362ee24673f504dece2863c7c315d212af7b39acdafac299a1",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O05.npz",
+      "npz_sha256": "sha256:120d999b1ed42dbaca9a3f75fa274cde7a3d51048b5f350a1a44414fbd1dba66",
+      "origin": 5,
+      "record_id": "HET_S2_02_LOW_N8_O05",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O06.json",
+      "json_sha256": "sha256:7450731741a26ab156d2a6bed819e8aa16c81bf03344bea55cf63f0f510a78a1",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O06.npz",
+      "npz_sha256": "sha256:1e2f0dc295a56fe00e87c951c9c82c0b1828e544a8f809fb64834bc49ee6c972",
+      "origin": 6,
+      "record_id": "HET_S2_02_LOW_N8_O06",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O07.json",
+      "json_sha256": "sha256:47d611c4db0b222a817746fb899a5773854d300e569a7fbe887e4a9b5f36e743",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O07.npz",
+      "npz_sha256": "sha256:4d214d75fedd72ffafb33bbc0976c0b65279d67bfbba818e3e196d3fb07f7521",
+      "origin": 7,
+      "record_id": "HET_S2_02_LOW_N8_O07",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O08.json",
+      "json_sha256": "sha256:0a72e56794d87be2d90bb7b642e40a6924ccceb32132750a555269d1ce247203",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O08.npz",
+      "npz_sha256": "sha256:f3c6eeb3479d25b8ca8f50c50f52b62b49e9959ec8f6a9023b2493d02ad1a487",
+      "origin": 8,
+      "record_id": "HET_S2_02_LOW_N8_O08",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O09.json",
+      "json_sha256": "sha256:fe23bc2238c36f131d7db6b24fb799bba1490c003e9399d239c51e8d15253dca",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O09.npz",
+      "npz_sha256": "sha256:60bf5a13e91eea698223a32632629324bc5f4ad038e37b40b4f01742d4ee7885",
+      "origin": 9,
+      "record_id": "HET_S2_02_LOW_N8_O09",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O10.json",
+      "json_sha256": "sha256:afd4bec0bbfcf9d9181ed6f33295a6ad7aebdf2dc9e61d4d084edabafb6249b6",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O10.npz",
+      "npz_sha256": "sha256:0374efc502030b5a2e123b207fdb930d9fe03bbfcfa24ec23ad7213a9b2c5fcf",
+      "origin": 10,
+      "record_id": "HET_S2_02_LOW_N8_O10",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O11.json",
+      "json_sha256": "sha256:87d56eae12d17868fa86010ec5fdecdb0e9e7f220ea35efc8c02b7d751c9b7df",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O11.npz",
+      "npz_sha256": "sha256:eb40bff2b5e6e0e47428c2017eb19b8431c9a1d4cac652f435c5b5df8d118cc1",
+      "origin": 11,
+      "record_id": "HET_S2_02_LOW_N8_O11",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O12.json",
+      "json_sha256": "sha256:e5f35b6b061fe0bfc13f041021a2e0dabae95094b7645f1e123fb026b60f5b32",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O12.npz",
+      "npz_sha256": "sha256:991c854acb2c17dd8ad964dd05737bcd0db9a66b42d7a190505b21032c69d1c5",
+      "origin": 12,
+      "record_id": "HET_S2_02_LOW_N8_O12",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O13.json",
+      "json_sha256": "sha256:c49878bda2538e8e07e5ab6542998788e5e4bd564b6188ca69caf1d370651a59",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O13.npz",
+      "npz_sha256": "sha256:f528c1ec2c8af21ac310e40b3cd91a254878f74c5591a3b3c6564d47bf9daa21",
+      "origin": 13,
+      "record_id": "HET_S2_02_LOW_N8_O13",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O14.json",
+      "json_sha256": "sha256:265f1b17598434af68e18de113c4d226a932946676fc9a9202aa8fae3cba0765",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O14.npz",
+      "npz_sha256": "sha256:c853c83ceb0b80a379ad8c594c81ddd3649c0c2a4d469c11ed515c4581a48003",
+      "origin": 14,
+      "record_id": "HET_S2_02_LOW_N8_O14",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O15.json",
+      "json_sha256": "sha256:8267cd781e701f8be224ef953bf7efc8694b05646b671ff42fa4e46add55865e",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O15.npz",
+      "npz_sha256": "sha256:82b46a391d42580ebcee02510da0b86b2d0ed4cec07678ea642b14e2e99ce987",
+      "origin": 15,
+      "record_id": "HET_S2_02_LOW_N8_O15",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O16.json",
+      "json_sha256": "sha256:7cb372e570821a7b67797b3e4adedcd0b4ccda3524bdf7abbfeb93e45bcf653a",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O16.npz",
+      "npz_sha256": "sha256:0d0b9fff47616d1117ade748389276177d2ea0a6c8547c56ce386a82c6a0a076",
+      "origin": 16,
+      "record_id": "HET_S2_02_LOW_N8_O16",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O17.json",
+      "json_sha256": "sha256:818e6d0ad8f69608e9425c5a227d8b864c15f1828b538a0628bac5237f01146c",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O17.npz",
+      "npz_sha256": "sha256:2e357c04b8f7457e52f14ae5dbbc2f9d3c35af2bd42cbcd055fa0735bd82e1d7",
+      "origin": 17,
+      "record_id": "HET_S2_02_LOW_N8_O17",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O18.json",
+      "json_sha256": "sha256:ec7a0a49ec0074d871c31be55e6271e07c5457ff7f1eb030c0cf40b2ba510602",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O18.npz",
+      "npz_sha256": "sha256:e55497b17d81746eb48b34a6afde694d4538798a627f77352d8225847b575a47",
+      "origin": 18,
+      "record_id": "HET_S2_02_LOW_N8_O18",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O19.json",
+      "json_sha256": "sha256:28d3821357d52d17c95dcf4d7f77a2ff82692158f9892e7abc311158507098ec",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O19.npz",
+      "npz_sha256": "sha256:47e4d97ad1e90ef4b2a6f5397a9780cca8af30905745153af709d7cea4680cb6",
+      "origin": 19,
+      "record_id": "HET_S2_02_LOW_N8_O19",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O20.json",
+      "json_sha256": "sha256:5a359fc17ed2f2a0b29443924861077d1da48323d60ca43f6bc7154fe359bbdb",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O20.npz",
+      "npz_sha256": "sha256:6562bc77648ea85d628e6f5459a3b95a8e14d056c4abfaee5577f37a904ef1a6",
+      "origin": 20,
+      "record_id": "HET_S2_02_LOW_N8_O20",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O21.json",
+      "json_sha256": "sha256:d25e329677d78dff09e882c9d02a8bb4c62191bf70e01bc460acd92afe7b18d2",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O21.npz",
+      "npz_sha256": "sha256:3182d9fb5bb32a9a493e920fa5b26e876d0a1708055d1e3bba8c413a4add1a12",
+      "origin": 21,
+      "record_id": "HET_S2_02_LOW_N8_O21",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O22.json",
+      "json_sha256": "sha256:941f2bb0db98637555fb426a754a434d0687cb8d0d5c86eeeb3e8c866179f602",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O22.npz",
+      "npz_sha256": "sha256:e0c444ad98b9c4c23cc1dfdac494cc17d41b7b46c286fe39d8b1f881d30dc682",
+      "origin": 22,
+      "record_id": "HET_S2_02_LOW_N8_O22",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O23.json",
+      "json_sha256": "sha256:5fe9918d2e94cfde6c5b37d5050e3b220f84198ad306ce4d5c3eadeb291edf3d",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O23.npz",
+      "npz_sha256": "sha256:e59fde33615e0087d7dc0f41793bf19fc68166246194fc7516b21b4f1cbacf6d",
+      "origin": 23,
+      "record_id": "HET_S2_02_LOW_N8_O23",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O24.json",
+      "json_sha256": "sha256:8f5f4d2f02dbae609b321b5581ca8038f34bc4e209bf160cb1cb530fe8abd219",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O24.npz",
+      "npz_sha256": "sha256:886e130945fbdf8fc17aa477dd31dd3ab12c6e9379082534fb4683df08d86a61",
+      "origin": 24,
+      "record_id": "HET_S2_02_LOW_N8_O24",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O25.json",
+      "json_sha256": "sha256:a3a7b24ee10031f44d29b318f58963855cb4216a6f6fce14d14be1af2158eecf",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O25.npz",
+      "npz_sha256": "sha256:01dee451a6e60fb409dba152fc564463bd8082a1f3288693a55b9e3b52c06e69",
+      "origin": 25,
+      "record_id": "HET_S2_02_LOW_N8_O25",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O26.json",
+      "json_sha256": "sha256:6a3e4222e0b210cc3a973d28dc7e418e157034fbaa81736005a43aab8916fe1c",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O26.npz",
+      "npz_sha256": "sha256:f7df624c624df9073a31459453dda6ae6594e9f37d2e73e4736a643e9d372c15",
+      "origin": 26,
+      "record_id": "HET_S2_02_LOW_N8_O26",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O27.json",
+      "json_sha256": "sha256:33f8ce88ce473c8d322f39ea31e7b4477599eb89c33e4eceed83c9abb414dc61",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O27.npz",
+      "npz_sha256": "sha256:7541940296affb06b8127bfc1d91bf219f6711bb04a9ca89682f7e18bc814974",
+      "origin": 27,
+      "record_id": "HET_S2_02_LOW_N8_O27",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O28.json",
+      "json_sha256": "sha256:4cda6dabfe6281662b3c0dd88eaa446aa25ca28b7c23a54802c25a2fadb3b9d5",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O28.npz",
+      "npz_sha256": "sha256:5c3f8cb77338f570342f4885176ff0da6c104cd6b74975a94511a305878f044d",
+      "origin": 28,
+      "record_id": "HET_S2_02_LOW_N8_O28",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O29.json",
+      "json_sha256": "sha256:6f60673f2e388e34fb168c7258ddd15cfbdc2066760154e12c0fb6f3763ea848",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O29.npz",
+      "npz_sha256": "sha256:ba6965d8fe311337b529c01e581dde6817e964da19b3315a6c4749733647bfe5",
+      "origin": 29,
+      "record_id": "HET_S2_02_LOW_N8_O29",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O30.json",
+      "json_sha256": "sha256:161280e60484ab1339c6e49e2f66cc9971c2ce9bf7063be8b61a623b337dab72",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O30.npz",
+      "npz_sha256": "sha256:db5bb96de02de14ca027ccd6d5ebc52d40c1731512fbc245e144f47f17c9d46a",
+      "origin": 30,
+      "record_id": "HET_S2_02_LOW_N8_O30",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O31.json",
+      "json_sha256": "sha256:87abc585db9f4fc1f4c1ad4b1eefe7fa32774f852e2cbcf35a24810007f8f601",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_LOW_N8_O31.npz",
+      "npz_sha256": "sha256:c47e3673e09e9d148a26114ea2d20f769a4e5a4771673c8157244aff0d5ceb09",
+      "origin": 31,
+      "record_id": "HET_S2_02_LOW_N8_O31",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O00.json",
+      "json_sha256": "sha256:3a72a82e732d5fe1d77aa72249739d61380191e33757f28f93a3a8a97af6cf00",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O00.npz",
+      "npz_sha256": "sha256:e227b002b597f1c535cf1269df1f4d8c37f141aed952f59b6506f0cea409caec",
+      "origin": 0,
+      "record_id": "HET_S2_02_MAIN_N8_O00",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O01.json",
+      "json_sha256": "sha256:2344d031e419322e26781f82c96f8c8452f06d0a992bf48bba370b39a423e17c",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O01.npz",
+      "npz_sha256": "sha256:2157e953cd879e1e6809b5cab3973fffb4bd8f599b123779757b4d7c41694b54",
+      "origin": 1,
+      "record_id": "HET_S2_02_MAIN_N8_O01",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O02.json",
+      "json_sha256": "sha256:7c4c366b99bc71ff65c2c471eecf4efafe17db6c38e2e47224bba8ed7f42f7f6",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O02.npz",
+      "npz_sha256": "sha256:e53be67bf063d780c0d0e758d51dfb7418fa9974a1779fe277ecf9a43061ad5b",
+      "origin": 2,
+      "record_id": "HET_S2_02_MAIN_N8_O02",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O03.json",
+      "json_sha256": "sha256:0bf4a9a40fdf0e5245b5bcef79937ae35010109a6e912da9d7ce38354cad427d",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O03.npz",
+      "npz_sha256": "sha256:049bd6c693ad423d04252bc284a44867699262bb72ec6df58d2b6274dee049ae",
+      "origin": 3,
+      "record_id": "HET_S2_02_MAIN_N8_O03",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O04.json",
+      "json_sha256": "sha256:872cae1dad73f4566df9c44982bda1ab4e6dee4ca25eb0bacfe256d0c180dfd0",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O04.npz",
+      "npz_sha256": "sha256:46f7ccd7980a528b1093a5cfe551fb120093903be1043586939ac3be93df8b95",
+      "origin": 4,
+      "record_id": "HET_S2_02_MAIN_N8_O04",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O05.json",
+      "json_sha256": "sha256:577a22952540aebcc19fbaa58bc36985755aa756ca3ab1b46ec22169cd4194d8",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O05.npz",
+      "npz_sha256": "sha256:1f39bd9e21db445b791b0b25ef7584559903408c674d2f8a998d5686c3d76a8b",
+      "origin": 5,
+      "record_id": "HET_S2_02_MAIN_N8_O05",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O06.json",
+      "json_sha256": "sha256:4d194ce9bd6d2e2f0cffc1245c1e20c31a7146493acd15345eccfd1e59ff6d24",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O06.npz",
+      "npz_sha256": "sha256:a503620c8607a0e5ed983739d0ff7932cce24dc0402c674c32bbbbeff10a33d7",
+      "origin": 6,
+      "record_id": "HET_S2_02_MAIN_N8_O06",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O07.json",
+      "json_sha256": "sha256:913d19d95987fbb77961cc4b5288d9ff85488db76b337fa50f0434d3e04d64f0",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O07.npz",
+      "npz_sha256": "sha256:6104727b3e7d72dda371af1cf288ea8cc10acaa7d42f2a7e93c0bc9346c50738",
+      "origin": 7,
+      "record_id": "HET_S2_02_MAIN_N8_O07",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O08.json",
+      "json_sha256": "sha256:2a48bfb2d2c1ced3ece4ab39ea273beb5a9d64c3b242c3bb90012ef7f2d18301",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O08.npz",
+      "npz_sha256": "sha256:86c8cbfa42dd09ab7e9efb201451358f43f674f35525031b85813ce8aa1e23bb",
+      "origin": 8,
+      "record_id": "HET_S2_02_MAIN_N8_O08",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O09.json",
+      "json_sha256": "sha256:6e164ef6f2fd73d432057293402397da6e5dfe9b213354adb093c3e441e8688d",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O09.npz",
+      "npz_sha256": "sha256:72bc951796246ae20fba1ff5c6948159da19d38688074d3b5cd2a3b4ac0861ea",
+      "origin": 9,
+      "record_id": "HET_S2_02_MAIN_N8_O09",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O10.json",
+      "json_sha256": "sha256:d4400cc2e770122dc9f09518226d9b1769634d964fb38ff4bd31541e9966ae8f",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O10.npz",
+      "npz_sha256": "sha256:e4f96ca5cf3c76e3bc068cc2205b3f8de57de78a381e589fa2d351090248be58",
+      "origin": 10,
+      "record_id": "HET_S2_02_MAIN_N8_O10",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O11.json",
+      "json_sha256": "sha256:5ef2afbf3c0503e0da559b46ae0465d80a93754ab342605645341b9a6651b7ac",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O11.npz",
+      "npz_sha256": "sha256:2010fccf8529a50c627641b35e2fbdc027b90c523c2b2a5a45432117098b56a7",
+      "origin": 11,
+      "record_id": "HET_S2_02_MAIN_N8_O11",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O12.json",
+      "json_sha256": "sha256:6b4641a60932d50851dcc4de335395c837772d70d9ff11ef9c3c9da0fa476da9",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O12.npz",
+      "npz_sha256": "sha256:53c00b03a1ed08e689c2508da335d11563da34109eb364fda9a6029b1fb759c2",
+      "origin": 12,
+      "record_id": "HET_S2_02_MAIN_N8_O12",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O13.json",
+      "json_sha256": "sha256:e6ee516ad5ec490cfdb31c0a733bfbc34d5503894f97c27998c8c888e617fd79",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O13.npz",
+      "npz_sha256": "sha256:7d6078e5af17715c2ffe14e8d6fb37fd0d4c48e142a012fd5e3eab5f65eb0a61",
+      "origin": 13,
+      "record_id": "HET_S2_02_MAIN_N8_O13",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O14.json",
+      "json_sha256": "sha256:0716f219e4880c087d37f3e62f695414d642489d2c96c98759ef73c0b991f4bd",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O14.npz",
+      "npz_sha256": "sha256:b95be3629153770fd60cdef26d253f627efa3bde832cb6adc89b3f9075b0c730",
+      "origin": 14,
+      "record_id": "HET_S2_02_MAIN_N8_O14",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O15.json",
+      "json_sha256": "sha256:39213b78b22226336d5d53219d074c0c63b80d0bffb404db49556a3d2ec2fa44",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O15.npz",
+      "npz_sha256": "sha256:652f4fefecb3d4c125dac36da56cfa6bfde6670a2207e0288708567d4f040c5b",
+      "origin": 15,
+      "record_id": "HET_S2_02_MAIN_N8_O15",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O16.json",
+      "json_sha256": "sha256:8892e34c0f981cca28e1e71bd43f3a96241896567fac35136af6b8ab6f7d3087",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O16.npz",
+      "npz_sha256": "sha256:cdd8b55ad6858256ced074557d7476f607f3ddd845ae99d9aa58c0eef2260077",
+      "origin": 16,
+      "record_id": "HET_S2_02_MAIN_N8_O16",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O17.json",
+      "json_sha256": "sha256:22971133bc516f6d6804b13a526e5a3f949be6b17e97e9429dc569ca038a6e93",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O17.npz",
+      "npz_sha256": "sha256:5b8360c1543caf3d5d6f957db178771b5cc28f8af754654e48eeb93132e5a849",
+      "origin": 17,
+      "record_id": "HET_S2_02_MAIN_N8_O17",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O18.json",
+      "json_sha256": "sha256:b457c3556e45ca3bdd6bafe3fddd025a7a9c85226723aa44e79b38130ee33d5b",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O18.npz",
+      "npz_sha256": "sha256:a6806c7a61a1570f252af384516e1cba526e90246b3978761ae800736b5eda1d",
+      "origin": 18,
+      "record_id": "HET_S2_02_MAIN_N8_O18",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O19.json",
+      "json_sha256": "sha256:8a2947ea7cda09b1ec738cd566cfdbb4fc1fe602a8b76da632c5cbbff3f15a46",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O19.npz",
+      "npz_sha256": "sha256:f614b5a4afa707ff35e6be3d0583f24d8cb43c9640f4130bb9caa9fd008c60ea",
+      "origin": 19,
+      "record_id": "HET_S2_02_MAIN_N8_O19",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O20.json",
+      "json_sha256": "sha256:32cf2ddd8e1056ecc81485c5c1436789fc1e76e5881b852b3cc2e5a1a3b9695b",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O20.npz",
+      "npz_sha256": "sha256:7bf81673b9932d384c7679fc8dde5ed0d75f6636fc2d4dd9f13b6f75ef7bfccf",
+      "origin": 20,
+      "record_id": "HET_S2_02_MAIN_N8_O20",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O21.json",
+      "json_sha256": "sha256:ec2ca1357c35d8dfc4d648dd135ae631a73f80d960c3e3890bc999892b51c352",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O21.npz",
+      "npz_sha256": "sha256:ba3829150a79ce04f943499dec8fcb5d2ad9681c99d8f129619e97d29fa89d2d",
+      "origin": 21,
+      "record_id": "HET_S2_02_MAIN_N8_O21",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O22.json",
+      "json_sha256": "sha256:72318c2ed7ce15d250b83b4f47be06d688ea8c70d6789daa50c7e90f99910a17",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O22.npz",
+      "npz_sha256": "sha256:787d1f3b9966f285f9f331460b2f255b4992f036d3882b48f9626bedb8c5fb34",
+      "origin": 22,
+      "record_id": "HET_S2_02_MAIN_N8_O22",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O23.json",
+      "json_sha256": "sha256:5e1225bbe3fa538bb30117897ba85131ba01f697792caf1a3b82999ac85dcb45",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O23.npz",
+      "npz_sha256": "sha256:ad454f272134c1cbfc9460868efb2e4ce2fe4de7c7c0bdcf318f5fb3e9b9585b",
+      "origin": 23,
+      "record_id": "HET_S2_02_MAIN_N8_O23",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O24.json",
+      "json_sha256": "sha256:2882a91bee4fd9bb073bab184f0eaec8214706dfb7a491809f86e25c4813385f",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O24.npz",
+      "npz_sha256": "sha256:de8a42da9c5bcf689721cd76b22fecd8f82e9dacd75da3cfb1753a7a8696852c",
+      "origin": 24,
+      "record_id": "HET_S2_02_MAIN_N8_O24",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O25.json",
+      "json_sha256": "sha256:b356150e82710b6e7b709724fb8052e2d86669376ef41088f4b3122227c945c9",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O25.npz",
+      "npz_sha256": "sha256:1128d9831e75ba2779276ca87fdc8a7c83306bd71eeb1eb84dc41bc3e5f433fc",
+      "origin": 25,
+      "record_id": "HET_S2_02_MAIN_N8_O25",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O26.json",
+      "json_sha256": "sha256:7b062348b9f508ccde1fa77c386d151090644fc1ecafcf722f7f7f080547ffe9",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O26.npz",
+      "npz_sha256": "sha256:ffcd8ea6f3bf362bbc99bea70fdaeeaba08080e3b23c7def96818bbd5d18f50b",
+      "origin": 26,
+      "record_id": "HET_S2_02_MAIN_N8_O26",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O27.json",
+      "json_sha256": "sha256:3222bb79cc9a5395ca9fdcd3f20135efbf47d43347d938a0b730fc12ac5e3484",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O27.npz",
+      "npz_sha256": "sha256:17d3f599dffcbed30ed7fc3864d2f769538881064e467cfddebac2eb8b7ff36e",
+      "origin": 27,
+      "record_id": "HET_S2_02_MAIN_N8_O27",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O28.json",
+      "json_sha256": "sha256:d593c204b157a8203fec120ce0f1ec39824d4ccd26bd60b4c21bb5ab47f79168",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O28.npz",
+      "npz_sha256": "sha256:c026e5f373dc643db8cd06164ce6d1cb8aad2d4f0bb799b13391cf03d9e1826e",
+      "origin": 28,
+      "record_id": "HET_S2_02_MAIN_N8_O28",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O29.json",
+      "json_sha256": "sha256:10a1cc7a790ba796310c0603c3afdab94cc313d9a95ee5d2d1f87bda919e7a46",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O29.npz",
+      "npz_sha256": "sha256:d779f5d7d582f0e2fae2b1cd4a6c8cb75f44761a236a56974ca02182b5415f54",
+      "origin": 29,
+      "record_id": "HET_S2_02_MAIN_N8_O29",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O30.json",
+      "json_sha256": "sha256:6e354160802e3ab5fe8963d3cc9a43cfec19fe311193d278514a3338fe4f44da",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O30.npz",
+      "npz_sha256": "sha256:e32eacb7b072a5708b56e077eda81036f4518d78edb57bb490bb6f71afd39da9",
+      "origin": 30,
+      "record_id": "HET_S2_02_MAIN_N8_O30",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O31.json",
+      "json_sha256": "sha256:3d0299fcd48bc5b5b468a859f5e368663c02d65868770dad4c2739337d0fcd9a",
+      "lineage": "HET_S2_02",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S2_02_MAIN_N8_O31.npz",
+      "npz_sha256": "sha256:14e27a66d9722eb6b4b98a4430fd4e6d2d70d0eeab0794fef6bf6138087392be",
+      "origin": 31,
+      "record_id": "HET_S2_02_MAIN_N8_O31",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O00.json",
+      "json_sha256": "sha256:2bdb7f6ccb2658f232ffadd2bfa4eeb262fa510f9ba058533bb95d04fbf3ff5e",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O00.npz",
+      "npz_sha256": "sha256:b1509d15bbcaa27fb15a95e305087018fbab2f5e40a6c7be8385241262b1fab6",
+      "origin": 0,
+      "record_id": "HET_S3_03_LOW_N8_O00",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O01.json",
+      "json_sha256": "sha256:c63ce3ff76c4a9d495e4296aa2fe3c3cde708c1bf234568eef567748e6b034dd",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O01.npz",
+      "npz_sha256": "sha256:845a3c4e13e3b5089c03fb3538128bca6fcc17523ed6455c0defdc87a0b9be68",
+      "origin": 1,
+      "record_id": "HET_S3_03_LOW_N8_O01",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O02.json",
+      "json_sha256": "sha256:4e71528190f5b6fe0eca353dfdf9a1906a06d5eae0b6ec20c797724de39bc645",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O02.npz",
+      "npz_sha256": "sha256:6d0ea623ab38968705c233cb16d7984affd76c8135c50ce5456da79f92058cdf",
+      "origin": 2,
+      "record_id": "HET_S3_03_LOW_N8_O02",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O03.json",
+      "json_sha256": "sha256:862f6ac34d491289c2a7ab35e7afbace587c9d6a7890cc3b60118c63d03f954b",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O03.npz",
+      "npz_sha256": "sha256:757f72df214260a28fc90bd1102c24323283daa597b51b99806c641ba9186ae6",
+      "origin": 3,
+      "record_id": "HET_S3_03_LOW_N8_O03",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O04.json",
+      "json_sha256": "sha256:056f2159627758f971421b118de430695e15312766af13f9027e4a562e68c227",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O04.npz",
+      "npz_sha256": "sha256:d3f483cd6ff095bd55443b5004545fc713fc626c3e1669317d4651adf2e1bdf7",
+      "origin": 4,
+      "record_id": "HET_S3_03_LOW_N8_O04",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O05.json",
+      "json_sha256": "sha256:5cee829a9653201e671daf191e6196e474e5b95087ecc1d7be87307ce5930af1",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O05.npz",
+      "npz_sha256": "sha256:325bdcd311e8a7bd0ef4b4c8ab8198c22a570f6fbca7073e746449c900dbe796",
+      "origin": 5,
+      "record_id": "HET_S3_03_LOW_N8_O05",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O06.json",
+      "json_sha256": "sha256:2ef114c5fad5d9a63483957a53cb648e3633b67437192ba121751b35cf707031",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O06.npz",
+      "npz_sha256": "sha256:4a48ef7a1bca0fd0958c8e639b4c03362324ad33045eedac0291ed78aa34012b",
+      "origin": 6,
+      "record_id": "HET_S3_03_LOW_N8_O06",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O07.json",
+      "json_sha256": "sha256:2b64c5177e9f955201ba0335262e2b6bc3f2704211b23d830f2cd94aa9431e4c",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O07.npz",
+      "npz_sha256": "sha256:ff63a37306666750858d34b50481fcc5554a0fad3d1148fd5e9aa2aeb007e739",
+      "origin": 7,
+      "record_id": "HET_S3_03_LOW_N8_O07",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O08.json",
+      "json_sha256": "sha256:1c4a4a1c89f29b154a5440e23d86a57453c3c5459dd683c3ac16615e3b031c36",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O08.npz",
+      "npz_sha256": "sha256:478bce2d78441c923400f043361c5a23b4598aa64c4aa6261cf1b36907900804",
+      "origin": 8,
+      "record_id": "HET_S3_03_LOW_N8_O08",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O09.json",
+      "json_sha256": "sha256:d881b1a859b3b40068028fcbe0612f8d695c7cdab25e69b1fce31f8033b5fe71",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O09.npz",
+      "npz_sha256": "sha256:4984896e5d4f84b5c67aff7c61990ab068b452522fbb2ef9e0c76edbc5a13cb8",
+      "origin": 9,
+      "record_id": "HET_S3_03_LOW_N8_O09",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O10.json",
+      "json_sha256": "sha256:b191f2e5e6c73268bd3d56bbaf72318903a10f426a15160504b050d9c00a238b",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O10.npz",
+      "npz_sha256": "sha256:2574cb0a4ea9091dc005ba6f5d368c1c4331ec0cab8ca8de0a611bb63d8dc197",
+      "origin": 10,
+      "record_id": "HET_S3_03_LOW_N8_O10",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O11.json",
+      "json_sha256": "sha256:d38257f6562d77eb5a6e08d2f63fa4b2a31052fb80cc3c821cfa679bf877e7b5",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O11.npz",
+      "npz_sha256": "sha256:1f4e95f3117955773bf21ae1d77efc1da89c25d71e740492e05a943e19fa432d",
+      "origin": 11,
+      "record_id": "HET_S3_03_LOW_N8_O11",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O12.json",
+      "json_sha256": "sha256:61f6d63e69d2acb958ebb9e775cf5e0f5bf626f08cf5cde7e00e45d4f9dcb506",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O12.npz",
+      "npz_sha256": "sha256:8d0567fafd2d543cbdf3dc6bce70550f0d21ba60e74146a301ed40033944ac8d",
+      "origin": 12,
+      "record_id": "HET_S3_03_LOW_N8_O12",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O13.json",
+      "json_sha256": "sha256:7b6e47797f947129cb0151b0fa6dffc7dd5ff0a6bd361403b533f991780890b4",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O13.npz",
+      "npz_sha256": "sha256:96a9afddcb92fb6bb35977dd495de343bd2fa5d75e1be017cda8dad9606d7f61",
+      "origin": 13,
+      "record_id": "HET_S3_03_LOW_N8_O13",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O14.json",
+      "json_sha256": "sha256:cfaff302f6744a6162b52a768e1abbfd31c73739b3074e39f7331865f4d16521",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O14.npz",
+      "npz_sha256": "sha256:85c3a893614c2e085da6360daadf0e6f5be0401d78a386dd2cfc012e1410bfc9",
+      "origin": 14,
+      "record_id": "HET_S3_03_LOW_N8_O14",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O15.json",
+      "json_sha256": "sha256:f555a290e5881916fc6be4338f441682d43c28ebd192cde3444783658a327a2c",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O15.npz",
+      "npz_sha256": "sha256:193a92d4727332382f306ebead98fc6229df8238118d4e74d8db16308dae869c",
+      "origin": 15,
+      "record_id": "HET_S3_03_LOW_N8_O15",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O16.json",
+      "json_sha256": "sha256:ee63487f471dd53fa04fd795ef886c031a8e577295a5a9c1b4196722d360f2d9",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O16.npz",
+      "npz_sha256": "sha256:6334af62de8cc77a65d6bf31caf13118382df31b6a469674db140bfd4396d967",
+      "origin": 16,
+      "record_id": "HET_S3_03_LOW_N8_O16",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O17.json",
+      "json_sha256": "sha256:7188fe18db73d9e760a69ec6d0cab2fa846d0eee5807cd976a30fca4d7317c0d",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O17.npz",
+      "npz_sha256": "sha256:a11ed888a2e6da85356494e2b6a3034f4f436132889c2ae626e82232068fd369",
+      "origin": 17,
+      "record_id": "HET_S3_03_LOW_N8_O17",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O18.json",
+      "json_sha256": "sha256:25c1ed81247ebcb282be42da1ca4745aa0835682a875b1deed465e32a0cf23c6",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O18.npz",
+      "npz_sha256": "sha256:37b7e25ef0fcb0e787cf0345ccbbb9163cf3e40dd5164563d59d2e1a517fc2d9",
+      "origin": 18,
+      "record_id": "HET_S3_03_LOW_N8_O18",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O19.json",
+      "json_sha256": "sha256:56fce284dfa1830c68209842781a4789ec312576a3f70fbd1e52bd74cda0cdb4",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O19.npz",
+      "npz_sha256": "sha256:968229826de4c2758eaa2942f7ace8755882cd8fe20c46f9c3ef8103931f56fd",
+      "origin": 19,
+      "record_id": "HET_S3_03_LOW_N8_O19",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O20.json",
+      "json_sha256": "sha256:e80f6cfa516909a396b0eb71ee279397f214a81ba46c66bc9becaec86c8361d4",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O20.npz",
+      "npz_sha256": "sha256:4add806d4fb300554bf9fba6aead58597b3e2edc45777f671847f49b22868555",
+      "origin": 20,
+      "record_id": "HET_S3_03_LOW_N8_O20",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O21.json",
+      "json_sha256": "sha256:ae9b5fa86304359496b40e4554236fe32ebffb163c11539285402cab94f23269",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O21.npz",
+      "npz_sha256": "sha256:b7b918c928680c35469b1ec32b28422aead5852e2f1be5a166607cb3ff8ddd25",
+      "origin": 21,
+      "record_id": "HET_S3_03_LOW_N8_O21",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O22.json",
+      "json_sha256": "sha256:18f427413a14bd5bb70a96bd6af0b70a90c8f27634c11ac3ecee2980be6195fe",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O22.npz",
+      "npz_sha256": "sha256:55bfa49a932fb243a8f49505f90b03dbc5b3eed6d5faf8883fc149a99214a7c5",
+      "origin": 22,
+      "record_id": "HET_S3_03_LOW_N8_O22",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O23.json",
+      "json_sha256": "sha256:6e6381c35d2a99cc294f56a588d655ab760e3ee442b282761eaba44c45334ee8",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O23.npz",
+      "npz_sha256": "sha256:0ef62c049841bb0a4647a058193d4fd8a8bc553db5d5323c66dcfbba5e281144",
+      "origin": 23,
+      "record_id": "HET_S3_03_LOW_N8_O23",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O24.json",
+      "json_sha256": "sha256:8e05b98b6bf04068241c1053277f30564279e96f42a92985682cc2de973fb901",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O24.npz",
+      "npz_sha256": "sha256:9b0020078a71de8303d6340186a8b83a5b2a59e9d99f5c6aca343a05a3847468",
+      "origin": 24,
+      "record_id": "HET_S3_03_LOW_N8_O24",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O25.json",
+      "json_sha256": "sha256:ac27d5c2f695abecc43f7098a9d03f8a8fc2e3ea51d83a237fcd243cf4108a81",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O25.npz",
+      "npz_sha256": "sha256:da9ea5946c913d7c5be6c96977cd7c641113a2af9efae538371028f4ea505d3c",
+      "origin": 25,
+      "record_id": "HET_S3_03_LOW_N8_O25",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O26.json",
+      "json_sha256": "sha256:544a944bb23a61351916ae0dc215786d8c371758137138ded06b378ebbd9748e",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O26.npz",
+      "npz_sha256": "sha256:72018f0acf8371cb3abaae5e5eb5d045b45f5d1dc0cf0faab118946e34a414f8",
+      "origin": 26,
+      "record_id": "HET_S3_03_LOW_N8_O26",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O27.json",
+      "json_sha256": "sha256:64697a5daa37d5fdd627cc440e374f5c1b0def3427b694f7361995c1aa27711b",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O27.npz",
+      "npz_sha256": "sha256:5aea3ba035db893947490280bf4c7c8bc0469ebf6518fbdf30e452e8ae3d166d",
+      "origin": 27,
+      "record_id": "HET_S3_03_LOW_N8_O27",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O28.json",
+      "json_sha256": "sha256:44076e47dcd284a0fd308962c77d845197d3a82e02a8b8801a7902dc3b442851",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O28.npz",
+      "npz_sha256": "sha256:e6db217188fac906a7678d27c54711498b6cd344525e6d2cbdbbfcefafbbcf79",
+      "origin": 28,
+      "record_id": "HET_S3_03_LOW_N8_O28",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O29.json",
+      "json_sha256": "sha256:5a3dc7231fa09336b30dd0d1774bc6532f862250d62ff92fc8150e4131919747",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O29.npz",
+      "npz_sha256": "sha256:f8d3420ea923df56d08579bc4294e611c0ac9d477387e2a96088b641814623d2",
+      "origin": 29,
+      "record_id": "HET_S3_03_LOW_N8_O29",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O30.json",
+      "json_sha256": "sha256:2c69aae5ab4ea9478373022d2d3c16828a41fab449afe87db58dae6d457e51f2",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O30.npz",
+      "npz_sha256": "sha256:34ca798c3cfa1cad932ae3088e0ff02474e2fdc351c444cd1eb1d5e006f66aa5",
+      "origin": 30,
+      "record_id": "HET_S3_03_LOW_N8_O30",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O31.json",
+      "json_sha256": "sha256:4f02926fb836e52bcbf0c669d561781cf39a6fc1108495807fa190dd3ae8a2b3",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_LOW_N8_O31.npz",
+      "npz_sha256": "sha256:bb42233767d924fd8addbd0d8d50478b9d4634004c3d5605c30658ff425f604f",
+      "origin": 31,
+      "record_id": "HET_S3_03_LOW_N8_O31",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O00.json",
+      "json_sha256": "sha256:7f14560c42513ce9f4712da69f0d5c3dab2e4b1c205d30be7ba36958fe858f71",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O00.npz",
+      "npz_sha256": "sha256:b4af9d7f56b468d2773cff5eae6d29481e1a01e5ae2bcf822325175bfc1f6abd",
+      "origin": 0,
+      "record_id": "HET_S3_03_MAIN_N8_O00",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O01.json",
+      "json_sha256": "sha256:b7d661854dfc402d3c0feaad1456189c3a5078296af97cf2cc094811dede80fd",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O01.npz",
+      "npz_sha256": "sha256:3be040ef231a1f44ed2ab0eb1b9114c238d9a01a6350a175337b4faa1ac8e0c4",
+      "origin": 1,
+      "record_id": "HET_S3_03_MAIN_N8_O01",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O02.json",
+      "json_sha256": "sha256:bb8cfd1375d326031b9daa1df6d8ab2dd20e6005832894b2d0bf503cf9a15aea",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O02.npz",
+      "npz_sha256": "sha256:c50130297b18d2d06504011f1eab6e0a219a09302be26847a0da95042c39930e",
+      "origin": 2,
+      "record_id": "HET_S3_03_MAIN_N8_O02",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O03.json",
+      "json_sha256": "sha256:86f52e7a59e112d6d9785296a2628cdf0e769b82f7fd052572c8d7cb4b1a0e12",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O03.npz",
+      "npz_sha256": "sha256:1e151df79de8208c61de91bba27dcea34244c2d4bee022a767c15f23e72a234e",
+      "origin": 3,
+      "record_id": "HET_S3_03_MAIN_N8_O03",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O04.json",
+      "json_sha256": "sha256:4aa579924372d3eedd18a5e614b7a2857d982900c874b723eac66bfa0aaa28bd",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O04.npz",
+      "npz_sha256": "sha256:f6962fa274c819cfae97b81bc9ee4f0b08c214055a1a736acc2256f627e6d966",
+      "origin": 4,
+      "record_id": "HET_S3_03_MAIN_N8_O04",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O05.json",
+      "json_sha256": "sha256:28515635c82dd1fcfe2715812aca941ef6abfad6c1ac17c2143fb8bef06a87ca",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O05.npz",
+      "npz_sha256": "sha256:37bae73b5ecc788a5a2af93d5be64c3bfdf8a1a7f9251b1f10177fcaaa776818",
+      "origin": 5,
+      "record_id": "HET_S3_03_MAIN_N8_O05",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O06.json",
+      "json_sha256": "sha256:55d8337af681d3739c05ce0f5753b6beeb2884ad3c9be8feea4f0c8a31a1330e",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O06.npz",
+      "npz_sha256": "sha256:8736f81ef2d293ecd4881c652575a7b64827368d9a308ce10f623445c175af6b",
+      "origin": 6,
+      "record_id": "HET_S3_03_MAIN_N8_O06",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O07.json",
+      "json_sha256": "sha256:f8d5d737af6b58e3797067349ba9b3e24d741b89cc65d40410933cb536c2af80",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O07.npz",
+      "npz_sha256": "sha256:ae33aed17707e0aeb06c4b1b97aa7553d8270c265a8571d2301f9015618bc1b7",
+      "origin": 7,
+      "record_id": "HET_S3_03_MAIN_N8_O07",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O08.json",
+      "json_sha256": "sha256:19e73e52d7154490eff6c9db705d8bb8ec13dabad50e4b4602ea23f077609901",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O08.npz",
+      "npz_sha256": "sha256:a886a3eba56caa7c404a7fd66b5b2e29b2e82e62b97bef09c3f9de8bf5943be6",
+      "origin": 8,
+      "record_id": "HET_S3_03_MAIN_N8_O08",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O09.json",
+      "json_sha256": "sha256:a5148ea913268083b934baaaee12f7bf915573fed9b980c410cd8daacb677f79",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O09.npz",
+      "npz_sha256": "sha256:92c817b6a799520506c12c14f30d3590430a29b72532309c562ba4990ad24557",
+      "origin": 9,
+      "record_id": "HET_S3_03_MAIN_N8_O09",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O10.json",
+      "json_sha256": "sha256:58088fa5ce57012dc4e1e815728b3916f1a6d359bba12c30107e535d9e432b60",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O10.npz",
+      "npz_sha256": "sha256:1ede729f662c4838cfd4e14c348002d2af9513a18fbe18801c804207a774721c",
+      "origin": 10,
+      "record_id": "HET_S3_03_MAIN_N8_O10",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O11.json",
+      "json_sha256": "sha256:ab30fbc6dba0b7bc2f297f9b57c2dd59dbb905daa52c8b7174c236484736f685",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O11.npz",
+      "npz_sha256": "sha256:62b60db9ce9848d9a6ad51a41cc966e3e7a1bf3435d0e5ea08e83c9e4a4d2f7a",
+      "origin": 11,
+      "record_id": "HET_S3_03_MAIN_N8_O11",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O12.json",
+      "json_sha256": "sha256:fa7f51d6f8c1946ebd023ff6735b6b47efbf89cb19db5d7bfc3e2a22a3ae69dd",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O12.npz",
+      "npz_sha256": "sha256:28e0487f8a42ae74c028b7ca01faf4440f0e09f1bc99d96bec4d078a8154d06b",
+      "origin": 12,
+      "record_id": "HET_S3_03_MAIN_N8_O12",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O13.json",
+      "json_sha256": "sha256:61ae683559d6fb6fa70ac119518994d12bb8a2ed0837513efd34c0a926c816e7",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O13.npz",
+      "npz_sha256": "sha256:3ed52741842b0638d9dcc1cf82a9cca6a9c25ff51c7d3d4decc360f01e7b92ba",
+      "origin": 13,
+      "record_id": "HET_S3_03_MAIN_N8_O13",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O14.json",
+      "json_sha256": "sha256:106fc9e85332c1e41e3c0ba97dc7f9391878e5a514da0d282ae3fdc594061007",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O14.npz",
+      "npz_sha256": "sha256:5ef863e3e47c00c3b8e7fa4cff7448b80752c4834f1144a7be667379d2512e45",
+      "origin": 14,
+      "record_id": "HET_S3_03_MAIN_N8_O14",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O15.json",
+      "json_sha256": "sha256:5f900cd4605db0a8cc8e8f0ccdd1b4780d7ad6a75c682e436e995dad1f711c4b",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O15.npz",
+      "npz_sha256": "sha256:d1a0dce72b8923dacfb671a1fd68401848d575f0f646a9eb6b86d20331531a5a",
+      "origin": 15,
+      "record_id": "HET_S3_03_MAIN_N8_O15",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O16.json",
+      "json_sha256": "sha256:8124cd866ea608fb6862bdf4ab9fbcf4efdcebc32d1ba5be07a5fa9173777319",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O16.npz",
+      "npz_sha256": "sha256:aaece941f00e275d383345e791e835bf6374d23bf9b90a543e3005faf940f400",
+      "origin": 16,
+      "record_id": "HET_S3_03_MAIN_N8_O16",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O17.json",
+      "json_sha256": "sha256:3f220a1c99fc90d2488739912be0e82d38a030be08acba7fbf1535990c089bf7",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O17.npz",
+      "npz_sha256": "sha256:008fc4318be77fbc699470a7ac8204dba9acd021c9cd752c22b092bcdb9b1871",
+      "origin": 17,
+      "record_id": "HET_S3_03_MAIN_N8_O17",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O18.json",
+      "json_sha256": "sha256:c534e53909ae8b15e57a9bdda3eb4928eed5ade308975310b078a06731aac689",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O18.npz",
+      "npz_sha256": "sha256:989d335abca2b6da9636e5076bdf78330e52a2597c3c5d5a84638196aa35fb16",
+      "origin": 18,
+      "record_id": "HET_S3_03_MAIN_N8_O18",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O19.json",
+      "json_sha256": "sha256:fa1d191824287f25fc6525c098ee8d81aa4e0c977f8336b614885d594ab9b16f",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O19.npz",
+      "npz_sha256": "sha256:c7fcc0883a99987b1c290a071bba994b849974f5438f2c4cb45fa98488ca7e91",
+      "origin": 19,
+      "record_id": "HET_S3_03_MAIN_N8_O19",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O20.json",
+      "json_sha256": "sha256:7c1a2856e9c40d2de20e206e63be30c906bbb5c89f4fa97042c8835d402d273e",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O20.npz",
+      "npz_sha256": "sha256:bc8729529ed21458abfe16bea25a0efecaaa0af8e3f15de507cb598a58587692",
+      "origin": 20,
+      "record_id": "HET_S3_03_MAIN_N8_O20",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O21.json",
+      "json_sha256": "sha256:4921448ad3282f5efb1416c83342b43b9d8498a9a1eba99cce86293adf2e2eb0",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O21.npz",
+      "npz_sha256": "sha256:f518a4f5013ef2f3cc68be1addee4a0d944fff58b96e4f90c58163f18cba22a9",
+      "origin": 21,
+      "record_id": "HET_S3_03_MAIN_N8_O21",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O22.json",
+      "json_sha256": "sha256:32d9abbb6fdf4c2eaea4ed837a98e211075889efa97ae5e15881be40f0032db9",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O22.npz",
+      "npz_sha256": "sha256:8304b396fc77cb377254e14e49e867c516b368b18ba61ab39bfc49ff410f7a96",
+      "origin": 22,
+      "record_id": "HET_S3_03_MAIN_N8_O22",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O23.json",
+      "json_sha256": "sha256:a60bb94824c4b179fbf59d05074c2fab6f468f4b7c06355e09093aa45e98bf16",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O23.npz",
+      "npz_sha256": "sha256:bcf9460604e60bde19616611003999edd561a88d191d9e7aaecd04d6bd46299a",
+      "origin": 23,
+      "record_id": "HET_S3_03_MAIN_N8_O23",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O24.json",
+      "json_sha256": "sha256:f6eb4f71f52be43b1fff402cb6fec21f26f5ea9c4ac950035984b7b69bd4970b",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O24.npz",
+      "npz_sha256": "sha256:595021a4a7d82688559ae505d0c1239a28b22d81e35b52174d95f2e7feb789f2",
+      "origin": 24,
+      "record_id": "HET_S3_03_MAIN_N8_O24",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O25.json",
+      "json_sha256": "sha256:a3ff5677d1465170d324aea0dbc7aa947f68c1d8915ec062d4ae94563a981219",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O25.npz",
+      "npz_sha256": "sha256:419877fcebfa9f94a5fec7ff6c16ce6e2054173374d0e2225ba86df266d32f99",
+      "origin": 25,
+      "record_id": "HET_S3_03_MAIN_N8_O25",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O26.json",
+      "json_sha256": "sha256:4cb5a728b97c9129197d89eaaf311e9f26170ba9d57522bc5860338979443a4f",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O26.npz",
+      "npz_sha256": "sha256:ab99b4df1e14480f5587dc8ca7ef3997199d3118b4ae8a015e955c4c626bcc8c",
+      "origin": 26,
+      "record_id": "HET_S3_03_MAIN_N8_O26",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O27.json",
+      "json_sha256": "sha256:9ecc21fa5f38ac15f3d4401fc2028ca4907d3bba59d4527f56931ae1ffb28c4a",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O27.npz",
+      "npz_sha256": "sha256:6df11cce1a4b076a17b0bff50c868983f9a798851f59b1c9dba624c139889575",
+      "origin": 27,
+      "record_id": "HET_S3_03_MAIN_N8_O27",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O28.json",
+      "json_sha256": "sha256:d1c98dde05603e8610d5b0931c976e90cf448d14d0fe7dda046426110d38928d",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O28.npz",
+      "npz_sha256": "sha256:03b14b94b37e7740b6e8bf674eade6b669ed9531db2b9b9e6c430dec5fb84163",
+      "origin": 28,
+      "record_id": "HET_S3_03_MAIN_N8_O28",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O29.json",
+      "json_sha256": "sha256:dddae35a6e5313311d32470da41f333832f39e032fd46c4fb32aeeba6848b962",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O29.npz",
+      "npz_sha256": "sha256:124094f0773fa12c3721155df269fce261c55ce086a6af0dabdfcf080ef6b88b",
+      "origin": 29,
+      "record_id": "HET_S3_03_MAIN_N8_O29",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O30.json",
+      "json_sha256": "sha256:688572a4fbf360ed423f9a6bad88eae4ba2af7068f11308b0b07111ef032f746",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O30.npz",
+      "npz_sha256": "sha256:d903fac60571c5ffb1178d19e6b17b74cf3457fb1bbc9741995df61dfaff6fd0",
+      "origin": 30,
+      "record_id": "HET_S3_03_MAIN_N8_O30",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O31.json",
+      "json_sha256": "sha256:76d4dbbaed5a1021db5cd11ea60e7ffb15defdd9faf816b22dfbb372712c5493",
+      "lineage": "HET_S3_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S3_03_MAIN_N8_O31.npz",
+      "npz_sha256": "sha256:fb7f20bb059d6e98cd37fcf71475950b0640d4a6627f25b93a2382ac1774185e",
+      "origin": 31,
+      "record_id": "HET_S3_03_MAIN_N8_O31",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O00.json",
+      "json_sha256": "sha256:1542021f62dc9132f871b045003fd1a66f68949a799c060790b17172f57dd9e1",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O00.npz",
+      "npz_sha256": "sha256:c5f431f5a9e48081fcea60055d18500b2b7b5345c6c217c728a1d61aee94a9e5",
+      "origin": 0,
+      "record_id": "HET_S4_03_LOW_N8_O00",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O01.json",
+      "json_sha256": "sha256:f584435075713783646e5cc436c6a968ed8e3ae6c59130e8431c3bfa71226d82",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O01.npz",
+      "npz_sha256": "sha256:3db7a63293661f45fba5c8fb86b1696cf0044ac75cf9f74a9c0b4ad03eec67ae",
+      "origin": 1,
+      "record_id": "HET_S4_03_LOW_N8_O01",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O02.json",
+      "json_sha256": "sha256:eb08361c1a614748ff71f13db9b9e9d9dbf5f8033699d01957ce5e1ed9dffc44",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O02.npz",
+      "npz_sha256": "sha256:85cb41f7fe5c94546471e54a3bd42f558d8789075ceebb5d866d6dcffb80fd8c",
+      "origin": 2,
+      "record_id": "HET_S4_03_LOW_N8_O02",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O03.json",
+      "json_sha256": "sha256:f8e6c83218e7fe849cbf49120e8c025d11b691869af177954ebd397414b9e30a",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O03.npz",
+      "npz_sha256": "sha256:0694543d672b0f885a5cec844ddb6ce0be0da98d173b6fa422b058a4213f3765",
+      "origin": 3,
+      "record_id": "HET_S4_03_LOW_N8_O03",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O04.json",
+      "json_sha256": "sha256:b47be6c53a74feff5d6e14596d8e99b46d88517cff585038bd8e21b056a6107b",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O04.npz",
+      "npz_sha256": "sha256:7cfffa08a815fded80e3b1f6d4539ce7b3cf314808a25db64fcbd2a5ff4359c8",
+      "origin": 4,
+      "record_id": "HET_S4_03_LOW_N8_O04",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O05.json",
+      "json_sha256": "sha256:87de831091b21091007f0089efbe88fa13e0632db4e64350512d23b34ff54749",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O05.npz",
+      "npz_sha256": "sha256:27e300aeefc5fb1370c025efddae6c5677301114dd5eb83899ab996c12b7c1d5",
+      "origin": 5,
+      "record_id": "HET_S4_03_LOW_N8_O05",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O06.json",
+      "json_sha256": "sha256:74244fb44768734fde4f6b0a18f3c8be179884852ded6d133e880d71365efd45",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O06.npz",
+      "npz_sha256": "sha256:76991e9ca966d397c717f12ae6ae640ca8dab93b3bb8d2fb33f747f8f78987e1",
+      "origin": 6,
+      "record_id": "HET_S4_03_LOW_N8_O06",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O07.json",
+      "json_sha256": "sha256:af6706e8714217c05190cfad772943ec8af65e8550157894e169240c3776b887",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O07.npz",
+      "npz_sha256": "sha256:7d2ef995ed812c573ae38dace228df9b0fecbf6577476f0c6c1ce23de254547c",
+      "origin": 7,
+      "record_id": "HET_S4_03_LOW_N8_O07",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O08.json",
+      "json_sha256": "sha256:b211e120f9a6fb3340fe6e816807f3866236aabf0c239206d49bba6d65768f2d",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O08.npz",
+      "npz_sha256": "sha256:39a2aa5fd0f915bf556b4bff21b45374d73f175325cef0f95e1e8f9b2d97398f",
+      "origin": 8,
+      "record_id": "HET_S4_03_LOW_N8_O08",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O09.json",
+      "json_sha256": "sha256:5a1d3c185bb020e5dfed1d439679b8918ef41f13adbd6e3801ae9809d7d01b88",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O09.npz",
+      "npz_sha256": "sha256:b13046638919f379ef49bd8031891d354da548b705bee1bab40ae483f7b96db2",
+      "origin": 9,
+      "record_id": "HET_S4_03_LOW_N8_O09",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O10.json",
+      "json_sha256": "sha256:02cee3218c8e8de5b13d0fb3352f0b1c29d1ccab9d69e7d88f5db4de22616d04",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O10.npz",
+      "npz_sha256": "sha256:db8fc90cf77f164664d908cf2180f0995ff9e5f8bc1d65d3d26dac88bd4f3257",
+      "origin": 10,
+      "record_id": "HET_S4_03_LOW_N8_O10",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O11.json",
+      "json_sha256": "sha256:d5c0b383270bbf99e8390189d6a20072042fc2f751a61e10ee081f778f9142b4",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O11.npz",
+      "npz_sha256": "sha256:2f6822190471b9e1ffecbe38edc61668f15acca9ed04c16e02cb1df12a7c32d9",
+      "origin": 11,
+      "record_id": "HET_S4_03_LOW_N8_O11",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O12.json",
+      "json_sha256": "sha256:a547cea8b306c0063e01c182c535d238cb39bf3b7c890fe1a95673c99d4bbb1b",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O12.npz",
+      "npz_sha256": "sha256:87c76c926668289c55c287e0191157f3f3cd5104ef65b4bc86c7197203024656",
+      "origin": 12,
+      "record_id": "HET_S4_03_LOW_N8_O12",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O13.json",
+      "json_sha256": "sha256:8b5376fdce489777962513a2a8921723922bd44aaa30d715998e9cbf49c5e2a9",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O13.npz",
+      "npz_sha256": "sha256:d91b2cea20b5dc2a0970fd7cc1500d9c9524a64ae3c1cbadd55abc388d4bd64f",
+      "origin": 13,
+      "record_id": "HET_S4_03_LOW_N8_O13",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O14.json",
+      "json_sha256": "sha256:ef564181063997f033fd6163a7ee7c1340f971df7437d372fa3ed85513def1e1",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O14.npz",
+      "npz_sha256": "sha256:196fa8bd109c5d65c4bcac4e27cb76e1b04e419195ca0e1c54464c2236af1fbd",
+      "origin": 14,
+      "record_id": "HET_S4_03_LOW_N8_O14",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O15.json",
+      "json_sha256": "sha256:84c2b472dca42b49c260b7f2f79d04b35dda4ab7d4ede09b27aa978f8ce8eb12",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O15.npz",
+      "npz_sha256": "sha256:6827d8918b34cdca125e8c6e185966e1fce2ca86cc21a16cb2d8b91ab7f361e7",
+      "origin": 15,
+      "record_id": "HET_S4_03_LOW_N8_O15",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O16.json",
+      "json_sha256": "sha256:02f4a65232bfcfa6f815579253e917ee8ba4296ce15a245bb60773360bd918f4",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O16.npz",
+      "npz_sha256": "sha256:9e86b18abb89a91c2b8c381200c8ba96e41b57ef8257e2204cf25643f911f762",
+      "origin": 16,
+      "record_id": "HET_S4_03_LOW_N8_O16",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O17.json",
+      "json_sha256": "sha256:dd96438db85d1f98aa6394b1cf9a43903b8d670020a25de533bdb4cd9601c943",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O17.npz",
+      "npz_sha256": "sha256:22df395d82cd4e90fc1932d6961e390b0c1a8a247be6a30e0be60cbf45ebee63",
+      "origin": 17,
+      "record_id": "HET_S4_03_LOW_N8_O17",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O18.json",
+      "json_sha256": "sha256:fb7858f4ba876d4582fb999e526fcbb9705323d6e14d860f0b31052e770a4f77",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O18.npz",
+      "npz_sha256": "sha256:530b27ede0cf113d387747fb186ff61d1eaf829ea7ba111204cab6ed8fb2d299",
+      "origin": 18,
+      "record_id": "HET_S4_03_LOW_N8_O18",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O19.json",
+      "json_sha256": "sha256:ba7d336d3806f221e75673c6a31898193066dcd9c7bcc7a665bb629f18bfe6de",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O19.npz",
+      "npz_sha256": "sha256:3bab1946116951942a3263fed5b0ec6e2614a3ce0a94c8478baf0abe5002465b",
+      "origin": 19,
+      "record_id": "HET_S4_03_LOW_N8_O19",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O20.json",
+      "json_sha256": "sha256:253a0080461e03a7fe0e8d47e99b01d1c029c76409cae693a8d23e1b85113005",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O20.npz",
+      "npz_sha256": "sha256:1a8a18d162d2fd6da4fbcda80cfcc160b1640f1c6e8f68aeb33903bacc442d71",
+      "origin": 20,
+      "record_id": "HET_S4_03_LOW_N8_O20",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O21.json",
+      "json_sha256": "sha256:8a6da824274963c66a3ff62b571d7fcb791adc8eb35d669c12b24fafe8406c2f",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O21.npz",
+      "npz_sha256": "sha256:833a74e64c793fcd42ea13e6e754aaee7d164f9fd69dfc705a317f1b07eda1b2",
+      "origin": 21,
+      "record_id": "HET_S4_03_LOW_N8_O21",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O22.json",
+      "json_sha256": "sha256:f82357d39a1c38ca1a718b0dd9168c44564fd6e6959abb4b30dbfcd3692999ea",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O22.npz",
+      "npz_sha256": "sha256:ec4782f6e9fa1230a8da8796664f13e4664281820378957ed0150a5377fd63b9",
+      "origin": 22,
+      "record_id": "HET_S4_03_LOW_N8_O22",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O23.json",
+      "json_sha256": "sha256:dd5ee9cb30d7fac30076221dbd4f1f7a3d6e5acc2644086c39d737684559659f",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O23.npz",
+      "npz_sha256": "sha256:7a9b65021c5050172bdf492973752b339be3d1060815f761dfac77a01a69002d",
+      "origin": 23,
+      "record_id": "HET_S4_03_LOW_N8_O23",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O24.json",
+      "json_sha256": "sha256:09b7ee4394669c268f9772ac8c7a4a3dfeb7d4b5d4919f24c26b23a003936a95",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O24.npz",
+      "npz_sha256": "sha256:dd0219d0bcca66eeca8afff306683850801cce9560d4aa7d75799e1cd8f96b9b",
+      "origin": 24,
+      "record_id": "HET_S4_03_LOW_N8_O24",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O25.json",
+      "json_sha256": "sha256:e49faa141518d0c1f8ac59b1ed8e144b20c2d58bd8ab71fffea259b43ff2c6bc",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O25.npz",
+      "npz_sha256": "sha256:f6ae77a7475c729ac25c9ff2863684a8321edea323c6811141b5156034da0856",
+      "origin": 25,
+      "record_id": "HET_S4_03_LOW_N8_O25",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O26.json",
+      "json_sha256": "sha256:84394c3bca67f7a798eda06ac1aa70f7b3c679eb7e413b499f41294ef31ad603",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O26.npz",
+      "npz_sha256": "sha256:4ba1b7451c5e2006c5960de989d20a646525b4308a31260fba70f87456bf5c31",
+      "origin": 26,
+      "record_id": "HET_S4_03_LOW_N8_O26",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O27.json",
+      "json_sha256": "sha256:862e2bfec0d69cae0543b86296442d7a105e4f78e65d65ead561907cff0958b1",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O27.npz",
+      "npz_sha256": "sha256:f0368530bee9ee5932d1029df59e3849e898c1dbc214f4bc99035c210b258fc2",
+      "origin": 27,
+      "record_id": "HET_S4_03_LOW_N8_O27",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O28.json",
+      "json_sha256": "sha256:6b1f9eb1a57754cb133533742fc3e4251e03885b3ee8551c45cb35b4ae0188a6",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O28.npz",
+      "npz_sha256": "sha256:f0e3fc7f73d1d287a7373b51d63cfba5ef53cfbd856712378a234c2368728851",
+      "origin": 28,
+      "record_id": "HET_S4_03_LOW_N8_O28",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O29.json",
+      "json_sha256": "sha256:7629b65522fbb12bf62f1a0ffea6aea143fce67496db10a0e291369df1d38115",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O29.npz",
+      "npz_sha256": "sha256:b753249f8ec3cf8d66ba5c20c843615bbd2f092ed01b4e8a3687faa976234125",
+      "origin": 29,
+      "record_id": "HET_S4_03_LOW_N8_O29",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O30.json",
+      "json_sha256": "sha256:8ed04077259a2ea10795c3d2f2c7e8c77565d88d6d026a6de4093f75ae522d32",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O30.npz",
+      "npz_sha256": "sha256:8e7a35a4ffd89cef2f6fc8d3f2f2c1f90954cb3dac810d018a3d4b2e9a8b298b",
+      "origin": 30,
+      "record_id": "HET_S4_03_LOW_N8_O30",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O31.json",
+      "json_sha256": "sha256:6668b22d0d908c4bf8166ad8d6cec64e95ef9dec1f20fb818ece1ef4bd57c508",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_LOW_N8_O31.npz",
+      "npz_sha256": "sha256:668d6b8348cba234d9db3713d0bfe392601ff4d02bd2806c80683c4ae9903596",
+      "origin": 31,
+      "record_id": "HET_S4_03_LOW_N8_O31",
+      "variant": "LOW"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O00.json",
+      "json_sha256": "sha256:05a2562d230d046826c04563b382af20e6b033f6b7d7556598fb78df67f71f46",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O00.npz",
+      "npz_sha256": "sha256:1568b34ff8c595662d5a0a73dff034aa4a7353df90785fc1126a82e8a84c610d",
+      "origin": 0,
+      "record_id": "HET_S4_03_MAIN_N8_O00",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O01.json",
+      "json_sha256": "sha256:48b6610d6d92b7f79d5af0bef976b9e24fd2f2660c4c88f0b16467d43c0a0930",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O01.npz",
+      "npz_sha256": "sha256:97fd9fe160d55ed5bb56caa6260e64276a092db18ec0dd43fbc5caaff3863d2a",
+      "origin": 1,
+      "record_id": "HET_S4_03_MAIN_N8_O01",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O02.json",
+      "json_sha256": "sha256:bf22e8c3877b978a838351eb4044e052fb298efd30e99e3e0b28392756e40152",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O02.npz",
+      "npz_sha256": "sha256:6ee6795c2f0683a062cf3701dabdd1b22a271cb877e4c515737836d8d1fcb7c5",
+      "origin": 2,
+      "record_id": "HET_S4_03_MAIN_N8_O02",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O03.json",
+      "json_sha256": "sha256:5dd369f04d3111b9c3647f5eafab7f210e3e6489d0083756718bb32db31960e5",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O03.npz",
+      "npz_sha256": "sha256:1f19faca7668280023261431d99bb88c9cb3b41e4380955d4006a4735d658e68",
+      "origin": 3,
+      "record_id": "HET_S4_03_MAIN_N8_O03",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O04.json",
+      "json_sha256": "sha256:6d514333a85f9000723636102ec1434606c848c2582f1bf701a64de1a8223851",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O04.npz",
+      "npz_sha256": "sha256:1de1633c0b18de3425a0acb05bb702d2df3f7bb0135e15096cb10f32ed102fe0",
+      "origin": 4,
+      "record_id": "HET_S4_03_MAIN_N8_O04",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O05.json",
+      "json_sha256": "sha256:8bef713d2d8982c65d177fca87160e276db267e6d4c5068f2e49dc02ab183e41",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O05.npz",
+      "npz_sha256": "sha256:a19a4d5d5cdde98f8a5f27ac606fdeb7bfa1e33aa4bffa4321aaf0e57d719d12",
+      "origin": 5,
+      "record_id": "HET_S4_03_MAIN_N8_O05",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O06.json",
+      "json_sha256": "sha256:da5157b4c7ef09b9b8661f4ce3bcc675af7591cd23e4e88299581e99f9829f34",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O06.npz",
+      "npz_sha256": "sha256:447e1383572bad4fa8eb343701e8b4f0ebde5e15732be5b3ddd275911b964201",
+      "origin": 6,
+      "record_id": "HET_S4_03_MAIN_N8_O06",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O07.json",
+      "json_sha256": "sha256:fa3f2317dfab2d92bdaf9f5b7d4857bcea76b4d3374d9c0169060e04546b5dcc",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O07.npz",
+      "npz_sha256": "sha256:4357a7ec98842091a13791dec00acb22ad91fa5b25d313b0076030003d5c39e3",
+      "origin": 7,
+      "record_id": "HET_S4_03_MAIN_N8_O07",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O08.json",
+      "json_sha256": "sha256:1eb3e1be974cab9f7163f2784a9e4ddd9d7a17f141a9f172481620c74c1f4ec1",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O08.npz",
+      "npz_sha256": "sha256:7fae00fdd6f34df8196aa15093690540b5b8a2e42a6822a1d03feebc02c4fe7a",
+      "origin": 8,
+      "record_id": "HET_S4_03_MAIN_N8_O08",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O09.json",
+      "json_sha256": "sha256:9fb8c2bf7e471ce2067a393437886fbb48c392ecdecb8b81767ca81bb4c5f547",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O09.npz",
+      "npz_sha256": "sha256:3229ba665685a32691f717d7095558e5122ea5a859c8c8d346150da052624023",
+      "origin": 9,
+      "record_id": "HET_S4_03_MAIN_N8_O09",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O10.json",
+      "json_sha256": "sha256:304a92524cac6e33f3b3d5a0eac24e6c46c0b924c4b84c2924471740ae61a4e4",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O10.npz",
+      "npz_sha256": "sha256:8b83ce7c5534bfc50bc51321fcc8d6c32819505b1599569f92fb0a82216329b7",
+      "origin": 10,
+      "record_id": "HET_S4_03_MAIN_N8_O10",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O11.json",
+      "json_sha256": "sha256:b46d952d8d9bb043f2b93eae8386dbbd3c3d1ffc861b9d4931d61a87c1d8d0eb",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O11.npz",
+      "npz_sha256": "sha256:63760903596c7a20b77f0fb792e461512974dca571f66eb35d652a2721ae1c32",
+      "origin": 11,
+      "record_id": "HET_S4_03_MAIN_N8_O11",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O12.json",
+      "json_sha256": "sha256:60bac19b4efd3d04660fda2de85020e2ba51b06169b19ba88e49878ccf062704",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O12.npz",
+      "npz_sha256": "sha256:ab696ce96e665df0ba09cd06546d3eda52e5580d099234cb1ff8451d0dadec31",
+      "origin": 12,
+      "record_id": "HET_S4_03_MAIN_N8_O12",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O13.json",
+      "json_sha256": "sha256:c594f6a8e14021a1182dad51a5b4f84479cf83cbb0d2ea7182138b3be194fab9",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O13.npz",
+      "npz_sha256": "sha256:1453d081d63277b2a510625b686a895b61a88ff67ae246025e4925beba9743c8",
+      "origin": 13,
+      "record_id": "HET_S4_03_MAIN_N8_O13",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O14.json",
+      "json_sha256": "sha256:22f2cca1d8ba600e62be12261e672095a5204c4d53e0ba1b6126fc3d49620ba0",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O14.npz",
+      "npz_sha256": "sha256:b8a7e9a5c8a6a4d3dd7c3b943d562871a5352da095b4d35f1bd8cdcb1ba00280",
+      "origin": 14,
+      "record_id": "HET_S4_03_MAIN_N8_O14",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O15.json",
+      "json_sha256": "sha256:8fdecf94a6f823c78721140a3b83c9083477514a90b2e8052c8e6fcdcff15215",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O15.npz",
+      "npz_sha256": "sha256:04909639a8cf8ade4ee867b89b75d7e5fd5d58f4b8be3115519af556a72ed83a",
+      "origin": 15,
+      "record_id": "HET_S4_03_MAIN_N8_O15",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O16.json",
+      "json_sha256": "sha256:2f807c489d5e32228fa842c0de28400a3fe0566cbdbbf6fc1b9e24ae85a98974",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O16.npz",
+      "npz_sha256": "sha256:3a54861c5d35e30cda454d39e9435fa033e94c9c16d2f6931313ad6b3fc41fb6",
+      "origin": 16,
+      "record_id": "HET_S4_03_MAIN_N8_O16",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O17.json",
+      "json_sha256": "sha256:2c38249fd5cfb2df0b1bc1221f003092f369959fcc421b824731321b560f1d7a",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O17.npz",
+      "npz_sha256": "sha256:9839a3e91867c843aa812839c8ff2567c56e1151c1dae1f459e465b30469f322",
+      "origin": 17,
+      "record_id": "HET_S4_03_MAIN_N8_O17",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O18.json",
+      "json_sha256": "sha256:39d0bc9ee2dd1d1014de8e14185ddc3faa4cb03b4b2a8a06690212d8494fd6fc",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O18.npz",
+      "npz_sha256": "sha256:a273164442aad423e2ecc846f3cb7ce95a7fd6c024141db168f1b1c355fe2cb5",
+      "origin": 18,
+      "record_id": "HET_S4_03_MAIN_N8_O18",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O19.json",
+      "json_sha256": "sha256:8220e3faf9bff3a69c93517db1e461d4a0087d22e2b6e80ff1f652e6c143c95b",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O19.npz",
+      "npz_sha256": "sha256:e73521ba5b7892cf8728cb4d5ef5dce9635d1fc19e5dbd309f17dde7e313916d",
+      "origin": 19,
+      "record_id": "HET_S4_03_MAIN_N8_O19",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O20.json",
+      "json_sha256": "sha256:4fe43aeeb186b2569cc4357f2ac8815370c2fdac1fdc3047f1fba23de6f02b4e",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O20.npz",
+      "npz_sha256": "sha256:550d5b3f7499e32321e8e7cbcff778c744dad5d17d7cf98ceee114c84392fe74",
+      "origin": 20,
+      "record_id": "HET_S4_03_MAIN_N8_O20",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O21.json",
+      "json_sha256": "sha256:3d55d226964225de4645271676caaf8b553b522790a28668cd23cbe0e891e75a",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O21.npz",
+      "npz_sha256": "sha256:f179f0de3b1af1bc482f4015e7fef479757df9a0832c8468f9e9c1f878d773c1",
+      "origin": 21,
+      "record_id": "HET_S4_03_MAIN_N8_O21",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O22.json",
+      "json_sha256": "sha256:68c2a5e46e01b295658f70cd283c5f0e0e6728c7a33b8ecb0840e54cab05d6b0",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O22.npz",
+      "npz_sha256": "sha256:23167efb9cb148a6a608c5110fe25b75b81d8df9df17074469e742010f942fba",
+      "origin": 22,
+      "record_id": "HET_S4_03_MAIN_N8_O22",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O23.json",
+      "json_sha256": "sha256:cce0c5dff67a659a39d2e67d0787c5ac5d742c6f1308ca24eb86d521e53153bb",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O23.npz",
+      "npz_sha256": "sha256:fef5fadb39fbd0e7f5a5dac9a714996d0c050fad1ffb957b4063ea59f874fa07",
+      "origin": 23,
+      "record_id": "HET_S4_03_MAIN_N8_O23",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O24.json",
+      "json_sha256": "sha256:71509fd23e54d9943cbfd71b33fb273449be1aed5f19a3c1c925bb19f44d6d8d",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O24.npz",
+      "npz_sha256": "sha256:4d4d65c322e5cd28dfe72725b74faa0b45e18464f0a988fbd6a877b38033811a",
+      "origin": 24,
+      "record_id": "HET_S4_03_MAIN_N8_O24",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O25.json",
+      "json_sha256": "sha256:bba2a9dacf2517c9fcdd0d5bcb1b6274113d576fcf09f3d53523be75bf291aa5",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O25.npz",
+      "npz_sha256": "sha256:25c76cf10b471d8a9ad35485ab4e532793793617893c108e8a01045d8ba20912",
+      "origin": 25,
+      "record_id": "HET_S4_03_MAIN_N8_O25",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O26.json",
+      "json_sha256": "sha256:af8c373aaa5c61ab71ef021a79f6a2f834776073c9053062cc00e62ead42a9c5",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O26.npz",
+      "npz_sha256": "sha256:1dd14f676601c16c0525bcc4cc24cbf46587c2b8e29c6a3a48acfff150aeb601",
+      "origin": 26,
+      "record_id": "HET_S4_03_MAIN_N8_O26",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O27.json",
+      "json_sha256": "sha256:2447a1eabc5aa0438b48f9fb74688c3e5e0d5809ba0a2b56f0cd7ba0e7cdf153",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O27.npz",
+      "npz_sha256": "sha256:22c4eb66028fff18dc0d8bed0b7370762e1001df362b1242573c1ddd2bacae61",
+      "origin": 27,
+      "record_id": "HET_S4_03_MAIN_N8_O27",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O28.json",
+      "json_sha256": "sha256:33a7d389754309e50d79d5ddda9c9a591a6c699ede6c1563b7a036d352b43223",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O28.npz",
+      "npz_sha256": "sha256:685d1741322cea3bc2d3437b394ee4d0a886a3dc72619297bfc75b4c27588f93",
+      "origin": 28,
+      "record_id": "HET_S4_03_MAIN_N8_O28",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O29.json",
+      "json_sha256": "sha256:8929b601547b804f8c6fa53c31c7a960eba10710eabc3dc8a6df4082636f238a",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O29.npz",
+      "npz_sha256": "sha256:8d6674c9c701f4951e548964968f99fa9dbee2ed3497e61ddef4d712e0d9bf8c",
+      "origin": 29,
+      "record_id": "HET_S4_03_MAIN_N8_O29",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O30.json",
+      "json_sha256": "sha256:0658e34220f2d49d0c73b77e86ceb51eea95f82a048669fad00d6fc4ae6ddb46",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O30.npz",
+      "npz_sha256": "sha256:f46711d985934df98b6280bb04410bec44b5a70dfd46acc061c479fbf9792968",
+      "origin": 30,
+      "record_id": "HET_S4_03_MAIN_N8_O30",
+      "variant": "MAIN"
+    },
+    {
+      "json_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O31.json",
+      "json_sha256": "sha256:47cd4c0f08d4dc5382cbc5c4515560c8a2638a733992e26a28552f98a3c4d4d4",
+      "lineage": "HET_S4_03",
+      "npz_path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/results/validation_targets/HET_S4_03_MAIN_N8_O31.npz",
+      "npz_sha256": "sha256:6baa3a288c2a80bb5e38e49d018da4228d33c7485f569ec5374e65ef2f205272",
+      "origin": 31,
+      "record_id": "HET_S4_03_MAIN_N8_O31",
+      "variant": "MAIN"
+    }
+  ],
+  "scale_v2": 1.7254786448147168,
+  "scale_v2_hash": "sha256:4ca44e15f2024c5ed02c97d10d1342644fccd17db6a40d7e0e558c8d0214141b",
+  "schema": "sph-pio-poc.stage07c.validation-targets.v1",
+  "validation_scale_refit": false
+}

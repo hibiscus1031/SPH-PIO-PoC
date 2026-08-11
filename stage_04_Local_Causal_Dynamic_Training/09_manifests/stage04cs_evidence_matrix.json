@@ -1,0 +1,111 @@
+{
+  "allowed_statuses": [
+    "PASS",
+    "DIAGNOSTIC",
+    "NOT_QUALIFIED",
+    "UNRESOLVED",
+    "NOT_AUTHORIZED",
+    "NOT_EXECUTED"
+  ],
+  "complete": true,
+  "rows": [
+    {
+      "boundary": "Contract definition only.",
+      "category": "Training hypothesis",
+      "evidence": "K=1 local-causal formulation",
+      "status": "PASS"
+    },
+    {
+      "boundary": "No rollout or optimizer execution.",
+      "category": "Training hypothesis",
+      "evidence": "Complete start/midpoint/accept RK2 transition",
+      "status": "PASS"
+    },
+    {
+      "boundary": "Input-gradient evidence remains diagnostic.",
+      "category": "Training hypothesis",
+      "evidence": "Optimizer-variable gradient boundary",
+      "status": "PASS"
+    },
+    {
+      "boundary": "No MPS formal evidence.",
+      "category": "Training hypothesis",
+      "evidence": "CPU float64 + explicit math SDPA",
+      "status": "PASS"
+    },
+    {
+      "boundary": "TRAIN/VALIDATION/SEALED roles frozen before outcomes.",
+      "category": "Reference family pool",
+      "evidence": "10 formula lineages; 20/20 analytic; 60/60 trajectories",
+      "status": "PASS"
+    },
+    {
+      "boundary": "Reference evidence, not model performance.",
+      "category": "Reference family pool",
+      "evidence": "20/20 DOP853; 10/10 fixed topology",
+      "status": "PASS"
+    },
+    {
+      "boundary": "Private payload remains unopened.",
+      "category": "Reference family pool",
+      "evidence": "6/2/2 split; leakage=0; sealed formula/state/target decode=0/0/0",
+      "status": "PASS"
+    },
+    {
+      "boundary": "Implementation consistency only.",
+      "category": "Task-gradient qualification",
+      "evidence": "864 probes; 2592/2592 reverse/JVP; 17280 FD paths",
+      "status": "PASS"
+    },
+    {
+      "boundary": "At least one nonzero stable component per probe was required.",
+      "category": "Task-gradient qualification",
+      "evidence": "2592 near-zero components; 864 all-near-zero failures",
+      "status": "NOT_QUALIFIED"
+    },
+    {
+      "boundary": "D1/D2/D3 all remain required baselines.",
+      "category": "Task-gradient qualification",
+      "evidence": "Parameter groups qualified",
+      "status": "NOT_QUALIFIED",
+      "value": "0"
+    },
+    {
+      "boundary": "Rejects dead-network explanation; does not qualify Stage04C.",
+      "category": "Attribution",
+      "evidence": "Full gradients and nonzero coefficient/force/acceleration sensitivity",
+      "status": "DIAGNOSTIC"
+    },
+    {
+      "boundary": "2592/2592 reconstructed derivatives.",
+      "category": "Attribution",
+      "evidence": "Exact residual-Jacobian factorization",
+      "status": "PASS"
+    },
+    {
+      "boundary": "Contributions are partial and component dependent.",
+      "category": "Attribution",
+      "evidence": "MSE residual factor 50.8%; direction projection 25.9%; RK2 dt/dt² attenuation",
+      "status": "DIAGNOSTIC"
+    },
+    {
+      "boundary": "No unique next correction branch.",
+      "category": "Attribution",
+      "evidence": "604 unresolved rows; mixed/unresolved verdict",
+      "status": "UNRESOLVED"
+    },
+    {
+      "boundary": "Training protocol preregistration may not begin.",
+      "category": "Route",
+      "evidence": "Stage 04D",
+      "status": "NOT_AUTHORIZED"
+    },
+    {
+      "boundary": "No claims permitted.",
+      "category": "Route",
+      "evidence": "Training / rollout / performance",
+      "status": "NOT_EXECUTED"
+    }
+  ],
+  "schema": "sph-pio-poc.stage04cs.evidence-matrix.v1"
+}

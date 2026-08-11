@@ -1,0 +1,23 @@
+all_five_records_used_for_fit: false
+blocking_reason: no_formal_leakage_audited_train_split
+contract_version: stage02j-prospective-normalization-0.1.0
+decision: prospective_specification_only
+epsilon:
+  status: prospective_not_fitted
+  units: field_native_units
+  value: 1.0e-12
+field_wise_rules:
+  density: train_only_center_at_rho0_and_scale
+  distance: local_support_scale
+  mass: preserve_physical_value_and_units
+  position_periodic: domain_length_nondimensionalization
+  pressure: train_only_scale_or_prefrozen_rho0_c0_squared
+  relative_displacement: local_support_scale
+  velocity: train_only_component_mean_and_scale_or_prefrozen_physical_scale
+fit_scope_if_future_split_exists: formal_train_split_only
+fitted_statistics_created: false
+jitter_used_for_fit: false
+normalization_statistics: null
+target_information_used_to_standardize_input: false
+train_record_hashes: []
+validation_test_application_only: true

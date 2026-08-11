@@ -1,0 +1,164 @@
+schema_version: sph-pio-poc.stage08a.systematic-coverage-v3.v1
+status: FROZEN_BEFORE_CANDIDATE_PARAMETER_MATERIALIZATION
+scientific_hypothesis: H08-01
+final_development_cycle: true
+execution_boundary: {device: cpu, dtype: float64, model: 0, optimizer: 0, training: 0}
+constants: {L: 2.0, rho0: 1.0, sound_speed: 20.0, physical_viscosity: 0.02, support_over_dx: 2.6}
+material_map:
+  spatial_phase: p*pi*X + q*pi*Y + phi
+  direction: cos(theta)*e_L + sin(theta)*e_T
+  displacement: sum_m (A_m/max(1,norm(k_m)))*direction_m*sin(spatial_phase_m)*g_m(tau)
+  rationale: frozen_wavevector_norm_compensation_keeps_the_full_domain_inside_the_J_and_Mach_safety_envelope
+roles:
+  anchor_train_v3: [LCDF_01, LCDF_04, LCDF_05, LCDF_06, LCDF_07, LCDF_08]
+  systematic_new_train_v3_count: 8
+  fresh_validation_v3_count: 4
+  original_sealed_test_v1: [LCDF_03, LCDF_10]
+coverage_layers:
+  primitive_formula:
+    - mode_count
+    - total_amplitude
+    - wavevector_set_identity
+    - max_wavevector_norm
+    - wavevector_angle_dispersion
+    - temporal_frequency_count
+    - max_temporal_frequency
+    - temporal_phase_dispersion
+    - longitudinal_fraction
+    - transverse_fraction
+    - LT_mixing_index
+    - anisotropy_ratio
+    - rotating_mode_fraction
+  physical:
+    - source_rms
+    - source_p95
+    - velocity_rms
+    - acceleration_rms
+    - density_variation_rms
+    - Mach_max
+    - min_J
+    - graph_degree_mean
+    - graph_degree_std
+    - normalized_topology_margin
+  defect:
+    - raw_a_def_rms
+    - raw_a_cons_rms
+    - component_covariance_eigenvalues
+    - spatial_spectral_centroid
+    - spatial_spectral_spread
+    - temporal_defect_variation
+    - conservative_fraction
+  oracle:
+    - oracle_bounded_coefficient_rms
+    - oracle_bounded_coefficient_p95
+    - oracle_alpha_rms
+    - oracle_beta_rms
+    - bounded_head_margin
+    - Q_bounded
+normalization:
+  evidence_count: 20
+  center: median
+  scale: max(1.4826*MAD, frozen_floor)
+  frozen_floor: max(1e-12, 0.01*max(abs(median),1))
+  continuous_distance: root_mean_square_standardized_difference
+  wavevector_set_distance: one_minus_Jaccard_similarity
+  combined_distance: root_mean_square_of_continuous_coordinates_and_wavevector_set_distance
+  target_signature: flattened_32_origin_N8_conservative_acceleration_defect
+  target_center: consumed_development_coordinatewise_median
+  target_scale: max(global_consumed_target_MAD,1e-12)
+  target_pca_components: 5
+structural_templates:
+  T01: {macro_group: mixed_LT, wavevectors: [[1,0],[1,1]], temporal: [[sin,1],[cos,1]]}
+  T02: {macro_group: mixed_LT, wavevectors: [[1,0],[0,1]], temporal: [[sin,1],[cos,2]]}
+  T03: {macro_group: mixed_LT, wavevectors: [[1,1],[1,-1]], temporal: [[sin,1],[cos,1]]}
+  T04: {macro_group: mixed_LT, wavevectors: [[1,0],[1,-1]], temporal: [[cos,1],[sin,2]]}
+  T05: {macro_group: spatial_frequency_heterogeneous, wavevectors: [[1,0],[0,1],[2,0]], temporal: [[sin,1],[cos,1],[sin,2]]}
+  T06: {macro_group: spatial_frequency_heterogeneous, wavevectors: [[1,0],[1,1],[2,1]], temporal: [[sin,1],[cos,1],[sin,2]]}
+  T07: {macro_group: spatial_frequency_heterogeneous, wavevectors: [[0,1],[1,-1],[1,2]], temporal: [[cos,1],[sin,1],[cos,2]]}
+  T08: {macro_group: spatial_frequency_heterogeneous, wavevectors: [[1,0],[0,1],[2,-1]], temporal: [[sin,1],[sin,2],[cos,2]]}
+  T09: {macro_group: multi_temporal, wavevectors: [[1,0],[0,1],[1,1]], temporal: [[sin,1],[cos,2],[sin,3]]}
+  T10: {macro_group: multi_temporal, wavevectors: [[1,1],[1,-1],[0,1]], temporal: [[cos,1],[sin,2],[cos,3]]}
+  T11: {macro_group: multi_temporal, wavevectors: [[1,0],[1,1],[2,1]], temporal: [[sin,1],[sin,2],[sin,3]]}
+  T12: {macro_group: multi_temporal, wavevectors: [[0,1],[1,-1],[2,-1]], temporal: [[cos,1],[cos,2],[sin,3]]}
+  T13: {macro_group: rotating_anisotropic, wavevectors: [[1,0],[0,1],[1,1],[2,-1]], temporal: [[sin,2],[cos,2],[sin,1],[cos,3]]}
+  T14: {macro_group: rotating_anisotropic, wavevectors: [[1,0],[1,1],[1,-1],[1,2]], temporal: [[sin,1],[cos,1],[sin,2],[cos,3]]}
+  T15: {macro_group: rotating_anisotropic, wavevectors: [[0,1],[1,0],[2,1],[1,-2]], temporal: [[sin,2],[cos,2],[cos,1],[sin,3]]}
+  T16: {macro_group: rotating_anisotropic, wavevectors: [[1,1],[1,-1],[2,1],[2,-1]], temporal: [[sin,1],[cos,1],[sin,2],[cos,3]]}
+continuous_parameter_design:
+  implementation: scipy.stats.qmc.Sobol
+  scramble: false
+  dimension: 8
+  coordinates:
+    0: total_amplitude_[0.004,0.012]
+    1: LT_mixing_[0.10,0.90]
+    2: anisotropy_ratio_[1.0,3.0]
+    3: temporal_base_phase_[0,2pi)
+    4: spatial_base_phase_[0,2pi)
+    5: simplex_coordinate_1
+    6: simplex_coordinate_2
+    7: simplex_coordinate_3_and_rotation_fraction
+  train_indices: [0, 127]
+  validation_indices: [256, 319]
+  train_points_per_template: 8
+  validation_points_per_template: 4
+  redraw_count: 0
+  retry_count: 0
+  replacement_count: 0
+candidate_qualification:
+  bank_total: 192
+  variant: MAIN
+  resolution: 8
+  origins: 32
+  requirements: [exact_formula, analytic_closure, D0_accepted_state_defect, conservative_decomposition, source_target_oracle_summary, topology_scan]
+  gates: {finite: true, minimum_J: 0.95, maximum_Mach: 0.05, periodic: true, fixed_topology: true, conservative: true}
+coverage_optimizer:
+  algorithm: deterministic_lexicographic_forward_selection_v1
+  note: each of eight forward slots evaluates every remaining candidate and chooses the exact lexical tie-broken lexicographic minimum of the four frozen objectives
+  objectives:
+    - max_consumed_development_descriptor_NN_distance_minimize
+    - max_consumed_development_target_PCA_residual_minimize
+    - train_bank_central95_coverage_radius_minimize
+    - selected_minimum_pairwise_distance_maximize
+  tie_break: candidate_ID_lexical
+  manual_override: false
+hard_gates:
+  consumed_descriptor_NN_max: 2.5
+  HET_S2_02_descriptor_NN_max: 2.0
+  key_descriptors: [source_rms, raw_a_cons_rms, oracle_bounded_coefficient_rms]
+  key_descriptor_relative_bilateral_margin: 0.05
+  nonnegative_physical_boundary_exception: true
+  consumed_target_residual_max: TRAIN_V3_p95
+  HET_S2_02_classification: IN_SUPPORT
+validation_selection:
+  descriptor_NN_interval: [0.75, 2.0]
+  key_descriptor_boundary_margin: 0.025
+  target_residual_max: TRAIN_V3_p90
+  groups: [mixed_LT, spatial_frequency_heterogeneous, multi_temporal, rotating_anisotropic]
+  selection: largest_TRAIN_nearest_neighbor_distance_then_lexical_ID
+selected_qualification:
+  variants: [LOW, MAIN]
+  resolutions: [8, 12, 16]
+  frames: 36
+  frame_n: [-3, 32]
+  analytic_case_count: 24
+  trajectory_count: 72
+  topology: {time_samples: 1025, repeats: 3, normalized_margin: 0.02}
+  dop853:
+    cases: 24
+    primary: {rtol: 1.0e-11, atol: 1.0e-13}
+    sensitivity: {rtol: 1.0e-12, atol: 1.0e-14}
+    repeat_primary: true
+    normalized_L2: 1.0e-9
+    normalized_Linf: 1.0e-8
+fresh_validation_seal:
+  public: [opaque_lineage_ID, role, hash, shape, qualification_status, safe_coverage_summary]
+  private: [formula_parameters, trajectory_state, source, target, origins, graph_sequence]
+  file_mode: '000'
+prohibitions:
+  model_instances: 0
+  model_forwards: 0
+  optimizer_instances: 0
+  optimizer_steps: 0
+  parameter_updates: 0
+  training_runs: 0
+  original_sealed_test_decode: 0

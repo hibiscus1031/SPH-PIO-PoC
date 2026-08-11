@@ -1,0 +1,62 @@
+[
+  {
+    "figure": "S06",
+    "panel": "a-d,g",
+    "scientific_claim": "The full frozen signal factorization separates task residual, full-gradient activity, direction projection, and attribution class.",
+    "source_file": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/directional_projection/directional_projection_and_factors.json",
+    "source_hash": "sha256:8cedf91d13901fa0b8958189db1c8c094f2532589e16c63753b0ec3dedab0fdb",
+    "source_field": "rows[*].components and reason_counts",
+    "confirmatory_or_diagnostic": "DIAGNOSTIC_ONLY",
+    "transformation": "Component expansion; source order; log display where stated.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS06_stage04_signal_decomposition.svg; figS06_stage04_signal_decomposition.pdf; figS06_stage04_signal_decomposition.png"
+  },
+  {
+    "figure": "S06",
+    "panel": "b",
+    "scientific_claim": "Full gradients were active even where group-direction projections were small.",
+    "source_file": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/full_gradient_norm/full_gradient_norms.json",
+    "source_hash": "sha256:ce3a30f1f6ce1c0418e0af9bda733ce86cadc826529aca616dd65d37d6e72e75",
+    "source_field": "rows[*].components.*.L2/nonzero_element_count",
+    "confirmatory_or_diagnostic": "DIAGNOSTIC_ONLY",
+    "transformation": "Component expansion; log-log scatter.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS06_stage04_signal_decomposition.svg; figS06_stage04_signal_decomposition.pdf; figS06_stage04_signal_decomposition.png"
+  },
+  {
+    "figure": "S06",
+    "panel": "a",
+    "scientific_claim": "D0 and random-model state residual magnitudes are retained in the source-data inventory.",
+    "source_file": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/state_residual/state_residual_and_D0_comparison.json",
+    "source_hash": "sha256:36c775ac32c36075af5933e05244d7a3598dcace5388a1b436b01383837354b6",
+    "source_field": "rows[*].D0_dimensionless_state_residual_RMS/random_minus_D0_state_RMS",
+    "confirmatory_or_diagnostic": "DIAGNOSTIC_ONLY",
+    "transformation": "Exact source-data export.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS06_stage04_signal_decomposition.svg; figS06_stage04_signal_decomposition.pdf; figS06_stage04_signal_decomposition.png"
+  },
+  {
+    "figure": "S06",
+    "panel": "e-f",
+    "scientific_claim": "Frozen RK2 factorization shows velocity-scale and position/density-scale attenuation.",
+    "source_file": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/rk2_attenuation/rk2_attenuation.json",
+    "source_hash": "sha256:1cd05d45441f1d4f529ba24583a78e800a1cdbf8b75f81550dcdade6241e517a",
+    "source_field": "V_over_dt_A_mid, X_over_dt2_A_mid, RHO_over_dt2_A_mid",
+    "confirmatory_or_diagnostic": "DIAGNOSTIC_ONLY",
+    "transformation": "Exact source-order scatter.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS06_stage04_signal_decomposition.svg; figS06_stage04_signal_decomposition.pdf; figS06_stage04_signal_decomposition.png"
+  },
+  {
+    "figure": "S06",
+    "panel": "h",
+    "scientific_claim": "The retained Stage04CR terminal status is mixed or unresolved, not qualified.",
+    "source_file": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04cr/qualification/stage04cr_summary.json",
+    "source_hash": "sha256:3b24b834bca6deeca61f6388706ebc739beb22b5773fddfa26854754035c8cdb",
+    "source_field": "final_status, reason_counts, stage04c_status_preserved",
+    "confirmatory_or_diagnostic": "SUPPORTED",
+    "transformation": "Status-card transcription.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS06_stage04_signal_decomposition.svg; figS06_stage04_signal_decomposition.pdf; figS06_stage04_signal_decomposition.png"
+  }
+]

@@ -1,0 +1,103 @@
+candidate_id: attribution_contract_v0_4
+candidate_count: 1
+candidate_semantics: Bonferroni_any_significant_vector_component
+preregistered_before_development_or_blind_execution: true
+metric_sweep_permitted: false
+post_observation_selection_permitted: false
+inherited_decomposition:
+  source: stage02jt_v03_candidate_preregistration
+  identity: S_h_squared_equals_M_h_squared_plus_D_h_squared
+  edge_set_redefined: false
+  distance_normalization_redefined: false
+  RMS_normalization_redefined: false
+  epsilon_redefined: false
+  permutation_convention_redefined: false
+  epsilon_r: 3.5527136788005009e-15
+  epsilon_a: 0.0
+multiple_component_test:
+  p_any: min(1,2*min(p_mag,p_dir))
+  Bonferroni_factor: 2
+  p_any_max: 0.01
+  uncorrected_OR_permitted: false
+permutation:
+  generator: PCG64
+  count_per_case: 256
+  root_seed: 20260207
+  seed_rule: first_8_big_endian_bytes_SHA256_UTF8(root_seed_pipe_case_id_pipe_permutation_index)
+positive_controls:
+  RMS_matching: corresponding_development_target
+  MAGNITUDE_ONLY_SMOOTH:
+    field: q0_times_1_plus_0p4_cos_2pi_x_times_unit_x
+    expectation: p_mag_significant_p_dir_not_required_p_any_PASS
+  DIRECTION_ONLY_SMOOTH:
+    field: q0_times_cos_2pi_x_sin_2pi_x
+    expectation: p_dir_significant_p_mag_not_required_p_any_PASS
+  JOINT_SMOOTH:
+    field: q0_times_1_plus_0p3_cos_2pi_x_times_cos_2pi_y_sin_2pi_y
+    expectation: p_any_PASS
+  CONSTANT_VECTOR:
+    field: constant_q0_times_unit_x
+    role: zero_variation_handling_only_not_learnable_positive
+    frozen_handling: M_h_zero_D_h_zero_all_permutation_metrics_zero_p_mag_one_p_dir_one_p_any_one
+hard_negative_controls:
+  classes:
+    - FULL_PARTICLE_PERMUTATION
+    - GAUSSIAN_WHITE_MATCHED_RMS
+    - INDEPENDENT_COMPONENT_PERMUTATION
+    - NYQUIST_CHECKERBOARD_MATCHED_RMS
+  expectation: p_any_PASS_false
+  realizations_per_case_control: 512
+  seed_root: 20260805
+  seed_rule: first_8_big_endian_bytes_SHA256_UTF8_exact_concat_stage02jv_case_id_control_id_realization_index
+  one_sided_Clopper_Pearson_confidence: 0.95
+  qualification: each_case_control_upper_bound_at_most_0p05
+ablation_control:
+  class: RANDOM_PARTICLE_SIGN_FLIP
+  semantics: DIRECTION_ABLATION_CONTROL
+  hard_negative_false_positive_counted: false
+  required_outputs: [p_mag,p_dir,p_any,magnitude_position_mapping]
+development_gate:
+  families: [FAMILY_PV_EXISTING,FAMILY_CROSSMODE_A]
+  resolution_cases_per_family: 3
+  p_any_max: 0.01
+  original_non_null_gates_required:
+    - target_endpoint_magnitude_nonincreasing
+    - adjacent_low_mode_direction_cosine
+    - relative_neighbor_variation_strictly_decreasing
+    - physical_gradient_scale_coefficient_of_variation
+refinement_applicability:
+  magnitude:
+    applicable_if: low_resolution_p_mag_at_most_0p01
+    when_applicable: M_h_high_not_above_low_AND_OLS_slope_at_most_zero
+    otherwise: diagnostic_not_hard_failure
+  direction:
+    applicable_if: low_resolution_p_dir_at_most_0p01
+    when_applicable: D_h_high_not_above_low_AND_OLS_slope_at_most_zero
+    otherwise: diagnostic_not_hard_failure
+  family_requirement: at_least_one_significant_component_has_applicable_refinement_PASS
+  convergence_order_claim_permitted: false
+invariance:
+  populations: [development_real_targets,three_learnable_positive_controls]
+  transforms:
+    - amplitude_scale_0p1_1_10
+    - periodic_translation
+    - axis_exchange
+    - vector_rotation_90
+    - particle_recanonicalization
+    - edge_forward_reverse_order
+  quantities: [M_h,D_h,p_mag,p_dir,p_any]
+  metric_absolute_tolerance: 1.0e-14
+  metric_relative_tolerance: 1.0e-12
+  p_value_exact: true
+blind_boundary:
+  generator_source: frozen_stage02jt_generator
+  generator_or_seed_change_permitted: false
+  formula_access_before_final_contract_hash_permitted: false
+  family_replacement_permitted: false
+  required_blind_families: 4
+auxiliary_boundary:
+  families: [FAMILY_DIAGONAL_B,FAMILY_MIXED_C]
+  allowed_only_after_4_of_4_blind_PASS: true
+  qualification_or_blind_count_use_permitted: false
+manual_override_permitted: false
+

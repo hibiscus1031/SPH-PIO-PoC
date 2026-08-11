@@ -1,0 +1,234 @@
+{
+  "architecture_files": [
+    {
+      "byte_count": 3122,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/contracts/architecture_contract_v0_1.json",
+      "sha256": "sha256:1060b0981f69053828f83fe5bf96cd10f637f4306ea1a8d07a0042f9af5d0c28"
+    },
+    {
+      "byte_count": 1243,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/contracts/feature_contract_v0_1.json",
+      "sha256": "sha256:719f239444c3b5cc73768566992b5b6d96b7ee1d9aa47dc8829e24baebf71bb1"
+    },
+    {
+      "byte_count": 9499,
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/implementations/pair_force_models.py",
+      "sha256": "sha256:892db429621db3a982fe8b03d453dd009e07a8bef4b2b2aca1ba792b0967df57"
+    }
+  ],
+  "architecture_frozen": true,
+  "architecture_hash": "sha256:1e313f871b13f3f2fc0cc780ab24d50a7fd9fe8a96866da91fae5ede9ab555a4",
+  "authorization": "Stage02J-W:BLIND_MULTIFAMILY_DATASET_READY",
+  "canonical_records": [
+    {
+      "case_id": "blind_family_01_n12_h26",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_01_n12_h26.bin",
+      "sha256": "sha256:9dd34ebfa97e221024192359aa8dbde68ab2f5964990a918d69fc6bd5b7f7eab",
+      "split_role": "future_train"
+    },
+    {
+      "case_id": "blind_family_01_n16_h26",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_01_n16_h26.bin",
+      "sha256": "sha256:6872cad9a62a74ab2642acc0a6c0c6dee41d816d0185b81c6aed9d775d602c64",
+      "split_role": "future_train"
+    },
+    {
+      "case_id": "blind_family_01_n20_h26",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_01_n20_h26.bin",
+      "sha256": "sha256:c734dbd1489325180309cb511769deb1b49aa2841ac9b3f08ba47a5e3bb08360",
+      "split_role": "future_train"
+    },
+    {
+      "case_id": "blind_family_01_n16_h22",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_01_n16_h22.bin",
+      "sha256": "sha256:d708acca04f9043df85bc3ebf65ed1b2b15a2158a719ebe31e52c3abefcaf414",
+      "split_role": "future_train"
+    },
+    {
+      "case_id": "blind_family_01_n16_h30",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_01_n16_h30.bin",
+      "sha256": "sha256:d4676e7da59e2e6ef72a13ad39c8f8b4e432fe012520d01915bbc57f6e2becc7",
+      "split_role": "future_train"
+    },
+    {
+      "case_id": "blind_family_02_n12_h26",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_02_n12_h26.bin",
+      "sha256": "sha256:4c857e6b0edda93600cb24775723f976460cdfbf45b9d31de9dee04c7fe56dd0",
+      "split_role": "future_train"
+    },
+    {
+      "case_id": "blind_family_02_n16_h26",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_02_n16_h26.bin",
+      "sha256": "sha256:b1ae733c66dd2533b298a0f32bca4245fe48721ba80ac2f90c4a76d9c7cbf4e1",
+      "split_role": "future_train"
+    },
+    {
+      "case_id": "blind_family_02_n20_h26",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_02_n20_h26.bin",
+      "sha256": "sha256:9b99b13a9619d376de1e10053d5c2e160d496054e78fd3e7d0efb92cedc86097",
+      "split_role": "future_train"
+    },
+    {
+      "case_id": "blind_family_02_n16_h22",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_02_n16_h22.bin",
+      "sha256": "sha256:647ad88a239a46ceb75b9297eee1b57069dd11f6a20a5d9b444b187c95b817e8",
+      "split_role": "future_train"
+    },
+    {
+      "case_id": "blind_family_02_n16_h30",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_02_n16_h30.bin",
+      "sha256": "sha256:ad432b6401d1aa059bb328c1a0e1d1725d663bbada420dc5af006eaf48888100",
+      "split_role": "future_train"
+    },
+    {
+      "case_id": "blind_family_03_n12_h26",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_03_n12_h26.bin",
+      "sha256": "sha256:b57da63133d6b5ac14cf425ddd3d3908145c0a74080d22462ad6ab34d1179555",
+      "split_role": "future_validation"
+    },
+    {
+      "case_id": "blind_family_03_n16_h26",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_03_n16_h26.bin",
+      "sha256": "sha256:5b22838e51c41ea7cccd434ae717285812c15beb8c908ec593892a71071ae742",
+      "split_role": "future_validation"
+    },
+    {
+      "case_id": "blind_family_03_n20_h26",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_03_n20_h26.bin",
+      "sha256": "sha256:26c74d68d8ec1704112fd43162b2821e58d0dbd01af603601e81c015b403e087",
+      "split_role": "future_validation"
+    },
+    {
+      "case_id": "blind_family_03_n16_h22",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_03_n16_h22.bin",
+      "sha256": "sha256:06d35168dc3cf6170c0c05074cd2ede87916c059c63f169a26900acd73d9f1f9",
+      "split_role": "future_validation"
+    },
+    {
+      "case_id": "blind_family_03_n16_h30",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_03_n16_h30.bin",
+      "sha256": "sha256:5a178f690579b5233cc5ed24dc550aeab44d549428f597b041a1fa23fd7bc45c",
+      "split_role": "future_validation"
+    },
+    {
+      "case_id": "blind_family_04_n12_h26",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_04_n12_h26.bin",
+      "sha256": "sha256:4d303d820a58fe06dd72871d6b0c7d4e34ed2963f68bea05cfcd9fd9dc91649b",
+      "split_role": "future_test"
+    },
+    {
+      "case_id": "blind_family_04_n16_h26",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_04_n16_h26.bin",
+      "sha256": "sha256:50163610fac752e79bea7bb2ff05123566e8c35513a03b63b0a66c8dc9c5462b",
+      "split_role": "future_test"
+    },
+    {
+      "case_id": "blind_family_04_n20_h26",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_04_n20_h26.bin",
+      "sha256": "sha256:18e18afffc9d436f07ce50040a63dddd5235caadf762d2c159a32ca896ece99c",
+      "split_role": "future_test"
+    },
+    {
+      "case_id": "blind_family_04_n16_h22",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_04_n16_h22.bin",
+      "sha256": "sha256:a94bc6a9fb3ccc8f096d32423ed661a2e5b7cee74bd6e6aaac1e24f4ccaa7f47",
+      "split_role": "future_test"
+    },
+    {
+      "case_id": "blind_family_04_n16_h30",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/blind_family_04_n16_h30.bin",
+      "sha256": "sha256:488e60b0f9fc31920c725fe61371cc79328f66a44956f77d3cd86eff09bba4fe",
+      "split_role": "future_test"
+    }
+  ],
+  "collection_id": "blind_multifamily_pair_scope_v1_0",
+  "created_before_canonical_record_decode": true,
+  "created_before_validation_test_or_target_array_access": true,
+  "inputs": [
+    {
+      "byte_count": 1821,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02jw_final_report.md",
+      "sha256": "sha256:a35161d0fcf8ac43edd21694414f2778936165b589cd21e5205483e042d67c83"
+    },
+    {
+      "byte_count": 3295,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/manifests/stage02jw_final_manifest.json",
+      "sha256": "sha256:695b6ff57422e21da333e55a5a76d45e2bfe9fcc6abf8fe688de26de6661e876"
+    },
+    {
+      "byte_count": 18943,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/manifests/stage02jw_dataset_manifest.json",
+      "sha256": "sha256:902154cdd2aff77ecdfb0fc853f7d8b7befb515a891adfc2701dfd895edf90ce"
+    },
+    {
+      "byte_count": 21912,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/canonical_inventory.json",
+      "sha256": "sha256:ba496fd0abadd53c089b4d5ac16edd650a502320b3eedd649d3e6d68c5339b2f"
+    },
+    {
+      "byte_count": 18738,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/eligibility/record_eligibility_results.json",
+      "sha256": "sha256:b19d2c72f64414b1d7815a33e4d82b68f02f679cf21f5483c1a5b9e15279b569"
+    },
+    {
+      "byte_count": 11351,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/leakage/leakage_graph.json",
+      "sha256": "sha256:9c8c970dc6f6c4a3089a193a8615e76fc5a53e86d00b8201c23944706cfbc1c6"
+    },
+    {
+      "byte_count": 1615,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/splits/prefrozen_split_manifest.json",
+      "sha256": "sha256:9b5073f8e4c3d84325ad7023e52dbba270a62f21f7ff326a0aa7dc273b57cff9"
+    },
+    {
+      "byte_count": 2999,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/normalization/train_only_graph_balanced_statistics.json",
+      "sha256": "sha256:0dc26751271399ce278199e657fc35b1ad9ab0492275bccd43d191f8ee97d495"
+    },
+    {
+      "byte_count": 4920,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/eligibility_contract/blind_dataset_eligibility_contract_v1_0.yaml",
+      "sha256": "sha256:8a5b48abd4e1c5c630995036769622b70f24167eb482e454f144e4e94f0add3a"
+    },
+    {
+      "byte_count": 1191,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/schema/feature_permission_table.yaml",
+      "sha256": "sha256:24644dae01073d1ddf6aed011af212c74e1799137127a2f391b38e7f533dad0a"
+    },
+    {
+      "byte_count": 5747,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/schema/stage02j_graph_record_schema.json",
+      "sha256": "sha256:4575e5fbec28f55e8c3fd9207798726ced302be60297075ef10cfe8a6cd29f87"
+    },
+    {
+      "byte_count": 922,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/schema/canonical_serialization_contract.yaml",
+      "sha256": "sha256:920d32390d41cc1e5c731f2b789bf24da99d499ddb8f576959ffc72a0f48c195"
+    },
+    {
+      "byte_count": 51250,
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/manifests/run_stage02j_controlled_dataset.py",
+      "sha256": "sha256:3b8324ec9cf159128607e60df8e86324c2f986e20ca42dcb3f4fd5cd94d992dd"
+    },
+    {
+      "byte_count": 1449,
+      "path": "stage_02_Particle_Interaction_Operator/04_target_attribution/conservation_closure/architecture_scope/architecture_scope_decision.json",
+      "sha256": "sha256:8ffb20a19d2dcb57b86b40038ee0655da3c85c35937fefab6886ec226dccdf9c"
+    },
+    {
+      "byte_count": 1527,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02a_conservation_contract.md",
+      "sha256": "sha256:e4561b3ed61b94efea86f84b57f18e4b195dfcbb9dc1a5a52ca2694a6bba347a"
+    },
+    {
+      "byte_count": 1697,
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02a_equivariance_contract.md",
+      "sha256": "sha256:156b1339a8f6f7c6a211318733efd9d6adc6093cd54d45c7e136c6001fc7d243"
+    }
+  ],
+  "manifest_version": "stage02k-freeze-1.0.0",
+  "no_target_arrays_read_by_this_script": true,
+  "record_count": 20,
+  "schema_compatibility_identifier": "controlled_regular_pair_scope_v0_1",
+  "status": "PASS"
+}

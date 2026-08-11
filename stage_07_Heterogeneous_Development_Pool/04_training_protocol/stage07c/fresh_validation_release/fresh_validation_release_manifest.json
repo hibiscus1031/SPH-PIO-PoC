@@ -1,0 +1,318 @@
+{
+  "access_ledger": {
+    "DOP853_files": 8,
+    "N8_topology_files": 8,
+    "N8_trajectory_npz_files": 8,
+    "N8_trajectory_sidecars": 8,
+    "analytic_qualification_files": 8,
+    "consumed_validation_private_decodes": 0,
+    "formula_parameter_files": 1,
+    "fresh_origin_ids_decoded": 256,
+    "fresh_source_origins_decoded": 256,
+    "fresh_state_origins_decoded": 256,
+    "original_sealed_test_private_decodes": 0,
+    "validation_targets_materialized": 256
+  },
+  "all_89_private_artifacts_restored": true,
+  "first_decode_timestamp": "2026-08-07T09:07:19.694770+00:00",
+  "original_sealed_test_release": false,
+  "pass": true,
+  "protocol_hash_at_first_decode": "sha256:21b52f0aca3791cdc0d58165f1edd980667bafe0eee5a9d52544c24a8f518dbb",
+  "protocol_hash_verified_immediately_before_release": true,
+  "released_artifacts": [
+    {
+      "actual_sha256": "sha256:76a541f44771c72af2d601311c45103b7d0879c3e0848cdcd6648a19db850d58",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:76a541f44771c72af2d601311c45103b7d0879c3e0848cdcd6648a19db850d58",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/analytic_qualification/het_s1_01_low_analytic.json"
+    },
+    {
+      "actual_sha256": "sha256:418b515bd3f89f0dcd986643a6c5380d0a28a929e1a1a078ebab81e1b3fb0951",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:418b515bd3f89f0dcd986643a6c5380d0a28a929e1a1a078ebab81e1b3fb0951",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/analytic_qualification/het_s1_01_main_analytic.json"
+    },
+    {
+      "actual_sha256": "sha256:66d13baec748a99c8a1dce6e19e0c5ef03d6e0d03057ba8be70344aa79b0845b",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:66d13baec748a99c8a1dce6e19e0c5ef03d6e0d03057ba8be70344aa79b0845b",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/analytic_qualification/het_s2_02_low_analytic.json"
+    },
+    {
+      "actual_sha256": "sha256:b93a5012adc28d564f1bc30277a13453d2c3d0c54f9f93df2dc242f740e40741",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:b93a5012adc28d564f1bc30277a13453d2c3d0c54f9f93df2dc242f740e40741",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/analytic_qualification/het_s2_02_main_analytic.json"
+    },
+    {
+      "actual_sha256": "sha256:728141ed8c36cd63b89db493f111f2c737b954f3f1b4334f5e1fee732ca6cfb1",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:728141ed8c36cd63b89db493f111f2c737b954f3f1b4334f5e1fee732ca6cfb1",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/analytic_qualification/het_s3_03_low_analytic.json"
+    },
+    {
+      "actual_sha256": "sha256:f6f9d9ad6ba3d9f0f39a0bbdb4cb2a36d559834345c5e77c266caf1dcd338a02",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:f6f9d9ad6ba3d9f0f39a0bbdb4cb2a36d559834345c5e77c266caf1dcd338a02",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/analytic_qualification/het_s3_03_main_analytic.json"
+    },
+    {
+      "actual_sha256": "sha256:05199397794ba7984810d4d54024800e3162cfaf630ed7d729e0627bb09b79d6",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:05199397794ba7984810d4d54024800e3162cfaf630ed7d729e0627bb09b79d6",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/analytic_qualification/het_s4_03_low_analytic.json"
+    },
+    {
+      "actual_sha256": "sha256:8b3a94dc051b6f1d4dd1c710eb5635a7c7faf21381baf454f4b059d8470b8f38",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:8b3a94dc051b6f1d4dd1c710eb5635a7c7faf21381baf454f4b059d8470b8f38",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/analytic_qualification/het_s4_03_main_analytic.json"
+    },
+    {
+      "actual_sha256": "sha256:cbb7ffd88b3bffa786b1e9fa86760e10ca083843a1f7649cb6cb6aad8a70ddde",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:cbb7ffd88b3bffa786b1e9fa86760e10ca083843a1f7649cb6cb6aad8a70ddde",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/parameters/fresh_validation_parameters.json"
+    },
+    {
+      "actual_sha256": "sha256:db0a25e231c4b7e93728e27ea55b0afbf80e6173edd3899140ea135d5ab29092",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:db0a25e231c4b7e93728e27ea55b0afbf80e6173edd3899140ea135d5ab29092",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/semidiscrete_audit/het_s1_01_main_n16_dop853.json"
+    },
+    {
+      "actual_sha256": "sha256:f33274fb832c6f7d774b163a1bf048044b1fb51e0f9426d89c61cdd69a3650f4",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:f33274fb832c6f7d774b163a1bf048044b1fb51e0f9426d89c61cdd69a3650f4",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/semidiscrete_audit/het_s1_01_main_n8_dop853.json"
+    },
+    {
+      "actual_sha256": "sha256:99ff6d7e9f8497b4e503b86de17f0f36b06666aaa61c4bfaf39250356bba3625",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:99ff6d7e9f8497b4e503b86de17f0f36b06666aaa61c4bfaf39250356bba3625",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/semidiscrete_audit/het_s2_02_main_n16_dop853.json"
+    },
+    {
+      "actual_sha256": "sha256:f49f99f3edf9eea22d0af91ab7c1298fc558dabb7db74f81777dfd5bd554500b",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:f49f99f3edf9eea22d0af91ab7c1298fc558dabb7db74f81777dfd5bd554500b",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/semidiscrete_audit/het_s2_02_main_n8_dop853.json"
+    },
+    {
+      "actual_sha256": "sha256:e4eb416b6f698f8ef28d4562c7f78bc9abea773c66bae4894be4b06290d514d0",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:e4eb416b6f698f8ef28d4562c7f78bc9abea773c66bae4894be4b06290d514d0",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/semidiscrete_audit/het_s3_03_main_n16_dop853.json"
+    },
+    {
+      "actual_sha256": "sha256:f8b266d715f2b1b088ade05f6cb4f8c4dee147d6f7f128d532216602ff23e440",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:f8b266d715f2b1b088ade05f6cb4f8c4dee147d6f7f128d532216602ff23e440",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/semidiscrete_audit/het_s3_03_main_n8_dop853.json"
+    },
+    {
+      "actual_sha256": "sha256:03f21ac3177afa5139fde9d58259e9974db45b53348522b41938476f42084971",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:03f21ac3177afa5139fde9d58259e9974db45b53348522b41938476f42084971",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/semidiscrete_audit/het_s4_03_main_n16_dop853.json"
+    },
+    {
+      "actual_sha256": "sha256:749187cbd166d9a35d24f6ebb47ca891b867d9c398ab2f2fa379545c1795aa2f",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:749187cbd166d9a35d24f6ebb47ca891b867d9c398ab2f2fa379545c1795aa2f",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/semidiscrete_audit/het_s4_03_main_n8_dop853.json"
+    },
+    {
+      "actual_sha256": "sha256:1a11bd3b508767e61b74208e95e6a4a1be8579e2d674b2ca2d1a45c104eb983d",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:1a11bd3b508767e61b74208e95e6a4a1be8579e2d674b2ca2d1a45c104eb983d",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/topology_qualification/het_s1_01_low_n8_topology.json"
+    },
+    {
+      "actual_sha256": "sha256:8f5c3c9a40883cb2294bcf0635589b1bf4795dd0ee958c36d92465641b8b4a29",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:8f5c3c9a40883cb2294bcf0635589b1bf4795dd0ee958c36d92465641b8b4a29",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/topology_qualification/het_s1_01_main_n8_topology.json"
+    },
+    {
+      "actual_sha256": "sha256:333c96b1d8027988d2a16a471a91f60709d185da50881cfeeb6451c1845a21b8",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:333c96b1d8027988d2a16a471a91f60709d185da50881cfeeb6451c1845a21b8",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/topology_qualification/het_s2_02_low_n8_topology.json"
+    },
+    {
+      "actual_sha256": "sha256:7130a733b46bf3d5d689e281dcbed6ae4855d1f280ae8f90f0f53569d3025bd6",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:7130a733b46bf3d5d689e281dcbed6ae4855d1f280ae8f90f0f53569d3025bd6",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/topology_qualification/het_s2_02_main_n8_topology.json"
+    },
+    {
+      "actual_sha256": "sha256:39cdb94e96f2f210f418f350d46e36212b5e01870620f48ec07beca85930dbb7",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:39cdb94e96f2f210f418f350d46e36212b5e01870620f48ec07beca85930dbb7",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/topology_qualification/het_s3_03_low_n8_topology.json"
+    },
+    {
+      "actual_sha256": "sha256:9fab03ccda5ffe03b47edeba55d5e777a25153265e091924ea676a47dbf94530",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:9fab03ccda5ffe03b47edeba55d5e777a25153265e091924ea676a47dbf94530",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/topology_qualification/het_s3_03_main_n8_topology.json"
+    },
+    {
+      "actual_sha256": "sha256:b3197ad327ed9ba8ba4c59ccb0ceed6913d9424846a98b471a1707b054f5a38b",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:b3197ad327ed9ba8ba4c59ccb0ceed6913d9424846a98b471a1707b054f5a38b",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/topology_qualification/het_s4_03_low_n8_topology.json"
+    },
+    {
+      "actual_sha256": "sha256:5f3269db98c4dbe30256ff02b4d3b8fd84cfe31898dd2d8ce8b9f98730d2aa41",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:5f3269db98c4dbe30256ff02b4d3b8fd84cfe31898dd2d8ce8b9f98730d2aa41",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/topology_qualification/het_s4_03_main_n8_topology.json"
+    },
+    {
+      "actual_sha256": "sha256:90f1ee7ee27252abe83256b611def20d17c9c9f8a4d3c336dc2b8551dfe6161e",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:90f1ee7ee27252abe83256b611def20d17c9c9f8a4d3c336dc2b8551dfe6161e",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/trajectory_materialization/het_s1_01_low_n8.json"
+    },
+    {
+      "actual_sha256": "sha256:6ddcf01eeb40c34e7c5d6fd7ecf4745e06e2385b9ebfbe3dd6ce3822ebfc00e9",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:6ddcf01eeb40c34e7c5d6fd7ecf4745e06e2385b9ebfbe3dd6ce3822ebfc00e9",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/trajectory_materialization/het_s1_01_low_n8.npz"
+    },
+    {
+      "actual_sha256": "sha256:5171e9fe00fbd6647746076f2bf74c634cc2d1c4de5e39c988d86cc6adeb76ff",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:5171e9fe00fbd6647746076f2bf74c634cc2d1c4de5e39c988d86cc6adeb76ff",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/trajectory_materialization/het_s1_01_main_n8.json"
+    },
+    {
+      "actual_sha256": "sha256:020ece25a0eebedf37fe636af85ea9ac782552fe42d71d57932d90e7a0ecbe83",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:020ece25a0eebedf37fe636af85ea9ac782552fe42d71d57932d90e7a0ecbe83",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/trajectory_materialization/het_s1_01_main_n8.npz"
+    },
+    {
+      "actual_sha256": "sha256:42247216b8a6ca9279a2361368110aa7ef213de2a282fca3c95181cb38461536",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:42247216b8a6ca9279a2361368110aa7ef213de2a282fca3c95181cb38461536",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/trajectory_materialization/het_s2_02_low_n8.json"
+    },
+    {
+      "actual_sha256": "sha256:25c988567b4952ee7511ae0fa1f683037cb762835e10bdd03d0c5b3a42233178",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:25c988567b4952ee7511ae0fa1f683037cb762835e10bdd03d0c5b3a42233178",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/trajectory_materialization/het_s2_02_low_n8.npz"
+    },
+    {
+      "actual_sha256": "sha256:6f6e3765a2ec982a225bc680023dbdd1147395d3b2a8fad5994b82076dee32cd",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:6f6e3765a2ec982a225bc680023dbdd1147395d3b2a8fad5994b82076dee32cd",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/trajectory_materialization/het_s2_02_main_n8.json"
+    },
+    {
+      "actual_sha256": "sha256:494c3f59842dcf96339f23fd8a1cb1c3d848ce94a2950043617369ef33de4d08",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:494c3f59842dcf96339f23fd8a1cb1c3d848ce94a2950043617369ef33de4d08",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/trajectory_materialization/het_s2_02_main_n8.npz"
+    },
+    {
+      "actual_sha256": "sha256:138c6a205996dad5c2975287774efe517329a6f3756c72a944e100720abbd130",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:138c6a205996dad5c2975287774efe517329a6f3756c72a944e100720abbd130",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/trajectory_materialization/het_s3_03_low_n8.json"
+    },
+    {
+      "actual_sha256": "sha256:0e2a116cfb84467ddf5ae1798a838f5a39e32ea8cf6f71e8cca26a6d6319a127",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:0e2a116cfb84467ddf5ae1798a838f5a39e32ea8cf6f71e8cca26a6d6319a127",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/trajectory_materialization/het_s3_03_low_n8.npz"
+    },
+    {
+      "actual_sha256": "sha256:6427dbeddfb99db36970d44ba3c7ea53a59bdf6f791f5ad7a9f38113cb76de3e",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:6427dbeddfb99db36970d44ba3c7ea53a59bdf6f791f5ad7a9f38113cb76de3e",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/trajectory_materialization/het_s3_03_main_n8.json"
+    },
+    {
+      "actual_sha256": "sha256:4d6e7d97dd81450b09d78c096006c5b4675a514a316e4344651569c6abab5edf",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:4d6e7d97dd81450b09d78c096006c5b4675a514a316e4344651569c6abab5edf",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/trajectory_materialization/het_s3_03_main_n8.npz"
+    },
+    {
+      "actual_sha256": "sha256:1471eeba6c69fe709712c8503b9b636bed15e551a2a2b1bcdc92e31508a5b052",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:1471eeba6c69fe709712c8503b9b636bed15e551a2a2b1bcdc92e31508a5b052",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/trajectory_materialization/het_s4_03_low_n8.json"
+    },
+    {
+      "actual_sha256": "sha256:7083a90c1af5c7d8ee99157883d246255e37ab9094a49b08baaa209bed3571fb",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:7083a90c1af5c7d8ee99157883d246255e37ab9094a49b08baaa209bed3571fb",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/trajectory_materialization/het_s4_03_low_n8.npz"
+    },
+    {
+      "actual_sha256": "sha256:de2e5f0adaae4dbec070660ca950d751d2d772893df24b3ff48a37d701a74027",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:de2e5f0adaae4dbec070660ca950d751d2d772893df24b3ff48a37d701a74027",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/trajectory_materialization/het_s4_03_main_n8.json"
+    },
+    {
+      "actual_sha256": "sha256:08efe6eb082318ff51f66f0ed8ad6dcf547a97386cf16ab74f8003ea46d7d150",
+      "decoded_after_protocol_freeze": true,
+      "expected_sha256": "sha256:08efe6eb082318ff51f66f0ed8ad6dcf547a97386cf16ab74f8003ea46d7d150",
+      "integrity": true,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/fresh_validation_seal/private/trajectory_materialization/het_s4_03_main_n8.npz"
+    }
+  ],
+  "released_file_count": 41,
+  "released_integrity_pass": true,
+  "restore_mode": "0o0",
+  "restore_timestamp": "2026-08-07T09:07:37.659107+00:00",
+  "schema": "sph-pio-poc.stage07c.fresh-validation-first-decode.v1",
+  "target_record_count_authorized": 256,
+  "temporary_mode": "0o400"
+}

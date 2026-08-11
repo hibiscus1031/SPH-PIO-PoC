@@ -1,0 +1,373 @@
+{
+  "acceptance_threshold_source": "stage_02_Particle_Interaction_Operator/04_target_attribution/acceptance/reference_acceptance_rules.yaml",
+  "acceptance_threshold_source_hash": "sha256:4f317c1e8ba79a5c176b38781edda9353eba477d896b627cc3a981f7c377c71e",
+  "all_seven_reference_pairs_qualified": true,
+  "diagnostic_reference_ids_preserved_and_excluded": [
+    "H_REF_QWLS2_INCUMBENT",
+    "H_REF_CWLS3"
+  ],
+  "operator_level_model_form_alignment": {
+    "full_PDE_model_form_PASS_claimed": false,
+    "status": "PASS_WITHIN_FROZEN_SPATIAL_OPERATOR_SCOPE",
+    "viscosity_operator_form_confirmation_claimed": false
+  },
+  "primary_reference_id": "H_REF_FOURIER2",
+  "rows": [
+    {
+      "case_id": "i_res_n12_h26_regular",
+      "covered_stage02h_evidence": {
+        "recomputed_primary_reference_hash_match": true,
+        "recomputed_secondary_reference_hash_match": true,
+        "stage02h_primary_record_hash": "sha256:c08763a01d8c82e7d1dbc7a7a375137cea6ddaed0f866572f4ba0c153610ab89",
+        "stage02h_primary_record_id": "h_regular_n12",
+        "stage02h_secondary_record_hash": "sha256:c03f501de465090be5233eceefa0e9b180d471f3f36be8e88c32284343c10fff"
+      },
+      "determinism": {
+        "primary_canonical_record_equal": true,
+        "primary_max_repeat_Linf": 0.0,
+        "secondary_canonical_record_equal": true,
+        "secondary_max_repeat_Linf": 0.0,
+        "status": "PASS"
+      },
+      "eligible_for_target_attribution": true,
+      "pair_agreement": {
+        "L2_particle_rms": 2.2218610796456206e-14,
+        "Linf_particle_vector": 3.798221478168919e-14,
+        "checks": {
+          "normalized_L2": "PASS",
+          "normalized_Linf": "PASS",
+          "target_pattern_cosine": "PASS"
+        },
+        "normalized_L2": 3.851432493740841e-13,
+        "normalized_Linf": 4.961147752918947e-13,
+        "status": "PASS",
+        "target_pattern_cosine": 0.9999999999999998
+      },
+      "primary_acceptance": {
+        "checks": {
+          "cross_reference_agreement": "PASS",
+          "deterministic": "PASS",
+          "low_reconstruction_bias": "PASS",
+          "same_physics": "PASS",
+          "same_state": "PASS",
+          "uncertainty_qualified": "PASS"
+        },
+        "status": "accepted"
+      },
+      "scope_status_before_stage02i": "covered",
+      "secondary_acceptance": {
+        "checks": {
+          "cross_reference_agreement": "PASS",
+          "deterministic": "PASS",
+          "low_reconstruction_bias": "PASS",
+          "same_physics": "PASS",
+          "same_state": "PASS",
+          "uncertainty_qualified": "PASS"
+        },
+        "status": "accepted"
+      }
+    },
+    {
+      "case_id": "i_anchor_n16_h26_regular",
+      "covered_stage02h_evidence": {
+        "recomputed_primary_reference_hash_match": true,
+        "recomputed_secondary_reference_hash_match": true,
+        "stage02h_primary_record_hash": "sha256:60b0e4bbc4e4114538bd5985f60b8c9529137276d351371dfd607cf4ab1e47b1",
+        "stage02h_primary_record_id": "h_regular_n16",
+        "stage02h_secondary_record_hash": "sha256:b9cfc10b931e8b66f66f64ce07d0f6d03208ee1ca09a4bb8775a54b4376196bd"
+      },
+      "determinism": {
+        "primary_canonical_record_equal": true,
+        "primary_max_repeat_Linf": 0.0,
+        "secondary_canonical_record_equal": true,
+        "secondary_max_repeat_Linf": 0.0,
+        "status": "PASS"
+      },
+      "eligible_for_target_attribution": true,
+      "pair_agreement": {
+        "L2_particle_rms": 1.2156572549492007e-14,
+        "Linf_particle_vector": 1.7291188982443148e-14,
+        "checks": {
+          "normalized_L2": "PASS",
+          "normalized_Linf": "PASS",
+          "target_pattern_cosine": "PASS"
+        },
+        "normalized_L2": 3.8653515019714713e-13,
+        "normalized_Linf": 4.0149047310574964e-13,
+        "status": "PASS",
+        "target_pattern_cosine": 1.0
+      },
+      "primary_acceptance": {
+        "checks": {
+          "cross_reference_agreement": "PASS",
+          "deterministic": "PASS",
+          "low_reconstruction_bias": "PASS",
+          "same_physics": "PASS",
+          "same_state": "PASS",
+          "uncertainty_qualified": "PASS"
+        },
+        "status": "accepted"
+      },
+      "scope_status_before_stage02i": "covered",
+      "secondary_acceptance": {
+        "checks": {
+          "cross_reference_agreement": "PASS",
+          "deterministic": "PASS",
+          "low_reconstruction_bias": "PASS",
+          "same_physics": "PASS",
+          "same_state": "PASS",
+          "uncertainty_qualified": "PASS"
+        },
+        "status": "accepted"
+      }
+    },
+    {
+      "case_id": "i_res_n20_h26_regular",
+      "covered_stage02h_evidence": {
+        "recomputed_primary_reference_hash_match": true,
+        "recomputed_secondary_reference_hash_match": true,
+        "stage02h_primary_record_hash": "sha256:39eb0b2de89c5001864fb6ebd3bfd05b91c6ea60469565e3f93e937362ed0c40",
+        "stage02h_primary_record_id": "h_regular_n20",
+        "stage02h_secondary_record_hash": "sha256:398a9b7ac026715d1195de93f910d0e14e0d3ad1b3a92260a83a0bdcc125bc91"
+      },
+      "determinism": {
+        "primary_canonical_record_equal": true,
+        "primary_max_repeat_Linf": 0.0,
+        "secondary_canonical_record_equal": true,
+        "secondary_max_repeat_Linf": 0.0,
+        "status": "PASS"
+      },
+      "eligible_for_target_attribution": true,
+      "pair_agreement": {
+        "L2_particle_rms": 1.876390526569918e-14,
+        "Linf_particle_vector": 3.019852545782143e-14,
+        "checks": {
+          "normalized_L2": "PASS",
+          "normalized_Linf": "PASS",
+          "target_pattern_cosine": "PASS"
+        },
+        "normalized_L2": 9.999685455688886e-13,
+        "normalized_Linf": 1.156048042057346e-12,
+        "status": "PASS",
+        "target_pattern_cosine": 1.0000000000000002
+      },
+      "primary_acceptance": {
+        "checks": {
+          "cross_reference_agreement": "PASS",
+          "deterministic": "PASS",
+          "low_reconstruction_bias": "PASS",
+          "same_physics": "PASS",
+          "same_state": "PASS",
+          "uncertainty_qualified": "PASS"
+        },
+        "status": "accepted"
+      },
+      "scope_status_before_stage02i": "covered",
+      "secondary_acceptance": {
+        "checks": {
+          "cross_reference_agreement": "PASS",
+          "deterministic": "PASS",
+          "low_reconstruction_bias": "PASS",
+          "same_physics": "PASS",
+          "same_state": "PASS",
+          "uncertainty_qualified": "PASS"
+        },
+        "status": "accepted"
+      }
+    },
+    {
+      "case_id": "i_sup_n16_h22_regular",
+      "covered_stage02h_evidence": null,
+      "determinism": {
+        "primary_canonical_record_equal": true,
+        "primary_max_repeat_Linf": 0.0,
+        "secondary_canonical_record_equal": true,
+        "secondary_max_repeat_Linf": 0.0,
+        "status": "PASS"
+      },
+      "eligible_for_target_attribution": true,
+      "pair_agreement": {
+        "L2_particle_rms": 1.2156572549492007e-14,
+        "Linf_particle_vector": 1.7291188982443148e-14,
+        "checks": {
+          "normalized_L2": "PASS",
+          "normalized_Linf": "PASS",
+          "target_pattern_cosine": "PASS"
+        },
+        "normalized_L2": 1.72938388894956e-13,
+        "normalized_Linf": 1.8025295487288795e-13,
+        "status": "PASS",
+        "target_pattern_cosine": 1.0
+      },
+      "primary_acceptance": {
+        "checks": {
+          "cross_reference_agreement": "PASS",
+          "deterministic": "PASS",
+          "low_reconstruction_bias": "PASS",
+          "same_physics": "PASS",
+          "same_state": "PASS",
+          "uncertainty_qualified": "PASS"
+        },
+        "status": "accepted"
+      },
+      "scope_status_before_stage02i": "extension_required",
+      "secondary_acceptance": {
+        "checks": {
+          "cross_reference_agreement": "PASS",
+          "deterministic": "PASS",
+          "low_reconstruction_bias": "PASS",
+          "same_physics": "PASS",
+          "same_state": "PASS",
+          "uncertainty_qualified": "PASS"
+        },
+        "status": "accepted"
+      }
+    },
+    {
+      "case_id": "i_sup_n16_h30_regular",
+      "covered_stage02h_evidence": null,
+      "determinism": {
+        "primary_canonical_record_equal": true,
+        "primary_max_repeat_Linf": 0.0,
+        "secondary_canonical_record_equal": true,
+        "secondary_max_repeat_Linf": 0.0,
+        "status": "PASS"
+      },
+      "eligible_for_target_attribution": true,
+      "pair_agreement": {
+        "L2_particle_rms": 1.2156572549492007e-14,
+        "Linf_particle_vector": 1.7291188982443148e-14,
+        "checks": {
+          "normalized_L2": "PASS",
+          "normalized_Linf": "PASS",
+          "target_pattern_cosine": "PASS"
+        },
+        "normalized_L2": 3.8653515019714713e-13,
+        "normalized_Linf": 4.0149047310574964e-13,
+        "status": "PASS",
+        "target_pattern_cosine": 1.0
+      },
+      "primary_acceptance": {
+        "checks": {
+          "cross_reference_agreement": "PASS",
+          "deterministic": "PASS",
+          "low_reconstruction_bias": "PASS",
+          "same_physics": "PASS",
+          "same_state": "PASS",
+          "uncertainty_qualified": "PASS"
+        },
+        "status": "accepted"
+      },
+      "scope_status_before_stage02i": "extension_required",
+      "secondary_acceptance": {
+        "checks": {
+          "cross_reference_agreement": "PASS",
+          "deterministic": "PASS",
+          "low_reconstruction_bias": "PASS",
+          "same_physics": "PASS",
+          "same_state": "PASS",
+          "uncertainty_qualified": "PASS"
+        },
+        "status": "accepted"
+      }
+    },
+    {
+      "case_id": "i_dis_n16_h26_jitter05",
+      "covered_stage02h_evidence": null,
+      "determinism": {
+        "primary_canonical_record_equal": true,
+        "primary_max_repeat_Linf": 0.0,
+        "secondary_canonical_record_equal": true,
+        "secondary_max_repeat_Linf": 0.0,
+        "status": "PASS"
+      },
+      "eligible_for_target_attribution": true,
+      "pair_agreement": {
+        "L2_particle_rms": 2.7485655144634966e-14,
+        "Linf_particle_vector": 5.28451308676421e-14,
+        "checks": {
+          "normalized_L2": "PASS",
+          "normalized_Linf": "PASS",
+          "target_pattern_cosine": "PASS"
+        },
+        "normalized_L2": 5.456116351757347e-13,
+        "normalized_Linf": 3.179586183123156e-13,
+        "status": "PASS",
+        "target_pattern_cosine": 1.0000000000000002
+      },
+      "primary_acceptance": {
+        "checks": {
+          "cross_reference_agreement": "PASS",
+          "deterministic": "PASS",
+          "low_reconstruction_bias": "PASS",
+          "same_physics": "PASS",
+          "same_state": "PASS",
+          "uncertainty_qualified": "PASS"
+        },
+        "status": "accepted"
+      },
+      "scope_status_before_stage02i": "extension_required",
+      "secondary_acceptance": {
+        "checks": {
+          "cross_reference_agreement": "PASS",
+          "deterministic": "PASS",
+          "low_reconstruction_bias": "PASS",
+          "same_physics": "PASS",
+          "same_state": "PASS",
+          "uncertainty_qualified": "PASS"
+        },
+        "status": "accepted"
+      }
+    },
+    {
+      "case_id": "i_dis_n16_h26_jitter10",
+      "covered_stage02h_evidence": null,
+      "determinism": {
+        "primary_canonical_record_equal": true,
+        "primary_max_repeat_Linf": 0.0,
+        "secondary_canonical_record_equal": true,
+        "secondary_max_repeat_Linf": 0.0,
+        "status": "PASS"
+      },
+      "eligible_for_target_attribution": true,
+      "pair_agreement": {
+        "L2_particle_rms": 1.7164400945057456e-14,
+        "Linf_particle_vector": 3.972574634182591e-14,
+        "checks": {
+          "normalized_L2": "PASS",
+          "normalized_Linf": "PASS",
+          "target_pattern_cosine": "PASS"
+        },
+        "normalized_L2": 1.8161330307122845e-13,
+        "normalized_Linf": 1.0747009079414864e-13,
+        "status": "PASS",
+        "target_pattern_cosine": 0.9999999999999998
+      },
+      "primary_acceptance": {
+        "checks": {
+          "cross_reference_agreement": "PASS",
+          "deterministic": "PASS",
+          "low_reconstruction_bias": "PASS",
+          "same_physics": "PASS",
+          "same_state": "PASS",
+          "uncertainty_qualified": "PASS"
+        },
+        "status": "accepted"
+      },
+      "scope_status_before_stage02i": "extension_required",
+      "secondary_acceptance": {
+        "checks": {
+          "cross_reference_agreement": "PASS",
+          "deterministic": "PASS",
+          "low_reconstruction_bias": "PASS",
+          "same_physics": "PASS",
+          "same_state": "PASS",
+          "uncertainty_qualified": "PASS"
+        },
+        "status": "accepted"
+      }
+    }
+  ],
+  "secondary_reference_id": "H_REF_ANALYTIC",
+  "thresholds_reentered_or_modified": false
+}

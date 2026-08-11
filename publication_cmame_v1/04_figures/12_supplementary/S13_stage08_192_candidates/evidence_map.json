@@ -1,0 +1,26 @@
+[
+  {
+    "figure": "S13",
+    "panel": "a-g",
+    "scientific_claim": "All 192 precomputed systematic candidate descriptor and target records are retained without candidate deletion.",
+    "source_file": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/qualification/candidate_level_qualification.json",
+    "source_hash": "sha256:25e49bd1d191ffaba0df7bf5de4d46445c0ee47b9788fa95c649506cef86f793",
+    "source_field": "rows[*] precomputed descriptor, target, topology, and qualification fields",
+    "confirmatory_or_diagnostic": "SUPPORTED",
+    "transformation": "Exact scatter/vector-cell placement; panel e displays 10^12 times (1 minus conservative_fraction); no candidate payload opened.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS13_stage08_192_candidates.svg; figS13_stage08_192_candidates.pdf; figS13_stage08_192_candidates.png"
+  },
+  {
+    "figure": "S13",
+    "panel": "h",
+    "scientific_claim": "Candidate qualification did not qualify the systematic coverage pool and no model prediction was read.",
+    "source_file": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/qualification/stage08a_qualification_summary.json",
+    "source_hash": "sha256:ee8d6e2a8e061435a7ed2d02e9af638d72e71a946e7d34003900d70b54a20120",
+    "source_field": "counts, gates, final_status, selected lists",
+    "confirmatory_or_diagnostic": "SUPPORTED",
+    "transformation": "Exact status-card transcription.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS13_stage08_192_candidates.svg; figS13_stage08_192_candidates.pdf; figS13_stage08_192_candidates.png"
+  }
+]

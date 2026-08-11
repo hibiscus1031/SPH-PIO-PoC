@@ -1,0 +1,84 @@
+{
+  "edge_semantics": "methodological response to prior failure exposed the next boundary; not monotonic tuning",
+  "edges": [
+    [
+      "F1",
+      "F2"
+    ],
+    [
+      "F2",
+      "F3"
+    ],
+    [
+      "F3",
+      "F4"
+    ],
+    [
+      "F4",
+      "F5"
+    ],
+    [
+      "F5",
+      "F6"
+    ],
+    [
+      "F6",
+      "F7"
+    ],
+    [
+      "F7",
+      "F8"
+    ],
+    [
+      "F8",
+      "F9"
+    ]
+  ],
+  "nodes": [
+    {
+      "id": "F1",
+      "label": "SPH model-form / finite-resolution boundary",
+      "status": "BOUNDARY_ESTABLISHED_IN_SCOPE"
+    },
+    {
+      "id": "F2",
+      "label": "Static pair-force fitting failure",
+      "status": "STATIC_ROUTE_CLOSED"
+    },
+    {
+      "id": "F3",
+      "label": "Multistep AD/FD incomplete qualification",
+      "status": "DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED"
+    },
+    {
+      "id": "F4",
+      "label": "Raw state-loss signal attenuation",
+      "status": "TASK_SIGNAL_BOUNDARY_COMPLETE"
+    },
+    {
+      "id": "F5",
+      "label": "Coordinate-level FD incomplete coverage",
+      "status": "NOT_QUALIFIED"
+    },
+    {
+      "id": "F6",
+      "label": "Formal TRAIN-fit failure",
+      "status": "FORMAL_K1_TRAINING_COMPLETE_TRANSFORMER_NOT_QUALIFIED"
+    },
+    {
+      "id": "F7",
+      "label": "Development-pool heterogeneity hypothesis failure",
+      "status": "FORMAL_TRAIN_V2_RETRAINING_COMPLETE_TRANSFORMER_NOT_QUALIFIED"
+    },
+    {
+      "id": "F8",
+      "label": "Held-out support-gap failure",
+      "status": "HELD_OUT_H2_SUPPORT_GAP_DOMINANT"
+    },
+    {
+      "id": "F9",
+      "label": "Systematic coverage V3 target-manifold failure",
+      "status": "SYSTEMATIC_COVERAGE_V3_POOL_NOT_QUALIFIED"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "figure": "S02",
+    "panel": "a-b",
+    "scientific_claim": "Default-GC canary resource and timing evidence is displayed for all repeats.",
+    "source_file": "06_experiments/stage_01dp_resource_policy/results/canary_summary.csv",
+    "source_hash": "sha256:f05175015e6b746ff04722496025d0513a0667e0e08cc53dc52765bc0717b31e",
+    "source_field": "rss_relative_increase, step_time_ratio, policy_gate_pass",
+    "confirmatory_or_diagnostic": "SUPPORTED",
+    "transformation": "Exact repeat bars.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS02_resource_gc.svg; figS02_resource_gc.pdf; figS02_resource_gc.png"
+  },
+  {
+    "figure": "S02",
+    "panel": "c",
+    "scientific_claim": "Frozen working-set models attribute retained storage to edge count rather than accumulated steps.",
+    "source_file": "06_experiments/stage_01dr2_storage_attribution/results/edge_working_set_models.csv",
+    "source_hash": "sha256:8f07f85b9166fae2bc5c4aff636f5d93adfcf5dfef49379a7e9a61bdbfb39f92",
+    "source_field": "total_edge_coefficient, total_step_coefficient, confidence fields",
+    "confirmatory_or_diagnostic": "SUPPORTED",
+    "transformation": "Exact coefficients; symlog display.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS02_resource_gc.svg; figS02_resource_gc.pdf; figS02_resource_gc.png"
+  },
+  {
+    "figure": "S02",
+    "panel": "d",
+    "scientific_claim": "Old-survivor storage deltas are shown for every fixed-topology control repeat.",
+    "source_file": "06_experiments/stage_01dr2_storage_attribution/results/fixed_topology_summary.csv",
+    "source_hash": "sha256:f8db681193532fb45dcf2d771101d85047cd5cedbea7923ce4ba8e1fd4155933",
+    "source_field": "old_survivor_bytes_delta, directed_edge_count",
+    "confirmatory_or_diagnostic": "SUPPORTED",
+    "transformation": "Exact bars in source order.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS02_resource_gc.svg; figS02_resource_gc.pdf; figS02_resource_gc.png"
+  },
+  {
+    "figure": "S02",
+    "panel": "e",
+    "scientific_claim": "Storage-inventory self-retention and view/base deduplication checks retained zero deltas.",
+    "source_file": "06_experiments/stage_01dr2_storage_attribution/results/inventory_validation_summary.csv",
+    "source_hash": "sha256:04b592c7c24898205856294f4da0d21348a0b08340ba1bbb71422772235115d9",
+    "source_field": "tensor_count_delta, unique_storage_bytes_delta",
+    "confirmatory_or_diagnostic": "SUPPORTED",
+    "transformation": "Exact repeat traces.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS02_resource_gc.svg; figS02_resource_gc.pdf; figS02_resource_gc.png"
+  },
+  {
+    "figure": "S02",
+    "panel": "f",
+    "scientific_claim": "Numerical-regression repeats remained bitwise and finite under the audited resource route.",
+    "source_file": "06_experiments/stage_01dr2_storage_attribution/results/numerical_regression_summary.csv",
+    "source_hash": "sha256:70225824847204f5089292cad8c033a1d505e162ccb0a5812e0ed5410c290670",
+    "source_field": "maximum_absolute_difference, bitwise_and_finite_rows",
+    "confirmatory_or_diagnostic": "SUPPORTED",
+    "transformation": "Exact bars.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS02_resource_gc.svg; figS02_resource_gc.pdf; figS02_resource_gc.png"
+  }
+]

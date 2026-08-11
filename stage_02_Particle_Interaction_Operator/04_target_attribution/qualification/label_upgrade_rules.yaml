@@ -1,0 +1,105 @@
+rules_version: stage02d-label-upgrade-1.0.0
+scope: diagnostic_to_eligible_for_future_training
+manual_override_permitted: false
+automatic_R2_upgrade_permitted: false
+
+target:
+  equation: a_ref - a_SPH
+  sign_convention: a_ref_minus_a_sph
+  required_component: discretization_attributed
+
+reference_policy:
+  R1_continuum_compatible:
+    class_valid_for_upgrade: conditional
+    additional_requirement: WCSPH_model_form_alignment_PASS
+  R2_semidiscrete_qualified:
+    class_valid_for_upgrade: false
+    current_role: temporal_state_and_assembly_diagnostic
+    future_exception_requires:
+      - new_versioned_reference_to_target_contract
+      - explicit_training_target_permission
+      - discretization_attribution_PASS
+      - independent_validation_asset_preserved
+  R3_independent_benchmark:
+    class_valid_for_upgrade: false
+    current_role: validation_only
+  RX_model_form_misaligned:
+    class_valid_for_upgrade: false
+    current_role: rejected
+
+all_required_upgrade_gates:
+  - gate: reference_class_valid
+    required_status: PASS
+  - gate: same_state
+    required_status: PASS
+  - gate: uncertainty
+    required_status: PASS
+  - gate: model_form_compatibility
+    required_status: PASS
+  - gate: topology
+    required_status: PASS
+  - gate: resource
+    required_status: PASS
+  - gate: determinism
+    required_status: PASS
+  - gate: discretization_attribution
+    required_status: PASS
+  - gate: leakage
+    required_status: PASS
+
+discretization_attribution_score:
+  aggregation: categorical_evidence_vector_no_numeric_threshold
+  components:
+    - spatial_consistency
+    - resolution_trend
+    - support_consistency
+    - time_contamination
+    - reference_sensitivity
+    - model_form_compatibility
+  pass_rule: all_six_components_PASS
+  diagnostic_rule: any_component_UNRESOLVED_DIAGNOSTIC_or_NOT_TESTED_without_hard_failure
+  rejected_rule: any_hard_failure
+  automatic_threshold_selection: prohibited
+
+decision_order:
+  - rule: preserve_hard_failure
+    if_any:
+      - topology_FAIL
+      - resource_FAIL
+      - determinism_FAIL
+      - leakage_FAIL
+      - model_form_misaligned
+      - reference_class_RX
+      - nonfinite
+      - provenance_or_hash_FAIL
+    verdict: rejected
+  - rule: preserve_R2_R3_role
+    if_any:
+      - reference_class_R2
+      - reference_class_R3
+    verdict: diagnostic
+  - rule: preserve_unresolved_attribution
+    if_any:
+      - discretization_attribution_not_PASS
+      - any_required_gate_not_PASS
+    verdict: diagnostic
+  - rule: upgrade_only_after_all_gates
+    if_all_required_upgrade_gates_PASS: true
+    reference_class_valid_for_upgrade: true
+    verdict: eligible_for_future_training
+
+failure_record_policy:
+  retain_unresolved: true
+  retain_rejected: true
+  retain_topology_failure: true
+  retain_reason_codes: true
+  retain_provenance: true
+  deletion_to_improve_qualification_counts: prohibited
+
+current_stage02c_campaign_decision:
+  campaign_id: stage02c_r2_audit_scale_20260804
+  upgrade_authorized: false
+  required_current_verdicts:
+    positive_R2_controls: diagnostic
+    topology_negative_controls: rejected
+  stage02e_data_qualification_upgrade_authorized: false

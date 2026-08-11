@@ -1,0 +1,98 @@
+{
+  "authorized_regular_target_ids": [
+    "i_res_n12_h26_regular",
+    "i_anchor_n16_h26_regular",
+    "i_res_n20_h26_regular",
+    "i_sup_n16_h22_regular",
+    "i_sup_n16_h30_regular"
+  ],
+  "authorized_regular_target_record_hashes": {
+    "i_anchor_n16_h26_regular": "sha256:a8d3e84cef0cbc9f2398c2b01ec7fe7cc048878cbde44e66835a2137be666686",
+    "i_res_n12_h26_regular": "sha256:da88650fa5836e8b3e181102ca70859ec7a65c6a66b7883c5937feac4a9ccce0",
+    "i_res_n20_h26_regular": "sha256:23786c8984b94cb3e731207e99ac57e6140a3554362cf47dcbcae3348023138c",
+    "i_sup_n16_h22_regular": "sha256:b247749d1c744d072cc0384c3851a28ffe3da97ee22cad3d9ac937c6c4ae809d",
+    "i_sup_n16_h30_regular": "sha256:f36a9d7abebb332fc2762165e65e58676d4cf1a78237b889e1dcaee3956ab21a"
+  },
+  "created_before_record_materialization": true,
+  "expected_sample_count": 5,
+  "frozen_roles": {
+    "fourier_analytic_reference_evidence": {
+      "path": "stage_02_Particle_Interaction_Operator/04_target_attribution/conservation_closure/particle_quadrature/reference_pair_conservation_comparison.json",
+      "sha256": "sha256:f49b3dd18465e66befdaf5d728adc7384e9bb0d55a7f9fb3ee735ac6d18f6668"
+    },
+    "stage02b_dataset_schema": {
+      "path": "stage_02_Particle_Interaction_Operator/03_dataset/schema/pio_dataset_schema.json",
+      "sha256": "sha256:714c97de51ce8d476edc7d8b306641c0dcb178ad476b5e30f02f7171af27c35f"
+    },
+    "stage02b_eligibility_rules": {
+      "path": "stage_02_Particle_Interaction_Operator/03_dataset/eligibility/label_eligibility_rules.yaml",
+      "sha256": "sha256:f917461a65c7d29067e1a210e1b40eeb9b100216bb7547e550980c05927b254a"
+    },
+    "stage02b_leakage_rules": {
+      "path": "stage_02_Particle_Interaction_Operator/03_dataset/splitting/split_strategy.md",
+      "sha256": "sha256:725ef563e9a9fff04a95fa728f02c9d1201f82f3aa515cb3847f04cfa322009e"
+    },
+    "stage02b_split_rules": {
+      "path": "stage_02_Particle_Interaction_Operator/03_dataset/splitting/split_strategy.md",
+      "sha256": "sha256:725ef563e9a9fff04a95fa728f02c9d1201f82f3aa515cb3847f04cfa322009e"
+    },
+    "stage02b_uncertainty_contract": {
+      "path": "stage_02_Particle_Interaction_Operator/03_dataset/uncertainty/uncertainty_contract.md",
+      "sha256": "sha256:5b77665068827d18edfa61c2e703de435300cde0e46d72f5535986cacf8abfee"
+    },
+    "stage02i_case_matrix": {
+      "path": "stage_02_Particle_Interaction_Operator/04_target_attribution/qualified_spatial_targets/case_matrix/preregistered_stage02i_case_matrix.yaml",
+      "sha256": "sha256:24f0c2ae35cec8ee882f0402ffb0d06d81c7282f4b4137d8deea51113baeedae"
+    },
+    "stage02i_conservation_compatibility": {
+      "path": "stage_02_Particle_Interaction_Operator/04_target_attribution/qualified_spatial_targets/conservation/conservation_compatibility_audit.json",
+      "sha256": "sha256:1849bd13a63a78c76b8de927ae2e1a2cbe2adefdc10f9da93ac9ef94951e5b31"
+    },
+    "stage02i_final_report": {
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02i_final_report.md",
+      "sha256": "sha256:2fdd1d45b81b074d2f2a1ff49a60c77d0a131c1b542923d6ed4f9e2111ddf89d"
+    },
+    "stage02i_historical_eligibility": {
+      "path": "stage_02_Particle_Interaction_Operator/04_target_attribution/qualified_spatial_targets/results/stage02i_eligibility_results.json",
+      "sha256": "sha256:80d60313478dc352d5ff8b9b323f261d22e4af99730e2f3012a783bf68ca3f65"
+    },
+    "stage02i_seven_target_records": {
+      "path": "stage_02_Particle_Interaction_Operator/04_target_attribution/qualified_spatial_targets/targets/spatial_target_candidates.json",
+      "sha256": "sha256:9c4684bd8f047b4a253565b27e261405776934b6699690d56fe0228fcfbf4d38"
+    },
+    "stage02i_six_component_attribution": {
+      "path": "stage_02_Particle_Interaction_Operator/04_target_attribution/qualified_spatial_targets/attribution/six_component_attribution.json",
+      "sha256": "sha256:c47884944330bceafd06225b8d8c704c4381cb6730d4c6f0b160eeb82732759d"
+    },
+    "stage02ir_architecture_scope_decision": {
+      "path": "stage_02_Particle_Interaction_Operator/04_target_attribution/conservation_closure/architecture_scope/architecture_scope_decision.json",
+      "sha256": "sha256:8ffb20a19d2dcb57b86b40038ee0655da3c85c35937fefab6886ec226dccdf9c"
+    },
+    "stage02ir_final_report": {
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02ir_final_report.md",
+      "sha256": "sha256:cdf34e6d282f5bad84af9b6d94f015c8bdcabd601738681729597e61611784f6"
+    },
+    "stage02ir_qualification": {
+      "path": "stage_02_Particle_Interaction_Operator/04_target_attribution/conservation_closure/qualification/stage02ir_qualification.json",
+      "sha256": "sha256:79c9f3dfc039e37c67a0c3cf4563dcb34c498a5b33dddb213888d40d73521066"
+    },
+    "stage02ir_target_hash_freeze": {
+      "path": "stage_02_Particle_Interaction_Operator/04_target_attribution/conservation_closure/freeze/stage02ir_input_freeze_manifest.json",
+      "sha256": "sha256:2011c35ddfd494a914d1e6410aeaa3997f338cbf683bf97d19a5ceebafcb3958"
+    }
+  },
+  "hash_algorithm": "sha256",
+  "historical_overwrite_permitted": false,
+  "historical_stage02i_Stage02J_authorization": false,
+  "jitter_diagnostic_ids": [
+    "i_dis_n16_h26_jitter05",
+    "i_dis_n16_h26_jitter10"
+  ],
+  "jitter_target_record_hashes": {
+    "i_dis_n16_h26_jitter05": "sha256:5e7a71fbe9acbff24925e3fade425fa12922466e10feefad67e6edc27167aa69",
+    "i_dis_n16_h26_jitter10": "sha256:0dcfee0fc9de6be8d5daaec06a0cba650ac32e4c2610abfb01feaf94ac4fbd3f"
+  },
+  "manifest_version": "stage02j-input-freeze-0.1.0",
+  "sample_unit": "complete_particle_graph",
+  "stage02ir_limited_future_authorization": "five_regular_candidates_only"
+}

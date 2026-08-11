@@ -1,0 +1,11 @@
+# English scientific narrative source
+
+This project asks how a conservative neural correction for a particle solver should be qualified before its predictive performance is trusted. The evidence chain distinguishes numerical-solver verification, reference roles, structural correctness, target representability, gradient validity, actual optimizer dynamics, formal training, validation support, and sealed-test evaluation.
+
+The static pair-force route showed that reciprocal antisymmetry and conservation-compatible structure do not guarantee successful fitting. The subsequent dynamic RK2 hybrid passed implementation, zero-correction, structural, and one-step differentiation checks, but did not satisfy the complete multistep AD/FD contract. A local-causal analysis then showed that a raw next-state loss could yield a poorly detectable parameter-training signal even when the neural correction Jacobian was nonzero.
+
+The accepted-state D0 conservative defect introduced in Stage05 qualified its target construction, pair-basis representability, scale, and uncertainty. Stage06 further qualified actual AdamW update dynamics. Nevertheless, all nine Stage06 formal runs failed their frozen global seed criteria. Stage07 added formula heterogeneity and repeated nine formal runs; the global criterion again failed, and the dominant fresh-validation attribution was a held-out H2 support gap.
+
+Stage08 replaced hash-based within-stratum roles with a prospective four-layer coverage design. All 192 candidates passed candidate-level qualification, and the descriptor distance of HET_S2_02 decreased from 6.5115 to 1.8607. Its raw-target PCA residual, however, remained 3.5113 against a 1.5385 threshold, and formal fresh-validation closure was 0/4. The final evidence therefore supports a distinction between descriptor support and correction-target manifold support, but it does not support a qualified SPH–Transformer solver, Transformer superiority, autonomous rollout, or sealed-test performance.
+
+The recommended paper is a verification-first, qualification-first, failure-driven computational methodology article. Its contribution is the auditable ladder and the causal information provided by immutable failed gates—not a narrative of repeated hyperparameter tuning and not a claim of trained-solver success.

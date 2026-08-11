@@ -1,0 +1,14 @@
+{
+  "buckets": {
+    "analytic_closure": "bounded_by_preregistered_residual_gates",
+    "derivative_route": "bounded_by_independent_route_disagreement",
+    "sealed_redaction": "sensitive_values_withheld_until_authorized_release",
+    "semidiscrete_spatial_model_form": "diagnostic_only_not_training_truth",
+    "semidiscrete_time": "primary_sensitivity_and_primary_repeat",
+    "topology_scan": "1025_samples_three_repeats_plus_conservative_pair_coverage",
+    "trajectory_roundoff": "CPU_float64_hash_stable"
+  },
+  "failed_family_replacement": false,
+  "result_dependent_parameter_change": false,
+  "schema_version": "sph-pio-poc.stage04b.uncertainty.v1"
+}

@@ -1,0 +1,42 @@
+design_version: stage02g-spatial-refinement-1.0.0
+campaign_id: stage02g_spatial_attribution_closure_20260804
+selection_policy: frozen_before_execution_no_posthoc_case_selection
+execution_scope: controlled_same_timestamp_spatial_analysis_not_dataset_generation
+
+historical_boundaries:
+  stage01: V2_QUALIFICATION_FAIL
+  stage01h: FINITE_RESOLUTION_DOMINANT
+  viscosity_operator_form: NOT CONFIRMED
+  stage02e_candidate_discretization_target_count: 0
+  stage02f:
+    diagnostic_count: 5
+    rejected_count: 0
+    qualified_count: 0
+    records_are_immutable: true
+
+target:
+  equation: delta_a_space = a_R2S - a_SPH
+  sign_convention: a_R2S_minus_a_SPH
+  reference_identity: r2s_quadratic_kernel_weighted_wls_v1
+  timestamp: 0.0
+
+closure_policy:
+  required_components:
+    - spatial_consistency
+    - resolution_trend
+    - support_consistency
+    - temporal_contamination
+    - reference_sensitivity
+    - model_form_compatibility
+  required_pass_count: 6
+  unresolved_component_verdict: diagnostic
+  manual_override_permitted: false
+  prior_stage02f_upgrade_permitted: false
+
+prohibitions:
+  dataset_generation: true
+  split_assignment: true
+  normalization: true
+  model_implementation: true
+  training: true
+  performance_claim: true

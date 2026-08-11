@@ -1,0 +1,108 @@
+{
+  "schema": "sph-pio-poc.stage05a.contract-manifest.v1",
+  "stage": "Stage 05A — Scale-Aware Conservative Discrete-Defect Training Hypothesis and Qualification Contract",
+  "contract_only": true,
+  "hypothesis": "A conservative dynamic neural-SPH model may obtain a qualifiable and trainable signal from a train-scaled, baseline-centered discrete correction impulse, while the full RK2 solver, reciprocal pair-force structure and sealed family protocol remain unchanged.",
+  "not_stage_routes": [
+    "Stage 04D",
+    "Stage 04C v0.2",
+    "Stage 04C threshold relaxation",
+    "Stage 04C historical-failure reclassification",
+    "Stage 03E",
+    "Stage 02 static protocol v0.3"
+  ],
+  "historical_statuses": {
+    "Stage 03D": "DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED",
+    "Stage 03D-R": "DYNAMIC_GRADIENT_FAILURE_MIXED_OR_UNRESOLVED",
+    "Stage 04B": "LOCAL_CAUSAL_REFERENCE_FAMILY_POOL_QUALIFIED",
+    "Stage 04C": "TASK_ALIGNED_PARAMETER_GRADIENT_NOT_QUALIFIED",
+    "Stage 04C-R": "TASK_GRADIENT_FAILURE_MIXED_OR_UNRESOLVED",
+    "Stage 04C-S": "STAGE04_ROUTE_PAUSED_TASK_SIGNAL_BOUNDARY_COMPLETE",
+    "Stage 04D authorization": false
+  },
+  "immutable_stage04c_counts": {
+    "all_near_zero_failures": 864,
+    "all_near_zero_total": 864,
+    "near_zero_components": 2592,
+    "qualified_parameter_groups": 0
+  },
+  "lineages": {
+    "formula_components": 10,
+    "TRAIN": ["LCDF_01", "LCDF_04", "LCDF_05", "LCDF_06", "LCDF_07", "LCDF_08"],
+    "VALIDATION": ["LCDF_02", "LCDF_09"],
+    "SEALED_TEST": ["LCDF_03", "LCDF_10"],
+    "cross_role_leakage": 0,
+    "split_atom": "FORMULA_LEVEL_CONNECTED_LINEAGE"
+  },
+  "canonical_identities": {
+    "baseline_transition": "S_0^(n+1)=Phi_D0(S_ref^n;same external source,same graph convention,same EOS,same dt)",
+    "hybrid_transition": "S_theta^(n+1)=Phi_hybrid(S_ref^n,S_ref^(n-3:n),theta;same external source,same graph convention,same EOS,same dt)",
+    "reference_impulse": "Delta_v_def^star=v_ref^(n+1)-v_0^(n+1)",
+    "model_impulse": "Delta_v_eff^theta=v_theta^(n+1)-v_0^(n+1)",
+    "reference_acceleration_defect": "a_def^star=Delta_v_def^star/dt",
+    "model_effective_acceleration": "a_eff^theta=Delta_v_eff^theta/dt",
+    "center_component": "a_cm^star=(sum_i m_i a_def,i^star)/(sum_i m_i)",
+    "conservative_component": "a_cons,i^star=a_def,i^star-a_cm^star",
+    "incompatible_component": "a_incompatible,i^star=a_cm^star",
+    "scale": "s_a=sqrt(mean_f mean_v mean_o mean_i ((1/d)||a_cons,fvoi^star||_2^2))",
+    "uncertainty_scale": "u_a=sqrt(mean_f mean_v mean_o mean_i ((1/d)||a_unc,fvoi||_2^2))",
+    "primary_loss": "L_def=mean_f mean_v mean_o mean_i ||(a_eff,fvoi^theta-a_cons,fvoi^star)/s_a||_2^2"
+  },
+  "target_semantics": "DISCRETE_ACCEPTED_STATE_CORRECTION_REQUIREMENT",
+  "prohibited_target_names": [
+    "continuum acceleration truth",
+    "direct pair-force truth",
+    "Stage02 static delta_a",
+    "high-resolution SPH truth"
+  ],
+  "scale_contract": {
+    "source_role": "TRAIN_ONLY",
+    "scalar": true,
+    "rotation_invariant": true,
+    "reflection_invariant": true,
+    "positive": true,
+    "finite": true,
+    "freeze_before_model_instantiation": true,
+    "numerical_value_frozen_in_stage": "05B",
+    "dynamic_normalization": false
+  },
+  "first_round_loss_components": {
+    "hard": ["L_def"],
+    "diagnostic_only": ["velocity_state", "position", "density", "pressure", "energy", "torque"],
+    "prohibited_penalties": ["conservation", "antisymmetry", "center_of_mass_projection"]
+  },
+  "model_arms": {
+    "D1": "INSTANTANEOUS_CONSERVATIVE_PAIR_MLP",
+    "D2": "CAUSAL_RECURRENT_PAIR_PIO",
+    "D3": "CAUSAL_TEMPORAL_RECIPROCAL_TRANSFORMER_PIO",
+    "common_pair_head": "RECIPROCAL_ANTISYMMETRIC_PAIR_FORCE",
+    "fresh_initialization": true,
+    "historical_weights_read": false,
+    "d3_superiority_assumed": false
+  },
+  "gradient_evidence_layers": [
+    "FULL_GRADIENT_GROUP_STATISTICS_AND_REPEAT",
+    "CPU_FLOAT64_MATH_SDPA_REVERSE_JVP",
+    "HASH_SELECTED_COORDINATE_AND_BLOCK_FD",
+    "NO_WRITEBACK_FULL_NEGATIVE_GRADIENT_LOCAL_DESCENT"
+  ],
+  "gradient_audit_constraints": {
+    "optimizer_instances": 0,
+    "optimizer_steps": 0,
+    "checkpoint_writes": 0,
+    "parameter_final_state": "BITWISE_RESTORED",
+    "classification": "TRAINABILITY_QUALIFICATION_NOT_TRAINING"
+  },
+  "decode_boundaries_stage05a_to_05c": {
+    "validation_target_decode": 0,
+    "sealed_formula_decode": 0,
+    "sealed_state_decode": 0,
+    "sealed_target_decode": 0,
+    "sealed_origin_decode": 0
+  },
+  "mandatory_route": ["05B", "05C", "05D", "05E", "05F", "05G", "05H"],
+  "publication_preference": "Stage 02–05 integrated full paper",
+  "submission_decided": false,
+  "next_authorization": "Stage 05B — TRAIN-Only Defect Target, Conservative Compatibility, Scale and Uncertainty Qualification",
+  "terminal_status": "SCALE_AWARE_DISCRETE_DEFECT_TRAINING_CONTRACT_COMPLETE"
+}

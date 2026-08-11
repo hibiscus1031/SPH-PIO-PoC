@@ -1,0 +1,67 @@
+contract_version: stage02i-freeze-and-scope-1.0.0
+
+historical_boundaries:
+  stage01: V2_QUALIFICATION_FAIL
+  stage01h: FINITE_RESOLUTION_DOMINANT
+  viscosity_operator_form: NOT CONFIRMED
+  stage02e_candidate_discretization_target_count: 0
+  stage02f_qualified_candidate_count: 0
+  stage02g: {pass_count: 4, required_count: 6, verdict: diagnostic}
+  stage02h: REFERENCE_FIDELITY_QUALIFICATION_COMPLETE
+
+reference_use:
+  primary_spatial_reference: H_REF_FOURIER2
+  secondary_independent_reference: H_REF_ANALYTIC
+  diagnostic_references_excluded_from_target_source:
+    - H_REF_QWLS2_INCUMBENT
+    - H_REF_CWLS3
+  delta_a_primary: a_H_REF_FOURIER2 - a_SPH
+  delta_a_secondary: a_H_REF_ANALYTIC - a_SPH
+  delta_a_reference_difference: delta_a_primary - delta_a_secondary
+  reference_averaging_permitted: false
+  posthoc_reference_weighting_permitted: false
+
+spatial_operator_form:
+  acceleration: negative_grad_p_divided_by_rho_plus_nu_laplacian_v
+  required_alignment:
+    same_density_field: true
+    same_pressure_field: true
+    same_isothermal_EOS: true
+    same_viscosity_coefficient: true
+    same_pressure_plus_viscosity_terms: true
+    same_timestamp: true
+    same_periodic_domain: true
+    no_external_source: true
+    no_convective_or_time_derivative_term: true
+    no_trajectory_substitution: true
+  pass_label: PASS_WITHIN_FROZEN_SPATIAL_OPERATOR_SCOPE
+  does_not_imply:
+    - complete_PDE_trajectory_exactness
+    - Stage01_V2_PASS
+    - arbitrary_flow_continuum_alignment
+    - viscosity_operator_form_confirmed
+
+conservation_audit:
+  normalized_internal_force_tolerance: 1.0e-10
+  tolerance_source: Stage01_frozen_tolerance_inherited_by_Stage02I_contract
+  target_mean_subtraction_permitted: false
+  torque_hard_gate: false
+  power_hard_gate: false
+
+eligibility_boundary:
+  maximum_stage02i_label: candidate_discretization_target
+  training_eligibility_value: not_yet_evaluated
+  eligible_for_future_training_permitted: false
+  stage02j_authorization_requires_pool_ready: true
+
+prohibitions:
+  trajectory_generation: true
+  time_integration_reference: true
+  DOP853: true
+  velocity_finite_difference_derivative: true
+  dataset_materialization: true
+  split_assignment: true
+  normalization_statistics: true
+  model_implementation: true
+  training: true
+  performance_claim: true

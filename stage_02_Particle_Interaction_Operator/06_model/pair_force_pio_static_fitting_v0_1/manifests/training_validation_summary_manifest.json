@@ -1,0 +1,115 @@
+{
+  "architecture_sha256": "sha256:1e313f871b13f3f2fc0cc780ab24d50a7fd9fe8a96866da91fae5ede9ab555a4",
+  "architecture_unchanged": true,
+  "manifest_version": "stage02m-training-validation-closure-1.0.0",
+  "no_pending_retry": true,
+  "pre_release_test_metrics": 0,
+  "pre_release_test_target_decode_count": 0,
+  "protocol_sha256": "sha256:ab02a49a508c4ddcab5db037886abd329ab29d2eedfc8ffe5d818ad691668648",
+  "protocol_unchanged": true,
+  "run_count": 9,
+  "run_terminal_states": [
+    {
+      "architecture": "K0",
+      "best_validation_update": 100,
+      "pending_retry": false,
+      "run_id": "K0_seed20261201",
+      "seed": 20261201,
+      "selected_checkpoint": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261201/update_0100.pt",
+      "selected_checkpoint_hash": "sha256:fe3f6a26b542b01b4a43ab44b7014cc9d513f9fcb0f680048a723b6c114657f1",
+      "terminal_state": "EARLY_STOPPED",
+      "total_optimizer_steps": 300
+    },
+    {
+      "architecture": "K0",
+      "best_validation_update": 40,
+      "pending_retry": false,
+      "run_id": "K0_seed20261202",
+      "seed": 20261202,
+      "selected_checkpoint": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261202/update_0040.pt",
+      "selected_checkpoint_hash": "sha256:f45a51ad1ae374fa045a9b46c86b990e5839d84891ac9c380743f3349813ac98",
+      "terminal_state": "EARLY_STOPPED",
+      "total_optimizer_steps": 300
+    },
+    {
+      "architecture": "K0",
+      "best_validation_update": 40,
+      "pending_retry": false,
+      "run_id": "K0_seed20261203",
+      "seed": 20261203,
+      "selected_checkpoint": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K0_seed20261203/update_0040.pt",
+      "selected_checkpoint_hash": "sha256:78d427a6da56242205f3d7cfcccd6188aa56d7b09dac9fe946d10bef170f6014",
+      "terminal_state": "EARLY_STOPPED",
+      "total_optimizer_steps": 300
+    },
+    {
+      "architecture": "K1",
+      "best_validation_update": 40,
+      "pending_retry": false,
+      "run_id": "K1_seed20261201",
+      "seed": 20261201,
+      "selected_checkpoint": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261201/update_0040.pt",
+      "selected_checkpoint_hash": "sha256:f190f7d6444926befc867e3d93b7310634b579e20b7c168b3879349f518f74bf",
+      "terminal_state": "EARLY_STOPPED",
+      "total_optimizer_steps": 300
+    },
+    {
+      "architecture": "K1",
+      "best_validation_update": 20,
+      "pending_retry": false,
+      "run_id": "K1_seed20261202",
+      "seed": 20261202,
+      "selected_checkpoint": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261202/update_0020.pt",
+      "selected_checkpoint_hash": "sha256:a8a7255be0323f2c4589062b8e9f2173e5754435b72a860a71aea1e3b5c7abd1",
+      "terminal_state": "EARLY_STOPPED",
+      "total_optimizer_steps": 300
+    },
+    {
+      "architecture": "K1",
+      "best_validation_update": 40,
+      "pending_retry": false,
+      "run_id": "K1_seed20261203",
+      "seed": 20261203,
+      "selected_checkpoint": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K1_seed20261203/update_0040.pt",
+      "selected_checkpoint_hash": "sha256:e5ffe44227afb90bf57b9ceb39476174784bd0c1d61a076e6b670cf3b92ceee7",
+      "terminal_state": "EARLY_STOPPED",
+      "total_optimizer_steps": 300
+    },
+    {
+      "architecture": "K2",
+      "best_validation_update": 240,
+      "pending_retry": false,
+      "run_id": "K2_seed20261201",
+      "seed": 20261201,
+      "selected_checkpoint": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261201/update_0240.pt",
+      "selected_checkpoint_hash": "sha256:2ab391cfb762b97cc3d9d0c6b86d7b078fbd0ba94b29229c256d6383f6d6db8f",
+      "terminal_state": "EARLY_STOPPED",
+      "total_optimizer_steps": 440
+    },
+    {
+      "architecture": "K2",
+      "best_validation_update": 540,
+      "pending_retry": false,
+      "run_id": "K2_seed20261202",
+      "seed": 20261202,
+      "selected_checkpoint": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261202/update_0540.pt",
+      "selected_checkpoint_hash": "sha256:fa5088d2a4ea41f6e47665192ba1f76c3591d6004a483f2dc2f3503e3ec4cc42",
+      "terminal_state": "EARLY_STOPPED",
+      "total_optimizer_steps": 740
+    },
+    {
+      "architecture": "K2",
+      "best_validation_update": 20,
+      "pending_retry": false,
+      "run_id": "K2_seed20261203",
+      "seed": 20261203,
+      "selected_checkpoint": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_static_fitting_v0_1/checkpoints/K2_seed20261203/update_0020.pt",
+      "selected_checkpoint_hash": "sha256:5372d24fa1ce54b838e288137edbfbe72e3abcdc3121dcf534fd0f3a349cff2d",
+      "terminal_state": "EARLY_STOPPED",
+      "total_optimizer_steps": 300
+    }
+  ],
+  "selected_checkpoint_hashes_complete": true,
+  "status": "CLOSED",
+  "validation_selection_rule": "minimum_graph_mean_Q_L2_earlier_tie_break"
+}

@@ -1,0 +1,104 @@
+{
+  "fresh_model_count": 9,
+  "historical_weight_reads": 0,
+  "models": [
+    {
+      "arm": "D1",
+      "complete_parameter_sha256": "sha256:4d5527eb1c19cbc9432c99fa713a9174d87b5871d2d651c701b53d99efc3045a",
+      "fresh_initialization": true,
+      "future_stage07d_seed_reuse_forbidden": true,
+      "historical_weight_reads": 0,
+      "parameter_count": 5762,
+      "parameter_schema_sha256": "sha256:8ae11d8876287b2a273326b8ffa0716313d596b417f34bdd37320b378797bc05",
+      "seed": 20700701
+    },
+    {
+      "arm": "D1",
+      "complete_parameter_sha256": "sha256:0d3aa054e0d09744fe137a78bb8c3e8202afa1cdbc9ffe54b496a57ee0b24fc3",
+      "fresh_initialization": true,
+      "future_stage07d_seed_reuse_forbidden": true,
+      "historical_weight_reads": 0,
+      "parameter_count": 5762,
+      "parameter_schema_sha256": "sha256:8ae11d8876287b2a273326b8ffa0716313d596b417f34bdd37320b378797bc05",
+      "seed": 20700702
+    },
+    {
+      "arm": "D1",
+      "complete_parameter_sha256": "sha256:32339bbb379d5ff8f07200a6f3ae4eeaa0d37f4f34492b0e40b9ea06157c126e",
+      "fresh_initialization": true,
+      "future_stage07d_seed_reuse_forbidden": true,
+      "historical_weight_reads": 0,
+      "parameter_count": 5762,
+      "parameter_schema_sha256": "sha256:8ae11d8876287b2a273326b8ffa0716313d596b417f34bdd37320b378797bc05",
+      "seed": 20700703
+    },
+    {
+      "arm": "D2",
+      "complete_parameter_sha256": "sha256:f563a00b456f647af1f3daddbe884c4ef16d05aec7812e37a7dd6f3fe0a1c7d5",
+      "fresh_initialization": true,
+      "future_stage07d_seed_reuse_forbidden": true,
+      "historical_weight_reads": 0,
+      "parameter_count": 12098,
+      "parameter_schema_sha256": "sha256:d01a4b836286d9b5d017f94b6ef27a10cc8ee865eaa84b3dbd261cbddf4b1a81",
+      "seed": 20700701
+    },
+    {
+      "arm": "D2",
+      "complete_parameter_sha256": "sha256:b458d18feab98653c2fd86b66fb5beb809e622823e35fb7cdb5943d392092246",
+      "fresh_initialization": true,
+      "future_stage07d_seed_reuse_forbidden": true,
+      "historical_weight_reads": 0,
+      "parameter_count": 12098,
+      "parameter_schema_sha256": "sha256:d01a4b836286d9b5d017f94b6ef27a10cc8ee865eaa84b3dbd261cbddf4b1a81",
+      "seed": 20700702
+    },
+    {
+      "arm": "D2",
+      "complete_parameter_sha256": "sha256:c87f79ceedf8ecf0c80edcecad94232de1b391cf3394033e1813540c8adcd572",
+      "fresh_initialization": true,
+      "future_stage07d_seed_reuse_forbidden": true,
+      "historical_weight_reads": 0,
+      "parameter_count": 12098,
+      "parameter_schema_sha256": "sha256:d01a4b836286d9b5d017f94b6ef27a10cc8ee865eaa84b3dbd261cbddf4b1a81",
+      "seed": 20700703
+    },
+    {
+      "arm": "D3",
+      "complete_parameter_sha256": "sha256:4ebb4d0eb364aaf54a971a3a3fd1025297a0ca428891efa63d36142eaac4eeee",
+      "fresh_initialization": true,
+      "future_stage07d_seed_reuse_forbidden": true,
+      "historical_weight_reads": 0,
+      "parameter_count": 22978,
+      "parameter_schema_sha256": "sha256:720311f4ffe2645411f2a4b05c35049ec1abefd6f080fdc0445407c8faa17209",
+      "seed": 20700701
+    },
+    {
+      "arm": "D3",
+      "complete_parameter_sha256": "sha256:4e9150a76a64fd23faa1372d9f35d15c6e0d080b82dc30d8ec77e2edd87a8cde",
+      "fresh_initialization": true,
+      "future_stage07d_seed_reuse_forbidden": true,
+      "historical_weight_reads": 0,
+      "parameter_count": 22978,
+      "parameter_schema_sha256": "sha256:720311f4ffe2645411f2a4b05c35049ec1abefd6f080fdc0445407c8faa17209",
+      "seed": 20700702
+    },
+    {
+      "arm": "D3",
+      "complete_parameter_sha256": "sha256:80eb8e581466686e7bf22922d5780b7168190c7a6c168868b93620801a32352d",
+      "fresh_initialization": true,
+      "future_stage07d_seed_reuse_forbidden": true,
+      "historical_weight_reads": 0,
+      "parameter_count": 22978,
+      "parameter_schema_sha256": "sha256:720311f4ffe2645411f2a4b05c35049ec1abefd6f080fdc0445407c8faa17209",
+      "seed": 20700703
+    }
+  ],
+  "pass": true,
+  "qualification_weights_saved": 0,
+  "schema": "stage07b_model_manifest_v1",
+  "seeds": [
+    20700701,
+    20700702,
+    20700703
+  ]
+}

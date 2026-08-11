@@ -1,0 +1,32 @@
+contract_version: stage02j-canonical-binary-0.1.0
+execution:
+  device: CPU
+  float_dtype: float64
+  integer_dtype: int64
+  byte_order: big_endian
+  finite_only: true
+ordering:
+  particle: lexicographic_periodic_position_then_original_id
+  edge: source_target_pair_id
+  metadata_keys: UTF8_lexicographic
+  numeric_array_paths: fixed_in_serializer_source
+format:
+  magic: SPHPIOJ1
+  metadata: canonical_JSON_UTF8_with_array_references
+  arrays: fixed_path_order_shape_and_big_endian_payload
+  hash: SHA-256_over_complete_binary_record
+required_roundtrip_checks:
+  - complete_record_canonical_equality
+  - state_hash
+  - graph_hash
+  - target_hash
+  - total_target_force
+  - reciprocal_topology
+  - Fourier_analytic_reference_agreement
+determinism:
+  repeats: 2
+  acceptance: byte_identical_and_SHA256_identical
+prohibitions:
+  NaN_or_infinity: true
+  physical_target_change_from_ordering: true
+  edge_pair_force_label: true

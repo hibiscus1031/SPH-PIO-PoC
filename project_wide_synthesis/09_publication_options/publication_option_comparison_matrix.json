@@ -1,0 +1,26 @@
+{
+  "schema": "s1.publication-options.v1",
+  "options": [
+    {
+      "option": "A",
+      "when": "Stage04 E/F/G strong PASS + independent validation/refinement/cost",
+      "strength": "complete end-to-end narrative",
+      "risk": "highest dependency and length",
+      "recommendation": "conditional"
+    },
+    {
+      "option": "B",
+      "when": "Stage00–03 methods generalizable and Stage04 has distinct performance question",
+      "strength": "clear contribution separation",
+      "risk": "overlap/self-plagiarism",
+      "recommendation": "preferred default after a successful but distinct Stage04"
+    },
+    {
+      "option": "C",
+      "when": "Stage04 gradients/training/rollout not qualified",
+      "strength": "independent verification and negative-result value",
+      "risk": "must avoid solver-success framing",
+      "recommendation": "preferred fallback"
+    }
+  ]
+}

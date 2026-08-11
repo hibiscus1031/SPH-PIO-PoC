@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "role": "development_audit_only",
+      "source": "Stage02J_PV"
+    },
+    {
+      "role": "historical_nonblind_diagnostic_only",
+      "source": "Stage02J-R_CROSSMODE_DIAGONAL_MIXED"
+    },
+    {
+      "role": "distribution_shift_diagnostic_only",
+      "source": "Stage02J_jitter"
+    },
+    {
+      "role": "independent_validation_only",
+      "source": "Stage01_R3_shear_acoustic"
+    }
+  ],
+  "included_in_blind_split": false,
+  "included_in_normalization": false,
+  "registry_version": "stage02jw-historical-isolation-1.0.0",
+  "status": "PASS"
+}

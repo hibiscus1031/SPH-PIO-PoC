@@ -1,0 +1,125 @@
+{
+  "architecture_hash": "sha256:1e313f871b13f3f2fc0cc780ab24d50a7fd9fe8a96866da91fae5ede9ab555a4",
+  "architecture_hash_still_valid": true,
+  "architecture_rows": [
+    {
+      "actual": "sha256:1060b0981f69053828f83fe5bf96cd10f637f4306ea1a8d07a0042f9af5d0c28",
+      "expected": "sha256:1060b0981f69053828f83fe5bf96cd10f637f4306ea1a8d07a0042f9af5d0c28",
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/contracts/architecture_contract_v0_1.json",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:719f239444c3b5cc73768566992b5b6d96b7ee1d9aa47dc8829e24baebf71bb1",
+      "expected": "sha256:719f239444c3b5cc73768566992b5b6d96b7ee1d9aa47dc8829e24baebf71bb1",
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/contracts/feature_contract_v0_1.json",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:892db429621db3a982fe8b03d453dd009e07a8bef4b2b2aca1ba792b0967df57",
+      "expected": "sha256:892db429621db3a982fe8b03d453dd009e07a8bef4b2b2aca1ba792b0967df57",
+      "path": "stage_02_Particle_Interaction_Operator/06_model/pair_force_pio_architecture_v0_1/implementations/pair_force_models.py",
+      "status": "PASS"
+    }
+  ],
+  "freeze_manifest_sha256": "sha256:fc186f595c02a778738ef4fa22ea6ada33442aa8feafff19436afaef7a1dc94c",
+  "historical_hashes_unchanged": true,
+  "input_rows": [
+    {
+      "actual": "sha256:a35161d0fcf8ac43edd21694414f2778936165b589cd21e5205483e042d67c83",
+      "expected": "sha256:a35161d0fcf8ac43edd21694414f2778936165b589cd21e5205483e042d67c83",
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02jw_final_report.md",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:695b6ff57422e21da333e55a5a76d45e2bfe9fcc6abf8fe688de26de6661e876",
+      "expected": "sha256:695b6ff57422e21da333e55a5a76d45e2bfe9fcc6abf8fe688de26de6661e876",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/manifests/stage02jw_final_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:902154cdd2aff77ecdfb0fc853f7d8b7befb515a891adfc2701dfd895edf90ce",
+      "expected": "sha256:902154cdd2aff77ecdfb0fc853f7d8b7befb515a891adfc2701dfd895edf90ce",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/manifests/stage02jw_dataset_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:ba496fd0abadd53c089b4d5ac16edd650a502320b3eedd649d3e6d68c5339b2f",
+      "expected": "sha256:ba496fd0abadd53c089b4d5ac16edd650a502320b3eedd649d3e6d68c5339b2f",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/canonical_records/canonical_inventory.json",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:b19d2c72f64414b1d7815a33e4d82b68f02f679cf21f5483c1a5b9e15279b569",
+      "expected": "sha256:b19d2c72f64414b1d7815a33e4d82b68f02f679cf21f5483c1a5b9e15279b569",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/eligibility/record_eligibility_results.json",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:9c8c970dc6f6c4a3089a193a8615e76fc5a53e86d00b8201c23944706cfbc1c6",
+      "expected": "sha256:9c8c970dc6f6c4a3089a193a8615e76fc5a53e86d00b8201c23944706cfbc1c6",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/leakage/leakage_graph.json",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:9b5073f8e4c3d84325ad7023e52dbba270a62f21f7ff326a0aa7dc273b57cff9",
+      "expected": "sha256:9b5073f8e4c3d84325ad7023e52dbba270a62f21f7ff326a0aa7dc273b57cff9",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/splits/prefrozen_split_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:0dc26751271399ce278199e657fc35b1ad9ab0492275bccd43d191f8ee97d495",
+      "expected": "sha256:0dc26751271399ce278199e657fc35b1ad9ab0492275bccd43d191f8ee97d495",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/normalization/train_only_graph_balanced_statistics.json",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:8a5b48abd4e1c5c630995036769622b70f24167eb482e454f144e4e94f0add3a",
+      "expected": "sha256:8a5b48abd4e1c5c630995036769622b70f24167eb482e454f144e4e94f0add3a",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/blind_multifamily_pair_scope_v1_0/eligibility_contract/blind_dataset_eligibility_contract_v1_0.yaml",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:24644dae01073d1ddf6aed011af212c74e1799137127a2f391b38e7f533dad0a",
+      "expected": "sha256:24644dae01073d1ddf6aed011af212c74e1799137127a2f391b38e7f533dad0a",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/schema/feature_permission_table.yaml",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:4575e5fbec28f55e8c3fd9207798726ced302be60297075ef10cfe8a6cd29f87",
+      "expected": "sha256:4575e5fbec28f55e8c3fd9207798726ced302be60297075ef10cfe8a6cd29f87",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/schema/stage02j_graph_record_schema.json",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:920d32390d41cc1e5c731f2b789bf24da99d499ddb8f576959ffc72a0f48c195",
+      "expected": "sha256:920d32390d41cc1e5c731f2b789bf24da99d499ddb8f576959ffc72a0f48c195",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/schema/canonical_serialization_contract.yaml",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:3b8324ec9cf159128607e60df8e86324c2f986e20ca42dcb3f4fd5cd94d992dd",
+      "expected": "sha256:3b8324ec9cf159128607e60df8e86324c2f986e20ca42dcb3f4fd5cd94d992dd",
+      "path": "stage_02_Particle_Interaction_Operator/05_dataset/controlled_regular_pair_scope_v0_1/manifests/run_stage02j_controlled_dataset.py",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:8ffb20a19d2dcb57b86b40038ee0655da3c85c35937fefab6886ec226dccdf9c",
+      "expected": "sha256:8ffb20a19d2dcb57b86b40038ee0655da3c85c35937fefab6886ec226dccdf9c",
+      "path": "stage_02_Particle_Interaction_Operator/04_target_attribution/conservation_closure/architecture_scope/architecture_scope_decision.json",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:e4561b3ed61b94efea86f84b57f18e4b195dfcbb9dc1a5a52ca2694a6bba347a",
+      "expected": "sha256:e4561b3ed61b94efea86f84b57f18e4b195dfcbb9dc1a5a52ca2694a6bba347a",
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02a_conservation_contract.md",
+      "status": "PASS"
+    },
+    {
+      "actual": "sha256:156b1339a8f6f7c6a211318733efd9d6adc6093cd54d45c7e136c6001fc7d243",
+      "expected": "sha256:156b1339a8f6f7c6a211318733efd9d6adc6093cd54d45c7e136c6001fc7d243",
+      "path": "stage_02_Particle_Interaction_Operator/07_reports/stage02a_equivariance_contract.md",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "figure": "Figure 5",
+    "panel": "a,b",
+    "scientific_claim": "The velocity defect is defined at one frozen origin and accepted step.",
+    "source_file": "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/target_records/LCDF_01_VARIANT_LOW_N8_O00.json",
+    "source_hash": "sha256:8e482e24fb40340093a7f6f5edb6b1487232dfa1a5bae57977947cea106b32cb",
+    "source_field": "dt/source identities/reference and D0 hashes",
+    "confirmatory_or_diagnostic": "CONFIRMATORY",
+    "transformation": "Panel a is schematic; panel b multiplies frozen a_def by frozen dt as an explicitly declared deterministic display transform.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.svg;publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.pdf;publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.png"
+  },
+  {
+    "figure": "Figure 5",
+    "panel": "b,c",
+    "scientific_claim": "The frozen defect decomposes into conservative and incompatible components.",
+    "source_file": "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/target_records/LCDF_01_VARIANT_LOW_N8_O00.npz",
+    "source_hash": "sha256:5ce1c3f62f672a1954ed158d60ffce1b5b5c007cd3ca00830fa0a3f002f431e8",
+    "source_field": "a_def/a_cons/a_incompatible",
+    "confirmatory_or_diagnostic": "CONFIRMATORY",
+    "transformation": "Frozen arrays flattened in stored row-major order; Δv=dt·a_def.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.svg;publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.pdf;publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.png"
+  },
+  {
+    "figure": "Figure 5",
+    "panel": "d,g,h",
+    "scientific_claim": "The registered target signal exceeds frozen uncertainty and preserves the zero identity.",
+    "source_file": "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/scale_calculation/stage05b_scale.json",
+    "source_hash": "sha256:a7f27b033d91ac063fc4d3e88e6bcb305fb26b077c6f5e8bbc10d3859f5e6418",
+    "source_field": "s_a/u_a/s_a_over_u_a/lineage_scale/zero_baseline_*",
+    "confirmatory_or_diagnostic": "CONFIRMATORY",
+    "transformation": "Direct frozen scalars and lineage values; log axis.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.svg;publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.pdf;publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.png"
+  },
+  {
+    "figure": "Figure 5",
+    "panel": "e",
+    "scientific_claim": "The incompatible fraction is recorded across all 384 origins.",
+    "source_file": "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/results/formal_origin_results.json",
+    "source_hash": "sha256:fbe5997a10b38e3a47dfbf69c06b39904055108bb130107252d25a7b66da0005",
+    "source_field": "rows[].incompatible_fraction",
+    "confirmatory_or_diagnostic": "CONFIRMATORY",
+    "transformation": "Deterministic fixed-bin histogram; no row exclusion.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.svg;publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.pdf;publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.png"
+  },
+  {
+    "figure": "Figure 5",
+    "panel": "f",
+    "scientific_claim": "Both bounded and unbounded pair-basis representability gates passed.",
+    "source_file": "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/pair_basis_representability/unbounded_representability.json",
+    "source_hash": "sha256:25b693af7d5d704216f3357b455e3e399ea60bb90f2ed9ee6586a6c19129e9e1",
+    "source_field": "family_balanced_mean/percentile95/pass",
+    "confirmatory_or_diagnostic": "CONFIRMATORY",
+    "transformation": "Direct frozen summary scalars.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.svg;publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.pdf;publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.png"
+  },
+  {
+    "figure": "Figure 5",
+    "panel": "f",
+    "scientific_claim": "Bounded head feasibility passed at the registered bound.",
+    "source_file": "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/bounded_head_feasibility/bounded_feasibility.json",
+    "source_hash": "sha256:888946d0af24ff3e46f9c45da6701208dcb9ee1781925736b34079826b4a6b41",
+    "source_field": "family_balanced_mean/percentile95/physical_head_bound/pass",
+    "confirmatory_or_diagnostic": "CONFIRMATORY",
+    "transformation": "Direct frozen summary scalars.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.svg;publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.pdf;publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.png"
+  },
+  {
+    "figure": "Figure 5",
+    "panel": "h",
+    "scientific_claim": "The conservative decomposition retains the zero-force identity.",
+    "source_file": "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/conservative_decomposition/conservative_compatibility.json",
+    "source_hash": "sha256:a9fa14289aac40a4e909c078b32221bc710b205b921fcabeba4745157109b1f4",
+    "source_field": "compatibility.zero_force_max/gates",
+    "confirmatory_or_diagnostic": "CONFIRMATORY",
+    "transformation": "Direct frozen scalar.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.svg;publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.pdf;publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.png"
+  },
+  {
+    "figure": "Figure 5",
+    "panel": "g",
+    "scientific_claim": "The prospectively requalified v2 scale differs from v1.",
+    "source_file": "stage_07_Heterogeneous_Development_Pool/02_defect_scale_requalification/stage07b/distribution_shift/scale_distribution_shift.json",
+    "source_hash": "sha256:fed997568e42041c686391295ad7ab05b181528b534ed37d06f923916686d236",
+    "source_field": "s_a_v1/s_a_v2/lineage_RMS",
+    "confirmatory_or_diagnostic": "DIAGNOSTIC_ONLY",
+    "transformation": "v1 lineage values plus frozen global v1/v2 reference lines; no cross-stage performance inference.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.svg;publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.pdf;publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.png"
+  },
+  {
+    "figure": "Figure 5",
+    "panel": "h",
+    "scientific_claim": "Target qualification is distinct from training and target-truth claims.",
+    "source_file": "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/qualification/stage05b_qualification_summary.json",
+    "source_hash": "sha256:04e05c230e3ca8e3aee53836942370d14c90f9eddd5664afafbc46cbf57b782b",
+    "source_field": "status/formal_origin_count/gates",
+    "confirmatory_or_diagnostic": "NEGATIVE_CONFIRMATORY",
+    "transformation": "Unlabelled scope card adjoining panel h.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.svg;publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.pdf;publication_cmame_v1/04_figures/06_fig05_discrete_defect/fig05_discrete_defect.png"
+  }
+]

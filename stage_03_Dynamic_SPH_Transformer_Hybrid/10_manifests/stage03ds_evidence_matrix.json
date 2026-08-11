@@ -1,0 +1,283 @@
+{
+  "allowed_statuses": [
+    "PASS",
+    "DIAGNOSTIC",
+    "NOT_QUALIFIED",
+    "NOT_EXECUTED",
+    "UNRESOLVED"
+  ],
+  "overall_gradient_status": "DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED",
+  "rows": [
+    {
+      "artifact": "01_governing_contract/hybrid_equations.md",
+      "boundary": "合同证据；无性能含义。",
+      "category": "A_SPECIFICATION",
+      "evidence": "dx/dt, dρ/dt and dv/dt with additive conservative correction frozen.",
+      "id": "A01",
+      "item": "governing equations",
+      "status": "PASS"
+    },
+    {
+      "artifact": "02_temporal_architecture/temporal_transformer_contract.md",
+      "boundary": "候选架构，不证明必要或优越。",
+      "category": "A_SPECIFICATION",
+      "evidence": "D3 H=4 causal scalar-history Transformer with reciprocal pair head frozen.",
+      "id": "A02",
+      "item": "causal Transformer contract",
+      "status": "PASS"
+    },
+    {
+      "artifact": "02_temporal_architecture/baseline_arm_contract.md",
+      "boundary": "未训练、未比较性能。",
+      "category": "A_SPECIFICATION",
+      "evidence": "D0 baseline, D1 instantaneous MLP, D2 recurrent, D3 temporal Transformer roles frozen.",
+      "id": "A03",
+      "item": "D0-D3 arm matrix",
+      "status": "PASS"
+    },
+    {
+      "artifact": "03_time_integration/rk2_stage_semantics.md",
+      "boundary": "语义合同与实现证据分层。",
+      "category": "A_SPECIFICATION",
+      "evidence": "Start/midpoint graph rebuild and one accepted-state history commit specified.",
+      "id": "A04",
+      "item": "RK2/history/graph semantics",
+      "status": "PASS"
+    },
+    {
+      "artifact": "04_reference_and_trajectory/dynamic_reference_hierarchy.md",
+      "boundary": "D-R4 remains NOT_AVAILABLE.",
+      "category": "A_SPECIFICATION",
+      "evidence": "D-R1 through D-R4 roles and disallowed uses frozen.",
+      "id": "A05",
+      "item": "reference hierarchy",
+      "status": "PASS"
+    },
+    {
+      "artifact": "09_reports/stage03b_dr1_lagrangian_mms.md",
+      "boundary": "MMS verifies equations/code, not physical validation.",
+      "category": "B_REFERENCE",
+      "evidence": "Two D-R1 families passed analytic closure and produced six exact trajectories.",
+      "id": "B01",
+      "item": "D-R1 analytic/MMS closure",
+      "status": "PASS"
+    },
+    {
+      "artifact": "09_reports/stage03b_dr2_semidiscrete_reference.md",
+      "boundary": "Isolates time error; not spatial truth.",
+      "category": "B_REFERENCE",
+      "evidence": "Six same-semidiscrete DOP853 cases passed.",
+      "id": "B02",
+      "item": "D-R2 time-reference sensitivity",
+      "status": "PASS"
+    },
+    {
+      "artifact": "09_reports/stage03b_dr3_source_free_reference.md",
+      "boundary": "Independent validation only; forbidden for training/threshold selection.",
+      "category": "B_REFERENCE",
+      "evidence": "Two oblique-shear families passed and yielded six exact trajectories.",
+      "id": "B03",
+      "item": "D-R3 source-free exact reference",
+      "status": "PASS"
+    },
+    {
+      "artifact": "09_reports/stage03b_acoustic_and_vortex_boundary.md",
+      "boundary": "Not an unrestricted exact D-R3 family.",
+      "category": "B_REFERENCE",
+      "evidence": "Classified DR3_ACOUSTIC_LINEAR_REGIME_CONDITIONAL.",
+      "id": "B04",
+      "item": "acoustic boundary",
+      "status": "DIAGNOSTIC"
+    },
+    {
+      "artifact": "09_reports/stage03b_acoustic_and_vortex_boundary.md",
+      "boundary": "May only support a separately sourced MMS role.",
+      "category": "B_REFERENCE",
+      "evidence": "Rejected as exact source-free reference due to momentum/EOS mismatch.",
+      "id": "B05",
+      "item": "periodic vortex boundary",
+      "status": "NOT_QUALIFIED"
+    },
+    {
+      "artifact": "05_dynamic_solver_implementation/stage03c/results/independent_rk2_results.json",
+      "boundary": "Implementation verification only.",
+      "category": "C_IMPLEMENTATION",
+      "evidence": "Independent RK2 comparison 48/48.",
+      "id": "C01",
+      "item": "independent RK2",
+      "status": "PASS"
+    },
+    {
+      "artifact": "05_dynamic_solver_implementation/stage03c/results/zero_correction_results.json",
+      "boundary": "Does not prove nonzero correction accuracy.",
+      "category": "C_IMPLEMENTATION",
+      "evidence": "288/288 bitwise equivalence; no post-hoc tolerance.",
+      "id": "C02",
+      "item": "zero correction",
+      "status": "PASS"
+    },
+    {
+      "artifact": "05_dynamic_solver_implementation/stage03c/results/structural_smoke_results.json",
+      "boundary": "Structural property, not learned performance.",
+      "category": "C_IMPLEMENTATION",
+      "evidence": "Reciprocal antisymmetry, conservation, O(2), permutation and periodic checks passed.",
+      "id": "C03",
+      "item": "conservation/equivariance",
+      "status": "PASS"
+    },
+    {
+      "artifact": "05_dynamic_solver_implementation/stage03c/results/checkpoint_resume_results.json",
+      "boundary": "No trained checkpoint exists.",
+      "category": "C_IMPLEMENTATION",
+      "evidence": "Six configurations reproduced state, graph, history and RNG identity.",
+      "id": "C04",
+      "item": "checkpoint/resume",
+      "status": "PASS"
+    },
+    {
+      "artifact": "05_dynamic_solver_implementation/stage03c/results/differentiability_smoke_results.json",
+      "boundary": "No finite difference and no multistep qualification in Stage 03C.",
+      "category": "C_IMPLEMENTATION",
+      "evidence": "6/6 one-step runs returned finite nonzero expected gradients.",
+      "id": "C05",
+      "item": "one-step autograd",
+      "status": "PASS"
+    },
+    {
+      "artifact": "05_dynamic_solver_implementation/stage03c/results/resource_audit_results.json",
+      "boundary": "Resource record is not a speed or cost comparison.",
+      "category": "C_IMPLEMENTATION",
+      "evidence": "CPU float64 resource audit passed.",
+      "id": "C06",
+      "item": "resources",
+      "status": "PASS"
+    },
+    {
+      "artifact": "05_dynamic_solver_implementation/stage03dr/failure_matrix/stage03d_complete_360_row_matrix.json",
+      "boundary": "Complete gradient qualification failed.",
+      "category": "D_MULTISTEP_GRADIENT",
+      "evidence": "216 PASS and 144 failure rows; 2880 AD/FD comparisons.",
+      "id": "D01",
+      "item": "360 frozen probes",
+      "status": "NOT_QUALIFIED"
+    },
+    {
+      "artifact": "05_dynamic_solver_implementation/stage03d/results/fixed_topology_adfd_results.json",
+      "boundary": "Cannot report only the passing subset.",
+      "category": "D_MULTISTEP_GRADIENT",
+      "evidence": "216/360 probes had a stable adjacent window.",
+      "id": "D02",
+      "item": "stable epsilon windows",
+      "status": "DIAGNOSTIC"
+    },
+    {
+      "artifact": "05_dynamic_solver_implementation/stage03dr/ad_crosscheck/reverse_vs_jvp.json",
+      "boundary": "Supports AD implementation consistency, not complete AD/FD validity.",
+      "category": "D_MULTISTEP_GRADIENT",
+      "evidence": "60/60 same-math-backend reverse/JVP comparisons passed.",
+      "id": "D03",
+      "item": "reverse/JVP crosscheck",
+      "status": "PASS"
+    },
+    {
+      "artifact": "05_dynamic_solver_implementation/stage03dr/fd_conditioning/extended_fd_results.json",
+      "boundary": "Conditioning contribution remains path dependent.",
+      "category": "D_MULTISTEP_GRADIENT",
+      "evidence": "2640 FD paths; 30/60 selected paths stable.",
+      "id": "D04",
+      "item": "extended finite difference",
+      "status": "DIAGNOSTIC"
+    },
+    {
+      "artifact": "05_dynamic_solver_implementation/stage03dr/history_path/reference_prehistory_trace.json",
+      "boundary": "Strong rollout attenuation is observed; long-chain trainability is not established.",
+      "category": "D_MULTISTEP_GRADIENT",
+      "evidence": "1 HISTORY_FD_CONDITIONING_LIMITED and 5 HISTORY_SENSITIVITY_BELOW_FD_RESOLUTION.",
+      "id": "D05",
+      "item": "history influence",
+      "status": "UNRESOLVED"
+    },
+    {
+      "artifact": "09_reports/stage03dr_ad_crosscheck.md",
+      "boundary": "Conditional diagnostic; no backend switch or requalification authorized.",
+      "category": "D_MULTISTEP_GRADIENT",
+      "evidence": "Historical default backend disagreed with math JVP on 12/60, all in D3 selected probes.",
+      "id": "D06",
+      "item": "backend sensitivity",
+      "status": "DIAGNOSTIC"
+    },
+    {
+      "artifact": "05_dynamic_solver_implementation/stage03dr/attribution/failure_attribution.json",
+      "boundary": "Mixed contributors; no single complete root cause.",
+      "category": "D_MULTISTEP_GRADIENT",
+      "evidence": "144 failures split across seven reasons, including 19 unresolved.",
+      "id": "D07",
+      "item": "failure attribution",
+      "status": "UNRESOLVED"
+    },
+    {
+      "artifact": "05_dynamic_solver_implementation/stage03dr/horizon_scaling/horizon_gradient_scaling.json",
+      "boundary": "No systematic vanishing/exploding detected, not proof of healthy training gradients.",
+      "category": "D_MULTISTEP_GRADIENT",
+      "evidence": "90/90 traces classified bounded or nonmonotone.",
+      "id": "D08",
+      "item": "horizon scaling",
+      "status": "DIAGNOSTIC"
+    },
+    {
+      "artifact": "10_manifests/stage03dr_final_manifest.json",
+      "boundary": "Must not be called training failure.",
+      "category": "D_MULTISTEP_GRADIENT",
+      "evidence": "optimizer steps=0; training runs=0; performance evaluations=0.",
+      "id": "D09",
+      "item": "dynamic training",
+      "status": "NOT_EXECUTED"
+    },
+    {
+      "artifact": "05_dynamic_solver_implementation/stage03d/topology_event_scan/te1_dense_scan_results.json",
+      "boundary": "Discrete edge existence is not differentiable.",
+      "category": "E_TOPOLOGY",
+      "evidence": "One deterministic edge birth and one death recorded.",
+      "id": "E01",
+      "item": "TE1 birth/death",
+      "status": "PASS"
+    },
+    {
+      "artifact": "05_dynamic_solver_implementation/stage03d/topology_stage_replay/replay_results.json",
+      "boundary": "Qualification is for TE1 semantics.",
+      "category": "E_TOPOLOGY",
+      "evidence": "6/6 topology-stage replays passed.",
+      "id": "E02",
+      "item": "replay",
+      "status": "PASS"
+    },
+    {
+      "artifact": "05_dynamic_solver_implementation/stage03d/event_side_gradients/event_side_gradient_results.json",
+      "boundary": "Gradients are within a fixed event side, not through cutoff membership.",
+      "category": "E_TOPOLOGY",
+      "evidence": "12/12 fixed-side gradients passed.",
+      "id": "E03",
+      "item": "event-side gradients",
+      "status": "PASS"
+    },
+    {
+      "artifact": "05_dynamic_solver_implementation/stage03dr/topology_preservation/topology_component_status.json",
+      "boundary": "Topology map remains piecewise smooth with discrete events.",
+      "category": "E_TOPOLOGY",
+      "evidence": "Finite bounded force jumps and deterministic empty-graph behavior established.",
+      "id": "E04",
+      "item": "piecewise-smooth boundary",
+      "status": "PASS"
+    }
+  ],
+  "schema_version": "sph-pio-poc.stage03ds.evidence-matrix.v1",
+  "stage03e_authorization": false,
+  "status_counts": {
+    "DIAGNOSTIC": 5,
+    "NOT_EXECUTED": 1,
+    "NOT_QUALIFIED": 2,
+    "PASS": 19,
+    "UNRESOLVED": 2
+  },
+  "topology_component_status": "TOPOLOGY_EVENT_COMPONENT_QUALIFIED"
+}

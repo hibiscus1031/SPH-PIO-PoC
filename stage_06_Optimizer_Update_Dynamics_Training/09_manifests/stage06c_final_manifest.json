@@ -1,0 +1,147 @@
+{
+  "Stage06D_authorized": false,
+  "arm_qualification": {
+    "D1": {
+      "arm_pass": false,
+      "completed": 3,
+      "seed_passes": 0
+    },
+    "D2": {
+      "arm_pass": false,
+      "completed": 3,
+      "seed_passes": 0
+    },
+    "D3": {
+      "arm_pass": false,
+      "completed": 3,
+      "seed_passes": 0
+    }
+  },
+  "evidence_complete": true,
+  "formal_optimizer_steps": 11620,
+  "formal_parameter_updates": 11620,
+  "formal_training_runs": 9,
+  "historical_audit": {
+    "changed": [],
+    "counts": {
+      "stage01_05": 3700,
+      "stage06a": 206,
+      "stage06b": 470
+    },
+    "pass": true
+  },
+  "next_authorization": null,
+  "protocol_sha256": "sha256:b7918bde82b104895b6d47c798801608938c661c3f8b249f4c832c98c3a83cbe",
+  "resources": {
+    "checkpoint_storage_bytes": 194963815,
+    "checkpoint_storage_limit_bytes": 10737418240,
+    "dense_particle_NxN_allocation": false,
+    "finite_completion": true,
+    "pass": true,
+    "peak_rss_bytes": 1262108672,
+    "peak_rss_limit_bytes": 1610612736,
+    "per_run": [
+      {
+        "checkpoint_storage_bytes_campaign": 12754384,
+        "graph_rebuilds": 226944,
+        "optimizer_memory_bytes": 92272,
+        "peak_rss_bytes": 898105344,
+        "run_id": "D1_seed20600611",
+        "wall_time_seconds": 2049.6696785000386
+      },
+      {
+        "checkpoint_storage_bytes_campaign": 25510185,
+        "graph_rebuilds": 226944,
+        "optimizer_memory_bytes": 92272,
+        "peak_rss_bytes": 807731200,
+        "run_id": "D1_seed20600612",
+        "wall_time_seconds": 2041.47822954203
+      },
+      {
+        "checkpoint_storage_bytes_campaign": 38270786,
+        "graph_rebuilds": 226944,
+        "optimizer_memory_bytes": 92272,
+        "peak_rss_bytes": 1001193472,
+        "run_id": "D1_seed20600613",
+        "wall_time_seconds": 2018.4777559579816
+      },
+      {
+        "checkpoint_storage_bytes_campaign": 62989287,
+        "graph_rebuilds": 226944,
+        "optimizer_memory_bytes": 193680,
+        "peak_rss_bytes": 921403392,
+        "run_id": "D2_seed20600611",
+        "wall_time_seconds": 2301.5229272920405
+      },
+      {
+        "checkpoint_storage_bytes_campaign": 87712651,
+        "graph_rebuilds": 226944,
+        "optimizer_memory_bytes": 193680,
+        "peak_rss_bytes": 904773632,
+        "run_id": "D2_seed20600612",
+        "wall_time_seconds": 2231.5734314160654
+      },
+      {
+        "checkpoint_storage_bytes_campaign": 112436080,
+        "graph_rebuilds": 226944,
+        "optimizer_memory_bytes": 193680,
+        "peak_rss_bytes": 973209600,
+        "run_id": "D2_seed20600613",
+        "wall_time_seconds": 2222.526681459043
+      },
+      {
+        "checkpoint_storage_bytes_campaign": 137704043,
+        "graph_rebuilds": 121104,
+        "optimizer_memory_bytes": 367928,
+        "peak_rss_bytes": 1262108672,
+        "run_id": "D3_seed20600611",
+        "wall_time_seconds": 1521.404861082905
+      },
+      {
+        "checkpoint_storage_bytes_campaign": 163585837,
+        "graph_rebuilds": 124128,
+        "optimizer_memory_bytes": 367928,
+        "peak_rss_bytes": 1209090048,
+        "run_id": "D3_seed20600612",
+        "wall_time_seconds": 1552.7779312919592
+      },
+      {
+        "checkpoint_storage_bytes_campaign": 194967982,
+        "graph_rebuilds": 151344,
+        "optimizer_memory_bytes": 367928,
+        "peak_rss_bytes": 1229193216,
+        "run_id": "D3_seed20600613",
+        "wall_time_seconds": 1895.4567350409925
+      }
+    ],
+    "result_storage_bytes": 62942158,
+    "retained_autograd_monotonic_growth": false,
+    "schema": "sph-pio-poc.stage06c.resources.v1",
+    "total_wall_time_seconds": 17846.58403566701,
+    "train_cache_bytes": 4150087
+  },
+  "rollouts": 0,
+  "run_count": 9,
+  "run_ids": [
+    "D1_seed20600611",
+    "D1_seed20600612",
+    "D1_seed20600613",
+    "D2_seed20600611",
+    "D2_seed20600612",
+    "D2_seed20600613",
+    "D3_seed20600611",
+    "D3_seed20600612",
+    "D3_seed20600613"
+  ],
+  "schema": "sph-pio-poc.stage06c.final.v1",
+  "sealed_decode_counts": {
+    "sealed_formula_decode_count": 0,
+    "sealed_origin_decode_count": 0,
+    "sealed_source_decode_count": 0,
+    "sealed_state_decode_count": 0,
+    "sealed_target_decode_count": 0
+  },
+  "sealed_test_evaluations": 0,
+  "selected_checkpoint_hashes_closed": true,
+  "status": "FORMAL_K1_TRAINING_COMPLETE_TRANSFORMER_NOT_QUALIFIED"
+}

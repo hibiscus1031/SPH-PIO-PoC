@@ -1,0 +1,258 @@
+{
+  "FRESH_VALIDATION_V2_role_transition": "CONSUMED_VALIDATION_V2_DIAGNOSTIC_ONLY",
+  "Stage07E_authorized": false,
+  "checkpoint_failures": [],
+  "checkpoint_manifest_sha256": "sha256:0f36a2126841dab8495009435a976154376e9f911b7b740097a7659de2e38253",
+  "checks": {
+    "checkpoint_652": true,
+    "optimizer_histories_12860": true,
+    "original_sealed_zero": true,
+    "protocol_exact": true,
+    "run_identities_9": true,
+    "selected_9": true,
+    "stage07d_failure_preserved": true,
+    "stage07d_sealed_zero": true,
+    "stage07e_false": true,
+    "train_v2_896": true,
+    "validation_v2_256": true
+  },
+  "diagnostic_rules_frozen_before_result_read": {
+    "attribution_precedence": [
+      "PAIR_BASIS_EXCLUSION",
+      "SUPPORT_AND_TARGET_GEOMETRY",
+      "GRADIENT_CONFLICT",
+      "TANGENT_AND_OPTIMIZATION",
+      "TEMPORAL_INFORMATION",
+      "MIXED"
+    ],
+    "branch_B": {
+      "fresh_transfer_requires_global_and_all_lineage_gates": true,
+      "material_relative_reduction_gain_at_least": 0.02
+    },
+    "descriptor_support": {
+      "affine_residual_normalization": "distance divided by TRAIN robust radius",
+      "distance_reference": "TRAIN leave-one-out nearest-neighbour distances",
+      "edge_max": "1.5*LOO_NN_p95",
+      "in_support_max": "LOO_NN_p95",
+      "outside_if_envelope_exceedance_count_at_least": 2,
+      "standardization": "TRAIN-only median and 1.4826*MAD; IQR/1.349 then 1.0 fallback"
+    },
+    "gradient": {
+      "aligned_mean_cosine_at_least": 0.2,
+      "cases": "all 64 origins per lineage",
+      "conflict_mean_cosine_below": -0.05,
+      "conflict_negative_fraction_at_least": 0.5
+    },
+    "lineage_labels": {
+      "architecture_sensitive_arm_mean_range_above": 0.2,
+      "persistent_hard_arm_mean_Q_above": 1.0,
+      "seed_sensitive_CV_above": 0.1
+    },
+    "optimizer": {
+      "flat_abs_slope_at_most": 1e-05,
+      "progress_slope_below": -1e-05
+    },
+    "selection_tension": {
+      "train_advantage_Q_at_least": 0.02,
+      "validation_penalty_Q_at_least": 0.02
+    },
+    "tangent": {
+      "full_network_direction_count": 128,
+      "high_fraction_at_least": 0.5,
+      "low_fraction_below": 0.2,
+      "method": "deterministic Rademacher directional JVP range projection",
+      "pair_head_direction_count": 64,
+      "subset": "LOW+MAIN origins 0,8,16,24 for HET_S2_01/02/03"
+    },
+    "target_support": {
+      "PCA_variance_fraction": 0.95,
+      "edge_multiplier": 1.5,
+      "in_support_reconstruction_residual_max": "TRAIN_p95",
+      "minimum_components": 2
+    }
+  },
+  "frozen_direct_inputs": [
+    {
+      "bytes": 4250,
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07d_final_manifest.json",
+      "sha256": "sha256:cd4f6dc7787376472fb5deb532e7739dc01f7e9b795879c1c36174b8d4a4e286"
+    },
+    {
+      "bytes": 9150,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07d_final_report.md",
+      "sha256": "sha256:7a476ba915274f48145cdf3b64a8c9eadcdf0d7b78b0799f93c54451f012b5d5"
+    },
+    {
+      "bytes": 166512,
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07d_checkpoint_manifest.json",
+      "sha256": "sha256:0f36a2126841dab8495009435a976154376e9f911b7b740097a7659de2e38253"
+    },
+    {
+      "bytes": 3929,
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07d_selected_checkpoint_manifest.json",
+      "sha256": "sha256:a0acea60adad12714fe1d9382089430b5bf95b4549ba02ba98c690be3b9db932"
+    },
+    {
+      "bytes": 9938,
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07d_run_inventory_manifest.json",
+      "sha256": "sha256:b93f9f48e90876f52b8d8317a95ba962e01edc6d4f5da22c140aee643b54d316"
+    },
+    {
+      "bytes": 428,
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07b_train_v2_manifest.json",
+      "sha256": "sha256:7573c1a3e1356605d7935f9db37c4a8f77368c7e93ca103f6271352736e20e21"
+    },
+    {
+      "bytes": 1570,
+      "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/manifests/stage07c_protocol_manifest.json",
+      "sha256": "sha256:554a03e978e5edada2298cd1613ed14691e500031a4cfd0160c039b53e38c11c"
+    },
+    {
+      "bytes": 156522,
+      "path": "stage_07_Heterogeneous_Development_Pool/04_training_protocol/stage07c/manifests/validation_target_manifest.json",
+      "sha256": "sha256:925852d9d3738b6168ae3fd4fb36d09432cf4361a595b38666356035d77b9bf5"
+    },
+    {
+      "bytes": 7281,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/heterogeneity_strata/formula_identity_library.json",
+      "sha256": "sha256:520f42b2700676b3e6a570297930609b630cf0d004257e6ea4b18d8a54b83d2f"
+    },
+    {
+      "bytes": 19332,
+      "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/results/heterogeneity_descriptor_audit.json",
+      "sha256": "sha256:0c80157d40cfc1a729df6f2980c590b2e6c7a25f83c9d0ccb0b46fe99a2cc979"
+    },
+    {
+      "bytes": 1789,
+      "path": "stage_07_Heterogeneous_Development_Pool/02_defect_scale_requalification/stage07b/pair_basis_representability/pair_basis_summary.json",
+      "sha256": "sha256:bf424bc37352ab03dc91cb6d807ab385e2cef4ecef68b892feec68dcb4c5826a"
+    },
+    {
+      "bytes": 862,
+      "path": "stage_07_Heterogeneous_Development_Pool/02_defect_scale_requalification/stage07b/conservative_decomposition/conservative_compatibility.json",
+      "sha256": "sha256:3e93e626be7ae437a2249a693979074dc56f8d0f5ed6cbe273b1d0a067a257ec"
+    },
+    {
+      "bytes": 21325,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/09_manifests/stage06cr_final_manifest.json",
+      "sha256": "sha256:4b029d27802414428015957a4b31d075276787c6ddbd248f17b293e57ae1d936"
+    },
+    {
+      "bytes": 6667,
+      "path": "stage_06_Optimizer_Update_Dynamics_Training/08_reports/stage06cr_final_report.md",
+      "sha256": "sha256:a4947542557a33e2bbf866cf6a3a7708810d202768a4ebb9fa0a9116b06bf86d"
+    }
+  ],
+  "frozen_history_files": [
+    {
+      "bytes": 15006209,
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/training_histories/D1_seed20700711.jsonl",
+      "sha256": "sha256:e6f6e3990b0393b14f4c8d1e13e3f8fde0885aef72d1d5846f43513460569669"
+    },
+    {
+      "bytes": 15006952,
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/training_histories/D1_seed20700712.jsonl",
+      "sha256": "sha256:f3439997818f142a32557bbd64c4a0ed30ba44dfafcab22271b9abab6791aa2e"
+    },
+    {
+      "bytes": 15006622,
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/training_histories/D1_seed20700713.jsonl",
+      "sha256": "sha256:8f70938c24eed923ff584d193a8f783a1b0025ece5ab8e235ce3b6567a8a904b"
+    },
+    {
+      "bytes": 15008009,
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/training_histories/D2_seed20700711.jsonl",
+      "sha256": "sha256:b2aca525f38d50e39d7609f0f13bb60816d9e5346cb2d5ca893bada3f1163cce"
+    },
+    {
+      "bytes": 15007875,
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/training_histories/D2_seed20700712.jsonl",
+      "sha256": "sha256:0ae2187d047356b74016b1123131e79ea459dc2f36283ffd1723b36fa836c447"
+    },
+    {
+      "bytes": 15007377,
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/training_histories/D2_seed20700713.jsonl",
+      "sha256": "sha256:5254ca029b6ec39b384e7f2281eefdb48e90967abde36dfa58445cab373bd477"
+    },
+    {
+      "bytes": 12410702,
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/training_histories/D3_seed20700711.jsonl",
+      "sha256": "sha256:6eafabfb73177784c66f35d60fcf07c459ce02ad7a7abb8292282efd297ee0a7"
+    },
+    {
+      "bytes": 13810430,
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/training_histories/D3_seed20700712.jsonl",
+      "sha256": "sha256:adb74a21e48bff813d34cbe0838ad2d276562028eb921bc5a7e6d7a485e31159"
+    },
+    {
+      "bytes": 12414192,
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/training_histories/D3_seed20700713.jsonl",
+      "sha256": "sha256:ad9e48eebc04ad9bd73acb50cb141f0ceb8689b9b644d3cbf86c425d58008bf9"
+    },
+    {
+      "bytes": 485343,
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/validation_histories/D1_seed20700711.jsonl",
+      "sha256": "sha256:6c6e2f7a262b8e0547ee5208600213566d2d7c8b3f91bf9117556ae146fed88f"
+    },
+    {
+      "bytes": 484711,
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/validation_histories/D1_seed20700712.jsonl",
+      "sha256": "sha256:c634e554f2101ed1566135277176633ebc4f277e436746f7b1d56f4d43cb6397"
+    },
+    {
+      "bytes": 484921,
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/validation_histories/D1_seed20700713.jsonl",
+      "sha256": "sha256:98e9277890c5ba056ebabd69772fae59f33e3e119ac83a6c279fff4641074055"
+    },
+    {
+      "bytes": 484802,
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/validation_histories/D2_seed20700711.jsonl",
+      "sha256": "sha256:f96eb46913d1f83fba7cd288bad4e86114b68c5c7d75325e74ffd31f0666d443"
+    },
+    {
+      "bytes": 485067,
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/validation_histories/D2_seed20700712.jsonl",
+      "sha256": "sha256:fc96806b77535d810f572b5217171dbdb5cc29cbe12b183ec6f8ba8bcdcc53e0"
+    },
+    {
+      "bytes": 485206,
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/validation_histories/D2_seed20700713.jsonl",
+      "sha256": "sha256:564a4b9e849135f21d38c533f12c6800a0e66064d82a5d9168a567db8121a21a"
+    },
+    {
+      "bytes": 401545,
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/validation_histories/D3_seed20700711.jsonl",
+      "sha256": "sha256:4e36f5043f3ecd8bad3c3b3dea91ec0f49451b9db10226db66a86149207a1f3c"
+    },
+    {
+      "bytes": 446060,
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/validation_histories/D3_seed20700712.jsonl",
+      "sha256": "sha256:45ca03567b26679b63f1b9e0cc02c8e9abe519fd29adb46ba6c255b544dbc51d"
+    },
+    {
+      "bytes": 401450,
+      "path": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07d/validation_histories/D3_seed20700713.jsonl",
+      "sha256": "sha256:73dcd1b437dc49950f58e19fe9e15bf1f000e705e83b4f676698e967b216285f"
+    }
+  ],
+  "historical_stage07d_status": "FORMAL_TRAIN_V2_RETRAINING_COMPLETE_TRANSFORMER_NOT_QUALIFIED",
+  "new_checkpoints": 0,
+  "new_optimizer_steps": 0,
+  "new_parameter_updates": 0,
+  "new_training_runs": 0,
+  "pass": true,
+  "protocol_sha256": "sha256:21b52f0aca3791cdc0d58165f1edd980667bafe0eee5a9d52544c24a8f518dbb",
+  "rollouts": 0,
+  "schema": "sph-pio-poc.stage07dr.input-freeze.v1",
+  "sealed_test_evaluations": 0,
+  "selected_failures": [],
+  "selected_manifest_sha256": "sha256:a0acea60adad12714fe1d9382089430b5bf95b4549ba02ba98c690be3b9db932",
+  "train_case_failures": [],
+  "validation_case_failures": [],
+  "validation_lineages": [
+    "HET_S1_01",
+    "HET_S2_02",
+    "HET_S3_03",
+    "HET_S4_03"
+  ]
+}

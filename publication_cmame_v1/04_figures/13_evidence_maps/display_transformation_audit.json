@@ -1,0 +1,25 @@
+{
+  "new_scientific_computation": false,
+  "permitted_operations": [
+    "direct plotting of frozen values",
+    "log-axis display",
+    "deterministic binning",
+    "deterministic sorting and row placement",
+    "flattening stored arrays in stored order",
+    "declared algebraic display identities",
+    "conceptual vector schematics traced to frozen contracts"
+  ],
+  "prohibited_operations": [
+    "new model or solver execution",
+    "new optimizer or training execution",
+    "candidate regeneration or reselection",
+    "new threshold, fit, inferential statistic, or scientific aggregate",
+    "protected performance access"
+  ],
+  "evidence_class_counts": {
+    "CONFIRMATORY": 44,
+    "DIAGNOSTIC_ONLY": 171,
+    "NEGATIVE_CONFIRMATORY": 92,
+    "SUPPORTED": 28
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "campaign_id": "stage02f_r2s_spatial_audit_20260804",
+  "determinism": {
+    "canonical_records_bitwise_equal": true,
+    "maximum_repeat_difference_by_candidate": {
+      "f_anchor_n8_h26": 0.0,
+      "f_res_n10_h26": 0.0,
+      "f_res_n6_h26": 0.0,
+      "f_sup_n8_h22": 0.0,
+      "f_sup_n8_h30": 0.0
+    },
+    "repeats": 2
+  },
+  "execution_scope": "same-state semidiscrete spatial evaluation and target attribution audit",
+  "failure_records_retained": true,
+  "historical_boundaries": {
+    "stage01": "V2_QUALIFICATION_FAIL",
+    "stage01h": "FINITE_RESOLUTION_DOMINANT",
+    "stage02e_candidate_discretization_target_count": 0,
+    "viscosity_operator_form": "NOT CONFIRMED"
+  },
+  "input_files": {
+    "stage_02_Particle_Interaction_Operator/03_dataset/generation/generate_audit_dataset.py": "sha256:03b674f0aab07a1d9f8c4506b9378c32d763bac6797c062892adc127b8e112f9",
+    "stage_02_Particle_Interaction_Operator/03_dataset/generation/generation_configuration.yaml": "sha256:7ac0a412f9bd7f5dd28cb1affa27d44e00a05b3d4deeac7f1e8a4dcc268993cf",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/semidiscrete_reference/r2s_reference_design.yaml": "sha256:5cab873d3ea9a05135660e3428f8bc6ac59a7508984155599e12c24513d7f8bf",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/spatial_target/spatial_target_matrix.yaml": "sha256:023c783ad1006effb9ec79180692704752dafccc5e40ff46d33f76cbc134ad97"
+  },
+  "no_dataset_generated": true,
+  "no_model_implementation": true,
+  "no_normalization": true,
+  "no_performance_evaluation": true,
+  "no_split_assignment": true,
+  "no_training": true,
+  "no_trajectory_generated": true,
+  "output_files": {
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/qualification/spatial_attribution_results.json": "sha256:8176df225b101c4d6dc4f34093deadfacd86213bca26fdf77bdef2a9455e977d",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/resolution_path/resolution_path_audit.json": "sha256:4951ff03709babe72fbf707da93ea6cd44f9c16c366503be9182f18a9f2b2418",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/semidiscrete_reference/reference_qualification_audit.json": "sha256:f8a1108ee8da6cc6e916fd602b4d7901dd0916ee4928998297b67288188a950b",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/spatial_target/spatial_target_candidates.json": "sha256:39e72786f469e01166a2f019db92ebd390855e768363d797cc70246ba2dc9c4e",
+    "stage_02_Particle_Interaction_Operator/04_target_attribution/support_path/support_path_audit.json": "sha256:44376599b863e38f032d8d11a2eff3dc1210b4b3fe892497918521d81ab3e21a"
+  },
+  "provenance_complete": true
+}

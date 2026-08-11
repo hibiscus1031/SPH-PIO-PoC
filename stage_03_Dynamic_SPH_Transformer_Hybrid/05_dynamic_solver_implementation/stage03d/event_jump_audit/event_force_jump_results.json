@@ -1,0 +1,400 @@
+{
+  "rows": [
+    {
+      "arm": "D1",
+      "continuity_required": false,
+      "discrete_nonzero_jump_registered": true,
+      "event": "birth",
+      "gates": {
+        "bounded": true,
+        "conservation": true,
+        "deterministic": true,
+        "finite": true
+      },
+      "nodal_correction_jump_l2": 3.7611401220374905,
+      "pass": true,
+      "sides": {
+        "post": {
+          "alpha": [
+            0.013297638426468646
+          ],
+          "beta": [
+            -0.0025451395770694184
+          ],
+          "bounded": true,
+          "correction_force_residual": 0.0,
+          "edge_exists": true,
+          "finite": true,
+          "nodal_correction": [
+            [
+              -1.1893769384682127,
+              -2.378753876936426
+            ],
+            [
+              1.1893769384682127,
+              2.378753876936426
+            ]
+          ],
+          "pair_force_magnitude": [
+            5.319055370571017
+          ],
+          "s": 0.2509765625,
+          "theoretical_bound": [
+            20.000000000001357
+          ]
+        },
+        "pre": {
+          "alpha": [],
+          "beta": [],
+          "bounded": true,
+          "correction_force_residual": 0.0,
+          "edge_exists": false,
+          "finite": true,
+          "nodal_correction": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "pair_force_magnitude": [],
+          "s": 0.2490234375,
+          "theoretical_bound": []
+        }
+      }
+    },
+    {
+      "arm": "D1",
+      "continuity_required": false,
+      "discrete_nonzero_jump_registered": true,
+      "event": "death",
+      "gates": {
+        "bounded": true,
+        "conservation": true,
+        "deterministic": true,
+        "finite": true
+      },
+      "nodal_correction_jump_l2": 3.7577457047946625,
+      "pass": true,
+      "sides": {
+        "post": {
+          "alpha": [],
+          "beta": [],
+          "bounded": true,
+          "correction_force_residual": 0.0,
+          "edge_exists": false,
+          "finite": true,
+          "nodal_correction": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "pair_force_magnitude": [],
+          "s": 0.7509765625,
+          "theoretical_bound": []
+        },
+        "pre": {
+          "alpha": [
+            0.013285637349215363
+          ],
+          "beta": [
+            -0.002510169430987358
+          ],
+          "bounded": true,
+          "correction_force_residual": 0.0,
+          "edge_exists": true,
+          "finite": true,
+          "nodal_correction": [
+            [
+              -1.1883035294865838,
+              -2.376607058973169
+            ],
+            [
+              1.1883035294865838,
+              2.376607058973169
+            ]
+          ],
+          "pair_force_magnitude": [
+            5.314254939669857
+          ],
+          "s": 0.7490234375,
+          "theoretical_bound": [
+            20.000000000001357
+          ]
+        }
+      }
+    },
+    {
+      "arm": "D2",
+      "continuity_required": false,
+      "discrete_nonzero_jump_registered": true,
+      "event": "birth",
+      "gates": {
+        "bounded": true,
+        "conservation": true,
+        "deterministic": true,
+        "finite": true
+      },
+      "nodal_correction_jump_l2": 1.5153798892488286,
+      "pass": true,
+      "sides": {
+        "post": {
+          "alpha": [
+            -0.005357676978823842
+          ],
+          "beta": [
+            -0.007075578447568938
+          ],
+          "bounded": true,
+          "correction_force_residual": 0.0,
+          "edge_exists": true,
+          "finite": true,
+          "nodal_correction": [
+            [
+              0.4792051970440002,
+              0.9584103940880008
+            ],
+            [
+              -0.4792051970440002,
+              -0.9584103940880008
+            ]
+          ],
+          "pair_force_magnitude": [
+            2.143070791523132
+          ],
+          "s": 0.2509765625,
+          "theoretical_bound": [
+            20.000000000001357
+          ]
+        },
+        "pre": {
+          "alpha": [],
+          "beta": [],
+          "bounded": true,
+          "correction_force_residual": 0.0,
+          "edge_exists": false,
+          "finite": true,
+          "nodal_correction": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "pair_force_magnitude": [],
+          "s": 0.2490234375,
+          "theoretical_bound": []
+        }
+      }
+    },
+    {
+      "arm": "D2",
+      "continuity_required": false,
+      "discrete_nonzero_jump_registered": true,
+      "event": "death",
+      "gates": {
+        "bounded": true,
+        "conservation": true,
+        "deterministic": true,
+        "finite": true
+      },
+      "nodal_correction_jump_l2": 1.511275880419898,
+      "pass": true,
+      "sides": {
+        "post": {
+          "alpha": [],
+          "beta": [],
+          "bounded": true,
+          "correction_force_residual": 0.0,
+          "edge_exists": false,
+          "finite": true,
+          "nodal_correction": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "pair_force_magnitude": [],
+          "s": 0.7509765625,
+          "theoretical_bound": []
+        },
+        "pre": {
+          "alpha": [
+            -0.005343167116459822
+          ],
+          "beta": [
+            -0.007055373246804476
+          ],
+          "bounded": true,
+          "correction_force_residual": 0.0,
+          "edge_exists": true,
+          "finite": true,
+          "nodal_correction": [
+            [
+              0.4779073955003141,
+              0.9558147910006285
+            ],
+            [
+              -0.4779073955003141,
+              -0.9558147910006285
+            ]
+          ],
+          "pair_force_magnitude": [
+            2.1372668465771594
+          ],
+          "s": 0.7490234375,
+          "theoretical_bound": [
+            20.000000000001357
+          ]
+        }
+      }
+    },
+    {
+      "arm": "D3",
+      "continuity_required": false,
+      "discrete_nonzero_jump_registered": true,
+      "event": "birth",
+      "gates": {
+        "bounded": true,
+        "conservation": true,
+        "deterministic": true,
+        "finite": true
+      },
+      "nodal_correction_jump_l2": 5.005348283414587,
+      "pass": true,
+      "sides": {
+        "post": {
+          "alpha": [
+            0.017696578567069788
+          ],
+          "beta": [
+            -0.012163127409883385
+          ],
+          "bounded": true,
+          "correction_force_residual": 0.0,
+          "edge_exists": true,
+          "finite": true,
+          "nodal_correction": [
+            [
+              -1.5828301058004086,
+              -3.165660211600819
+            ],
+            [
+              1.5828301058004086,
+              3.165660211600819
+            ]
+          ],
+          "pair_force_magnitude": [
+            7.078631426805799
+          ],
+          "s": 0.2509765625,
+          "theoretical_bound": [
+            20.000000000001357
+          ]
+        },
+        "pre": {
+          "alpha": [],
+          "beta": [],
+          "bounded": true,
+          "correction_force_residual": 0.0,
+          "edge_exists": false,
+          "finite": true,
+          "nodal_correction": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "pair_force_magnitude": [],
+          "s": 0.2490234375,
+          "theoretical_bound": []
+        }
+      }
+    },
+    {
+      "arm": "D3",
+      "continuity_required": false,
+      "discrete_nonzero_jump_registered": true,
+      "event": "death",
+      "gates": {
+        "bounded": true,
+        "conservation": true,
+        "deterministic": true,
+        "finite": true
+      },
+      "nodal_correction_jump_l2": 5.010681048150813,
+      "pass": true,
+      "sides": {
+        "post": {
+          "alpha": [],
+          "beta": [],
+          "bounded": true,
+          "correction_force_residual": 0.0,
+          "edge_exists": false,
+          "finite": true,
+          "nodal_correction": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "pair_force_magnitude": [],
+          "s": 0.7509765625,
+          "theoretical_bound": []
+        },
+        "pre": {
+          "alpha": [
+            0.017715432737605487
+          ],
+          "beta": [
+            -0.012180328637840488
+          ],
+          "bounded": true,
+          "correction_force_residual": 0.0,
+          "edge_exists": true,
+          "finite": true,
+          "nodal_correction": [
+            [
+              -1.5845164740796387,
+              -3.169032948159279
+            ],
+            [
+              1.5845164740796387,
+              3.169032948159279
+            ]
+          ],
+          "pair_force_magnitude": [
+            7.0861730950207145
+          ],
+          "s": 0.7490234375,
+          "theoretical_bound": [
+            20.000000000001357
+          ]
+        }
+      }
+    }
+  ]
+}

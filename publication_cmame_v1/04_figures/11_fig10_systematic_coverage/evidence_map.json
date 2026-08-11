@@ -1,0 +1,86 @@
+[
+  {
+    "figure": "Figure 10",
+    "panel": "a,b",
+    "scientific_claim": "The systematic bank contains 16 templates and 128+64 frozen candidates; all 192 passed candidate-level physics checks.",
+    "source_file": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/qualification/candidate_level_qualification.json",
+    "source_hash": "sha256:25e49bd1d191ffaba0df7bf5de4d46445c0ee47b9788fa95c649506cef86f793",
+    "source_field": "rows[].template/bank/qualification; passed/required",
+    "confirmatory_or_diagnostic": "CONFIRMATORY",
+    "transformation": "Unique template registry and direct frozen bank counts; candidate generation not rerun.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/11_fig10_systematic_coverage/fig10_systematic_coverage.svg;publication_cmame_v1/04_figures/11_fig10_systematic_coverage/fig10_systematic_coverage.pdf;publication_cmame_v1/04_figures/11_fig10_systematic_coverage/fig10_systematic_coverage.png"
+  },
+  {
+    "figure": "Figure 10",
+    "panel": "c",
+    "scientific_claim": "Eight systematic TRAIN candidates were selected by the frozen lexicographic trace.",
+    "source_file": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/coverage_optimizer/lexicographic_selection_trace.json",
+    "source_hash": "sha256:4422d7ef2d85d0b83b64a4c35a3d65530cac63303269df75035373cd74fea3c5",
+    "source_field": "result/trace",
+    "confirmatory_or_diagnostic": "CONFIRMATORY",
+    "transformation": "Selected IDs rendered in frozen slot order; no reselection.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/11_fig10_systematic_coverage/fig10_systematic_coverage.svg;publication_cmame_v1/04_figures/11_fig10_systematic_coverage/fig10_systematic_coverage.pdf;publication_cmame_v1/04_figures/11_fig10_systematic_coverage/fig10_systematic_coverage.png"
+  },
+  {
+    "figure": "Figure 10",
+    "panel": "d",
+    "scientific_claim": "Stage07 HET_S2_02 descriptor distance is the frozen pre-design reference.",
+    "source_file": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07dr/descriptor_geometry/descriptor_support_geometry.json",
+    "source_hash": "sha256:c026520cbc2a1ff66860420bd2dfb8b2b34670c0f4079cd96337bf4f05109c2f",
+    "source_field": "nearest_neighbor_distance/classification",
+    "confirmatory_or_diagnostic": "DIAGNOSTIC_ONLY",
+    "transformation": "Direct frozen scalar; no embedding or recomputation.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/11_fig10_systematic_coverage/fig10_systematic_coverage.svg;publication_cmame_v1/04_figures/11_fig10_systematic_coverage/fig10_systematic_coverage.pdf;publication_cmame_v1/04_figures/11_fig10_systematic_coverage/fig10_systematic_coverage.png"
+  },
+  {
+    "figure": "Figure 10",
+    "panel": "d--f",
+    "scientific_claim": "Descriptor proximity improved, but HET_S2_02 target support failed.",
+    "source_file": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/train_selection/train_v3_coverage_qualification.json",
+    "source_hash": "sha256:a9ce0ada00a414911a739d1d87e5fe2df2bada1eeae42c132d6746ba6693bc1f",
+    "source_field": "HET_S2_02.Stage08_descriptor_distance/Stage08_target_PCA_residual/Stage08_target_threshold/gates",
+    "confirmatory_or_diagnostic": "NEGATIVE_CONFIRMATORY",
+    "transformation": "Direct frozen scalars; paired status cards prevent descriptor-pass/target-fail conflation.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/11_fig10_systematic_coverage/fig10_systematic_coverage.svg;publication_cmame_v1/04_figures/11_fig10_systematic_coverage/fig10_systematic_coverage.pdf;publication_cmame_v1/04_figures/11_fig10_systematic_coverage/fig10_systematic_coverage.png"
+  },
+  {
+    "figure": "Figure 10",
+    "panel": "g,h",
+    "scientific_claim": "Formal fresh-validation closure remained 0/4.",
+    "source_file": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/validation_selection/fresh_validation_v3_selection.json",
+    "source_hash": "sha256:45e53a30a8880c7726800a66efcc7978eebd66bd7018dc1ba6cd21323314c87d",
+    "source_field": "audit[].macro_group/candidate_count/eligible_count/provisional_eligible_group_winners/selected/formal_role_closure",
+    "confirmatory_or_diagnostic": "NEGATIVE_CONFIRMATORY",
+    "transformation": "Direct counts for all four macro groups; provisional and formal states separated.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/11_fig10_systematic_coverage/fig10_systematic_coverage.svg;publication_cmame_v1/04_figures/11_fig10_systematic_coverage/fig10_systematic_coverage.pdf;publication_cmame_v1/04_figures/11_fig10_systematic_coverage/fig10_systematic_coverage.png"
+  },
+  {
+    "figure": "Figure 10",
+    "panel": "i,j",
+    "scientific_claim": "The coverage cycle used zero model-prediction reads and did not authorize training.",
+    "source_file": "stage_08_Systematic_Coverage_V3/01_systematic_coverage_design/qualification/stage08a_qualification_summary.json",
+    "source_hash": "sha256:ee8d6e2a8e061435a7ed2d02e9af638d72e71a946e7d34003900d70b54a20120",
+    "source_field": "counts/model predictions/model forwards/training runs/final_status/gates",
+    "confirmatory_or_diagnostic": "NEGATIVE_CONFIRMATORY",
+    "transformation": "Direct frozen counters and final qualification cards.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/11_fig10_systematic_coverage/fig10_systematic_coverage.svg;publication_cmame_v1/04_figures/11_fig10_systematic_coverage/fig10_systematic_coverage.pdf;publication_cmame_v1/04_figures/11_fig10_systematic_coverage/fig10_systematic_coverage.png"
+  },
+  {
+    "figure": "Figure 10",
+    "panel": "j",
+    "scientific_claim": "Qualified lower layers and prohibited full-solver claims remain separated.",
+    "source_file": "stage_08Z_Project_Closure_Publication/03_claim_matrix/final_claim_support_matrix.json",
+    "source_hash": "sha256:20f3cffba7b50062ae9f6b66b4ba4d020319de3ab747d4ef4eb0b88afe8d8fc9",
+    "source_field": "allowed_claims/prohibited_claims",
+    "confirmatory_or_diagnostic": "NEGATIVE_CONFIRMATORY",
+    "transformation": "Final ladder organized by claim layer.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_main_figures.py",
+    "output_file": "publication_cmame_v1/04_figures/11_fig10_systematic_coverage/fig10_systematic_coverage.svg;publication_cmame_v1/04_figures/11_fig10_systematic_coverage/fig10_systematic_coverage.pdf;publication_cmame_v1/04_figures/11_fig10_systematic_coverage/fig10_systematic_coverage.png"
+  }
+]

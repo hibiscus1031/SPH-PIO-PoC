@@ -1,0 +1,15 @@
+{
+  "conservation_penalty": false,
+  "contract_version": "stage02l-loss-static-1.0.0",
+  "dataset_target_arrays_read": 0,
+  "exact_target_prediction_loss": 0.0,
+  "graph_balanced_reference_absolute_error": 0.0,
+  "graph_reorder_absolute_error": 0.0,
+  "regularity_loss": false,
+  "status": "PASS",
+  "supervision_source": "deterministic_synthetic_preflight_only",
+  "total_loss_terms": [
+    "L_node"
+  ],
+  "zero_prediction_loss_identity_absolute_error": 0.0
+}

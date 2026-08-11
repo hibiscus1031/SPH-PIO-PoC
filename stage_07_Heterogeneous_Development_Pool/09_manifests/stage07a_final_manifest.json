@@ -1,0 +1,196 @@
+{
+  "all_required_gates_pass": true,
+  "completion_date": "2026-08-07",
+  "counts": {
+    "analytic_pass": 24,
+    "analytic_required": 24,
+    "checkpoint_selections": 0,
+    "dop853_pass": 24,
+    "dop853_required": 24,
+    "fixed_topology_lineages": 12,
+    "fresh_validation_lineages": 4,
+    "higher_lr_experiments": 0,
+    "lineage_components": 22,
+    "model_forwards": 0,
+    "model_instances": 0,
+    "model_rankings": 0,
+    "neural_rollouts": 0,
+    "new_lineages": 12,
+    "new_train_lineages": 8,
+    "optimizer_instances": 0,
+    "optimizer_steps": 0,
+    "parameter_updates": 0,
+    "topology_case_pass": 72,
+    "topology_case_required": 72,
+    "training_runs": 0,
+    "trajectory_complete": 72,
+    "trajectory_required": 72
+  },
+  "descriptor_audit": {
+    "bytes": 19332,
+    "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/results/heterogeneity_descriptor_audit.json",
+    "sha256": "sha256:0c80157d40cfc1a729df6f2980c590b2e6c7a25f83c9d0ccb0b46fe99a2cc979"
+  },
+  "final_status": "HETEROGENEITY_AUGMENTED_DEVELOPMENT_POOL_AND_FRESH_VALIDATION_QUALIFIED",
+  "gates": {
+    "A_historical_freeze": true,
+    "B_formula_identities_preregistered": true,
+    "C_role_assignment_before_results": true,
+    "D_analytic_24_of_24": true,
+    "E_trajectories_72_of_72": true,
+    "F_fixed_topology_12_of_12": true,
+    "G_DOP853_24_of_24": true,
+    "H_lineage_leakage_zero": true,
+    "I_role_counts_exact": true,
+    "J_fresh_validation_payload_sealed": true,
+    "K_original_sealed_test_untouched": true,
+    "L_no_model_optimizer_training": true,
+    "M_resources_provenance": true
+  },
+  "historical_integrity": {
+    "checked": 3922,
+    "hash_mismatch": [],
+    "missing": [],
+    "pass": true,
+    "sealed_mode_mismatch": []
+  },
+  "manifests": [
+    {
+      "bytes": 1148639,
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07a_input_freeze_manifest.json",
+      "sha256": "sha256:b8163a6fb48f2df49edaa2b1abd8ea7dd939a29830bc042770752157091b2505"
+    },
+    {
+      "bytes": 1570,
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07a_contract_manifest.json",
+      "sha256": "sha256:fd0ee7b8dc996f20087260a1a62cfd4022d32f2f8259efaea66905c3127c4abf"
+    },
+    {
+      "bytes": 3647,
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07a_role_manifest.json",
+      "sha256": "sha256:2cab2e1ef75d0e59d3e185d3d33c8df5244d40bf5e05be76d6af97b851e4b71d"
+    },
+    {
+      "bytes": 7744,
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07a_formula_manifest.json",
+      "sha256": "sha256:9e14a71ef4f5fdb55fc3819c2a661f46ba5a7f1a44beaf4eaa5b8095061b7025"
+    },
+    {
+      "bytes": 50003,
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07a_trajectory_manifest.json",
+      "sha256": "sha256:b8650cccebc1de137504a9f14b8ec56eeda0abeaab72c22372b3eef221861735"
+    },
+    {
+      "bytes": 310,
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07a_lineage_manifest.json",
+      "sha256": "sha256:5860e93fbfb4b320d48810e379e0c2920d05df2b4153794cbf1326480d64bec0"
+    },
+    {
+      "bytes": 25778,
+      "path": "stage_07_Heterogeneous_Development_Pool/09_manifests/stage07a_validation_seal_manifest.json",
+      "sha256": "sha256:6cb86ec112cb4a3c406306058570bd564002336d781057488057fdb396031786"
+    }
+  ],
+  "next_stage": {
+    "authorization": "LIMITED",
+    "stage": "Stage07B — TRAIN_V2 Defect/Scale Requalification and Actual-Optimizer Update Requalification",
+    "training_authorized": false
+  },
+  "prohibitions": {
+    "checkpoint_selections": 0,
+    "higher_lr_experiments": 0,
+    "model_forwards": 0,
+    "model_instances": 0,
+    "model_rankings": 0,
+    "neural_rollouts": 0,
+    "optimizer_instances": 0,
+    "optimizer_steps": 0,
+    "parameter_updates": 0,
+    "training_runs": 0
+  },
+  "qualification": {
+    "bytes": 1794,
+    "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/qualification/stage07a_qualification_summary.json",
+    "sha256": "sha256:f91a7211f7f294e5aa00d17db4eec9751e1149596f8ae4b69ee6c85920a800a4"
+  },
+  "reports": [
+    {
+      "bytes": 347,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07a_freeze_and_scope.md",
+      "sha256": "sha256:a8356d359e5249300752a1ee55b4d1032a98dd410b53fca02a1df7773422931c"
+    },
+    {
+      "bytes": 304,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07a_heterogeneity_contract.md",
+      "sha256": "sha256:2db0524d46e239fb82fd364c1aeae9a9fc91c4cb4922656816368af5c5a0fefd"
+    },
+    {
+      "bytes": 306,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07a_lineage_generator.md",
+      "sha256": "sha256:d7f3289128d9d5d15eb5965e286db13bc73766ca227712cd9db17c46a2a45b3a"
+    },
+    {
+      "bytes": 238,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07a_role_assignment.md",
+      "sha256": "sha256:f3a43f8c8175fc48b58e5f42d1755e1ca61268996a7f994471a6cbbdeaaf2c02"
+    },
+    {
+      "bytes": 225,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07a_analytic_qualification.md",
+      "sha256": "sha256:610ef42ac8b21442ca99341f558ed631834038466a45de0990a85dc5a689c7c6"
+    },
+    {
+      "bytes": 157,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07a_trajectory_inventory.md",
+      "sha256": "sha256:7c80f1acd5e02481da7d9cb6f794987413a38530b8241775cf5932b0faa0b848"
+    },
+    {
+      "bytes": 228,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07a_topology_qualification.md",
+      "sha256": "sha256:76c3ccde0cab542dbde8ddb3761875ada47f733080fe4bb113c69fad0f6cfff2"
+    },
+    {
+      "bytes": 233,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07a_semidiscrete_audit.md",
+      "sha256": "sha256:54edef24b3a3b8d539e0bc366aaf9000904e816949ed269c664af718f38f3dc3"
+    },
+    {
+      "bytes": 230,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07a_lineage_graph.md",
+      "sha256": "sha256:07a277725bfdc2de4c9ba04eea88d24ae2a697edb6ee193c56a7f18c5bab72d6"
+    },
+    {
+      "bytes": 311,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07a_fresh_validation_seal.md",
+      "sha256": "sha256:4ea1189db8c992dad70d8cf3dd6ed87a634b19972489e591efabdd0cca7e2898"
+    },
+    {
+      "bytes": 240,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07a_resource_audit.md",
+      "sha256": "sha256:e6b03e10c640f03e487b8f43f3cc5163eb2a0e088ce57f7d42f0b892851a3710"
+    },
+    {
+      "bytes": 567,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07a_qualification_report.md",
+      "sha256": "sha256:7c3ef191d8ed2750323ad4c73fb49f41a7755b5f38eb97ca2442d8d8b4ad6635"
+    },
+    {
+      "bytes": 1364,
+      "path": "stage_07_Heterogeneous_Development_Pool/08_reports/stage07a_final_report.md",
+      "sha256": "sha256:0418c771b6619e85f431b930adf778d4d824153433a2e5d2eb325f50e6ed5961"
+    }
+  ],
+  "resource_audit": {
+    "bytes": 4224,
+    "path": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/resources/stage07a_resource_audit.json",
+    "sha256": "sha256:a7c70cad4a06d991e110bb3757713410f67f58e7fe6f510a419ed3970ee467bb"
+  },
+  "schema_version": "sph-pio-poc.stage07a.final.v1",
+  "sealed_test_decode_counts": {
+    "formula": 0,
+    "origin": 0,
+    "source": 0,
+    "state": 0,
+    "target": 0
+  }
+}

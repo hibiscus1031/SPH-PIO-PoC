@@ -1,0 +1,193 @@
+{
+  "all_hashes_complete": true,
+  "dense_neural_N_by_N_allocation": false,
+  "device": "cpu",
+  "dop853_graph_rebuild_count": 37728,
+  "dtype": "float64",
+  "elapsed_seconds_before_packaging": 446.86272774997633,
+  "fresh_validation_sealed_file_count": 89,
+  "gates": {
+    "all_hashes_complete": true,
+    "finite_completion": true,
+    "no_dense_neural_N_by_N": true,
+    "no_monotonic_retention": true,
+    "peak_rss_delta": true
+  },
+  "monotonic_retention_detected": false,
+  "numpy": "1.26.4",
+  "peak_rss_bytes": 471777280,
+  "peak_rss_delta_bytes": 198164480,
+  "phase_wall_times": {
+    "analytic_seconds": 3.151483083027415,
+    "descriptor_seconds": 1.4687179169850424,
+    "dop853_seconds": 408.9827548749745,
+    "trajectory_topology_seconds": 32.05718829203397
+  },
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "python": "3.13.9",
+  "rss_samples": [
+    {
+      "phase": "start",
+      "rss_bytes": 273612800
+    },
+    {
+      "phase": "parameters",
+      "rss_bytes": 278167552
+    },
+    {
+      "phase": "analytic_HET_S1_01",
+      "rss_bytes": 311296000
+    },
+    {
+      "phase": "analytic_HET_S1_02",
+      "rss_bytes": 313950208
+    },
+    {
+      "phase": "analytic_HET_S1_03",
+      "rss_bytes": 315310080
+    },
+    {
+      "phase": "analytic_HET_S2_01",
+      "rss_bytes": 319717376
+    },
+    {
+      "phase": "analytic_HET_S2_02",
+      "rss_bytes": 321519616
+    },
+    {
+      "phase": "analytic_HET_S2_03",
+      "rss_bytes": 323338240
+    },
+    {
+      "phase": "analytic_HET_S3_01",
+      "rss_bytes": 324354048
+    },
+    {
+      "phase": "analytic_HET_S3_02",
+      "rss_bytes": 330432512
+    },
+    {
+      "phase": "analytic_HET_S3_03",
+      "rss_bytes": 331055104
+    },
+    {
+      "phase": "analytic_HET_S4_01",
+      "rss_bytes": 335347712
+    },
+    {
+      "phase": "analytic_HET_S4_02",
+      "rss_bytes": 337215488
+    },
+    {
+      "phase": "analytic_HET_S4_03",
+      "rss_bytes": 338968576
+    },
+    {
+      "phase": "trajectory_topology_HET_S1_01",
+      "rss_bytes": 433815552
+    },
+    {
+      "phase": "trajectory_topology_HET_S1_02",
+      "rss_bytes": 457703424
+    },
+    {
+      "phase": "trajectory_topology_HET_S1_03",
+      "rss_bytes": 457719808
+    },
+    {
+      "phase": "trajectory_topology_HET_S2_01",
+      "rss_bytes": 461455360
+    },
+    {
+      "phase": "trajectory_topology_HET_S2_02",
+      "rss_bytes": 461668352
+    },
+    {
+      "phase": "trajectory_topology_HET_S2_03",
+      "rss_bytes": 465371136
+    },
+    {
+      "phase": "trajectory_topology_HET_S3_01",
+      "rss_bytes": 465387520
+    },
+    {
+      "phase": "trajectory_topology_HET_S3_02",
+      "rss_bytes": 465649664
+    },
+    {
+      "phase": "trajectory_topology_HET_S3_03",
+      "rss_bytes": 465649664
+    },
+    {
+      "phase": "trajectory_topology_HET_S4_01",
+      "rss_bytes": 465649664
+    },
+    {
+      "phase": "trajectory_topology_HET_S4_02",
+      "rss_bytes": 465698816
+    },
+    {
+      "phase": "trajectory_topology_HET_S4_03",
+      "rss_bytes": 465698816
+    },
+    {
+      "phase": "dop853_HET_S1_01",
+      "rss_bytes": 468533248
+    },
+    {
+      "phase": "dop853_HET_S1_02",
+      "rss_bytes": 468549632
+    },
+    {
+      "phase": "dop853_HET_S1_03",
+      "rss_bytes": 468598784
+    },
+    {
+      "phase": "dop853_HET_S2_01",
+      "rss_bytes": 468729856
+    },
+    {
+      "phase": "dop853_HET_S2_02",
+      "rss_bytes": 468729856
+    },
+    {
+      "phase": "dop853_HET_S2_03",
+      "rss_bytes": 469024768
+    },
+    {
+      "phase": "dop853_HET_S3_01",
+      "rss_bytes": 469106688
+    },
+    {
+      "phase": "dop853_HET_S3_02",
+      "rss_bytes": 469385216
+    },
+    {
+      "phase": "dop853_HET_S3_03",
+      "rss_bytes": 470859776
+    },
+    {
+      "phase": "dop853_HET_S4_01",
+      "rss_bytes": 470859776
+    },
+    {
+      "phase": "dop853_HET_S4_02",
+      "rss_bytes": 470859776
+    },
+    {
+      "phase": "dop853_HET_S4_03",
+      "rss_bytes": 470876160
+    },
+    {
+      "phase": "final",
+      "rss_bytes": 332136448
+    }
+  ],
+  "scipy": "1.17.1",
+  "start_rss_bytes": 273612800,
+  "sympy": "1.14.0",
+  "topology_scan_count": 221400,
+  "torch": "2.10.0",
+  "trajectory_storage_bytes": 39591449,
+  "verdict": "PASS"
+}

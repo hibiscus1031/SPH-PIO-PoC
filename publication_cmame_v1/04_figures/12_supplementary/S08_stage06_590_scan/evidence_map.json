@@ -1,0 +1,26 @@
+[
+  {
+    "figure": "S08",
+    "panel": "a-f",
+    "scientific_claim": "Every frozen Stage06 checkpoint metric remains visible in the complete scan.",
+    "source_file": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/checkpoint_trajectory/all_590_checkpoint_metrics.jsonl",
+    "source_hash": "sha256:20659f95663dd9662d2053207bddd84b87b82dc5e1fd1eeb839bb880052a60f0",
+    "source_field": "all JSONL rows and metric fields",
+    "confirmatory_or_diagnostic": "DIAGNOSTIC_ONLY",
+    "transformation": "Exact source-order/run trajectories and gate raster.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS08_stage06_590_scan.svg; figS08_stage06_590_scan.pdf; figS08_stage06_590_scan.png"
+  },
+  {
+    "figure": "S08",
+    "panel": "g-h",
+    "scientific_claim": "The frozen Stage06 scan inventory and joint verdict are reproduced without checkpoint reselection.",
+    "source_file": "stage_06_Optimizer_Update_Dynamics_Training/03_formal_training/stage06cr/checkpoint_trajectory/all_590_train_gate_scan.json",
+    "source_hash": "sha256:542977edf16ef988b9d2a6408753ee1bbe9c29c1046a78c8408f496147caff9b",
+    "source_field": "checkpoint_count, per_run, global gate verdicts",
+    "confirmatory_or_diagnostic": "SUPPORTED",
+    "transformation": "Exact bars and status-card transcription.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS08_stage06_590_scan.svg; figS08_stage06_590_scan.pdf; figS08_stage06_590_scan.png"
+  }
+]

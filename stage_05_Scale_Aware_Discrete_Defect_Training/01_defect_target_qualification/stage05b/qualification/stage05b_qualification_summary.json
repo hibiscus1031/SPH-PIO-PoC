@@ -1,0 +1,52 @@
+{
+  "Stage05C_authorized": true,
+  "decode_counts": {
+    "diagnostic_train_json_decode_count": 12,
+    "diagnostic_train_npz_decode_count": 12,
+    "formal_train_json_decode_count": 12,
+    "formal_train_npz_decode_count": 12,
+    "preformal_train_json_decode_count": 28,
+    "preformal_train_npz_decode_count": 28,
+    "sealed_formula_decode_count": 0,
+    "sealed_origin_decode_count": 0,
+    "sealed_source_decode_count": 0,
+    "sealed_state_decode_count": 0,
+    "sealed_target_decode_count": 0,
+    "validation_state_decode_count": 0,
+    "validation_target_decode_count": 0
+  },
+  "execution_counts": {
+    "checkpoint_selections": 0,
+    "model_instances": 0,
+    "neural_forwards": 0,
+    "neural_rollouts": 0,
+    "optimizer_instances": 0,
+    "optimizer_steps": 0,
+    "parameter_gradients": 0,
+    "parameter_updates": 0,
+    "performance_evaluations": 0,
+    "training_runs": 0
+  },
+  "formal_origin_count": 384,
+  "gates": {
+    "D0_transition": true,
+    "access_end": true,
+    "access_start": true,
+    "conservative_compatibility": true,
+    "defect_construction": true,
+    "historical_freeze": true,
+    "pair_basis_representability": true,
+    "prohibitions": true,
+    "provenance_resources": true,
+    "scale": true,
+    "signal_distinguishability": true,
+    "symmetry_invariance": true,
+    "uncertainty": true
+  },
+  "s_a": 0.3456328553384328,
+  "s_a_over_u_a": 475034179.2325337,
+  "schema": "sph-pio-poc.stage05b.qualification-summary.v1",
+  "status": "CONSERVATIVE_DISCRETE_DEFECT_TARGET_AND_SCALE_QUALIFIED",
+  "target_record_count": 384,
+  "u_a": 7.275957614183426e-10
+}

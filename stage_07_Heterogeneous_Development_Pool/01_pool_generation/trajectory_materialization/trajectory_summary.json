@@ -1,0 +1,1230 @@
+{
+  "complete": 72,
+  "required": 72,
+  "rows": [
+    {
+      "formula_sha256": "sha256:a976a277a30a126ef4f14cf8d0c1d3750211eb51240ded1ae9514b84c7c013a4",
+      "opaque_lineage_id": "HET_S1_01",
+      "parameter_sha256": "sha256:00b9dd68e6f2e76d361f1e08dfe11c0dfff6a512cc1a8f6cf6ff8de972d63016",
+      "payload_location": "FRESH_VALIDATION_SEAL",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "FRESH_VALIDATION_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 64
+      },
+      "stratum": "H1",
+      "trajectory_sha256": "sha256:6ddcf01eeb40c34e7c5d6fd7ecf4745e06e2385b9ebfbe3dd6ce3822ebfc00e9",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:a976a277a30a126ef4f14cf8d0c1d3750211eb51240ded1ae9514b84c7c013a4",
+      "opaque_lineage_id": "HET_S1_01",
+      "parameter_sha256": "sha256:00b9dd68e6f2e76d361f1e08dfe11c0dfff6a512cc1a8f6cf6ff8de972d63016",
+      "payload_location": "FRESH_VALIDATION_SEAL",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "FRESH_VALIDATION_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 144
+      },
+      "stratum": "H1",
+      "trajectory_sha256": "sha256:4ee0e8bae33739d0a5b14ed112b26d756da9a3d221cbb2d4c7f36646aa8e029c",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:a976a277a30a126ef4f14cf8d0c1d3750211eb51240ded1ae9514b84c7c013a4",
+      "opaque_lineage_id": "HET_S1_01",
+      "parameter_sha256": "sha256:00b9dd68e6f2e76d361f1e08dfe11c0dfff6a512cc1a8f6cf6ff8de972d63016",
+      "payload_location": "FRESH_VALIDATION_SEAL",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "FRESH_VALIDATION_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 256
+      },
+      "stratum": "H1",
+      "trajectory_sha256": "sha256:a1e351770c85221a368d2a0ef35ac846078606d081ea5060bdd4a11b854d8590",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:a976a277a30a126ef4f14cf8d0c1d3750211eb51240ded1ae9514b84c7c013a4",
+      "opaque_lineage_id": "HET_S1_01",
+      "parameter_sha256": "sha256:d14223eb9b02cad2cdb1689745622c1433b80be2933cf9391a665dd590d95fde",
+      "payload_location": "FRESH_VALIDATION_SEAL",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "FRESH_VALIDATION_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 64
+      },
+      "stratum": "H1",
+      "trajectory_sha256": "sha256:020ece25a0eebedf37fe636af85ea9ac782552fe42d71d57932d90e7a0ecbe83",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:a976a277a30a126ef4f14cf8d0c1d3750211eb51240ded1ae9514b84c7c013a4",
+      "opaque_lineage_id": "HET_S1_01",
+      "parameter_sha256": "sha256:d14223eb9b02cad2cdb1689745622c1433b80be2933cf9391a665dd590d95fde",
+      "payload_location": "FRESH_VALIDATION_SEAL",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "FRESH_VALIDATION_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 144
+      },
+      "stratum": "H1",
+      "trajectory_sha256": "sha256:35ebfaf720228a1a1a6c14db0b3fa0b45f01536c96e53c56b70ee4c58f298046",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:a976a277a30a126ef4f14cf8d0c1d3750211eb51240ded1ae9514b84c7c013a4",
+      "opaque_lineage_id": "HET_S1_01",
+      "parameter_sha256": "sha256:d14223eb9b02cad2cdb1689745622c1433b80be2933cf9391a665dd590d95fde",
+      "payload_location": "FRESH_VALIDATION_SEAL",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "FRESH_VALIDATION_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 256
+      },
+      "stratum": "H1",
+      "trajectory_sha256": "sha256:828d565c407d7e51a6d07ee0450609dcf960448972878f8c1382c492326b40c3",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:3b0c7af2788104c72014b19eab8f3ffec433541aa0c7299d57062b79db4bd07b",
+      "opaque_lineage_id": "HET_S1_02",
+      "parameter_sha256": "sha256:69ac6326addebdf059183abddff925bb8f83f719edd1808037640d0ccc69cb62",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s1_02_low_n8.npz",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 64
+      },
+      "stratum": "H1",
+      "trajectory_sha256": "sha256:b1e6c128d226f551d14dbde2997bc4f75cea543f9eb6a65a37db4d12c12662bd",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:3b0c7af2788104c72014b19eab8f3ffec433541aa0c7299d57062b79db4bd07b",
+      "opaque_lineage_id": "HET_S1_02",
+      "parameter_sha256": "sha256:69ac6326addebdf059183abddff925bb8f83f719edd1808037640d0ccc69cb62",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s1_02_low_n12.npz",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 144
+      },
+      "stratum": "H1",
+      "trajectory_sha256": "sha256:8211cb4bf12dad5d6f4b3d00f79bd23c6959e669b65666ee802484a564a2194e",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:3b0c7af2788104c72014b19eab8f3ffec433541aa0c7299d57062b79db4bd07b",
+      "opaque_lineage_id": "HET_S1_02",
+      "parameter_sha256": "sha256:69ac6326addebdf059183abddff925bb8f83f719edd1808037640d0ccc69cb62",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s1_02_low_n16.npz",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 256
+      },
+      "stratum": "H1",
+      "trajectory_sha256": "sha256:79c2bbf313cce76a25e23d028a4efb337952250b5672cf25dd90332b0b54f92a",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:3b0c7af2788104c72014b19eab8f3ffec433541aa0c7299d57062b79db4bd07b",
+      "opaque_lineage_id": "HET_S1_02",
+      "parameter_sha256": "sha256:9d22db23675bb1b2360e75f15469a7c474c16f1f6974b54ae1e433d7aba4bcda",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s1_02_main_n8.npz",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 64
+      },
+      "stratum": "H1",
+      "trajectory_sha256": "sha256:cc669b9b32eebf816fb318ec6db8730cea650fa5c00c47482b8913bbc8be96be",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:3b0c7af2788104c72014b19eab8f3ffec433541aa0c7299d57062b79db4bd07b",
+      "opaque_lineage_id": "HET_S1_02",
+      "parameter_sha256": "sha256:9d22db23675bb1b2360e75f15469a7c474c16f1f6974b54ae1e433d7aba4bcda",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s1_02_main_n12.npz",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 144
+      },
+      "stratum": "H1",
+      "trajectory_sha256": "sha256:e8bc5dfb4fce354b79e25645caa11617e8882e68d8ee700bd699ced7011cc057",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:3b0c7af2788104c72014b19eab8f3ffec433541aa0c7299d57062b79db4bd07b",
+      "opaque_lineage_id": "HET_S1_02",
+      "parameter_sha256": "sha256:9d22db23675bb1b2360e75f15469a7c474c16f1f6974b54ae1e433d7aba4bcda",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s1_02_main_n16.npz",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 256
+      },
+      "stratum": "H1",
+      "trajectory_sha256": "sha256:e96aea7d3bf6a1757a76a48daedab68140965aeb4f3220513d74dede41157f91",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:a65c202769824a9fbc4f50af5ba7ce9946c6f1f0f860e3616551f65106674e39",
+      "opaque_lineage_id": "HET_S1_03",
+      "parameter_sha256": "sha256:9e41cc6ed9ecf49e556c92f9da2ce8efa1c510e93d7af75395859736c62ab6e6",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s1_03_low_n8.npz",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 64
+      },
+      "stratum": "H1",
+      "trajectory_sha256": "sha256:59afbdf1be392e167a45cbb2caf0d457f65c5ba9a7b4b36fd6f03df59ef50853",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:a65c202769824a9fbc4f50af5ba7ce9946c6f1f0f860e3616551f65106674e39",
+      "opaque_lineage_id": "HET_S1_03",
+      "parameter_sha256": "sha256:9e41cc6ed9ecf49e556c92f9da2ce8efa1c510e93d7af75395859736c62ab6e6",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s1_03_low_n12.npz",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 144
+      },
+      "stratum": "H1",
+      "trajectory_sha256": "sha256:f55a548ad155ea7b876aed26d0c20b0290e842f8b9820357d257f850aa2ccd21",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:a65c202769824a9fbc4f50af5ba7ce9946c6f1f0f860e3616551f65106674e39",
+      "opaque_lineage_id": "HET_S1_03",
+      "parameter_sha256": "sha256:9e41cc6ed9ecf49e556c92f9da2ce8efa1c510e93d7af75395859736c62ab6e6",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s1_03_low_n16.npz",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 256
+      },
+      "stratum": "H1",
+      "trajectory_sha256": "sha256:54373e6d73e55546b29b8e48a9e2dfd47dc92c4c1e45939384863c9c3fd21311",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:a65c202769824a9fbc4f50af5ba7ce9946c6f1f0f860e3616551f65106674e39",
+      "opaque_lineage_id": "HET_S1_03",
+      "parameter_sha256": "sha256:e9b58d9946134b42f71989acff3f5f6044812d0ce7637b4c81efaa22b3cf9062",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s1_03_main_n8.npz",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 64
+      },
+      "stratum": "H1",
+      "trajectory_sha256": "sha256:29befc82d8dd1dd7c18118b9086699b6f51fb04641705d76b55a3a1faf26c99f",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:a65c202769824a9fbc4f50af5ba7ce9946c6f1f0f860e3616551f65106674e39",
+      "opaque_lineage_id": "HET_S1_03",
+      "parameter_sha256": "sha256:e9b58d9946134b42f71989acff3f5f6044812d0ce7637b4c81efaa22b3cf9062",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s1_03_main_n12.npz",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 144
+      },
+      "stratum": "H1",
+      "trajectory_sha256": "sha256:5879cf012dbbf6e8ccd5234194bb35643dd08f0335d99cc477fc670f2c589aba",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:a65c202769824a9fbc4f50af5ba7ce9946c6f1f0f860e3616551f65106674e39",
+      "opaque_lineage_id": "HET_S1_03",
+      "parameter_sha256": "sha256:e9b58d9946134b42f71989acff3f5f6044812d0ce7637b4c81efaa22b3cf9062",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s1_03_main_n16.npz",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 256
+      },
+      "stratum": "H1",
+      "trajectory_sha256": "sha256:3c6fbeabaad2c7805ba46ae9505a120a6d4614f4064fb07493c7c8302d2cc227",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:dbc9da2ab0f91518ec2621320a32525d6329f7f98564566e38b07bf1d692047f",
+      "opaque_lineage_id": "HET_S2_01",
+      "parameter_sha256": "sha256:e77184d1d65889158391f09aa01d123a9b7efb5bb8f2a48f1dd21f6ee1c8d2e1",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s2_01_low_n8.npz",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 64
+      },
+      "stratum": "H2",
+      "trajectory_sha256": "sha256:b75e7ffa3e23f29e9d28b874a427b52e6cbae5135f9505474e5b5a3f871a297e",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:dbc9da2ab0f91518ec2621320a32525d6329f7f98564566e38b07bf1d692047f",
+      "opaque_lineage_id": "HET_S2_01",
+      "parameter_sha256": "sha256:e77184d1d65889158391f09aa01d123a9b7efb5bb8f2a48f1dd21f6ee1c8d2e1",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s2_01_low_n12.npz",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 144
+      },
+      "stratum": "H2",
+      "trajectory_sha256": "sha256:cfc094fe5d324d81cfdaf5a7ef800bee440e747ecf58cc0abe324e034b7cb4ab",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:dbc9da2ab0f91518ec2621320a32525d6329f7f98564566e38b07bf1d692047f",
+      "opaque_lineage_id": "HET_S2_01",
+      "parameter_sha256": "sha256:e77184d1d65889158391f09aa01d123a9b7efb5bb8f2a48f1dd21f6ee1c8d2e1",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s2_01_low_n16.npz",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 256
+      },
+      "stratum": "H2",
+      "trajectory_sha256": "sha256:796bcafc20b21514239af23eb99445f95381097b48bc0e11d2d5a63c7f9bf0af",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:dbc9da2ab0f91518ec2621320a32525d6329f7f98564566e38b07bf1d692047f",
+      "opaque_lineage_id": "HET_S2_01",
+      "parameter_sha256": "sha256:c652c5c7db4e66faa7247c6dfff590e6ae90901b7c7530acef83469bb4ee1429",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s2_01_main_n8.npz",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 64
+      },
+      "stratum": "H2",
+      "trajectory_sha256": "sha256:b76c822d7e79584666a1b164c3975de837949029603361ff0043e3d41d00104c",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:dbc9da2ab0f91518ec2621320a32525d6329f7f98564566e38b07bf1d692047f",
+      "opaque_lineage_id": "HET_S2_01",
+      "parameter_sha256": "sha256:c652c5c7db4e66faa7247c6dfff590e6ae90901b7c7530acef83469bb4ee1429",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s2_01_main_n12.npz",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 144
+      },
+      "stratum": "H2",
+      "trajectory_sha256": "sha256:ec12b6955296214a9a273b214c165ab757f12cb723105b5166d18d91352d9921",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:dbc9da2ab0f91518ec2621320a32525d6329f7f98564566e38b07bf1d692047f",
+      "opaque_lineage_id": "HET_S2_01",
+      "parameter_sha256": "sha256:c652c5c7db4e66faa7247c6dfff590e6ae90901b7c7530acef83469bb4ee1429",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s2_01_main_n16.npz",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 256
+      },
+      "stratum": "H2",
+      "trajectory_sha256": "sha256:6ea2d50d36f4dfef2f1456583c5f11ab67f5f78fb4afd6e58635de89bbcb2401",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:8097af5f32c857c4935450c41578d2e33777a2bca1e5dfe27d291b6c33ea6ab5",
+      "opaque_lineage_id": "HET_S2_02",
+      "parameter_sha256": "sha256:b53dbdba28b3770173e614e0d7cb0e3f5e9553cdc45927a74f39d178263eface",
+      "payload_location": "FRESH_VALIDATION_SEAL",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "FRESH_VALIDATION_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 64
+      },
+      "stratum": "H2",
+      "trajectory_sha256": "sha256:25c988567b4952ee7511ae0fa1f683037cb762835e10bdd03d0c5b3a42233178",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:8097af5f32c857c4935450c41578d2e33777a2bca1e5dfe27d291b6c33ea6ab5",
+      "opaque_lineage_id": "HET_S2_02",
+      "parameter_sha256": "sha256:b53dbdba28b3770173e614e0d7cb0e3f5e9553cdc45927a74f39d178263eface",
+      "payload_location": "FRESH_VALIDATION_SEAL",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "FRESH_VALIDATION_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 144
+      },
+      "stratum": "H2",
+      "trajectory_sha256": "sha256:74c73105a837858796c1cd9e0b92ff489fc460e00a86a8d30666a7c46a28f8ae",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:8097af5f32c857c4935450c41578d2e33777a2bca1e5dfe27d291b6c33ea6ab5",
+      "opaque_lineage_id": "HET_S2_02",
+      "parameter_sha256": "sha256:b53dbdba28b3770173e614e0d7cb0e3f5e9553cdc45927a74f39d178263eface",
+      "payload_location": "FRESH_VALIDATION_SEAL",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "FRESH_VALIDATION_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 256
+      },
+      "stratum": "H2",
+      "trajectory_sha256": "sha256:02827c08499676aa30b1472c96f38f967ebfa2067466a90c1b7d07f6bf2e2d49",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:8097af5f32c857c4935450c41578d2e33777a2bca1e5dfe27d291b6c33ea6ab5",
+      "opaque_lineage_id": "HET_S2_02",
+      "parameter_sha256": "sha256:2d8d6b45d90fb16402e139ce55969e55608143b74831f0803140733f8f6fbc79",
+      "payload_location": "FRESH_VALIDATION_SEAL",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "FRESH_VALIDATION_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 64
+      },
+      "stratum": "H2",
+      "trajectory_sha256": "sha256:494c3f59842dcf96339f23fd8a1cb1c3d848ce94a2950043617369ef33de4d08",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:8097af5f32c857c4935450c41578d2e33777a2bca1e5dfe27d291b6c33ea6ab5",
+      "opaque_lineage_id": "HET_S2_02",
+      "parameter_sha256": "sha256:2d8d6b45d90fb16402e139ce55969e55608143b74831f0803140733f8f6fbc79",
+      "payload_location": "FRESH_VALIDATION_SEAL",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "FRESH_VALIDATION_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 144
+      },
+      "stratum": "H2",
+      "trajectory_sha256": "sha256:47cf77ffa4daa4acae343a6c2347c25dc3fb192b999fcdd88c8a75da20142f79",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:8097af5f32c857c4935450c41578d2e33777a2bca1e5dfe27d291b6c33ea6ab5",
+      "opaque_lineage_id": "HET_S2_02",
+      "parameter_sha256": "sha256:2d8d6b45d90fb16402e139ce55969e55608143b74831f0803140733f8f6fbc79",
+      "payload_location": "FRESH_VALIDATION_SEAL",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "FRESH_VALIDATION_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 256
+      },
+      "stratum": "H2",
+      "trajectory_sha256": "sha256:ec4c736c19e4bcf2dcbb6691fbfb10cae35ea17a594c7a461ab258d75ea7d8e9",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:b1fde09e48ac23081f4a3641c82d102f4f32350734a13260d15455d2aac45467",
+      "opaque_lineage_id": "HET_S2_03",
+      "parameter_sha256": "sha256:d0535577b795bc6dbe3f839b4dd1737366de761e28bf34ba496ae6dafbecdae5",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s2_03_low_n8.npz",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 64
+      },
+      "stratum": "H2",
+      "trajectory_sha256": "sha256:1a67d4b5572bdcd2f0b9920e9b859e9a2a7bc9a98143d84c0432fd5d9b9cdeee",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:b1fde09e48ac23081f4a3641c82d102f4f32350734a13260d15455d2aac45467",
+      "opaque_lineage_id": "HET_S2_03",
+      "parameter_sha256": "sha256:d0535577b795bc6dbe3f839b4dd1737366de761e28bf34ba496ae6dafbecdae5",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s2_03_low_n12.npz",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 144
+      },
+      "stratum": "H2",
+      "trajectory_sha256": "sha256:c0cdadc51da2a451387cb28d54825a6879de13c1fe7ee0f6e78bb69220636add",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:b1fde09e48ac23081f4a3641c82d102f4f32350734a13260d15455d2aac45467",
+      "opaque_lineage_id": "HET_S2_03",
+      "parameter_sha256": "sha256:d0535577b795bc6dbe3f839b4dd1737366de761e28bf34ba496ae6dafbecdae5",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s2_03_low_n16.npz",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 256
+      },
+      "stratum": "H2",
+      "trajectory_sha256": "sha256:f7afbcc41aed351e91771a63bc16b929aa2119a60d52a45f6cc87c821e39624c",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:b1fde09e48ac23081f4a3641c82d102f4f32350734a13260d15455d2aac45467",
+      "opaque_lineage_id": "HET_S2_03",
+      "parameter_sha256": "sha256:8dfa13bb9e8e2bc901ac4b9606bf434adfb16e110eea12d700ffe02535b26a90",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s2_03_main_n8.npz",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 64
+      },
+      "stratum": "H2",
+      "trajectory_sha256": "sha256:2d770cb8d3ad7149df3d90860636e5f79bfad4b311a6ab1f0636438e9437b260",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:b1fde09e48ac23081f4a3641c82d102f4f32350734a13260d15455d2aac45467",
+      "opaque_lineage_id": "HET_S2_03",
+      "parameter_sha256": "sha256:8dfa13bb9e8e2bc901ac4b9606bf434adfb16e110eea12d700ffe02535b26a90",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s2_03_main_n12.npz",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 144
+      },
+      "stratum": "H2",
+      "trajectory_sha256": "sha256:771a23a07e76f514fa264cecddb6948412571d0d12ec8a5a047f61e69597dbac",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:b1fde09e48ac23081f4a3641c82d102f4f32350734a13260d15455d2aac45467",
+      "opaque_lineage_id": "HET_S2_03",
+      "parameter_sha256": "sha256:8dfa13bb9e8e2bc901ac4b9606bf434adfb16e110eea12d700ffe02535b26a90",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s2_03_main_n16.npz",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 256
+      },
+      "stratum": "H2",
+      "trajectory_sha256": "sha256:d7ec7cc0677925dc5dee5b12e238ab3e2955c45df8b2cf345d90f05309bdeb03",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:5412fd4cff5158934e00dd3ffac87874419570a7d20b8189cddac24ff0118664",
+      "opaque_lineage_id": "HET_S3_01",
+      "parameter_sha256": "sha256:a90db1957712c535e7c5b156c9500b975b2cbc7310bff14660454baf085d50a7",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s3_01_low_n8.npz",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 64
+      },
+      "stratum": "H3",
+      "trajectory_sha256": "sha256:0d37e4c65d429b5fa273802e9bd2c74380165243528c60a797f8e56a41c72465",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:5412fd4cff5158934e00dd3ffac87874419570a7d20b8189cddac24ff0118664",
+      "opaque_lineage_id": "HET_S3_01",
+      "parameter_sha256": "sha256:a90db1957712c535e7c5b156c9500b975b2cbc7310bff14660454baf085d50a7",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s3_01_low_n12.npz",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 144
+      },
+      "stratum": "H3",
+      "trajectory_sha256": "sha256:19e88e5d1108fb586b58612a7535bb87dd90738500658287d392077d41c603a8",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:5412fd4cff5158934e00dd3ffac87874419570a7d20b8189cddac24ff0118664",
+      "opaque_lineage_id": "HET_S3_01",
+      "parameter_sha256": "sha256:a90db1957712c535e7c5b156c9500b975b2cbc7310bff14660454baf085d50a7",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s3_01_low_n16.npz",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 256
+      },
+      "stratum": "H3",
+      "trajectory_sha256": "sha256:b0892f6f36de7ed7e5db547a57258adf3c5db514588cf1ebcb66a6c340cbb3bb",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:5412fd4cff5158934e00dd3ffac87874419570a7d20b8189cddac24ff0118664",
+      "opaque_lineage_id": "HET_S3_01",
+      "parameter_sha256": "sha256:b7b9991cb48418880d914957e21b516b24af239536f5bfdcfa2f7118211eb841",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s3_01_main_n8.npz",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 64
+      },
+      "stratum": "H3",
+      "trajectory_sha256": "sha256:bafdbe59eecff6a3dad260ac582bce5051665e8d4cc8d0b873b53740be1ef814",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:5412fd4cff5158934e00dd3ffac87874419570a7d20b8189cddac24ff0118664",
+      "opaque_lineage_id": "HET_S3_01",
+      "parameter_sha256": "sha256:b7b9991cb48418880d914957e21b516b24af239536f5bfdcfa2f7118211eb841",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s3_01_main_n12.npz",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 144
+      },
+      "stratum": "H3",
+      "trajectory_sha256": "sha256:e299141b3d004063c6f9882da6e0211b842a73d8d50fbfa9d5ae8867e4e92ddc",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:5412fd4cff5158934e00dd3ffac87874419570a7d20b8189cddac24ff0118664",
+      "opaque_lineage_id": "HET_S3_01",
+      "parameter_sha256": "sha256:b7b9991cb48418880d914957e21b516b24af239536f5bfdcfa2f7118211eb841",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s3_01_main_n16.npz",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 256
+      },
+      "stratum": "H3",
+      "trajectory_sha256": "sha256:32883a95daa326a76c259844d334f4a190614ecda9bdebc6ad603cdea4a8020c",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:087f71be0095fab92e7521af4aa54e8c9d5f67594937799489f09dc803a4b74e",
+      "opaque_lineage_id": "HET_S3_02",
+      "parameter_sha256": "sha256:d185e4637b20355e49895d6e8b32bba93ec9d32c05e84632a890b25ee6a28104",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s3_02_low_n8.npz",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 64
+      },
+      "stratum": "H3",
+      "trajectory_sha256": "sha256:4410a8cf697407b5ba8075f926d3c3b59c74f413d4137b89b3f21d116f0669a2",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:087f71be0095fab92e7521af4aa54e8c9d5f67594937799489f09dc803a4b74e",
+      "opaque_lineage_id": "HET_S3_02",
+      "parameter_sha256": "sha256:d185e4637b20355e49895d6e8b32bba93ec9d32c05e84632a890b25ee6a28104",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s3_02_low_n12.npz",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 144
+      },
+      "stratum": "H3",
+      "trajectory_sha256": "sha256:2a87ae98998188e5837aa2b9b74749e6519b1ec38d3d768645e0a1bb8fd5e440",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:087f71be0095fab92e7521af4aa54e8c9d5f67594937799489f09dc803a4b74e",
+      "opaque_lineage_id": "HET_S3_02",
+      "parameter_sha256": "sha256:d185e4637b20355e49895d6e8b32bba93ec9d32c05e84632a890b25ee6a28104",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s3_02_low_n16.npz",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 256
+      },
+      "stratum": "H3",
+      "trajectory_sha256": "sha256:c579633aca46aaa071d8945f6c1b882f5a89c47776e0fc03f34af5203cf88e4e",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:087f71be0095fab92e7521af4aa54e8c9d5f67594937799489f09dc803a4b74e",
+      "opaque_lineage_id": "HET_S3_02",
+      "parameter_sha256": "sha256:522361b069264fa0f0f2c94652431a43d2cef9f1ac8befaa92cfe4d434b16996",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s3_02_main_n8.npz",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 64
+      },
+      "stratum": "H3",
+      "trajectory_sha256": "sha256:2b44b6713cd60b3d69aa27701e45de676ea476f6dc4fb88ea0c5d79bebc95c23",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:087f71be0095fab92e7521af4aa54e8c9d5f67594937799489f09dc803a4b74e",
+      "opaque_lineage_id": "HET_S3_02",
+      "parameter_sha256": "sha256:522361b069264fa0f0f2c94652431a43d2cef9f1ac8befaa92cfe4d434b16996",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s3_02_main_n12.npz",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 144
+      },
+      "stratum": "H3",
+      "trajectory_sha256": "sha256:dd14966b8fbaafd47b3f39956fcf98437af7128212f813bbddfd73364033f5b2",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:087f71be0095fab92e7521af4aa54e8c9d5f67594937799489f09dc803a4b74e",
+      "opaque_lineage_id": "HET_S3_02",
+      "parameter_sha256": "sha256:522361b069264fa0f0f2c94652431a43d2cef9f1ac8befaa92cfe4d434b16996",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s3_02_main_n16.npz",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 256
+      },
+      "stratum": "H3",
+      "trajectory_sha256": "sha256:0ed38afd8a0861223a5f8e8f5b0e863d9d5c83368421d94addcf1d99cd6028c9",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:99f422f646d55a5a67bd223817f16f8887b1664dd22102b010f809f3d5bf2ef7",
+      "opaque_lineage_id": "HET_S3_03",
+      "parameter_sha256": "sha256:91dcf7ca5c1f07733aa092907c4a99e76f07e31f0d7ce8dbaaa431dd9c3ff1fa",
+      "payload_location": "FRESH_VALIDATION_SEAL",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "FRESH_VALIDATION_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 64
+      },
+      "stratum": "H3",
+      "trajectory_sha256": "sha256:0e2a116cfb84467ddf5ae1798a838f5a39e32ea8cf6f71e8cca26a6d6319a127",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:99f422f646d55a5a67bd223817f16f8887b1664dd22102b010f809f3d5bf2ef7",
+      "opaque_lineage_id": "HET_S3_03",
+      "parameter_sha256": "sha256:91dcf7ca5c1f07733aa092907c4a99e76f07e31f0d7ce8dbaaa431dd9c3ff1fa",
+      "payload_location": "FRESH_VALIDATION_SEAL",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "FRESH_VALIDATION_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 144
+      },
+      "stratum": "H3",
+      "trajectory_sha256": "sha256:68e6b16f3bdc93750f90497a74b8c4f1327fe0f5d2055b989c6961b0b16f4322",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:99f422f646d55a5a67bd223817f16f8887b1664dd22102b010f809f3d5bf2ef7",
+      "opaque_lineage_id": "HET_S3_03",
+      "parameter_sha256": "sha256:91dcf7ca5c1f07733aa092907c4a99e76f07e31f0d7ce8dbaaa431dd9c3ff1fa",
+      "payload_location": "FRESH_VALIDATION_SEAL",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "FRESH_VALIDATION_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 256
+      },
+      "stratum": "H3",
+      "trajectory_sha256": "sha256:c1711f642db14a225a6c85349407bc4f77a3a00d61b1433a3e6317fc9d499618",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:99f422f646d55a5a67bd223817f16f8887b1664dd22102b010f809f3d5bf2ef7",
+      "opaque_lineage_id": "HET_S3_03",
+      "parameter_sha256": "sha256:29be7d515ce1f0c1588d74235d66dc2bdc943635f19bd975ab3ca770441b2227",
+      "payload_location": "FRESH_VALIDATION_SEAL",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "FRESH_VALIDATION_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 64
+      },
+      "stratum": "H3",
+      "trajectory_sha256": "sha256:4d6e7d97dd81450b09d78c096006c5b4675a514a316e4344651569c6abab5edf",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:99f422f646d55a5a67bd223817f16f8887b1664dd22102b010f809f3d5bf2ef7",
+      "opaque_lineage_id": "HET_S3_03",
+      "parameter_sha256": "sha256:29be7d515ce1f0c1588d74235d66dc2bdc943635f19bd975ab3ca770441b2227",
+      "payload_location": "FRESH_VALIDATION_SEAL",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "FRESH_VALIDATION_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 144
+      },
+      "stratum": "H3",
+      "trajectory_sha256": "sha256:59f6622843f3d516d7f7175f48615435dd216f99e5ac6969e4b36d70b0897037",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:99f422f646d55a5a67bd223817f16f8887b1664dd22102b010f809f3d5bf2ef7",
+      "opaque_lineage_id": "HET_S3_03",
+      "parameter_sha256": "sha256:29be7d515ce1f0c1588d74235d66dc2bdc943635f19bd975ab3ca770441b2227",
+      "payload_location": "FRESH_VALIDATION_SEAL",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "FRESH_VALIDATION_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 256
+      },
+      "stratum": "H3",
+      "trajectory_sha256": "sha256:d5b3fd08acae2e7e31f3f9ce423500efb8f1fac07bca29a0e3979df7fcff1186",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:a9fdfd49e6a89e601ef0b4efbffa6543524a5293ceeb12ab77296320a6888dc6",
+      "opaque_lineage_id": "HET_S4_01",
+      "parameter_sha256": "sha256:28ead865c741f832e5e64f662a59ace8d49d69fd50deded685d53d9ff5d2bae7",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s4_01_low_n8.npz",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 64
+      },
+      "stratum": "H4",
+      "trajectory_sha256": "sha256:31779184fa6ced4deebfc07f5e5e600cd6b3ece07f0d4d398103b63ec1d31c80",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:a9fdfd49e6a89e601ef0b4efbffa6543524a5293ceeb12ab77296320a6888dc6",
+      "opaque_lineage_id": "HET_S4_01",
+      "parameter_sha256": "sha256:28ead865c741f832e5e64f662a59ace8d49d69fd50deded685d53d9ff5d2bae7",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s4_01_low_n12.npz",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 144
+      },
+      "stratum": "H4",
+      "trajectory_sha256": "sha256:17fe48cc047b92226660353b4a9a71b6b6fe64b8e6a2b2462509e8bd476b8ddf",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:a9fdfd49e6a89e601ef0b4efbffa6543524a5293ceeb12ab77296320a6888dc6",
+      "opaque_lineage_id": "HET_S4_01",
+      "parameter_sha256": "sha256:28ead865c741f832e5e64f662a59ace8d49d69fd50deded685d53d9ff5d2bae7",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s4_01_low_n16.npz",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 256
+      },
+      "stratum": "H4",
+      "trajectory_sha256": "sha256:ac6737cc889a96b024bad527db83f07b5b08aa542b63863f968fb7b21475357f",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:a9fdfd49e6a89e601ef0b4efbffa6543524a5293ceeb12ab77296320a6888dc6",
+      "opaque_lineage_id": "HET_S4_01",
+      "parameter_sha256": "sha256:2596654b79d2d39e1b72c64eb7aa38d6d1a0ffee53ca512478d4817db62486fa",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s4_01_main_n8.npz",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 64
+      },
+      "stratum": "H4",
+      "trajectory_sha256": "sha256:0fad6889a4930c65536b830ecc7a3e7bae609f158368b13f6c50abc0df959c53",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:a9fdfd49e6a89e601ef0b4efbffa6543524a5293ceeb12ab77296320a6888dc6",
+      "opaque_lineage_id": "HET_S4_01",
+      "parameter_sha256": "sha256:2596654b79d2d39e1b72c64eb7aa38d6d1a0ffee53ca512478d4817db62486fa",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s4_01_main_n12.npz",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 144
+      },
+      "stratum": "H4",
+      "trajectory_sha256": "sha256:f925030190ab271d116a5fd249954e415d1373a5967c0e944ef2a350055d2727",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:a9fdfd49e6a89e601ef0b4efbffa6543524a5293ceeb12ab77296320a6888dc6",
+      "opaque_lineage_id": "HET_S4_01",
+      "parameter_sha256": "sha256:2596654b79d2d39e1b72c64eb7aa38d6d1a0ffee53ca512478d4817db62486fa",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s4_01_main_n16.npz",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 256
+      },
+      "stratum": "H4",
+      "trajectory_sha256": "sha256:e97c37cecb63a3820c14987cfad10dee183ea2fe42567927491334469cf8f9f2",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:fc84dc8dd7845181c668f140a64a35b1d7cd1dbb436ca6770fec6f0e83ee8d96",
+      "opaque_lineage_id": "HET_S4_02",
+      "parameter_sha256": "sha256:43eac8f20dc32995dcf1e9fc1153b163573aec0b26c790f32837878ad965da9e",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s4_02_low_n8.npz",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 64
+      },
+      "stratum": "H4",
+      "trajectory_sha256": "sha256:f681161fddbe1411e4116e854bd81c707a79afcd9e1f1e0b2d9e1e144f5e482c",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:fc84dc8dd7845181c668f140a64a35b1d7cd1dbb436ca6770fec6f0e83ee8d96",
+      "opaque_lineage_id": "HET_S4_02",
+      "parameter_sha256": "sha256:43eac8f20dc32995dcf1e9fc1153b163573aec0b26c790f32837878ad965da9e",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s4_02_low_n12.npz",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 144
+      },
+      "stratum": "H4",
+      "trajectory_sha256": "sha256:b56e8df087025ded6c00cef5f210a35c7cecd9b249756f54cca02079017904c1",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:fc84dc8dd7845181c668f140a64a35b1d7cd1dbb436ca6770fec6f0e83ee8d96",
+      "opaque_lineage_id": "HET_S4_02",
+      "parameter_sha256": "sha256:43eac8f20dc32995dcf1e9fc1153b163573aec0b26c790f32837878ad965da9e",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s4_02_low_n16.npz",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 256
+      },
+      "stratum": "H4",
+      "trajectory_sha256": "sha256:3a82bf96b33e2ad67f43ce2189a3549f25d8e54f2076e6a0193b2333045ea19a",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:fc84dc8dd7845181c668f140a64a35b1d7cd1dbb436ca6770fec6f0e83ee8d96",
+      "opaque_lineage_id": "HET_S4_02",
+      "parameter_sha256": "sha256:2365890645f364005b40c8086384f9b6141d8b426994c551b6c5558ac57a5555",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s4_02_main_n8.npz",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 64
+      },
+      "stratum": "H4",
+      "trajectory_sha256": "sha256:01c686e76669500dfc3ac329aad6b001b72f7dc03a9849355b85356763408a43",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:fc84dc8dd7845181c668f140a64a35b1d7cd1dbb436ca6770fec6f0e83ee8d96",
+      "opaque_lineage_id": "HET_S4_02",
+      "parameter_sha256": "sha256:2365890645f364005b40c8086384f9b6141d8b426994c551b6c5558ac57a5555",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s4_02_main_n12.npz",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 144
+      },
+      "stratum": "H4",
+      "trajectory_sha256": "sha256:b4dba869ccc7a84bf37d4655caa1ff69e64a06c955061801617465da4cd92506",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:fc84dc8dd7845181c668f140a64a35b1d7cd1dbb436ca6770fec6f0e83ee8d96",
+      "opaque_lineage_id": "HET_S4_02",
+      "parameter_sha256": "sha256:2365890645f364005b40c8086384f9b6141d8b426994c551b6c5558ac57a5555",
+      "payload_location": "stage_07_Heterogeneous_Development_Pool/01_pool_generation/trajectory_materialization/het_s4_02_main_n16.npz",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "NEW_TRAIN_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 256
+      },
+      "stratum": "H4",
+      "trajectory_sha256": "sha256:74f22b7b139cead9eb7cb43863feb7ee1a9217bd738bbf446bfee737ad624983",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:7d2d316e9cd29b401a69ce1300c01bdb4921bff801ac18ff9f8620684157d90b",
+      "opaque_lineage_id": "HET_S4_03",
+      "parameter_sha256": "sha256:990d8832f650d4fddf63afd5e204c6cea126c957e524f5251b9e93241af4e03a",
+      "payload_location": "FRESH_VALIDATION_SEAL",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "FRESH_VALIDATION_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 64
+      },
+      "stratum": "H4",
+      "trajectory_sha256": "sha256:7083a90c1af5c7d8ee99157883d246255e37ab9094a49b08baaa209bed3571fb",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:7d2d316e9cd29b401a69ce1300c01bdb4921bff801ac18ff9f8620684157d90b",
+      "opaque_lineage_id": "HET_S4_03",
+      "parameter_sha256": "sha256:990d8832f650d4fddf63afd5e204c6cea126c957e524f5251b9e93241af4e03a",
+      "payload_location": "FRESH_VALIDATION_SEAL",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "FRESH_VALIDATION_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 144
+      },
+      "stratum": "H4",
+      "trajectory_sha256": "sha256:f1038dd605a000dd7437297d7e165b6f249b01a6441d1a50b218c8abc9570c36",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:7d2d316e9cd29b401a69ce1300c01bdb4921bff801ac18ff9f8620684157d90b",
+      "opaque_lineage_id": "HET_S4_03",
+      "parameter_sha256": "sha256:990d8832f650d4fddf63afd5e204c6cea126c957e524f5251b9e93241af4e03a",
+      "payload_location": "FRESH_VALIDATION_SEAL",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "FRESH_VALIDATION_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 256
+      },
+      "stratum": "H4",
+      "trajectory_sha256": "sha256:52df3408bb0ae8b045cb0917db3ccb0dcd2e2e16c7448eb8d7a5accd2f99c672",
+      "variant": "LOW"
+    },
+    {
+      "formula_sha256": "sha256:7d2d316e9cd29b401a69ce1300c01bdb4921bff801ac18ff9f8620684157d90b",
+      "opaque_lineage_id": "HET_S4_03",
+      "parameter_sha256": "sha256:492b4d87b13a65fef3833890dad23ad97de3a6372979aa4470d05ff507dc6a82",
+      "payload_location": "FRESH_VALIDATION_SEAL",
+      "qualification": "PASS",
+      "resolution": 8,
+      "role": "FRESH_VALIDATION_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 64
+      },
+      "stratum": "H4",
+      "trajectory_sha256": "sha256:08efe6eb082318ff51f66f0ed8ad6dcf547a97386cf16ab74f8003ea46d7d150",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:7d2d316e9cd29b401a69ce1300c01bdb4921bff801ac18ff9f8620684157d90b",
+      "opaque_lineage_id": "HET_S4_03",
+      "parameter_sha256": "sha256:492b4d87b13a65fef3833890dad23ad97de3a6372979aa4470d05ff507dc6a82",
+      "payload_location": "FRESH_VALIDATION_SEAL",
+      "qualification": "PASS",
+      "resolution": 12,
+      "role": "FRESH_VALIDATION_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 144
+      },
+      "stratum": "H4",
+      "trajectory_sha256": "sha256:85706f97de4f47d922370a0463cf7cd6fdb986cfabf6b1e908cc5a4813a3d1e8",
+      "variant": "MAIN"
+    },
+    {
+      "formula_sha256": "sha256:7d2d316e9cd29b401a69ce1300c01bdb4921bff801ac18ff9f8620684157d90b",
+      "opaque_lineage_id": "HET_S4_03",
+      "parameter_sha256": "sha256:492b4d87b13a65fef3833890dad23ad97de3a6372979aa4470d05ff507dc6a82",
+      "payload_location": "FRESH_VALIDATION_SEAL",
+      "qualification": "PASS",
+      "resolution": 16,
+      "role": "FRESH_VALIDATION_V2",
+      "shape": {
+        "dimension": 2,
+        "frames": 36,
+        "particles": 256
+      },
+      "stratum": "H4",
+      "trajectory_sha256": "sha256:da80886f135e513ba428d2e3e8bc3b7f46e4d38accd00f40497017e49c2f2c16",
+      "variant": "MAIN"
+    }
+  ]
+}

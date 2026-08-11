@@ -1,0 +1,84 @@
+{
+  "audit_version": "stage02c-eligibility-audit-1.0.0",
+  "manual_override_permitted": false,
+  "rows": [
+    {
+      "audit_role": "predefined_rejection_control",
+      "automatic_recomputation": "PASS",
+      "expected_verdict": "rejected",
+      "reason_codes": [
+        "REJECT_FAILURE_FLAG",
+        "REJECT_TOPOLOGY"
+      ],
+      "role_expectation_status": "PASS",
+      "sample_id": "r2_duplicate_edge_negative_n6__t0.000000",
+      "verdict": "rejected"
+    },
+    {
+      "audit_role": "predefined_rejection_control",
+      "automatic_recomputation": "PASS",
+      "expected_verdict": "rejected",
+      "reason_codes": [
+        "REJECT_FAILURE_FLAG",
+        "REJECT_TOPOLOGY"
+      ],
+      "role_expectation_status": "PASS",
+      "sample_id": "r2_duplicate_edge_negative_n6__t0.002000",
+      "verdict": "rejected"
+    },
+    {
+      "audit_role": "positive_pipeline_case",
+      "automatic_recomputation": "PASS",
+      "expected_verdict": "diagnostic",
+      "reason_codes": [
+        "DIAG_R2_TEMPORAL_REFERENCE",
+        "DIAG_ATTRIBUTION_UNRESOLVED"
+      ],
+      "role_expectation_status": "PASS",
+      "sample_id": "r2_jitter05_n8__t0.000000",
+      "verdict": "diagnostic"
+    },
+    {
+      "audit_role": "positive_pipeline_case",
+      "automatic_recomputation": "PASS",
+      "expected_verdict": "diagnostic",
+      "reason_codes": [
+        "DIAG_R2_TEMPORAL_REFERENCE",
+        "DIAG_ATTRIBUTION_UNRESOLVED"
+      ],
+      "role_expectation_status": "PASS",
+      "sample_id": "r2_jitter05_n8__t0.002000",
+      "verdict": "diagnostic"
+    },
+    {
+      "audit_role": "positive_pipeline_case",
+      "automatic_recomputation": "PASS",
+      "expected_verdict": "diagnostic",
+      "reason_codes": [
+        "DIAG_R2_TEMPORAL_REFERENCE",
+        "DIAG_ATTRIBUTION_UNRESOLVED"
+      ],
+      "role_expectation_status": "PASS",
+      "sample_id": "r2_regular_n6__t0.000000",
+      "verdict": "diagnostic"
+    },
+    {
+      "audit_role": "positive_pipeline_case",
+      "automatic_recomputation": "PASS",
+      "expected_verdict": "diagnostic",
+      "reason_codes": [
+        "DIAG_R2_TEMPORAL_REFERENCE",
+        "DIAG_ATTRIBUTION_UNRESOLVED"
+      ],
+      "role_expectation_status": "PASS",
+      "sample_id": "r2_regular_n6__t0.002000",
+      "verdict": "diagnostic"
+    }
+  ],
+  "status": "PASS",
+  "verdict_counts": {
+    "diagnostic": 4,
+    "eligible_for_future_training": 0,
+    "rejected": 2
+  }
+}

@@ -1,0 +1,2294 @@
+{
+  "selected": {
+    "global": {
+      "Q_def": 0.6411884808937747,
+      "baseline_relative_reduction": 0.06556414392749192,
+      "maximum": {
+        "Q_def": 1.0690921132768894,
+        "record_id": "LCDF_02_VARIANT_MAIN_N8_O00"
+      },
+      "median": 0.6072170932849343,
+      "origin_count": 128,
+      "p90": 0.8109138040057183,
+      "zero_baseline_Q_def": 0.6861770946897625
+    },
+    "lineages": {
+      "LCDF_02": {
+        "VARIANT_LOW": {
+          "Q_def": 0.523000668711581,
+          "baseline_relative_reduction": 0.09197557162844508,
+          "maximum": {
+            "Q_def": 0.8018113505652703,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O00"
+          },
+          "median": 0.4907353864093995,
+          "origin_count": 32,
+          "p90": 0.7726061389558401,
+          "zero_baseline_Q_def": 0.5759764301160124
+        },
+        "VARIANT_MAIN": {
+          "Q_def": 0.6973396646896246,
+          "baseline_relative_reduction": 0.09197484889090284,
+          "maximum": {
+            "Q_def": 1.0690921132768894,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O00"
+          },
+          "median": 0.6543172219180742,
+          "origin_count": 32,
+          "p90": 1.0301512355217,
+          "zero_baseline_Q_def": 0.7679739529658037
+        },
+        "all": {
+          "Q_def": 0.6163652762048649,
+          "baseline_relative_reduction": 0.09197510907401896,
+          "maximum": {
+            "Q_def": 1.0690921132768894,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O00"
+          },
+          "median": 0.5552726386967203,
+          "origin_count": 64,
+          "p90": 0.965030165008296,
+          "zero_baseline_Q_def": 0.6787977756604349
+        },
+        "origins": [
+          {
+            "Q_def": 0.8018113505652703,
+            "lineage": "LCDF_02",
+            "origin": 0,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O00",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.7944141035804891,
+            "lineage": "LCDF_02",
+            "origin": 1,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O01",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.7851066959800749,
+            "lineage": "LCDF_02",
+            "origin": 2,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O02",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.7739116859743571,
+            "lineage": "LCDF_02",
+            "origin": 3,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O03",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.7608562157891869,
+            "lineage": "LCDF_02",
+            "origin": 4,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O04",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.7459719514079143,
+            "lineage": "LCDF_02",
+            "origin": 5,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O05",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.7292950130128031,
+            "lineage": "LCDF_02",
+            "origin": 6,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O06",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.7108658967481042,
+            "lineage": "LCDF_02",
+            "origin": 7,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O07",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6907293887357561,
+            "lineage": "LCDF_02",
+            "origin": 8,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O08",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6689344722559187,
+            "lineage": "LCDF_02",
+            "origin": 9,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O09",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6455342298957254,
+            "lineage": "LCDF_02",
+            "origin": 10,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O10",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6205857427014072,
+            "lineage": "LCDF_02",
+            "origin": 11,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O11",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5941499893372072,
+            "lineage": "LCDF_02",
+            "origin": 12,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O12",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5662917498359521,
+            "lineage": "LCDF_02",
+            "origin": 13,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O13",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5370795206395494,
+            "lineage": "LCDF_02",
+            "origin": 14,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O14",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5065854515390764,
+            "lineage": "LCDF_02",
+            "origin": 15,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O15",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.47488532127972255,
+            "lineage": "LCDF_02",
+            "origin": 16,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O16",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.4420585798285296,
+            "lineage": "LCDF_02",
+            "origin": 17,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O17",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.408188506169461,
+            "lineage": "LCDF_02",
+            "origin": 18,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O18",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.3733625688707868,
+            "lineage": "LCDF_02",
+            "origin": 19,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O19",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.3376731567865159,
+            "lineage": "LCDF_02",
+            "origin": 20,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O20",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.3012190162425941,
+            "lineage": "LCDF_02",
+            "origin": 21,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O21",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.26410813941385397,
+            "lineage": "LCDF_02",
+            "origin": 22,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O22",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.22646376575065066,
+            "lineage": "LCDF_02",
+            "origin": 23,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O23",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.18843807142395116,
+            "lineage": "LCDF_02",
+            "origin": 24,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O24",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.1502472896395523,
+            "lineage": "LCDF_02",
+            "origin": 25,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O25",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.11227847763128888,
+            "lineage": "LCDF_02",
+            "origin": 26,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O26",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.07550827657584348,
+            "lineage": "LCDF_02",
+            "origin": 27,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O27",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.043884262891496995,
+            "lineage": "LCDF_02",
+            "origin": 28,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O28",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.03627425580670029,
+            "lineage": "LCDF_02",
+            "origin": 29,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O29",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.062268260663266524,
+            "lineage": "LCDF_02",
+            "origin": 30,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O30",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.09790683264563146,
+            "lineage": "LCDF_02",
+            "origin": 31,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O31",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 1.0690921132768894,
+            "lineage": "LCDF_02",
+            "origin": 0,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O00",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 1.0592290016433814,
+            "lineage": "LCDF_02",
+            "origin": 1,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O01",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 1.046818935958516,
+            "lineage": "LCDF_02",
+            "origin": 2,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O02",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 1.03189199726898,
+            "lineage": "LCDF_02",
+            "origin": 3,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O03",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 1.01448437979618,
+            "lineage": "LCDF_02",
+            "origin": 4,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O04",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.9946383104882498,
+            "lineage": "LCDF_02",
+            "origin": 5,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O05",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.9724019561559228,
+            "lineage": "LCDF_02",
+            "origin": 6,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O06",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.9478293189971664,
+            "lineage": "LCDF_02",
+            "origin": 7,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O07",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.920980121856818,
+            "lineage": "LCDF_02",
+            "origin": 8,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O08",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.891919684212386,
+            "lineage": "LCDF_02",
+            "origin": 9,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O09",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.8607187915551948,
+            "lineage": "LCDF_02",
+            "origin": 10,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O10",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.8274535607724812,
+            "lineage": "LCDF_02",
+            "origin": 11,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O11",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7922053054827117,
+            "lineage": "LCDF_02",
+            "origin": 12,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O12",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7550604075257302,
+            "lineage": "LCDF_02",
+            "origin": 13,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O13",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7161102034761959,
+            "lineage": "LCDF_02",
+            "origin": 14,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O14",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.6754509004414504,
+            "lineage": "LCDF_02",
+            "origin": 15,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O15",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.6331835433946978,
+            "lineage": "LCDF_02",
+            "origin": 16,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O16",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.5894140713010149,
+            "lineage": "LCDF_02",
+            "origin": 17,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O17",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.5442535275574885,
+            "lineage": "LCDF_02",
+            "origin": 18,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O18",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.4978185405085721,
+            "lineage": "LCDF_02",
+            "origin": 19,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O19",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.45023229772547463,
+            "lineage": "LCDF_02",
+            "origin": 20,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O20",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.4016264621806319,
+            "lineage": "LCDF_02",
+            "origin": 21,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O21",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.3521450350604273,
+            "lineage": "LCDF_02",
+            "origin": 22,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O22",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.301952326135361,
+            "lineage": "LCDF_02",
+            "origin": 23,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O23",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.2512512289614992,
+            "lineage": "LCDF_02",
+            "origin": 24,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O24",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.2003300451617604,
+            "lineage": "LCDF_02",
+            "origin": 25,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O25",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.149704828085921,
+            "lineage": "LCDF_02",
+            "origin": 26,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O26",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.10067779952588295,
+            "lineage": "LCDF_02",
+            "origin": 27,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O27",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.05851235519916878,
+            "lineage": "LCDF_02",
+            "origin": 28,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O28",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.048365641256565464,
+            "lineage": "LCDF_02",
+            "origin": 29,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O29",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.08302430732376077,
+            "lineage": "LCDF_02",
+            "origin": 30,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O30",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.1305425116573759,
+            "lineage": "LCDF_02",
+            "origin": 31,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O31",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          }
+        ]
+      },
+      "LCDF_09": {
+        "VARIANT_LOW": {
+          "Q_def": 0.5643420310910714,
+          "baseline_relative_reduction": 0.04094077145000526,
+          "maximum": {
+            "Q_def": 0.6083330260786077,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O31"
+          },
+          "median": 0.5733965917826929,
+          "origin_count": 32,
+          "p90": 0.6067142687057487,
+          "zero_baseline_Q_def": 0.58843292915736
+        },
+        "VARIANT_MAIN": {
+          "Q_def": 0.7524602558575906,
+          "baseline_relative_reduction": 0.040941962835845,
+          "maximum": {
+            "Q_def": 0.8111162022980054,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O31"
+          },
+          "median": 0.7645330983432177,
+          "origin_count": 32,
+          "p90": 0.8089577692962855,
+          "zero_baseline_Q_def": 0.7845826078289748
+        },
+        "all": {
+          "Q_def": 0.6650858458504687,
+          "baseline_relative_reduction": 0.04094153394052872,
+          "maximum": {
+            "Q_def": 0.8111162022980054,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O31"
+          },
+          "median": 0.624115108113888,
+          "origin_count": 64,
+          "p90": 0.8028892272034166,
+          "zero_baseline_Q_def": 0.6934778946096355
+        },
+        "origins": [
+          {
+            "Q_def": 0.4799212083060681,
+            "lineage": "LCDF_09",
+            "origin": 0,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O00",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.4872688685222582,
+            "lineage": "LCDF_09",
+            "origin": 1,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O01",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.4944771388507253,
+            "lineage": "LCDF_09",
+            "origin": 2,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O02",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5015350308263266,
+            "lineage": "LCDF_09",
+            "origin": 3,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O03",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5084321505286538,
+            "lineage": "LCDF_09",
+            "origin": 4,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O04",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5151586666542185,
+            "lineage": "LCDF_09",
+            "origin": 5,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O05",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5217052920723411,
+            "lineage": "LCDF_09",
+            "origin": 6,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O06",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5280632280754501,
+            "lineage": "LCDF_09",
+            "origin": 7,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O07",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5342241618703517,
+            "lineage": "LCDF_09",
+            "origin": 8,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O08",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5401802394274586,
+            "lineage": "LCDF_09",
+            "origin": 9,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O09",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.545924046646129,
+            "lineage": "LCDF_09",
+            "origin": 10,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O10",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5514485886484692,
+            "lineage": "LCDF_09",
+            "origin": 11,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O11",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5567472767842413,
+            "lineage": "LCDF_09",
+            "origin": 12,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O12",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5618139158051789,
+            "lineage": "LCDF_09",
+            "origin": 13,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O13",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5666426806918475,
+            "lineage": "LCDF_09",
+            "origin": 14,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O14",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5712281025696717,
+            "lineage": "LCDF_09",
+            "origin": 15,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O15",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.575565080995714,
+            "lineage": "LCDF_09",
+            "origin": 16,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O16",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5796488672940798,
+            "lineage": "LCDF_09",
+            "origin": 17,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O17",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5834750387757334,
+            "lineage": "LCDF_09",
+            "origin": 18,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O18",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5870394840053339,
+            "lineage": "LCDF_09",
+            "origin": 19,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O19",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5903384569980887,
+            "lineage": "LCDF_09",
+            "origin": 20,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O20",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5933684881264822,
+            "lineage": "LCDF_09",
+            "origin": 21,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O21",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5961264051020152,
+            "lineage": "LCDF_09",
+            "origin": 22,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O22",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5986094042838506,
+            "lineage": "LCDF_09",
+            "origin": 23,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O23",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6008149289331697,
+            "lineage": "LCDF_09",
+            "origin": 24,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O24",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6027407349494531,
+            "lineage": "LCDF_09",
+            "origin": 25,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O25",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6043848843174114,
+            "lineage": "LCDF_09",
+            "origin": 26,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O26",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6057457229687061,
+            "lineage": "LCDF_09",
+            "origin": 27,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O27",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6068218848987534,
+            "lineage": "LCDF_09",
+            "origin": 28,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O28",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6076123016711154,
+            "lineage": "LCDF_09",
+            "origin": 29,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O29",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6081161840468299,
+            "lineage": "LCDF_09",
+            "origin": 30,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O30",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6083330260786077,
+            "lineage": "LCDF_09",
+            "origin": 31,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O31",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6398971901491683,
+            "lineage": "LCDF_09",
+            "origin": 0,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O00",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.6496941928995051,
+            "lineage": "LCDF_09",
+            "origin": 1,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O01",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.659305346584601,
+            "lineage": "LCDF_09",
+            "origin": 2,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O02",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.6687159983704821,
+            "lineage": "LCDF_09",
+            "origin": 3,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O03",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.6779122883234865,
+            "lineage": "LCDF_09",
+            "origin": 4,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O04",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.686881107154439,
+            "lineage": "LCDF_09",
+            "origin": 5,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O05",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.6956100767717852,
+            "lineage": "LCDF_09",
+            "origin": 6,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O06",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7040874624670042,
+            "lineage": "LCDF_09",
+            "origin": 7,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O07",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7123021794869384,
+            "lineage": "LCDF_09",
+            "origin": 8,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O08",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7202437551010472,
+            "lineage": "LCDF_09",
+            "origin": 9,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O09",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7279023034731351,
+            "lineage": "LCDF_09",
+            "origin": 10,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O10",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7352684971266478,
+            "lineage": "LCDF_09",
+            "origin": 11,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O11",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7423335508655204,
+            "lineage": "LCDF_09",
+            "origin": 12,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O12",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7490892058109564,
+            "lineage": "LCDF_09",
+            "origin": 13,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O13",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7555276943788731,
+            "lineage": "LCDF_09",
+            "origin": 14,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O14",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7616417179266416,
+            "lineage": "LCDF_09",
+            "origin": 15,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O15",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7674244787597938,
+            "lineage": "LCDF_09",
+            "origin": 16,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O16",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7728696474617225,
+            "lineage": "LCDF_09",
+            "origin": 17,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O17",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7779713275659496,
+            "lineage": "LCDF_09",
+            "origin": 18,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O18",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7827240288660144,
+            "lineage": "LCDF_09",
+            "origin": 19,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O19",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7871227684504944,
+            "lineage": "LCDF_09",
+            "origin": 20,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O20",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7911629157455119,
+            "lineage": "LCDF_09",
+            "origin": 21,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O21",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7948402274345089,
+            "lineage": "LCDF_09",
+            "origin": 22,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O22",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7981509812010706,
+            "lineage": "LCDF_09",
+            "origin": 23,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O23",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.8010917600226652,
+            "lineage": "LCDF_09",
+            "origin": 24,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O24",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.8036595702808815,
+            "lineage": "LCDF_09",
+            "origin": 25,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O25",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.8058518306533636,
+            "lineage": "LCDF_09",
+            "origin": 26,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O26",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.8076663349692734,
+            "lineage": "LCDF_09",
+            "origin": 27,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O27",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.8091012619992868,
+            "lineage": "LCDF_09",
+            "origin": 28,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O28",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.8101551894176822,
+            "lineage": "LCDF_09",
+            "origin": 29,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O29",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.8108270618804525,
+            "lineage": "LCDF_09",
+            "origin": 30,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O30",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.8111162022980054,
+            "lineage": "LCDF_09",
+            "origin": 31,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O31",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          }
+        ]
+      }
+    },
+    "variants": {
+      "VARIANT_LOW": {
+        "Q_def": 0.5440641632789082,
+        "baseline_relative_reduction": 0.06556396156083764,
+        "maximum": {
+          "Q_def": 0.8018113505652703,
+          "record_id": "LCDF_02_VARIANT_LOW_N8_O00"
+        },
+        "median": 0.5640528328205655,
+        "origin_count": 64,
+        "p90": 0.7237662781333934,
+        "zero_baseline_Q_def": 0.5822379926481508
+      },
+      "VARIANT_MAIN": {
+        "Q_def": 0.7254236846818239,
+        "baseline_relative_reduction": 0.06556424650733057,
+        "maximum": {
+          "Q_def": 1.0690921132768894,
+          "record_id": "LCDF_02_VARIANT_MAIN_N8_O00"
+        },
+        "median": 0.7520748066683434,
+        "origin_count": 64,
+        "p90": 0.965030165008296,
+        "zero_baseline_Q_def": 0.7763226973822281
+      }
+    }
+  },
+  "terminal": {
+    "global": {
+      "Q_def": 0.6411884808937747,
+      "baseline_relative_reduction": 0.06556414392749192,
+      "maximum": {
+        "Q_def": 1.0690921132768894,
+        "record_id": "LCDF_02_VARIANT_MAIN_N8_O00"
+      },
+      "median": 0.6072170932849343,
+      "origin_count": 128,
+      "p90": 0.8109138040057183,
+      "zero_baseline_Q_def": 0.6861770946897625
+    },
+    "lineages": {
+      "LCDF_02": {
+        "VARIANT_LOW": {
+          "Q_def": 0.523000668711581,
+          "baseline_relative_reduction": 0.09197557162844508,
+          "maximum": {
+            "Q_def": 0.8018113505652703,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O00"
+          },
+          "median": 0.4907353864093995,
+          "origin_count": 32,
+          "p90": 0.7726061389558401,
+          "zero_baseline_Q_def": 0.5759764301160124
+        },
+        "VARIANT_MAIN": {
+          "Q_def": 0.6973396646896246,
+          "baseline_relative_reduction": 0.09197484889090284,
+          "maximum": {
+            "Q_def": 1.0690921132768894,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O00"
+          },
+          "median": 0.6543172219180742,
+          "origin_count": 32,
+          "p90": 1.0301512355217,
+          "zero_baseline_Q_def": 0.7679739529658037
+        },
+        "all": {
+          "Q_def": 0.6163652762048649,
+          "baseline_relative_reduction": 0.09197510907401896,
+          "maximum": {
+            "Q_def": 1.0690921132768894,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O00"
+          },
+          "median": 0.5552726386967203,
+          "origin_count": 64,
+          "p90": 0.965030165008296,
+          "zero_baseline_Q_def": 0.6787977756604349
+        },
+        "origins": [
+          {
+            "Q_def": 0.8018113505652703,
+            "lineage": "LCDF_02",
+            "origin": 0,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O00",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.7944141035804891,
+            "lineage": "LCDF_02",
+            "origin": 1,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O01",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.7851066959800749,
+            "lineage": "LCDF_02",
+            "origin": 2,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O02",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.7739116859743571,
+            "lineage": "LCDF_02",
+            "origin": 3,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O03",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.7608562157891869,
+            "lineage": "LCDF_02",
+            "origin": 4,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O04",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.7459719514079143,
+            "lineage": "LCDF_02",
+            "origin": 5,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O05",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.7292950130128031,
+            "lineage": "LCDF_02",
+            "origin": 6,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O06",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.7108658967481042,
+            "lineage": "LCDF_02",
+            "origin": 7,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O07",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6907293887357561,
+            "lineage": "LCDF_02",
+            "origin": 8,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O08",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6689344722559187,
+            "lineage": "LCDF_02",
+            "origin": 9,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O09",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6455342298957254,
+            "lineage": "LCDF_02",
+            "origin": 10,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O10",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6205857427014072,
+            "lineage": "LCDF_02",
+            "origin": 11,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O11",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5941499893372072,
+            "lineage": "LCDF_02",
+            "origin": 12,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O12",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5662917498359521,
+            "lineage": "LCDF_02",
+            "origin": 13,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O13",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5370795206395494,
+            "lineage": "LCDF_02",
+            "origin": 14,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O14",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5065854515390764,
+            "lineage": "LCDF_02",
+            "origin": 15,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O15",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.47488532127972255,
+            "lineage": "LCDF_02",
+            "origin": 16,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O16",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.4420585798285296,
+            "lineage": "LCDF_02",
+            "origin": 17,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O17",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.408188506169461,
+            "lineage": "LCDF_02",
+            "origin": 18,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O18",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.3733625688707868,
+            "lineage": "LCDF_02",
+            "origin": 19,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O19",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.3376731567865159,
+            "lineage": "LCDF_02",
+            "origin": 20,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O20",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.3012190162425941,
+            "lineage": "LCDF_02",
+            "origin": 21,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O21",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.26410813941385397,
+            "lineage": "LCDF_02",
+            "origin": 22,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O22",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.22646376575065066,
+            "lineage": "LCDF_02",
+            "origin": 23,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O23",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.18843807142395116,
+            "lineage": "LCDF_02",
+            "origin": 24,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O24",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.1502472896395523,
+            "lineage": "LCDF_02",
+            "origin": 25,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O25",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.11227847763128888,
+            "lineage": "LCDF_02",
+            "origin": 26,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O26",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.07550827657584348,
+            "lineage": "LCDF_02",
+            "origin": 27,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O27",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.043884262891496995,
+            "lineage": "LCDF_02",
+            "origin": 28,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O28",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.03627425580670029,
+            "lineage": "LCDF_02",
+            "origin": 29,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O29",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.062268260663266524,
+            "lineage": "LCDF_02",
+            "origin": 30,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O30",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.09790683264563146,
+            "lineage": "LCDF_02",
+            "origin": 31,
+            "record_id": "LCDF_02_VARIANT_LOW_N8_O31",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 1.0690921132768894,
+            "lineage": "LCDF_02",
+            "origin": 0,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O00",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 1.0592290016433814,
+            "lineage": "LCDF_02",
+            "origin": 1,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O01",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 1.046818935958516,
+            "lineage": "LCDF_02",
+            "origin": 2,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O02",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 1.03189199726898,
+            "lineage": "LCDF_02",
+            "origin": 3,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O03",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 1.01448437979618,
+            "lineage": "LCDF_02",
+            "origin": 4,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O04",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.9946383104882498,
+            "lineage": "LCDF_02",
+            "origin": 5,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O05",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.9724019561559228,
+            "lineage": "LCDF_02",
+            "origin": 6,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O06",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.9478293189971664,
+            "lineage": "LCDF_02",
+            "origin": 7,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O07",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.920980121856818,
+            "lineage": "LCDF_02",
+            "origin": 8,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O08",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.891919684212386,
+            "lineage": "LCDF_02",
+            "origin": 9,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O09",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.8607187915551948,
+            "lineage": "LCDF_02",
+            "origin": 10,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O10",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.8274535607724812,
+            "lineage": "LCDF_02",
+            "origin": 11,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O11",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7922053054827117,
+            "lineage": "LCDF_02",
+            "origin": 12,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O12",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7550604075257302,
+            "lineage": "LCDF_02",
+            "origin": 13,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O13",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7161102034761959,
+            "lineage": "LCDF_02",
+            "origin": 14,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O14",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.6754509004414504,
+            "lineage": "LCDF_02",
+            "origin": 15,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O15",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.6331835433946978,
+            "lineage": "LCDF_02",
+            "origin": 16,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O16",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.5894140713010149,
+            "lineage": "LCDF_02",
+            "origin": 17,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O17",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.5442535275574885,
+            "lineage": "LCDF_02",
+            "origin": 18,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O18",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.4978185405085721,
+            "lineage": "LCDF_02",
+            "origin": 19,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O19",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.45023229772547463,
+            "lineage": "LCDF_02",
+            "origin": 20,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O20",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.4016264621806319,
+            "lineage": "LCDF_02",
+            "origin": 21,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O21",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.3521450350604273,
+            "lineage": "LCDF_02",
+            "origin": 22,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O22",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.301952326135361,
+            "lineage": "LCDF_02",
+            "origin": 23,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O23",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.2512512289614992,
+            "lineage": "LCDF_02",
+            "origin": 24,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O24",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.2003300451617604,
+            "lineage": "LCDF_02",
+            "origin": 25,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O25",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.149704828085921,
+            "lineage": "LCDF_02",
+            "origin": 26,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O26",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.10067779952588295,
+            "lineage": "LCDF_02",
+            "origin": 27,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O27",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.05851235519916878,
+            "lineage": "LCDF_02",
+            "origin": 28,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O28",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.048365641256565464,
+            "lineage": "LCDF_02",
+            "origin": 29,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O29",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.08302430732376077,
+            "lineage": "LCDF_02",
+            "origin": 30,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O30",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.1305425116573759,
+            "lineage": "LCDF_02",
+            "origin": 31,
+            "record_id": "LCDF_02_VARIANT_MAIN_N8_O31",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          }
+        ]
+      },
+      "LCDF_09": {
+        "VARIANT_LOW": {
+          "Q_def": 0.5643420310910714,
+          "baseline_relative_reduction": 0.04094077145000526,
+          "maximum": {
+            "Q_def": 0.6083330260786077,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O31"
+          },
+          "median": 0.5733965917826929,
+          "origin_count": 32,
+          "p90": 0.6067142687057487,
+          "zero_baseline_Q_def": 0.58843292915736
+        },
+        "VARIANT_MAIN": {
+          "Q_def": 0.7524602558575906,
+          "baseline_relative_reduction": 0.040941962835845,
+          "maximum": {
+            "Q_def": 0.8111162022980054,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O31"
+          },
+          "median": 0.7645330983432177,
+          "origin_count": 32,
+          "p90": 0.8089577692962855,
+          "zero_baseline_Q_def": 0.7845826078289748
+        },
+        "all": {
+          "Q_def": 0.6650858458504687,
+          "baseline_relative_reduction": 0.04094153394052872,
+          "maximum": {
+            "Q_def": 0.8111162022980054,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O31"
+          },
+          "median": 0.624115108113888,
+          "origin_count": 64,
+          "p90": 0.8028892272034166,
+          "zero_baseline_Q_def": 0.6934778946096355
+        },
+        "origins": [
+          {
+            "Q_def": 0.4799212083060681,
+            "lineage": "LCDF_09",
+            "origin": 0,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O00",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.4872688685222582,
+            "lineage": "LCDF_09",
+            "origin": 1,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O01",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.4944771388507253,
+            "lineage": "LCDF_09",
+            "origin": 2,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O02",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5015350308263266,
+            "lineage": "LCDF_09",
+            "origin": 3,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O03",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5084321505286538,
+            "lineage": "LCDF_09",
+            "origin": 4,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O04",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5151586666542185,
+            "lineage": "LCDF_09",
+            "origin": 5,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O05",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5217052920723411,
+            "lineage": "LCDF_09",
+            "origin": 6,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O06",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5280632280754501,
+            "lineage": "LCDF_09",
+            "origin": 7,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O07",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5342241618703517,
+            "lineage": "LCDF_09",
+            "origin": 8,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O08",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5401802394274586,
+            "lineage": "LCDF_09",
+            "origin": 9,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O09",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.545924046646129,
+            "lineage": "LCDF_09",
+            "origin": 10,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O10",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5514485886484692,
+            "lineage": "LCDF_09",
+            "origin": 11,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O11",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5567472767842413,
+            "lineage": "LCDF_09",
+            "origin": 12,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O12",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5618139158051789,
+            "lineage": "LCDF_09",
+            "origin": 13,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O13",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5666426806918475,
+            "lineage": "LCDF_09",
+            "origin": 14,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O14",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5712281025696717,
+            "lineage": "LCDF_09",
+            "origin": 15,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O15",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.575565080995714,
+            "lineage": "LCDF_09",
+            "origin": 16,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O16",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5796488672940798,
+            "lineage": "LCDF_09",
+            "origin": 17,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O17",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5834750387757334,
+            "lineage": "LCDF_09",
+            "origin": 18,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O18",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5870394840053339,
+            "lineage": "LCDF_09",
+            "origin": 19,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O19",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5903384569980887,
+            "lineage": "LCDF_09",
+            "origin": 20,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O20",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5933684881264822,
+            "lineage": "LCDF_09",
+            "origin": 21,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O21",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5961264051020152,
+            "lineage": "LCDF_09",
+            "origin": 22,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O22",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.5986094042838506,
+            "lineage": "LCDF_09",
+            "origin": 23,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O23",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6008149289331697,
+            "lineage": "LCDF_09",
+            "origin": 24,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O24",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6027407349494531,
+            "lineage": "LCDF_09",
+            "origin": 25,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O25",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6043848843174114,
+            "lineage": "LCDF_09",
+            "origin": 26,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O26",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6057457229687061,
+            "lineage": "LCDF_09",
+            "origin": 27,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O27",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6068218848987534,
+            "lineage": "LCDF_09",
+            "origin": 28,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O28",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6076123016711154,
+            "lineage": "LCDF_09",
+            "origin": 29,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O29",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6081161840468299,
+            "lineage": "LCDF_09",
+            "origin": 30,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O30",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6083330260786077,
+            "lineage": "LCDF_09",
+            "origin": 31,
+            "record_id": "LCDF_09_VARIANT_LOW_N8_O31",
+            "safe": true,
+            "variant": "VARIANT_LOW"
+          },
+          {
+            "Q_def": 0.6398971901491683,
+            "lineage": "LCDF_09",
+            "origin": 0,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O00",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.6496941928995051,
+            "lineage": "LCDF_09",
+            "origin": 1,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O01",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.659305346584601,
+            "lineage": "LCDF_09",
+            "origin": 2,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O02",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.6687159983704821,
+            "lineage": "LCDF_09",
+            "origin": 3,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O03",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.6779122883234865,
+            "lineage": "LCDF_09",
+            "origin": 4,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O04",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.686881107154439,
+            "lineage": "LCDF_09",
+            "origin": 5,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O05",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.6956100767717852,
+            "lineage": "LCDF_09",
+            "origin": 6,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O06",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7040874624670042,
+            "lineage": "LCDF_09",
+            "origin": 7,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O07",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7123021794869384,
+            "lineage": "LCDF_09",
+            "origin": 8,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O08",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7202437551010472,
+            "lineage": "LCDF_09",
+            "origin": 9,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O09",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7279023034731351,
+            "lineage": "LCDF_09",
+            "origin": 10,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O10",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7352684971266478,
+            "lineage": "LCDF_09",
+            "origin": 11,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O11",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7423335508655204,
+            "lineage": "LCDF_09",
+            "origin": 12,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O12",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7490892058109564,
+            "lineage": "LCDF_09",
+            "origin": 13,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O13",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7555276943788731,
+            "lineage": "LCDF_09",
+            "origin": 14,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O14",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7616417179266416,
+            "lineage": "LCDF_09",
+            "origin": 15,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O15",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7674244787597938,
+            "lineage": "LCDF_09",
+            "origin": 16,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O16",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7728696474617225,
+            "lineage": "LCDF_09",
+            "origin": 17,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O17",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7779713275659496,
+            "lineage": "LCDF_09",
+            "origin": 18,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O18",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7827240288660144,
+            "lineage": "LCDF_09",
+            "origin": 19,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O19",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7871227684504944,
+            "lineage": "LCDF_09",
+            "origin": 20,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O20",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7911629157455119,
+            "lineage": "LCDF_09",
+            "origin": 21,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O21",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7948402274345089,
+            "lineage": "LCDF_09",
+            "origin": 22,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O22",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.7981509812010706,
+            "lineage": "LCDF_09",
+            "origin": 23,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O23",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.8010917600226652,
+            "lineage": "LCDF_09",
+            "origin": 24,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O24",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.8036595702808815,
+            "lineage": "LCDF_09",
+            "origin": 25,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O25",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.8058518306533636,
+            "lineage": "LCDF_09",
+            "origin": 26,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O26",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.8076663349692734,
+            "lineage": "LCDF_09",
+            "origin": 27,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O27",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.8091012619992868,
+            "lineage": "LCDF_09",
+            "origin": 28,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O28",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.8101551894176822,
+            "lineage": "LCDF_09",
+            "origin": 29,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O29",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.8108270618804525,
+            "lineage": "LCDF_09",
+            "origin": 30,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O30",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          },
+          {
+            "Q_def": 0.8111162022980054,
+            "lineage": "LCDF_09",
+            "origin": 31,
+            "record_id": "LCDF_09_VARIANT_MAIN_N8_O31",
+            "safe": true,
+            "variant": "VARIANT_MAIN"
+          }
+        ]
+      }
+    },
+    "variants": {
+      "VARIANT_LOW": {
+        "Q_def": 0.5440641632789082,
+        "baseline_relative_reduction": 0.06556396156083764,
+        "maximum": {
+          "Q_def": 0.8018113505652703,
+          "record_id": "LCDF_02_VARIANT_LOW_N8_O00"
+        },
+        "median": 0.5640528328205655,
+        "origin_count": 64,
+        "p90": 0.7237662781333934,
+        "zero_baseline_Q_def": 0.5822379926481508
+      },
+      "VARIANT_MAIN": {
+        "Q_def": 0.7254236846818239,
+        "baseline_relative_reduction": 0.06556424650733057,
+        "maximum": {
+          "Q_def": 1.0690921132768894,
+          "record_id": "LCDF_02_VARIANT_MAIN_N8_O00"
+        },
+        "median": 0.7520748066683434,
+        "origin_count": 64,
+        "p90": 0.965030165008296,
+        "zero_baseline_Q_def": 0.7763226973822281
+      }
+    }
+  }
+}

@@ -1,0 +1,380 @@
+{
+  "audit_version": "stage02jv-direction-only-roundoff-diagnostics-0.4.0",
+  "diagnostic_only_no_gate_change": true,
+  "metric_or_threshold_changed": false,
+  "p_mag_failure_count": 9,
+  "rows": [
+    {
+      "M_h_invariant_within_metric_tolerance": true,
+      "baseline": {
+        "D_h": 0.4674721301319073,
+        "M_h": 4.985724542886706e-17,
+        "S_h": 0.4674721301319073,
+        "direction_lower_tail_count": 0,
+        "magnitude_lower_tail_count": 0,
+        "p_any": 0.007782101167315175,
+        "p_dir": 0.0038910505836575876,
+        "p_mag": 0.0038910505836575876
+      },
+      "baseline_magnitude_span": 6.938893903907228e-18,
+      "case_id": "i_res_n12_h26_regular",
+      "family_id": "FAMILY_PV_EXISTING",
+      "p_any_exact_invariance": true,
+      "p_dir_exact_invariance": true,
+      "p_mag_exact_invariance": true,
+      "scale": 0.1,
+      "transformed": {
+        "D_h": 0.4674721301319072,
+        "M_h": 7.632800705089583e-17,
+        "S_h": 0.4674721301319072,
+        "direction_lower_tail_count": 0,
+        "magnitude_lower_tail_count": 0,
+        "p_any": 0.007782101167315175,
+        "p_dir": 0.0038910505836575876,
+        "p_mag": 0.0038910505836575876
+      },
+      "transformed_magnitude_span": 8.673617379884035e-19
+    },
+    {
+      "M_h_invariant_within_metric_tolerance": true,
+      "baseline": {
+        "D_h": 0.4674721301319073,
+        "M_h": 4.985724542886706e-17,
+        "S_h": 0.4674721301319073,
+        "direction_lower_tail_count": 0,
+        "magnitude_lower_tail_count": 0,
+        "p_any": 0.007782101167315175,
+        "p_dir": 0.0038910505836575876,
+        "p_mag": 0.0038910505836575876
+      },
+      "baseline_magnitude_span": 6.938893903907228e-18,
+      "case_id": "i_res_n12_h26_regular",
+      "family_id": "FAMILY_PV_EXISTING",
+      "p_any_exact_invariance": true,
+      "p_dir_exact_invariance": true,
+      "p_mag_exact_invariance": false,
+      "scale": 10.0,
+      "transformed": {
+        "D_h": 0.46747213013190725,
+        "M_h": 1.2612996273379069e-16,
+        "S_h": 0.46747213013190725,
+        "direction_lower_tail_count": 0,
+        "magnitude_lower_tail_count": 34,
+        "p_any": 0.007782101167315175,
+        "p_dir": 0.0038910505836575876,
+        "p_mag": 0.13618677042801555
+      },
+      "transformed_magnitude_span": 2.220446049250313e-16
+    },
+    {
+      "M_h_invariant_within_metric_tolerance": true,
+      "baseline": {
+        "D_h": 0.35510218726467935,
+        "M_h": 0.0,
+        "S_h": 0.35510218726467935,
+        "direction_lower_tail_count": 0,
+        "magnitude_lower_tail_count": 256,
+        "p_any": 0.007782101167315175,
+        "p_dir": 0.0038910505836575876,
+        "p_mag": 1.0
+      },
+      "baseline_magnitude_span": 0.0,
+      "case_id": "i_anchor_n16_h26_regular",
+      "family_id": "FAMILY_PV_EXISTING",
+      "p_any_exact_invariance": true,
+      "p_dir_exact_invariance": true,
+      "p_mag_exact_invariance": false,
+      "scale": 0.1,
+      "transformed": {
+        "D_h": 0.3551021872646793,
+        "M_h": 8.873082224747318e-17,
+        "S_h": 0.3551021872646793,
+        "direction_lower_tail_count": 0,
+        "magnitude_lower_tail_count": 0,
+        "p_any": 0.007782101167315175,
+        "p_dir": 0.0038910505836575876,
+        "p_mag": 0.0038910505836575876
+      },
+      "transformed_magnitude_span": 1.3010426069826053e-18
+    },
+    {
+      "M_h_invariant_within_metric_tolerance": true,
+      "baseline": {
+        "D_h": 0.35510218726467935,
+        "M_h": 0.0,
+        "S_h": 0.35510218726467935,
+        "direction_lower_tail_count": 0,
+        "magnitude_lower_tail_count": 256,
+        "p_any": 0.007782101167315175,
+        "p_dir": 0.0038910505836575876,
+        "p_mag": 1.0
+      },
+      "baseline_magnitude_span": 0.0,
+      "case_id": "i_anchor_n16_h26_regular",
+      "family_id": "FAMILY_PV_EXISTING",
+      "p_any_exact_invariance": true,
+      "p_dir_exact_invariance": true,
+      "p_mag_exact_invariance": false,
+      "scale": 10.0,
+      "transformed": {
+        "D_h": 0.3551021872646793,
+        "M_h": 4.480292411772399e-17,
+        "S_h": 0.3551021872646793,
+        "direction_lower_tail_count": 0,
+        "magnitude_lower_tail_count": 0,
+        "p_any": 0.007782101167315175,
+        "p_dir": 0.0038910505836575876,
+        "p_mag": 0.0038910505836575876
+      },
+      "transformed_magnitude_span": 5.551115123125783e-17
+    },
+    {
+      "M_h_invariant_within_metric_tolerance": true,
+      "baseline": {
+        "D_h": 0.2857654988223653,
+        "M_h": 4.197750588007593e-17,
+        "S_h": 0.2857654988223653,
+        "direction_lower_tail_count": 0,
+        "magnitude_lower_tail_count": 0,
+        "p_any": 0.007782101167315175,
+        "p_dir": 0.0038910505836575876,
+        "p_mag": 0.0038910505836575876
+      },
+      "baseline_magnitude_span": 3.469446951953614e-18,
+      "case_id": "i_res_n20_h26_regular",
+      "family_id": "FAMILY_PV_EXISTING",
+      "p_any_exact_invariance": true,
+      "p_dir_exact_invariance": true,
+      "p_mag_exact_invariance": false,
+      "scale": 0.1,
+      "transformed": {
+        "D_h": 0.2857654988223653,
+        "M_h": 6.908788768971803e-17,
+        "S_h": 0.2857654988223653,
+        "direction_lower_tail_count": 0,
+        "magnitude_lower_tail_count": 234,
+        "p_any": 0.007782101167315175,
+        "p_dir": 0.0038910505836575876,
+        "p_mag": 0.914396887159533
+      },
+      "transformed_magnitude_span": 2.168404344971009e-19
+    },
+    {
+      "M_h_invariant_within_metric_tolerance": true,
+      "baseline": {
+        "D_h": 0.2857654988223653,
+        "M_h": 4.197750588007593e-17,
+        "S_h": 0.2857654988223653,
+        "direction_lower_tail_count": 0,
+        "magnitude_lower_tail_count": 0,
+        "p_any": 0.007782101167315175,
+        "p_dir": 0.0038910505836575876,
+        "p_mag": 0.0038910505836575876
+      },
+      "baseline_magnitude_span": 3.469446951953614e-18,
+      "case_id": "i_res_n20_h26_regular",
+      "family_id": "FAMILY_PV_EXISTING",
+      "p_any_exact_invariance": true,
+      "p_dir_exact_invariance": true,
+      "p_mag_exact_invariance": false,
+      "scale": 10.0,
+      "transformed": {
+        "D_h": 0.28576549882236535,
+        "M_h": 8.84324962428391e-17,
+        "S_h": 0.28576549882236535,
+        "direction_lower_tail_count": 0,
+        "magnitude_lower_tail_count": 234,
+        "p_any": 0.007782101167315175,
+        "p_dir": 0.0038910505836575876,
+        "p_mag": 0.914396887159533
+      },
+      "transformed_magnitude_span": 2.7755575615628914e-17
+    },
+    {
+      "M_h_invariant_within_metric_tolerance": true,
+      "baseline": {
+        "D_h": 0.4674721301319073,
+        "M_h": 3.512820706357158e-17,
+        "S_h": 0.4674721301319073,
+        "direction_lower_tail_count": 0,
+        "magnitude_lower_tail_count": 0,
+        "p_any": 0.007782101167315175,
+        "p_dir": 0.0038910505836575876,
+        "p_mag": 0.0038910505836575876
+      },
+      "baseline_magnitude_span": 5.551115123125783e-17,
+      "case_id": "crossmode_a_n12_h26",
+      "family_id": "FAMILY_CROSSMODE_A",
+      "p_any_exact_invariance": true,
+      "p_dir_exact_invariance": true,
+      "p_mag_exact_invariance": false,
+      "scale": 0.1,
+      "transformed": {
+        "D_h": 0.46747213013190725,
+        "M_h": 0.0,
+        "S_h": 0.46747213013190725,
+        "direction_lower_tail_count": 0,
+        "magnitude_lower_tail_count": 256,
+        "p_any": 0.007782101167315175,
+        "p_dir": 0.0038910505836575876,
+        "p_mag": 1.0
+      },
+      "transformed_magnitude_span": 0.0
+    },
+    {
+      "M_h_invariant_within_metric_tolerance": true,
+      "baseline": {
+        "D_h": 0.4674721301319073,
+        "M_h": 3.512820706357158e-17,
+        "S_h": 0.4674721301319073,
+        "direction_lower_tail_count": 0,
+        "magnitude_lower_tail_count": 0,
+        "p_any": 0.007782101167315175,
+        "p_dir": 0.0038910505836575876,
+        "p_mag": 0.0038910505836575876
+      },
+      "baseline_magnitude_span": 5.551115123125783e-17,
+      "case_id": "crossmode_a_n12_h26",
+      "family_id": "FAMILY_CROSSMODE_A",
+      "p_any_exact_invariance": true,
+      "p_dir_exact_invariance": true,
+      "p_mag_exact_invariance": false,
+      "scale": 10.0,
+      "transformed": {
+        "D_h": 0.4674721301319072,
+        "M_h": 0.0,
+        "S_h": 0.4674721301319072,
+        "direction_lower_tail_count": 0,
+        "magnitude_lower_tail_count": 256,
+        "p_any": 0.007782101167315175,
+        "p_dir": 0.0038910505836575876,
+        "p_mag": 1.0
+      },
+      "transformed_magnitude_span": 0.0
+    },
+    {
+      "M_h_invariant_within_metric_tolerance": true,
+      "baseline": {
+        "D_h": 0.35510218726467935,
+        "M_h": 7.430558188471583e-17,
+        "S_h": 0.35510218726467935,
+        "direction_lower_tail_count": 0,
+        "magnitude_lower_tail_count": 0,
+        "p_any": 0.007782101167315175,
+        "p_dir": 0.0038910505836575876,
+        "p_mag": 0.0038910505836575876
+      },
+      "baseline_magnitude_span": 5.551115123125783e-17,
+      "case_id": "crossmode_a_n16_h26",
+      "family_id": "FAMILY_CROSSMODE_A",
+      "p_any_exact_invariance": true,
+      "p_dir_exact_invariance": true,
+      "p_mag_exact_invariance": true,
+      "scale": 0.1,
+      "transformed": {
+        "D_h": 0.35510218726467924,
+        "M_h": 7.184771608337632e-17,
+        "S_h": 0.35510218726467924,
+        "direction_lower_tail_count": 0,
+        "magnitude_lower_tail_count": 0,
+        "p_any": 0.007782101167315175,
+        "p_dir": 0.0038910505836575876,
+        "p_mag": 0.0038910505836575876
+      },
+      "transformed_magnitude_span": 3.469446951953614e-18
+    },
+    {
+      "M_h_invariant_within_metric_tolerance": true,
+      "baseline": {
+        "D_h": 0.35510218726467935,
+        "M_h": 7.430558188471583e-17,
+        "S_h": 0.35510218726467935,
+        "direction_lower_tail_count": 0,
+        "magnitude_lower_tail_count": 0,
+        "p_any": 0.007782101167315175,
+        "p_dir": 0.0038910505836575876,
+        "p_mag": 0.0038910505836575876
+      },
+      "baseline_magnitude_span": 5.551115123125783e-17,
+      "case_id": "crossmode_a_n16_h26",
+      "family_id": "FAMILY_CROSSMODE_A",
+      "p_any_exact_invariance": true,
+      "p_dir_exact_invariance": true,
+      "p_mag_exact_invariance": true,
+      "scale": 10.0,
+      "transformed": {
+        "D_h": 0.35510218726467924,
+        "M_h": 5.944446550777265e-17,
+        "S_h": 0.35510218726467924,
+        "direction_lower_tail_count": 0,
+        "magnitude_lower_tail_count": 0,
+        "p_any": 0.007782101167315175,
+        "p_dir": 0.0038910505836575876,
+        "p_mag": 0.0038910505836575876
+      },
+      "transformed_magnitude_span": 8.881784197001252e-16
+    },
+    {
+      "M_h_invariant_within_metric_tolerance": true,
+      "baseline": {
+        "D_h": 0.2857654988223653,
+        "M_h": 0.0,
+        "S_h": 0.2857654988223653,
+        "direction_lower_tail_count": 0,
+        "magnitude_lower_tail_count": 256,
+        "p_any": 0.007782101167315175,
+        "p_dir": 0.0038910505836575876,
+        "p_mag": 1.0
+      },
+      "baseline_magnitude_span": 0.0,
+      "case_id": "crossmode_a_n20_h26",
+      "family_id": "FAMILY_CROSSMODE_A",
+      "p_any_exact_invariance": true,
+      "p_dir_exact_invariance": true,
+      "p_mag_exact_invariance": false,
+      "scale": 0.1,
+      "transformed": {
+        "D_h": 0.2857654988223653,
+        "M_h": 1.0585809743536172e-16,
+        "S_h": 0.2857654988223653,
+        "direction_lower_tail_count": 0,
+        "magnitude_lower_tail_count": 0,
+        "p_any": 0.007782101167315175,
+        "p_dir": 0.0038910505836575876,
+        "p_mag": 0.0038910505836575876
+      },
+      "transformed_magnitude_span": 6.938893903907228e-18
+    },
+    {
+      "M_h_invariant_within_metric_tolerance": true,
+      "baseline": {
+        "D_h": 0.2857654988223653,
+        "M_h": 0.0,
+        "S_h": 0.2857654988223653,
+        "direction_lower_tail_count": 0,
+        "magnitude_lower_tail_count": 256,
+        "p_any": 0.007782101167315175,
+        "p_dir": 0.0038910505836575876,
+        "p_mag": 1.0
+      },
+      "baseline_magnitude_span": 0.0,
+      "case_id": "crossmode_a_n20_h26",
+      "family_id": "FAMILY_CROSSMODE_A",
+      "p_any_exact_invariance": true,
+      "p_dir_exact_invariance": true,
+      "p_mag_exact_invariance": false,
+      "scale": 10.0,
+      "transformed": {
+        "D_h": 0.28576549882236535,
+        "M_h": 7.932932206063361e-17,
+        "S_h": 0.28576549882236535,
+        "direction_lower_tail_count": 0,
+        "magnitude_lower_tail_count": 185,
+        "p_any": 0.007782101167315175,
+        "p_dir": 0.0038910505836575876,
+        "p_mag": 0.7237354085603113
+      },
+      "transformed_magnitude_span": 2.220446049250313e-16
+    }
+  ]
+}

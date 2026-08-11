@@ -1,0 +1,215 @@
+schema_version: sph-pio-poc.stage03d.multistep-adfd-topology-contract.v0.1
+stage: Stage 03D
+freeze_date: 2026-08-05
+authorization: Stage 03C:DYNAMIC_RK2_HYBRID_IMPLEMENTATION_VERIFIED
+immutability: frozen_before_any_stage03b_trajectory_state_array_decode
+
+execution:
+  formal_device: cpu
+  formal_dtype: float64
+  deterministic_algorithms: true
+  torch_threads: 4
+  optimizer_objects: 0
+  optimizer_steps: 0
+  training_runs: 0
+
+fixed_topology_matrix:
+  aliases:
+    FT_DR1_COMPRESSION_N8: DR1_LAGRANGIAN_COMPRESSION_N8
+    FT_DR1_COUPLED_N8: DR1_COUPLED_DEFORMATION_N8
+    FT_DR3_SHEAR_A_N8: DR3_OBLIQUE_SHEAR_A_N8
+    FT_DR3_SHEAR_B_N8: DR3_OBLIQUE_SHEAR_B_N8
+  arms:
+    D1: [FT_DR1_COMPRESSION_N8, FT_DR3_SHEAR_A_N8]
+    D2: [FT_DR1_COUPLED_N8, FT_DR3_SHEAR_B_N8]
+    D3: [FT_DR1_COMPRESSION_N8, FT_DR3_SHEAR_A_N8]
+  origin_frame: 0
+  horizons: [1, 2, 4, 8]
+  parameter_seeds: [20300401, 20300402, 20300403]
+  correction_enabled: true
+  accepted_state_self_feed: true
+  midpoint_token: ephemeral
+  graph_rebuild: every_start_and_midpoint_stage
+  trajectory_amplitude_change: forbidden
+
+model_initialization:
+  rule: torch.manual_seed(parameter_seed)_then_frozen_stage03c_constructor_cpu_float64_eval
+  target_dependent_rescaling: forbidden
+  coefficient_bounds: {alpha_max: 0.05, beta_max: 0.05}
+  base_parameter_hash_required: true
+  base_parameter_mutation: forbidden
+  finite_difference_method: independent_deep_copy_with_one_registered_scalar_perturbed
+
+parameter_probes:
+  D1:
+    token_encoder_parameter: {module_path: encoder.linear_1.bias, tensor_index: [0]}
+    coefficient_head_parameter: {module_path: pair_head.output.bias, tensor_index: [0]}
+  D2:
+    gru_parameter: {module_path: recurrent.bias_ih, tensor_index: [0]}
+    coefficient_head_parameter: {module_path: pair_head.output.bias, tensor_index: [0]}
+  D3:
+    token_encoder_parameter: {module_path: encoder.linear_1.bias, tensor_index: [0]}
+    temporal_attention_query_parameter: {module_path: temporal.layers.0.self_attn.in_proj_bias, tensor_index: [0]}
+    coefficient_head_parameter: {module_path: pair_head.output.bias, tensor_index: [0]}
+
+input_probes:
+  D1: [initial_velocity, initial_density]
+  D2: [initial_velocity, initial_density, initial_hidden_state]
+  D3: [initial_velocity, initial_density, historical_token]
+  direction_seed_payload: 'UTF8("stage03d" || arm_id || case_id || decimal_parameter_seed || probe_type)'
+  direction_generation: 'SHA256(payload || uint64_le(counter)); uint64_le chunks map by 2*u/(2^64-1)-1; concatenate and L2-normalize on CPU float64'
+  velocity_scale: sound_speed
+  density_scale: rho0
+  hidden_and_token_scale: 1
+  direction_selection_or_retry: forbidden
+
+probe_objective:
+  horizon: final_accepted_state
+  formula: 'mean_i[w_x_i dot (x_unwrapped_i/L) + w_v_i dot (v_i/cs) + w_rho_i*(rho_i-rho0)/rho0]'
+  material_coordinate_source: frozen_material_labels
+  weights:
+    w_x: ['sin(2*pi*X_i/L)', 'cos(2*pi*Y_i/L)']
+    w_v: ['cos(2*pi*X_i/L)', 'sin(2*pi*Y_i/L)']
+    w_rho: 'sin(2*pi*(X_i+Y_i)/L)'
+  constants: {L: 2.0, cs: 20.0, rho0: 1.0}
+  structural_zero_absolute_threshold: 1.0e-12
+
+finite_difference:
+  formula: '[J(q+epsilon*d)-J(q-epsilon*d)]/(2*epsilon)'
+  dimensionless_epsilons: [1.0e-4, 3.0e-5, 1.0e-5, 3.0e-6]
+  scalar_parameter_scale: 'max(1,abs(parameter_value))'
+  paths_independent: true
+  save_full_materialization_graph_hash_sequence: true
+  smooth_gate_graph_identity: 'exact ordered equality of discrete structural graph hashes over every start and midpoint; each structural hash covers row,col,active_kernel,reverse and excludes continuously varying geometry'
+  note_on_stage03c_graph_hash: 'Stage03C materialization graph_hash includes wrapped coordinates and is retained for provenance, but cannot define discrete topology identity under a nonzero state perturbation.'
+  topology_change_class: FD_TOPOLOGY_CHANGED_EXCLUDED_FROM_SMOOTH_GATE
+
+adfd_gates:
+  absolute_error_max: 1.0e-8
+  relative_error_max: 1.0e-5
+  relative_denominator_floor: 1.0e-12
+  stable_window_adjacent_fd_relative_change_max: 5.0e-4
+  stable_window_required_adjacent_epsilons: 2
+  deterministic_repeats: 2
+  each_probe_type_requires_at_least_one_stable_nonzero_case_seed: true
+
+history:
+  accepted_commit_count: K
+  midpoint_commit_count: 0
+  history_length: 4
+  relative_offsets: [0, -1, -2, -3]
+  warm_start_main_gate: REPEAT_INITIAL_TOKEN
+  reference_prehistory:
+    origin_frame: 3
+    prior_frames: [0, 1, 2]
+    D2_case: FT_DR1_COUPLED_N8
+    D3_case: FT_DR1_COMPRESSION_N8
+    horizon: 4
+    seeds: [20300401, 20300402, 20300403]
+    no_teacher_force_after_origin: true
+    material_label_alignment_required: true
+
+conservation:
+  normalized_residual: 'norm(sum_i force_i)/max(sum_i norm(force_i),1e-30)'
+  correction_force_residual_max: 1.0e-10
+  baseline_force_residual_definition: conservative_pressure_plus_viscosity_only_excluding_external_source
+  total_force_residual_definition: conservative_internal_baseline_plus_neural_correction_excluding_external_source
+  accumulated_correction_impulse: 'dt*sum_over_start_and_midpoint_stage_weights(sum_i correction_force_i), midpoint RK2 accepted weight=1'
+  conservation_projection: forbidden
+
+topology_event_family:
+  family_id: TE1_TAGGED_PAIR_OSCILLATION
+  role: topology_event_kinematic_audit_only
+  particle_count: 2
+  domain_center: [0.0, 0.0]
+  oblique_unit_vector: ['1/sqrt(5)', '2/sqrt(5)']
+  domain_length: 2.0
+  strict_support_cutoff_Rc: 0.65
+  cutoff_identity: 'Rc = frozen Stage03C N8 support_over_dx*(L/N8) = 2.6*(2/8) = 0.65; DynamicParticleState.smoothing_length is passed directly as graph particle_support'
+  smoothing_length_per_particle: 0.65
+  delta_formula: '0.1*min(Rc,L/2-Rc)'
+  delta: 0.035
+  normalized_time_interval: [0.0, 1.0]
+  distance: 'r(s)=Rc+delta*cos(2*pi*s)'
+  position_0: 'c-0.5*r(s)*e'
+  position_1: 'c+0.5*r(s)*e'
+  velocity_0: '+pi*delta*sin(2*pi*s)*e'
+  velocity_1: '-pi*delta*sin(2*pi*s)*e'
+  density: 1.0
+  pressure: 0.0
+  material_labels: [[-0.5, 0.0], [0.5, 0.0]]
+  exact_events: {birth: 0.25, death: 0.75}
+  event_side_offset_eta: 0.0009765625
+  analytic_absolute_margin: 'delta*sin(2*pi*eta)'
+  event_formula_or_amplitude_change: forbidden
+
+topology_dense_scan:
+  point_count: 4097
+  repeats: 3
+  expected_birth_count: 1
+  expected_death_count: 1
+  maximum_bracket_width: 0.000244140625
+  no_minimum_image_switch: true
+  structural_graph_sequence_bitwise_repeat: true
+  nonself_edge_semantics: 'empty means zero nonself directed edges; canonical self records from the frozen Stage03C graph backend are excluded from pair aggregation and are never synthesized as substitutes'
+
+topology_stage_replay:
+  REPLAY_BIRTH:
+    times: ['s_birth-2*eta', 's_birth+eta', 's_birth+4*eta']
+    expected_nonself_graph: [empty, reciprocal_pair, reciprocal_pair]
+  REPLAY_DEATH:
+    times: ['s_death-4*eta', 's_death-eta', 's_death+2*eta']
+    expected_nonself_graph: [reciprocal_pair, reciprocal_pair, empty]
+  claim_role: stage_level_graph_rebuild_token_pair_head_semantics_only_not_physical_RK2
+
+event_side_gradient:
+  times: ['s_birth-2*eta', 's_birth+2*eta', 's_death-2*eta', 's_death+2*eta']
+  arms: [D1, D2, D3]
+  parameter_seed: 20300401
+  scalar_probe_parameter:
+    D1: {module_path: pair_head.output.bias, tensor_index: [0]}
+    D2: {module_path: pair_head.output.bias, tensor_index: [0]}
+    D3: {module_path: pair_head.output.bias, tensor_index: [0]}
+  scalar_pair_output: 'sum_unordered[(alpha+beta)+dot(pair_force_on_i/F0,e)]'
+  exact_event_smooth_adfd_required: false
+  cross_event_fd_role: diagnostic_only
+  cross_event_allowed_classifications:
+    - TOPOLOGY_EVENT_PIECEWISE_SMOOTH_WITH_DISCRETE_GRAPH_CHANGE
+    - TOPOLOGY_EVENT_NONDETERMINISTIC
+    - TOPOLOGY_EVENT_FORCE_EXPLOSION
+
+event_force_jump:
+  sides: ['event-eta', 'event+eta']
+  theoretical_bound: '|f_ij| <= F0_ij*(alpha_max+beta_max*norm(transverse_ij))'
+  relative_floating_margin: 1.0e-12
+  continuity_required: false
+  finite_and_bounded_required: true
+
+resources:
+  formal_largest_case: N8_K8_multistep_backward
+  audit_only_case: N16_K8_D3_single_AD_smoke
+  peak_rss_delta_max_bytes: 1610612736
+  finite_completion: true
+  monotonic_live_tensor_retention: forbidden
+  dense_particle_square_allocation: forbidden
+  no_parameter_mutation: true
+  mps_formal_gate: false
+
+final_statuses:
+  qualified: DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_QUALIFIED
+  not_qualified: DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED
+  incomplete: DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_EVIDENCE_INCOMPLETE
+
+prohibitions:
+  optimizer: false
+  optimizer_step: false
+  training: false
+  parameter_update: false
+  loss_fitting: false
+  trajectory_dataset_split: false
+  normalization_fitting: false
+  teacher_forced_performance_evaluation: false
+  rollout_accuracy_claim: false
+  solver_in_the_loop_training: false
+  benchmark_improvement_claim: false
+  differentiable_neighbor_search_claim: false

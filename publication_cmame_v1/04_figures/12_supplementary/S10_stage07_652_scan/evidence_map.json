@@ -1,0 +1,26 @@
+[
+  {
+    "figure": "S10",
+    "panel": "a-f",
+    "scientific_claim": "Every frozen Stage07 checkpoint metric remains visible in the complete scan.",
+    "source_file": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07dr/checkpoint_scan/all_652_checkpoint_metrics.jsonl",
+    "source_hash": "sha256:ea5b441bac7d5a1f4edc1634cd49946ff3e40b1f92cf7319fec6678ad13cb9b4",
+    "source_field": "all JSONL rows and metric fields",
+    "confirmatory_or_diagnostic": "DIAGNOSTIC_ONLY",
+    "transformation": "Exact source-order/run trajectories and gate raster.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS10_stage07_652_scan.svg; figS10_stage07_652_scan.pdf; figS10_stage07_652_scan.png"
+  },
+  {
+    "figure": "S10",
+    "panel": "g-h",
+    "scientific_claim": "The frozen Stage07 scan inventory and joint verdict are reproduced without checkpoint reselection.",
+    "source_file": "stage_07_Heterogeneous_Development_Pool/05_formal_retraining/stage07dr/checkpoint_scan/all_652_checkpoint_gate_scan.json",
+    "source_hash": "sha256:587b35b224910efa8d7fe996b07e660fe4896db0bfa47dcf4f18a9593d4e4d97",
+    "source_field": "checkpoint_count, per_run, global gate verdicts",
+    "confirmatory_or_diagnostic": "SUPPORTED",
+    "transformation": "Exact bars and status-card transcription.",
+    "plot_script": "publication_cmame_v1/04_figures/00_style/build_supplementary_figures.py",
+    "output_file": "figS10_stage07_652_scan.svg; figS10_stage07_652_scan.pdf; figS10_stage07_652_scan.png"
+  }
+]

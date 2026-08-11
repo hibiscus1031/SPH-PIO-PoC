@@ -1,0 +1,1 @@
+**Figure 7. Stage07 TRAIN/validation lineage heterogeneity.** The augmented formula pool passed pretraining qualifications but did not yield qualified fresh-validation transfer. All plotted values and statuses must be read from the frozen source list; schematic arrows denote methodological dependency, not performance improvement.

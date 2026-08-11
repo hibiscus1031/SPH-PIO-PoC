@@ -1,0 +1,161 @@
+{
+  "N12_N16_audit_pass": true,
+  "N12_N16_audit_rows": 114,
+  "access_pass": true,
+  "all_near_zero_probe_failures": 864,
+  "arm_pass": {
+    "D1": false,
+    "D2": false,
+    "D3": false
+  },
+  "artifacts": [
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_freeze_and_scope.md",
+      "sha256": "sha256:aa7e52c59f36d7137426ed4c6bcb05c1d1eb867301a928afab87c07bb89b6dbc"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_access_control.md",
+      "sha256": "sha256:18a76054eac09c2122c9c08a213a4c775d2f46c9c5ff1beb1e629fffd0a73dbf"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_case_selection.md",
+      "sha256": "sha256:51a13f8f34de9139fb36dc24d52e5be729781cfc860ac0a45433bb13a2061102"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_parameter_group_map.md",
+      "sha256": "sha256:793f20d13f2845a5ae5721022d2bf69f2a611318a1b0bc0bb265ea195e06e6eb"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_task_aligned_loss.md",
+      "sha256": "sha256:76986bb6d5e89b83e5d63f4616a7b763c9bf3c2902e9440015fb169365720a79"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_reverse_jvp.md",
+      "sha256": "sha256:1b16781b5492fcd9ee7b5ff5a9869e74914621fe9b673bcc141f1c166c89d631"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_finite_difference.md",
+      "sha256": "sha256:6f4719e675ba39e5a89caf98d410cb15355fe57c9ba59bae0d3503d80e58f860"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_stable_window_results.md",
+      "sha256": "sha256:62a419d7a066626a52e18880384d48c7ec2828c7bd4e3069705fa8ffb3d128cb"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_input_gradient_diagnostics.md",
+      "sha256": "sha256:1b23669b17e94dd9b90610ddc408dd76e60207130904b3c8532bde2c1239cfd7"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_structure_and_safety.md",
+      "sha256": "sha256:87f0d6d377ef34d96d8345b38b94d5f5f4af6dcffe5a9e260160da8c926561c8"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_resource_audit.md",
+      "sha256": "sha256:f454948963917123ab172d90ef694a3fc6951f1d8070beb567e323c321926ec5"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_qualification_report.md",
+      "sha256": "sha256:4846973f1df6fc0871f3f14ead12ac66c15f192308c018551202bf8a52afa66b"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/08_reports/stage04c_final_report.md",
+      "sha256": "sha256:0f1f938b5a1f5aa828f7990f2c00f367ac6add8aa408774b1b689761786e09e2"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04c_input_freeze_manifest.json",
+      "sha256": "sha256:68b09ca09545380c1d3c17b123a7b912078557c8b669ab17e512f84bdde311f7"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04c_contract_manifest.json",
+      "sha256": "sha256:b77f8aae99d6f93628a7b286aff90f5f06e1d537a66c6096185ee12d1f6ee1d8"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04c_case_manifest.json",
+      "sha256": "sha256:63d5d7581277cf7fafd7fb6ebc0abf71ef3db9fd37f4b555497733d074985dd4"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04c_parameter_manifest.json",
+      "sha256": "sha256:22a5ff52c7896bcb933462576aa0c718887dfe68df53a406f0840ce1087f1aea"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04c_direction_manifest.json",
+      "sha256": "sha256:c58dc48f2e0d28546f477046fa2531ef42e02c971b3b2d7c5b09fb7e2eb3cf85"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04c_adfd_manifest.json",
+      "sha256": "sha256:4b03577e73720d9502ca9cbfbdfcde6b01cec3f8816304bb278ac20695859f8a"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/results/formal_864_probe_results.json",
+      "sha256": "sha256:fea114278b89368bb05759ece536df9464f52db58d6603aef639e4feb9f659e5"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/structure_and_safety/structure_audit.json",
+      "sha256": "sha256:633ef5ab4e55581eb50d8a49380ad4d8601e59324dd8fd6c46528e74edc48ef1"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/results/N12_N16_audit.json",
+      "sha256": "sha256:f59a8a4d00d4c4eeafc9184329475d7619bb46095aac946bc642ea41a5e17f5c"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/diagnostic_input_gradients/input_gradient_diagnostics.json",
+      "sha256": "sha256:c2cbaecd33b3032c872ccda1fab4fb7c9e36e6669b5a7f2507269979faa04340"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/resources/resource_audit.json",
+      "sha256": "sha256:db3fb952eb583da228b328c35da4a6d707eea11472c4b9f9c940e6cc5ad416bc"
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/access_control/access_audit.json",
+      "sha256": "sha256:078836fa36a1c7dd4522be318c2ba633725ceb958cf77130b4f958769b95000b"
+    }
+  ],
+  "backend_identity": "CPU_FLOAT64_TORCH_SDPA_EXPLICIT_MATH_NO_AUTO",
+  "contract_sha256": "sha256:eb63d659d8c4a868160c952ed9aed7aadf79938353a5d8129b238f22f7ef1840",
+  "decode_counts": {
+    "sealed_formula_decode_count": 0,
+    "sealed_state_decode_count": 0,
+    "sealed_target_decode_count": 0,
+    "train_state_array_decode_count": 114,
+    "validation_target_decode_count": 0
+  },
+  "failure_code": "ALL_FORMAL_PROBES_TASK_COMPONENTS_BELOW_FD_RESOLUTION",
+  "final_status": "TASK_ALIGNED_PARAMETER_GRADIENT_NOT_QUALIFIED",
+  "formal_contexts_per_arm": 72,
+  "formal_probe_counts": {
+    "D1": 144,
+    "D2": 216,
+    "D3": 504,
+    "total": 864
+  },
+  "historical_freeze_pass": true,
+  "historical_statuses": {
+    "stage03d": "DYNAMIC_MULTISTEP_ADFD_AND_TOPOLOGY_NOT_QUALIFIED",
+    "stage03dr": "DYNAMIC_GRADIENT_FAILURE_MIXED_OR_UNRESOLVED",
+    "stage03e_authorization": false
+  },
+  "probe_pass_counts": {
+    "D1": 0,
+    "D2": 0,
+    "D3": 0
+  },
+  "prohibited_counts": {
+    "neural_rollouts": 0,
+    "optimizer_instances": 0,
+    "optimizer_steps": 0,
+    "parameter_updates": 0,
+    "performance_evaluations": 0,
+    "training_runs": 0
+  },
+  "resource_pass": true,
+  "reverse_jvp_component_comparisons": 2592,
+  "reverse_jvp_failures": 0,
+  "stable_nonzero_components": 0,
+  "stage": "Stage 04C — Task-Aligned Parameter-Gradient Qualification",
+  "stage04_training": "NOT_AUTHORIZED",
+  "stage04b_authorization": "LOCAL_CAUSAL_REFERENCE_FAMILY_POOL_QUALIFIED",
+  "stage04d_authorization": false,
+  "structure_pass": true,
+  "structure_records": 54,
+  "topology_changing_epsilons": 0
+}

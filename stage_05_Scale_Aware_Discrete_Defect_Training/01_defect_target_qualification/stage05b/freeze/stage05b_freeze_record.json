@@ -1,0 +1,107 @@
+{
+  "access_module_path": "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/access_control/stage05b_train_access.py",
+  "access_module_sha256": "sha256:6d41af823d5ca931baff5f27ad7231e12a4cacd551c5143c66b39a9ee37fdb8e",
+  "authorization_verified": true,
+  "contract_path": "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/contracts/conservative_discrete_defect_target_contract_v0_1.yaml",
+  "contract_sha256": "sha256:6992ce3e9e7aa76b2b29fc3e6b15ac5533386ce9bee07c5d7316b5ee9609b9dc",
+  "contract_size_bytes": 9572,
+  "frozen_before_first_train_state_or_target_array_decode": true,
+  "historical_files_modified": 0,
+  "inputs": [
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05a_final_manifest.json",
+      "sha256": "sha256:2911f69509daae2c908cec2860db45942725231efbf787061d9cad345b1f6939",
+      "size_bytes": 4168
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/09_manifests/stage05a_contract_manifest.json",
+      "sha256": "sha256:d9eb3c76c4367eae0483620a7464c298082333ff7330404d5e9821b1e87067e7",
+      "size_bytes": 4885
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/08_reports/stage05a_final_report.md",
+      "sha256": "sha256:a46cfebfcb2ba65fce4b8b89af620679feab6c03449983a123bca95d34f989bc",
+      "size_bytes": 1814
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/08_reports/stage05a_defect_formulation.md",
+      "sha256": "sha256:d9c6376d2d027bfb0f1640ff5b7f96feeb715a54e48cf169431814d6c74425a9",
+      "size_bytes": 1036
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/08_reports/stage05a_scale_and_loss_contract.md",
+      "sha256": "sha256:7945f10afaf895d8f2561a5177da958593427e41712b47848fbfc2f4a0852448",
+      "size_bytes": 983
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/08_reports/stage05a_gradient_qualification_strategy.md",
+      "sha256": "sha256:13901bb8fcf52530f616a5964f5387aafac70e7d2b15b78492833f3771358117",
+      "size_bytes": 944
+    },
+    {
+      "path": "stage_05_Scale_Aware_Discrete_Defect_Training/08_reports/stage05a_data_and_seal_strategy.md",
+      "sha256": "sha256:f77c7d8dbf00427517e7655f4a18848a21837a117a15bf05b8f793b89f029f32",
+      "size_bytes": 902
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_role_assignment_manifest.json",
+      "sha256": "sha256:642f91985176774bf71795f2e72391082a9a43cdc0f3f6f7aaec7f1c432db47e",
+      "size_bytes": 2737
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_trajectory_manifest.json",
+      "sha256": "sha256:6bc2351482b9167c63640699be0f048d65e3981babe0409895ea6a900b3e8ac2",
+      "size_bytes": 58254
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04b_test_seal_manifest.json",
+      "sha256": "sha256:f3fc8bc263b5cd0862aad21e6331e280bff59fa70df5d2dd172491ee9ed438a5",
+      "size_bytes": 26266
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/09_manifests/stage04cs_final_manifest.json",
+      "sha256": "sha256:a5ca2f684a135fa89cc7325a1553b1ec66571c51886fb12e009dd3e577fe8465",
+      "size_bytes": 8743
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/rk2_core/solver.py",
+      "sha256": "sha256:c6d9dde841e218e66a2e5036b4b8ec2459f9cc38512b990a6a2e7ac8c5e4e788",
+      "size_bytes": 12292
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/rk2_core/independent_functional.py",
+      "sha256": "sha256:eacbd2d9695dbfd793dcbcee607e94c86e432575d8c4f8db565df8bee3095cf4",
+      "size_bytes": 2829
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/baseline_d0/state.py",
+      "sha256": "sha256:a6f024bf2f7e44eba2031aca441cb26c0ee8e254dba3fd80cf33390d266e516e",
+      "size_bytes": 4261
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/graph_rebuild/graph.py",
+      "sha256": "sha256:d29fd86979150f98eb2e5927d1688b1df920181030aa275a5f244fb1f19c8c4f",
+      "size_bytes": 3383
+    },
+    {
+      "path": "stage_03_Dynamic_SPH_Transformer_Hybrid/05_dynamic_solver_implementation/stage03c/pair_force_head/head.py",
+      "sha256": "sha256:77831de4312ce1ca1406e7d7f41e6c19c90e38a6259a9d053037ea398c77139a",
+      "size_bytes": 3179
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/04_reference_family_pool/stage04b/formula_templates/stage04b_reference_core.py",
+      "sha256": "sha256:613c601cab008335907d0aa16e03d974e809c9e1f5ce938986d432c4a1593a83",
+      "size_bytes": 27987
+    },
+    {
+      "path": "stage_04_Local_Causal_Dynamic_Training/05_task_aligned_gradient/stage04c/qualification/run_stage04c_qualification.py",
+      "sha256": "sha256:20ec3a6c5e9cd8ded1b687408291e3e8483600e5cd99a2e28b864c98e8f73c86",
+      "size_bytes": 37106
+    }
+  ],
+  "origin_inventory_path": "stage_05_Scale_Aware_Discrete_Defect_Training/01_defect_target_qualification/stage05b/train_origin_inventory/preregistered_origin_inventory.json",
+  "origin_inventory_sha256": "sha256:bfb5f2c9ca80d80f1a4bae87978b3d27f8ef52bc368686d3596b92ad42ac227e",
+  "schema": "sph-pio-poc.stage05b.freeze-record.v1",
+  "target_array_decode_count_at_freeze": 0,
+  "train_state_array_decode_count_at_freeze": 0
+}

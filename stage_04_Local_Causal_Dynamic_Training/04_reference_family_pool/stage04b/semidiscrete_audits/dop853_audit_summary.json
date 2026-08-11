@@ -1,0 +1,224 @@
+{
+  "exact_difference_role": "semidiscrete_spatial_model_form_diagnostic_only",
+  "passed": 20,
+  "required": 20,
+  "rows": [
+    {
+      "evaluator_result_sha256": "sha256:d6e84784cb6ef0cc55888314c3e1ca61ee29ebcec8728bd0e8dafcaad580aa3c",
+      "family_id": "LCDF_01",
+      "graph_rebuild_count": 1572,
+      "maximum_normalized_L2": 0.0,
+      "maximum_normalized_Linf": 0.0,
+      "qualification_status": "PASS",
+      "resolution": 8,
+      "role": "TRAIN_LINEAGE",
+      "template": "AXIAL_COMPRESSION",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "evaluator_result_sha256": "sha256:1b5dde772b4fc4ecb978b3a613f050fa3631e19fddbfca85c2a098807263839a",
+      "family_id": "LCDF_01",
+      "graph_rebuild_count": 1572,
+      "maximum_normalized_L2": 0.0,
+      "maximum_normalized_Linf": 0.0,
+      "qualification_status": "PASS",
+      "resolution": 16,
+      "role": "TRAIN_LINEAGE",
+      "template": "AXIAL_COMPRESSION",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "evaluator_result_sha256": "sha256:ba8c4c067fc41bfb2e52f554acfa7a813f8555a3f31f59d726a3b28422d94ca6",
+      "family_id": "LCDF_02",
+      "qualification_status": "PASS",
+      "resolution": 8,
+      "role": "VALIDATION_LINEAGE",
+      "template": "BIAXIAL_BREATHING",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "evaluator_result_sha256": "sha256:b8aaa8fc32297b3f1626e3f7f5ef86239b656444b748c5b167eec3c8e9bfa08b",
+      "family_id": "LCDF_02",
+      "qualification_status": "PASS",
+      "resolution": 16,
+      "role": "VALIDATION_LINEAGE",
+      "template": "BIAXIAL_BREATHING",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "evaluator_result_sha256": "sha256:ded169f6b84bd9188474bb33ab4326e00857ea6086ac48581db69dde78ca9e0d",
+      "family_id": "LCDF_03",
+      "qualification_status": "PASS",
+      "resolution": 8,
+      "role": "SEALED_TEST_LINEAGE",
+      "template": "SHEAR_COMPRESSION_CELL",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "evaluator_result_sha256": "sha256:d9572024741e0d25322c5125ece00b4b355fcce8d9275a0249872db17805e076",
+      "family_id": "LCDF_03",
+      "qualification_status": "PASS",
+      "resolution": 16,
+      "role": "SEALED_TEST_LINEAGE",
+      "template": "SHEAR_COMPRESSION_CELL",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "evaluator_result_sha256": "sha256:381662816ca67c863998e2d76ff4755bfcbbcf26310e5965351b276fc18f8e7a",
+      "family_id": "LCDF_04",
+      "graph_rebuild_count": 1572,
+      "maximum_normalized_L2": 0.0,
+      "maximum_normalized_Linf": 0.0,
+      "qualification_status": "PASS",
+      "resolution": 8,
+      "role": "TRAIN_LINEAGE",
+      "template": "ROTATING_CELL",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "evaluator_result_sha256": "sha256:b39b1c91bb1991d2d145f345b305b4e6bba057f4eac4bd9d8b7d02f21471a217",
+      "family_id": "LCDF_04",
+      "graph_rebuild_count": 1572,
+      "maximum_normalized_L2": 0.0,
+      "maximum_normalized_Linf": 0.0,
+      "qualification_status": "PASS",
+      "resolution": 16,
+      "role": "TRAIN_LINEAGE",
+      "template": "ROTATING_CELL",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "evaluator_result_sha256": "sha256:64916aa36dbed44870c8d41580cd53254e3208813379f8984d262a335d168fb9",
+      "family_id": "LCDF_05",
+      "graph_rebuild_count": 1572,
+      "maximum_normalized_L2": 0.0,
+      "maximum_normalized_Linf": 0.0,
+      "qualification_status": "PASS",
+      "resolution": 8,
+      "role": "TRAIN_LINEAGE",
+      "template": "OBLIQUE_LONGITUDINAL",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "evaluator_result_sha256": "sha256:9a65f0d6243703fab60e4f23aeeb0e2109407e624bdf45de3f1f882a844a332a",
+      "family_id": "LCDF_05",
+      "graph_rebuild_count": 1572,
+      "maximum_normalized_L2": 0.0,
+      "maximum_normalized_Linf": 0.0,
+      "qualification_status": "PASS",
+      "resolution": 16,
+      "role": "TRAIN_LINEAGE",
+      "template": "OBLIQUE_LONGITUDINAL",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "evaluator_result_sha256": "sha256:38202a672c53b0e1e23af08578043c44715662b82a93094668b562969b942078",
+      "family_id": "LCDF_06",
+      "graph_rebuild_count": 1572,
+      "maximum_normalized_L2": 0.0,
+      "maximum_normalized_Linf": 0.0,
+      "qualification_status": "PASS",
+      "resolution": 8,
+      "role": "TRAIN_LINEAGE",
+      "template": "OBLIQUE_TRANSVERSE",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "evaluator_result_sha256": "sha256:4b4a2d99d2fbceba63b8af65f01f975734c05622ec34915100562c83cf0d51fb",
+      "family_id": "LCDF_06",
+      "graph_rebuild_count": 1572,
+      "maximum_normalized_L2": 0.0,
+      "maximum_normalized_Linf": 0.0,
+      "qualification_status": "PASS",
+      "resolution": 16,
+      "role": "TRAIN_LINEAGE",
+      "template": "OBLIQUE_TRANSVERSE",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "evaluator_result_sha256": "sha256:f040ea22e356668018056ff8de337cd857673e26e683b854ef0f0bf2560f6d3d",
+      "family_id": "LCDF_07",
+      "graph_rebuild_count": 1572,
+      "maximum_normalized_L2": 0.0,
+      "maximum_normalized_Linf": 0.0,
+      "qualification_status": "PASS",
+      "resolution": 8,
+      "role": "TRAIN_LINEAGE",
+      "template": "MULTIMODE_CROSS",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "evaluator_result_sha256": "sha256:b61b58af86e3c5886e272e71680dfd32e5eb762ac9a32ba67630e514a81c3cce",
+      "family_id": "LCDF_07",
+      "graph_rebuild_count": 1572,
+      "maximum_normalized_L2": 0.0,
+      "maximum_normalized_Linf": 0.0,
+      "qualification_status": "PASS",
+      "resolution": 16,
+      "role": "TRAIN_LINEAGE",
+      "template": "MULTIMODE_CROSS",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "evaluator_result_sha256": "sha256:995ba3cf2c3ef914426cf3c3251af4dbbae828f3a279a3afaaab486dd2b29c66",
+      "family_id": "LCDF_08",
+      "graph_rebuild_count": 1572,
+      "maximum_normalized_L2": 0.0,
+      "maximum_normalized_Linf": 0.0,
+      "qualification_status": "PASS",
+      "resolution": 8,
+      "role": "TRAIN_LINEAGE",
+      "template": "ANISOTROPIC_DOUBLE_MODE",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "evaluator_result_sha256": "sha256:5db04daa5cf61e57a7477184959116ede5fc9d8936d3a8e08880da1e4d67de4d",
+      "family_id": "LCDF_08",
+      "graph_rebuild_count": 1572,
+      "maximum_normalized_L2": 0.0,
+      "maximum_normalized_Linf": 0.0,
+      "qualification_status": "PASS",
+      "resolution": 16,
+      "role": "TRAIN_LINEAGE",
+      "template": "ANISOTROPIC_DOUBLE_MODE",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "evaluator_result_sha256": "sha256:6368ea9c3905afe7c416ad985a4dc8a3e29e1cd1cd031fbe5d385af4ca991d47",
+      "family_id": "LCDF_09",
+      "qualification_status": "PASS",
+      "resolution": 8,
+      "role": "VALIDATION_LINEAGE",
+      "template": "PHASE_COUPLED_OBLIQUE",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "evaluator_result_sha256": "sha256:ab0c9a4ee1b03e312cc3063b969bfec28ba39aed13e49c3ad39f6d27478890c1",
+      "family_id": "LCDF_09",
+      "qualification_status": "PASS",
+      "resolution": 16,
+      "role": "VALIDATION_LINEAGE",
+      "template": "PHASE_COUPLED_OBLIQUE",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "evaluator_result_sha256": "sha256:c4dd547ecfb0e7febe782a0cbf0f81815d2c4bbe14ddffada6d639406afc25c1",
+      "family_id": "LCDF_10",
+      "qualification_status": "PASS",
+      "resolution": 8,
+      "role": "SEALED_TEST_LINEAGE",
+      "template": "ROTATING_MULTIMODE",
+      "variant": "VARIANT_MAIN"
+    },
+    {
+      "evaluator_result_sha256": "sha256:a4f2aac90038c1e537aa5ee3629cc6d9e16ea4bf7c5ab25099de72c92e6c8806",
+      "family_id": "LCDF_10",
+      "qualification_status": "PASS",
+      "resolution": 16,
+      "role": "SEALED_TEST_LINEAGE",
+      "template": "ROTATING_MULTIMODE",
+      "variant": "VARIANT_MAIN"
+    }
+  ],
+  "total_graph_rebuild_count": 31440
+}

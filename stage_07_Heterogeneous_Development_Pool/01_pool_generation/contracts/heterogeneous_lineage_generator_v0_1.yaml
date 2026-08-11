@@ -1,0 +1,115 @@
+schema_version: sph-pio-poc.stage07a.heterogeneous-generator.v1
+status: FROZEN_BEFORE_PARAMETER_GENERATION_AND_SCIENTIFIC_RESULTS
+scientific_hypothesis: insufficient heterogeneous dynamic-lineage coverage limits shared-map identifiability
+constants:
+  L: 2.0
+  rho0: 1.0
+  sound_speed: 20.0
+  physical_viscosity: 0.02
+  support_over_dx: 2.6
+  dtype: float64
+  device: cpu
+material_map:
+  xi: 2*pi*X/L
+  eta: 2*pi*Y/L
+  position: [X+d_x, Y+d_y]
+mode_definition:
+  e_L: [p/sqrt(p^2+q^2), q/sqrt(p^2+q^2)]
+  e_T: [-q/sqrt(p^2+q^2), p/sqrt(p^2+q^2)]
+  displacement: sum_m A_m*(cos(theta_m)*e_L_m+sin(theta_m)*e_T_m)*sin(p_m*xi+q_m*eta+phi_m)*g_m(tau)
+allowed_wavevectors:
+  - [1, 0]
+  - [0, 1]
+  - [1, 1]
+  - [1, -1]
+  - [1, 2]
+  - [2, 1]
+  - [2, -1]
+  - [1, -2]
+  - [2, 2]
+temporal_function_set:
+  - sin(pi*tau+psi)
+  - sin(2*pi*tau+psi)
+  - sin(3*pi*tau+psi)
+  - cos(pi*tau+psi)
+  - cos(2*pi*tau+psi)
+parameter_generation:
+  seed: SHA256("stage07a_heterogeneous_formula_v1" || lineage_id)
+  amplitude_total_interval: [0.006, 0.010]
+  positive_mode_weight_interval_before_normalization: [0.25, 1.0]
+  amplitude_normalization: sum(abs(A_m)) == A_total
+  spatial_phase_interval: [0.0, 6.283185307179586]
+  temporal_phase_interval: [0.0, 6.283185307179586]
+  variant_scale: {LOW: 0.75, MAIN: 1.0}
+  redraw_count: 0
+  failure_replacement_count: 0
+strata:
+  H1:
+    name: MIXED_ORIENTATION_MULTIMODE
+    mode_count: 2
+    wavevector_schedule: [[1, 0], [1, 1]]
+    theta_intervals_radians: [[0.0, 0.17453292519943295], [1.3962634015954636, 1.5707963267948966]]
+    temporal_schedule: [sin(pi*tau+psi), cos(pi*tau+psi)]
+    requirements: [predominantly_longitudinal, predominantly_transverse, max_wavevector_norm_le_sqrt5]
+  H2:
+    name: SPATIAL_FREQUENCY_HETEROGENEITY
+    mode_count: 3
+    wavevector_schedule: [[1, 0], [0, 1], [2, 1]]
+    theta_intervals_radians: [[0.2617993877991494, 0.6108652381980153], [0.9599310885968813, 1.3089969389957472], [0.4363323129985824, 1.1344640137963142]]
+    temporal_schedule: [sin(pi*tau+psi), cos(pi*tau+psi), sin(2*pi*tau+psi)]
+    requirements: [contains_second_spatial_frequency, contains_fundamental, nonparallel_wavevectors]
+  H3:
+    name: TEMPORAL_PHASE_FREQUENCY_HETEROGENEITY
+    mode_count: 3
+    wavevector_schedule: [[1, 1], [1, -1], [0, 1]]
+    theta_intervals_radians: [[0.0, 0.5235987755982988], [1.0471975511965976, 1.5707963267948966], [0.3490658503988659, 1.2217304763960306]]
+    temporal_schedule: [sin(pi*tau+psi), sin(2*pi*tau+psi), cos(3*pi*tau+psi)]
+    minimum_temporal_phase_separation_radians: 0.2617993877991494
+    requirements: [at_least_two_temporal_frequencies, at_least_two_temporal_phases, longitudinal_transverse_mix]
+  H4:
+    name: ROTATING_ANISOTROPIC_MULTIMODE
+    mode_count: 4
+    wavevector_schedule: [[1, 0], [0, 1], [1, 1], [2, -1]]
+    theta_intervals_radians: [[0.0, 0.3490658503988659], [1.2217304763960306, 1.5707963267948966], [0.3490658503988659, 0.8726646259971648], [0.6981317007977318, 1.2217304763960306]]
+    temporal_schedule: [rotating_sin_2pi_tau, rotating_cos_2pi_tau, sin(pi*tau+psi), cos(3*pi*tau+psi)]
+    anisotropy_weight_multiplier: [1.0, 0.55, 0.8, 0.35]
+    requirements: [rotating_quadrature_pair, at_least_three_wavevectors, amplitude_anisotropy, at_least_two_temporal_frequencies]
+qualification_gates:
+  analytic:
+    eos_abs: 1.0e-12
+    continuity_normalized: 1.0e-10
+    momentum_with_source_normalized: 1.0e-10
+    particle_path: 1.0e-10
+    derivative_disagreement: 1.0e-9
+    minimum_J: 0.95
+    minimum_density_strictly_positive: true
+    maximum_Mach: 0.05
+    periodic_residual: 1.0e-12
+    finite: true
+  topology:
+    dense_time_samples: 1025
+    deterministic_repeats: 3
+    edge_birth_death_count: 0
+    cutoff_touch_count: 0
+    relevant_minimum_image_switch_count: 0
+    minimum_normalized_cutoff_margin: 0.02
+  dop853:
+    primary: {rtol: 1.0e-11, atol: 1.0e-13}
+    sensitivity: {rtol: 1.0e-12, atol: 1.0e-14}
+    normalized_L2: 1.0e-9
+    normalized_Linf: 1.0e-8
+    primary_repeat_bitwise: true
+    graph_sequence_deterministic: true
+prohibitions:
+  optimizer_steps: 0
+  training_runs: 0
+  model_forwards: 0
+  higher_lr_experiments: 0
+  architecture_changes: 0
+  feature_changes: 0
+  target_changes: 0
+  loss_changes: 0
+  sealed_test_decode: 0
+  rollouts: 0
+  model_rankings: 0
+

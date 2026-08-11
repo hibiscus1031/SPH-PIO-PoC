@@ -1,0 +1,21 @@
+{
+  "blocking_reason_code": "NEGATIVE_CONTROL_DISCRIMINATION_FAIL",
+  "contract_hash": "sha256:9f62279ed4061b88688a187365a523923c6898b969f6ecd77f2785ca0e55ae5f",
+  "heldout_access_authorized": false,
+  "manual_override_permitted": false,
+  "particle_edge_or_patch_split_used": false,
+  "roles_preserved": {
+    "future_test": [
+      "FAMILY_MIXED_C"
+    ],
+    "future_train": [
+      "FAMILY_PV_EXISTING",
+      "FAMILY_CROSSMODE_A"
+    ],
+    "future_validation": [
+      "FAMILY_DIAGONAL_B"
+    ]
+  },
+  "split_executed": false,
+  "status": "NOT_EXECUTED_NO_20_RECORD_CORPUS"
+}
