@@ -6,22 +6,22 @@ Audit date: 2026-08-12 (Asia/Shanghai)
 
 - `PIO_UNTRACKED_AUDIT_PASS`
 - `REPRODUCIBILITY_CLOSURE_PARTIAL`
-- `PRIVATE_REMOTE_CLOSURE_IN_PROGRESS`
+- `PRIVATE_REMOTE_CLOSURE_COMPLETE`
 
-No source refactor, scientific recomputation, training, formal evaluation, frozen-data change, history rewrite, force operation, remote upload, or historical Stage reconstruction was performed.
+No source refactor, scientific recomputation, training, formal evaluation, frozen-data change, history rewrite, force operation, external-data upload, or historical Stage reconstruction was performed. Only the audited Git repository was pushed to its private remote.
 
 ## Repository and identity
 
 | Item | Result |
 |---|---|
-| Local HEAD | `ecc529a6c248946c609089cdf8cfc8ef78eadfcf` on `main` |
-| Closure commit | Pending final local commit |
+| Local branch | `main`; final audited target is resolved by `repo-audited-2026-08-12` |
+| Initial closure commit | `ae3ddcac0285bcbb05bc5748970a5709974a2c1c` |
 | Global identity | `user.name` and `user.email` unset |
 | Local identity | `hibiscus1031 <2623839613@qq.com>`; email is primary and verified by authenticated GitHub API |
 | Historical HEAD identity | `谢槿博 <xiejinbo@Jinbo-Mac.local>`; not accepted for future publishing |
-| Remote | None |
-| Private visibility | Not applicable; repository was not created remotely |
-| Tag | None; tag creation requires a successful first private push |
+| Remote | `https://github.com/hibiscus1031/SPH-PIO-PoC.git` (`origin`) |
+| Private visibility | `PRIVATE`, verified through GitHub CLI before and after push |
+| Tag | `repo-audited-2026-08-12`; annotated tag targeting the final closure-report commit |
 
 The identity resolution is recorded in `git_migration/git_identity_action_required.md`. The GitHub profile name is unset, so the authenticated account login is used as the repository-local author name; no email was inferred or guessed.
 
@@ -31,7 +31,7 @@ The identity resolution is recorded in `git_migration/git_identity_action_requir
 
 | Category | Count | Resolution |
 |---|---:|---|
-| `SHOULD_TRACK` | 31 | Secret-audited and staged for a future identity-reviewed commit |
+| `SHOULD_TRACK` | 31 | Secret-audited and committed with the verified repository-local identity |
 | `HISTORICAL_EVIDENCE_ONLY` | 2,394 | Kept locally; authoritative tracked manifest hash retained |
 | `SENSITIVE` | 135 | Kept under existing access controls; permissions not changed |
 | `DUPLICATE` | 128 | Canonical tracked byte-identical copy recorded |
@@ -45,7 +45,7 @@ The 2,671 non-tracked decisions are applied as exact-path entries in this reposi
 
 ## Security, size, and portability
 
-The intended index contains 4,322 files and 219,110,947 apparent bytes.
+The intended index contains 4,322 files and 219,110,779 apparent bytes.
 
 - Secret/token/private-key signature audit: **PASS**, zero findings.
 - Files over 100 MiB: **PASS**, zero.
@@ -70,6 +70,8 @@ Observed check: `project_final_evidence_freeze_manifest.json` quick verification
 
 Overall reproducibility remains **PARTIAL**: code, reports, manifests, and selected definitions are versioned; the environment audit is partial; external payloads are local/institutional only; and historical Stage02–Stage08 code identity remains unknown.
 
-## Remote and tag gate
+## Remote and tag closure
 
-GitHub CLI is authenticated as `hibiscus1031`, the verified identity is configured locally, and `hibiscus1031/SPH-PIO-PoC` was confirmed absent before creation. Remote creation remains gated on the final local commit and repeated pre-push audit. No alternative upload method is authorized.
+GitHub CLI is authenticated as `hibiscus1031`, the verified identity is configured locally, and `hibiscus1031/SPH-PIO-PoC` was confirmed absent before creation. All pre-push gates passed. The repository was created with `--private`, `main` was pushed without force or mirror, and remote visibility was verified as `PRIVATE`.
+
+The annotated tag `repo-audited-2026-08-12` targets the final closure-report commit. Its message states: “This tag identifies the audited repository state after Git migration. It does not reconstruct or assert historical experiment code states.” The tag is not a Stage tag and makes no historical-state claim.

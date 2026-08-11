@@ -1,8 +1,8 @@
 # 1 Executive status
 
-**GIT_MIGRATION_COMPLETE_LOCAL_ONLY**
+**PRIVATE_REMOTE_CLOSURE_COMPLETE**
 
-The pre-existing repository was preserved and extended by one forward-only audited baseline commit. No history was rewritten, no scientific artifact was deleted or regenerated, and no Stage02–Stage08 history was fabricated. The repository remains local because GitHub CLI is not installed.
+The pre-existing repository was preserved and extended by forward-only audited commits. No history was rewritten, no scientific artifact was deleted or regenerated, and no Stage02–Stage08 history was fabricated. The audited `main` branch is published only to a verified private GitHub repository.
 
 # 2 Repository identity
 
@@ -13,8 +13,8 @@ The pre-existing repository was preserved and extended by one forward-only audit
 | Branch | `main` |
 | Audited baseline commit | `a3b65ec6be41ceeedc15ace801773d39890d29eb` |
 | Existing history retained | 81 pre-migration commits; baseline is commit 82 |
-| Remote | none |
-| Visibility | LOCAL ONLY / NOT PUBLISHED |
+| Remote | `https://github.com/hibiscus1031/SPH-PIO-PoC.git` (`origin`) |
+| Visibility | `PRIVATE`, verified through GitHub CLI |
 
 # 3 What is tracked
 
@@ -27,7 +27,7 @@ The existing history already contained numerical artifacts (including NPZ files)
 # 4 What is intentionally untracked
 
 - 10,192 ignored files (1,862,599,128 bytes) cover bulk results, checkpoints/trajectories, training histories, caches, render trees, full-text literature, export archives, and role-controlled validation payloads.
-- 2,702 additional files (158,633,853 bytes) remain visible for deliberate manual review; they are primarily generated JSON evidence and module-local figure duplicates. Their exact paths and reasons are frozen in `audit/intentionally_untracked_inventory.csv`.
+- The former 2,702-file manual-review set is resolved in `git_migration/pio_untracked_resolution.csv`: 31 version-worthy files are committed and 2,671 exact local paths have explicit non-tracked dispositions plus local `.git/info/exclude` entries.
 - The unreadable Stage04 `validation_private` directory and Stage08 `private_design` payload are retained on disk without permission changes. Only their access/role/seal metadata is tracked.
 
 Untracked does not mean deleted; every source artifact remains in its original location.
@@ -74,7 +74,7 @@ Validation: 377 tests collected; a bounded non-training subset passed 5/5. No tr
 
 # 10 GitHub status
 
-Local only. `gh` was not installed and no remote was created. After setting a deliberate Git author identity, installing/authenticating GitHub CLI, and repeating the secret/large-file audit, the intended private-only command is:
+GitHub CLI is authenticated as `hibiscus1031`. The repository was confirmed absent, created with private visibility, and pushed through the ordinary non-force workflow:
 
 ```bash
 gh repo create SPH-PIO-PoC --private --source=. --remote=origin
@@ -85,12 +85,12 @@ Do not use `--public`, force push, or overwrite an existing remote repository.
 
 # 11 Remaining actions
 
-1. Repeat the pre-push audit and create a private remote only if every gate remains satisfied.
+No remaining action is required for the requested private-remote closure. Any future public release or external-data deposit requires a separate authorization and review.
 
 # 12 Remote and reproducibility closure update
 
-The 2,702-item manual-untracked audit is complete in `git_migration/pio_untracked_resolution.csv`: 31 small version-worthy scripts, manifests, definitions, registers, schedules, and preregistered plans passed a directed secret audit and are staged; the remaining 2,671 exact paths have explicit scientific dispositions and local-only `.git/info/exclude` entries. There are no unresolved `MANUAL_DECISION_REQUIRED` rows. Result: **PIO_UNTRACKED_AUDIT_PASS**.
+The 2,702-item manual-untracked audit is complete in `git_migration/pio_untracked_resolution.csv`: 31 small version-worthy scripts, manifests, definitions, registers, schedules, and preregistered plans passed a directed secret audit and are committed; the remaining 2,671 exact paths have explicit scientific dispositions and local-only `.git/info/exclude` entries. There are no unresolved `MANUAL_DECISION_REQUIRED` rows. Result: **PIO_UNTRACKED_AUDIT_PASS**.
 
 External-data handling and the read-only manifest checker are documented in `DATA_RETRIEVAL_AND_INTEGRITY.md`. The project closure manifest passed quick existence/size checks for 15,090/15,090 entries. The intended index has zero secret signatures, zero files over 100 MiB, zero literature PDFs, and zero cache paths. The 106 numerical binaries and 13 duplicate numerical-hash groups are inherited tracked history; no new numerical binary was staged.
 
-The publishing identity is resolved from authenticated GitHub account `hibiscus1031` and its primary verified email. The pre-closure local HEAD is `ecc529a6c248946c609089cdf8cfc8ef78eadfcf`; no history was amended. Remote creation, push, and audited-state tag are pending the final commit and pre-push gate. Current status: **REPRODUCIBILITY_CLOSURE_PARTIAL** and **PRIVATE_REMOTE_CLOSURE_IN_PROGRESS**.
+The publishing identity is resolved from authenticated GitHub account `hibiscus1031` and its primary verified email. No history was amended. `origin/main` was created and pushed privately without force; the annotated tag `repo-audited-2026-08-12` identifies the final closure-report state and carries the historical-state disclaimer. Current status: **REPRODUCIBILITY_CLOSURE_PARTIAL** and **PRIVATE_REMOTE_CLOSURE_COMPLETE**.
